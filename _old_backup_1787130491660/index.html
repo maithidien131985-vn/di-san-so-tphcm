@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cổng thông tin và ươm mầm các dự án nghiên cứu Khoa học Kỹ thuật (KHKT), sáng tạo STEM và giải pháp công nghệ ứng dụng.">
+    <meta name="keywords" content="Khoa học kỹ thuật, KHKT, STEM, Dự án sáng tạo, Nghiên cứu khoa học, Hội thi KHKT">
+    <meta name="author" content="KHKT Innovation Lab">
+    <title>Cổng Thông Tin & Dự Án Khoa Học Kỹ Thuật | KHKT Hub</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <!-- Background Animated Gradient Glows -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" id="logo-link">
+                <div class="logo-icon">
+                    <i data-lucide="atom"></i>
+                </div>
+                <span class="logo-text">KHKT<span>.Hub</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" id="nav-home">Trang chủ</a>
+                <a href="#projects" class="nav-link" id="nav-projects">Dự án KHKT</a>
+                <a href="#generator" class="nav-link" id="nav-generator">Tạo ý tưởng</a>
+                <a href="#roadmap" class="nav-link" id="nav-roadmap">Quy trình</a>
+                <a href="#resources" class="nav-link" id="nav-resources">Tài liệu</a>
+                <a href="#contact" class="nav-link" id="nav-contact">Gửi đề tài</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" title="Chuyển đổi giao diện Sáng / Tối"
+                    aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta" id="nav-cta-btn">
+                    <i data-lucide="sparkles"></i>
+                    <span>Tham gia ngay</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Đổi Mới Sáng Tạo & Nghiên Cứu Khoa Học 2025 - 2026</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Ươm Mầm Ý Tưởng <br>
+                        <span class="gradient-text">Khoa Học Kỹ Thuật</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Nền tảng kết nối, chia sẻ đề tài nghiên cứu khoa học kỹ thuật, giải pháp STEM và công nghệ thông
+                        minh dành cho học sinh, sinh viên và giáo viên đam mê đổi mới sáng tạo.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" id="btn-explore">
+                            <i data-lucide="compass"></i>
+                            <span>Khám phá dự án</span>
+                        </a>
+                        <a href="#generator" class="btn btn-secondary" id="btn-ideas">
+                            <i data-lucide="lightbulb"></i>
+                            <span>Gợi ý ý tưởng AI</span>
+                        </a>
+                    </div>
+
+                    <!-- Metric Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="68">0</div>
+                            <div class="stat-label">Đề tài nghiên cứu</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="24">0</div>
+                            <div class="stat-label">Giải thưởng các cấp</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="1500">0</div>
+                            <div class="stat-label">Lượt tham khảo</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="glass-card hero-preview-card">
+                        <div class="card-glow"></div>
+                        <div class="preview-header">
+                            <div class="preview-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="preview-title">Dự án tiêu biểu: Smart Green Farm IoT</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-metric-grid">
+                                <div class="metric-box">
+                                    <i data-lucide="cpu" class="metric-icon"></i>
+                                    <div class="metric-val">ESP32 + AI</div>
+                                    <div class="metric-sub">Vi điều khiển</div>
+                                </div>
+                                <div class="metric-box">
+                                    <i data-lucide="gauge" class="metric-icon"></i>
+                                    <div class="metric-val">99.4%</div>
+                                    <div class="metric-sub">Độ chính xác</div>
+                                </div>
+                                <div class="metric-box">
+                                    <i data-lucide="zap" class="metric-icon"></i>
+                                    <div class="metric-val">-42%</div>
+                                    <div class="metric-sub">Tiết kiệm năng lượng</div>
+                                </div>
+                                <div class="metric-box">
+                                    <i data-lucide="award" class="metric-icon"></i>
+                                    <div class="metric-val">Giải Nhất</div>
+                                    <div class="metric-sub">Cấp Tỉnh 2025</div>
+                                </div>
+                            </div>
+                            <div class="preview-chart">
+                                <div class="chart-header">
+                                    <span>Hiệu suất vận hành thực nghiệm</span>
+                                    <span class="badge-success">Ổn định</span>
+                                </div>
+                                <div class="chart-bars">
+                                    <div class="bar-col">
+                                        <div class="bar" style="height: 45%;"></div><span>T1</span>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar" style="height: 65%;"></div><span>T2</span>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar" style="height: 55%;"></div><span>T3</span>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar" style="height: 85%;"></div><span>T4</span>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar active" style="height: 96%;"></div><span>T5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge"><i data-lucide="folder-git-2"></i> Kho Dự Án</span>
+                    <h2 class="section-title">Các Dự Án KHKT & Sáng Tạo Nổi Bật</h2>
+                    <p class="section-desc">Bộ sưu tập các đề tài đạt giải và công trình nghiên cứu ứng dụng thực tế
+                        phong phú thuộc nhiều lĩnh vực.</p>
+                </div>
+
+                <!-- Search & Filters -->
+                <div class="filter-controls">
+                    <div class="search-box">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" id="project-search"
+                            placeholder="Tìm kiếm tên đề tài, tác giả, từ khóa công nghệ...">
+                        <button class="clear-search" id="clear-search-btn" title="Xóa tìm kiếm">&times;</button>
+                    </div>
+
+                    <div class="filter-tabs" id="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">Tất cả</button>
+                        <button class="filter-btn" data-filter="robotics">Robotics & IoT</button>
+                        <button class="filter-btn" data-filter="ai">AI & Phần mềm</button>
+                        <button class="filter-btn" data-filter="environment">Môi trường & Sinh học</button>
+                        <button class="filter-btn" data-filter="stem">Mô hình STEM</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Dynamic cards injected by JS -->
+                </div>
+
+                <div class="no-results hidden" id="no-results">
+                    <i data-lucide="search-x"></i>
+                    <h3>Không tìm thấy đề tài phù hợp</h3>
+                    <p>Hãy thử tìm kiếm với từ khóa khác hoặc xóa bộ lọc.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Idea Generator Tool -->
+        <section class="section generator-section" id="generator">
+            <div class="container">
+                <div class="generator-box glass-card">
+                    <div class="generator-header">
+                        <div class="badge-icon"><i data-lucide="sparkles"></i></div>
+                        <h2>Công Cụ Gợi Ý Ý Tưởng Nghiên Cứu KHKT</h2>
+                        <p>Chọn lĩnh vực bạn quan tâm để nhận ngay ý tưởng đề tài, phương pháp thực hiện và tính mới của
+                            dự án.</p>
+                    </div>
+
+                    <div class="generator-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="gen-field"><i data-lucide="layers"></i> Lĩnh vực nghiên cứu:</label>
+                                <select id="gen-field">
+                                    <option value="iot">Internet vạn vật (IoT) & Thành phố thông minh</option>
+                                    <option value="env">Bảo vệ môi trường & Năng lượng tái tạo</option>
+                                    <option value="ai">Trí tuệ nhân tạo (AI) & Ứng dụng giáo dục</option>
+                                    <option value="med">Y sinh học & Chăm sóc sức khỏe cộng đồng</option>
+                                    <option value="stem">Thiết bị dạy học STEM & Tự động hóa cơ điện</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="gen-level"><i data-lucide="trending-up"></i> Cấp độ tham gia:</label>
+                                <select id="gen-level">
+                                    <option value="school">Cấp Trường / CLB Sáng Tạo</option>
+                                    <option value="district">Cấp Huyện / Thị Xã</option>
+                                    <option value="province">Cấp Tỉnh / Thành Phố</option>
+                                    <option value="national">Cấp Quốc Gia</option>
+                                </select>
+                            </div>
+                            <div class="form-group btn-col">
+                                <button class="btn btn-primary" id="btn-generate-idea">
+                                    <i data-lucide="wand-2"></i>
+                                    <span>Tạo ý tưởng mới</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="generated-result" id="generated-result">
+                        <div class="result-card">
+                            <div class="result-top">
+                                <span class="result-tag" id="res-tag">Lĩnh vực: IoT & Nông Nghiệp</span>
+                                <span class="result-badge" id="res-level">Đề xuất: Cấp Tỉnh</span>
+                            </div>
+                            <h3 class="result-title" id="res-title">Hệ thống giám sát và cảnh báo sâu bệnh trên cây
+                                trồng sử dụng cảm biến quang phổ và vi điều khiển ESP32</h3>
+                            <div class="result-details">
+                                <div class="detail-item">
+                                    <strong><i data-lucide="target"></i> Mục tiêu nghiên cứu:</strong>
+                                    <p id="res-goal">Phát hiện sớm các dấu hiệu dịch hại thông qua quang phổ phản xạ lá
+                                        cây, tự động gửi cảnh báo qua ứng dụng di động cho nhà nông.</p>
+                                </div>
+                                <div class="detail-item">
+                                    <strong><i data-lucide="hammer"></i> Giải pháp công nghệ:</strong>
+                                    <p id="res-tech">Cảm biến màu sắc quang phổ AS7262, ESP32 Wi-Fi, Firebase Realtime
+                                        Database, Bảng điều khiển Web Dashboard.</p>
+                                </div>
+                                <div class="detail-item">
+                                    <strong><i data-lucide="star"></i> Điểm mới & Tính sáng tạo:</strong>
+                                    <p id="res-novelty">Chi phí thấp chỉ bằng 1/10 thiết bị công nghiệp, có khả năng học
+                                        mẫu bệnh thực địa và chạy hoàn toàn bằng pin năng lượng mặt trời.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-Step Research Roadmap -->
+        <section class="section roadmap-section" id="roadmap">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge"><i data-lucide="milestone"></i> Lộ Trình Chuẩn</span>
+                    <h2 class="section-title">5 Bước Thực Hiện Dự Án KHKT Thành Công</h2>
+                    <p class="section-desc">Quy trình khoa học từ ý tưởng sơ khởi đến ngày bảo vệ trước hội đồng giám
+                        khảo.</p>
+                </div>
+
+                <div class="timeline-grid">
+                    <div class="timeline-card">
+                        <div class="step-num">01</div>
+                        <div class="timeline-icon"><i data-lucide="lightbulb"></i></div>
+                        <h3>Phát hiện vấn đề & Chọn đề tài</h3>
+                        <p>Quan sát thực tế đời sống, tìm kiếm các vấn đề nan giải cần giải quyết bằng công nghệ hoặc
+                            khoa học.</p>
+                        <span class="step-time"><i data-lucide="clock"></i> Tuần 1 - 2</span>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="step-num">02</div>
+                        <div class="timeline-icon"><i data-lucide="book-open"></i></div>
+                        <h3>Nghiên cứu tài liệu & Thiết kế</h3>
+                        <p>Tổng quan tài liệu trong và ngoài nước, xây dựng sơ đồ khối, nguyên lý hoạt động và lập đề
+                            cương chi tiết.</p>
+                        <span class="step-time"><i data-lucide="clock"></i> Tuần 3 - 5</span>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="step-num">03</div>
+                        <div class="timeline-icon"><i data-lucide="cpu"></i></div>
+                        <h3>Chế tạo mô hình & Thực nghiệm</h3>
+                        <p>Lắp ráp phần cứng, lập trình điều khiển, thu thập số liệu và tiến hành đo đạc thử nghiệm
+                            nhiều lần.</p>
+                        <span class="step-time"><i data-lucide="clock"></i> Tuần 6 - 10</span>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="step-num">04</div>
+                        <div class="timeline-icon"><i data-lucide="file-check"></i></div>
+                        <h3>Xử lý số liệu & Viết báo cáo</h3>
+                        <p>Phân tích kết quả thực nghiệm, tính toán sai số, hoàn thiện bản thuyết minh dự án và poster
+                            tóm tắt.</p>
+                        <span class="step-time"><i data-lucide="clock"></i> Tuần 11 - 13</span>
+                    </div>
+
+                    <div class="timeline-card highlight">
+                        <div class="step-num">05</div>
+                        <div class="timeline-icon"><i data-lucide="presentation"></i></div>
+                        <h3>Thuyết trình & Bảo vệ đề tài</h3>
+                        <p>Luyện tập kỹ năng trả lời phản biện, biểu diễn mô hình hoạt động trực quan trước hội đồng
+                            giám khảo.</p>
+                        <span class="step-time"><i data-lucide="award"></i> Vòng Chung Kết</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Document Resources Section -->
+        <section class="section resources-section" id="resources">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge"><i data-lucide="folder-down"></i> Kho Tài Liệu</span>
+                    <h2 class="section-title">Biểu Mẫu & Tài Liệu Hướng Dẫn KHKT</h2>
+                    <p class="section-desc">Tải về các mẫu thuyết minh, mẫu poster chuẩn quốc tế và cẩm nang dự thi
+                        KHKT.</p>
+                </div>
+
+                <div class="resources-grid">
+                    <div class="resource-card glass-card">
+                        <div class="res-file-icon docx"><i data-lucide="file-text"></i></div>
+                        <div class="res-info">
+                            <h4>Mẫu Báo Cáo Tóm Tắt Dự Án KHKT</h4>
+                            <p>Định dạng Word chuẩn theo quy định của Bộ GD&ĐT (Font, Margin, Cấu trúc các chương).</p>
+                            <div class="res-meta">
+                                <span><i data-lucide="file"></i> .DOCX (48 KB)</span>
+                                <span><i data-lucide="download"></i> 1.2k lượt tải</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-icon-only download-trigger" data-filename="Mau_Bao_Cao_KHKT_Chuan.docx"
+                            title="Tải tài liệu">
+                            <i data-lucide="download"></i>
+                        </button>
+                    </div>
+
+                    <div class="resource-card glass-card">
+                        <div class="res-file-icon pptx"><i data-lucide="layout"></i></div>
+                        <div class="res-info">
+                            <h4>Template Poster Trưng Bày Khoa Học</h4>
+                            <p>Bộ khung Poster PowerPoint chuẩn tỉ lệ đứng/ngang, phối màu sắc nét, khoa học.</p>
+                            <div class="res-meta">
+                                <span><i data-lucide="file"></i> .PPTX (3.5 MB)</span>
+                                <span><i data-lucide="download"></i> 890 lượt tải</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-icon-only download-trigger"
+                            data-filename="Poster_KHKT_Design_Template.pptx" title="Tải tài liệu">
+                            <i data-lucide="download"></i>
+                            <div class="resource-card glass-card">
+                                <div class="res-file-icon pdf"><i data-lucide="shield-check"></i></div>
+                                <div class="res-info">
+                                    <h4>Quy Chế & Tiêu Chí Chấm Thi KHKT</h4>
+                                    <p>Bảng điểm đánh giá tính mới, phương pháp nghiên cứu, kỹ năng trình bày và hồ sơ.
+                                    </p>
+                                    <div class="res-meta">
+                                        <span><i data-lucide="file"></i> .PDF (1.1 MB)</span>
+                                        <span><i data-lucide="download"></i> 2.4k lượt tải</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-icon-only download-trigger"
+                                    data-filename="Quy_Che_Cham_Thi_KHKT.pdf" title="Tải tài liệu">
+                                    <i data-lucide="download"></i>
+                                </button>
+                            </div>
+
+                            <div class="resource-card glass-card">
+                                <div class="res-file-icon zip"><i data-lucide="package"></i></div>
+                                <div class="res-info">
+                                    <h4>Bộ Thư Viện Code Mẫu Arduino/ESP32</h4>
+                                    <p>Code mẫu các loại cảm biến DHT11, MQ-135, Siêu âm HC-SR04, Servo & màn hình LCD.
+                                    </p>
+                                    <div class="res-meta">
+                                        <span><i data-lucide="file"></i> .ZIP (8.2 MB)</span>
+                                        <span><i data-lucide="download"></i> 3.1k lượt tải</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-icon-only download-trigger"
+                                    data-filename="Arduino_Sensor_Lib_Kit.zip" title="Tải tài liệu">
+                                    <i data-lucide="download"></i>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Submit & Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-wrapper glass-card">
+                    <div class="contact-info">
+                        <span class="section-badge"><i data-lucide="send"></i> Kết Nối Nghiên Cứu</span>
+                        <h2>Gửi Đề Tài Hoặc Đăng Ký Tư Vấn KHKT</h2>
+                        <p>Bạn có ý tưởng nhưng cần hỗ trợ cố vấn chuyên môn, linh kiện chế tạo hoặc phản biện đề cương?
+                            Hãy gửi thông tin cho chúng tôi ngay hôm nay!</p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <h5>Địa chỉ phòng Lab:</h5>
+                                    <p>Thư mục dự án: <code>D:/KHKT</code></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <h5>Email liên hệ:</h5>
+                                    <p>khkt.innovation@edu.vn</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i data-lucide="phone-call"></i></div>
+                                <div>
+                                    <h5>Đường dây nóng:</h5>
+                                    <p>+84 (0) 987 654 321</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="submission-form" class="submission-form">
+                            <div class="form-group">
+                                <label for="author-name">Họ và tên tác giả / Trưởng nhóm <span
+                                        class="required">*</span></label>
+                                <input type="text" id="author-name" placeholder="Ví dụ: Nguyễn Văn An" required>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="author-school">Đơn vị / Trường học <span
+                                            class="required">*</span></label>
+                                    <input type="text" id="author-school" placeholder="Tên trường THCS / THPT" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="author-phone">Số điện thoại / Zalo <span
+                                            class="required">*</span></label>
+                                    <input type="tel" id="author-phone" placeholder="09xxxxxxxx" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-name">Tên đề tài / Dự án dự kiến <span
+                                        class="required">*</span></label>
+                                <input type="text" id="project-name"
+                                    placeholder="Ví dụ: Cánh tay thủy lực điều khiển thông minh..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-desc">Mô tả tóm tắt ý tưởng & tính mới <span
+                                        class="required">*</span></label>
+                                <textarea id="project-desc" rows="4"
+                                    placeholder="Nêu rõ mục tiêu, nguyên lý và khó khăn cần hỗ trợ..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">
+                                <i data-lucide="send"></i>
+                                <span>Gửi Đăng Ký Đề Tài</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo">
+                    <div class="logo-icon"><i data-lucide="atom"></i></div>
+                    <span class="logo-text">KHKT<span>.Hub</span></span>
+                </a>
+                <p>Nền tảng tri thức & Đổi mới sáng tạo Khoa học Kỹ thuật cho thế hệ tương lai.</p>
+            </div>
+
+            <div class="footer-links">
+                <h5>Lối tắt nhanh</h5>
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#projects">Danh sách dự án</a></li>
+                    <li><a href="#generator">Gợi ý đề tài</a></li>
+                    <li><a href="#resources">Tài liệu biểu mẫu</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h5>Chuyên mục KHKT</h5>
+                <ul>
+                    <li><a href="#projects">Robotics & Tự động hóa</a></li>
+                    <li><a href="#projects">Khoa học Môi trường</a></li>
+                    <li><a href="#projects">Trí tuệ nhân tạo (AI)</a></li>
+                    <li><a href="#projects">Mô hình STEM học đường</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h5>Bản tin KHKT</h5>
+                <p>Nhận thông báo về các cuộc thi sáng tạo và tài liệu mới nhất.</p>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Email của bạn..." id="sub-email">
+                    <button id="sub-btn" aria-label="Đăng ký"><i data-lucide="arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container bottom-content">
+                <p>© 2026 KHKT Innovation Hub. Lưu trữ tại thư mục: <code>D:/KHKT</code>. Thiết kế hiện đại & tối ưu.
+                </p>
+                <a href="#home" class="back-to-top" id="back-to-top" title="Lên đầu trang">
+                    <i data-lucide="chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay hidden" id="project-modal">
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
