@@ -89,6 +89,39 @@ const d2 = fs.readFileSync(path.join(__dirname, '../doc2.txt'), 'utf8');
 const d3 = fs.readFileSync(path.join(__dirname, '../doc3.txt'), 'utf8');
 const fullDocsText = d2 + '\n\n' + d1 + '\n\n' + d3;
 
+// 4. Read Em Co Biet Google Doc (1vPjxSXT_1UZ7lSbZUCo7wtYsQ9QFHjUI)
+const emText = fs.readFileSync(path.join(__dirname, '../em_co_biet_doc.txt'), 'utf8');
+const emBlocks = emText.split(/(?:^|\n)(?=\d+\.\s*)/).filter(b => /^\d+\.\s*/.test(b.trim()));
+const emCoBietMap = {};
+emBlocks.forEach(b => {
+  const match = b.trim().match(/^(\d+)\.\s*([^\n]+)/);
+  if (match) {
+    const stt = parseInt(match[1]);
+    const lines = b.trim().split('\n')
+      .map(l => l.replace(/\r/g, '').trim())
+      .filter(l => l && !l.startsWith('💡 Em có biết?') && !/^\d+\.\s*/.test(l) && !l.startsWith('___') && !l.startsWith('GHI CHÚ') && !l.startsWith('•'));
+    emCoBietMap[stt] = lines;
+  }
+});
+console.log(`Parsed Em Co Biet entries: ${Object.keys(emCoBietMap).length}`);
+
+// 5. Read Cau Hoi Dieu Tra Google Doc (155BmTBFnsytajxEnfjkYZr5W1Q5jiKiY)
+const cauText = fs.readFileSync(path.join(__dirname, '../cau_hoi_dieu_tra_doc.txt'), 'utf8');
+const cauLines = cauText.split('\n').map(l => l.replace(/\r/g, '').trim()).filter(Boolean);
+const cauHoiDieuTraMap = {};
+for (let i = 0; i < cauLines.length; i++) {
+  const line = cauLines[i];
+  if (/^\d+$/.test(line)) {
+    const stt = parseInt(line);
+    const question = cauLines[i + 2] || '';
+    if (question) {
+      cauHoiDieuTraMap[stt] = question;
+    }
+    i += 2;
+  }
+}
+console.log(`Parsed Cau Hoi Dieu Tra entries: ${Object.keys(cauHoiDieuTraMap).length}`);
+
 function extractDocSection(stt) {
   const startPattern = new RegExp('(?:^|\\n)\\s*' + stt + '\\.\\s*([^\\n]+)');
   const nextPattern = new RegExp('(?:^|\\n)\\s*' + (stt + 1) + '\\.\\s*[^\\n]+');
@@ -310,7 +343,6 @@ function buildCustomFlashcards(stt, name, type, ranking, decision, address, coor
     ];
   }
 
-  // Generic tailored flashcards for other monuments
   return [
     {
       id: 1,
@@ -428,34 +460,28 @@ const monuments = dataRows.map((r, idx) => {
 
   const docSnippet = extractDocSection(stt);
 
-  let investigationQuestion = `Vì sao di tích ${name} tại ${address} trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?`;
+  // Exact Investigation Question from cau_hoi_dieu_tra_doc.txt
+  const exactDocQuestion = cauHoiDieuTraMap[stt];
+  let investigationQuestion = exactDocQuestion || `Vì sao di tích ${name} tại ${address} trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?`;
+  
   let suggestedAnswer = `Di tích ${name} là ${type.toLowerCase()} được xếp hạng cấp ${ranking.toLowerCase()} (${decision || 'theo quy định của Nhà nước'}). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: ${events.slice(0, 180)}..., gắn liền với công lao to lớn của ${figures.slice(0, 140)}... và lưu giữ các hiện vật quý: ${artifacts.slice(0, 140)}..., là di sản văn hóa vô giá cho các thế hệ mai sau.`;
 
   if (stt === 1) {
-    investigationQuestion = "Vì sao ngày 30–4–1975 và sự kiện xe tăng tiến vào Dinh Độc Lập trở thành dấu mốc lịch sử trọng đại của dân tộc?";
     suggestedAnswer = "Trưa ngày 30/4/1975, xe tăng 390 và 843 tiến vào Dinh Độc Lập, cờ giải phóng tung bay trên nóc Dinh lúc 11h30, Tổng thống Dương Văn Minh tuyên bố đầu hàng vô điều kiện, kết thúc 21 năm kháng chiến chống Mỹ và 30 năm chiến tranh giải phóng, non sông thu về một mối.";
   } else if (stt === 2) {
-    investigationQuestion = "Hệ thống Địa đạo Củ Chi với hơn 200km đường hầm 3 tầng và bếp Hoàng Cầm đã thể hiện nghệ thuật chiến tranh nhân dân 'Đất thép thành đồng' như thế nào?";
     suggestedAnswer = "Địa đạo Củ Chi là công trình ngầm độc đáo gồm 3 tầng xuyên đất sét pha đá ong, kết hợp hầm chông, bãi mìn và bếp Hoàng Cầm giấu khói, giúp quân dân bám trụ kiên cường đánh bại các trận càn Crimp, Cedar Falls bằng 3 mũi giáp công.";
   } else if (stt === 3) {
-    investigationQuestion = "Bến Lộc An (Đường Hồ Chí Minh trên biển) đã hoàn thành xuất sắc sứ mệnh tiếp nhận vũ khí bí mật chi viện cho chiến trường miền Đông Nam Bộ ra sao?";
     suggestedAnswer = "Bến Lộc An là bến tiếp nhận bí mật chiến lược của Đoàn tàu Không số, vận chuyển hàng chục tấn vũ khí từ miền Bắc vào chi viện trực tiếp cho Chiến dịch Bình Giã và các chiến trường miền Đông Nam Bộ.";
   } else if (stt === 4) {
-    investigationQuestion = "Các chiến sĩ cách mạng tại Nhà tù Côn Đảo đã kiên cường biến 'địa ngục trần gian' thành trường học cách mạng như thế nào?";
     suggestedAnswer = "Dù bị đày ải trong hệ thống chuồng cọp, chuồng bò khắc nghiệt, các chiến sĩ cách mạng đã thành lập chi bộ Đảng, tổ chức học tập lý luận chính trị và giữ vững khí tiết bất khuất đến ngày toàn thắng.";
-  } else if (stt === 5) {
-    investigationQuestion = "Chiến thắng Bình Giã (1964 - 1965) đã bẻ gãy các chiến thuật 'trực thăng vận' và 'thiết xa vận' của địch như thế nào?";
-    suggestedAnswer = "Chiến dịch Bình Giã là chiến dịch tiến công cấp sư đoàn đầu tiên của Quân Giải phóng miền Nam, đánh bại chiến thuật trực thăng vận, thiết xa vận và làm phá sản về cơ bản chiến lược Chiến tranh đặc biệt của Mỹ.";
-  } else if (stt === 6) {
-    investigationQuestion = "Thế địa tự nhiên hơn 300 hang đá tại dãy núi Châu Long - Châu Viên và tình quân dân đã làm nên sức mạnh Căn cứ Minh Đạm ra sao?";
-    suggestedAnswer = "Dãy núi Minh Đạm với hơn 300 hang đá hoa cương hiểm trở kết hợp với sự đùm bọc, tiếp tế lương thực bí mật của nhân dân đã giúp căn cứ đứng vững kiên cường qua hai cuộc kháng chiến.";
-  } else if (stt === 7) {
-    investigationQuestion = "Đoàn 10 Đặc công Rừng Sác đã sử dụng chiến thuật đặc công thủy luồn sâu đánh chìm tàu chiến trên sông Lòng Tàu và kho xăng Nhà Bè như thế nào?";
-    suggestedAnswer = "Đoàn 10 Đặc công Rừng Sác bám trụ giữa rừng ngập mặn sình lầy, nắm chắc quy luật thủy triều thả thủy lôi, đánh gần 600 trận, phá hủy nhiều tàu chiến và thiêu rụi kho xăng Nhà Bè, khống chế yết hầu đường thủy của đối phương.";
-  } else if (stt === 56) {
-    investigationQuestion = "Bạch Dinh (Villa Blanche) trên sườn Núi Lớn đã ghi dấu sự kiện giam lỏng vua yêu nước Thành Thái và mang những giá trị nghệ thuật kiến trúc châu Âu nào?";
-    suggestedAnswer = "Xây dựng từ 1898-1902 theo phong cách châu Âu gồm 3 tầng với rèm phù điêu gốm sứ, Bạch Dinh từng là nơi giam lỏng vua yêu nước Thành Thái (1907-1916) và hiện lưu giữ bộ sưu tập súng thần công, cổ vật Hòn Cau quý giá.";
   }
+
+  // Exact "Em có biết?" points from em_co_biet_doc.txt
+  const emCoBietPoints = emCoBietMap[stt] || [
+    `📏 Tọa độ: ${coords[0]}, ${coords[1]}`,
+    `🏛️ Xếp hạng: ${ranking} (${type})`,
+    `📍 Địa chỉ: ${address}`
+  ];
 
   const keyHighlights = {
     figures: {
@@ -563,7 +589,6 @@ const monuments = dataRows.map((r, idx) => {
     }
   ];
 
-  // Tailored Flashcards and Matching Pairs per Monument
   const flashcards = buildCustomFlashcards(stt, name, type, ranking, decision, address, coords, overview, events, figures, artifacts);
   const matchingPairs = buildCustomMatchingPairs(stt, name, type, ranking, address, events, figures, artifacts);
 
@@ -689,6 +714,7 @@ const monuments = dataRows.map((r, idx) => {
       referencesList: referencesList,
       overview: overview,
       heroImage: heroImage,
+      emCoBiet: emCoBietPoints,
       stats: {
         campusArea: stt === 1 ? '120.000 m²' : (stt === 2 ? 'Khu vực 250 ha' : 'Di tích số'),
         roomsCount: stt === 1 ? '150+ phòng' : (stt === 2 ? '3 tầng hầm' : ranking),
@@ -758,7 +784,7 @@ const monuments = dataRows.map((r, idx) => {
 });
 
 const fileContent = `// Hệ thống Di sản Số TP.HCM - Toàn bộ 103 Di Tích Lịch Sử & Văn Hóa
-// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn (Nhân vật, Hiện vật, Sự kiện), 6 Môn học, Flashcard & Ghép nối riêng biệt
+// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn, 6 Môn học, Em có biết & 103 Câu hỏi điều tra cốt lõi từ Google Docs
 export const allMonumentsList = ${JSON.stringify(monuments, null, 2)};
 
 export const getMonumentByIdOrStt = (idOrStt) => {
@@ -775,4 +801,4 @@ export const getMonumentByIdOrStt = (idOrStt) => {
 
 const outputPath = path.join(__dirname, '../src/data/allMonumentsData.js');
 fs.writeFileSync(outputPath, fileContent, 'utf8');
-console.log(`Successfully generated rich dataset for all 103 monuments at: ${outputPath}`);
+console.log(`Successfully generated rich dataset for all 103 monuments with Em Co Biet & Cau Hoi Dieu Tra at: ${outputPath}`);

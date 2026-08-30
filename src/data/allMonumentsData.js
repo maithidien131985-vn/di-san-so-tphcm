@@ -1,5 +1,5 @@
 // Hệ thống Di sản Số TP.HCM - Toàn bộ 103 Di Tích Lịch Sử & Văn Hóa
-// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn (Nhân vật, Hiện vật, Sự kiện), 6 Môn học, Flashcard & Ghép nối riêng biệt
+// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn, 6 Môn học, Em có biết & 103 Câu hỏi điều tra cốt lõi từ Google Docs
 export const allMonumentsList = [
   {
     "id": "monument-1",
@@ -44,6 +44,12 @@ export const allMonumentsList = [
       ],
       "overview": "Dinh Độc Lập là một di tích lịch sử đặc biệt quan trọng, gắn liền với nhiều biến động chính trị của Việt Nam từ thời Pháp thuộc đến năm 1975. Nơi đây từng là trung tâm quyền lực của chính quyền thuộc địa Pháp và chính quyền Việt Nam Cộng hòa.\nĐặc biệt, trưa ngày 30/4/1975, xe tăng của Quân Giải phóng tiến vào Dinh Độc Lập, đánh dấu sự sụp đổ của chính quyền Sài Gòn, kết thúc cuộc kháng chiến chống Mỹ, giải phóng miền Nam và mở ra thời kỳ đất nước hòa bình, độc lập, thống nhất.\nNgày nay, Dinh Độc Lập là chứng tích tiêu biểu của lịch sử dân tộc, góp phần giáo dục truyền thống yêu nước, tinh thần đấu tranh giành độc lập và khát vọng hòa bình cho các thế hệ.",
       "heroImage": "/assets/images/dinh-doc-lap/dinh-doc-lap-1.jpg",
+      "emCoBiet": [
+        "📏 Diện tích khuôn viên: 120.000 m²",
+        "🏛️ Hệ thống phòng: 150+ phòng",
+        "🏛️ Hiện vật lịch sử: 3.700+ hiện vật",
+        "⚔️ Dấu mốc: 30/4/1975"
+      ],
       "stats": {
         "campusArea": "120.000 m²",
         "roomsCount": "150+ phòng",
@@ -276,7 +282,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại 135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Tp. Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước",
-      "investigationQuestion": "Vì sao ngày 30–4–1975 và sự kiện xe tăng tiến vào Dinh Độc Lập trở thành dấu mốc lịch sử trọng đại của dân tộc?",
+      "investigationQuestion": "Dinh Độc Lập đã chứng kiến những bước ngoặt nào của lịch sử Việt Nam hiện đại, và từ đó em có thể rút ra bài học gì về giá trị của độc lập, hòa bình và thống nhất đất nước?",
       "suggestedAnswer": "Trưa ngày 30/4/1975, xe tăng 390 và 843 tiến vào Dinh Độc Lập, cờ giải phóng tung bay trên nóc Dinh lúc 11h30, Tổng thống Dương Văn Minh tuyên bố đầu hàng vô điều kiện, kết thúc 21 năm kháng chiến chống Mỹ và 30 năm chiến tranh giải phóng, non sông thu về một mối.",
       "referencesList": [
         {
@@ -539,6 +545,12 @@ export const allMonumentsList = [
       ],
       "overview": "Địa đạo là căn cứ chiến đấu và sinh hoạt quan trọng của quân dân Củ Chi trong hai cuộc kháng chiến. Công trình thể hiện trí thông minh, khả năng sáng tạo, tinh thần đoàn kết và ý chí chiến đấu kiên cường của quân dân vùng “đất thép”. Đây còn là nguồn tư liệu trực quan phục vụ nghiên cứu, giáo dục truyền thống yêu nước và lịch sử cách mạng",
       "heroImage": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-1.jpg",
+      "emCoBiet": [
+        "📏 Chiều dài hệ thống: khoảng 250 km",
+        "📏 Cấu trúc: 3 tầng, sâu khoảng 3–12 m",
+        "🏛️ Công trình ngầm: phòng họp, bệnh xá, bếp Hoàng Cầm, kho…",
+        "📅 Xếp hạng: Di tích quốc gia đặc biệt năm 2015"
+      ],
       "stats": {
         "campusArea": "Khu vực 250 ha",
         "roomsCount": "3 tầng hầm",
@@ -771,7 +783,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Di tích lịch sử Địa đạo Củ Chi",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích lịch sử Địa đạo Củ Chi",
-      "investigationQuestion": "Hệ thống Địa đạo Củ Chi với hơn 200km đường hầm 3 tầng và bếp Hoàng Cầm đã thể hiện nghệ thuật chiến tranh nhân dân 'Đất thép thành đồng' như thế nào?",
+      "investigationQuestion": "Địa đạo Củ Chi đã giúp quân dân địa phương thích nghi và tồn tại như thế nào trong điều kiện chiến tranh khốc liệt, và điều đó dạy học sinh hôm nay bài học gì về ý chí, sáng tạo và sức mạnh cộng đồng?",
       "suggestedAnswer": "Địa đạo Củ Chi là công trình ngầm độc đáo gồm 3 tầng xuyên đất sét pha đá ong, kết hợp hầm chông, bãi mìn và bếp Hoàng Cầm giấu khói, giúp quân dân bám trụ kiên cường đánh bại các trận càn Crimp, Cedar Falls bằng 3 mũi giáp công.",
       "referencesList": [
         {
@@ -1034,6 +1046,12 @@ export const allMonumentsList = [
       ],
       "overview": "Bến Lộc An là một đầu cầu quan trọng của Đường Hồ Chí Minh trên biển, thực hiện nhiệm vụ tiếp nhận vũ khí từ miền Bắc chi viện cho chiến trường Bà Rịa và miền Đông Nam Bộ. Từ cuối năm 1963 đến đầu năm 1965, quân và dân địa phương đã tiếp nhận, bảo vệ an toàn ba chuyến tàu không số. Nguồn vũ khí này góp phần tăng cường sức mạnh cho lực lượng vũ trang, phục vụ Chiến dịch Bình Giã và chuẩn bị cho các hoạt động quân sự tại Phước Long – Đồng Xoài.\n\nNgày 26/11/2024, Bến Lộc An trở thành một địa điểm thuộc Di tích quốc gia đặc biệt Đường Hồ Chí Minh trên biển.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Bến Lộc An là một bến của tuyến vận tải bí mật trên biển.",
+        "🔎 Gắn với những chuyến “tàu không số”.",
+        "🏛️ Vị trí thuận lợi nhờ cửa biển, sông Ray và rừng ven biển.",
+        "🔎 Có vai trò chi viện vũ khí cho Bà Rịa và miền Đông Nam Bộ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia đặc biệt",
@@ -1217,7 +1235,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Xã Hồ Tràm, Thành phố Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)",
-      "investigationQuestion": "Bến Lộc An (Đường Hồ Chí Minh trên biển) đã hoàn thành xuất sắc sứ mệnh tiếp nhận vũ khí bí mật chi viện cho chiến trường miền Đông Nam Bộ ra sao?",
+      "investigationQuestion": "Đường Hồ Chí Minh trên biển và Bến Lộc An cho thấy sự phối hợp giữa thủy thủ, bộ đội và nhân dân địa phương có vai trò như thế nào trong việc vượt qua hiểm nguy để bảo đảm hậu cần cho chiến trường?",
       "suggestedAnswer": "Bến Lộc An là bến tiếp nhận bí mật chiến lược của Đoàn tàu Không số, vận chuyển hàng chục tấn vũ khí từ miền Bắc vào chi viện trực tiếp cho Chiến dịch Bình Giã và các chiến trường miền Đông Nam Bộ.",
       "referencesList": [
         {
@@ -1480,6 +1498,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà tù Côn Đảo là một trong những hệ thống nhà tù có quy mô lớn và tồn tại lâu dài trong lịch sử Việt Nam. Ngày 1/2/1862, Thống đốc Nam Kỳ Bonard ký quyết định thành lập nhà tù tại Côn Đảo. Từ đó đến năm 1975, trong suốt 113 năm, nơi đây được chính quyền thực dân Pháp và sau đó là chính quyền Sài Gòn sử dụng để giam giữ, lưu đày những người Việt Nam yêu nước, chiến sĩ cách mạng và những người chống lại chế độ cai trị.\nToàn bộ hệ thống từng có 127 phòng giam, 42 xà lim và 504 phòng giam biệt lập, thường được gọi là “chuồng cọp”. Di tích gồm nhiều công trình như Dinh Chúa đảo, Cầu tàu 914, các trại Phú Hải, Phú Sơn, Phú Thọ, Phú Tường, Phú Bình, khu biệt lập Chuồng Bò, Sở Lò Vôi, Sở Muối, Sở Rẫy, Sở Củi cùng Nghĩa trang Hàng Dương và Nghĩa trang Hàng Keo.\nNhà tù Côn Đảo là chứng tích phản ánh chế độ giam giữ, lao dịch và đàn áp khắc nghiệt đối với tù nhân. Người tù phải sống trong các phòng giam chật hẹp, thiếu ánh sáng, thiếu thức ăn, thuốc men và nước sinh hoạt; đồng thời phải lao động nặng nhọc tại các sở đập đá, nung vôi, làm muối, kéo gỗ, xây dựng cầu đường và khai phá đất đai.\nBên cạnh những mất mát, Nhà tù Côn Đảo còn ghi dấu tinh thần đoàn kết và đấu tranh bất khuất của nhiều thế hệ tù nhân. Trong hoàn cảnh bị giam cầm, các chiến sĩ cách mạng vẫn bí mật thành lập tổ chức Đảng, tổ chức học tập, truyền bá lý luận, xuất bản báo viết tay và đấu tranh đòi cải thiện chế độ nhà tù. Cuối năm 1932, chi bộ cộng sản đầu tiên trong Nhà tù Côn Đảo được thành lập tại Banh I, nay là Trại Phú Hải. Hoạt động giáo dục, rèn luyện và tổ chức đấu tranh đã góp phần biến nhà tù thành một “trường học cách mạng”.\nRạng sáng ngày 1/5/1975, tù chính trị tại Côn Đảo nổi dậy, phá cửa phòng giam, giành quyền làm chủ các trại tù và tự giải phóng. Sự kiện này chấm dứt 113 năm tồn tại của Nhà tù Côn Đảo.\nNgày nay, hệ thống Nhà tù Côn Đảo là nơi lưu giữ những chứng tích quan trọng về lịch sử đấu tranh giành độc lập của dân tộc. Di tích có giá trị đặc biệt trong nghiên cứu lịch sử, tưởng niệm những người đã hy sinh và giáo dục thế hệ trẻ về lòng yêu nước, tinh thần bất khuất, ý chí vượt qua gian khổ và trách nhiệm bảo vệ hòa bình.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "📅 Thời gian tồn tại: 1862–1975, khoảng 113 năm",
+        "🏛️ Hệ thống: 117 phòng giam, 44 xà lim",
+        "🏛️ Chuồng cọp: 504 phòng biệt lập",
+        "🔎 Sở tù: 18 sở lao động"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia đặc biệt",
@@ -1663,7 +1687,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Di tích lịch sử nhà tù Côn Đảo",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Đặc khu Côn Đảo, Thành phố Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích lịch sử nhà tù Côn Đảo",
-      "investigationQuestion": "Các chiến sĩ cách mạng tại Nhà tù Côn Đảo đã kiên cường biến 'địa ngục trần gian' thành trường học cách mạng như thế nào?",
+      "investigationQuestion": "Lịch sử Nhà tù Côn Đảo cho thấy những người bị giam cầm đã giữ vững phẩm chất và niềm tin như thế nào, và thế hệ trẻ hôm nay cần làm gì để trân trọng tự do, hòa bình?",
       "suggestedAnswer": "Dù bị đày ải trong hệ thống chuồng cọp, chuồng bò khắc nghiệt, các chiến sĩ cách mạng đã thành lập chi bộ Đảng, tổ chức học tập lý luận chính trị và giữ vững khí tiết bất khuất đến ngày toàn thắng.",
       "referencesList": [
         {
@@ -1926,6 +1950,12 @@ export const allMonumentsList = [
       ],
       "overview": "Di tích Chiến thắng Bình Giã ghi dấu Chiến dịch Bình Giã diễn ra từ ngày 2/12/1964 đến ngày 3/1/1965. Đây là chiến dịch tiến công đầu tiên của Quân giải phóng miền Nam có quy mô tương đương cấp sư đoàn trên chiến trường miền Đông Nam Bộ.\nTrong chiến dịch, bộ đội chủ lực Miền phối hợp với lực lượng vũ trang và nhân dân địa phương, lấy ấp Bình Giã làm điểm khơi ngòi, tạo áp lực buộc quân đội Sài Gòn đưa lực lượng cơ động ra khỏi công sự đến ứng cứu. Quân giải phóng tổ chức phục kích, tập kích và vận động tiến công, lần lượt đánh các đơn vị biệt động quân, thủy quân lục chiến và thiết giáp.\nChiến thắng cho thấy lực lượng vũ trang cách mạng miền Nam đã có bước phát triển mới về tổ chức, chỉ huy và khả năng tác chiến tập trung; có thể đánh những đơn vị cơ động được trang bị máy bay trực thăng và xe thiết giáp M113. Chiến dịch góp phần làm thất bại về cơ bản chiến lược “Chiến tranh đặc biệt”, tạo ra bước chuyển quan trọng trong tương quan lực lượng và cục diện chiến trường.\nDi tích còn ghi nhận sự phối hợp giữa bộ đội chủ lực, bộ đội địa phương, dân quân du kích và nhân dân Bà Rịa. Người dân tham gia dẫn đường, tải đạn, cung cấp lương thực, chăm sóc thương binh và bảo đảm hậu cần cho chiến dịch.\nNgày nay, di tích là nơi tưởng niệm những cán bộ, chiến sĩ và nhân dân đã chiến đấu, phục vụ chiến đấu và hy sinh; đồng thời là địa điểm giáo dục truyền thống yêu nước, tinh thần đoàn kết và ý chí đấu tranh giành độc lập dân tộc.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "📅 Thời gian chiến dịch: 2/12/1964–3/1/1965",
+        "🔎 Kéo dài: hơn 1 tháng",
+        "⚔️ Kết quả: loại khỏi vòng chiến đấu hơn 1.700 quân địch, bắt 293",
+        "🔎 Chiến lợi phẩm: hơn 1.000 súng, gần 100 máy thông tin"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -2109,8 +2139,8 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Xã Ngãi Giao, Thành phố Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
-      "investigationQuestion": "Chiến thắng Bình Giã (1964 - 1965) đã bẻ gãy các chiến thuật 'trực thăng vận' và 'thiết xa vận' của địch như thế nào?",
-      "suggestedAnswer": "Chiến dịch Bình Giã là chiến dịch tiến công cấp sư đoàn đầu tiên của Quân Giải phóng miền Nam, đánh bại chiến thuật trực thăng vận, thiết xa vận và làm phá sản về cơ bản chiến lược Chiến tranh đặc biệt của Mỹ.",
+      "investigationQuestion": "Chiến thắng Bình Giã cho thấy vai trò của việc tạo thế, phối hợp lực lượng và dựa vào nhân dân như thế nào, và bài học ấy có ý nghĩa gì đối với tinh thần hợp tác của học sinh hôm nay?",
+      "suggestedAnswer": "Di tích Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo) là lịch sử được xếp hạng cấp quốc gia (Quyết định số 2754-QĐ/BT ngày 15/10/1994. của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Ngày 11/10/1964: Quân ủy Trung ương và Bộ Tổng Tư lệnh chỉ thị mở đợt hoạt động quân sự trên chiến trường miền Nam.\nCuối tháng 10/1964: Đảng ủy và Bộ Tư lệnh Miền xây dựng kế hoạch..., gắn liền với công lao to lớn của Bộ Chỉ huy Chiến dịch Bình Giã\nTrần Đình Xu: Chỉ huy trưởng chiến dịch.\nLê Văn Tưởng: Chính ủy chiến dịch.\nLê Xuân Lựu: Phó Chính ủy chiến d... và lưu giữ các hiện vật quý: Những tài liệu hiện có chưa cung cấp danh mục kiểm kê cụ thể các hiện vật gốc đang lưu giữ tại Di tích Chiến thắng Bình Giã. Vì vậy, không n..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
           "title": "Hồ sơ khoa học Di tích Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
@@ -2372,6 +2402,12 @@ export const allMonumentsList = [
       ],
       "overview": "Minh Đạm là căn cứ cách mạng quan trọng của quân và dân địa phương trong hai cuộc kháng chiến chống thực dân Pháp và đế quốc Mỹ. Dãy núi có địa hình hiểm trở, rừng cây rậm rạp, nguồn nước và nhiều hang đá tự nhiên vững chắc, tạo điều kiện cho lực lượng cách mạng xây dựng nơi làm việc, trú quân, chỉ huy, cứu chữa thương binh, sản xuất và bảo quản vũ khí. Tại đây từng đặt các cơ quan như Huyện ủy, Huyện đội, Quân y, Quân giới, Thị xã Cấp, Binh vận và lực lượng Quân báo Trung ương Cục. Mặc dù nhiều lần bị càn quét, ném bom và phong tỏa bằng hàng rào, bãi mìn, căn cứ vẫn được giữ vững, góp phần duy trì và phát triển phong trào cách mạng ở Long Điền – Đất Đỏ và khu vực Bà Rịa – Vũng Tàu. Ngày nay, hệ thống hang căn cứ, đền thờ liệt sĩ và nhà truyền thống là những chứng tích có giá trị trong giáo dục truyền thống yêu nước, tinh thần đoàn kết, kiên cường và sự hy sinh của các thế hệ cha ông",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "📏 Chiều dài dãy núi: hơn 8 km",
+        "📏 Độ cao trung bình: trên 200 m",
+        "📏 Hang đá: hơn 300 hang lớn nhỏ",
+        "📅 Xếp hạng: di tích quốc gia ngày 18/1/1993"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -2555,8 +2591,8 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Căn cứ Minh Đạm",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại xã Phước Hải, Thành phố Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Căn cứ Minh Đạm",
-      "investigationQuestion": "Thế địa tự nhiên hơn 300 hang đá tại dãy núi Châu Long - Châu Viên và tình quân dân đã làm nên sức mạnh Căn cứ Minh Đạm ra sao?",
-      "suggestedAnswer": "Dãy núi Minh Đạm với hơn 300 hang đá hoa cương hiểm trở kết hợp với sự đùm bọc, tiếp tế lương thực bí mật của nhân dân đã giúp căn cứ đứng vững kiên cường qua hai cuộc kháng chiến.",
+      "investigationQuestion": "Căn cứ Minh Đạm cho thấy địa hình tự nhiên và sự che chở của nhân dân đã góp phần như thế nào vào việc xây dựng căn cứ cách mạng, và em học được gì về sức mạnh của lòng dân?",
+      "suggestedAnswer": "Di tích Căn cứ Minh Đạm là lịch sử được xếp hạng cấp quốc gia (QĐ số: 57VH/QĐ ngày \n18/01/1993 - Bộ Văn Hóa \nThông Tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Cuối năm 1948: tên gọi Minh Đạm được xác lập để tưởng nhớ hai đồng chí Bùi Công Minh và Mạc Thanh Đạm. Năm 1962: Trung ương Cục đặt đài trinh sát kỹ thuật tại căn cứ. Năm 1966: liê..., gắn liền với công lao to lớn của Bùi Công Minh – Bí thư Huyện ủy Long Điền; Mạc Thanh Đạm – Phó Bí thư Huyện ủy Long Điền. Sau khi hai ông hy sinh trong một chuyến công tác ... và lưu giữ các hiện vật quý: Khuôn đúc mìn chống tăng tự tạo tại hang Quân giới; mìn E.3 do quân Mỹ và Úc sử dụng; vỏ thuốc và dụng cụ y tế tại hang Quân y; đồ dùng sinh..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
           "title": "Hồ sơ khoa học Di tích Căn cứ Minh Đạm",
@@ -2818,6 +2854,12 @@ export const allMonumentsList = [
       ],
       "overview": "Rừng Sác là căn cứ cách mạng đặc biệt quan trọng ở vùng ven Sài Gòn – Gia Định, nằm trên địa bàn rừng ngập mặn với hệ thống sông, rạch chằng chịt. Trong kháng chiến chống Mỹ, nơi đây là căn cứ của Đặc khu Quân sự Rừng Sác và Đoàn 10 Đặc công Rừng Sác, có nhiệm vụ kiểm soát tuyến vận tải chiến lược trên sông Lòng Tàu, đánh phá kho tàng, bến cảng và các tuyến hậu cần của đối phương. Rừng Sác thường được gọi là “căn cứ nổi” vì phần lớn hoạt động được tổ chức trên vùng sông nước, rừng ngập mặn.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "📅 Thời gian Đoàn 10 hoạt động: 1966–1975",
+        "⚔️ Chiến công: hơn 600 trận đánh",
+        "🔎 Đối phương bị loại khỏi vòng chiến đấu: hơn 6.000 người",
+        "📅 Xếp hạng: di tích quốc gia năm 2004"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -3001,8 +3043,8 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Căn cứ Rừng Sác",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại xã Cần Giờ, Thành phố Hồ Chí Minh mới.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Căn cứ Rừng Sác",
-      "investigationQuestion": "Đoàn 10 Đặc công Rừng Sác đã sử dụng chiến thuật đặc công thủy luồn sâu đánh chìm tàu chiến trên sông Lòng Tàu và kho xăng Nhà Bè như thế nào?",
-      "suggestedAnswer": "Đoàn 10 Đặc công Rừng Sác bám trụ giữa rừng ngập mặn sình lầy, nắm chắc quy luật thủy triều thả thủy lôi, đánh gần 600 trận, phá hủy nhiều tàu chiến và thiêu rụi kho xăng Nhà Bè, khống chế yết hầu đường thủy của đối phương.",
+      "investigationQuestion": "Căn cứ Rừng Sác đã biến một vùng rừng ngập mặn hiểm trở thành căn cứ chiến đấu như thế nào, và điều đó gợi cho học sinh bài học gì về khả năng thích nghi với môi trường và bảo vệ thiên nhiên?",
+      "suggestedAnswer": "Di tích Căn cứ Rừng Sác là lịch sử được xếp hạng cấp quốc gia (Quyết định số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ trưởng Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 15/4/1966: thành lập Đặc khu Quân sự Rừng Sác, mật danh T10. Sau đó lực lượng phát triển thành Đoàn 10 Đặc công Rừng Sác. 5/12/1972: Đoàn 10 đánh phá kho bom Thành Tuy Hạ, phá hủy ..., gắn liền với công lao to lớn của Tiêu biểu có Lương Văn Nho (Hai Nhã) – Đặc khu trưởng kiêm Chính ủy Đặc khu Quân sự Rừng Sác; Lê Bá Ước (Bảy Ước) – chỉ huy, sau là Trung đo... và lưu giữ các hiện vật quý: Khu di tích hiện bảo tồn/tái hiện nhà cảnh vệ, nhà đón tiếp, hội trường, hầm trú ẩn, nhà hậu cần, nhà quân y, nhà quân giới, nhà cơ yếu; đồn..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
           "title": "Hồ sơ khoa học Di tích Căn cứ Rừng Sác",
@@ -3264,6 +3306,12 @@ export const allMonumentsList = [
       ],
       "overview": "Chiến khu Đ được hình thành vào cuối tháng 2/1946, trong bối cảnh cuộc kháng chiến chống thực dân Pháp bắt đầu lan rộng. Từ một căn cứ ban đầu gồm 5 xã thuộc vùng Tân Uyên, Chiến khu Đ từng bước mở rộng thành một căn cứ địa cách mạng rộng lớn ở miền Đông Nam Bộ. Với địa hình rừng núi hiểm trở, vị trí gần các đô thị và tuyến giao thông chiến lược, Chiến khu Đ vừa là nơi trú quân, xây dựng lực lượng, bảo đảm hậu cần, vừa là bàn đạp tiến công vào các mục tiêu quân sự của đối phương. Trong hai cuộc kháng chiến, nơi đây gắn với nhiều chiến công quan trọng như trận tháp canh cầu Bà Kiên năm 1948, chiến thắng Phước Thành năm 1961, các hoạt động quân sự tại Đồng Xoài, Phước Long và những chiến dịch cuối cùng năm 1975. Chiến khu Đ vì vậy trở thành biểu tượng của tinh thần “Miền Đông gian lao mà anh dũng”, có giá trị đặc biệt trong giáo dục truyền thống yêu nước và lịch sử cách mạng cho thế hệ trẻ.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "📅 Hình thành: 20/2/1946.",
+        "🔎 Là căn cứ địa quan trọng của Khu 7.",
+        "📏 Không gian chiến khu được mở rộng theo từng giai đoạn.",
+        "🔎 Gắn với nhiều cơ quan, đơn v��, công xưởng kháng chiến."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -3447,7 +3495,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chiến khu Đ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chiến khu Đ",
-      "investigationQuestion": "Vì sao di tích Chiến khu Đ tại Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chiến khu Đ đã duy trì vai trò căn cứ địa qua nhiều giai đoạn kháng chiến như thế nào, và sự bền bỉ ấy giúp em hiểu gì về tầm quan trọng của một hậu phương vững chắc?",
       "suggestedAnswer": "Di tích Chiến khu Đ là lịch sử được xếp hạng cấp quốc gia (Quyết định số 1631/QĐ-BVHTTDL ngày 11/5/2010 của Bộ Văn hóa, Thể thao và Du lịch). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Cuối tháng 2/1946: Chiến khu Đ được hình thành. 19/3/1948: trận đánh tháp canh cầu Bà Kiên ở Tân Uyên, một dấu mốc quan trọng trong sự phát triển của nghệ thuật đánh đặc công. 9/19..., gắn liền với công lao to lớn của Tiêu biểu nhất là Trung tướng Nguyễn Bình – Khu trưởng Khu 7; Thi tướng Huỳnh Văn Nghệ – người có vai trò quan trọng trong khảo sát, xây dựn... và lưu giữ các hiện vật quý: “Hiện vật và tư liệu trưng bày/tái hiện” gồm: vũ khí, trang bị quân sự, bản đồ chiến khu, ảnh tư liệu, tài liệu cách mạng và các mô hình tái..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -3710,6 +3758,12 @@ export const allMonumentsList = [
       ],
       "overview": "Địa đạo Kim Long được xây dựng trong giai đoạn 1962–1964, ngay trong vùng địch kiểm soát. Đây là một công trình phòng thủ và căn cứ hoạt động của lực lượng cách mạng địa phương trong kháng chiến chống Mỹ. Địa đạo giúp bộ đội, du kích bám trụ địa bàn, bảo vệ cơ sở cách mạng, chống các cuộc càn quét và gom dân, đồng thời duy trì và phát triển lực lượng cách mạng. Di tích góp phần vào Chiến thắng Bình Giã cuối năm 1964 và các hoạt động chống càn trên địa bàn Châu Đức giai đoạn 1966–1967.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "📏 Chiều dài: khoảng 2 km",
+        "📏 Cửa hầm: 12 cửa, cách nhau khoảng 20 m",
+        "📏 Độ sâu: khoảng 5 m; lòng hầm cao khoảng 1,8 m",
+        "🏛️ Có phòng họp, phòng y tế, kho lương thực và kho vũ khí"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -3893,7 +3947,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Địa đạo Kim Long",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa đạo Kim Long",
-      "investigationQuestion": "Vì sao di tích Địa đạo Kim Long tại Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Địa đạo Kim Long phản ánh sự sáng tạo của nhân dân trong việc xây dựng và bảo vệ căn cứ như thế nào, và bài học nào về tinh thần chủ động có thể áp dụng vào cuộc sống học tập?",
       "suggestedAnswer": "Di tích Địa đạo Kim Long là lịch sử được xếp hạng cấp quốc gia (QĐ số: 961QĐ/BT ngày \n20/07/1994 - Bộ Văn Hóa \nThông Tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1962–1964: xây dựng hệ thống địa đạo Kim Long. Cuối năm 1964: địa đạo và lực lượng cách mạng tại khu vực Kim Long góp phần vào Chiến thắng Bình Giã. 1966–1967: địa đạo tiếp tục là ..., gắn liền với công lao to lớn của Di tích gắn chủ yếu với các cán bộ, chiến sĩ, du kích và nhân dân Kim Long – Châu Đức, những người trực tiếp đào địa đạo, xây dựng công sự, ... và lưu giữ các hiện vật quý: Hệ thống địa đạo dài khoảng 2.000 m, sâu khoảng 5 m, rộng khoảng 0,8 m; 12 cửa lên xuống; nhiều ngách trú ẩn; 3 ụ chiến đấu; hào công sự và ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -4156,6 +4210,12 @@ export const allMonumentsList = [
       ],
       "overview": "Địa đạo Phú Thọ Hòa được hình thành từ năm 1947, trên cơ sở những hầm bí mật có từ trước, trong thời kỳ kháng chiến chống thực dân Pháp. Đây là một căn cứ quan trọng ở phía Tây Sài Gòn, giúp cán bộ, lực lượng vũ trang bám đất, bám dân, ém quân và làm bàn đạp tiến công vào nội thành. Địa đạo tiếp tục được sử dụng trong thời kỳ chống Mỹ, thể hiện sự sáng tạo của quân dân địa phương trong xây dựng hệ thống chiến đấu ngay giữa vùng đô thị và vùng địch kiểm soát.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "📏 Cấu trúc: 2 tầng, sâu khoảng 3–4 m",
+        "📏 Lòng hầm: cao khoảng 1 m, rộng 0,6–0,8 m",
+        "📏 Phần phục chế tham quan: khoảng 100 m",
+        "📏 Khuôn viên: khoảng 4.135,6 m²"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -4339,7 +4399,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Địa đạo Phú Thọ Hòa",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa đạo Phú Thọ Hòa",
-      "investigationQuestion": "Vì sao di tích Địa đạo Phú Thọ Hòa tại Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Địa đạo Phú Thọ Hòa cho thấy một hệ thống hầm bí mật có thể hỗ trợ chiến đấu và bảo toàn lực lượng ra sao, và em rút ra bài học gì về sự kiên trì trước hoàn cảnh khó khăn?",
       "suggestedAnswer": "Di tích Địa đạo Phú Thọ Hòa là lịch sử được xếp hạng cấp quốc gia (Số 1460 – QĐ/VH ngày \n28/6/1996 của Bộ Văn hóa \nThông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1947: bắt đầu xây dựng địa đạo tại thôn Lộc Hòa. 29/3/1948: trận đánh kho bom Bảy Hiền. 12/1949: lực lượng cách mạng nhiều lần đánh vào sân bay Tân Sơn Nhất. 1952 và 1954: tấn ..., gắn liền với công lao to lớn của Bùi Văn Ba và Phạm Văn Hai – chỉ huy Tiểu đoàn Quyết tử 950 trong trận đánh kho bom Phú Thọ Hòa đêm 31/5 rạng sáng 1/6/1954; Nguyễn Văn Linh... và lưu giữ các hiện vật quý: Hệ thống địa đạo được phục dựng, nhà trưng bày, hình ảnh và tư liệu lịch sử, mô hình tái hiện hoạt động chiến đấu của quân dân Phú Thọ Hòa, ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -4602,6 +4662,12 @@ export const allMonumentsList = [
       ],
       "overview": "Là một căn cứ cách mạng quan trọng ở miền Đông Nam Bộ trong hai cuộc kháng chiến. Trong kháng chiến chống Pháp, khu vực này nổi tiếng với Chiến khu An Thành, từng là nơi dừng chân của các cơ quan đầu não kháng chiến như Khu Bộ miền Đông, Xứ ủy Nam Bộ và Đặc khu ủy Sài Gòn - Gia Định. Từ năm 1948, hệ thống địa đạo bắt đầu hình thành; trong kháng chiến chống Mỹ, địa đạo được mở rộng thành một hệ thống liên hoàn, được ví như “làng ngầm”, giúp quân dân 3 xã bám trụ, chiến đấu và bảo vệ lực lượng.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "📏 Diện tích khu di tích: khoảng 230.000 m²",
+        "🔎 Địa bàn: An Điền – An Tây – Phú An",
+        "🏛️ Hệ thống: hàng trăm đường hầm liên hoàn",
+        "📅 Xếp hạng: di tích quốc gia năm 1996"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -4785,7 +4851,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Địa Đạo Tây Nam ( Tam Giác Sắt)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Tây Nam, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa Đạo Tây Nam ( Tam Giác Sắt)",
-      "investigationQuestion": "Vì sao di tích Địa Đạo Tây Nam ( Tam Giác Sắt) tại Phường Tây Nam, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Địa đạo Tây Nam Bến Cát – “Tam giác sắt” cho thấy sự gắn bó giữa địa đạo, lực lượng chiến đấu và nhân dân như thế nào, và điều đó có ý nghĩa gì đối với tinh thần đoàn kết hôm nay?",
       "suggestedAnswer": "Di tích Địa Đạo Tây Nam ( Tam Giác Sắt) là lịch sử được xếp hạng cấp quốc gia (Quyết định số 460/QĐ/BT ngày 18/3/1996 của Bộ Văn hóa - Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1948: hệ thống địa đạo đầu tiên được hình thành tại vùng Tây Nam Bến Cát. Từ năm 1961: quân dân ba xã An Điền, An Tây, Phú An đẩy mạnh đào và mở rộng hệ thống địa đạo. Chiến dịch M..., gắn liền với công lao to lớn của Nguyễn Văn Đực – chiến sĩ bắn tỉa nổi tiếng của vùng Tam Giác Sắt; Võ Thị Huynh – Anh hùng Lực lượng vũ trang nhân dân, có nhiều đóng góp tr... và lưu giữ các hiện vật quý: Hệ thống địa đạo và các công trình dưới lòng đất; mô hình địa đạo; vũ khí, dụng cụ chiến đấu và sản xuất; hình ảnh, tài liệu lịch sử; mô hìn..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -5048,6 +5114,12 @@ export const allMonumentsList = [
       ],
       "overview": "Ba Son là nơi Tôn Đức Thắng từng học nghề, làm việc và hoạt động trong phong trào công nhân vào đầu thế kỷ XX. Đây là một địa điểm quan trọng gắn với quá trình hình thành tư tưởng đấu tranh của người công nhân Tôn Đức Thắng và sự phát triển của phong trào công nhân Sài Gòn. Đặc biệt, nơi đây gắn với cuộc bãi công Ba Son tháng 8/1925, do Công hội bí mật do Tôn Đức Thắng tổ chức và lãnh đạo. Cuộc bãi công vừa đấu tranh về quyền lợi của công nhân, vừa có ý nghĩa chính trị - quốc tế khi làm chậm việc sửa chữa chiến hạm Pháp Jules Michelet chuẩn bị sang đàn áp cách mạng Trung Quốc.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Gồm: Ụ tàu nhỏ và Triền nề.",
+        "🏅 Xếp hạng quốc gia: 12/8/1993.",
+        "📅 Gắn với thời gian Chủ tịch Tôn Đức Thắng làm việc tại Ba Son.",
+        "📅 Năm 2016, tên di tích được điều chỉnh và xác định lại khu vực bảo vệ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -5231,7 +5303,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề",
-      "investigationQuestion": "Vì sao di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề tại Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son giúp em hiểu như thế nào về mối liên hệ giữa người lao động, quá trình học nghề và con đường hoạt động cách mạng?",
       "suggestedAnswer": "Di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề là lịch sử được xếp hạng cấp quốc gia (Quyết định xếp hạng số \n1269/QĐ-BVHTTDL ngày \n30/3/2016 của Bộ Văn hóa - Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Tháng 8/1925 – Cuộc bãi công Ba Son: khoảng 1.000 công nhân Ba Son đấu tranh đòi tăng lương, giảm giờ làm; dưới sự lãnh đạo của Công hội do Tôn Đức Thắng đứng đầu, cuộc đình công đ..., gắn liền với công lao to lớn của Chủ tịch Tôn Đức Thắng là nhân vật trung tâm của di tích; ông từng làm việc tại Ba Son và là người đứng đầu Công hội bí mật/Công hội đỏ, tổ ... và lưu giữ các hiện vật quý: Máy sọc S.3 – máy công cụ được xác định là hiện vật gắn với thời gian đồng chí Tôn Đức Thắng sử dụng khi thực tập tại Xưởng cơ khí; cùng với..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -5494,6 +5566,12 @@ export const allMonumentsList = [
       ],
       "overview": "Di tích là một cơ sở bí mật của lực lượng Biệt động Sài Gòn ngay giữa nội đô, được xây dựng nhằm cất giấu vũ khí, thuốc nổ và đạn dược phục vụ hoạt động cách mạng. Vị trí căn nhà đặc biệt quan trọng vì nằm gần nhiều cơ quan quân sự và cơ quan đầu não của chính quyền Sài Gòn. Căn hầm thể hiện nghệ thuật xây dựng cơ sở bí mật, ngụy trang, bảo quản và vận chuyển vũ khí trong lòng đô thị, góp phần chuẩn bị lực lượng và vũ khí cho các hoạt động chiến đấu tại Sài Gòn.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "📏 Địa chỉ lịch sử: 183/4 đường Ba Tháng Hai.",
+        "🔎 Gắn với lực lượng Biệt động Sài Gòn.",
+        "🔎 Từng cất giấu vũ khí, đạn dược và vật tư.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -5677,7 +5755,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ",
-      "investigationQuestion": "Vì sao di tích Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ tại Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hầm bí mật chứa vũ khí cho thấy những gia đình và cơ sở cách mạng đã chấp nhận nguy hiểm để bảo vệ lực lượng như thế nào, và bài học về trách nhiệm với cộng đồng có ý nghĩa gì với học sinh?",
       "suggestedAnswer": "Di tích Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ là lịch sử được xếp hạng cấp quốc gia (Số 1288 – VH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1965: ông Đỗ Văn Căn được giao xây dựng hầm bí mật tại nhà để chứa vũ khí. Tháng 7/1965: hầm bắt đầu được sử dụng làm kho vũ khí bí mật; trong 4 tháng tiếp theo, nhiều vũ khí, ..., gắn liền với công lao to lớn của Đỗ Văn Căn (bí danh Ba Mủ/Ba Mũ) – chiến sĩ Biệt động Sài Gòn, chủ căn nhà, trực tiếp đào hầm và tổ chức cất giấu, bảo vệ vũ khí; Nguyễn Văn... và lưu giữ các hiện vật quý: Căn hầm bí mật dài khoảng 2,2 m, rộng 1,8 m, sâu 1,7 m; nắp hầm 0,4 × 0,6 m được ngụy trang dưới bộ ghế salon; dụng cụ ép đế giày cao su của..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -5940,6 +6018,12 @@ export const allMonumentsList = [
       ],
       "overview": "Khu trại giam Bệnh viện Chợ Quán là chứng tích về chế độ giam giữ, đàn áp những người yêu nước và chiến sĩ cách mạng của thực dân Pháp. Khu trại nằm trong Bệnh viện Chợ Quán, nơi thực dân Pháp sử dụng khu điều trị bệnh tâm thần để giam giữ và khai thác thông tin từ các tù nhân. Đặc biệt, đây là nơi đồng chí Trần Phú – Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương – bị giam giữ và hy sinh ngày 6/9/1931. Di tích đồng thời gắn với nhiều cán bộ, chiến sĩ cách mạng bị giam giữ trong các thời kỳ kháng chiến, có giá trị lớn trong giáo dục truyền thống yêu nước và ý chí đấu tranh.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "📅 Bệnh viện hình thành từ năm 1862.",
+        "📅 Đồng chí Trần Phú hy sinh tại đây ngày 6/9/1931.",
+        "🔎 Di tích nằm trong khuôn viên Bệnh viện Bệnh Nhiệt đới TP.HCM.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -6123,7 +6207,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh",
-      "investigationQuestion": "Vì sao di tích Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh tại Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh cho thấy sự khắc nghiệt của chế độ giam cầm và phẩm chất của người chiến sĩ như thế nào, qua đó em hiểu gì về giá trị của lý tưởng?",
       "suggestedAnswer": "Di tích Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh là lịch sử được xếp hạng cấp quốc gia (Số 1288 – \nVH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1931: Trần Phú bị thực dân Pháp bắt và giam giữ; 26/8/1931: đồng chí được đưa vào khu trại giam tại Bệnh viện Chợ Quán do bị bệnh nặng; 6/9/1931: Trần Phú hy sinh tại đây, để l..., gắn liền với công lao to lớn của Trần Phú – Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương, nhân vật trung tâm của di tích; Hà Huy Tập – Tổng Bí thư thứ ba của Đảng Cộng ... và lưu giữ các hiện vật quý: Khu nhà trại giam được bảo tồn, phòng giam, chốt canh, hệ thống cửa và kiến trúc của khu trại giam; ảnh, tài liệu và kỷ vật liên quan đến đồ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -6386,6 +6470,12 @@ export const allMonumentsList = [
       ],
       "overview": "Ngã Ba Giồng là một trong những địa điểm lịch sử quan trọng gắn với Khởi nghĩa Nam Kỳ năm 1940 và cuộc đàn áp phong trào cách mạng của thực dân Pháp sau khởi nghĩa. Đây là trường bắn thứ ba do thực dân Pháp lập tại Hóc Môn để xử tử cán bộ cách mạng và đồng bào yêu nước. Đặc biệt, nơi đây gắn với sự hy sinh của nhiều lãnh đạo cao cấp của Đảng. Di tích có giá trị lớn trong việc nghiên cứu lịch sử Nam Kỳ khởi nghĩa, phong trào cách mạng ở Hóc Môn – Bà Điểm và giáo dục truyền thống yêu nước cho thế hệ trẻ.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "📏 Diện tích khu đất: hơn 10 ha.",
+        "📅 Gắn với Khởi nghĩa Nam Kỳ ngày 23/11/1940.",
+        "🔎 Là nơi thực dân Pháp xử bắn nhiều chiến sĩ cách mạng.",
+        "🏅 Xếp hạng di tích quốc gia: 30/12/2002."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -6569,7 +6659,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Ngã Ba Giồng",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Ngã Ba Giồng",
-      "investigationQuestion": "Vì sao di tích Ngã Ba Giồng tại Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Di tích Ngã Ba Giồng giúp em nhận thức như thế nào về sự hy sinh của những người tham gia Nam Kỳ khởi nghĩa và trách nhiệm của thế hệ trẻ trong việc ghi nhớ lịch sử?",
       "suggestedAnswer": "Di tích Ngã Ba Giồng là lịch sử được xếp hạng cấp quốc gia (Số 39/2002/QĐ-BVHTT \nngày 30/12/2002 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đêm 22 rạng sáng 23/11/1940: Khởi nghĩa Nam Kỳ bùng nổ, nhân dân Hóc Môn – Bà Điểm tham gia đấu tranh. Sau Khởi nghĩa Nam Kỳ: thực dân Pháp lập các trường bắn tại Hóc Môn để đàn áp..., gắn liền với công lao to lớn của Hà Huy Tập, Nguyễn Văn Cừ, Võ Văn Tần, Phan Đăng Lưu, Nguyễn Thị Minh Khai là những nhân vật tiêu biểu gắn với Ngã Ba Giồng và sự kiện ngày ... và lưu giữ các hiện vật quý: Các hình ảnh, tài liệu và hiện vật cách mạng được trưng bày tại Nhà trưng bày; các cụm tượng đài “Bất khuất”, “Chiến sĩ vô danh”; Đền tưởng ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -6832,6 +6922,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà lưu niệm là ngôi nhà gắn với thời thơ ấu và những năm đầu hoạt động cách mạng của Võ Thị Sáu tại quê hương Đất Đỏ. Gia đình bà thuê ngôi nhà này từ năm 1939, khi Võ Thị Sáu còn nhỏ. Di tích giúp lưu giữ không gian sống, ký ức gia đình và quá trình hình thành tinh thần yêu nước của nữ anh hùng; đồng thời có giá trị lớn trong giáo dục truyền thống cách mạng, lòng yêu nước và lý tưởng sống cho thế hệ trẻ.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với quê hương và tuổi thơ Võ Thị Sáu.",
+        "📅 Võ Thị Sáu sinh năm 1933.",
+        "🏅 Di tích được xếp hạng quốc gia: 6/12/1989.",
+        "🔎 Là địa chỉ giáo dục truyền thống yêu nước."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -7015,7 +7111,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà lưu niệm Võ Thị Sáu",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà lưu niệm Võ Thị Sáu",
-      "investigationQuestion": "Vì sao di tích Nhà lưu niệm Võ Thị Sáu tại Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu đặt ra câu hỏi gì về lòng dũng cảm, tuổi trẻ và sự hy sinh, và em có thể biến bài học ấy thành hành động cụ thể nào trong cuộc sống?",
       "suggestedAnswer": "Di tích Nhà lưu niệm Võ Thị Sáu là lịch sử được xếp hạng cấp quốc gia (Quyết định số 199-VH/QĐ ngày 06/12/1989 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1939: gia đình Võ Thị Sáu thuê và sinh sống tại căn nhà này; 1946–1947: Võ Thị Sáu bắt đầu tham gia hoạt động cách mạng tại quê hương Đất Đỏ; 23/01/1952: Võ Thị Sáu bị xử bắn tại C..., gắn liền với công lao to lớn của Võ Thị Sáu (1933–1952) – nữ du kích, Anh hùng Lực lượng vũ trang nhân dân; ông Võ Văn Hợi – cha của Võ Thị Sáu; bà Nguyễn Thị Đậu – mẹ của V... và lưu giữ các hiện vật quý: Các cấu kiện bằng gỗ của ngôi nhà cũ được lưu giữ; bàn thờ cha mẹ Võ Thị Sáu; bàn thờ Võ Thị Sáu; hình ảnh, tư liệu và các hiện vật, quà tặn..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -7278,6 +7374,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà tù Phú Lợi được xây dựng năm 1957, là nơi giam giữ các chiến sĩ cách mạng và người yêu nước trong thời kỳ chính quyền Ngô Đình Diệm. Trong thời gian tồn tại 1957–1964, nhà tù trở thành một trong những nơi giam giữ tù nhân chính trị lớn ở miền Nam. Di tích phản ánh chế độ lao tù khắc nghiệt, đồng thời ghi dấu tinh thần đấu tranh, ý chí kiên cường của các tù nhân cách mạng. Đặc biệt, sự kiện “Phú Lợi căm thù” ngày 1/12/1958 đã biến nơi đây thành một chứng tích lịch sử quan trọng của cuộc đấu tranh chống chế độ lao tù và trở thành biểu tượng giáo dục truyền thống cách mạng.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "📅 Xây dựng: năm 1957",
+        "📏 Diện tích khu di tích: khoảng 77.028 m²",
+        "📅 Sự kiện nổi bật: “Phú Lợi căm thù” cuối năm 1958",
+        "📅 Xếp hạng: di tích quốc gia năm 1980"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -7461,7 +7563,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà tù Phú Lợi (căng Phú Lợi)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà tù Phú Lợi (căng Phú Lợi)",
-      "investigationQuestion": "Vì sao di tích Nhà tù Phú Lợi (căng Phú Lợi) tại Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà tù Phú Lợi phản ánh những gì về chế độ giam giữ và cuộc đấu tranh của tù nhân, và di tích giúp học sinh hiểu sâu hơn thế nào về giá trị của nhân phẩm và quyền được sống trong hòa bình?",
       "suggestedAnswer": "Di tích Nhà tù Phú Lợi (căng Phú Lợi) là lịch sử được xếp hạng cấp quốc gia (Quyết định số 92/VH/QĐ ngày 10/7/1980 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1957: Nhà tù Phú Lợi được xây dựng. 1957–1958: số tù nhân tăng nhanh, đến cuối năm 1958 lên gần 6.000 người, trong đó khoảng 1.000 tù nhân nữ. 30/11–1/12/1958: xảy ra vụ đầu độc tù..., gắn liền với công lao to lớn của Vũ Duy Hanh – nguyên Bí thư Tỉnh ủy Thủ Dầu Một, tham gia Đảng ủy Trung tâm Phú Lợi; Nguyễn Văn Trung – thành viên Đảng ủy Trung tâm Phú Lợi... và lưu giữ các hiện vật quý: Chuồng cọp, xà lim, khu nhà giam, mô hình nhà tù, tranh ảnh và tư liệu về tù nhân chính trị, các kỷ vật thời chiến, hệ thống giam giữ và nhữ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -7724,6 +7826,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đây là nơi Nguyễn Tất Thành sống khoảng 9 tháng, từ tháng 9/1910 đến ngày 4/6/1911, trong thời gian chuẩn bị cho hành trình ra nước ngoài tìm con đường cứu nước. Tại đây, Người tìm hiểu đời sống của nhân dân và công nhân Nam Kỳ, đồng thời làm việc, học hỏi và chuẩn bị về vật chất, tinh thần cho chuyến đi. Ngôi nhà là một địa điểm quan trọng gắn với giai đoạn trực tiếp chuẩn bị trước khi Người rời Việt Nam ngày 5/6/1911.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ: số 5 Châu Văn Liêm",
+        "🔎 Nguyễn Tất Thành lưu trú: khoảng 9/1910–6/1911",
+        "🔎 Tên cũ đầu thế kỷ XX: 1–2–3 Quai Testard",
+        "📅 Xếp hạng: di tích quốc gia năm 1988"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -7907,7 +8015,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước",
-      "investigationQuestion": "Vì sao di tích Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước tại Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước cho thấy một bước ngoặt trong hành trình của người thanh niên Nguyễn Tất Thành như thế nào, và em học được gì về khát vọng tìm kiếm con đường cho tương lai?",
       "suggestedAnswer": "Di tích Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước là lịch sử được xếp hạng cấp quốc gia (Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 19/9/1910: Nguyễn Tất Thành từ Trường Dục Thanh vào Sài Gòn. Tháng 9/1910 – 4/6/1911: Người ở tại cơ sở Liên Thành phân cuộc, nay là nhà số 5 Châu Văn Liêm. 4/6/1911: Người rời nhà..., gắn liền với công lao to lớn của Nguyễn Tất Thành (Chủ tịch Hồ Chí Minh) là nhân vật trung tâm. Ngoài ra có các nhân vật gắn với Liên Thành thương quán, tổ chức do các sĩ ph... và lưu giữ các hiện vật quý: Các tư liệu, hình ảnh về Nguyễn Tất Thành – Hồ Chí Minh; bản đồ Sài Gòn – Chợ Lớn năm 1911; hình ảnh Sài Gòn giai đoạn 1910–1911; tư liệu về..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -8170,6 +8278,12 @@ export const allMonumentsList = [
       ],
       "overview": "Di tích ghi dấu Hội nghị thành lập An Nam Cộng sản Đảng tại Nam Kỳ năm 1929, một trong những tổ chức cộng sản ra đời trong quá trình vận động thành lập một chính đảng cộng sản ở Việt Nam. Sự kiện đánh dấu bước phát triển của phong trào cách mạng theo khuynh hướng vô sản ở Nam Kỳ. An Nam Cộng sản Đảng sau đó phát triển tổ chức, tuyên truyền chủ nghĩa Mác – Lênin trong công nhân, nông dân và tham gia lãnh đạo phong trào đấu tranh ở Nam Kỳ. Đầu năm 1930, tổ chức này tham gia quá trình hợp nhất các tổ chức cộng sản, dẫn tới sự ra đời của Đảng Cộng sản Việt Nam.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "📅 Sự kiện: thành lập năm 1929.",
+        "🔎 Địa điểm lịch sử nằm tại khu vực Nguyễn Trung Trực – Lê Lợi.",
+        "🔎 Gắn với phong trào cách mạng Việt Nam cuối thập niên 1920.",
+        "🏅 Xếp hạng di tích lịch sử quốc gia."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -8353,7 +8467,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nơi thành lập An Nam Cộng sản Đảng năm 1929",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nơi thành lập An Nam Cộng sản Đảng năm 1929",
-      "investigationQuestion": "Vì sao di tích Nơi thành lập An Nam Cộng sản Đảng năm 1929 tại Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nơi thành lập An Nam Cộng sản Đảng năm 1929 phản ánh nhu cầu tổ chức và định hướng phong trào cách mạng như thế nào, và di tích giúp học sinh hiểu gì về vai trò của lý tưởng và tổ chức?",
       "suggestedAnswer": "Di tích Nơi thành lập An Nam Cộng sản Đảng năm 1929 là lịch sử được xếp hạng cấp quốc gia (Quyết định số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1929: phong trào Hội Việt Nam Cách mạng Thanh niên có sự phân hóa, xuất hiện các tổ chức cộng sản. Cuối tháng 9 – đầu tháng 10/1929: thành lập chi bộ An Nam Cộng sản Đảng và tổ..., gắn liền với công lao to lớn của Châu Văn Liêm là nhân vật nổi bật nhất, người chủ trì hội nghị tổ chức An Nam Cộng sản Đảng tại Sài Gòn. Các nhân vật liên quan khác gồm Hồ ... và lưu giữ các hiện vật quý: Di tích chủ yếu có giá trị về không gian lịch sử và tư liệu. Các tư liệu tiêu biểu liên quan gồm hình ảnh di tích, hình ảnh đồng chí Châu Vă..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -8616,6 +8730,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đây là địa điểm Sở Chỉ huy tiền phương của Chiến dịch Hồ Chí Minh, được lựa chọn để Bộ Chỉ huy chiến dịch trực tiếp chỉ đạo chiến trường từ ngày 26/4 đến 30/4/1975. Từ đây, Bộ Chỉ huy theo dõi diễn biến chiến dịch, tiếp nhận báo cáo từ các cánh quân và đưa ra những quyết định chỉ đạo quan trọng trong cuộc tiến công giải phóng Sài Gòn – Gia Định. Di tích có giá trị đặc biệt trong việc nghiên cứu nghệ thuật chỉ huy, điều hành chiến dịch và quá trình kết thúc Chiến tranh Việt Nam năm 1975; đồng thời là địa chỉ giáo dục truyền thống cho thế hệ trẻ.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Tên thường gọi: Sở Chỉ huy Căm Xe.",
+        "📅 Gắn với Chiến dịch Hồ Chí Minh năm 1975.",
+        "🏅 Xếp hạng quốc gia: 11/5/2010.",
+        "📅 Là nơi chỉ huy tiền phương trong giai đoạn cuối chiến tranh."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -8799,7 +8919,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh",
-      "investigationQuestion": "Vì sao di tích Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh tại Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Sở Chỉ huy Tiền phương Chiến dịch Hồ Chí Minh cho thấy việc tổ chức, chỉ huy và phối hợp lực lượng có ý nghĩa như thế nào đối với thắng lợi của một chiến dịch lớn?",
       "suggestedAnswer": "Di tích Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh là lịch sử được xếp hạng cấp quốc gia (Quyết định số 1630/QĐ-BVHTTDL ngày \n11/5/2010 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 25/3/1975: Bộ Chính trị quyết định thành lập Bộ Chỉ huy Chiến dịch giải phóng Sài Gòn – Gia Định tại căn cứ Tà Thiết. 14/4/1975: chiến dịch được chính thức mang tên Chiến dịch Hồ C..., gắn liền với công lao to lớn của Các nhân vật tiêu biểu gắn với Sở Chỉ huy gồm Lê Đức Thọ, Phạm Hùng và Đại tướng Văn Tiến Dũng; cùng các thành viên Bộ Tư lệnh Chiến dịch Hồ... và lưu giữ các hiện vật quý: Bia chiến thắng/bia di tích; nhà tưởng niệm; khu tái hiện phòng hội nghị của Sở Chỉ huy; địa đạo; bếp Hoàng Cầm; các dấu tích hố bom, hầm hà..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -9062,6 +9182,12 @@ export const allMonumentsList = [
       ],
       "overview": "Cù Lao Rùa là một trong những địa điểm khảo cổ được phát hiện và nghiên cứu sớm ở Đông Nam Bộ, có niên đại khoảng 3.500–2.700 năm cách ngày nay, trải qua hai giai đoạn phát triển. Các cuộc khai quật cho thấy đây là khu di tích cư trú kết hợp mộ táng, cung cấp tư liệu quan trọng về đời sống, kinh tế, xã hội và tín ngưỡng của cư dân tiền sử vùng Đông Nam Bộ.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "📏 Diện tích cù lao: 277 ha",
+        "🔎 Gò khảo cổ cao: khoảng 15 m",
+        "📅 Niên đại: khoảng 3.500–2.700 năm cách ngày nay",
+        "🔎 Phát hiện: công cụ đá, đồ gốm và nhiều mộ táng"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -9245,7 +9371,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Cù Lao Rùa",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Tân Khánh, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Cù Lao Rùa",
-      "investigationQuestion": "Vì sao di tích Cù Lao Rùa tại Phường Tân Khánh, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Các dấu tích cư trú, mộ táng và hiện vật ở Cù Lao Rùa cho phép em hình dung đời sống vật chất và tinh thần của cư dân cổ như thế nào, và vì sao cần bảo vệ những bằng chứng khảo cổ ấy?",
       "suggestedAnswer": "Di tích Cù Lao Rùa là khảo cổ học được xếp hạng cấp quốc gia (Quyết định số 836/QĐ-BVHTTDL ngày 03/3/2009 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1888: E. Cartailhac ghi nhận Cù Lao Rùa; 1889: E.T. Hamy công bố tư liệu về di tích tại Paris; 1976, 1998–2001: tiến hành nhiều đợt điều tra, thám sát khảo cổ; 2003: khai quật quy ..., gắn liền với công lao to lớn của Các nhà khảo cổ và nhà nghiên cứu gắn với quá trình phát hiện, nghiên cứu Cù Lao Rùa gồm E. Cartailhac – người ghi nhận di tích năm 1888; E.... và lưu giữ các hiện vật quý: Cuộc khai quật năm 2003 phát hiện 1.254 hiện vật nguyên vẹn bằng đá và đất nung, gồm rìu, cuốc, đục, bàn mài, khuôn đúc, vòng tay, bi gốm, d..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -9508,6 +9634,12 @@ export const allMonumentsList = [
       ],
       "overview": "Dốc Chùa là một trong những di tích khảo cổ quan trọng nhất ở vùng Đông Nam Bộ, cung cấp tư liệu về đời sống, sản xuất, kỹ thuật luyện kim, nghề thủ công và tục mai táng của cư dân cổ lưu vực sông Đồng Nai cách nay khoảng 2.500–3.000 năm. Đặc biệt, việc phát hiện nhiều khuôn đúc đồng cho thấy cư dân nơi đây đã phát triển kỹ thuật đúc đồng ở trình độ cao. Các di tích cư trú và mộ táng còn giúp nghiên cứu sự phân hóa xã hội, đời sống vật chất và tinh thần của cư dân thời tiền – sơ sử.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Còn gọi: Cầu Chùa.",
+        "🔎 Thuộc nhóm di tích khảo cổ thời đại kim khí.",
+        "🔎 Là địa điểm khảo cổ quan trọng ở Bình Dương cũ.",
+        "🏅 Xếp hạng quốc gia: 28/12/2001."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -9691,7 +9823,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Dốc Chùa",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Tân Uyên, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Dốc Chùa",
-      "investigationQuestion": "Vì sao di tích Dốc Chùa tại Phường Tân Uyên, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Các khu mộ táng, khuôn đúc và hiện vật đồng ở Dốc Chùa cho thấy trình độ kỹ thuật và sự phân hóa xã hội của cư dân thời đại kim khí như thế nào?",
       "suggestedAnswer": "Di tích Dốc Chùa là khảo cổ học được xếp hạng cấp quốc gia (Quyết định số 53/QĐ-BVHTT ngày 28/12/2001 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Tháng 6/1976: Nguyễn Văn Long phát hiện dấu tích tầng văn hóa Dốc Chùa. 16/12/1976–8/1/1977: khai quật lần thứ nhất, thu được 803 hiện vật. 12/4–8/5/1977: khai quật lần thứ hai, ph..., gắn liền với công lao to lớn của Nguyễn Văn Long – cán bộ khảo cổ học, người phát hiện dấu tích khảo cổ Dốc Chùa vào tháng 6/1976 trong quá trình khảo sát địa điểm Mỹ Lộc; Đ... và lưu giữ các hiện vật quý: Tiêu biểu nhất là Tượng động vật Dốc Chùa bằng đồng, được khai quật năm 1977 và được công nhận Bảo vật quốc gia theo Quyết định 2599/QĐ-TTg ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -9954,6 +10086,12 @@ export const allMonumentsList = [
       ],
       "overview": "Giồng Cá Vồ là một trong những di tích khảo cổ quan trọng nhất của TP.HCM, chứng minh vùng Cần Giờ đã có cộng đồng cư dân sinh sống, sản xuất và giao lưu từ khoảng 2.500 năm trước. Di tích có cấu trúc cư trú – công xưởng – mộ táng, phản ánh đời sống vật chất, tinh thần, kỹ thuật sản xuất và tục táng của cư dân cổ. Các hiện vật cho thấy cư dân Giồng Cá Vồ có quan hệ giao lưu với văn hóa Đồng Nai, Sa Huỳnh và các khu vực Đông Nam Á hải đảo, đồng thời cho thấy Cần Giờ từng có vị trí quan trọng trong mạng lưới giao thương đường biển cổ.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "🔎 Là di tích khảo cổ mộ chum ven biển.",
+        "🔎 Gắn với văn hóa khảo cổ vùng Cần Giờ.",
+        "🔎 Nằm trên một giồng đất cao khoảng 1,5 m.",
+        "🏅 Xếp hạng khảo cổ quốc gia: 13/4/2000."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -10137,7 +10275,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Giồng Cá Vồ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Xã Cần Giờ, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Giồng Cá Vồ",
-      "investigationQuestion": "Vì sao di tích Giồng Cá Vồ tại Xã Cần Giờ, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hệ thống mộ chum và hiện vật ở Giồng Cá Vồ cho thấy cư dân ven biển Nam Bộ xưa đã thích nghi với môi trường và giao lưu văn hóa như thế nào?",
       "suggestedAnswer": "Di tích Giồng Cá Vồ là khảo cổ học được xếp hạng cấp quốc gia (Quyết định số 2000/QĐ-BVHTT ngày 13/4/2000 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1993: khảo sát và thám sát, phát hiện 38 mộ chum trong đợt đầu. Năm 1994–1995: tiến hành khai quật khảo cổ, phát hiện nhiều mộ chum, mộ đất, di cốt và hiện vật. Năm 2000: Giồng..., gắn liền với công lao to lớn của Vì đây là di tích khảo cổ tiền – sơ sử nên không có nhân vật lịch sử cụ thể được xác định như các di tích cách mạng. Những người có vai trò ... và lưu giữ các hiện vật quý: Tiêu biểu nhất là mộ chum và di cốt người cổ, cùng các khuyên tai hai đầu thú, khuyên tai ba mấu, vòng tay đá và thủy tinh, hạt chuỗi, răng ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -10400,6 +10538,12 @@ export const allMonumentsList = [
       ],
       "overview": "Lò gốm cổ Hưng Lợi là dấu tích vật chất quan trọng của nghề gốm Sài Gòn – Gia Định, phản ánh quá trình hình thành và phát triển của một làng nghề thủ công lâu đời trong hơn 300 năm lịch sử Sài Gòn. Di tích cung cấp tư liệu về nguồn nguyên liệu, kỹ thuật sản xuất, loại hình sản phẩm và đời sống kinh tế của cư dân đô thị Sài Gòn xưa. Đây cũng là di tích khảo cổ học có ý nghĩa đặc biệt vì các lò gốm cổ khác của khu vực Chợ Lớn xưa phần lớn đã biến mất do đô thị hóa.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Loại hình: di tích khảo cổ nghề gốm",
+        "🔎 Vị trí: làng Hòa Lục, ven kênh Ruột Ngựa và kênh Lò Gốm",
+        "🔎 Xóm Lò Gốm đã được ghi trên bản đồ Gia Định cuối thế kỷ XVIII–đầu XIX",
+        "🏅 Xếp hạng khảo cổ quốc gia: 25/4/1998"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -10583,7 +10727,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Lò gốm cổ Hưng Lợi",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Phú Định, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Lò gốm cổ Hưng Lợi",
-      "investigationQuestion": "Vì sao di tích Lò gốm cổ Hưng Lợi tại Phường Phú Định, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Lò gốm cổ Hưng Lợi giúp em tìm hiểu như thế nào về kỹ thuật sản xuất, đời sống kinh tế và quá trình hình thành đô thị Sài Gòn – Gia Định, đồng thời gợi ra trách nhiệm gì trong việc bảo vệ di sản khảo cổ?",
       "suggestedAnswer": "Di tích Lò gốm cổ Hưng Lợi là khảo cổ học được xếp hạng cấp quốc gia (Quyết định số 722/QĐ-BVHTT ngày 25/4/1998 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Khoảng giữa thế kỷ XVIII: hình thành khu lò gốm Hưng Lợi. Năm 1772: kênh Ruột Ngựa được đào, góp phần kết nối khu vực Lò Gốm với mạng lưới giao thông đường thủy Sài Gòn. Năm 1815: ..., gắn liền với công lao to lớn của Không có nhân vật lịch sử cụ thể được xác định là nhân vật chính của di tích. Di tích gắn với cộng đồng thợ gốm người Hoa và cư dân làng Hòa... và lưu giữ các hiện vật quý: Mảnh vỡ lu, khạp, siêu, ơ, chậu, hũ men nâu, men vàng, chén, đĩa men xanh trắng, tô, bát, cốc, ly, muỗng, đèn, lư hương, ấm trà, bình rượu v..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -10846,6 +10990,12 @@ export const allMonumentsList = [
       ],
       "overview": "Di tích là chứng tích của hệ thống thông tin quân sự do Mỹ xây dựng tại Vũng Tàu trong Chiến tranh Việt Nam. Do vị trí Núi Lớn có độ cao và khả năng quan sát rộng, nơi đây có ý nghĩa quân sự quan trọng. Đầu năm 1967, Mỹ đưa và lắp đặt hai giàn ăng-ten Parabol – đài Viba tại độ cao khoảng 245 m để phục vụ thông tin liên lạc quân sự. Hệ thống có phạm vi liên lạc rất rộng, góp phần phục vụ mạng lưới thông tin quân sự của Mỹ tại miền Nam. Di tích ngày nay là bằng chứng vật chất giúp nghiên cứu về chiến tranh, kỹ thuật thông tin quân sự và vai trò chiến lược của Vũng Tàu trong giai đoạn chiến tranh.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "🔎 Vị trí: trên đỉnh Núi Lớn, Vũng Tàu.",
+        "🏛️ Là công trình thông tin liên lạc vô tuyến.",
+        "🏛️ Núi Lớn có vị trí quan trọng để quan sát vùng cửa biển.",
+        "🏅 Xếp hạng quốc gia: 23/7/1993."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -11029,7 +11179,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Ăngten Parabol (đài viba) – Núi Lớn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Ăngten Parabol (đài viba) – Núi Lớn",
-      "investigationQuestion": "Vì sao di tích Ăngten Parabol (đài viba) – Núi Lớn tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Ăngten Parabol (Đài Viba) – N��i Lớn cho thấy hệ thống thông tin liên lạc từng giữ vai trò gì trong lịch sử hiện đại của địa phương, và vì sao những công trình kỹ thuật cũng cần được xem là di sản?",
       "suggestedAnswer": "Di tích Ăngten Parabol (đài viba) – Núi Lớn là lịch sử được xếp hạng cấp quốc gia (Quyết định số 937/QĐ/BT ngày 23/7/1993 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đầu năm 1967: Mỹ tăng cường phương tiện chiến tranh và lắp đặt hai giàn ăng-ten Parabol – Viba trên Núi Lớn. Năm 1968: hệ thống được nâng cấp bằng thiết bị MRC-85, công suất 10 kW...., gắn liền với công lao to lớn của Di tích chủ yếu gắn với quân đội Mỹ và lực lượng kỹ thuật – thông tin quân sự Mỹ hoạt động tại Vũng Tàu, hơn là một cá nhân cụ thể.... và lưu giữ các hiện vật quý: Hai giàn ăng-ten Parabol – Viba từng được lắp đặt trên Núi Lớn; hệ thống thiết bị thông tin Viba và các bộ phận kết cấu của giàn ăng-ten. Ha..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -11292,6 +11442,12 @@ export const allMonumentsList = [
       ],
       "overview": "Bót Dây Thép là chứng tích quan trọng về tội ác của thực dân Pháp đối với nhân dân và chiến sĩ cách mạng tại vùng Tăng Nhơn Phú – Thủ Đức trong những năm đầu kháng chiến chống Pháp. Ban đầu công trình được Pháp sử dụng làm trạm phát, thu nhận và truyền tin; sau khi Pháp trở lại Đông Dương cuối năm 1945, nơi đây bị biến thành đồn lính và nhà giam. Trong giai đoạn 1946–1947, nhiều cán bộ, chiến sĩ cách mạng và người dân bị bắt giữ, tra tấn, sát hại tại đây. Di tích đồng thời phản ánh tinh thần đấu tranh, lòng yêu nước và sự hy sinh của nhân dân địa phương.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Vị trí: khu vực Thủ Đức cũ.",
+        "🔎 Là di tích lịch sử gắn với hoạt động cách mạng.",
+        "🏅 Xếp hạng quốc gia: 18/1/1993.",
+        "🔎 Là dấu tích của một cơ sở đàn áp trong thời chiến."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -11475,7 +11631,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Bót Dây Thép",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Bót Dây Thép",
-      "investigationQuestion": "Vì sao di tích Bót Dây Thép tại Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Bót Dây Thép giúp em nhận diện những dấu tích nào của chiến tranh và sự đàn áp, từ đó hiểu vì sao việc ghi nhớ quá khứ cần gắn với khát vọng hòa bình và bảo vệ con người?",
       "suggestedAnswer": "Di tích Bót Dây Thép là lịch sử được xếp hạng cấp quốc gia (Quyết định số 57-VH/QĐ ngày 18/01/1993 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Cuối năm 1945: quân Pháp tái chiếm và biến Nhà dây thép thành đồn lính, nơi giam giữ người dân và cán bộ cách mạng. 1946–1947: Bót Dây Thép trở thành nơi giam cầm, tra tấn và sát h..., gắn liền với công lao to lớn của Nguyễn Minh Quang (Nguyễn Văn Gấm, bí danh Minh Hà) – người hoạt động cách mạng tại Tăng Nhơn Phú, năm 1947 trực tiếp treo cờ Tổ quốc trên t... và lưu giữ các hiện vật quý: Căn nhà Bót Dây Thép, hầm giam và các dấu tích kiến trúc còn lại là những yếu tố vật chất quan trọng nhất của di tích. Tư liệu giới thiệu di..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -11738,6 +11894,12 @@ export const allMonumentsList = [
       ],
       "overview": "Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ là một căn cứ cách mạng hoạt động bí mật ngay giữa lòng Sài Gòn, đặc biệt trong thời kỳ kháng chiến chống Mỹ. Sau Hiệp định Genève năm 1954, căn nhà được sử dụng làm cơ sở của Ban Tuyên huấn Xứ ủy Nam Bộ và một số đơn vị Khu Sài Gòn – Gia Định. Tại đây, cán bộ cách mạng thu tin từ Đài Phát thanh Hà Nội, biên tập, in ấn và phát hành tài liệu để truyền đạt thông tin, chỉ thị của Trung ương đến các cơ sở cách mạng ở Nam Bộ. Sau năm 1957, địa điểm tiếp tục được sử dụng cho hoạt động liên lạc, hội họp, tuyên truyền, phụ vận, trí vận và chuẩn bị lực lượng cho các phong trào đấu tranh đô thị.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 51/10/14 Cao Thắng.",
+        "🔎 Gắn với hoạt động tuyên truyền cách mạng bí mật.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988.",
+        "🔎 Phản ánh hoạt động của cơ sở cách mạng trong nội đô."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -11921,7 +12083,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ",
-      "investigationQuestion": "Vì sao di tích Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ tại Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ cho thấy công tác tuyên truyền, thông tin và giáo dục tư tưởng đã góp phần như thế nào vào việc duy trì phong trào cách mạng?",
       "suggestedAnswer": "Di tích Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ là lịch sử được xếp hạng cấp quốc gia (Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Sau Hiệp định Genève 1954: căn nhà được Xứ ủy Nam Bộ sử dụng làm cơ sở Ban Tuyên huấn; 1954–1957: thu tin từ Đài Phát thanh Hà Nội, biên tập và in ấn tài liệu phục vụ hoạt động các..., gắn liền với công lao to lớn của Đỗ Văn Ba (Đỗ Văn Hạng) – cán bộ Xứ ủy, phụ trách cơ sở và trực tiếp thu tin, biên tập tài liệu; Trần Bạch Đằng, Phạm Dân, Tân Đức – các cán... và lưu giữ các hiện vật quý: Chiếc máy thu thanh/ra-đi-ô mà đồng chí Lê Thị Riêng sử dụng khi làm việc tại cơ sở là hiện vật tiêu biểu được giới thiệu trong tư liệu của ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -12184,6 +12346,12 @@ export const allMonumentsList = [
       ],
       "overview": "Cơ sở giấu vũ khí của Biệt động Thành tại 287/70 Nguyễn Đình Chiểu có giá trị lịch sử đặc biệt bởi đây là một cơ sở hậu cần bí mật của lực lượng Biệt động Thành nằm ngay trong nội đô Sài Gòn.\nTrong những năm kháng chiến chống Mỹ, việc xây dựng và duy trì một căn cứ bí mật ngay giữa khu dân cư là nhiệm vụ vô cùng khó khăn. Căn nhà bên ngoài được sử dụng như một gia đình bình thường, trong khi bên dưới được xây dựng hệ thống hầm bí mật để chứa vũ khí, thuốc nổ và các trang thiết bị quân sự.\nÔng Trần Văn Lai đã tổ chức xây dựng căn hầm với phương án rất kín đáo. Hầm được thiết kế để có thể chứa một khối lượng lớn vũ khí nhưng vẫn hạn chế khả năng bị phát hiện. Theo các tư liệu về di tích, căn hầm có chiều dài hơn 8 m, rộng khoảng 2 m và cao khoảng 2,5 m, có hệ thống thông gió và phương án che giấu phù hợp với hoạt động bí mật.\nCăn hầm từng chứa hơn 2 tấn vũ khí và vật liệu quân sự, trong đó có súng, đạn, lựu đạn và thuốc nổ.\nGiá trị nổi bật nhất của di tích nằm ở việc vũ khí từ căn hầm được sử dụng trực tiếp cho Đội 5 Biệt động Thành trong trận tấn công Dinh Độc Lập vào Tết Mậu Thân năm 1968.\nDi tích vì vậy không chỉ là nơi lưu giữ một căn hầm vật chất mà còn là chứng tích trực tiếp về hoạt động bí mật của lực lượng Biệt động Thành trong lòng đô thị Sài Gòn.\nDi tích thể hiện rõ sự mưu trí, sáng tạo, dũng cảm, khả năng tổ chức hoạt động bí mật và sự hy sinh của cán bộ, chiến sĩ Biệt động Thành.\nNgày nay, di tích có giá trị lớn trong việc giáo dục lịch sử, giáo dục truyền thống yêu nước và giáo dục thế hệ trẻ. Đây là một địa chỉ giúp học sinh, sinh viên hiểu rõ hơn về cuộc kháng chiến chống Mỹ cũng như vai trò của lực lượng Biệt động Sài Gòn – Gia Định.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ: 287/70 Nguyễn Đình Chiểu.",
+        "🔎 Gắn với lực lượng Biệt động Thành.",
+        "📅 Là nơi cất giấu vũ khí cho trận đánh năm 1968.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -12367,7 +12535,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập",
-      "investigationQuestion": "Vì sao di tích Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập tại Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập năm 1968 cho thấy yếu tố bí mật, tổ chức và sự hỗ trợ của cơ sở nhân dân có ý nghĩa như thế nào đối với một hoạt động đặc biệt nguy hiểm?",
       "suggestedAnswer": "Di tích Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập là lịch sử được xếp hạng cấp quốc gia (Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Giai đoạn 1966–1967\nÔng Trần Văn Lai bắt đầu sử dụng căn nhà tại khu vực đường Phan Đình Phùng, nay là Nguyễn Đình Chiểu, làm cơ sở bí mật.\nCăn hầm được xây dựng để phục vụ việc cấ..., gắn liền với công lao to lớn của Trần Văn Lai – Năm Lai – Mai Hồng Quế. Đây là nhân vật quan trọng nhất gắn trực tiếp với di tích. Ông Trần Văn Lai là cán bộ Biệt động Thành... và lưu giữ các hiện vật quý: Căn hầm bí mật là hiện vật và thành phần quan trọng nhất của di tích. Đây là nơi được xây dựng dưới căn nhà để cất giấu vũ khí và vật liệu q..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -12630,6 +12798,12 @@ export const allMonumentsList = [
       ],
       "overview": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn có giá trị tiêu biểu trong việc nghiên cứu lịch sử hoạt động tuyên truyền, thông tin và xây dựng cơ sở phục vụ phong trào kháng chiến. Di tích cho thấy bên cạnh đấu tranh trực tiếp, việc in ấn tài liệu, truyền đạt thông tin, cổ động tinh thần và vận động quần chúng là một bộ phận quan trọng của hoạt động cách mạng. Một cơ sở in ấn bí mật còn phản ánh yêu cầu bảo mật, tổ chức nhân lực, phương tiện và mạng lưới phân phối tài liệu trong điều kiện chiến tranh. Đối với nghiên cứu lịch sử địa phương, di tích góp phần làm rõ vai trò của các cơ sở dân sự và những người tham gia hoạt động hậu cần, tuyên truyền cho phong trào cách mạng.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Thường gọi: Hầm B.",
+        "🔎 Địa điểm lịch sử: hẻm 122 Ngô Gia Tự.",
+        "🔎 Gắn với hoạt động in ấn tài liệu cách mạng.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -12813,7 +12987,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
-      "investigationQuestion": "Vì sao di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn tại Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn – Hầm B cho thấy thông tin và tài liệu có thể trở thành một nguồn sức mạnh như thế nào trong đấu tranh, và điều đó gợi cho học sinh bài học gì về trách nhiệm với thông tin?",
       "suggestedAnswer": "Di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn là lịch sử được xếp hạng cấp quốc gia (Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn gắn với hoạt động tổ chức in ấn, sao chép và phát hành các tài liệu phục vụ công tác tuyên truyền, cổ động và vận động quần chúng trong thời..., gắn liền với công lao to lớn của Các thành viên Hội Ủng hộ Vệ quốc đoàn, cán bộ phụ trách in ấn, người biên tập tài liệu, người vận chuyển và phân phát tài liệu, cùng những ... và lưu giữ các hiện vật quý: Tài liệu tuyên truyền, báo chí, truyền đơn, giấy in, khuôn in, máy in, dụng cụ sao chép, vật dụng đóng gói và các tài liệu liên quan đến Hội..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -13076,6 +13250,12 @@ export const allMonumentsList = [
       ],
       "overview": "Di tích 86 Phan Chu Trinh có giá trị về lịch sử cách mạng và lịch sử đô thị Vũng Tàu. Đây là một trong những địa điểm giúp nhận diện mạng lưới cơ sở cách mạng tồn tại ngay trong không gian dân cư đô thị. Giá trị của di tích không chỉ nằm ở công trình vật chất mà còn ở những ký ức, con người và hoạt động lịch sử từng gắn với địa điểm. Việc bảo tồn di tích giúp thế hệ sau hiểu rằng hoạt động cách mạng không chỉ diễn ra ở các căn cứ lớn mà còn được duy trì thông qua những ngôi nhà, cơ sở dân sự và sự hỗ trợ của nhân dân trong đô thị. Di tích vì vậy có giá trị trong giáo dục truyền thống, nghiên cứu lịch sử địa phương và bảo tồn ký ức cộng đồng.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với lịch sử cách mạng ở Vũng Tàu.",
+        "📅 Được xếp hạng di tích quốc gia năm 1992.",
+        "🔎 Là một địa điểm lịch sử của thành phố Vũng Tàu cũ.",
+        "🔎 Có giá trị giáo dục truyền thống địa phương."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -13259,7 +13439,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Di tích 86 Phan Chu Trinh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích 86 Phan Chu Trinh",
-      "investigationQuestion": "Vì sao di tích Di tích 86 Phan Chu Trinh tại Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà số 86 Phan Chu Trinh đã trở thành cơ sở cách mạng giữa lòng đô thị như thế nào, và câu chuyện của di tích cho em hiểu gì về vai trò của những người dân bình thường trong lịch sử?",
       "suggestedAnswer": "Di tích Di tích 86 Phan Chu Trinh là lịch sử được xếp hạng cấp quốc gia (Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Di tích 86 Phan Chu Trinh gắn với các hoạt động cách mạng diễn ra tại khu vực đô thị Vũng Tàu, trong đó ngôi nhà được sử dụng như một cơ sở dân sự có liên quan đến hoạt động cách m..., gắn liền với công lao to lớn của Các cán bộ cách mạng, cơ sở quần chúng, gia đình địa phương và người dân Vũng Tàu từng liên quan đến hoạt động tại Nhà số 86 Phan Chu Trinh.... và lưu giữ các hiện vật quý: Ngôi nhà số 86 Phan Chu Trinh và các cấu kiện gốc như nền, tường, cửa, mái, cầu thang, cột hoặc các chi tiết kiến trúc còn được bảo tồn. Hìn..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -13522,6 +13702,12 @@ export const allMonumentsList = [
       ],
       "overview": "Dinh Quận Hóc Môn có giá trị về lịch sử hành chính, lịch sử địa phương và quá trình hình thành không gian quản lý của Hóc Môn. Công trình phản ánh một giai đoạn trong quá trình tổ chức bộ máy hành chính và quản lý xã hội tại địa phương. Việc bảo tồn Dinh Quận Hóc Môn giúp nghiên cứu sự biến đổi của thiết chế hành chính, quan hệ giữa chính quyền và cộng đồng cư dân, cũng như những thay đổi về không gian đô thị và nông thôn Hóc Môn qua các thời kỳ. Di tích còn có thể được khai thác để giáo dục học sinh về lịch sử hình thành địa phương và sự thay đổi của bộ máy quản lý theo thời gian.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "📅 Gắn với Nam Kỳ khởi nghĩa ngày 23/11/1940.",
+        "🔎 Nằm trong vùng 18 thôn Vườn Trầu.",
+        "🏅 Xếp hạng quốc gia: 16/11/1993.",
+        "⚔️ Là nơi lưu niệm sự kiện đấu tranh cách mạng của Hóc Môn."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -13705,7 +13891,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Dinh Quận Hóc Môn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Dinh Quận Hóc Môn",
-      "investigationQuestion": "Vì sao di tích Dinh Quận Hóc Môn tại Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Địa điểm Dinh Quận Hóc Môn – lưu niệm Nam Kỳ khởi nghĩa cho thấy tinh thần đấu tranh của nhân dân Hóc Môn năm 1940 như thế nào, và vì sao ký ức về sự kiện ấy cần được trao truyền cho thế hệ trẻ?",
       "suggestedAnswer": "Di tích Dinh Quận Hóc Môn là lịch sử được xếp hạng cấp quốc gia (Số 2015-QĐ/BT ngày 16/11/1993 của Bộ trưởng Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Dinh Quận Hóc Môn gắn với quá trình hoạt động của bộ máy hành chính tại Hóc Môn qua các thời kỳ lịch sử. Công trình là nơi diễn ra các hoạt động quản lý hành chính, giải quyết công..., gắn liền với công lao to lớn của Các cán bộ, viên chức hành chính và những nhân vật có hoạt động gắn với Hóc Môn qua từng giai đoạn. Để bảo đảm độ chính xác, tên nhân vật cầ... và lưu giữ các hiện vật quý: Dinh Quận Hóc Môn, nền móng, cấu kiện kiến trúc, cửa, mái, các tài liệu hành chính, bản đồ và hình ảnh lịch sử. Nếu còn vật dụng hành chính ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -13968,6 +14154,12 @@ export const allMonumentsList = [
       ],
       "overview": "Địa đạo Long Phước có giá trị đặc biệt về lịch sử cách mạng, lịch sử quân sự và nghệ thuật chiến tranh nhân dân. Hệ thống địa đạo là kết quả của quá trình quân và dân địa phương tổ chức đào, mở rộng và sử dụng các công trình dưới lòng đất để thích ứng với điều kiện chiến tranh. Địa đạo vừa là nơi trú ẩn, vừa phục vụ hội họp, cất giấu tài liệu, bảo vệ cán bộ, vận chuyển và tổ chức chiến đấu. Giá trị lớn của di tích còn nằm ở sự tham gia của nhân dân: việc đào địa đạo đòi hỏi sức lao động, sự tổ chức và tinh thần bảo vệ bí mật của cả cộng đồng. Vì vậy, Địa đạo Long Phước không chỉ là chứng tích quân sự mà còn là biểu tượng của tinh thần đoàn kết, sáng tạo và ý chí bám đất của nhân dân.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "📅 Hình thành: khoảng năm 1948",
+        "📏 Tổng chiều dài lịch sử: khoảng 3.600 m",
+        "📏 Phần trùng tu phục vụ tham quan: gần 1.200 m",
+        "🏅 Xếp hạng: di tích quốc gia tháng 1/1990"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -14151,7 +14343,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Địa đạo Long Phước",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Tam Long, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa đạo Long Phước",
-      "investigationQuestion": "Vì sao di tích Địa đạo Long Phước tại Phường Tam Long, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Địa đạo Long Phước cho thấy nhân dân đã tổ chức cuộc sống, chiến đấu và bảo vệ lực lượng dưới lòng đất như thế nào, và bài học lớn nhất về sức bền cộng đồng là gì?",
       "suggestedAnswer": "Di tích Địa đạo Long Phước là lịch sử được xếp hạng cấp quốc gia (Số 34/VH-QĐ ngày 09/01/1990 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Địa đạo Long Phước gắn với quá trình nhân dân địa phương xây dựng, mở rộng và sử dụng hệ thống địa đạo trong các thời kỳ kháng chiến. Địa đạo được sử dụng làm nơi trú ẩn, hội họp, ..., gắn liền với công lao to lớn của Các cán bộ, chiến sĩ, du kích Long Phước và nhân dân địa phương, đặc biệt những người trực tiếp tham gia đào địa đạo, bảo vệ cán bộ, vận chu... và lưu giữ các hiện vật quý: Hệ thống đường hầm, cửa hầm, hầm chiến đấu, hầm trú ẩn, lối thông, công sự và dấu tích sinh hoạt dưới lòng đất. Những vật dụng như đèn, dụng..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -14414,6 +14606,12 @@ export const allMonumentsList = [
       ],
       "overview": "Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba có giá trị quan trọng về lịch sử quân sự và giáo dục truyền thống. Việc ngày tháng được ghi trực tiếp trong tên di tích cho thấy địa điểm gắn với một trận chiến xác định về thời gian. Di tích là nơi lưu giữ ký ức về cuộc chiến đấu, sự hy sinh và những mất mát của con người trong thời kỳ chống Mỹ. Giá trị của địa điểm không chỉ nằm ở việc xác định vị trí một trận đánh mà còn ở khả năng giúp thế hệ trẻ hình dung chiến tranh đã tác động trực tiếp đến cộng đồng địa phương như thế nào. Đây đồng thời là địa điểm có ý nghĩa tưởng niệm và giáo dục lòng biết ơn đối với những người đã chiến đấu, hy sinh.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "📅 Ngày diễn ra trận chiến: 6/6/1969",
+        "🔎 53 cán bộ, chiến sĩ Tiểu đoàn 1, Trung đoàn 33 hy sinh",
+        "🔎 Bia di tích ghi danh: 49 liệt sĩ",
+        "📅 Xếp hạng: di tích quốc gia năm 2023"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -14597,7 +14795,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Xã Ngãi Giao, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba",
-      "investigationQuestion": "Vì sao di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba tại Xã Ngãi Giao, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trận chiến ngày 06/6/1969 tại Bình Ba cho thấy sự hy sinh và quyết tâm của lực lượng tham chiến như thế nào, và khi tìm hiểu di tích em cần nhìn nhận chiến tranh từ góc độ con người ra sao?",
       "suggestedAnswer": "Di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba là lịch sử được xếp hạng cấp quốc gia (Số 4248/QĐ-BVHTTDL ngày 19/12/2023). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Ngày 06/6/1969: diễn ra trận chiến tại Bình Ba, sự kiện được ghi trực tiếp trong tên của di tích và là mốc lịch sử trung tâm gắn với địa điểm. Trận chiến phản ánh tính chất ác liệt..., gắn liền với công lao to lớn của Các cán bộ, chiến sĩ tham gia trận chiến Bình Ba ngày 06/6/1969, lực lượng vũ trang địa phương và nhân dân Bình Ba. Danh sách những người hy... và lưu giữ các hiện vật quý: Bia tưởng niệm, bảng giới thiệu, bản đồ trận đánh, ảnh tư liệu, tài liệu và các dấu tích vật chất còn lại tại khu vực Bình Ba. Nếu có vũ khí..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -14860,6 +15058,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Bình Đông có giá trị về lịch sử cộng đồng, tín ngưỡng dân gian và văn hóa truyền thống Nam Bộ. Đình là nơi cộng đồng cư dân gửi gắm niềm tin, tưởng nhớ Thành hoàng và những người có công với vùng đất. Qua hệ thống bài vị, sắc phong, đồ thờ, kiến trúc và nghi lễ, di tích phản ánh quá trình hình thành cộng đồng và sự duy trì ký ức của cư dân qua nhiều thế hệ. Đình còn là không gian sinh hoạt cộng đồng, nơi các nghi lễ truyền thống tạo sự gắn kết giữa các thế hệ. Vì vậy, giá trị của Đình Bình Đông bao gồm cả giá trị vật thể và phi vật thể, phù hợp để nghiên cứu sự hình thành bản sắc cộng đồng.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🏛️ Cảnh quan: nằm giữa hệ thống rạch, kênh.",
+        "🔎 Gắn với lịch sử làng Bình Đông.",
+        "🔎 Có không gian tín ngưỡng và sinh hoạt cộng đồng.",
+        "🔎 Là đình làng tiêu biểu của vùng Nam Bộ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -15043,7 +15247,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Bình Đông",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Bình Đông",
-      "investigationQuestion": "Vì sao di tích Đình Bình Đông tại Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Bình Đông cho thấy một thiết chế đình làng có thể lưu giữ ký ức cộng đồng và lịch sử địa phương như thế nào, và học sinh có thể làm gì để gìn giữ ký ức ấy?",
       "suggestedAnswer": "Di tích Đình Bình Đông là lịch sử được xếp hạng cấp quốc gia (Số 2890-VH/QĐ ngày 27/9/1997 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đình Bình Đông gắn với các hoạt động tín ngưỡng và sinh hoạt cộng đồng được duy trì qua nhiều thế hệ. Những sự kiện tiêu biểu tại đình bao gồm các kỳ lễ, lễ Kỳ Yên, nghi thức thờ T..., gắn liền với công lao to lớn của Các vị Thành hoàng, tiền hiền, hậu hiền và người có công khai phá vùng đất Bình Đông; những nhân vật này cần được xác định qua sắc phong, bà... và lưu giữ các hiện vật quý: Sắc phong, bài vị, hoành phi, câu đối, ngai thờ, đồ thờ, cấu kiện gỗ, mảng chạm khắc và các bộ phận kiến trúc truyền thống của Đình Bình Đôn..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -15306,6 +15510,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Phong Phú có giá trị nổi bật về kiến trúc nghệ thuật, lịch sử hình thành cộng đồng và tín ngưỡng đình làng. Không gian đình phản ánh đặc trưng của kiến trúc truyền thống Nam Bộ, đồng thời gắn với quá trình khai phá và định cư của cư dân địa phương. Những yếu tố như bố cục kiến trúc, trang trí, đồ thờ và nghi lễ giúp nghiên cứu đời sống tinh thần của cộng đồng trong lịch sử. Việc bảo tồn đình có ý nghĩa không chỉ đối với kiến trúc mà còn đối với việc duy trì các phong tục, nghi lễ và ký ức cộng đồng. Đây là cơ sở thuận lợi để nghiên cứu mối quan hệ giữa di sản vật thể và di sản văn hóa phi vật thể.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "📏 Diện tích khuôn viên: khoảng 4,2 ha.",
+        "📅 Khởi dựng khoảng cuối thế kỷ XIX.",
+        "🏛️ Ban đầu là công trình tre lá, vách ván.",
+        "🔎 Gắn với tín ngưỡng Thành hoàng và hoạt động cách mạng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -15489,7 +15699,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Phong Phú",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Phong Phú",
-      "investigationQuestion": "Vì sao di tích Đình Phong Phú tại Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Phong Phú phản ánh quá trình hình thành cộng đồng cư dân và đời sống tín ngưỡng địa phương như thế nào, và điều đó giúp em hiểu gì về mối quan hệ giữa con người với quê hương?",
       "suggestedAnswer": "Di tích Đình Phong Phú là lịch sử được xếp hạng cấp quốc gia (Số 1766/QĐ-UBND ngày 27/4/2009 của Ủy ban nhân dân Thành phố). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đình Phong Phú gắn với quá trình hình thành và duy trì đời sống tín ngưỡng của cộng đồng cư dân địa phương. Các sự kiện tiêu biểu gồm lễ Kỳ Yên, các nghi thức thờ Thành hoàng, tưởn..., gắn liền với công lao to lớn của Các vị Thành hoàng, tiền hiền, hậu hiền và những người có công khai phá, lập làng Phong Phú; cần tiếp tục kiểm chứng tên và vai trò của từng... và lưu giữ các hiện vật quý: Sắc phong, bài vị, hoành phi, câu đối, đồ thờ, cấu kiện gỗ, mảng chạm khắc và các chi tiết kiến trúc có giá trị nghệ thuật của Đình Phong Ph..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -15752,6 +15962,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đồn ngã tư Giếng Nước có giá trị về lịch sử quân sự và lịch sử phát triển đô thị Vũng Tàu. Vị trí của công trình tại khu vực giao thông quan trọng cho thấy ý nghĩa của địa điểm trong việc kiểm soát và tổ chức phòng thủ. Di tích giúp nhận diện những thay đổi của không gian quân sự trong quá trình đô thị hóa Vũng Tàu. Những dấu tích còn lại, nếu được khảo sát và lập bản đồ, có thể giúp phục dựng một phần hệ thống phòng thủ và giao thông quân sự trước đây. Đây cũng là một ví dụ về việc các công trình quân sự lịch sử dần bị bao quanh bởi không gian đô thị hiện đại.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Tên trong danh mục: Đồn Nhà máy nước.",
+        "🏛️ Là công trình quân sự ở Vũng Tàu cũ.",
+        "🏛️ Gắn với hệ thống phòng thủ và cơ sở cấp nước thời thuộc địa.",
+        "🔎 Có giá trị nghiên cứu lịch sử đô thị và quân sự."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -15935,7 +16151,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đồn ngã tư Giếng Nước",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đồn ngã tư Giếng Nước",
-      "investigationQuestion": "Vì sao di tích Đồn ngã tư Giếng Nước tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đồn Ngã Tư Giếng Nước phản ánh vai trò của một vị trí quân sự trong lịch sử địa phương như thế nào, và di tích giúp em nhận thức gì về cái giá của chiến tranh đối với cộng đồng?",
       "suggestedAnswer": "Di tích Đồn ngã tư Giếng Nước là lịch sử được xếp hạng cấp quốc gia (Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đồn ngã tư Giếng Nước gắn với quá trình xây dựng, sử dụng và hoạt động của một công trình quân sự tại khu vực Vũng Tàu. Do nằm tại khu vực có ý nghĩa về giao thông và kiểm soát địa..., gắn liền với công lao to lớn của Các sĩ quan, binh lính từng đóng tại Đồn nhà máy nước cùng các cán bộ, chiến sĩ và nhân dân có hoạt động liên quan đến khu vực.... và lưu giữ các hiện vật quý: Dấu tích nền móng, công sự, cấu kiện đồn, bản đồ, ảnh tư liệu và các vật dụng quân sự nếu còn tồn tại...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -16198,6 +16414,12 @@ export const allMonumentsList = [
       ],
       "overview": "Địa đạo Hắc Dịch có giá trị về lịch sử cách mạng và nghệ thuật chiến tranh nhân dân. Hệ thống địa đạo thể hiện khả năng thích ứng của lực lượng cách mạng với địa hình và điều kiện chiến tranh. Việc xây dựng công trình dưới lòng đất tạo điều kiện để trú ẩn, bảo vệ cán bộ, cất giấu tài liệu, vận chuyển và tổ chức chiến đấu. Giá trị của di tích còn phản ánh sự đóng góp của nhân dân Hắc Dịch, bởi địa đạo không thể tồn tại nếu thiếu sức người, lương thực, thông tin và sự bảo vệ của cộng đồng. Di tích vì vậy là chứng tích về mối quan hệ giữa lực lượng cách mạng và nhân dân địa phương.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "📅 Khởi đào: mùa khô năm 1961.",
+        "🔎 Quy mô lịch sử: khoảng 2.500 m, gồm 4 tuyến.",
+        "🔎 Phục vụ làm việc, trú ẩn, liên lạc và hậu cần.",
+        "🔎 Gắn với căn cứ cách mạng Hắc Dịch – Sông Xoài."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -16381,7 +16603,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Địa đạo Hắc Dịch",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Tân Thành, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa đạo Hắc Dịch",
-      "investigationQuestion": "Vì sao di tích Địa đạo Hắc Dịch tại Phường Tân Thành, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Địa đạo Hắc Dịch cho thấy sự kết hợp giữa địa hình, công sự và sự hỗ trợ của nhân dân đã tạo nên thế trận như thế nào, và em rút ra bài học gì về thích nghi và đoàn kết?",
       "suggestedAnswer": "Di tích Địa đạo Hắc Dịch là lịch sử được xếp hạng cấp quốc gia (Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Hắc Dịch gắn với quá trình xây dựng, sử dụng và bảo vệ căn cứ, địa đạo và các cơ sở cách mạng trong thời kỳ kháng chiến. Nhân dân địa phương tham gia đào hầm, xây dựng công sự, cun..., gắn liền với công lao to lớn của Cán bộ, chiến sĩ cách mạng, du kích và nhân dân Hắc Dịch, đặc biệt những người trực tiếp xây dựng, bảo vệ và sử dụng hệ thống địa đạo.... và lưu giữ các hiện vật quý: Đường hầm, cửa hầm, công sự, hầm chiến đấu, nơi trú ẩn, dấu tích căn cứ và các tài liệu, vật dụng sinh hoạt hoặc quân sự được xác định có ng..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -16644,6 +16866,12 @@ export const allMonumentsList = [
       ],
       "overview": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước có giá trị đặc biệt về lịch sử tuyên truyền, lịch sử cộng đồng người Hoa và hoạt động cách mạng trong đô thị. Một cơ sở in tài liệu bí mật đòi hỏi phải có địa điểm kín đáo, người phụ trách, phương tiện in ấn và mạng lưới đưa tài liệu ra ngoài. Điều này cho thấy hoạt động tuyên truyền được tổ chức có hệ thống và phải đối mặt với nguy cơ bị phát hiện. Di tích cũng giúp nghiên cứu vai trò của Ban Tuyên huấn Hoa vận trong việc tiếp cận, tuyên truyền và vận động quần chúng người Hoa trong thời kỳ chống Mỹ.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 341/10 Gia Phú.",
+        "🔎 Gắn với hoạt động tuyên truyền trong cộng đồng người Hoa.",
+        "🔎 Từng in báo, truyền đơn và tài liệu chữ Hoa.",
+        "🔎 Là cơ sở cách mạng bí mật ở Chợ Lớn."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -16827,7 +17055,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước",
-      "investigationQuestion": "Vì sao di tích Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước tại Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hầm bí mật in tài liệu của Ban Tuyên huấn Hoa vận cho thấy cộng đồng người Hoa đã đóng góp như thế nào vào hoạt động cách mạng, và bài học nào về sự gắn kết của các cộng đồng có thể rút ra?",
       "suggestedAnswer": "Di tích Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước là lịch sử được xếp hạng cấp quốc gia (Số 2009/1998/QĐ-BVHTT ngày 26/9/1998 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước gắn với hoạt động in ấn, sao chép, bảo quản và phát hành tài liệu tuyên truyền. Đây là loại hình hoạt động đ..., gắn liền với công lao to lớn của Cán bộ Ban Tuyên huấn Hoa vận, các cơ sở cách mạng và những người trực tiếp tham gia in ấn, cất giấu, vận chuyển và phân phát tài liệu.... và lưu giữ các hiện vật quý: Hầm bí mật, máy in, khuôn chữ, giấy in, tài liệu tuyên truyền, dụng cụ sao chép, hộp đựng tài liệu và các vật dụng dùng để che giấu, vận chu..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -17090,6 +17318,12 @@ export const allMonumentsList = [
       ],
       "overview": "Mộ Phan Châu Trinh có giá trị đặc biệt về lịch sử tư tưởng, phong trào yêu nước và quá trình vận động cải cách xã hội Việt Nam đầu thế kỷ XX. Phan Châu Trinh là một nhà yêu nước tiêu biểu, chủ trương nâng cao dân trí, chấn hưng dân khí, phát triển dân quyền và canh tân xã hội. Vì vậy, mộ của ông không chỉ mang ý nghĩa tưởng niệm một nhân vật lịch sử mà còn là địa điểm để giáo dục về tinh thần yêu nước, ý thức cải cách và trách nhiệm đối với đất nước. Di tích có thể được khai thác trong giáo dục lịch sử, văn học, tư tưởng và hoạt động trải nghiệm cho học sinh.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "📏 Phan Châu Trinh: 1872–1926.",
+        "🔎 Là nhà yêu nước và tư tưởng đầu thế kỷ XX.",
+        "🔎 Di tích gắn với nơi an nghỉ của ông.",
+        "🏅 Xếp hạng quốc gia: 12/12/1994."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -17273,7 +17507,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Mộ Phan Châu Trinh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Mộ Phan Châu Trinh",
-      "investigationQuestion": "Vì sao di tích Mộ Phan Châu Trinh tại Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Mộ Phan Châu Trinh giúp em suy ngẫm như thế nào về tư tưởng canh tân, tinh thần yêu nước và ảnh hưởng của một nhà yêu nước đối với các thế hệ sau?",
       "suggestedAnswer": "Di tích Mộ Phan Châu Trinh là lịch sử được xếp hạng cấp quốc gia (Số 3211-QĐ/BT ngày 12/12/1994 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1926: Phan Châu Trinh qua đời, kết thúc cuộc đời hoạt động của một trong những nhà yêu nước và tư tưởng cải cách tiêu biểu đầu thế kỷ XX. Sau khi ông mất, mộ phần trở thành nơi..., gắn liền với công lao to lớn của Phan Châu Trinh là nhân vật trung tâm. Ông sinh năm 1872, mất năm 1926, là nhà yêu nước, nhà tư tưởng cải cách tiêu biểu, chủ trương nâng ca... và lưu giữ các hiện vật quý: Mộ, bia mộ và khuôn viên mộ Phan Châu Trinh; ảnh chân dung, sách, báo, bản sao tác phẩm, tài liệu nghiên cứu và những tư liệu liên quan đến ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -17536,6 +17770,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà Cao Cẳng có giá trị về lịch sử cách mạng tại Vũng Tàu và vai trò của các cơ sở dân sự trong hoạt động bí mật. Những ngôi nhà trong khu dân cư có ưu thế tạo vỏ bọc tự nhiên cho các hoạt động liên lạc và hỗ trợ cách mạng. Giá trị của di tích vì thế không chỉ nằm ở công trình mà còn ở câu chuyện về những con người đã biến không gian đời thường thành địa điểm phục vụ hoạt động cách mạng. Di tích giúp mở rộng cách nhìn về chiến tranh, cho thấy sự đóng góp của nhân dân và các gia đình cơ sở có ý nghĩa không kém những chiến trường lớn.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ: 18 Lê Lợi, Vũng Tàu cũ.",
+        "🔎 Gắn với hoạt động cách mạng thời chống Mỹ.",
+        "📅 Được xếp hạng di tích cấp quốc gia năm 1991.",
+        "🔎 Là địa điểm lưu dấu hoạt động của lực lượng cách mạng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -17719,7 +17959,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: “Nhà cao cẳng” số 18 Lê Lợi.",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích “Nhà cao cẳng” số 18 Lê Lợi.",
-      "investigationQuestion": "Vì sao di tích “Nhà cao cẳng” số 18 Lê Lợi. tại Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà Cao Cẳng số 18 Lê Lợi cho thấy một không gian nhà ở có thể trở thành cơ sở cách mạng như thế nào, và điều đó giúp em hiểu gì về sự đóng góp thầm lặng của người dân?",
       "suggestedAnswer": "Di tích “Nhà cao cẳng” số 18 Lê Lợi. là lịch sử được xếp hạng cấp quốc gia (Số 1371/QĐ ngày 03/08/1991 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Nhà Cao Cẳng gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng trong thời kỳ đấu tranh. Những hoạt động này được tổ chức trong một ngôi nhà dân dụng, giú..., gắn liền với công lao to lớn của Cán bộ cách mạng và cơ sở quần chúng từng sử dụng Nhà Cao Cẳng để liên lạc, hội họp hoặc hỗ trợ hoạt động bí mật.... và lưu giữ các hiện vật quý: Ngôi nhà Cao Cẳng, các cột đá, nền, tường, cửa, các bộ phận kiến trúc và hình ảnh, tài liệu liên quan đến hoạt động cách mạng...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -17982,6 +18222,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà Má Tám Nhung có giá trị đặc biệt về lịch sử cách mạng, lịch sử địa phương và vai trò của phụ nữ trong chiến tranh. Theo Bảo tàng Bà Rịa–Vũng Tàu, ngôi nhà trước đây là khu vườn do gia đình Má Tám Nhung khai phá, trong Cách mạng tháng Tám năm 1945 là nơi họp của Ủy ban Mặt trận Việt Minh; trong hai cuộc kháng chiến, ngôi nhà trở thành cơ sở nuôi giấu cán bộ hoạt động trong nội ô của Tỉnh ủy và Thị ủy Vũng Tàu. Giá trị của di tích vì vậy không chỉ nằm ở sự kiện mà còn ở hình ảnh người mẹ, người phụ nữ và gia đình cơ sở đã đóng góp vào hoạt động cách mạng. Bức phù điêu chân dung Má Tám được nhân dân Vũng Tàu xây dựng năm 1987 cũng thể hiện ký ức và tình cảm cộng đồng đối với bà và gia đình.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 42/11 Trần Phú.",
+        "🔎 Gắn với cơ sở cách mạng tại Vũng Tàu.",
+        "🏅 Xếp hạng quốc gia: 14/12/1989.",
+        "🔎 Là địa chỉ ghi nhớ sự đóng góp của người dân địa phương."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -18165,7 +18411,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Ngôi nhà 42/11 (nhà má Tám Nhung)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Ngôi nhà 42/11 (nhà má Tám Nhung)",
-      "investigationQuestion": "Vì sao di tích Ngôi nhà 42/11 (nhà má Tám Nhung) tại Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà má Tám Nhung cho thấy một gia đình và một ngôi nhà có thể trở thành điểm tựa cho hoạt động cách mạng như thế nào, và em học được gì về lòng tin và trách nhiệm?",
       "suggestedAnswer": "Di tích Ngôi nhà 42/11 (nhà má Tám Nhung) là lịch sử được xếp hạng cấp quốc gia (Số 1987/VH-QĐ ngày 14/12/1989 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Cách mạng tháng Tám năm 1945: Nhà Má Tám Nhung gắn với hoạt động của Ủy ban Mặt trận Việt Minh và sau đó tiếp tục là cơ sở nuôi giấu cán bộ cách mạng. Trong hai cuộc kháng chiến, n..., gắn liền với công lao to lớn của Má Tám Nhung, tức Hồ Thị Khuyên, là nhân vật trung tâm của di tích. Theo Bảo tàng Bà Rịa–Vũng Tàu, ngôi nhà gắn với cuộc đời hoạt động cách ... và lưu giữ các hiện vật quý: Ngôi nhà 42/11 cũ, nay là số 1 Trần Xuân Độ, các cấu kiện kiến trúc, không gian sinh hoạt, hình ảnh và tư liệu về Má Tám Nhung. Bảo tàng Bà ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -18428,6 +18674,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà ông Trương Quang Vinh có giá trị về lịch sử cách mạng và lịch sử cộng đồng tại Vũng Tàu. Di tích phản ánh vai trò của một gia đình và một ngôi nhà dân dụng trong mạng lưới cơ sở cách mạng. Việc bảo tồn địa điểm giúp làm rõ cách hoạt động bí mật được tổ chức trong khu dân cư, từ việc liên lạc, che giấu, hỗ trợ đến bảo vệ cán bộ. Di tích đồng thời cho thấy lịch sử chiến tranh cần được nhìn từ nhiều cấp độ, không chỉ từ các chiến dịch quân sự mà còn từ những gia đình bình thường đã tham gia vào quá trình lịch sử.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 36/29 Nguyễn An Ninh.",
+        "🏅 Xếp hạng quốc gia: 25/3/1991.",
+        "🔎 Gắn với hoạt động cách mạng ở Vũng Tàu.",
+        "🔎 Là một địa điểm lưu dấu lịch sử cách mạng địa phương."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -18611,7 +18863,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà số 18/5 (nhà ông Trương Quang Vinh)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà số 18/5 (nhà ông Trương Quang Vinh)",
-      "investigationQuestion": "Vì sao di tích Nhà số 18/5 (nhà ông Trương Quang Vinh) tại Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà số 18/5 của ông Trương Quang Vinh phản ánh sự đóng góp của cơ sở nhân dân cho cách mạng như thế nào, và vì sao những đóng góp âm thầm ấy cần được ghi nhớ?",
       "suggestedAnswer": "Di tích Nhà số 18/5 (nhà ông Trương Quang Vinh) là lịch sử được xếp hạng cấp quốc gia (Số 457/QĐ ngày 25/03/1991). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Nhà ông Trương Quang Vinh gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng tại Vũng Tàu. Trong điều kiện hoạt động bí mật, những ngôi nhà của người dân ..., gắn liền với công lao to lớn của Ông Trương Quang Vinh là nhân vật được gắn trực tiếp với tên di tích; ngoài ông còn có gia đình và những cán bộ cách mạng từng liên hệ, hoạt... và lưu giữ các hiện vật quý: Ngôi nhà số 18/5, các cấu kiện kiến trúc, không gian sinh hoạt, hình ảnh, tài liệu và những vật dụng có thể xác định nguồn gốc từ hoạt động ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -18874,6 +19126,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà Tròn có giá trị về lịch sử đô thị và lịch sử cách mạng Bà Rịa. Công trình là một dấu mốc trong không gian đô thị, giúp nghiên cứu sự hình thành và biến đổi của trung tâm Bà Rịa qua thời gian. Nhà Tròn còn gắn với những biến động chính trị và xã hội của địa phương, vì vậy có thể được xem như một “điểm neo” ký ức trong không gian đô thị. Việc bảo tồn và giới thiệu Nhà Tròn góp phần giúp người dân nhận diện những lớp lịch sử nằm bên trong một đô thị hiện đại.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🏛️ Là công trình lịch sử tại Bà Rịa cũ.",
+        "🏅 Xếp hạng quốc gia: 5/6/1987.",
+        "⚔️ Gắn với những sự kiện lịch sử của đô thị Bà Rịa.",
+        "🔎 Có giá trị về lịch sử địa phương."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -19057,7 +19315,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà Tròn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Bà Rịa, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà Tròn",
-      "investigationQuestion": "Vì sao di tích Nhà Tròn tại Phường Bà Rịa, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà Tròn đã chứng kiến những hoạt động lịch sử nào của địa phương, và việc bảo tồn không gian này giúp thế hệ trẻ kết nối với lịch s��� Vũng Tàu như thế nào?",
       "suggestedAnswer": "Di tích Nhà Tròn là lịch sử được xếp hạng cấp quốc gia (Số 112VH/QĐ ngày 05/06/1987 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Nhà Tròn gắn với quá trình hình thành, phát triển và biến đổi của không gian đô thị Bà Rịa. Công trình đã chứng kiến nhiều giai đoạn lịch sử, những thay đổi về hành chính, xã hội v..., gắn liền với công lao to lớn của Các cán bộ Việt Minh, nhân dân Bà Rịa và những người hoạt động chính trị, xã hội tại khu vực Nhà Tròn.... và lưu giữ các hiện vật quý: Nhà Tròn, các bộ phận kiến trúc, nền móng, cửa, tường, mái, hình ảnh cũ, bản đồ và các tư liệu về lịch sử hình thành đô thị Bà Rịa...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -19320,6 +19578,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nơi thành lập Kỳ bộ Việt Nam Thanh niên Cách mạng Đồng chí Hội có giá trị đặc biệt đối với lịch sử cách mạng Việt Nam. Nguồn của Trung tâm Bảo tồn Di tích TP.HCM cho biết Việt Nam Thanh niên Cách mạng Đồng chí Hội do Nguyễn Ái Quốc sáng lập năm 1925 để chuẩn bị cho việc thành lập Đảng Cộng sản; cuối năm 1926 tổ chức ở Nam Kỳ ra đời, sau đó phát triển mạnh và tổ chức đại hội để bầu Kỳ bộ chính thức. Tháng 3/1929, Kỳ bộ Nam Kỳ bầu Kỳ bộ mới với Phạm Văn Đồng làm Bí thư. Quá trình hoạt động của tổ chức đã góp phần chuẩn bị những điều kiện về tư tưởng và tổ chức cho sự hình thành Đảng Cộng sản Việt Nam. Giá trị của di tích vì vậy vượt ra ngoài phạm vi một địa điểm cụ thể, bởi nó gắn với một giai đoạn quan trọng trong quá trình hình thành tổ chức cách mạng.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "📅 Sự kiện: thành lập Kỳ bộ tại Sài Gòn.",
+        "📏 Gắn với phong trào Hội Việt Nam Cách mạng Thanh niên.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988.",
+        "📅 Là dấu mốc trong quá trình chuẩn bị thành lập Đảng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -19503,7 +19767,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội",
-      "investigationQuestion": "Vì sao di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội tại Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nơi thành lập Kỳ bộ Việt Nam Thanh niên Cách mạng Đồng chí Hội cho thấy vai trò của việc đào tạo, tập hợp và truyền bá tư tưởng cách mạng như thế nào đối với phong trào yêu nước?",
       "suggestedAnswer": "Di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội là lịch sử được xếp hạng cấp quốc gia (Số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Cuối năm 1926: tổ chức Việt Nam Thanh niên Cách mạng Đồng chí Hội ở Nam Kỳ được hình thành; tiếp đó tổ chức phát triển cơ sở, đào tạo cán bộ và truyền bá tư tưởng cách mạng. Năm 19..., gắn liền với công lao to lớn của Nguyễn Ái Quốc là người sáng lập Việt Nam Thanh niên Cách mạng Đồng chí Hội. Phan Trọng Bình và Nguyễn Văn Lợi được cử về Sài Gòn hoạt động ... và lưu giữ các hiện vật quý: Hình ảnh, văn bản, sách báo, tài liệu huấn luyện, tài liệu về Hội Việt Nam Thanh niên Cách mạng Đồng chí Hội, tài liệu về Nguyễn Ái Quốc, Ph..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -19766,6 +20030,12 @@ export const allMonumentsList = [
       ],
       "overview": "Núi Dinh có giá trị đặc biệt về lịch sử cách mạng và lịch sử quân sự. Địa hình núi rừng tạo điều kiện để xây dựng căn cứ, trú quân, tổ chức hội họp, huấn luyện và chiến đấu. Các căn cứ miền núi thường đòi hỏi sự phối hợp chặt chẽ giữa lực lượng cách mạng và nhân dân địa phương về lương thực, thông tin, vận chuyển và bảo vệ. Vì vậy, giá trị của Núi Dinh còn phản ánh sức mạnh của cộng đồng trong chiến tranh. Di tích cũng có thể được nghiên cứu dưới góc độ quan hệ giữa con người và môi trường tự nhiên, khi địa hình được sử dụng như một yếu tố chiến lược.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Là căn cứ cách mạng quan trọng của Bà Rịa – Vũng Tàu cũ.",
+        "🏅 Xếp hạng quốc gia: 16/12/1993.",
+        "🔎 Không gian căn cứ nằm trên địa hình núi rừng hiểm trở.",
+        "🔎 Gắn với hoạt động của lực lượng cách mạng qua nhiều thời kỳ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -19949,7 +20219,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Khu căn cứ Núi Dinh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Tân Hải, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Khu căn cứ Núi Dinh",
-      "investigationQuestion": "Vì sao di tích Khu căn cứ Núi Dinh tại Phường Tân Hải, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Khu căn cứ Núi Dinh cho thấy địa hình núi đã được tận dụng như thế nào để xây dựng căn cứ và tổ chức kháng chiến, và em rút ra bài học gì về thích nghi với hoàn cảnh?",
       "suggestedAnswer": "Di tích Khu căn cứ Núi Dinh là lịch sử được xếp hạng cấp quốc gia (Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Núi Dinh gắn với quá trình xây dựng và sử dụng căn cứ cách mạng trong các thời kỳ kháng chiến. Địa hình núi rừng được tận dụng để xây dựng nơi trú quân, hội họp, huấn luyện, cất gi..., gắn liền với công lao to lớn của Các cán bộ lãnh đạo, cán bộ quân sự, chiến sĩ cách mạng, du kích và nhân dân hoạt động tại căn cứ Núi Dinh.... và lưu giữ các hiện vật quý: Hang, hầm, công sự, đường mòn, nền nhà, dấu tích nơi ở và làm việc, các công trình phục vụ căn cứ cùng bản đồ, ảnh và tài liệu về hoạt động ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -20212,6 +20482,12 @@ export const allMonumentsList = [
       ],
       "overview": "Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 có giá trị đặc biệt về lịch sử quân sự và lịch sử chỉ huy. Di tích gắn với một chiến dịch lớn, trong đó công tác chỉ huy, truyền đạt mệnh lệnh, tổ chức lực lượng và phối hợp các hướng chiến đấu giữ vai trò quan trọng. Việc nghiên cứu địa điểm giúp hiểu hơn về cơ cấu tổ chức và phương thức điều hành lực lượng trong chiến tranh. Đồng thời, di tích có giá trị giáo dục khi giúp học sinh tiếp cận lịch sử thông qua một địa điểm cụ thể thay vì chỉ thông qua các mốc thời gian trong sách giáo khoa.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "📅 Gắn với Chiến dịch Mậu Thân năm 1968.",
+        "🔎 Địa điểm lịch sử: số 7 Lý Chính Thắng.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988.",
+        "🔎 Là nơi ghi dấu hoạt động chỉ huy chiến đấu trong nội đô."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -20395,7 +20671,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968",
-      "investigationQuestion": "Vì sao di tích Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 tại Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Sở Chỉ huy Tiền phương Phân khu 6 trong Chiến dịch Mậu Thân 1968 cho thấy công tác chỉ huy và tổ chức lực lượng có vai trò như thế nào trong một chiến dịch phức tạp?",
       "suggestedAnswer": "Di tích Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 là lịch sử được xếp hạng cấp quốc gia (Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1968 – Chiến dịch Mậu Thân: Sở Chỉ huy tiền phương Phân khu 6 gắn với hoạt động tổ chức, chỉ huy và điều hành lực lượng trong chiến dịch. Tại cơ quan chỉ huy tiền phương, các h..., gắn liền với công lao to lớn của Các cán bộ chỉ huy Phân khu 6, cán bộ tham mưu, chiến sĩ và lực lượng vũ trang tham gia chiến dịch Mậu Thân 1968.... và lưu giữ các hiện vật quý: Bản đồ tác chiến, sơ đồ chiến dịch, tài liệu quân sự, hình ảnh, phương tiện liên lạc và các vật dụng còn lại của Sở Chỉ huy nếu xác định đượ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -20658,6 +20934,12 @@ export const allMonumentsList = [
       ],
       "overview": "Tịnh xá Ngọc Phương có giá trị về lịch sử Phật giáo Việt Nam, lịch sử Ni giới Khất sĩ và văn hóa cộng đồng. Di tích gắn với hoạt động tu học, hoằng pháp, giáo dục đạo đức và sinh hoạt tôn giáo. Không gian tịnh xá còn phản ánh vai trò của phụ nữ trong đời sống tôn giáo và sự phát triển của Ni giới. Bên cạnh giá trị tôn giáo, các hoạt động xã hội, từ thiện và giáo dục gắn với cơ sở tôn giáo cũng tạo nên giá trị xã hội của di tích.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 498/1 Lê Quang Định.",
+        "🔎 Là cơ sở Phật giáo có giá trị lịch sử và kiến trúc.",
+        "🏅 Xếp hạng quốc gia: 15/10/1994.",
+        "🔎 Gắn với quá trình phát triển Phật giáo ở Nam Bộ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -20841,7 +21123,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Tịnh xá Ngọc Phương",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Tịnh xá Ngọc Phương",
-      "investigationQuestion": "Vì sao di tích Tịnh xá Ngọc Phương tại Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Tịnh xá Ngọc Phương cho thấy một cơ sở Phật giáo có thể lưu giữ những giá trị nào về đời sống tinh thần, kiến trúc và cộng đồng, và học sinh cần ứng xử thế nào với di sản tín ngưỡng?",
       "suggestedAnswer": "Di tích Tịnh xá Ngọc Phương là lịch sử được xếp hạng cấp quốc gia (Số 2754/QĐ-BT ngày 15/10/1994 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Tịnh xá Ngọc Phương gắn với quá trình tu học, hoằng pháp và phát triển Ni giới Khất sĩ. Các sự kiện tiêu biểu bao gồm những hoạt động truyền bá giáo lý, đào tạo người tu hành, tổ c..., gắn liền với công lao to lớn của Các ni trưởng, ni sư, Phật tử và những người đóng góp cho quá trình phát triển Tịnh xá Ngọc Phương và Ni giới Khất sĩ.... và lưu giữ các hiện vật quý: Tượng Phật, pháp khí, kinh sách, chuông, mõ, đồ thờ, tượng thờ, kiến trúc tịnh xá, sách và tài liệu về Ni giới Khất sĩ...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -21104,6 +21386,12 @@ export const allMonumentsList = [
       ],
       "overview": "Tòa Đại sứ quán Mỹ có giá trị đặc biệt về lịch sử ngoại giao, lịch sử chiến tranh và lịch sử đô thị Sài Gòn. Đây là địa điểm gắn với hoạt động của cơ quan đại diện ngoại giao Hoa Kỳ trong một giai đoạn đặc biệt của lịch sử Việt Nam. Những biến động tại địa điểm trong giai đoạn cuối chiến tranh phản ánh sự thay đổi nhanh chóng của tình hình chính trị và quân sự. Di tích vì vậy có giá trị không chỉ đối với lịch sử Việt Nam mà còn đối với nghiên cứu quan hệ Việt Nam – Hoa Kỳ.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 4 Lê Duẩn.",
+        "📅 Gắn với các sự kiện lịch sử năm 1975.",
+        "🏅 Xếp hạng di tích: 25/6/1976.",
+        "🔎 Là địa điểm có giá trị đặc biệt trong nghiên cứu lịch sử hiện đại."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -21287,7 +21575,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Tòa Đại sứ quán Mỹ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Tòa Đại sứ quán Mỹ",
-      "investigationQuestion": "Vì sao di tích Tòa Đại sứ quán Mỹ tại Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Tòa Đại sứ quán Mỹ là một địa điểm gắn với những biến động lịch sử nào, và việc tìm hiểu nơi này giúp học sinh nhìn nhận chiến tranh, quan hệ quốc tế và hòa bình một cách có trách nhiệm ra sao?",
       "suggestedAnswer": "Di tích Tòa Đại sứ quán Mỹ là lịch sử được xếp hạng cấp quốc gia (Số 77A/VHQĐ ngày 25/6/1976). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Tòa Đại sứ quán Mỹ gắn với các hoạt động ngoại giao, chính trị và quân sự của Hoa Kỳ tại Sài Gòn trong thời kỳ Chiến tranh Việt Nam. Đặc biệt trong giai đoạn cuối chiến tranh, tình..., gắn liền với công lao to lớn của Các đại sứ, quan chức ngoại giao, nhân viên Đại sứ quán Mỹ và các nhân vật Việt Nam có hoạt động ngoại giao hoặc chính trị liên quan.... và lưu giữ các hiện vật quý: Công trình, cấu kiện kiến trúc, ảnh, văn bản ngoại giao, bản đồ, thư từ và tài liệu về hoạt động của Đại sứ quán Mỹ...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -21550,6 +21838,12 @@ export const allMonumentsList = [
       ],
       "overview": "Trại Đa-vít có giá trị đặc biệt về lịch sử ngoại giao – quân sự sau Hiệp định Paris năm 1973. Địa điểm phản ánh một giai đoạn mà hoạt động ngoại giao, quân sự và chính trị gắn bó chặt chẽ với nhau. Việc nghiên cứu Trại Đa-vít giúp hiểu rõ hơn hoạt động của các phái đoàn quân sự, quá trình liên lạc, trao đổi và đấu tranh trong giai đoạn cuối của cuộc chiến. Di tích còn cho thấy vai trò của ngoại giao trong việc giải quyết các vấn đề phát sinh sau một hiệp định quốc tế.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Vị trí: khu vực sân bay Tân Sơn Nhất.",
+        "🔎 Gắn với hoạt động của phái đoàn quân sự sau Hiệp định Paris.",
+        "🏅 Xếp hạng quốc gia: 15/3/2017.",
+        "📅 Là di tích phản ánh giai đoạn cuối của chiến tranh Việt Nam."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -21733,7 +22027,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Trại Đa-vít",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Bảy Hiền, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Trại Đa-vít",
-      "investigationQuestion": "Vì sao di tích Trại Đa-vít tại Phường Bảy Hiền, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trại Đa-vít phản ánh vai trò của một địa điểm trong giai đoạn chuyển tiếp sau Hiệp định Paris như thế nào, và di tích giúp em hiểu gì về giá trị của đối thoại và ngoại giao?",
       "suggestedAnswer": "Di tích Trại Đa-vít là lịch sử được xếp hạng cấp quốc gia (Số 827/QĐ-BVHTTDL ngày 15/3/2017 của Bộ Văn hóa, Thể thao và Du lịch). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Sau Hiệp định Paris năm 1973: Trại Đa-vít trở thành địa điểm hoạt động của phái đoàn quân sự Việt Nam trong giai đoạn cuối chiến tranh. Tại đây diễn ra các hoạt động liên lạc, trao..., gắn liền với công lao to lớn của Các thành viên phái đoàn quân sự Việt Nam tại Trại Đa-vít, cán bộ quân sự, cán bộ ngoại giao và đại diện các bên tham gia quá trình thực hiệ... và lưu giữ các hiện vật quý: Phòng làm việc, tài liệu quân sự, bản đồ, văn bản, ảnh, vật dụng sinh hoạt và các hiện vật liên quan đến hoạt động của phái đoàn tại Trại Đa..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -21996,6 +22290,12 @@ export const allMonumentsList = [
       ],
       "overview": "Trận địa pháo Cầu Đá có giá trị về lịch sử quân sự và hệ thống phòng thủ ven biển Vũng Tàu. Trận địa thể hiện cách sử dụng địa hình ven biển để bố trí công trình quân sự, tăng khả năng quan sát và kiểm soát khu vực. Các bệ pháo, công sự và dấu tích liên quan nếu còn tồn tại là nguồn tư liệu vật chất quan trọng để nghiên cứu kỹ thuật phòng thủ. Di tích cũng giúp kết nối lịch sử quân sự với lịch sử hình thành không gian đô thị biển Vũng Tàu.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Vị trí: khu vực Cầu Đá – Hạ Long.",
+        "🏛️ Gắn với hệ thống phòng thủ ven biển Vũng Tàu.",
+        "🏅 Xếp hạng quốc gia: 20/7/1994.",
+        "🔎 Là dấu tích quân sự có giá trị lịch sử."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -22179,7 +22479,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Trận địa pháo cổ Cầu Đá",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Trận địa pháo cổ Cầu Đá",
-      "investigationQuestion": "Vì sao di tích Trận địa pháo cổ Cầu Đá tại Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trận địa pháo cổ Cầu Đá cho thấy sự thay đổi của hệ thống phòng thủ ven biển qua các thời kỳ như thế nào, và vì sao cần bảo tồn cả giá trị kỹ thuật lẫn lịch sử của di tích?",
       "suggestedAnswer": "Di tích Trận địa pháo cổ Cầu Đá là lịch sử được xếp hạng cấp quốc gia (Số 921QĐ/BT ngày 20/07/1994 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Trận địa pháo Cầu Đá gắn với quá trình xây dựng, bố trí và vận hành hệ thống phòng thủ ven biển tại Vũng Tàu. Việc lựa chọn vị trí Cầu Đá có liên quan đến yêu cầu quan sát và kiểm ..., gắn liền với công lao to lớn của Các sĩ quan, binh lính và lực lượng quân sự từng xây dựng, quản lý và vận hành trận địa pháo Cầu Đá.... và lưu giữ các hiện vật quý: Khẩu pháo, bệ pháo, công sự, hầm, đường hào, nền trận địa và các dấu tích quân sự còn lại tại Cầu Đá...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -22442,6 +22742,12 @@ export const allMonumentsList = [
       ],
       "overview": "Trận địa pháo Núi Nhỏ có giá trị về lịch sử quân sự và kỹ thuật phòng thủ. Vị trí trên cao giúp trận địa có lợi thế về quan sát và kiểm soát không gian ven biển. Những dấu tích còn lại có thể giúp nghiên cứu cách bố trí pháo, công sự và đường tiếp cận. Trong hệ thống di tích Vũng Tàu, trận địa Núi Nhỏ có ý nghĩa khi đặt cạnh các trận địa Cầu Đá và Núi Lớn, qua đó có thể tái hiện một phần mạng lưới phòng thủ của thành phố.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "🔎 Vị trí: Núi Nhỏ – Tao Phùng.",
+        "🏛️ Là hệ thống trận địa pháo ven biển.",
+        "🏅 Xếp hạng quốc gia: 18/1/1993.",
+        "🏛️ Phản ánh lịch sử phòng thủ Vũng Tàu."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -22625,7 +22931,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)",
-      "investigationQuestion": "Vì sao di tích Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ) tại Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trận địa pháo cổ trên Núi Tao Phùng (Núi Nhỏ) cho thấy vị trí địa hình có thể quyết định khả năng phòng thủ và quan sát như thế nào, và em học được gì về mối quan hệ giữa con người với không gian?",
       "suggestedAnswer": "Di tích Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ) là lịch sử được xếp hạng cấp quốc gia (Số 57VH/QĐ ngày 18/01/1993 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Trận địa pháo Núi Nhỏ gắn với quá trình xây dựng và sử dụng một công trình quân sự trên địa hình cao của Vũng Tàu. Vị trí cao giúp tăng khả năng quan sát và kiểm soát khu vực biển,..., gắn liền với công lao to lớn của Các sĩ quan, binh lính và lực lượng quân sự từng xây dựng và vận hành trận địa pháo Núi Nhỏ.... và lưu giữ các hiện vật quý: Khẩu pháo, bệ pháo, công sự, hầm quân sự, đường hào và các dấu tích trận địa trên Núi Nhỏ – Tao Phùng...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -22888,6 +23194,12 @@ export const allMonumentsList = [
       ],
       "overview": "Trận địa pháo Sao Mai (Núi Lớn) có giá trị về lịch sử quân sự, kỹ thuật công sự và lịch sử phòng thủ Vũng Tàu. Núi Lớn có vị trí địa hình thuận lợi cho việc quan sát và bố trí công trình quân sự. Trận địa pháo và hệ thống hầm thủy lôi liên quan tạo thành một không gian phòng thủ có nhiều lớp. Việc bảo tồn các dấu tích này giúp nghiên cứu cách con người sử dụng địa hình tự nhiên để phục vụ mục tiêu quân sự và đồng thời cho thấy những lớp lịch sử quân sự đang tồn tại trong cảnh quan đô thị – du lịch hiện nay.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Vị trí: Núi Lớn – Vũng Tàu.",
+        "⚔️ Gồm trận địa pháo và hầm thủy lôi.",
+        "🏅 Xếp hạng quốc gia: 4/8/1992.",
+        "🏛️ Là một phần hệ thống phòng thủ cửa biển."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -23071,7 +23383,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
-      "investigationQuestion": "Vì sao di tích Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trận địa pháo cổ và hầm thủy lôi Núi Lớn cho thấy con người đã sử dụng địa hình và kỹ thuật để bảo vệ vùng biển như thế nào, đồng thời đặt ra yêu cầu gì về bảo tồn di sản quân sự?",
       "suggestedAnswer": "Di tích Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn là lịch sử được xếp hạng cấp quốc gia (Số 983/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Trận địa pháo Sao Mai (Núi Lớn) gắn với quá trình xây dựng và vận hành hệ thống công trình phòng thủ trên Núi Lớn. Trận địa pháo được bố trí tại vị trí có lợi thế về độ cao và tầm ..., gắn liền với công lao to lớn của Các sĩ quan, binh lính và lực lượng phụ trách trận địa pháo, công sự và hệ thống hầm thủy lôi Núi Lớn.... và lưu giữ các hiện vật quý: Khẩu pháo, bệ pháo, công sự, hầm phòng thủ, dấu tích hầm thủy lôi và các cấu kiện của hệ thống phòng thủ Núi Lớn...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -23334,6 +23646,12 @@ export const allMonumentsList = [
       ],
       "overview": "Trụ sở Báo Dân Chúng có giá trị đối với lịch sử báo chí, truyền thông và đời sống chính trị – xã hội Sài Gòn. Báo chí không chỉ truyền tải tin tức mà còn góp phần hình thành dư luận, phản ánh các vấn đề xã hội và tác động đến nhận thức của công chúng. Di tích vì vậy giúp nghiên cứu lịch sử truyền thông từ góc độ không gian vật chất: nơi làm việc, nơi biên tập, in ấn và phát hành. Đây cũng là nguồn tư liệu có thể sử dụng để giáo dục học sinh về lịch sử báo chí và sự thay đổi của phương thức truyền thông.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 43 Lê Thị Hồng Gấm.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988.",
+        "🔎 Gắn với hoạt động báo chí và phong trào cách mạng.",
+        "🔎 Có giá trị về lịch sử báo chí và đô thị Sài Gòn."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -23517,7 +23835,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Trụ sở Báo Dân Chúng",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Trụ sở Báo Dân Chúng",
-      "investigationQuestion": "Vì sao di tích Trụ sở Báo Dân Chúng tại Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trụ sở Báo Dân Chúng cho thấy báo chí và không gian truyền thông có thể góp phần như thế nào vào đời sống xã hội và đấu tranh chính trị, và học sinh hôm nay cần có trách nhiệm gì khi tiếp nhận thông tin?",
       "suggestedAnswer": "Di tích Trụ sở Báo Dân Chúng là lịch sử được xếp hạng cấp quốc gia (Số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Trụ sở Báo Dân Chúng gắn với hoạt động xuất bản, biên tập và phát hành báo chí. Các sự kiện tại đây bao gồm quá trình tổ chức tòa soạn, biên tập nội dung, chuẩn bị ấn phẩm, in ấn v..., gắn liền với công lao to lớn của Các nhà báo, biên tập viên, phóng viên, cộng tác viên và nhân viên kỹ thuật của Báo Dân Chúng.... và lưu giữ các hiện vật quý: Trụ sở, các cấu kiện kiến trúc, số báo cũ, tài liệu biên tập, ảnh nhà báo, máy in và thiết bị nghề báo nếu còn được bảo tồn...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -23780,6 +24098,12 @@ export const allMonumentsList = [
       ],
       "overview": "Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam cạnh Phân ban Quốc tế có giá trị đặc biệt về lịch sử ngoại giao và quân sự. Di tích gắn với hoạt động của phái đoàn trong bối cảnh sau Hiệp định Genève, khi các vấn đề đình chiến và thực hiện hiệp định được đặt dưới cơ chế giám sát quốc tế. Nguồn của Nhà xuất bản Chính trị quốc gia – Sự thật cho biết phái đoàn hoạt động trong giai đoạn 1955–1958 và có hồi ký riêng về hoạt động của Phái đoàn Liên lạc Quân đội nhân dân Việt Nam bên cạnh Ủy ban Quốc tế. Di tích vì vậy có giá trị lớn trong nghiên cứu lịch sử ngoại giao, quân sự và quan hệ quốc tế.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "📅 Thời gian hoạt động: 1955–1958.",
+        "🔎 Địa chỉ lịch sử: 87A Trần Kế Xương.",
+        "🔎 Gắn với Phái đoàn liên lạc của Bộ Tổng tư lệnh.",
+        "🏅 Xếp hạng quốc gia: 16/11/1988."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -23963,7 +24287,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)",
-      "investigationQuestion": "Vì sao di tích Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958) tại Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trụ sở Phái đoàn Liên lạc của Bộ Tổng Tư lệnh cạnh Phân ban Quốc tế giám sát đình chiến tại Sài Gòn cho thấy vai trò của giám sát, liên lạc và ngoại giao trong việc thực hiện đình chiến như thế nào?",
       "suggestedAnswer": "Di tích Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958) là lịch sử được xếp hạng cấp quốc gia (Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Giai đoạn 1955–1958: Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam cạnh Phân ban Quốc tế gắn với hoạt động liên lạc, trao đổi và thực hiện nhiệm vụ trong..., gắn liền với công lao to lớn của Các thành viên Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam và những người trực tiếp tham gia hoạt động liên lạc với Ph... và lưu giữ các hiện vật quý: Nhà, phòng làm việc, tài liệu liên lạc, văn bản, bản đồ, ảnh, hồi ký và các tư liệu của Phái đoàn. Hồi ký về Phái đoàn Liên lạc Quân đội nhâ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -24226,6 +24550,12 @@ export const allMonumentsList = [
       ],
       "overview": "Trụ sở Ủy ban Việt Minh tại Vũng Tàu có giá trị đặc biệt về lịch sử Cách mạng tháng Tám năm 1945 tại địa phương. Di tích phản ánh quá trình tổ chức lực lượng, tuyên truyền, vận động quần chúng và chuẩn bị giành chính quyền. Đây là một mắt xích giúp kết nối lịch sử Vũng Tàu với tiến trình Cách mạng tháng Tám trên phạm vi cả nước. Giá trị của di tích còn nằm ở việc cho thấy vai trò của tổ chức quần chúng và sự tham gia của nhân dân trong quá trình chuyển biến chính trị năm 1945.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 1 Ba Cu.",
+        "🏅 Xếp hạng quốc gia: 25/3/1991.",
+        "🔎 Gắn với hoạt động của Việt Minh tại Vũng Tàu.",
+        "🔎 Có giá trị về lịch sử cách mạng địa phương."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -24409,7 +24739,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Trụ sở Ủy ban Việt Minh tại Vũng Tàu",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Trụ sở Ủy ban Việt Minh tại Vũng Tàu",
-      "investigationQuestion": "Vì sao di tích Trụ sở Ủy ban Việt Minh tại Vũng Tàu tại Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trụ sở Ủy ban Việt Minh tại Vũng Tàu cho thấy tổ chức Việt Minh đã gắn kết và huy động nhân dân địa phương như thế nào, và di tích giúp em hiểu gì về sức mạnh của sự đồng lòng?",
       "suggestedAnswer": "Di tích Trụ sở Ủy ban Việt Minh tại Vũng Tàu là lịch sử được xếp hạng cấp quốc gia (Số 457/QĐ ngày 25/03/1991). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Cách mạng tháng Tám năm 1945: Trụ sở Ủy ban Việt Minh tại Vũng Tàu gắn với quá trình tổ chức lực lượng, tuyên truyền, vận động quần chúng và chuẩn bị giành chính quyền tại địa phươ..., gắn liền với công lao to lớn của Các thành viên Ủy ban Việt Minh tại Vũng Tàu, cán bộ Việt Minh và nhân dân địa phương tham gia chuẩn bị, vận động và giành chính quyền trong... và lưu giữ các hiện vật quý: Trụ sở, phòng làm việc, tài liệu Việt Minh, văn bản, truyền đơn, ảnh, khẩu hiệu và các tư liệu phản ánh hoạt động của Ủy ban Việt Minh tại V..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -24672,6 +25002,12 @@ export const allMonumentsList = [
       ],
       "overview": "Bạch Dinh được xây dựng từ năm 1898 đến khoảng năm 1902, dưới thời Toàn quyền Đông Dương Paul Doumer, trên khu vực từng có pháo đài Phước Thắng của triều Nguyễn. Công trình từng là nơi nghỉ dưỡng của các Toàn quyền Đông Dương, vua Bảo Đại và một số quan chức chính quyền Sài Gòn. Đặc biệt, từ tháng 9/1907 đến năm 1916, đây là nơi thực dân Pháp quản thúc vua Thành Thái. Bạch Dinh là chứng tích phản ánh lịch sử Vũng Tàu thời Pháp thuộc và những biến động của Việt Nam trong thế kỷ XX. Công trình còn có giá trị kiến trúc nghệ thuật với phong cách châu Âu cuối thế kỷ XIX, kết hợp các mảng trang trí bằng gốm sứ tráng men.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Khởi công: 1898; hoàn thành khoảng 1902.",
+        "🏛️ Công trình gồm 3 tầng.",
+        "🔎 Từng là nơi quản thúc vua Thành Thái từ 1907–1916.",
+        "🏅 Xếp hạng quốc gia: 4/8/1992."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -24855,8 +25191,8 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Bạch Dinh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Bạch Dinh",
-      "investigationQuestion": "Bạch Dinh (Villa Blanche) trên sườn Núi Lớn đã ghi dấu sự kiện giam lỏng vua yêu nước Thành Thái và mang những giá trị nghệ thuật kiến trúc châu Âu nào?",
-      "suggestedAnswer": "Xây dựng từ 1898-1902 theo phong cách châu Âu gồm 3 tầng với rèm phù điêu gốm sứ, Bạch Dinh từng là nơi giam lỏng vua yêu nước Thành Thái (1907-1916) và hiện lưu giữ bộ sưu tập súng thần công, cổ vật Hòn Cau quý giá.",
+      "investigationQuestion": "Bạch Dinh cho thấy sự đan xen giữa lịch sử thuộc địa, câu chuyện vua Thành Thái và giá trị kiến trúc đã tạo nên giá trị di sản như thế nào, và học sinh nên tiếp cận di tích từ những góc nhìn nào?",
+      "suggestedAnswer": "Di tích Bạch Dinh là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 983-VH/QĐ ngày 04/8/1992 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1898–1902: xây dựng Bạch Dinh; tháng 9/1907–1916: vua Thành Thái bị quản thúc tại đây; năm 1916: vua Thành Thái và vua Duy Tân bị đưa đi đày ở đảo Réunion; năm 1934: Bạch Dinh được..., gắn liền với công lao to lớn của Paul Doumer: Toàn quyền Đông Dương đã phê duyệt và cho xây dựng Bạch Dinh từ năm 1898 để làm dinh thự nghỉ dưỡng. C\nPaul Beau: Người kế nhiệ... và lưu giữ các hiện vật quý: Bộ trường kỷ Hoàng gia có niên đại năm 1921; cặp song bình “Bách điểu chầu phụng”; bộ tượng Tam Đa Phúc – Lộc – Thọ; cặp ngà voi châu Phi; s..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
           "title": "Hồ sơ khoa học Di tích Bạch Dinh",
@@ -25118,6 +25454,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đây là một trong những bảo tàng có lịch sử lâu đời nhất ở miền Nam Việt Nam. Tòa nhà chính được xây dựng từ năm 1927, khánh thành đầu năm 1929, mang phong cách kiến trúc Đông Dương, kết hợp hài hòa giữa kiến trúc phương Đông và phương Tây. Bảo tàng lưu giữ hơn 40.000 hiện vật, tư liệu, phản ánh lịch sử và văn hóa Việt Nam từ thời nguyên thủy đến năm 1945, các nền văn hóa cổ ở Nam Bộ và một số quốc gia châu Á.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Khánh thành: 1/1/1929.",
+        "📏 Khuôn viên: khoảng 6.057 m².",
+        "🏛️ Trưng bày khoảng 36.000 hiện vật.",
+        "🏛️ Không gian trưng bày gồm 18 phòng trong nhà và khu ngoài trời."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -25301,7 +25643,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
-      "investigationQuestion": "Vì sao di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh tại Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Bảo tàng Lịch sử Thành phố Hồ Chí Minh cho thấy việc sưu tầm và trưng bày hiện vật giúp con người hiểu tiến trình lịch sử và giao lưu văn hóa như thế nào?",
       "suggestedAnswer": "Di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 1207/QĐ-BVHTTDL ngày 29/3/2012 của Bộ Văn hóa, Thể thao và Du lịch.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 24/11/1927: thành lập Bảo tàng Nam Kỳ; đầu năm 1929: khánh thành tòa nhà bảo tàng; 04/2/1929: mở cửa phục vụ công chúng; năm 1956: đổi thành Viện Bảo tàng Quốc gia Việt Nam tại Sài..., gắn liền với công lao to lớn của Paul Blanchard de la Brosse: Thống đốc Nam Kỳ, người ký nghị định thành lập Bảo tàng Nam Kỳ năm 1927; tên ông từng được dùng đặt cho bảo tàn... và lưu giữ các hiện vật quý: Các tượng và tác phẩm nghệ thuật thuộc văn hóa Óc Eo, Champa, Khmer; tượng Phật; tượng thần Vishnu, Surya, nữ thần Devi, Durga; tượng Avalok..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -25564,6 +25906,12 @@ export const allMonumentsList = [
       ],
       "overview": "Tòa nhà được xây dựng từ năm 1885 đến năm 1890, do kiến trúc sư người Pháp Alfred Foulhoux thiết kế theo phong cách Tân cổ điển phương Tây, kết hợp một số yếu tố kiến trúc bản địa. Trong khoảng 85 năm, công trình từng là dinh thự và trụ sở của nhiều chính quyền tại Nam Kỳ và miền Nam Việt Nam. Đây cũng là nơi lưu giữ, trưng bày lịch sử hình thành, đấu tranh và phát triển của Sài Gòn – Gia Định – Thành phố Hồ Chí Minh.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "🔎 Khởi công: 1885; khánh thành: 1890.",
+        "📏 Khuôn viên: hơn 12.000 m².",
+        "📏 Tòa nhà chính xây trên diện tích khoảng 1.711 m².",
+        "🏛️ Công trình mang phong cách châu Âu kết hợp yếu tố Á Đông."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -25747,7 +26095,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Bảo tàng Thành phố Hồ Chí Minh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Bảo tàng Thành phố Hồ Chí Minh",
-      "investigationQuestion": "Vì sao di tích Bảo tàng Thành phố Hồ Chí Minh tại Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Bảo tàng Thành phố Hồ Chí Minh đã thay đổi chức năng qua nhiều giai đoạn lịch sử như thế nào, và sự thay đổi ấy giúp em hiểu gì về mối quan hệ giữa công trình kiến trúc và lịch sử đô thị?",
       "suggestedAnswer": "Di tích Bảo tàng Thành phố Hồ Chí Minh là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 1206/QĐ-BVHTTDL ngày 29/3/2012 của Bộ Văn hóa, Thể thao và Du lịch.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1885–1890: xây dựng tòa nhà; sau Cách mạng tháng Tám năm 1945: được sử dụng làm trụ sở Ủy ban Hành chính lâm thời Nam Bộ; 9/1/1950: cuộc biểu tình của học sinh, sinh viên diễn ra t..., gắn liền với công lao to lớn của Alfred Foulhoux: kiến trúc sư người Pháp thiết kế công trình. Trần Văn Ơn: học sinh hy sinh trong cuộc biểu tình ngày 9/1/1950 diễn ra trước... và lưu giữ các hiện vật quý: Khuôn in tín phiếu mệnh giá 5 đồng năm 1947 – bảo vật quốc gia; ấn “Lương Tài Hầu chi ấn” – bảo vật quốc gia; tờ lịch ngày 30/4/1975; hiện v..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -26010,6 +26358,12 @@ export const allMonumentsList = [
       ],
       "overview": "Chùa Giác Lâm được xây dựng năm 1744, là một trong những ngôi chùa cổ tiêu biểu của Thành phố Hồ Chí Minh và được xem là tổ đình của dòng Lâm Tế tại Nam Bộ. Trong thế kỷ XIX, chùa từng là học viện, học xá Phật giáo; trong hai cuộc kháng chiến chống Pháp và chống Mỹ, chùa còn là cơ sở hội họp, che giấu và nuôi dưỡng cán bộ cách mạng.\n\nChùa mang đặc trưng kiến trúc chùa cổ Nam Bộ với mặt bằng hình chữ “tam”, mái dạng “bánh ít” và hệ thống 98 cột gỗ quý. Không gian chánh điện được bài trí trang nghiêm, gồm các bộ tượng Di Đà Tam Tôn, Tam Thế Phật, La Hán, Thập Điện cùng bộ tượng một vị Phật và bốn vị Bồ Tát được tạo tác theo hình thức “thượng kỳ thú”.\n\nGiá trị nghệ thuật của chùa thể hiện qua 113 pho tượng gỗ mít, 5 tượng đồng, 86 câu đối chữ Hán, cùng hệ thống hoành phi, bao lam chạm khắc và các mảng trang trí bằng gốm sứ Bình Dương. Nổi bật là hai bộ tượng La Hán bằng gỗ thếp vàng có niên đại từ thế kỷ XVIII–XIX. Khuôn viên chùa còn có cổng nhị quan và vườn tháp với 38 ngôi tháp thờ các vị tổ, trụ trì và tăng sĩ.\n\nNhờ giá trị nổi bật về lịch sử, tôn giáo, kiến trúc và nghệ thuật, chùa Giác Lâm được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia năm 1988.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "📅 Khởi dựng: 1744.",
+        "🔎 Có 4 lần trùng tu lớn.",
+        "🏛️ Lưu giữ 113 tượng gỗ, 5 tượng đồng và 38 tháp.",
+        "🔎 Là một trong những tổ đình Phật giáo cổ tiêu biểu của Nam Bộ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -26193,7 +26547,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Giác Lâm",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Giác Lâm",
-      "investigationQuestion": "Vì sao di tích Chùa Giác Lâm tại 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Giác Lâm đã bảo tồn những giá trị nào của Phật giáo và văn hóa Nam Bộ qua nhiều thế hệ, và em có thể làm gì để góp phần gìn giữ một di sản sống?",
       "suggestedAnswer": "Di tích Chùa Giác Lâm là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (quyết định số 1288-VH/QĐ ngày 16 tháng 11 năm 1988.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1744: Lý Thụy Long quyên tiền xây dựng chùa.\nGiai đoạn 1798–1804: Chùa được trùng tu lớn lần thứ nhất.\nGiai đoạn 1900–1909: Trùng tu lớn lần thứ hai.\nGiai đoạn 1939–1945: Trùng..., gắn liền với công lao to lớn của Lý Thụy Long: Người Minh Hương, quyên tiền xây dựng chùa năm 1744.\nThiền sư Viên Quang: Thuộc đời thứ 36 của dòng Lâm Tế, là vị trụ trì đầu ... và lưu giữ các hiện vật quý: 113 pho tượng cổ bằng gỗ mít và 5 pho tượng bằng đồng.\nHai bộ tượng La Hán bằng gỗ thếp vàng: bộ nhỏ có niên đại thế kỷ XVIII và bộ lớn có n..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -26456,6 +26810,12 @@ export const allMonumentsList = [
       ],
       "overview": "Chùa Giác Viên là ngôi chùa cổ tiêu biểu của vùng Gia Định – Sài Gòn, hiện tọa lạc tại số 161/35/20 đường Lạc Long Quân, phường Bình Thới, Thành phố Hồ Chí Minh. Chùa có nguồn gốc từ một căn nhà nhỏ dựng tại bến Hố Đất để trông giữ gỗ phục vụ việc trùng tu chùa Giác Lâm năm 1798. Căn nhà dần trở thành am thờ Phật, được xây thành Quan Âm Viện năm 1805 và đổi tên thành chùa Giác Viên năm 1850. Chùa gắn với Thiền sư Tiên Giác – Hải Tịnh và Thiền sư Hoằng Ân – Minh Khiêm, những danh tăng có công đào tạo tăng sĩ, chấn chỉnh nghi lễ, giảng dạy kinh luật, sao chép kinh sách và khắc mộc bản Phật giáo. Vì vậy, Giác Viên từng là trung tâm đào tạo ứng phú sư và truyền bá Phật giáo có ảnh hưởng ở Nam Bộ. Một số mộc bản, kinh sách được tạo lập tại chùa từng được dùng làm tài liệu học tập cho tăng sĩ và lưu truyền tại nhiều chùa Nam Bộ. Phật Sự Online\n\nVề kiến trúc, chùa mang đậm phong cách chùa cổ Nam Bộ thế kỷ XIX, gồm chính điện, tổ đường, giảng đường, Đông lang và Tây lang, được bố trí cân đối. Kết cấu gỗ, sườn mái và cách tổ chức không gian giữ được vẻ cổ kính, đồng thời mặt tiền có cửa vòm, cột vuông và hoa văn đắp nổi, thể hiện ảnh hưởng kiến trúc phương Tây. Mặt chính của chùa trước kia hướng ra bến Hố Đất, phản ánh vai trò của giao thông đường thủy trong quá trình hình thành di tích. Sau nhiều lần trùng tu vào các năm 1899, 1910 và cuối thập niên 1920, chùa mang dấu ấn của nhiều giai đoạn nhưng vẫn bảo tồn được đặc trưng kiến trúc truyền thống. C3-TT\nGiá trị nghệ thuật nổi bật nhất của chùa là hệ thống tượng thờ và chạm khắc gỗ. Chùa lưu giữ 153 pho tượng, chủ yếu bằng gỗ mít, tiêu biểu như các bộ Thập bát La Hán, Thập điện Diêm Vương, Phật và bốn vị Bồ Tát, cùng tượng Giám Trai bằng gốm. Gần 60 bao lam được chạm lộng tinh xảo với các đề tài Bách điểu, Thập bát La Hán, Tô Vũ chăn dê, Lã Vọng câu cá, ngư – tiều – canh – mục, hoa lá và chim thú. Đặc biệt, các nghệ nhân đưa vào tác phẩm hình ảnh trâu, bò, dê, heo, chó và cảnh vật đồng quê, làm cho nghệ thuật Phật giáo trở nên dân gian, sinh động và đậm bản sắc Nam Bộ. Hệ thống hoành phi, đồ thờ cùng 128 câu đối Hán Nôm còn cung cấp tư liệu quý về tôn giáo, ngôn ngữ và mỹ thuật truyền thống.\n\nVới những giá trị đặc sắc đó, chùa Giác Viên được xếp hạng Di tích kiến trúc nghệ thuật quốc gia ngày 7/1/1993. Công trình trùng tu giai đoạn 2 được bàn giao ngày 14/1/2025, góp phần bảo vệ di tích và phục vụ nhu cầu tín ngưỡng, tham quan, nghiên cứu. Chùa là minh chứng tiêu biểu cho lịch sử Phật giáo, nghệ thuật chạm khắc gỗ và đời sống văn hóa của cư dân Nam Bộ.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "📅 Đổi tên thành chùa Giác Viên: năm 1850.",
+        "🏛️ Lưu giữ khoảng 153 pho tượng.",
+        "🔎 Có gần 60 bao lam lớn nhỏ và 128 câu đối.",
+        "🏅 Xếp hạng kiến trúc nghệ thuật quốc gia: 7/1/1993."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -26639,7 +26999,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Giác Viên",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Giác Viên",
-      "investigationQuestion": "Vì sao di tích Chùa Giác Viên tại Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Giác Viên cho thấy kiến trúc, tượng thờ và sinh hoạt Phật giáo có thể cùng lưu giữ ký ức văn hóa Nam Bộ như thế nào?",
       "suggestedAnswer": "Di tích Chùa Giác Viên là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1798: hình thành cơ sở ban đầu trong quá trình vận chuyển gỗ trùng tu chùa Giác Lâm. Năm 1850: Hải Tịnh trùng tu Quan Âm viện, đổi tên thành chùa Giác Viên và mở trường đào tạo..., gắn liền với công lao to lớn của Thiền sư Tổ Tông – Viên Quang: chủ trì trùng tu chùa Giác Lâm, từ đó hình thành cơ sở ban đầu của chùa Giác Viên. Thiền sư Tiên Giác – Hải T... và lưu giữ các hiện vật quý: Hệ thống hơn 150 tượng gỗ; khoảng 58 bao lam lớn nhỏ; bao lam Bách Điểu chạm khắc nhiều loài chim trong các tư thế sinh động; tấm pháp bị bằ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -26902,6 +27262,12 @@ export const allMonumentsList = [
       ],
       "overview": "Chùa Hội Khánh được Thiền sư Đại Ngạn – Từ Tấn khai sơn năm 1741, là một trong những ngôi chùa cổ tiêu biểu của vùng Thủ Dầu Một và Nam Bộ. Chùa ban đầu được xây dựng trên một ngọn đồi nhưng bị quân Pháp thiêu hủy năm 1861; đến năm 1868, Thiền sư Chánh Đắc cho xây dựng lại dưới chân đồi tại vị trí hiện nay. Chùa còn gắn với phong trào yêu nước đầu thế kỷ XX. Khoảng năm 1923–1926, Phó bảng Nguyễn Sinh Sắc từng đến đây hoạt động, cùng Hòa thượng Từ Văn và các nhà yêu nước thành lập Hội Danh dự, truyền bá tư tưởng yêu nước, đạo đức và tinh thần tương trợ trong nhân dân.\n\nVề kiến trúc, chùa được xây dựng theo kiểu “trùng thiềm trùng lương”, các khối chánh điện, giảng đường, Đông lang và Tây lang nối tiếp nhau thành một quần thể khép kín. Đây được xem là một trong những công trình kiến trúc Phật giáo có kết cấu gỗ lớn tiêu biểu của Bình Dương, với hệ thống cột, kèo và vì gỗ liên kết chắc chắn. Chánh điện lưu giữ hơn 100 pho tượng gỗ mít sơn son thếp vàng, nổi bật là các bộ tượng Thập bát La Hán và Thập điện Minh Vương. Hệ thống bao lam, hoành phi, câu đối Hán Nôm và phù điêu được chạm khắc tinh xảo, thể hiện kỹ thuật điêu khắc gỗ truyền thống của nghệ nhân Thủ Dầu Một.\n\nKhuôn viên chùa còn có chín bảo tháp thờ các đời trụ trì và bốn công trình tượng trưng cho những dấu mốc trong cuộc đời Đức Phật gồm vườn Lâm Tỳ Ni, Bồ Đề đạo tràng, vườn Lộc Uyển và Câu Thi Na. Công trình nổi bật được bổ sung trong thời hiện đại là tượng Phật Thích Ca nhập Niết bàn dài khoảng 52 m, cao 12 m, đặt trên độ cao khoảng 24 m. Sự kết hợp giữa kiến trúc cổ, nghệ thuật chạm khắc, tượng thờ và cảnh quan tôn giáo đã tạo cho chùa Hội Khánh giá trị đặc biệt về lịch sử, văn hóa, kiến trúc và mỹ thuật. Chùa được xếp hạng di tích cấp quốc gia ngày 07/01/1993.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "📅 Khởi dựng: năm 1741",
+        "🏛️ Là công trình kiến trúc gỗ lớn của Bình Dương",
+        "🏛️ Bộ tượng nổi bật: Thập Bát La Hán và Thập Điện Minh Vương",
+        "📅 Tượng Phật nhập Niết bàn trên mái: dài nhất châu Á theo kỷ lục năm 2013"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -27085,7 +27451,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Hội Khánh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Hội Khánh",
-      "investigationQuestion": "Vì sao di tích Chùa Hội Khánh tại Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Hội Khánh phản ánh sự phát triển và chuyển mình của Phật giáo Bình Dương qua các thời kỳ như thế nào, và vì sao việc bảo tồn cổ vật tại chùa có ý nghĩa đối với giáo dục lịch sử?",
       "suggestedAnswer": "Di tích Chùa Hội Khánh là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Năm 1741: Thiền sư Đại Ngạn – Từ Tấn khai sơn chùa. Năm 1861: chùa bị thiêu hủy trong chiến tranh. Năm 1868: Thiền sư Chánh Đắc xây dựng lại chùa tại vị trí hiện nay. Khoảng 1923–1..., gắn liền với công lao to lớn của Thiền sư Đại Ngạn – Từ Tấn: khai sơn chùa năm 1741. Thiền sư Chánh Đắc: xây dựng lại chùa năm 1868 sau khi chùa bị thiêu hủy. Phó bảng Nguyễ... và lưu giữ các hiện vật quý: Hơn 100 pho tượng gỗ mít sơn son thếp vàng; bộ tượng Thập bát La Hán và Thập điện Minh Vương; các phù điêu chạm khắc Bồ Tát và La Hán; hệ th..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -27348,6 +27714,12 @@ export const allMonumentsList = [
       ],
       "overview": "Chùa Hội Sơn là một trong những cổ tự lâu đời của vùng đất Thủ Đức – Gia Định, được hình thành từ khoảng thế kỷ XVIII, gắn với quá trình truyền bá và phát triển của Phật giáo ở Nam Bộ. Chùa nằm trên một gò cao ven sông Đồng Nai, có cảnh quan và kiến trúc đặc trưng của chùa cổ Nam Bộ. Đặc biệt, khu vực chùa còn chứa di chỉ khảo cổ Hội Sơn, chứng minh sự hiện diện của cư dân tiền sử tại vùng hạ lưu sông Đồng Nai khoảng 3.500–3.000 năm trước. Vì vậy, Hội Sơn có giá trị đồng thời về lịch sử Phật giáo, kiến trúc nghệ thuật và khảo cổ học.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "📅 Hình thành khoảng thế kỷ XVIII.",
+        "🔎 Nằm trên gò đồi bên sông Đồng Nai.",
+        "🏅 Là di tích kiến trúc nghệ thuật cấp quốc gia.",
+        "🔎 Gắn với lịch sử Phật giáo vùng Đồng Nai – Gia Định."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -27531,7 +27903,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Hội Sơn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Hội Sơn",
-      "investigationQuestion": "Vì sao di tích Chùa Hội Sơn tại Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Hội Sơn với vị trí bên sông Đồng Nai và các dấu tích văn hóa cho thấy cảnh quan tự nhiên đã góp phần định hình đời sống tín ngưỡng như thế nào?",
       "suggestedAnswer": "Di tích Chùa Hội Sơn là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin, xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Khoảng thế kỷ XVIII: Thiền sư Khánh Long khai lập chùa. Năm 1938: Ni sư Thích Nữ Như Thanh và Thích Nữ Như Tiên tiến hành tôn tạo, sửa chữa chùa. 07/01/1993: Chùa được xếp hạng Di ..., gắn liền với công lao to lớn của Thiền sư Khánh Long (Long Khánh) – người được tư liệu ghi nhận là người khai lập chùa vào khoảng cuối thế kỷ XVIII. Ni sư Thích Nữ Như Thanh... và lưu giữ các hiện vật quý: Các hiện vật và thành phần kiến trúc tiêu biểu gồm hoành phi, liễn đối, long vị, tượng Phật, án thờ bằng gỗ, bài vị, chuông đồng và các cổ v..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -27794,6 +28166,12 @@ export const allMonumentsList = [
       ],
       "overview": "Chùa Long Bàn là một ngôi chùa cổ gắn với quá trình người Việt khai phá vùng đất Mô Xoài – Long Điền từ thế kỷ XVII. Chùa phản ánh quá trình hình thành cộng đồng cư dân và đời sống Phật giáo ở vùng Đông Nam Bộ. Giá trị nổi bật nhất của di tích là kiến trúc gỗ truyền thống, nghệ thuật chạm khắc và hệ thống tượng, đồ thờ tự cổ. Chùa cũng là nơi duy trì sinh hoạt Phật giáo và các lễ nghi truyền thống của cộng đồng địa phương.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "📅 Tuổi đời: hơn 180 năm.",
+        "🔎 Giữ khá đầy đủ cấu trúc chùa cổ Nam Bộ.",
+        "🏛️ Lưu giữ tượng thờ, hoành phi, câu đối, bao lam và pháp khí.",
+        "🏅 Xếp hạng quốc gia: 19/4/1991."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -27977,7 +28355,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Long Bàn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Long Bàn",
-      "investigationQuestion": "Vì sao di tích Chùa Long Bàn tại Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Long Bàn đã lưu giữ những yếu tố nào của chùa cổ Nam Bộ qua hơn 180 năm, và việc bảo tồn chúng giúp thế hệ trẻ hiểu gì về sự tiếp nối văn hóa?",
       "suggestedAnswer": "Di tích Chùa Long Bàn là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 680/QĐ ngày 19/4/1991 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Thế kỷ XVII: hình thành chùa trong quá trình người Việt khai phá vùng Mô Xoài. Năm 1845 (Thiệu Trị năm thứ 5): chùa được trùng tu, tôn tạo; dấu tích niên đại này còn được ghi trên ..., gắn liền với công lao to lớn của Hai vị Hòa thượng Hải Chánh và Bảo Thanh được tư liệu ghi nhận là những vị trụ trì đầu tiên và được dân làng tôn làm tổ khai sơn. Hai vị là ... và lưu giữ các hiện vật quý: Nổi bật có đại hồng chung bằng đồng cao khoảng 1,2 m, đường kính khoảng 0,8 m; hệ thống tượng Phật, tượng Ngọc Hoàng, Quan Thánh, 18 vị La H..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -28240,6 +28618,12 @@ export const allMonumentsList = [
       ],
       "overview": "Chùa Phụng Sơn được tạo lập vào đầu thế kỷ XIX, gắn với quá trình hình thành và phát triển của vùng Gia Định – Sài Gòn. Chùa được xây trên nền một ngôi chùa Chân Lạp cổ đã hoang phế, vì vậy có giá trị trong việc phản ánh lịch sử giao lưu văn hóa và Phật giáo ở Nam Bộ. Chùa vẫn bảo tồn nhiều yếu tố kiến trúc cổ qua các lần trùng tu.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Tên chữ: Phụng Sơn tự; thường gọi: chùa Gò.",
+        "🔎 Gắn với lớp văn hóa khảo cổ Óc Eo.",
+        "📅 Kiến trúc Phật giáo hình thành từ đầu thế kỷ XIX.",
+        "🔎 Là di tích kết hợp giá trị kiến trúc và khảo cổ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -28423,7 +28807,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Phụng Sơn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Phụng Sơn",
-      "investigationQuestion": "Vì sao di tích Chùa Phụng Sơn tại Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Phụng Sơn nằm trên nền có dấu tích văn hóa Óc Eo; sự chồng lớp giữa di sản khảo cổ và di sản Phật giáo cho em thấy lịch sử văn hóa được hình thành như thế nào?",
       "suggestedAnswer": "Di tích Chùa Phụng Sơn là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đầu thế kỷ XIX - Thiền sư Liễu Thông tạo lập chùa; 1904–1915 - chùa được đại trùng tu dưới thời Thiền sư Huệ Minh; 1960 - chùa được đại trùng tu; 1963 - xây lại cổng tam quan; 1988..., gắn liền với công lao to lớn của Thiền sư Liễu Thông (pháp hiệu Chơn Giác) – người tạo lập Chùa Phụng Sơn vào đầu thế kỷ XIX. Thiền sư Huệ Minh gắn với đợt đại trùng tu chùa... và lưu giữ các hiện vật quý: Khoảng 40 pho tượng thờ, chủ yếu là tượng gỗ sơn son thếp vàng; tiêu biểu có bộ tượng Di Đà Tam Tôn, bộ tượng Ngũ Hiền thượng kỳ thú, tượng ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -28686,6 +29070,12 @@ export const allMonumentsList = [
       ],
       "overview": "Là một trong những ngôi chùa cổ của vùng Vũng Tàu, gắn với lịch sử hình thành và phát triển của Phật giáo tại địa phương; chùa có giá trị về lịch sử, văn hóa, kiến trúc và là nơi lưu giữ những cổ vật có giá trị nghiên cứu về lịch sử, văn hóa, tín ngưỡng vùng Vũng Tàu xưa.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "🔎 Tên chữ: Phước Lâm Tự.",
+        "🔎 Là cổ tự tiêu biểu của Vũng Tàu cũ.",
+        "🔎 Thuộc Phật giáo Bắc tông.",
+        "🔎 Có giá trị về lịch sử, kiến trúc và tín ngưỡng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -28869,7 +29259,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Phước Lâm (Phước Lâm Tự)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Phước Lâm (Phước Lâm Tự)",
-      "investigationQuestion": "Vì sao di tích Chùa Phước Lâm (Phước Lâm Tự) tại Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Phước Lâm cho thấy sự kết hợp giữa kiến trúc Phật giáo, nghệ thuật và đời sống tín ngưỡng ở Vũng Tàu như thế nào, và giá trị nào cần được thế hệ trẻ tiếp nối?",
       "suggestedAnswer": "Di tích Chùa Phước Lâm (Phước Lâm Tự) là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (QĐ số: 983/QĐ, ngày \n04/08/1992 của Bộ Văn Hóa \nThông Tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Khoảng năm 1886 - chùa được dời từ chân núi Tương Kỳ (Núi Lớn) xuống vị trí hiện nay; 11/10/1944 - đợt sửa chữa sớm nhất được ghi nhận; 1956 - mở rộng thượng điện và đúc thêm nhiều..., gắn liền với công lao to lớn của Hòa thượng Thích Thiện Pháp (Lê Văn Ninh), trụ trì chùa từ năm 1960; các vị trụ trì và tăng ni gắn với quá trình xây dựng, trùng tu chùa.... và lưu giữ các hiện vật quý: Tượng thần Vishnu bằng đá có 4 tay, được xác định có niên đại khoảng thế kỷ VII-VIII; Đại hồng chung bằng đồng đúc năm Ất Mùi 1895; các tượn..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -29132,6 +29522,12 @@ export const allMonumentsList = [
       ],
       "overview": "Chùa được khai sơn năm 1741, là một trong những ngôi cổ tự lâu đời của vùng Gia Định – Sài Gòn; có giá trị nổi bật về lịch sử Phật giáo, văn hóa và kiến trúc nghệ thuật Nam Bộ.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Còn gọi: Phước Tường cổ tự.",
+        "🔎 Địa chỉ lịch sử: 13/32 Lã Xuân Oai.",
+        "🏅 Xếp hạng quốc gia: 7/1/1993.",
+        "🔎 Là chùa cổ tiêu biểu của vùng Gia Định – Sài Gòn."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -29315,7 +29711,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Phước Tường",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Phước Tường",
-      "investigationQuestion": "Vì sao di tích Chùa Phước Tường tại Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Phước Tường lưu giữ những dấu ấn kiến trúc Nam Bộ và Phật giáo như thế nào, và việc quan sát không gian chùa giúp học sinh hiểu gì về văn hóa địa phương?",
       "suggestedAnswer": "Di tích Chùa Phước Tường là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 43–VH/QĐ ngày \n01/07/1993 của Bộ Văn hóa – \nThông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1741 - Thiền sư Linh Quang – Phật Chiếu khai sơn chùa; 1834 - Hòa thượng Từ Minh dời chùa đến vị trí hiện nay và tái thiết quy mô; 1993 - chùa được xếp hạng di tích kiến trúc nghệ ..., gắn liền với công lao to lớn của Thiền sư Linh Quang – Phật Chiếu, người khai sơn chùa năm 1741; Hòa thượng Từ Minh, trụ trì đời thứ tư, người dời chùa đến vị trí hiện nay v... và lưu giữ các hiện vật quý: 53 pho tượng Phật; 13 bức hoành phi, câu đối; nhiều bao lam, thần vọng và bài vị; hệ thống tượng Tam Thế Phật, Quan Thế Âm Bồ Tát và tượng P..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -29578,6 +29974,12 @@ export const allMonumentsList = [
       ],
       "overview": "Là một ngôi cổ tự có lịch sử lâu đời, gắn với quá trình hình thành và phát triển của Phật giáo vùng Gia Định – Sài Gòn; chùa từng nhiều lần đổi tên và di chuyển trong bối cảnh lịch sử biến động, đồng thời lưu giữ nhiều di vật có giá trị từ thế kỷ XVIII–XIX.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "🔎 Thuộc dòng thiền Lâm Tế Liễu Quán.",
+        "🔎 Là cổ tự gắn với lịch sử Gia Định – Sài Gòn.",
+        "📏 Địa chỉ lịch sử: 53/524 Phan Văn Trị.",
+        "🔎 Có giá trị về lịch sử Phật giáo và kiến trúc."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -29761,7 +30163,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Sắc Tứ Trường Thọ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Sắc Tứ Trường Thọ",
-      "investigationQuestion": "Vì sao di tích Chùa Sắc Tứ Trường Thọ tại Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Chùa Sắc Tứ Trường Thọ gắn với lịch sử Gia Định – Sài Gòn như thế nào, và việc gìn giữ một ngôi cổ tự giúp bảo tồn ký ức cộng đồng ra sao?",
       "suggestedAnswer": "Di tích Chùa Sắc Tứ Trường Thọ là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 06/2000/QĐ-BVHTT ngày 13/4/2000 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Khoảng năm 1802 - vua Gia Long ban sắc “Sắc tứ Pháp Vũ”; năm 1822 - vua Minh Mạng ban tên Pháp Vũ; khoảng năm 1859 - chùa được chuyển đến khu vực Gò Vấp trong bối cảnh quân Pháp ch..., gắn liền với công lao to lớn của Nguyễn Ánh; vua Gia Long; vua Minh Mạng; vua Tự Đức; Hòa thượng Hải Phước (pháp hiệu Liễu Kiện), trụ trì chùa Pháp Vũ và được vua Tự Đức ban... và lưu giữ các hiện vật quý: Hai biển sắc tứ gồm “Sắc tứ Pháp Vũ tự” thời Gia Long và “Sắc tứ Trường Thọ tự” thời Tự Đức; tượng Phật A Di Đà bằng gỗ mít; bộ tượng Di Đà ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -30024,6 +30426,12 @@ export const allMonumentsList = [
       ],
       "overview": "Dinh Cô là di tích tiêu biểu của tín ngưỡng dân gian cư dân biển Nam Bộ, gắn với tục thờ Long Hải Thần Nữ và đời sống tinh thần của ngư dân Long Hải; đồng thời là một danh thắng nằm dưới chân núi Thùy Vân, hướng ra biển.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Vị trí: ven biển Long Hải.",
+        "🏅 Xếp hạng danh lam thắng cảnh quốc gia: 16/1/1995.",
+        "🔎 Gắn với thờ nữ thần, cá Ông và Thủy thần.",
+        "🔎 Lễ hội Dinh Cô là sinh hoạt tín ngưỡng biển nổi bật."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -30207,7 +30615,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Dinh Cô",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Xã Long Hải, Thành phố Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Dinh Cô",
-      "investigationQuestion": "Vì sao di tích Dinh Cô tại Xã Long Hải, Thành phố Hồ Chí Minh trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Dinh Cô phản ánh sự hình thành và biến đổi của tín ngưỡng cư dân miền biển như thế nào, và di tích giúp học sinh hiểu gì về cách cộng đồng gửi gắm niềm tin vào biển cả?",
       "suggestedAnswer": "Di tích Dinh Cô là danh lam thắng cảnh được xếp hạng cấp quốc gia (Quyết định số 65QĐ/BT ngày 16/01/1995 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Cuối thế kỷ XVIII - hình thành miếu thờ Cô theo truyền thuyết dân gian; 1930 - dân làng xây dựng lại miếu quy mô hơn tại triền núi Thùy Vân; 1987 - chánh điện bị hỏa hoạn và sau đó..., gắn liền với công lao to lớn của Lê Thị Hồng (tục danh Thị Cách), nhân vật được cư dân Long Hải tôn thờ với danh hiệu Long Hải Thần Nữ; theo truyền thuyết, bà quê ở Phan Ran... và lưu giữ các hiện vật quý: Tượng Bà Cô cao hơn 0,5 m tại chính điện; các long vị, bài vị và hương án phục vụ tín ngưỡng thờ Cô, Bà Thủy Long, Ông Nam Hải, Ngũ Hành Nươ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -30470,6 +30878,12 @@ export const allMonumentsList = [
       ],
       "overview": "Được xây dựng cuối thế kỷ XIX – đầu thế kỷ XX, gắn với cộng đồng người Hoa và quá trình giao lưu văn hóa, tín ngưỡng tại Sài Gòn; chùa là công trình tiêu biểu cho sự kết hợp giữa tín ngưỡng Đạo giáo, Phật giáo và tín ngưỡng dân gian.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Tên chữ: Phước Hải Tự.",
+        "📅 Khởi dựng cuối thế kỷ XIX, hoàn thành khoảng đầu thế kỷ XX.",
+        "🔎 Giao thoa Đạo giáo, Phật giáo và tín ngưỡng dân gian.",
+        "🏅 Xếp hạng quốc gia: 15/10/1994."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -30653,7 +31067,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Chùa Ngọc Hoàng",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 73 Mai Thị Lựu, \nphường Tân Định.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Ngọc Hoàng",
-      "investigationQuestion": "Vì sao di tích Chùa Ngọc Hoàng tại Số 73 Mai Thị Lựu, \nphường Tân Định trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Điện Ngọc Hoàng cho thấy sự giao thoa giữa Đạo giáo, Phật giáo và tín ngưỡng dân gian của cộng đồng người Hoa như thế nào, và điều đó nói gì về tính đa văn hóa của Thành phố Hồ Chí Minh?",
       "suggestedAnswer": "Di tích Chùa Ngọc Hoàng là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 2754/QĐ – BT ngày \n15/10/1994). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1892–1900 - Lưu Minh khởi công và công trình được hoàn thành; 1900 - hoàn thành xây dựng chùa; 1984 - chùa đổi tên thành Phước Hải Tự; 1994 - được xếp hạng Di tích kiến trúc nghệ t..., gắn liền với công lao to lớn của Lưu Minh (Lưu Đạo Nguyên) – người khởi lập công trình; Ngô Đạo Chương – người tiếp tục việc xây dựng sau khi Lưu Minh qua đời.... và lưu giữ các hiện vật quý: Hiện vật tiêu biểu;Hơn 300 tượng thờ, chủ yếu bằng gỗ và giấy bồi; tượng Ngọc Hoàng Thượng Đế; tượng Kim Hoa Thánh Mẫu và 12 bà mụ; tượng Th..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -30916,6 +31330,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Bình Hòa là một ngôi đình cổ của vùng Gia Định – Sài Gòn, gắn với quá trình hình thành cộng đồng cư dân và tín ngưỡng thờ Thành hoàng ở Bình Hòa; đình hiện còn lưu sắc phong của vua Tự Đức năm 1853, có giá trị đặc biệt về lịch sử và văn hóa.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 15/77 Chu Văn An.",
+        "🏅 Xếp hạng quốc gia: 7/1/1993.",
+        "🔎 Là đình làng tiêu biểu của vùng Gia Định.",
+        "🔎 Phản ánh tín ngưỡng Thành hoàng và đời sống cộng đồng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -31099,7 +31519,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Bình Hòa",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Bình Hòa",
-      "investigationQuestion": "Vì sao di tích Đình Bình Hòa tại Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Bình Hòa cho thấy đình làng có thể tồn tại và giữ chức năng cộng đồng như thế nào giữa một đô thị đang phát triển, và bài học gì về giữ gìn bản sắc?",
       "suggestedAnswer": "Di tích Đình Bình Hòa là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Khoảng năm 1818 - thôn Bình Hòa được thành lập và đình được dựng; 1853 - vua Tự Đức ban sắc phong Thành hoàng Bổn cảnh; 1877 - đình được trùng tu lần thứ nhất; 1924 - đình được trù..., gắn liền với công lao to lớn của Vua Tự Đức – người ban sắc phong Thành hoàng Bổn cảnh cho đình năm 1853; Phó tổng Lê Văn Huệ và Hương cả Lê Văn Ý – những người gắn với các ... và lưu giữ các hiện vật quý: Sắc phong vua Tự Đức năm 1853; 5 bàn thờ bằng gỗ chạm khắc; 2 bát nhang gốm Sài Gòn xưa; các hoành phi, liễn đối, bao lam, phù điêu và hương..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -31362,6 +31782,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Chí Hòa là một trong những ngôi đình cổ của vùng Sài Gòn – Gia Định, gắn với lịch sử làng Hòa Hưng và đời sống tín ngưỡng của cư dân địa phương; đình từng là nơi nhà giáo Võ Trường Toản mở lớp dạy học và là địa điểm gắn với các phong trào yêu nước trong thế kỷ XX.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Địa chỉ lịch sử: 475 Cách Mạng Tháng Tám.",
+        "🏅 Xếp hạng quốc gia: 28/6/1996.",
+        "🔎 Là đình cổ của vùng Gia Định – Sài Gòn.",
+        "🔎 Lưu giữ giá trị lịch sử, kiến trúc và tín ngưỡng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -31545,7 +31971,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Chí Hòa",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Chí Hòa",
-      "investigationQuestion": "Vì sao di tích Đình Chí Hòa tại Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Chí Hòa lưu giữ những dấu ấn nào của lịch sử Gia Định – Sài Gòn và đời sống tín ngưỡng, và học sinh có thể khai thác di tích như một nguồn học liệu địa phương ra sao?",
       "suggestedAnswer": "Di tích Đình Chí Hòa là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 1460-QĐ/VH ngày 28/6/1996 của Bộ Văn hóa, Thể thao và Du lịch). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Thời kỳ đầu hình thành làng Hòa Hưng - đình được lập và mang tên đình Hòa Hưng; thế kỷ XVIII - Võ Trường Toản từng mở lớp dạy học tại đình; 1915–1917 - phong trào Thiên Địa Hội hoạ..., gắn liền với công lao to lớn của Võ Trường Toản; các thành viên phong trào Thiên Địa Hội; lực lượng Thanh niên Tiền phong tại khu vực Hòa Hưng năm 1945.... và lưu giữ các hiện vật quý: Cổng đình với họa tiết rồng, phượng và câu đối sơn son thếp vàng; kiến trúc gỗ, hoành phi, liễn đối và các đồ thờ tự truyền thống. Nguồn đượ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -31808,6 +32234,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Dĩ An là công trình tín ngưỡng lâu đời gắn với quá trình khai phá, lập làng và phát triển của vùng Dĩ An; đình thờ Thành Hoàng Bổn Cảnh, từng là nơi sinh hoạt văn hóa, tín ngưỡng và trong thời Nguyễn còn là nơi làm việc của hương chức, hội tề địa phương. Trong hai cuộc kháng chiến, đình còn gắn với hoạt động cách mạng của địa phương.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "🔎 Còn gọi: Đình thần Dĩ An.",
+        "🏅 Xếp hạng quốc gia: 28/3/2019.",
+        "🔎 Là đình làng tiêu biểu của Bình Dương cũ.",
+        "🔎 Gắn với tín ngưỡng Thành hoàng và cộng đồng cư dân địa phương."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -31991,7 +32423,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Dĩ An",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Dĩ An",
-      "investigationQuestion": "Vì sao di tích Đình Dĩ An tại Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Dĩ An phản ánh quá trình khai phá, định cư và đời sống cộng đồng của vùng đất Bình Dương như thế nào, và điều gì làm nên sức sống của một đình làng?",
       "suggestedAnswer": "Di tích Đình Dĩ An là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 1185/QĐ-BVHTTDL ngày 28/03/2019 của Bộ Văn hóa, Thể thao và Du lịch). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Khoảng năm 1838 - người dân xây dựng lại Dĩ An cổ miếu thành đình; 1852 - vua Tự Đức ban sắc phong Thành Hoàng; 1910 - đình trải qua một đợt đại trùng tu; 2011 - đình được công nhậ..., gắn liền với công lao to lớn của Vua Tự Đức – người ban sắc phong Thành Hoàng cho đình năm 1852; cộng đồng cư dân khai phá, lập làng Dĩ An – những người góp công xây dựng đì... và lưu giữ các hiện vật quý: Sắc phong Thành Hoàng của vua Tự Đức năm 1852; các bao lam, khán thờ, hoành phi, câu đối; các tác phẩm chạm khắc gỗ, cẩn gốm sứ và tranh sơn..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -32254,6 +32686,12 @@ export const allMonumentsList = [
       ],
       "overview": "Là một trong những ngôi đình cổ của vùng Sài Gòn – Chợ Lớn, gắn với lịch sử hình thành và phát triển của cộng đồng Minh Hương; phản ánh quá trình giao thoa văn hóa Việt – Hoa và quá trình cộng đồng người Minh Hương hội nhập vào xã hội Việt Nam. Đình được xây dựng từ cuối thế kỷ XVIII và là nơi lưu giữ nhiều tư liệu, hiện vật có giá trị lịch sử, văn hóa.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Tên đầy đủ: Minh Hương Gia Thạnh Hội quán.",
+        "🔎 Địa chỉ lịch sử: 380 Trần Hưng Đạo.",
+        "🏅 Xếp hạng quốc gia: 7/1/1993.",
+        "🔎 Gắn với lịch sử cộng đồng Minh Hương ở Chợ Lớn."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -32437,7 +32875,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Minh Hương Gia Thạnh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Minh Hương Gia Thạnh",
-      "investigationQuestion": "Vì sao di tích Đình Minh Hương Gia Thạnh tại Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Minh Hương Gia Thạnh cho thấy quá trình hội nhập của cộng đồng Minh Hương vào đời sống Gia Định – Chợ Lớn như thế nào, và em học được gì về sự chung sống đa văn hóa?",
       "suggestedAnswer": "Di tích Đình Minh Hương Gia Thạnh là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1789 - Minh Hương xã được thành lập và hình thành cơ sở ban đầu của đình; 1808 - vua Gia Long cho phép đặt tên Gia Thạnh Đường; 1839 - xây dựng đình và lập bia ghi danh những người..., gắn liền với công lao to lớn của Trần Thượng Xuyên; Nguyễn Hữu Cảnh; Trịnh Hoài Đức; Ngô Nhân Tịnh; Lê Quang Định.... và lưu giữ các hiện vật quý: Đại hồng chung đúc năm 1823; đại hồng chung đúc năm 1849; đỉnh gang đúc năm 1842; bia lập năm 1839 ghi tên những người Minh Hương nổi tiếng ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -32700,6 +33138,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Phú Long là một công trình tín ngưỡng lâu đời của vùng Lái Thiêu, gắn với quá trình khai phá, lập làng và hình thành cộng đồng cư dân địa phương. Đình vừa là nơi thờ Thành Hoàng, vừa là không gian sinh hoạt văn hóa, tín ngưỡng của cộng đồng. Trong thời kỳ kháng chiến, đình còn gắn với hoạt động cách mạng tại địa phương. Công trình hiện còn nhiều yếu tố kiến trúc và trang trí truyền thống, góp phần phản ánh đặc trưng đình làng Nam Bộ.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "🔎 Là đình làng cổ của vùng Lái Thiêu.",
+        "📏 Gắn với quá trình khai phá và lập làng.",
+        "🔎 Có chức năng thờ Thành hoàng và sinh hoạt cộng đồng.",
+        "🔎 Mang giá trị kiến trúc nghệ thuật và tín ngưỡng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -32883,7 +33327,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Phú Long",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Phú Long",
-      "investigationQuestion": "Vì sao di tích Đình Phú Long tại Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Phú Long cho thấy đình làng vừa là nơi tín ngưỡng vừa là không gian cộng đồng như thế nào, và giá trị ấy gợi cho học sinh trách nhiệm gì với di sản quê hương?",
       "suggestedAnswer": "Di tích Đình Phú Long là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 53/QĐ-BVHTT ngày 28/12/2001). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Khoảng năm 1842 - Đình Phú Long được xây dựng, gắn với quá trình hình thành cộng đồng cư dân tại Lái Thiêu; thời Nguyễn - đình được ban sắc thần, xác lập vị trí của Thành Hoàng tro..., gắn liền với công lao to lớn của Thành Hoàng Bổn Cảnh và các bậc tiền hiền, hậu hiền của vùng Phú Long; cộng đồng cư dân địa phương là lực lượng trực tiếp xây dựng, gìn giữ ... và lưu giữ các hiện vật quý: Sắc thần; hệ thống hoành phi, câu đối; bao lam; hương án; bàn thờ; các mảng chạm khắc gỗ và đồ thờ truyền thống. Những hiện vật và cấu kiện ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -33146,6 +33590,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Phú Nhuận gắn với lịch sử hình thành và phát triển của làng Phú Nhuận từ đầu thế kỷ XIX. Đình là nơi cộng đồng cư dân thực hành tín ngưỡng thờ Thành Hoàng, tổ chức các lễ hội truyền thống và duy trì sinh hoạt văn hóa cộng đồng. Quá trình di chuyển, xây dựng và trùng tu đình phản ánh sự phát triển của khu vực Phú Nhuận từ một vùng cư trú nông nghiệp trở thành một bộ phận của đô thị Sài Gòn – TP.HCM.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với làng Phú Nhuận từ đầu thế kỷ XIX.",
+        "🔎 Là thiết chế tín ngưỡng của cộng đồng làng.",
+        "🔎 Thờ Thành hoàng và lưu giữ ký ức địa phương.",
+        "🔎 Có giá trị về lịch sử, kiến trúc và văn hóa."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -33329,7 +33779,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Phú Nhuận",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Phú Nhuận",
-      "investigationQuestion": "Vì sao di tích Đình Phú Nhuận tại Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Phú Nhuận phản ánh quá trình lập làng và sự gắn kết cộng đồng như thế nào, và vì sao những ký ức được lưu giữ ở đình có ý nghĩa với thế hệ trẻ?",
       "suggestedAnswer": "Di tích Đình Phú Nhuận là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 3744-QĐ/VHTT ngày 29/01/1997). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Khoảng năm 1818 - đình Phú Nhuận được dựng ban đầu ở khu vực rạch Thị Nghè; 1852 - đình được xây dựng lại tại khu vực gò Kim Quy, vị trí hiện nay; 1893 - vua Tự Đức ban sắc phong T..., gắn liền với công lao to lớn của Lê Tự Tài – người có công hiến khu đất gò Kim Quy để xây dựng đình; vua Tự Đức – người ban sắc phong Thành Hoàng cho đình; các bậc tiền hiền... và lưu giữ các hiện vật quý: Sắc phong Thành Hoàng của vua Tự Đức; hoành phi, câu đối; hương án; bàn thờ và các đồ thờ tự truyền thống. Các cấu kiện gỗ chạm khắc và tran..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -33592,6 +34042,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Tân An (Bến Thế) là một công trình tín ngưỡng gắn với quá trình khai phá, lập làng ở vùng Tân An – Bến Thế. Đình vừa có giá trị lịch sử trong việc phản ánh đời sống cộng đồng cư dân Nam Bộ, vừa có giá trị văn hóa – nghệ thuật thông qua hệ thống kiến trúc gỗ, đồ thờ và các hình thức trang trí truyền thống. Việc lưu giữ sắc phong và các đồ thờ cổ góp phần thể hiện sự phát triển của thiết chế làng xã dưới triều Nguyễn.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với vùng Tân An – Bến Thế.",
+        "🏛️ Là công trình tín ngưỡng của cộng đồng cư dân Nam Bộ.",
+        "🔎 Có kiến trúc gỗ và đồ thờ truyền thống.",
+        "📏 Phản ánh quá trình khai phá, lập làng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -33775,7 +34231,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Tân An (Bến Thế)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Khu phố 1, phường Phú An, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Tân An (Bến Thế)",
-      "investigationQuestion": "Vì sao di tích Đình Tân An (Bến Thế) tại Khu phố 1, phường Phú An, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Tân An (Bến Thế) cho thấy mối quan hệ giữa cộng đồng cư dân với Thành Hoàng, tiền hiền và hậu hiền như thế nào, và truyền thống ấy góp phần hình thành ý thức cộng đồng ra sao?",
       "suggestedAnswer": "Di tích Đình Tân An (Bến Thế) là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 1261/QĐ-BVHTTDL ngày 26/04/2014). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1820 - Đình Tân An được xây dựng; 1853 - vua Tự Đức ban sắc phong, ghi nhận vị thần được thờ tại đình; 2004 - được xếp hạng di tích cấp tỉnh; 26/04/2014 - được xếp hạng di tích kiế..., gắn liền với công lao to lớn của Nguyễn Văn Thành (Tiền Quân Cơ, Quận công) – nhân vật lịch sử được thờ tại đình; vua Tự Đức – người ban sắc phong cho đình; các bậc tiền hiề... và lưu giữ các hiện vật quý: Sắc phong vua Tự Đức năm 1853; hoành phi, liễn đối; bao lam; tủ thờ; khánh thờ; tượng thờ và các đồ thờ bằng gỗ. Đặc biệt, hệ thống chạm khắ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -34038,6 +34494,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Thắng Tam có giá trị đặc biệt trong việc phản ánh lịch sử hình thành cộng đồng cư dân ven biển Vũng Tàu. Quần thể Đình Thắng Tam – Lăng Cá Ông – Miếu Bà thể hiện sự kết hợp giữa tín ngưỡng thờ Thành Hoàng, tín ngưỡng thờ Cá Ông và tín ngưỡng thờ nữ thần của cư dân miền biển. Đây cũng là không gian duy trì nhiều nghi lễ, lễ hội truyền thống của cộng đồng ngư dân, thể hiện sự gắn bó giữa đời sống tâm linh với môi trường biển.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Là đình làng nổi tiếng ở Vũng Tàu.",
+        "🔎 Gắn với cộng đồng cư dân ven biển.",
+        "🔎 Không gian tín ngưỡng kết hợp với lễ hội dân gian.",
+        "🔎 Có giá trị lịch sử, kiến trúc và văn hóa biển."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -34221,7 +34683,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Thắng Tam",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Thắng Tam",
-      "investigationQuestion": "Vì sao di tích Đình Thắng Tam tại Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Thắng Tam phản ánh lịch sử cư dân vùng biển và tín ngưỡng địa phương như thế nào, và di tích giúp em hiểu gì về mối quan hệ giữa con người với biển?",
       "suggestedAnswer": "Di tích Đình Thắng Tam là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Quyết định số 457/QĐ ngày 25/03/1991). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Thời vua Minh Mạng - Đình Thắng Tam được hình thành trong quá trình tổ chức, ổn định cộng đồng cư dân tại Vũng Tàu; 1835 - đình được trùng tu và lợp ngói; các giai đoạn sau - quần ..., gắn liền với công lao to lớn của Ba cai đội Phước Thắng – những người có công khai phá, bảo vệ vùng đất và vùng biển Vũng Tàu; Thành Hoàng Bổn Cảnh; Đại Càn Quốc Gia Nam Hải... và lưu giữ các hiện vật quý: Sắc phong và các đồ thờ trong Đình Thắng Tam; hệ thống hương án, hoành phi, câu đối và các cấu kiện kiến trúc trang trí. Trong Lăng Cá Ông t..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -34484,6 +34946,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Thần Linh Đông là một trong những công trình tín ngưỡng cổ của vùng Thủ Đức, gắn với quá trình khai phá và hình thành làng Linh Đông. Đình thể hiện truyền thống “uống nước nhớ nguồn”, thờ phụng các bậc tiền hiền, hậu hiền có công với cộng đồng. Bên cạnh giá trị lịch sử, đình còn có giá trị về kiến trúc nghệ thuật với không gian thờ tự, kết cấu gỗ và hệ thống trang trí mang đặc trưng đình làng Nam Bộ.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Là đình cổ của vùng Thủ Đức.",
+        "📏 Gắn với quá trình khai phá và lập làng Linh Đông.",
+        "🔎 Là nơi thờ Thành hoàng và sinh hoạt cộng đồng.",
+        "🔎 Mang giá trị lịch sử, kiến trúc và tín ngưỡng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -34667,7 +35135,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Thần Linh Đông",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM.",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Thần Linh Đông",
-      "investigationQuestion": "Vì sao di tích Đình Thần Linh Đông tại Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Thần Linh Đông cho thấy tín ngưỡng đình làng đã góp phần duy trì sự gắn kết cộng đồng như thế nào trong quá trình đô thị hóa?",
       "suggestedAnswer": "Di tích Đình Thần Linh Đông là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 3245/QĐ-BVHTTDL ngày 11/4/2020 của Bộ Văn hóa, Thể thao và Du lịch.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: 1823 - Đình Thần Linh Đông được xây dựng, thể hiện qua niên đại ghi trên cấu kiện kiến trúc của đình; các thời kỳ sau - đình được tu bổ và duy trì hoạt động thờ tự; hằng năm - tổ c..., gắn liền với công lao to lớn của Tạ Dương Minh – nhân vật được xem là có công khai phá vùng đất Thủ Đức và được thờ phụng tại đình; các bậc tiền hiền, hậu hiền của làng Linh... và lưu giữ các hiện vật quý: Sắc phong; hoành phi; liễn đối; hương án; bàn thờ; đồ thờ bằng gỗ và các cấu kiện kiến trúc gỗ chạm khắc. Đây là những tư liệu và hiện vật q..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -34930,6 +35398,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Thông Tây Hội được hình thành khoảng năm 1679, gắn với quá trình những cư dân từ miền Trung vào khai phá và định cư ở vùng Gia Định. Đây là một trong những ngôi đình cổ nhất còn tồn tại ở Nam Bộ. Đình ban đầu có quy mô đơn sơ, về sau được xây dựng kiên cố; năm 1944, khi hai làng Hạnh Thông Tây và An Hội sáp nhập, đình được chọn làm đình chung và mang tên Thông Tây Hội.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "📅 Hình thành khoảng năm 1679.",
+        "📏 Gắn với cư dân miền Trung vào khai phá Gia Định.",
+        "🔎 Là một trong những đình cổ của vùng Sài Gòn.",
+        "📅 Có giá trị đặc biệt về lịch sử hình thành làng xã."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -35113,7 +35587,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Thông Tây Hội",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Thông Tây Hội",
-      "investigationQuestion": "Vì sao di tích Đình Thông Tây Hội tại Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Thông Tây Hội lưu giữ những dấu ấn nào của làng xã Gia Định xưa, và việc bảo tồn đình trong đô thị hiện đại có ý nghĩa gì đối với căn tính địa phương?",
       "suggestedAnswer": "Di tích Đình Thông Tây Hội là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 2009/1998/QĐ-BVHTT ngày 26/9/1998 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đình Thông Tây Hội; khoảng 1679 - hình thành đình gắn với quá trình cư dân vào khai phá vùng Gia Định; 1883 - đình được xây dựng theo kiến trúc quy mô lớn như hiện nay; 1944 - hai ..., gắn liền với công lao to lớn của Đình Thông Tây Hội; Đông Chinh Vương và Dực Thánh Vương – hai vị thần được thờ làm Thành Hoàng; cộng đồng cư dân Hạnh Thông Tây và An Hội có... và lưu giữ các hiện vật quý: Đình Thông Tây Hội; sắc phong Thành Hoàng; các hoành phi, câu đối; đồ thờ; cấu kiện gỗ và các mảng chạm khắc truyền thống; cổng tam quan với..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -35376,6 +35850,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Trường Thọ là thiết chế tín ngưỡng của cộng đồng cư dân vùng Thủ Đức, thờ Thành Hoàng Bổn Cảnh và phản ánh truyền thống thờ thần Thành Hoàng của làng xã Nam Bộ. Công trình có kiến trúc cổ kiểu trùng thềm điệp ốc, 5 gian 2 chái, đồng thời lưu giữ nhiều giá trị về kiến trúc, đồ thờ và nghi lễ dân gian.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Là đình làng của vùng Thủ Đức.",
+        "🔎 Thờ Thành hoàng Bổn Cảnh.",
+        "🔎 Gắn với lịch sử cư dân và quá trình lập làng.",
+        "🔎 Là không gian tín ngưỡng và cộng đồng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -35559,7 +36039,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Trường Thọ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Tổ 5, phường Thủ Đức, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Trường Thọ",
-      "investigationQuestion": "Vì sao di tích Đình Trường Thọ tại Tổ 5, phường Thủ Đức, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Trường Thọ phản ánh quá trình hình thành cộng đồng và tín ngưỡng làng xã như thế nào, và học sinh có thể học được gì về tinh thần gắn bó với nơi mình sống?",
       "suggestedAnswer": "Di tích Đình Trường Thọ là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đình Trường Thọ; đầu thế kỷ XIX - hình thành đình và cộng đồng làng Trường Thọ; 1926 - vua Khải Định ban sắc phong Thành Hoàng; 30/12/2002 - được xếp hạng di tích kiến trúc nghệ th..., gắn liền với công lao to lớn của Đình Trường Thọ; Châu Văn Tiếp – nhân vật được truyền khẩu là vị tướng triều Nguyễn được thờ tại đình; vua Khải Định – người ban sắc phong n... và lưu giữ các hiện vật quý: Đình Trường Thọ; sắc phong vua Khải Định năm 1926; hệ thống tượng thờ, đồ thờ; hoành phi, câu đối và các cấu kiện kiến trúc gỗ có giá trị ng..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -35822,6 +36302,12 @@ export const allMonumentsList = [
       ],
       "overview": "Đình Xuân Hiệp gắn với quá trình hình thành làng Xuân Hiệp từ thế kỷ XIX, phản ánh đời sống tín ngưỡng của cư dân địa phương. Đình ban đầu được dựng bằng tre lá, sau được xây dựng khang trang theo kiểu kiến trúc cổ 5 gian 2 chái; hiện là một di tích tiêu biểu về kiến trúc nghệ thuật và tín ngưỡng dân gian ở khu vực Thủ Đức.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "📅 Hình thành từ thế kỷ XIX.",
+        "🔎 Ban đầu dựng bằng tre lá, sau xây dựng kiên cố.",
+        "🔎 Kiến trúc cổ 5 gian 2 chái.",
+        "🔎 Là di tích tiêu biểu về tín ngưỡng dân gian Thủ Đức."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -36005,7 +36491,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Đình Xuân Hiệp",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Linh Xuân, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Đình Xuân Hiệp",
-      "investigationQuestion": "Vì sao di tích Đình Xuân Hiệp tại Phường Linh Xuân, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Đình Xuân Hiệp cho thấy những giá trị nào của đình làng Nam Bộ còn có ý nghĩa trong xã hội hiện đại, và chúng ta nên bảo tồn chúng bằng cách nào?",
       "suggestedAnswer": "Di tích Đình Xuân Hiệp là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Đình Xuân Hiệp; khoảng 1818–1885 - đình được hình thành với quy mô nhỏ, ban đầu bằng tre lá; 1928 - đình được xây dựng khang trang theo kiểu 5 gian 2 chái; 1934 - vua Bảo Đại ban s..., gắn liền với công lao to lớn của Đình Xuân Hiệp; Thành Hoàng Bổn Cảnh của thôn Xuân Hiệp; vua Bảo Đại – người ban sắc phong năm 1934.... và lưu giữ các hiện vật quý: Đình Xuân Hiệp; sắc phong vua Bảo Đại năm 1934; các tượng thờ, đồ thờ; hoành phi, câu đối; hệ thống cấu kiện gỗ và các chi tiết kiến trúc củ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -36268,6 +36754,12 @@ export const allMonumentsList = [
       ],
       "overview": "Hà Chương Hội quán là một công trình gắn với cộng đồng người Hoa gốc Phúc Kiến tại Chợ Lớn, vừa là nơi tín ngưỡng vừa là không gian hội họp, tương trợ cộng đồng. Công trình có giá trị nổi bật về kiến trúc Hoa truyền thống với hệ thống gỗ, đá, gạch ngói và các mảng trang trí sành sứ đặc sắc.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Thuộc mạng lưới hội quán người Hoa ở Chợ Lớn.",
+        "🔎 Là nơi thờ tự và sinh hoạt đồng hương.",
+        "🔎 Lưu giữ nghệ thuật kiến trúc, trang trí của người Hoa.",
+        "🔎 Phản ánh quá trình giao lưu văn hóa Việt – Hoa."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -36451,7 +36943,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Hội quán Hà Chương",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Hội quán Hà Chương",
-      "investigationQuestion": "Vì sao di tích Hội quán Hà Chương tại Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hội quán Hà Chương cho thấy hội quán người Hoa vừa là nơi tín ngưỡng vừa là không gian tương trợ đồng hương như thế nào, và điều đó gợi cho em bài học gì về cộng đồng?",
       "suggestedAnswer": "Di tích Hội quán Hà Chương là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Hà Chương Hội quán; trên 200 năm trước - cộng đồng người Hoa thuộc các huyện của phủ Chương Châu hình thành hội quán; nhiều lần được trùng tu qua các thời kỳ; 28/12/2001 - được xếp..., gắn liền với công lao to lớn của Hà Chương Hội quán; Thiên Hậu Thánh Mẫu; Quan Thánh Đế Quân; Thổ Địa; cộng đồng người Hoa gốc Phúc Kiến thuộc khu vực Chương Châu, Tuyền Châ... và lưu giữ các hiện vật quý: Hà Chương Hội quán; tượng Thiên Hậu; tượng Quan Thánh Đế Quân; các tượng thờ và đồ thờ; hệ thống chạm khắc gỗ, đá, gạch ngói; các mảng trang..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -36714,6 +37206,12 @@ export const allMonumentsList = [
       ],
       "overview": "Hội quán Nghĩa An là một trung tâm tín ngưỡng và sinh hoạt cộng đồng của người Hoa gốc Triều Châu ở Chợ Lớn. Việc thờ Quan Công thể hiện những giá trị được cộng đồng đề cao như trung nghĩa, chính trực và lòng hướng về quê hương; công trình đồng thời là một di sản kiến trúc nghệ thuật tiêu biểu của Chợ Lớn.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với cộng đồng người Hoa gốc Triều Châu.",
+        "🔎 Là trung tâm tín ngưỡng thờ Quan Đế.",
+        "🔎 Kết hợp không gian thờ tự và sinh hoạt cộng đồng.",
+        "🏛️ Là một công trình kiến trúc nghệ thuật tiêu biểu của Chợ Lớn."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -36897,7 +37395,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)",
-      "investigationQuestion": "Vì sao di tích Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) tại Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) phản ánh những giá trị tín ngưỡng, nghệ thuật và tinh thần cộng đồng nào của người Hoa ở Chợ Lớn?",
       "suggestedAnswer": "Di tích Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 52/2001/QĐ-BVHTT ngày 28/12/2001 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Hội quán Nghĩa An; khoảng 1819–1820 - xây dựng kiên cố công trình; 1866, 1901, 1969, 1984 - nhiều đợt trùng tu; 27/07/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia..., gắn liền với công lao to lớn của Hội quán Nghĩa An; Quan Thánh Đế Quân (Quan Công); Quan Bình; Châu Xương; Thiên Hậu Thánh Mẫu; Phước Đức Chánh Thần; cộng đồng người Hoa gốc... và lưu giữ các hiện vật quý: Hội quán Nghĩa An; tượng Quan Công và các thần được thờ; hoành phi, câu đối; bao lam; hương án; đồ thờ bằng gỗ, đá, gốm; hệ thống phù điêu v..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -37160,6 +37658,12 @@ export const allMonumentsList = [
       ],
       "overview": "Hội quán Nghĩa Nhuận có nguồn gốc từ đình làng Tân Nhuận được thành lập từ đầu thế kỷ XIX. Năm 1872, đình trở thành hội quán của Hội Nghĩa Nhuận, thể hiện sự chuyển biến từ thiết chế làng xã của cư dân Việt sang không gian sinh hoạt tín ngưỡng và cộng đồng của người Hoa.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Có nguồn gốc từ đình làng Tân Nhuận.",
+        "🔎 Gắn với cộng đồng người Hoa ở Chợ Lớn.",
+        "🔎 Là nơi thờ tự và sinh hoạt đồng hương.",
+        "🔎 Phản ánh lịch sử cộng đồng và giao lưu văn hóa."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -37343,7 +37847,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Hội quán Nghĩa Nhuận",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Hội quán Nghĩa Nhuận",
-      "investigationQuestion": "Vì sao di tích Hội quán Nghĩa Nhuận tại Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hội quán Nghĩa Nhuận cho thấy quá trình biến đổi từ thiết chế cộng đồng ban đầu thành không gian tín ngưỡng và hội quán như thế nào, và điều đó phản ánh sự thích nghi văn hóa ra sao?",
       "suggestedAnswer": "Di tích Hội quán Nghĩa Nhuận là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Hội quán Nghĩa Nhuận; đầu thế kỷ XIX - hình thành làng Tân Nhuận và đình làng; 1852 - vua Tự Đức ban sắc phong Thành Hoàng; 1872 - đình trở thành Hội quán Nghĩa Nhuận; 1879, 1894, ..., gắn liền với công lao to lớn của Hội quán Nghĩa Nhuận; Thành Hoàng Bổn Cảnh; Quan Thánh Đế Quân; Thiên Hậu Thánh Mẫu; cộng đồng Hội Nghĩa Nhuận và cư dân làng Tân Nhuận.... và lưu giữ các hiện vật quý: Hội quán Nghĩa Nhuận; sắc phong Thành Hoàng vua Tự Đức năm 1852; tượng Quan Đế; tượng Thiên Hậu; hoành phi, câu đối và đồ thờ truyền thống...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -37606,6 +38110,12 @@ export const allMonumentsList = [
       ],
       "overview": "Hội quán Ôn Lăng là một trong những công trình tín ngưỡng lâu đời của cộng đồng người Hoa gốc Tuyền Châu, Phúc Kiến. Hội quán vừa giữ vai trò nơi thờ tự, vừa là không gian sinh hoạt cộng đồng; giá trị của di tích còn thể hiện qua sự giao thoa giữa tín ngưỡng người Hoa và văn hóa đô thị Chợ Lớn.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với cộng đồng người Hoa gốc Tuyền Châu, Phúc Kiến.",
+        "🔎 Là hội quán – miếu có lịch sử lâu đời.",
+        "🔎 Nổi bật với nghệ thuật kiến trúc và trang trí.",
+        "🏅 Xếp hạng quốc gia: 7/1/1993."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -37789,7 +38299,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Hội quán Ôn Lăng",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Hội quán Ôn Lăng",
-      "investigationQuestion": "Vì sao di tích Hội quán Ôn Lăng tại Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hội quán Ôn Lăng đã giúp cộng đồng người Hoa duy trì tín ngưỡng, ngôn ngữ, quan hệ đồng hương và ký ức quê quán như thế nào?",
       "suggestedAnswer": "Di tích Hội quán Ôn Lăng là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Hội quán Ôn Lăng; 1787 - Nguyễn Ánh cho phép các lưu dân người Hoa lập các bang hội; thế kỷ XVIII - hội quán được hình thành và trở thành nơi sinh hoạt của cộng đồng người Hoa gốc ..., gắn liền với công lao to lớn của Hội quán Ôn Lăng; Thiên Hậu Thánh Mẫu; Quan Âm; các vị thần được cộng đồng người Hoa gốc Tuyền Châu thờ phụng; Nguyễn Ánh liên quan đến việc... và lưu giữ các hiện vật quý: Hội quán Ôn Lăng; bia đá năm 1869; tượng và đồ thờ Thiên Hậu, Quan Âm cùng các vị thần; hoành phi, câu đối và các tác phẩm trang trí gốm sứ...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -38052,6 +38562,12 @@ export const allMonumentsList = [
       ],
       "overview": "Quỳnh Phủ Hội quán gắn với cộng đồng người Hoa đến từ đảo Hải Nam và được thành lập năm 1824. Di tích phản ánh quá trình định cư, tổ chức cộng đồng và giao lưu văn hóa Việt – Hoa tại Chợ Lớn; đặc biệt có giá trị nhờ các hiện vật và tác phẩm nghệ thuật mang dấu ấn giao thoa văn hóa.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "📅 Thành lập: năm 1824.",
+        "🔎 Gắn với cộng đồng người Hoa Hải Nam.",
+        "🔎 Là nơi thờ tự và sinh hoạt đồng hương.",
+        "🏅 Xếp hạng quốc gia: 31/8/1998."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -38235,7 +38751,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Hội quán Quỳnh Phủ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Hội quán Quỳnh Phủ",
-      "investigationQuestion": "Vì sao di tích Hội quán Quỳnh Phủ tại Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hội quán Quỳnh Phủ phản ánh nguồn gốc và sự gắn kết của cộng đồng người Hoa Hải Nam ở Chợ Lớn như thế nào, và em học được gì về bản sắc trong một xã hội đa văn hóa?",
       "suggestedAnswer": "Di tích Hội quán Quỳnh Phủ là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1811/1998/QĐ-BVHTT ngày 31/8/1998 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Quỳnh Phủ Hội quán; 1824 - hội quán được thành lập bởi cộng đồng người Hoa đến từ đảo Hải Nam; 1827 - đúc đại hồng chung; 31/08/1998 - được xếp hạng di tích cấp quốc gia; 2024 - tổ..., gắn liền với công lao to lớn của Quỳnh Phủ Hội quán; cộng đồng người Hoa gốc Hải Nam; các vị thần được thờ tại hội quán; vua Duy Tân – người ban sắc được lưu giữ tại hội quá... và lưu giữ các hiện vật quý: Quỳnh Phủ Hội quán; sắc vua Duy Tân; đại hồng chung đúc năm 1827; bộ tranh sơn mài Lục Vân Tiên gồm 6 bức; các hoành phi, câu đối và đồ thờ...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -38498,6 +39014,12 @@ export const allMonumentsList = [
       ],
       "overview": "Hội quán Tuệ Thành – Chùa Bà là trung tâm tín ngưỡng lâu đời của cộng đồng người Hoa gốc Quảng Châu/Quảng Đông. Công trình thờ Thiên Hậu Thánh Mẫu, đồng thời giữ vai trò quan trọng trong đời sống văn hóa, giáo dục, từ thiện và sinh hoạt cộng đồng người Hoa tại Chợ Lớn.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với cộng đồng người Hoa Quảng Đông.",
+        "🔎 Là trung tâm tín ngưỡng thờ Thiên Hậu.",
+        "🔎 Nổi bật với kiến trúc và nghệ thuật trang trí Hoa.",
+        "🔎 Là một trong nh��ng hội quán nổi tiếng của Chợ Lớn."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -38681,7 +39203,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Hội quán Tuệ Thành (Chùa Bà)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Hội quán Tuệ Thành (Chùa Bà)",
-      "investigationQuestion": "Vì sao di tích Hội quán Tuệ Thành (Chùa Bà) tại Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Hội quán Tuệ Thành (Chùa Bà) cho thấy tín ngưỡng, lễ hội và hoạt động cộng đồng đã góp phần duy trì bản sắc người Hoa ở Chợ Lớn như thế nào?",
       "suggestedAnswer": "Di tích Hội quán Tuệ Thành (Chùa Bà) là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Hội quán Tuệ Thành; khoảng 1760 - cộng đồng người Hoa gốc Tuệ Thành/Quảng Châu xây dựng miếu thờ Thiên Hậu; nhiều lần trùng tu trong các thế kỷ XVIII–XX; 07/01/1993 - được xếp hạng..., gắn liền với công lao to lớn của Hội quán Tuệ Thành; Thiên Hậu Thánh Mẫu; cộng đồng người Hoa gốc Quảng Châu/Quảng Đông; các ban quản trị hội quán qua nhiều thế hệ.... và lưu giữ các hiện vật quý: Hội quán Tuệ Thành; đại hồng chung; bộ lư Pháp lam đề niên hiệu Đạo Quang năm thứ 10 (1830); tượng Thiên Hậu; các phù điêu, tranh đắp nổi và..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -38944,6 +39466,12 @@ export const allMonumentsList = [
       ],
       "overview": "Lăng Lê Văn Duyệt có giá trị đặc biệt về lịch sử, văn hóa và kiến trúc, gắn với cuộc đời và sự nghiệp của Tả quân Lê Văn Duyệt – một nhân vật quan trọng trong quá trình xây dựng, ổn định và phát triển Gia Định. Khu lăng miếu còn thể hiện sự giao thoa văn hóa Việt – Hoa và là nơi duy trì lễ giỗ Tả quân hằng năm.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với Tả quân Lê Văn Duyệt.",
+        "🔎 Là quần thể lăng mộ – nơi tưởng niệm danh nhân.",
+        "🔎 Không gian gồm mộ, điện thờ và khu nghi lễ.",
+        "🔎 Có giá trị lớn về lịch sử, văn hóa và kiến trúc Nam Bộ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -39127,7 +39655,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Lăng Lê Văn Duyệt",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Lăng Lê Văn Duyệt",
-      "investigationQuestion": "Vì sao di tích Lăng Lê Văn Duyệt tại Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Lăng Lê Văn Duyệt cho thấy cách cộng đồng Nam Bộ tưởng niệm một nhân vật lịch sử như thế nào, và không gian lăng giúp em suy ngẫm gì về công trạng, ký ức và cách nhìn lịch sử?",
       "suggestedAnswer": "Di tích Lăng Lê Văn Duyệt là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1288-VH/QĐ ngày 16/11/1998 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Lăng Lê Văn Duyệt; 1832 - Lê Văn Duyệt qua đời tại Gia Định và được an táng tại khu vực Bà Chiểu; các thế kỷ XIX–XX - khu lăng miếu được xây dựng, tu bổ và trở thành nơi tưởng niệm..., gắn liền với công lao to lớn của Lăng Lê Văn Duyệt; Đức Thượng công Tả quân Lê Văn Duyệt; Chánh thất Tả quân phu nhân Đỗ Thị Phẫn; các hậu duệ họ Lê và cộng đồng cư dân Gia ... và lưu giữ các hiện vật quý: Lăng Lê Văn Duyệt; mộ song táng của Lê Văn Duyệt và Đỗ Thị Phẫn; bình phong; bia đá; hương án; đồ thờ; các cấu kiện kiến trúc và trang trí t..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -39390,6 +39918,12 @@ export const allMonumentsList = [
       ],
       "overview": "Lăng Trương Tấn Bửu gắn với cuộc đời và sự nghiệp của Trương Tấn Bửu, một võ tướng triều Nguyễn có vai trò trong quá trình xây dựng, bảo vệ vùng Gia Định và phục vụ nhà Nguyễn. Di tích là nơi tưởng niệm nhân vật lịch sử, đồng thời phản ánh truyền thống thờ phụng danh nhân và cấu trúc lăng mộ của tầng lớp quan lại Nam Bộ thời Nguyễn.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với võ tướng Trương Tấn Bửu.",
+        "🔎 Là lăng mộ – không gian tưởng niệm danh nhân.",
+        "🔎 Phản ánh truyền thống thờ phụng danh nhân ở Nam Bộ.",
+        "🔎 Có giá trị về lịch sử và kiến trúc lăng mộ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -39573,7 +40107,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Lăng Trương Tấn Bửu",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Lăng Trương Tấn Bửu",
-      "investigationQuestion": "Vì sao di tích Lăng Trương Tấn Bửu tại Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Lăng Trương Tấn Bửu cho thấy kiến trúc lăng mộ gắn với việc tưởng niệm nhân vật lịch sử như thế nào, và di tích giúp học sinh hiểu gì về truyền thống tri ân?",
       "suggestedAnswer": "Di tích Lăng Trương Tấn Bửu là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Lăng Trương Tấn Bửu; cuối thế kỷ XVIII – đầu thế kỷ XIX, Trương Tấn Bửu tham gia hoạt động quân sự dưới quyền Nguyễn Ánh; sau khi qua đời, ông được an táng và lập lăng tại vùng Phú..., gắn liền với công lao to lớn của Trương Tấn Bửu; vua Gia Long; các tướng lĩnh và quan lại triều Nguyễn hoạt động tại Gia Định.... và lưu giữ các hiện vật quý: Lăng Trương Tấn Bửu; mộ và bia mộ Trương Tấn Bửu; các đồ thờ, hoành phi, câu đối và kiến trúc lăng mộ...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -39836,6 +40370,12 @@ export const allMonumentsList = [
       ],
       "overview": "Lăng Võ Di Nguy gắn với Võ Di Nguy, một võ tướng có công trong thời kỳ Nguyễn Ánh chống quân Tây Sơn và xây dựng lực lượng ở vùng Gia Định. Lăng mộ là dấu tích quan trọng liên quan đến lịch sử quân sự cuối thế kỷ XVIII – đầu XIX và quá trình hình thành vùng Gia Định dưới triều Nguyễn.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với võ tướng Võ Di Nguy.",
+        "🔎 Là lăng mộ – nơi tưởng niệm nhân vật lịch sử.",
+        "🔎 Liên quan đến thời kỳ Nguyễn Ánh và vùng Gia Định.",
+        "🔎 Có giá trị về lịch sử, văn hóa và kiến trúc."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -40019,7 +40559,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Lăng Võ Di Nguy",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Lăng Võ Di Nguy",
-      "investigationQuestion": "Vì sao di tích Lăng Võ Di Nguy tại Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Lăng Võ Di Nguy cho thấy sự kết hợp giữa kiến trúc lăng mộ và ký ức về nhân vật được thờ như thế nào, và việc bảo tồn di tích góp phần giáo dục truyền thống ra sao?",
       "suggestedAnswer": "Di tích Lăng Võ Di Nguy là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Lăng Võ Di Nguy; cuối thế kỷ XVIII, Võ Di Nguy tham gia lực lượng Nguyễn Ánh chống Tây Sơn; ông giữ vai trò quan trọng trong các hoạt động quân sự và thủy quân; 07/01/1993, lăng đư..., gắn liền với công lao to lớn của Võ Di Nguy; Nguyễn Ánh (vua Gia Long); các tướng lĩnh thuộc lực lượng Nguyễn Ánh trong cuộc chiến với Tây Sơn.... và lưu giữ các hiện vật quý: Lăng Võ Di Nguy; mộ Võ Di Nguy; bia mộ, bàn thờ và các đồ tế tự liên quan đến nhân vật...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -40282,6 +40822,12 @@ export const allMonumentsList = [
       ],
       "overview": "Linh Sơn Cổ Tự là một cơ sở Phật giáo lâu đời ở Vũng Tàu, có giá trị về lịch sử hình thành đời sống Phật giáo và văn hóa tín ngưỡng của cư dân địa phương. Công trình đồng thời góp phần tạo nên không gian văn hóa – tôn giáo đặc trưng của khu vực núi Nhỏ và thành phố Vũng Tàu.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Là một trong những chùa cổ tiêu biểu của Vũng Tàu.",
+        "🔎 Gắn với lịch sử Phật giáo địa phương.",
+        "🏅 Xếp hạng quốc gia: 3/8/1991.",
+        "🔎 Không gian chùa kết hợp cảnh quan núi Nhỏ và tín ngưỡng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -40465,7 +41011,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Linh Sơn Cổ Tự",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Linh Sơn Cổ Tự",
-      "investigationQuestion": "Vì sao di tích Linh Sơn Cổ Tự tại Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Linh Sơn Cổ Tự cho thấy Phật giáo đã gắn với quá trình hình thành đời sống đô thị ven biển Vũng Tàu như thế nào, và di tích có thể giáo dục học sinh về những giá trị sống nào?",
       "suggestedAnswer": "Di tích Linh Sơn Cổ Tự là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1371/QĐ ngày 03/08/1991.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Linh Sơn Cổ Tự; hình thành và phát triển gắn với lịch sử Phật giáo tại Vũng Tàu; nhiều lần được tu bổ qua các thời kỳ; 03/08/1991, được xếp hạng di tích quốc gia theo Quyết định 13..., gắn liền với công lao to lớn của Các vị trụ trì và tăng ni Linh Sơn Cổ Tự; cộng đồng Phật tử và cư dân Vũng Tàu qua các thời kỳ.... và lưu giữ các hiện vật quý: Linh Sơn Cổ Tự; tượng Phật, tượng Bồ Tát, chuông, đồ thờ, hoành phi, câu đối và các tác phẩm trang trí Phật giáo...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -40728,6 +41274,12 @@ export const allMonumentsList = [
       ],
       "overview": "Miếu Nhị Phủ là một trung tâm tín ngưỡng quan trọng của cộng đồng người Hoa ở Chợ Lớn, phản ánh quá trình người Hoa định cư, tổ chức cộng đồng và duy trì tín ngưỡng tại Nam Bộ. Di tích có giá trị nổi bật về kiến trúc, mỹ thuật và giao lưu văn hóa Việt – Hoa.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🔎 Là trung tâm tín ngưỡng của cộng đồng người Hoa Chợ Lớn.",
+        "🔎 Gắn với tục thờ Ông Bổn.",
+        "🔎 Là nơi sinh hoạt tín ngưỡng và cộng đồng.",
+        "🔎 Phản ánh quá trình người Hoa định cư ở Nam Bộ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -40911,7 +41463,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Miếu Nhị Phủ (Chùa Ông Bổn)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Miếu Nhị Phủ (Chùa Ông Bổn)",
-      "investigationQuestion": "Vì sao di tích Miếu Nhị Phủ (Chùa Ông Bổn) tại Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Miếu Nhị Phủ (Chùa Ông Bổn) phản ánh đời sống tín ngưỡng và sự tương trợ của cộng đồng người Hoa ở Chợ Lớn như thế nào, và điều đó cho thấy ý nghĩa của cộng đồng trong đời sống đô thị ra sao?",
       "suggestedAnswer": "Di tích Miếu Nhị Phủ (Chùa Ông Bổn) là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Miếu Nhị Phủ; hình thành trong quá trình cộng đồng người Hoa xây dựng Chợ Lớn; trở thành trung tâm tín ngưỡng Ông Bổn của cộng đồng; nhiều lần được tu bổ; 07/01/1993, được xếp hạng..., gắn liền với công lao to lớn của Ông Bổn/Phước Đức Chánh Thần; các vị thần được cộng đồng người Hoa thờ phụng; cộng đồng người Hoa tại Chợ Lớn.... và lưu giữ các hiện vật quý: Miếu Nhị Phủ; tượng Ông Bổn/Phước Đức Chánh Thần; tượng và đồ thờ; hoành phi, câu đối; hương án; các mảng chạm khắc, phù điêu và trang trí g..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -41174,6 +41726,12 @@ export const allMonumentsList = [
       ],
       "overview": "Miếu Thiên Hậu (Quảng Triệu hội quán) là nơi sinh hoạt tín ngưỡng của cộng đồng người Hoa gốc Quảng Đông/Quảng Châu. Việc thờ Thiên Hậu thể hiện niềm tin của cư dân đi biển và người Hoa di cư đối với vị thần bảo hộ; hội quán đồng thời là nơi duy trì quan hệ cộng đồng, tương trợ và các lễ nghi truyền thống.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với cộng đồng người Hoa Quảng Đông.",
+        "🔎 Thờ Thiên Hậu Thánh Mẫu.",
+        "🔎 Là hội quán – không gian tín ngưỡng và cộng đồng.",
+        "🔎 Có giá trị kiến trúc nghệ thuật và văn hóa người Hoa."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -41357,7 +41915,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Miếu Thiên Hậu (Quảng Triệu hội quán)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Miếu Thiên Hậu (Quảng Triệu hội quán)",
-      "investigationQuestion": "Vì sao di tích Miếu Thiên Hậu (Quảng Triệu hội quán) tại Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Miếu Thiên Hậu (Quảng Triệu hội quán) cho thấy tín ngưỡng thờ Thiên Hậu đã góp phần gìn giữ bản sắc và gắn kết cộng đồng người Hoa như thế nào?",
       "suggestedAnswer": "Di tích Miếu Thiên Hậu (Quảng Triệu hội quán) là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Miếu Thiên Hậu (Quảng Triệu hội quán); hình thành từ quá trình định cư của người Hoa Quảng Đông tại Sài Gòn – Chợ Lớn; duy trì các nghi lễ vía Thiên Hậu và hoạt động cộng đồng; 25/..., gắn liền với công lao to lớn của Thiên Hậu Thánh Mẫu; Quan Thánh Đế Quân và các vị thần được thờ tại hội quán; cộng đồng người Hoa gốc Quảng Đông.... và lưu giữ các hiện vật quý: Miếu Thiên Hậu; tượng Thiên Hậu Thánh Mẫu; lư hương, chuông, đồ thờ; hoành phi, câu đối; các mảng chạm khắc và trang trí gốm sứ đặc trưng củ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -41620,6 +42178,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà cổ Trần Công Vàng phản ánh đời sống của một gia đình khá giả ở Bình Dương cuối thế kỷ XIX – đầu thế kỷ XX, đồng thời là công trình tiêu biểu của kiến trúc nhà ở truyền thống Nam Bộ. Nhà được xây dựng giai đoạn 1889–1892 và nổi bật với kết cấu gỗ quý, chạm khắc tinh xảo.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Là nhà ở truyền thống của Bình Dương cũ.",
+        "🔎 Gắn với đời sống gia đình khá giả cuối thế kỷ XIX – đầu XX.",
+        "🔎 Lưu giữ kiến trúc, nội thất và đồ dùng cổ.",
+        "🔎 Phản ánh nếp sống Nam Bộ xưa."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -41803,7 +42367,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà cổ Trần Công Vàng",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà cổ Trần Công Vàng",
-      "investigationQuestion": "Vì sao di tích Nhà cổ Trần Công Vàng tại Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà cổ Trần Công Vàng lưu giữ những dấu ấn nào về không gian sống, kỹ thuật mộc và nếp sống gia đình Nam Bộ, và em có thể học gì từ việc bảo tồn một ngôi nhà cổ?",
       "suggestedAnswer": "Di tích Nhà cổ Trần Công Vàng là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Nhà cổ Trần Công Vàng; 1889–1892, công trình được xây dựng; trải qua nhiều thế hệ gia đình họ Trần gìn giữ; 07/01/1993, được công nhận di tích kiến trúc nghệ thuật cấp quốc gia...., gắn liền với công lao to lớn của Trần Công Vàng; ông Trần Văn Long – người xây dựng ngôi nhà; các thế hệ gia đình họ Trần.... và lưu giữ các hiện vật quý: Nhà cổ Trần Công Vàng; hệ thống nhà gỗ; bàn thờ, tủ thờ, bàn ghế, hoành phi, liễn đối, câu đối, tranh tứ bình và các mảng chạm khắc, cẩn xà ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -42066,6 +42630,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà cổ Trần Văn Hổ phản ánh đời sống của tầng lớp quan lại, địa chủ và gia đình giàu có ở Thủ Dầu Một cuối thế kỷ XIX. Công trình do cụ Trần Văn Lân xây dựng năm 1890 cho gia đình Trần Văn Hổ, tự Đẩu, nguyên Đốc phủ sứ thời Pháp thuộc; ngôi nhà có giá trị lớn về kiến trúc, nghệ thuật trang trí và tư liệu về xã hội Bình Dương xưa.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với tầng lớp giàu có ở Thủ Dầu Một xưa.",
+        "🔎 Có giá trị về kiến trúc nhà ở truyền thống.",
+        "🔎 Lưu giữ nhiều dấu ấn không gian cư trú và kỹ thuật mộc.",
+        "🔎 Là tư liệu về đời sống xã hội Nam Bộ."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -42249,7 +42819,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà cổ Trần Văn Hổ",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà cổ Trần Văn Hổ",
-      "investigationQuestion": "Vì sao di tích Nhà cổ Trần Văn Hổ tại Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà cổ Trần Văn Hổ cho thấy kiến trúc và đồ dùng trong một ngôi nhà có thể kể lại câu chuyện của gia đình và xã hội xưa như thế nào?",
       "suggestedAnswer": "Di tích Nhà cổ Trần Văn Hổ là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa và Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Nhà cổ Trần Văn Hổ; 1890, cụ Trần Văn Lân xây dựng ngôi nhà cho gia đình; Trần Văn Hổ (Tự Đẩu) sinh sống và hoạt động tại đây; 29/04/1993, nhà được công nhận di tích quốc gia theo ..., gắn liền với công lao to lớn của Trần Văn Hổ (Tự Đẩu); Trần Văn Lân – thân sinh Trần Văn Hổ và người xây dựng nhà; các thế hệ gia đình họ Trần.... và lưu giữ các hiện vật quý: Nhà cổ Trần Văn Hổ; kết cấu nhà gỗ; bàn thờ gia tiên; hoành phi, câu đối, liễn đối; đồ gia dụng và các chi tiết chạm khắc gỗ mang phong cách..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -42512,6 +43082,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà hát Thành phố Hồ Chí Minh là công trình kiến trúc tiêu biểu của Sài Gòn thời thuộc địa, phản ánh quá trình hình thành đô thị hiện đại cuối thế kỷ XIX – đầu thế kỷ XX. Công trình có giá trị nổi bật về kiến trúc nghệ thuật, là một trong những biểu tượng kiến trúc trung tâm của Thành phố Hồ Chí Minh.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🔎 Xây dựng cuối thế kỷ XIX – đầu thế kỷ XX.",
+        "🏛️ Là công trình kiến trúc đô thị thời thuộc địa.",
+        "🔎 Nổi bật với mặt tiền và nội thất mang phong cách châu Âu.",
+        "🏛️ Là một biểu tượng kiến trúc của Sài Gòn."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -42695,7 +43271,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà hát Thành phố Hồ Chí Minh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà hát Thành phố Hồ Chí Minh",
-      "investigationQuestion": "Vì sao di tích Nhà hát Thành phố Hồ Chí Minh tại Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà hát Thành phố Hồ Chí Minh phản ánh quá trình hình thành đời sống công cộng và kiến trúc đô thị Sài Gòn như thế nào, và vì sao một công trình nghệ thuật cũng là một nguồn sử liệu?",
       "suggestedAnswer": "Di tích Nhà hát Thành phố Hồ Chí Minh là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1209/QĐ-BVHTTDL ngày 29/03/2012 của Bộ Văn hóa, Thể thao và Du lịch.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Nhà hát Thành phố; cuối thế kỷ XIX, Nhà hát được xây dựng trong thời kỳ Pháp thuộc; trở thành một công trình văn hóa quan trọng của Sài Gòn; 29/03/2012, được xếp hạng di tích quốc ..., gắn liền với công lao to lớn của Các kiến trúc sư, nghệ nhân Pháp và Việt Nam tham gia xây dựng, trang trí Nhà hát; các nghệ sĩ, đoàn nghệ thuật từng hoạt động tại Nhà hát T... và lưu giữ các hiện vật quý: Nhà hát Thành phố; mặt tiền, phù điêu, tượng trang trí, hệ thống cầu thang, nội thất khán phòng, sân khấu và các chi tiết kiến trúc mang pho..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -42958,6 +43534,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà Lớn Long Sơn gắn với cuộc đời và hoạt động của ông Trần, người sáng lập cộng đồng Long Sơn. Đây vừa là trung tâm tín ngưỡng, vừa là không gian sinh hoạt cộng đồng và nơi lưu giữ nhiều giá trị văn hóa, kiến trúc, đạo đức của cộng đồng Long Sơn. Khu Nhà Lớn được làm chủ yếu bằng gỗ quý và được công nhận là di tích lịch sử – văn hóa cấp quốc gia.",
       "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "emCoBiet": [
+        "🔎 Là quần thể tín ngưỡng – cộng đồng ở Long Sơn.",
+        "🔎 Gắn với ông Trần và cộng đồng Long Sơn.",
+        "🔎 Kết hợp nơi thờ tự, sinh hoạt và hoạt động cộng đồng.",
+        "🔎 Phản ánh một nếp sống văn hóa đặc biệt của vùng biển."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -43141,7 +43723,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà Lớn Long Sơn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Thôn 5, phường Long Sơn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà Lớn Long Sơn",
-      "investigationQuestion": "Vì sao di tích Nhà Lớn Long Sơn tại Thôn 5, phường Long Sơn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà Lớn Long Sơn cho thấy một quần thể tín ngưỡng có thể trở thành trung tâm cộng đồng và duy trì những quy tắc sống, tương trợ như thế nào?",
       "suggestedAnswer": "Di tích Nhà Lớn Long Sơn là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1371/QĐ ngày 03/08/1991.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Nhà Lớn Long Sơn; đầu thế kỷ XX, ông Trần xây dựng và phát triển khu Nhà Lớn; nơi đây trở thành trung tâm sinh hoạt của cộng đồng Long Sơn; 03/08/1991, được xếp hạng di tích lịch s..., gắn liền với công lao to lớn của Ông Trần – người khai sáng cộng đồng Long Sơn; các thế hệ cư dân và tín đồ theo đạo Ông Trần.... và lưu giữ các hiện vật quý: Nhà Lớn Long Sơn; hệ thống nhà gỗ, bàn thờ, hoành phi, câu đối, đồ thờ, vật dụng sinh hoạt và các cấu kiện gỗ cổ trong quần thể...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -43404,6 +43986,12 @@ export const allMonumentsList = [
       ],
       "overview": "Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) gắn với lịch sử hình thành và phát triển nghề kim hoàn tại Chợ Lớn. Đây là nơi thờ Tổ nghề, đồng thời là không gian hội họp, tương trợ và duy trì truyền thống nghề nghiệp của những người làm nghề bạc, kim hoàn.",
       "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "emCoBiet": [
+        "🔎 Gắn với nghề kim hoàn ở Chợ Lớn.",
+        "🔎 Là nơi thờ Tổ nghề và sinh hoạt hội nghề.",
+        "🔎 Phản ánh truyền thống tôn sư trọng nghề.",
+        "🔎 Có giá trị về lịch sử nghề thủ công và văn hóa cộng đồng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -43587,7 +44175,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
-      "investigationQuestion": "Vì sao di tích Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) tại Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) cho thấy một nghề thủ công có thể hình thành cộng đồng nghề nghiệp, đạo đức nghề và truyền thống thờ Tổ như thế nào?",
       "suggestedAnswer": "Di tích Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Nhà thờ tổ thợ bạc; hình thành gắn với cộng đồng thợ bạc, thợ kim hoàn Chợ Lớn; duy trì tục thờ Tổ nghề và sinh hoạt hội quán; 25/04/1998, được xếp hạng di tích kiến trúc nghệ thuậ..., gắn liền với công lao to lớn của Các nghệ nhân kim hoàn và những người lập Hội quán Lệ Châu; các thế hệ thợ bạc, thợ kim hoàn Chợ Lớn.... và lưu giữ các hiện vật quý: Nhà thờ tổ thợ bạc; tượng/ban thờ Tổ nghề; hoành phi, câu đối, đồ thờ và các dụng cụ, tư liệu liên quan đến nghề kim hoàn truyền thống...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -43850,6 +44438,12 @@ export const allMonumentsList = [
       ],
       "overview": "Niết Bàn Tịnh Xá là công trình Phật giáo tiêu biểu của Vũng Tàu, có giá trị về lịch sử phát triển Phật giáo, kiến trúc tôn giáo và nghệ thuật tạo tác tượng, phù điêu. Không gian tịnh xá gắn với cảnh quan núi và biển, tạo nên giá trị văn hóa – tâm linh đặc trưng của Vũng Tàu.",
       "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "emCoBiet": [
+        "🏛️ Là công trình Phật giáo nổi tiếng ở Vũng Tàu.",
+        "🏛️ Nổi bật với tượng Phật và nghệ thuật tạo tác.",
+        "🔎 Kết hợp không gian tôn giáo với cảnh quan ven biển.",
+        "🔎 Có giá trị về kiến trúc, nghệ thuật và tín ngưỡng."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -44033,7 +44627,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Niết Bàn Tịnh Xá",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Niết Bàn Tịnh Xá",
-      "investigationQuestion": "Vì sao di tích Niết Bàn Tịnh Xá tại Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Niết Bàn Tịnh Xá cho thấy kiến trúc, nghệ thuật và đời sống Phật giáo đã góp phần tạo nên bản sắc văn hóa Vũng Tàu như thế nào?",
       "suggestedAnswer": "Di tích Niết Bàn Tịnh Xá là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1371/QĐ ngày 03/08/1991.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Niết Bàn Tịnh Xá; thế kỷ XX, tịnh xá được xây dựng và phát triển thành một địa điểm Phật giáo nổi tiếng của Vũng Tàu; 03/08/1991, được xếp hạng di tích quốc gia theo Quyết định 137..., gắn liền với công lao to lớn của Các vị hòa thượng, tăng ni gắn với quá trình xây dựng và phát triển Niết Bàn Tịnh Xá; cộng đồng Phật tử Vũng Tàu.... và lưu giữ các hiện vật quý: Niết Bàn Tịnh Xá; tượng Phật nhập Niết Bàn, tượng Phật và Bồ Tát, chuông, đồ thờ, phù điêu và các tác phẩm trang trí Phật giáo...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -44296,6 +44890,12 @@ export const allMonumentsList = [
       ],
       "overview": "Núi Châu Thới là danh thắng tự nhiên gắn với lịch sử khai phá và đời sống tín ngưỡng của cư dân vùng Đông Nam Bộ. Núi cùng hệ thống chùa, cảnh quan và không gian văn hóa xung quanh tạo thành một địa điểm có giá trị về thiên nhiên, lịch sử và tâm linh.",
       "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "emCoBiet": [
+        "📏 Độ cao: 82 m",
+        "📏 Diện tích: khoảng 25 ha",
+        "📏 Bậc thềm lên chùa: 220 bậc",
+        "🏅 Xếp hạng danh thắng quốc gia: 21/4/1989"
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -44479,7 +45079,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Núi Châu Thới",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Núi Châu Thới, phường Đông Hòa, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Núi Châu Thới",
-      "investigationQuestion": "Vì sao di tích Núi Châu Thới tại Núi Châu Thới, phường Đông Hòa, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Núi Châu Thới cho thấy sự kết hợp giữa cảnh quan thiên nhiên, tín ngưỡng và lịch sử đã tạo nên giá trị của một danh thắng như thế nào, và học sinh cần làm gì để bảo vệ không gian ấy?",
       "suggestedAnswer": "Di tích Núi Châu Thới là danh lam thắng cảnh được xếp hạng cấp quốc gia (Số 451-VH/QĐ ngày 21/04/1989.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Núi Châu Thới; từ lâu là địa điểm tự nhiên và tín ngưỡng quan trọng của vùng Đông Nam Bộ; 21/04/1989, Núi Châu Thới được xếp hạng danh lam thắng cảnh cấp quốc gia theo Quyết định 4..., gắn liền với công lao to lớn của Các vị thiền sư, tăng ni gắn với Châu Thới Sơn và các cơ sở Phật giáo trên núi; cộng đồng cư dân vùng Đông Nam Bộ.... và lưu giữ các hiện vật quý: Núi Châu Thới; hệ thống tượng Phật, bia đá, chuông, đồ thờ và các hiện vật gắn với lịch sử các cơ sở tín ngưỡng trên núi...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -44742,6 +45342,12 @@ export const allMonumentsList = [
       ],
       "overview": "Thích Ca Phật Đài là quần thể kiến trúc Phật giáo nổi tiếng của Vũng Tàu, gắn với sự phát triển của Phật giáo Việt Nam thế kỷ XX. Di tích kết hợp cảnh quan núi, kiến trúc tôn giáo và các tượng Phật lớn, có giá trị về nghệ thuật, tôn giáo và du lịch văn hóa.",
       "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "emCoBiet": [
+        "🔎 Là quần thể Phật giáo trên Núi Lớn.",
+        "🏛️ Nổi bật với tượng Phật Thích Ca.",
+        "🔎 Gắn với quá trình phát triển Phật giáo ở Vũng Tàu.",
+        "🔎 Có giá trị về kiến trúc, nghệ thuật và cảnh quan."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -44925,7 +45531,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Thích Ca Phật Đài",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Thích Ca Phật Đài",
-      "investigationQuestion": "Vì sao di tích Thích Ca Phật Đài tại Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Thích Ca Phật Đài cho thấy cảnh quan và kiến trúc Phật giáo có thể kết hợp để tạo nên một không gian văn hóa như thế nào, và di tích có thể bồi dưỡng những giá trị sống nào cho học sinh?",
       "suggestedAnswer": "Di tích Thích Ca Phật Đài là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1987/VH.QĐ ngày 14/12/1989.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Thích Ca Phật Đài; thế kỷ XX, quần thể Phật giáo được xây dựng trên sườn núi Lớn; trở thành một trung tâm hành hương Phật giáo quan trọng của Vũng Tàu; 14/12/1989, được xếp hạng da..., gắn liền với công lao to lớn của Các vị hòa thượng và tăng ni tham gia xây dựng Thích Ca Phật Đài; cộng đồng Phật tử Vũng Tàu.... và lưu giữ các hiện vật quý: Thích Ca Phật Đài; tượng Phật Thích Ca nhập Niết Bàn, tượng Phật khổng lồ, các phù điêu mô tả cuộc đời Đức Phật, chuông và đồ thờ...., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -45188,6 +45794,12 @@ export const allMonumentsList = [
       ],
       "overview": "Tòa án nhân dân Thành phố Hồ Chí Minh là công trình kiến trúc tiêu biểu được xây dựng trong thời kỳ thuộc địa, phản ánh lịch sử hình thành hệ thống thiết chế tư pháp và kiến trúc công sở của Sài Gòn. Công trình có giá trị đặc biệt về kiến trúc nghệ thuật và lịch sử đô thị.",
       "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "emCoBiet": [
+        "🏛️ Là công trình công sở thời thuộc địa.",
+        "🔎 Mang phong cách kiến trúc châu Âu cuối thế kỷ XIX – đầu XX.",
+        "📅 Gắn với lịch sử hình thành thiết chế tư pháp Sài Gòn.",
+        "🔎 Có giá trị nổi bật về kiến trúc đô thị."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -45371,7 +45983,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Tòa án nhân dân Thành phố Hồ Chí Minh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Tòa án nhân dân Thành phố Hồ Chí Minh",
-      "investigationQuestion": "Vì sao di tích Tòa án nhân dân Thành phố Hồ Chí Minh tại Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Tòa án nhân dân Thành phố Hồ Chí Minh phản ánh sự phát triển của thiết chế pháp luật và kiến trúc đô thị qua các thời kỳ như thế nào, và di tích gợi cho học sinh nhận thức gì về vai trò của pháp luật?",
       "suggestedAnswer": "Di tích Tòa án nhân dân Thành phố Hồ Chí Minh là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 1208/QĐ-BVHTTDL ngày 29/03/2012 của Bộ Văn hóa, Thể thao và Du lịch.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Tòa án nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng trong thời kỳ thuộc địa và trở thành một trong những công trình công sở tiêu biểu của khu trung tâm Sài Gòn; 29/03/2..., gắn liền với công lao to lớn của Các thẩm phán, cán bộ tư pháp và cơ quan tư pháp qua các thời kỳ; các kiến trúc sư và nghệ nhân xây dựng công trình.... và lưu giữ các hiện vật quý: Tòa án nhân dân Thành phố Hồ Chí Minh; các chi tiết kiến trúc nguyên gốc, phù điêu, cửa, cầu thang, sàn, hệ thống trang trí nội thất và các ..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {
@@ -45634,6 +46246,12 @@ export const allMonumentsList = [
       ],
       "overview": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh, theo tên chính thức trong file là Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh, là công trình công quyền tiêu biểu của Sài Gòn – TP.HCM, có giá trị về lịch sử đô thị, kiến trúc và quá trình hình thành trung tâm hành chính của Thành phố.",
       "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "emCoBiet": [
+        "🏛️ Là công trình công quyền tiêu biểu của Sài Gòn.",
+        "📅 Gắn với lịch sử hình thành trung tâm hành chính thành phố.",
+        "🔎 Kiến trúc mang phong cách châu Âu thời thuộc địa.",
+        "🔎 Có giá trị về lịch sử đô thị và kiến trúc."
+      ],
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia",
@@ -45817,7 +46435,7 @@ export const allMonumentsList = [
       "title": "Hồ sơ điều tra: Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM..",
       "investigationTopic": "Nghiên cứu & Giải mã Di tích Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
-      "investigationQuestion": "Vì sao di tích Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh tại Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM. trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?",
+      "investigationQuestion": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh cho thấy kiến trúc đô thị gắn với lịch sử quản trị thành phố như thế nào, và từ đó học sinh hiểu gì về trách nhiệm công dân đối với cộng đồng?",
       "suggestedAnswer": "Di tích Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh là kiến trúc nghệ thuật được xếp hạng cấp quốc gia (Số 3244/QĐ-BVHTTDL ngày 11/04/2020 của Bộ Văn hóa, Thể thao và Du lịch.). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng thời Pháp thuộc, trở thành trung tâm hành chính của thành phố qua nhiều giai đoạn lịch s..., gắn liền với công lao to lớn của Các quan chức chính quyền Sài Gòn thời thuộc địa; các thế hệ lãnh đạo và cơ quan hành chính Thành phố Hồ Chí Minh sử dụng công trình.... và lưu giữ các hiện vật quý: Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh; hệ thống phù điêu, tượng trang trí, cầu thang, cửa, nội thất và các cấu k..., là di sản văn hóa vô giá cho các thế hệ mai sau.",
       "referencesList": [
         {

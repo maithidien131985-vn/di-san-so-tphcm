@@ -124,19 +124,30 @@ export default function InfoSidebar({
           <span>Em có biết?</span>
         </div>
 
-        <ul className="space-y-2 text-xs text-[#4A3E36]">
-          <li className="flex items-center gap-2">
-            <Landmark className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
-            <span><strong>Diện tích khuôn viên:</strong> {info.stats?.campusArea || '120.000 m²'}</span>
-          </li>
-          <li className="flex items-center gap-2">
-            <DoorClosed className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
-            <span><strong>Số phòng:</strong> {info.stats?.roomsCount || '150+ phòng'}</span>
-          </li>
-          <li className="flex items-center gap-2">
-            <Archive className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
-            <span><strong>Hiện vật trưng bày:</strong> {info.stats?.artifactsCount || '3.700+ hiện vật'}</span>
-          </li>
+        <ul className="space-y-2.5 text-xs text-[#4A3E36]">
+          {info.emCoBiet && info.emCoBiet.length > 0 ? (
+            info.emCoBiet.map((point, idx) => (
+              <li key={idx} className="flex items-start gap-2 leading-relaxed">
+                <span className="text-sm shrink-0 mt-0.5">{point.slice(0, 2)}</span>
+                <span className="font-medium text-[#3A3028]">{point.slice(2).trim()}</span>
+              </li>
+            ))
+          ) : (
+            <>
+              <li className="flex items-center gap-2">
+                <Landmark className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
+                <span><strong>Diện tích khuôn viên:</strong> {info.stats?.campusArea || '120.000 m²'}</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <DoorClosed className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
+                <span><strong>Số phòng:</strong> {info.stats?.roomsCount || '150+ phòng'}</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Archive className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
+                <span><strong>Hiện vật trưng bày:</strong> {info.stats?.artifactsCount || '3.700+ hiện vật'}</span>
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </aside>

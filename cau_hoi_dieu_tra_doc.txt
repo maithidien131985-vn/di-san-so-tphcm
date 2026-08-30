@@ -1,0 +1,318 @@
+﻿103 CÂU HỎI ĐIỀU TRA CỐT LÕI VỀ DI TÍCH
+Định hướng khám phá – giáo dục lịch sử, văn hóa và trách nhiệm bảo tồn cho học sinh
+Mỗi di tích được thiết kế một câu hỏi điều tra cốt lõi theo hướng không chỉ yêu cầu học sinh nhớ dữ kiện, mà khuyến khích tìm bằng chứng, giải thích ý nghĩa, liên hệ với hiện tại và hình thành trách nhiệm bảo vệ di sản.
+STT
+	DI TÍCH
+	CÂU HỎI ĐIỀU TRA CỐT LÕI
+	1
+	DINH ĐỘC LẬP
+	Dinh Độc Lập đã chứng kiến những bước ngoặt nào của lịch sử Việt Nam hiện đại, và từ đó em có thể rút ra bài học gì về giá trị của độc lập, hòa bình và thống nhất đất nước?
+	2
+	ĐỊA ĐẠO CỦ CHI
+	Địa đạo Củ Chi đã giúp quân dân địa phương thích nghi và tồn tại như thế nào trong điều kiện chiến tranh khốc liệt, và điều đó dạy học sinh hôm nay bài học gì về ý chí, sáng tạo và sức mạnh cộng đồng?
+	3
+	Đường Hồ Chí Minh trên biển và Bến Lộc An
+	Đường Hồ Chí Minh trên biển và Bến Lộc An cho thấy sự phối hợp giữa thủy thủ, bộ đội và nhân dân địa phương có vai trò như thế nào trong việc vượt qua hiểm nguy để bảo đảm hậu cần cho chiến trường?
+	4
+	NHÀ TÙ CÔN ĐẢO
+	Lịch sử Nhà tù Côn Đảo cho thấy những người bị giam cầm đã giữ vững phẩm chất và niềm tin như thế nào, và thế hệ trẻ hôm nay cần làm gì để trân trọng tự do, hòa bình?
+	5
+	Bình Giã
+	Chiến thắng Bình Giã cho thấy vai trò của việc tạo thế, phối hợp lực lượng và dựa vào nhân dân như thế nào, và bài học ấy có ý nghĩa gì đối với tinh thần hợp tác của học sinh hôm nay?
+	6
+	MINH ĐẠM
+	Căn cứ Minh Đạm cho thấy địa hình tự nhiên và sự che chở của nhân dân đã góp phần như thế nào vào việc xây dựng căn cứ cách mạng, và em học được gì về sức mạnh của lòng dân?
+	7
+	CĂN CỨ RỪNG SÁC
+	Căn cứ Rừng Sác đã biến một vùng rừng ngập mặn hiểm trở thành căn cứ chiến đấu như thế nào, và điều đó gợi cho học sinh bài học gì về khả năng thích nghi với môi trường và bảo vệ thiên nhiên?
+	8
+	CHIẾN KHU Đ
+	Chiến khu Đ đã duy trì vai trò căn cứ địa qua nhiều giai đoạn kháng chiến như thế nào, và sự bền bỉ ấy giúp em hiểu gì về tầm quan trọng của một hậu phương vững chắc?
+	9
+	ĐỊA ĐẠO KIM LONG
+	Địa đạo Kim Long phản ánh sự sáng tạo của nhân dân trong việc xây dựng và bảo vệ căn cứ như thế nào, và bài học nào về tinh thần chủ động có thể áp dụng vào cuộc sống học tập?
+	10
+	ĐỊA ĐẠO PHÚ THỌ HÒA
+	Địa đạo Phú Thọ Hòa cho thấy một hệ thống hầm bí mật có thể hỗ trợ chiến đấu và bảo toàn lực lượng ra sao, và em rút ra bài học gì về sự kiên trì trước hoàn cảnh khó khăn?
+	11
+	ĐỊA ĐẠO TÂY NAM BẾN CÁT – “TAM GIÁC SẮT”
+	Địa đạo Tây Nam Bến Cát – “Tam giác sắt” cho thấy sự gắn bó giữa địa đạo, lực lượng chiến đấu và nhân dân như thế nào, và điều đó có ý nghĩa gì đối với tinh thần đoàn kết hôm nay?
+	12
+	ĐỊA ĐIỂM LƯU NIỆM CHỦ TỊCH TÔN ĐỨC THẮNG TẠI KHU VỰC BA SON
+	Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son giúp em hiểu như thế nào về mối liên hệ giữa người lao động, quá trình học nghề và con đường hoạt động cách mạng?
+	13
+	HẦM BÍ MẬT CHỨA VŨ KHÍ THỜI KHÁNG CHIẾN CHỐNG MỸ
+	Hầm bí mật chứa vũ khí cho thấy những gia đình và cơ sở cách mạng đã chấp nhận nguy hiểm để bảo vệ lực lượng như thế nào, và bài học về trách nhiệm với cộng đồng có ý nghĩa gì với học sinh?
+	14
+	KHU TRẠI GIAM BỆNH VIỆN CHỢ QUÁN – NƠI ĐỒNG CHÍ TRẦN PHÚ HY SINH
+	Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh cho thấy sự khắc nghiệt của chế độ giam cầm và phẩm chất của người chiến sĩ như thế nào, qua đó em hiểu gì về giá trị của lý tưởng?
+	15
+	Di tích lịch sử quốc gia Ngã Ba Giồng
+	Di tích Ngã Ba Giồng giúp em nhận thức như thế nào về sự hy sinh của những người tham gia Nam Kỳ khởi nghĩa và trách nhiệm của thế hệ trẻ trong việc ghi nhớ lịch sử?
+	16
+	Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu
+	Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu đặt ra câu hỏi gì về lòng dũng cảm, tuổi trẻ và sự hy sinh, và em có thể biến bài học ấy thành hành động cụ thể nào trong cuộc sống?
+	17
+	NHÀ TÙ PHÚ LỢI
+	Nhà tù Phú Lợi phản ánh những gì về chế độ giam giữ và cuộc đấu tranh của tù nhân, và di tích giúp học sinh hiểu sâu hơn thế nào về giá trị của nhân phẩm và quyền được sống trong hòa bình?
+	18
+	Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước
+	Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước cho thấy một bước ngoặt trong hành trình của người thanh niên Nguyễn Tất Thành như thế nào, và em học được gì về khát vọng tìm kiếm con đường cho tương lai?
+	19
+	NƠI THÀNH LẬP AN NAM CỘNG SẢN ĐẢNG NĂM 1929
+	Nơi thành lập An Nam Cộng sản Đảng năm 1929 phản ánh nhu cầu tổ chức và định hướng phong trào cách mạng như thế nào, và di tích giúp học sinh hiểu gì về vai trò của lý tưởng và tổ chức?
+	20
+	ĐỊA ĐIỂM SỞ CHỈ HUY TIỀN PHƯƠNG CHIẾN DỊCH HỒ CHÍ MINH
+	Sở Chỉ huy Tiền phương Chiến dịch Hồ Chí Minh cho thấy việc tổ chức, chỉ huy và phối hợp lực lượng có ý nghĩa như thế nào đối với thắng lợi của một chiến dịch lớn?
+	21
+	DI TÍCH KHẢO CỔ CÙ LAO RÙA
+	Các dấu tích cư trú, mộ táng và hiện vật ở Cù Lao Rùa cho phép em hình dung đời sống vật chất và tinh thần của cư dân cổ như thế nào, và vì sao cần bảo vệ những bằng chứng khảo cổ ấy?
+	22
+	DI TÍCH KHẢO CỔ DỐC CHÙA
+	Các khu mộ táng, khuôn đúc và hiện vật đồng ở Dốc Chùa cho thấy trình độ kỹ thuật và sự phân hóa xã hội của cư dân thời đại kim khí như thế nào?
+	23
+	DI TÍCH KHẢO CỔ GIỒNG CÁ VỒ
+	Hệ thống mộ chum và hiện vật ở Giồng Cá Vồ cho thấy cư dân ven biển Nam Bộ xưa đã thích nghi với môi trường và giao lưu văn hóa như thế nào?
+	24
+	LÒ GỐM CỔ HƯNG LỢI
+	Lò gốm cổ Hưng Lợi giúp em tìm hiểu như thế nào về kỹ thuật sản xuất, đời sống kinh tế và quá trình hình thành đô thị Sài Gòn – Gia Định, đồng thời gợi ra trách nhiệm gì trong việc bảo vệ di sản khảo cổ?
+	25
+	ĂNGTEN PARABOL (ĐÀI VIBA) – NÚI LỚN
+	Ăngten Parabol (Đài Viba) – N��i Lớn cho thấy hệ thống thông tin liên lạc từng giữ vai trò gì trong lịch sử hiện đại của địa phương, và vì sao những công trình kỹ thuật cũng cần được xem là di sản?
+	26
+	Bót Dây Thép – dấu tích tội ác chiến tranh ở Thủ Đức
+	Bót Dây Thép giúp em nhận diện những dấu tích nào của chiến tranh và sự đàn áp, từ đó hiểu vì sao việc ghi nhớ quá khứ cần gắn với khát vọng hòa bình và bảo vệ con người?
+	27
+	Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ
+	Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ cho thấy công tác tuyên truyền, thông tin và giáo dục tư tưởng đã góp phần như thế nào vào việc duy trì phong trào cách mạng?
+	28
+	Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập năm 1968
+	Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập năm 1968 cho thấy yếu tố bí mật, tổ chức và sự hỗ trợ của cơ sở nhân dân có ý nghĩa như thế nào đối với một hoạt động đặc biệt nguy hiểm?
+	29
+	Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn – Hầm B
+	Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn – Hầm B cho thấy thông tin và tài liệu có thể trở thành một nguồn sức mạnh như thế nào trong đấu tranh, và điều đó gợi cho học sinh bài học gì về trách nhiệm với thông tin?
+	30
+	Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh
+	Nhà số 86 Phan Chu Trinh đã trở thành cơ sở cách mạng giữa lòng đô thị như thế nào, và câu chuyện của di tích cho em hiểu gì về vai trò của những người dân bình thường trong lịch sử?
+	31
+	Di tích Địa điểm Dinh Quận Hóc Môn
+	Địa điểm Dinh Quận Hóc Môn – lưu niệm Nam Kỳ khởi nghĩa cho thấy tinh thần đấu tranh của nhân dân Hóc Môn năm 1940 như thế nào, và vì sao ký ức về sự kiện ấy cần được trao truyền cho thế hệ trẻ?
+	32
+	ĐỊA ĐẠO LONG PHƯỚC
+	Địa đạo Long Phước cho thấy nhân dân đã tổ chức cuộc sống, chiến đấu và bảo vệ lực lượng dưới lòng đất như thế nào, và bài học lớn nhất về sức bền cộng đồng là gì?
+	33
+	ĐỊA ĐIỂM TRẬN CHIẾN NGÀY 06/6/1969 TẠI BÌNH BA
+	Trận chiến ngày 06/6/1969 tại Bình Ba cho thấy sự hy sinh và quyết tâm của lực lượng tham chiến như thế nào, và khi tìm hiểu di tích em cần nhìn nhận chiến tranh từ góc độ con người ra sao?
+	34
+	ĐÌNH BÌNH ĐÔNG
+	Đình Bình Đông cho thấy một thiết chế đình làng có thể lưu giữ ký ức cộng đồng và lịch sử địa phương như thế nào, và học sinh có thể làm gì để gìn giữ ký ức ấy?
+	35
+	Đình Phong Phú
+	Đình Phong Phú phản ánh quá trình hình thành cộng đồng cư dân và đời sống tín ngưỡng địa phương như thế nào, và điều đó giúp em hiểu gì về mối quan hệ giữa con người với quê hương?
+	36
+	ĐỒN NGÃ TƯ GIẾNG NƯỚC
+	Đồn Ngã Tư Giếng Nước phản ánh vai trò của một vị trí quân sự trong lịch sử địa phương như thế nào, và di tích giúp em nhận thức gì về cái giá của chiến tranh đối với cộng đồng?
+	37
+	Địa đạo Hắc Dịch
+	Địa đạo Hắc Dịch cho thấy sự kết hợp giữa địa hình, công sự và sự hỗ trợ của nhân dân đã tạo nên thế trận như thế nào, và em rút ra bài học gì về thích nghi và đoàn kết?
+	38
+	Hầm bí mật in tài liệu của Ban Tuyên huấn Hoa vận
+	Hầm bí mật in tài liệu của Ban Tuyên huấn Hoa vận cho thấy cộng đồng người Hoa đã đóng góp như thế nào vào hoạt động cách mạng, và bài học nào về sự gắn kết của các cộng đồng có thể rút ra?
+	39
+	MỘ PHAN CHÂU TRINH
+	Mộ Phan Châu Trinh giúp em suy ngẫm như thế nào về tư tưởng canh tân, tinh thần yêu nước và ảnh hưởng của một nhà yêu nước đối với các thế hệ sau?
+	40
+	DI TÍCH LỊCH SỬ CÁCH MẠNG “NHÀ CAO CẲNG” SỐ 18 LÊ LỢI
+	Nhà Cao Cẳng số 18 Lê Lợi cho thấy một không gian nhà ở có thể trở thành cơ sở cách mạng như thế nào, và điều đó giúp em hiểu gì về sự đóng góp thầm lặng của người dân?
+	41
+	NHÀ MÁ TÁM NHUNG – MỘT CƠ SỞ CÁCH MẠNG GIỮA LÒNG VŨNG TÀU
+	Nhà má Tám Nhung cho thấy một gia đình và một ngôi nhà có thể trở thành điểm tựa cho hoạt động cách mạng như thế nào, và em học được gì về lòng tin và trách nhiệm?
+	42
+	NHÀ SỐ 18/5 (NHÀ ÔNG TRƯƠNG QUANG VINH)
+	Nhà số 18/5 của ông Trương Quang Vinh phản ánh sự đóng góp của cơ sở nhân dân cho cách mạng như thế nào, và vì sao những đóng góp âm thầm ấy cần được ghi nhớ?
+	43
+	NHÀ TRÒN
+	Nhà Tròn đã chứng kiến những hoạt động lịch sử nào của địa phương, và việc bảo tồn không gian này giúp thế hệ trẻ kết nối với lịch s��� Vũng Tàu như thế nào?
+	44
+	NƠI THÀNH LẬP KỲ BỘ VIỆT NAM THANH NIÊN ĐỒNG CHÍ HỘI
+	Nơi thành lập Kỳ bộ Việt Nam Thanh niên Cách mạng Đồng chí Hội cho thấy vai trò của việc đào tạo, tập hợp và truyền bá tư tưởng cách mạng như thế nào đối với phong trào yêu nước?
+	45
+	KHU CĂN CỨ NÚI DINH
+	Khu căn cứ Núi Dinh cho thấy địa hình núi đã được tận dụng như thế nào để xây dựng căn cứ và tổ chức kháng chiến, và em rút ra bài học gì về thích nghi với hoàn cảnh?
+	46
+	SỞ CHỈ HUY TIỀN PHƯƠNG PHÂN KHU 6 TRONG CHIẾN DỊCH MẬU THÂN 1968
+	Sở Chỉ huy Tiền phương Phân khu 6 trong Chiến dịch Mậu Thân 1968 cho thấy công tác chỉ huy và tổ chức lực lượng có vai trò như thế nào trong một chiến dịch phức tạp?
+	47
+	TỊNH XÁ NGỌC PHƯƠNG
+	Tịnh xá Ngọc Phương cho thấy một cơ sở Phật giáo có thể lưu giữ những giá trị nào về đời sống tinh thần, kiến trúc và cộng đồng, và học sinh cần ứng xử thế nào với di sản tín ngưỡng?
+	48
+	TÒA ĐẠI SỨ QUÁN MỸ
+	Tòa Đại sứ quán Mỹ là một địa điểm gắn với những biến động lịch sử nào, và việc tìm hiểu nơi này giúp học sinh nhìn nhận chiến tranh, quan hệ quốc tế và hòa bình một cách có trách nhiệm ra sao?
+	49
+	TRẠI ĐA-VÍT
+	Trại Đa-vít phản ánh vai trò của một địa điểm trong giai đoạn chuyển tiếp sau Hiệp định Paris như thế nào, và di tích giúp em hiểu gì về giá trị của đối thoại và ngoại giao?
+	50
+	TRẬN ĐỊA PHÁO CỔ CẦU ĐÁ
+	Trận địa pháo cổ Cầu Đá cho thấy sự thay đổi của hệ thống phòng thủ ven biển qua các thời kỳ như thế nào, và vì sao cần bảo tồn cả giá trị kỹ thuật lẫn lịch sử của di tích?
+	51
+	TRẬN ĐỊA PHÁO CỔ TRÊN NÚI TAO PHÙNG (NÚI NHỎ)
+	Trận địa pháo cổ trên Núi Tao Phùng (Núi Nhỏ) cho thấy vị trí địa hình có thể quyết định khả năng phòng thủ và quan sát như thế nào, và em học được gì về mối quan hệ giữa con người với không gian?
+	52
+	DI TÍCH TRẬN ĐỊA PHÁO CỔ VÀ HẦM THỦY LÔI NÚI LỚN
+	Trận địa pháo cổ và hầm thủy lôi Núi Lớn cho thấy con người đã sử dụng địa hình và kỹ thuật để bảo vệ vùng biển như thế nào, đồng thời đặt ra yêu cầu gì về bảo tồn di sản quân sự?
+	53
+	TRỤ SỞ BÁO DÂN CHÚNG
+	Trụ sở Báo Dân Chúng cho thấy báo chí và không gian truyền thông có thể góp phần như thế nào vào đời sống xã hội và đấu tranh chính trị, và học sinh hôm nay cần có trách nhiệm gì khi tiếp nhận thông tin?
+	54
+	TRỤ SỞ PHÁI ĐOÀN LIÊN LẠC CỦA BỘ TỔNG TƯ LỆNH QUÂN ĐỘI NHÂN DÂN VIỆT NAM CẠNH PHÂN BAN QUỐC TẾ GIÁM SÁT VÀ KIỂM SOÁT ĐÌNH CHIẾN TẠI SÀI GÒN (1955-1958)
+	Trụ sở Phái đoàn Liên lạc của Bộ Tổng Tư lệnh cạnh Phân ban Quốc tế giám sát đình chiến tại Sài Gòn cho thấy vai trò của giám sát, liên lạc và ngoại giao trong việc thực hiện đình chiến như thế nào?
+	55
+	TRỤ SỞ ỦY BAN VIỆT MINH TẠI VŨNG TÀU
+	Trụ sở Ủy ban Việt Minh tại Vũng Tàu cho thấy tổ chức Việt Minh đã gắn kết và huy động nhân dân địa phương như thế nào, và di tích giúp em hiểu gì về sức mạnh của sự đồng lòng?
+	56
+	Bạch Dinh – “Villa-Blanche”
+	Bạch Dinh cho thấy sự đan xen giữa lịch sử thuộc địa, câu chuyện vua Thành Thái và giá trị kiến trúc đã tạo nên giá trị di sản như thế nào, và học sinh nên tiếp cận di tích từ những góc nhìn nào?
+	57
+	Bảo tàng Lịch sử Thành phố Hồ Chí Minh
+	Bảo tàng Lịch sử Thành phố Hồ Chí Minh cho thấy việc sưu tầm và trưng bày hiện vật giúp con người hiểu tiến trình lịch sử và giao lưu văn hóa như thế nào?
+	58
+	Bảo tàng Thành phố Hồ Chí Minh
+	Bảo tàng Thành phố Hồ Chí Minh đã thay đổi chức năng qua nhiều giai đoạn lịch sử như thế nào, và sự thay đổi ấy giúp em hiểu gì về mối quan hệ giữa công trình kiến trúc và lịch sử đô thị?
+	59
+	Chùa Giác Lâm
+	Chùa Giác Lâm đã bảo tồn những giá trị nào của Phật giáo và văn hóa Nam Bộ qua nhiều thế hệ, và em có thể làm gì để góp phần gìn giữ một di sản sống?
+	60
+	CHÙA GIÁC VIÊN
+	Chùa Giác Viên cho thấy kiến trúc, tượng thờ và sinh hoạt Phật giáo có thể cùng lưu giữ ký ức văn hóa Nam Bộ như thế nào?
+	61
+	CHùa Hội Khánh
+	Chùa Hội Khánh phản ánh sự phát triển và chuyển mình của Phật giáo Bình Dương qua các thời kỳ như thế nào, và vì sao việc bảo tồn cổ vật tại chùa có ý nghĩa đối với giáo dục lịch sử?
+	62
+	CHÙA HỘI SƠN
+	Chùa Hội Sơn với vị trí bên sông Đồng Nai và các dấu tích văn hóa cho thấy cảnh quan tự nhiên đã góp phần định hình đời sống tín ngưỡng như thế nào?
+	63
+	CHÙA LONG BÀN
+	Chùa Long Bàn đã lưu giữ những yếu tố nào của chùa cổ Nam Bộ qua hơn 180 năm, và việc bảo tồn chúng giúp thế hệ trẻ hiểu gì về sự tiếp nối văn hóa?
+	64
+	CHÙA PHỤNG SƠN
+	Chùa Phụng Sơn nằm trên nền có dấu tích văn hóa Óc Eo; sự chồng lớp giữa di sản khảo cổ và di sản Phật giáo cho em thấy lịch sử văn hóa được hình thành như thế nào?
+	65
+	CHÙA PHƯỚC LÂM TỰ
+	Chùa Phước Lâm cho thấy sự kết hợp giữa kiến trúc Phật giáo, nghệ thuật và đời sống tín ngưỡng ở Vũng Tàu như thế nào, và giá trị nào cần được thế hệ trẻ tiếp nối?
+	66
+	CHÙA PHƯỚC TƯỜNG
+	Chùa Phước Tường lưu giữ những dấu ấn kiến trúc Nam Bộ và Phật giáo như thế nào, và việc quan sát không gian chùa giúp học sinh hiểu gì về văn hóa địa phương?
+	67
+	CHÙA SẮC TỨ TRƯỜNG THỌ
+	Chùa Sắc Tứ Trường Thọ gắn với lịch sử Gia Định – Sài Gòn như thế nào, và việc gìn giữ một ngôi cổ tự giúp bảo tồn ký ức cộng đồng ra sao?
+	68
+	DINH CÔ
+	Dinh Cô phản ánh sự hình thành và biến đổi của tín ngưỡng cư dân miền biển như thế nào, và di tích giúp học sinh hiểu gì về cách cộng đồng gửi gắm niềm tin vào biển cả?
+	69
+	ĐIỆN NGỌC HOÀNG
+	Điện Ngọc Hoàng cho thấy sự giao thoa giữa Đạo giáo, Phật giáo và tín ngưỡng dân gian của cộng đồng người Hoa như thế nào, và điều đó nói gì về tính đa văn hóa của Thành phố Hồ Chí Minh?
+	70
+	ĐÌNH BÌNH HÒA
+	Đình Bình Hòa cho thấy đình làng có thể tồn tại và giữ chức năng cộng đồng như thế nào giữa một đô thị đang phát triển, và bài học gì về giữ gìn bản sắc?
+	71
+	ĐÌNH CHÍ HÒA
+	Đình Chí Hòa lưu giữ những dấu ấn nào của lịch sử Gia Định – Sài Gòn và đời sống tín ngưỡng, và học sinh có thể khai thác di tích như một nguồn học liệu địa phương ra sao?
+	72
+	ĐÌNH DĨ AN
+	Đình Dĩ An phản ánh quá trình khai phá, định cư và đời sống cộng đồng của vùng đất Bình Dương như thế nào, và điều gì làm nên sức sống của một đình làng?
+	73
+	Đình Minh Hương Gia Thạnh
+	Đình Minh Hương Gia Thạnh cho thấy quá trình hội nhập của cộng đồng Minh Hương vào đời sống Gia Định – Chợ Lớn như thế nào, và em học được gì về sự chung sống đa văn hóa?
+	74
+	ĐÌNH PHÚ LONG
+	Đình Phú Long cho thấy đình làng vừa là nơi tín ngưỡng vừa là không gian cộng đồng như thế nào, và giá trị ấy gợi cho học sinh trách nhiệm gì với di sản quê hương?
+	75
+	ĐÌNH PHÚ NHUẬN
+	Đình Phú Nhuận phản ánh quá trình lập làng và sự gắn kết cộng đồng như thế nào, và vì sao những ký ức được lưu giữ ở đình có ý nghĩa với thế hệ trẻ?
+	76
+	ĐÌNH TÂN AN (BẾN THẾ)
+	Đình Tân An (Bến Thế) cho thấy mối quan hệ giữa cộng đồng cư dân với Thành Hoàng, tiền hiền và hậu hiền như thế nào, và truyền thống ấy góp phần hình thành ý thức cộng đồng ra sao?
+	77
+	ĐÌNH THẮNG TAM
+	Đình Thắng Tam phản ánh lịch sử cư dân vùng biển và tín ngưỡng địa phương như thế nào, và di tích giúp em hiểu gì về mối quan hệ giữa con người với biển?
+	78
+	ĐÌNH THẦN LINH ĐÔNG
+	Đình Thần Linh Đông cho thấy tín ngưỡng đình làng đã góp phần duy trì sự gắn kết cộng đồng như thế nào trong quá trình đô thị hóa?
+	79
+	ĐÌNH THÔNG TÂY HỘI
+	Đình Thông Tây Hội lưu giữ những dấu ấn nào của làng xã Gia Định xưa, và việc bảo tồn đình trong đô thị hiện đại có ý nghĩa gì đối với căn tính địa phương?
+	80
+	ĐÌNH TRƯ���NG THỌ
+	Đình Trường Thọ phản ánh quá trình hình thành cộng đồng và tín ngưỡng làng xã như thế nào, và học sinh có thể học được gì về tinh thần gắn bó với nơi mình sống?
+	81
+	ĐÌNH XUÂN HIỆP
+	Đình Xuân Hiệp cho thấy những giá trị nào của đình làng Nam Bộ còn có ý nghĩa trong xã hội hiện đại, và chúng ta nên bảo tồn chúng bằng cách nào?
+	82
+	HỘI QUÁN HÀ CHƯƠNG
+	Hội quán Hà Chương cho thấy hội quán người Hoa vừa là nơi tín ngưỡng vừa là không gian tương trợ đồng hương như thế nào, và điều đó gợi cho em bài học gì về cộng đồng?
+	83
+	HỘI QUÁN NGHĨA AN (MIẾU QUAN ĐẾ/CHÙA ÔNG)
+	Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) phản ánh những giá trị tín ngưỡng, nghệ thuật và tinh thần cộng đồng nào của người Hoa ở Chợ Lớn?
+	84
+	HỘI QUÁN NGHĨA NHUẬN
+	Hội quán Nghĩa Nhuận cho thấy quá trình biến đổi từ thiết chế cộng đồng ban đầu thành không gian tín ngưỡng và hội quán như thế nào, và điều đó phản ánh sự thích nghi văn hóa ra sao?
+	85
+	HỘI QUÁN ÔN LĂNG
+	Hội quán Ôn Lăng đã giúp cộng đồng người Hoa duy trì tín ngưỡng, ngôn ngữ, quan hệ đồng hương và ký ức quê quán như thế nào?
+	86
+	HỘI QUÁN QUỲNH PHỦ
+	Hội quán Quỳnh Phủ phản ánh nguồn gốc và sự gắn kết của cộng đồng người Hoa Hải Nam ở Chợ Lớn như thế nào, và em học được gì về bản sắc trong một xã hội đa văn hóa?
+	87
+	HỘI QUÁN TUỆ THÀNH (CHÙA BÀ)
+	Hội quán Tuệ Thành (Chùa Bà) cho thấy tín ngưỡng, lễ hội và hoạt động cộng đồng đã góp phần duy trì bản sắc người Hoa ở Chợ Lớn như thế nào?
+	88
+	LĂNG LÊ VĂN DUYỆT
+	Lăng Lê Văn Duyệt cho thấy cách cộng đồng Nam Bộ tưởng niệm một nhân vật lịch sử như thế nào, và không gian lăng giúp em suy ngẫm gì về công trạng, ký ức và cách nhìn lịch sử?
+	89
+	LĂNG TRƯƠNG TẤN BỬU
+	Lăng Trương Tấn Bửu cho thấy kiến trúc lăng mộ gắn với việc tưởng niệm nhân vật lịch sử như thế nào, và di tích giúp học sinh hiểu gì về truyền thống tri ân?
+	90
+	LĂNG VÕ DI NGUY
+	Lăng Võ Di Nguy cho thấy sự kết hợp giữa kiến trúc lăng mộ và ký ức về nhân vật được thờ như thế nào, và việc bảo tồn di tích góp phần giáo dục truyền thống ra sao?
+	91
+	LINH SƠN CỔ TỰ
+	Linh Sơn Cổ Tự cho thấy Phật giáo đã gắn với quá trình hình thành đời sống đô thị ven biển Vũng Tàu như thế nào, và di tích có thể giáo dục học sinh về những giá trị sống nào?
+	92
+	MIẾU NHỊ PHỦ (CHÙA ÔNG BỔN)
+	Miếu Nhị Phủ (Chùa Ông Bổn) phản ánh đời sống tín ngưỡng và sự tương trợ của cộng đồng người Hoa ở Chợ Lớn như thế nào, và điều đó cho thấy ý nghĩa của cộng đồng trong đời sống đô thị ra sao?
+	93
+	MIẾU THIÊN HẬU (QUẢNG TRIỆU HỘI QUÁN)
+	Miếu Thiên Hậu (Quảng Triệu hội quán) cho thấy tín ngưỡng thờ Thiên Hậu đã góp phần gìn giữ bản sắc và gắn kết cộng đồng người Hoa như thế nào?
+	94
+	NHÀ CỔ TRẦN CÔNG VÀNG
+	Nhà cổ Trần Công Vàng lưu giữ những dấu ấn nào về không gian sống, kỹ thuật mộc và nếp sống gia đình Nam Bộ, và em có thể học gì từ việc bảo tồn một ngôi nhà cổ?
+	95
+	NHÀ CỔ TRẦN VĂN HỔ
+	Nhà cổ Trần Văn Hổ cho thấy kiến trúc và đồ dùng trong một ngôi nhà có thể kể lại câu chuyện của gia đình và xã hội xưa như thế nào?
+	96
+	NHÀ HÁT THÀNH PHỐ HỒ CHÍ MINH
+	Nhà hát Thành phố Hồ Chí Minh phản ánh quá trình hình thành đời sống công cộng và kiến trúc đô thị Sài Gòn như thế nào, và vì sao một công trình nghệ thuật cũng là một nguồn sử liệu?
+	97
+	NHÀ LỚN LONG SƠN
+	Nhà Lớn Long Sơn cho thấy một quần thể tín ngưỡng có thể trở thành trung tâm cộng đồng và duy trì những quy tắc sống, tương trợ như thế nào?
+	98
+	NHÀ THỜ TỔ THỢ BẠC (HỘI QUÁN LỆ CHÂU)
+	Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) cho thấy một nghề thủ công có thể hình thành cộng đồng nghề nghiệp, đạo đức nghề và truyền thống thờ Tổ như thế nào?
+	99
+	NIẾT BÀN TỊNH XÁ
+	Niết Bàn Tịnh Xá cho thấy kiến trúc, nghệ thuật và đời sống Phật giáo đã góp phần tạo nên bản sắc văn hóa Vũng Tàu như thế nào?
+	100
+	NÚI CHÂU THỚI
+	Núi Châu Thới cho thấy sự kết hợp giữa cảnh quan thiên nhiên, tín ngưỡng và lịch sử đã tạo nên giá trị của một danh thắng như thế nào, và học sinh cần làm gì để bảo vệ không gian ấy?
+	101
+	THÍCH CA PHẬT ĐÀI
+	Thích Ca Phật Đài cho thấy cảnh quan và kiến trúc Phật giáo có thể kết hợp để tạo nên một không gian văn hóa như thế nào, và di tích có thể bồi dưỡng những giá trị sống nào cho học sinh?
+	102
+	TÒA ÁN NHÂN DÂN THÀNH PHỐ HỒ CHÍ MINH
+	Tòa án nhân dân Thành phố Hồ Chí Minh phản ánh sự phát triển của thiết chế pháp luật và kiến trúc đô thị qua các thời kỳ như thế nào, và di tích gợi cho học sinh nhận thức gì về vai trò của pháp luật?
+	103
+	TRỤ SỞ HỘI ĐỒNG NHÂN DÂN VÀ ỦY BAN NHÂN DÂN THÀNH PHỐ HỒ CHÍ MINH
+	Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh cho thấy kiến trúc đô thị gắn với lịch sử quản trị thành phố như thế nào, và từ đó học sinh hiểu gì về trách nhiệm công dân đối với cộng đồng?
+	
+
+Gợi ý sử dụng: Học sinh có thể trả lời mỗi câu bằng cách kết hợp tư liệu trong hồ sơ di tích, quan sát thực địa, phỏng vấn người quản lý/người dân, hình ảnh – hiện vật và các nguồn được kiểm chứng; sản phẩm cuối cùng nên hướng tới một kết luận có bằng chứng và một đề xuất hành động bảo tồn phù hợp.
