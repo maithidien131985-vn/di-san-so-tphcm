@@ -433,16 +433,9 @@ export default function App() {
             onOpenExplorer={() => setExplorerModalOpen(true)}
           />
 
-          {/* Breadcrumb Navigation */}
-          <Breadcrumb
-            monumentName={data.info.name}
-            monumentType={data.info.type}
-            onNavigateHome={() => handleNavigate('home')}
-          />
-
           {/* Main Detail Content Area */}
           <main className="flex-1 space-y-6 pb-6">
-            {/* Hero Banner */}
+            {/* Hero Banner with Integrated Breadcrumb */}
             <HeroBanner
               info={data.info}
               onOpenAudio={() => setAudioModalOpen(true)}
@@ -450,6 +443,7 @@ export default function App() {
               onOpenGallery={() => handleOpenLightbox(0)}
               isEditMode={isEditMode}
               onUpdateInfo={handleUpdateInfo}
+              onNavigateHome={() => handleNavigate('home')}
             />
 
             {/* Quick Action Cards (4 cards: KHÁM PHÁ - ĐIỀU TRA - ĐÓNG GÓP - HÀNH ĐỘNG) */}

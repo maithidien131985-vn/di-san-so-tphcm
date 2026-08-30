@@ -6,11 +6,10 @@ import {
   FileText, 
   Volume2, 
   Lightbulb, 
-  Maximize2, 
-  Layers, 
-  ChevronRight, 
-  ExternalLink,
-  Sparkles
+  DoorClosed,
+  Landmark,
+  Archive,
+  ChevronRight
 } from 'lucide-react';
 import LocationMap from './LocationMap';
 
@@ -23,184 +22,122 @@ export default function InfoSidebar({
   onOpenDocsModal,
   onOpenMyMap
 }) {
-  const [funFactIndex, setFunFactIndex] = React.useState(0);
-
-  const funFacts = [
-    { label: "Mặt bằng chữ CÁT", desc: "Toàn thể bình diện của Dinh làm thành hình chữ CÁT (吉) có nghĩa là tốt lành, may mắn." },
-    { label: "Rèm hoa đá", desc: "Mặt tiền Dinh được trang trí bằng rèm hoa đá hình các đốt trúc, mang ý nghĩa thanh cao và tiết khí người quân tử." },
-    { label: "Bảo vật Quốc gia", desc: "Xe tăng T54B số hiệu 843 và T59 số hiệu 390 tại Dinh đều đã được công nhận là Bảo vật Quốc gia." }
-  ];
-
-  // Resolve exact coordinates from map or info
   const resolvedCoordinates = map?.coordinates || info?.coordinates || 
     (map?.lat && map?.lng ? [map.lat, map.lng] : null) || 
     (info?.lat && info?.lng ? [info.lat, info.lng] : null) || 
     [10.77715, 106.69534];
 
   return (
-    <aside className="space-y-6">
-      {/* 1. Thông tin tóm tắt & Nút Nghe thuyết minh */}
-      <div className="bg-white rounded-2xl p-6 border border-[#EADBC8] shadow-xs space-y-4">
+    <aside className="space-y-5">
+      {/* 1. Bảng thông tin chính & Nút Nghe thuyết minh */}
+      <div className="bg-[#FAF7F2] rounded-2xl p-5 sm:p-6 border border-[#EAE3D9] shadow-xs space-y-4">
         <div className="space-y-3.5 text-sm">
           {/* Loại di tích */}
-          <div className="flex items-start gap-3 pb-3 border-b border-[#F5EDE2]">
-            <div className="w-8 h-8 rounded-lg bg-[#FAF0E6] flex items-center justify-center text-[#7B1113] shrink-0 mt-0.5">
-              <Building2 className="w-4 h-4" />
+          <div className="flex items-center justify-between gap-3 pb-3 border-b border-[#EFE8DE]">
+            <div className="flex items-center gap-2.5 text-[#333333]">
+              <Building2 className="w-4 h-4 text-[#7E1819] shrink-0" />
+              <span className="font-bold text-xs sm:text-sm">Loại di tích</span>
             </div>
-            <div className="flex-1">
-              <span className="text-xs text-[#8C7A6B] block">Loại di tích</span>
-              {isEditMode ? (
-                <input
-                  type="text"
-                  value={info.type}
-                  onChange={(e) => onUpdateInfo('type', e.target.value)}
-                  className="w-full text-sm font-bold text-[#2C241E] border border-amber-400 rounded px-1.5 py-0.5 bg-amber-50"
-                />
-              ) : (
-                <span className="font-bold text-[#2C241E]">{info.type}</span>
-              )}
-            </div>
+            <span className="font-medium text-[#555555] text-xs sm:text-sm text-right">
+              {info.type || 'Lịch sử'}
+            </span>
           </div>
 
           {/* Cấp xếp hạng */}
-          <div className="flex items-start gap-3 pb-3 border-b border-[#F5EDE2]">
-            <div className="w-8 h-8 rounded-lg bg-[#FAF0E6] flex items-center justify-center text-[#7B1113] shrink-0 mt-0.5">
-              <Award className="w-4 h-4" />
+          <div className="flex items-center justify-between gap-3 pb-3 border-b border-[#EFE8DE]">
+            <div className="flex items-center gap-2.5 text-[#333333]">
+              <Award className="w-4 h-4 text-[#7E1819] shrink-0" />
+              <span className="font-bold text-xs sm:text-sm">Cấp xếp hạng</span>
             </div>
-            <div className="flex-1">
-              <span className="text-xs text-[#8C7A6B] block">Cấp xếp hạng</span>
-              {isEditMode ? (
-                <input
-                  type="text"
-                  value={info.ranking}
-                  onChange={(e) => onUpdateInfo('ranking', e.target.value)}
-                  className="w-full text-sm font-bold text-[#2C241E] border border-amber-400 rounded px-1.5 py-0.5 bg-amber-50"
-                />
-              ) : (
-                <span className="font-bold text-[#2C241E]">{info.ranking}</span>
-              )}
-            </div>
+            <span className="font-medium text-[#555555] text-xs sm:text-sm text-right">
+              {info.ranking || 'Quốc gia đặc biệt'}
+            </span>
           </div>
 
           {/* Địa chỉ */}
-          <div className="flex items-start gap-3 pb-3 border-b border-[#F5EDE2]">
-            <div className="w-8 h-8 rounded-lg bg-[#FAF0E6] flex items-center justify-center text-[#7B1113] shrink-0 mt-0.5">
-              <MapPin className="w-4 h-4" />
+          <div className="flex items-start justify-between gap-3 pb-3 border-b border-[#EFE8DE]">
+            <div className="flex items-center gap-2.5 text-[#333333] shrink-0">
+              <MapPin className="w-4 h-4 text-[#7E1819] shrink-0" />
+              <span className="font-bold text-xs sm:text-sm">Địa chỉ</span>
             </div>
-            <div className="flex-1">
-              <span className="text-xs text-[#8C7A6B] block">Địa chỉ</span>
-              {isEditMode ? (
-                <input
-                  type="text"
-                  value={info.address}
-                  onChange={(e) => onUpdateInfo('address', e.target.value)}
-                  className="w-full text-xs font-semibold text-[#2C241E] border border-amber-400 rounded px-1.5 py-0.5 bg-amber-50"
-                />
-              ) : (
-                <span className="font-medium text-[#2C241E] text-xs leading-relaxed block">{info.address}</span>
-              )}
-            </div>
+            <span className="font-medium text-[#555555] text-xs text-right leading-relaxed max-w-[200px]">
+              {info.address}
+            </span>
           </div>
 
           {/* Tài liệu tham khảo */}
           <div 
             onClick={onOpenDocsModal}
-            className="flex items-center justify-between pt-1 cursor-pointer group hover:bg-[#FAF7F2] p-2 rounded-xl transition-colors"
+            className="flex items-center justify-between gap-3 cursor-pointer group pt-1"
           >
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-[#FAF0E6] flex items-center justify-center text-[#7B1113]">
-                <FileText className="w-4 h-4" />
-              </div>
-              <span className="font-bold text-[#2C241E] text-xs sm:text-sm">Tài liệu tham khảo</span>
+            <div className="flex items-center gap-2.5 text-[#333333]">
+              <FileText className="w-4 h-4 text-[#7E1819] shrink-0" />
+              <span className="font-bold text-xs sm:text-sm">Tài liệu tham khảo</span>
             </div>
-            <div className="flex items-center gap-1 text-xs text-[#7B1113] font-semibold group-hover:underline">
-              <span>{info.referencesText || 'Xem danh sách tài liệu'}</span>
-              <ChevronRight className="w-4 h-4" />
-            </div>
+            <span className="text-xs text-[#7E1819] group-hover:underline font-bold flex items-center gap-0.5">
+              <span>Xem danh sách tài liệu</span>
+              <ChevronRight className="w-3.5 h-3.5" />
+            </span>
           </div>
         </div>
 
-        {/* Nút Nghe Thuyết Minh Prominent */}
-        <button
-          onClick={onOpenAudio}
-          className="w-full flex items-center justify-center gap-3 py-3.5 px-4 rounded-xl bg-[#7B1113] hover:bg-[#96171a] text-white font-bold text-sm sm:text-base shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer"
-        >
-          <div className="flex items-center gap-1">
-            <Volume2 className="w-5 h-5 animate-pulse" />
-          </div>
-          <span>Nghe thuyết minh</span>
-        </button>
+        {/* Nút Nghe thuyết minh đỏ đô đậm */}
+        <div className="pt-2">
+          <button
+            onClick={onOpenAudio}
+            className="w-full py-3 px-4 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white font-bold text-sm shadow-md transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
+          >
+            <Volume2 className="w-4 h-4 text-amber-200" />
+            <span>Nghe thuyết minh</span>
+          </button>
+        </div>
       </div>
 
-      {/* 2. Vị trí di tích (Interactive Map Card) */}
-      <div className="bg-white rounded-2xl p-5 border border-[#EADBC8] shadow-xs space-y-3">
+      {/* 2. Vị trí di tích Box */}
+      <div className="bg-[#FAF7F2] rounded-2xl p-4 sm:p-5 border border-[#EAE3D9] shadow-xs space-y-3">
         <div className="flex items-center justify-between">
-          <h3 className="font-bold text-[#2C241E] text-sm flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-[#7B1113]" />
-            Vị trí di tích
-          </h3>
+          <div className="flex items-center gap-2 text-[#2C241E] font-bold text-sm">
+            <MapPin className="w-4 h-4 text-[#7E1819]" />
+            <span>Vị trí di tích</span>
+          </div>
           <button
             onClick={onOpenMyMap}
-            className="text-xs text-[#7B1113] font-bold hover:underline flex items-center gap-1 cursor-pointer"
+            className="text-xs text-[#7E1819] font-bold hover:underline cursor-pointer"
           >
-            <span>Bản đồ TP.HCM</span>
-            <ExternalLink className="w-3 h-3" />
+            Xem bản đồ lớn &gt;
           </button>
         </div>
 
-        {/* Interactive Google My Maps / LocationMap */}
-        <div className="h-48 w-full rounded-xl overflow-hidden border border-[#EADBC8] relative shadow-inner">
-          <LocationMap
-            embedUrl="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-            name={info.name}
-            address={info.address}
-            ranking={info.ranking}
-            coordinates={resolvedCoordinates}
-            onOpenMyMap={onOpenMyMap}
-          />
-        </div>
+        <LocationMap
+          lat={resolvedCoordinates[0]}
+          lng={resolvedCoordinates[1]}
+          name={info.name}
+          address={info.address}
+          googleMapsDirectionsUrl={info.googleMapsDirectionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${resolvedCoordinates[0]},${resolvedCoordinates[1]}`}
+        />
       </div>
 
-      {/* 3. Thẻ "Em có biết?" (Did You Know?) */}
-      <div className="bg-[#FFFBF5] rounded-2xl p-5 border border-[#F0DFCA] shadow-xs space-y-3 relative overflow-hidden">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 text-[#9C6928]">
-            <Lightbulb className="w-5 h-5 fill-amber-400 text-amber-500" />
-            <h3 className="font-serif-title font-bold text-base text-[#7B4F1A]">
-              Em có biết?
-            </h3>
-          </div>
-          <button
-            onClick={() => setFunFactIndex((prev) => (prev + 1) % funFacts.length)}
-            className="text-[11px] font-bold text-[#9C6928] hover:underline cursor-pointer flex items-center gap-1"
-            title="Đổi kiến thức thú vị khác"
-          >
-            <Sparkles className="w-3 h-3" />
-            <span>Khám phá thêm</span>
-          </button>
+      {/* 3. "Em có biết?" Box */}
+      <div className="bg-[#FEF9EE] rounded-2xl p-5 border border-amber-200 shadow-xs space-y-3">
+        <div className="flex items-center gap-2 text-amber-950 font-black text-sm">
+          <Lightbulb className="w-4 h-4 text-amber-600 fill-amber-500" />
+          <span>Em có biết?</span>
         </div>
 
-        {/* Stats Grid */}
-        <div className="space-y-2.5 text-xs text-[#4A3E36]">
-          <div className="flex items-center gap-2.5">
-            <Maximize2 className="w-4 h-4 text-[#9C6928] shrink-0" />
-            <span>Diện tích khuôn viên: <strong className="text-[#2C241E]">{info.stats?.campusArea || '120.000 m²'}</strong></span>
-          </div>
-          <div className="flex items-center gap-2.5">
-            <Building2 className="w-4 h-4 text-[#9C6928] shrink-0" />
-            <span>Số phòng: <strong className="text-[#2C241E]">{info.stats?.roomsCount || '150+ phòng'}</strong></span>
-          </div>
-          <div className="flex items-center gap-2.5">
-            <Layers className="w-4 h-4 text-[#9C6928] shrink-0" />
-            <span>Hiện vật trưng bày: <strong className="text-[#2C241E]">{info.stats?.artifactsCount || '3.700+ hiện vật'}</strong></span>
-          </div>
-        </div>
-
-        {/* Dynamic Fun Fact Box */}
-        <div className="mt-3 p-3 rounded-xl bg-amber-100/60 border border-amber-200/80 text-xs text-[#5C3F1B] transition-all">
-          <p className="font-bold text-[#7B4F1A] mb-0.5">✨ {funFacts[funFactIndex].label}</p>
-          <p className="leading-relaxed">{funFacts[funFactIndex].desc}</p>
-        </div>
+        <ul className="space-y-2 text-xs text-[#4A3E36]">
+          <li className="flex items-center gap-2">
+            <Landmark className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
+            <span><strong>Diện tích khuôn viên:</strong> {info.stats?.campusArea || '120.000 m²'}</span>
+          </li>
+          <li className="flex items-center gap-2">
+            <DoorClosed className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
+            <span><strong>Số phòng:</strong> {info.stats?.roomsCount || '150+ phòng'}</span>
+          </li>
+          <li className="flex items-center gap-2">
+            <Archive className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
+            <span><strong>Hiện vật trưng bày:</strong> {info.stats?.artifactsCount || '3.700+ hiện vật'}</span>
+          </li>
+        </ul>
       </div>
     </aside>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FolderOpen, ArrowRight, ShieldCheck, Sparkles, PenSquare, Eye } from 'lucide-react';
+import { FolderSearch, ArrowRight, ShieldCheck, Binoculars, Map, FileText, Package } from 'lucide-react';
 
 export default function InvestigationSection({
   investigation,
@@ -7,109 +7,111 @@ export default function InvestigationSection({
   onStartQuiz,
   onOpenStudentReport
 }) {
+  const defaultQuestion = investigation?.investigationQuestion || "Vì sao ngày 30–4–1975 trở thành dấu mốc lịch sử?";
+  
+  const dossierItems = [
+    {
+      id: 'map_dossier',
+      title: 'Bản đồ',
+      desc: 'Quan sát sơ đồ di tích và khu vực xung quanh.',
+      image: '/assets/images/so-do-kien-truc.jpg'
+    },
+    {
+      id: 'doc_dossier',
+      title: 'Tư liệu',
+      desc: 'Đọc tài liệu, báo chí, văn bản gốc liên quan.',
+      image: '/assets/images/co-giai-phong-dinh.jpg'
+    },
+    {
+      id: 'artifact_dossier',
+      title: 'Hiện vật',
+      desc: 'Khám phá hiện vật gốc, phương tiện và dụng cụ thời kỳ đó.',
+      image: '/assets/images/may-danh-chu-hien-vat.jpg'
+    }
+  ];
+
   return (
-    <section className="bg-[#FBF8F3] rounded-3xl p-6 sm:p-10 border border-[#EADBC8] shadow-xs">
-      {/* Title Header */}
-      <div className="flex items-start gap-4 mb-8">
-        <div className="w-12 h-12 rounded-2xl bg-[#7B1113] text-white flex items-center justify-center shrink-0 shadow-md">
-          <FolderOpen className="w-6 h-6" />
-        </div>
-        <div>
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#7B1113]">HỒ SƠ ĐIỀU TRA</span>
-            <span className="px-2 py-0.5 rounded-full bg-red-100 text-[#7B1113] text-[10px] font-bold">Khám phá tương tác</span>
+    <section className="bg-[#FAF5ED] rounded-3xl p-6 sm:p-8 border border-[#EAE3D9] shadow-xs">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        {/* Left 4 Cols: Question & Intro */}
+        <div className="lg:col-span-4 space-y-2.5">
+          <div className="flex items-center gap-2.5 text-[#7E1819]">
+            <div className="w-9 h-9 rounded-xl bg-[#7E1819] text-white flex items-center justify-center font-bold shadow-xs">
+              <FolderSearch className="w-5 h-5 text-amber-200" />
+            </div>
+            <span className="font-serif-title font-black text-base sm:text-lg uppercase tracking-wider text-[#7E1819]">
+              HỒ SƠ ĐIỀU TRA
+            </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-black text-[#2C241E] font-serif-title mt-1">
-            {investigation.title}
-          </h2>
-          <p className="text-sm sm:text-base text-[#6B5E55] mt-1 font-medium">
-            {investigation.subtitle}
+
+          <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#2C241E] leading-snug">
+            {defaultQuestion}
+          </h3>
+
+          <p className="text-xs sm:text-sm text-[#666666] leading-relaxed">
+            Hãy khám phá chứng cứ, phân tích tư liệu và đưa ra kết luận của riêng em.
           </p>
         </div>
-      </div>
 
-      {/* Content Layout: 3 Dossier Cards + Action Card on Right */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-        {/* 3 Sub-Cards: Sự kiện tiêu biểu - Nhân vật liên quan - Hiện vật tiêu biểu */}
-        <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {investigation.dossiers.map((dossier, idx) => (
-            <div
-              key={dossier.id || idx}
-              onClick={() => onOpenDossierDetail(dossier)}
-              className="group bg-white rounded-2xl p-4 border border-[#EADBC8] hover:border-[#7B1113]/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between cursor-pointer"
-            >
-              <div>
-                {/* Thumbnail with accurate photo */}
-                <div className="rounded-xl overflow-hidden aspect-[4/3] bg-gray-100 mb-3 border border-gray-100 relative">
-                  <img
-                    src={dossier.image}
-                    alt={dossier.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold">
-                    {dossier.title}
+        {/* Center 5 Cols: 3 Dossier Cards */}
+        <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {dossierItems.map((item, idx) => {
+            const correspondingDossier = investigation?.dossiers && investigation.dossiers[idx];
+            return (
+              <div
+                key={item.id}
+                onClick={() => onOpenDossierDetail(correspondingDossier || item)}
+                className="bg-white rounded-2xl p-3 border border-[#EAE3D9] hover:border-[#7E1819]/50 shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col justify-between cursor-pointer group"
+              >
+                <div className="space-y-2">
+                  <div className="aspect-[4/3] rounded-xl overflow-hidden bg-gray-100 border border-gray-100">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-serif-title font-bold text-xs sm:text-sm text-[#2C241E] group-hover:text-[#7E1819] transition-colors">
+                      {item.title}
+                    </h4>
+                    <p className="text-[11px] text-[#777777] leading-tight line-clamp-2 mt-0.5">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
 
-                <h3 className="font-black text-base text-[#2C241E] font-serif-title group-hover:text-[#7B1113] transition-colors">
-                  {dossier.title}
-                </h3>
-                <p className="text-xs text-[#6B5E55] mt-1 line-clamp-3 leading-relaxed">
-                  {dossier.subtitle}
-                </p>
+                <div className="pt-2 mt-1 border-t border-gray-100 text-[11px] font-bold text-[#7E1819] flex items-center gap-0.5 group-hover:underline">
+                  <span>Khám phá</span>
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                </div>
               </div>
-
-              <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#7B1113] group-hover:translate-x-0.5 transition-transform">
-                <span>Khảo sát chứng cứ</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        {/* Right CTA Action Block */}
-        <div className="lg:col-span-4 bg-gradient-to-br from-[#7B1113] to-[#540B0C] rounded-2xl p-6 text-white flex flex-col justify-between shadow-lg relative overflow-hidden">
-          <div className="relative z-10 space-y-4">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 text-amber-200 text-xs font-bold border border-white/20">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Góc học tập & Nghiên cứu</span>
-            </div>
+        {/* Right 3 Cols: Start Action Button & Badge Note */}
+        <div className="lg:col-span-3 flex flex-col justify-center items-center lg:items-end text-center lg:text-right space-y-3 pl-0 lg:pl-2">
+          <button
+            onClick={onStartQuiz}
+            className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-[#7E1819] hover:bg-[#911d1e] text-white font-bold text-sm shadow-md transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
+          >
+            <Binoculars className="w-4 h-4 text-amber-200" />
+            <span>Bắt đầu điều tra</span>
+            <ArrowRight className="w-4 h-4" />
+          </button>
 
-            <h3 className="text-xl sm:text-2xl font-black font-serif-title text-white leading-snug">
-              Trở thành Nhà sử học trẻ
-            </h3>
-            <p className="text-xs sm:text-sm text-amber-100/90 leading-relaxed">
-              Khảo sát các chứng cứ lịch sử, trả lời phiếu câu hỏi điều tra và vượt qua thử thách để mở khóa huy hiệu danh dự!
-            </p>
-          </div>
+          <button
+            onClick={onOpenStudentReport}
+            className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-white hover:bg-amber-50 text-[#7E1819] border border-amber-300 font-bold text-xs shadow-2xs transition-all cursor-pointer flex items-center justify-center gap-1.5"
+          >
+            <span>✍️ Trả lời phiếu điều tra</span>
+          </button>
 
-          <div className="relative z-10 mt-6 space-y-2.5">
-            {/* Nút Trả lời câu hỏi của học sinh */}
-            <button
-              onClick={onOpenStudentReport}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white text-[#7B1113] hover:bg-amber-50 font-black text-xs sm:text-sm transition-all shadow-md cursor-pointer hover:scale-102"
-            >
-              <PenSquare className="w-4 h-4 text-[#7B1113]" />
-              <span>✍️ Trả lời câu hỏi điều tra</span>
-            </button>
-
-            {/* Nút Làm bài thử thách trắc nghiệm nhận huy hiệu */}
-            <button
-              onClick={onStartQuiz}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#540B0C] font-black text-xs sm:text-sm transition-all shadow-md cursor-pointer hover:scale-102"
-            >
-              <span>🔭 Thử thách nhận Huy hiệu (8 câu)</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-
-            <div className="flex items-center gap-2 text-[11px] text-amber-200/90 justify-center pt-1">
-              <ShieldCheck className="w-4 h-4 text-amber-300" />
-              <span>Mở khóa huy hiệu "Nhà sử học trẻ"!</span>
-            </div>
-          </div>
-
-          {/* Background decoration */}
-          <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-white/5 rounded-full blur-2xl" />
+          <p className="text-[11px] text-[#888888] flex items-center justify-center lg:justify-end gap-1 font-medium">
+            <ShieldCheck className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+            <span>Hoàn thành hồ sơ để mở khóa huy hiệu "Nhà sử học trẻ"!</span>
+          </p>
         </div>
       </div>
     </section>
