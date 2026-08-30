@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
-import Breadcrumb from './components/Breadcrumb';
 import HeroBanner from './components/HeroBanner';
 import QuickActionCards from './components/QuickActionCards';
+import MonumentMediaAndLocationSection from './components/MonumentMediaAndLocationSection';
 import HistorySection from './components/HistorySection';
 import InfoSidebar from './components/InfoSidebar';
 import FlipCardGrid from './components/FlipCardGrid';
 import StatsCounterSection from './components/StatsCounterSection';
+import ThreeKeyHighlightsSection from './components/ThreeKeyHighlightsSection';
 import InvestigationSection from './components/InvestigationSection';
 import NextMonumentSection from './components/NextMonumentSection';
 import AudioNarratorModal from './components/AudioNarratorModal';
@@ -107,17 +108,13 @@ function getInitialStateFromUrl() {
 
 export default function App() {
   const initial = getInitialStateFromUrl();
-  // View mode: 'home' | 'detail'
   const [viewMode, setViewMode] = useState(initial.mode);
-  // Current active monument index/STT (1 to 103)
   const [currentStt, setCurrentStt] = useState(initial.stt);
 
-  // Dynamic monument base data from 103 list
   const baseMonument = useMemo(() => {
     return getMonumentByIdOrStt(currentStt);
   }, [currentStt]);
 
-  // Load saved modifications for the current monument or use base
   const storageKey = `di_san_so_monument_stt_${currentStt}`;
   const [data, setData] = useState(() => {
     try {
@@ -129,7 +126,6 @@ export default function App() {
     return baseMonument;
   });
 
-  // Whenever currentStt changes, reload data for that monument
   useEffect(() => {
     try {
       const saved = localStorage.getItem(storageKey);
@@ -143,7 +139,6 @@ export default function App() {
     setData(baseMonument);
   }, [currentStt, storageKey, baseMonument]);
 
-  // Handle URL hash changes
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
@@ -164,7 +159,6 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // Sync state changes to localStorage
   useEffect(() => {
     if (data) {
       try {
@@ -179,7 +173,7 @@ export default function App() {
   const [audioModalOpen, setAudioModalOpen] = useState(false);
   const [videoModalOpen, setVideoModalOpen] = useState(false);
   const [investigationModalOpen, setInvestigationModalOpen] = useState(false);
-  const [investigationMode, setInvestigationMode] = useState('quiz'); // 'dossier' | 'quiz'
+  const [investigationMode, setInvestigationMode] = useState('quiz');
   const [selectedDossier, setSelectedDossier] = useState(null);
   const [studentReportOpen, setStudentReportOpen] = useState(false);
   const [nextMonumentModalOpen, setNextMonumentModalOpen] = useState(false);
@@ -195,10 +189,8 @@ export default function App() {
   const [contributeModalOpen, setContributeModalOpen] = useState(false);
   const [explorerModalOpen, setExplorerModalOpen] = useState(false);
 
-  // Edit Mode state
   const [isEditMode, setIsEditMode] = useState(false);
 
-  // Reader contributions state
   const [contributions, setContributions] = useState(() => {
     try {
       const saved = localStorage.getItem(CONTRIBUTIONS_KEY);
@@ -221,7 +213,6 @@ export default function App() {
     return contributions.filter(c => c.status === 'pending').length;
   }, [contributions]);
 
-  // Navigation Handler
   const handleNavigate = (target) => {
     if (target === 'home') {
       setViewMode('home');
@@ -242,7 +233,6 @@ export default function App() {
     }
   };
 
-  // Select Monument from Home or Explorer
   const handleSelectMonument = (monumentIdOrStt) => {
     let targetStt = currentStt;
     if (typeof monumentIdOrStt === 'number') {
@@ -257,7 +247,6 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Handlers for updating monument content in CMS
   const handleUpdateOverview = (newOverview) => {
     setData(prev => ({
       ...prev,
@@ -322,7 +311,6 @@ export default function App() {
     }
   };
 
-  // Contributions handlers
   const handleAddContribution = (newContrib) => {
     const contributionItem = {
       ...newContrib,
@@ -381,7 +369,6 @@ export default function App() {
     setContributions(prev => prev.filter(c => c.id !== id));
   };
 
-  // 3 Next monuments for NextMonumentSection
   const nextMonumentsForSection = useMemo(() => {
     const list = [];
     for (let i = 1; i <= 3; i++) {
@@ -392,7 +379,7 @@ export default function App() {
   }, [currentStt]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF7F2] font-sans antialiased text-[#2C241E] selection:bg-[#7B1113] selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#FAF7F2] font-sans antialiased text-[#2C241E] selection:bg-[#7E1819] selection:text-white">
       {/* Scroll Progress Bar at very top */}
       <ScrollProgressBar />
 
@@ -435,7 +422,7 @@ export default function App() {
 
           {/* Main Detail Content Area */}
           <main className="flex-1 space-y-6 pb-6">
-            {/* Hero Banner with Integrated Breadcrumb */}
+            {/* 1. Hero Banner with Integrated Breadcrumb */}
             <HeroBanner
               info={data.info}
               onOpenAudio={() => setAudioModalOpen(true)}
@@ -446,7 +433,7 @@ export default function App() {
               onNavigateHome={() => handleNavigate('home')}
             />
 
-            {/* Quick Action Cards (4 cards: KHÁM PHÁ - ĐIỀU TRA - ĐÓNG GÓP - HÀNH ĐỘNG) */}
+            {/* 2. Quick Action Cards (3 cards: KHÁM PHÁ - ĐIỀU TRA - HÀNH ĐỘNG) */}
             <QuickActionCards
               onOpenAudio={() => setAudioModalOpen(true)}
               onOpenInvestigation={() => {
@@ -457,11 +444,18 @@ export default function App() {
               onOpenContribute={() => setContributeModalOpen(true)}
             />
 
-            {/* Scroll Reveal Section: Giá trị lịch sử & Thông tin di tích */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+            {/* 3. Ô VIDEO VÀ Ô VỊ TRÍ (New Component) */}
+            <MonumentMediaAndLocationSection
+              video={data.video}
+              info={data.info}
+              map={data.map}
+              onOpenMyMap={() => setMyMapModalOpen(true)}
+            />
+
+            {/* 4. Giá trị lịch sử, Dấu mốc & Bảng thông tin di tích */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">
               <ScrollReveal>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                  {/* Left Column (8 cols): Giá trị lịch sử, Dấu mốc lịch sử, Hình ảnh và video lịch sử */}
                   <div className="lg:col-span-8">
                     <HistorySection
                       overview={data.info.overview}
@@ -475,7 +469,6 @@ export default function App() {
                     />
                   </div>
 
-                  {/* Right Column (4 cols): Bảng thông tin, Nút nghe thuyết minh, Vị trí di tích, Em có biết */}
                   <div className="lg:col-span-4">
                     <InfoSidebar
                       info={data.info}
@@ -491,25 +484,33 @@ export default function App() {
               </ScrollReveal>
             </div>
 
-            {/* Stats Counter Section */}
+            {/* 5. Stats Counter Section */}
             <StatsCounterSection />
 
-            {/* FlipCardGrid (3D Flip Cards for 6 Interdisciplinary Subjects) */}
-            <FlipCardGrid />
+            {/* 6. Khám Phá Di Tích Qua 6 Môn Học */}
+            <FlipCardGrid
+              subjects={data.subjects6}
+              monumentName={data.info.name}
+            />
 
-            {/* HỒ SƠ ĐIỀU TRA */}
-            <div id="investigation-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-              <ScrollReveal>
-                <InvestigationSection
-                  investigation={data.investigation}
-                  onOpenDossierDetail={handleOpenDossier}
-                  onStartQuiz={handleStartQuiz}
-                  onOpenStudentReport={() => setStudentReportOpen(true)}
-                />
-              </ScrollReveal>
+            {/* 7. TRƯỚC PHẦN CÂU HỎI ĐIỀU TRA: 3 Ô Nhân vật liên quan, Hiện vật tiêu biểu, Sự kiện tiêu biểu */}
+            <ThreeKeyHighlightsSection
+              keyHighlights={data.keyHighlights}
+              monumentName={data.info.name}
+            />
+
+            {/* 8. HỒ SƠ ĐIỀU TRA & Ô TÀI LIỆU THAM KHẢO */}
+            <div id="investigation-section" className="pt-2">
+              <InvestigationSection
+                investigation={data.investigation}
+                onOpenDossierDetail={handleOpenDossier}
+                onStartQuiz={handleStartQuiz}
+                onOpenStudentReport={() => setStudentReportOpen(true)}
+                onOpenDocsModal={() => setDocsModalOpen(true)}
+              />
             </div>
 
-            {/* Next Monument Section: Gợi ý các di tích tiếp theo trong 103 di tích */}
+            {/* 9. Next Monument Section: Gợi ý các di tích tiếp theo */}
             <ScrollReveal>
               <NextMonumentSection
                 nextMonuments={nextMonumentsForSection}
@@ -600,6 +601,8 @@ export default function App() {
       <DocsModal
         isOpen={docsModalOpen}
         onClose={() => setDocsModalOpen(false)}
+        referencesList={data.info?.referencesList}
+        monumentName={data.info?.name}
       />
 
       {/* Full GPS Map Explorer Modal */}

@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
-export default function FlipCardGrid() {
+export default function FlipCardGrid({ subjects = [], monumentName = 'Di tích Lịch sử' }) {
   const [flippedCards, setFlippedCards] = useState({});
 
   const toggleFlip = (id) => {
@@ -23,14 +23,29 @@ export default function FlipCardGrid() {
     }));
   };
 
-  const subjectCards = [
+  const iconsMap = {
+    "Lịch sử": BookOpen,
+    "Địa lí": Compass,
+    "Mỹ thuật & Kiến trúc": Building2,
+    "Kinh tế & Pháp luật": Scale,
+    "Ngữ văn & Báo chí": ScrollText,
+    "Quốc phòng & An ninh": ShieldCheck
+  };
+
+  const colorsMap = {
+    "Lịch sử": { color: "from-red-700 to-rose-900", accent: "border-red-400" },
+    "Địa lí": { color: "from-amber-600 to-orange-900", accent: "border-amber-400" },
+    "Mỹ thuật & Kiến trúc": { color: "from-emerald-700 to-teal-950", accent: "border-emerald-400" },
+    "Kinh tế & Pháp luật": { color: "from-blue-700 to-indigo-950", accent: "border-blue-400" },
+    "Ngữ văn & Báo chí": { color: "from-purple-700 to-fuchsia-950", accent: "border-purple-400" },
+    "Quốc phòng & An ninh": { color: "from-stone-700 to-slate-900", accent: "border-stone-400" }
+  };
+
+  const defaultCards = [
     {
       id: 1,
       subject: "Lịch sử",
       tag: "Môn Lịch sử",
-      icon: BookOpen,
-      color: "from-red-600 to-rose-900",
-      accent: "border-red-400",
       frontTitle: "Mốc Son 30/4/1975 & Kháng Chiến Chống Mỹ",
       frontDesc: "Tìm hiểu toàn vẹn 21 năm kháng chiến chống Mỹ, Chiến dịch Hồ Chí Minh lịch sử và thời khắc xe tăng húc đổ cổng Dinh trưa 30/4/1975.",
       backTitle: "Kiến Thức Lịch Sử Cốt Lõi",
@@ -44,9 +59,6 @@ export default function FlipCardGrid() {
       id: 2,
       subject: "Địa lí",
       tag: "Môn Địa lí",
-      icon: Compass,
-      color: "from-amber-600 to-orange-900",
-      accent: "border-amber-400",
       frontTitle: "Vị Thế Không Gian & 5 Cánh Quân Thọc Sâu",
       frontDesc: "Khảo sát vị trí địa lý đắc địa 12 ha giữa trung tâm Sài Gòn (10.777°N, 106.695°E) và mạng lưới chiến lược kết nối miền Đông Nam Bộ.",
       backTitle: "Đặc Điểm Địa Lý & Không Gian",
@@ -60,9 +72,6 @@ export default function FlipCardGrid() {
       id: 3,
       subject: "Mỹ thuật & Kiến trúc",
       tag: "Môn Mỹ thuật & Kiến trúc",
-      icon: Building2,
-      color: "from-emerald-700 to-teal-900",
-      accent: "border-emerald-400",
       frontTitle: "Đồ Án KTS Ngô Viết Thụ & Triết Lý Chữ CÁT (吉)",
       frontDesc: "Kiệt tác kiến trúc hiện đại kết hợp rèm hoa đá hình đốt trúc thanh cao và triết lý phong thủy phương Đông độc bản.",
       backTitle: "Nét Độc Đáo Về Mỹ Thuật & Tạo Hình",
@@ -76,9 +85,6 @@ export default function FlipCardGrid() {
       id: 4,
       subject: "Kinh tế & Pháp luật",
       tag: "Môn GDKT&PL / GDCD",
-      icon: Scale,
-      color: "from-blue-700 to-indigo-950",
-      accent: "border-blue-400",
       frontTitle: "Luật Di Sản Văn Hóa & Ý Thức Công Dân",
       frontDesc: "Hiểu rõ căn cứ pháp lý bảo vệ di sản, chủ quyền quốc gia và trách nhiệm công dân thế hệ trẻ trong giữ gìn bản sắc dân tộc.",
       backTitle: "Cơ Sở Pháp Lý & Trách Nhiệm Công Dân",
@@ -92,9 +98,6 @@ export default function FlipCardGrid() {
       id: 5,
       subject: "Ngữ văn & Báo chí",
       tag: "Môn Ngữ văn & Báo chí",
-      icon: ScrollText,
-      color: "from-purple-700 to-fuchsia-950",
-      accent: "border-purple-400",
       frontTitle: "Ký Ức Nhân Chứng & Áng Văn Lịch Sử",
       frontDesc: "Cảm nhận hào khí non sông qua các tác phẩm văn học, bài báo quốc tế và những trang hồi ký chân thực của nhân chứng ngày toàn thắng.",
       backTitle: "Giá Trị Văn Học & Tư Liệu Ngôn Ngữ",
@@ -108,9 +111,6 @@ export default function FlipCardGrid() {
       id: 6,
       subject: "Quốc phòng & An ninh",
       tag: "Môn GDQP-AN",
-      icon: ShieldCheck,
-      color: "from-stone-700 to-slate-900",
-      accent: "border-stone-400",
       frontTitle: "Nghệ Thuật Quân Sự & Hiệp Đồng Binh Chủng",
       frontDesc: "Tìm hiểu chiến thuật hiệp đồng bộ binh - tăng thiết giáp cơ giới và sự chỉ huy quyết đoán trong Chiến dịch Hồ Chí Minh.",
       backTitle: "Đỉnh Cao Nghệ Thuật Quân Sự Việt Nam",
@@ -122,34 +122,37 @@ export default function FlipCardGrid() {
     }
   ];
 
+  const currentCards = subjects && subjects.length > 0 ? subjects : defaultCards;
+
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <ScrollReveal>
         <div className="space-y-6">
           {/* Section Header */}
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-2 border-b border-[#EADBC8]">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-2 border-b border-[#EAE3D9]">
             <div className="space-y-1.5">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7B1113] text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-bold uppercase tracking-wider">
                 <GraduationCap className="w-3.5 h-3.5" />
                 <span>Giáo Dục Liên Môn GDPT 2018</span>
               </div>
               <h2 className="font-serif-title font-black text-2xl sm:text-3xl text-[#2C241E]">
-                Khám Phá Di Tích Qua 6 Môn Học
+                Khám Phá Di Tích Qua 6 Môn Học: {monumentName}
               </h2>
-              <p className="text-xs sm:text-sm text-[#6B5E55] max-w-2xl">
-                Tích hợp kiến thức đa chiều chuẩn xác giúp học sinh, sinh viên và du khách thấu hiểu sâu sắc giá trị lịch sử, kiến trúc, văn hóa và nghệ thuật quân sự.
+              <p className="text-xs sm:text-sm text-[#666666] max-w-2xl">
+                Tích hợp kiến thức đa chiều giúp học sinh thấu hiểu sâu sắc giá trị lịch sử, địa lí, kiến trúc, pháp luật, ngữ văn và nghệ thuật quân sự của di tích.
               </p>
             </div>
-            <span className="text-xs text-[#7B1113] font-bold bg-white px-3 py-1.5 rounded-xl border border-[#EADBC8] shadow-2xs self-start sm:self-auto">
-              💡 Bấm vào thẻ để lật xem kiến thức cốt lõi
+            <span className="text-xs text-[#7E1819] font-bold bg-white px-3 py-1.5 rounded-xl border border-[#EAE3D9] shadow-2xs self-start sm:self-auto">
+              💡 Bấm vào thẻ để lật xem bài học
             </span>
           </div>
 
           {/* 6 Subject Flip Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {subjectCards.map((card) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {currentCards.map((card) => {
               const isFlipped = !!flippedCards[card.id];
-              const IconComponent = card.icon;
+              const IconComponent = iconsMap[card.subject] || BookOpen;
+              const styling = colorsMap[card.subject] || { color: "from-[#7E1819] to-[#500B0D]", accent: "border-amber-300" };
 
               return (
                 <div
@@ -163,28 +166,28 @@ export default function FlipCardGrid() {
                     }`}
                   >
                     {/* Front Face */}
-                    <div className="absolute inset-0 w-full h-full backface-hidden rounded-3xl p-6 bg-white border border-[#EADBC8] shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
+                    <div className="absolute inset-0 w-full h-full backface-hidden rounded-2xl p-6 bg-white border border-[#EAE3D9] shadow-2xs hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
                       <div className="space-y-4">
                         <div className="flex items-center justify-between">
-                          <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${card.color} text-white flex items-center justify-center shadow-md`}>
-                            <IconComponent className="w-6 h-6" />
+                          <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${styling.color} text-white flex items-center justify-center shadow-xs`}>
+                            <IconComponent className="w-5 h-5 text-amber-200" />
                           </div>
-                          <span className="text-[11px] font-black uppercase px-2.5 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
-                            {card.tag}
+                          <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
+                            {card.tag || card.subject}
                           </span>
                         </div>
 
                         <div className="space-y-2">
-                          <h3 className="font-serif-title font-bold text-lg text-[#2C241E] group-hover:text-[#7B1113] transition-colors leading-snug">
+                          <h3 className="font-serif-title font-bold text-base sm:text-lg text-[#2C241E] group-hover:text-[#7E1819] transition-colors leading-snug">
                             {card.frontTitle}
                           </h3>
-                          <p className="text-xs sm:text-sm text-[#5A4D44] leading-relaxed line-clamp-3">
+                          <p className="text-xs sm:text-[13px] text-[#555555] leading-relaxed line-clamp-3">
                             {card.frontDesc}
                           </p>
                         </div>
                       </div>
 
-                      <div className="pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#7B1113]">
+                      <div className="pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#7E1819]">
                         <span className="flex items-center gap-1.5">
                           <RotateCw className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform duration-500" />
                           <span>Lật xem bài học liên môn</span>
@@ -194,8 +197,8 @@ export default function FlipCardGrid() {
                     </div>
 
                     {/* Back Face */}
-                    <div className={`absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-3xl p-6 bg-gradient-to-br ${card.color} text-white shadow-xl flex flex-col justify-between border-2 ${card.accent}`}>
-                      <div className="space-y-3.5">
+                    <div className={`absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-2xl p-6 bg-gradient-to-br ${styling.color} text-white shadow-lg flex flex-col justify-between border-2 ${styling.accent}`}>
+                      <div className="space-y-3">
                         <div className="flex items-center justify-between border-b border-white/20 pb-2">
                           <span className="text-[10px] font-black uppercase tracking-wider text-amber-300">
                             {card.subject} • Bài học cốt lõi
@@ -205,12 +208,12 @@ export default function FlipCardGrid() {
                           </span>
                         </div>
 
-                        <h4 className="font-serif-title font-black text-base text-amber-100">
+                        <h4 className="font-serif-title font-black text-sm sm:text-base text-amber-100">
                           {card.backTitle}
                         </h4>
 
                         <ul className="space-y-2 text-xs text-white/90 leading-relaxed">
-                          {card.backPoints.map((pt, idx) => (
+                          {card.backPoints && card.backPoints.map((pt, idx) => (
                             <li key={idx} className="flex items-start gap-2">
                               <CheckCircle2 className="w-3.5 h-3.5 text-amber-300 shrink-0 mt-0.5" />
                               <span>{pt}</span>
