@@ -628,7 +628,9 @@ export default function App() {
       <AdminEditDrawer
         isOpen={adminDrawerOpen}
         onClose={() => setAdminDrawerOpen(false)}
+        data={data}
         monumentData={data}
+        onSaveData={(newData) => setData(newData)}
         onUpdateOverview={handleUpdateOverview}
         onUpdateInfo={handleUpdateInfo}
         onUpdateTimeline={handleUpdateTimeline}

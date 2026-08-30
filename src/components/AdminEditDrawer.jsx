@@ -29,7 +29,12 @@ export default function AdminEditDrawer({
   isOpen,
   onClose,
   data,
+  monumentData,
   onSaveData,
+  onUpdateOverview,
+  onUpdateInfo,
+  onUpdateTimeline,
+  onUpdateGallery,
   onResetDefault,
   contributions = [],
   onApproveContribution,
@@ -38,7 +43,14 @@ export default function AdminEditDrawer({
   onSeedSampleContributions,
   onRevokeContribution
 }) {
-  const [editData, setEditData] = useState(data);
+  const currentData = data || monumentData || {};
+  const [editData, setEditData] = useState(() => {
+    try {
+      return currentData ? JSON.parse(JSON.stringify(currentData)) : {};
+    } catch (_e) {
+      return currentData || {};
+    }
+  });
   const [activeTab, setActiveTab] = useState('contributions');
   const [saveSuccess, setSaveSuccess] = useState(false);
   const fileInputRef = useRef(null);
@@ -51,24 +63,43 @@ export default function AdminEditDrawer({
 
   useEffect(() => {
     if (isOpen) {
-      setEditData(JSON.parse(JSON.stringify(data)));
+      const target = data || monumentData || {};
+      try {
+        setEditData(JSON.parse(JSON.stringify(target)));
+      } catch (_e) {
+        setEditData(target || {});
+      }
       setSaveSuccess(false);
       
-      const pendingCount = contributions.filter(c => c.status === 'pending').length;
+      const pendingCount = (contributions || []).filter(c => c && c.status === 'pending').length;
       if (pendingCount > 0) {
         setActiveTab('contributions');
       }
     }
-  }, [isOpen, data, contributions]);
+  }, [isOpen, data, monumentData, contributions]);
 
   if (!isOpen) return null;
 
-  const pendingCount = contributions.filter(c => c.status === 'pending').length;
-  const approvedCount = contributions.filter(c => c.status === 'approved').length;
-  const rejectedCount = contributions.filter(c => c.status === 'rejected').length;
+  const pendingCount = (contributions || []).filter(c => c && c.status === 'pending').length;
+  const approvedCount = (contributions || []).filter(c => c && c.status === 'approved').length;
+  const rejectedCount = (contributions || []).filter(c => c && c.status === 'rejected').length;
 
   const handleSave = () => {
-    onSaveData(editData);
+    if (onSaveData) {
+      onSaveData(editData);
+    }
+    if (onUpdateOverview && editData.info?.overview) {
+      onUpdateOverview(editData.info.overview);
+    }
+    if (onUpdateInfo && editData.info) {
+      onUpdateInfo(editData.info);
+    }
+    if (onUpdateTimeline && editData.timeline) {
+      onUpdateTimeline(editData.timeline);
+    }
+    if (onUpdateGallery && editData.gallery) {
+      onUpdateGallery(editData.gallery);
+    }
     setSaveSuccess(true);
     setTimeout(() => setSaveSuccess(false), 2500);
   };
