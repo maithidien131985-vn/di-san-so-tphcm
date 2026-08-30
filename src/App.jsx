@@ -115,11 +115,34 @@ export default function App() {
     return getMonumentByIdOrStt(currentStt);
   }, [currentStt]);
 
-  const storageKey = `di_san_so_monument_stt_${currentStt}`;
+  const storageKey = `di_san_so_v6_monument_stt_${currentStt}`;
+
+  const mergeWithBase = (base, saved) => {
+    if (!saved) return base;
+    return {
+      ...base,
+      ...saved,
+      info: {
+        ...base.info,
+        ...(saved.info || {}),
+        emCoBiet: base.info?.emCoBiet || []
+      },
+      keyHighlights: base.keyHighlights || saved.keyHighlights,
+      subjects6: base.subjects6 || saved.subjects6,
+      investigation: {
+        ...base.investigation,
+        ...(saved.investigation || {}),
+        investigationQuestion: base.investigation?.investigationQuestion || saved.investigation?.investigationQuestion,
+        flashcards: base.investigation?.flashcards || saved.investigation?.flashcards,
+        matchingPairs: base.investigation?.matchingPairs || saved.investigation?.matchingPairs
+      }
+    };
+  };
+
   const [data, setData] = useState(() => {
     try {
       const saved = localStorage.getItem(storageKey);
-      if (saved) return JSON.parse(saved);
+      if (saved) return mergeWithBase(baseMonument, JSON.parse(saved));
     } catch (e) {
       console.warn('Failed to parse localStorage data:', e);
     }
@@ -130,7 +153,7 @@ export default function App() {
     try {
       const saved = localStorage.getItem(storageKey);
       if (saved) {
-        setData(JSON.parse(saved));
+        setData(mergeWithBase(baseMonument, JSON.parse(saved)));
         return;
       }
     } catch (e) {
