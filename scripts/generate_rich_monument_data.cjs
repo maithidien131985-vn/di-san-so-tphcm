@@ -89,7 +89,6 @@ const d2 = fs.readFileSync(path.join(__dirname, '../doc2.txt'), 'utf8');
 const d3 = fs.readFileSync(path.join(__dirname, '../doc3.txt'), 'utf8');
 const fullDocsText = d2 + '\n\n' + d1 + '\n\n' + d3;
 
-// Extract section text from doc for specific stt
 function extractDocSection(stt) {
   const startPattern = new RegExp('(?:^|\\n)\\s*' + stt + '\\.\\s*([^\\n]+)');
   const nextPattern = new RegExp('(?:^|\\n)\\s*' + (stt + 1) + '\\.\\s*[^\\n]+');
@@ -102,7 +101,6 @@ function extractDocSection(stt) {
   return cleanStr(content);
 }
 
-// Build 6 Interdisciplinary Subjects tailored per monument
 function build6Subjects(stt, name, type, ranking, address, overview, events, figures, artifacts, docSnippet) {
   const isDinh = stt === 1;
   const isCuChi = stt === 2;
@@ -219,6 +217,178 @@ function build6Subjects(stt, name, type, ranking, address, overview, events, fig
   ];
 }
 
+function buildCustomFlashcards(stt, name, type, ranking, decision, address, coords, overview, events, figures, artifacts) {
+  if (stt === 1) {
+    return [
+      {
+        id: 1,
+        tag: "Nhân vật lịch sử",
+        front: "Ai là người đã kéo lá cờ giải phóng trên nóc Dinh Độc Lập lúc 11h30 trưa 30/4/1975?",
+        back: "Trung úy Bùi Quang Thận (Đại đội trưởng Đại đội 4, Lữ đoàn xe tăng 203, Quân đoàn 2), trưởng xe tăng 843, đã chạy lên sân thượng hạ cờ đối phương và kéo cờ Mặt trận Dân tộc Giải phóng miền Nam Việt Nam.",
+        badge: "Bảo vật Quốc gia"
+      },
+      {
+        id: 2,
+        tag: "Chiến tích xe tăng",
+        front: "Vai trò lịch sử của kíp xe tăng T59 số hiệu 390 trong ngày 30/4/1975?",
+        back: "Do Trung úy Vũ Đăng Toàn làm trưởng xe, xe tăng 390 đã dũng mãnh húc bật tung cánh cổng chính Dinh Độc Lập, mở đường tiến thẳng vào sân Dinh, trở thành biểu tượng bất diệt của ngày toàn thắng.",
+        badge: "Bảo vật Quốc gia"
+      },
+      {
+        id: 3,
+        tag: "Nghệ thuật kiến trúc",
+        front: "Kiến trúc sư Ngô Viết Thụ đã thiết kế rèm hoa đá ở mặt tiền Dinh Độc Lập mang hình ảnh gì?",
+        back: "Mặt tiền Dinh được trang trí bằng rèm hoa đá hình các đốt trúc thanh nhã, tượng trưng cho khí tiết thanh cao của người quân tử, đồng thời che nắng nhiệt đới và thông gió đối lưu tự nhiên.",
+        badge: "KTS Khôi nguyên La Mã"
+      },
+      {
+        id: 4,
+        tag: "Sự kiện lịch sử",
+        front: "Hội nghị Hiệp thương chính trị thống nhất Tổ quốc được tổ chức tại Dinh vào thời gian nào?",
+        back: "Vào tháng 11–12/1975, Hội nghị Hiệp thương chính trị thống nhất hai miền Nam - Bắc được tổ chức trọng thể tại Hội trường chính Dinh Độc Lập, quyết định tổng tuyển cử bầu Quốc hội chung của cả nước.",
+        badge: "Thống nhất non sông"
+      },
+      {
+        id: 5,
+        tag: "Công sự ngầm",
+        front: "Hệ thống hầm ngầm dưới lòng Dinh Độc Lập có kết cấu và vai trò gì?",
+        back: "Hầm ngầm kiên cố chịu được bom hạng nặng, được trang bị trung tâm tác chiến, hệ thống máy điện đàm vô tuyến và bản đồ chỉ huy quân sự thời kỳ trước 1975.",
+        badge: "Công trình ngầm"
+      },
+      {
+        id: 6,
+        tag: "Xếp hạng Di sản",
+        front: "Dinh Độc Lập được Thủ tướng Chính phủ xếp hạng Di tích Quốc gia Đặc biệt vào năm nào?",
+        back: "Dinh Độc Lập được xếp hạng là Di tích Lịch sử cấp Quốc gia Đặc biệt theo Quyết định số 1272/QĐ-TTg ngày 12/8/2009 của Thủ tướng Chính phủ.",
+        badge: "Di tích Quốc gia Đặc biệt"
+      }
+    ];
+  } else if (stt === 2) {
+    return [
+      {
+        id: 1,
+        tag: "Cấu trúc địa đạo",
+        front: "Hệ thống Địa đạo Củ Chi có cấu trúc mấy tầng ngầm và tổng chiều dài bao nhiêu?",
+        back: "Hệ thống địa đạo gồm 3 tầng ngầm liên hoàn xuyên qua nền đất sét pha đá ong với tổng chiều dài hơn 200km, chịu được đạn pháo và các loại bom hạng nặng.",
+        badge: "Đất thép thành đồng"
+      },
+      {
+        id: 2,
+        tag: "Sáng chế quân sự",
+        front: "Bếp Hoàng Cầm trong hệ thống Địa đạo Củ Chi có đặc điểm kỳ diệu gì?",
+        back: "Bếp Hoàng Cầm dẫn khói qua hệ thống nhiều rãnh ngầm dài tỏa khói sát mặt đất như làn sương mỏng, giúp nấu chín thức ăn nóng cho bộ đội giữa ban ngày mà máy bay địch không thể phát hiện.",
+        badge: "Sáng tạo Việt Nam"
+      },
+      {
+        id: 3,
+        tag: "Chiến thuật tác chiến",
+        front: "Quân và dân Củ Chi đã dùng phương châm tác chiến nào để đánh bại các trận càn Crimp, Cedar Falls?",
+        back: "Phương châm 'Bám thắt lưng địch mà đánh', kết hợp 3 mũi giáp công, hầm chông, bãi mìn và mạng lưới hầm ngầm biến cả vùng đất thành pháo đài bất khả xâm phạm.",
+        badge: "Nghệ thuật quân sự"
+      },
+      {
+        id: 4,
+        tag: "Công trình ngầm",
+        front: "Các công trình sinh hoạt chủ yếu nào được bố trí bên trong Địa đạo Củ Chi?",
+        back: "Bao gồm phòng hội họp giao ban chỉ huy, trạm phẫu thuật quân y cứu thương, xưởng đúc vũ khí tự tạo, giếng nước ngầm và hầm nấu ăn Hoàng Cầm.",
+        badge: "Kiến trúc lòng đất"
+      },
+      {
+        id: 5,
+        tag: "Tri ân anh hùng",
+        front: "Đền Tưởng niệm Liệt sĩ Bến Dược Củ Chi khắc ghi tên tuổi của bao nhiêu anh hùng liệt sĩ?",
+        back: "Đền Bến Dược Củ Chi khắc ghi danh tính của hơn 44.000 anh hùng liệt sĩ đã hy sinh trên chiến trường Sài Gòn - Chợ Lớn - Gia Định qua hai cuộc kháng chiến.",
+        badge: "Đền Bến Dược"
+      },
+      {
+        id: 6,
+        tag: "Danh hiệu cao quý",
+        front: "Danh hiệu vẻ vang nào được trao tặng cho Củ Chi tại Đại hội Anh hùng và Chiến sĩ thi đua toàn Miền?",
+        back: "Củ Chi vinh dự được Ủy ban Trung ương Mặt trận Dân tộc Giải phóng miền Nam trao tặng cờ danh dự và 8 chữ vàng 'Đất thép thành đồng' cùng Huân chương Thành đồng hạng Nhất.",
+        badge: "Đất thép thành đồng"
+      }
+    ];
+  }
+
+  // Generic tailored flashcards for other monuments
+  return [
+    {
+      id: 1,
+      tag: "Sự kiện lịch sử",
+      front: `Di tích "${name}" gắn liền với sự kiện lịch sử tiêu biểu nào?`,
+      back: events !== 'Chưa bổ sung' ? events : overview,
+      badge: "Mốc son lịch sử"
+    },
+    {
+      id: 2,
+      tag: "Nhân vật lịch sử",
+      front: `Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với "${name}"?`,
+      back: figures !== 'Chưa bổ sung' ? figures : `Gắn liền với các anh hùng liệt sĩ, đồng bào và chiến sĩ cách mạng kiên trung tại ${address}.`,
+      badge: "Nhân chứng lịch sử"
+    },
+    {
+      id: 3,
+      tag: "Hiện vật & Công trình",
+      front: `Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích "${name}" là gì?`,
+      back: artifacts !== 'Chưa bổ sung' ? artifacts : `Hệ thống công trình kiến trúc, bia ghi công và hiện vật lịch sử nguyên bản tại ${address}.`,
+      badge: "Bảo vật di sản"
+    },
+    {
+      id: 4,
+      tag: "Không gian & Vị trí",
+      front: `Di tích "${name}" tọa lạc tại địa chỉ và khu vực nào của Thành phố?`,
+      back: `Tọa lạc tại địa chỉ: ${address}. Tọa độ GPS chính xác: ${coords[0]}, ${coords[1]}.`,
+      badge: "Địa chỉ đỏ"
+    },
+    {
+      id: 5,
+      tag: "Cấp độ Xếp hạng",
+      front: `Di tích "${name}" đã được Nhà nước xếp hạng ở cấp độ nào?`,
+      back: `Được Nhà nước xếp hạng là Di tích cấp ${ranking} (${type})${decision ? ', theo ' + decision : ''} theo Luật Di sản văn hóa.`,
+      badge: "Xếp hạng Di sản"
+    },
+    {
+      id: 6,
+      tag: "Ý nghĩa giáo dục",
+      front: `Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với "${name}" là gì?`,
+      back: `Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.`,
+      badge: "Trách nhiệm thế hệ trẻ"
+    }
+  ];
+}
+
+function buildCustomMatchingPairs(stt, name, type, ranking, address, events, figures, artifacts) {
+  if (stt === 1) {
+    return [
+      { id: 'p1', left: 'Bùi Quang Thận', right: 'Trưởng xe tăng 843, kéo lá cờ giải phóng trên nóc Dinh Độc Lập lúc 11h30 trưa 30/4/1975', matched: false },
+      { id: 'p2', left: 'Vũ Đăng Toàn', right: 'Trưởng xe tăng T59 số hiệu 390 dũng mãnh húc đổ cánh cổng chính Dinh Độc Lập', matched: false },
+      { id: 'p3', left: 'Ngô Viết Thụ', right: 'KTS Khôi nguyên La Mã thiết kế đồ án Dinh theo hình chữ CÁT (吉)', matched: false },
+      { id: 'p4', left: 'Nguyễn Thành Trung', right: 'Phi công lái F-5E ném bom Dinh Độc Lập ngày 8/4/1975', matched: false },
+      { id: 'p5', left: 'Hội nghị Hiệp thương (11/1975)', right: 'Hội nghị thống nhất non sông hai miền Nam - Bắc tổ chức tại Hội trường Dinh', matched: false }
+    ];
+  } else if (stt === 2) {
+    return [
+      { id: 'p1', left: 'Mạng lưới Địa đạo 3 tầng', right: 'Hệ thống đường hầm ngầm hơn 200km xuyên lòng đất sét pha đá ong', matched: false },
+      { id: 'p2', left: 'Bếp Hoàng Cầm', right: 'Sáng kiến dẫn khói ngầm nấu ăn không tỏa khói ban ngày', matched: false },
+      { id: 'p3', left: 'Đền Liệt sĩ Bến Dược', right: 'Nơi khắc ghi danh tính của hơn 44.000 anh hùng liệt sĩ', matched: false },
+      { id: 'p4', left: 'Đất thép thành đồng', right: 'Danh hiệu vẻ vang Mặt trận Dân tộc Giải phóng trao tặng Củ Chi', matched: false },
+      { id: 'p5', left: 'Trận càn Cedar Falls', right: 'Chiến dịch càn quét quy mô lớn của địch bị quân dân địa đạo bẻ gãy', matched: false }
+    ];
+  }
+
+  const cleanFig = figures && figures !== 'Chưa bổ sung' ? figures.slice(0, 32) : `Nhân vật gắn liền với ${name}`;
+  const cleanArt = artifacts && artifacts !== 'Chưa bổ sung' ? artifacts.slice(0, 32) : `Hiện vật tiêu biểu tại ${name}`;
+  const cleanEve = events && events !== 'Chưa bổ sung' ? events.slice(0, 32) : `Sự kiện lịch sử tiêu biểu`;
+
+  return [
+    { id: 'p1', left: cleanFig.length > 25 ? cleanFig + '...' : cleanFig, right: `Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với ${name}`, matched: false },
+    { id: 'p2', left: cleanArt.length > 25 ? cleanArt + '...' : cleanArt, right: `Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích`, matched: false },
+    { id: 'p3', left: `${ranking} (${type})`, right: `Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa`, matched: false },
+    { id: 'p4', left: address.length > 30 ? address.slice(0, 30) + '...' : address, right: `Địa chỉ tọa lạc & Không gian địa lý của di tích`, matched: false },
+    { id: 'p5', left: name.length > 25 ? name.slice(0, 25) + '...' : name, right: `Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước`, matched: false }
+  ];
+}
+
 console.log(`Generating rich knowledge dataset for all ${dataRows.length} monuments...`);
 
 const monuments = dataRows.map((r, idx) => {
@@ -233,7 +403,6 @@ const monuments = dataRows.map((r, idx) => {
   const addressNew = cleanStr(r[7]);
   const address = addressNew || addressOld || 'TP. Hồ Chí Minh';
   
-  // Coordinates
   let coordStr = '';
   if (coordDataRows[idx] && coordDataRows[idx][1]) {
     coordStr = cleanStr(coordDataRows[idx][1]);
@@ -259,7 +428,6 @@ const monuments = dataRows.map((r, idx) => {
 
   const docSnippet = extractDocSection(stt);
 
-  // Tailored Investigation Question & Suggested Answer
   let investigationQuestion = `Vì sao di tích ${name} tại ${address} trở thành dấu mốc lịch sử - văn hóa quan trọng cần được gìn giữ và phát huy giá trị?`;
   let suggestedAnswer = `Di tích ${name} là ${type.toLowerCase()} được xếp hạng cấp ${ranking.toLowerCase()} (${decision || 'theo quy định của Nhà nước'}). Nơi đây ghi dấu các sự kiện lịch sử tiêu biểu: ${events.slice(0, 180)}..., gắn liền với công lao to lớn của ${figures.slice(0, 140)}... và lưu giữ các hiện vật quý: ${artifacts.slice(0, 140)}..., là di sản văn hóa vô giá cho các thế hệ mai sau.`;
 
@@ -289,7 +457,6 @@ const monuments = dataRows.map((r, idx) => {
     suggestedAnswer = "Xây dựng từ 1898-1902 theo phong cách châu Âu gồm 3 tầng với rèm phù điêu gốm sứ, Bạch Dinh từng là nơi giam lỏng vua yêu nước Thành Thái (1907-1916) và hiện lưu giữ bộ sưu tập súng thần công, cổ vật Hòn Cau quý giá.";
   }
 
-  // 3 Key Highlights: Figures, Artifacts, Events
   const keyHighlights = {
     figures: {
       title: "Nhân vật liên quan",
@@ -314,10 +481,8 @@ const monuments = dataRows.map((r, idx) => {
     }
   };
 
-  // 6-Subject interdisciplinary exploration cards
   const subjects6 = build6Subjects(stt, name, type, ranking, address, overview, events, figures, artifacts, docSnippet);
 
-  // References list
   const referencesList = [
     { title: `Hồ sơ khoa học Di tích ${name}`, source: "Sở Văn hóa và Thể thao TP. Hồ Chí Minh" },
     { title: decision ? `Quyết định xếp hạng ${ranking}: ${decision}` : `Danh mục Di tích Lịch sử - Văn hóa TP.HCM`, source: "Bộ Văn hóa, Thể thao và Du lịch / UBND TP.HCM" },
@@ -325,7 +490,6 @@ const monuments = dataRows.map((r, idx) => {
     { title: "Địa chí Lịch sử - Văn hóa TP. Hồ Chí Minh", source: "Viện Lịch sử Quân sự Việt Nam" }
   ];
 
-  // 5 Tailored Quiz Questions
   const quiz = [
     {
       id: 1,
@@ -399,7 +563,10 @@ const monuments = dataRows.map((r, idx) => {
     }
   ];
 
-  // Custom gallery & images for Dinh Doc Lap (1) and Dia Dao Cu Chi (2)
+  // Tailored Flashcards and Matching Pairs per Monument
+  const flashcards = buildCustomFlashcards(stt, name, type, ranking, decision, address, coords, overview, events, figures, artifacts);
+  const matchingPairs = buildCustomMatchingPairs(stt, name, type, ranking, address, events, figures, artifacts);
+
   let customGallery = null;
   if (stt === 1) {
     heroImage = '/assets/images/dinh-doc-lap/dinh-doc-lap-1.jpg';
@@ -547,6 +714,8 @@ const monuments = dataRows.map((r, idx) => {
       suggestedAnswer: suggestedAnswer,
       referencesList: referencesList,
       quiz: quiz,
+      flashcards: flashcards,
+      matchingPairs: matchingPairs,
       dossiers: [
         {
           id: 'map_dossier',
@@ -589,7 +758,7 @@ const monuments = dataRows.map((r, idx) => {
 });
 
 const fileContent = `// Hệ thống Di sản Số TP.HCM - Toàn bộ 103 Di Tích Lịch Sử & Văn Hóa
-// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn (Nhân vật, Hiện vật, Sự kiện), 6 Môn học & Câu hỏi điều tra riêng biệt
+// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn (Nhân vật, Hiện vật, Sự kiện), 6 Môn học, Flashcard & Ghép nối riêng biệt
 export const allMonumentsList = ${JSON.stringify(monuments, null, 2)};
 
 export const getMonumentByIdOrStt = (idOrStt) => {

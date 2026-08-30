@@ -1,5 +1,5 @@
 // Hệ thống Di sản Số TP.HCM - Toàn bộ 103 Di Tích Lịch Sử & Văn Hóa
-// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn (Nhân vật, Hiện vật, Sự kiện), 6 Môn học & Câu hỏi điều tra riêng biệt
+// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn (Nhân vật, Hiện vật, Sự kiện), 6 Môn học, Flashcard & Ghép nối riêng biệt
 export const allMonumentsList = [
   {
     "id": "monument-1",
@@ -366,6 +366,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Nhân vật lịch sử",
+          "front": "Ai là người đã kéo lá cờ giải phóng trên nóc Dinh Độc Lập lúc 11h30 trưa 30/4/1975?",
+          "back": "Trung úy Bùi Quang Thận (Đại đội trưởng Đại đội 4, Lữ đoàn xe tăng 203, Quân đoàn 2), trưởng xe tăng 843, đã chạy lên sân thượng hạ cờ đối phương và kéo cờ Mặt trận Dân tộc Giải phóng miền Nam Việt Nam.",
+          "badge": "Bảo vật Quốc gia"
+        },
+        {
+          "id": 2,
+          "tag": "Chiến tích xe tăng",
+          "front": "Vai trò lịch sử của kíp xe tăng T59 số hiệu 390 trong ngày 30/4/1975?",
+          "back": "Do Trung úy Vũ Đăng Toàn làm trưởng xe, xe tăng 390 đã dũng mãnh húc bật tung cánh cổng chính Dinh Độc Lập, mở đường tiến thẳng vào sân Dinh, trở thành biểu tượng bất diệt của ngày toàn thắng.",
+          "badge": "Bảo vật Quốc gia"
+        },
+        {
+          "id": 3,
+          "tag": "Nghệ thuật kiến trúc",
+          "front": "Kiến trúc sư Ngô Viết Thụ đã thiết kế rèm hoa đá ở mặt tiền Dinh Độc Lập mang hình ảnh gì?",
+          "back": "Mặt tiền Dinh được trang trí bằng rèm hoa đá hình các đốt trúc thanh nhã, tượng trưng cho khí tiết thanh cao của người quân tử, đồng thời che nắng nhiệt đới và thông gió đối lưu tự nhiên.",
+          "badge": "KTS Khôi nguyên La Mã"
+        },
+        {
+          "id": 4,
+          "tag": "Sự kiện lịch sử",
+          "front": "Hội nghị Hiệp thương chính trị thống nhất Tổ quốc được tổ chức tại Dinh vào thời gian nào?",
+          "back": "Vào tháng 11–12/1975, Hội nghị Hiệp thương chính trị thống nhất hai miền Nam - Bắc được tổ chức trọng thể tại Hội trường chính Dinh Độc Lập, quyết định tổng tuyển cử bầu Quốc hội chung của cả nước.",
+          "badge": "Thống nhất non sông"
+        },
+        {
+          "id": 5,
+          "tag": "Công sự ngầm",
+          "front": "Hệ thống hầm ngầm dưới lòng Dinh Độc Lập có kết cấu và vai trò gì?",
+          "back": "Hầm ngầm kiên cố chịu được bom hạng nặng, được trang bị trung tâm tác chiến, hệ thống máy điện đàm vô tuyến và bản đồ chỉ huy quân sự thời kỳ trước 1975.",
+          "badge": "Công trình ngầm"
+        },
+        {
+          "id": 6,
+          "tag": "Xếp hạng Di sản",
+          "front": "Dinh Độc Lập được Thủ tướng Chính phủ xếp hạng Di tích Quốc gia Đặc biệt vào năm nào?",
+          "back": "Dinh Độc Lập được xếp hạng là Di tích Lịch sử cấp Quốc gia Đặc biệt theo Quyết định số 1272/QĐ-TTg ngày 12/8/2009 của Thủ tướng Chính phủ.",
+          "badge": "Di tích Quốc gia Đặc biệt"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Bùi Quang Thận",
+          "right": "Trưởng xe tăng 843, kéo lá cờ giải phóng trên nóc Dinh Độc Lập lúc 11h30 trưa 30/4/1975",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Vũ Đăng Toàn",
+          "right": "Trưởng xe tăng T59 số hiệu 390 dũng mãnh húc đổ cánh cổng chính Dinh Độc Lập",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Ngô Viết Thụ",
+          "right": "KTS Khôi nguyên La Mã thiết kế đồ án Dinh theo hình chữ CÁT (吉)",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Nguyễn Thành Trung",
+          "right": "Phi công lái F-5E ném bom Dinh Độc Lập ngày 8/4/1975",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hội nghị Hiệp thương (11/1975)",
+          "right": "Hội nghị thống nhất non sông hai miền Nam - Bắc tổ chức tại Hội trường Dinh",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -787,6 +863,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Cấu trúc địa đạo",
+          "front": "Hệ thống Địa đạo Củ Chi có cấu trúc mấy tầng ngầm và tổng chiều dài bao nhiêu?",
+          "back": "Hệ thống địa đạo gồm 3 tầng ngầm liên hoàn xuyên qua nền đất sét pha đá ong với tổng chiều dài hơn 200km, chịu được đạn pháo và các loại bom hạng nặng.",
+          "badge": "Đất thép thành đồng"
+        },
+        {
+          "id": 2,
+          "tag": "Sáng chế quân sự",
+          "front": "Bếp Hoàng Cầm trong hệ thống Địa đạo Củ Chi có đặc điểm kỳ diệu gì?",
+          "back": "Bếp Hoàng Cầm dẫn khói qua hệ thống nhiều rãnh ngầm dài tỏa khói sát mặt đất như làn sương mỏng, giúp nấu chín thức ăn nóng cho bộ đội giữa ban ngày mà máy bay địch không thể phát hiện.",
+          "badge": "Sáng tạo Việt Nam"
+        },
+        {
+          "id": 3,
+          "tag": "Chiến thuật tác chiến",
+          "front": "Quân và dân Củ Chi đã dùng phương châm tác chiến nào để đánh bại các trận càn Crimp, Cedar Falls?",
+          "back": "Phương châm 'Bám thắt lưng địch mà đánh', kết hợp 3 mũi giáp công, hầm chông, bãi mìn và mạng lưới hầm ngầm biến cả vùng đất thành pháo đài bất khả xâm phạm.",
+          "badge": "Nghệ thuật quân sự"
+        },
+        {
+          "id": 4,
+          "tag": "Công trình ngầm",
+          "front": "Các công trình sinh hoạt chủ yếu nào được bố trí bên trong Địa đạo Củ Chi?",
+          "back": "Bao gồm phòng hội họp giao ban chỉ huy, trạm phẫu thuật quân y cứu thương, xưởng đúc vũ khí tự tạo, giếng nước ngầm và hầm nấu ăn Hoàng Cầm.",
+          "badge": "Kiến trúc lòng đất"
+        },
+        {
+          "id": 5,
+          "tag": "Tri ân anh hùng",
+          "front": "Đền Tưởng niệm Liệt sĩ Bến Dược Củ Chi khắc ghi tên tuổi của bao nhiêu anh hùng liệt sĩ?",
+          "back": "Đền Bến Dược Củ Chi khắc ghi danh tính của hơn 44.000 anh hùng liệt sĩ đã hy sinh trên chiến trường Sài Gòn - Chợ Lớn - Gia Định qua hai cuộc kháng chiến.",
+          "badge": "Đền Bến Dược"
+        },
+        {
+          "id": 6,
+          "tag": "Danh hiệu cao quý",
+          "front": "Danh hiệu vẻ vang nào được trao tặng cho Củ Chi tại Đại hội Anh hùng và Chiến sĩ thi đua toàn Miền?",
+          "back": "Củ Chi vinh dự được Ủy ban Trung ương Mặt trận Dân tộc Giải phóng miền Nam trao tặng cờ danh dự và 8 chữ vàng 'Đất thép thành đồng' cùng Huân chương Thành đồng hạng Nhất.",
+          "badge": "Đất thép thành đồng"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Mạng lưới Địa đạo 3 tầng",
+          "right": "Hệ thống đường hầm ngầm hơn 200km xuyên lòng đất sét pha đá ong",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Bếp Hoàng Cầm",
+          "right": "Sáng kiến dẫn khói ngầm nấu ăn không tỏa khói ban ngày",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Đền Liệt sĩ Bến Dược",
+          "right": "Nơi khắc ghi danh tính của hơn 44.000 anh hùng liệt sĩ",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Đất thép thành đồng",
+          "right": "Danh hiệu vẻ vang Mặt trận Dân tộc Giải phóng trao tặng Củ Chi",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Trận càn Cedar Falls",
+          "right": "Chiến dịch càn quét quy mô lớn của địch bị quân dân địa đạo bẻ gãy",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -1155,6 +1307,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Ngày 23/10/1961: Thành lập Đoàn 759, lực lượng vận tải quân sự trên biển, mở đầu quá trình xây dựng Đường Hồ Chí Minh trên biển.\nĐầu năm 1961: Trung ương Cục miền Nam tổ chức khảo sát vùng biển Hàm Tân – Hồ Cốc – Lộc An và lựa chọn cửa sông Ray làm bến tiếp nhận vũ khí.\nTháng 6/1963: Thành lập Đoàn 1500 với khoảng 200 cán bộ, chiến sĩ để chuẩn bị bến bãi, kho chứa và lực lượng bảo vệ.\nNgày 30/11/1963: Chuyến tàu không số đầu tiên cập Bến Lộc An nhưng mắc cạn tại cửa biển. Hơn 600 dân công được huy động để bốc dỡ và vận chuyển an toàn khoảng 20 tấn vũ khí.\nĐêm 12, rạng sáng 13/2/1964: Bến Lộc An tiếp nhận an toàn chuyến tàu thứ hai; vũ khí được đưa qua Bến Tranh và chuyển về căn cứ Tỉnh đội Bà Rịa.\nNgày 15/3/1965: Chuyến tàu thứ ba, có quy mô lớn nhất, cập Bến Lộc An, đưa nhiều loại súng, đạn, mìn, lựu đạn và thuốc nổ vào chiến trường.\nSau tháng 3/1965: Bến Lộc An ngừng hoạt động để bảo đảm bí mật cho tuyến vận tải.\nNgày 26/11/2024: Thủ tướng Chính phủ ban hành Quyết định số 1473/QĐ-TTg, xếp hạng Di tích Đường Hồ Chí Minh trên biển là di tích quốc gia đặc biệt; Bến Lộc An là một trong những địa điểm tiêu biểu của di tích.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\"?",
+          "back": "Lê Văn Một: Thuyền trưởng chỉ huy chuyến tàu không số đầu tiên cập Bến Lộc An vào cuối tháng 11/1963.\nĐặng Văn Thanh: Chính trị viên của chuyến tàu đầu tiên vào Bến Lộc An.\nNguyễn Văn Chí (Sáu Chí): Phó Bí thư Khu ủy miền Đông, Chính ủy Đoàn 1500, tham gia tổ chức lực lượng và chuẩn bị bến tiếp nhận vũ khí.\nMai Văn Bình: Trưởng Đoàn 1500, phụ trách lực lượng khảo sát, xây dựng bến bãi, kho chứa và tổ chức tiếp nhận vũ khí.\nTrần Văn Trà: Cán bộ lãnh đạo, chỉ đạo tiếp tục tổ chức các chuyến vận chuyển vũ khí vào Bến Lộc An.\nCán bộ, chiến sĩ Đoàn 759, Đoàn 125 và Đoàn 1500: Trực tiếp thực hiện nhiệm vụ vận chuyển, tiếp nhận, bảo vệ và phân phối vũ khí.\nNhân dân Xuyên Mộc – Long Đất: Tham gia bảo vệ bến, ngụy trang, bốc dỡ, che giấu và vận chuyển vũ khí về căn cứ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" là gì?",
+          "back": "Hiện nay, tại Bến Lộc An hầu như không còn nguyên vẹn các hiện vật gốc của ba chuyến tàu do sự thay đổi của địa hình, tác động của chiến tranh và thời gian. Những dấu tích tiêu biểu gắn với di tích gồm:\nCửa biển Lộc An, nơi chuyến tàu đầu tiên mắc cạn.\nRạch Bà Phin Cát, nơi che giấu và sửa chữa con tàu đầu tiên.\nRạch sông Sao, nơi các chuyến tàu thứ hai và thứ ba neo đậu, bốc dỡ vũ khí.\nBến Tranh, nơi tập kết vũ khí trước khi chuyển về căn cứ.\nBến Khỉ, nơi lực lượng cảnh giới tiền tiêu đóng quân.\nBưng Sậy, nơi Đoàn 1500 đóng quân và chuẩn bị hậu cần.\nSở Thằng Tây, nơi tập kết vũ khí của chuyến tàu đầu tiên.\nCác hầm bí mật, kho chứa, giao thông hào và địa điểm vận chuyển vũ khí.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Xã Hồ Tràm, Thành phố Hồ Chí Minh. Tọa độ GPS chính xác: 9.832616798696527, 106.65656177017404.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia đặc biệt (Lịch sử), theo Quyết định số 1473/QĐ-TTgNgày 26/11/2024, Thủ tướng Chính phủ theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Lê Văn Một: Thuyền trưởng chỉ hu...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hiện nay, tại Bến Lộc An hầu như...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia đặc biệt (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Xã Hồ Tràm, Thành phố Hồ Chí M...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Di tích lịch sử đường Hồ ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -1527,6 +1755,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Di tích lịch sử nhà tù Côn Đảo\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Ngày 28/11/1861: Quân Pháp chiếm Côn Đảo.\nNgày 1/2/1862: Thống đốc Nam Kỳ Bonard ký quyết định thành lập Nhà tù Côn Đảo.\nTháng 3/1862: 50 tù nhân đầu tiên bị đưa ra giam giữ tại Côn Đảo.\nNăm 1908: Nhiều người tham gia phong trào chống thuế Trung Kỳ, trong đó có Phan Châu Trinh và Huỳnh Thúc Kháng, bị đày ra Côn Đảo.\nNgày 2/7/1930: Tôn Đức Thắng bị đưa ra Côn Đảo và bị giam tại Banh I.\nCuối năm 1932: Chi bộ cộng sản đầu tiên trong Nhà tù Côn Đảo được thành lập tại Banh I, nay là Trại Phú Hải.\nGiai đoạn 1941–1943: Số tù nhân tăng mạnh sau cuộc Khởi nghĩa Nam Kỳ; nhiều người chết do bệnh tật, đói khát, lao dịch và điều kiện giam giữ khắc nghiệt.\nTháng 9/1945: Hơn 2.000 tù chính trị nổi dậy giành quyền làm chủ Côn Đảo và trở về đất liền tham gia kháng chiến.\nNgày 18/4/1946: Thực dân Pháp tái chiếm Côn Đảo và khôi phục hệ thống nhà tù.\nNgày 23/1/1952: Võ Thị Sáu bị xử bắn tại Côn Đảo.\nNăm 1955: Chính quyền Sài Gòn tiếp quản và tiếp tục sử dụng Nhà tù Côn Đảo.\nGiai đoạn 1970–1972: Số người bị giam tại Côn Đảo có thời điểm gần 10.000 người.\nTháng 7/1970: Hệ thống Chuồng Cọp Pháp bị phanh phui, gây chấn động dư luận quốc tế.\nGiai đoạn 1973–1974: Có 4.075 tù chính trị Côn Đảo được trao trả theo Hiệp định Paris.\nRạng sáng ngày 1/5/1975: Tù chính trị nổi dậy tự giải phóng, chấm dứt 113 năm tồn tại của Nhà tù Côn Đảo.\nNgày 29/4/1979: Khu di tích lịch sử Côn Đảo được xếp hạng di tích quốc gia.\nNgày 10/5/2012: Nhà tù Côn Đảo được xếp hạng di tích quốc gia đặc biệt theo Quyết định số 548/QĐ-TTg.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Di tích lịch sử nhà tù Côn Đảo\"?",
+          "back": "Phan Châu Trinh: Nhà yêu nước, bị thực dân Pháp đày ra Côn Đảo sau phong trào chống thuế Trung Kỳ năm 1908.\nHuỳnh Thúc Kháng: Nhà yêu nước, bị giam tại Côn Đảo từ năm 1908 đến năm 1921.\nNgô Đức Kế: Nhà yêu nước, một trong những nhân vật tiêu biểu của phong trào Duy Tân, từng bị lưu đày tại Côn Đảo.\nTôn Đức Thắng: Bị đày ra Côn Đảo năm 1930 và bị giam giữ đến năm 1945; tích cực tham gia xây dựng tổ chức, đoàn kết và giáo dục tù nhân.\nNguyễn An Ninh: Nhà báo, nhà yêu nước; nhiều lần bị bắt và mất tại Côn Đảo ngày 14/8/1943.\nLê Hồng Phong: Tổng Bí thư Đảng Cộng sản Đông Dương, bị đày ra Côn Đảo và mất tại đây ngày 6/9/1942.\nNguyễn Văn Cừ: Tổng Bí thư Đảng Cộng sản Đông Dương, từng bị giam tại Côn Đảo trong giai đoạn 1932–1936.\nPhạm Văn Đồng: Nhà hoạt động cách mạng, từng bị thực dân Pháp kết án và đày ra Côn Đảo.\nLê Duẩn: Nhà hoạt động cách mạng, từng bị giam tại Nhà tù Côn Đảo.\nVõ Thị Sáu: Nữ chiến sĩ cách mạng bị đưa ra Côn Đảo cuối năm 1951 và bị xử bắn ngày 23/1/1952.\nCao Văn Ngọc: Chiến sĩ cách mạng, bị xử bắn tại Côn Đảo năm 1961.\nHàng vạn người Việt Nam yêu nước và chiến sĩ cách mạng thuộc nhiều thế hệ đã bị giam giữ, lưu đày tại đây.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Di tích lịch sử nhà tù Côn Đảo\" là gì?",
+          "back": "Hệ thống cùm sắt, xiềng chân và khóa dùng để giam giữ tù nhân.\nCác cánh cửa sắt, song sắt, bệ nằm và nền giam có gắn cùm tại các phòng giam tập thể.\nDụng cụ lao động khổ sai như búa đập đá, cuốc, xẻng, quang gánh và cối xay lúa.\nĐồ dùng sinh hoạt đơn sơ của tù nhân như chén, bát, ca đựng nước và dụng cụ tự chế.\nHồ sơ, thẻ tù, sổ bộ, danh sách tù nhân và một số tài liệu quản lý của bộ máy nhà tù.\nBáo, tài liệu học tập và những bản ghi chép được tù chính trị bí mật thực hiện trong nhà tù.\nDi vật, hình ảnh và tư liệu liên quan đến Chủ tịch Tôn Đức Thắng cùng các chiến sĩ cách mạng từng bị giam tại Côn Đảo.\nCác công trình gốc còn lại như phòng giam, xà lim, khu Chuồng Cọp Pháp, Chuồng Cọp Mỹ, hầm xay lúa, Sở Lò Vôi và khu Chuồng Bò.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Di tích lịch sử nhà tù Côn Đảo\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Đặc khu Côn Đảo, Thành phố Hồ Chí Minh. Tọa độ GPS chính xác: 8.688233939345261, 106.61422492122314.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Di tích lịch sử nhà tù Côn Đảo\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia đặc biệt (Lịch sử), theo Quyết định số 548/QĐ-TTg ngày 10/5/2012 của Thủ tướng Chính phủ. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Di tích lịch sử nhà tù Côn Đảo\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Phan Châu Trinh: Nhà yêu nước, b...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Di tích lịch sử nhà tù Côn Đảo",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hệ thống cùm sắt, xiềng chân và ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia đặc biệt (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Đặc khu Côn Đảo, Thành phố Hồ ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Di tích lịch sử nhà tù Cô...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -1895,6 +2199,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Ngày 11/10/1964: Quân ủy Trung ương và Bộ Tổng Tư lệnh chỉ thị mở đợt hoạt động quân sự trên chiến trường miền Nam.\nCuối tháng 10/1964: Đảng ủy và Bộ Tư lệnh Miền xây dựng kế hoạch chiến dịch, chọn Bình Giã làm điểm quyết chiến.\nĐêm 2/12/1964: Đại đội 445 Bà Rịa tiến công ấp chiến lược Bình Giã, mở màn chiến dịch.\nĐêm 7/12/1964: Đại đội 445 phối hợp với một đại đội của Trung đoàn 762 tiến công Bình Giã lần thứ hai.\nNgày 13/12/1964: Trung đoàn 762 tiến công Chi đoàn 3 thiết giáp tại khu vực Núi Nghệ, phá hủy 14 xe M113.\nĐêm 22/12/1964: Bến Lộc An tiếp nhận chuyến tàu thứ hai chở 44 tấn vũ khí từ miền Bắc; một phần vũ khí được đưa vào phục vụ chiến dịch.\nĐêm 27/12/1964: Đợt hai của chiến dịch mở màn; lực lượng ta tiến công, làm chủ ấp chiến lược Bình Giã.\nNgày 28/12/1964: Trung đoàn 761 tiến công lực lượng đổ bộ đường không, tiêu diệt phần lớn Tiểu đoàn 33 Biệt động quân.\nNgày 31/12/1964: Trung đoàn 761 bao vây và tiêu diệt phần lớn Tiểu đoàn 4 Thủy quân lục chiến tại Quảng Giới.\nNgày 1/1/1965: Quân đội Sài Gòn mở cuộc hành quân “Hùng Vương 2” với khoảng 2.000 quân nhằm giải tỏa Đức Thạnh – Bình Giã.\nNgày 3/1/1965: Trung đoàn 762 phục kích trên đường số 2, đánh thiệt hại nặng Tiểu đoàn 35 Biệt động quân. Chiến dịch Bình Giã kết thúc.\nNgày 15/10/1994: Di tích Chiến thắng Bình Giã được xếp hạng di tích lịch sử cấp quốc gia theo Quyết định số 2754-QĐ/BT.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\"?",
+          "back": "Bộ Chỉ huy Chiến dịch Bình Giã\nTrần Đình Xu: Chỉ huy trưởng chiến dịch.\nLê Văn Tưởng: Chính ủy chiến dịch.\nLê Xuân Lựu: Phó Chính ủy chiến dịch.\nNguyễn Hồng Lâm (Hai Bứa): Chỉ huy phó.\nNguyễn Hòa: Chỉ huy phó, Tham mưu trưởng chiến dịch.\nNhững người tham gia, phục vụ chiến dịch được tài liệu nhắc đến\nNguyễn Văn Quang: Cán bộ Đại đội 445 Bà Rịa, trực tiếp chỉ huy lực lượng sử dụng hỏa lực phá cổng ấp Bình Giã.\nĐồng chí Hướng: Sử dụng súng chống tăng trong trận tiến công mở màn.\nCụ Lia, cụ Đé: Người Chơ Ro ở Xuân Sơn, tham gia dẫn đường cho bộ đội.\nAnh Tròn: Thành viên đội công tác, tham gia phục vụ chiến dịch.\nTổng Văn Then: Người Chơ Ro ở Xuyên Mộc, tham gia vận chuyển thương binh từ Hiệp Hòa về căn cứ Khu I.\nLê Thị Trà: Vận động phụ nữ Chơ Ro nấu ăn và chăm sóc thương binh.\nNhững người đánh giá ý nghĩa chiến thắng\nĐại tướng Hoàng Văn Thái: Đánh giá Chiến dịch Bình Giã là chiến dịch tiến công mang tính tổng hợp, có ý nghĩa chiến lược.\nTổng Bí thư Lê Duẩn: Khẳng định Chiến dịch Bình Giã đánh dấu sự thay đổi quan trọng trong tương quan giữa ta và đối phương.\nĐại tướng Võ Nguyên Giáp: Nhận định Chiến thắng Bình Giã đánh dấu sự thất bại về cơ bản của chiến lược “Chiến tranh đặc biệt”.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" là gì?",
+          "back": "Những tài liệu hiện có chưa cung cấp danh mục kiểm kê cụ thể các hiện vật gốc đang lưu giữ tại Di tích Chiến thắng Bình Giã. Vì vậy, không nên tự ghi xe M113, súng hoặc máy bay là hiện vật của di tích nếu chưa có xác nhận của đơn vị quản lý.\nCác công trình và tư liệu tiêu biểu có thể giới thiệu gồm:\nTượng đài Chiến thắng Bình Giã: Hình tượng ba bàn tay nắm chặt đốc lê, phía trên là ba lưỡi lê vươn lên, tượng trưng cho lực lượng ba thứ quân và ba mũi giáp công.\nHai bức phù điêu: Khắc họa hoạt động chiến đấu của bộ đội, sự tham gia của nhân dân và phong trào phá ấp chiến lược.\nBia giới thiệu và bia khoanh vùng bảo vệ di tích.\nHình ảnh, bản đồ và sơ đồ Chiến dịch Bình Giã.\nTư liệu về Đại đội 445 Bà Rịa, Trung đoàn 761, Trung đoàn 762 và các lực lượng tham gia chiến dịch.\nHình ảnh xe thiết giáp M113, máy bay trực thăng, vũ khí và phương tiện xuất hiện trong chiến dịch, được lưu giữ dưới dạng ảnh, tài liệu hoặc trưng bày tại bảo tàng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Xã Ngãi Giao, Thành phố Hồ Chí Minh. Tọa độ GPS chính xác: 10.65478624954869, 107.24834876091408.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 2754-QĐ/BT ngày 15/10/1994. của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Bộ Chỉ huy Chiến dịch Bình Giã\nT...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Những tài liệu hiện có chưa cung...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Xã Ngãi Giao, Thành phố Hồ Chí...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Di tích chiến thắng Bình ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -2267,6 +2647,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Căn cứ Minh Đạm\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Cuối năm 1948: tên gọi Minh Đạm được xác lập để tưởng nhớ hai đồng chí Bùi Công Minh và Mạc Thanh Đạm. Năm 1962: Trung ương Cục đặt đài trinh sát kỹ thuật tại căn cứ. Năm 1966: liên quân Mỹ, quân đội Sài Gòn và quân Nam Triều Tiên tiến công căn cứ nhưng bị lực lượng cách mạng đánh trả. Tháng 2/1967: quân đội Hoàng gia Úc dựng hàng rào dài khoảng 11 km, gài hàng chục nghìn quả mìn nhằm phong tỏa căn cứ; lực lượng cách mạng từng bước phá hàng rào và bãi mìn. Tháng 5/1968: máy bay B-52 ném bom khu căn cứ. Năm 1969: lực lượng cách mạng đánh bại cuộc hành quân thường được gọi là “Chiến dịch ụ ngầm”. Ngày 30/4/1975: căn cứ hoàn thành vai trò lịch sử khi miền Nam được giải phóng. Ngày 18/01/1993: khu căn cứ được xếp hạng di tích quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Căn cứ Minh Đạm\"?",
+          "back": "Bùi Công Minh – Bí thư Huyện ủy Long Điền; Mạc Thanh Đạm – Phó Bí thư Huyện ủy Long Điền. Sau khi hai ông hy sinh trong một chuyến công tác năm 1948, tên của hai người được ghép lại thành tên Minh Đạm. Ngoài ra, đền thờ tại khu di tích còn tưởng niệm các anh hùng liệt sĩ, trong đó có Anh hùng Lực lượng vũ trang nhân dân Võ Thị Sáu.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Căn cứ Minh Đạm\" là gì?",
+          "back": "Khuôn đúc mìn chống tăng tự tạo tại hang Quân giới; mìn E.3 do quân Mỹ và Úc sử dụng; vỏ thuốc và dụng cụ y tế tại hang Quân y; đồ dùng sinh hoạt của cán bộ, chiến sĩ; các loại vỏ đạn, vỏ pháo, bom và vũ khí còn lại sau những đợt đánh phá căn cứ; sa bàn tái hiện toàn bộ khu căn cứ. Ngoài hiện vật rời, hệ thống hang Huyện ủy, Huyện đội, Quân y, Quân giới, Thị xã Cấp và khu Đá Chẻ là những dấu tích gốc tiêu biểu.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Căn cứ Minh Đạm\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: xã Phước Hải, Thành phố Hồ Chí Minh. Tọa độ GPS chính xác: 10.40548579382776, 107.26077350902882.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Căn cứ Minh Đạm\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo QĐ số: 57VH/QĐ ngày \n18/01/1993 - Bộ Văn Hóa \nThông Tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Căn cứ Minh Đạm\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Bùi Công Minh – Bí thư Huyện ủy ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Căn cứ Minh Đạm",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Khuôn đúc mìn chống tăng tự tạo ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "xã Phước Hải, Thành phố Hồ Chí...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Căn cứ Minh Đạm",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -2635,6 +3091,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Căn cứ Rừng Sác\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "15/4/1966: thành lập Đặc khu Quân sự Rừng Sác, mật danh T10. Sau đó lực lượng phát triển thành Đoàn 10 Đặc công Rừng Sác. 5/12/1972: Đoàn 10 đánh phá kho bom Thành Tuy Hạ, phá hủy một khối lượng lớn bom đạn. 3/12/1973: lực lượng Đoàn 10 tổ chức trận đánh kho xăng Nhà Bè, gây thiệt hại rất lớn cho hệ thống hậu cần của đối phương. Ngoài ra còn nhiều trận đánh tàu trên sông Lòng Tàu và các mục tiêu quân sự khác.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Căn cứ Rừng Sác\"?",
+          "back": "Tiêu biểu có Lương Văn Nho (Hai Nhã) – Đặc khu trưởng kiêm Chính ủy Đặc khu Quân sự Rừng Sác; Lê Bá Ước (Bảy Ước) – chỉ huy, sau là Trung đoàn trưởng Đoàn 10 Đặc công Rừng Sác; cùng nhiều cán bộ, chiến sĩ Đoàn 10 và nhân dân Cần Giờ, Nhơn Trạch, Nhà Bè",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Căn cứ Rừng Sác\" là gì?",
+          "back": "Khu di tích hiện bảo tồn/tái hiện nhà cảnh vệ, nhà đón tiếp, hội trường, hầm trú ẩn, nhà hậu cần, nhà quân y, nhà quân giới, nhà cơ yếu; đồng thời trưng bày hình ảnh và hiện vật liên quan đến cán bộ, chiến sĩ Đoàn 10. Một số không gian được phục dựng để tái hiện cảnh chỉ huy, chuẩn bị chiến đấu, đưa tiễn chiến sĩ ra trận, trận địa DKZ và kỹ thuật chưng cất nước mặn thành nước ngọt.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Căn cứ Rừng Sác\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: xã Cần Giờ, Thành phố Hồ Chí Minh mới. Tọa độ GPS chính xác: 10.414924408006014, 106.88183143501408.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Căn cứ Rừng Sác\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ trưởng Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Căn cứ Rừng Sác\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Tiêu biểu có Lương Văn Nho (Hai ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Căn cứ Rừng Sác",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Khu di tích hiện bảo tồn/tái hiệ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "xã Cần Giờ, Thành phố Hồ Chí M...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Căn cứ Rừng Sác",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -3007,6 +3539,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chiến khu Đ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Cuối tháng 2/1946: Chiến khu Đ được hình thành. 19/3/1948: trận đánh tháp canh cầu Bà Kiên ở Tân Uyên, một dấu mốc quan trọng trong sự phát triển của nghệ thuật đánh đặc công. 9/1961: lực lượng cách mạng tiến công Tiểu khu Phước Thành. 10/1964: pháo binh tập kích sân bay Biên Hòa. Tháng 1/1975: Chiến khu Đ là một trong những địa bàn xuất phát chiến dịch giải phóng Phước Long. 9–21/4/1975: từ khu vực căn cứ, lực lượng cách mạng tiến hành chiến dịch giải phóng Long Khánh, mở đường cho Chiến dịch Hồ Chí Minh.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chiến khu Đ\"?",
+          "back": "Tiêu biểu nhất là Trung tướng Nguyễn Bình – Khu trưởng Khu 7; Thi tướng Huỳnh Văn Nghệ – người có vai trò quan trọng trong khảo sát, xây dựng căn cứ và tổ chức lực lượng ở vùng Chiến khu Đ; cùng các cán bộ lãnh đạo, chỉ huy Khu 7 và lực lượng vũ trang miền Đông Nam Bộ. Tài liệu của tỉnh Bình Dương cũng ghi nhận Nguyễn Bình và Huỳnh Văn Nghệ gắn với giai đoạn hình thành Chiến khu Đ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chiến khu Đ\" là gì?",
+          "back": "“Hiện vật và tư liệu trưng bày/tái hiện” gồm: vũ khí, trang bị quân sự, bản đồ chiến khu, ảnh tư liệu, tài liệu cách mạng và các mô hình tái hiện đời sống – chiến đấu của quân dân Chiến khu Đ. Khu tưởng niệm được quy hoạch có nhà trưng bày, khu trưng bày ngoài trời, nhà bia tưởng niệm, tượng đài và mô hình tái hiện cuộc sống của quân và dân trong chiến khu.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chiến khu Đ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 11.12594035725486, 106.86328916335086.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chiến khu Đ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 1631/QĐ-BVHTTDL ngày 11/5/2010 của Bộ Văn hóa, Thể thao và Du lịch theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chiến khu Đ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Tiêu biểu nhất là Trung tướng Ng...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chiến khu Đ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "“Hiện vật và tư liệu trưng bày/t...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Ấp Đá Bàn, xã Bắc Tân Uyên, Th...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chiến khu Đ",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -3375,6 +3983,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Địa đạo Kim Long\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1962–1964: xây dựng hệ thống địa đạo Kim Long. Cuối năm 1964: địa đạo và lực lượng cách mạng tại khu vực Kim Long góp phần vào Chiến thắng Bình Giã. 1966–1967: địa đạo tiếp tục là nơi dựa để lực lượng du kích chống các cuộc càn quét của Mỹ và chính quyền Việt Nam Cộng hòa. Đêm 18 rạng sáng 19/6/1967: diễn ra trận Lòng Chảo – Kim Long, một trận đánh lớn tại khu vực Kim Long.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Địa đạo Kim Long\"?",
+          "back": "Di tích gắn chủ yếu với các cán bộ, chiến sĩ, du kích và nhân dân Kim Long – Châu Đức, những người trực tiếp đào địa đạo, xây dựng công sự, nuôi giấu và bảo vệ lực lượng cách mạng. Tư liệu hiện có không cho thấy một cá nhân duy nhất được xác định là “nhân vật của di tích” theo nghĩa như các di tích lưu niệm danh nhân.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Địa đạo Kim Long\" là gì?",
+          "back": "Hệ thống địa đạo dài khoảng 2.000 m, sâu khoảng 5 m, rộng khoảng 0,8 m; 12 cửa lên xuống; nhiều ngách trú ẩn; 3 ụ chiến đấu; hào công sự và lỗ châu mai. Bên trong từng có phòng họp, trạm y tế, nơi cất giữ vũ khí và kho lương thực.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Địa đạo Kim Long\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.719626707385835, 107.22760041074827.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Địa đạo Kim Long\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo QĐ số: 961QĐ/BT ngày \n20/07/1994 - Bộ Văn Hóa \nThông Tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Địa đạo Kim Long\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Di tích gắn chủ yếu với các cán ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Địa đạo Kim Long",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hệ thống địa đạo dài khoảng 2.00...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Thôn Tam Long, xã Kim Long, Th...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Địa đạo Kim Long",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -3747,6 +4431,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Địa đạo Phú Thọ Hòa\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1947: bắt đầu xây dựng địa đạo tại thôn Lộc Hòa. 29/3/1948: trận đánh kho bom Bảy Hiền. 12/1949: lực lượng cách mạng nhiều lần đánh vào sân bay Tân Sơn Nhất. 1952 và 1954: tấn công kho bom Phú Thọ. Đêm 31/5 – rạng sáng 1/6/1954: Tiểu đoàn Quyết tử 950 đánh vào kho bom Phú Thọ Hòa. Tháng 4/1966: địa đạo bị lực lượng đối phương dùng xe ủi phá hủy và bao vây khu vực, chấm dứt gần hai thập kỷ hoạt động của địa đạo. Năm 1985: địa đạo được trùng tu, phục dựng một phần để bảo tồn và phát huy giá trị. Năm 1996: được xếp hạng di tích lịch sử cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Địa đạo Phú Thọ Hòa\"?",
+          "back": "Bùi Văn Ba và Phạm Văn Hai – chỉ huy Tiểu đoàn Quyết tử 950 trong trận đánh kho bom Phú Thọ Hòa đêm 31/5 rạng sáng 1/6/1954; Nguyễn Văn Linh – Tổng Bí thư, người từng đến thăm địa đạo năm 1984 và nhấn mạnh việc phục dựng, giáo dục truyền thống về Phú Thọ Hòa. Ngoài ra còn có đông đảo cán bộ, chiến sĩ và nhân dân Lộc Hòa, Phú Thọ Hòa tham gia xây dựng, bảo vệ và sử dụng địa đạo.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Địa đạo Phú Thọ Hòa\" là gì?",
+          "back": "Hệ thống địa đạo được phục dựng, nhà trưng bày, hình ảnh và tư liệu lịch sử, mô hình tái hiện hoạt động chiến đấu của quân dân Phú Thọ Hòa, các loại vũ khí và trang bị quân sự được sử dụng/trưng bày tại khu di tích. Đoạn địa đạo được khôi phục để tham quan dài khoảng 100 m; địa đạo lịch sử trước đây có hệ thống kéo dài hơn 10 km theo địa hình.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Địa đạo Phú Thọ Hòa\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.78388607955183, 106.63089939238137.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Địa đạo Phú Thọ Hòa\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1460 – QĐ/VH ngày \n28/6/1996 của Bộ Văn hóa \nThông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Địa đạo Phú Thọ Hòa\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Bùi Văn Ba và Phạm Văn Hai – chỉ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Địa đạo Phú Thọ Hòa",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hệ thống địa đạo được phục dựng,...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 139 đường Phú Thọ Hòa, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Địa đạo Phú Thọ Hòa",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -4115,6 +4875,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1948: hệ thống địa đạo đầu tiên được hình thành tại vùng Tây Nam Bến Cát. Từ năm 1961: quân dân ba xã An Điền, An Tây, Phú An đẩy mạnh đào và mở rộng hệ thống địa đạo. Chiến dịch Mậu Thân 1968: địa đạo là nơi tập kết, che giấu và hỗ trợ lực lượng tiến công. Mùa Xuân 1975: nhiều cánh quân lớn tập kết tại khu vực Tam Giác Sắt trước khi tiến về Sài Gòn.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Địa Đạo Tây Nam ( Tam Giác Sắt)\"?",
+          "back": "Nguyễn Văn Đực – chiến sĩ bắn tỉa nổi tiếng của vùng Tam Giác Sắt; Võ Thị Huynh – Anh hùng Lực lượng vũ trang nhân dân, có nhiều đóng góp trong chiến đấu và chăm sóc thương binh. Ngoài ra còn có đông đảo cán bộ, du kích và nhân dân ba xã An Điền, An Tây, Phú An tham gia xây dựng, bảo vệ địa đạo.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" là gì?",
+          "back": "Hệ thống địa đạo và các công trình dưới lòng đất; mô hình địa đạo; vũ khí, dụng cụ chiến đấu và sản xuất; hình ảnh, tài liệu lịch sử; mô hình sinh hoạt của quân dân trong địa đạo. Khu di tích hiện có nhà tưởng niệm, nhà trưng bày, khu tượng đài trung tâm, mô hình địa đạo, đài vọng cảnh và khu tái hiện.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Tây Nam, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 11.0899618656236, 106.54076260179036.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 460/QĐ/BT ngày 18/3/1996 của Bộ Văn hóa - Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Nguyễn Văn Đực – chiến sĩ bắn tỉ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Địa Đạo Tây Nam ( Tam Giác Sắt)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hệ thống địa đạo và các công trì...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Tây Nam, Thành phố Hồ C...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Địa Đạo Tây Nam ( Tam Giá...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -4487,6 +5323,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Tháng 8/1925 – Cuộc bãi công Ba Son: khoảng 1.000 công nhân Ba Son đấu tranh đòi tăng lương, giảm giờ làm; dưới sự lãnh đạo của Công hội do Tôn Đức Thắng đứng đầu, cuộc đình công đồng thời làm chậm việc sửa chữa chiến hạm Jules Michelet của Pháp. Công nhân giành được mức tăng lương 10%. Đây được xem là một dấu mốc quan trọng của phong trào công nhân Sài Gòn và phong trào công nhân Việt Nam.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\"?",
+          "back": "Chủ tịch Tôn Đức Thắng là nhân vật trung tâm của di tích; ông từng làm việc tại Ba Son và là người đứng đầu Công hội bí mật/Công hội đỏ, tổ chức và lãnh đạo cuộc bãi công Ba Son năm 1925. Ngoài ra còn có hàng nghìn công nhân Ba Son tham gia cuộc đấu tranh.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" là gì?",
+          "back": "Máy sọc S.3 – máy công cụ được xác định là hiện vật gắn với thời gian đồng chí Tôn Đức Thắng sử dụng khi thực tập tại Xưởng cơ khí; cùng với Ụ tàu nhỏ và Triền nề là những yếu tố vật chất quan trọng cấu thành di tích. Theo phương án tu bổ hiện nay, Ụ tàu nhỏ và Triền nề được bảo tồn theo nguyên trạng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.778419640042815, 106.7062557598295.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định xếp hạng số \n1269/QĐ-BVHTTDL ngày \n30/3/2016 của Bộ Văn hóa - Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Chủ tịch Tôn Đức Thắng là nhân v...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Máy sọc S.3 – máy công cụ được x...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 2 đường Tôn Đức Thắng, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Địa điểm lưu niệm Chủ tịc...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -4855,6 +5767,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1965: ông Đỗ Văn Căn được giao xây dựng hầm bí mật tại nhà để chứa vũ khí. Tháng 7/1965: hầm bắt đầu được sử dụng làm kho vũ khí bí mật; trong 4 tháng tiếp theo, nhiều vũ khí, thuốc nổ và đạn dược được đưa về cất giữ. Tết Mậu Thân 1968: căn nhà là điểm hẹn để một số cánh quân vào Sài Gòn tiếp nhận vũ khí, đạn dược phục vụ Tổng tiến công và nổi dậy. 30/4/1975: kho vũ khí vẫn được bảo vệ và giữ bí mật cho đến ngày giải phóng.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\"?",
+          "back": "Đỗ Văn Căn (bí danh Ba Mủ/Ba Mũ) – chiến sĩ Biệt động Sài Gòn, chủ căn nhà, trực tiếp đào hầm và tổ chức cất giấu, bảo vệ vũ khí; Nguyễn Văn Trí – chính trị viên đơn vị “Đảm bảo chiến đấu biệt động thành”, người chỉ đạo xây dựng hầm; Ngô Thanh Vân (Ba Đen) – chỉ huy đơn vị J9T700 cùng tham gia tổ chức cơ sở. Nguyễn Thị Cúc – cùng ông Đỗ Văn Căn tham gia xây dựng, vận chuyển và bảo vệ kho vũ khí.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" là gì?",
+          "back": "Căn hầm bí mật dài khoảng 2,2 m, rộng 1,8 m, sâu 1,7 m; nắp hầm 0,4 × 0,6 m được ngụy trang dưới bộ ghế salon; dụng cụ ép đế giày cao su của ông Đỗ Văn Căn; hình ảnh, tư liệu về hoạt động của cơ sở; các loại vũ khí và vật liệu quân sự được trưng bày/tái hiện như thuốc nổ TNT, lựu đạn, đạn và súng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.771857251306303, 106.67498699673442.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1288 – VH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Đỗ Văn Căn (bí danh Ba Mủ/Ba Mũ)...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Căn hầm bí mật dài khoảng 2,2 m,...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 183/4 đường Ba Tháng Hai, p...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hầm bí mật chứa vũ khí th...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -5227,6 +6215,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1931: Trần Phú bị thực dân Pháp bắt và giam giữ; 26/8/1931: đồng chí được đưa vào khu trại giam tại Bệnh viện Chợ Quán do bị bệnh nặng; 6/9/1931: Trần Phú hy sinh tại đây, để lại lời nhắn “Hãy giữ vững ý chí chiến đấu”. Trong các giai đoạn kháng chiến chống Pháp và chống Mỹ, khu trại tiếp tục được sử dụng để giam giữ nhiều chiến sĩ cách mạng. 24/4/2024: khánh thành giai đoạn 1 công trình tu bổ, tôn tạo di tích nhân kỷ niệm 120 năm ngày sinh Trần Phú.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\"?",
+          "back": "Trần Phú – Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương, nhân vật trung tâm của di tích; Hà Huy Tập – Tổng Bí thư thứ ba của Đảng Cộng sản Đông Dương; cùng các chiến sĩ cách mạng Trần Não, Nguyễn Văn Trỗi, Trần Bạch Đằng và nhiều cán bộ, chiến sĩ khác từng bị giam giữ tại đây.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" là gì?",
+          "back": "Khu nhà trại giam được bảo tồn, phòng giam, chốt canh, hệ thống cửa và kiến trúc của khu trại giam; ảnh, tài liệu và kỷ vật liên quan đến đồng chí Trần Phú; tượng/bia tưởng niệm và không gian trưng bày về cuộc đời, hoạt động cách mạng của Trần Phú. Công trình tu bổ giai đoạn 1 được thực hiện theo hướng bảo tồn khu vực trại giam và chốt canh theo nguyên trạng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.753291478346345, 106.6791565532884.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1288 – \nVH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Trần Phú – Tổng Bí thư đầu tiên ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Khu nhà trại giam được bảo tồn, ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 190 đường Võ Văn \nKiệt, phư...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Khu trại giam Bệnh viện C...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -5595,6 +6659,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Ngã Ba Giồng\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đêm 22 rạng sáng 23/11/1940: Khởi nghĩa Nam Kỳ bùng nổ, nhân dân Hóc Môn – Bà Điểm tham gia đấu tranh. Sau Khởi nghĩa Nam Kỳ: thực dân Pháp lập các trường bắn tại Hóc Môn để đàn áp và xử tử cán bộ, chiến sĩ cách mạng. Ngày 28/8/1941: Hà Huy Tập, Nguyễn Văn Cừ, Võ Văn Tần, Phan Đăng Lưu, Nguyễn Thị Minh Khai và nhiều chiến sĩ, đồng bào yêu nước bị xử tử tại các trường bắn ở Hóc Môn; Ngã Ba Giồng là địa điểm gắn liền với sự kiện này. 30/12/2002: Ngã Ba Giồng được xếp hạng di tích lịch sử cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Ngã Ba Giồng\"?",
+          "back": "Hà Huy Tập, Nguyễn Văn Cừ, Võ Văn Tần, Phan Đăng Lưu, Nguyễn Thị Minh Khai là những nhân vật tiêu biểu gắn với Ngã Ba Giồng và sự kiện ngày 28/8/1941. Ngoài ra còn có nhiều cán bộ, chiến sĩ và đồng bào yêu nước tham gia Khởi nghĩa Nam Kỳ bị thực dân Pháp sát hại tại khu vực này.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Ngã Ba Giồng\" là gì?",
+          "back": "Các hình ảnh, tài liệu và hiện vật cách mạng được trưng bày tại Nhà trưng bày; các cụm tượng đài “Bất khuất”, “Chiến sĩ vô danh”; Đền tưởng niệm và không gian tái hiện trường bắn. Khu tưởng niệm hiện có Đền tưởng niệm, Nhà trưng bày, quảng trường với các cụm tượng đài và vườn trầu cau.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Ngã Ba Giồng\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.868326056842957, 106.56114184448106.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Ngã Ba Giồng\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 39/2002/QĐ-BVHTT \nngày 30/12/2002 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Ngã Ba Giồng\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Hà Huy Tập, Nguyễn Văn Cừ, Võ Vă...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Ngã Ba Giồng",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Các hình ảnh, tài liệu và hiện v...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 1460 đường Phan Văn Hớn, Ấp...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Ngã Ba Giồng",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -5967,6 +7107,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà lưu niệm Võ Thị Sáu\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1939: gia đình Võ Thị Sáu thuê và sinh sống tại căn nhà này; 1946–1947: Võ Thị Sáu bắt đầu tham gia hoạt động cách mạng tại quê hương Đất Đỏ; 23/01/1952: Võ Thị Sáu bị xử bắn tại Côn Đảo; 1980: căn nhà được UBND huyện Long Đất tu bổ, xây dựng thành Nhà lưu niệm Võ Thị Sáu; 06/12/1989: di tích được Bộ Văn hóa – Thông tin xếp hạng cấp quốc gia; 26/04/2025: khánh thành dự án cải tạo, nâng cấp và mở rộng Công viên tượng đài, Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà lưu niệm Võ Thị Sáu\"?",
+          "back": "Võ Thị Sáu (1933–1952) – nữ du kích, Anh hùng Lực lượng vũ trang nhân dân; ông Võ Văn Hợi – cha của Võ Thị Sáu; bà Nguyễn Thị Đậu – mẹ của Võ Thị Sáu. Ông Hợi và bà Đậu đã thuê căn nhà này để sinh sống từ năm 1939.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà lưu niệm Võ Thị Sáu\" là gì?",
+          "back": "Các cấu kiện bằng gỗ của ngôi nhà cũ được lưu giữ; bàn thờ cha mẹ Võ Thị Sáu; bàn thờ Võ Thị Sáu; hình ảnh, tư liệu và các hiện vật, quà tặng liên quan đến nữ anh hùng. Nhà lưu niệm được bố trí thành các không gian tiếp khách – trưng bày, phòng gia tiên, nơi thờ Võ Thị Sáu và khu lưu giữ cấu kiện nhà cũ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà lưu niệm Võ Thị Sáu\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.489238260856842, 107.26906343191851.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà lưu niệm Võ Thị Sáu\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 199-VH/QĐ ngày 06/12/1989 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà lưu niệm Võ Thị Sáu\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Võ Thị Sáu (1933–1952) – nữ du k...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà lưu niệm Võ Thị Sáu",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Các cấu kiện bằng gỗ của ngôi nh...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Khu phố Tường Thành, xã Đất Đỏ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà lưu niệm Võ Thị Sáu",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -6335,6 +7551,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1957: Nhà tù Phú Lợi được xây dựng. 1957–1958: số tù nhân tăng nhanh, đến cuối năm 1958 lên gần 6.000 người, trong đó khoảng 1.000 tù nhân nữ. 30/11–1/12/1958: xảy ra vụ đầu độc tù nhân Phú Lợi, được biết đến với tên “Phú Lợi căm thù”; hàng trăm tù nhân bị ngộ độc, nhiều người tử vong. Tù nhân đã tổ chức đấu tranh, phá mái nhà giam và sử dụng loa phát thanh để tố cáo sự việc. Tin tức sau đó gây chấn động dư luận trong và ngoài nước. 1964: Nhà tù Phú Lợi chấm dứt hoạt động.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà tù Phú Lợi (căng Phú Lợi)\"?",
+          "back": "Vũ Duy Hanh – nguyên Bí thư Tỉnh ủy Thủ Dầu Một, tham gia Đảng ủy Trung tâm Phú Lợi; Nguyễn Văn Trung – thành viên Đảng ủy Trung tâm Phú Lợi; cùng các cán bộ, đảng viên và tù nhân chính trị đã tổ chức các chi bộ bí mật, duy trì hoạt động đấu tranh trong nhà tù. Một số quản lý nhà tù được tư liệu địa phương nhắc đến gồm Nguyễn Văn Bông, Trần Vĩnh Đắc, Hồ Văn Tần.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\" là gì?",
+          "back": "Chuồng cọp, xà lim, khu nhà giam, mô hình nhà tù, tranh ảnh và tư liệu về tù nhân chính trị, các kỷ vật thời chiến, hệ thống giam giữ và những vật dụng phục dựng liên quan đến đời sống tù nhân. Khu di tích hiện được bảo tồn, trùng tu và sử dụng để phục vụ tham quan, nghiên cứu, giáo dục lịch sử.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.990875383171833, 106.68172397856634.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 92/VH/QĐ ngày 10/7/1980 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà tù Phú Lợi (căng Phú Lợi)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Vũ Duy Hanh – nguyên Bí thư Tỉnh...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà tù Phú Lợi (căng Phú Lợi)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Chuồng cọp, xà lim, khu nhà giam...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Đường Một Tháng Mười Hai, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà tù Phú Lợi (căng Phú ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -6707,6 +7999,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "19/9/1910: Nguyễn Tất Thành từ Trường Dục Thanh vào Sài Gòn. Tháng 9/1910 – 4/6/1911: Người ở tại cơ sở Liên Thành phân cuộc, nay là nhà số 5 Châu Văn Liêm. 4/6/1911: Người rời nhà số 5 với tên Văn Ba để chuẩn bị xuống cảng Nhà Rồng. 5/6/1911: Nguyễn Tất Thành lên tàu Đô đốc Latouche-Tréville tại Bến Nhà Rồng, bắt đầu hành trình ra nước ngoài tìm đường cứu nước.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\"?",
+          "back": "Nguyễn Tất Thành (Chủ tịch Hồ Chí Minh) là nhân vật trung tâm. Ngoài ra có các nhân vật gắn với Liên Thành thương quán, tổ chức do các sĩ phu yêu nước Bình Thuận thành lập năm 1906 và đã hỗ trợ Nguyễn Tất Thành trong thời gian ở Sài Gòn.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" là gì?",
+          "back": "Các tư liệu, hình ảnh về Nguyễn Tất Thành – Hồ Chí Minh; bản đồ Sài Gòn – Chợ Lớn năm 1911; hình ảnh Sài Gòn giai đoạn 1910–1911; tư liệu về Liên Thành thương quán; hình ảnh tàu Đô đốc Latouche-Tréville; các vật dụng và không gian sinh hoạt gắn với thời gian Người ở tại đây. Di tích hiện có phòng tưởng niệm và phòng trưng bày.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.75116845073847, 106.65892268503289.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Nguyễn Tất Thành (Chủ tịch Hồ Ch...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Các tư liệu, hình ảnh về Nguyễn ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 5 đường Châu Văn Liêm, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nơi đồng chí Nguyễn Tất T...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -7075,6 +8443,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1929: phong trào Hội Việt Nam Cách mạng Thanh niên có sự phân hóa, xuất hiện các tổ chức cộng sản. Cuối tháng 9 – đầu tháng 10/1929: thành lập chi bộ An Nam Cộng sản Đảng và tổ chức hội nghị tại Sài Gòn. Tháng 11/1929: thành lập Ban Lâm thời chỉ đạo An Nam Cộng sản Đảng tại Sài Gòn, do Châu Văn Liêm làm Bí thư. 03/02/1930: đại diện An Nam Cộng sản Đảng tham dự hội nghị do Nguyễn Ái Quốc chủ trì tại Hồng Kông, góp phần vào quá trình hợp nhất các tổ chức cộng sản thành Đảng Cộng sản Việt Nam.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\"?",
+          "back": "Châu Văn Liêm là nhân vật nổi bật nhất, người chủ trì hội nghị tổ chức An Nam Cộng sản Đảng tại Sài Gòn. Các nhân vật liên quan khác gồm Hồ Tùng Mậu, Lê Hồng Sơn, Lê Duy Điếm, Nguyễn Nghĩa, Ung Văn Khiêm, Đỗ Quảng và Huỳnh Quảng.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" là gì?",
+          "back": "Di tích chủ yếu có giá trị về không gian lịch sử và tư liệu. Các tư liệu tiêu biểu liên quan gồm hình ảnh di tích, hình ảnh đồng chí Châu Văn Liêm, tư liệu về An Nam Cộng sản Đảng và Báo Đỏ – cơ quan tuyên truyền của An Nam Cộng sản Đảng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.773462235716813, 106.69957480365504.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Châu Văn Liêm là nhân vật nổi bậ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nơi thành lập An Nam Cộng sản Đảng năm 1929",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Di tích chủ yếu có giá trị về kh...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phòng 1, lầu 2, số 1 đường Ngu...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nơi thành lập An Nam Cộng...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -7447,6 +8891,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "25/3/1975: Bộ Chính trị quyết định thành lập Bộ Chỉ huy Chiến dịch giải phóng Sài Gòn – Gia Định tại căn cứ Tà Thiết. 14/4/1975: chiến dịch được chính thức mang tên Chiến dịch Hồ Chí Minh. 26/4/1975: Sở Chỉ huy tiền phương Căm Xe bắt đầu hoạt động và Chiến dịch Hồ Chí Minh chính thức mở màn lúc 17 giờ. 26–30/4/1975: tại đây diễn ra quá trình theo dõi, chỉ đạo và điều hành chiến dịch cho đến khi Sài Gòn được giải phóng ngày 30/4/1975.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\"?",
+          "back": "Các nhân vật tiêu biểu gắn với Sở Chỉ huy gồm Lê Đức Thọ, Phạm Hùng và Đại tướng Văn Tiến Dũng; cùng các thành viên Bộ Tư lệnh Chiến dịch Hồ Chí Minh và cán bộ Trung ương Cục, Quân ủy Miền. Đặc biệt, Đại tướng Văn Tiến Dũng là người đã xác định lại vị trí căn cứ Căm Xe vào năm 1987, dựa trên các dấu tích còn lại và ký ức của những người từng hoạt động tại đây.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" là gì?",
+          "back": "Bia chiến thắng/bia di tích; nhà tưởng niệm; khu tái hiện phòng hội nghị của Sở Chỉ huy; địa đạo; bếp Hoàng Cầm; các dấu tích hố bom, hầm hào và khu rừng nguyên sinh. Bia cũ được dựng làm mốc sau khi xác định địa điểm; năm 1990 Bảo tàng Quân khu 7 dựng bia mới và bia được trùng tu bằng đá hoa cương năm 2005.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 11.393758719278207, 106.50301280115599.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 1630/QĐ-BVHTTDL ngày \n11/5/2010 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các nhân vật tiêu biểu gắn với S...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Bia chiến thắng/bia di tích; nhà...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Ấp Tân Định, xã Long Hòa, Thàn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Địa điểm Sở chỉ huy tiền ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -7815,6 +9335,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Cù Lao Rùa\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1888: E. Cartailhac ghi nhận Cù Lao Rùa; 1889: E.T. Hamy công bố tư liệu về di tích tại Paris; 1976, 1998–2001: tiến hành nhiều đợt điều tra, thám sát khảo cổ; 2003: khai quật quy mô gần 400 m² với 5 hố đào, phát hiện số lượng lớn hiện vật và 12 mộ táng; 03/3/2009: Cù Lao Rùa được xếp hạng di tích quốc gia theo Quyết định 836/QĐ-BVHTTDL; 15/5/2026: TP.HCM tổ chức trưng bày chuyên đề “Khảo cổ học Cù Lao Rùa – Bức tranh đời sống cư dân cổ ở Bình Dương – Thành phố Hồ Chí Minh”, giới thiệu hơn 100 hình ảnh và 420 hiện vật.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Cù Lao Rùa\"?",
+          "back": "Các nhà khảo cổ và nhà nghiên cứu gắn với quá trình phát hiện, nghiên cứu Cù Lao Rùa gồm E. Cartailhac – người ghi nhận di tích năm 1888; E.T. Hamy – người công bố tư liệu về Cù Lao Rùa năm 1889; TS. Bùi Chí Hoàng – chủ trì/nghiên cứu các kết quả khảo cổ và đánh giá giá trị của di tích. Các nhà khảo cổ thuộc Viện Khoa học Xã hội vùng Nam Bộ cũng tiến hành nhiều đợt điều tra, thám sát tại đây.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Cù Lao Rùa\" là gì?",
+          "back": "Cuộc khai quật năm 2003 phát hiện 1.254 hiện vật nguyên vẹn bằng đá và đất nung, gồm rìu, cuốc, đục, bàn mài, khuôn đúc, vòng tay, bi gốm, dọi se sợi, dao và đồ tùy táng; phục chế được 48 hiện vật gốm như bát bồng, nồi, chậu, đĩa chân cao, tô, âu, hũ; ngoài ra thống kê 85.901 mảnh gốm và phát hiện 12 mộ táng. Đáng chú ý có bộ răng voi và những chiếc cuốc đá được chế tác hoàn chỉnh.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Cù Lao Rùa\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Tân Khánh, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.981609182199021, 106.78390677676012.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Cù Lao Rùa\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Khảo cổ học), theo Quyết định số 836/QĐ-BVHTTDL ngày 03/3/2009 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Cù Lao Rùa\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các nhà khảo cổ và nhà nghiên cứ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Cù Lao Rùa",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Cuộc khai quật năm 2003 phát hiệ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Khảo cổ học)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Tân Khánh, Thành phố Hồ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Cù Lao Rùa",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -8187,6 +9783,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Dốc Chùa\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Tháng 6/1976: Nguyễn Văn Long phát hiện dấu tích tầng văn hóa Dốc Chùa. 16/12/1976–8/1/1977: khai quật lần thứ nhất, thu được 803 hiện vật. 12/4–8/5/1977: khai quật lần thứ hai, phát hiện 20 ngôi mộ và 663 hiện vật, trong đó có Tượng động vật bằng đồng. Tháng 2/1979: khai quật lần thứ ba, tiếp tục phát hiện nhiều hiện vật đá, gốm và đồng. Năm 2009: tiến hành một đợt khai quật tiếp theo. 28/12/2001: Dốc Chùa được xếp hạng di tích khảo cổ cấp quốc gia. 30/12/2013: Tượng động vật Dốc Chùa được công nhận là Bảo vật quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Dốc Chùa\"?",
+          "back": "Nguyễn Văn Long – cán bộ khảo cổ học, người phát hiện dấu tích khảo cổ Dốc Chùa vào tháng 6/1976 trong quá trình khảo sát địa điểm Mỹ Lộc; Đào Linh Côn, Bùi Xuân Long – các cán bộ tham gia đợt khai quật đầu tiên; Nguyễn Duy Tỳ, Phạm Đức Mạnh – tham gia đợt khai quật năm 1977. Đây là các nhà nghiên cứu gắn trực tiếp với quá trình phát hiện và khai quật di tích.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Dốc Chùa\" là gì?",
+          "back": "Tiêu biểu nhất là Tượng động vật Dốc Chùa bằng đồng, được khai quật năm 1977 và được công nhận Bảo vật quốc gia theo Quyết định 2599/QĐ-TTg ngày 30/12/2013. Ngoài ra còn có 76 khuôn đúc đồng, nhiều công cụ và vũ khí bằng đồng, công cụ đá, đồ gốm, đồ tùy táng và các di vật liên quan đến đời sống cư dân cổ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Dốc Chùa\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Tân Uyên, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 11.067343480738144, 106.82521994256845.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Dốc Chùa\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Khảo cổ học), theo Quyết định số 53/QĐ-BVHTT ngày 28/12/2001 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Dốc Chùa\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Nguyễn Văn Long – cán bộ khảo cổ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Dốc Chùa",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Tiêu biểu nhất là Tượng động vật...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Khảo cổ học)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Tân Uyên, Thành phố Hồ ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Dốc Chùa",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -8555,6 +10227,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Giồng Cá Vồ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1993: khảo sát và thám sát, phát hiện 38 mộ chum trong đợt đầu. Năm 1994–1995: tiến hành khai quật khảo cổ, phát hiện nhiều mộ chum, mộ đất, di cốt và hiện vật. Năm 2000: Giồng Cá Vồ được xếp hạng di tích khảo cổ cấp quốc gia. Năm 2018: tiếp tục thám sát khảo cổ. Giai đoạn 2021–2022: khai quật tiếp và công bố nhiều phát hiện quan trọng về mộ táng, di cốt và hiện vật. Năm 2023: công bố kết quả khai quật 2021–2022; đồng thời dự án tu bổ, tôn tạo di tích tiếp tục được triển khai.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Giồng Cá Vồ\"?",
+          "back": "Vì đây là di tích khảo cổ tiền – sơ sử nên không có nhân vật lịch sử cụ thể được xác định như các di tích cách mạng. Những người có vai trò quan trọng trong việc phát hiện, nghiên cứu di tích gồm các nhà khảo cổ thuộc Bảo tàng Lịch sử Việt Nam TP.HCM, Bảo tàng Lịch sử Việt Nam (nay là Bảo tàng Lịch sử Quốc gia) và Viện Khảo cổ học.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Giồng Cá Vồ\" là gì?",
+          "back": "Tiêu biểu nhất là mộ chum và di cốt người cổ, cùng các khuyên tai hai đầu thú, khuyên tai ba mấu, vòng tay đá và thủy tinh, hạt chuỗi, răng nanh thú, công cụ xương, giáo, lao, lưỡi câu, rìu bằng kim loại và đồ gốm. Đặc biệt, bộ sưu tập hơn 30 khuyên tai hai đầu thú tại Giồng Cá Vồ được Bảo tàng Lịch sử TP.HCM đánh giá là bộ sưu tập lớn nhất của loại hiện vật độc đáo này ở Đông Nam Á.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Giồng Cá Vồ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Xã Cần Giờ, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.41214603381856, 106.92439756540267.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Giồng Cá Vồ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Khảo cổ học), theo Quyết định số 2000/QĐ-BVHTT ngày 13/4/2000 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Giồng Cá Vồ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Vì đây là di tích khảo cổ tiền –...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Giồng Cá Vồ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Tiêu biểu nhất là mộ chum và di ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Khảo cổ học)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Xã Cần Giờ, Thành phố Hồ Chí M...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Giồng Cá Vồ",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -8927,6 +10675,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Lò gốm cổ Hưng Lợi\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Khoảng giữa thế kỷ XVIII: hình thành khu lò gốm Hưng Lợi. Năm 1772: kênh Ruột Ngựa được đào, góp phần kết nối khu vực Lò Gốm với mạng lưới giao thông đường thủy Sài Gòn. Năm 1815: bản đồ của Trần Văn Học ghi địa danh “xóm Lò Gốm”. Cuối năm 1997 – đầu năm 1998: tiến hành khai quật, phát hiện 3 lò gốm và nhiều di vật. 25/4/1998: di tích được xếp hạng di tích khảo cổ học cấp quốc gia theo Quyết định 722/QĐ-BVHTT. Khoảng năm 1940: các lò gốm cuối cùng của xóm Lò Gốm ngừng hoạt động do những biến đổi kinh tế – xã hội và quá trình đô thị hóa.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Lò gốm cổ Hưng Lợi\"?",
+          "back": "Không có nhân vật lịch sử cụ thể được xác định là nhân vật chính của di tích. Di tích gắn với cộng đồng thợ gốm người Hoa và cư dân làng Hòa Lục – xóm Lò Gốm. Tư liệu khảo cổ cho thấy các nhóm thợ người Hẹ, Tiều và Quảng Đông từng chuyên sản xuất những dòng sản phẩm khác nhau. Các nhà nghiên cứu Nguyễn Thị Hậu, Đặng Văn Thắng có vai trò quan trọng trong khảo sát, khai quật và nghiên cứu di tích.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Lò gốm cổ Hưng Lợi\" là gì?",
+          "back": "Mảnh vỡ lu, khạp, siêu, ơ, chậu, hũ men nâu, men vàng, chén, đĩa men xanh trắng, tô, bát, cốc, ly, muỗng, đèn, lư hương, ấm trà, bình rượu và các phế phẩm sản xuất gốm. Đặc biệt, cuộc khai quật phát hiện 3 lò gốm nối tiếp và chồng lên nhau, thuộc kiểu lò ống/lò Tàu.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Lò gốm cổ Hưng Lợi\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Phú Định, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.725161836697179, 106.62619057624681.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Lò gốm cổ Hưng Lợi\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Khảo cổ học), theo Quyết định số 722/QĐ-BVHTT ngày 25/4/1998 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Lò gốm cổ Hưng Lợi\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Không có nhân vật lịch sử cụ thể...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Lò gốm cổ Hưng Lợi",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Mảnh vỡ lu, khạp, siêu, ơ, chậu,...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Khảo cổ học)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Phú Định, Thành phố Hồ ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Lò gốm cổ Hưng Lợi",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -9295,6 +11119,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Ăngten Parabol (đài viba) – Núi Lớn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đầu năm 1967: Mỹ tăng cường phương tiện chiến tranh và lắp đặt hai giàn ăng-ten Parabol – Viba trên Núi Lớn. Năm 1968: hệ thống được nâng cấp bằng thiết bị MRC-85, công suất 10 kW. Năm 1970: hệ thống ăng-ten Parabol – Viba ngừng hoạt động do Mỹ chuyển sang sử dụng hệ thống thông tin REL-2600 nhỏ gọn hơn. Cuối năm 2006: bão lớn làm một giàn ăng-ten đổ sập hoàn toàn, giàn còn lại hư hỏng. Năm 2008: tỉnh Bà Rịa – Vũng Tàu giao đơn vị liên quan lập phương án trùng tu, tôn tạo và bảo vệ di tích.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Ăngten Parabol (đài viba) – Núi Lớn\"?",
+          "back": "Di tích chủ yếu gắn với quân đội Mỹ và lực lượng kỹ thuật – thông tin quân sự Mỹ hoạt động tại Vũng Tàu, hơn là một cá nhân cụ thể.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Ăngten Parabol (đài viba) – Núi Lớn\" là gì?",
+          "back": "Hai giàn ăng-ten Parabol – Viba từng được lắp đặt trên Núi Lớn; hệ thống thiết bị thông tin Viba và các bộ phận kết cấu của giàn ăng-ten. Hai giàn được cấu tạo từ các thanh sắt mạ hợp kim, tạo thành giàn lớn cao gần 40 m, rộng hơn 36 m. Một giàn đã bị đổ hoàn toàn trong bão cuối năm 2006, giàn còn lại bị hư hỏng, xuống cấp.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Ăngten Parabol (đài viba) – Núi Lớn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.360621170790981, 107.06865658591083.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Ăngten Parabol (đài viba) – Núi Lớn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 937/QĐ/BT ngày 23/7/1993 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Ăngten Parabol (đài viba) – Núi Lớn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Di tích chủ yếu gắn với quân đội...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Ăngten Parabol (đài viba) – Núi Lớn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hai giàn ăng-ten Parabol – Viba ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Núi Lớn, phường Vũng Tàu, Thàn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Ăngten Parabol (đài viba)...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -9667,6 +11567,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Bót Dây Thép\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Cuối năm 1945: quân Pháp tái chiếm và biến Nhà dây thép thành đồn lính, nơi giam giữ người dân và cán bộ cách mạng. 1946–1947: Bót Dây Thép trở thành nơi giam cầm, tra tấn và sát hại nhiều người; lực lượng du kích Tăng Nhơn Phú phối hợp với bộ đội địa phương Thủ Đức tổ chức đấu tranh, tiến công địch. Năm 1947: Anh hùng LLVT Nguyễn Minh Quang trực tiếp treo cờ Tổ quốc trên trụ Bót Dây Thép. 18/01/1993: Bót Dây Thép được công nhận là di tích lịch sử cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Bót Dây Thép\"?",
+          "back": "Nguyễn Minh Quang (Nguyễn Văn Gấm, bí danh Minh Hà) – người hoạt động cách mạng tại Tăng Nhơn Phú, năm 1947 trực tiếp treo cờ Tổ quốc trên trụ Bót Dây Thép; Bimoslet (Ách Râu) – sĩ quan Pháp được đưa về Bót Dây Thép chỉ huy lực lượng Lê dương từ tháng 4/1946; Pirolet (Pirolét) – chỉ huy lực lượng lính Pháp chiếm đóng Bót Dây Thép sau năm 1945. Ngoài ra còn có nhiều cán bộ, chiến sĩ cách mạng và nhân dân Tăng Nhơn Phú bị bắt, giam giữ tại đây.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Bót Dây Thép\" là gì?",
+          "back": "Căn nhà Bót Dây Thép, hầm giam và các dấu tích kiến trúc còn lại là những yếu tố vật chất quan trọng nhất của di tích. Tư liệu giới thiệu di tích còn đề cập các vật dụng gắn với việc tra tấn tù nhân như dây kẽm gai, mũ lính, dùi sắt, cây tầm vông",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Bót Dây Thép\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.84432300518277, 106.79344348946373.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Bót Dây Thép\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 57-VH/QĐ ngày 18/01/1993 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Bót Dây Thép\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Nguyễn Minh Quang (Nguyễn Văn Gấ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Bót Dây Thép",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Căn nhà Bót Dây Thép, hầm giam v...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Đường Lê Văn Việt, phường Tăng...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Bót Dây Thép",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -10035,6 +12011,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Sau Hiệp định Genève 1954: căn nhà được Xứ ủy Nam Bộ sử dụng làm cơ sở Ban Tuyên huấn; 1954–1957: thu tin từ Đài Phát thanh Hà Nội, biên tập và in ấn tài liệu phục vụ hoạt động cách mạng; 1957–1961: cơ sở tiếp tục được sử dụng làm nơi liên lạc, hội họp và chỉ đạo phong trào đấu tranh ở Mỹ Tho; 1964: mở rộng cơ sở cho Ban Trí vận Khu ủy hoạt động; Xuân Mậu Thân 1968: cất giấu vũ khí, tập kết lực lượng và chuẩn bị hoạt động đấu tranh tại khu vực Bàn Cờ; 1969: lưu trữ báo chí, tài liệu phục vụ việc cung cấp thông tin cho phái đoàn Việt Nam tại Hội nghị Paris; 30/4/1975: đoàn cán bộ tiếp quản thành phố của Thành ủy do Phạm Khải (Ba Ka) dẫn đầu xuất phát từ đây để đi tiếp quản Bưu điện và Tòa Đô chính Sài Gòn.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\"?",
+          "back": "Đỗ Văn Ba (Đỗ Văn Hạng) – cán bộ Xứ ủy, phụ trách cơ sở và trực tiếp thu tin, biên tập tài liệu; Trần Bạch Đằng, Phạm Dân, Tân Đức – các cán bộ lãnh đạo từng tham gia các cuộc họp tại cơ sở; Lê Thị Riêng – Anh hùng Lực lượng vũ trang nhân dân, Trưởng Ban Phụ vận Khu ủy, từng sống và làm việc tại cơ sở; Nguyễn Thị Ngoan, Nguyễn Thị Chơn, Trần Thị Lan, Ngô Bá Thành, Trần Thị Ngọc Sương và nhiều cán bộ cách mạng khác.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" là gì?",
+          "back": "Chiếc máy thu thanh/ra-đi-ô mà đồng chí Lê Thị Riêng sử dụng khi làm việc tại cơ sở là hiện vật tiêu biểu được giới thiệu trong tư liệu của TP.HCM. Ngoài ra còn có ngôi nhà lịch sử, không gian làm việc, các tư liệu báo chí và tài liệu cách mạng gắn với hoạt động tuyên huấn, phụ vận và trí vận.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.770082759284733, 106.68102171071199.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Đỗ Văn Ba (Đỗ Văn Hạng) – cán bộ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Chiếc máy thu thanh/ra-đi-ô mà đ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 51/10/14 đường Cao Thắng, p...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Cơ sở Ban Tuyên huấn Xứ ủ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -10407,6 +12459,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Giai đoạn 1966–1967\nÔng Trần Văn Lai bắt đầu sử dụng căn nhà tại khu vực đường Phan Đình Phùng, nay là Nguyễn Đình Chiểu, làm cơ sở bí mật.\nCăn hầm được xây dựng để phục vụ việc cất giấu vũ khí và vật liệu quân sự chuẩn bị cho các hoạt động chiến đấu trong nội thành.\nCuối năm 1967 – đầu năm 1968\nMột khối lượng lớn vũ khí được tập kết tại căn hầm để chuẩn bị cho cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân.\nCơ sở 287/70 Nguyễn Đình Chiểu trở thành một trong những địa điểm hậu cần quan trọng phục vụ hoạt động của Biệt động Thành.\nRạng sáng ngày 31/01/1968\nĐây là sự kiện quan trọng nhất gắn với di tích.\nTrong cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân, Đội 5 Biệt động gồm 15 cán bộ, chiến sĩ, do Trương Hoàng Thanh chỉ huy, nhận vũ khí từ cơ sở 287/70 Nguyễn Đình Chiểu và tiến hành tấn công Dinh Độc Lập.\nTrận đánh diễn ra trong nội đô Sài Gòn và là một trong những trận đánh nổi tiếng của lực lượng Biệt động Thành trong Tết Mậu Thân 1968.\nĐội 5 chịu tổn thất nặng nề. Nhiều chiến sĩ hy sinh, bị thương hoặc bị bắt.\nSau trận đánh\nCơ sở bí mật tại 287/70 Nguyễn Đình Chiểu bị phát hiện. Ông Trần Văn Lai bị bắt, căn nhà và tài sản bị đối phương kiểm soát.\nNgày 20/12/1969\nĐội 5 Biệt động được tuyên dương Anh hùng Lực lượng vũ trang nhân dân và được tặng Huân chương Quân công hạng Ba vì thành tích chiến đấu.\nNgày 16/11/1988\nDi tích được Bộ Văn hóa – Thông tin xếp hạng Di tích lịch sử cấp quốc gia theo Quyết định số 1288-VH/QĐ.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\"?",
+          "back": "Trần Văn Lai – Năm Lai – Mai Hồng Quế. Đây là nhân vật quan trọng nhất gắn trực tiếp với di tích. Ông Trần Văn Lai là cán bộ Biệt động Thành, được giao nhiệm vụ xây dựng và tổ chức các cơ sở bí mật trong nội thành Sài Gòn. Ông đã mua và sử dụng căn nhà tại 287/70 Nguyễn Đình Chiểu làm cơ sở bí mật, đồng thời tổ chức xây dựng căn hầm để cất giấu vũ khí phục vụ các hoạt động chiến đấu.\nNhờ sự tổ chức và che giấu khéo léo của ông cùng đồng đội, một khối lượng lớn vũ khí có thể được bảo quản ngay trong lòng đô thị mà không bị phát hiện trong thời gian dài.\nÔng Trần Văn Lai sau này được Nhà nước phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.\nĐặng Thị Thiệp. Bà Đặng Thị Thiệp là vợ ông Trần Văn Lai và cũng tham gia hoạt động cách mạng, hỗ trợ duy trì cơ sở bí mật.\nTrong điều kiện chiến tranh và sự kiểm soát gắt gao của đối phương, việc duy trì một căn nhà bình thường bên ngoài trong khi bên dưới chứa vũ khí đòi hỏi sự kín đáo và tinh thần hy sinh rất lớn của cả gia đình.\nTrương Hoàng Thanh. Ông Trương Hoàng Thanh là người chỉ huy Đội 5 Biệt động trong trận đánh Dinh Độc Lập năm 1968.\nĐội 5 đã nhận vũ khí được cất giấu tại cơ sở 287/70 Nguyễn Đình Chiểu trước khi tiến hành nhiệm vụ.\nNguyễn Văn Trí. Ông Nguyễn Văn Trí là cán bộ có liên quan đến lực lượng Biệt động và quá trình tổ chức, chỉ đạo hoạt động của các cơ sở bí mật trong nội thành.\n15 cán bộ, chiến sĩ Đội 5 Biệt động. Đây là lực lượng trực tiếp sử dụng số vũ khí được lấy từ căn hầm để tấn công Dinh Độc Lập trong Tết Mậu Thân năm 1968.\nĐội 5 gồm 15 cán bộ, chiến sĩ. Sau trận đánh, lực lượng chịu tổn thất rất lớn: 8 chiến sĩ hy sinh, 4 người bị thương và 7 người bị bắt theo tư liệu của Trung tâm Bảo tồn và Phát huy giá trị di tích lịch sử – văn hóa TP.HCM.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" là gì?",
+          "back": "Căn hầm bí mật là hiện vật và thành phần quan trọng nhất của di tích. Đây là nơi được xây dựng dưới căn nhà để cất giấu vũ khí và vật liệu quân sự. Các hiện vật tiêu biểu liên quan đến di tích gồm: Súng AK, Súng B40, Súng Carbine, Súng ngắn, Lựu đạn, Đạn các loại, Thuốc nổ TNT, Thuốc nổ C4, Các dụng cụ, trang thiết bị phục vụ chiến đấu.\nNgoài ra còn có các hình ảnh, tài liệu, kỷ vật và tư liệu về lực lượng Biệt động Thành, giúp tái hiện quá trình xây dựng cơ sở, vận chuyển vũ khí và chuẩn bị cho trận đánh Dinh Độc Lập.\nMột số tư liệu ghi nhận căn hầm từng chứa khoảng hơn 2 tấn vũ khí và vật liệu quân sự.\nĐặc biệt, hệ thống hầm được thiết kế với những phương án bí mật nhằm bảo đảm an toàn cho vũ khí và người hoạt động. Đây chính là một trong những điểm có giá trị lớn nhất khi nghiên cứu về kỹ thuật xây dựng cơ sở bí mật của Biệt động Thành.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.772156049190235, 106.68593062724516.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Trần Văn Lai – Năm Lai – Mai Hồn...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Căn hầm bí mật là hiện vật và th...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 287/70 đường Nguyễn Đình Ch...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Cơ sở giấu vũ khí của Biệ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -10775,6 +12903,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn gắn với hoạt động tổ chức in ấn, sao chép và phát hành các tài liệu phục vụ công tác tuyên truyền, cổ động và vận động quần chúng trong thời kỳ kháng chiến. Hoạt động in ấn phải được tiến hành trong điều kiện bí mật, đòi hỏi sự phối hợp giữa người phụ trách nội dung, người trực tiếp in ấn, người bảo quản tài liệu và mạng lưới vận chuyển, phát hành. Sự tồn tại của cơ sở cho thấy công tác tuyên truyền là một bộ phận quan trọng của hoạt động cách mạng, góp phần truyền đạt chủ trương, động viên tinh thần và duy trì sự liên kết giữa các cơ sở.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\"?",
+          "back": "Các thành viên Hội Ủng hộ Vệ quốc đoàn, cán bộ phụ trách in ấn, người biên tập tài liệu, người vận chuyển và phân phát tài liệu, cùng những cơ sở quần chúng đã cung cấp địa điểm hoặc hỗ trợ hoạt động. Khi lập hồ sơ chính thức, cần ưu tiên những người được ghi trong hồ sơ di tích thay vì suy đoán tên cá nhân.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" là gì?",
+          "back": "Tài liệu tuyên truyền, báo chí, truyền đơn, giấy in, khuôn in, máy in, dụng cụ sao chép, vật dụng đóng gói và các tài liệu liên quan đến Hội Ủng hộ Vệ quốc đoàn. Những hiện vật này nếu còn nguyên trạng có giá trị lớn vì có thể giúp phục dựng quy trình in ấn và phổ biến tài liệu trong điều kiện chiến tranh.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.765932992834673, 106.67278044315532.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các thành viên Hội Ủng hộ Vệ quố...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Tài liệu tuyên truyền, báo chí, ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 122/351 đường Ngô Gia Tự, p...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Cơ sở in ấn của Hội Ủng h...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -11147,6 +13351,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Di tích 86 Phan Chu Trinh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Di tích 86 Phan Chu Trinh gắn với các hoạt động cách mạng diễn ra tại khu vực đô thị Vũng Tàu, trong đó ngôi nhà được sử dụng như một cơ sở dân sự có liên quan đến hoạt động cách mạng. Các hoạt động tại đây phản ánh phương thức xây dựng cơ sở bí mật trong lòng đô thị, dựa vào sự hỗ trợ của người dân và các gia đình cơ sở. Những hoạt động liên lạc, che giấu, hỗ trợ cán bộ và duy trì quan hệ giữa các cơ sở là những yếu tố làm nên giá trị lịch sử của địa điểm. Trong quá trình bảo tồn, những ký ức và tư liệu liên quan đến các hoạt động này có ý nghĩa quan trọng trong việc phục dựng lịch sử cách mạng tại Vũng Tàu.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Di tích 86 Phan Chu Trinh\"?",
+          "back": "Các cán bộ cách mạng, cơ sở quần chúng, gia đình địa phương và người dân Vũng Tàu từng liên quan đến hoạt động tại Nhà số 86 Phan Chu Trinh. Danh tính cụ thể cần được xác định từ hồ sơ khoa học và tài liệu lưu trữ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Di tích 86 Phan Chu Trinh\" là gì?",
+          "back": "Ngôi nhà số 86 Phan Chu Trinh và các cấu kiện gốc như nền, tường, cửa, mái, cầu thang, cột hoặc các chi tiết kiến trúc còn được bảo tồn. Hình ảnh cũ, bản đồ, hồ sơ kiến trúc và tài liệu về những người từng sử dụng ngôi nhà cũng là nguồn tư liệu quan trọng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Di tích 86 Phan Chu Trinh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.339254350562614, 107.07929444545312.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Di tích 86 Phan Chu Trinh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Di tích 86 Phan Chu Trinh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các cán bộ cách mạng, cơ sở quần...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Di tích 86 Phan Chu Trinh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Ngôi nhà số 86 Phan Chu Trinh và...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 05 đường Phan Chu Trinh, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Di tích 86 Phan Chu Trinh",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -11515,6 +13795,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Dinh Quận Hóc Môn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Dinh Quận Hóc Môn gắn với quá trình hoạt động của bộ máy hành chính tại Hóc Môn qua các thời kỳ lịch sử. Công trình là nơi diễn ra các hoạt động quản lý hành chính, giải quyết công việc địa phương và phản ánh những biến đổi về tổ chức chính quyền trong từng giai đoạn. Trong quá trình lịch sử, khu vực Hóc Môn cũng trải qua nhiều biến động về chính trị và xã hội, vì vậy Dinh Quận Hóc Môn có thể được xem là một địa điểm giúp kết nối lịch sử hành chính với lịch sử địa phương. Theo danh mục trong file, Dinh Quận Hóc Môn được xác định là di tích lịch sử, số 1 đường Lý Nam Đế, xã Hóc Môn, được xếp hạng theo Quyết định số 2015-QĐ/BT ngày 16/11/1993.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Dinh Quận Hóc Môn\"?",
+          "back": "Các cán bộ, viên chức hành chính và những nhân vật có hoạt động gắn với Hóc Môn qua từng giai đoạn. Để bảo đảm độ chính xác, tên nhân vật cần được đối chiếu hồ sơ di tích.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Dinh Quận Hóc Môn\" là gì?",
+          "back": "Dinh Quận Hóc Môn, nền móng, cấu kiện kiến trúc, cửa, mái, các tài liệu hành chính, bản đồ và hình ảnh lịch sử. Nếu còn vật dụng hành chính hoặc hồ sơ gốc, cần lập danh mục riêng và xác định nguồn gốc.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Dinh Quận Hóc Môn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.889130485738628, 106.59508153607723.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Dinh Quận Hóc Môn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 2015-QĐ/BT ngày 16/11/1993 của Bộ trưởng Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Dinh Quận Hóc Môn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các cán bộ, viên chức hành chính...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Dinh Quận Hóc Môn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Dinh Quận Hóc Môn, nền móng, cấu...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 1 đường Lý Nam Đế, xã Hóc M...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Dinh Quận Hóc Môn",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -11887,6 +14243,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Địa đạo Long Phước\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Địa đạo Long Phước gắn với quá trình nhân dân địa phương xây dựng, mở rộng và sử dụng hệ thống địa đạo trong các thời kỳ kháng chiến. Địa đạo được sử dụng làm nơi trú ẩn, hội họp, bảo vệ cán bộ, cất giấu tài liệu, tổ chức liên lạc và phục vụ chiến đấu. Trong điều kiện chiến tranh ác liệt, hệ thống địa đạo phải thường xuyên được củng cố, sửa chữa và mở rộng để thích ứng với tình hình. Sự kiện xây dựng và sử dụng địa đạo thể hiện rõ sự tham gia của nhân dân vào hoạt động chiến tranh nhân dân, từ đào hầm, vận chuyển vật liệu, cung cấp lương thực đến bảo vệ bí mật của căn cứ. File xác định Địa đạo Long Phước là di tích lịch sử, tại phường Tam Long, được xếp hạng theo Quyết định số 34/VH-QĐ ngày 09/01/1990 của Bộ Văn hóa – Thông tin.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Địa đạo Long Phước\"?",
+          "back": "Các cán bộ, chiến sĩ, du kích Long Phước và nhân dân địa phương, đặc biệt những người trực tiếp tham gia đào địa đạo, bảo vệ cán bộ, vận chuyển lương thực, đưa tin và chiến đấu.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Địa đạo Long Phước\" là gì?",
+          "back": "Hệ thống đường hầm, cửa hầm, hầm chiến đấu, hầm trú ẩn, lối thông, công sự và dấu tích sinh hoạt dưới lòng đất. Những vật dụng như đèn, dụng cụ đào, đồ dùng sinh hoạt, tài liệu hoặc trang bị quân sự nếu có nguồn gốc xác thực sẽ có giá trị đặc biệt.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Địa đạo Long Phước\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Tam Long, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.534984337591599, 107.2343453676219.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Địa đạo Long Phước\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 34/VH-QĐ ngày 09/01/1990 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Địa đạo Long Phước\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các cán bộ, chiến sĩ, du kích Lo...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Địa đạo Long Phước",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hệ thống đường hầm, cửa hầm, hầm...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Tam Long, Thành phố Hồ ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Địa đạo Long Phước",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -12255,6 +14687,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Ngày 06/6/1969: diễn ra trận chiến tại Bình Ba, sự kiện được ghi trực tiếp trong tên của di tích và là mốc lịch sử trung tâm gắn với địa điểm. Trận chiến phản ánh tính chất ác liệt của chiến tranh trong giai đoạn chống Mỹ, khi lực lượng tham chiến phải đối mặt với những điều kiện chiến đấu khắc nghiệt. Sự kiện cũng gắn với những mất mát, thương vong và sự hy sinh của cán bộ, chiến sĩ. Sau chiến tranh, địa điểm trở thành nơi lưu giữ ký ức về trận đánh, có ý nghĩa tưởng niệm và giáo dục truyền thống. Việc nghiên cứu sự kiện cần kết hợp tài liệu quân sự, hồi ký nhân chứng, danh sách liệt sĩ và tư liệu địa phương để xác định chính xác diễn biến trận đánh.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\"?",
+          "back": "Các cán bộ, chiến sĩ tham gia trận chiến Bình Ba ngày 06/6/1969, lực lượng vũ trang địa phương và nhân dân Bình Ba. Danh sách những người hy sinh cần sử dụng nguồn tưởng niệm hoặc hồ sơ chính thức.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" là gì?",
+          "back": "Bia tưởng niệm, bảng giới thiệu, bản đồ trận đánh, ảnh tư liệu, tài liệu và các dấu tích vật chất còn lại tại khu vực Bình Ba. Nếu có vũ khí, quân trang hoặc vật dụng chiến đấu được lưu giữ cần ghi rõ nguồn gốc và tình trạng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Xã Ngãi Giao, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.615782349945976, 107.23380016501724.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 4248/QĐ-BVHTTDL ngày 19/12/2023 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các cán bộ, chiến sĩ tham gia tr...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Bia tưởng niệm, bảng giới thiệu,...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Xã Ngãi Giao, Thành phố Hồ Chí...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Địa điểm trận chiến ngày ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -12627,6 +15135,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Bình Đông\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đình Bình Đông gắn với các hoạt động tín ngưỡng và sinh hoạt cộng đồng được duy trì qua nhiều thế hệ. Những sự kiện tiêu biểu tại đình bao gồm các kỳ lễ, lễ Kỳ Yên, nghi thức thờ Thành hoàng, tưởng niệm tiền hiền – hậu hiền và các hoạt động cộng đồng của cư dân địa phương. Đây là những dịp người dân tập trung tại đình để thực hiện nghi lễ, tưởng nhớ những người có công với cộng đồng và cầu mong cuộc sống bình an, thuận lợi. Bên cạnh ý nghĩa tôn giáo, các hoạt động này còn góp phần duy trì quan hệ cộng đồng, truyền lại phong tục, nghi lễ và ký ức địa phương từ thế hệ này sang thế hệ khác.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Bình Đông\"?",
+          "back": "Các vị Thành hoàng, tiền hiền, hậu hiền và người có công khai phá vùng đất Bình Đông; những nhân vật này cần được xác định qua sắc phong, bài vị, gia phả và hồ sơ đình.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Bình Đông\" là gì?",
+          "back": "Sắc phong, bài vị, hoành phi, câu đối, ngai thờ, đồ thờ, cấu kiện gỗ, mảng chạm khắc và các bộ phận kiến trúc truyền thống của Đình Bình Đông.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Bình Đông\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.727831895787673, 106.64140501401909.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Bình Đông\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 2890-VH/QĐ ngày 27/9/1997 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Bình Đông\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các vị Thành hoàng, tiền hiền, h...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Bình Đông",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc phong, bài vị, hoành phi, câ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Cù lao Bà Tàng, phường Bình Đô...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Bình Đông",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -12995,6 +15579,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Phong Phú\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đình Phong Phú gắn với quá trình hình thành và duy trì đời sống tín ngưỡng của cộng đồng cư dân địa phương. Các sự kiện tiêu biểu gồm lễ Kỳ Yên, các nghi thức thờ Thành hoàng, tưởng niệm tiền nhân và những hoạt động sinh hoạt cộng đồng diễn ra tại đình. Trong những dịp lễ, cộng đồng cùng tham gia chuẩn bị lễ vật, thực hiện nghi thức và tổ chức các hoạt động truyền thống. Đây là quá trình giúp các giá trị văn hóa phi vật thể được duy trì song song với việc bảo tồn kiến trúc đình. Những nghi lễ này cũng tạo điều kiện để thế hệ trẻ tiếp xúc với phong tục truyền thống và hiểu hơn về lịch sử cộng đồng nơi mình sinh sống.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Phong Phú\"?",
+          "back": "Các vị Thành hoàng, tiền hiền, hậu hiền và những người có công khai phá, lập làng Phong Phú; cần tiếp tục kiểm chứng tên và vai trò của từng nhân vật.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Phong Phú\" là gì?",
+          "back": "Sắc phong, bài vị, hoành phi, câu đối, đồ thờ, cấu kiện gỗ, mảng chạm khắc và các chi tiết kiến trúc có giá trị nghệ thuật của Đình Phong Phú.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Phong Phú\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.836977371206373, 106.78149115859911.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Phong Phú\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1766/QĐ-UBND ngày 27/4/2009 của Ủy ban nhân dân Thành phố theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Phong Phú\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các vị Thành hoàng, tiền hiền, h...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Phong Phú",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc phong, bài vị, hoành phi, câ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Đường Đình Phong Phú, khu phố ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Phong Phú",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -13367,6 +16027,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đồn ngã tư Giếng Nước\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đồn ngã tư Giếng Nước gắn với quá trình xây dựng, sử dụng và hoạt động của một công trình quân sự tại khu vực Vũng Tàu. Do nằm tại khu vực có ý nghĩa về giao thông và kiểm soát địa bàn, công trình từng giữ vai trò quan sát, kiểm soát và phục vụ hoạt động phòng thủ. Những hoạt động quân sự diễn ra tại đồn phản ánh sự thay đổi của hệ thống phòng thủ Vũng Tàu qua các thời kỳ. Di tích còn có giá trị trong việc nghiên cứu sự biến đổi của không gian quân sự khi đô thị Vũng Tàu ngày càng phát triển và mở rộng.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đồn ngã tư Giếng Nước\"?",
+          "back": "Các sĩ quan, binh lính từng đóng tại Đồn nhà máy nước cùng các cán bộ, chiến sĩ và nhân dân có hoạt động liên quan đến khu vực.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đồn ngã tư Giếng Nước\" là gì?",
+          "back": "Dấu tích nền móng, công sự, cấu kiện đồn, bản đồ, ảnh tư liệu và các vật dụng quân sự nếu còn tồn tại.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đồn ngã tư Giếng Nước\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.36917181081688, 107.0845814321904.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đồn ngã tư Giếng Nước\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đồn ngã tư Giếng Nước\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các sĩ quan, binh lính từng đóng...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đồn ngã tư Giếng Nước",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Dấu tích nền móng, công sự, cấu ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 14 đường 51, phường Tam Thắ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đồn ngã tư Giếng Nước",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -13735,6 +16471,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Địa đạo Hắc Dịch\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Hắc Dịch gắn với quá trình xây dựng, sử dụng và bảo vệ căn cứ, địa đạo và các cơ sở cách mạng trong thời kỳ kháng chiến. Nhân dân địa phương tham gia đào hầm, xây dựng công sự, cung cấp lương thực, vận chuyển vật tư và hỗ trợ cán bộ. Các hoạt động trú ẩn, hội họp, liên lạc, cất giấu tài liệu và chiến đấu diễn ra trong điều kiện luôn có nguy cơ bị phát hiện. Chính quá trình duy trì căn cứ trong thời gian dài đã tạo nên giá trị lịch sử đặc biệt của Hắc Dịch, đồng thời thể hiện sự gắn bó giữa lực lượng cách mạng với nhân dân địa phương.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Địa đạo Hắc Dịch\"?",
+          "back": "Cán bộ, chiến sĩ cách mạng, du kích và nhân dân Hắc Dịch, đặc biệt những người trực tiếp xây dựng, bảo vệ và sử dụng hệ thống địa đạo.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Địa đạo Hắc Dịch\" là gì?",
+          "back": "Đường hầm, cửa hầm, công sự, hầm chiến đấu, nơi trú ẩn, dấu tích căn cứ và các tài liệu, vật dụng sinh hoạt hoặc quân sự được xác định có nguồn gốc từ thời kỳ hoạt động.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Địa đạo Hắc Dịch\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Tân Thành, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.660656731295813, 107.15437217202476.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Địa đạo Hắc Dịch\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Địa đạo Hắc Dịch\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Cán bộ, chiến sĩ cách mạng, du k...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Địa đạo Hắc Dịch",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Đường hầm, cửa hầm, công sự, hầm...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Tân Thành, Thành phố Hồ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Địa đạo Hắc Dịch",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -14107,6 +16919,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước gắn với hoạt động in ấn, sao chép, bảo quản và phát hành tài liệu tuyên truyền. Đây là loại hình hoạt động đòi hỏi mức độ bí mật rất cao vì tài liệu sau khi in phải được đưa ra ngoài mà không để lộ địa điểm. Những người tham gia phải tổ chức thành nhiều khâu từ chuẩn bị nội dung, in, phơi, đóng gói, cất giấu đến vận chuyển và phát hành. Hoạt động của hầm phản ánh vai trò của công tác tuyên huấn trong phong trào đấu tranh và sự tham gia của các cơ sở trong cộng đồng người Hoa. File xác định đây là di tích lịch sử tại số 341/10 đường Gia Phú, phường Bình Tiên, được xếp hạng theo Quyết định số 2009/1998/QĐ-BVHTT ngày 26/9/1998.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\"?",
+          "back": "Cán bộ Ban Tuyên huấn Hoa vận, các cơ sở cách mạng và những người trực tiếp tham gia in ấn, cất giấu, vận chuyển và phân phát tài liệu.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" là gì?",
+          "back": "Hầm bí mật, máy in, khuôn chữ, giấy in, tài liệu tuyên truyền, dụng cụ sao chép, hộp đựng tài liệu và các vật dụng dùng để che giấu, vận chuyển tài liệu.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.744829344447906, 106.64910630231155.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 2009/1998/QĐ-BVHTT ngày 26/9/1998 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Cán bộ Ban Tuyên huấn Hoa vận, c...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hầm bí mật, máy in, khuôn chữ, g...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 341/10 đường Gia Phú, phườn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hầm bí mật in tài liệu Ba...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -14475,6 +17363,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Mộ Phan Châu Trinh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1926: Phan Châu Trinh qua đời, kết thúc cuộc đời hoạt động của một trong những nhà yêu nước và tư tưởng cải cách tiêu biểu đầu thế kỷ XX. Sau khi ông mất, mộ phần trở thành nơi tưởng niệm và được các thế hệ sau gìn giữ. Các hoạt động tưởng niệm, nghiên cứu và giới thiệu về Phan Châu Trinh tại di tích góp phần duy trì ký ức về phong trào yêu nước, tư tưởng canh tân, chủ trương nâng cao dân trí, dân khí và dân quyền. Di tích vì vậy không chỉ gắn với một sự kiện về cuộc đời nhân vật mà còn với quá trình xã hội tiếp nhận, tưởng niệm và phát huy giá trị tư tưởng của ông.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Mộ Phan Châu Trinh\"?",
+          "back": "Phan Châu Trinh là nhân vật trung tâm. Ông sinh năm 1872, mất năm 1926, là nhà yêu nước, nhà tư tưởng cải cách tiêu biểu, chủ trương nâng cao dân trí, chấn dân khí và phát triển dân quyền.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Mộ Phan Châu Trinh\" là gì?",
+          "back": "Mộ, bia mộ và khuôn viên mộ Phan Châu Trinh; ảnh chân dung, sách, báo, bản sao tác phẩm, tài liệu nghiên cứu và những tư liệu liên quan đến cuộc đời, tư tưởng của ông.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Mộ Phan Châu Trinh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.804355392612553, 106.66177186964825.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Mộ Phan Châu Trinh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 3211-QĐ/BT ngày 12/12/1994 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Mộ Phan Châu Trinh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Phan Châu Trinh là nhân vật trun...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Mộ Phan Châu Trinh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Mộ, bia mộ và khuôn viên mộ Phan...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 9 đường Phan Thúc Duyện, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Mộ Phan Châu Trinh",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -14847,6 +17811,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Nhà Cao Cẳng gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng trong thời kỳ đấu tranh. Những hoạt động này được tổ chức trong một ngôi nhà dân dụng, giúp tạo vỏ bọc và giảm nguy cơ bị phát hiện. Các cán bộ có thể sử dụng địa điểm để gặp gỡ, trao đổi thông tin, nghỉ tạm hoặc nhận sự hỗ trợ của cơ sở quần chúng. Sự kiện quan trọng nhất đối với di tích vì vậy là quá trình biến một không gian sinh hoạt bình thường thành một địa điểm phục vụ hoạt động cách mạng bí mật, qua đó thể hiện sự đóng góp âm thầm của nhân dân.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"“Nhà cao cẳng” số 18 Lê Lợi.\"?",
+          "back": "Cán bộ cách mạng và cơ sở quần chúng từng sử dụng Nhà Cao Cẳng để liên lạc, hội họp hoặc hỗ trợ hoạt động bí mật.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\" là gì?",
+          "back": "Ngôi nhà Cao Cẳng, các cột đá, nền, tường, cửa, các bộ phận kiến trúc và hình ảnh, tài liệu liên quan đến hoạt động cách mạng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.34970623680699, 107.07445125486903.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1371/QĐ ngày 03/08/1991 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"“Nhà cao cẳng” số 18 Lê Lợi.\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Cán bộ cách mạng và cơ sở quần c...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với “Nhà cao cẳng” số 18 Lê Lợi.",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Ngôi nhà Cao Cẳng, các cột đá, n...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 18 đường Lê Lợi, phường Vũn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "“Nhà cao cẳng” số 18 Lê L...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -15215,6 +18255,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Cách mạng tháng Tám năm 1945: Nhà Má Tám Nhung gắn với hoạt động của Ủy ban Mặt trận Việt Minh và sau đó tiếp tục là cơ sở nuôi giấu cán bộ cách mạng. Trong hai cuộc kháng chiến, ngôi nhà trở thành địa điểm hỗ trợ cán bộ hoạt động trong nội ô Vũng Tàu. Gia đình Má Tám Nhung đã góp phần bảo vệ, che giấu và tạo điều kiện để cán bộ duy trì hoạt động trong điều kiện địch kiểm soát chặt chẽ. Đây là một chuỗi sự kiện kéo dài qua nhiều giai đoạn lịch sử chứ không chỉ là một sự kiện đơn lẻ. Giá trị của di tích đặc biệt ở chỗ thể hiện vai trò của gia đình và phụ nữ trong việc duy trì cơ sở cách mạng. Theo tư liệu Bảo tàng Bà Rịa – Vũng Tàu, địa điểm từng là nơi họp của Ủy ban Mặt trận Việt Minh và trong hai cuộc kháng chiến là cơ sở nuôi giấu cán bộ hoạt động trong nội ô.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Ngôi nhà 42/11 (nhà má Tám Nhung)\"?",
+          "back": "Má Tám Nhung, tức Hồ Thị Khuyên, là nhân vật trung tâm của di tích. Theo Bảo tàng Bà Rịa–Vũng Tàu, ngôi nhà gắn với cuộc đời hoạt động cách mạng của bà và gia đình; bà cùng gia đình đã nuôi giấu cán bộ trong hai cuộc kháng chiến.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" là gì?",
+          "back": "Ngôi nhà 42/11 cũ, nay là số 1 Trần Xuân Độ, các cấu kiện kiến trúc, không gian sinh hoạt, hình ảnh và tư liệu về Má Tám Nhung. Bảo tàng Bà Rịa–Vũng Tàu còn ghi nhận khuôn viên di tích và bức phù điêu chân dung Má Tám được nhân dân Vũng Tàu xây dựng năm 1987.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.37033093678849, 107.07444299419018.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1987/VH-QĐ ngày 14/12/1989 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Má Tám Nhung, tức Hồ Thị Khuyên,...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Ngôi nhà 42/11 (nhà má Tám Nhung)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Ngôi nhà 42/11 cũ, nay là số 1 T...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 01 đường Trần Xuân Độ, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Ngôi nhà 42/11 (nhà má Tá...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -15587,6 +18703,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Nhà ông Trương Quang Vinh gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng tại Vũng Tàu. Trong điều kiện hoạt động bí mật, những ngôi nhà của người dân có vai trò quan trọng trong việc tạo địa điểm an toàn cho cán bộ. Những hoạt động tại nhà ông Trương Quang Vinh phản ánh mạng lưới cơ sở cách mạng tồn tại ngay trong khu dân cư và sự tham gia trực tiếp của các gia đình địa phương. Việc bảo tồn địa điểm giúp ghi nhớ không chỉ những người trực tiếp chiến đấu mà cả những người dân đã âm thầm hỗ trợ phong trào.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\"?",
+          "back": "Ông Trương Quang Vinh là nhân vật được gắn trực tiếp với tên di tích; ngoài ông còn có gia đình và những cán bộ cách mạng từng liên hệ, hoạt động hoặc được hỗ trợ tại địa điểm.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" là gì?",
+          "back": "Ngôi nhà số 18/5, các cấu kiện kiến trúc, không gian sinh hoạt, hình ảnh, tài liệu và những vật dụng có thể xác định nguồn gốc từ hoạt động của ông Trương Quang Vinh.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.369161367333705, 107.0776155903031.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 457/QĐ ngày 25/03/1991 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Ông Trương Quang Vinh là nhân vậ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà số 18/5 (nhà ông Trương Quang Vinh)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Ngôi nhà số 18/5, các cấu kiện k...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 36/29 đường Nguyễn An Ninh,...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà số 18/5 (nhà ông Trươ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -15955,6 +19147,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà Tròn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Nhà Tròn gắn với quá trình hình thành, phát triển và biến đổi của không gian đô thị Bà Rịa. Công trình đã chứng kiến nhiều giai đoạn lịch sử, những thay đổi về hành chính, xã hội và đời sống đô thị. Trong các thời kỳ có biến động chính trị, những công trình nằm ở vị trí trung tâm thường trở thành địa điểm tập trung đông người và chứng kiến các sự kiện quan trọng của địa phương. Vì vậy, các sự kiện gắn với Nhà Tròn không chỉ có ý nghĩa riêng đối với công trình mà còn phản ánh quá trình chuyển biến của xã hội và đô thị Bà Rịa.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà Tròn\"?",
+          "back": "Các cán bộ Việt Minh, nhân dân Bà Rịa và những người hoạt động chính trị, xã hội tại khu vực Nhà Tròn.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà Tròn\" là gì?",
+          "back": "Nhà Tròn, các bộ phận kiến trúc, nền móng, cửa, tường, mái, hình ảnh cũ, bản đồ và các tư liệu về lịch sử hình thành đô thị Bà Rịa.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà Tròn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Bà Rịa, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.497347165928701, 107.16746821340014.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà Tròn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 112VH/QĐ ngày 05/06/1987 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà Tròn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các cán bộ Việt Minh, nhân dân B...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà Tròn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Nhà Tròn, các bộ phận kiến trúc,...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Bà Rịa, Thành phố Hồ Ch...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà Tròn",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -16327,6 +19595,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Cuối năm 1926: tổ chức Việt Nam Thanh niên Cách mạng Đồng chí Hội ở Nam Kỳ được hình thành; tiếp đó tổ chức phát triển cơ sở, đào tạo cán bộ và truyền bá tư tưởng cách mạng. Năm 1928, tổ chức tiến hành đại hội và củng cố Kỳ bộ; tháng 3/1929, Kỳ bộ Nam Kỳ tiếp tục được kiện toàn với Phạm Văn Đồng làm Bí thư. Những hoạt động này có ý nghĩa quan trọng đối với quá trình phát triển phong trào cách mạng ở Nam Kỳ. Tổ chức còn tiến hành huấn luyện cán bộ, tuyên truyền tư tưởng cách mạng và xây dựng cơ sở trong quần chúng. Quá trình đó góp phần tạo tiền đề về tư tưởng và tổ chức cho sự xuất hiện của các tổ chức cộng sản và sự ra đời của Đảng Cộng sản Việt Nam. File xác định “Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội” là di tích lịch sử tại phòng 5, số 88 đường Lê Lợi, phường Bến Thành, theo Quyết định số 1288-VHQĐ ngày 16/11/1988.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\"?",
+          "back": "Nguyễn Ái Quốc là người sáng lập Việt Nam Thanh niên Cách mạng Đồng chí Hội. Phan Trọng Bình và Nguyễn Văn Lợi được cử về Sài Gòn hoạt động năm 1926; Phan Trọng Bình giữ chức Bí thư Kỳ bộ lâm thời, sau đó tiếp tục giữ chức Bí thư khi Kỳ bộ chính thức được thành lập. Tháng 3/1929, Phạm Văn Đồng trở thành Bí thư Kỳ bộ mới.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" là gì?",
+          "back": "Hình ảnh, văn bản, sách báo, tài liệu huấn luyện, tài liệu về Hội Việt Nam Thanh niên Cách mạng Đồng chí Hội, tài liệu về Nguyễn Ái Quốc, Phan Trọng Bình, Phạm Văn Đồng và hoạt động của Kỳ bộ Nam Kỳ. Nguồn của Trung tâm Bảo tồn Di tích TP.HCM còn cho biết Hội từng xuất bản tạp chí “Bôn-xê-vích” và báo “Công Nông Binh”.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.772980876899364, 106.69933094006532.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Nguyễn Ái Quốc là người sáng lập...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hình ảnh, văn bản, sách báo, tài...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phòng 5, số 88 đường Lê Lợi, p...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nơi thành lập Kỳ bộ Việt ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -16695,6 +20039,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Khu căn cứ Núi Dinh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Núi Dinh gắn với quá trình xây dựng và sử dụng căn cứ cách mạng trong các thời kỳ kháng chiến. Địa hình núi rừng được tận dụng để xây dựng nơi trú quân, hội họp, huấn luyện, cất giấu tài liệu và tổ chức chiến đấu. Các hoạt động tại căn cứ đòi hỏi sự phối hợp giữa lực lượng cách mạng với nhân dân địa phương trong việc cung cấp lương thực, vận chuyển vật tư, đưa tin và bảo vệ căn cứ. Những hoạt động này diễn ra trong thời gian dài và tạo nên một hệ thống căn cứ có ý nghĩa đối với lịch sử quân sự địa phương. Di tích vì vậy không chỉ gắn với các trận đánh mà còn gắn với cả quá trình tổ chức, duy trì và bảo vệ căn cứ.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Khu căn cứ Núi Dinh\"?",
+          "back": "Các cán bộ lãnh đạo, cán bộ quân sự, chiến sĩ cách mạng, du kích và nhân dân hoạt động tại căn cứ Núi Dinh.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Khu căn cứ Núi Dinh\" là gì?",
+          "back": "Hang, hầm, công sự, đường mòn, nền nhà, dấu tích nơi ở và làm việc, các công trình phục vụ căn cứ cùng bản đồ, ảnh và tài liệu về hoạt động cách mạng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Khu căn cứ Núi Dinh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Tân Hải, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.538882112465636, 107.12478099385694.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Khu căn cứ Núi Dinh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Khu căn cứ Núi Dinh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các cán bộ lãnh đạo, cán bộ quân...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Khu căn cứ Núi Dinh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hang, hầm, công sự, đường mòn, n...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Tân Hải, Thành phố Hồ C...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Khu căn cứ Núi Dinh",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -17067,6 +20487,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1968 – Chiến dịch Mậu Thân: Sở Chỉ huy tiền phương Phân khu 6 gắn với hoạt động tổ chức, chỉ huy và điều hành lực lượng trong chiến dịch. Tại cơ quan chỉ huy tiền phương, các hoạt động quan trọng bao gồm tiếp nhận và xử lý thông tin, truyền đạt mệnh lệnh, tổ chức lực lượng, phối hợp các hướng hoạt động và theo dõi tình hình chiến trường. Sự kiện này có ý nghĩa khi nghiên cứu lịch sử quân sự từ góc độ tổ chức chỉ huy thay vì chỉ tập trung vào diễn biến các trận đánh. Di tích giúp làm rõ vai trò của cơ quan chỉ huy tiền phương trong một chiến dịch có quy mô lớn.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\"?",
+          "back": "Các cán bộ chỉ huy Phân khu 6, cán bộ tham mưu, chiến sĩ và lực lượng vũ trang tham gia chiến dịch Mậu Thân 1968.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" là gì?",
+          "back": "Bản đồ tác chiến, sơ đồ chiến dịch, tài liệu quân sự, hình ảnh, phương tiện liên lạc và các vật dụng còn lại của Sở Chỉ huy nếu xác định được nguồn gốc.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.790878038103427, 106.68710986507587.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các cán bộ chỉ huy Phân khu 6, c...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Bản đồ tác chiến, sơ đồ chiến dị...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 7 đường Lý Chính Thắng, phư...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Sở Chỉ huy tiền phương Ph...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -17435,6 +20931,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Tịnh xá Ngọc Phương\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Tịnh xá Ngọc Phương gắn với quá trình tu học, hoằng pháp và phát triển Ni giới Khất sĩ. Các sự kiện tiêu biểu bao gồm những hoạt động truyền bá giáo lý, đào tạo người tu hành, tổ chức sinh hoạt tôn giáo và xây dựng đời sống cộng đồng Phật tử. Bên cạnh hoạt động tôn giáo, cơ sở còn gắn với các hoạt động xã hội, giáo dục đạo đức và từ thiện. Quá trình phát triển của tịnh xá phản ánh sự đóng góp của Ni giới vào đời sống Phật giáo và xã hội, đồng thời cho thấy vai trò của các cơ sở tôn giáo trong việc duy trì giá trị tinh thần và hỗ trợ cộng đồng.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Tịnh xá Ngọc Phương\"?",
+          "back": "Các ni trưởng, ni sư, Phật tử và những người đóng góp cho quá trình phát triển Tịnh xá Ngọc Phương và Ni giới Khất sĩ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Tịnh xá Ngọc Phương\" là gì?",
+          "back": "Tượng Phật, pháp khí, kinh sách, chuông, mõ, đồ thờ, tượng thờ, kiến trúc tịnh xá, sách và tài liệu về Ni giới Khất sĩ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Tịnh xá Ngọc Phương\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.815347772160434, 106.68971140693309.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Tịnh xá Ngọc Phương\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 2754/QĐ-BT ngày 15/10/1994 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Tịnh xá Ngọc Phương\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các ni trưởng, ni sư, Phật tử và...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Tịnh xá Ngọc Phương",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Tượng Phật, pháp khí, kinh sách,...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 498/1 đường Lê Quang Định, ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Tịnh xá Ngọc Phương",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -17807,6 +21379,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Tòa Đại sứ quán Mỹ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Tòa Đại sứ quán Mỹ gắn với các hoạt động ngoại giao, chính trị và quân sự của Hoa Kỳ tại Sài Gòn trong thời kỳ Chiến tranh Việt Nam. Đặc biệt trong giai đoạn cuối chiến tranh, tình hình tại Sài Gòn biến chuyển nhanh chóng, khiến cơ quan đại diện ngoại giao này trở thành một địa điểm có ý nghĩa lớn về mặt chính trị và ngoại giao. Những sự kiện xảy ra tại đây phản ánh sự thay đổi của quan hệ Việt Nam – Hoa Kỳ và những diễn biến dẫn đến sự kết thúc của cuộc chiến. Trong nghiên cứu lịch sử, địa điểm còn có giá trị khi đặt trong bối cảnh rộng hơn của lịch sử ngoại giao quốc tế và Chiến tranh Lạnh. File xác định Tòa đại sứ quán Mỹ là di tích lịch sử tại số 04 đường Lê Duẩn, phường Sài Gòn, theo Quyết định số 77A/VHQĐ ngày 25/6/1976.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Tòa Đại sứ quán Mỹ\"?",
+          "back": "Các đại sứ, quan chức ngoại giao, nhân viên Đại sứ quán Mỹ và các nhân vật Việt Nam có hoạt động ngoại giao hoặc chính trị liên quan.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Tòa Đại sứ quán Mỹ\" là gì?",
+          "back": "Công trình, cấu kiện kiến trúc, ảnh, văn bản ngoại giao, bản đồ, thư từ và tài liệu về hoạt động của Đại sứ quán Mỹ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Tòa Đại sứ quán Mỹ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.787056272731409, 106.70435105568858.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Tòa Đại sứ quán Mỹ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 77A/VHQĐ ngày 25/6/1976 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Tòa Đại sứ quán Mỹ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các đại sứ, quan chức ngoại giao...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Tòa Đại sứ quán Mỹ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Công trình, cấu kiện kiến trúc, ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 04 đường Lê Duẩn, phường Sà...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Tòa Đại sứ quán Mỹ",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -18175,6 +21823,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Trại Đa-vít\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Sau Hiệp định Paris năm 1973: Trại Đa-vít trở thành địa điểm hoạt động của phái đoàn quân sự Việt Nam trong giai đoạn cuối chiến tranh. Tại đây diễn ra các hoạt động liên lạc, trao đổi, tiếp xúc và xử lý những vấn đề liên quan đến quân sự và việc thực hiện các nội dung của Hiệp định Paris. Hoạt động tại Trại Đa-vít thể hiện sự kết hợp giữa đấu tranh quân sự, chính trị và ngoại giao. Đây là một giai đoạn đặc biệt trong lịch sử khi các phái đoàn quân sự phải hoạt động trong môi trường vừa hợp tác, vừa đấu tranh, đồng thời theo dõi những diễn biến quân sự và chính trị trên thực địa. Di tích vì vậy có giá trị lớn trong nghiên cứu lịch sử ngoại giao – quân sự Việt Nam giai đoạn 1973–1975.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Trại Đa-vít\"?",
+          "back": "Các thành viên phái đoàn quân sự Việt Nam tại Trại Đa-vít, cán bộ quân sự, cán bộ ngoại giao và đại diện các bên tham gia quá trình thực hiện Hiệp định Paris.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Trại Đa-vít\" là gì?",
+          "back": "Phòng làm việc, tài liệu quân sự, bản đồ, văn bản, ảnh, vật dụng sinh hoạt và các hiện vật liên quan đến hoạt động của phái đoàn tại Trại Đa-vít.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Trại Đa-vít\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Bảy Hiền, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.825870869658717, 106.65680532165945.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Trại Đa-vít\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 827/QĐ-BVHTTDL ngày 15/3/2017 của Bộ Văn hóa, Thể thao và Du lịch theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Trại Đa-vít\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các thành viên phái đoàn quân sự...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Trại Đa-vít",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Phòng làm việc, tài liệu quân sự...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Bảy Hiền, Thành phố Hồ ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Trại Đa-vít",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -18547,6 +22271,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Trận địa pháo cổ Cầu Đá\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Trận địa pháo Cầu Đá gắn với quá trình xây dựng, bố trí và vận hành hệ thống phòng thủ ven biển tại Vũng Tàu. Việc lựa chọn vị trí Cầu Đá có liên quan đến yêu cầu quan sát và kiểm soát khu vực biển, đồng thời tạo điều kiện bố trí hỏa lực phòng thủ. Trong thời gian công trình hoạt động, các lực lượng quân sự tiến hành bảo vệ trận địa, bảo quản vũ khí, tổ chức trực chiến và duy trì khả năng phản ứng trước các tình huống quân sự. Các dấu tích còn lại ngày nay giúp nghiên cứu cách tổ chức trận địa và sự phát triển của hệ thống phòng thủ ven biển Vũng Tàu.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Trận địa pháo cổ Cầu Đá\"?",
+          "back": "Các sĩ quan, binh lính và lực lượng quân sự từng xây dựng, quản lý và vận hành trận địa pháo Cầu Đá.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Trận địa pháo cổ Cầu Đá\" là gì?",
+          "back": "Khẩu pháo, bệ pháo, công sự, hầm, đường hào, nền trận địa và các dấu tích quân sự còn lại tại Cầu Đá.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Trận địa pháo cổ Cầu Đá\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.337952808077102, 107.07205855570365.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Trận địa pháo cổ Cầu Đá\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 921QĐ/BT ngày 20/07/1994 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Trận địa pháo cổ Cầu Đá\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các sĩ quan, binh lính và lực lư...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Trận địa pháo cổ Cầu Đá",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Khẩu pháo, bệ pháo, công sự, hầm...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Khu vực Cầu Đá – Hạ Long, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Trận địa pháo cổ Cầu Đá",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -18915,6 +22715,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Trận địa pháo Núi Nhỏ gắn với quá trình xây dựng và sử dụng một công trình quân sự trên địa hình cao của Vũng Tàu. Vị trí cao giúp tăng khả năng quan sát và kiểm soát khu vực biển, đồng thời tạo điều kiện bố trí các khẩu pháo và công sự bảo vệ. Trong thời gian hoạt động, trận địa phục vụ nhiệm vụ phòng thủ, quan sát và sẵn sàng chiến đấu. Ngày nay, các dấu tích công trình nếu được bảo tồn giúp tái hiện một phần mạng lưới phòng thủ quân sự của Vũng Tàu và mối quan hệ giữa địa hình tự nhiên với chiến lược quân sự.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\"?",
+          "back": "Các sĩ quan, binh lính và lực lượng quân sự từng xây dựng và vận hành trận địa pháo Núi Nhỏ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" là gì?",
+          "back": "Khẩu pháo, bệ pháo, công sự, hầm quân sự, đường hào và các dấu tích trận địa trên Núi Nhỏ – Tao Phùng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.328571373067225, 107.08243963200462.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 57VH/QĐ ngày 18/01/1993 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các sĩ quan, binh lính và lực lư...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Khẩu pháo, bệ pháo, công sự, hầm...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Núi Nhỏ, phường Vũng Tàu, Thàn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Trận địa pháo cổ trên núi...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -19287,6 +23163,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Trận địa pháo Sao Mai (Núi Lớn) gắn với quá trình xây dựng và vận hành hệ thống công trình phòng thủ trên Núi Lớn. Trận địa pháo được bố trí tại vị trí có lợi thế về độ cao và tầm quan sát, kết hợp với các công sự và hầm phòng thủ nhằm tăng khả năng kiểm soát khu vực. Quá trình sử dụng trận địa phản ánh sự phát triển của hệ thống phòng thủ ven biển Vũng Tàu và cách con người biến địa hình núi thành một phần của hệ thống quân sự. File hiện xác định di tích “Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn”, loại hình lịch sử, tại phường Vũng Tàu, theo Quyết định số 983/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\"?",
+          "back": "Các sĩ quan, binh lính và lực lượng phụ trách trận địa pháo, công sự và hệ thống hầm thủy lôi Núi Lớn.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" là gì?",
+          "back": "Khẩu pháo, bệ pháo, công sự, hầm phòng thủ, dấu tích hầm thủy lôi và các cấu kiện của hệ thống phòng thủ Núi Lớn.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.381098149862096, 107.05852023440399.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 983/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các sĩ quan, binh lính và lực lư...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Khẩu pháo, bệ pháo, công sự, hầm...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Núi Lớn, phường Vũng Tàu, Thàn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Di tích trận địa Pháo cổ ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -19655,6 +23607,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Trụ sở Báo Dân Chúng\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Trụ sở Báo Dân Chúng gắn với hoạt động xuất bản, biên tập và phát hành báo chí. Các sự kiện tại đây bao gồm quá trình tổ chức tòa soạn, biên tập nội dung, chuẩn bị ấn phẩm, in ấn và đưa báo đến công chúng. Hoạt động báo chí có ý nghĩa quan trọng trong việc truyền tải thông tin, phản ánh đời sống xã hội và hình thành dư luận. Địa điểm vì vậy không chỉ gắn với lịch sử một tờ báo mà còn phản ánh lịch sử truyền thông và đời sống chính trị – xã hội của Sài Gòn. File xác định Trụ sở Báo Dân Chúng là di tích lịch sử tại số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, được xếp hạng theo Quyết định số 1288-VHQĐ ngày 16/11/1988.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Trụ sở Báo Dân Chúng\"?",
+          "back": "Các nhà báo, biên tập viên, phóng viên, cộng tác viên và nhân viên kỹ thuật của Báo Dân Chúng.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Trụ sở Báo Dân Chúng\" là gì?",
+          "back": "Trụ sở, các cấu kiện kiến trúc, số báo cũ, tài liệu biên tập, ảnh nhà báo, máy in và thiết bị nghề báo nếu còn được bảo tồn.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Trụ sở Báo Dân Chúng\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.769025732274935, 106.69783421085772.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Trụ sở Báo Dân Chúng\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Trụ sở Báo Dân Chúng\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các nhà báo, biên tập viên, phón...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Trụ sở Báo Dân Chúng",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Trụ sở, các cấu kiện kiến trúc, ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 43 đường Lê Thị Hồng Gấm, p...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Trụ sở Báo Dân Chúng",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -20027,6 +24055,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Giai đoạn 1955–1958: Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam cạnh Phân ban Quốc tế gắn với hoạt động liên lạc, trao đổi và thực hiện nhiệm vụ trong bối cảnh sau Hiệp định Genève. Phái đoàn hoạt động trong một môi trường có sự hiện diện của cơ chế quốc tế giám sát và kiểm soát việc thi hành đình chiến. Các hoạt động liên lạc, tiếp xúc, trao đổi thông tin và xử lý những vấn đề phát sinh có ý nghĩa quan trọng đối với việc thực hiện nhiệm vụ của phái đoàn. Đây là một sự kiện có giá trị lớn đối với nghiên cứu lịch sử ngoại giao – quân sự Việt Nam giai đoạn sau năm 1954. File ghi rõ di tích có tên đầy đủ là “Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)”, loại hình lịch sử, tại số 87A đường Trần Kế Xương, phường Cầu Kiệu, theo Quyết định số 1288-VH/QĐ ngày 16/11/1988.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\"?",
+          "back": "Các thành viên Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam và những người trực tiếp tham gia hoạt động liên lạc với Phân ban Quốc tế.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" là gì?",
+          "back": "Nhà, phòng làm việc, tài liệu liên lạc, văn bản, bản đồ, ảnh, hồi ký và các tư liệu của Phái đoàn. Hồi ký về Phái đoàn Liên lạc Quân đội nhân dân Việt Nam giai đoạn 1955–1958 là một nguồn tư liệu có thể bổ sung cho hồ sơ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.802987698357986, 106.68733333079545.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các thành viên Phái đoàn liên lạ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Nhà, phòng làm việc, tài liệu li...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 87A đường Trần Kế Xương, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Trụ sở Phái đoàn liên lạc...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -20395,6 +24499,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Cách mạng tháng Tám năm 1945: Trụ sở Ủy ban Việt Minh tại Vũng Tàu gắn với quá trình tổ chức lực lượng, tuyên truyền, vận động quần chúng và chuẩn bị giành chính quyền tại địa phương. Trong thời điểm phong trào cách mạng phát triển mạnh, Ủy ban Việt Minh có vai trò tập hợp lực lượng, kết nối các cơ sở và thúc đẩy quần chúng tham gia phong trào. Khi thời cơ tổng khởi nghĩa xuất hiện, các lực lượng cách mạng tại địa phương tiến hành những hoạt động nhằm giành chính quyền và thiết lập chính quyền cách mạng. Sự kiện này đặt di tích trong dòng lịch sử chung của Cách mạng tháng Tám năm 1945, đồng thời thể hiện vai trò của nhân dân Vũng Tàu trong quá trình chuyển biến chính trị của đất nước. File xác định Trụ sở Ủy ban Việt Minh tại Vũng Tàu là di tích lịch sử tại số 01 đường Ba Cu, phường Vũng Tàu, được xếp hạng theo Quyết định số 457/QĐ ngày 25/03/1991.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\"?",
+          "back": "Các thành viên Ủy ban Việt Minh tại Vũng Tàu, cán bộ Việt Minh và nhân dân địa phương tham gia chuẩn bị, vận động và giành chính quyền trong Cách mạng tháng Tám.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" là gì?",
+          "back": "Trụ sở, phòng làm việc, tài liệu Việt Minh, văn bản, truyền đơn, ảnh, khẩu hiệu và các tư liệu phản ánh hoạt động của Ủy ban Việt Minh tại Vũng Tàu.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.34798620615014, 107.07313618065731.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Lịch sử), theo Số 457/QĐ ngày 25/03/1991 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các thành viên Ủy ban Việt Minh ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Trụ sở Ủy ban Việt Minh tại Vũng Tàu",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Trụ sở, phòng làm việc, tài liệu...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Lịch sử)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 01 đường Ba Cu, phường Vũng...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Trụ sở Ủy ban Việt Minh t...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -20767,6 +24947,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Bạch Dinh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1898–1902: xây dựng Bạch Dinh; tháng 9/1907–1916: vua Thành Thái bị quản thúc tại đây; năm 1916: vua Thành Thái và vua Duy Tân bị đưa đi đày ở đảo Réunion; năm 1934: Bạch Dinh được sử dụng làm nơi nghỉ dưỡng của vua Bảo Đại và Hoàng hậu Nam Phương; từ năm 1991: một phần công trình được sử dụng để trưng bày hiện vật; ngày 04/8/1992: Bạch Dinh được xếp hạng di tích cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Bạch Dinh\"?",
+          "back": "Paul Doumer: Toàn quyền Đông Dương đã phê duyệt và cho xây dựng Bạch Dinh từ năm 1898 để làm dinh thự nghỉ dưỡng. C\nPaul Beau: Người kế nhiệm Paul Doumer, được xem là vị Toàn quyền đầu tiên sử dụng Bạch Dinh.\nVua Thành Thái: Nhân vật lịch sử gắn bó sâu sắc nhất với Bạch Dinh. Do có tinh thần yêu nước và chống Pháp, ông bị chính quyền thực dân quản thúc tại đây từ ngày 12/9/1907 đến năm 1916. Vì kính trọng nhà vua, nhân dân Vũng Tàu gọi Bạch Dinh là Dinh Ông Thượng.\nVua Bảo Đại: Năm 1934, Bạch Dinh được chuyển giao để làm nơi nghỉ dưỡng của vua Bảo Đại và hoàng hậu Nam Phương. Vì vậy, công trình còn từng được gọi là Dinh Bảo Đại – Vũng Tàu.\nCác Toàn quyền Đông Dương thời Pháp thuộc: Sau thời gian quản thúc vua Thành Thái, Bạch Dinh tiếp tục được sử dụng làm nơi nghỉ dưỡng và hội họp của nhiều đời Toàn quyền Đông Dương. \nCác nguyên thủ và quan chức cao cấp của chính quyền Việt Nam Cộng hòa: Sau năm 1954, Bạch Dinh được sử dụng làm nơi nghỉ dưỡng và hội họp của các nguyên thủ, tướng lĩnh và quan chức cao cấp.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Bạch Dinh\" là gì?",
+          "back": "Bộ trường kỷ Hoàng gia có niên đại năm 1921; cặp song bình “Bách điểu chầu phụng”; bộ tượng Tam Đa Phúc – Lộc – Thọ; cặp ngà voi châu Phi; súng thần công cổ; bộ sưu tập hàng nghìn hiện vật gốm sứ thời Khang Hy được trục vớt từ tàu cổ đắm tại vùng biển Hòn Cau – Côn Đảo.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Bạch Dinh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh. Tọa độ GPS chính xác: 10.35087105854076, 107.06866876117707.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Bạch Dinh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 983-VH/QĐ ngày 04/8/1992 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Bạch Dinh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Paul Doumer: Toàn quyền Đông Dươ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Bạch Dinh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Bộ trường kỷ Hoàng gia có niên đ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 06 đường Trần Phú, phường V...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Bạch Dinh",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -21135,6 +25391,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "24/11/1927: thành lập Bảo tàng Nam Kỳ; đầu năm 1929: khánh thành tòa nhà bảo tàng; 04/2/1929: mở cửa phục vụ công chúng; năm 1956: đổi thành Viện Bảo tàng Quốc gia Việt Nam tại Sài Gòn; 23/8/1979: chính thức mang tên Bảo tàng Lịch sử Thành phố Hồ Chí Minh; 29/3/2012: tòa nhà được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\"?",
+          "back": "Paul Blanchard de la Brosse: Thống đốc Nam Kỳ, người ký nghị định thành lập Bảo tàng Nam Kỳ năm 1927; tên ông từng được dùng đặt cho bảo tàng. Auguste Delaval: kiến trúc sư thiết kế tòa nhà chính. Louis Finot: Giám đốc Trường Viễn Đông Bác Cổ Pháp, đề xuất đặt tên Bảo tàng Blanchard de la Brosse. Jean Bouchot: người phụ trách bảo tàng trong giai đoạn đầu, có đóng góp quan trọng trong việc tổ chức, nghiên cứu và trưng bày hiện vật. Pierre Pasquier: Toàn quyền Đông Dương chủ trì lễ khánh thành bảo tàng đầu năm 1929.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Các tượng và tác phẩm nghệ thuật thuộc văn hóa Óc Eo, Champa, Khmer; tượng Phật; tượng thần Vishnu, Surya, nữ thần Devi, Durga; tượng Avalokitesvara; đồ đồng văn hóa Đông Sơn; đồ gốm cổ Việt Nam và các nước châu Á; hiện vật khảo cổ thời tiền sử và sơ sử Nam Bộ. Bảo tàng đang lưu giữ nhiều bảo vật quốc gia có giá trị đặc biệt.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM. Tọa độ GPS chính xác: 10.7880998220292, 106.70473082107647.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 1207/QĐ-BVHTTDL ngày 29/3/2012 của Bộ Văn hóa, Thể thao và Du lịch. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Paul Blanchard de la Brosse: Thố...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Các tượng và tác phẩm nghệ thuật...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 2 Nguyễn Bỉnh Khiêm, phường...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Bảo tàng Lịch sử Thành ph...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -21507,6 +25839,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Bảo tàng Thành phố Hồ Chí Minh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1885–1890: xây dựng tòa nhà; sau Cách mạng tháng Tám năm 1945: được sử dụng làm trụ sở Ủy ban Hành chính lâm thời Nam Bộ; 9/1/1950: cuộc biểu tình của học sinh, sinh viên diễn ra trước dinh và Trần Văn Ơn hy sinh; năm 1962: trở thành dinh tổng thống sau khi Dinh Độc Lập bị ném bom; sau ngày 30/4/1975: sử dụng làm nơi sinh hoạt văn hóa và triển lãm; 12/8/1978: thành lập Bảo tàng Cách mạng TP.HCM; 13/12/1999: đổi tên thành Bảo tàng TP.HCM; 29/3/2012: được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Bảo tàng Thành phố Hồ Chí Minh\"?",
+          "back": "Alfred Foulhoux: kiến trúc sư người Pháp thiết kế công trình. Trần Văn Ơn: học sinh hy sinh trong cuộc biểu tình ngày 9/1/1950 diễn ra trước khu vực dinh; sự kiện trở thành cơ sở xác định Ngày truyền thống học sinh, sinh viên Việt Nam. Ngô Đình Diệm: từng sử dụng Dinh Gia Long làm dinh tổng thống sau khi Dinh Độc Lập bị ném bom năm 1962; hệ thống hầm trú ẩn dưới dinh gắn với giai đoạn này. Ngoài ra, tòa nhà từng là nơi làm việc của các Thống đốc Nam Kỳ, Khâm sứ Nam Bộ, Thủ hiến Nam Việt và một số người đứng đầu chính quyền qua các thời kỳ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Bảo tàng Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Khuôn in tín phiếu mệnh giá 5 đồng năm 1947 – bảo vật quốc gia; ấn “Lương Tài Hầu chi ấn” – bảo vật quốc gia; tờ lịch ngày 30/4/1975; hiện vật khảo cổ như rìu đá, đồ gốm, đồ trang sức và mộ chum; tiền Việt Nam qua các thời kỳ; vũ khí, tài liệu và kỷ vật kháng chiến; hiện vật liên quan đến thương cảng, thương mại, thủ công nghiệp và đời sống cư dân Sài Gòn. Bản thân đường hầm dưới Dinh Gia Long cũng là một bộ phận quan trọng của công trình.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Bảo tàng Thành phố Hồ Chí Minh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM. Tọa độ GPS chính xác: 10.776016764087215, 106.69955393549671.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Bảo tàng Thành phố Hồ Chí Minh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 1206/QĐ-BVHTTDL ngày 29/3/2012 của Bộ Văn hóa, Thể thao và Du lịch. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Bảo tàng Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Alfred Foulhoux: kiến trúc sư ng...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Bảo tàng Thành phố Hồ Chí Minh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Khuôn in tín phiếu mệnh giá 5 đồ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 65 Lý Tự Trọng, phường Sài ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Bảo tàng Thành phố Hồ Chí...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -21875,6 +26283,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Giác Lâm\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1744: Lý Thụy Long quyên tiền xây dựng chùa.\nGiai đoạn 1798–1804: Chùa được trùng tu lớn lần thứ nhất.\nGiai đoạn 1900–1909: Trùng tu lớn lần thứ hai.\nGiai đoạn 1939–1945: Trùng tu lần thứ ba; bổ sung nhiều họa tiết trang trí bằng gốm sứ.\nTrong hai cuộc kháng chiến chống Pháp và chống Mỹ: Chùa trở thành cơ sở cách mạng, nơi hội họp, che giấu và nuôi dưỡng cán bộ.\nNăm 1953: Đại đức Narada trao tặng cây bồ đề và viên ngọc Xá lợi Phật.\nNăm 1988: Chùa Giác Lâm được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia.\nGiai đoạn 1992–1994: Chùa được trùng tu lớn lần thứ tư.\nNăm 1997: Chùa được bổ sung 14 bao lam do nhóm thợ ở Cao Lãnh, Đồng Tháp thực hiện.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Giác Lâm\"?",
+          "back": "Lý Thụy Long: Người Minh Hương, quyên tiền xây dựng chùa năm 1744.\nThiền sư Viên Quang: Thuộc đời thứ 36 của dòng Lâm Tế, là vị trụ trì đầu tiên và có công xây dựng chùa thành tổ đình của dòng Lâm Tế ở Nam Bộ.\nĐại đức Narada: Nhà sư Sri Lanka đã đến Việt Nam năm 1953 và tặng cây bồ đề cùng viên ngọc Xá lợi Phật cho Giáo hội Phật giáo cổ truyền đặt tại chùa Giác Lâm.\nCác vị tổ và tăng sĩ dòng Lâm Tế: Có đóng góp vào quá trình truyền bá, giảng dạy và phát triển Phật giáo tại chùa qua nhiều thế hệ.\nCác cán bộ cách mạng: Từng được chùa che giấu, nuôi dưỡng trong hai cuộc kháng chiến; tài liệu chưa nêu tên cụ thể.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Giác Lâm\" là gì?",
+          "back": "113 pho tượng cổ bằng gỗ mít và 5 pho tượng bằng đồng.\nHai bộ tượng La Hán bằng gỗ thếp vàng: bộ nhỏ có niên đại thế kỷ XVIII và bộ lớn có niên đại thế kỷ XIX.\nBộ tượng Di Đà Tam Tôn, Tam Thế Phật, Thập Điện.\nBộ tượng năm vị gồm một vị Phật và bốn vị Bồ Tát: Quan Thế Âm, Đại Thế Chí, Văn Thù và Phổ Hiền, được tạo tác theo hình thức “thượng kỳ thú”.\n86 câu đối chữ Hán, các hoành phi, bao lam chạm khắc công phu.\nHệ thống trang trí bằng gốm sứ được đặt làm tại các lò gốm Bình Dương.\nCây bồ đề và viên ngọc Xá lợi Phật do Đại đức Narada trao tặng năm 1953.\nNhiều sách cổ, tạng bản và bản khắc kinh Phật.\nKhu vườn với 38 ngôi tháp thờ các vị tổ và tăng sĩ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Giác Lâm\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam. Tọa độ GPS chính xác: 10.778819897568113, 106.64918370829508.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Giác Lâm\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo quyết định số 1288-VH/QĐ ngày 16 tháng 11 năm 1988. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Giác Lâm\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Lý Thụy Long: Người Minh Hương, ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Giác Lâm",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "113 pho tượng cổ bằng gỗ mít và ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "565 Lạc Long Quân, Bảy Hiền, H...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Giác Lâm",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -22247,6 +26731,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Giác Viên\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1798: hình thành cơ sở ban đầu trong quá trình vận chuyển gỗ trùng tu chùa Giác Lâm. Năm 1850: Hải Tịnh trùng tu Quan Âm viện, đổi tên thành chùa Giác Viên và mở trường đào tạo nghi lễ. Năm 1852: Minh Vi – Mật Hạnh được cử làm trụ trì. 1899–1902 và 1908–1910: các đợt trùng tu lớn. Ngày 07/01/1993: được xếp hạng di tích quốc gia. Năm 2016: khởi công dự án trùng tu, tôn tạo. Năm 2018: bàn giao công trình trùng tu giai đoạn I. Năm 2023: khởi công trùng tu giai đoạn II.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Giác Viên\"?",
+          "back": "Thiền sư Tổ Tông – Viên Quang: chủ trì trùng tu chùa Giác Lâm, từ đó hình thành cơ sở ban đầu của chùa Giác Viên. Thiền sư Tiên Giác – Hải Tịnh: trùng tu, đổi tên Quan Âm viện thành chùa Giác Viên năm 1850 và mở trường đào tạo nghi lễ Phật giáo. Thiền sư Minh Vi – Mật Hạnh: được giao trụ trì chùa năm 1852. Thiền sư Minh Khiêm – Hoằng Ân: kế thừa, phát triển chùa thành trung tâm nghi lễ Phật giáo. Hòa thượng Như Nhu và Hòa thượng Như Phòng: chủ trì những đợt trùng tu lớn đầu thế kỷ XX.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Giác Viên\" là gì?",
+          "back": "Hệ thống hơn 150 tượng gỗ; khoảng 58 bao lam lớn nhỏ; bao lam Bách Điểu chạm khắc nhiều loài chim trong các tư thế sinh động; tấm pháp bị bằng gỗ gần như độc bản của Phật giáo Nam Bộ; giá võng được cho là do triều Nguyễn ban tặng Thiền sư Hải Tịnh; hệ thống hoành phi, câu đối chữ Hán, phù điêu Bát Tiên, Thập bát La Hán, tứ linh và các đồ thờ bằng gỗ sơn son thếp vàng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Giác Viên\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM. Tọa độ GPS chính xác: 10.76314796160562, 106.63918448311219.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Giác Viên\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Giác Viên\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Thiền sư Tổ Tông – Viên Quang: c...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Giác Viên",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hệ thống hơn 150 tượng gỗ; khoản...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 161/35/20 đường Lạc Long Qu...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Giác Viên",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -22615,6 +27175,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Hội Khánh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Năm 1741: Thiền sư Đại Ngạn – Từ Tấn khai sơn chùa. Năm 1861: chùa bị thiêu hủy trong chiến tranh. Năm 1868: Thiền sư Chánh Đắc xây dựng lại chùa tại vị trí hiện nay. Khoảng 1923–1926: Phó bảng Nguyễn Sinh Sắc hoạt động tại chùa, cùng các nhà sư và trí thức địa phương truyền bá tư tưởng yêu nước. Ngày 07/01/1993: chùa được xếp hạng di tích quốc gia. Các năm 1991, 1999, 2004 và 2006: tiến hành những đợt trùng tu, tôn tạo quan trọng. Năm 2010: khánh thành tượng Phật Thích Ca nhập Niết bàn quy mô lớn.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Hội Khánh\"?",
+          "back": "Thiền sư Đại Ngạn – Từ Tấn: khai sơn chùa năm 1741. Thiền sư Chánh Đắc: xây dựng lại chùa năm 1868 sau khi chùa bị thiêu hủy. Phó bảng Nguyễn Sinh Sắc: thân sinh Chủ tịch Hồ Chí Minh, từng hoạt động, truyền bá tư tưởng yêu nước tại chùa khoảng năm 1923–1926. Hòa thượng Từ Văn: cùng Nguyễn Sinh Sắc và các nhà yêu nước thành lập Hội Danh dự tại chùa. Hòa thượng Thích Huệ Thông: từng trụ trì, có đóng góp trong bảo tồn và phát huy giá trị Tổ đình Hội Khánh.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Hội Khánh\" là gì?",
+          "back": "Hơn 100 pho tượng gỗ mít sơn son thếp vàng; bộ tượng Thập bát La Hán và Thập điện Minh Vương; các phù điêu chạm khắc Bồ Tát và La Hán; hệ thống hoành phi, bao lam, câu đối Hán Nôm; giảng đường với hệ thống cột gỗ quý; chín bảo tháp thờ các đời trụ trì; nhiều mộc bản, kinh sách và đồ thờ cổ. Công trình nổi bật hiện nay là tượng Phật Thích Ca nhập Niết bàn dài khoảng 52 m, cao 12 m, đặt trên độ cao khoảng 24 m.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Hội Khánh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh. Tọa độ GPS chính xác: 10.980312946035541, 106.65886278772359.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Hội Khánh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Hội Khánh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Thiền sư Đại Ngạn – Từ Tấn: khai...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Hội Khánh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hơn 100 pho tượng gỗ mít sơn son...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 35 đường Chùa Hội Khánh, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Hội Khánh",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -22987,6 +27623,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Hội Sơn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Khoảng thế kỷ XVIII: Thiền sư Khánh Long khai lập chùa. Năm 1938: Ni sư Thích Nữ Như Thanh và Thích Nữ Như Tiên tiến hành tôn tạo, sửa chữa chùa. 07/01/1993: Chùa được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia. 17/07/2012: chánh điện bằng gỗ bị cháy hoàn toàn, nhiều tượng Phật, bàn thờ, kinh sách và đồ thờ tự bị thiêu hủy. Cuối năm 2012: tiến hành khai quật khảo cổ tại khu vực chùa; kết quả cho thấy đây là một địa điểm cư trú và chế tác công cụ của cư dân tiền sử, có niên đại khoảng 3.500–3.000 năm. Từ năm 2015: triển khai dự án phục dựng di tích.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Hội Sơn\"?",
+          "back": "Thiền sư Khánh Long (Long Khánh) – người được tư liệu ghi nhận là người khai lập chùa vào khoảng cuối thế kỷ XVIII. Ni sư Thích Nữ Như Thanh và Thích Nữ Như Tiên – những người đã tiến hành tôn tạo, sửa chữa chùa vào năm 1938. Đại đức Thích Thiện Hảo – trụ trì chùa trong giai đoạn hiện đại, đặc biệt được nhắc đến trong sự kiện cháy chánh điện năm 2012 và quá trình phục hồi di tích. Ngoài ra, vua Khải Định có liên quan đến một cổ vật từng được lưu giữ tại chùa là hoành phi do vua ban tặng.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Hội Sơn\" là gì?",
+          "back": "Các hiện vật và thành phần kiến trúc tiêu biểu gồm hoành phi, liễn đối, long vị, tượng Phật, án thờ bằng gỗ, bài vị, chuông đồng và các cổ vật Phật giáo. Đáng chú ý là hoành phi “Vạn đức hồng danh” do vua Khải Định ban tặng được các tư liệu ghi nhận. Tuy nhiên, cần lưu ý rằng vụ cháy năm 2012 đã thiêu hủy phần lớn hiện vật trong chánh điện, trong đó có hơn 30 tượng Phật cổ, 15 bàn thờ và hàng trăm bộ kinh kệ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Hội Sơn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM. Tọa độ GPS chính xác: 10.871140824793784, 106.84095365214384.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Hội Sơn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin, xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Hội Sơn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Thiền sư Khánh Long (Long Khánh)...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Hội Sơn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Các hiện vật và thành phần kiến ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 1A1 đường Nguyễn Xiển, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Hội Sơn",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -23355,6 +28067,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Long Bàn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Thế kỷ XVII: hình thành chùa trong quá trình người Việt khai phá vùng Mô Xoài. Năm 1845 (Thiệu Trị năm thứ 5): chùa được trùng tu, tôn tạo; dấu tích niên đại này còn được ghi trên xà ngang nhà giảng. Năm 1963: cổng chùa được xây dựng. 19/4/1991: được công nhận là di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định 680/QĐ. Năm 2025: địa điểm được chuyển sang đơn vị hành chính mới là xã Long Điền, TP.HCM.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Long Bàn\"?",
+          "back": "Hai vị Hòa thượng Hải Chánh và Bảo Thanh được tư liệu ghi nhận là những vị trụ trì đầu tiên và được dân làng tôn làm tổ khai sơn. Hai vị là đệ tử của Hòa thượng Giác Ngộ, thuộc dòng Thiền Lâm Tế.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Long Bàn\" là gì?",
+          "back": "Nổi bật có đại hồng chung bằng đồng cao khoảng 1,2 m, đường kính khoảng 0,8 m; hệ thống tượng Phật, tượng Ngọc Hoàng, Quan Thánh, 18 vị La Hán, Long Thần, Hộ Pháp bằng đồng và gỗ mít; 8 khuôn in kinh bằng gỗ; các hoành phi, câu đối, bao lam, khám thờ được chạm khắc tinh xảo.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Long Bàn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.485861508976331, 107.21752235304554.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Long Bàn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 680/QĐ ngày 19/4/1991 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Long Bàn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Hai vị Hòa thượng Hải Chánh và B...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Long Bàn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Nổi bật có đại hồng chung bằng đ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Khu phố Long Phượng, xã Long Đ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Long Bàn",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -23727,6 +28515,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Phụng Sơn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đầu thế kỷ XIX - Thiền sư Liễu Thông tạo lập chùa; 1904–1915 - chùa được đại trùng tu dưới thời Thiền sư Huệ Minh; 1960 - chùa được đại trùng tu; 1963 - xây lại cổng tam quan; 1988 - chùa được xếp hạng di tích cấp quốc gia; 1988 và 1991 - khai quật khảo cổ, phát hiện các hiện vật liên quan văn hóa Óc Eo",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Phụng Sơn\"?",
+          "back": "Thiền sư Liễu Thông (pháp hiệu Chơn Giác) – người tạo lập Chùa Phụng Sơn vào đầu thế kỷ XIX. Thiền sư Huệ Minh gắn với đợt đại trùng tu chùa từ năm 1904 đến 1915. Hòa thượng Thích Phước Quang cho xây lại cổng tam quan năm 1963, do kiến trúc sư Nguyễn Bá Lăng thiết kế.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Phụng Sơn\" là gì?",
+          "back": "Khoảng 40 pho tượng thờ, chủ yếu là tượng gỗ sơn son thếp vàng; tiêu biểu có bộ tượng Di Đà Tam Tôn, bộ tượng Ngũ Hiền thượng kỳ thú, tượng Phật bằng đá dát vàng, tượng Tiêu Diện bằng gốm. Chùa còn có tượng Phật Nhật Bản, tượng Phật Thái Lan. Các cuộc khai quật năm 1988 và 1991 phát hiện mặt người bằng đất nung, đồ gốm thuộc văn hóa Óc Eo; trước đó còn phát hiện một tượng Phật bằng đồng theo phong cách Thái Lan.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Phụng Sơn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.756620025748866, 106.64480484242095.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Phụng Sơn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Phụng Sơn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Thiền sư Liễu Thông (pháp hiệu C...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Phụng Sơn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Khoảng 40 pho tượng thờ, chủ yếu...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 1408 đường Ba Tháng Hai, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Phụng Sơn",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -24095,6 +28959,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Phước Lâm (Phước Lâm Tự)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Khoảng năm 1886 - chùa được dời từ chân núi Tương Kỳ (Núi Lớn) xuống vị trí hiện nay; 11/10/1944 - đợt sửa chữa sớm nhất được ghi nhận; 1956 - mở rộng thượng điện và đúc thêm nhiều tượng; 1965 - chùa được tu bổ; 1992 - được xếp hạng di tích cấp quốc gia; 1993 - tiếp tục trùng tu.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Phước Lâm (Phước Lâm Tự)\"?",
+          "back": "Hòa thượng Thích Thiện Pháp (Lê Văn Ninh), trụ trì chùa từ năm 1960; các vị trụ trì và tăng ni gắn với quá trình xây dựng, trùng tu chùa.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Phước Lâm (Phước Lâm Tự)\" là gì?",
+          "back": "Tượng thần Vishnu bằng đá có 4 tay, được xác định có niên đại khoảng thế kỷ VII-VIII; Đại hồng chung bằng đồng đúc năm Ất Mùi 1895; các tượng Tam Thế, Thích Ca Mâu Ni tọa thiền, Thích Ca nhập Niết Bàn, Quan Âm Chuẩn Đề 12 tay và các tượng Phật khác.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Phước Lâm (Phước Lâm Tự)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.371205473766906, 107.07952767596208.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Phước Lâm (Phước Lâm Tự)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo QĐ số: 983/QĐ, ngày \n04/08/1992 của Bộ Văn Hóa \nThông Tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Phước Lâm (Phước Lâm Tự)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Hòa thượng Thích Thiện Pháp (Lê ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Phước Lâm (Phước Lâm Tự)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Tượng thần Vishnu bằng đá có 4 t...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 65 đường Nguyễn Bảo, \nphườn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Phước Lâm (Phước Lâm...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -24467,6 +29407,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Phước Tường\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1741 - Thiền sư Linh Quang – Phật Chiếu khai sơn chùa; 1834 - Hòa thượng Từ Minh dời chùa đến vị trí hiện nay và tái thiết quy mô; 1993 - chùa được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 43–VH/QĐ ngày 01/07/1993.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Phước Tường\"?",
+          "back": "Thiền sư Linh Quang – Phật Chiếu, người khai sơn chùa năm 1741; Hòa thượng Từ Minh, trụ trì đời thứ tư, người dời chùa đến vị trí hiện nay và tái thiết vào năm 1834.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Phước Tường\" là gì?",
+          "back": "53 pho tượng Phật; 13 bức hoành phi, câu đối; nhiều bao lam, thần vọng và bài vị; hệ thống tượng Tam Thế Phật, Quan Thế Âm Bồ Tát và tượng Phật Thích Ca.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Phước Tường\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh.. Tọa độ GPS chính xác: 10.842216656202178, 106.7887960814335.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Phước Tường\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 43–VH/QĐ ngày \n01/07/1993 của Bộ Văn hóa – \nThông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Phước Tường\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Thiền sư Linh Quang – Phật Chiếu...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Phước Tường",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "53 pho tượng Phật; 13 bức hoành ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 13/32 đường Lã Xuân \nOai, p...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Phước Tường",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -24835,6 +29851,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Sắc Tứ Trường Thọ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Khoảng năm 1802 - vua Gia Long ban sắc “Sắc tứ Pháp Vũ”; năm 1822 - vua Minh Mạng ban tên Pháp Vũ; khoảng năm 1859 - chùa được chuyển đến khu vực Gò Vấp trong bối cảnh quân Pháp chiếm thành Gia Định; năm 1870 - vua Tự Đức ban tên “Trường Thọ”; năm 2000 - chùa được công nhận là di tích kiến trúc nghệ thuật cấp quốc gia; năm 2019 - Bộ Văn hóa, Thể thao và Du lịch thỏa thuận dự án tu bổ di tích; năm 2020 - tổ chức lễ đặt đá trùng tu.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Sắc Tứ Trường Thọ\"?",
+          "back": "Nguyễn Ánh; vua Gia Long; vua Minh Mạng; vua Tự Đức; Hòa thượng Hải Phước (pháp hiệu Liễu Kiện), trụ trì chùa Pháp Vũ và được vua Tự Đức ban tên Trường Thọ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Sắc Tứ Trường Thọ\" là gì?",
+          "back": "Hai biển sắc tứ gồm “Sắc tứ Pháp Vũ tự” thời Gia Long và “Sắc tứ Trường Thọ tự” thời Tự Đức; tượng Phật A Di Đà bằng gỗ mít; bộ tượng Di Đà Tam Tôn bằng gỗ; bộ tượng Thập Bát La Hán bằng đất nung phủ sơn; bộ tượng Thập Điện Diêm Vương bằng gỗ mít; đại hồng chung đúc năm 1808.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Sắc Tứ Trường Thọ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh. Tọa độ GPS chính xác: 10.828500565698352, 106.68408850683683.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Sắc Tứ Trường Thọ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 06/2000/QĐ-BVHTT ngày 13/4/2000 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Sắc Tứ Trường Thọ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Nguyễn Ánh; vua Gia Long; vua Mi...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Sắc Tứ Trường Thọ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hai biển sắc tứ gồm “Sắc tứ Pháp...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 53/524 đường Phan Văn Trị, ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Sắc Tứ Trường Thọ",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -25207,6 +30299,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Dinh Cô\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Cuối thế kỷ XVIII - hình thành miếu thờ Cô theo truyền thuyết dân gian; 1930 - dân làng xây dựng lại miếu quy mô hơn tại triền núi Thùy Vân; 1987 - chánh điện bị hỏa hoạn và sau đó được nhân dân xây dựng lại; 1989 - xây thêm nhà Võ Ca; 1992–1993 - tiếp tục xây dựng, bổ sung các hạng mục; 1995 - Dinh Cô được xếp hạng di tích cấp quốc gia; 1999 - trùng tu, tôn tạo Dinh Cô; hằng năm mồng 10–12 tháng 2 âm lịch - diễn ra lễ hội Nghinh Cô.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Dinh Cô\"?",
+          "back": "Lê Thị Hồng (tục danh Thị Cách), nhân vật được cư dân Long Hải tôn thờ với danh hiệu Long Hải Thần Nữ; theo truyền thuyết, bà quê ở Phan Rang hoặc Bình Thuận và mất khi còn trẻ tại vùng biển Long Hải.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Dinh Cô\" là gì?",
+          "back": "Tượng Bà Cô cao hơn 0,5 m tại chính điện; các long vị, bài vị và hương án phục vụ tín ngưỡng thờ Cô, Bà Thủy Long, Ông Nam Hải, Ngũ Hành Nương Nương và Tứ Pháp Nương Nương.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Dinh Cô\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Xã Long Hải, Thành phố Hồ Chí Minh. Tọa độ GPS chính xác: 10.386575500382035, 107.2341463440673.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Dinh Cô\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Danh lam thắng cảnh), theo Quyết định số 65QĐ/BT ngày 16/01/1995 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Dinh Cô\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Lê Thị Hồng (tục danh Thị Cách),...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Dinh Cô",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Tượng Bà Cô cao hơn 0,5 m tại ch...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Danh lam thắng cảnh)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Xã Long Hải, Thành phố Hồ Chí ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Dinh Cô",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -25575,6 +30743,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Chùa Ngọc Hoàng\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1892–1900 - Lưu Minh khởi công và công trình được hoàn thành; 1900 - hoàn thành xây dựng chùa; 1984 - chùa đổi tên thành Phước Hải Tự; 1994 - được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia; hằng năm ngày 9 tháng Giêng âm lịch - diễn ra lễ vía Ngọc Hoàng.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Chùa Ngọc Hoàng\"?",
+          "back": "Lưu Minh (Lưu Đạo Nguyên) – người khởi lập công trình; Ngô Đạo Chương – người tiếp tục việc xây dựng sau khi Lưu Minh qua đời.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Chùa Ngọc Hoàng\" là gì?",
+          "back": "Hiện vật tiêu biểu;Hơn 300 tượng thờ, chủ yếu bằng gỗ và giấy bồi; tượng Ngọc Hoàng Thượng Đế; tượng Kim Hoa Thánh Mẫu và 12 bà mụ; tượng Thập Điện Diêm Vương; các bao lam, liễn đối, hương án và tranh thờ bằng gỗ, gốm.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Chùa Ngọc Hoàng\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 73 Mai Thị Lựu, \nphường Tân Định. Tọa độ GPS chính xác: 10.79174764740094, 106.69788126124845.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Chùa Ngọc Hoàng\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 2754/QĐ – BT ngày \n15/10/1994 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Chùa Ngọc Hoàng\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Lưu Minh (Lưu Đạo Nguyên) – ngườ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Chùa Ngọc Hoàng",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hiện vật tiêu biểu;Hơn 300 tượng...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 73 Mai Thị Lựu, \nphường Tân...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Chùa Ngọc Hoàng",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -25947,6 +31191,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Bình Hòa\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Khoảng năm 1818 - thôn Bình Hòa được thành lập và đình được dựng; 1853 - vua Tự Đức ban sắc phong Thành hoàng Bổn cảnh; 1877 - đình được trùng tu lần thứ nhất; 1924 - đình được trùng tu lần thứ hai; 1946 - đình được trùng tu lần thứ ba; 1993 - đình được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; 10–11 tháng 9 âm lịch hằng năm - diễn ra lễ Kỳ yên.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Bình Hòa\"?",
+          "back": "Vua Tự Đức – người ban sắc phong Thành hoàng Bổn cảnh cho đình năm 1853; Phó tổng Lê Văn Huệ và Hương cả Lê Văn Ý – những người gắn với các đợt trùng tu đình.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Bình Hòa\" là gì?",
+          "back": "Sắc phong vua Tự Đức năm 1853; 5 bàn thờ bằng gỗ chạm khắc; 2 bát nhang gốm Sài Gòn xưa; các hoành phi, liễn đối, bao lam, phù điêu và hương án.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Bình Hòa\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh. Tọa độ GPS chính xác: 10.811700389346413, 106.69644906762382.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Bình Hòa\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Bình Hòa\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Vua Tự Đức – người ban sắc phong...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Bình Hòa",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc phong vua Tự Đức năm 1853; 5...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 15/77 đường Chu Văn An, phư...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Bình Hòa",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -26315,6 +31635,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Chí Hòa\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Thời kỳ đầu hình thành làng Hòa Hưng - đình được lập và mang tên đình Hòa Hưng; thế kỷ XVIII - Võ Trường Toản từng mở lớp dạy học tại đình; 1915–1917 - phong trào Thiên Địa Hội hoạt động tại đình; 25/8/1945 - Thanh niên Tiền phong tập trung tại đình và tham gia chống Pháp; 28/6/1996 - đình được xếp hạng di tích cấp quốc gia theo Quyết định số 1460-QĐ/VH.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Chí Hòa\"?",
+          "back": "Võ Trường Toản; các thành viên phong trào Thiên Địa Hội; lực lượng Thanh niên Tiền phong tại khu vực Hòa Hưng năm 1945.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Chí Hòa\" là gì?",
+          "back": "Cổng đình với họa tiết rồng, phượng và câu đối sơn son thếp vàng; kiến trúc gỗ, hoành phi, liễn đối và các đồ thờ tự truyền thống. Nguồn được kiểm chứng trong lượt này chưa cung cấp danh mục đầy đủ từng hiện vật.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Chí Hòa\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh. Tọa độ GPS chính xác: 10.781495968270306, 106.67305225228048.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Chí Hòa\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 1460-QĐ/VH ngày 28/6/1996 của Bộ Văn hóa, Thể thao và Du lịch theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Chí Hòa\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Võ Trường Toản; các thành viên p...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Chí Hòa",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Cổng đình với họa tiết rồng, phư...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 475 đường Cách Mạng Tháng T...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Chí Hòa",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -26687,6 +32083,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Dĩ An\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Khoảng năm 1838 - người dân xây dựng lại Dĩ An cổ miếu thành đình; 1852 - vua Tự Đức ban sắc phong Thành Hoàng; 1910 - đình trải qua một đợt đại trùng tu; 2011 - đình được công nhận là di tích lịch sử - văn hóa cấp tỉnh; 28/03/2019 - đình được xếp hạng di tích cấp quốc gia; 02/02/2023 - Lễ hội Kỳ yên đình Dĩ An được đưa vào Danh mục di sản văn hóa phi vật thể quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Dĩ An\"?",
+          "back": "Vua Tự Đức – người ban sắc phong Thành Hoàng cho đình năm 1852; cộng đồng cư dân khai phá, lập làng Dĩ An – những người góp công xây dựng đình.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Dĩ An\" là gì?",
+          "back": "Sắc phong Thành Hoàng của vua Tự Đức năm 1852; các bao lam, khán thờ, hoành phi, câu đối; các tác phẩm chạm khắc gỗ, cẩn gốm sứ và tranh sơn thủy.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Dĩ An\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh. Tọa độ GPS chính xác: 10.901594883611589, 106.75870979646022.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Dĩ An\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 1185/QĐ-BVHTTDL ngày 28/03/2019 của Bộ Văn hóa, Thể thao và Du lịch theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Dĩ An\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Vua Tự Đức – người ban sắc phong...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Dĩ An",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc phong Thành Hoàng của vua Tự...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Khu phố Nhị Đồng 1, phường Dĩ ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Dĩ An",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -27055,6 +32527,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Minh Hương Gia Thạnh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1789 - Minh Hương xã được thành lập và hình thành cơ sở ban đầu của đình; 1808 - vua Gia Long cho phép đặt tên Gia Thạnh Đường; 1839 - xây dựng đình và lập bia ghi danh những người Minh Hương làm quan dưới triều Nguyễn; 1867 - Hội Minh Hương Gia Thạnh được lập lại để duy trì việc thờ phượng; 1962 - đại tu bổ chánh điện và xây thêm lầu; 07/01/1993 - đình được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 43-VH/QĐ.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Minh Hương Gia Thạnh\"?",
+          "back": "Trần Thượng Xuyên; Nguyễn Hữu Cảnh; Trịnh Hoài Đức; Ngô Nhân Tịnh; Lê Quang Định.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Minh Hương Gia Thạnh\" là gì?",
+          "back": "Đại hồng chung đúc năm 1823; đại hồng chung đúc năm 1849; đỉnh gang đúc năm 1842; bia lập năm 1839 ghi tên những người Minh Hương nổi tiếng làm quan dưới triều Nguyễn; các bao lam, khám thờ, hoành phi, câu đối.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Minh Hương Gia Thạnh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh. Tọa độ GPS chính xác: 10.75217534282721, 106.66109305535474.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Minh Hương Gia Thạnh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Minh Hương Gia Thạnh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Trần Thượng Xuyên; Nguyễn Hữu Cả...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Minh Hương Gia Thạnh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Đại hồng chung đúc năm 1823; đại...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 380 đường Trần Hưng Đạo, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Minh Hương Gia Thạnh",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -27427,6 +32975,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Phú Long\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Khoảng năm 1842 - Đình Phú Long được xây dựng, gắn với quá trình hình thành cộng đồng cư dân tại Lái Thiêu; thời Nguyễn - đình được ban sắc thần, xác lập vị trí của Thành Hoàng trong đời sống tín ngưỡng địa phương; trong hai thời kỳ kháng chiến - đình gắn với hoạt động cách mạng; 28/12/2001 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 53/QĐ-BVHTT.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Phú Long\"?",
+          "back": "Thành Hoàng Bổn Cảnh và các bậc tiền hiền, hậu hiền của vùng Phú Long; cộng đồng cư dân địa phương là lực lượng trực tiếp xây dựng, gìn giữ và duy trì các hoạt động tín ngưỡng tại đình.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Phú Long\" là gì?",
+          "back": "Sắc thần; hệ thống hoành phi, câu đối; bao lam; hương án; bàn thờ; các mảng chạm khắc gỗ và đồ thờ truyền thống. Những hiện vật và cấu kiện này có giá trị trong việc nghiên cứu nghệ thuật trang trí đình làng Nam Bộ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Phú Long\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM. Tọa độ GPS chính xác: 10.8954642703731, 106.69559303693825.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Phú Long\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 53/QĐ-BVHTT ngày 28/12/2001 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Phú Long\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Thành Hoàng Bổn Cảnh và các bậc ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Phú Long",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc thần; hệ thống hoành phi, câ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Khu 5, ấp Hòa Long, phường Lái...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Phú Long",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -27795,6 +33419,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Phú Nhuận\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Khoảng năm 1818 - đình Phú Nhuận được dựng ban đầu ở khu vực rạch Thị Nghè; 1852 - đình được xây dựng lại tại khu vực gò Kim Quy, vị trí hiện nay; 1893 - vua Tự Đức ban sắc phong Thành Hoàng; các thời kỳ sau - đình được sửa chữa, bảo tồn để duy trì hoạt động tín ngưỡng; 29/01/1997 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 3744-QĐ/VHTT.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Phú Nhuận\"?",
+          "back": "Lê Tự Tài – người có công hiến khu đất gò Kim Quy để xây dựng đình; vua Tự Đức – người ban sắc phong Thành Hoàng cho đình; các bậc tiền hiền, hậu hiền và cộng đồng cư dân Phú Nhuận qua nhiều thế hệ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Phú Nhuận\" là gì?",
+          "back": "Sắc phong Thành Hoàng của vua Tự Đức; hoành phi, câu đối; hương án; bàn thờ và các đồ thờ tự truyền thống. Các cấu kiện gỗ chạm khắc và trang trí trong đình góp phần thể hiện nghệ thuật kiến trúc đình làng tại khu vực Gia Định – Sài Gòn.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Phú Nhuận\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM. Tọa độ GPS chính xác: 10.795362511439716, 106.673864254131.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Phú Nhuận\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 3744-QĐ/VHTT ngày 29/01/1997 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Phú Nhuận\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Lê Tự Tài – người có công hiến k...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Phú Nhuận",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc phong Thành Hoàng của vua Tự...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 18 đường Mai Văn Ngọc, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Phú Nhuận",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -28167,6 +33867,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Tân An (Bến Thế)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1820 - Đình Tân An được xây dựng; 1853 - vua Tự Đức ban sắc phong, ghi nhận vị thần được thờ tại đình; 2004 - được xếp hạng di tích cấp tỉnh; 26/04/2014 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 1261/QĐ-BVHTTDL; hằng năm - duy trì các nghi lễ và lễ hội Kỳ yên của cộng đồng.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Tân An (Bến Thế)\"?",
+          "back": "Nguyễn Văn Thành (Tiền Quân Cơ, Quận công) – nhân vật lịch sử được thờ tại đình; vua Tự Đức – người ban sắc phong cho đình; các bậc tiền hiền, hậu hiền có công khai phá, lập làng và xây dựng cộng đồng Tân An – Bến Thế.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Tân An (Bến Thế)\" là gì?",
+          "back": "Sắc phong vua Tự Đức năm 1853; hoành phi, liễn đối; bao lam; tủ thờ; khánh thờ; tượng thờ và các đồ thờ bằng gỗ. Đặc biệt, hệ thống chạm khắc gỗ thể hiện các đề tài truyền thống như rồng, phụng, hoa lá và các biểu tượng mang ý nghĩa tín ngưỡng.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Tân An (Bến Thế)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Khu phố 1, phường Phú An, TP.HCM. Tọa độ GPS chính xác: 11.01970405639836, 106.61830219646122.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Tân An (Bến Thế)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 1261/QĐ-BVHTTDL ngày 26/04/2014 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Tân An (Bến Thế)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Nguyễn Văn Thành (Tiền Quân Cơ, ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Tân An (Bến Thế)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc phong vua Tự Đức năm 1853; h...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Khu phố 1, phường Phú An, TP.H...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Tân An (Bến Thế)",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -28535,6 +34311,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Thắng Tam\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Thời vua Minh Mạng - Đình Thắng Tam được hình thành trong quá trình tổ chức, ổn định cộng đồng cư dân tại Vũng Tàu; 1835 - đình được trùng tu và lợp ngói; các giai đoạn sau - quần thể Đình, Lăng Cá Ông và Miếu Bà tiếp tục được tu bổ; 25/03/1991 - được xếp hạng di tích lịch sử cấp quốc gia theo Quyết định số 457/QĐ; hằng năm - diễn ra các nghi lễ, lễ hội truyền thống gắn với tín ngưỡng Thành Hoàng, Cá Ông và Miếu Bà.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Thắng Tam\"?",
+          "back": "Ba cai đội Phước Thắng – những người có công khai phá, bảo vệ vùng đất và vùng biển Vũng Tàu; Thành Hoàng Bổn Cảnh; Đại Càn Quốc Gia Nam Hải Thượng Đẳng Thần; Thiên Y A Na Diễm Ngọc Phi; Thủy Long Thần Nữ và các đối tượng được thờ trong quần thể di tích.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Thắng Tam\" là gì?",
+          "back": "Sắc phong và các đồ thờ trong Đình Thắng Tam; hệ thống hương án, hoành phi, câu đối và các cấu kiện kiến trúc trang trí. Trong Lăng Cá Ông thuộc quần thể còn lưu giữ bộ xương Cá Ông, là hiện vật đặc biệt gắn với tín ngưỡng thờ cá Ông của cư dân biển.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Thắng Tam\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM. Tọa độ GPS chính xác: 10.34013008979058, 107.08295979645634.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Thắng Tam\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Quyết định số 457/QĐ ngày 25/03/1991 theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Thắng Tam\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Ba cai đội Phước Thắng – những n...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Thắng Tam",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc phong và các đồ thờ trong Đì...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 77 đường Hoàng Hoa Thám, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Thắng Tam",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -28907,6 +34759,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Thần Linh Đông\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "1823 - Đình Thần Linh Đông được xây dựng, thể hiện qua niên đại ghi trên cấu kiện kiến trúc của đình; các thời kỳ sau - đình được tu bổ và duy trì hoạt động thờ tự; hằng năm - tổ chức lễ Kỳ Yên và lễ giỗ Tiền hiền Tạ Dương Minh; 11/04/2020 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 3245/QĐ-BVHTTDL.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Thần Linh Đông\"?",
+          "back": "Tạ Dương Minh – nhân vật được xem là có công khai phá vùng đất Thủ Đức và được thờ phụng tại đình; các bậc tiền hiền, hậu hiền của làng Linh Đông; cộng đồng cư dân địa phương qua nhiều thế hệ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Thần Linh Đông\" là gì?",
+          "back": "Sắc phong; hoành phi; liễn đối; hương án; bàn thờ; đồ thờ bằng gỗ và các cấu kiện kiến trúc gỗ chạm khắc. Đây là những tư liệu và hiện vật quan trọng phản ánh lịch sử tín ngưỡng, nghệ thuật trang trí và sinh hoạt cộng đồng của làng Linh Đông.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Thần Linh Đông\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM. Tọa độ GPS chính xác: 10.853322555076566, 106.76024317192255.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Thần Linh Đông\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 3245/QĐ-BVHTTDL ngày 11/4/2020 của Bộ Văn hóa, Thể thao và Du lịch. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Thần Linh Đông\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Tạ Dương Minh – nhân vật được xe...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Thần Linh Đông",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Sắc phong; hoành phi; liễn đối; ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 28 đường Chương Dương, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Thần Linh Đông",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -29275,6 +35203,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Thông Tây Hội\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đình Thông Tây Hội; khoảng 1679 - hình thành đình gắn với quá trình cư dân vào khai phá vùng Gia Định; 1883 - đình được xây dựng theo kiến trúc quy mô lớn như hiện nay; 1944 - hai làng Hạnh Thông Tây và An Hội sáp nhập, đình mang tên Thông Tây Hội; 26/09/1998 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Thông Tây Hội\"?",
+          "back": "Đình Thông Tây Hội; Đông Chinh Vương và Dực Thánh Vương – hai vị thần được thờ làm Thành Hoàng; cộng đồng cư dân Hạnh Thông Tây và An Hội có vai trò hình thành, duy trì đình.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Thông Tây Hội\" là gì?",
+          "back": "Đình Thông Tây Hội; sắc phong Thành Hoàng; các hoành phi, câu đối; đồ thờ; cấu kiện gỗ và các mảng chạm khắc truyền thống; cổng tam quan với hình lưỡng long tranh châu bằng gốm.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Thông Tây Hội\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM.. Tọa độ GPS chính xác: 10.840000633777274, 106.66493947622094.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Thông Tây Hội\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 2009/1998/QĐ-BVHTT ngày 26/9/1998 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Thông Tây Hội\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Đình Thông Tây Hội; Đông Chinh V...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Thông Tây Hội",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Đình Thông Tây Hội; sắc phong Th...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 107/1 đường Nguyễn Văn Lượn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Thông Tây Hội",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -29647,6 +35651,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Trường Thọ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đình Trường Thọ; đầu thế kỷ XIX - hình thành đình và cộng đồng làng Trường Thọ; 1926 - vua Khải Định ban sắc phong Thành Hoàng; 30/12/2002 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; các thế hệ sau tiếp tục tu bổ, bảo tồn đình.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Trường Thọ\"?",
+          "back": "Đình Trường Thọ; Châu Văn Tiếp – nhân vật được truyền khẩu là vị tướng triều Nguyễn được thờ tại đình; vua Khải Định – người ban sắc phong năm 1926.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Trường Thọ\" là gì?",
+          "back": "Đình Trường Thọ; sắc phong vua Khải Định năm 1926; hệ thống tượng thờ, đồ thờ; hoành phi, câu đối và các cấu kiện kiến trúc gỗ có giá trị nghệ thuật.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Trường Thọ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Tổ 5, phường Thủ Đức, TP.HCM.. Tọa độ GPS chính xác: 10.83363325813424, 106.75664891425093.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Trường Thọ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Trường Thọ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Đình Trường Thọ; Châu Văn Tiếp –...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Trường Thọ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Đình Trường Thọ; sắc phong vua K...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Tổ 5, phường Thủ Đức, TP.HCM.",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Trường Thọ",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -30015,6 +36095,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Đình Xuân Hiệp\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Đình Xuân Hiệp; khoảng 1818–1885 - đình được hình thành với quy mô nhỏ, ban đầu bằng tre lá; 1928 - đình được xây dựng khang trang theo kiểu 5 gian 2 chái; 1934 - vua Bảo Đại ban sắc phong Thành Hoàng; 15/12/2004 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; năm 2026 - dự án chuẩn bị tu bổ, tôn tạo di tích được triển khai.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Đình Xuân Hiệp\"?",
+          "back": "Đình Xuân Hiệp; Thành Hoàng Bổn Cảnh của thôn Xuân Hiệp; vua Bảo Đại – người ban sắc phong năm 1934.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Đình Xuân Hiệp\" là gì?",
+          "back": "Đình Xuân Hiệp; sắc phong vua Bảo Đại năm 1934; các tượng thờ, đồ thờ; hoành phi, câu đối; hệ thống cấu kiện gỗ và các chi tiết kiến trúc của đình.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Đình Xuân Hiệp\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Phường Linh Xuân, TP.HCM.. Tọa độ GPS chính xác: 10.877636787952133, 106.76533819216165.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Đình Xuân Hiệp\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Đình Xuân Hiệp\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Đình Xuân Hiệp; Thành Hoàng Bổn ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Đình Xuân Hiệp",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Đình Xuân Hiệp; sắc phong vua Bả...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Phường Linh Xuân, TP.HCM.",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Đình Xuân Hiệp",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -30387,6 +36543,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Hội quán Hà Chương\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Hà Chương Hội quán; trên 200 năm trước - cộng đồng người Hoa thuộc các huyện của phủ Chương Châu hình thành hội quán; nhiều lần được trùng tu qua các thời kỳ; 28/12/2001 - được xếp hạng di tích cấp quốc gia; 14/04/2024 - khởi công dự án tu bổ, tôn tạo di tích.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Hội quán Hà Chương\"?",
+          "back": "Hà Chương Hội quán; Thiên Hậu Thánh Mẫu; Quan Thánh Đế Quân; Thổ Địa; cộng đồng người Hoa gốc Phúc Kiến thuộc khu vực Chương Châu, Tuyền Châu.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Hội quán Hà Chương\" là gì?",
+          "back": "Hà Chương Hội quán; tượng Thiên Hậu; tượng Quan Thánh Đế Quân; các tượng thờ và đồ thờ; hệ thống chạm khắc gỗ, đá, gạch ngói; các mảng trang trí sành sứ trên mái.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Hội quán Hà Chương\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ.. Tọa độ GPS chính xác: 10.753116410259468, 106.65795025596664.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Hội quán Hà Chương\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Hội quán Hà Chương\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Hà Chương Hội quán; Thiên Hậu Th...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Hội quán Hà Chương",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hà Chương Hội quán; tượng Thiên ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 802 đường Nguyễn Trãi, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hội quán Hà Chương",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -30755,6 +36987,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Hội quán Nghĩa An; khoảng 1819–1820 - xây dựng kiên cố công trình; 1866, 1901, 1969, 1984 - nhiều đợt trùng tu; 27/07/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; 2010–2014 - tiến hành dự án trùng tu lớn; 2026 - tiếp tục là trung tâm tổ chức lễ Nghinh Ông Quan Thánh Đế Quân và các hoạt động văn hóa Nguyên Tiêu.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\"?",
+          "back": "Hội quán Nghĩa An; Quan Thánh Đế Quân (Quan Công); Quan Bình; Châu Xương; Thiên Hậu Thánh Mẫu; Phước Đức Chánh Thần; cộng đồng người Hoa gốc Triều Châu.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" là gì?",
+          "back": "Hội quán Nghĩa An; tượng Quan Công và các thần được thờ; hoành phi, câu đối; bao lam; hương án; đồ thờ bằng gỗ, đá, gốm; hệ thống phù điêu và trang trí mang phong cách Triều Châu.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.. Tọa độ GPS chính xác: 10.753662453000011, 106.66210427805626.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 52/2001/QĐ-BVHTT ngày 28/12/2001 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Hội quán Nghĩa An; Quan Thánh Đế...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hội quán Nghĩa An; tượng Quan Cô...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 678 đường Nguyễn Trãi, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hội quán Nghĩa An (Miếu Q...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -31127,6 +37435,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Hội quán Nghĩa Nhuận\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Hội quán Nghĩa Nhuận; đầu thế kỷ XIX - hình thành làng Tân Nhuận và đình làng; 1852 - vua Tự Đức ban sắc phong Thành Hoàng; 1872 - đình trở thành Hội quán Nghĩa Nhuận; 1879, 1894, 1906, 1911 - các đợt trùng tu được ghi nhận; 07/01/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Hội quán Nghĩa Nhuận\"?",
+          "back": "Hội quán Nghĩa Nhuận; Thành Hoàng Bổn Cảnh; Quan Thánh Đế Quân; Thiên Hậu Thánh Mẫu; cộng đồng Hội Nghĩa Nhuận và cư dân làng Tân Nhuận.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Hội quán Nghĩa Nhuận\" là gì?",
+          "back": "Hội quán Nghĩa Nhuận; sắc phong Thành Hoàng vua Tự Đức năm 1852; tượng Quan Đế; tượng Thiên Hậu; hoành phi, câu đối và đồ thờ truyền thống.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Hội quán Nghĩa Nhuận\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM.. Tọa độ GPS chính xác: 10.749193750473093, 106.65441869988231.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Hội quán Nghĩa Nhuận\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Hội quán Nghĩa Nhuận\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Hội quán Nghĩa Nhuận; Thành Hoàn...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Hội quán Nghĩa Nhuận",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hội quán Nghĩa Nhuận; sắc phong ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 27 đường Phan Văn Khỏe, phư...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hội quán Nghĩa Nhuận",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -31495,6 +37879,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Hội quán Ôn Lăng\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Hội quán Ôn Lăng; 1787 - Nguyễn Ánh cho phép các lưu dân người Hoa lập các bang hội; thế kỷ XVIII - hội quán được hình thành và trở thành nơi sinh hoạt của cộng đồng người Hoa gốc Tuyền Châu; 1869 - lập bia đá tại hội quán; 07/01/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; 2026 - tiếp tục là nơi diễn ra các hoạt động tín ngưỡng, đặc biệt dịp Nguyên Tiêu.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Hội quán Ôn Lăng\"?",
+          "back": "Hội quán Ôn Lăng; Thiên Hậu Thánh Mẫu; Quan Âm; các vị thần được cộng đồng người Hoa gốc Tuyền Châu thờ phụng; Nguyễn Ánh liên quan đến việc cho phép các bang người Hoa tổ chức hội quán năm 1787.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Hội quán Ôn Lăng\" là gì?",
+          "back": "Hội quán Ôn Lăng; bia đá năm 1869; tượng và đồ thờ Thiên Hậu, Quan Âm cùng các vị thần; hoành phi, câu đối và các tác phẩm trang trí gốm sứ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Hội quán Ôn Lăng\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM.. Tọa độ GPS chính xác: 10.754131971849885, 106.659624625907.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Hội quán Ôn Lăng\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Hội quán Ôn Lăng\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Hội quán Ôn Lăng; Thiên Hậu Thán...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Hội quán Ôn Lăng",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hội quán Ôn Lăng; bia đá năm 186...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 12 đường Lão Tử, phường Chợ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hội quán Ôn Lăng",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -31867,6 +38327,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Hội quán Quỳnh Phủ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Quỳnh Phủ Hội quán; 1824 - hội quán được thành lập bởi cộng đồng người Hoa đến từ đảo Hải Nam; 1827 - đúc đại hồng chung; 31/08/1998 - được xếp hạng di tích cấp quốc gia; 2024 - tổ chức kỷ niệm 200 năm thành lập Quỳnh Phủ Hội quán; hằng năm - duy trì các hoạt động tín ngưỡng và văn hóa cộng đồng.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Hội quán Quỳnh Phủ\"?",
+          "back": "Quỳnh Phủ Hội quán; cộng đồng người Hoa gốc Hải Nam; các vị thần được thờ tại hội quán; vua Duy Tân – người ban sắc được lưu giữ tại hội quán.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Hội quán Quỳnh Phủ\" là gì?",
+          "back": "Quỳnh Phủ Hội quán; sắc vua Duy Tân; đại hồng chung đúc năm 1827; bộ tranh sơn mài Lục Vân Tiên gồm 6 bức; các hoành phi, câu đối và đồ thờ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Hội quán Quỳnh Phủ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.. Tọa độ GPS chính xác: 10.752445654286207, 106.66323119645925.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Hội quán Quỳnh Phủ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1811/1998/QĐ-BVHTT ngày 31/8/1998 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Hội quán Quỳnh Phủ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Quỳnh Phủ Hội quán; cộng đồng ng...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Hội quán Quỳnh Phủ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Quỳnh Phủ Hội quán; sắc vua Duy ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 276 đường Trần Hưng Đạo, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hội quán Quỳnh Phủ",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -32235,6 +38771,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Hội quán Tuệ Thành (Chùa Bà)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Hội quán Tuệ Thành; khoảng 1760 - cộng đồng người Hoa gốc Tuệ Thành/Quảng Châu xây dựng miếu thờ Thiên Hậu; nhiều lần trùng tu trong các thế kỷ XVIII–XX; 07/01/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; hằng năm - tổ chức các nghi lễ vía Thiên Hậu và hoạt động tín ngưỡng, trong đó có tục khai ấn dịp cuối năm.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Hội quán Tuệ Thành (Chùa Bà)\"?",
+          "back": "Hội quán Tuệ Thành; Thiên Hậu Thánh Mẫu; cộng đồng người Hoa gốc Quảng Châu/Quảng Đông; các ban quản trị hội quán qua nhiều thế hệ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Hội quán Tuệ Thành (Chùa Bà)\" là gì?",
+          "back": "Hội quán Tuệ Thành; đại hồng chung; bộ lư Pháp lam đề niên hiệu Đạo Quang năm thứ 10 (1830); tượng Thiên Hậu; các phù điêu, tranh đắp nổi và đồ thờ; hai tượng lân đá.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Hội quán Tuệ Thành (Chùa Bà)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.. Tọa độ GPS chính xác: 10.753253542057488, 106.66117684816919.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Hội quán Tuệ Thành (Chùa Bà)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Hội quán Tuệ Thành (Chùa Bà)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Hội quán Tuệ Thành; Thiên Hậu Th...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Hội quán Tuệ Thành (Chùa Bà)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Hội quán Tuệ Thành; đại hồng chu...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 710 đường Nguyễn Trãi, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Hội quán Tuệ Thành (Chùa ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -32607,6 +39219,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Lăng Lê Văn Duyệt\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Lăng Lê Văn Duyệt; 1832 - Lê Văn Duyệt qua đời tại Gia Định và được an táng tại khu vực Bà Chiểu; các thế kỷ XIX–XX - khu lăng miếu được xây dựng, tu bổ và trở thành nơi tưởng niệm Tả quân; 16/11/1988 - được xếp hạng di tích cấp quốc gia; hằng năm - tổ chức lễ giỗ Tả quân Lê Văn Duyệt vào cuối tháng 7 âm lịch, duy trì nghi thức tế lễ truyền thống.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Lăng Lê Văn Duyệt\"?",
+          "back": "Lăng Lê Văn Duyệt; Đức Thượng công Tả quân Lê Văn Duyệt; Chánh thất Tả quân phu nhân Đỗ Thị Phẫn; các hậu duệ họ Lê và cộng đồng cư dân Gia Định – Sài Gòn.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Lăng Lê Văn Duyệt\" là gì?",
+          "back": "Lăng Lê Văn Duyệt; mộ song táng của Lê Văn Duyệt và Đỗ Thị Phẫn; bình phong; bia đá; hương án; đồ thờ; các cấu kiện kiến trúc và trang trí trong khu lăng miếu.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Lăng Lê Văn Duyệt\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM.. Tọa độ GPS chính xác: 10.802217454675066, 106.69708365535504.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Lăng Lê Văn Duyệt\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1288-VH/QĐ ngày 16/11/1998 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Lăng Lê Văn Duyệt\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Lăng Lê Văn Duyệt; Đức Thượng cô...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Lăng Lê Văn Duyệt",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Lăng Lê Văn Duyệt; mộ song táng ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 1 đường Vũ Tùng, phường Gia...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Lăng Lê Văn Duyệt",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -32975,6 +39663,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Lăng Trương Tấn Bửu\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Lăng Trương Tấn Bửu; cuối thế kỷ XVIII – đầu thế kỷ XIX, Trương Tấn Bửu tham gia hoạt động quân sự dưới quyền Nguyễn Ánh; sau khi qua đời, ông được an táng và lập lăng tại vùng Phú Nhuận; 15/12/2004, lăng được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Lăng Trương Tấn Bửu\"?",
+          "back": "Trương Tấn Bửu; vua Gia Long; các tướng lĩnh và quan lại triều Nguyễn hoạt động tại Gia Định.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Lăng Trương Tấn Bửu\" là gì?",
+          "back": "Lăng Trương Tấn Bửu; mộ và bia mộ Trương Tấn Bửu; các đồ thờ, hoành phi, câu đối và kiến trúc lăng mộ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Lăng Trương Tấn Bửu\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM.. Tọa độ GPS chính xác: 10.796197458827, 106.67557949093708.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Lăng Trương Tấn Bửu\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Lăng Trương Tấn Bửu\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Trương Tấn Bửu; vua Gia Long; cá...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Lăng Trương Tấn Bửu",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Lăng Trương Tấn Bửu; mộ và bia m...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 41 đường Nguyễn Thị Huỳnh, ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Lăng Trương Tấn Bửu",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -33347,6 +40111,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Lăng Võ Di Nguy\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Lăng Võ Di Nguy; cuối thế kỷ XVIII, Võ Di Nguy tham gia lực lượng Nguyễn Ánh chống Tây Sơn; ông giữ vai trò quan trọng trong các hoạt động quân sự và thủy quân; 07/01/1993, lăng được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Lăng Võ Di Nguy\"?",
+          "back": "Võ Di Nguy; Nguyễn Ánh (vua Gia Long); các tướng lĩnh thuộc lực lượng Nguyễn Ánh trong cuộc chiến với Tây Sơn.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Lăng Võ Di Nguy\" là gì?",
+          "back": "Lăng Võ Di Nguy; mộ Võ Di Nguy; bia mộ, bàn thờ và các đồ tế tự liên quan đến nhân vật.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Lăng Võ Di Nguy\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM.. Tọa độ GPS chính xác: 10.795762006729788, 106.68295119645941.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Lăng Võ Di Nguy\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Lăng Võ Di Nguy\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Võ Di Nguy; Nguyễn Ánh (vua Gia ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Lăng Võ Di Nguy",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Lăng Võ Di Nguy; mộ Võ Di Nguy; ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 19 đường Cô Giang, phường C...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Lăng Võ Di Nguy",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -33715,6 +40555,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Linh Sơn Cổ Tự\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Linh Sơn Cổ Tự; hình thành và phát triển gắn với lịch sử Phật giáo tại Vũng Tàu; nhiều lần được tu bổ qua các thời kỳ; 03/08/1991, được xếp hạng di tích quốc gia theo Quyết định 1371/QĐ.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Linh Sơn Cổ Tự\"?",
+          "back": "Các vị trụ trì và tăng ni Linh Sơn Cổ Tự; cộng đồng Phật tử và cư dân Vũng Tàu qua các thời kỳ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Linh Sơn Cổ Tự\" là gì?",
+          "back": "Linh Sơn Cổ Tự; tượng Phật, tượng Bồ Tát, chuông, đồ thờ, hoành phi, câu đối và các tác phẩm trang trí Phật giáo.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Linh Sơn Cổ Tự\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM.. Tọa độ GPS chính xác: 10.339395637686106, 107.08382801424735.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Linh Sơn Cổ Tự\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1371/QĐ ngày 03/08/1991. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Linh Sơn Cổ Tự\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các vị trụ trì và tăng ni Linh S...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Linh Sơn Cổ Tự",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Linh Sơn Cổ Tự; tượng Phật, tượn...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 104 đường Hoàng Hoa Thám, p...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Linh Sơn Cổ Tự",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -34087,6 +41003,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Miếu Nhị Phủ; hình thành trong quá trình cộng đồng người Hoa xây dựng Chợ Lớn; trở thành trung tâm tín ngưỡng Ông Bổn của cộng đồng; nhiều lần được tu bổ; 07/01/1993, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Miếu Nhị Phủ (Chùa Ông Bổn)\"?",
+          "back": "Ông Bổn/Phước Đức Chánh Thần; các vị thần được cộng đồng người Hoa thờ phụng; cộng đồng người Hoa tại Chợ Lớn.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\" là gì?",
+          "back": "Miếu Nhị Phủ; tượng Ông Bổn/Phước Đức Chánh Thần; tượng và đồ thờ; hoành phi, câu đối; hương án; các mảng chạm khắc, phù điêu và trang trí gốm sứ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM.. Tọa độ GPS chính xác: 10.751397624528153, 106.6572630964593.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Miếu Nhị Phủ (Chùa Ông Bổn)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Ông Bổn/Phước Đức Chánh Thần; cá...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Miếu Nhị Phủ (Chùa Ông Bổn)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Miếu Nhị Phủ; tượng Ông Bổn/Phướ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 264 đường Hải Thượng Lãn Ôn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Miếu Nhị Phủ (Chùa Ông Bổ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -34455,6 +41447,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Miếu Thiên Hậu (Quảng Triệu hội quán); hình thành từ quá trình định cư của người Hoa Quảng Đông tại Sài Gòn – Chợ Lớn; duy trì các nghi lễ vía Thiên Hậu và hoạt động cộng đồng; 25/04/1998, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Miếu Thiên Hậu (Quảng Triệu hội quán)\"?",
+          "back": "Thiên Hậu Thánh Mẫu; Quan Thánh Đế Quân và các vị thần được thờ tại hội quán; cộng đồng người Hoa gốc Quảng Đông.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" là gì?",
+          "back": "Miếu Thiên Hậu; tượng Thiên Hậu Thánh Mẫu; lư hương, chuông, đồ thờ; hoành phi, câu đối; các mảng chạm khắc và trang trí gốm sứ đặc trưng của hội quán người Hoa.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM.. Tọa độ GPS chính xác: 10.765062486177206, 106.69908366923417.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Thiên Hậu Thánh Mẫu; Quan Thánh ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Miếu Thiên Hậu (Quảng Triệu hội quán)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Miếu Thiên Hậu; tượng Thiên Hậu ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 122 đường Võ Văn Kiệt, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Miếu Thiên Hậu (Quảng Tri...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -34827,6 +41895,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà cổ Trần Công Vàng\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Nhà cổ Trần Công Vàng; 1889–1892, công trình được xây dựng; trải qua nhiều thế hệ gia đình họ Trần gìn giữ; 07/01/1993, được công nhận di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà cổ Trần Công Vàng\"?",
+          "back": "Trần Công Vàng; ông Trần Văn Long – người xây dựng ngôi nhà; các thế hệ gia đình họ Trần.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà cổ Trần Công Vàng\" là gì?",
+          "back": "Nhà cổ Trần Công Vàng; hệ thống nhà gỗ; bàn thờ, tủ thờ, bàn ghế, hoành phi, liễn đối, câu đối, tranh tứ bình và các mảng chạm khắc, cẩn xà cừ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà cổ Trần Công Vàng\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM.. Tọa độ GPS chính xác: 10.97868162166789, 106.6515762320429.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà cổ Trần Công Vàng\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà cổ Trần Công Vàng\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Trần Công Vàng; ông Trần Văn Lon...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà cổ Trần Công Vàng",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Nhà cổ Trần Công Vàng; hệ thống ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 21 đường Ngô Tùng Châu, phư...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà cổ Trần Công Vàng",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -35195,6 +42339,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà cổ Trần Văn Hổ\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Nhà cổ Trần Văn Hổ; 1890, cụ Trần Văn Lân xây dựng ngôi nhà cho gia đình; Trần Văn Hổ (Tự Đẩu) sinh sống và hoạt động tại đây; 29/04/1993, nhà được công nhận di tích quốc gia theo các nguồn giới thiệu về di tích.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà cổ Trần Văn Hổ\"?",
+          "back": "Trần Văn Hổ (Tự Đẩu); Trần Văn Lân – thân sinh Trần Văn Hổ và người xây dựng nhà; các thế hệ gia đình họ Trần.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà cổ Trần Văn Hổ\" là gì?",
+          "back": "Nhà cổ Trần Văn Hổ; kết cấu nhà gỗ; bàn thờ gia tiên; hoành phi, câu đối, liễn đối; đồ gia dụng và các chi tiết chạm khắc gỗ mang phong cách Nam Bộ cuối thế kỷ XIX.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà cổ Trần Văn Hổ\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM.. Tọa độ GPS chính xác: 10.97799448073809, 106.65064343404006.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà cổ Trần Văn Hổ\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa và Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà cổ Trần Văn Hổ\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Trần Văn Hổ (Tự Đẩu); Trần Văn L...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà cổ Trần Văn Hổ",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Nhà cổ Trần Văn Hổ; kết cấu nhà ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 18 đường Bạch Đằng, phường ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà cổ Trần Văn Hổ",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -35567,6 +42787,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà hát Thành phố Hồ Chí Minh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Nhà hát Thành phố; cuối thế kỷ XIX, Nhà hát được xây dựng trong thời kỳ Pháp thuộc; trở thành một công trình văn hóa quan trọng của Sài Gòn; 29/03/2012, được xếp hạng di tích quốc gia theo Quyết định 1209/QĐ-BVHTTDL.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà hát Thành phố Hồ Chí Minh\"?",
+          "back": "Các kiến trúc sư, nghệ nhân Pháp và Việt Nam tham gia xây dựng, trang trí Nhà hát; các nghệ sĩ, đoàn nghệ thuật từng hoạt động tại Nhà hát Thành phố.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà hát Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Nhà hát Thành phố; mặt tiền, phù điêu, tượng trang trí, hệ thống cầu thang, nội thất khán phòng, sân khấu và các chi tiết kiến trúc mang phong cách Pháp.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà hát Thành phố Hồ Chí Minh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM.. Tọa độ GPS chính xác: 10.77661542428395, 106.70316881425052.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà hát Thành phố Hồ Chí Minh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1209/QĐ-BVHTTDL ngày 29/03/2012 của Bộ Văn hóa, Thể thao và Du lịch. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà hát Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các kiến trúc sư, nghệ nhân Pháp...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà hát Thành phố Hồ Chí Minh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Nhà hát Thành phố; mặt tiền, phù...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 7 đường Công trường Lam Sơn...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà hát Thành phố Hồ Chí ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -35935,6 +43231,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà Lớn Long Sơn\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Nhà Lớn Long Sơn; đầu thế kỷ XX, ông Trần xây dựng và phát triển khu Nhà Lớn; nơi đây trở thành trung tâm sinh hoạt của cộng đồng Long Sơn; 03/08/1991, được xếp hạng di tích lịch sử – văn hóa cấp quốc gia theo Quyết định 1371/QĐ.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà Lớn Long Sơn\"?",
+          "back": "Ông Trần – người khai sáng cộng đồng Long Sơn; các thế hệ cư dân và tín đồ theo đạo Ông Trần.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà Lớn Long Sơn\" là gì?",
+          "back": "Nhà Lớn Long Sơn; hệ thống nhà gỗ, bàn thờ, hoành phi, câu đối, đồ thờ, vật dụng sinh hoạt và các cấu kiện gỗ cổ trong quần thể.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà Lớn Long Sơn\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Thôn 5, phường Long Sơn, TP.HCM.. Tọa độ GPS chính xác: 10.454542774719467, 107.09629591324035.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà Lớn Long Sơn\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1371/QĐ ngày 03/08/1991. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà Lớn Long Sơn\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Ông Trần – người khai sáng cộng ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà Lớn Long Sơn",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Nhà Lớn Long Sơn; hệ thống nhà g...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Thôn 5, phường Long Sơn, TP.HC...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà Lớn Long Sơn",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -36307,6 +43679,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Nhà thờ tổ thợ bạc; hình thành gắn với cộng đồng thợ bạc, thợ kim hoàn Chợ Lớn; duy trì tục thờ Tổ nghề và sinh hoạt hội quán; 25/04/1998, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\"?",
+          "back": "Các nghệ nhân kim hoàn và những người lập Hội quán Lệ Châu; các thế hệ thợ bạc, thợ kim hoàn Chợ Lớn.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" là gì?",
+          "back": "Nhà thờ tổ thợ bạc; tượng/ban thờ Tổ nghề; hoành phi, câu đối, đồ thờ và các dụng cụ, tư liệu liên quan đến nghề kim hoàn truyền thống.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.. Tọa độ GPS chính xác: 10.752307300714847, 106.65514511225754.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các nghệ nhân kim hoàn và những ...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Nhà thờ tổ thợ bạc; tượng/ban th...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 586 đường Trần Hưng Đạo, ph...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Nhà thờ tổ thợ bạc (Hội q...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -36675,6 +44123,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Niết Bàn Tịnh Xá\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Niết Bàn Tịnh Xá; thế kỷ XX, tịnh xá được xây dựng và phát triển thành một địa điểm Phật giáo nổi tiếng của Vũng Tàu; 03/08/1991, được xếp hạng di tích quốc gia theo Quyết định 1371/QĐ.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Niết Bàn Tịnh Xá\"?",
+          "back": "Các vị hòa thượng, tăng ni gắn với quá trình xây dựng và phát triển Niết Bàn Tịnh Xá; cộng đồng Phật tử Vũng Tàu.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Niết Bàn Tịnh Xá\" là gì?",
+          "back": "Niết Bàn Tịnh Xá; tượng Phật nhập Niết Bàn, tượng Phật và Bồ Tát, chuông, đồ thờ, phù điêu và các tác phẩm trang trí Phật giáo.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Niết Bàn Tịnh Xá\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM.. Tọa độ GPS chính xác: 10.330648018102252, 107.07685410888055.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Niết Bàn Tịnh Xá\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1371/QĐ ngày 03/08/1991. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Niết Bàn Tịnh Xá\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các vị hòa thượng, tăng ni gắn v...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Niết Bàn Tịnh Xá",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Niết Bàn Tịnh Xá; tượng Phật nhậ...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 60/7 đường Hạ Long, phường ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Niết Bàn Tịnh Xá",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -37047,6 +44571,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Núi Châu Thới\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Núi Châu Thới; từ lâu là địa điểm tự nhiên và tín ngưỡng quan trọng của vùng Đông Nam Bộ; 21/04/1989, Núi Châu Thới được xếp hạng danh lam thắng cảnh cấp quốc gia theo Quyết định 451-VH/QĐ.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Núi Châu Thới\"?",
+          "back": "Các vị thiền sư, tăng ni gắn với Châu Thới Sơn và các cơ sở Phật giáo trên núi; cộng đồng cư dân vùng Đông Nam Bộ.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Núi Châu Thới\" là gì?",
+          "back": "Núi Châu Thới; hệ thống tượng Phật, bia đá, chuông, đồ thờ và các hiện vật gắn với lịch sử các cơ sở tín ngưỡng trên núi.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Núi Châu Thới\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Núi Châu Thới, phường Đông Hòa, TP.HCM.. Tọa độ GPS chính xác: 10.914737613693179, 106.80529937294139.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Núi Châu Thới\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Danh lam thắng cảnh), theo Số 451-VH/QĐ ngày 21/04/1989. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Núi Châu Thới\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các vị thiền sư, tăng ni gắn với...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Núi Châu Thới",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Núi Châu Thới; hệ thống tượng Ph...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Danh lam thắng cảnh)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Núi Châu Thới, phường Đông Hòa...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Núi Châu Thới",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -37415,6 +45015,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Thích Ca Phật Đài\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Thích Ca Phật Đài; thế kỷ XX, quần thể Phật giáo được xây dựng trên sườn núi Lớn; trở thành một trung tâm hành hương Phật giáo quan trọng của Vũng Tàu; 14/12/1989, được xếp hạng danh lam thắng cảnh cấp quốc gia theo Quyết định 1987/VH.QĐ.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Thích Ca Phật Đài\"?",
+          "back": "Các vị hòa thượng và tăng ni tham gia xây dựng Thích Ca Phật Đài; cộng đồng Phật tử Vũng Tàu.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Thích Ca Phật Đài\" là gì?",
+          "back": "Thích Ca Phật Đài; tượng Phật Thích Ca nhập Niết Bàn, tượng Phật khổng lồ, các phù điêu mô tả cuộc đời Đức Phật, chuông và đồ thờ.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Thích Ca Phật Đài\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM.. Tọa độ GPS chính xác: 10.374377082142972, 107.07057046638222.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Thích Ca Phật Đài\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1987/VH.QĐ ngày 14/12/1989. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Thích Ca Phật Đài\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các vị hòa thượng và tăng ni tha...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Thích Ca Phật Đài",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Thích Ca Phật Đài; tượng Phật Th...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 610 đường Trần Phú, phường ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Thích Ca Phật Đài",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [
@@ -37787,6 +45463,82 @@ export const allMonumentsList = [
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
         }
       ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Tòa án nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng trong thời kỳ thuộc địa và trở thành một trong những công trình công sở tiêu biểu của khu trung tâm Sài Gòn; 29/03/2012, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định 1208/QĐ-BVHTTDL.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Tòa án nhân dân Thành phố Hồ Chí Minh\"?",
+          "back": "Các thẩm phán, cán bộ tư pháp và cơ quan tư pháp qua các thời kỳ; các kiến trúc sư và nghệ nhân xây dựng công trình.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Tòa án nhân dân Thành phố Hồ Chí Minh; các chi tiết kiến trúc nguyên gốc, phù điêu, cửa, cầu thang, sàn, hệ thống trang trí nội thất và các bộ phận kiến trúc công sở thời thuộc địa.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM.. Tọa độ GPS chính xác: 10.775681684736224, 106.69791498036552.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 1208/QĐ-BVHTTDL ngày 29/03/2012 của Bộ Văn hóa, Thể thao và Du lịch. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Tòa án nhân dân Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các thẩm phán, cán bộ tư pháp và...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Tòa án nhân dân Thành phố Hồ Chí Minh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Tòa án nhân dân Thành phố Hồ Chí...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 131 đường Nam Kỳ Khởi Nghĩa...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Tòa án nhân dân Thành phố...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
+        }
+      ],
       "dossiers": [
         {
           "id": "map_dossier",
@@ -38155,6 +45907,82 @@ export const allMonumentsList = [
           ],
           "correctIndex": 0,
           "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": 1,
+          "tag": "Sự kiện lịch sử",
+          "front": "Di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" gắn liền với sự kiện lịch sử tiêu biểu nào?",
+          "back": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng thời Pháp thuộc, trở thành trung tâm hành chính của thành phố qua nhiều giai đoạn lịch sử; 11/04/2020, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định 3244/QĐ-BVHTTDL.",
+          "badge": "Mốc son lịch sử"
+        },
+        {
+          "id": 2,
+          "tag": "Nhân vật lịch sử",
+          "front": "Những nhân vật, anh hùng hoặc nhân chứng nào gắn liền với \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\"?",
+          "back": "Các quan chức chính quyền Sài Gòn thời thuộc địa; các thế hệ lãnh đạo và cơ quan hành chính Thành phố Hồ Chí Minh sử dụng công trình.",
+          "badge": "Nhân chứng lịch sử"
+        },
+        {
+          "id": 3,
+          "tag": "Hiện vật & Công trình",
+          "front": "Hiện vật, dấu tích hoặc công trình tiêu biểu tại di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh; hệ thống phù điêu, tượng trang trí, cầu thang, cửa, nội thất và các cấu kiện kiến trúc nguyên gốc của công trình.",
+          "badge": "Bảo vật di sản"
+        },
+        {
+          "id": 4,
+          "tag": "Không gian & Vị trí",
+          "front": "Di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" tọa lạc tại địa chỉ và khu vực nào của Thành phố?",
+          "back": "Tọa lạc tại địa chỉ: Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM.. Tọa độ GPS chính xác: 10.776543101648452, 106.70091960695338.",
+          "badge": "Địa chỉ đỏ"
+        },
+        {
+          "id": 5,
+          "tag": "Cấp độ Xếp hạng",
+          "front": "Di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" đã được Nhà nước xếp hạng ở cấp độ nào?",
+          "back": "Được Nhà nước xếp hạng là Di tích cấp Quốc gia (Kiến trúc nghệ thuật), theo Số 3244/QĐ-BVHTTDL ngày 11/04/2020 của Bộ Văn hóa, Thể thao và Du lịch. theo Luật Di sản văn hóa.",
+          "badge": "Xếp hạng Di sản"
+        },
+        {
+          "id": 6,
+          "tag": "Ý nghĩa giáo dục",
+          "front": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của học sinh đối với \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" là gì?",
+          "back": "Tìm hiểu truyền thống yêu nước, tự hào dân tộc, bảo vệ nguyên trạng cảnh quan hiện vật và tích cực quảng bá di sản số TP.HCM.",
+          "badge": "Trách nhiệm thế hệ trẻ"
+        }
+      ],
+      "matchingPairs": [
+        {
+          "id": "p1",
+          "left": "Các quan chức chính quyền Sài Gò...",
+          "right": "Nhân vật lịch sử / Anh hùng / Nhân chứng gắn liền với Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
+          "matched": false
+        },
+        {
+          "id": "p2",
+          "left": "Trụ sở Hội đồng nhân dân và Ủy b...",
+          "right": "Hiện vật tiêu biểu / Bảo vật / Công trình nguyên bản tại di tích",
+          "matched": false
+        },
+        {
+          "id": "p3",
+          "left": "Quốc gia (Kiến trúc nghệ thuật)",
+          "right": "Cấp xếp hạng di sản chính thức theo Luật Di sản văn hóa",
+          "matched": false
+        },
+        {
+          "id": "p4",
+          "left": "Số 86 đường Lê Thánh Tôn, phườ...",
+          "right": "Địa chỉ tọa lạc & Không gian địa lý của di tích",
+          "matched": false
+        },
+        {
+          "id": "p5",
+          "left": "Trụ sở Hội đồng nhân dân ...",
+          "right": "Địa chỉ đỏ giáo dục truyền thống cách mạng và lòng yêu nước",
+          "matched": false
         }
       ],
       "dossiers": [

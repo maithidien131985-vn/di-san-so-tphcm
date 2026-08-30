@@ -555,12 +555,14 @@ export default function App() {
         video={data.video}
       />
 
-      {/* Investigation Dossier & 5-question Quiz Modal */}
+      {/* Investigation Dossier, 5-question Quiz, Flashcards & Matching Pairs Modal */}
       <InvestigationModal
         isOpen={investigationModalOpen}
         onClose={() => setInvestigationModalOpen(false)}
         dossier={selectedDossier}
         quiz={data.investigation?.quiz}
+        flashcards={data.investigation?.flashcards}
+        matchingPairs={data.investigation?.matchingPairs}
         monumentName={data.info.name}
         mode={investigationMode}
         onSwitchToQuiz={() => setInvestigationMode('quiz')}
