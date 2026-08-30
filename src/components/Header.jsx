@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Landmark, Menu, X, Edit3, Settings, Upload, Grid } from 'lucide-react';
+import { Landmark, Menu, X, Edit3, Settings, Upload, Grid, Home } from 'lucide-react';
 
 export default function Header({
   monumentName = 'DI TÍCH DINH ĐỘC LẬP',
   monumentRanking = 'Đặc biệt',
   monumentStt = 1,
+  viewMode = 'home', // 'home' | 'detail'
   isEditMode,
   setIsEditMode,
   onOpenAdmin,
   onOpenContribute,
   onOpenExplorer,
+  onOpenMyMap,
   pendingContributionsCount = 0,
   onNavigate
 }) {
@@ -25,16 +27,31 @@ export default function Header({
   }, []);
 
   const navLinks = [
-    { id: 'home', label: 'Trang chủ' },
+    { id: 'home', label: 'Trang chủ', isHome: true },
     { id: 'monuments', label: 'Kho 103 di tích', isExplorer: true },
-    { id: 'investigation', label: 'Hồ sơ điều tra' },
-    { id: 'map', label: 'Bản đồ di tích' },
-    { id: 'about', label: 'Tư liệu & Giới thiệu' }
+    { id: 'map', label: 'Bản đồ số GPS', isMap: true },
+    { id: 'survey', label: 'Khảo sát gợi ý', isSurvey: true },
+    { id: 'about', label: 'Tư liệu di sản' }
   ];
 
   const handleNavClick = (link) => {
-    if (link.isExplorer) {
+    if (link.isHome) {
+      if (onNavigate) onNavigate('home');
+    } else if (link.isExplorer) {
       if (onOpenExplorer) onOpenExplorer();
+    } else if (link.isMap) {
+      if (onOpenMyMap) onOpenMyMap();
+    } else if (link.isSurvey) {
+      if (viewMode !== 'home' && onNavigate) {
+        onNavigate('home');
+        setTimeout(() => {
+          const el = document.getElementById('survey-section');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 150);
+      } else {
+        const el = document.getElementById('survey-section');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }
     } else {
       if (onNavigate) onNavigate(link.id);
     }
@@ -62,38 +79,59 @@ export default function Header({
               <span className="text-[10px] font-black tracking-widest text-amber-300 uppercase">
                 HỆ THỐNG DI SẢN SỐ TP.HCM
               </span>
-              <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-emerald-600 text-[9px] font-black text-white uppercase">
-                {monumentRanking || 'Đặc biệt'}
-              </span>
-              <span className="px-1.5 py-0.2 rounded bg-amber-400/20 text-amber-300 text-[9px] font-bold">
-                #{monumentStt}/103
-              </span>
+              {viewMode === 'detail' && (
+                <>
+                  <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-emerald-600 text-[9px] font-black text-white uppercase">
+                    {monumentRanking || 'Đặc biệt'}
+                  </span>
+                  <span className="px-1.5 py-0.2 rounded bg-amber-400/20 text-amber-300 text-[9px] font-bold">
+                    #{monumentStt}/103
+                  </span>
+                </>
+              )}
             </div>
             <h1 className="font-serif-title font-black text-base sm:text-lg leading-tight tracking-wide text-white group-hover:text-amber-200 transition-colors truncate max-w-[250px] sm:max-w-[400px]">
-              {monumentName}
+              {viewMode === 'home' ? 'Trang Chủ Khám Phá 103 Di Tích' : monumentName}
             </h1>
           </div>
         </div>
 
-        {/* Desktop Navigation Links with animated underline */}
+        {/* Desktop Navigation Links */}
         <nav className="hidden lg:flex items-center gap-6 text-xs font-bold uppercase tracking-wider">
           {navLinks.map((item) => (
             <button
               key={item.id}
               onClick={() => handleNavClick(item)}
-              className={`transition-colors py-1 cursor-pointer nav-link-hover flex items-center gap-1 ${
-                item.isExplorer ? 'text-amber-300 font-black' : 'text-white/90 hover:text-amber-300'
+              className={`transition-colors py-1 cursor-pointer nav-link-hover flex items-center gap-1.5 ${
+                item.isHome && viewMode === 'home'
+                  ? 'text-amber-300 font-black border-b-2 border-amber-300'
+                  : item.isExplorer
+                  ? 'text-amber-300 font-black'
+                  : 'text-white/90 hover:text-amber-300'
               }`}
             >
-              {item.isExplorer && <Grid className="w-3 h-3" />}
+              {item.isHome && <Home className="w-3.5 h-3.5" />}
+              {item.isExplorer && <Grid className="w-3.5 h-3.5" />}
               <span>{item.label}</span>
             </button>
           ))}
         </nav>
 
-        {/* Action Controls, Contribute & CMS */}
+        {/* Action Controls */}
         <div className="flex items-center gap-2 sm:gap-2.5">
-          {/* Nút Kho 103 Di Tích Nhanh */}
+          {/* Nút Về Trang Chủ khi đang ở trang con */}
+          {viewMode === 'detail' && (
+            <button
+              onClick={() => onNavigate && onNavigate('home')}
+              className="flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-xl bg-white/20 hover:bg-white/30 text-white text-xs font-bold transition-all cursor-pointer border border-white/25 shadow-xs"
+              title="Quay về Trang chủ"
+            >
+              <Home className="w-3.5 h-3.5 text-amber-300" />
+              <span className="hidden sm:inline">Trang Chủ</span>
+            </button>
+          )}
+
+          {/* Nút Kho 103 Di Tích */}
           <button
             onClick={onOpenExplorer}
             className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-xl bg-white/15 hover:bg-white/25 text-white text-xs font-bold transition-all cursor-pointer border border-white/20"
@@ -128,7 +166,7 @@ export default function Header({
             <span>{isEditMode ? 'Sửa: BẬT' : 'Sửa nhanh'}</span>
           </button>
 
-          {/* Admin CMS Button with Pending Submissions Badge */}
+          {/* Admin CMS Button */}
           <button
             onClick={onOpenAdmin}
             className="relative flex items-center gap-1.5 px-3.5 py-1.5 sm:py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#7B1113] text-xs font-black transition-all shadow-md cursor-pointer hover:scale-105"

@@ -25,7 +25,7 @@ export const allMonumentsList = [
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.777152445580176,106.6953370089775",
       "referencesText": "ĐL-S\nĐL-W\nĐL-PL",
       "overview": "Dinh Độc Lập là một di tích lịch sử đặc biệt quan trọng, gắn liền với nhiều biến động chính trị của Việt Nam từ thời Pháp thuộc đến năm 1975. Nơi đây từng là trung tâm quyền lực của chính quyền thuộc địa Pháp và chính quyền Việt Nam Cộng hòa.\nĐặc biệt, trưa ngày 30/4/1975, xe tăng của Quân Giải phóng tiến vào Dinh Độc Lập, đánh dấu sự sụp đổ của chính quyền Sài Gòn, kết thúc cuộc kháng chiến chống Mỹ, giải phóng miền Nam và mở ra thời kỳ đất nước hòa bình, độc lập, thống nhất.\nNgày nay, Dinh Độc Lập là chứng tích tiêu biểu của lịch sử dân tộc, góp phần giáo dục truyền thống yêu nước, tinh thần đấu tranh giành độc lập và khát vọng hòa bình cho các thế hệ.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/dinh-doc-lap/dinh-doc-lap-1.jpg",
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia đặc biệt",
@@ -60,23 +60,72 @@ export const allMonumentsList = [
     "gallery": [
       {
         "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước tại 135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Tp. Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-1.jpg",
+        "title": "Toàn cảnh Dinh Độc Lập",
+        "caption": "Mặt tiền Dinh Độc Lập với rèm hoa đá hình nan trúc thanh cao và bãi cỏ hình bầu dục.",
+        "year": "Kiến trúc"
       },
       {
         "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước.",
-        "year": "Hiện vật"
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-2.jpg",
+        "title": "Xe tăng 390 tại cổng Dinh",
+        "caption": "Bảo vật Quốc gia: Xe tăng 390 húc đổ cổng chính trưa 30/4/1975.",
+        "year": "1975"
       },
       {
         "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-3.jpg",
+        "title": "Phòng Khánh tiết",
+        "caption": "Nơi diễn ra các cuộc họp nội các, tiếp tân ngoại giao và sự kiện lịch sử.",
+        "year": "Nội thất"
+      },
+      {
+        "id": 4,
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-4.jpg",
+        "title": "Phòng Trình Quốc thư",
+        "caption": "Bức tranh sơn mài Bình Ngô Đại Cáo của họa sĩ Nguyễn Văn Minh.",
+        "year": "Mỹ thuật"
+      },
+      {
+        "id": 5,
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-5.jpg",
+        "title": "Hệ thống Hầm ngầm chỉ huy",
+        "caption": "Trung tâm tác chiến ngầm kiên cố dưới lòng Dinh Độc Lập.",
+        "year": "Công sự"
+      },
+      {
+        "id": 6,
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-6.jpg",
+        "title": "Trực thăng UH-1 & Vị trí ném bom",
+        "caption": "Sân thượng Dinh Độc Lập nơi máy bay F-5E ném bom ngày 8/4/1975.",
+        "year": "Hiện vật"
+      },
+      {
+        "id": 7,
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-7.jpg",
+        "title": "Khuôn viên công viên 12 ha",
+        "caption": "Hàng cây cổ thụ xanh mát bao bọc quanh di tích lịch sử.",
+        "year": "Cảnh quan"
+      },
+      {
+        "id": 8,
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-8.jpg",
+        "title": "Phòng Đại yến",
+        "caption": "Không gian tiệc chiêu đãi quốc tế sang trọng tại Dinh.",
+        "year": "Nội thất"
+      },
+      {
+        "id": 9,
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-9.jpg",
+        "title": "Sơ đồ thiết kế chữ Cát (吉)",
+        "caption": "Triết lý phong thủy phương Đông độc đáo của KTS Ngô Viết Thụ.",
+        "year": "Thiết kế"
+      },
+      {
+        "id": 10,
+        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-10.jpg",
+        "title": "Cờ Giải phóng trên nóc Dinh",
+        "caption": "Khoảnh khắc lịch sử trưa ngày 30/4/1975 non sông liền một dải.",
         "year": "Lịch sử"
       }
     ],
@@ -258,7 +307,7 @@ export const allMonumentsList = [
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=11.141525139733433,106.46212044155315",
       "referencesText": "ĐĐ1-S\nĐĐ1-W\nĐĐ1-PL",
       "overview": "Địa đạo là căn cứ chiến đấu và sinh hoạt quan trọng của quân dân Củ Chi trong hai cuộc kháng chiến. Công trình thể hiện trí thông minh, khả năng sáng tạo, tinh thần đoàn kết và ý chí chiến đấu kiên cường của quân dân vùng “đất thép”. Đây còn là nguồn tư liệu trực quan phục vụ nghiên cứu, giáo dục truyền thống yêu nước và lịch sử cách mạng",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-1.jpg",
       "stats": {
         "campusArea": "Di tích số",
         "roomsCount": "Quốc gia đặc biệt",
@@ -293,24 +342,73 @@ export const allMonumentsList = [
     "gallery": [
       {
         "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Di tích lịch sử Địa đạo Củ Chi",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Di tích lịch sử Địa đạo Củ Chi tại Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-1.jpg",
+        "title": "Cổng vào Khu di tích Địa đạo Củ Chi",
+        "caption": "Vùng Đất thép thành đồng với hơn 200km đường hầm ngầm.",
+        "year": "Cảnh quan"
       },
       {
         "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Di tích lịch sử Địa đạo Củ Chi.",
-        "year": "Hiện vật"
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-2.jpg",
+        "title": "Cửa hầm bí mật ngụy trang",
+        "caption": "Nắp hầm bí mật giấu kín dưới lớp lá khô vừa vặn một người chui.",
+        "year": "Quân sự"
       },
       {
         "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-3.jpg",
+        "title": "Cấu trúc đường hầm 3 tầng",
+        "caption": "Hệ thống hầm ngầm liên hoàn xuyên lòng đất sét pha đá ong.",
+        "year": "Kiến trúc ngầm"
+      },
+      {
+        "id": 4,
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-4.jpg",
+        "title": "Bếp Hoàng Cầm giấu khói",
+        "caption": "Sáng kiến kỳ diệu giúp nấu ăn không tỏa khói ban ngày.",
+        "year": "Sáng tạo"
+      },
+      {
+        "id": 5,
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-5.jpg",
+        "title": "Hầm phẫu thuật quân y",
+        "caption": "Nơi cấp cứu, cứu chữa thương bệnh binh ngay dưới lòng đất.",
+        "year": "Quân y"
+      },
+      {
+        "id": 6,
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-6.jpg",
+        "title": "Xưởng chế tạo vũ khí tự tạo",
+        "caption": "Các chiến sĩ tận dụng vỏ bom đạn địch để đúc mìn, lựu đạn.",
+        "year": "Vũ khí"
+      },
+      {
+        "id": 7,
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-7.jpg",
+        "title": "Hệ thống bẫy chông và bãi mìn",
+        "caption": "Nghệ thuật chiến tranh nhân dân đánh bại các trận càn khổng lồ.",
+        "year": "Chiến thuật"
+      },
+      {
+        "id": 8,
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-8.jpg",
+        "title": "Khu vực Đền Tưởng niệm Bến Dược",
+        "caption": "Nơi khắc ghi tên tuổi của hơn 44.000 anh hùng liệt sĩ.",
+        "year": "Tri ân"
+      },
+      {
+        "id": 9,
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-9.jpg",
+        "title": "Hầm hội họp giao ban",
+        "caption": "Không gian chỉ huy tác chiến của Huyện ủy và Bộ Tư lệnh Quân khu.",
+        "year": "Chỉ huy"
+      },
+      {
+        "id": 10,
+        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-10.jpg",
+        "title": "Bắn súng thể thao quốc phòng",
+        "caption": "Trải nghiệm thực tế lịch sử và giáo dục truyền thống cho thế hệ trẻ.",
+        "year": "Trải nghiệm"
       }
     ],
     "audioScript": [

@@ -292,7 +292,7 @@ const monuments = dataRows.map((r, idx) => {
   
   let rawImage = cleanStr(r[9]);
   const hasCustomImage = rawImage && rawImage !== 'Chưa bổ sung' && (rawImage.startsWith('http') || rawImage.startsWith('/'));
-  const heroImage = hasCustomImage ? rawImage : getFallbackImage(type, name, stt);
+  let heroImage = hasCustomImage ? rawImage : getFallbackImage(type, name, stt);
   
   const videoUrl = cleanStr(r[10]);
   const youtubeId = extractYoutubeId(videoUrl) || (stt === 1 ? 'cplxidwCHyE' : null);
@@ -353,8 +353,40 @@ const monuments = dataRows.map((r, idx) => {
     }
   ];
 
+  // Custom gallery & images for Dinh Doc Lap (1) and Dia Dao Cu Chi (2)
+  let customGallery = null;
+  if (stt === 1) {
+    heroImage = '/assets/images/dinh-doc-lap/dinh-doc-lap-1.jpg';
+    customGallery = [
+      { id: 1, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-1.jpg', title: 'Toàn cảnh Dinh Độc Lập', caption: 'Mặt tiền Dinh Độc Lập với rèm hoa đá hình nan trúc thanh cao và bãi cỏ hình bầu dục.', year: 'Kiến trúc' },
+      { id: 2, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-2.jpg', title: 'Xe tăng 390 tại cổng Dinh', caption: 'Bảo vật Quốc gia: Xe tăng 390 húc đổ cổng chính trưa 30/4/1975.', year: '1975' },
+      { id: 3, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-3.jpg', title: 'Phòng Khánh tiết', caption: 'Nơi diễn ra các cuộc họp nội các, tiếp tân ngoại giao và sự kiện lịch sử.', year: 'Nội thất' },
+      { id: 4, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-4.jpg', title: 'Phòng Trình Quốc thư', caption: 'Bức tranh sơn mài Bình Ngô Đại Cáo của họa sĩ Nguyễn Văn Minh.', year: 'Mỹ thuật' },
+      { id: 5, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-5.jpg', title: 'Hệ thống Hầm ngầm chỉ huy', caption: 'Trung tâm tác chiến ngầm kiên cố dưới lòng Dinh Độc Lập.', year: 'Công sự' },
+      { id: 6, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-6.jpg', title: 'Trực thăng UH-1 & Vị trí ném bom', caption: 'Sân thượng Dinh Độc Lập nơi máy bay F-5E ném bom ngày 8/4/1975.', year: 'Hiện vật' },
+      { id: 7, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-7.jpg', title: 'Khuôn viên công viên 12 ha', caption: 'Hàng cây cổ thụ xanh mát bao bọc quanh di tích lịch sử.', year: 'Cảnh quan' },
+      { id: 8, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-8.jpg', title: 'Phòng Đại yến', caption: 'Không gian tiệc chiêu đãi quốc tế sang trọng tại Dinh.', year: 'Nội thất' },
+      { id: 9, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-9.jpg', title: 'Sơ đồ thiết kế chữ Cát (吉)', caption: 'Triết lý phong thủy phương Đông độc đáo của KTS Ngô Viết Thụ.', year: 'Thiết kế' },
+      { id: 10, src: '/assets/images/dinh-doc-lap/dinh-doc-lap-10.jpg', title: 'Cờ Giải phóng trên nóc Dinh', caption: 'Khoảnh khắc lịch sử trưa ngày 30/4/1975 non sông liền một dải.', year: 'Lịch sử' }
+    ];
+  } else if (stt === 2) {
+    heroImage = '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-1.jpg';
+    customGallery = [
+      { id: 1, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-1.jpg', title: 'Cổng vào Khu di tích Địa đạo Củ Chi', caption: 'Vùng Đất thép thành đồng với hơn 200km đường hầm ngầm.', year: 'Cảnh quan' },
+      { id: 2, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-2.jpg', title: 'Cửa hầm bí mật ngụy trang', caption: 'Nắp hầm bí mật giấu kín dưới lớp lá khô vừa vặn một người chui.', year: 'Quân sự' },
+      { id: 3, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-3.jpg', title: 'Cấu trúc đường hầm 3 tầng', caption: 'Hệ thống hầm ngầm liên hoàn xuyên lòng đất sét pha đá ong.', year: 'Kiến trúc ngầm' },
+      { id: 4, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-4.jpg', title: 'Bếp Hoàng Cầm giấu khói', caption: 'Sáng kiến kỳ diệu giúp nấu ăn không tỏa khói ban ngày.', year: 'Sáng tạo' },
+      { id: 5, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-5.jpg', title: 'Hầm phẫu thuật quân y', caption: 'Nơi cấp cứu, cứu chữa thương bệnh binh ngay dưới lòng đất.', year: 'Quân y' },
+      { id: 6, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-6.jpg', title: 'Xưởng chế tạo vũ khí tự tạo', caption: 'Các chiến sĩ tận dụng vỏ bom đạn địch để đúc mìn, lựu đạn.', year: 'Vũ khí' },
+      { id: 7, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-7.jpg', title: 'Hệ thống bẫy chông và bãi mìn', caption: 'Nghệ thuật chiến tranh nhân dân đánh bại các trận càn khổng lồ.', year: 'Chiến thuật' },
+      { id: 8, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-8.jpg', title: 'Khu vực Đền Tưởng niệm Bến Dược', caption: 'Nơi khắc ghi tên tuổi của hơn 44.000 anh hùng liệt sĩ.', year: 'Tri ân' },
+      { id: 9, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-9.jpg', title: 'Hầm hội họp giao ban', caption: 'Không gian chỉ huy tác chiến của Huyện ủy và Bộ Tư lệnh Quân khu.', year: 'Chỉ huy' },
+      { id: 10, src: '/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-10.jpg', title: 'Bắn súng thể thao quốc phòng', caption: 'Trải nghiệm thực tế lịch sử và giáo dục truyền thống cho thế hệ trẻ.', year: 'Trải nghiệm' }
+    ];
+  }
+
   // Gallery
-  const gallery = [
+  const gallery = customGallery || [
     {
       id: 1,
       src: heroImage,

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
+import HomePage from './components/HomePage';
 import Breadcrumb from './components/Breadcrumb';
 import HeroBanner from './components/HeroBanner';
 import QuickActionCards from './components/QuickActionCards';
@@ -79,29 +80,37 @@ const initialSampleContributions = [
   }
 ];
 
-function getInitialStt() {
+function getInitialStateFromUrl() {
   if (typeof window !== 'undefined') {
     const hash = window.location.hash;
-    if (hash) {
+    if (hash && hash.includes('monument')) {
       const match = hash.match(/\d+/);
       if (match) {
         const parsed = parseInt(match[0]);
-        if (parsed >= 1 && parsed <= allMonumentsList.length) return parsed;
+        if (parsed >= 1 && parsed <= allMonumentsList.length) {
+          return { stt: parsed, mode: 'detail' };
+        }
       }
+      return { stt: 1, mode: 'detail' };
     }
     const params = new URLSearchParams(window.location.search);
     const sttParam = params.get('stt') || params.get('id');
     if (sttParam) {
       const parsed = parseInt(sttParam);
-      if (parsed >= 1 && parsed <= allMonumentsList.length) return parsed;
+      if (parsed >= 1 && parsed <= allMonumentsList.length) {
+        return { stt: parsed, mode: 'detail' };
+      }
     }
   }
-  return 1;
+  return { stt: 1, mode: 'home' };
 }
 
 export default function App() {
+  const initial = getInitialStateFromUrl();
+  // View mode: 'home' | 'detail'
+  const [viewMode, setViewMode] = useState(initial.mode);
   // Current active monument index/STT (1 to 103)
-  const [currentStt, setCurrentStt] = useState(getInitialStt);
+  const [currentStt, setCurrentStt] = useState(initial.stt);
 
   // Dynamic monument base data from 103 list
   const baseMonument = useMemo(() => {
@@ -120,58 +129,76 @@ export default function App() {
     return baseMonument;
   });
 
-  // When currentStt changes, update active data
+  // Whenever currentStt changes, reload data for that monument
   useEffect(() => {
     try {
-      const saved = localStorage.getItem(`di_san_so_monument_stt_${currentStt}`);
+      const saved = localStorage.getItem(storageKey);
       if (saved) {
         setData(JSON.parse(saved));
-      } else {
-        setData(baseMonument);
+        return;
       }
     } catch (e) {
-      setData(baseMonument);
+      console.warn('Failed to parse localStorage data:', e);
     }
-    window.location.hash = `monument-${currentStt}`;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [currentStt, baseMonument]);
+    setData(baseMonument);
+  }, [currentStt, storageKey, baseMonument]);
 
   // Handle URL hash changes
   useEffect(() => {
     const handleHashChange = () => {
-      const newStt = getInitialStt();
-      if (newStt !== currentStt) {
-        setCurrentStt(newStt);
+      const hash = window.location.hash;
+      if (hash === '#home' || hash === '' || hash === '#') {
+        setViewMode('home');
+      } else if (hash.includes('monument')) {
+        const match = hash.match(/\d+/);
+        if (match) {
+          const parsed = parseInt(match[0]);
+          if (parsed >= 1 && parsed <= allMonumentsList.length) {
+            setCurrentStt(parsed);
+            setViewMode('detail');
+          }
+        }
       }
     };
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
-  }, [currentStt]);
+  }, []);
 
-  // Calculate next 3 monuments in circular sequence
-  const nextMonumentsForSection = useMemo(() => {
-    const nextList = [];
-    const total = allMonumentsList.length;
-    for (let i = 1; i <= 3; i++) {
-      const nextIdx = (currentStt - 1 + i) % total;
-      const mon = allMonumentsList[nextIdx];
-      nextList.push({
-        id: mon.id,
-        stt: mon.stt,
-        name: mon.info.name,
-        category: mon.info.type,
-        ranking: mon.info.ranking,
-        address: mon.info.address,
-        image: mon.info.heroImage,
-        summary: mon.info.overview.slice(0, 140) + '...',
-        highlight: `Di tích ${mon.info.ranking} tại ${mon.info.address}.`,
-        fullData: mon
-      });
+  // Sync state changes to localStorage
+  useEffect(() => {
+    if (data) {
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(data));
+      } catch (e) {
+        console.warn('Failed to save to localStorage:', e);
+      }
     }
-    return nextList;
-  }, [currentStt]);
+  }, [data, storageKey]);
 
-  // State: Contributions (Data collected from readers)
+  // Modals state
+  const [audioModalOpen, setAudioModalOpen] = useState(false);
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const [investigationModalOpen, setInvestigationModalOpen] = useState(false);
+  const [investigationMode, setInvestigationMode] = useState('quiz'); // 'dossier' | 'quiz'
+  const [selectedDossier, setSelectedDossier] = useState(null);
+  const [studentReportOpen, setStudentReportOpen] = useState(false);
+  const [nextMonumentModalOpen, setNextMonumentModalOpen] = useState(false);
+  const [selectedNextMonument, setSelectedNextMonument] = useState(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [actionModalOpen, setActionModalOpen] = useState(false);
+  const [docsModalOpen, setDocsModalOpen] = useState(false);
+  const [myMapModalOpen, setMyMapModalOpen] = useState(false);
+  const [milestoneModalOpen, setMilestoneModalOpen] = useState(false);
+  const [selectedMilestone, setSelectedMilestone] = useState(null);
+  const [adminDrawerOpen, setAdminDrawerOpen] = useState(false);
+  const [contributeModalOpen, setContributeModalOpen] = useState(false);
+  const [explorerModalOpen, setExplorerModalOpen] = useState(false);
+
+  // Edit Mode state
+  const [isEditMode, setIsEditMode] = useState(false);
+
+  // Reader contributions state
   const [contributions, setContributions] = useState(() => {
     try {
       const saved = localStorage.getItem(CONTRIBUTIONS_KEY);
@@ -182,173 +209,97 @@ export default function App() {
     return initialSampleContributions;
   });
 
-  // Modals & Drawers state
-  const [isEditMode, setIsEditMode] = useState(false);
-  const [isAdminOpen, setIsAdminOpen] = useState(false);
-  const [contributeModalOpen, setContributeModalOpen] = useState(false);
-  const [explorerModalOpen, setExplorerModalOpen] = useState(false);
-
-  const [audioModalOpen, setAudioModalOpen] = useState(false);
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
-  const [actionModalOpen, setActionModalOpen] = useState(false);
-  const [docsModalOpen, setDocsModalOpen] = useState(false);
-  const [myMapModalOpen, setMyMapModalOpen] = useState(false);
-
-  // Student report modal
-  const [studentReportOpen, setStudentReportOpen] = useState(false);
-
-  // Next monument modal
-  const [nextMonumentModalOpen, setNextMonumentModalOpen] = useState(false);
-  const [selectedNextMonument, setSelectedNextMonument] = useState(null);
-
-  // Lightbox
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [lightboxIndex, setLightboxIndex] = useState(0);
-
-  // Investigation modal
-  const [investigationModalOpen, setInvestigationModalOpen] = useState(false);
-  const [selectedDossier, setSelectedDossier] = useState(null);
-  const [investigationMode, setInvestigationMode] = useState('dossier');
-
-  // Milestone modal
-  const [milestoneModalOpen, setMilestoneModalOpen] = useState(false);
-  const [selectedMilestone, setSelectedMilestone] = useState(null);
-
-  // Save changes helper for website data
-  const handleSaveData = (newData) => {
-    setData(newData);
+  useEffect(() => {
     try {
-      localStorage.setItem(`di_san_so_monument_stt_${currentStt}`, JSON.stringify(newData));
+      localStorage.setItem(CONTRIBUTIONS_KEY, JSON.stringify(contributions));
     } catch (e) {
-      console.error('Failed to save to localStorage:', e);
+      console.warn('Failed to save contributions:', e);
     }
-  };
+  }, [contributions]);
 
-  const handleSaveContributions = (newContribs) => {
-    setContributions(newContribs);
-    try {
-      localStorage.setItem(CONTRIBUTIONS_KEY, JSON.stringify(newContribs));
-    } catch (e) {
-      console.error('Failed to save contributions:', e);
-    }
-  };
+  const pendingContributionsCount = useMemo(() => {
+    return contributions.filter(c => c.status === 'pending').length;
+  }, [contributions]);
 
-  const handleResetDefault = () => {
-    setData(baseMonument);
-    try {
-      localStorage.removeItem(`di_san_so_monument_stt_${currentStt}`);
-    } catch (e) {}
-  };
-
-  // Handler: Reader submits new data contribution
-  const handleAddContribution = (newContrib) => {
-    const updated = [newContrib, ...contributions];
-    handleSaveContributions(updated);
-  };
-
-  // Handler: Owner/Admin Approves & Publishes reader data to the active monument
-  const handleApproveContribution = (item) => {
-    const updatedContribs = contributions.map(c => 
-      c.id === item.id ? { ...c, ...item, status: 'approved' } : c
-    );
-    handleSaveContributions(updatedContribs);
-
-    const updatedData = { ...data };
-
-    if (item.type === 'monument') {
-      const newMonument = {
-        id: item.id,
-        name: item.title || item.name,
-        category: item.category || item.ranking || 'Địa chỉ đỏ cách mạng',
-        ranking: item.ranking || item.category || 'Di tích cấp Quốc gia',
-        address: item.address || 'TP. Hồ Chí Minh',
-        image: item.image || '/assets/images/dinh-doc-lap-front.jpg',
-        summary: item.summary || item.caption || '',
-        highlight: item.highlight || 'Di tích lịch sử văn hóa tiêu biểu do độc giả đóng góp.'
-      };
-      
-      const existingIdx = (updatedData.nextMonuments || []).findIndex(m => m.id === item.id);
-      if (existingIdx >= 0) {
-        updatedData.nextMonuments[existingIdx] = newMonument;
-      } else {
-        updatedData.nextMonuments = [...(updatedData.nextMonuments || []), newMonument];
+  // Navigation Handler
+  const handleNavigate = (target) => {
+    if (target === 'home') {
+      setViewMode('home');
+      window.location.hash = '#home';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (target === 'map') {
+      setMyMapModalOpen(true);
+    } else if (target === 'about') {
+      setDocsModalOpen(true);
+    } else if (target === 'investigation') {
+      if (viewMode !== 'detail') {
+        setViewMode('detail');
       }
-    } else if (item.type === 'gallery') {
-      const newGalleryItem = {
-        id: Date.now(),
-        src: item.image || '/assets/images/dinh-doc-lap-front.jpg',
-        title: item.title,
-        caption: item.caption || item.summary || '',
-        year: item.year || 'Tư liệu độc giả'
-      };
-      updatedData.gallery = [newGalleryItem, ...(updatedData.gallery || [])];
-    } else if (item.type === 'timeline') {
-      const newTimelineItem = {
-        id: Date.now(),
-        year: item.year || 'Mốc lịch sử',
-        title: item.title,
-        description: item.description || item.summary || item.caption || ''
-      };
-      updatedData.timeline = [...(updatedData.timeline || []), newTimelineItem];
-    } else if (item.type === 'story') {
-      const newStoryDossier = {
-        id: 'story_' + Date.now(),
-        title: item.title,
-        subtitle: `Tư liệu do ${item.authorName} cung cấp (${item.source || 'Nhân chứng'})`,
-        image: item.image || '/assets/images/may-danh-chu-hien-vat.jpg',
-        detail: item.caption || item.summary || '',
-        clues: [
-          `Đóng góp bởi: ${item.authorName} (${item.authorRole})`,
-          `Nguồn tư liệu: ${item.source || 'Ký ức nhân chứng'}`,
-          `Ngày tiếp nhận: ${new Date(item.submittedAt || Date.now()).toLocaleDateString('vi-VN')}`
-        ]
-      };
-      updatedData.investigation = {
-        ...updatedData.investigation,
-        dossiers: [...(updatedData.investigation?.dossiers || []), newStoryDossier]
-      };
+      setTimeout(() => {
+        const el = document.getElementById('investigation-section');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
-
-    handleSaveData(updatedData);
   };
 
-  const handleRejectContribution = (id, reason = '') => {
-    const updatedContribs = contributions.map(c => 
-      c.id === id ? { ...c, status: 'rejected', adminNotes: reason } : c
-    );
-    handleSaveContributions(updatedContribs);
+  // Select Monument from Home or Explorer
+  const handleSelectMonument = (monumentIdOrStt) => {
+    let targetStt = currentStt;
+    if (typeof monumentIdOrStt === 'number') {
+      targetStt = monumentIdOrStt;
+    } else if (typeof monumentIdOrStt === 'string') {
+      const match = monumentIdOrStt.match(/\d+/);
+      if (match) targetStt = parseInt(match[0]);
+    }
+    setCurrentStt(targetStt);
+    setViewMode('detail');
+    window.location.hash = `#monument-${targetStt}`;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleDeleteContribution = (id) => {
-    const updatedContribs = contributions.filter(c => c.id !== id);
-    handleSaveContributions(updatedContribs);
-  };
-
-  const handleRevokeContribution = (item) => {
-    const updatedContribs = contributions.map(c => 
-      c.id === item.id ? { ...c, status: 'pending' } : c
-    );
-    handleSaveContributions(updatedContribs);
-  };
-
-  const handleSeedSampleContributions = () => {
-    handleSaveContributions(initialSampleContributions);
-    alert('Đã nạp 3 dữ liệu đóng góp mẫu đang chờ duyệt!');
-  };
-
-  const handleUpdateInfo = (key, val) => {
-    const updated = { ...data, info: { ...data.info, [key]: val } };
-    handleSaveData(updated);
-  };
-
+  // Handlers for updating monument content in CMS
   const handleUpdateOverview = (newOverview) => {
-    const updated = { ...data, info: { ...data.info, overview: newOverview } };
-    handleSaveData(updated);
+    setData(prev => ({
+      ...prev,
+      info: {
+        ...prev.info,
+        overview: newOverview
+      }
+    }));
   };
 
-  const handleOpenLightbox = (index = 0) => {
+  const handleUpdateInfo = (newInfo) => {
+    setData(prev => ({
+      ...prev,
+      info: {
+        ...prev.info,
+        ...newInfo
+      }
+    }));
+  };
+
+  const handleUpdateTimeline = (newTimeline) => {
+    setData(prev => ({
+      ...prev,
+      timeline: newTimeline
+    }));
+  };
+
+  const handleUpdateGallery = (newGallery) => {
+    setData(prev => ({
+      ...prev,
+      gallery: newGallery
+    }));
+  };
+
+  const handleOpenLightbox = (index) => {
     setLightboxIndex(index);
     setLightboxOpen(true);
+  };
+
+  const handleOpenMilestone = (milestone) => {
+    setSelectedMilestone(milestone);
+    setMilestoneModalOpen(true);
   };
 
   const handleOpenDossier = (dossier) => {
@@ -362,183 +313,228 @@ export default function App() {
     setInvestigationModalOpen(true);
   };
 
-  const handleOpenMilestone = (milestone) => {
-    setSelectedMilestone(milestone);
-    setMilestoneModalOpen(true);
-  };
-
   const handleSelectNextMonument = (monument) => {
     if (monument && monument.stt) {
-      setCurrentStt(monument.stt);
-    } else if (monument && monument.fullData) {
-      setCurrentStt(monument.fullData.stt);
+      handleSelectMonument(monument.stt);
     } else {
       setSelectedNextMonument(monument);
       setNextMonumentModalOpen(true);
     }
   };
 
-  const handleNavigate = (page) => {
-    if (page === 'map') setMyMapModalOpen(true);
-    else if (page === 'monuments') setExplorerModalOpen(true);
-    else if (page === 'investigation') {
-      const el = document.getElementById('investigation-section');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    } else if (page === 'game') {
-      handleStartQuiz();
-    } else if (page === 'about') {
-      setDocsModalOpen(true);
-    } else if (page === 'home') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+  // Contributions handlers
+  const handleAddContribution = (newContrib) => {
+    const contributionItem = {
+      ...newContrib,
+      id: `contrib_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+      submittedAt: new Date().toISOString(),
+      status: 'pending'
+    };
+    setContributions(prev => [contributionItem, ...prev]);
   };
 
-  const pendingContributionsCount = contributions.filter(c => c.status === 'pending').length;
+  const handleApproveContribution = (id) => {
+    const item = contributions.find(c => c.id === id);
+    if (!item) return;
+
+    if (item.targetSection === 'gallery' && item.image) {
+      setData(prev => ({
+        ...prev,
+        gallery: [
+          {
+            id: Date.now(),
+            src: item.image,
+            title: item.title || item.name || 'Tư liệu đóng góp',
+            caption: `${item.caption || item.summary || ''} (Đóng góp bởi: ${item.authorName})`,
+            year: item.year || 'Tư liệu'
+          },
+          ...prev.gallery
+        ]
+      }));
+    } else if (item.targetSection === 'timeline' && item.title) {
+      setData(prev => ({
+        ...prev,
+        timeline: [
+          ...prev.timeline,
+          {
+            id: Date.now(),
+            year: item.year || 'Sự kiện',
+            title: item.title,
+            description: `${item.description || item.summary || ''} (Người đóng góp: ${item.authorName})`
+          }
+        ]
+      }));
+    }
+
+    setContributions(prev =>
+      prev.map(c => (c.id === id ? { ...c, status: 'approved' } : c))
+    );
+  };
+
+  const handleRejectContribution = (id) => {
+    setContributions(prev =>
+      prev.map(c => (c.id === id ? { ...c, status: 'rejected' } : c))
+    );
+  };
+
+  const handleDeleteContribution = (id) => {
+    setContributions(prev => prev.filter(c => c.id !== id));
+  };
+
+  // 3 Next monuments for NextMonumentSection
+  const nextMonumentsForSection = useMemo(() => {
+    const list = [];
+    for (let i = 1; i <= 3; i++) {
+      let nextIndex = (currentStt - 1 + i) % allMonumentsList.length;
+      list.push(allMonumentsList[nextIndex]);
+    }
+    return list;
+  }, [currentStt]);
 
   return (
-    <div className="min-h-screen bg-[#FAF7F2] text-[#2C241E] flex flex-col font-sans relative selection:bg-amber-200 selection:text-[#7B1113]">
+    <div className="min-h-screen flex flex-col bg-[#FAF7F2] font-sans antialiased text-[#2C241E] selection:bg-[#7B1113] selection:text-white">
       {/* Scroll Progress Bar at very top */}
       <ScrollProgressBar />
 
-      {/* Edit Mode Notice Banner */}
-      {isEditMode && (
-        <div className="bg-amber-500 text-white text-xs py-2 px-4 text-center font-bold sticky top-0 z-50 shadow-md flex items-center justify-center gap-3">
-          <span>🛠️ Đang bật Chế độ Chỉnh sửa trực tiếp di tích #{currentStt}: {data.info.name}</span>
-          <button
-            onClick={() => setIsAdminOpen(true)}
-            className="px-2.5 py-0.5 rounded bg-white text-amber-900 text-xs font-black shadow hover:bg-amber-100 cursor-pointer"
-          >
-            Mở Bảng Quản trị CMS
-          </button>
-          <button
-            onClick={() => setIsEditMode(false)}
-            className="px-2 py-0.5 rounded bg-amber-700 text-white text-xs hover:bg-amber-800 cursor-pointer"
-          >
-            Đóng
-          </button>
-        </div>
-      )}
-
-      {/* Sticky Header with 103 Monument branding & controls */}
+      {/* Global Application Header */}
       <Header
         monumentName={data.info.name}
-        monumentRanking={data.info.ranking}
+        monumentRanking={data.info.badge}
         monumentStt={currentStt}
+        viewMode={viewMode}
         isEditMode={isEditMode}
         setIsEditMode={setIsEditMode}
-        onOpenAdmin={() => setIsAdminOpen(true)}
+        onOpenAdmin={() => setAdminDrawerOpen(true)}
         onOpenContribute={() => setContributeModalOpen(true)}
         onOpenExplorer={() => setExplorerModalOpen(true)}
+        onOpenMyMap={() => setMyMapModalOpen(true)}
         pendingContributionsCount={pendingContributionsCount}
         onNavigate={handleNavigate}
       />
 
-      {/* 103 Monument Quick Switcher Bar */}
-      <MonumentSwitcherBar
-        currentStt={currentStt}
-        onSelectStt={(stt) => setCurrentStt(stt)}
-        onOpenExplorer={() => setExplorerModalOpen(true)}
-      />
-
-      {/* Breadcrumb Bar */}
-      <Breadcrumb
-        monumentName={data.info.name}
-        onNavigate={handleNavigate}
-      />
-
-      {/* Main Container */}
-      <main className="flex-1 space-y-6 pb-6">
-        {/* Hero Banner */}
-        <HeroBanner
-          info={data.info}
-          onOpenAudio={() => setAudioModalOpen(true)}
-          onOpenVideo={() => setVideoModalOpen(true)}
-          onOpenGallery={() => handleOpenLightbox(0)}
-          isEditMode={isEditMode}
-          onUpdateInfo={handleUpdateInfo}
-        />
-
-        {/* Quick Action Cards (4 cards: KHÁM PHÁ - ĐIỀU TRA - ĐÓNG GÓP - HÀNH ĐỘNG) */}
-        <QuickActionCards
-          onOpenAudio={() => setAudioModalOpen(true)}
-          onOpenInvestigation={() => {
-            const el = document.getElementById('investigation-section');
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
-          }}
-          onOpenAction={() => setActionModalOpen(true)}
+      {/* RENDER VIEW MODE: HOME OR DETAIL */}
+      {viewMode === 'home' ? (
+        /* HOME PAGE PORTAL HUB */
+        <HomePage
+          allMonuments={allMonumentsList}
+          onSelectMonument={handleSelectMonument}
+          onOpenExplorer={() => setExplorerModalOpen(true)}
+          onOpenMyMap={() => setMyMapModalOpen(true)}
           onOpenContribute={() => setContributeModalOpen(true)}
         />
-
-        {/* Scroll Reveal Section: Giá trị lịch sử & Thông tin di tích */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-          <ScrollReveal>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-              {/* Left Column (8 cols): Giá trị lịch sử, Dấu mốc lịch sử, Hình ảnh và video lịch sử */}
-              <div className="lg:col-span-8">
-                <HistorySection
-                  overview={data.info.overview}
-                  timeline={data.timeline}
-                  gallery={data.gallery}
-                  isEditMode={isEditMode}
-                  onUpdateOverview={handleUpdateOverview}
-                  onOpenLightbox={handleOpenLightbox}
-                  onOpenMilestoneDetail={handleOpenMilestone}
-                  onOpenVideo={() => setVideoModalOpen(true)}
-                />
-              </div>
-
-              {/* Right Column (4 cols): Bảng thông tin, Nút nghe thuyết minh, Vị trí di tích, Em có biết */}
-              <div className="lg:col-span-4">
-                <InfoSidebar
-                  info={data.info}
-                  map={data.map}
-                  isEditMode={isEditMode}
-                  onUpdateInfo={handleUpdateInfo}
-                  onOpenAudio={() => setAudioModalOpen(true)}
-                  onOpenDocsModal={() => setDocsModalOpen(true)}
-                  onOpenMyMap={() => setMyMapModalOpen(true)}
-                />
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-
-        {/* Stats Counter Section */}
-        <StatsCounterSection />
-
-        {/* FlipCardGrid (3D Flip Cards for 6 Interdisciplinary Subjects) */}
-        <FlipCardGrid />
-
-        {/* HỒ SƠ ĐIỀU TRA */}
-        <div id="investigation-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-          <ScrollReveal>
-            <InvestigationSection
-              investigation={data.investigation}
-              onOpenDossierDetail={handleOpenDossier}
-              onStartQuiz={handleStartQuiz}
-              onOpenStudentReport={() => setStudentReportOpen(true)}
-            />
-          </ScrollReveal>
-        </div>
-
-        {/* Next Monument Section: Gợi ý các di tích tiếp theo trong 103 di tích */}
-        <ScrollReveal>
-          <NextMonumentSection
-            nextMonuments={nextMonumentsForSection}
-            onSelectMonument={handleSelectNextMonument}
+      ) : (
+        /* MONUMENT DETAIL PAGE */
+        <>
+          {/* Quick Monument Switcher Bar (1-click Prev / Next & Dropdown selector) */}
+          <MonumentSwitcherBar
+            allMonuments={allMonumentsList}
+            currentStt={currentStt}
+            onSelectMonument={(stt) => handleSelectMonument(stt)}
+            onOpenExplorer={() => setExplorerModalOpen(true)}
           />
-        </ScrollReveal>
-      </main>
 
-      {/* Footer */}
-      <Footer />
+          {/* Breadcrumb Navigation */}
+          <Breadcrumb
+            monumentName={data.info.name}
+            monumentType={data.info.type}
+            onNavigateHome={() => handleNavigate('home')}
+          />
+
+          {/* Main Detail Content Area */}
+          <main className="flex-1 space-y-6 pb-6">
+            {/* Hero Banner */}
+            <HeroBanner
+              info={data.info}
+              onOpenAudio={() => setAudioModalOpen(true)}
+              onOpenVideo={() => setVideoModalOpen(true)}
+              onOpenGallery={() => handleOpenLightbox(0)}
+              isEditMode={isEditMode}
+              onUpdateInfo={handleUpdateInfo}
+            />
+
+            {/* Quick Action Cards (4 cards: KHÁM PHÁ - ĐIỀU TRA - ĐÓNG GÓP - HÀNH ĐỘNG) */}
+            <QuickActionCards
+              onOpenAudio={() => setAudioModalOpen(true)}
+              onOpenInvestigation={() => {
+                const el = document.getElementById('investigation-section');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+              onOpenAction={() => setActionModalOpen(true)}
+              onOpenContribute={() => setContributeModalOpen(true)}
+            />
+
+            {/* Scroll Reveal Section: Giá trị lịch sử & Thông tin di tích */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+              <ScrollReveal>
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                  {/* Left Column (8 cols): Giá trị lịch sử, Dấu mốc lịch sử, Hình ảnh và video lịch sử */}
+                  <div className="lg:col-span-8">
+                    <HistorySection
+                      overview={data.info.overview}
+                      timeline={data.timeline}
+                      gallery={data.gallery}
+                      isEditMode={isEditMode}
+                      onUpdateOverview={handleUpdateOverview}
+                      onOpenLightbox={handleOpenLightbox}
+                      onOpenMilestoneDetail={handleOpenMilestone}
+                      onOpenVideo={() => setVideoModalOpen(true)}
+                    />
+                  </div>
+
+                  {/* Right Column (4 cols): Bảng thông tin, Nút nghe thuyết minh, Vị trí di tích, Em có biết */}
+                  <div className="lg:col-span-4">
+                    <InfoSidebar
+                      info={data.info}
+                      map={data.map}
+                      isEditMode={isEditMode}
+                      onUpdateInfo={handleUpdateInfo}
+                      onOpenAudio={() => setAudioModalOpen(true)}
+                      onOpenDocsModal={() => setDocsModalOpen(true)}
+                      onOpenMyMap={() => setMyMapModalOpen(true)}
+                    />
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
+
+            {/* Stats Counter Section */}
+            <StatsCounterSection />
+
+            {/* FlipCardGrid (3D Flip Cards for 6 Interdisciplinary Subjects) */}
+            <FlipCardGrid />
+
+            {/* HỒ SƠ ĐIỀU TRA */}
+            <div id="investigation-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+              <ScrollReveal>
+                <InvestigationSection
+                  investigation={data.investigation}
+                  onOpenDossierDetail={handleOpenDossier}
+                  onStartQuiz={handleStartQuiz}
+                  onOpenStudentReport={() => setStudentReportOpen(true)}
+                />
+              </ScrollReveal>
+            </div>
+
+            {/* Next Monument Section: Gợi ý các di tích tiếp theo trong 103 di tích */}
+            <ScrollReveal>
+              <NextMonumentSection
+                nextMonuments={nextMonumentsForSection}
+                onSelectMonument={handleSelectNextMonument}
+              />
+            </ScrollReveal>
+          </main>
+        </>
+      )}
+
+      {/* Global Footer */}
+      <Footer onNavigateHome={() => handleNavigate('home')} />
 
       {/* 103 Monuments Explorer Directory Modal */}
       <MonumentsExplorerModal
         isOpen={explorerModalOpen}
         onClose={() => setExplorerModalOpen(false)}
         currentMonumentStt={currentStt}
-        onSelectMonument={(monument) => setCurrentStt(monument.stt)}
+        onSelectMonument={(monument) => handleSelectMonument(monument.stt)}
       />
 
       {/* Reader Contribution Modal */}
@@ -557,12 +553,14 @@ export default function App() {
         monumentName={data.info.name}
       />
 
+      {/* Phim tư liệu Video Modal */}
       <VideoModal
         isOpen={videoModalOpen}
         onClose={() => setVideoModalOpen(false)}
-        videoInfo={data.video}
+        video={data.video}
       />
 
+      {/* Investigation Dossier & 5-question Quiz Modal */}
       <InvestigationModal
         isOpen={investigationModalOpen}
         onClose={() => setInvestigationModalOpen(false)}
@@ -573,6 +571,7 @@ export default function App() {
         onSwitchToQuiz={() => setInvestigationMode('quiz')}
       />
 
+      {/* Student Report Investigation Form Modal */}
       <StudentReportModal
         isOpen={studentReportOpen}
         onClose={() => setStudentReportOpen(false)}
@@ -580,12 +579,15 @@ export default function App() {
         monumentName={data.info.name}
       />
 
+      {/* Next Monument Modal */}
       <NextMonumentModal
         isOpen={nextMonumentModalOpen}
         onClose={() => setNextMonumentModalOpen(false)}
         monument={selectedNextMonument}
+        onSelectMonument={(monument) => handleSelectMonument(monument.stt)}
       />
 
+      {/* Lightbox Gallery Modal */}
       <LightboxModal
         isOpen={lightboxOpen}
         onClose={() => setLightboxOpen(false)}
@@ -594,42 +596,48 @@ export default function App() {
         setCurrentIndex={setLightboxIndex}
       />
 
+      {/* Interactive Action Modal */}
       <ActionModal
         isOpen={actionModalOpen}
         onClose={() => setActionModalOpen(false)}
       />
 
+      {/* Document Reference Modal */}
       <DocsModal
         isOpen={docsModalOpen}
         onClose={() => setDocsModalOpen(false)}
       />
 
+      {/* Full GPS Map Explorer Modal */}
       <MyMapModal
         isOpen={myMapModalOpen}
         onClose={() => setMyMapModalOpen(false)}
-        embedUrl={data.map?.googleMapsEmbedUrl}
+        mapData={data.map}
+        allMonuments={allMonumentsList}
         currentMonumentStt={currentStt}
-        onSelectMonument={(monument) => setCurrentStt(monument.stt)}
+        onSelectMonument={(monument) => handleSelectMonument(monument.stt)}
       />
 
+      {/* Milestone Detail Modal */}
       <MilestoneModal
         isOpen={milestoneModalOpen}
         onClose={() => setMilestoneModalOpen(false)}
         milestone={selectedMilestone}
       />
 
+      {/* Admin CMS Drawer */}
       <AdminEditDrawer
-        isOpen={isAdminOpen}
-        onClose={() => setIsAdminOpen(false)}
-        data={data}
-        onSaveData={handleSaveData}
-        onResetDefault={handleResetDefault}
+        isOpen={adminDrawerOpen}
+        onClose={() => setAdminDrawerOpen(false)}
+        monumentData={data}
+        onUpdateOverview={handleUpdateOverview}
+        onUpdateInfo={handleUpdateInfo}
+        onUpdateTimeline={handleUpdateTimeline}
+        onUpdateGallery={handleUpdateGallery}
         contributions={contributions}
         onApproveContribution={handleApproveContribution}
         onRejectContribution={handleRejectContribution}
         onDeleteContribution={handleDeleteContribution}
-        onSeedSampleContributions={handleSeedSampleContributions}
-        onRevokeContribution={handleRevokeContribution}
       />
     </div>
   );
