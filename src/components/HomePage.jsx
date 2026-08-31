@@ -176,12 +176,12 @@ export default function HomePage({
           </div>
         </div>
 
-        {/* Floating Search Bar overlapping bottom */}
-        <div className="relative z-20 max-w-4xl w-full mx-auto px-4 -mb-7">
-          <div className="bg-white rounded-2xl p-2.5 sm:p-3 shadow-2xl border border-gray-100 flex flex-col sm:flex-row items-center gap-3">
-            <div className="flex items-center gap-2 pl-2 text-xs sm:text-sm font-bold text-gray-800 shrink-0">
-              <Search className="w-4 h-4 text-gray-500" />
-              <span>Bạn muốn khám phá điều gì?</span>
+        {/* Floating Search Bar prominently raised on top */}
+        <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-8">
+          <div className="bg-white rounded-2xl sm:rounded-full p-2.5 sm:p-3 shadow-2xl border-2 border-amber-200/60 ring-4 ring-black/10 flex flex-col sm:flex-row items-center gap-3 backdrop-blur-md">
+            <div className="flex items-center gap-2 pl-3 text-xs sm:text-sm font-black text-gray-900 shrink-0">
+              <Search className="w-4 h-4 text-[#3B7E4B]" />
+              <span className="tracking-tight">Bạn muốn khám phá điều gì?</span>
             </div>
 
             <div className="relative flex-1 w-full">
@@ -190,12 +190,12 @@ export default function HomePage({
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Tìm tên di tích, địa phương, nhân vật, sự kiện..."
-                className="w-full py-2 px-3 text-xs sm:text-sm text-gray-800 placeholder-gray-400 bg-gray-50 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3B7E4B] transition-all"
+                className="w-full py-2.5 px-4 text-xs sm:text-sm text-gray-900 placeholder-gray-400 bg-gray-50/80 rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3B7E4B] transition-all font-medium"
               />
 
               {/* Live search dropdown results */}
               {searchResults.length > 0 && (
-                <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 p-2 z-50 max-h-72 overflow-y-auto divide-y divide-gray-100">
+                <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 p-2 z-50 max-h-80 overflow-y-auto divide-y divide-gray-100">
                   {searchResults.map(m => (
                     <div
                       key={m.stt}
@@ -203,7 +203,7 @@ export default function HomePage({
                         onSelectMonument(m.stt);
                         setSearchTerm('');
                       }}
-                      className="p-2.5 hover:bg-amber-50 rounded-xl cursor-pointer flex items-center justify-between group transition-colors"
+                      className="p-3 hover:bg-amber-50 rounded-xl cursor-pointer flex items-center justify-between group transition-colors"
                     >
                       <div>
                         <div className="text-xs font-bold text-[#7E1819] group-hover:underline">{m.info.name}</div>
@@ -224,7 +224,7 @@ export default function HomePage({
                   onOpenExplorer();
                 }
               }}
-              className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-[#3B7E4B] hover:bg-[#326d40] text-white font-bold text-xs sm:text-sm shadow transition-all cursor-pointer flex items-center justify-center gap-1.5"
+              className="w-full sm:w-auto px-6 py-2.5 rounded-xl sm:rounded-full bg-[#3B7E4B] hover:bg-[#326d40] text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-1.5"
             >
               <Search className="w-4 h-4" />
               <span className="sm:hidden">Tìm kiếm</span>
@@ -234,7 +234,7 @@ export default function HomePage({
       </section>
 
       {/* 2. INSPIRATIONAL INTRODUCTION SECTION (LỜI NGỎ DI SẢN) */}
-      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-8">
+      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-18 pb-8 relative z-10">
         <ScrollReveal>
           <div className="relative bg-[#FEFAF4] rounded-3xl p-6 sm:p-10 border border-[#EADBC8] shadow-sm overflow-hidden">
             {/* Decorative watermark */}
