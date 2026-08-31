@@ -33,7 +33,11 @@ import {
   Filter,
   Check,
   Flame,
-  Star
+  Star,
+  Menu,
+  X,
+  Home,
+  Grid
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
@@ -45,6 +49,7 @@ export default function HomePage({
   onOpenContribute
 }) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [studentIdeaLikes, setStudentIdeaLikes] = useState({ 1: 128, 2: 94, 3: 73 });
   const [likedIdeas, setLikedIdeas] = useState({});
 
@@ -256,9 +261,9 @@ export default function HomePage({
   };
 
   return (
-    <div className="bg-[#FAF4F0] min-h-screen text-[#2A1214] font-sans antialiased selection:bg-[#8B1417] selection:text-white">
-      {/* 1. HERO BANNER WITH PANORAMIC SAIGON VIEW & HISTORICAL RED AESTHETIC */}
-      <section className="relative bg-[#200507] text-white min-h-[560px] sm:min-h-[600px] flex flex-col justify-between overflow-visible shadow-2xl">
+    <div className="bg-[#FAF4F0] min-h-screen text-[#2A1214] font-sans antialiased selection:bg-[#8B1417] selection:text-white pb-20 md:pb-0">
+      {/* 1. HERO BANNER WITH RESPONSIVE DESKTOP, TABLET & MOBILE LAYOUT */}
+      <section className="relative bg-[#200507] text-white min-h-[500px] sm:min-h-[560px] md:min-h-[600px] flex flex-col justify-between overflow-visible shadow-2xl">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src="/assets/images/dinh-doc-lap-front.jpg"
@@ -269,102 +274,154 @@ export default function HomePage({
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#8B1417]/25 via-transparent to-black/75" />
         </div>
 
-        {/* Top Navbar with High Contrast Navigation Links */}
-        <header className="relative z-20 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#8B1417] to-[#B31D21] border border-amber-400/60 flex items-center justify-center text-amber-200 shadow-lg shadow-black/50 group-hover:scale-105 transition-transform">
+        {/* Responsive Navbar: Desktop, Tablet (md), Mobile (sm) */}
+        <header className="relative z-20 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between">
+          <div className="flex items-center gap-2.5 sm:gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-[#8B1417] to-[#B31D21] border border-amber-400/60 flex items-center justify-center text-amber-200 shadow-lg shadow-black/50 group-hover:scale-105 transition-transform">
               <Landmark className="w-5 h-5" />
             </div>
             <div>
-              <span className="font-serif-title font-black text-base sm:text-lg tracking-wider text-white block uppercase drop-shadow">
+              <span className="font-serif-title font-black text-sm sm:text-base lg:text-lg tracking-wider text-white block uppercase drop-shadow">
                 DI SẢN
               </span>
-              <span className="text-[10px] font-black text-amber-300 tracking-widest block uppercase drop-shadow-sm">
+              <span className="text-[9px] sm:text-[10px] font-black text-amber-300 tracking-widest block uppercase drop-shadow-sm">
                 TP. HỒ CHÍ MINH
               </span>
             </div>
           </div>
 
-          <nav className="hidden md:flex items-center gap-2 lg:gap-3 text-xs sm:text-sm font-bold text-white/95">
+          {/* Desktop & Tablet Navigation */}
+          <nav className="hidden md:flex items-center gap-1.5 lg:gap-3 text-xs sm:text-sm font-bold text-white/95">
             <a 
               href="#home" 
-              className="px-4 py-2 rounded-full bg-[#8B1417] text-white border border-amber-400/50 shadow-md shadow-black/30"
+              className="px-3.5 py-1.5 lg:px-4 lg:py-2 rounded-full bg-[#8B1417] text-white border border-amber-400/50 shadow-md shadow-black/30 text-xs sm:text-sm"
             >
               Trang chủ
             </a>
             <button 
               onClick={onOpenExplorer} 
-              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer"
+              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer text-xs sm:text-sm"
             >
               Khám phá di tích
             </button>
             <button 
               onClick={onOpenMyMap} 
-              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer"
+              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer text-xs sm:text-sm"
             >
               Bản đồ di tích
             </button>
             <button 
               onClick={() => onSelectMonument(1)} 
-              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer"
+              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer text-xs sm:text-sm"
             >
               Thử thách
             </button>
             <button 
               onClick={onOpenContribute} 
-              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer"
+              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer text-xs sm:text-sm"
             >
               Ý tưởng – Hành động
             </button>
             <a 
               href="#about-project" 
-              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all"
+              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all text-xs sm:text-sm"
             >
               Giới thiệu
             </a>
           </nav>
 
-          <div className="flex items-center gap-3">
+          {/* Right Header Actions & Mobile Toggle */}
+          <div className="flex items-center gap-2 sm:gap-3">
             <button 
               onClick={() => {
                 const el = document.getElementById('search-input-field');
                 if (el) el.focus();
               }}
-              className="w-10 h-10 rounded-full bg-white/15 hover:bg-[#8B1417] border border-white/20 flex items-center justify-center text-white transition-all hover:scale-105 cursor-pointer shadow-md"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/15 hover:bg-[#8B1417] border border-white/20 flex items-center justify-center text-white transition-all hover:scale-105 cursor-pointer shadow-md"
               title="Tìm kiếm di tích"
             >
               <Search className="w-4 h-4 text-amber-200" />
             </button>
             <div 
               onClick={onOpenContribute}
-              className="w-10 h-10 rounded-full bg-gradient-to-br from-[#8B1417]/60 to-[#B31D21]/60 border border-amber-300/70 flex items-center justify-center text-amber-200 font-bold text-sm cursor-pointer shadow-inner hover:scale-105 transition-all"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-[#8B1417]/60 to-[#B31D21]/60 border border-amber-300/70 flex items-center justify-center text-amber-200 font-bold text-xs sm:text-sm cursor-pointer shadow-inner hover:scale-105 transition-all"
               title="Cộng đồng & Đóng góp"
             >
               👤
             </div>
+            {/* Mobile Menu Hamburger */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center text-white cursor-pointer"
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
           </div>
         </header>
 
+        {/* Mobile Slide-down Menu Sheet */}
+        {mobileMenuOpen && (
+          <div className="md:hidden relative z-30 bg-[#2C0709] border-b border-rose-900/60 px-4 py-4 space-y-2 text-sm font-bold text-white animate-fadeIn shadow-2xl">
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="block w-full text-left px-3 py-2.5 rounded-xl bg-[#8B1417] text-white"
+            >
+              Trang chủ
+            </button>
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenExplorer();
+              }}
+              className="block w-full text-left px-3 py-2.5 rounded-xl hover:bg-white/10 text-stone-200"
+            >
+              Khám phá di tích
+            </button>
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenMyMap();
+              }}
+              className="block w-full text-left px-3 py-2.5 rounded-xl hover:bg-white/10 text-stone-200"
+            >
+              Bản đồ di tích
+            </button>
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenContribute();
+              }}
+              className="block w-full text-left px-3 py-2.5 rounded-xl hover:bg-white/10 text-stone-200"
+            >
+              Ý tưởng – Hành động
+            </button>
+          </div>
+        )}
+
         {/* Hero Main Content */}
-        <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 my-auto">
-          <div className="max-w-3xl space-y-4">
+        <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16 my-auto">
+          <div className="max-w-3xl space-y-3 sm:space-y-4">
             <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-xl">
               DI SẢN <br />
               <span className="text-amber-200">TP. HỒ CHÍ MINH</span>
             </h1>
 
-            <h2 className="font-serif-title text-lg sm:text-2xl text-amber-300 font-bold tracking-wide drop-shadow">
+            <h2 className="font-serif-title text-base sm:text-xl lg:text-2xl text-amber-300 font-bold tracking-wide drop-shadow">
               Hành trình khám phá những câu chuyện còn sống mãi
             </h2>
 
-            <p className="text-sm sm:text-base text-rose-100/90 leading-relaxed font-normal max-w-2xl drop-shadow-sm">
+            <p className="text-xs sm:text-sm md:text-base text-rose-100/90 leading-relaxed font-normal max-w-2xl drop-shadow-sm">
               Hàng trăm di tích. Hàng nghìn câu chuyện. Và một thế hệ trẻ có thể tiếp nối.
             </p>
 
-            <div className="pt-4 flex flex-wrap items-center gap-4">
+            {/* CTA Buttons: Full width on Mobile, Inline on Tablet & Desktop */}
+            <div className="pt-3 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <button
                 onClick={onOpenExplorer}
-                className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#C42226] hover:from-[#731013] hover:to-[#a0181c] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-red-950/50 ring-2 ring-amber-400/50 transition-all hover:scale-104 cursor-pointer flex items-center gap-2.5"
+                className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#C42226] hover:from-[#731013] hover:to-[#a0181c] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-red-950/50 ring-2 ring-amber-400/50 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
               >
                 <Landmark className="w-4 h-4 text-white" />
                 <span>Khám Phá Di Tích</span>
@@ -372,7 +429,7 @@ export default function HomePage({
 
               <button
                 onClick={onOpenMyMap}
-                className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#4A0A0C] via-[#630E11] to-[#7D1215] hover:from-[#3a0709] hover:to-[#570b0e] text-amber-100 font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-red-950/40 ring-2 ring-red-400/30 transition-all hover:scale-104 cursor-pointer flex items-center gap-2.5"
+                className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-[#4A0A0C] via-[#630E11] to-[#7D1215] hover:from-[#3a0709] hover:to-[#570b0e] text-amber-100 font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-red-950/40 ring-2 ring-red-400/30 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
               >
                 <MapPin className="w-4 h-4 text-amber-200" />
                 <span>Khám Phá Gần Bạn</span>
@@ -382,15 +439,15 @@ export default function HomePage({
         </div>
 
         {/* Floating Search Bar */}
-        <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-9">
+        <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-8 sm:-mb-9">
           <form 
             onSubmit={(e) => {
               e.preventDefault();
               handlePerformSearch();
             }}
-            className="bg-[#FFFDFB] rounded-2xl sm:rounded-full p-2.5 sm:p-3 shadow-2xl border-2 border-[#8B1417]/50 ring-4 ring-[#8B1417]/10 flex flex-col sm:flex-row items-center gap-3 backdrop-blur-md"
+            className="bg-[#FFFDFB] rounded-2xl sm:rounded-full p-2 sm:p-3 shadow-2xl border-2 border-[#8B1417]/50 ring-4 ring-[#8B1417]/10 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 backdrop-blur-md"
           >
-            <div className="flex items-center gap-2 pl-3 text-xs sm:text-sm font-black text-[#8B1417] shrink-0">
+            <div className="flex items-center gap-2 pl-2 sm:pl-3 text-xs sm:text-sm font-black text-[#8B1417] shrink-0">
               <Search className="w-4 h-4 text-[#8B1417]" />
               <span className="tracking-tight">Bạn muốn khám phá điều gì?</span>
             </div>
@@ -401,8 +458,8 @@ export default function HomePage({
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Tìm tên di tích, địa phương, nhân vật, sự kiện..."
-                className="w-full py-2.5 px-4 text-xs sm:text-sm text-[#2A1214] placeholder-stone-400 bg-[#FAF4F0] rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] transition-all font-medium border border-rose-200/80"
+                placeholder="Tìm tên di tích, địa phương, nhân vật..."
+                className="w-full py-2 sm:py-2.5 px-3 sm:px-4 text-xs sm:text-sm text-[#2A1214] placeholder-stone-400 bg-[#FAF4F0] rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] transition-all font-medium border border-rose-200/80"
               />
 
               {searchResults.length > 0 && (
@@ -425,7 +482,7 @@ export default function HomePage({
                           <span>{m.info.name}</span>
                           <span className="px-1.5 py-0.2 rounded text-[9px] bg-rose-100 text-[#8B1417] font-black">{m.info.badge || m.info.ranking}</span>
                         </div>
-                        <div className="text-[11px] text-stone-600">{m.info.address}</div>
+                        <div className="text-[11px] text-stone-600 truncate max-w-[240px] sm:max-w-none">{m.info.address}</div>
                       </div>
                       <div className="flex items-center gap-1 text-xs font-bold text-[#8B1417] opacity-0 group-hover:opacity-100 transition-opacity">
                         <span>Xem</span>
@@ -439,7 +496,7 @@ export default function HomePage({
 
             <button
               type="submit"
-              className="w-full sm:w-auto px-7 py-3 rounded-xl sm:rounded-full bg-gradient-to-r from-[#8B1417] to-[#B31D21] hover:from-[#731013] hover:to-[#96171a] text-white font-black text-xs sm:text-sm shadow-md transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-7 py-2.5 sm:py-3 rounded-xl sm:rounded-full bg-gradient-to-r from-[#8B1417] to-[#B31D21] hover:from-[#731013] hover:to-[#96171a] text-white font-black text-xs sm:text-sm shadow-md transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
             >
               <Search className="w-4 h-4" />
               <span>Tìm kiếm</span>
@@ -449,24 +506,24 @@ export default function HomePage({
       </section>
 
       {/* 2. INSPIRATIONAL INTRODUCTION SECTION (LỜI NGỎ DI SẢN) */}
-      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-6 relative z-10">
+      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 sm:pt-20 pb-6 relative z-10">
         <ScrollReveal>
-          <div className="relative bg-[#FFFDFB] rounded-3xl p-6 sm:p-10 border-2 border-rose-200 shadow-md shadow-rose-950/5 overflow-hidden">
+          <div className="relative bg-[#FFFDFB] rounded-3xl p-5 sm:p-8 md:p-10 border-2 border-rose-200 shadow-md shadow-rose-950/5 overflow-hidden">
             <div className="absolute -right-8 -bottom-8 opacity-5 text-[#8B1417] pointer-events-none">
-              <Landmark className="w-64 h-64" />
+              <Landmark className="w-48 sm:w-64 h-48 sm:h-64" />
             </div>
 
-            <div className="relative z-10 space-y-4 text-center max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-xs font-black uppercase tracking-wider shadow-2xs">
+            <div className="relative z-10 space-y-3 sm:space-y-4 text-center max-w-3xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-2xs">
                 <Sparkles className="w-3.5 h-3.5 text-[#8B1417]" />
                 <span>Ký Ức Thành Phố &amp; Hành Trình Kết Nối</span>
               </div>
 
-              <p className="font-serif-title text-base sm:text-lg text-[#2A1214] font-medium leading-relaxed italic">
+              <p className="font-serif-title text-sm sm:text-base lg:text-lg text-[#2A1214] font-medium leading-relaxed italic">
                 “Mỗi viên gạch cũ đều mang một cái tên, một câu chuyện, một phần ký ức của thành phố này.”
               </p>
 
-              <div className="space-y-3 text-xs sm:text-sm text-[#4E282B] leading-relaxed text-justify sm:text-center">
+              <div className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-[#4E282B] leading-relaxed text-justify sm:text-center">
                 <p>
                   Giữa nhịp sống hối hả của một Sài Gòn - Hồ Chí Minh không ngừng đổi thay, vẫn có những mái ngói, những bức tường rêu phong lặng lẽ giữ lại cả một dòng thời gian đã qua. Chúng chứng kiến những biến động của lịch sử, những đổi thay của thành phố, và cả những điều bình dị nhất trong đời sống của bao thế hệ đã từng đi qua nơi đây.
                 </p>
@@ -482,15 +539,15 @@ export default function HomePage({
         </ScrollReveal>
       </section>
 
-      {/* 3. DI TÍCH QUANH EM (MAP) & DI TÍCH HÔM NAY (FEATURED CARD) - ĐƯA LÊN TRÊN */}
+      {/* 3. DI TÍCH QUANH EM (MAP) & DI TÍCH HÔM NAY (FEATURED CARD) - RESPONSIVE */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            {/* Left 7 Cols: DI TÍCH QUANH EM MAP */}
-            <div className="lg:col-span-7 bg-[#FFFDFB] rounded-3xl p-5 sm:p-6 border-2 border-rose-200 shadow-md shadow-rose-950/5 space-y-3 flex flex-col justify-between">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
+            {/* Left 7 Cols (Desktop) / Full Width (Tablet & Mobile): DI TÍCH QUANH EM MAP */}
+            <div className="lg:col-span-7 bg-[#FFFDFB] rounded-3xl p-4 sm:p-5 md:p-6 border-2 border-rose-200 shadow-md shadow-rose-950/5 space-y-3 flex flex-col justify-between">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#8B1417]">
+                  <span className="font-serif-title font-black text-xs sm:text-sm md:text-base uppercase tracking-wider text-[#8B1417]">
                     DI TÍCH QUANH EM
                   </span>
                 </div>
@@ -504,7 +561,7 @@ export default function HomePage({
               </div>
 
               {/* Google My Maps Embed */}
-              <div className="h-64 sm:h-72 rounded-2xl overflow-hidden border border-rose-200 relative z-0 bg-[#FDF7F5] shadow-inner">
+              <div className="h-56 sm:h-64 md:h-72 rounded-2xl overflow-hidden border border-rose-200 relative z-0 bg-[#FDF7F5] shadow-inner">
                 <iframe
                   src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
                   width="100%"
@@ -517,16 +574,16 @@ export default function HomePage({
               </div>
 
               {/* Map Actions / Info */}
-              <div className="flex items-center justify-between text-xs pt-1">
-                <div className="flex items-center gap-1.5 text-stone-600 font-semibold text-[11px]">
-                  <MapPin className="w-3.5 h-3.5 text-[#8B1417]" />
+              <div className="flex flex-wrap items-center justify-between text-xs pt-1 gap-1">
+                <div className="flex items-center gap-1.5 text-stone-600 font-semibold text-[10px] sm:text-[11px]">
+                  <MapPin className="w-3.5 h-3.5 text-[#8B1417] shrink-0" />
                   <span>Bản đồ tọa độ 103 Di tích TP.HCM</span>
                 </div>
                 <a
                   href="https://www.google.com/maps/d/edit?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&usp=sharing"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-bold text-[#8B1417] hover:underline flex items-center gap-1 text-[11px]"
+                  className="font-bold text-[#8B1417] hover:underline flex items-center gap-1 text-[10px] sm:text-[11px]"
                 >
                   <span>Mở Google Maps</span>
                   <ExternalLink className="w-3 h-3" />
@@ -534,8 +591,8 @@ export default function HomePage({
               </div>
             </div>
 
-            {/* Right 5 Cols: DI TÍCH HÔM NAY (FEATURED RICH CARD) - TÔNG ĐỎ QUÝ TỘC */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-[#4A0A0C] via-[#660E11] to-[#801316] text-white rounded-3xl p-5 sm:p-6 shadow-2xl border-2 border-[#380608] flex flex-col justify-between space-y-4">
+            {/* Right 5 Cols (Desktop) / Full Width (Tablet & Mobile): DI TÍCH HÔM NAY */}
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#4A0A0C] via-[#660E11] to-[#801316] text-white rounded-3xl p-4 sm:p-5 md:p-6 shadow-2xl border-2 border-[#380608] flex flex-col justify-between space-y-4">
               <div className="flex items-center justify-between">
                 <span className="font-serif-title font-black text-xs sm:text-sm uppercase tracking-wider text-amber-300">
                   DI TÍCH HÔM NAY
@@ -549,7 +606,7 @@ export default function HomePage({
               </div>
 
               <div className="space-y-3">
-                <div className="h-40 rounded-2xl overflow-hidden bg-black/40 border border-white/20 shadow-inner">
+                <div className="h-36 sm:h-40 rounded-2xl overflow-hidden bg-black/40 border border-white/20 shadow-inner">
                   <img
                     src={featuredMonument.info.heroImage}
                     alt={featuredMonument.info.name}
@@ -558,7 +615,7 @@ export default function HomePage({
                 </div>
 
                 <div>
-                  <h3 className="font-serif-title font-black text-lg sm:text-xl text-amber-100">
+                  <h3 className="font-serif-title font-black text-base sm:text-lg md:text-xl text-amber-100">
                     {featuredMonument.info.name}
                   </h3>
                   <p className="text-xs text-rose-100/90 leading-relaxed mt-1 line-clamp-2">
@@ -569,22 +626,18 @@ export default function HomePage({
                 <div className="space-y-1.5 text-xs text-white/95">
                   <div className="flex items-center gap-2">
                     <span className="text-amber-300">🔍</span>
-                    <span><strong>Có gì được tìm thấy?</strong> Các hiện vật khảo cổ &amp; dấu tích nguyên bản.</span>
+                    <span><strong>Có gì được tìm thấy?</strong> Hiện vật khảo cổ nguyên bản.</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-amber-300">🏺</span>
-                    <span><strong>Người xưa đã sản xuất như thế nào?</strong> Kỹ nghệ thủ công tinh xảo của cư dân xưa.</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-amber-300">💡</span>
-                    <span><strong>Vì sao cần bảo vệ?</strong> Giá trị văn hóa lịch sử độc nhất vô nhị.</span>
+                    <span><strong>Sản xuất ra sao?</strong> Kỹ nghệ thủ công tinh xảo của cư dân xưa.</span>
                   </div>
                 </div>
               </div>
 
               <button
                 onClick={() => onSelectMonument(featuredMonument.stt)}
-                className="w-full py-3 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-[#33080A] font-black text-xs sm:text-sm shadow-lg shadow-black/40 transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
+                className="w-full py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-[#33080A] font-black text-xs sm:text-sm shadow-lg shadow-black/40 transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>Khám phá câu chuyện</span>
                 <ArrowRight className="w-4 h-4 text-[#33080A]" />
@@ -594,17 +647,17 @@ export default function HomePage({
         </ScrollReveal>
       </section>
 
-      {/* 4. BẢNG KHẢO SÁT & GỢI Ý HÀNH TRÌNH: "KHÁM PHÁ THEO CÁCH CỦA BẠN" */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* 4. BẢNG KHẢO SÁT & GỢI Ý HÀNH TRÌNH (RESPONSIVE GRID) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <ScrollReveal>
-          <div className="bg-[#FFFDFB] rounded-3xl p-6 sm:p-10 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-8">
+          <div className="bg-[#FFFDFB] rounded-3xl p-4 sm:p-6 md:p-10 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-6 sm:space-y-8">
             {/* Header */}
-            <div className="text-center space-y-2.5 max-w-2xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-xs font-black uppercase tracking-wider shadow-2xs">
+            <div className="text-center space-y-2 max-w-2xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-2xs">
                 <Compass className="w-4 h-4 text-[#8B1417]" />
                 <span>Trắc Nghiệm Khảo Sát &amp; Gợi Ý Cá Nhân Hóa</span>
               </div>
-              <h2 className="font-serif-title font-black text-2xl sm:text-3xl uppercase tracking-wider text-[#2A1214]">
+              <h2 className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl uppercase tracking-wider text-[#2A1214]">
                 KHÁM PHÁ THEO CÁCH CỦA BẠN
               </h2>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
@@ -612,20 +665,20 @@ export default function HomePage({
               </p>
             </div>
 
-            {/* 3 Survey Steps */}
-            <div className="space-y-6">
+            {/* 3 Survey Steps Grid */}
+            <div className="space-y-5 sm:space-y-6">
               {/* BƯỚC 1: NƠI Ở / KHU VỰC CỦA BẠN */}
-              <div className="space-y-3">
+              <div className="space-y-2.5 sm:space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
                     1
                   </div>
-                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2A1214]">
+                  <h3 className="font-serif-title font-bold text-xs sm:text-sm md:text-base text-[#2A1214]">
                     Nơi ở / Khu vực địa lý của bạn:
                   </h3>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-2.5">
                   {locationOptions.map(loc => {
                     const isSelected = surveyLocation === loc.id;
                     return (
@@ -633,14 +686,14 @@ export default function HomePage({
                         key={loc.id}
                         type="button"
                         onClick={() => setSurveyLocation(loc.id)}
-                        className={`p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 relative group ${
+                        className={`p-2.5 sm:p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 relative group ${
                           isSelected
                             ? 'bg-[#FDF2F3] border-[#8B1417] ring-2 ring-[#8B1417]/20 shadow-md'
                             : 'bg-[#FAF4F0] border-rose-100 hover:border-[#8B1417]/60 hover:bg-[#FDF2F3]/60'
                         }`}
                       >
                         <div className="flex items-center justify-between w-full">
-                          <span className="text-lg">{loc.icon}</span>
+                          <span className="text-base sm:text-lg">{loc.icon}</span>
                           {isSelected && (
                             <span className="w-4 h-4 rounded-full bg-[#8B1417] text-white flex items-center justify-center text-[10px]">
                               ✓
@@ -648,10 +701,10 @@ export default function HomePage({
                           )}
                         </div>
                         <div>
-                          <div className={`text-xs font-bold ${isSelected ? 'text-[#8B1417]' : 'text-stone-800'}`}>
+                          <div className={`text-[11px] sm:text-xs font-bold leading-tight ${isSelected ? 'text-[#8B1417]' : 'text-stone-800'}`}>
                             {loc.name}
                           </div>
-                          <div className="text-[10px] text-stone-500 line-clamp-1 mt-0.5">
+                          <div className="text-[9px] sm:text-[10px] text-stone-500 line-clamp-1 mt-0.5">
                             {loc.tag}
                           </div>
                         </div>
@@ -662,17 +715,17 @@ export default function HomePage({
               </div>
 
               {/* BƯỚC 2: MỤC ĐÍCH KHÁM PHÁ CỦA BẠN */}
-              <div className="space-y-3">
+              <div className="space-y-2.5 sm:space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
                     2
                   </div>
-                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2A1214]">
+                  <h3 className="font-serif-title font-bold text-xs sm:text-sm md:text-base text-[#2A1214]">
                     Mục đích khám phá của bạn:
                   </h3>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-2.5">
                   {purposeOptions.map(pur => {
                     const isSelected = surveyPurpose === pur.id;
                     return (
@@ -680,14 +733,14 @@ export default function HomePage({
                         key={pur.id}
                         type="button"
                         onClick={() => setSurveyPurpose(pur.id)}
-                        className={`p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1.5 relative ${
+                        className={`p-3 sm:p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1.5 relative ${
                           isSelected
                             ? 'bg-[#FDF2F3] border-[#8B1417] ring-2 ring-[#8B1417]/20 shadow-md'
                             : 'bg-[#FAF4F0] border-rose-100 hover:border-[#8B1417]/60 hover:bg-[#FDF2F3]/60'
                         }`}
                       >
                         <div className="flex items-center justify-between">
-                          <span className="text-xl">{pur.icon}</span>
+                          <span className="text-lg sm:text-xl">{pur.icon}</span>
                           {isSelected && (
                             <span className="w-4 h-4 rounded-full bg-[#8B1417] text-white flex items-center justify-center text-[10px]">
                               ✓
@@ -709,17 +762,17 @@ export default function HomePage({
               </div>
 
               {/* BƯỚC 3: ĐAM MÊ & CHỦ ĐỀ BẠN YÊU THÍCH */}
-              <div className="space-y-3">
+              <div className="space-y-2.5 sm:space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
                     3
                   </div>
-                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2A1214]">
+                  <h3 className="font-serif-title font-bold text-xs sm:text-sm md:text-base text-[#2A1214]">
                     Đam mê &amp; Chủ đề bạn quan tâm nhất:
                   </h3>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-2.5">
                   {topicOptions.map(top => {
                     const isSelected = surveyTopic === top.id;
                     return (
@@ -727,13 +780,13 @@ export default function HomePage({
                         key={top.id}
                         type="button"
                         onClick={() => setSurveyTopic(top.id)}
-                        className={`p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-3 relative ${
+                        className={`p-3 sm:p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-3 relative ${
                           isSelected
                             ? 'bg-[#FDF2F3] border-[#8B1417] ring-2 ring-[#8B1417]/20 shadow-md'
                             : 'bg-[#FAF4F0] border-rose-100 hover:border-[#8B1417]/60 hover:bg-[#FDF2F3]/60'
                         }`}
                       >
-                        <div className="w-10 h-10 rounded-xl bg-white shadow-2xs flex items-center justify-center text-xl shrink-0">
+                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white shadow-2xs flex items-center justify-center text-lg sm:text-xl shrink-0">
                           {top.icon}
                         </div>
                         <div className="flex-1 min-w-0">
@@ -761,8 +814,8 @@ export default function HomePage({
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
                   <Flame className="w-5 h-5 text-[#8B1417] fill-[#8B1417]" />
-                  <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#8B1417]">
-                    KẾT QUẢ GỢI Ý DÀNH RIÊNG CHO BẠN ({recommendedMonuments.length} Di Tích Hợp Lý Nhất)
+                  <span className="font-serif-title font-black text-xs sm:text-sm md:text-base uppercase tracking-wider text-[#8B1417]">
+                    KẾT QUẢ GỢI Ý ({recommendedMonuments.length} Di Tích Hợp Lý Nhất)
                   </span>
                 </div>
                 <button
@@ -774,16 +827,16 @@ export default function HomePage({
                 </button>
               </div>
 
-              {/* 4 Recommended Cards Grid */}
+              {/* Responsive Cards: 1 col on Mobile, 2 cols on Tablet, 4 cols on Desktop */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {recommendedMonuments.map((m, idx) => (
                   <div
                     key={m.stt}
                     onClick={() => onSelectMonument(m.stt)}
-                    className="bg-[#FAF4F0] rounded-3xl p-4 border-2 border-rose-100 hover:border-[#8B1417] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
+                    className="bg-[#FAF4F0] rounded-3xl p-3.5 sm:p-4 border-2 border-rose-100 hover:border-[#8B1417] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
                   >
                     <div className="space-y-3">
-                      <div className="h-36 rounded-2xl overflow-hidden bg-rose-100 relative shadow-inner">
+                      <div className="h-40 sm:h-36 rounded-2xl overflow-hidden bg-rose-100 relative shadow-inner">
                         <img
                           src={m.info.heroImage}
                           alt={m.info.name}
@@ -828,11 +881,11 @@ export default function HomePage({
       </section>
 
       {/* 5. DI SẢN CẦN BẠN & Ý TƯỞNG CỦA HỌC SINH */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
             {/* Left 7 Cols: DI SẢN CẦN BẠN */}
-            <div className="lg:col-span-7 bg-[#FFFDFB] rounded-3xl p-5 sm:p-6 border-2 border-rose-200 shadow-md shadow-rose-950/5 space-y-4 flex flex-col justify-between">
+            <div className="lg:col-span-7 bg-[#FFFDFB] rounded-3xl p-4 sm:p-5 md:p-6 border-2 border-rose-200 shadow-md shadow-rose-950/5 space-y-4 flex flex-col justify-between">
               <div>
                 <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2A1214]">
                   DI SẢN CẦN BẠN
@@ -842,79 +895,79 @@ export default function HomePage({
                 </p>
               </div>
 
-              {/* 6 Action Items */}
-              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 text-center">
+              {/* 6 Action Items: 3 cols on mobile, 6 cols on tablet/desktop */}
+              <div className="grid grid-cols-3 md:grid-cols-6 gap-2 text-center">
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-rose-100 text-[#8B1417] flex items-center justify-center text-sm font-bold">
                     ✓
                   </div>
-                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Ghi lại hiện trạng</span>
+                  <span className="text-[9px] sm:text-[10px] font-bold text-stone-700 leading-tight">Ghi lại hiện trạng</span>
                 </div>
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-rose-100 text-[#8B1417] flex items-center justify-center text-sm font-bold">
                     📢
                   </div>
-                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Chia sẻ câu chuyện</span>
+                  <span className="text-[9px] sm:text-[10px] font-bold text-stone-700 leading-tight">Chia sẻ câu chuyện</span>
                 </div>
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-rose-100 text-[#8B1417] flex items-center justify-center text-sm font-bold">
                     🌿
                   </div>
-                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Giữ gìn cảnh quan</span>
+                  <span className="text-[9px] sm:text-[10px] font-bold text-stone-700 leading-tight">Giữ gìn cảnh quan</span>
                 </div>
 
                 <div 
                   onClick={onOpenExplorer}
-                  className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-rose-100 text-[#8B1417] flex items-center justify-center text-sm font-bold">
                     📖
                   </div>
-                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Tìm hiểu thêm</span>
+                  <span className="text-[9px] sm:text-[10px] font-bold text-stone-700 leading-tight">Tìm hiểu thêm</span>
                 </div>
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-rose-100 text-[#8B1417] flex items-center justify-center text-sm font-bold">
                     👥
                   </div>
-                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Rủ bạn bè cùng khám phá</span>
+                  <span className="text-[9px] sm:text-[10px] font-bold text-stone-700 leading-tight">Rủ bạn bè cùng đi</span>
                 </div>
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-rose-100 text-[#8B1417] flex items-center justify-center text-sm font-bold">
                     💡
                   </div>
-                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Đề xuất ý tưởng</span>
+                  <span className="text-[9px] sm:text-[10px] font-bold text-stone-700 leading-tight">Đề xuất ý tưởng</span>
                 </div>
               </div>
 
               <button
                 onClick={onOpenContribute}
-                className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[#7A1114] via-[#8B1417] to-[#A81B1F] hover:from-[#630D10] hover:to-[#8F1417] text-white font-black text-xs uppercase tracking-wider shadow-lg shadow-red-950/20 transition-all hover:scale-102 cursor-pointer"
+                className="w-full py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-[#7A1114] via-[#8B1417] to-[#A81B1F] hover:from-[#630D10] hover:to-[#8F1417] text-white font-black text-xs uppercase tracking-wider shadow-lg shadow-red-950/20 transition-all hover:scale-102 cursor-pointer"
               >
                 TÔI MUỐN HÀNH ĐỘNG
               </button>
             </div>
 
             {/* Right 5 Cols: Ý TƯỞNG CỦA HỌC SINH */}
-            <div className="lg:col-span-5 bg-[#FFFDFB] rounded-3xl p-5 sm:p-6 border-2 border-rose-200 shadow-md shadow-rose-950/5 space-y-3 flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-[#FFFDFB] rounded-3xl p-4 sm:p-5 md:p-6 border-2 border-rose-200 shadow-md shadow-rose-950/5 space-y-3 flex flex-col justify-between">
               <div className="flex items-center justify-between">
                 <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2A1214]">
                   Ý TƯỞNG CỦA HỌC SINH
@@ -928,49 +981,49 @@ export default function HomePage({
               </div>
 
               {/* 3 Student Projects */}
-              <div className="space-y-2.5">
-                <div className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 flex items-center justify-between gap-3 transition-colors">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-rose-100 shrink-0 shadow-inner">
+              <div className="space-y-2 sm:space-y-2.5">
+                <div className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 flex items-center justify-between gap-2.5 sm:gap-3 transition-colors">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden bg-rose-100 shrink-0 shadow-inner">
                       <img src="/assets/images/dinh-doc-lap-front.jpg" alt="Idea 1" className="w-full h-full object-cover" />
                     </div>
-                    <span className="text-xs font-bold text-stone-800">Làm QR giới thiệu di tích tại trường học</span>
+                    <span className="text-xs font-bold text-stone-800 truncate">Làm QR di tích tại trường học</span>
                   </div>
                   <button 
                     onClick={() => handleLikeIdea(1)}
-                    className="flex items-center gap-1 text-xs font-bold text-[#8B1417] hover:scale-110 transition-transform cursor-pointer"
+                    className="flex items-center gap-1 text-xs font-bold text-[#8B1417] hover:scale-110 transition-transform cursor-pointer shrink-0"
                   >
                     <span>❤️</span>
                     <span>{studentIdeaLikes[1]}</span>
                   </button>
                 </div>
 
-                <div className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 flex items-center justify-between gap-3 transition-colors">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-rose-100 shrink-0 shadow-inner">
+                <div className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 flex items-center justify-between gap-2.5 sm:gap-3 transition-colors">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden bg-rose-100 shrink-0 shadow-inner">
                       <img src="/assets/images/dia-dao-cu-chi.jpg" alt="Idea 2" className="w-full h-full object-cover" />
                     </div>
-                    <span className="text-xs font-bold text-stone-800">Thiết kế tour tham quan di tích cho học sinh</span>
+                    <span className="text-xs font-bold text-stone-800 truncate">Tour tham quan cho học sinh</span>
                   </div>
                   <button 
                     onClick={() => handleLikeIdea(2)}
-                    className="flex items-center gap-1 text-xs font-bold text-[#8B1417] hover:scale-110 transition-transform cursor-pointer"
+                    className="flex items-center gap-1 text-xs font-bold text-[#8B1417] hover:scale-110 transition-transform cursor-pointer shrink-0"
                   >
                     <span>❤️</span>
                     <span>{studentIdeaLikes[2]}</span>
                   </button>
                 </div>
 
-                <div className="p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 flex items-center justify-between gap-3 transition-colors">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-rose-100 shrink-0 shadow-inner">
+                <div className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 flex items-center justify-between gap-2.5 sm:gap-3 transition-colors">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden bg-rose-100 shrink-0 shadow-inner">
                       <img src="/assets/images/ben-nha-rong.jpg" alt="Idea 3" className="w-full h-full object-cover" />
                     </div>
-                    <span className="text-xs font-bold text-stone-800">Tạo bản đồ di tích quanh trường</span>
+                    <span className="text-xs font-bold text-stone-800 truncate">Bản đồ di tích quanh trường</span>
                   </div>
                   <button 
                     onClick={() => handleLikeIdea(3)}
-                    className="flex items-center gap-1 text-xs font-bold text-[#8B1417] hover:scale-110 transition-transform cursor-pointer"
+                    className="flex items-center gap-1 text-xs font-bold text-[#8B1417] hover:scale-110 transition-transform cursor-pointer shrink-0"
                   >
                     <span>❤️</span>
                     <span>{studentIdeaLikes[3]}</span>
@@ -980,7 +1033,7 @@ export default function HomePage({
 
               <button
                 onClick={onOpenContribute}
-                className="w-full py-3 rounded-xl bg-[#8B1417] hover:bg-[#680E11] text-white font-black text-xs uppercase tracking-wider transition-colors cursor-pointer shadow-md"
+                className="w-full py-2.5 sm:py-3 rounded-xl bg-[#8B1417] hover:bg-[#680E11] text-white font-black text-xs uppercase tracking-wider transition-colors cursor-pointer shadow-md"
               >
                 + ĐỀ XUẤT Ý TƯỞNG
               </button>
@@ -989,27 +1042,76 @@ export default function HomePage({
         </ScrollReveal>
       </section>
 
-      {/* 6. BOTTOM MOTTO BANNER WITH STUDENT ILLUSTRATION */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 text-center">
+      {/* 6. BOTTOM MOTTO BANNER */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-12 text-center">
         <ScrollReveal>
-          <div className="space-y-4">
-            <div className="flex items-center justify-center gap-4 text-3xl sm:text-4xl">
+          <div className="space-y-3 sm:space-y-4">
+            <div className="flex items-center justify-center gap-3 sm:gap-4 text-2xl sm:text-3xl md:text-4xl">
               <span>🎒</span>
               <span>🏛️</span>
               <span>📚</span>
             </div>
 
-            <div className="space-y-1.5 max-w-2xl mx-auto">
-              <h3 className="font-serif-title text-base sm:text-xl font-black text-[#2A1214]">
+            <div className="space-y-1 sm:space-y-1.5 max-w-2xl mx-auto">
+              <h3 className="font-serif-title text-sm sm:text-base md:text-xl font-black text-[#2A1214]">
                 Di tích kể câu chuyện của quá khứ.
               </h3>
-              <h3 className="font-serif-title text-base sm:text-xl font-black text-[#8B1417]">
+              <h3 className="font-serif-title text-sm sm:text-base md:text-xl font-black text-[#8B1417]">
                 Còn chúng ta quyết định câu chuyện ấy sẽ được tiếp tục như thế nào.
               </h3>
             </div>
           </div>
         </ScrollReveal>
       </section>
+
+      {/* 7. STICKY MOBILE BOTTOM NAVIGATION BAR (< 768px) */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#FFFDFB]/95 backdrop-blur-md border-t border-rose-200/90 py-1.5 px-3 flex items-center justify-around shadow-2xl">
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="flex flex-col items-center gap-0.5 text-[#8B1417] cursor-pointer"
+        >
+          <Home className="w-4 h-4" />
+          <span className="text-[10px] font-bold">Trang chủ</span>
+        </button>
+
+        <button
+          onClick={onOpenExplorer}
+          className="flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#8B1417] cursor-pointer"
+        >
+          <Grid className="w-4 h-4" />
+          <span className="text-[10px] font-bold">Kho di tích</span>
+        </button>
+
+        <button
+          onClick={onOpenMyMap}
+          className="flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#8B1417] cursor-pointer"
+        >
+          <MapIcon className="w-4 h-4" />
+          <span className="text-[10px] font-bold">Bản đồ</span>
+        </button>
+
+        <button
+          onClick={() => {
+            const el = document.getElementById('search-input-field');
+            if (el) {
+              el.focus();
+              el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }}
+          className="flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#8B1417] cursor-pointer"
+        >
+          <Search className="w-4 h-4" />
+          <span className="text-[10px] font-bold">Tìm kiếm</span>
+        </button>
+
+        <button
+          onClick={onOpenContribute}
+          className="flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#8B1417] cursor-pointer"
+        >
+          <Lightbulb className="w-4 h-4" />
+          <span className="text-[10px] font-bold">Ý tưởng</span>
+        </button>
+      </nav>
     </div>
   );
 }
