@@ -1,10 +1,11 @@
 import React from 'react';
-import { X, FileText, Bookmark, BookOpen } from 'lucide-react';
+import { X, FileText, Bookmark, BookOpen, ExternalLink, Download, FolderOpen } from 'lucide-react';
 
 export default function DocsModal({ 
   isOpen, 
   onClose,
   referencesList,
+  driveReferenceData,
   monumentName = 'Di tích Lịch sử'
 }) {
   if (!isOpen) return null;
@@ -12,38 +13,37 @@ export default function DocsModal({
   const defaultDocs = [
     {
       title: `Hồ sơ khoa học Di tích ${monumentName}`,
-      source: "Sở Văn hóa và Thể thao TP. Hồ Chí Minh",
-      desc: "Văn bản, bản vẽ và hồ sơ lý lịch chính thức công nhận và quy định ranh giới bảo tồn di tích."
+      source: "Sở Văn hóa và Thể thao TP. Hồ Chí Minh"
     },
     {
       title: "Địa chí Lịch sử - Văn hóa TP. Hồ Chí Minh",
-      source: "Viện Lịch sử Quân sự Việt Nam / NXB Tổng hợp TP.HCM",
-      desc: "Công trình nghiên cứu tổng kết toàn diện về vùng đất, con người, các mốc son đấu tranh và di sản văn hóa."
-    },
-    {
-      title: "Tài liệu Thuyết minh & Giáo dục Di sản (doc1, doc2, doc3)",
-      source: "Hệ thống Cơ sở dữ liệu Di sản số TP.HCM",
-      desc: "Nội dung chuẩn hóa phục vụ công tác thuyết minh, học tập liên môn và giáo dục truyền thống."
+      source: "Viện Lịch sử Quân sự Việt Nam / NXB Tổng hợp TP.HCM"
     }
   ];
 
-  const docs = referencesList && referencesList.length > 0 ? referencesList : defaultDocs;
+  const docs = (driveReferenceData?.citationsList && driveReferenceData.citationsList.length > 0) 
+    ? driveReferenceData.citationsList 
+    : (referencesList && referencesList.length > 0 ? referencesList : defaultDocs);
+
+  const webLink = driveReferenceData?.webLink || '';
+  const bookUrls = driveReferenceData?.bookUrls || [];
+  const driveFolderUrl = driveReferenceData?.driveFolderUrl || 'https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing';
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-[#FAF7F2] w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl border border-[#EADBC8] flex flex-col max-h-[85vh]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/75 backdrop-blur-sm animate-fadeIn">
+      <div className="bg-[#FAF7F2] w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl border border-[#EADBC8] flex flex-col max-h-[88vh]">
         {/* Header */}
-        <div className="bg-[#7E1819] text-white p-5 flex items-center justify-between">
+        <div className="bg-[#7E1819] text-white p-5 flex items-center justify-between shadow-md">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center text-amber-200">
-              <FileText className="w-6 h-6" />
+              <BookOpen className="w-6 h-6" />
             </div>
             <div>
               <h3 className="font-serif-title font-bold text-lg text-amber-100">
                 Tài Liệu Tham Khảo: {monumentName}
               </h3>
               <p className="text-xs text-white/80">
-                Danh mục hồ sơ khoa học, văn bản pháp lý và tư liệu nghiên cứu
+                Hồ sơ khoa học, sách chuyên khảo & văn bản pháp lý chính thống
               </p>
             </div>
           </div>
@@ -55,28 +55,89 @@ export default function DocsModal({
           </button>
         </div>
 
-        {/* List */}
-        <div className="p-6 overflow-y-auto flex-1 space-y-3">
-          {docs.map((doc, idx) => (
-            <div key={idx} className="p-4 rounded-2xl bg-white border border-[#EADBC8] shadow-xs space-y-1.5 hover:border-[#7E1819]/40 transition-colors">
-              <div className="flex items-start justify-between gap-2">
-                <h4 className="font-serif-title font-bold text-sm sm:text-base text-[#7E1819]">
+        {/* List of references */}
+        <div className="p-5 sm:p-6 overflow-y-auto flex-1 space-y-4">
+          {/* Main citations */}
+          <div className="space-y-3">
+            <div className="text-xs font-black uppercase text-[#7E1819] tracking-wider flex items-center gap-1.5">
+              <Bookmark className="w-4 h-4" />
+              <span>Danh mục trích dẫn tài liệu & sách tham khảo</span>
+            </div>
+
+            {docs.map((doc, idx) => (
+              <div key={idx} className="p-3.5 rounded-2xl bg-white border border-[#EADBC8] shadow-2xs space-y-1 hover:border-[#7E1819]/40 transition-colors">
+                <h4 className="font-medium text-xs sm:text-sm text-[#2C241E] leading-relaxed">
                   {doc.title}
                 </h4>
-                <Bookmark className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                {doc.source && (
+                  <p className="text-[11px] font-semibold text-[#8C7A6B]">
+                    🏛️ Cơ quan / Nguồn: <span className="text-[#7E1819]">{doc.source}</span>
+                  </p>
+                )}
               </div>
-              <p className="text-[11px] font-semibold text-[#8C7A6B]">
-                Nguồn: {doc.source || doc.author || "Sở Văn hóa và Thể thao TP.HCM"}
-              </p>
-              {doc.desc && (
-                <p className="text-xs text-[#555] leading-relaxed">
-                  {doc.desc}
-                </p>
-              )}
+            ))}
+          </div>
+
+          {/* Web Links / Trang thông tin điện tử */}
+          {webLink && (
+            <div className="p-4 rounded-2xl bg-amber-50/70 border border-amber-200/80 space-y-2">
+              <div className="text-xs font-bold text-amber-950 flex items-center gap-1.5">
+                <ExternalLink className="w-4 h-4 text-[#7E1819]" />
+                <span>Trang thông tin điện tử / Cổng dữ liệu chính thống:</span>
+              </div>
+              <a
+                href={webLink}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white text-[#7E1819] border border-amber-300 text-xs font-bold hover:bg-amber-100 transition-colors"
+              >
+                <span>Truy cập website tài liệu</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
             </div>
-          ))}
+          )}
+
+          {/* Book Drive Links */}
+          {bookUrls.length > 0 && (
+            <div className="p-4 rounded-2xl bg-[#F4EDE2] border border-[#E0D3C1] space-y-2.5">
+              <div className="text-xs font-bold text-[#4A3E36] flex items-center gap-1.5">
+                <FolderOpen className="w-4 h-4 text-[#7E1819]" />
+                <span>Đọc trực tiếp sách và tư liệu số (Google Drive):</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {bookUrls.map((bUrl, bIdx) => (
+                  <a
+                    key={bIdx}
+                    href={bUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#7E1819] text-white text-xs font-bold hover:bg-[#911d1e] shadow-xs transition-colors"
+                  >
+                    <span>Mở Sách #{bIdx + 1} (PDF / Docs)</span>
+                    <ExternalLink className="w-3 h-3 text-amber-200" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Link to entire reference drive folder */}
+          <div className="p-3.5 rounded-2xl bg-white border border-[#EADBC8] text-center space-y-1.5">
+            <p className="text-[11px] text-[#777]">
+              Kho lưu trữ toàn bộ hồ sơ tham khảo của 103 di tích trên Google Drive:
+            </p>
+            <a
+              href={driveFolderUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-xs font-bold text-[#7E1819] hover:underline"
+            >
+              <span>Xem toàn bộ thư mục Google Drive &gt;</span>
+            </a>
+          </div>
         </div>
 
+        {/* Footer */}
         <div className="p-4 bg-white border-t border-[#EADBC8] text-center">
           <button
             onClick={onClose}

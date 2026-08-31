@@ -115,7 +115,7 @@ export default function App() {
     return getMonumentByIdOrStt(currentStt);
   }, [currentStt]);
 
-  const storageKey = `di_san_so_v6_monument_stt_${currentStt}`;
+  const storageKey = `di_san_so_v7_monument_stt_${currentStt}`;
 
   const mergeWithBase = (base, saved) => {
     if (!saved) return base;
@@ -125,7 +125,8 @@ export default function App() {
       info: {
         ...base.info,
         ...(saved.info || {}),
-        emCoBiet: base.info?.emCoBiet || []
+        emCoBiet: base.info?.emCoBiet || [],
+        driveReferenceData: base.info?.driveReferenceData || null
       },
       keyHighlights: base.keyHighlights || saved.keyHighlights,
       subjects6: base.subjects6 || saved.subjects6,
@@ -133,6 +134,8 @@ export default function App() {
         ...base.investigation,
         ...(saved.investigation || {}),
         investigationQuestion: base.investigation?.investigationQuestion || saved.investigation?.investigationQuestion,
+        driveReferenceData: base.investigation?.driveReferenceData || null,
+        dossier: base.investigation?.dossier || null,
         flashcards: base.investigation?.flashcards || saved.investigation?.flashcards,
         matchingPairs: base.investigation?.matchingPairs || saved.investigation?.matchingPairs
       }
@@ -627,6 +630,7 @@ export default function App() {
         isOpen={docsModalOpen}
         onClose={() => setDocsModalOpen(false)}
         referencesList={data.info?.referencesList}
+        driveReferenceData={data.info?.driveReferenceData || data.investigation?.driveReferenceData}
         monumentName={data.info?.name}
       />
 

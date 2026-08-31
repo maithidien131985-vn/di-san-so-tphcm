@@ -73,6 +73,15 @@ function extractYoutubeId(url) {
   return match ? match[1] : null;
 }
 
+function normalize(s) {
+  if (!s) return '';
+  return s.toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/[^a-z0-9]/g, '');
+}
+
 // 1. Read main data sheet
 const csvText = fs.readFileSync(path.join(__dirname, '../google_sheet_data.csv'), 'utf8');
 const rows = parseCSV(csvText);
@@ -103,7 +112,6 @@ emBlocks.forEach(b => {
     emCoBietMap[stt] = lines;
   }
 });
-console.log(`Parsed Em Co Biet entries: ${Object.keys(emCoBietMap).length}`);
 
 // 5. Read Cau Hoi Dieu Tra Google Doc (155BmTBFnsytajxEnfjkYZr5W1Q5jiKiY)
 const cauText = fs.readFileSync(path.join(__dirname, '../cau_hoi_dieu_tra_doc.txt'), 'utf8');
@@ -120,7 +128,26 @@ for (let i = 0; i < cauLines.length; i++) {
     i += 2;
   }
 }
-console.log(`Parsed Cau Hoi Dieu Tra entries: ${Object.keys(cauHoiDieuTraMap).length}`);
+
+// 6. Read 103 Reference Excels from Drive folder (1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT)
+const parsedExcels = JSON.parse(fs.readFileSync(path.join(__dirname, 'parsed_ref_excels.json'), 'utf8'));
+const allExcelRows = [];
+Object.keys(parsedExcels).forEach(sheetName => {
+  const rows = parsedExcels[sheetName];
+  rows.slice(1).forEach(r => {
+    if (r[1] && r[1].trim()) {
+      allExcelRows.push({
+        sheet: sheetName,
+        code: r[0] || '',
+        name: r[1].trim(),
+        type: r[2] || '',
+        citations: r[3] || '',
+        webLink: r[6] || '',
+        bookLinks: r[7] || ''
+      });
+    }
+  });
+});
 
 function extractDocSection(stt) {
   const startPattern = new RegExp('(?:^|\\n)\\s*' + stt + '\\.\\s*([^\\n]+)');
@@ -456,7 +483,6 @@ const monuments = dataRows.map((r, idx) => {
   const events = cleanStr(r[14]) || `Các sự kiện lịch sử gắn liền với quá trình hình thành và phát triển của ${name}.`;
   const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coords[0]},${coords[1]}`;
   const googleMapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${coords[0]},${coords[1]}`;
-  const references = cleanStr(r[16]) || `Hồ sơ khoa học di tích ${name} - Sở Văn hóa và Thể thao TP.HCM.`;
 
   const docSnippet = extractDocSection(stt);
 
@@ -483,6 +509,77 @@ const monuments = dataRows.map((r, idx) => {
     `📍 Địa chỉ: ${address}`
   ];
 
+  // Match Reference Excel row for this monument
+  const normName = normalize(name);
+  let matchedExcelRow = null;
+  let bestScore = 0;
+  for (const er of allExcelRows) {
+    const normEr = normalize(er.name);
+    if (normName.includes(normEr) || normEr.includes(normName)) {
+      matchedExcelRow = er;
+      break;
+    }
+    const words = name.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+    let score = 0;
+    for (const w of words) {
+      if (er.name.toLowerCase().includes(w)) score++;
+    }
+    if (score > bestScore && score >= 2) {
+      bestScore = score;
+      matchedExcelRow = er;
+    }
+  }
+
+  // Parse citations into array of objects
+  const rawCitations = matchedExcelRow ? matchedExcelRow.citations : '';
+  const parsedCitationsList = [];
+  if (rawCitations) {
+    const citationLines = rawCitations.split('\n').map(l => l.replace(/^[-\s•]+/, '').trim()).filter(Boolean);
+    citationLines.forEach(cl => {
+      parsedCitationsList.push({
+        title: cl,
+        source: matchedExcelRow.sheet === 'TPHCM' ? 'Sở Văn hóa và Thể thao TP.HCM' : (matchedExcelRow.sheet === 'Ba Ria' ? 'Sở Văn hóa - TT Bà Rịa Vũng Tàu' : 'Sở VHTTDL Bình Dương')
+      });
+    });
+  }
+
+  if (parsedCitationsList.length === 0) {
+    parsedCitationsList.push({
+      title: `Hồ sơ khoa học Di tích ${name}`,
+      source: "Sở Văn hóa và Thể thao TP. Hồ Chí Minh"
+    });
+    if (decision) {
+      parsedCitationsList.push({
+        title: `Quyết định xếp hạng ${ranking}: ${decision}`,
+        source: "Bộ Văn hóa, Thể thao và Du lịch / UBND TP.HCM"
+      });
+    }
+    parsedCitationsList.push({
+      title: "Tư liệu Lịch sử Đảng bộ và Lịch sử Kháng chiến TP. Hồ Chí Minh",
+      source: "NXB Tổng hợp TP. Hồ Chí Minh"
+    });
+  }
+
+  // Parse book drive links
+  const rawBookLinks = matchedExcelRow ? matchedExcelRow.bookLinks : '';
+  const bookUrls = [];
+  if (rawBookLinks) {
+    const linksFound = rawBookLinks.match(/https:\/\/drive\.google\.com\/[^\s\n]+/g);
+    if (linksFound) {
+      linksFound.forEach(u => bookUrls.push(u));
+    }
+  }
+
+  const driveReferenceData = {
+    code: matchedExcelRow ? matchedExcelRow.code : '',
+    sourceType: matchedExcelRow ? matchedExcelRow.type : 'SÁCH & VĂN BẢN PHÁP LÝ',
+    citations: rawCitations || `Hồ sơ khoa học Di tích ${name} - Sở Văn hóa và Thể thao TP.HCM`,
+    citationsList: parsedCitationsList,
+    webLink: matchedExcelRow ? matchedExcelRow.webLink : '',
+    bookUrls: bookUrls,
+    driveFolderUrl: 'https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing'
+  };
+
   const keyHighlights = {
     figures: {
       title: "Nhân vật liên quan",
@@ -508,13 +605,6 @@ const monuments = dataRows.map((r, idx) => {
   };
 
   const subjects6 = build6Subjects(stt, name, type, ranking, address, overview, events, figures, artifacts, docSnippet);
-
-  const referencesList = [
-    { title: `Hồ sơ khoa học Di tích ${name}`, source: "Sở Văn hóa và Thể thao TP. Hồ Chí Minh" },
-    { title: decision ? `Quyết định xếp hạng ${ranking}: ${decision}` : `Danh mục Di tích Lịch sử - Văn hóa TP.HCM`, source: "Bộ Văn hóa, Thể thao và Du lịch / UBND TP.HCM" },
-    { title: "Tư liệu Lịch sử Đảng bộ và Lịch sử Kháng chiến TP. Hồ Chí Minh", source: "NXB Tổng hợp TP. Hồ Chí Minh" },
-    { title: "Địa chí Lịch sử - Văn hóa TP. Hồ Chí Minh", source: "Viện Lịch sử Quân sự Việt Nam" }
-  ];
 
   const quiz = [
     {
@@ -710,8 +800,9 @@ const monuments = dataRows.map((r, idx) => {
       lng: coords[1],
       googleMapsDirectionsUrl: googleMapsDirectionsUrl,
       googleMapsSearchUrl: googleMapsSearchUrl,
-      referencesText: references,
-      referencesList: referencesList,
+      referencesText: rawCitations,
+      referencesList: parsedCitationsList,
+      driveReferenceData: driveReferenceData,
       overview: overview,
       heroImage: heroImage,
       emCoBiet: emCoBietPoints,
@@ -738,36 +829,22 @@ const monuments = dataRows.map((r, idx) => {
       investigationTopic: `Nghiên cứu & Giải mã Di tích ${name}`,
       investigationQuestion: investigationQuestion,
       suggestedAnswer: suggestedAnswer,
-      referencesList: referencesList,
+      referencesList: parsedCitationsList,
+      driveReferenceData: driveReferenceData,
       quiz: quiz,
       flashcards: flashcards,
       matchingPairs: matchingPairs,
-      dossiers: [
-        {
-          id: 'map_dossier',
-          title: 'Bản đồ',
-          subtitle: `Sơ đồ vị trí và không gian di tích ${name}`,
-          image: '/assets/images/so-do-kien-truc.jpg',
-          detail: `Bản đồ phân bố không gian và các vị trí trọng điểm của di tích tại ${address}.`,
-          clues: [`Tọa độ: ${coords[0]}, ${coords[1]}`, `Địa bàn: ${address}`, `Cấp xếp hạng: ${ranking}`]
-        },
-        {
-          id: 'doc_dossier',
-          title: 'Tư liệu',
-          subtitle: `Hồ sơ khoa học và văn bản lịch sử`,
-          image: '/assets/images/co-giai-phong-dinh.jpg',
-          detail: `Tài liệu lưu trữ, văn bản quyết định và bài báo lịch sử về di tích.`,
-          clues: [`Quyết định: ${decision || 'Hồ sơ Di sản TP.HCM'}`, `Sự kiện: ${events.slice(0, 100)}...`]
-        },
-        {
-          id: 'artifact_dossier',
-          title: 'Hiện vật',
-          subtitle: `Bảo vật và chứng tích lịch sử`,
-          image: '/assets/images/may-danh-chu-hien-vat.jpg',
-          detail: `Hệ thống hiện vật tiêu biểu: ${artifacts}`,
-          clues: [`Hiện vật: ${artifacts.slice(0, 100)}...`, `Nhân vật: ${figures.slice(0, 100)}...`]
-        }
-      ]
+      dossier: {
+        id: 'doc_dossier',
+        title: 'Tư liệu tham khảo',
+        subtitle: `Tài liệu nghiên cứu, sách & văn bản pháp lý về ${name}`,
+        image: '/assets/images/co-giai-phong-dinh.jpg',
+        detail: rawCitations || `Hồ sơ khoa học và văn bản di tích ${name}.`,
+        citationsList: parsedCitationsList,
+        webLink: driveReferenceData.webLink,
+        bookUrls: driveReferenceData.bookUrls,
+        driveFolderUrl: driveReferenceData.driveFolderUrl
+      }
     },
     map: {
       lat: coords[0],
@@ -784,7 +861,7 @@ const monuments = dataRows.map((r, idx) => {
 });
 
 const fileContent = `// Hệ thống Di sản Số TP.HCM - Toàn bộ 103 Di Tích Lịch Sử & Văn Hóa
-// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn, 6 Môn học, Em có biết & 103 Câu hỏi điều tra cốt lõi từ Google Docs
+// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn, 6 Môn học, Em có biết & 103 Tư liệu tham khảo từ Google Drive
 export const allMonumentsList = ${JSON.stringify(monuments, null, 2)};
 
 export const getMonumentByIdOrStt = (idOrStt) => {
@@ -801,4 +878,4 @@ export const getMonumentByIdOrStt = (idOrStt) => {
 
 const outputPath = path.join(__dirname, '../src/data/allMonumentsData.js');
 fs.writeFileSync(outputPath, fileContent, 'utf8');
-console.log(`Successfully generated rich dataset for all 103 monuments with Em Co Biet & Cau Hoi Dieu Tra at: ${outputPath}`);
+console.log(`Successfully generated rich dataset with exact Drive references for all 103 monuments at: ${outputPath}`);
