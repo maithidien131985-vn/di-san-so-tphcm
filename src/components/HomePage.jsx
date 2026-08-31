@@ -29,7 +29,11 @@ import {
   UserCheck,
   Smile,
   ChevronRight,
-  ExternalLink
+  ExternalLink,
+  Filter,
+  Check,
+  Flame,
+  Star
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
@@ -44,6 +48,97 @@ export default function HomePage({
   const [studentIdeaLikes, setStudentIdeaLikes] = useState({ 1: 128, 2: 94, 3: 73 });
   const [likedIdeas, setLikedIdeas] = useState({});
 
+  // 3-Dimension Survey State
+  const [surveyLocation, setSurveyLocation] = useState('q1_q3_q4');
+  const [surveyPurpose, setSurveyPurpose] = useState('khkt_stem');
+  const [surveyTopic, setSurveyTopic] = useState('military');
+
+  // Survey Location Options
+  const locationOptions = [
+    { id: 'q1_q3_q4', name: 'Quận 1, Quận 3, Quận 4', icon: '🏙️', tag: 'Khu Trung Tâm Lịch Sử' },
+    { id: 'q5_q6_q10_q11', name: 'Quận 5, Quận 6, Quận 10, Quận 11', icon: '🏮', tag: 'Khu Chợ Lớn Cổ Kính' },
+    { id: 'cu_chi_hoc_mon', name: 'Củ Chi, Hóc Môn, Quận 12', icon: '🌾', tag: 'Vành Đai Đất Thép' },
+    { id: 'thu_duc', name: 'TP. Thủ Đức (Q.9, Q.2, Thủ Đức)', icon: '🌉', tag: 'Vùng Đất Đông Sài Gòn' },
+    { id: 'can_gio_nha_be', name: 'Cần Giờ, Nhà Bè, Quận 7', icon: '🌿', tag: 'Sông Nước Sinh Thái' },
+    { id: 'binh_thanh_pn_gv', name: 'Bình Thạnh, Phú Nhuận, Gò Vấp, Tân Bình', icon: '🏘️', tag: 'Khu Nội Thành Mở Rộng' },
+    { id: 'ba_ria_vung_tau', name: 'Bà Rịa - Vũng Tàu', icon: '🌊', tag: 'Bến Lộc An, Côn Đảo, Bạch Dinh' },
+    { id: 'binh_duong', name: 'Bình Dương', icon: '⛰️', tag: 'Phú Lợi, Hội Khánh, Tam Giác Sắt' }
+  ];
+
+  // Survey Purpose Options
+  const purposeOptions = [
+    { id: 'khkt_stem', name: 'Nghiên cứu KHKT / Dự án STEM', icon: '🔬', desc: 'Khảo sát hiện vật, tư liệu điều tra lịch sử chuyên sâu' },
+    { id: 'study_tour', name: 'Khám phá trải nghiệm sau giờ học', icon: '🎒', desc: 'Bán kính gần, thuận tiện di chuyển bằng xe buýt hoặc xe đạp' },
+    { id: 'family_group', name: 'Dã ngoại cùng lớp & Gia đình', icon: '👨‍👩‍👧‍👦', desc: 'Không gian mở, chụp ảnh check-in và hoạt động tập thể' },
+    { id: 'heritage_roots', name: 'Hành trình Về Nguồn & Tri ân', icon: '⭐', desc: 'Thắp hương, tìm hiểu truyền thống đấu tranh bất khuất' }
+  ];
+
+  // Survey Topic Options
+  const topicOptions = [
+    { id: 'military', name: 'Chiến tích Kháng chiến & Địa đạo ngầm', icon: '⚔️', desc: 'Dinh Độc Lập, Củ Chi, Rừng Sác, Côn Đảo, Hầm bí mật' },
+    { id: 'architecture', name: 'Kiến trúc Pháp cổ & Bảo tàng nghệ thuật', icon: '🏛️', desc: 'Bảo tàng Lịch sử, Bạch Dinh, Tòa Án, Nhà Hát TP' },
+    { id: 'spiritual', name: 'Cổ tự Phật giáo & Chạm khắc Hán Nôm', icon: '🛕', desc: 'Chùa Giác Lâm, Chùa Giác Viên, Chùa Hội Khánh' },
+    { id: 'culture_commune', name: 'Đình làng Nam Bộ & Phong tục truyền thống', icon: '🏮', desc: 'Đình Thông Tây Hội, Lăng Lê Văn Duyệt, Đình Bình Đông' },
+    { id: 'archaeology_craft', name: 'Khảo cổ học & Dấu tích làng nghề xưa', icon: '🏺', desc: 'Lò gốm Hưng Lợi, Mộ Cổ Giồng Cá Vồ, Làng nghề cổ' },
+    { id: 'mangrove_nature', name: 'Căn cứ Rừng ngập mặn & Thiên nhiên', icon: '🌿', desc: 'Chiến khu Rừng Sác, Bến Lộc An, Chiến khu Đ' }
+  ];
+
+  // Dynamic Survey Recommendation Engine
+  const recommendedMonuments = useMemo(() => {
+    if (!allMonuments || allMonuments.length === 0) return [];
+
+    const scored = allMonuments.map(m => {
+      let score = 0;
+      const addr = (m.info.address || '').toLowerCase();
+      const name = (m.info.name || '').toLowerCase();
+      const type = (m.info.type || '').toLowerCase();
+      const overview = (m.info.overview || '').toLowerCase();
+
+      // 1. Location Matching Score
+      if (surveyLocation === 'q1_q3_q4') {
+        if (addr.includes('quận 1') || addr.includes('quận 3') || addr.includes('quận 4') || m.stt === 1) score += 40;
+      } else if (surveyLocation === 'q5_q6_q10_q11') {
+        if (addr.includes('quận 5') || addr.includes('quận 6') || addr.includes('quận 10') || addr.includes('quận 11') || name.includes('hội quán') || name.includes('chùa')) score += 40;
+      } else if (surveyLocation === 'cu_chi_hoc_mon') {
+        if (addr.includes('củ chi') || addr.includes('hóc môn') || addr.includes('quận 12') || m.stt === 2 || m.stt === 15) score += 45;
+      } else if (surveyLocation === 'thu_duc') {
+        if (addr.includes('thủ đức') || addr.includes('quận 9') || addr.includes('quận 2') || m.stt === 32 || m.stt === 62) score += 40;
+      } else if (surveyLocation === 'can_gio_nha_be') {
+        if (addr.includes('cần giờ') || addr.includes('nhà bè') || addr.includes('quận 7') || m.stt === 7) score += 45;
+      } else if (surveyLocation === 'binh_thanh_pn_gv') {
+        if (addr.includes('bình thạnh') || addr.includes('phú nhuận') || addr.includes('gò vấp') || addr.includes('tân bình') || m.stt === 79 || m.stt === 88) score += 40;
+      } else if (surveyLocation === 'ba_ria_vung_tau') {
+        if (addr.includes('bà rịa') || addr.includes('vũng tàu') || addr.includes('côn đảo') || addr.includes('xuyên mộc') || m.stt === 3 || m.stt === 4 || m.stt === 5 || m.stt === 6 || m.stt === 56) score += 45;
+      } else if (surveyLocation === 'binh_duong') {
+        if (addr.includes('bình dương') || addr.includes('thủ dầu một') || addr.includes('bến cát') || m.stt === 8 || m.stt === 60 || m.stt === 61) score += 45;
+      }
+
+      // 2. Topic Matching Score
+      if (surveyTopic === 'military') {
+        if (type.includes('lịch sử') || overview.includes('kháng chiến') || overview.includes('địa đạo') || overview.includes('chiến dịch') || m.stt === 1 || m.stt === 2 || m.stt === 7 || m.stt === 4) score += 40;
+      } else if (surveyTopic === 'architecture') {
+        if (type.includes('kiến trúc') || name.includes('bảo tàng') || name.includes('dinh') || name.includes('bạch dinh') || m.stt === 56 || m.stt === 57 || m.stt === 58) score += 40;
+      } else if (surveyTopic === 'spiritual') {
+        if (name.includes('chùa') || name.includes('tịnh xá') || name.includes('tự') || overview.includes('phật giáo')) score += 40;
+      } else if (surveyTopic === 'culture_commune') {
+        if (name.includes('đình') || name.includes('miếu') || name.includes('lăng') || overview.includes('thành hoàng')) score += 40;
+      } else if (surveyTopic === 'archaeology_craft') {
+        if (type.includes('khảo cổ') || name.includes('gốm') || name.includes('mộ') || name.includes('lò')) score += 45;
+      } else if (surveyTopic === 'mangrove_nature') {
+        if (m.stt === 7 || m.stt === 3 || m.stt === 8 || overview.includes('rừng') || overview.includes('sông')) score += 45;
+      }
+
+      // 3. Purpose boost
+      if (surveyPurpose === 'khkt_stem' && m.investigation?.investigationQuestion) score += 15;
+      if (surveyPurpose === 'heritage_roots' && (m.info.ranking.includes('đặc biệt') || m.info.ranking.includes('Quốc gia'))) score += 15;
+
+      return { monument: m, score };
+    });
+
+    scored.sort((a, b) => b.score - a.score);
+    return scored.slice(0, 4).map(s => s.monument);
+  }, [allMonuments, surveyLocation, surveyPurpose, surveyTopic]);
+
   // Smart Search Scoring & Best Match Linking
   const handlePerformSearch = (explicitTerm) => {
     const rawQuery = (explicitTerm !== undefined ? explicitTerm : searchTerm).trim();
@@ -55,7 +150,7 @@ export default function HomePage({
     const query = rawQuery.toLowerCase();
     const normQuery = query.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
 
-    // 1. Direct keyword mapping for high-intent queries
+    // Keyword mapping for high-intent queries
     const keywordMap = [
       { keywords: ['dinh', 'doc lap', 'thong nhat', 'xe tang', '390', '843', 'bui quang than', 'ngo viet thu', '30/4', '30-4', 'quan 1'], stt: 1 },
       { keywords: ['cu chi', 'dia dao', 'dat thep', 'hoang cam', 'ben duoc', 'crimp', 'cedar falls'], stt: 2 },
@@ -92,7 +187,7 @@ export default function HomePage({
       }
     }
 
-    // 2. Multi-factor search ranking across all 103 monuments
+    // Ranking across all 103 monuments
     let bestMonument = null;
     let maxScore = 0;
 
@@ -103,12 +198,10 @@ export default function HomePage({
       const typeNorm = m.info.type.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
       const overviewNorm = m.info.overview.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
 
-      // Exact or prefix match
       if (nameNorm === normQuery) score += 120;
       else if (nameNorm.startsWith(normQuery)) score += 60;
       else if (nameNorm.includes(normQuery)) score += 35;
 
-      // Word matches in name, address, overview
       const queryWords = normQuery.split(/\s+/).filter(w => w.length > 1);
       queryWords.forEach(w => {
         if (nameNorm.includes(w)) score += 20;
@@ -143,14 +236,14 @@ export default function HomePage({
     ).slice(0, 8);
   }, [searchTerm, allMonuments]);
 
-  // Featured Monument: Lò gốm cổ Hưng Lợi (hoặc Dinh Độc Lập / Củ Chi)
+  // Featured Monument: Lò gốm cổ Hưng Lợi
   const featuredMonument = useMemo(() => {
     return allMonuments.find(m => m.info.name.includes('Hưng Lợi') || m.info.name.includes('Lò gốm')) ||
            allMonuments.find(m => m.stt === 1) ||
            allMonuments[0];
   }, [allMonuments]);
 
-  // Quick feature monument for 3-min section: Địa đạo Củ Chi
+  // Quick feature monument: Địa đạo Củ Chi
   const cuchiMonument = useMemo(() => {
     return allMonuments.find(m => m.stt === 2) || allMonuments[1] || allMonuments[0];
   }, [allMonuments]);
@@ -171,7 +264,6 @@ export default function HomePage({
     <div className="bg-gradient-to-b from-[#FDFBF7] via-[#F7F2EA] to-[#EFE7DA] min-h-screen text-[#2C241E] font-sans antialiased selection:bg-amber-200 selection:text-[#7E1819]">
       {/* 1. HERO BANNER WITH PANORAMIC SAIGON VIEW */}
       <section className="relative bg-[#181513] text-white min-h-[560px] sm:min-h-[600px] flex flex-col justify-between overflow-visible shadow-2xl">
-        {/* Background Image with Cinematic Overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src="/assets/images/dinh-doc-lap-front.jpg"
@@ -198,7 +290,6 @@ export default function HomePage({
             </div>
           </div>
 
-          {/* Desktop Nav Links with Distinctive Pills */}
           <nav className="hidden md:flex items-center gap-2 lg:gap-3 text-xs sm:text-sm font-bold text-white/95">
             <a 
               href="#home" 
@@ -238,7 +329,6 @@ export default function HomePage({
             </a>
           </nav>
 
-          {/* Right Header Actions */}
           <div className="flex items-center gap-3">
             <button 
               onClick={() => {
@@ -276,7 +366,6 @@ export default function HomePage({
               Hàng trăm di tích. Hàng nghìn câu chuyện. Và một thế hệ trẻ có thể tiếp nối.
             </p>
 
-            {/* 2 Prominent Glow CTA Buttons */}
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <button
                 onClick={onOpenExplorer}
@@ -297,7 +386,7 @@ export default function HomePage({
           </div>
         </div>
 
-        {/* Floating Search Bar prominently raised on top with Smart Linking */}
+        {/* Floating Search Bar */}
         <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-9">
           <form 
             onSubmit={(e) => {
@@ -321,7 +410,6 @@ export default function HomePage({
                 className="w-full py-2.5 px-4 text-xs sm:text-sm text-gray-900 placeholder-gray-400 bg-[#FAF7F2] rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3B8E53] transition-all font-medium border border-gray-200"
               />
 
-              {/* Live search dropdown results with direct best click */}
               {searchResults.length > 0 && (
                 <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl border border-amber-200 p-2 z-50 max-h-80 overflow-y-auto divide-y divide-gray-100 animate-fadeIn">
                   <div className="px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-[#7E1819] bg-amber-50 rounded-lg mb-1 flex items-center justify-between">
@@ -369,7 +457,6 @@ export default function HomePage({
       <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-8 relative z-10">
         <ScrollReveal>
           <div className="relative bg-[#FEFAF4] rounded-3xl p-6 sm:p-10 border-2 border-[#EADBC8] shadow-md shadow-amber-900/5 overflow-hidden">
-            {/* Decorative watermark */}
             <div className="absolute -right-8 -bottom-8 opacity-5 text-[#7E1819] pointer-events-none">
               <Landmark className="w-64 h-64" />
             </div>
@@ -400,118 +487,233 @@ export default function HomePage({
         </ScrollReveal>
       </section>
 
-      {/* 3. KHÁM PHÁ THEO CÁCH CỦA BẠN (4 CARDS GRID) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* 3. BẢNG KHẢO SÁT & GỢI Ý HÀNH TRÌNH: "KHÁM PHÁ THEO CÁCH CỦA BẠN" */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <ScrollReveal>
-          <div className="text-center space-y-2 mb-8">
-            <h2 className="font-serif-title font-black text-lg sm:text-2xl uppercase tracking-wider text-[#2C241E]">
-              KHÁM PHÁ THEO CÁCH CỦA BẠN
-            </h2>
-            <div className="w-14 h-1 bg-gradient-to-r from-[#7E1819] to-amber-500 mx-auto rounded-full" />
-          </div>
+          <div className="bg-white rounded-3xl p-6 sm:p-10 border-2 border-[#EADBC8] shadow-xl shadow-amber-900/5 space-y-8">
+            {/* Header */}
+            <div className="text-center space-y-2.5 max-w-2xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-amber-100 to-amber-200 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
+                <Compass className="w-4 h-4 text-[#7E1819]" />
+                <span>Trắc Nghiệm Khảo Sát &amp; Gợi Ý Cá Nhân Hóa</span>
+              </div>
+              <h2 className="font-serif-title font-black text-2xl sm:text-3xl uppercase tracking-wider text-[#2C241E]">
+                KHÁM PHÁ THEO CÁCH CỦA BẠN
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Hãy cho chúng tôi biết nơi bạn ở, mục đích chuyến đi và chủ đề đam mê để nhận ngay gợi ý di tích phù hợp nhất!
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-            {/* Card 1: Khám phá theo địa phương */}
-            <div
-              onClick={onOpenMyMap}
-              className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] hover:border-[#3B7E4B] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
-            >
+            {/* 3 Survey Steps */}
+            <div className="space-y-6">
+              {/* BƯỚC 1: NƠI Ở / KHU VỰC CỦA BẠN */}
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-100/70 border border-emerald-200 text-[#3B7E4B] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
-                  📍
-                </div>
-                <div>
-                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#3B7E4B] transition-colors uppercase tracking-tight">
-                    KHÁM PHÁ THEO ĐỊA PHƯƠNG
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-full bg-[#7E1819] text-white flex items-center justify-center font-bold text-xs">
+                    1
+                  </div>
+                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E]">
+                    Nơi ở / Khu vực địa lý của bạn:
                   </h3>
-                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
-                    Tìm những di tích ngay quanh nơi bạn sống.
-                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                  {locationOptions.map(loc => {
+                    const isSelected = surveyLocation === loc.id;
+                    return (
+                      <button
+                        key={loc.id}
+                        type="button"
+                        onClick={() => setSurveyLocation(loc.id)}
+                        className={`p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 relative group ${
+                          isSelected
+                            ? 'bg-amber-50/80 border-[#7E1819] ring-2 ring-[#7E1819]/20 shadow-md'
+                            : 'bg-[#FAF7F2] border-gray-200 hover:border-amber-300 hover:bg-amber-50/30'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between w-full">
+                          <span className="text-lg">{loc.icon}</span>
+                          {isSelected && (
+                            <span className="w-4 h-4 rounded-full bg-[#7E1819] text-white flex items-center justify-center text-[10px]">
+                              ✓
+                            </span>
+                          )}
+                        </div>
+                        <div>
+                          <div className={`text-xs font-bold ${isSelected ? 'text-[#7E1819]' : 'text-gray-800'}`}>
+                            {loc.name}
+                          </div>
+                          <div className="text-[10px] text-gray-500 line-clamp-1 mt-0.5">
+                            {loc.tag}
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 
-              <div className="pt-4 flex justify-end">
-                <div className="w-9 h-9 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center group-hover:bg-[#3B7E4B] group-hover:text-white shadow-xs transition-colors">
-                  <ArrowRight className="w-4 h-4" />
+              {/* BƯỚC 2: MỤC ĐÍCH KHÁM PHÁ CỦA BẠN */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-full bg-[#BA8438] text-white flex items-center justify-center font-bold text-xs">
+                    2
+                  </div>
+                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E]">
+                    Mục đích khám phá của bạn:
+                  </h3>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+                  {purposeOptions.map(pur => {
+                    const isSelected = surveyPurpose === pur.id;
+                    return (
+                      <button
+                        key={pur.id}
+                        type="button"
+                        onClick={() => setSurveyPurpose(pur.id)}
+                        className={`p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1.5 relative ${
+                          isSelected
+                            ? 'bg-amber-50/80 border-[#BA8438] ring-2 ring-[#BA8438]/20 shadow-md'
+                            : 'bg-[#FAF7F2] border-gray-200 hover:border-amber-300 hover:bg-amber-50/30'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between">
+                          <span className="text-xl">{pur.icon}</span>
+                          {isSelected && (
+                            <span className="w-4 h-4 rounded-full bg-[#BA8438] text-white flex items-center justify-center text-[10px]">
+                              ✓
+                            </span>
+                          )}
+                        </div>
+                        <div>
+                          <div className={`text-xs font-bold ${isSelected ? 'text-[#BA8438]' : 'text-gray-800'}`}>
+                            {pur.name}
+                          </div>
+                          <div className="text-[10px] text-gray-500 line-clamp-2 mt-0.5 leading-snug">
+                            {pur.desc}
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* BƯỚC 3: ĐAM MÊ & CHỦ ĐỀ BẠN YÊU THÍCH */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-full bg-[#2E6F40] text-white flex items-center justify-center font-bold text-xs">
+                    3
+                  </div>
+                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E]">
+                    Đam mê &amp; Chủ đề bạn quan tâm nhất:
+                  </h3>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                  {topicOptions.map(top => {
+                    const isSelected = surveyTopic === top.id;
+                    return (
+                      <button
+                        key={top.id}
+                        type="button"
+                        onClick={() => setSurveyTopic(top.id)}
+                        className={`p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-3 relative ${
+                          isSelected
+                            ? 'bg-emerald-50/80 border-[#2E6F40] ring-2 ring-[#2E6F40]/20 shadow-md'
+                            : 'bg-[#FAF7F2] border-gray-200 hover:border-emerald-300 hover:bg-emerald-50/30'
+                        }`}
+                      >
+                        <div className="w-10 h-10 rounded-xl bg-white shadow-2xs flex items-center justify-center text-xl shrink-0">
+                          {top.icon}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className={`text-xs font-bold truncate ${isSelected ? 'text-[#2E6F40]' : 'text-gray-800'}`}>
+                            {top.name}
+                          </div>
+                          <div className="text-[10px] text-gray-500 line-clamp-1 mt-0.5">
+                            {top.desc}
+                          </div>
+                        </div>
+                        {isSelected && (
+                          <span className="w-4 h-4 rounded-full bg-[#2E6F40] text-white flex items-center justify-center text-[10px] shrink-0">
+                            ✓
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             </div>
 
-            {/* Card 2: Khám phá theo loại hình */}
-            <div
-              onClick={onOpenExplorer}
-              className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] hover:border-[#BA8438] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
-            >
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-amber-100/70 border border-amber-200 text-[#BA8438] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
-                  🏛️
+            {/* DYNAMIC RECOMMENDATION RESULTS CARDS */}
+            <div className="pt-4 border-t-2 border-[#EADBC8] space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div className="flex items-center gap-2">
+                  <Flame className="w-5 h-5 text-amber-500 fill-amber-500" />
+                  <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#7E1819]">
+                    KẾT QUẢ GỢI Ý DÀNH RIÊNG CHO BẠN ({recommendedMonuments.length} Di Tích Hợp Lý Nhất)
+                  </span>
                 </div>
-                <div>
-                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#BA8438] transition-colors uppercase tracking-tight">
-                    KHÁM PHÁ THEO LOẠI HÌNH
-                  </h3>
-                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
-                    Lịch sử - Khảo cổ - Kiến trúc - Danh lam thắng cảnh
-                  </p>
-                </div>
+                <button
+                  onClick={onOpenExplorer}
+                  className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto"
+                >
+                  <span>Xem toàn bộ 103 di tích</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
               </div>
 
-              <div className="pt-4 flex justify-end">
-                <div className="w-9 h-9 rounded-full bg-amber-100 text-[#BA8438] flex items-center justify-center group-hover:bg-[#BA8438] group-hover:text-white shadow-xs transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
-              </div>
-            </div>
+              {/* 4 Recommended Cards Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {recommendedMonuments.map((m, idx) => (
+                  <div
+                    key={m.stt}
+                    onClick={() => onSelectMonument(m.stt)}
+                    className="bg-[#FAF7F2] rounded-3xl p-4 border-2 border-gray-200 hover:border-[#7E1819] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
+                  >
+                    <div className="space-y-3">
+                      <div className="h-36 rounded-2xl overflow-hidden bg-gray-200 relative shadow-inner">
+                        <img
+                          src={m.info.heroImage}
+                          alt={m.info.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute top-2.5 left-2.5">
+                          <span className="px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-100 text-[10px] font-black uppercase shadow">
+                            {m.info.ranking || 'Quốc gia'}
+                          </span>
+                        </div>
+                        <div className="absolute bottom-2 right-2">
+                          <span className="px-2 py-0.5 rounded-full bg-emerald-600/90 text-white text-[9px] font-black uppercase backdrop-blur-xs shadow">
+                            ★ Khớp {98 - idx * 3}%
+                          </span>
+                        </div>
+                      </div>
 
-            {/* Card 3: Khám phá theo câu chuyện */}
-            <div
-              onClick={() => onSelectMonument(1)}
-              className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] hover:border-[#2980B9] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
-            >
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-sky-100/70 border border-sky-200 text-[#2980B9] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
-                  📖
-                </div>
-                <div>
-                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#2980B9] transition-colors uppercase tracking-tight">
-                    KHÁM PHÁ THEO CÂU CHUYỆN
-                  </h3>
-                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
-                    Những câu chuyện về con người, sự kiện và vùng đất.
-                  </p>
-                </div>
-              </div>
+                      <div className="space-y-1">
+                        <h4 className="font-serif-title font-black text-sm text-[#2C241E] group-hover:text-[#7E1819] transition-colors line-clamp-1">
+                          {m.info.name}
+                        </h4>
+                        <p className="text-[11px] text-gray-500 flex items-center gap-1 line-clamp-1">
+                          <MapPin className="w-3 h-3 text-[#7E1819] shrink-0" />
+                          <span>{m.info.address}</span>
+                        </p>
+                        <p className="text-[11px] text-gray-600 line-clamp-2 leading-relaxed pt-0.5">
+                          {m.info.overview}
+                        </p>
+                      </div>
+                    </div>
 
-              <div className="pt-4 flex justify-end">
-                <div className="w-9 h-9 rounded-full bg-sky-100 text-[#2980B9] flex items-center justify-center group-hover:bg-[#2980B9] group-hover:text-white shadow-xs transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
-              </div>
-            </div>
-
-            {/* Card 4: Khám phá theo thử thách */}
-            <div
-              onClick={() => onSelectMonument(1)}
-              className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] hover:border-[#8E44AD] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
-            >
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-purple-100/70 border border-purple-200 text-[#8E44AD] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
-                  🏆
-                </div>
-                <div>
-                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#8E44AD] transition-colors uppercase tracking-tight">
-                    KHÁM PHÁ THEO THỬ THÁCH
-                  </h3>
-                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
-                    Trả lời câu hỏi – hoàn thành nhiệm vụ – nhận huy hiệu.
-                  </p>
-                </div>
-              </div>
-
-              <div className="pt-4 flex justify-end">
-                <div className="w-9 h-9 rounded-full bg-purple-100 text-[#8E44AD] flex items-center justify-center group-hover:bg-[#8E44AD] group-hover:text-white shadow-xs transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
+                    <div className="pt-3 mt-2 border-t border-gray-200/80 flex items-center justify-between text-xs font-bold text-[#7E1819] group-hover:underline">
+                      <span>Khám phá ngay</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
