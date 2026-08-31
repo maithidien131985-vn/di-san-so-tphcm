@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
   Compass, 
   MapPin, 
@@ -31,35 +31,7 @@ import {
   ChevronRight,
   ExternalLink
 } from 'lucide-react';
-import L from 'leaflet';
 import ScrollReveal from './ScrollReveal';
-
-// Custom Map Marker Icons
-const createCustomIcon = (color) => {
-  return L.divIcon({
-    className: 'custom-leaflet-marker',
-    html: `
-      <div style="
-        background-color: ${color};
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        border: 2px solid white;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.35);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 11px;
-      ">
-        📍
-      </div>
-    `,
-    iconSize: [24, 24],
-    iconAnchor: [12, 24],
-    popupAnchor: [0, -24]
-  });
-};
 
 export default function HomePage({ 
   allMonuments = [], 
@@ -71,10 +43,6 @@ export default function HomePage({
   const [searchTerm, setSearchTerm] = useState('');
   const [studentIdeaLikes, setStudentIdeaLikes] = useState({ 1: 128, 2: 94, 3: 73 });
   const [likedIdeas, setLikedIdeas] = useState({});
-
-  // Leaflet Map Container Reference
-  const mapContainerRef = useRef(null);
-  const mapInstanceRef = useRef(null);
 
   // Search Results Filtering
   const searchResults = useMemo(() => {
@@ -99,66 +67,6 @@ export default function HomePage({
   const cuchiMonument = useMemo(() => {
     return allMonuments.find(m => m.stt === 2) || allMonuments[1] || allMonuments[0];
   }, [allMonuments]);
-
-  // Initialize Map
-  useEffect(() => {
-    if (!mapContainerRef.current) return;
-
-    if (!mapInstanceRef.current) {
-      const map = L.map(mapContainerRef.current, {
-        center: [10.7769, 106.7009],
-        zoom: 12,
-        scrollWheelZoom: false,
-        attributionControl: false
-      });
-
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19
-      }).addTo(map);
-
-      mapInstanceRef.current = map;
-    }
-
-    const map = mapInstanceRef.current;
-    
-    // Add markers for monuments
-    const markers = [];
-    allMonuments.slice(0, 30).forEach(m => {
-      const lat = m.info.lat || (m.info.coordinates && m.info.coordinates[0]) || 10.7769;
-      const lng = m.info.lng || (m.info.coordinates && m.info.coordinates[1]) || 106.7009;
-      
-      const color = m.info.type.includes('Kiến trúc') ? '#D4AC0D' :
-                    m.info.type.includes('Khảo cổ') ? '#2980B9' :
-                    m.info.type.includes('Danh lam') ? '#27AE60' : '#C0392B';
-
-      const icon = createCustomIcon(color);
-      const marker = L.marker([lat, lng], { icon }).addTo(map);
-
-      const popupContent = document.createElement('div');
-      popupContent.className = 'p-1 space-y-1.5 min-w-[170px]';
-      popupContent.innerHTML = `
-        <div style="font-weight: bold; font-size: 12px; color: #7E1819;">${m.info.name}</div>
-        <div style="font-size: 10px; color: #666;">${m.info.address} • ${m.info.ranking}</div>
-        <button id="popup-btn-${m.stt}" style="width: 100%; padding: 4px 8px; border-radius: 6px; background-color: #7E1819; color: white; font-size: 10px; font-weight: bold; cursor: pointer; border: none; margin-top: 4px;">
-          Khám phá &gt;
-        </button>
-      `;
-
-      marker.bindPopup(popupContent);
-      marker.on('popupopen', () => {
-        const btn = document.getElementById(`popup-btn-${m.stt}`);
-        if (btn) {
-          btn.onclick = () => onSelectMonument(m.stt);
-        }
-      });
-
-      markers.push(marker);
-    });
-
-    return () => {
-      // clean up if needed
-    };
-  }, [allMonuments, onSelectMonument]);
 
   // Handle Likes for Student Ideas
   const handleLikeIdea = (id) => {
@@ -499,18 +407,34 @@ export default function HomePage({
                 </button>
               </div>
 
-              {/* Interactive Map Canvas */}
-              <div 
-                ref={mapContainerRef} 
-                className="h-64 sm:h-72 rounded-2xl overflow-hidden border border-gray-200 relative z-0"
-              />
+              {/* Google My Maps Embed */}
+              <div className="h-64 sm:h-72 rounded-2xl overflow-hidden border border-gray-200 relative z-0 bg-gray-100 shadow-inner">
+                <iframe
+                  src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
+                  width="100%"
+                  height="100%"
+                  className="w-full h-full border-0"
+                  title="Bản đồ Di tích TP. Hồ Chí Minh"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
 
-              {/* Map Legend */}
-              <div className="flex flex-wrap items-center gap-3 text-[11px] text-gray-600 pt-1">
-                <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#C0392B]" /> Di tích lịch sử</span>
-                <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#2980B9]" /> Khảo cổ</span>
-                <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#D4AC0D]" /> Kiến trúc nghệ thuật</span>
-                <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#27AE60]" /> Danh lam thắng cảnh</span>
+              {/* Map Actions / Info */}
+              <div className="flex items-center justify-between text-xs pt-1">
+                <div className="flex items-center gap-1.5 text-gray-600 font-semibold text-[11px]">
+                  <MapPin className="w-3.5 h-3.5 text-[#7E1819]" />
+                  <span>Bản đồ tọa độ 103 Di tích TP.HCM</span>
+                </div>
+                <a
+                  href="https://www.google.com/maps/d/edit?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-bold text-[#7E1819] hover:underline flex items-center gap-1 text-[11px]"
+                >
+                  <span>Mở Google Maps</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
             </div>
 
