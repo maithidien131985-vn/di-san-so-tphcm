@@ -44,7 +44,94 @@ export default function HomePage({
   const [studentIdeaLikes, setStudentIdeaLikes] = useState({ 1: 128, 2: 94, 3: 73 });
   const [likedIdeas, setLikedIdeas] = useState({});
 
-  // Search Results Filtering
+  // Smart Search Scoring & Best Match Linking
+  const handlePerformSearch = (explicitTerm) => {
+    const rawQuery = (explicitTerm !== undefined ? explicitTerm : searchTerm).trim();
+    if (!rawQuery) {
+      onOpenExplorer();
+      return;
+    }
+
+    const query = rawQuery.toLowerCase();
+    const normQuery = query.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+
+    // 1. Direct keyword mapping for high-intent queries
+    const keywordMap = [
+      { keywords: ['dinh', 'doc lap', 'thong nhat', 'xe tang', '390', '843', 'bui quang than', 'ngo viet thu', '30/4', '30-4', 'quan 1'], stt: 1 },
+      { keywords: ['cu chi', 'dia dao', 'dat thep', 'hoang cam', 'ben duoc', 'crimp', 'cedar falls'], stt: 2 },
+      { keywords: ['loc an', 'tau khong so', 'ho chi minh tren bien', 'xuyen moc', 'ba ria'], stt: 3 },
+      { keywords: ['con dao', 'chuong cop', 'chuong bo', 'vo thi sau', 'le hong phong', 'nha tu con dao'], stt: 4 },
+      { keywords: ['binh gia', 'duc thanh', 'chien dich binh gia'], stt: 5 },
+      { keywords: ['minh dam', 'chau long', 'chau vien', 'hang da'], stt: 6 },
+      { keywords: ['rung sac', 'can gio', 'doan 10', 'dac cong rung sac', 'nha be', 'long tau'], stt: 7 },
+      { keywords: ['chien khu d', 'chien khu'], stt: 8 },
+      { keywords: ['nha rong', 'ben nha rong', 'ho chi minh', 'ra di tim duong'], stt: 11 },
+      { keywords: ['bach dinh', 'vung tau', 'paul doumer'], stt: 56 },
+      { keywords: ['bao tang lich su', 'so thu'], stt: 57 },
+      { keywords: ['bao tang thanh pho', 'dinh gia long'], stt: 58 },
+      { keywords: ['giac lam', 'chua giac lam', 'co tu'], stt: 70 },
+      { keywords: ['phu loi', 'nha tu phu loi', 'binh duong'], stt: 60 },
+      { keywords: ['gom', 'hung loi', 'lo gom', 'khao co'], nameQuery: 'Hưng Lợi' }
+    ];
+
+    for (const km of keywordMap) {
+      for (const kw of km.keywords) {
+        if (normQuery.includes(kw)) {
+          let match = null;
+          if (km.stt) {
+            match = allMonuments.find(m => m.stt === km.stt);
+          } else if (km.nameQuery) {
+            match = allMonuments.find(m => m.info.name.includes(km.nameQuery));
+          }
+          if (match) {
+            onSelectMonument(match.stt);
+            setSearchTerm('');
+            return;
+          }
+        }
+      }
+    }
+
+    // 2. Multi-factor search ranking across all 103 monuments
+    let bestMonument = null;
+    let maxScore = 0;
+
+    allMonuments.forEach(m => {
+      let score = 0;
+      const nameNorm = m.info.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+      const addressNorm = m.info.address.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+      const typeNorm = m.info.type.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+      const overviewNorm = m.info.overview.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+
+      // Exact or prefix match
+      if (nameNorm === normQuery) score += 120;
+      else if (nameNorm.startsWith(normQuery)) score += 60;
+      else if (nameNorm.includes(normQuery)) score += 35;
+
+      // Word matches in name, address, overview
+      const queryWords = normQuery.split(/\s+/).filter(w => w.length > 1);
+      queryWords.forEach(w => {
+        if (nameNorm.includes(w)) score += 20;
+        if (addressNorm.includes(w)) score += 10;
+        if (typeNorm.includes(w)) score += 8;
+        if (overviewNorm.includes(w)) score += 4;
+      });
+
+      if (score > maxScore) {
+        maxScore = score;
+        bestMonument = m;
+      }
+    });
+
+    if (bestMonument && maxScore > 0) {
+      onSelectMonument(bestMonument.stt);
+      setSearchTerm('');
+    } else {
+      onOpenExplorer();
+    }
+  };
+
+  // Search Results Filtering for dropdown
   const searchResults = useMemo(() => {
     if (!searchTerm.trim()) return [];
     const term = searchTerm.toLowerCase();
@@ -81,57 +168,91 @@ export default function HomePage({
   };
 
   return (
-    <div className="bg-[#FAF7F2] min-h-screen text-[#2C241E] font-sans antialiased">
+    <div className="bg-gradient-to-b from-[#FDFBF7] via-[#F7F2EA] to-[#EFE7DA] min-h-screen text-[#2C241E] font-sans antialiased selection:bg-amber-200 selection:text-[#7E1819]">
       {/* 1. HERO BANNER WITH PANORAMIC SAIGON VIEW */}
-      <section className="relative bg-[#1A1A1A] text-white min-h-[540px] sm:min-h-[580px] flex flex-col justify-between overflow-hidden">
-        {/* Background Image with Dark Vignette Overlay */}
-        <div className="absolute inset-0 z-0">
+      <section className="relative bg-[#181513] text-white min-h-[560px] sm:min-h-[600px] flex flex-col justify-between overflow-visible shadow-2xl">
+        {/* Background Image with Cinematic Overlay */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src="/assets/images/dinh-doc-lap-front.jpg"
             alt="Di sản TP. Hồ Chí Minh"
-            className="w-full h-full object-cover object-center opacity-40 scale-105 transition-transform duration-1000"
+            className="w-full h-full object-cover object-center opacity-45 scale-105 transition-transform duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-black/40 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#181513] via-black/50 to-black/75" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-black/60" />
         </div>
 
-        {/* Top Navbar */}
-        <header className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-[#7E1819] border border-amber-400/40 flex items-center justify-center text-amber-200 shadow-md">
+        {/* Top Navbar with High Contrast Navigation Links */}
+        <header className="relative z-20 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
+          <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#7E1819] to-[#a32224] border border-amber-400/50 flex items-center justify-center text-amber-200 shadow-lg shadow-black/40 group-hover:scale-105 transition-transform">
               <Landmark className="w-5 h-5" />
             </div>
             <div>
-              <span className="font-serif-title font-black text-base sm:text-lg tracking-wider text-white block uppercase">
+              <span className="font-serif-title font-black text-base sm:text-lg tracking-wider text-white block uppercase drop-shadow">
                 DI SẢN
               </span>
-              <span className="text-[10px] font-bold text-amber-200 tracking-widest block uppercase">
+              <span className="text-[10px] font-black text-amber-300 tracking-widest block uppercase drop-shadow-sm">
                 TP. HỒ CHÍ MINH
               </span>
             </div>
           </div>
 
-          {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-6 text-xs sm:text-sm font-semibold text-white/90">
-            <a href="#home" className="text-white border-b-2 border-amber-400 pb-1 font-bold">Trang chủ</a>
-            <button onClick={onOpenExplorer} className="hover:text-amber-300 transition-colors cursor-pointer">Khám phá di tích</button>
-            <button onClick={onOpenMyMap} className="hover:text-amber-300 transition-colors cursor-pointer">Bản đồ di tích</button>
-            <button onClick={() => onSelectMonument(1)} className="hover:text-amber-300 transition-colors cursor-pointer">Thử thách</button>
-            <button onClick={onOpenContribute} className="hover:text-amber-300 transition-colors cursor-pointer">Ý tưởng – Hành động</button>
-            <a href="#about-project" className="hover:text-amber-300 transition-colors">Giới thiệu</a>
+          {/* Desktop Nav Links with Distinctive Pills */}
+          <nav className="hidden md:flex items-center gap-2 lg:gap-3 text-xs sm:text-sm font-bold text-white/95">
+            <a 
+              href="#home" 
+              className="px-4 py-2 rounded-full bg-[#7E1819] text-amber-100 border border-amber-400/40 shadow-md shadow-black/20"
+            >
+              Trang chủ
+            </a>
+            <button 
+              onClick={onOpenExplorer} 
+              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer"
+            >
+              Khám phá di tích
+            </button>
+            <button 
+              onClick={onOpenMyMap} 
+              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer"
+            >
+              Bản đồ di tích
+            </button>
+            <button 
+              onClick={() => onSelectMonument(1)} 
+              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer"
+            >
+              Thử thách
+            </button>
+            <button 
+              onClick={onOpenContribute} 
+              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer"
+            >
+              Ý tưởng – Hành động
+            </button>
+            <a 
+              href="#about-project" 
+              className="px-3.5 py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all"
+            >
+              Giới thiệu
+            </a>
           </nav>
 
           {/* Right Header Actions */}
           <div className="flex items-center gap-3">
             <button 
-              onClick={onOpenExplorer}
-              className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors cursor-pointer"
+              onClick={() => {
+                const el = document.getElementById('search-input-field');
+                if (el) el.focus();
+              }}
+              className="w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-105 cursor-pointer shadow-md"
               title="Tìm kiếm di tích"
             >
               <Search className="w-4 h-4 text-amber-200" />
             </button>
             <div 
               onClick={onOpenContribute}
-              className="w-9 h-9 rounded-full bg-amber-400/20 border border-amber-400/50 flex items-center justify-center text-amber-200 font-bold text-xs cursor-pointer shadow-inner"
+              className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400/30 to-amber-600/30 border border-amber-300/60 flex items-center justify-center text-amber-200 font-bold text-sm cursor-pointer shadow-inner hover:scale-105 transition-all"
               title="Cộng đồng & Đóng góp"
             >
               👤
@@ -142,24 +263,24 @@ export default function HomePage({
         {/* Hero Main Content */}
         <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 my-auto">
           <div className="max-w-3xl space-y-4">
-            <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-md">
+            <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-lg">
               DI SẢN <br />
-              <span className="text-amber-100">TP. HỒ CHÍ MINH</span>
+              <span className="text-amber-200">TP. HỒ CHÍ MINH</span>
             </h1>
 
-            <h2 className="font-serif-title text-lg sm:text-2xl text-[#F5A623] font-bold tracking-wide">
+            <h2 className="font-serif-title text-lg sm:text-2xl text-[#F5A623] font-bold tracking-wide drop-shadow">
               Hành trình khám phá những câu chuyện còn sống mãi
             </h2>
 
-            <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal max-w-2xl">
+            <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal max-w-2xl drop-shadow-sm">
               Hàng trăm di tích. Hàng nghìn câu chuyện. Và một thế hệ trẻ có thể tiếp nối.
             </p>
 
-            {/* 2 CTA Buttons */}
-            <div className="pt-4 flex flex-wrap items-center gap-3.5">
+            {/* 2 Prominent Glow CTA Buttons */}
+            <div className="pt-4 flex flex-wrap items-center gap-4">
               <button
                 onClick={onOpenExplorer}
-                className="px-6 py-3 rounded-xl bg-[#E58B24] hover:bg-[#cf7b1c] text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
+                className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#E58B24] via-[#f1992e] to-[#F5A623] hover:from-[#d17a17] hover:to-[#e09415] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-600/30 ring-2 ring-amber-300/50 transition-all hover:scale-104 cursor-pointer flex items-center gap-2.5"
               >
                 <Landmark className="w-4 h-4 text-white" />
                 <span>Khám Phá Di Tích</span>
@@ -167,7 +288,7 @@ export default function HomePage({
 
               <button
                 onClick={onOpenMyMap}
-                className="px-6 py-3 rounded-xl bg-[#3B7E4B] hover:bg-[#326d40] text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
+                className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#2E6F40] via-[#35804a] to-[#3B8E53] hover:from-[#255c34] hover:to-[#327a46] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-emerald-700/30 ring-2 ring-emerald-300/50 transition-all hover:scale-104 cursor-pointer flex items-center gap-2.5"
               >
                 <MapPin className="w-4 h-4 text-white" />
                 <span>Khám Phá Gần Bạn</span>
@@ -176,26 +297,37 @@ export default function HomePage({
           </div>
         </div>
 
-        {/* Floating Search Bar prominently raised on top */}
-        <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-8">
-          <div className="bg-white rounded-2xl sm:rounded-full p-2.5 sm:p-3 shadow-2xl border-2 border-amber-200/60 ring-4 ring-black/10 flex flex-col sm:flex-row items-center gap-3 backdrop-blur-md">
+        {/* Floating Search Bar prominently raised on top with Smart Linking */}
+        <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-9">
+          <form 
+            onSubmit={(e) => {
+              e.preventDefault();
+              handlePerformSearch();
+            }}
+            className="bg-white rounded-2xl sm:rounded-full p-2.5 sm:p-3 shadow-2xl border-2 border-amber-300/80 ring-4 ring-black/15 flex flex-col sm:flex-row items-center gap-3 backdrop-blur-md"
+          >
             <div className="flex items-center gap-2 pl-3 text-xs sm:text-sm font-black text-gray-900 shrink-0">
-              <Search className="w-4 h-4 text-[#3B7E4B]" />
+              <Search className="w-4 h-4 text-[#3B8E53]" />
               <span className="tracking-tight">Bạn muốn khám phá điều gì?</span>
             </div>
 
             <div className="relative flex-1 w-full">
               <input
+                id="search-input-field"
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Tìm tên di tích, địa phương, nhân vật, sự kiện..."
-                className="w-full py-2.5 px-4 text-xs sm:text-sm text-gray-900 placeholder-gray-400 bg-gray-50/80 rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3B7E4B] transition-all font-medium"
+                className="w-full py-2.5 px-4 text-xs sm:text-sm text-gray-900 placeholder-gray-400 bg-[#FAF7F2] rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3B8E53] transition-all font-medium border border-gray-200"
               />
 
-              {/* Live search dropdown results */}
+              {/* Live search dropdown results with direct best click */}
               {searchResults.length > 0 && (
-                <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 p-2 z-50 max-h-80 overflow-y-auto divide-y divide-gray-100">
+                <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl border border-amber-200 p-2 z-50 max-h-80 overflow-y-auto divide-y divide-gray-100 animate-fadeIn">
+                  <div className="px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-[#7E1819] bg-amber-50 rounded-lg mb-1 flex items-center justify-between">
+                    <span>Di tích phù hợp nhất ({searchResults.length})</span>
+                    <span className="text-gray-400 font-normal">Nhấn để mở ngay</span>
+                  </div>
                   {searchResults.map(m => (
                     <div
                       key={m.stt}
@@ -203,13 +335,19 @@ export default function HomePage({
                         onSelectMonument(m.stt);
                         setSearchTerm('');
                       }}
-                      className="p-3 hover:bg-amber-50 rounded-xl cursor-pointer flex items-center justify-between group transition-colors"
+                      className="p-3 hover:bg-amber-50/80 rounded-xl cursor-pointer flex items-center justify-between group transition-colors"
                     >
-                      <div>
-                        <div className="text-xs font-bold text-[#7E1819] group-hover:underline">{m.info.name}</div>
-                        <div className="text-[11px] text-gray-500">{m.info.address} • {m.info.ranking}</div>
+                      <div className="space-y-0.5">
+                        <div className="text-xs font-bold text-[#7E1819] group-hover:underline flex items-center gap-1.5">
+                          <span>{m.info.name}</span>
+                          <span className="px-1.5 py-0.2 rounded text-[9px] bg-amber-100 text-[#7E1819] font-black">{m.info.badge || m.info.ranking}</span>
+                        </div>
+                        <div className="text-[11px] text-gray-500">{m.info.address}</div>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#7E1819] group-hover:translate-x-1 transition-all" />
+                      <div className="flex items-center gap-1 text-xs font-bold text-[#7E1819] opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span>Xem</span>
+                        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -217,34 +355,28 @@ export default function HomePage({
             </div>
 
             <button
-              onClick={() => {
-                if (searchTerm.trim()) {
-                  onOpenExplorer();
-                } else {
-                  onOpenExplorer();
-                }
-              }}
-              className="w-full sm:w-auto px-6 py-2.5 rounded-xl sm:rounded-full bg-[#3B7E4B] hover:bg-[#326d40] text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-1.5"
+              type="submit"
+              className="w-full sm:w-auto px-7 py-3 rounded-xl sm:rounded-full bg-gradient-to-r from-[#2E6F40] to-[#3B8E53] hover:from-[#255c34] hover:to-[#327a46] text-white font-black text-xs sm:text-sm shadow-md transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
             >
               <Search className="w-4 h-4" />
-              <span className="sm:hidden">Tìm kiếm</span>
+              <span>Tìm kiếm</span>
             </button>
-          </div>
+          </form>
         </div>
       </section>
 
       {/* 2. INSPIRATIONAL INTRODUCTION SECTION (LỜI NGỎ DI SẢN) */}
-      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-18 pb-8 relative z-10">
+      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-8 relative z-10">
         <ScrollReveal>
-          <div className="relative bg-[#FEFAF4] rounded-3xl p-6 sm:p-10 border border-[#EADBC8] shadow-sm overflow-hidden">
+          <div className="relative bg-[#FEFAF4] rounded-3xl p-6 sm:p-10 border-2 border-[#EADBC8] shadow-md shadow-amber-900/5 overflow-hidden">
             {/* Decorative watermark */}
             <div className="absolute -right-8 -bottom-8 opacity-5 text-[#7E1819] pointer-events-none">
               <Landmark className="w-64 h-64" />
             </div>
 
             <div className="relative z-10 space-y-4 text-center max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/80 border border-amber-300/60 text-[#7E1819] text-xs font-bold uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/90 border border-amber-300/80 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
+                <Sparkles className="w-3.5 h-3.5 text-amber-600" />
                 <span>Ký Ức Thành Phố &amp; Hành Trình Kết Nối</span>
               </div>
 
@@ -275,31 +407,31 @@ export default function HomePage({
             <h2 className="font-serif-title font-black text-lg sm:text-2xl uppercase tracking-wider text-[#2C241E]">
               KHÁM PHÁ THEO CÁCH CỦA BẠN
             </h2>
-            <div className="w-12 h-1 bg-[#7E1819] mx-auto rounded-full" />
+            <div className="w-14 h-1 bg-gradient-to-r from-[#7E1819] to-amber-500 mx-auto rounded-full" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {/* Card 1: Khám phá theo địa phương */}
             <div
               onClick={onOpenMyMap}
-              className="bg-white rounded-2xl p-5 border border-[#EAE3D9] hover:border-[#3B7E4B] shadow-2xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between cursor-pointer group"
+              className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] hover:border-[#3B7E4B] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
             >
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-[#3B7E4B] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-2xl bg-emerald-100/70 border border-emerald-200 text-[#3B7E4B] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
                   📍
                 </div>
                 <div>
-                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#3B7E4B] transition-colors uppercase">
+                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#3B7E4B] transition-colors uppercase tracking-tight">
                     KHÁM PHÁ THEO ĐỊA PHƯƠNG
                   </h3>
-                  <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
                     Tìm những di tích ngay quanh nơi bạn sống.
                   </p>
                 </div>
               </div>
 
               <div className="pt-4 flex justify-end">
-                <div className="w-8 h-8 rounded-full bg-emerald-50 text-[#3B7E4B] flex items-center justify-center group-hover:bg-[#3B7E4B] group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center group-hover:bg-[#3B7E4B] group-hover:text-white shadow-xs transition-colors">
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
@@ -308,24 +440,24 @@ export default function HomePage({
             {/* Card 2: Khám phá theo loại hình */}
             <div
               onClick={onOpenExplorer}
-              className="bg-white rounded-2xl p-5 border border-[#EAE3D9] hover:border-[#BA8438] shadow-2xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between cursor-pointer group"
+              className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] hover:border-[#BA8438] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
             >
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-amber-50 text-[#BA8438] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-2xl bg-amber-100/70 border border-amber-200 text-[#BA8438] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
                   🏛️
                 </div>
                 <div>
-                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#BA8438] transition-colors uppercase">
+                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#BA8438] transition-colors uppercase tracking-tight">
                     KHÁM PHÁ THEO LOẠI HÌNH
                   </h3>
-                  <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
                     Lịch sử - Khảo cổ - Kiến trúc - Danh lam thắng cảnh
                   </p>
                 </div>
               </div>
 
               <div className="pt-4 flex justify-end">
-                <div className="w-8 h-8 rounded-full bg-amber-50 text-[#BA8438] flex items-center justify-center group-hover:bg-[#BA8438] group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-full bg-amber-100 text-[#BA8438] flex items-center justify-center group-hover:bg-[#BA8438] group-hover:text-white shadow-xs transition-colors">
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
@@ -334,24 +466,24 @@ export default function HomePage({
             {/* Card 3: Khám phá theo câu chuyện */}
             <div
               onClick={() => onSelectMonument(1)}
-              className="bg-white rounded-2xl p-5 border border-[#EAE3D9] hover:border-[#2980B9] shadow-2xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between cursor-pointer group"
+              className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] hover:border-[#2980B9] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
             >
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-sky-50 text-[#2980B9] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-2xl bg-sky-100/70 border border-sky-200 text-[#2980B9] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
                   📖
                 </div>
                 <div>
-                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#2980B9] transition-colors uppercase">
+                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#2980B9] transition-colors uppercase tracking-tight">
                     KHÁM PHÁ THEO CÂU CHUYỆN
                   </h3>
-                  <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
                     Những câu chuyện về con người, sự kiện và vùng đất.
                   </p>
                 </div>
               </div>
 
               <div className="pt-4 flex justify-end">
-                <div className="w-8 h-8 rounded-full bg-sky-50 text-[#2980B9] flex items-center justify-center group-hover:bg-[#2980B9] group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-full bg-sky-100 text-[#2980B9] flex items-center justify-center group-hover:bg-[#2980B9] group-hover:text-white shadow-xs transition-colors">
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
@@ -360,24 +492,24 @@ export default function HomePage({
             {/* Card 4: Khám phá theo thử thách */}
             <div
               onClick={() => onSelectMonument(1)}
-              className="bg-white rounded-2xl p-5 border border-[#EAE3D9] hover:border-[#8E44AD] shadow-2xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between cursor-pointer group"
+              className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] hover:border-[#8E44AD] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
             >
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-2xl bg-purple-50 text-[#8E44AD] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-2xl bg-purple-100/70 border border-purple-200 text-[#8E44AD] flex items-center justify-center text-2xl shadow-inner group-hover:scale-110 transition-transform">
                   🏆
                 </div>
                 <div>
-                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#8E44AD] transition-colors uppercase">
+                  <h3 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#8E44AD] transition-colors uppercase tracking-tight">
                     KHÁM PHÁ THEO THỬ THÁCH
                   </h3>
-                  <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
                     Trả lời câu hỏi – hoàn thành nhiệm vụ – nhận huy hiệu.
                   </p>
                 </div>
               </div>
 
               <div className="pt-4 flex justify-end">
-                <div className="w-8 h-8 rounded-full bg-purple-50 text-[#8E44AD] flex items-center justify-center group-hover:bg-[#8E44AD] group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-full bg-purple-100 text-[#8E44AD] flex items-center justify-center group-hover:bg-[#8E44AD] group-hover:text-white shadow-xs transition-colors">
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
@@ -391,7 +523,7 @@ export default function HomePage({
         <ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Left 7 Cols: DI TÍCH QUANH EM MAP */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-5 border border-[#EAE3D9] shadow-xs space-y-3 flex flex-col justify-between">
+            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-3 flex flex-col justify-between">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#7E1819]">
@@ -439,7 +571,7 @@ export default function HomePage({
             </div>
 
             {/* Right 5 Cols: DI TÍCH HÔM NAY (FEATURED RICH CARD) */}
-            <div className="lg:col-span-5 bg-[#1B3E2B] text-white rounded-3xl p-5 sm:p-6 shadow-md flex flex-col justify-between space-y-4">
+            <div className="lg:col-span-5 bg-[#1B3E2B] text-white rounded-3xl p-5 sm:p-6 shadow-xl border border-emerald-900 flex flex-col justify-between space-y-4">
               <div className="flex items-center justify-between">
                 <span className="font-serif-title font-black text-xs sm:text-sm uppercase tracking-wider text-amber-300">
                   DI TÍCH HÔM NAY
@@ -453,7 +585,7 @@ export default function HomePage({
               </div>
 
               <div className="space-y-3">
-                <div className="h-40 rounded-2xl overflow-hidden bg-black/30 border border-white/10">
+                <div className="h-40 rounded-2xl overflow-hidden bg-black/30 border border-white/10 shadow-inner">
                   <img
                     src={featuredMonument.info.heroImage}
                     alt={featuredMonument.info.name}
@@ -488,7 +620,7 @@ export default function HomePage({
 
               <button
                 onClick={() => onSelectMonument(featuredMonument.stt)}
-                className="w-full py-2.5 rounded-xl bg-[#E58B24] hover:bg-[#cf7b1c] text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
+                className="w-full py-3 rounded-xl bg-gradient-to-r from-[#E58B24] to-[#F5A623] hover:from-[#cf7b1c] hover:to-[#e09415] text-white font-black text-xs sm:text-sm shadow-lg shadow-amber-900/30 transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>Khám phá câu chuyện</span>
                 <ArrowRight className="w-4 h-4" />
@@ -503,7 +635,7 @@ export default function HomePage({
         <ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Left 7 Cols: KHÔNG CÓ NHIỀU THỜI GIAN? */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border border-[#EAE3D9] shadow-xs space-y-4">
+            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-4">
               <div>
                 <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
                   KHÔNG CÓ NHIỀU THỜI GIAN?
@@ -517,9 +649,9 @@ export default function HomePage({
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 text-center">
                 <div 
                   onClick={onOpenMyMap}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-9 h-9 rounded-full bg-white shadow-2xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
                     📍
                   </div>
                   <span className="text-[11px] font-bold text-gray-700">Ở đâu?</span>
@@ -527,9 +659,9 @@ export default function HomePage({
 
                 <div 
                   onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-9 h-9 rounded-full bg-white shadow-2xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
                     📅
                   </div>
                   <span className="text-[11px] font-bold text-gray-700">Khi nào?</span>
@@ -537,9 +669,9 @@ export default function HomePage({
 
                 <div 
                   onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-9 h-9 rounded-full bg-white shadow-2xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
                     👤
                   </div>
                   <span className="text-[11px] font-bold text-gray-700">Gắn với ai?</span>
@@ -547,9 +679,9 @@ export default function HomePage({
 
                 <div 
                   onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-9 h-9 rounded-full bg-white shadow-2xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
                     ✨
                   </div>
                   <span className="text-[11px] font-bold text-gray-700">Điều gì đặc biệt?</span>
@@ -557,9 +689,9 @@ export default function HomePage({
 
                 <div 
                   onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-9 h-9 rounded-full bg-white shadow-2xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
                     🛡️
                   </div>
                   <span className="text-[11px] font-bold text-gray-700">Vì sao cần bảo vệ?</span>
@@ -570,9 +702,9 @@ export default function HomePage({
             {/* Right 5 Cols: QUICK FEATURE CARD (ĐỊA ĐẠO CỦ CHI) */}
             <div 
               onClick={() => onSelectMonument(cuchiMonument.stt)}
-              className="lg:col-span-5 bg-white rounded-3xl p-4 sm:p-5 border border-[#EAE3D9] hover:border-[#7E1819]/50 shadow-xs hover:shadow-md transition-all cursor-pointer flex items-center gap-4 group"
+              className="lg:col-span-5 bg-white rounded-3xl p-4 sm:p-5 border-2 border-[#EAE3D9] hover:border-[#7E1819]/50 shadow-md shadow-amber-900/5 hover:shadow-xl transition-all cursor-pointer flex items-center gap-4 group hover:-translate-y-0.5"
             >
-              <div className="w-28 sm:w-36 h-24 sm:h-28 rounded-2xl overflow-hidden bg-gray-100 shrink-0">
+              <div className="w-28 sm:w-36 h-24 sm:h-28 rounded-2xl overflow-hidden bg-gray-100 shrink-0 shadow-inner">
                 <img
                   src={cuchiMonument.info.heroImage}
                   alt={cuchiMonument.info.name}
@@ -584,7 +716,7 @@ export default function HomePage({
                 <h4 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#7E1819] transition-colors">
                   {cuchiMonument.info.name}
                 </h4>
-                <p className="text-xs text-gray-500 line-clamp-2">
+                <p className="text-xs text-gray-600 line-clamp-2">
                   {cuchiMonument.info.overview}
                 </p>
                 <div className="pt-1 text-xs font-bold text-[#7E1819] flex items-center gap-1 group-hover:underline">
@@ -602,7 +734,7 @@ export default function HomePage({
         <ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Left 7 Cols: THỬ THÁCH NHÀ KHÁM PHÁ */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border border-[#EAE3D9] shadow-xs space-y-4">
+            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
                   THỬ THÁCH NHÀ KHÁM PHÁ
@@ -619,9 +751,9 @@ export default function HomePage({
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 text-center">
                 <div 
                   onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-10 h-10 rounded-2xl bg-amber-100 text-[#BA8438] flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                  <div className="w-11 h-11 rounded-2xl bg-amber-100 text-[#BA8438] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
                     🏛️
                   </div>
                   <span className="text-[11px] font-bold text-gray-700 leading-snug">Đoán di tích qua 3 manh mối</span>
@@ -629,9 +761,9 @@ export default function HomePage({
 
                 <div 
                   onClick={onOpenMyMap}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-10 h-10 rounded-2xl bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                  <div className="w-11 h-11 rounded-2xl bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
                     🗺️
                   </div>
                   <span className="text-[11px] font-bold text-gray-700 leading-snug">Tìm di tích trên bản đồ</span>
@@ -639,9 +771,9 @@ export default function HomePage({
 
                 <div 
                   onClick={() => onSelectMonument(2)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-sky-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-10 h-10 rounded-2xl bg-sky-100 text-[#2980B9] flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                  <div className="w-11 h-11 rounded-2xl bg-sky-100 text-[#2980B9] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
                     📜
                   </div>
                   <span className="text-[11px] font-bold text-gray-700 leading-snug">Ai – ở đâu – khi nào?</span>
@@ -649,9 +781,9 @@ export default function HomePage({
 
                 <div 
                   onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-purple-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-10 h-10 rounded-2xl bg-purple-100 text-[#8E44AD] flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                  <div className="w-11 h-11 rounded-2xl bg-purple-100 text-[#8E44AD] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
                     🧩
                   </div>
                   <span className="text-[11px] font-bold text-gray-700 leading-snug">Ghép hiện vật với di tích</span>
@@ -659,9 +791,9 @@ export default function HomePage({
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/50 border border-gray-100 cursor-pointer transition-all flex flex-col items-center gap-1.5 group"
+                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-rose-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
                 >
-                  <div className="w-10 h-10 rounded-2xl bg-rose-100 text-[#C0392B] flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                  <div className="w-11 h-11 rounded-2xl bg-rose-100 text-[#C0392B] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
                     🤝
                   </div>
                   <span className="text-[11px] font-bold text-gray-700 leading-snug">Bạn sẽ làm gì để bảo vệ di tích?</span>
@@ -670,7 +802,7 @@ export default function HomePage({
             </div>
 
             {/* Right 5 Cols: HỆ THỐNG HUY HIỆU */}
-            <div className="lg:col-span-5 bg-white rounded-3xl p-5 sm:p-6 border border-[#EAE3D9] shadow-xs space-y-4 flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-4 flex flex-col justify-between">
               <div className="flex items-center justify-between">
                 <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
                   HỆ THỐNG HUY HIỆU
@@ -686,24 +818,24 @@ export default function HomePage({
               {/* Badges Display */}
               <div className="flex items-center justify-around py-1">
                 <div className="text-center space-y-1">
-                  <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl shadow-md">
+                  <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl shadow-md ring-2 ring-blue-300">
                     🏛️
                   </div>
-                  <div className="text-[10px] font-bold text-gray-600">Dinh Độc Lập</div>
+                  <div className="text-[10px] font-bold text-gray-700">Dinh Độc Lập</div>
                 </div>
 
                 <div className="text-center space-y-1">
-                  <div className="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center text-xl shadow-md">
+                  <div className="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center text-xl shadow-md ring-2 ring-amber-300">
                     ⚔️
                   </div>
-                  <div className="text-[10px] font-bold text-gray-600">Củ Chi</div>
+                  <div className="text-[10px] font-bold text-gray-700">Củ Chi</div>
                 </div>
 
                 <div className="text-center space-y-1">
-                  <div className="w-12 h-12 rounded-full bg-slate-700 text-white flex items-center justify-center text-xl shadow-md">
+                  <div className="w-12 h-12 rounded-full bg-slate-700 text-white flex items-center justify-center text-xl shadow-md ring-2 ring-slate-400">
                     🌲
                   </div>
-                  <div className="text-[10px] font-bold text-gray-600">Rừng Sác</div>
+                  <div className="text-[10px] font-bold text-gray-700">Rừng Sác</div>
                 </div>
 
                 <div className="text-center space-y-1">
@@ -718,10 +850,10 @@ export default function HomePage({
               <div className="space-y-1.5 pt-1">
                 <div className="flex justify-between text-xs font-bold text-gray-700">
                   <span>Huy hiệu của bạn:</span>
-                  <span className="text-[#7E1819]">4 / 12</span>
+                  <span className="text-[#7E1819] font-black">4 / 12</span>
                 </div>
-                <div className="w-full h-2.5 bg-gray-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-amber-500 to-[#7E1819] rounded-full w-1/3 transition-all duration-1000" />
+                <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden shadow-inner">
+                  <div className="h-full bg-gradient-to-r from-amber-500 to-[#7E1819] rounded-full w-1/3 transition-all duration-1000 shadow" />
                 </div>
               </div>
             </div>
@@ -734,7 +866,7 @@ export default function HomePage({
         <ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Left 7 Cols: DI SẢN CẦN BẠN */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border border-[#EAE3D9] shadow-xs space-y-4 flex flex-col justify-between">
+            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-4 flex flex-col justify-between">
               <div>
                 <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
                   DI SẢN CẦN BẠN
@@ -748,7 +880,7 @@ export default function HomePage({
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 text-center">
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
                     ✓
@@ -758,7 +890,7 @@ export default function HomePage({
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
                     📢
@@ -768,7 +900,7 @@ export default function HomePage({
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
                     🌿
@@ -778,7 +910,7 @@ export default function HomePage({
 
                 <div 
                   onClick={onOpenExplorer}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
                     📖
@@ -788,7 +920,7 @@ export default function HomePage({
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
                     👥
@@ -798,7 +930,7 @@ export default function HomePage({
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
                   <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
                     💡
@@ -809,14 +941,14 @@ export default function HomePage({
 
               <button
                 onClick={onOpenContribute}
-                className="w-full py-3 rounded-2xl bg-[#2E5A36] hover:bg-[#254b2c] text-white font-black text-xs uppercase tracking-wider shadow transition-all cursor-pointer"
+                className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[#24522f] to-[#2E5A36] hover:from-[#1b4024] hover:to-[#24502d] text-white font-black text-xs uppercase tracking-wider shadow-lg shadow-emerald-900/20 transition-all hover:scale-102 cursor-pointer"
               >
                 TÔI MUỐN HÀNH ĐỘNG
               </button>
             </div>
 
             {/* Right 5 Cols: Ý TƯỞNG CỦA HỌC SINH */}
-            <div className="lg:col-span-5 bg-white rounded-3xl p-5 sm:p-6 border border-[#EAE3D9] shadow-xs space-y-3 flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-3 flex flex-col justify-between">
               <div className="flex items-center justify-between">
                 <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
                   Ý TƯỞNG CỦA HỌC SINH
@@ -831,9 +963,9 @@ export default function HomePage({
 
               {/* 3 Student Projects */}
               <div className="space-y-2.5">
-                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/50 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
+                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/60 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0">
+                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0 shadow-inner">
                       <img src="/assets/images/dinh-doc-lap-front.jpg" alt="Idea 1" className="w-full h-full object-cover" />
                     </div>
                     <span className="text-xs font-bold text-gray-800">Làm QR giới thiệu di tích tại trường học</span>
@@ -847,9 +979,9 @@ export default function HomePage({
                   </button>
                 </div>
 
-                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/50 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
+                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/60 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0">
+                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0 shadow-inner">
                       <img src="/assets/images/dia-dao-cu-chi.jpg" alt="Idea 2" className="w-full h-full object-cover" />
                     </div>
                     <span className="text-xs font-bold text-gray-800">Thiết kế tour tham quan di tích cho học sinh</span>
@@ -863,9 +995,9 @@ export default function HomePage({
                   </button>
                 </div>
 
-                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/50 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
+                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/60 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0">
+                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0 shadow-inner">
                       <img src="/assets/images/ben-nha-rong.jpg" alt="Idea 3" className="w-full h-full object-cover" />
                     </div>
                     <span className="text-xs font-bold text-gray-800">Tạo bản đồ di tích quanh trường</span>
@@ -882,7 +1014,7 @@ export default function HomePage({
 
               <button
                 onClick={onOpenContribute}
-                className="w-full py-2.5 rounded-xl border-2 border-gray-800 text-gray-900 hover:bg-gray-900 hover:text-white font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
+                className="w-full py-3 rounded-xl bg-gray-900 hover:bg-[#7E1819] text-white font-black text-xs uppercase tracking-wider transition-colors cursor-pointer shadow-md"
               >
                 + ĐỀ XUẤT Ý TƯỞNG
               </button>
