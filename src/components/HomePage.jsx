@@ -243,11 +243,6 @@ export default function HomePage({
            allMonuments[0];
   }, [allMonuments]);
 
-  // Quick feature monument: Địa đạo Củ Chi
-  const cuchiMonument = useMemo(() => {
-    return allMonuments.find(m => m.stt === 2) || allMonuments[1] || allMonuments[0];
-  }, [allMonuments]);
-
   // Handle Likes for Student Ideas
   const handleLikeIdea = (id) => {
     setLikedIdeas(prev => {
@@ -261,23 +256,23 @@ export default function HomePage({
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#FDFBF7] via-[#F7F2EA] to-[#EFE7DA] min-h-screen text-[#2C241E] font-sans antialiased selection:bg-amber-200 selection:text-[#7E1819]">
+    <div className="bg-[#F5EFEB] min-h-screen text-[#2A1D17] font-sans antialiased selection:bg-amber-300 selection:text-[#681315]">
       {/* 1. HERO BANNER WITH PANORAMIC SAIGON VIEW */}
-      <section className="relative bg-[#181513] text-white min-h-[560px] sm:min-h-[600px] flex flex-col justify-between overflow-visible shadow-2xl">
+      <section className="relative bg-[#1A1412] text-white min-h-[560px] sm:min-h-[600px] flex flex-col justify-between overflow-visible shadow-2xl">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src="/assets/images/dinh-doc-lap-front.jpg"
             alt="Di sản TP. Hồ Chí Minh"
-            className="w-full h-full object-cover object-center opacity-45 scale-105 transition-transform duration-1000"
+            className="w-full h-full object-cover object-center opacity-40 scale-105 transition-transform duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#181513] via-black/50 to-black/75" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1412] via-black/55 to-black/80" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-600/15 via-transparent to-black/70" />
         </div>
 
         {/* Top Navbar with High Contrast Navigation Links */}
         <header className="relative z-20 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#7E1819] to-[#a32224] border border-amber-400/50 flex items-center justify-center text-amber-200 shadow-lg shadow-black/40 group-hover:scale-105 transition-transform">
+            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#681315] to-[#8C1B1E] border border-amber-400/50 flex items-center justify-center text-amber-200 shadow-lg shadow-black/50 group-hover:scale-105 transition-transform">
               <Landmark className="w-5 h-5" />
             </div>
             <div>
@@ -293,7 +288,7 @@ export default function HomePage({
           <nav className="hidden md:flex items-center gap-2 lg:gap-3 text-xs sm:text-sm font-bold text-white/95">
             <a 
               href="#home" 
-              className="px-4 py-2 rounded-full bg-[#7E1819] text-amber-100 border border-amber-400/40 shadow-md shadow-black/20"
+              className="px-4 py-2 rounded-full bg-[#681315] text-amber-100 border border-amber-400/40 shadow-md shadow-black/30"
             >
               Trang chủ
             </a>
@@ -342,7 +337,7 @@ export default function HomePage({
             </button>
             <div 
               onClick={onOpenContribute}
-              className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400/30 to-amber-600/30 border border-amber-300/60 flex items-center justify-center text-amber-200 font-bold text-sm cursor-pointer shadow-inner hover:scale-105 transition-all"
+              className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500/30 to-amber-700/30 border border-amber-300/60 flex items-center justify-center text-amber-200 font-bold text-sm cursor-pointer shadow-inner hover:scale-105 transition-all"
               title="Cộng đồng & Đóng góp"
             >
               👤
@@ -353,23 +348,23 @@ export default function HomePage({
         {/* Hero Main Content */}
         <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 my-auto">
           <div className="max-w-3xl space-y-4">
-            <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-lg">
+            <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-xl">
               DI SẢN <br />
-              <span className="text-amber-200">TP. HỒ CHÍ MINH</span>
+              <span className="text-[#E7B874]">TP. HỒ CHÍ MINH</span>
             </h1>
 
-            <h2 className="font-serif-title text-lg sm:text-2xl text-[#F5A623] font-bold tracking-wide drop-shadow">
+            <h2 className="font-serif-title text-lg sm:text-2xl text-[#E5983A] font-bold tracking-wide drop-shadow">
               Hành trình khám phá những câu chuyện còn sống mãi
             </h2>
 
-            <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal max-w-2xl drop-shadow-sm">
+            <p className="text-sm sm:text-base text-stone-200 leading-relaxed font-normal max-w-2xl drop-shadow-sm">
               Hàng trăm di tích. Hàng nghìn câu chuyện. Và một thế hệ trẻ có thể tiếp nối.
             </p>
 
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <button
                 onClick={onOpenExplorer}
-                className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#E58B24] via-[#f1992e] to-[#F5A623] hover:from-[#d17a17] hover:to-[#e09415] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-600/30 ring-2 ring-amber-300/50 transition-all hover:scale-104 cursor-pointer flex items-center gap-2.5"
+                className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#B86E18] via-[#CB7D20] to-[#DF8E2B] hover:from-[#a05e13] hover:to-[#c67a1b] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-950/40 ring-2 ring-amber-400/40 transition-all hover:scale-104 cursor-pointer flex items-center gap-2.5"
               >
                 <Landmark className="w-4 h-4 text-white" />
                 <span>Khám Phá Di Tích</span>
@@ -377,7 +372,7 @@ export default function HomePage({
 
               <button
                 onClick={onOpenMyMap}
-                className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#2E6F40] via-[#35804a] to-[#3B8E53] hover:from-[#255c34] hover:to-[#327a46] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-emerald-700/30 ring-2 ring-emerald-300/50 transition-all hover:scale-104 cursor-pointer flex items-center gap-2.5"
+                className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#214F33] via-[#2A6340] to-[#34794F] hover:from-[#1b4029] hover:to-[#275d3c] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-emerald-950/40 ring-2 ring-emerald-400/40 transition-all hover:scale-104 cursor-pointer flex items-center gap-2.5"
               >
                 <MapPin className="w-4 h-4 text-white" />
                 <span>Khám Phá Gần Bạn</span>
@@ -393,10 +388,10 @@ export default function HomePage({
               e.preventDefault();
               handlePerformSearch();
             }}
-            className="bg-white rounded-2xl sm:rounded-full p-2.5 sm:p-3 shadow-2xl border-2 border-amber-300/80 ring-4 ring-black/15 flex flex-col sm:flex-row items-center gap-3 backdrop-blur-md"
+            className="bg-[#FFFDFB] rounded-2xl sm:rounded-full p-2.5 sm:p-3 shadow-2xl border-2 border-[#D8C4AD] ring-4 ring-black/10 flex flex-col sm:flex-row items-center gap-3 backdrop-blur-md"
           >
-            <div className="flex items-center gap-2 pl-3 text-xs sm:text-sm font-black text-gray-900 shrink-0">
-              <Search className="w-4 h-4 text-[#3B8E53]" />
+            <div className="flex items-center gap-2 pl-3 text-xs sm:text-sm font-black text-[#2A1D17] shrink-0">
+              <Search className="w-4 h-4 text-[#2A6340]" />
               <span className="tracking-tight">Bạn muốn khám phá điều gì?</span>
             </div>
 
@@ -407,14 +402,14 @@ export default function HomePage({
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Tìm tên di tích, địa phương, nhân vật, sự kiện..."
-                className="w-full py-2.5 px-4 text-xs sm:text-sm text-gray-900 placeholder-gray-400 bg-[#FAF7F2] rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3B8E53] transition-all font-medium border border-gray-200"
+                className="w-full py-2.5 px-4 text-xs sm:text-sm text-[#2A1D17] placeholder-stone-500 bg-[#F5EFEB] rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#2A6340] transition-all font-medium border border-[#DECDBB]"
               />
 
               {searchResults.length > 0 && (
-                <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl border border-amber-200 p-2 z-50 max-h-80 overflow-y-auto divide-y divide-gray-100 animate-fadeIn">
-                  <div className="px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-[#7E1819] bg-amber-50 rounded-lg mb-1 flex items-center justify-between">
+                <div className="absolute left-0 right-0 top-full mt-2 bg-[#FFFDFB] rounded-2xl shadow-2xl border border-[#D8C4AD] p-2 z-50 max-h-80 overflow-y-auto divide-y divide-[#EFE6DC] animate-fadeIn">
+                  <div className="px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-[#681315] bg-[#F9EDE1] rounded-lg mb-1 flex items-center justify-between">
                     <span>Di tích phù hợp nhất ({searchResults.length})</span>
-                    <span className="text-gray-400 font-normal">Nhấn để mở ngay</span>
+                    <span className="text-stone-500 font-normal">Nhấn để mở ngay</span>
                   </div>
                   {searchResults.map(m => (
                     <div
@@ -423,16 +418,16 @@ export default function HomePage({
                         onSelectMonument(m.stt);
                         setSearchTerm('');
                       }}
-                      className="p-3 hover:bg-amber-50/80 rounded-xl cursor-pointer flex items-center justify-between group transition-colors"
+                      className="p-3 hover:bg-[#F7EFE6] rounded-xl cursor-pointer flex items-center justify-between group transition-colors"
                     >
                       <div className="space-y-0.5">
-                        <div className="text-xs font-bold text-[#7E1819] group-hover:underline flex items-center gap-1.5">
+                        <div className="text-xs font-bold text-[#681315] group-hover:underline flex items-center gap-1.5">
                           <span>{m.info.name}</span>
-                          <span className="px-1.5 py-0.2 rounded text-[9px] bg-amber-100 text-[#7E1819] font-black">{m.info.badge || m.info.ranking}</span>
+                          <span className="px-1.5 py-0.2 rounded text-[9px] bg-amber-100 text-[#681315] font-black">{m.info.badge || m.info.ranking}</span>
                         </div>
-                        <div className="text-[11px] text-gray-500">{m.info.address}</div>
+                        <div className="text-[11px] text-stone-600">{m.info.address}</div>
                       </div>
-                      <div className="flex items-center gap-1 text-xs font-bold text-[#7E1819] opacity-0 group-hover:opacity-100 transition-opacity">
+                      <div className="flex items-center gap-1 text-xs font-bold text-[#681315] opacity-0 group-hover:opacity-100 transition-opacity">
                         <span>Xem</span>
                         <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                       </div>
@@ -444,7 +439,7 @@ export default function HomePage({
 
             <button
               type="submit"
-              className="w-full sm:w-auto px-7 py-3 rounded-xl sm:rounded-full bg-gradient-to-r from-[#2E6F40] to-[#3B8E53] hover:from-[#255c34] hover:to-[#327a46] text-white font-black text-xs sm:text-sm shadow-md transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-7 py-3 rounded-xl sm:rounded-full bg-gradient-to-r from-[#214F33] to-[#2E6F48] hover:from-[#1b4029] hover:to-[#255c3c] text-white font-black text-xs sm:text-sm shadow-md transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
             >
               <Search className="w-4 h-4" />
               <span>Tìm kiếm</span>
@@ -454,31 +449,31 @@ export default function HomePage({
       </section>
 
       {/* 2. INSPIRATIONAL INTRODUCTION SECTION (LỜI NGỎ DI SẢN) */}
-      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-8 relative z-10">
+      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-6 relative z-10">
         <ScrollReveal>
-          <div className="relative bg-[#FEFAF4] rounded-3xl p-6 sm:p-10 border-2 border-[#EADBC8] shadow-md shadow-amber-900/5 overflow-hidden">
-            <div className="absolute -right-8 -bottom-8 opacity-5 text-[#7E1819] pointer-events-none">
+          <div className="relative bg-[#FFFDFB] rounded-3xl p-6 sm:p-10 border-2 border-[#D8C4AD] shadow-md shadow-[#4A2E1B]/5 overflow-hidden">
+            <div className="absolute -right-8 -bottom-8 opacity-5 text-[#681315] pointer-events-none">
               <Landmark className="w-64 h-64" />
             </div>
 
             <div className="relative z-10 space-y-4 text-center max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/90 border border-amber-300/80 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
-                <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F6EDE1] border border-[#DECFBE] text-[#681315] text-xs font-black uppercase tracking-wider shadow-2xs">
+                <Sparkles className="w-3.5 h-3.5 text-[#B86E18]" />
                 <span>Ký Ức Thành Phố &amp; Hành Trình Kết Nối</span>
               </div>
 
-              <p className="font-serif-title text-base sm:text-lg text-[#3C2E24] font-medium leading-relaxed italic">
+              <p className="font-serif-title text-base sm:text-lg text-[#2A1D17] font-medium leading-relaxed italic">
                 “Mỗi viên gạch cũ đều mang một cái tên, một câu chuyện, một phần ký ức của thành phố này.”
               </p>
 
-              <div className="space-y-3 text-xs sm:text-sm text-[#5A4B41] leading-relaxed text-justify sm:text-center">
+              <div className="space-y-3 text-xs sm:text-sm text-[#4E3D34] leading-relaxed text-justify sm:text-center">
                 <p>
                   Giữa nhịp sống hối hả của một Sài Gòn - Hồ Chí Minh không ngừng đổi thay, vẫn có những mái ngói, những bức tường rêu phong lặng lẽ giữ lại cả một dòng thời gian đã qua. Chúng chứng kiến những biến động của lịch sử, những đổi thay của thành phố, và cả những điều bình dị nhất trong đời sống của bao thế hệ đã từng đi qua nơi đây.
                 </p>
                 <p>
                   Có bao nhiêu di tích bạn đã từng đi ngang qua mà chưa một lần dừng lại? Có bao nhiêu câu chuyện đang ngủ quên trong lòng thành phố, chỉ chờ một ai đó bước vào và lắng nghe?
                 </p>
-                <p className="font-bold text-[#7E1819] pt-1">
+                <p className="font-bold text-[#681315] pt-1">
                   Chúng tôi bắt đầu hành trình này — không phải để kể lại lịch sử theo cách khô khan trong sách vở, mà để mời bạn chạm vào nó, theo cách gần gũi nhất với thế hệ mình.
                 </p>
               </div>
@@ -487,254 +482,21 @@ export default function HomePage({
         </ScrollReveal>
       </section>
 
-      {/* 3. BẢNG KHẢO SÁT & GỢI Ý HÀNH TRÌNH: "KHÁM PHÁ THEO CÁCH CỦA BẠN" */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <ScrollReveal>
-          <div className="bg-white rounded-3xl p-6 sm:p-10 border-2 border-[#EADBC8] shadow-xl shadow-amber-900/5 space-y-8">
-            {/* Header */}
-            <div className="text-center space-y-2.5 max-w-2xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-amber-100 to-amber-200 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
-                <Compass className="w-4 h-4 text-[#7E1819]" />
-                <span>Trắc Nghiệm Khảo Sát &amp; Gợi Ý Cá Nhân Hóa</span>
-              </div>
-              <h2 className="font-serif-title font-black text-2xl sm:text-3xl uppercase tracking-wider text-[#2C241E]">
-                KHÁM PHÁ THEO CÁCH CỦA BẠN
-              </h2>
-              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                Hãy cho chúng tôi biết nơi bạn ở, mục đích chuyến đi và chủ đề đam mê để nhận ngay gợi ý di tích phù hợp nhất!
-              </p>
-            </div>
-
-            {/* 3 Survey Steps */}
-            <div className="space-y-6">
-              {/* BƯỚC 1: NƠI Ở / KHU VỰC CỦA BẠN */}
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-[#7E1819] text-white flex items-center justify-center font-bold text-xs">
-                    1
-                  </div>
-                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E]">
-                    Nơi ở / Khu vực địa lý của bạn:
-                  </h3>
-                </div>
-
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                  {locationOptions.map(loc => {
-                    const isSelected = surveyLocation === loc.id;
-                    return (
-                      <button
-                        key={loc.id}
-                        type="button"
-                        onClick={() => setSurveyLocation(loc.id)}
-                        className={`p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 relative group ${
-                          isSelected
-                            ? 'bg-amber-50/80 border-[#7E1819] ring-2 ring-[#7E1819]/20 shadow-md'
-                            : 'bg-[#FAF7F2] border-gray-200 hover:border-amber-300 hover:bg-amber-50/30'
-                        }`}
-                      >
-                        <div className="flex items-center justify-between w-full">
-                          <span className="text-lg">{loc.icon}</span>
-                          {isSelected && (
-                            <span className="w-4 h-4 rounded-full bg-[#7E1819] text-white flex items-center justify-center text-[10px]">
-                              ✓
-                            </span>
-                          )}
-                        </div>
-                        <div>
-                          <div className={`text-xs font-bold ${isSelected ? 'text-[#7E1819]' : 'text-gray-800'}`}>
-                            {loc.name}
-                          </div>
-                          <div className="text-[10px] text-gray-500 line-clamp-1 mt-0.5">
-                            {loc.tag}
-                          </div>
-                        </div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* BƯỚC 2: MỤC ĐÍCH KHÁM PHÁ CỦA BẠN */}
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-[#BA8438] text-white flex items-center justify-center font-bold text-xs">
-                    2
-                  </div>
-                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E]">
-                    Mục đích khám phá của bạn:
-                  </h3>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
-                  {purposeOptions.map(pur => {
-                    const isSelected = surveyPurpose === pur.id;
-                    return (
-                      <button
-                        key={pur.id}
-                        type="button"
-                        onClick={() => setSurveyPurpose(pur.id)}
-                        className={`p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1.5 relative ${
-                          isSelected
-                            ? 'bg-amber-50/80 border-[#BA8438] ring-2 ring-[#BA8438]/20 shadow-md'
-                            : 'bg-[#FAF7F2] border-gray-200 hover:border-amber-300 hover:bg-amber-50/30'
-                        }`}
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="text-xl">{pur.icon}</span>
-                          {isSelected && (
-                            <span className="w-4 h-4 rounded-full bg-[#BA8438] text-white flex items-center justify-center text-[10px]">
-                              ✓
-                            </span>
-                          )}
-                        </div>
-                        <div>
-                          <div className={`text-xs font-bold ${isSelected ? 'text-[#BA8438]' : 'text-gray-800'}`}>
-                            {pur.name}
-                          </div>
-                          <div className="text-[10px] text-gray-500 line-clamp-2 mt-0.5 leading-snug">
-                            {pur.desc}
-                          </div>
-                        </div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* BƯỚC 3: ĐAM MÊ & CHỦ ĐỀ BẠN YÊU THÍCH */}
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-[#2E6F40] text-white flex items-center justify-center font-bold text-xs">
-                    3
-                  </div>
-                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E]">
-                    Đam mê &amp; Chủ đề bạn quan tâm nhất:
-                  </h3>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
-                  {topicOptions.map(top => {
-                    const isSelected = surveyTopic === top.id;
-                    return (
-                      <button
-                        key={top.id}
-                        type="button"
-                        onClick={() => setSurveyTopic(top.id)}
-                        className={`p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-3 relative ${
-                          isSelected
-                            ? 'bg-emerald-50/80 border-[#2E6F40] ring-2 ring-[#2E6F40]/20 shadow-md'
-                            : 'bg-[#FAF7F2] border-gray-200 hover:border-emerald-300 hover:bg-emerald-50/30'
-                        }`}
-                      >
-                        <div className="w-10 h-10 rounded-xl bg-white shadow-2xs flex items-center justify-center text-xl shrink-0">
-                          {top.icon}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className={`text-xs font-bold truncate ${isSelected ? 'text-[#2E6F40]' : 'text-gray-800'}`}>
-                            {top.name}
-                          </div>
-                          <div className="text-[10px] text-gray-500 line-clamp-1 mt-0.5">
-                            {top.desc}
-                          </div>
-                        </div>
-                        {isSelected && (
-                          <span className="w-4 h-4 rounded-full bg-[#2E6F40] text-white flex items-center justify-center text-[10px] shrink-0">
-                            ✓
-                          </span>
-                        )}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-
-            {/* DYNAMIC RECOMMENDATION RESULTS CARDS */}
-            <div className="pt-4 border-t-2 border-[#EADBC8] space-y-4">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <Flame className="w-5 h-5 text-amber-500 fill-amber-500" />
-                  <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#7E1819]">
-                    KẾT QUẢ GỢI Ý DÀNH RIÊNG CHO BẠN ({recommendedMonuments.length} Di Tích Hợp Lý Nhất)
-                  </span>
-                </div>
-                <button
-                  onClick={onOpenExplorer}
-                  className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto"
-                >
-                  <span>Xem toàn bộ 103 di tích</span>
-                  <ChevronRight className="w-4 h-4" />
-                </button>
-              </div>
-
-              {/* 4 Recommended Cards Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {recommendedMonuments.map((m, idx) => (
-                  <div
-                    key={m.stt}
-                    onClick={() => onSelectMonument(m.stt)}
-                    className="bg-[#FAF7F2] rounded-3xl p-4 border-2 border-gray-200 hover:border-[#7E1819] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
-                  >
-                    <div className="space-y-3">
-                      <div className="h-36 rounded-2xl overflow-hidden bg-gray-200 relative shadow-inner">
-                        <img
-                          src={m.info.heroImage}
-                          alt={m.info.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <div className="absolute top-2.5 left-2.5">
-                          <span className="px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-100 text-[10px] font-black uppercase shadow">
-                            {m.info.ranking || 'Quốc gia'}
-                          </span>
-                        </div>
-                        <div className="absolute bottom-2 right-2">
-                          <span className="px-2 py-0.5 rounded-full bg-emerald-600/90 text-white text-[9px] font-black uppercase backdrop-blur-xs shadow">
-                            ★ Khớp {98 - idx * 3}%
-                          </span>
-                        </div>
-                      </div>
-
-                      <div className="space-y-1">
-                        <h4 className="font-serif-title font-black text-sm text-[#2C241E] group-hover:text-[#7E1819] transition-colors line-clamp-1">
-                          {m.info.name}
-                        </h4>
-                        <p className="text-[11px] text-gray-500 flex items-center gap-1 line-clamp-1">
-                          <MapPin className="w-3 h-3 text-[#7E1819] shrink-0" />
-                          <span>{m.info.address}</span>
-                        </p>
-                        <p className="text-[11px] text-gray-600 line-clamp-2 leading-relaxed pt-0.5">
-                          {m.info.overview}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="pt-3 mt-2 border-t border-gray-200/80 flex items-center justify-between text-xs font-bold text-[#7E1819] group-hover:underline">
-                      <span>Khám phá ngay</span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-      </section>
-
-      {/* 4. ROW 1: DI TÍCH QUANH EM (MAP) & DI TÍCH HÔM NAY (FEATURED CARD) */}
+      {/* 3. DI TÍCH QUANH EM (MAP) & DI TÍCH HÔM NAY (FEATURED CARD) - ĐƯỢC ĐƯA LÊN TRÊN */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Left 7 Cols: DI TÍCH QUANH EM MAP */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-3 flex flex-col justify-between">
+            <div className="lg:col-span-7 bg-[#FFFDFB] rounded-3xl p-5 sm:p-6 border-2 border-[#D8C4AD] shadow-md shadow-[#4A2E1B]/5 space-y-3 flex flex-col justify-between">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#7E1819]">
+                  <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#681315]">
                     DI TÍCH QUANH EM
                   </span>
                 </div>
                 <button
                   onClick={onOpenMyMap}
-                  className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer flex items-center gap-1"
+                  className="text-xs font-bold text-[#681315] hover:underline cursor-pointer flex items-center gap-1"
                 >
                   <span>Xem tất cả</span>
                   <ChevronRight className="w-3.5 h-3.5" />
@@ -742,7 +504,7 @@ export default function HomePage({
               </div>
 
               {/* Google My Maps Embed */}
-              <div className="h-64 sm:h-72 rounded-2xl overflow-hidden border border-gray-200 relative z-0 bg-gray-100 shadow-inner">
+              <div className="h-64 sm:h-72 rounded-2xl overflow-hidden border border-[#DECDBB] relative z-0 bg-[#EFE6DC] shadow-inner">
                 <iframe
                   src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
                   width="100%"
@@ -756,15 +518,15 @@ export default function HomePage({
 
               {/* Map Actions / Info */}
               <div className="flex items-center justify-between text-xs pt-1">
-                <div className="flex items-center gap-1.5 text-gray-600 font-semibold text-[11px]">
-                  <MapPin className="w-3.5 h-3.5 text-[#7E1819]" />
+                <div className="flex items-center gap-1.5 text-stone-600 font-semibold text-[11px]">
+                  <MapPin className="w-3.5 h-3.5 text-[#681315]" />
                   <span>Bản đồ tọa độ 103 Di tích TP.HCM</span>
                 </div>
                 <a
                   href="https://www.google.com/maps/d/edit?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&usp=sharing"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-bold text-[#7E1819] hover:underline flex items-center gap-1 text-[11px]"
+                  className="font-bold text-[#681315] hover:underline flex items-center gap-1 text-[11px]"
                 >
                   <span>Mở Google Maps</span>
                   <ExternalLink className="w-3 h-3" />
@@ -773,7 +535,7 @@ export default function HomePage({
             </div>
 
             {/* Right 5 Cols: DI TÍCH HÔM NAY (FEATURED RICH CARD) */}
-            <div className="lg:col-span-5 bg-[#1B3E2B] text-white rounded-3xl p-5 sm:p-6 shadow-xl border border-emerald-900 flex flex-col justify-between space-y-4">
+            <div className="lg:col-span-5 bg-[#1C3B27] text-white rounded-3xl p-5 sm:p-6 shadow-xl border-2 border-[#132A1C] flex flex-col justify-between space-y-4">
               <div className="flex items-center justify-between">
                 <span className="font-serif-title font-black text-xs sm:text-sm uppercase tracking-wider text-amber-300">
                   DI TÍCH HÔM NAY
@@ -787,7 +549,7 @@ export default function HomePage({
               </div>
 
               <div className="space-y-3">
-                <div className="h-40 rounded-2xl overflow-hidden bg-black/30 border border-white/10 shadow-inner">
+                <div className="h-40 rounded-2xl overflow-hidden bg-black/30 border border-white/15 shadow-inner">
                   <img
                     src={featuredMonument.info.heroImage}
                     alt={featuredMonument.info.name}
@@ -796,10 +558,10 @@ export default function HomePage({
                 </div>
 
                 <div>
-                  <h3 className="font-serif-title font-black text-lg sm:text-xl text-amber-100">
+                  <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#F4E3C9]">
                     {featuredMonument.info.name}
                   </h3>
-                  <p className="text-xs text-white/80 leading-relaxed mt-1 line-clamp-2">
+                  <p className="text-xs text-white/85 leading-relaxed mt-1 line-clamp-2">
                     {featuredMonument.info.overview}
                   </p>
                 </div>
@@ -822,7 +584,7 @@ export default function HomePage({
 
               <button
                 onClick={() => onSelectMonument(featuredMonument.stt)}
-                className="w-full py-3 rounded-xl bg-gradient-to-r from-[#E58B24] to-[#F5A623] hover:from-[#cf7b1c] hover:to-[#e09415] text-white font-black text-xs sm:text-sm shadow-lg shadow-amber-900/30 transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
+                className="w-full py-3 rounded-xl bg-gradient-to-r from-[#B86E18] to-[#DF8E2B] hover:from-[#9d5c12] hover:to-[#c67a1b] text-white font-black text-xs sm:text-sm shadow-lg shadow-black/30 transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>Khám phá câu chuyện</span>
                 <ArrowRight className="w-4 h-4" />
@@ -832,248 +594,250 @@ export default function HomePage({
         </ScrollReveal>
       </section>
 
-      {/* 5. ROW 2: KHÔNG CÓ NHIỀU THỜI GIAN? (3 PHÚT) & QUICK CARD (CỦ CHI) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      {/* 4. BẢNG KHẢO SÁT & GỢI Ý HÀNH TRÌNH: "KHÁM PHÁ THEO CÁCH CỦA BẠN" (ĐẶT SAU DI TÍCH QUANH EM) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            {/* Left 7 Cols: KHÔNG CÓ NHIỀU THỜI GIAN? */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-4">
-              <div>
-                <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
-                  KHÔNG CÓ NHIỀU THỜI GIAN?
-                </h3>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  Khám phá một di tích trong 3 phút
-                </p>
+          <div className="bg-[#FFFDFB] rounded-3xl p-6 sm:p-10 border-2 border-[#D8C4AD] shadow-xl shadow-[#4A2E1B]/5 space-y-8">
+            {/* Header */}
+            <div className="text-center space-y-2.5 max-w-2xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-[#F6EDE1] to-[#EFE2D2] border border-[#DECFBE] text-[#681315] text-xs font-black uppercase tracking-wider shadow-2xs">
+                <Compass className="w-4 h-4 text-[#681315]" />
+                <span>Trắc Nghiệm Khảo Sát &amp; Gợi Ý Cá Nhân Hóa</span>
+              </div>
+              <h2 className="font-serif-title font-black text-2xl sm:text-3xl uppercase tracking-wider text-[#2A1D17]">
+                KHÁM PHÁ THEO CÁCH CỦA BẠN
+              </h2>
+              <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                Hãy cho chúng tôi biết nơi bạn ở, mục đích chuyến đi và chủ đề đam mê để nhận ngay gợi ý di tích phù hợp nhất!
+              </p>
+            </div>
+
+            {/* 3 Survey Steps */}
+            <div className="space-y-6">
+              {/* BƯỚC 1: NƠI Ở / KHU VỰC CỦA BẠN */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-full bg-[#681315] text-white flex items-center justify-center font-bold text-xs">
+                    1
+                  </div>
+                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2A1D17]">
+                    Nơi ở / Khu vực địa lý của bạn:
+                  </h3>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                  {locationOptions.map(loc => {
+                    const isSelected = surveyLocation === loc.id;
+                    return (
+                      <button
+                        key={loc.id}
+                        type="button"
+                        onClick={() => setSurveyLocation(loc.id)}
+                        className={`p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 relative group ${
+                          isSelected
+                            ? 'bg-[#F9EDE1] border-[#681315] ring-2 ring-[#681315]/20 shadow-md'
+                            : 'bg-[#F5EFEB] border-[#DECDBB] hover:border-[#B86E18] hover:bg-[#F9EDE1]/50'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between w-full">
+                          <span className="text-lg">{loc.icon}</span>
+                          {isSelected && (
+                            <span className="w-4 h-4 rounded-full bg-[#681315] text-white flex items-center justify-center text-[10px]">
+                              ✓
+                            </span>
+                          )}
+                        </div>
+                        <div>
+                          <div className={`text-xs font-bold ${isSelected ? 'text-[#681315]' : 'text-stone-800'}`}>
+                            {loc.name}
+                          </div>
+                          <div className="text-[10px] text-stone-500 line-clamp-1 mt-0.5">
+                            {loc.tag}
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
 
-              {/* 5 Quick Icons Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 text-center">
-                <div 
-                  onClick={onOpenMyMap}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
-                    📍
+              {/* BƯỚC 2: MỤC ĐÍCH KHÁM PHÁ CỦA BẠN */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-full bg-[#B86E18] text-white flex items-center justify-center font-bold text-xs">
+                    2
                   </div>
-                  <span className="text-[11px] font-bold text-gray-700">Ở đâu?</span>
+                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2A1D17]">
+                    Mục đích khám phá của bạn:
+                  </h3>
                 </div>
 
-                <div 
-                  onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
-                    📅
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+                  {purposeOptions.map(pur => {
+                    const isSelected = surveyPurpose === pur.id;
+                    return (
+                      <button
+                        key={pur.id}
+                        type="button"
+                        onClick={() => setSurveyPurpose(pur.id)}
+                        className={`p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1.5 relative ${
+                          isSelected
+                            ? 'bg-[#F9EDE1] border-[#B86E18] ring-2 ring-[#B86E18]/20 shadow-md'
+                            : 'bg-[#F5EFEB] border-[#DECDBB] hover:border-[#B86E18] hover:bg-[#F9EDE1]/50'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between">
+                          <span className="text-xl">{pur.icon}</span>
+                          {isSelected && (
+                            <span className="w-4 h-4 rounded-full bg-[#B86E18] text-white flex items-center justify-center text-[10px]">
+                              ✓
+                            </span>
+                          )}
+                        </div>
+                        <div>
+                          <div className={`text-xs font-bold ${isSelected ? 'text-[#B86E18]' : 'text-stone-800'}`}>
+                            {pur.name}
+                          </div>
+                          <div className="text-[10px] text-stone-500 line-clamp-2 mt-0.5 leading-snug">
+                            {pur.desc}
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* BƯỚC 3: ĐAM MÊ & CHỦ ĐỀ BẠN YÊU THÍCH */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-full bg-[#214F33] text-white flex items-center justify-center font-bold text-xs">
+                    3
                   </div>
-                  <span className="text-[11px] font-bold text-gray-700">Khi nào?</span>
+                  <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2A1D17]">
+                    Đam mê &amp; Chủ đề bạn quan tâm nhất:
+                  </h3>
                 </div>
 
-                <div 
-                  onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
-                    👤
-                  </div>
-                  <span className="text-[11px] font-bold text-gray-700">Gắn với ai?</span>
-                </div>
-
-                <div 
-                  onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
-                    ✨
-                  </div>
-                  <span className="text-[11px] font-bold text-gray-700">Điều gì đặc biệt?</span>
-                </div>
-
-                <div 
-                  onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center text-[#7E1819] text-base group-hover:scale-110 transition-transform">
-                    🛡️
-                  </div>
-                  <span className="text-[11px] font-bold text-gray-700">Vì sao cần bảo vệ?</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                  {topicOptions.map(top => {
+                    const isSelected = surveyTopic === top.id;
+                    return (
+                      <button
+                        key={top.id}
+                        type="button"
+                        onClick={() => setSurveyTopic(top.id)}
+                        className={`p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-3 relative ${
+                          isSelected
+                            ? 'bg-[#EBF3ED] border-[#214F33] ring-2 ring-[#214F33]/20 shadow-md'
+                            : 'bg-[#F5EFEB] border-[#DECDBB] hover:border-[#214F33] hover:bg-[#EBF3ED]/50'
+                        }`}
+                      >
+                        <div className="w-10 h-10 rounded-xl bg-white shadow-2xs flex items-center justify-center text-xl shrink-0">
+                          {top.icon}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className={`text-xs font-bold truncate ${isSelected ? 'text-[#214F33]' : 'text-stone-800'}`}>
+                            {top.name}
+                          </div>
+                          <div className="text-[10px] text-stone-500 line-clamp-1 mt-0.5">
+                            {top.desc}
+                          </div>
+                        </div>
+                        {isSelected && (
+                          <span className="w-4 h-4 rounded-full bg-[#214F33] text-white flex items-center justify-center text-[10px] shrink-0">
+                            ✓
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             </div>
 
-            {/* Right 5 Cols: QUICK FEATURE CARD (ĐỊA ĐẠO CỦ CHI) */}
-            <div 
-              onClick={() => onSelectMonument(cuchiMonument.stt)}
-              className="lg:col-span-5 bg-white rounded-3xl p-4 sm:p-5 border-2 border-[#EAE3D9] hover:border-[#7E1819]/50 shadow-md shadow-amber-900/5 hover:shadow-xl transition-all cursor-pointer flex items-center gap-4 group hover:-translate-y-0.5"
-            >
-              <div className="w-28 sm:w-36 h-24 sm:h-28 rounded-2xl overflow-hidden bg-gray-100 shrink-0 shadow-inner">
-                <img
-                  src={cuchiMonument.info.heroImage}
-                  alt={cuchiMonument.info.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+            {/* DYNAMIC RECOMMENDATION RESULTS CARDS */}
+            <div className="pt-4 border-t-2 border-[#D8C4AD] space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div className="flex items-center gap-2">
+                  <Flame className="w-5 h-5 text-[#DF8E2B] fill-[#DF8E2B]" />
+                  <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#681315]">
+                    KẾT QUẢ GỢI Ý DÀNH RIÊNG CHO BẠN ({recommendedMonuments.length} Di Tích Hợp Lý Nhất)
+                  </span>
+                </div>
+                <button
+                  onClick={onOpenExplorer}
+                  className="text-xs font-bold text-[#681315] hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto"
+                >
+                  <span>Xem toàn bộ 103 di tích</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
               </div>
 
-              <div className="space-y-1.5">
-                <h4 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E] group-hover:text-[#7E1819] transition-colors">
-                  {cuchiMonument.info.name}
-                </h4>
-                <p className="text-xs text-gray-600 line-clamp-2">
-                  {cuchiMonument.info.overview}
-                </p>
-                <div className="pt-1 text-xs font-bold text-[#7E1819] flex items-center gap-1 group-hover:underline">
-                  <span>Khám phá ngay</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
+              {/* 4 Recommended Cards Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {recommendedMonuments.map((m, idx) => (
+                  <div
+                    key={m.stt}
+                    onClick={() => onSelectMonument(m.stt)}
+                    className="bg-[#F5EFEB] rounded-3xl p-4 border-2 border-[#DECDBB] hover:border-[#681315] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
+                  >
+                    <div className="space-y-3">
+                      <div className="h-36 rounded-2xl overflow-hidden bg-stone-200 relative shadow-inner">
+                        <img
+                          src={m.info.heroImage}
+                          alt={m.info.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute top-2.5 left-2.5">
+                          <span className="px-2 py-0.5 rounded-full bg-[#681315] text-amber-100 text-[10px] font-black uppercase shadow">
+                            {m.info.ranking || 'Quốc gia'}
+                          </span>
+                        </div>
+                        <div className="absolute bottom-2 right-2">
+                          <span className="px-2 py-0.5 rounded-full bg-[#214F33] text-white text-[9px] font-black uppercase backdrop-blur-xs shadow">
+                            ★ Khớp {98 - idx * 3}%
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="space-y-1">
+                        <h4 className="font-serif-title font-black text-sm text-[#2A1D17] group-hover:text-[#681315] transition-colors line-clamp-1">
+                          {m.info.name}
+                        </h4>
+                        <p className="text-[11px] text-stone-600 flex items-center gap-1 line-clamp-1">
+                          <MapPin className="w-3 h-3 text-[#681315] shrink-0" />
+                          <span>{m.info.address}</span>
+                        </p>
+                        <p className="text-[11px] text-stone-600 line-clamp-2 leading-relaxed pt-0.5">
+                          {m.info.overview}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="pt-3 mt-2 border-t border-[#DECDBB] flex items-center justify-between text-xs font-bold text-[#681315] group-hover:underline">
+                      <span>Khám phá ngay</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </ScrollReveal>
       </section>
 
-      {/* 6. ROW 3: THỬ THÁCH NHÀ KHÁM PHÁ & HỆ THỐNG HUY HIỆU */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            {/* Left 7 Cols: THỬ THÁCH NHÀ KHÁM PHÁ */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-4">
-              <div className="flex items-center justify-between">
-                <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
-                  THỬ THÁCH NHÀ KHÁM PHÁ
-                </h3>
-                <button
-                  onClick={() => onSelectMonument(1)}
-                  className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer"
-                >
-                  Xem tất cả
-                </button>
-              </div>
-
-              {/* 5 Interactive Mini Challenges */}
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 text-center">
-                <div 
-                  onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-amber-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-11 h-11 rounded-2xl bg-amber-100 text-[#BA8438] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
-                    🏛️
-                  </div>
-                  <span className="text-[11px] font-bold text-gray-700 leading-snug">Đoán di tích qua 3 manh mối</span>
-                </div>
-
-                <div 
-                  onClick={onOpenMyMap}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-11 h-11 rounded-2xl bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
-                    🗺️
-                  </div>
-                  <span className="text-[11px] font-bold text-gray-700 leading-snug">Tìm di tích trên bản đồ</span>
-                </div>
-
-                <div 
-                  onClick={() => onSelectMonument(2)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-sky-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-11 h-11 rounded-2xl bg-sky-100 text-[#2980B9] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
-                    📜
-                  </div>
-                  <span className="text-[11px] font-bold text-gray-700 leading-snug">Ai – ở đâu – khi nào?</span>
-                </div>
-
-                <div 
-                  onClick={() => onSelectMonument(1)}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-purple-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-11 h-11 rounded-2xl bg-purple-100 text-[#8E44AD] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
-                    🧩
-                  </div>
-                  <span className="text-[11px] font-bold text-gray-700 leading-snug">Ghép hiện vật với di tích</span>
-                </div>
-
-                <div 
-                  onClick={onOpenContribute}
-                  className="p-3 rounded-2xl bg-[#FAF7F2] hover:bg-rose-100/60 border border-gray-200 cursor-pointer transition-all flex flex-col items-center gap-1.5 group hover:scale-103"
-                >
-                  <div className="w-11 h-11 rounded-2xl bg-rose-100 text-[#C0392B] flex items-center justify-center text-xl group-hover:scale-110 transition-transform shadow-2xs">
-                    🤝
-                  </div>
-                  <span className="text-[11px] font-bold text-gray-700 leading-snug">Bạn sẽ làm gì để bảo vệ di tích?</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right 5 Cols: HỆ THỐNG HUY HIỆU */}
-            <div className="lg:col-span-5 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-4 flex flex-col justify-between">
-              <div className="flex items-center justify-between">
-                <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
-                  HỆ THỐNG HUY HIỆU
-                </h3>
-                <button
-                  onClick={() => onSelectMonument(1)}
-                  className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer"
-                >
-                  Xem hành trình
-                </button>
-              </div>
-
-              {/* Badges Display */}
-              <div className="flex items-center justify-around py-1">
-                <div className="text-center space-y-1">
-                  <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl shadow-md ring-2 ring-blue-300">
-                    🏛️
-                  </div>
-                  <div className="text-[10px] font-bold text-gray-700">Dinh Độc Lập</div>
-                </div>
-
-                <div className="text-center space-y-1">
-                  <div className="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center text-xl shadow-md ring-2 ring-amber-300">
-                    ⚔️
-                  </div>
-                  <div className="text-[10px] font-bold text-gray-700">Củ Chi</div>
-                </div>
-
-                <div className="text-center space-y-1">
-                  <div className="w-12 h-12 rounded-full bg-slate-700 text-white flex items-center justify-center text-xl shadow-md ring-2 ring-slate-400">
-                    🌲
-                  </div>
-                  <div className="text-[10px] font-bold text-gray-700">Rừng Sác</div>
-                </div>
-
-                <div className="text-center space-y-1">
-                  <div className="w-12 h-12 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center text-xl border border-dashed border-gray-400">
-                    🔒
-                  </div>
-                  <div className="text-[10px] font-bold text-gray-400">Chưa mở</div>
-                </div>
-              </div>
-
-              {/* Progress Bar */}
-              <div className="space-y-1.5 pt-1">
-                <div className="flex justify-between text-xs font-bold text-gray-700">
-                  <span>Huy hiệu của bạn:</span>
-                  <span className="text-[#7E1819] font-black">4 / 12</span>
-                </div>
-                <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden shadow-inner">
-                  <div className="h-full bg-gradient-to-r from-amber-500 to-[#7E1819] rounded-full w-1/3 transition-all duration-1000 shadow" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-      </section>
-
-      {/* 7. ROW 4: DI SẢN CẦN BẠN & Ý TƯỞNG CỦA HỌC SINH */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      {/* 5. DI SẢN CẦN BẠN & Ý TƯỞNG CỦA HỌC SINH */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Left 7 Cols: DI SẢN CẦN BẠN */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-4 flex flex-col justify-between">
+            <div className="lg:col-span-7 bg-[#FFFDFB] rounded-3xl p-5 sm:p-6 border-2 border-[#D8C4AD] shadow-md shadow-[#4A2E1B]/5 space-y-4 flex flex-col justify-between">
               <div>
-                <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
+                <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2A1D17]">
                   DI SẢN CẦN BẠN
                 </h3>
-                <p className="text-xs text-gray-500 mt-0.5">
+                <p className="text-xs text-stone-600 mt-0.5">
                   Bạn có thể làm gì?
                 </p>
               </div>
@@ -1082,82 +846,82 @@ export default function HomePage({
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 text-center">
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#EBF3ED] border border-[#DECDBB] cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#214F33] flex items-center justify-center text-sm font-bold">
                     ✓
                   </div>
-                  <span className="text-[10px] font-bold text-gray-700 leading-tight">Ghi lại hiện trạng</span>
+                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Ghi lại hiện trạng</span>
                 </div>
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#EBF3ED] border border-[#DECDBB] cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#214F33] flex items-center justify-center text-sm font-bold">
                     📢
                   </div>
-                  <span className="text-[10px] font-bold text-gray-700 leading-tight">Chia sẻ câu chuyện</span>
+                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Chia sẻ câu chuyện</span>
                 </div>
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#EBF3ED] border border-[#DECDBB] cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#214F33] flex items-center justify-center text-sm font-bold">
                     🌿
                   </div>
-                  <span className="text-[10px] font-bold text-gray-700 leading-tight">Giữ gìn cảnh quan</span>
+                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Giữ gìn cảnh quan</span>
                 </div>
 
                 <div 
                   onClick={onOpenExplorer}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#EBF3ED] border border-[#DECDBB] cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#214F33] flex items-center justify-center text-sm font-bold">
                     📖
                   </div>
-                  <span className="text-[10px] font-bold text-gray-700 leading-tight">Tìm hiểu thêm</span>
+                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Tìm hiểu thêm</span>
                 </div>
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#EBF3ED] border border-[#DECDBB] cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#214F33] flex items-center justify-center text-sm font-bold">
                     👥
                   </div>
-                  <span className="text-[10px] font-bold text-gray-700 leading-tight">Rủ bạn bè cùng khám phá</span>
+                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Rủ bạn bè cùng khám phá</span>
                 </div>
 
                 <div 
                   onClick={onOpenContribute}
-                  className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-emerald-50 border border-gray-100 cursor-pointer transition-colors flex flex-col items-center gap-1 group"
+                  className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#EBF3ED] border border-[#DECDBB] cursor-pointer transition-colors flex flex-col items-center gap-1 group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#3B7E4B] flex items-center justify-center text-sm">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#214F33] flex items-center justify-center text-sm font-bold">
                     💡
                   </div>
-                  <span className="text-[10px] font-bold text-gray-700 leading-tight">Đề xuất ý tưởng</span>
+                  <span className="text-[10px] font-bold text-stone-700 leading-tight">Đề xuất ý tưởng</span>
                 </div>
               </div>
 
               <button
                 onClick={onOpenContribute}
-                className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[#24522f] to-[#2E5A36] hover:from-[#1b4024] hover:to-[#24502d] text-white font-black text-xs uppercase tracking-wider shadow-lg shadow-emerald-900/20 transition-all hover:scale-102 cursor-pointer"
+                className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[#1C3B27] to-[#265337] hover:from-[#152e1f] hover:to-[#1e432c] text-white font-black text-xs uppercase tracking-wider shadow-lg shadow-black/20 transition-all hover:scale-102 cursor-pointer"
               >
                 TÔI MUỐN HÀNH ĐỘNG
               </button>
             </div>
 
             {/* Right 5 Cols: Ý TƯỞNG CỦA HỌC SINH */}
-            <div className="lg:col-span-5 bg-white rounded-3xl p-5 sm:p-6 border-2 border-[#EAE3D9] shadow-md shadow-amber-900/5 space-y-3 flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-[#FFFDFB] rounded-3xl p-5 sm:p-6 border-2 border-[#D8C4AD] shadow-md shadow-[#4A2E1B]/5 space-y-3 flex flex-col justify-between">
               <div className="flex items-center justify-between">
-                <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2C241E]">
+                <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2A1D17]">
                   Ý TƯỞNG CỦA HỌC SINH
                 </h3>
                 <button
                   onClick={onOpenContribute}
-                  className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer"
+                  className="text-xs font-bold text-[#681315] hover:underline cursor-pointer"
                 >
                   Xem tất cả
                 </button>
@@ -1165,48 +929,48 @@ export default function HomePage({
 
               {/* 3 Student Projects */}
               <div className="space-y-2.5">
-                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/60 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
+                <div className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#F9EDE1] border border-[#DECDBB] flex items-center justify-between gap-3 transition-colors">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0 shadow-inner">
+                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-stone-300 shrink-0 shadow-inner">
                       <img src="/assets/images/dinh-doc-lap-front.jpg" alt="Idea 1" className="w-full h-full object-cover" />
                     </div>
-                    <span className="text-xs font-bold text-gray-800">Làm QR giới thiệu di tích tại trường học</span>
+                    <span className="text-xs font-bold text-stone-800">Làm QR giới thiệu di tích tại trường học</span>
                   </div>
                   <button 
                     onClick={() => handleLikeIdea(1)}
-                    className="flex items-center gap-1 text-xs font-bold text-rose-600 hover:scale-110 transition-transform cursor-pointer"
+                    className="flex items-center gap-1 text-xs font-bold text-[#681315] hover:scale-110 transition-transform cursor-pointer"
                   >
                     <span>❤️</span>
                     <span>{studentIdeaLikes[1]}</span>
                   </button>
                 </div>
 
-                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/60 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
+                <div className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#F9EDE1] border border-[#DECDBB] flex items-center justify-between gap-3 transition-colors">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0 shadow-inner">
+                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-stone-300 shrink-0 shadow-inner">
                       <img src="/assets/images/dia-dao-cu-chi.jpg" alt="Idea 2" className="w-full h-full object-cover" />
                     </div>
-                    <span className="text-xs font-bold text-gray-800">Thiết kế tour tham quan di tích cho học sinh</span>
+                    <span className="text-xs font-bold text-stone-800">Thiết kế tour tham quan di tích cho học sinh</span>
                   </div>
                   <button 
                     onClick={() => handleLikeIdea(2)}
-                    className="flex items-center gap-1 text-xs font-bold text-rose-600 hover:scale-110 transition-transform cursor-pointer"
+                    className="flex items-center gap-1 text-xs font-bold text-[#681315] hover:scale-110 transition-transform cursor-pointer"
                   >
                     <span>❤️</span>
                     <span>{studentIdeaLikes[2]}</span>
                   </button>
                 </div>
 
-                <div className="p-2.5 rounded-2xl bg-[#FAF7F2] hover:bg-amber-50/60 border border-gray-100 flex items-center justify-between gap-3 transition-colors">
+                <div className="p-2.5 rounded-2xl bg-[#F5EFEB] hover:bg-[#F9EDE1] border border-[#DECDBB] flex items-center justify-between gap-3 transition-colors">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-200 shrink-0 shadow-inner">
+                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-stone-300 shrink-0 shadow-inner">
                       <img src="/assets/images/ben-nha-rong.jpg" alt="Idea 3" className="w-full h-full object-cover" />
                     </div>
-                    <span className="text-xs font-bold text-gray-800">Tạo bản đồ di tích quanh trường</span>
+                    <span className="text-xs font-bold text-stone-800">Tạo bản đồ di tích quanh trường</span>
                   </div>
                   <button 
                     onClick={() => handleLikeIdea(3)}
-                    className="flex items-center gap-1 text-xs font-bold text-rose-600 hover:scale-110 transition-transform cursor-pointer"
+                    className="flex items-center gap-1 text-xs font-bold text-[#681315] hover:scale-110 transition-transform cursor-pointer"
                   >
                     <span>❤️</span>
                     <span>{studentIdeaLikes[3]}</span>
@@ -1216,7 +980,7 @@ export default function HomePage({
 
               <button
                 onClick={onOpenContribute}
-                className="w-full py-3 rounded-xl bg-gray-900 hover:bg-[#7E1819] text-white font-black text-xs uppercase tracking-wider transition-colors cursor-pointer shadow-md"
+                className="w-full py-3 rounded-xl bg-[#2A1D17] hover:bg-[#681315] text-white font-black text-xs uppercase tracking-wider transition-colors cursor-pointer shadow-md"
               >
                 + ĐỀ XUẤT Ý TƯỞNG
               </button>
@@ -1225,7 +989,7 @@ export default function HomePage({
         </ScrollReveal>
       </section>
 
-      {/* 8. BOTTOM MOTTO BANNER WITH STUDENT ILLUSTRATION */}
+      {/* 6. BOTTOM MOTTO BANNER WITH STUDENT ILLUSTRATION */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 text-center">
         <ScrollReveal>
           <div className="space-y-4">
@@ -1236,10 +1000,10 @@ export default function HomePage({
             </div>
 
             <div className="space-y-1.5 max-w-2xl mx-auto">
-              <h3 className="font-serif-title text-base sm:text-xl font-black text-[#2C241E]">
+              <h3 className="font-serif-title text-base sm:text-xl font-black text-[#2A1D17]">
                 Di tích kể câu chuyện của quá khứ.
               </h3>
-              <h3 className="font-serif-title text-base sm:text-xl font-black text-[#7E1819]">
+              <h3 className="font-serif-title text-base sm:text-xl font-black text-[#681315]">
                 Còn chúng ta quyết định câu chuyện ấy sẽ được tiếp tục như thế nào.
               </h3>
             </div>
