@@ -27,7 +27,6 @@ export default function DocsModal({
 
   const webLink = driveReferenceData?.webLink || '';
   const bookUrls = driveReferenceData?.bookUrls || [];
-  const driveFolderUrl = driveReferenceData?.driveFolderUrl || 'https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing';
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/75 backdrop-blur-sm animate-fadeIn">
@@ -120,21 +119,6 @@ export default function DocsModal({
               </div>
             </div>
           )}
-
-          {/* Link to entire reference drive folder */}
-          <div className="p-3.5 rounded-2xl bg-white border border-[#EADBC8] text-center space-y-1.5">
-            <p className="text-[11px] text-[#777]">
-              Kho lưu trữ toàn bộ hồ sơ tham khảo của 103 di tích trên Google Drive:
-            </p>
-            <a
-              href={driveFolderUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-bold text-[#7E1819] hover:underline"
-            >
-              <span>Xem toàn bộ thư mục Google Drive &gt;</span>
-            </a>
-          </div>
         </div>
 
         {/* Footer */}
