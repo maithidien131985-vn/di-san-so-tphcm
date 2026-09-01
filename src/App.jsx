@@ -115,16 +115,18 @@ export default function App() {
     return getMonumentByIdOrStt(currentStt);
   }, [currentStt]);
 
-  const storageKey = `di_san_so_v7_monument_stt_${currentStt}`;
+  const storageKey = `di_san_so_v10_monument_stt_${currentStt}`;
 
   const mergeWithBase = (base, saved) => {
     if (!saved) return base;
     return {
       ...base,
       ...saved,
+      gallery: base.gallery, // Luôn đồng bộ danh sách ảnh thực tế từ Google Drive
       info: {
         ...base.info,
         ...(saved.info || {}),
+        heroImage: base.info.heroImage, // Luôn ưu tiên ảnh đại diện thực tế từ Google Drive của di tích
         emCoBiet: base.info?.emCoBiet || [],
         driveReferenceData: base.info?.driveReferenceData || null
       },
@@ -529,6 +531,7 @@ export default function App() {
             <div id="investigation-section" className="pt-2">
               <InvestigationSection
                 investigation={data.investigation}
+                monumentImage={data.info.heroImage || data.gallery?.[0]?.src}
                 onOpenDossierDetail={handleOpenDossier}
                 onStartQuiz={handleStartQuiz}
                 onOpenStudentReport={() => setStudentReportOpen(true)}

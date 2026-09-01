@@ -4,6 +4,7 @@ import ScrollReveal from './ScrollReveal';
 
 export default function InvestigationSection({
   investigation,
+  monumentImage,
   onStartQuiz,
   onOpenStudentReport,
   onOpenDocsModal
@@ -13,6 +14,8 @@ export default function InvestigationSection({
   const driveRef = investigation?.driveReferenceData || {};
   const firstCitation = driveRef.citationsList?.[0]?.title || driveRef.citations?.split('\n')[0] || "Hồ sơ khoa học và văn bản di tích - Sở Văn hóa và Thể thao TP.HCM";
   const secondCitation = driveRef.citationsList?.[1]?.title || driveRef.citations?.split('\n')[1] || null;
+
+  const thumbnailImage = monumentImage || "/assets/images/dinh-doc-lap-front.jpg";
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -71,7 +74,7 @@ export default function InvestigationSection({
                 <div className="space-y-3">
                   <div className="h-36 sm:h-40 rounded-xl overflow-hidden bg-gray-100 border border-gray-100 relative">
                     <img
-                      src="/assets/images/co-giai-phong-dinh.jpg"
+                      src={thumbnailImage}
                       alt="Tư liệu tham khảo"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
