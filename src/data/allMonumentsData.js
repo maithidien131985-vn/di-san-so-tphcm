@@ -1,5 +1,8 @@
-// Hệ thống Di sản Số TP.HCM - Toàn bộ 103 Di Tích Lịch Sử & Văn Hóa
-// Dữ liệu đồng bộ: Tọa độ GPS, Video, 3 Ô Điểm nhấn, 6 Môn học, Em có biết & 103 Tư liệu tham khảo từ Google Drive
+// ==============================================================================
+// BÁCH KHOA TOÀN THƯ 103 DI TÍCH LỊCH SỬ - VĂN HÓA TP. HỒ CHÍ MINH & VÙNG PHỤ CẬN
+// TÍCH HỢP TOÀN BỘ 948+ TƯ LIỆU HÌNH ẢNH GỐC THEO TÊN CHUẨN TỪ GOOGLE DRIVE
+// ==============================================================================
+
 export const allMonumentsList = [
   {
     "id": "monument-1",
@@ -67,7 +70,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Dinh Độc Lập là một di tích lịch sử đặc biệt quan trọng, gắn liền với nhiều biến động chính trị của Việt Nam từ thời Pháp thuộc đến năm 1975. Nơi đây từng là trung tâm quyền lực của chính quyền thuộc địa Pháp và chính quyền Việt Nam Cộng hòa.\nĐặc biệt, trưa ngày 30/4/1975, xe tăng của Quân Giải phóng tiến vào Dinh Độc Lập, đánh dấu sự sụp đổ của chính quyền Sài Gòn, kết thúc cuộc kháng chiến chống Mỹ, giải phóng miền Nam và mở ra thời kỳ đất nước hòa bình, độc lập, thống nhất.\nNgày nay, Dinh Độc Lập là chứng tích tiêu biểu của lịch sử dân tộc, góp phần giáo dục truyền thống yêu nước, tinh thần đấu tranh giành độc lập và khát vọng hòa bình cho các thế hệ.",
-      "heroImage": "/assets/images/dinh-doc-lap/dinh-doc-lap-1.jpg",
+      "heroImage": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20nh%C3%ACn%20qua%20c%E1%BB%95ng%20ch%C3%ADnh.jpg",
       "emCoBiet": [
         "📏 Diện tích khuôn viên: 120.000 m²",
         "🏛️ Hệ thống phòng: 150+ phòng",
@@ -210,74 +213,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-1.jpg",
-        "title": "Toàn cảnh Dinh Độc Lập",
-        "caption": "Mặt tiền Dinh Độc Lập với rèm hoa đá hình nan trúc thanh cao và bãi cỏ hình bầu dục.",
-        "year": "Kiến trúc"
+        "id": "mon_1_img_1",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20gi%E1%BB%AFa%20kh%C3%B4ng%20gian%20xanh%20c%E1%BB%A7a%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Dinh Độc Lập giữa không gian xanh của Thành phố Hồ Chí Minh",
+        "caption": "Dinh Độc Lập giữa không gian xanh của Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-2.jpg",
-        "title": "Xe tăng 390 tại cổng Dinh",
-        "caption": "Bảo vật Quốc gia: Xe tăng 390 húc đổ cổng chính trưa 30/4/1975.",
-        "year": "1975"
+        "id": "mon_1_img_2",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20nh%C3%ACn%20qua%20c%E1%BB%95ng%20ch%C3%ADnh.jpg",
+        "title": "Dinh Độc Lập nhìn qua cổng chính",
+        "caption": "Dinh Độc Lập nhìn qua cổng chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-3.jpg",
-        "title": "Phòng Khánh tiết",
-        "caption": "Nơi diễn ra các cuộc họp nội các, tiếp tân ngoại giao và sự kiện lịch sử.",
-        "year": "Nội thất"
+        "id": "mon_1_img_3",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20b%C3%AAn.jpg",
+        "title": "Dinh Độc Lập nhìn từ phía bên",
+        "caption": "Dinh Độc Lập nhìn từ phía bên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 4,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-4.jpg",
-        "title": "Phòng Trình Quốc thư",
-        "caption": "Bức tranh sơn mài Bình Ngô Đại Cáo của họa sĩ Nguyễn Văn Minh.",
-        "year": "Mỹ thuật"
+        "id": "mon_1_img_4",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20tr%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Dinh Độc Lập nhìn từ phía trước",
+        "caption": "Dinh Độc Lập nhìn từ phía trước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 5,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-5.jpg",
-        "title": "Hệ thống Hầm ngầm chỉ huy",
-        "caption": "Trung tâm tác chiến ngầm kiên cố dưới lòng Dinh Độc Lập.",
-        "year": "Công sự"
+        "id": "mon_1_img_5",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20v%C3%A0%20khu%C3%B4n%20vi%C3%AAn%20ph%C3%ADa%20tr%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Dinh Độc Lập và khuôn viên phía trước",
+        "caption": "Dinh Độc Lập và khuôn viên phía trước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 6,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-6.jpg",
-        "title": "Trực thăng UH-1 & Vị trí ném bom",
-        "caption": "Sân thượng Dinh Độc Lập nơi máy bay F-5E ném bom ngày 8/4/1975.",
-        "year": "Hiện vật"
+        "id": "mon_1_img_6",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20v%E1%BB%81%20%C4%91%C3%AAm.jpg",
+        "title": "Dinh Độc Lập về đêm",
+        "caption": "Dinh Độc Lập về đêm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 7,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-7.jpg",
-        "title": "Khuôn viên công viên 12 ha",
-        "caption": "Hàng cây cổ thụ xanh mát bao bọc quanh di tích lịch sử.",
-        "year": "Cảnh quan"
+        "id": "mon_1_img_7",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/M%E1%BA%B7t%20ti%E1%BB%81n%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp.jpg",
+        "title": "Mặt tiền Dinh Độc Lập",
+        "caption": "Mặt tiền Dinh Độc Lập",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 8,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-8.jpg",
-        "title": "Phòng Đại yến",
-        "caption": "Không gian tiệc chiêu đãi quốc tế sang trọng tại Dinh.",
-        "year": "Nội thất"
+        "id": "mon_1_img_8",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Ph%C3%B2ng%20Kh%C3%A1nh%20ti%E1%BA%BFt%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp.jpg",
+        "title": "Phòng Khánh tiết Dinh Độc Lập",
+        "caption": "Phòng Khánh tiết Dinh Độc Lập",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 9,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-9.jpg",
-        "title": "Sơ đồ thiết kế chữ Cát (吉)",
-        "caption": "Triết lý phong thủy phương Đông độc đáo của KTS Ngô Viết Thụ.",
-        "year": "Thiết kế"
+        "id": "mon_1_img_9",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/To%C3%A0n%20c%E1%BA%A3nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Dinh Độc Lập nhìn từ trên cao",
+        "caption": "Toàn cảnh Dinh Độc Lập nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 10,
-        "src": "/assets/images/dinh-doc-lap/dinh-doc-lap-10.jpg",
-        "title": "Cờ Giải phóng trên nóc Dinh",
-        "caption": "Khoảnh khắc lịch sử trưa ngày 30/4/1975 non sông liền một dải.",
-        "year": "Lịch sử"
+        "id": "mon_1_img_10",
+        "src": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Xe%20t%C4%83ng%20qu%C3%A2n%20Gi%E1%BA%A3i%20ph%C3%B3ng%20ti%E1%BA%BFn%20v%C3%A0o%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20tr%C6%B0a%20ng%C3%A0y%203041975.jpg",
+        "title": "Xe tăng quân Giải phóng tiến vào Dinh Độc Lập trưa ngày 3041975",
+        "caption": "Xe tăng quân Giải phóng tiến vào Dinh Độc Lập trưa ngày 3041975",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -610,7 +623,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Địa đạo là căn cứ chiến đấu và sinh hoạt quan trọng của quân dân Củ Chi trong hai cuộc kháng chiến. Công trình thể hiện trí thông minh, khả năng sáng tạo, tinh thần đoàn kết và ý chí chiến đấu kiên cường của quân dân vùng “đất thép”. Đây còn là nguồn tư liệu trực quan phục vụ nghiên cứu, giáo dục truyền thống yêu nước và lịch sử cách mạng",
-      "heroImage": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-1.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/C%E1%BB%95ng%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
       "emCoBiet": [
         "📏 Chiều dài hệ thống: khoảng 250 km",
         "📏 Cấu trúc: 3 tầng, sâu khoảng 3–12 m",
@@ -753,74 +766,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-1.jpg",
-        "title": "Cổng vào Khu di tích Địa đạo Củ Chi",
-        "caption": "Vùng Đất thép thành đồng với hơn 200km đường hầm ngầm.",
-        "year": "Cảnh quan"
+        "id": "mon_2_img_1",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/C%E1%BB%95ng%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Cổng Khu di tích lịch sử Địa đạo Củ Chi",
+        "caption": "Cổng Khu di tích lịch sử Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-2.jpg",
-        "title": "Cửa hầm bí mật ngụy trang",
-        "caption": "Nắp hầm bí mật giấu kín dưới lớp lá khô vừa vặn một người chui.",
-        "year": "Quân sự"
+        "id": "mon_2_img_2",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/C%E1%BB%ADa%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20t%E1%BA%A1i%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Cửa hầm bí mật tại Địa đạo Củ Chi",
+        "caption": "Cửa hầm bí mật tại Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-3.jpg",
-        "title": "Cấu trúc đường hầm 3 tầng",
-        "caption": "Hệ thống hầm ngầm liên hoàn xuyên lòng đất sét pha đá ong.",
-        "year": "Kiến trúc ngầm"
+        "id": "mon_2_img_3",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/Khu%20t%C3%A1i%20hi%E1%BB%87n%20l%C3%A1n%20tr%E1%BA%A1i%20t%E1%BA%A1i%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Khu tái hiện lán trại tại Di tích lịch sử Địa đạo Củ Chi",
+        "caption": "Khu tái hiện lán trại tại Di tích lịch sử Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 4,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-4.jpg",
-        "title": "Bếp Hoàng Cầm giấu khói",
-        "caption": "Sáng kiến kỳ diệu giúp nấu ăn không tỏa khói ban ngày.",
-        "year": "Sáng tạo"
+        "id": "mon_2_img_4",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/Kh%C3%B4ng%20gian%20b%C3%AAn%20trong%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Không gian bên trong hệ thống Địa đạo Củ Chi",
+        "caption": "Không gian bên trong hệ thống Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 5,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-5.jpg",
-        "title": "Hầm phẫu thuật quân y",
-        "caption": "Nơi cấp cứu, cứu chữa thương bệnh binh ngay dưới lòng đất.",
-        "year": "Quân y"
+        "id": "mon_2_img_5",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/Kh%C3%B4ng%20gian%20h%E1%BA%A7m%20ng%E1%BA%A7m%20b%C3%AAn%20trong%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Không gian hầm ngầm bên trong Địa đạo Củ Chi",
+        "caption": "Không gian hầm ngầm bên trong Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 6,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-6.jpg",
-        "title": "Xưởng chế tạo vũ khí tự tạo",
-        "caption": "Các chiến sĩ tận dụng vỏ bom đạn địch để đúc mìn, lựu đạn.",
-        "year": "Vũ khí"
+        "id": "mon_2_img_6",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/L%E1%BB%91i%20xu%E1%BB%91ng%20h%E1%BA%A7m%20tr%C3%BA%20%E1%BA%A9n%20t%E1%BA%A1i%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Lối xuống hầm trú ẩn tại Địa đạo Củ Chi",
+        "caption": "Lối xuống hầm trú ẩn tại Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 7,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-7.jpg",
-        "title": "Hệ thống bẫy chông và bãi mìn",
-        "caption": "Nghệ thuật chiến tranh nhân dân đánh bại các trận càn khổng lồ.",
-        "year": "Chiến thuật"
+        "id": "mon_2_img_7",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/L%E1%BB%91i%20xu%E1%BB%91ng%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Lối xuống hệ thống Địa đạo Củ Chi",
+        "caption": "Lối xuống hệ thống Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 8,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-8.jpg",
-        "title": "Khu vực Đền Tưởng niệm Bến Dược",
-        "caption": "Nơi khắc ghi tên tuổi của hơn 44.000 anh hùng liệt sĩ.",
-        "year": "Tri ân"
+        "id": "mon_2_img_8",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/S%C6%A1%20%C4%91%E1%BB%93%20c%E1%BA%A5u%20tr%C3%BAc%20nhi%E1%BB%81u%20t%E1%BA%A7ng%20c%E1%BB%A7a%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Sơ đồ cấu trúc nhiều tầng của hệ thống Địa đạo Củ Chi",
+        "caption": "Sơ đồ cấu trúc nhiều tầng của hệ thống Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 9,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-9.jpg",
-        "title": "Hầm hội họp giao ban",
-        "caption": "Không gian chỉ huy tác chiến của Huyện ủy và Bộ Tư lệnh Quân khu.",
-        "year": "Chỉ huy"
+        "id": "mon_2_img_9",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/S%C6%A1%20%C4%91%E1%BB%93%20m%C3%B4%20ph%E1%BB%8Fng%20c%E1%BA%A5u%20tr%C3%BAc%20v%C3%A0%20c%C3%A1c%20c%C3%B4ng%20tr%C3%ACnh%20trong%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Sơ đồ mô phỏng cấu trúc và các công trình trong Địa đạo Củ Chi",
+        "caption": "Sơ đồ mô phỏng cấu trúc và các công trình trong Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 10,
-        "src": "/assets/images/dia-dao-cu-chi/dia-dao-cu-chi-10.jpg",
-        "title": "Bắn súng thể thao quốc phòng",
-        "caption": "Trải nghiệm thực tế lịch sử và giáo dục truyền thống cho thế hệ trẻ.",
-        "year": "Trải nghiệm"
+        "id": "mon_2_img_10",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/%C4%90%C6%B0%E1%BB%9Dng%20h%E1%BA%A7m%20b%C3%AAn%20trong%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+        "title": "Đường hầm bên trong hệ thống Địa đạo Củ Chi",
+        "caption": "Đường hầm bên trong hệ thống Địa đạo Củ Chi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -1151,7 +1174,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Bến Lộc An là một đầu cầu quan trọng của Đường Hồ Chí Minh trên biển, thực hiện nhiệm vụ tiếp nhận vũ khí từ miền Bắc chi viện cho chiến trường Bà Rịa và miền Đông Nam Bộ. Từ cuối năm 1963 đến đầu năm 1965, quân và dân địa phương đã tiếp nhận, bảo vệ an toàn ba chuyến tàu không số. Nguồn vũ khí này góp phần tăng cường sức mạnh cho lực lượng vũ trang, phục vụ Chiến dịch Bình Giã và chuẩn bị cho các hoạt động quân sự tại Phước Long – Đồng Xoài.\n\nNgày 26/11/2024, Bến Lộc An trở thành một địa điểm thuộc Di tích quốc gia đặc biệt Đường Hồ Chí Minh trên biển.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/To%C3%A0n%20c%E1%BA%A3nh%20Di%20t%C3%ADch%20B%E1%BA%BFn%20L%E1%BB%99c%20An%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "🔎 Bến Lộc An là một bến của tuyến vận tải bí mật trên biển.",
         "🔎 Gắn với những chuyến “tàu không số”.",
@@ -1294,25 +1317,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An) tại Xã Hồ Tràm, Thành phố Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_3_img_1",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/B%E1%BA%A3n%20%C4%91%E1%BB%93%20S%C6%A1%20%C4%91%E1%BB%93%20c%C3%A1c%20tuy%E1%BA%BFn%20v%E1%BA%ADn%20t%E1%BA%A3i%20%C4%90%C6%B0%E1%BB%9Dng%20H%E1%BB%93%20Ch%C3%AD%20Minh%20tr%C3%AAn%20bi%E1%BB%83n.jpg",
+        "title": "Bản đồ Sơ đồ các tuyến vận tải Đường Hồ Chí Minh trên biển",
+        "caption": "Bản đồ Sơ đồ các tuyến vận tải Đường Hồ Chí Minh trên biển",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An).",
-        "year": "Hiện vật"
+        "id": "mon_3_img_2",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/C%E1%BA%ADn%20c%E1%BA%A3nh%20T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20B%E1%BA%BFn%20L%E1%BB%99c%20An.jpg",
+        "title": "Cận cảnh Tượng đài Bến Lộc An",
+        "caption": "Cận cảnh Tượng đài Bến Lộc An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_3_img_3",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/C%E1%BB%99t%20m%E1%BB%91c%20D%E1%BA%A5u%20t%C3%ADch%20B%E1%BA%BFn%20b%C3%A3i%20ti%E1%BA%BFp%20nh%E1%BA%ADn%20v%C5%A9%20kh%C3%AD%20b%C3%AAn%20d%C3%B2ng%20s%C3%B4ng.jpg",
+        "title": "Cột mốc Dấu tích Bến bãi tiếp nhận vũ khí bên dòng sông",
+        "caption": "Cột mốc Dấu tích Bến bãi tiếp nhận vũ khí bên dòng sông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_3_img_4",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/Ho%C3%A0ng%20h%C3%B4n%20tr%C3%AAn%20tuy%E1%BA%BFn%20%C4%91%C6%B0%E1%BB%9Dng%20bi%E1%BB%83n%2C%20%20%C4%90%E1%BA%A3o.jpg",
+        "title": "Hoàng hôn trên tuyến đường biển,  Đảo",
+        "caption": "Hoàng hôn trên tuyến đường biển,  Đảo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_3_img_5",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/L%E1%BB%85%20trao%20B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia%20%C4%90%E1%BA%B7c%20bi%E1%BB%87t.jpg",
+        "title": "Lễ trao Bằng xếp hạng Di tích Quốc gia Đặc biệt",
+        "caption": "Lễ trao Bằng xếp hạng Di tích Quốc gia Đặc biệt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_3_img_6",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/To%C3%A0n%20c%E1%BA%A3nh%20Di%20t%C3%ADch%20B%E1%BA%BFn%20L%E1%BB%99c%20An%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Di tích Bến Lộc An nhìn từ trên cao",
+        "caption": "Toàn cảnh Di tích Bến Lộc An nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_3_img_7",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/To%C3%A0n%20c%E1%BA%A3nh%20T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20B%E1%BA%BFn%20L%E1%BB%99c%20An%20t%E1%BB%AB%20l%E1%BB%91i%20v%C3%A0o.jpg",
+        "title": "Toàn cảnh Tượng đài Bến Lộc An từ lối vào",
+        "caption": "Toàn cảnh Tượng đài Bến Lộc An từ lối vào",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_3_img_8",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/To%C3%A0n%20c%E1%BA%A3nh%20T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20B%E1%BA%BFn%20L%E1%BB%99c%20An%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Tượng đài Bến Lộc An từ trên cao",
+        "caption": "Toàn cảnh Tượng đài Bến Lộc An từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_3_img_9",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/T%C3%A0u%20Kh%C3%B4ng%20s%E1%BB%91%20(%C4%90o%C3%A0n%20125)%20h%C3%A0nh%20qu%C3%A2n%20tr%C3%AAn%20bi%E1%BB%83n.jpg",
+        "title": "Tàu Không số (Đoàn 125) hành quân trên biển",
+        "caption": "Tàu Không số (Đoàn 125) hành quân trên biển",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_3_img_10",
+        "src": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20Di%20t%C3%ADch%20B%E1%BA%BFn%20L%E1%BB%99c%20An%20(%C4%90%C6%B0%E1%BB%9Dng%20H%E1%BB%93%20Ch%C3%AD%20Minh%20tr%C3%AAn%20bi%E1%BB%83n).jpg",
+        "title": "Tượng đài Di tích Bến Lộc An (Đường Hồ Chí Minh trên biển)",
+        "caption": "Tượng đài Di tích Bến Lộc An (Đường Hồ Chí Minh trên biển)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -1647,7 +1729,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà tù Côn Đảo là một trong những hệ thống nhà tù có quy mô lớn và tồn tại lâu dài trong lịch sử Việt Nam. Ngày 1/2/1862, Thống đốc Nam Kỳ Bonard ký quyết định thành lập nhà tù tại Côn Đảo. Từ đó đến năm 1975, trong suốt 113 năm, nơi đây được chính quyền thực dân Pháp và sau đó là chính quyền Sài Gòn sử dụng để giam giữ, lưu đày những người Việt Nam yêu nước, chiến sĩ cách mạng và những người chống lại chế độ cai trị.\nToàn bộ hệ thống từng có 127 phòng giam, 42 xà lim và 504 phòng giam biệt lập, thường được gọi là “chuồng cọp”. Di tích gồm nhiều công trình như Dinh Chúa đảo, Cầu tàu 914, các trại Phú Hải, Phú Sơn, Phú Thọ, Phú Tường, Phú Bình, khu biệt lập Chuồng Bò, Sở Lò Vôi, Sở Muối, Sở Rẫy, Sở Củi cùng Nghĩa trang Hàng Dương và Nghĩa trang Hàng Keo.\nNhà tù Côn Đảo là chứng tích phản ánh chế độ giam giữ, lao dịch và đàn áp khắc nghiệt đối với tù nhân. Người tù phải sống trong các phòng giam chật hẹp, thiếu ánh sáng, thiếu thức ăn, thuốc men và nước sinh hoạt; đồng thời phải lao động nặng nhọc tại các sở đập đá, nung vôi, làm muối, kéo gỗ, xây dựng cầu đường và khai phá đất đai.\nBên cạnh những mất mát, Nhà tù Côn Đảo còn ghi dấu tinh thần đoàn kết và đấu tranh bất khuất của nhiều thế hệ tù nhân. Trong hoàn cảnh bị giam cầm, các chiến sĩ cách mạng vẫn bí mật thành lập tổ chức Đảng, tổ chức học tập, truyền bá lý luận, xuất bản báo viết tay và đấu tranh đòi cải thiện chế độ nhà tù. Cuối năm 1932, chi bộ cộng sản đầu tiên trong Nhà tù Côn Đảo được thành lập tại Banh I, nay là Trại Phú Hải. Hoạt động giáo dục, rèn luyện và tổ chức đấu tranh đã góp phần biến nhà tù thành một “trường học cách mạng”.\nRạng sáng ngày 1/5/1975, tù chính trị tại Côn Đảo nổi dậy, phá cửa phòng giam, giành quyền làm chủ các trại tù và tự giải phóng. Sự kiện này chấm dứt 113 năm tồn tại của Nhà tù Côn Đảo.\nNgày nay, hệ thống Nhà tù Côn Đảo là nơi lưu giữ những chứng tích quan trọng về lịch sử đấu tranh giành độc lập của dân tộc. Di tích có giá trị đặc biệt trong nghiên cứu lịch sử, tưởng niệm những người đã hy sinh và giáo dục thế hệ trẻ về lòng yêu nước, tinh thần bất khuất, ý chí vượt qua gian khổ và trách nhiệm bảo vệ hòa bình.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/C%E1%BB%95ng%20v%C3%A0o.jpg",
       "emCoBiet": [
         "📅 Thời gian tồn tại: 1862–1975, khoảng 113 năm",
         "🏛️ Hệ thống: 117 phòng giam, 44 xà lim",
@@ -1790,25 +1872,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Di tích lịch sử nhà tù Côn Đảo",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Di tích lịch sử nhà tù Côn Đảo tại Đặc khu Côn Đảo, Thành phố Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_4_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/C%E1%BB%95ng%20v%C3%A0o.jpg",
+        "title": "Cổng vào",
+        "caption": "Cổng vào",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Di tích lịch sử nhà tù Côn Đảo.",
-        "year": "Hiện vật"
+        "id": "mon_4_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/D%C3%A3y%20nh%C3%A0%20giam%20v%E1%BB%9Bi%20c%E1%BB%ADa%20s%E1%BB%95%20th%C3%B4ng%20gi%C3%B3%20nh%E1%BB%8F.jpg",
+        "title": "Dãy nhà giam với cửa sổ thông gió nhỏ",
+        "caption": "Dãy nhà giam với cửa sổ thông gió nhỏ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_4_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/D%C3%A3y%20ph%C3%B2ng%20giam%20v%C3%A0%20h%C3%A0nh%20lang%20%C4%91%C3%A1%20c%E1%BB%95%20k%C3%ADnh.jpg",
+        "title": "Dãy phòng giam và hành lang đá cổ kính",
+        "caption": "Dãy phòng giam và hành lang đá cổ kính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_4_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/H%C3%A0nh%20lang%20v%C3%A0%20c%E1%BB%ADa%20s%E1%BA%AFt%20c%C3%A1c%20ph%C3%B2ng%20giam.jpg",
+        "title": "Hành lang và cửa sắt các phòng giam",
+        "caption": "Hành lang và cửa sắt các phòng giam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_4_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/Khu%20nh%C3%A0%20t%E1%BA%AFm%2C%20b%E1%BB%83%20n%C6%B0%E1%BB%9Bc%20c%E1%BB%95%20ki%E1%BA%BFn%20tr%C3%BAc%20v%C3%B2m%20g%E1%BA%A1ch.jpg",
+        "title": "Khu nhà tắm, bể nước cổ kiến trúc vòm gạch",
+        "caption": "Khu nhà tắm, bể nước cổ kiến trúc vòm gạch",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_4_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/M%C3%B4%20h%C3%ACnh%20t%C3%B9%20nh%C3%A2n%20trong%20ph%C3%B2ng%20giam%20t%E1%BA%ADp%20th%E1%BB%83.jpg",
+        "title": "Mô hình tù nhân trong phòng giam tập thể",
+        "caption": "Mô hình tù nhân trong phòng giam tập thể",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_4_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/M%C3%B4%20ph%E1%BB%8Fng%20c%E1%BA%A3nh%20tra%20t%E1%BA%A5n%20trong%20bi%E1%BB%87t%20giam%2C%20h%E1%BA%A7m%20%C4%91%C3%A1.jpg",
+        "title": "Mô phỏng cảnh tra tấn trong biệt giam, hầm đá",
+        "caption": "Mô phỏng cảnh tra tấn trong biệt giam, hầm đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_4_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/S%C3%A2n%20trong%20gi%E1%BB%AFa%20hai%20d%C3%A3y%20nh%C3%A0%20giam%20v%C3%A0%20b%E1%BB%83%20n%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Sân trong giữa hai dãy nhà giam và bể nước",
+        "caption": "Sân trong giữa hai dãy nhà giam và bể nước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_4_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20%C4%91en%20tr%E1%BA%AFng%20ch%E1%BB%A5p%20to%C3%A0n%20c%E1%BA%A3nh%20Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Ảnh tư liệu đen trắng chụp toàn cảnh Nhà tù Côn Đảo từ trên cao",
+        "caption": "Ảnh tư liệu đen trắng chụp toàn cảnh Nhà tù Côn Đảo từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_4_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20%C4%91en%20tr%E1%BA%AFng%20to%C3%A0n%20c%E1%BA%A3nh%20khu%20bi%E1%BB%87t%20giam%20%20Chu%E1%BB%93ng%20C%E1%BB%8Dp.jpg",
+        "title": "Ảnh tư liệu đen trắng toàn cảnh khu biệt giam  Chuồng Cọp",
+        "caption": "Ảnh tư liệu đen trắng toàn cảnh khu biệt giam  Chuồng Cọp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -2141,7 +2282,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Di tích Chiến thắng Bình Giã ghi dấu Chiến dịch Bình Giã diễn ra từ ngày 2/12/1964 đến ngày 3/1/1965. Đây là chiến dịch tiến công đầu tiên của Quân giải phóng miền Nam có quy mô tương đương cấp sư đoàn trên chiến trường miền Đông Nam Bộ.\nTrong chiến dịch, bộ đội chủ lực Miền phối hợp với lực lượng vũ trang và nhân dân địa phương, lấy ấp Bình Giã làm điểm khơi ngòi, tạo áp lực buộc quân đội Sài Gòn đưa lực lượng cơ động ra khỏi công sự đến ứng cứu. Quân giải phóng tổ chức phục kích, tập kích và vận động tiến công, lần lượt đánh các đơn vị biệt động quân, thủy quân lục chiến và thiết giáp.\nChiến thắng cho thấy lực lượng vũ trang cách mạng miền Nam đã có bước phát triển mới về tổ chức, chỉ huy và khả năng tác chiến tập trung; có thể đánh những đơn vị cơ động được trang bị máy bay trực thăng và xe thiết giáp M113. Chiến dịch góp phần làm thất bại về cơ bản chiến lược “Chiến tranh đặc biệt”, tạo ra bước chuyển quan trọng trong tương quan lực lượng và cục diện chiến trường.\nDi tích còn ghi nhận sự phối hợp giữa bộ đội chủ lực, bộ đội địa phương, dân quân du kích và nhân dân Bà Rịa. Người dân tham gia dẫn đường, tải đạn, cung cấp lương thực, chăm sóc thương binh và bảo đảm hậu cần cho chiến dịch.\nNgày nay, di tích là nơi tưởng niệm những cán bộ, chiến sĩ và nhân dân đã chiến đấu, phục vụ chiến đấu và hy sinh; đồng thời là địa điểm giáo dục truyền thống yêu nước, tinh thần đoàn kết và ý chí đấu tranh giành độc lập dân tộc.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/To%C3%A0n%20c%E1%BA%A3nh%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "📅 Thời gian chiến dịch: 2/12/1964–3/1/1965",
         "🔎 Kéo dài: hơn 1 tháng",
@@ -2284,25 +2425,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo) tại Xã Ngãi Giao, Thành phố Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_5_img_1",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/C%E1%BA%ADn%20c%E1%BA%A3nh%20ph%C3%B9%20%C4%91i%C3%AAu%20t%E1%BA%A1i%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3.jpg",
+        "title": "Cận cảnh phù điêu tại Di tích lịch sử Chiến thắng Bình Giã",
+        "caption": "Cận cảnh phù điêu tại Di tích lịch sử Chiến thắng Bình Giã",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo).",
-        "year": "Hiện vật"
+        "id": "mon_5_img_2",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/C%E1%BA%ADn%20c%E1%BA%A3nh%20%C4%90%C3%A0i%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20v%C3%A0%20h%E1%BB%87%20th%E1%BB%91ng%20ph%C3%B9%20%C4%91i%C3%AAu.jpg",
+        "title": "Cận cảnh Đài Chiến thắng Bình Giã và hệ thống phù điêu",
+        "caption": "Cận cảnh Đài Chiến thắng Bình Giã và hệ thống phù điêu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_5_img_3",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/Ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20%C4%90%C3%A0i%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3.jpg",
+        "title": "Hoạt động tưởng niệm tại Đài Chiến thắng Bình Giã",
+        "caption": "Hoạt động tưởng niệm tại Đài Chiến thắng Bình Giã",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_5_img_4",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/H%C3%ACnh%20%E1%BA%A3nh%20%C4%90%C3%A0i%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20tr%C6%B0%E1%BB%9Bc%20khi%20%C4%91%C6%B0%E1%BB%A3c%20x%C3%A2y%20d%E1%BB%B1ng%2C%20ch%E1%BB%89nh%20trang%20nh%C6%B0%20hi%E1%BB%87n%20nay.jpg",
+        "title": "Hình ảnh Đài Chiến thắng Bình Giã trước khi được xây dựng, chỉnh trang như hiện nay",
+        "caption": "Hình ảnh Đài Chiến thắng Bình Giã trước khi được xây dựng, chỉnh trang như hiện nay",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_5_img_5",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/M%E1%BA%B7t%20ch%C3%ADnh%20%C4%90%C3%A0i%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3.jpg",
+        "title": "Mặt chính Đài Chiến thắng Bình Giã",
+        "caption": "Mặt chính Đài Chiến thắng Bình Giã",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_5_img_6",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/To%C3%A0n%20c%E1%BA%A3nh%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Di tích lịch sử Chiến thắng Bình Giã nhìn từ trên cao",
+        "caption": "Toàn cảnh Di tích lịch sử Chiến thắng Bình Giã nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_5_img_7",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/To%C3%A0n%20c%E1%BA%A3nh%20khu%C3%B4n%20vi%C3%AAn%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh khuôn viên Di tích lịch sử Chiến thắng Bình Giã nhìn từ trên cao",
+        "caption": "Toàn cảnh khuôn viên Di tích lịch sử Chiến thắng Bình Giã nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_5_img_8",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90%C3%A0i%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20nh%C3%ACn%20t%E1%BB%AB%20ch%C3%ADnh%20di%E1%BB%87n.jpg",
+        "title": "Toàn cảnh Đài Chiến thắng Bình Giã nhìn từ chính diện",
+        "caption": "Toàn cảnh Đài Chiến thắng Bình Giã nhìn từ chính diện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_5_img_9",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/%C4%90%C3%A0i%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Đài Chiến thắng Bình Giã nhìn từ trên cao",
+        "caption": "Đài Chiến thắng Bình Giã nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_5_img_10",
+        "src": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/%C4%90%C3%A0i%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20nh%C3%ACn%20t%E1%BB%AB%20tr%E1%BB%A5c%20%C4%91%C6%B0%E1%BB%9Dng%20ch%C3%ADnh.jpg",
+        "title": "Đài Chiến thắng Bình Giã nhìn từ trục đường chính",
+        "caption": "Đài Chiến thắng Bình Giã nhìn từ trục đường chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -2623,7 +2823,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Minh Đạm là căn cứ cách mạng quan trọng của quân và dân địa phương trong hai cuộc kháng chiến chống thực dân Pháp và đế quốc Mỹ. Dãy núi có địa hình hiểm trở, rừng cây rậm rạp, nguồn nước và nhiều hang đá tự nhiên vững chắc, tạo điều kiện cho lực lượng cách mạng xây dựng nơi làm việc, trú quân, chỉ huy, cứu chữa thương binh, sản xuất và bảo quản vũ khí. Tại đây từng đặt các cơ quan như Huyện ủy, Huyện đội, Quân y, Quân giới, Thị xã Cấp, Binh vận và lực lượng Quân báo Trung ương Cục. Mặc dù nhiều lần bị càn quét, ném bom và phong tỏa bằng hàng rào, bãi mìn, căn cứ vẫn được giữ vững, góp phần duy trì và phát triển phong trào cách mạng ở Long Điền – Đất Đỏ và khu vực Bà Rịa – Vũng Tàu. Ngày nay, hệ thống hang căn cứ, đền thờ liệt sĩ và nhà truyền thống là những chứng tích có giá trị trong giáo dục truyền thống yêu nước, tinh thần đoàn kết, kiên cường và sự hy sinh của các thế hệ cha ông",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BB%95ng%20ch%C3%ADnh%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
       "emCoBiet": [
         "📏 Chiều dài dãy núi: hơn 8 km",
         "📏 Độ cao trung bình: trên 200 m",
@@ -2766,25 +2966,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Căn cứ Minh Đạm",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Căn cứ Minh Đạm tại xã Phước Hải, Thành phố Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_6_img_1",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/Bia%20T%E1%BB%95%20qu%E1%BB%91c%20ghi%20c%C3%B4ng%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Bia Tổ quốc ghi công tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Bia Tổ quốc ghi công tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Căn cứ Minh Đạm.",
-        "year": "Hiện vật"
+        "id": "mon_6_img_2",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BA%ADn%20c%E1%BA%A3nh%20nh%C3%A0%20bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Cận cảnh nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Cận cảnh nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_6_img_3",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BB%95ng%20ch%C3%ADnh%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Cổng chính Khu di tích lịch sử Minh Đạm",
+        "caption": "Cổng chính Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_6_img_4",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BB%95ng%20v%C3%A0o%20khu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Cổng vào khu tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Cổng vào khu tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_6_img_5",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BB%95ng%20%E2%80%9CU%E1%BB%91ng%20n%C6%B0%E1%BB%9Bc%20nh%E1%BB%9B%20ngu%E1%BB%93n%E2%80%9D%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Cổng “Uống nước nhớ nguồn” tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Cổng “Uống nước nhớ nguồn” tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_6_img_6",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/Kh%C3%B4ng%20gian%20ki%E1%BA%BFn%20tr%C3%BAc%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m%20b%C3%AAn%20h%E1%BB%93%20sen.jpg",
+        "title": "Không gian kiến trúc Khu di tích lịch sử Minh Đạm bên hồ sen",
+        "caption": "Không gian kiến trúc Khu di tích lịch sử Minh Đạm bên hồ sen",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_6_img_7",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/L%E1%BB%91i%20b%E1%BA%ADc%20thang%20d%E1%BA%ABn%20l%C3%AAn%20khu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Lối bậc thang dẫn lên khu tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Lối bậc thang dẫn lên khu tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_6_img_8",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/Nh%C3%A0%20bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_6_img_9",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/To%C3%A0n%20c%E1%BA%A3nh%20c%C3%A1c%20c%C3%B4ng%20tr%C3%ACnh%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20gi%E1%BB%AFa%20n%C3%BAi%20r%E1%BB%ABng%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Toàn cảnh các công trình tưởng niệm giữa núi rừng Minh Đạm",
+        "caption": "Toàn cảnh các công trình tưởng niệm giữa núi rừng Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_6_img_10",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/%C4%90%E1%BB%81n%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20c%C3%A1c%20anh%20h%C3%B9ng%20li%E1%BB%87t%20s%C4%A9%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Đền tưởng niệm các anh hùng liệt sĩ tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Đền tưởng niệm các anh hùng liệt sĩ tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -3117,7 +3376,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Rừng Sác là căn cứ cách mạng đặc biệt quan trọng ở vùng ven Sài Gòn – Gia Định, nằm trên địa bàn rừng ngập mặn với hệ thống sông, rạch chằng chịt. Trong kháng chiến chống Mỹ, nơi đây là căn cứ của Đặc khu Quân sự Rừng Sác và Đoàn 10 Đặc công Rừng Sác, có nhiệm vụ kiểm soát tuyến vận tải chiến lược trên sông Lòng Tàu, đánh phá kho tàng, bến cảng và các tuyến hậu cần của đối phương. Rừng Sác thường được gọi là “căn cứ nổi” vì phần lớn hoạt động được tổ chức trên vùng sông nước, rừng ngập mặn.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/Bia%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
       "emCoBiet": [
         "📅 Thời gian Đoàn 10 hoạt động: 1966–1975",
         "⚔️ Chiến công: hơn 600 trận đánh",
@@ -3260,25 +3519,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Căn cứ Rừng Sác",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Căn cứ Rừng Sác tại xã Cần Giờ, Thành phố Hồ Chí Minh mới.",
-        "year": "Tư liệu"
+        "id": "mon_7_img_1",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/Bia%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Bia giới thiệu Di tích lịch sử quốc gia Căn cứ Rừng Sác",
+        "caption": "Bia giới thiệu Di tích lịch sử quốc gia Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Căn cứ Rừng Sác.",
-        "year": "Hiện vật"
+        "id": "mon_7_img_2",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/H%E1%BB%87%20th%E1%BB%91ng%20c%E1%BA%A7u%20g%E1%BB%97%20v%C3%A0%20l%C3%A1n%20tr%E1%BA%A1i%20t%E1%BA%A1i%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Hệ thống cầu gỗ và lán trại tại Căn cứ Rừng Sác",
+        "caption": "Hệ thống cầu gỗ và lán trại tại Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_7_img_3",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/Khu%20l%C3%A1n%20tr%E1%BA%A1i%20t%C3%A1i%20hi%E1%BB%87n%20%C4%91%E1%BB%9Di%20s%E1%BB%91ng%20chi%E1%BA%BFn%20s%C4%A9%20t%E1%BA%A1i%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Khu lán trại tái hiện đời sống chiến sĩ tại Căn cứ Rừng Sác",
+        "caption": "Khu lán trại tái hiện đời sống chiến sĩ tại Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_7_img_4",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/L%C3%A1n%20tr%E1%BA%A1i%20gi%E1%BB%AFa%20r%E1%BB%ABng%20ng%E1%BA%ADp%20m%E1%BA%B7n%20t%E1%BA%A1i%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Lán trại giữa rừng ngập mặn tại Căn cứ Rừng Sác",
+        "caption": "Lán trại giữa rừng ngập mặn tại Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_7_img_5",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/T%C3%A1i%20hi%E1%BB%87n%20chi%E1%BA%BFn%20s%C4%A9%20di%20chuy%E1%BB%83n%20b%E1%BA%B1ng%20xu%E1%BB%93ng%20trong%20r%E1%BB%ABng%20ng%E1%BA%ADp%20m%E1%BA%B7n%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Tái hiện chiến sĩ di chuyển bằng xuồng trong rừng ngập mặn Căn cứ Rừng Sác",
+        "caption": "Tái hiện chiến sĩ di chuyển bằng xuồng trong rừng ngập mặn Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_7_img_6",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/T%C3%A1i%20hi%E1%BB%87n%20c%C3%B4ng%20binh%20x%C6%B0%E1%BB%9Fng%20t%E1%BA%A1i%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Tái hiện công binh xưởng tại Căn cứ Rừng Sác",
+        "caption": "Tái hiện công binh xưởng tại Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_7_img_7",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/T%C3%A1i%20hi%E1%BB%87n%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20c%E1%BB%A7a%20chi%E1%BA%BFn%20s%C4%A9%20t%E1%BA%A1i%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Tái hiện hoạt động của chiến sĩ tại Căn cứ Rừng Sác",
+        "caption": "Tái hiện hoạt động của chiến sĩ tại Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_7_img_8",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/T%C3%A1i%20hi%E1%BB%87n%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20n%E1%BA%A5u%20%C4%83n%20c%E1%BB%A7a%20chi%E1%BA%BFn%20s%C4%A9%20t%E1%BA%A1i%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Tái hiện hoạt động nấu ăn của chiến sĩ tại Căn cứ Rừng Sác",
+        "caption": "Tái hiện hoạt động nấu ăn của chiến sĩ tại Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_7_img_9",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/T%C3%A1i%20hi%E1%BB%87n%20l%C3%A1n%20qu%C3%A2n%20y%20t%E1%BA%A1i%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
+        "title": "Tái hiện lán quân y tại Căn cứ Rừng Sác",
+        "caption": "Tái hiện lán quân y tại Căn cứ Rừng Sác",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_7_img_10",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20chi%E1%BA%BFn%20s%C4%A9%20%C4%90%E1%BA%B7c%20c%C3%B4ng%20R%E1%BB%ABng%20S%C3%A1c%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch.jpg",
+        "title": "Tượng đài chiến sĩ Đặc công Rừng Sác tại khu di tích",
+        "caption": "Tượng đài chiến sĩ Đặc công Rừng Sác tại khu di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -3611,7 +3929,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Chiến khu Đ được hình thành vào cuối tháng 2/1946, trong bối cảnh cuộc kháng chiến chống thực dân Pháp bắt đầu lan rộng. Từ một căn cứ ban đầu gồm 5 xã thuộc vùng Tân Uyên, Chiến khu Đ từng bước mở rộng thành một căn cứ địa cách mạng rộng lớn ở miền Đông Nam Bộ. Với địa hình rừng núi hiểm trở, vị trí gần các đô thị và tuyến giao thông chiến lược, Chiến khu Đ vừa là nơi trú quân, xây dựng lực lượng, bảo đảm hậu cần, vừa là bàn đạp tiến công vào các mục tiêu quân sự của đối phương. Trong hai cuộc kháng chiến, nơi đây gắn với nhiều chiến công quan trọng như trận tháp canh cầu Bà Kiên năm 1948, chiến thắng Phước Thành năm 1961, các hoạt động quân sự tại Đồng Xoài, Phước Long và những chiến dịch cuối cùng năm 1975. Chiến khu Đ vì vậy trở thành biểu tượng của tinh thần “Miền Đông gian lao mà anh dũng”, có giá trị đặc biệt trong giáo dục truyền thống yêu nước và lịch sử cách mạng cho thế hệ trẻ.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
       "emCoBiet": [
         "📅 Hình thành: 20/2/1946.",
         "🔎 Là căn cứ địa quan trọng của Khu 7.",
@@ -3754,25 +4072,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Chiến khu Đ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chiến khu Đ tại Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_8_img_1",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+        "title": "Bia tưởng niệm tại khu di tích Chiến khu Đ",
+        "caption": "Bia tưởng niệm tại khu di tích Chiến khu Đ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chiến khu Đ.",
-        "year": "Hiện vật"
+        "id": "mon_8_img_2",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/C%C3%A1c%20c%C3%B4ng%20tr%C3%ACnh%20ph%E1%BB%A5c%20d%E1%BB%B1ng%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+        "title": "Các công trình phục dựng tại khu di tích Chiến khu Đ",
+        "caption": "Các công trình phục dựng tại khu di tích Chiến khu Đ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_8_img_3",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/C%C3%A1c%20l%C3%A1n%20tr%E1%BA%A1i%20ph%E1%BB%A5c%20d%E1%BB%B1ng%20trong%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+        "title": "Các lán trại phục dựng trong khu di tích Chiến khu Đ",
+        "caption": "Các lán trại phục dựng trong khu di tích Chiến khu Đ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_8_img_4",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/H%E1%BB%87%20th%E1%BB%91ng%20l%C3%A1n%20tr%E1%BA%A1i%20ph%E1%BB%A5c%20d%E1%BB%B1ng%20gi%E1%BB%AFa%20r%E1%BB%ABng%20t%E1%BA%A1i%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+        "title": "Hệ thống lán trại phục dựng giữa rừng tại Chiến khu Đ",
+        "caption": "Hệ thống lán trại phục dựng giữa rừng tại Chiến khu Đ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_8_img_5",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/Khu%20nh%C3%A0%20tr%C6%B0ng%20b%C3%A0y%20%E2%80%93%20%C4%91%C3%B3n%20ti%E1%BA%BFp%20t%E1%BA%A1i%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+        "title": "Khu nhà trưng bày – đón tiếp tại di tích Chiến khu Đ",
+        "caption": "Khu nhà trưng bày – đón tiếp tại di tích Chiến khu Đ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_8_img_6",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/Khu%20v%E1%BB%B1c%20tr%C6%B0ng%20b%C3%A0y%2C%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20v%E1%BB%81%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+        "title": "Khu vực trưng bày, giới thiệu về Chiến khu Đ",
+        "caption": "Khu vực trưng bày, giới thiệu về Chiến khu Đ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_8_img_7",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/Kh%C3%B4ng%20gian%20r%E1%BB%ABng%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+        "title": "Không gian rừng tại khu di tích Chiến khu Đ",
+        "caption": "Không gian rừng tại khu di tích Chiến khu Đ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_8_img_8",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/Nh%C3%A0%20h%E1%BB%99i%20tr%C6%B0%E1%BB%9Dng%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+        "title": "Nhà hội trường tại khu di tích Chiến khu Đ",
+        "caption": "Nhà hội trường tại khu di tích Chiến khu Đ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_8_img_9",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20b%E1%BB%99%20%C4%91%E1%BB%99i%20v%E1%BA%ADn%20chuy%E1%BB%83n%20ph%C6%B0%C6%A1ng%20ti%E1%BB%87n%20tr%C3%AAn%20%C4%91%C6%B0%E1%BB%9Dng%20h%C3%A0nh%20qu%C3%A2n.jpg",
+        "title": "Ảnh tư liệu bộ đội vận chuyển phương tiện trên đường hành quân",
+        "caption": "Ảnh tư liệu bộ đội vận chuyển phương tiện trên đường hành quân",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_8_img_10",
+        "src": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20l%E1%BB%B1c%20l%C6%B0%E1%BB%A3ng%20v%C5%A9%20trang%20trong%20th%E1%BB%9Di%20k%E1%BB%B3%20kh%C3%A1ng%20chi%E1%BA%BFn.jpg",
+        "title": "Ảnh tư liệu lực lượng vũ trang trong thời kỳ kháng chiến",
+        "caption": "Ảnh tư liệu lực lượng vũ trang trong thời kỳ kháng chiến",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -4097,7 +4474,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Địa đạo Kim Long được xây dựng trong giai đoạn 1962–1964, ngay trong vùng địch kiểm soát. Đây là một công trình phòng thủ và căn cứ hoạt động của lực lượng cách mạng địa phương trong kháng chiến chống Mỹ. Địa đạo giúp bộ đội, du kích bám trụ địa bàn, bảo vệ cơ sở cách mạng, chống các cuộc càn quét và gom dân, đồng thời duy trì và phát triển lực lượng cách mạng. Di tích góp phần vào Chiến thắng Bình Giã cuối năm 1964 và các hoạt động chống càn trên địa bàn Châu Đức giai đoạn 1966–1967.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/To%C3%A0n%20c%E1%BA%A3nh%20khu%C3%B4n%20vi%C3%AAn%20ph%C3%ADa%20tr%C6%B0%E1%BB%9Bc%20Khu%20di%20t%C3%ADch%20Tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n.jpg",
       "emCoBiet": [
         "📏 Chiều dài: khoảng 2 km",
         "📏 Cửa hầm: 12 cửa, cách nhau khoảng 20 m",
@@ -4240,25 +4617,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Địa đạo Kim Long",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Địa đạo Kim Long tại Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_9_img_1",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/Bia%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia%20Khu%20tr%E1%BA%A1i%20giam.jpg",
+        "title": "Bia đá công nhận Di tích Lịch sử Quốc gia Khu trại giam",
+        "caption": "Bia đá công nhận Di tích Lịch sử Quốc gia Khu trại giam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Địa đạo Kim Long.",
-        "year": "Hiện vật"
+        "id": "mon_9_img_2",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/B%E1%BB%A9c%20%E1%BA%A3nh%20t%C6%B0%20li%E1%BB%87u%20tr%E1%BA%AFng%20%C4%91en%20ghi%20l%E1%BA%A1i%20d%C3%A3y%20nh%C3%A0%20giam%20Ch%E1%BB%A3%20Qu%C3%A1n%20th%E1%BB%9Di%20k%E1%BB%B3%20tr%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Bức ảnh tư liệu trắng đen ghi lại dãy nhà giam Chợ Quán thời kỳ trước",
+        "caption": "Bức ảnh tư liệu trắng đen ghi lại dãy nhà giam Chợ Quán thời kỳ trước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_9_img_3",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/D%C3%A3y%20nh%C3%A0%20giam%20c%E1%BB%95%20k%C3%ADnh%20m%C3%A0u%20v%C3%A0ng%20v%C3%A0%20khu%20v%C6%B0%E1%BB%9Dn%20nh%E1%BB%8F.jpg",
+        "title": "Dãy nhà giam cổ kính màu vàng và khu vườn nhỏ",
+        "caption": "Dãy nhà giam cổ kính màu vàng và khu vườn nhỏ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_9_img_4",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/Gian%20tr%C6%B0ng%20b%C3%A0y%20t%C6%B0%20li%E1%BB%87u%20B%C6%B0%E1%BB%9Bc%20%C4%91%E1%BA%A7u%20tham%20gia%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20c%C3%A1ch%20m%E1%BA%A1ng%20(1922%20-%201929).jpg",
+        "title": "Gian trưng bày tư liệu Bước đầu tham gia hoạt động cách mạng (1922 - 1929)",
+        "caption": "Gian trưng bày tư liệu Bước đầu tham gia hoạt động cách mạng (1922 - 1929)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_9_img_5",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/L%E1%BB%91i%20v%C3%A0o%20Khu%20bi%E1%BB%87t%20giam%20v%C3%A0%20t%E1%BB%A7%20tr%C6%B0ng%20b%C3%A0y%20h%C3%ACnh%20%E1%BA%A3nh%20ch%C3%A2n%20dung.jpg",
+        "title": "Lối vào Khu biệt giam và tủ trưng bày hình ảnh chân dung",
+        "caption": "Lối vào Khu biệt giam và tủ trưng bày hình ảnh chân dung",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_9_img_6",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/Ph%E1%BB%A7%20tr%C6%B0ng%20b%C3%A0y%20t%C6%B0%20li%E1%BB%87u%20l%E1%BB%8Bch%20s%E1%BB%AD%20v%C3%A0%20hi%E1%BB%87n%20v%E1%BA%ADt%20gi%E1%BA%A5y.jpg",
+        "title": "Phủ trưng bày tư liệu lịch sử và hiện vật giấy",
+        "caption": "Phủ trưng bày tư liệu lịch sử và hiện vật giấy",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_9_img_7",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/To%C3%A0n%20c%E1%BA%A3nh%20khu%C3%B4n%20vi%C3%AAn%20ph%C3%ADa%20tr%C6%B0%E1%BB%9Bc%20Khu%20di%20t%C3%ADch%20Tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n.jpg",
+        "title": "Toàn cảnh khuôn viên phía trước Khu di tích Trại giam Bệnh viện Chợ Quán",
+        "caption": "Toàn cảnh khuôn viên phía trước Khu di tích Trại giam Bệnh viện Chợ Quán",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_9_img_8",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/T%C6%B0%E1%BB%A3ng%20b%C3%A1n%20th%C3%A2n%20T%E1%BB%95ng%20B%C3%AD%20th%C6%B0%20Tr%E1%BA%A7n%20Ph%C3%BA%20v%C3%A0%20kho%E1%BA%A3ng%20s%C3%A2n%20ch%C3%ADnh.jpg",
+        "title": "Tượng bán thân Tổng Bí thư Trần Phú và khoảng sân chính",
+        "caption": "Tượng bán thân Tổng Bí thư Trần Phú và khoảng sân chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_9_img_9",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/%C3%94%20ph%C3%B2ng%20giam%20n%C6%A1i%20T%E1%BB%95ng%20B%C3%AD%20th%C6%B0%20Tr%E1%BA%A7n%20Ph%C3%BA%20tr%C3%BAt%20h%C6%A1i%20th%E1%BB%9F%20cu%E1%BB%91i%20c%C3%B9ng.jpg",
+        "title": "Ô phòng giam nơi Tổng Bí thư Trần Phú trút hơi thở cuối cùng",
+        "caption": "Ô phòng giam nơi Tổng Bí thư Trần Phú trút hơi thở cuối cùng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_9_img_10",
+        "src": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20tr%E1%BA%AFng%20%C4%91en%20to%C3%A0n%20c%E1%BA%A3nh%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20x%C6%B0a.jpg",
+        "title": "Ảnh tư liệu trắng đen toàn cảnh Bệnh viện Chợ Quán xưa",
+        "caption": "Ảnh tư liệu trắng đen toàn cảnh Bệnh viện Chợ Quán xưa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -4579,7 +5015,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Địa đạo Phú Thọ Hòa được hình thành từ năm 1947, trên cơ sở những hầm bí mật có từ trước, trong thời kỳ kháng chiến chống thực dân Pháp. Đây là một căn cứ quan trọng ở phía Tây Sài Gòn, giúp cán bộ, lực lượng vũ trang bám đất, bám dân, ém quân và làm bàn đạp tiến công vào nội thành. Địa đạo tiếp tục được sử dụng trong thời kỳ chống Mỹ, thể hiện sự sáng tạo của quân dân địa phương trong xây dựng hệ thống chiến đấu ngay giữa vùng đô thị và vùng địch kiểm soát.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0o%20di%20t%C3%ADch%201834%20Ba%20Th%C3%A1ng%20Hai.jpg",
       "emCoBiet": [
         "📏 Cấu trúc: 2 tầng, sâu khoảng 3–4 m",
         "📏 Lòng hầm: cao khoảng 1 m, rộng 0,6–0,8 m",
@@ -4722,25 +5158,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Địa đạo Phú Thọ Hòa",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Địa đạo Phú Thọ Hòa tại Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_10_img_1",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/Bi%E1%BB%83n%20hi%E1%BB%87u%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Biển hiệu Di tích Lịch sử Quốc gia",
+        "caption": "Biển hiệu Di tích Lịch sử Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Địa đạo Phú Thọ Hòa.",
-        "year": "Hiện vật"
+        "id": "mon_10_img_2",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/C%E1%BA%ADn%20c%E1%BA%A3nh%20mi%E1%BB%87ng%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20t%E1%BB%AB%20tr%C3%AAn%20nh%C3%ACn%20xu%E1%BB%91ng.jpg",
+        "title": "Cận cảnh miệng hầm bí mật từ trên nhìn xuống",
+        "caption": "Cận cảnh miệng hầm bí mật từ trên nhìn xuống",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_10_img_3",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0o%20di%20t%C3%ADch%201834%20Ba%20Th%C3%A1ng%20Hai.jpg",
+        "title": "Cổng chính vào di tích 1834 Ba Tháng Hai",
+        "caption": "Cổng chính vào di tích 1834 Ba Tháng Hai",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_10_img_4",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/Gian%20tr%C6%B0ng%20b%C3%A0y%20hi%E1%BB%87n%20v%E1%BA%ADt%20%26%20t%C6%B0%20li%E1%BB%87u%20l%E1%BB%8Bch%20s%E1%BB%AD.jpg",
+        "title": "Gian trưng bày hiện vật & tư liệu lịch sử",
+        "caption": "Gian trưng bày hiện vật & tư liệu lịch sử",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_10_img_5",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/Gi%C3%A1%20s%C3%BAng%20v%C3%A0%20kho%20%C4%91%E1%BA%A1n%20d%C6%B0%E1%BB%A3c%20b%C3%AAn%20trong%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt.jpg",
+        "title": "Giá súng và kho đạn dược bên trong hầm bí mật",
+        "caption": "Giá súng và kho đạn dược bên trong hầm bí mật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_10_img_6",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/G%C3%B3c%20h%E1%BA%A7m%20ng%E1%BA%A7m%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20t%E1%BB%AB%20b%C3%AAn%20trong.jpg",
+        "title": "Góc hầm ngầm chứa vũ khí từ bên trong",
+        "caption": "Góc hầm ngầm chứa vũ khí từ bên trong",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_10_img_7",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/L%E1%BB%91i%20%C4%91i%20v%C3%A0%20c%C3%A1c%20h%C3%B2m%20ch%E1%BB%A9a%20trong%20l%C3%B2ng%20h%E1%BA%A7m%20ng%E1%BA%A7m.jpg",
+        "title": "Lối đi và các hòm chứa trong lòng hầm ngầm",
+        "caption": "Lối đi và các hòm chứa trong lòng hầm ngầm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_10_img_8",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/Thao%20t%C3%A1c%20m%E1%BB%9F%20n%E1%BA%AFp%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20d%C6%B0%E1%BB%9Bi%20s%C3%A0n%20nh%C3%A0.jpg",
+        "title": "Thao tác mở nắp hầm bí mật dưới sàn nhà",
+        "caption": "Thao tác mở nắp hầm bí mật dưới sàn nhà",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_10_img_9",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/To%C3%A0n%20c%E1%BA%A3nh%20kh%C3%B4ng%20gian%20nh%C3%A0%20tr%C6%B0ng%20b%C3%A0y%20v%C3%A0%20v%E1%BB%8B%20tr%C3%AD%20n%E1%BA%AFp%20h%E1%BA%A7m.jpg",
+        "title": "Toàn cảnh không gian nhà trưng bày và vị trí nắp hầm",
+        "caption": "Toàn cảnh không gian nhà trưng bày và vị trí nắp hầm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_10_img_10",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20v%E1%BB%81%20c%C3%A1c%20chi%E1%BA%BFn%20s%C4%A9%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20S%C3%A0i%20G%C3%B2n.jpg",
+        "title": "Ảnh tư liệu về các chiến sĩ Biệt động Sài Gòn",
+        "caption": "Ảnh tư liệu về các chiến sĩ Biệt động Sài Gòn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -5073,7 +5568,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Là một căn cứ cách mạng quan trọng ở miền Đông Nam Bộ trong hai cuộc kháng chiến. Trong kháng chiến chống Pháp, khu vực này nổi tiếng với Chiến khu An Thành, từng là nơi dừng chân của các cơ quan đầu não kháng chiến như Khu Bộ miền Đông, Xứ ủy Nam Bộ và Đặc khu ủy Sài Gòn - Gia Định. Từ năm 1948, hệ thống địa đạo bắt đầu hình thành; trong kháng chiến chống Mỹ, địa đạo được mở rộng thành một hệ thống liên hoàn, được ví như “làng ngầm”, giúp quân dân 3 xã bám trụ, chiến đấu và bảo vệ lực lượng.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/M%E1%BA%B7t%20ti%E1%BB%81n%20Di%20t%C3%ADch%20l%C6%B0u%20ni%E1%BB%87m%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
       "emCoBiet": [
         "📏 Diện tích khu di tích: khoảng 230.000 m²",
         "🔎 Địa bàn: An Điền – An Tây – Phú An",
@@ -5216,25 +5711,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Địa Đạo Tây Nam ( Tam Giác Sắt)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Địa Đạo Tây Nam ( Tam Giác Sắt) tại Phường Tây Nam, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_11_img_1",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Bi%E1%BB%83n%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia.jpg",
+        "title": "Biển công nhận Di tích lịch sử quốc gia",
+        "caption": "Biển công nhận Di tích lịch sử quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Địa Đạo Tây Nam ( Tam Giác Sắt).",
-        "year": "Hiện vật"
+        "id": "mon_11_img_2",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/B%C3%A0n%20th%E1%BB%9D%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Bàn thờ Chủ tịch Hồ Chí Minh",
+        "caption": "Bàn thờ Chủ tịch Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_11_img_3",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/G%C3%B3c%20tr%C6%B0ng%20b%C3%A0y%20chuy%C3%AAn%20%C4%91%E1%BB%81%20sinh%20ho%E1%BA%A1t%20v%C3%A0%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng.jpg",
+        "title": "Góc trưng bày chuyên đề sinh hoạt và hoạt động",
+        "caption": "Góc trưng bày chuyên đề sinh hoạt và hoạt động",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_11_img_4",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20h%C3%ACnh%20%E1%BA%A3nh%20l%E1%BB%8Bch%20s%E1%BB%AD%20(G%C3%B3c%20h%C3%A0nh%20lang).jpg",
+        "title": "Không gian trưng bày hình ảnh lịch sử (Góc hành lang)",
+        "caption": "Không gian trưng bày hình ảnh lịch sử (Góc hành lang)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_11_img_5",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/L%E1%BB%91i%20v%C3%A0o%20ch%C3%ADnh%20Di%20t%C3%ADch%20s%E1%BB%91%205%20Ch%C3%A2u%20V%C4%83n%20Li%C3%AAm.jpg",
+        "title": "Lối vào chính Di tích số 5 Châu Văn Liêm",
+        "caption": "Lối vào chính Di tích số 5 Châu Văn Liêm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_11_img_6",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/M%E1%BA%A3ng%20t%C6%B0%E1%BB%9Dng%20ch%E1%BB%A7%20%C4%91%E1%BB%81%20T%E1%BB%AB%20%E1%BA%A3nh%20h%C6%B0%E1%BB%9Fng%20gia%20%C4%91%C3%ACnh%2C%20x%C3%A3%20h%E1%BB%99i%20%C4%91%E1%BA%BFn%20nh%E1%BB%AFng%20ho%E1%BA%A1t%20%C4%91%E1%BB%8Dng%20y%C3%AAu%20n%C6%B0%E1%BB%9Bc%20c%E1%BB%A7a%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20-%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Mảng tường chủ đề Từ ảnh hưởng gia đình, xã hội đến những hoạt đọng yêu nước của Nguyễn Tất Thành - Chủ tịch Hồ Chí Minh",
+        "caption": "Mảng tường chủ đề Từ ảnh hưởng gia đình, xã hội đến những hoạt đọng yêu nước của Nguyễn Tất Thành - Chủ tịch Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_11_img_7",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/M%E1%BA%B7t%20ti%E1%BB%81n%20Di%20t%C3%ADch%20l%C6%B0u%20ni%E1%BB%87m%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Mặt tiền Di tích lưu niệm Chủ tịch Hồ Chí Minh",
+        "caption": "Mặt tiền Di tích lưu niệm Chủ tịch Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_11_img_8",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Tranh%203D%20to%C3%A0n%20c%E1%BA%A3nh%20B%E1%BA%BFn%20c%E1%BA%A3ng%20Nh%C3%A0%20R%E1%BB%93ng.jpg",
+        "title": "Tranh 3D toàn cảnh Bến cảng Nhà Rồng",
+        "caption": "Tranh 3D toàn cảnh Bến cảng Nhà Rồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_11_img_9",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Tr%C6%B0ng%20b%C3%A0y%20b%E1%BA%A3n%20%C4%91%E1%BB%93%20S%C3%A0i%20G%C3%B2n%20-%20Ch%E1%BB%A3%20L%E1%BB%9Bn%20x%C6%B0a.jpg",
+        "title": "Trưng bày bản đồ Sài Gòn - Chợ Lớn xưa",
+        "caption": "Trưng bày bản đồ Sài Gòn - Chợ Lớn xưa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_11_img_10",
+        "src": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/T%E1%BB%A7%20k%C3%ADnh%20tr%C6%B0ng%20b%C3%A0y%20trang%20ph%E1%BB%A5c%20v%C3%A0%20b%C3%A0i%20th%C6%A1%20P%C3%A1c%20B%C3%B3.jpg",
+        "title": "Tủ kính trưng bày trang phục và bài thơ Pác Bó",
+        "caption": "Tủ kính trưng bày trang phục và bài thơ Pác Bó",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -5567,7 +6121,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Ba Son là nơi Tôn Đức Thắng từng học nghề, làm việc và hoạt động trong phong trào công nhân vào đầu thế kỷ XX. Đây là một địa điểm quan trọng gắn với quá trình hình thành tư tưởng đấu tranh của người công nhân Tôn Đức Thắng và sự phát triển của phong trào công nhân Sài Gòn. Đặc biệt, nơi đây gắn với cuộc bãi công Ba Son tháng 8/1925, do Công hội bí mật do Tôn Đức Thắng tổ chức và lãnh đạo. Cuộc bãi công vừa đấu tranh về quyền lợi của công nhân, vừa có ý nghĩa chính trị - quốc tế khi làm chậm việc sửa chữa chiến hạm Pháp Jules Michelet chuẩn bị sang đàn áp cách mạng Trung Quốc.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20Tr%E1%BB%A5%20s%E1%BB%9F%20H%C4%90ND%20-%20UBND%20TP.HCM%20ban%20ng%C3%A0y.jpg",
       "emCoBiet": [
         "🔎 Gồm: Ụ tàu nhỏ và Triền nề.",
         "🏅 Xếp hạng quốc gia: 12/8/1993.",
@@ -5710,25 +6264,92 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề tại Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_12_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/B%E1%BA%A3n%20%C4%91%E1%BB%93%20S%C3%A0i%20G%C3%B2n%20n%C4%83m%201900%20trong%20khung%20g%E1%BB%97%20ch%E1%BA%A1m%20kh%E1%BA%AFc.jpg",
+        "title": "Bản đồ Sài Gòn năm 1900 trong khung gỗ chạm khắc",
+        "caption": "Bản đồ Sài Gòn năm 1900 trong khung gỗ chạm khắc",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề.",
-        "year": "Hiện vật"
+        "id": "mon_12_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/B%E1%BB%A9c%20tranh%20v%E1%BA%BD%20ngh%E1%BB%87%20thu%E1%BA%ADt%20tr%C3%AAn%20tr%E1%BA%A7n%20nh%C3%A0.jpg",
+        "title": "Bức tranh vẽ nghệ thuật trên trần nhà",
+        "caption": "Bức tranh vẽ nghệ thuật trên trần nhà",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_12_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%A7u%20thang%20ch%C3%ADnh%20tr%E1%BA%A3i%20th%E1%BA%A3m%20%C4%91%E1%BB%8F%20v%C3%A0%20Qu%E1%BB%91c%20huy%20Vi%E1%BB%87t%20Nam.jpg",
+        "title": "Cầu thang chính trải thảm đỏ và Quốc huy Việt Nam",
+        "caption": "Cầu thang chính trải thảm đỏ và Quốc huy Việt Nam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_12_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%A7u%20thang%20g%E1%BB%97%20%C4%91%C3%B4i%20v%C3%A0%20kh%C3%B4ng%20gian%20s%E1%BA%A3nh%20ch%C3%ADnh.jpg",
+        "title": "Cầu thang gỗ đôi và không gian sảnh chính",
+        "caption": "Cầu thang gỗ đôi và không gian sảnh chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_12_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BB%ADa%20s%E1%BA%AFt%20u%E1%BB%91n%20ngh%E1%BB%87%20thu%E1%BA%ADt%20v%C3%A0%20ch%E1%BA%ADu%20c%C3%A2y%20bonsai.jpg",
+        "title": "Cửa sắt uốn nghệ thuật và chậu cây bonsai",
+        "caption": "Cửa sắt uốn nghệ thuật và chậu cây bonsai",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_12_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Khung%20c%E1%BA%A3nh%20b%C3%AAn%20trong%20kh%C3%A1n%20ph%C3%B2ng%20ch%C3%ADnh.jpg",
+        "title": "Khung cảnh bên trong khán phòng chính",
+        "caption": "Khung cảnh bên trong khán phòng chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_12_img_7",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Ph%C3%B2ng%20ti%E1%BA%BFp%20kh%C3%A1ch%20sang%20tr%E1%BB%8Dng%20b%C3%AAn%20trong%20Tr%E1%BB%A5%20s%E1%BB%9F%20H%C4%90ND%20-%20UBND%20TP.HCM.jpg",
+        "title": "Phòng tiếp khách sang trọng bên trong Trụ sở HĐND - UBND TP.HCM",
+        "caption": "Phòng tiếp khách sang trọng bên trong Trụ sở HĐND - UBND TP.HCM",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_12_img_8",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Ph%C3%B9%20%C4%91i%C3%AAu%20hai%20thi%C3%AAn%20th%E1%BA%A7n%20nh%E1%BB%8F%20%C4%91%E1%BA%AFp%20n%E1%BB%95i%20m%E1%BA%A1%20v%C3%A0ng.jpg",
+        "title": "Phù điêu hai thiên thần nhỏ đắp nổi mạ vàng",
+        "caption": "Phù điêu hai thiên thần nhỏ đắp nổi mạ vàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_12_img_9",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20Tr%E1%BB%A5%20s%E1%BB%9F%20H%C4%90ND%20-%20UBND%20TP.HCM%20ban%20ng%C3%A0y.jpg",
+        "title": "Toàn cảnh mặt tiền Trụ sở HĐND - UBND TP.HCM ban ngày",
+        "caption": "Toàn cảnh mặt tiền Trụ sở HĐND - UBND TP.HCM ban ngày",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_12_img_10",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Tr%E1%BB%A5%20s%E1%BB%9F%20H%C4%90ND%20-%20UBND%20TP.HCM%20l%C3%AAn%20%C4%91%C3%A8n%20ban%20%C4%91%C3%AAm.jpg",
+        "title": "Trụ sở HĐND - UBND TP.HCM lên đèn ban đêm",
+        "caption": "Trụ sở HĐND - UBND TP.HCM lên đèn ban đêm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_12_img_11",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/T%C6%B0%E1%BB%A3ng%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh%20tr%C6%B0%E1%BB%9Bc%20Tr%E1%BB%A5%20s%E1%BB%9F%20H%C4%90ND%20-%20UBND%20TP.HCM.jpg",
+        "title": "Tượng Chủ tịch Hồ Chí Minh trước Trụ sở HĐND - UBND TP.HCM",
+        "caption": "Tượng Chủ tịch Hồ Chí Minh trước Trụ sở HĐND - UBND TP.HCM",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -6069,7 +6690,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Di tích là một cơ sở bí mật của lực lượng Biệt động Sài Gòn ngay giữa nội đô, được xây dựng nhằm cất giấu vũ khí, thuốc nổ và đạn dược phục vụ hoạt động cách mạng. Vị trí căn nhà đặc biệt quan trọng vì nằm gần nhiều cơ quan quân sự và cơ quan đầu não của chính quyền Sài Gòn. Căn hầm thể hiện nghệ thuật xây dựng cơ sở bí mật, ngụy trang, bảo quản và vận chuyển vũ khí trong lòng đô thị, góp phần chuẩn bị lực lượng và vũ khí cho các hoạt động chiến đấu tại Sài Gòn.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%A1n%20ph%C3%B2ng%20to%C3%A0n%20c%E1%BA%A3nh%20g%C3%B3c%20r%E1%BB%99ng.jpg",
       "emCoBiet": [
         "📏 Địa chỉ lịch sử: 183/4 đường Ba Tháng Hai.",
         "🔎 Gắn với lực lượng Biệt động Sài Gòn.",
@@ -6212,25 +6833,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ tại Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_13_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/G%C3%B3c%20nghi%C3%AAng%20Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20lung%20linh%20v%E1%BB%81%20%C4%91%C3%AAm.jpg",
+        "title": "Góc nghiêng Nhà hát Thành phố lung linh về đêm",
+        "caption": "Góc nghiêng Nhà hát Thành phố lung linh về đêm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ.",
-        "year": "Hiện vật"
+        "id": "mon_13_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Khung%20c%E1%BA%A3nh%20kh%C3%A1n%20ph%C3%B2ng%20nh%C3%ACn%20th%E1%BA%B3ng%20v%E1%BB%81%20s%C3%A2n%20kh%E1%BA%A5u.jpg",
+        "title": "Khung cảnh khán phòng nhìn thẳng về sân khấu",
+        "caption": "Khung cảnh khán phòng nhìn thẳng về sân khấu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_13_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%A1n%20ph%C3%B2ng%20to%C3%A0n%20c%E1%BA%A3nh%20g%C3%B3c%20r%E1%BB%99ng.jpg",
+        "title": "Khán phòng toàn cảnh góc rộng",
+        "caption": "Khán phòng toàn cảnh góc rộng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_13_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20b%C3%AAn%20Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20r%E1%BB%B1c%20r%E1%BB%A1%20l%C3%AAn%20%C4%91%C3%A8n%20ban%20%C4%91%C3%AAm.jpg",
+        "title": "Mặt bên Nhà hát Thành phố rực rỡ lên đèn ban đêm",
+        "caption": "Mặt bên Nhà hát Thành phố rực rỡ lên đèn ban đêm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_13_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20ti%E1%BB%81n%20ch%C3%ADnh%20di%E1%BB%87n%20Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91.jpg",
+        "title": "Mặt tiền chính diện Nhà hát Thành phố",
+        "caption": "Mặt tiền chính diện Nhà hát Thành phố",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_13_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20ti%E1%BB%81n%20Nh%C3%A0%20h%C3%A1t%20th%E1%BB%9Di%20k%E1%BB%B3%201920%20%E2%80%93%201929.jpg",
+        "title": "Mặt tiền Nhà hát thời kỳ 1920 – 1929",
+        "caption": "Mặt tiền Nhà hát thời kỳ 1920 – 1929",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_13_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Nh%C3%A0%20h%C3%A1t%20th%E1%BB%9Di%20k%E1%BB%B3%20l%C3%A0m%20Tr%E1%BB%A5%20s%E1%BB%9F%20Qu%E1%BB%91c%20h%E1%BB%99i%20(1955%20%E2%80%93%201975).jpg",
+        "title": "Nhà hát thời kỳ làm Trụ sở Quốc hội (1955 – 1975)",
+        "caption": "Nhà hát thời kỳ làm Trụ sở Quốc hội (1955 – 1975)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_13_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/To%C3%A0n%20c%E1%BA%A3nh%20kh%C3%A1n%20ph%C3%B2ng%20nh%C3%ACn%20t%E1%BB%AB%20t%E1%BA%A7ng%20ban%20c%C3%B4ng%20trung%20t%C3%A2m.jpg",
+        "title": "Toàn cảnh khán phòng nhìn từ tầng ban công trung tâm",
+        "caption": "Toàn cảnh khán phòng nhìn từ tầng ban công trung tâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_13_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/To%C3%A0n%20c%E1%BA%A3nh%20Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Nhà hát Thành phố nhìn từ trên cao",
+        "caption": "Toàn cảnh Nhà hát Thành phố nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_13_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Tr%E1%BA%A7n%20nh%C3%A0%20v%C3%A0%20v%C3%B2m%20m%C3%A1i%20kh%C3%A1n%20ph%C3%B2ng%20nh%C3%ACn%20t%E1%BB%AB%20d%C6%B0%E1%BB%9Bi%20l%C3%AAn.jpg",
+        "title": "Trần nhà và vòm mái khán phòng nhìn từ dưới lên",
+        "caption": "Trần nhà và vòm mái khán phòng nhìn từ dưới lên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -6575,7 +7255,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Khu trại giam Bệnh viện Chợ Quán là chứng tích về chế độ giam giữ, đàn áp những người yêu nước và chiến sĩ cách mạng của thực dân Pháp. Khu trại nằm trong Bệnh viện Chợ Quán, nơi thực dân Pháp sử dụng khu điều trị bệnh tâm thần để giam giữ và khai thác thông tin từ các tù nhân. Đặc biệt, đây là nơi đồng chí Trần Phú – Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương – bị giam giữ và hy sinh ngày 6/9/1931. Di tích đồng thời gắn với nhiều cán bộ, chiến sĩ cách mạng bị giam giữ trong các thời kỳ kháng chiến, có giá trị lớn trong giáo dục truyền thống yêu nước và ý chí đấu tranh.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20to%C3%A0n%20c%E1%BA%A3nh%20T%C3%B2a%20%C3%A1n%20Nh%C3%A2n%20d%C3%A2n%20TP.HCM.jpg",
       "emCoBiet": [
         "📅 Bệnh viện hình thành từ năm 1862.",
         "📅 Đồng chí Trần Phú hy sinh tại đây ngày 6/9/1931.",
@@ -6718,25 +7398,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh tại Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_14_img_1",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%A7u%20thang%20xo%E1%BA%AFn%20%E1%BB%91c%20b%E1%BA%B1ng%20g%E1%BB%97.jpg",
+        "title": "Cầu thang xoắn ốc bằng gỗ",
+        "caption": "Cầu thang xoắn ốc bằng gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh.",
-        "year": "Hiện vật"
+        "id": "mon_14_img_2",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20to%C3%A0n%20c%E1%BA%A3nh%20T%C3%B2a%20%C3%A1n%20Nh%C3%A2n%20d%C3%A2n%20TP.HCM.jpg",
+        "title": "Cổng chính và toàn cảnh Tòa án Nhân dân TP.HCM",
+        "caption": "Cổng chính và toàn cảnh Tòa án Nhân dân TP.HCM",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_14_img_3",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Gian%20th%E1%BB%9D%20B%C3%A1c%20H%E1%BB%93%20b%C3%AAn%20trong%20t%C3%B2a%20nh%C3%A0.jpg",
+        "title": "Gian thờ Bác Hồ bên trong tòa nhà",
+        "caption": "Gian thờ Bác Hồ bên trong tòa nhà",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_14_img_4",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Gi%E1%BA%BFng%20tr%E1%BB%9Di%20v%C3%A0%20%C4%91%C3%A0i%20phun%20n%C6%B0%E1%BB%9Bc%20b%C3%AAn%20trong%20t%C3%B2a%20nh%C3%A0.jpg",
+        "title": "Giếng trời và đài phun nước bên trong tòa nhà",
+        "caption": "Giếng trời và đài phun nước bên trong tòa nhà",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_14_img_5",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20ti%E1%BB%81n%20T%C3%B2a%20%C3%A1n%20Nh%C3%A2n%20d%C3%A2n%20TP.HCM.jpg",
+        "title": "Mặt tiền Tòa án Nhân dân TP.HCM",
+        "caption": "Mặt tiền Tòa án Nhân dân TP.HCM",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_14_img_6",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Ph%C3%B2ng%20x%E1%BB%AD%20%C3%A1n%20ch%C3%ADnh%20b%C3%AAn%20trong%20T%C3%B2a%20%C3%A1n.jpg",
+        "title": "Phòng xử án chính bên trong Tòa án",
+        "caption": "Phòng xử án chính bên trong Tòa án",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_14_img_7",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/S%E1%BA%A3nh%20ch%C3%ADnh%20v%C3%A0%20c%E1%BA%A7u%20thang%20T%C3%B2a%20%C3%A1n%20Nh%C3%A2n%20d%C3%A2n%20TP.HCM.jpg",
+        "title": "Sảnh chính và cầu thang Tòa án Nhân dân TP.HCM",
+        "caption": "Sảnh chính và cầu thang Tòa án Nhân dân TP.HCM",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_14_img_8",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/To%C3%A0n%20c%E1%BA%A3nh%20T%C3%B2a%20%C3%A1n%20Nh%C3%A2n%20d%C3%A2n%20TP.HCM%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Tòa án Nhân dân TP.HCM nhìn từ trên cao",
+        "caption": "Toàn cảnh Tòa án Nhân dân TP.HCM nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_14_img_9",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/To%C3%A0n%20c%E1%BA%A3nh%20T%C3%B2a%20%C3%A1n%20Nh%C3%A2n%20d%C3%A2n%20TP.HCM%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Tòa án Nhân dân TP.HCM từ trên cao",
+        "caption": "Toàn cảnh Tòa án Nhân dân TP.HCM từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_14_img_10",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Tr%E1%BA%A7n%20nh%C3%A0%20v%C3%A0%20hoa%20v%C4%83n%20ki%E1%BA%BFn%20tr%C3%BAc%20s%E1%BA%A3nh%20ch%C3%ADnh.jpg",
+        "title": "Trần nhà và hoa văn kiến trúc sảnh chính",
+        "caption": "Trần nhà và hoa văn kiến trúc sảnh chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -7069,7 +7808,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Ngã Ba Giồng là một trong những địa điểm lịch sử quan trọng gắn với Khởi nghĩa Nam Kỳ năm 1940 và cuộc đàn áp phong trào cách mạng của thực dân Pháp sau khởi nghĩa. Đây là trường bắn thứ ba do thực dân Pháp lập tại Hóc Môn để xử tử cán bộ cách mạng và đồng bào yêu nước. Đặc biệt, nơi đây gắn với sự hy sinh của nhiều lãnh đạo cao cấp của Đảng. Di tích có giá trị lớn trong việc nghiên cứu lịch sử Nam Kỳ khởi nghĩa, phong trào cách mạng ở Hóc Môn – Bà Điểm và giáo dục truyền thống yêu nước cho thế hệ trẻ.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/C%E1%BB%95ng%20ch%C3%ADnh%20Khu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ng%C3%A3%20Ba%20Gi%E1%BB%93ng.jpg",
       "emCoBiet": [
         "📏 Diện tích khu đất: hơn 10 ha.",
         "📅 Gắn với Khởi nghĩa Nam Kỳ ngày 23/11/1940.",
@@ -7212,25 +7951,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Ngã Ba Giồng",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Ngã Ba Giồng tại Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_15_img_1",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/Bi%E1%BB%83n%20t%C3%AAn%20di%20t%C3%ADch%20v%C3%A0%20h%E1%BB%93%20n%C6%B0%E1%BB%9Bc%20c%E1%BA%A3nh%20quan.jpg",
+        "title": "Biển tên di tích và hồ nước cảnh quan",
+        "caption": "Biển tên di tích và hồ nước cảnh quan",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Ngã Ba Giồng.",
-        "year": "Hiện vật"
+        "id": "mon_15_img_2",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/B%E1%BA%A3ng%20v%C4%83n%20bia%20l%E1%BB%8Bch%20s%E1%BB%AD%20tr%C6%B0%E1%BB%9Bc%20%C4%90%E1%BB%81n%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m.jpg",
+        "title": "Bảng văn bia lịch sử trước Đền tưởng niệm",
+        "caption": "Bảng văn bia lịch sử trước Đền tưởng niệm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_15_img_3",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/B%E1%BB%A9c%20ph%C3%B9%20%C4%91i%C3%AAu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20v%C3%A0%20l%C6%B0%20h%C6%B0%C6%A1ng%20l%E1%BB%9Bn.jpg",
+        "title": "Bức phù điêu tưởng niệm và lư hương lớn",
+        "caption": "Bức phù điêu tưởng niệm và lư hương lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_15_img_4",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/C%E1%BB%95ng%20ch%C3%ADnh%20Khu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ng%C3%A3%20Ba%20Gi%E1%BB%93ng.jpg",
+        "title": "Cổng chính Khu tưởng niệm Ngã Ba Giồng",
+        "caption": "Cổng chính Khu tưởng niệm Ngã Ba Giồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_15_img_5",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/C%E1%BB%A5m%20t%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%205%20t%C6%B0%E1%BB%A3ng%20nam%20n%E1%BB%AF%20chi%E1%BA%BFn%20s%C4%A9.jpg",
+        "title": "Cụm tượng đài 5 tượng nam nữ chiến sĩ",
+        "caption": "Cụm tượng đài 5 tượng nam nữ chiến sĩ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_15_img_6",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/L%C6%B0%20h%C6%B0%C6%A1ng%20v%C3%A0%20%C4%90%E1%BB%81n%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ng%C3%A3%20Ba%20Gi%E1%BB%93ng.jpg",
+        "title": "Lư hương và Đền tưởng niệm Ngã Ba Giồng",
+        "caption": "Lư hương và Đền tưởng niệm Ngã Ba Giồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_15_img_7",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/M%E1%BA%B7t%20ti%E1%BB%81n%20%C4%90%E1%BB%81n%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ng%C3%A3%20Ba%20Gi%E1%BB%93ng.jpg",
+        "title": "Mặt tiền Đền tưởng niệm Ngã Ba Giồng",
+        "caption": "Mặt tiền Đền tưởng niệm Ngã Ba Giồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_15_img_8",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/To%C3%A0n%20c%E1%BA%A3nh%20Khu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ng%C3%A3%20Ba%20Gi%E1%BB%93ng%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Khu tưởng niệm Ngã Ba Giồng từ trên cao",
+        "caption": "Toàn cảnh Khu tưởng niệm Ngã Ba Giồng từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_15_img_9",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/To%C3%A0n%20c%E1%BA%A3nh%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn%20v%C3%A0%20C%E1%BB%A5m%20t%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh đường dẫn và Cụm tượng đài từ trên cao",
+        "caption": "Toàn cảnh đường dẫn và Cụm tượng đài từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_15_img_10",
+        "src": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20chi%E1%BA%BFn%20s%C4%A9%20%20nh%C3%A2n%20d%C3%A2n%20Ng%C3%A3%20Ba%20Gi%E1%BB%93ng.jpg",
+        "title": "Tượng đài chiến sĩ  nhân dân Ngã Ba Giồng",
+        "caption": "Tượng đài chiến sĩ  nhân dân Ngã Ba Giồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -7555,7 +8353,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà lưu niệm là ngôi nhà gắn với thời thơ ấu và những năm đầu hoạt động cách mạng của Võ Thị Sáu tại quê hương Đất Đỏ. Gia đình bà thuê ngôi nhà này từ năm 1939, khi Võ Thị Sáu còn nhỏ. Di tích giúp lưu giữ không gian sống, ký ức gia đình và quá trình hình thành tinh thần yêu nước của nữ anh hùng; đồng thời có giá trị lớn trong giáo dục truyền thống cách mạng, lòng yêu nước và lý tưởng sống cho thế hệ trẻ.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%E2%80%93%20v%C4%83n%20h%C3%B3a%20c%E1%BA%A5p%20qu%E1%BB%91c%20gia%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
       "emCoBiet": [
         "🔎 Gắn với quê hương và tuổi thơ Võ Thị Sáu.",
         "📅 Võ Thị Sáu sinh năm 1933.",
@@ -7698,25 +8496,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Nhà lưu niệm Võ Thị Sáu",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà lưu niệm Võ Thị Sáu tại Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_16_img_1",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/Ch%C3%B2i%20g%C3%A1c%20trong%20khu%C3%B4n%20vi%C3%AAn%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+        "title": "Chòi gác trong khuôn viên Di tích Bót Dây Thép",
+        "caption": "Chòi gác trong khuôn viên Di tích Bót Dây Thép",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà lưu niệm Võ Thị Sáu.",
-        "year": "Hiện vật"
+        "id": "mon_16_img_2",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/C%E1%BA%ADn%20c%E1%BA%A3nh%20ki%E1%BA%BFn%20tr%C3%BAc%20t%E1%BA%A7ng%20tr%C3%AAn%20c%E1%BB%A7a%20t%C3%B2a%20nh%C3%A0%20ch%C3%ADnh%20t%E1%BA%A1i%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+        "title": "Cận cảnh kiến trúc tầng trên của tòa nhà chính tại Di tích Bót Dây Thép",
+        "caption": "Cận cảnh kiến trúc tầng trên của tòa nhà chính tại Di tích Bót Dây Thép",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_16_img_3",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%E2%80%93%20v%C4%83n%20h%C3%B3a%20c%E1%BA%A5p%20qu%E1%BB%91c%20gia%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+        "title": "Cổng vào Di tích lịch sử – văn hóa cấp quốc gia Bót Dây Thép",
+        "caption": "Cổng vào Di tích lịch sử – văn hóa cấp quốc gia Bót Dây Thép",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_16_img_4",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/D%E1%BA%A5u%20t%C3%ADch%20h%E1%BA%A7m%20giam%20b%C3%AAn%20trong%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+        "title": "Dấu tích hầm giam bên trong Di tích Bót Dây Thép",
+        "caption": "Dấu tích hầm giam bên trong Di tích Bót Dây Thép",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_16_img_5",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/D%E1%BA%A5u%20t%C3%ADch%20h%E1%BA%A7m%20giam%20t%E1%BA%A1i%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20tr%C3%AAn.jpg",
+        "title": "Dấu tích hầm giam tại Di tích Bót Dây Thép nhìn từ phía trên",
+        "caption": "Dấu tích hầm giam tại Di tích Bót Dây Thép nhìn từ phía trên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_16_img_6",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/Hi%E1%BB%87n%20v%E1%BA%ADt%20%C4%91%C6%B0%E1%BB%A3c%20l%C6%B0u%20gi%E1%BB%AF%20v%C3%A0%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+        "title": "Hiện vật được lưu giữ và trưng bày tại Di tích Bót Dây Thép",
+        "caption": "Hiện vật được lưu giữ và trưng bày tại Di tích Bót Dây Thép",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_16_img_7",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/Ki%E1%BA%BFn%20tr%C3%BAc%20t%C3%B2a%20nh%C3%A0%20ch%C3%ADnh%20t%E1%BA%A1i%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+        "title": "Kiến trúc tòa nhà chính tại Di tích Bót Dây Thép",
+        "caption": "Kiến trúc tòa nhà chính tại Di tích Bót Dây Thép",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_16_img_8",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/M%E1%BA%B7t%20ch%C3%ADnh%20t%C3%B2a%20nh%C3%A0%20t%E1%BA%A1i%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+        "title": "Mặt chính tòa nhà tại Di tích Bót Dây Thép",
+        "caption": "Mặt chính tòa nhà tại Di tích Bót Dây Thép",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_16_img_9",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/T%C3%B2a%20nh%C3%A0%20ch%C3%ADnh%20c%E1%BB%A7a%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p%20nh%C3%ACn%20t%E1%BB%AB%20b%C3%AAn%20h%C3%B4ng.jpg",
+        "title": "Tòa nhà chính của Di tích Bót Dây Thép nhìn từ bên hông",
+        "caption": "Tòa nhà chính của Di tích Bót Dây Thép nhìn từ bên hông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_16_img_10",
+        "src": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/Xe%20k%C3%A9o%20%C4%91%C6%B0%E1%BB%A3c%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+        "title": "Xe kéo được trưng bày tại Di tích Bót Dây Thép",
+        "caption": "Xe kéo được trưng bày tại Di tích Bót Dây Thép",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -8029,7 +8886,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà tù Phú Lợi được xây dựng năm 1957, là nơi giam giữ các chiến sĩ cách mạng và người yêu nước trong thời kỳ chính quyền Ngô Đình Diệm. Trong thời gian tồn tại 1957–1964, nhà tù trở thành một trong những nơi giam giữ tù nhân chính trị lớn ở miền Nam. Di tích phản ánh chế độ lao tù khắc nghiệt, đồng thời ghi dấu tinh thần đấu tranh, ý chí kiên cường của các tù nhân cách mạng. Đặc biệt, sự kiện “Phú Lợi căm thù” ngày 1/12/1958 đã biến nơi đây thành một chứng tích lịch sử quan trọng của cuộc đấu tranh chống chế độ lao tù và trở thành biểu tượng giáo dục truyền thống cách mạng.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Ki%E1%BA%BFn%20tr%C3%BAc%20m%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20di%20t%C3%ADch.jpg",
       "emCoBiet": [
         "📅 Xây dựng: năm 1957",
         "📏 Diện tích khu di tích: khoảng 77.028 m²",
@@ -8172,25 +9029,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Nhà tù Phú Lợi (căng Phú Lợi)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà tù Phú Lợi (căng Phú Lợi) tại Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_17_img_1",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Bi%E1%BB%83n%20hi%E1%BB%87u%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Biển hiệu Di tích Lịch sử Quốc gia",
+        "caption": "Biển hiệu Di tích Lịch sử Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà tù Phú Lợi (căng Phú Lợi).",
-        "year": "Hiện vật"
+        "id": "mon_17_img_2",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/B%C3%A0n%20l%C3%A0m%20vi%E1%BB%87c%20v%C3%A0%20hi%E1%BB%87n%20v%E1%BA%ADt%20n%C3%B3n%20c%E1%BB%91i.jpg",
+        "title": "Bàn làm việc và hiện vật nón cối",
+        "caption": "Bàn làm việc và hiện vật nón cối",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_17_img_3",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/C%E1%BA%ADn%20c%E1%BA%A3nh%20n%E1%BA%AFp%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20m%E1%BB%9F%20tr%C3%AAn%20s%C3%A0n.jpg",
+        "title": "Cận cảnh nắp hầm bí mật mở trên sàn",
+        "caption": "Cận cảnh nắp hầm bí mật mở trên sàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_17_img_4",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Hi%E1%BB%87n%20v%E1%BA%ADt%20m%C3%A1y%20may%20Singer%20c%E1%BB%95.jpg",
+        "title": "Hiện vật máy may Singer cổ",
+        "caption": "Hiện vật máy may Singer cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_17_img_5",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Khay%20ch%E1%BB%AF%20in%20b%E1%BA%B1ng%20kim%20lo%E1%BA%A1i.jpg",
+        "title": "Khay chữ in bằng kim loại",
+        "caption": "Khay chữ in bằng kim loại",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_17_img_6",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Ki%E1%BA%BFn%20tr%C3%BAc%20m%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20di%20t%C3%ADch.jpg",
+        "title": "Kiến trúc mặt tiền căn nhà di tích",
+        "caption": "Kiến trúc mặt tiền căn nhà di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_17_img_7",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/To%C3%A0n%20c%E1%BA%A3nh%20kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A7ng%20tr%E1%BB%87t.jpg",
+        "title": "Toàn cảnh không gian trưng bày tầng trệt",
+        "caption": "Toàn cảnh không gian trưng bày tầng trệt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_17_img_8",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Tranh%20ch%C3%A2n%20dung%20c%C3%A1n%20b%E1%BB%99%20Ban%20Hoa%20v%E1%BA%ADn.jpg",
+        "title": "Tranh chân dung cán bộ Ban Hoa vận",
+        "caption": "Tranh chân dung cán bộ Ban Hoa vận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_17_img_9",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Tr%C6%B0ng%20b%C3%A0y%20b%C3%A1o%20Gi%E1%BA%A3i%20Ph%C3%B3ng%20l%E1%BB%8Bch%20s%E1%BB%AD.jpg",
+        "title": "Trưng bày báo Giải Phóng lịch sử",
+        "caption": "Trưng bày báo Giải Phóng lịch sử",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_17_img_10",
+        "src": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20qu%C3%A1%20tr%C3%ACnh%20in%20%E1%BA%A5n%20b%C3%A1o%20ch%C3%AD.jpg",
+        "title": "Ảnh tư liệu quá trình in ấn báo chí",
+        "caption": "Ảnh tư liệu quá trình in ấn báo chí",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -8505,7 +9421,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đây là nơi Nguyễn Tất Thành sống khoảng 9 tháng, từ tháng 9/1910 đến ngày 4/6/1911, trong thời gian chuẩn bị cho hành trình ra nước ngoài tìm con đường cứu nước. Tại đây, Người tìm hiểu đời sống của nhân dân và công nhân Nam Kỳ, đồng thời làm việc, học hỏi và chuẩn bị về vật chất, tinh thần cho chuyến đi. Ngôi nhà là một địa điểm quan trọng gắn với giai đoạn trực tiếp chuẩn bị trước khi Người rời Việt Nam ngày 5/6/1911.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ: số 5 Châu Văn Liêm",
         "🔎 Nguyễn Tất Thành lưu trú: khoảng 9/1910–6/1911",
@@ -8648,25 +9564,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước tại Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_18_img_1",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/B%E1%BA%A3ng%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20h%C3%ACnh%20%E1%BA%A3nh%20v%C3%A0%20nh%C3%A2n%20v%E1%BA%ADt%20l%E1%BB%8Bch%20s%E1%BB%AD%20t%E1%BA%A1i%20di%20t%C3%ADch.jpg",
+        "title": "Bảng giới thiệu hình ảnh và nhân vật lịch sử tại di tích",
+        "caption": "Bảng giới thiệu hình ảnh và nhân vật lịch sử tại di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước.",
-        "year": "Hiện vật"
+        "id": "mon_18_img_2",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
+        "title": "Cổng vào Di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
+        "caption": "Cổng vào Di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_18_img_3",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/D%E1%BB%A5ng%20c%E1%BB%A5%20ph%E1%BB%A5c%20v%E1%BB%A5%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20in%20%E1%BA%A5n%20%C4%91%C6%B0%E1%BB%A3c%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20di%20t%C3%ADch.jpg",
+        "title": "Dụng cụ phục vụ hoạt động in ấn được trưng bày tại di tích",
+        "caption": "Dụng cụ phục vụ hoạt động in ấn được trưng bày tại di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_18_img_4",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/Hi%E1%BB%87n%20v%E1%BA%ADt%20v%C3%A0%20d%E1%BB%A5ng%20c%E1%BB%A5%20in%20%E1%BA%A5n%20%C4%91%C6%B0%E1%BB%A3c%20tr%C6%B0ng%20b%C3%A0y%20trong%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt.jpg",
+        "title": "Hiện vật và dụng cụ in ấn được trưng bày trong hầm bí mật",
+        "caption": "Hiện vật và dụng cụ in ấn được trưng bày trong hầm bí mật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_18_img_5",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/H%C3%ACnh%20%E1%BA%A3nh%20c%C3%A1c%20th%C3%A0nh%20vi%C3%AAn%20v%C3%A0%20nh%C3%A2n%20v%E1%BA%ADt%20g%E1%BA%AFn%20v%E1%BB%9Bi%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
+        "title": "Hình ảnh các thành viên và nhân vật gắn với Hội Ủng hộ Vệ quốc đoàn",
+        "caption": "Hình ảnh các thành viên và nhân vật gắn với Hội Ủng hộ Vệ quốc đoàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_18_img_6",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20%E2%80%93%20n%C6%A1i%20di%E1%BB%85n%20ra%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20in%20%E1%BA%A5n%20t%C3%A0i%20li%E1%BB%87u.jpg",
+        "title": "Hầm bí mật – nơi diễn ra hoạt động in ấn tài liệu",
+        "caption": "Hầm bí mật – nơi diễn ra hoạt động in ấn tài liệu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_18_img_7",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20hi%E1%BB%87n%20v%E1%BA%ADt%20t%E1%BA%A1i%20Di%20t%C3%ADch%20C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
+        "title": "Không gian trưng bày hiện vật tại Di tích Cơ sở in ấn Hội Ủng hộ Vệ quốc đoàn",
+        "caption": "Không gian trưng bày hiện vật tại Di tích Cơ sở in ấn Hội Ủng hộ Vệ quốc đoàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_18_img_8",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/Kh%C3%B4ng%20gian%20t%C3%A1i%20hi%E1%BB%87n%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20in%20%E1%BA%A5n%20trong%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt.jpg",
+        "title": "Không gian tái hiện hoạt động in ấn trong hầm bí mật",
+        "caption": "Không gian tái hiện hoạt động in ấn trong hầm bí mật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_18_img_9",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/L%E1%BB%91i%20v%C3%A0o%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20c%E1%BB%A7a%20C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
+        "title": "Lối vào hầm bí mật của Cơ sở in ấn Hội Ủng hộ Vệ quốc đoàn",
+        "caption": "Lối vào hầm bí mật của Cơ sở in ấn Hội Ủng hộ Vệ quốc đoàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_18_img_10",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/S%C6%A1%20%C4%91%E1%BB%93%20c%E1%BA%A5u%20tr%C3%BAc%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20c%E1%BB%A7a%20C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
+        "title": "Sơ đồ cấu trúc hầm bí mật của Cơ sở in ấn Hội Ủng hộ Vệ quốc đoàn",
+        "caption": "Sơ đồ cấu trúc hầm bí mật của Cơ sở in ấn Hội Ủng hộ Vệ quốc đoàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -8981,7 +9956,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Di tích ghi dấu Hội nghị thành lập An Nam Cộng sản Đảng tại Nam Kỳ năm 1929, một trong những tổ chức cộng sản ra đời trong quá trình vận động thành lập một chính đảng cộng sản ở Việt Nam. Sự kiện đánh dấu bước phát triển của phong trào cách mạng theo khuynh hướng vô sản ở Nam Kỳ. An Nam Cộng sản Đảng sau đó phát triển tổ chức, tuyên truyền chủ nghĩa Mác – Lênin trong công nhân, nông dân và tham gia lãnh đạo phong trào đấu tranh ở Nam Kỳ. Đầu năm 1930, tổ chức này tham gia quá trình hợp nhất các tổ chức cộng sản, dẫn tới sự ra đời của Đảng Cộng sản Việt Nam.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/M%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20di%20t%C3%ADch%20c%C3%A1c%20n%C4%83m%20tr%C6%B0%E1%BB%9Bc.jpg",
       "emCoBiet": [
         "📅 Sự kiện: thành lập năm 1929.",
         "🔎 Địa điểm lịch sử nằm tại khu vực Nguyễn Trung Trực – Lê Lợi.",
@@ -9124,25 +10099,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Nơi thành lập An Nam Cộng sản Đảng năm 1929",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nơi thành lập An Nam Cộng sản Đảng năm 1929 tại Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_19_img_1",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/B%C3%AAn%20trong%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Bên trong hầm bí mật nhìn từ trên cao",
+        "caption": "Bên trong hầm bí mật nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nơi thành lập An Nam Cộng sản Đảng năm 1929.",
-        "year": "Hiện vật"
+        "id": "mon_19_img_2",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/B%C3%AAn%20trong%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt.jpg",
+        "title": "Bên trong hầm bí mật",
+        "caption": "Bên trong hầm bí mật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_19_img_3",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/B%E1%BA%A3ng%20%C4%91%C3%A1%20ghi%20danh%20di%20t%C3%ADch.jpg",
+        "title": "Bảng đá ghi danh di tích",
+        "caption": "Bảng đá ghi danh di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_19_img_4",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20-%20v%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bằng công nhận di tích lịch sử - văn hóa",
+        "caption": "Bằng công nhận di tích lịch sử - văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_19_img_5",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/H%C3%A0nh%20lang%20tr%C6%B0ng%20b%C3%A0y%20b%E1%BA%A3o%20t%C3%A0ng.jpg",
+        "title": "Hành lang trưng bày bảo tàng",
+        "caption": "Hành lang trưng bày bảo tàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_19_img_6",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/M%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20di%20t%C3%ADch%20c%C3%A1c%20n%C4%83m%20tr%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Mặt tiền căn nhà di tích các năm trước",
+        "caption": "Mặt tiền căn nhà di tích các năm trước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_19_img_7",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/M%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20di%20t%C3%ADch%20hi%E1%BB%87n%20nay.jpg",
+        "title": "Mặt tiền căn nhà di tích hiện nay",
+        "caption": "Mặt tiền căn nhà di tích hiện nay",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_19_img_8",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/N%E1%BA%AFp%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt.jpg",
+        "title": "Nắp hầm bí mật",
+        "caption": "Nắp hầm bí mật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_19_img_9",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Ph%C3%B9%20%C4%91i%C3%AAu%20v%C3%A0%20bia%20th%C3%B4ng%20tin%20di%20t%C3%ADch.jpg",
+        "title": "Phù điêu và bia thông tin di tích",
+        "caption": "Phù điêu và bia thông tin di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_19_img_10",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/T%E1%BB%A7%20tr%C6%B0ng%20b%C3%A0y%20ch%C3%A2n%20dung%20chi%E1%BA%BFn%20s%C4%A9.jpg",
+        "title": "Tủ trưng bày chân dung chiến sĩ",
+        "caption": "Tủ trưng bày chân dung chiến sĩ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -9463,7 +10497,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đây là địa điểm Sở Chỉ huy tiền phương của Chiến dịch Hồ Chí Minh, được lựa chọn để Bộ Chỉ huy chiến dịch trực tiếp chỉ đạo chiến trường từ ngày 26/4 đến 30/4/1975. Từ đây, Bộ Chỉ huy theo dõi diễn biến chiến dịch, tiếp nhận báo cáo từ các cánh quân và đưa ra những quyết định chỉ đạo quan trọng trong cuộc tiến công giải phóng Sài Gòn – Gia Định. Di tích có giá trị đặc biệt trong việc nghiên cứu nghệ thuật chỉ huy, điều hành chiến dịch và quá trình kết thúc Chiến tranh Việt Nam năm 1975; đồng thời là địa chỉ giáo dục truyền thống cho thế hệ trẻ.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20X%E1%BB%A9%20%E1%BB%A7y%20Nam%20B%E1%BB%99/C%E1%BB%95ng%20v%C3%A0o%20di%20t%C3%ADch.jpg",
       "emCoBiet": [
         "🔎 Tên thường gọi: Sở Chỉ huy Căm Xe.",
         "📅 Gắn với Chiến dịch Hồ Chí Minh năm 1975.",
@@ -9606,25 +10640,44 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh tại Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_20_img_1",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20X%E1%BB%A9%20%E1%BB%A7y%20Nam%20B%E1%BB%99/Bi%E1%BB%83n%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch%20v%C3%A0%20l%E1%BB%8Bch%20m%E1%BB%9F%20c%E1%BB%ADa.jpg",
+        "title": "Biển công nhận di tích và lịch mở cửa",
+        "caption": "Biển công nhận di tích và lịch mở cửa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh.",
-        "year": "Hiện vật"
+        "id": "mon_20_img_2",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20X%E1%BB%A9%20%E1%BB%A7y%20Nam%20B%E1%BB%99/B%E1%BA%A3ng%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20di%20t%C3%ADch%20thu%E1%BB%99c%20H%C3%A0nh%20tr%C3%ACnh%20di%20s%E1%BA%A3n%20Qu%E1%BA%ADn%203.jpg",
+        "title": "Bảng giới thiệu di tích thuộc Hành trình di sản Quận 3",
+        "caption": "Bảng giới thiệu di tích thuộc Hành trình di sản Quận 3",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_20_img_3",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20X%E1%BB%A9%20%E1%BB%A7y%20Nam%20B%E1%BB%99/B%E1%BA%A3ng%20t%E1%BB%95ng%20h%E1%BB%A3p%20h%C3%ACnh%20%E1%BA%A3nh%20di%20t%C3%ADch.png",
+        "title": "Bảng tổng hợp hình ảnh di tích",
+        "caption": "Bảng tổng hợp hình ảnh di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_20_img_4",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20X%E1%BB%A9%20%E1%BB%A7y%20Nam%20B%E1%BB%99/Chi%E1%BA%BFc%20Radio%20c%E1%BB%95.jpg",
+        "title": "Chiếc Radio cổ",
+        "caption": "Chiếc Radio cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_20_img_5",
+        "src": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20X%E1%BB%A9%20%E1%BB%A7y%20Nam%20B%E1%BB%99/C%E1%BB%95ng%20v%C3%A0o%20di%20t%C3%ADch.jpg",
+        "title": "Cổng vào di tích",
+        "caption": "Cổng vào di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -9957,7 +11010,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Cù Lao Rùa là một trong những địa điểm khảo cổ được phát hiện và nghiên cứu sớm ở Đông Nam Bộ, có niên đại khoảng 3.500–2.700 năm cách ngày nay, trải qua hai giai đoạn phát triển. Các cuộc khai quật cho thấy đây là khu di tích cư trú kết hợp mộ táng, cung cấp tư liệu quan trọng về đời sống, kinh tế, xã hội và tín ngưỡng của cư dân tiền sử vùng Đông Nam Bộ.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/M%E1%BA%B7t%20ti%E1%BB%81n%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
       "emCoBiet": [
         "📏 Diện tích cù lao: 277 ha",
         "🔎 Gò khảo cổ cao: khoảng 15 m",
@@ -10100,25 +11153,44 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Cù Lao Rùa",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Cù Lao Rùa tại Phường Tân Khánh, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_21_img_1",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20c%C3%A1ch%20m%E1%BA%A1ng%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
+        "title": "Bia Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
+        "caption": "Bia Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Cù Lao Rùa.",
-        "year": "Hiện vật"
+        "id": "mon_21_img_2",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/Chi%20ti%E1%BA%BFt%20ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1i%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
+        "title": "Chi tiết kiến trúc mái Nhà số 86 Phan Chu Trinh",
+        "caption": "Chi tiết kiến trúc mái Nhà số 86 Phan Chu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_21_img_3",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/Ki%E1%BA%BFn%20tr%C3%BAc%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh%20nh%C3%ACn%20t%E1%BB%AB%20b%C3%AAn%20h%C3%B4ng.jpg",
+        "title": "Kiến trúc Nhà số 86 Phan Chu Trinh nhìn từ bên hông",
+        "caption": "Kiến trúc Nhà số 86 Phan Chu Trinh nhìn từ bên hông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_21_img_4",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/M%E1%BA%B7t%20ti%E1%BB%81n%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
+        "title": "Mặt tiền Nhà số 86 Phan Chu Trinh",
+        "caption": "Mặt tiền Nhà số 86 Phan Chu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_21_img_5",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/To%C3%A0n%20c%E1%BA%A3nh%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20b%C3%AAn%20h%C3%B4ng.jpg",
+        "title": "Toàn cảnh Nhà số 86 Phan Chu Trinh nhìn từ phía bên hông",
+        "caption": "Toàn cảnh Nhà số 86 Phan Chu Trinh nhìn từ phía bên hông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -10451,7 +11523,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Dốc Chùa là một trong những di tích khảo cổ quan trọng nhất ở vùng Đông Nam Bộ, cung cấp tư liệu về đời sống, sản xuất, kỹ thuật luyện kim, nghề thủ công và tục mai táng của cư dân cổ lưu vực sông Đồng Nai cách nay khoảng 2.500–3.000 năm. Đặc biệt, việc phát hiện nhiều khuôn đúc đồng cho thấy cư dân nơi đây đã phát triển kỹ thuật đúc đồng ở trình độ cao. Các di tích cư trú và mộ táng còn giúp nghiên cứu sự phân hóa xã hội, đời sống vật chất và tinh thần của cư dân thời tiền – sơ sử.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/B%C3%A1o%20Lao%20%C4%90%E1%BB%99ng%20k%E1%BB%B7%20ni%E1%BB%87m%20C%C3%A1ch%20m%E1%BA%A1ng%20Ph%C3%A1p%201789.jpg",
       "emCoBiet": [
         "🔎 Còn gọi: Cầu Chùa.",
         "🔎 Thuộc nhóm di tích khảo cổ thời đại kim khí.",
@@ -10594,25 +11666,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Dốc Chùa",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Dốc Chùa tại Phường Tân Uyên, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_22_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/B%C3%A1o%20Lao%20%C4%90%E1%BB%99ng%20k%E1%BB%B7%20ni%E1%BB%87m%20C%C3%A1ch%20m%E1%BA%A1ng%20Ph%C3%A1p%201789.jpg",
+        "title": "Báo Lao Động kỷ niệm Cách mạng Pháp 1789",
+        "caption": "Báo Lao Động kỷ niệm Cách mạng Pháp 1789",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Dốc Chùa.",
-        "year": "Hiện vật"
+        "id": "mon_22_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/B%E1%BA%A3ng%20ghi%20th%C3%B4ng%20tin%20di%20t%C3%ADch%20Tr%E1%BB%A5%20s%E1%BB%9F%20b%C3%A1o%20D%C3%A2n%20Ch%C3%BAng.jpg",
+        "title": "Bảng ghi thông tin di tích Trụ sở báo Dân Chúng",
+        "caption": "Bảng ghi thông tin di tích Trụ sở báo Dân Chúng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_22_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/Hai%20trang%20b%C3%A1o%20ti%E1%BA%BFng%20Ph%C3%A1p%20Le%20Travail.jpg",
+        "title": "Hai trang báo tiếng Pháp Le Travail",
+        "caption": "Hai trang báo tiếng Pháp Le Travail",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_22_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/Trang%20b%C3%A1o%20c%E1%BB%95%20b%C3%A0i%20vi%E1%BA%BFt%20v%E1%BB%81%20%C4%90%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA.jpg",
+        "title": "Trang báo cổ bài viết về Đồng chí Trần Phú",
+        "caption": "Trang báo cổ bài viết về Đồng chí Trần Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_22_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/Trang%20b%C3%A1o%20Tin%20T%E1%BB%A9c%20c%C3%B3%20b%C3%A0i%20vi%E1%BA%BFt%20k%E1%BB%B7%20ni%E1%BB%87m%20ng%C3%A0y%20m%E1%BA%A5t%20Tr%E1%BA%A7n%20Ph%C3%BA.jpg",
+        "title": "Trang báo Tin Tức có bài viết kỷ niệm ngày mất Trần Phú",
+        "caption": "Trang báo Tin Tức có bài viết kỷ niệm ngày mất Trần Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_22_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/Trang%20b%C3%A1o%20vi%E1%BA%BFt%20tay%20Vi%E1%BB%87t%20Nam%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20n%C4%83m%201941.jpg",
+        "title": "Trang báo viết tay Việt Nam Độc Lập năm 1941",
+        "caption": "Trang báo viết tay Việt Nam Độc Lập năm 1941",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_22_img_7",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/Trang%20nh%E1%BA%A5t%20b%C3%A1o%20D%C3%A2n-Ch%C3%BAng%20s%E1%BB%91%201.jpg",
+        "title": "Trang nhất báo Dân-Chúng số 1",
+        "caption": "Trang nhất báo Dân-Chúng số 1",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_22_img_8",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/Tr%E1%BB%A5%20s%E1%BB%9F%20b%C3%A1o%20Tin-T%E1%BB%A9c%20v%C3%A0%20t%E1%BA%ADp%20th%E1%BB%83%20c%C3%A1n%20b%E1%BB%99%20bi%C3%AAn%20t%E1%BA%ADp.jpg",
+        "title": "Trụ sở báo Tin-Tức và tập thể cán bộ biên tập",
+        "caption": "Trụ sở báo Tin-Tức và tập thể cán bộ biên tập",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_22_img_9",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/T%E1%BA%ADp%20h%E1%BB%A3p%20c%C3%A1c%20s%E1%BB%91%20b%C3%A1o%20D%C3%A2n%20Ch%C3%BAng%20x%E1%BA%BFp%20h%C3%ACnh%20qu%E1%BA%A1t.jpg",
+        "title": "Tập hợp các số báo Dân Chúng xếp hình quạt",
+        "caption": "Tập hợp các số báo Dân Chúng xếp hình quạt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_22_img_10",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/T%E1%BB%A7%20tr%C6%B0ng%20b%C3%A0y%20b%C3%A1o%20ch%C3%AD%20c%C3%A1ch%20m%E1%BA%A1ng%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Tủ trưng bày báo chí cách mạng tại Bảo tàng Lịch sử Quốc gia",
+        "caption": "Tủ trưng bày báo chí cách mạng tại Bảo tàng Lịch sử Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -10945,7 +12076,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Giồng Cá Vồ là một trong những di tích khảo cổ quan trọng nhất của TP.HCM, chứng minh vùng Cần Giờ đã có cộng đồng cư dân sinh sống, sản xuất và giao lưu từ khoảng 2.500 năm trước. Di tích có cấu trúc cư trú – công xưởng – mộ táng, phản ánh đời sống vật chất, tinh thần, kỹ thuật sản xuất và tục táng của cư dân cổ. Các hiện vật cho thấy cư dân Giồng Cá Vồ có quan hệ giao lưu với văn hóa Đồng Nai, Sa Huỳnh và các khu vực Đông Nam Á hải đảo, đồng thời cho thấy Cần Giờ từng có vị trí quan trọng trong mạng lưới giao thương đường biển cổ.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/C%E1%BB%95ng%20ch%C3%ADnh%20Di%20t%C3%ADch%2087A%20Tr%E1%BA%A7n%20K%E1%BA%BF%20X%C6%B0%C6%A1ng.jpg",
       "emCoBiet": [
         "🔎 Là di tích khảo cổ mộ chum ven biển.",
         "🔎 Gắn với văn hóa khảo cổ vùng Cần Giờ.",
@@ -11088,25 +12219,68 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Giồng Cá Vồ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Giồng Cá Vồ tại Xã Cần Giờ, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_23_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/B%E1%BA%A3ng%20danh%20s%C3%A1ch%20c%C3%A1n%20b%E1%BB%99%2C%20chi%E1%BA%BFn%20s%C4%A9%20%26%20%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u.jpg",
+        "title": "Bảng danh sách cán bộ, chiến sĩ & Ảnh tư liệu",
+        "caption": "Bảng danh sách cán bộ, chiến sĩ & Ảnh tư liệu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Giồng Cá Vồ.",
-        "year": "Hiện vật"
+        "id": "mon_23_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "caption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_23_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/C%E1%BB%95ng%20ch%C3%ADnh%20Di%20t%C3%ADch%2087A%20Tr%E1%BA%A7n%20K%E1%BA%BF%20X%C6%B0%C6%A1ng.jpg",
+        "title": "Cổng chính Di tích 87A Trần Kế Xương",
+        "caption": "Cổng chính Di tích 87A Trần Kế Xương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_23_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/Kh%C3%B4ng%20gian%20gian%20ch%C3%ADnh%20nh%C3%ACn%20t%E1%BB%AB%20s%E1%BA%A3nh%20tr%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Không gian gian chính nhìn từ sảnh trước",
+        "caption": "Không gian gian chính nhìn từ sảnh trước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_23_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/M%E1%BA%B7t%20ti%E1%BB%81n%20Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c.jpg",
+        "title": "Mặt tiền Trụ sở Phái đoàn liên lạc",
+        "caption": "Mặt tiền Trụ sở Phái đoàn liên lạc",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_23_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/Ph%C3%B2ng%20th%E1%BB%9D%20v%C3%A0%20tr%C6%B0ng%20b%C3%A0y%20b%C3%AAn%20trong%20di%20t%C3%ADch.jpg",
+        "title": "Phòng thờ và trưng bày bên trong di tích",
+        "caption": "Phòng thờ và trưng bày bên trong di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_23_img_7",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/To%C3%A0n%20c%E1%BA%A3nh%20ki%E1%BA%BFn%20tr%C3%BAc%20Di%20t%C3%ADch%20Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n.jpg",
+        "title": "Toàn cảnh kiến trúc Di tích Trụ sở Phái đoàn",
+        "caption": "Toàn cảnh kiến trúc Di tích Trụ sở Phái đoàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_23_img_8",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/%C4%90o%C3%A0n%20c%C3%A1n%20b%E1%BB%99%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20tham%20quan%20hi%E1%BB%87n%20v%E1%BA%ADt.jpg",
+        "title": "Đoàn cán bộ Quân đội tham quan hiện vật",
+        "caption": "Đoàn cán bộ Quân đội tham quan hiện vật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -11439,7 +12613,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Lò gốm cổ Hưng Lợi là dấu tích vật chất quan trọng của nghề gốm Sài Gòn – Gia Định, phản ánh quá trình hình thành và phát triển của một làng nghề thủ công lâu đời trong hơn 300 năm lịch sử Sài Gòn. Di tích cung cấp tư liệu về nguồn nguyên liệu, kỹ thuật sản xuất, loại hình sản phẩm và đời sống kinh tế của cư dân đô thị Sài Gòn xưa. Đây cũng là di tích khảo cổ học có ý nghĩa đặc biệt vì các lò gốm cổ khác của khu vực Chợ Lớn xưa phần lớn đã biến mất do đô thị hóa.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/C%E1%BB%95ng%20ki%E1%BB%83m%20tra%20an%20ninh%20T%E1%BB%95ng%20L%C3%A3nh%20s%E1%BB%B1%20qu%C3%A1n%20M%E1%BB%B9.jpg",
       "emCoBiet": [
         "🔎 Loại hình: di tích khảo cổ nghề gốm",
         "🔎 Vị trí: làng Hòa Lục, ven kênh Ruột Ngựa và kênh Lò Gốm",
@@ -11582,25 +12756,92 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Lò gốm cổ Hưng Lợi",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Lò gốm cổ Hưng Lợi tại Phường Phú Định, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_24_img_1",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/C%E1%BB%95ng%20ki%E1%BB%83m%20tra%20an%20ninh%20T%E1%BB%95ng%20L%C3%A3nh%20s%E1%BB%B1%20qu%C3%A1n%20M%E1%BB%B9.jpg",
+        "title": "Cổng kiểm tra an ninh Tổng Lãnh sự quán Mỹ",
+        "caption": "Cổng kiểm tra an ninh Tổng Lãnh sự quán Mỹ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Lò gốm cổ Hưng Lợi.",
-        "year": "Hiện vật"
+        "id": "mon_24_img_2",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/C%E1%BB%95ng%20v%C3%A0o%20T%E1%BB%95ng%20L%C3%A3nh%20s%E1%BB%B1%20qu%C3%A1n%20M%E1%BB%B9%20t%E1%BA%A1i%20TP.HCM%20hi%E1%BB%87n%20nay.jpg",
+        "title": "Cổng vào Tổng Lãnh sự quán Mỹ tại TP.HCM hiện nay",
+        "caption": "Cổng vào Tổng Lãnh sự quán Mỹ tại TP.HCM hiện nay",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_24_img_3",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/G%C3%B3c%20nh%C3%ACn%20t%E1%BB%AB%20%C4%91%C6%B0%E1%BB%9Dng%20ph%E1%BB%91%20c%E1%BB%A7a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9.jpg",
+        "title": "Góc nhìn từ đường phố của Đại sứ quán Mỹ",
+        "caption": "Góc nhìn từ đường phố của Đại sứ quán Mỹ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_24_img_4",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/Khung%20c%E1%BA%A3nh%20b%C3%AAn%20ngo%C3%A0i%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9%20trong%20%C4%91%E1%BB%A3t%20T%E1%BB%95ng%20ti%E1%BA%BFn%20c%C3%B4ng%20T%E1%BA%BFt%20M%E1%BA%ADu%20Th%C3%A2n%201968.jpg",
+        "title": "Khung cảnh bên ngoài Đại sứ quán Mỹ trong đợt Tổng tiến công Tết Mậu Thân 1968",
+        "caption": "Khung cảnh bên ngoài Đại sứ quán Mỹ trong đợt Tổng tiến công Tết Mậu Thân 1968",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_24_img_5",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/L%E1%BB%97%20h%E1%BB%95ng%20tr%C3%AAn%20t%C6%B0%E1%BB%9Dng%20r%C3%A0o%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9%20sau%20tr%E1%BA%ADn%20%C4%91%C3%A1nh%20T%E1%BA%BFt%20M%E1%BA%ADu%20Th%C3%A2n%201968.jpg",
+        "title": "Lỗ hổng trên tường rào Đại sứ quán Mỹ sau trận đánh Tết Mậu Thân 1968",
+        "caption": "Lỗ hổng trên tường rào Đại sứ quán Mỹ sau trận đánh Tết Mậu Thân 1968",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_24_img_6",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/M%E1%BA%B7t%20ti%E1%BB%81n%20T%E1%BB%95ng%20L%C3%A3nh%20s%E1%BB%B1%20qu%C3%A1n%20M%E1%BB%B9%20nh%C3%ACn%20t%E1%BB%AB%20%C4%91%C6%B0%E1%BB%9Dng%20L%C3%AA%20Du%E1%BA%A9n.jpg",
+        "title": "Mặt tiền Tổng Lãnh sự quán Mỹ nhìn từ đường Lê Duẩn",
+        "caption": "Mặt tiền Tổng Lãnh sự quán Mỹ nhìn từ đường Lê Duẩn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_24_img_7",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/To%C3%A0n%20c%E1%BA%A3nh%20khu%20ph%E1%BB%A9c%20h%E1%BB%A3p%20T%E1%BB%95ng%20L%C3%A3nh%20s%E1%BB%B1%20qu%C3%A1n%20M%E1%BB%B9.jpg",
+        "title": "Toàn cảnh khu phức hợp Tổng Lãnh sự quán Mỹ",
+        "caption": "Toàn cảnh khu phức hợp Tổng Lãnh sự quán Mỹ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_24_img_8",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9%20t%E1%BA%A1i%20S%C3%A0i%20G%C3%B2n%20(T%C6%B0%20li%E1%BB%87u%20l%E1%BB%8Bch%20s%E1%BB%AD).jpg",
+        "title": "Toàn cảnh Đại sứ quán Mỹ tại Sài Gòn (Tư liệu lịch sử)",
+        "caption": "Toàn cảnh Đại sứ quán Mỹ tại Sài Gòn (Tư liệu lịch sử)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_24_img_9",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/Tr%E1%BB%B1c%20th%C4%83ng%20Chinook%20ch%E1%BB%9F%20qu%C3%A2n%20%C3%A1p%20s%C3%A1t%20t%E1%BA%A7ng%20th%C6%B0%E1%BB%A3ng%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9.jpg",
+        "title": "Trực thăng Chinook chở quân áp sát tầng thượng Đại sứ quán Mỹ",
+        "caption": "Trực thăng Chinook chở quân áp sát tầng thượng Đại sứ quán Mỹ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_24_img_10",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/Tr%E1%BB%B1c%20th%C4%83ng%20Huey%20h%E1%BA%A1%20c%C3%A1nh%20tr%C3%AAn%20n%C3%B3c%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9.jpg",
+        "title": "Trực thăng Huey hạ cánh trên nóc Đại sứ quán Mỹ",
+        "caption": "Trực thăng Huey hạ cánh trên nóc Đại sứ quán Mỹ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_24_img_11",
+        "src": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20%C4%90%E1%BA%A1i%20l%E1%BB%99%20Th%E1%BB%91ng%20Nh%E1%BA%A5t%20(L%C3%AA%20Du%E1%BA%A9n).jpg",
+        "title": "Đại sứ quán Mỹ nhìn từ phía Đại lộ Thống Nhất (Lê Duẩn)",
+        "caption": "Đại sứ quán Mỹ nhìn từ phía Đại lộ Thống Nhất (Lê Duẩn)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -11925,7 +13166,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Di tích là chứng tích của hệ thống thông tin quân sự do Mỹ xây dựng tại Vũng Tàu trong Chiến tranh Việt Nam. Do vị trí Núi Lớn có độ cao và khả năng quan sát rộng, nơi đây có ý nghĩa quân sự quan trọng. Đầu năm 1967, Mỹ đưa và lắp đặt hai giàn ăng-ten Parabol – đài Viba tại độ cao khoảng 245 m để phục vụ thông tin liên lạc quân sự. Hệ thống có phạm vi liên lạc rất rộng, góp phần phục vụ mạng lưới thông tin quân sự của Mỹ tại miền Nam. Di tích ngày nay là bằng chứng vật chất giúp nghiên cứu về chiến tranh, kỹ thuật thông tin quân sự và vai trò chiến lược của Vũng Tàu trong giai đoạn chiến tranh.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20c%C3%A1c%20c%E1%BB%A5m%20%C4%83ng-ten%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "🔎 Vị trí: trên đỉnh Núi Lớn, Vũng Tàu.",
         "🏛️ Là công trình thông tin liên lạc vô tuyến.",
@@ -12068,25 +13309,60 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Ăngten Parabol (đài viba) – Núi Lớn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Ăngten Parabol (đài viba) – Núi Lớn tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_25_img_1",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/Chi%20ti%E1%BA%BFt%20k%E1%BA%BFt%20c%E1%BA%A5u%20tr%E1%BB%A5%20c%E1%BB%A7a%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten.jpg",
+        "title": "Chi tiết kết cấu trụ của hệ thống ăng-ten",
+        "caption": "Chi tiết kết cấu trụ của hệ thống ăng-ten",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Ăngten Parabol (đài viba) – Núi Lớn.",
-        "year": "Hiện vật"
+        "id": "mon_25_img_2",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/C%E1%BA%ADn%20c%E1%BA%A3nh%20k%E1%BA%BFt%20c%E1%BA%A5u%20c%C3%A1c%20c%E1%BB%A5m%20%C4%83ng-ten.jpg",
+        "title": "Cận cảnh kết cấu các cụm ăng-ten",
+        "caption": "Cận cảnh kết cấu các cụm ăng-ten",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_25_img_3",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/H%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20nh%C3%ACn%20t%E1%BB%AB%20d%C6%B0%E1%BB%9Bi%20l%C3%AAn.jpg",
+        "title": "Hệ thống ăng-ten nhìn từ dưới lên",
+        "caption": "Hệ thống ăng-ten nhìn từ dưới lên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_25_img_4",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/Kh%C3%B4ng%20gian%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20tr%C3%AAn%20N%C3%BAi%20L%E1%BB%9Bn%20th%E1%BB%9Di%20k%E1%BB%B3%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng.jpg",
+        "title": "Không gian hệ thống ăng-ten trên Núi Lớn thời kỳ hoạt động",
+        "caption": "Không gian hệ thống ăng-ten trên Núi Lớn thời kỳ hoạt động",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_25_img_5",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20c%C3%A1c%20c%E1%BB%A5m%20%C4%83ng-ten%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh các cụm ăng-ten nhìn từ trên cao",
+        "caption": "Toàn cảnh các cụm ăng-ten nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_25_img_6",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20d%E1%BA%A5u%20t%C3%ADch%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20tr%C3%AAn%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Toàn cảnh dấu tích hệ thống ăng-ten trên Núi Lớn",
+        "caption": "Toàn cảnh dấu tích hệ thống ăng-ten trên Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_25_img_7",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20tr%C3%AAn%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Toàn cảnh hệ thống ăng-ten trên Núi Lớn",
+        "caption": "Toàn cảnh hệ thống ăng-ten trên Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -12393,7 +13669,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Bót Dây Thép là chứng tích quan trọng về tội ác của thực dân Pháp đối với nhân dân và chiến sĩ cách mạng tại vùng Tăng Nhơn Phú – Thủ Đức trong những năm đầu kháng chiến chống Pháp. Ban đầu công trình được Pháp sử dụng làm trạm phát, thu nhận và truyền tin; sau khi Pháp trở lại Đông Dương cuối năm 1945, nơi đây bị biến thành đồn lính và nhà giam. Trong giai đoạn 1946–1947, nhiều cán bộ, chiến sĩ cách mạng và người dân bị bắt giữ, tra tấn, sát hại tại đây. Di tích đồng thời phản ánh tinh thần đấu tranh, lòng yêu nước và sự hy sinh của nhân dân địa phương.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/Bi%E1%BB%83n%20c%E1%BB%95ng%20v%C3%B2m%20%C4%91%C6%B0%E1%BB%9Dng%20v%C3%A0o%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
       "emCoBiet": [
         "🔎 Vị trí: khu vực Thủ Đức cũ.",
         "🔎 Là di tích lịch sử gắn với hoạt động cách mạng.",
@@ -12536,25 +13812,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Bót Dây Thép",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Bót Dây Thép tại Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_26_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/Bia%20%C4%91%C3%A1%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Bia đá Di tích Kiến trúc Nghệ thuật Quốc gia Đình Phú Nhuận",
+        "caption": "Bia đá Di tích Kiến trúc Nghệ thuật Quốc gia Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Bót Dây Thép.",
-        "year": "Hiện vật"
+        "id": "mon_26_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/Bi%E1%BB%83n%20c%E1%BB%95ng%20v%C3%B2m%20%C4%91%C6%B0%E1%BB%9Dng%20v%C3%A0o%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Biển cổng vòm đường vào Đình Phú Nhuận",
+        "caption": "Biển cổng vòm đường vào Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_26_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/B%C3%A0n%20th%E1%BB%9D%20Linh%20th%E1%BA%A7n%20Th%C3%A0nh%20ho%C3%A0ng%20b%E1%BB%95n%20c%E1%BA%A3nh%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Bàn thờ Linh thần Thành hoàng bổn cảnh Đình Phú Nhuận",
+        "caption": "Bàn thờ Linh thần Thành hoàng bổn cảnh Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_26_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/B%C3%A0n%20th%E1%BB%9D%20Ti%E1%BB%81n%20hi%E1%BB%81n%20-%20H%E1%BA%ADu%20hi%E1%BB%81n%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Bàn thờ Tiền hiền - Hậu hiền Đình Phú Nhuận",
+        "caption": "Bàn thờ Tiền hiền - Hậu hiền Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_26_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Bằng công nhận Di tích Lịch sử - Văn hóa Đình Phú Nhuận",
+        "caption": "Bằng công nhận Di tích Lịch sử - Văn hóa Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_26_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20khu%C3%B4n%20vi%C3%AAn%20ngo%C3%A0i%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Cổng chính và khuôn viên ngoài Đình Phú Nhuận",
+        "caption": "Cổng chính và khuôn viên ngoài Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_26_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/C%E1%BB%95ng%20tam%20quan%20ki%E1%BA%BFn%20tr%C3%BAc%20c%E1%BB%95%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Cổng tam quan kiến trúc cổ Đình Phú Nhuận",
+        "caption": "Cổng tam quan kiến trúc cổ Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_26_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/C%E1%BB%99t%20c%E1%BB%9D%20T%E1%BB%95%20qu%E1%BB%91c%20v%C3%A0%20c%E1%BB%9D%20h%E1%BB%99i%20ng%C3%A0y%20l%E1%BB%85%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Cột cờ Tổ quốc và cờ hội ngày lễ tại Đình Phú Nhuận",
+        "caption": "Cột cờ Tổ quốc và cờ hội ngày lễ tại Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_26_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/Ho%C3%A0nh%20phi%20B%E1%BA%A3o%20Qu%E1%BB%91c%20T%E1%BA%BF%20D%C3%A2n%20v%C3%A0%20h%C6%B0%C6%A1ng%20%C3%A1n%20gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Hoành phi Bảo Quốc Tế Dân và hương án gian chính điện",
+        "caption": "Hoành phi Bảo Quốc Tế Dân và hương án gian chính điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_26_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/S%C3%A2n%20tr%C6%B0%E1%BB%9Bc%20v%C3%A0%20bia%20di%20t%C3%ADch%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+        "title": "Sân trước và bia di tích Đình Phú Nhuận",
+        "caption": "Sân trước và bia di tích Đình Phú Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -12863,7 +14198,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ là một căn cứ cách mạng hoạt động bí mật ngay giữa lòng Sài Gòn, đặc biệt trong thời kỳ kháng chiến chống Mỹ. Sau Hiệp định Genève năm 1954, căn nhà được sử dụng làm cơ sở của Ban Tuyên huấn Xứ ủy Nam Bộ và một số đơn vị Khu Sài Gòn – Gia Định. Tại đây, cán bộ cách mạng thu tin từ Đài Phát thanh Hà Nội, biên tập, in ấn và phát hành tài liệu để truyền đạt thông tin, chỉ thị của Trung ương đến các cơ sở cách mạng ở Nam Bộ. Sau năm 1957, địa điểm tiếp tục được sử dụng cho hoạt động liên lạc, hội họp, tuyên truyền, phụ vận, trí vận và chuẩn bị lực lượng cho các phong trào đấu tranh đô thị.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/C%E1%BB%95ng%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 51/10/14 Cao Thắng.",
         "🔎 Gắn với hoạt động tuyên truyền cách mạng bí mật.",
@@ -13006,25 +14341,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ tại Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_27_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/Bia%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Bình Hòa",
+        "caption": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ.",
-        "year": "Hiện vật"
+        "id": "mon_27_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/B%C3%A0n%20th%E1%BB%9D%20Ti%E1%BB%81n%20hi%E1%BB%81n%20%E2%80%93%20H%E1%BA%ADu%20hi%E1%BB%81n%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Bàn thờ Tiền hiền – Hậu hiền tại Đình Bình Hòa",
+        "caption": "Bàn thờ Tiền hiền – Hậu hiền tại Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_27_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/B%C3%ACnh%20phong%20h%E1%BB%95%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Bình phong hổ tại Đình Bình Hòa",
+        "caption": "Bình phong hổ tại Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_27_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/C%E1%BB%95ng%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Cổng Đình Bình Hòa",
+        "caption": "Cổng Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_27_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/Ho%C3%A0nh%20phi%20v%C3%A0%20c%C3%A1c%20c%E1%BB%95%20v%E1%BA%ADt%2C%20hi%E1%BB%87n%20v%E1%BA%ADt%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Hoành phi và các cổ vật, hiện vật tại Đình Bình Hòa",
+        "caption": "Hoành phi và các cổ vật, hiện vật tại Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_27_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/H%C3%ACnh%20t%C6%B0%E1%BB%A3ng%20l%C6%B0%E1%BB%A1ng%20long%20tranh%20ch%C3%A2u%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Hình tượng lưỡng long tranh châu trên mái Đình Bình Hòa",
+        "caption": "Hình tượng lưỡng long tranh châu trên mái Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_27_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20b%C3%AAn%20trong%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Không gian thờ tự bên trong Đình Bình Hòa",
+        "caption": "Không gian thờ tự bên trong Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_27_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/L%C6%B0%20h%C6%B0%C6%A1ng%20c%E1%BB%95%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Lư hương cổ tại Đình Bình Hòa",
+        "caption": "Lư hương cổ tại Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_27_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/S%C3%A2n%20v%C3%A0%20ti%E1%BB%81n%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Sân và tiền điện Đình Bình Hòa",
+        "caption": "Sân và tiền điện Đình Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_27_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/S%E1%BA%AFc%20phong%20vua%20T%E1%BB%B1%20%C4%90%E1%BB%A9c%20ban%20cho%20Th%C3%A0nh%20ho%C3%A0ng%20b%E1%BB%95n%20c%E1%BA%A3nh%20x%C3%A3%20B%C3%ACnh%20H%C3%B2a.jpg",
+        "title": "Sắc phong vua Tự Đức ban cho Thành hoàng bổn cảnh xã Bình Hòa",
+        "caption": "Sắc phong vua Tự Đức ban cho Thành hoàng bổn cảnh xã Bình Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -13365,7 +14759,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Cơ sở giấu vũ khí của Biệt động Thành tại 287/70 Nguyễn Đình Chiểu có giá trị lịch sử đặc biệt bởi đây là một cơ sở hậu cần bí mật của lực lượng Biệt động Thành nằm ngay trong nội đô Sài Gòn.\nTrong những năm kháng chiến chống Mỹ, việc xây dựng và duy trì một căn cứ bí mật ngay giữa khu dân cư là nhiệm vụ vô cùng khó khăn. Căn nhà bên ngoài được sử dụng như một gia đình bình thường, trong khi bên dưới được xây dựng hệ thống hầm bí mật để chứa vũ khí, thuốc nổ và các trang thiết bị quân sự.\nÔng Trần Văn Lai đã tổ chức xây dựng căn hầm với phương án rất kín đáo. Hầm được thiết kế để có thể chứa một khối lượng lớn vũ khí nhưng vẫn hạn chế khả năng bị phát hiện. Theo các tư liệu về di tích, căn hầm có chiều dài hơn 8 m, rộng khoảng 2 m và cao khoảng 2,5 m, có hệ thống thông gió và phương án che giấu phù hợp với hoạt động bí mật.\nCăn hầm từng chứa hơn 2 tấn vũ khí và vật liệu quân sự, trong đó có súng, đạn, lựu đạn và thuốc nổ.\nGiá trị nổi bật nhất của di tích nằm ở việc vũ khí từ căn hầm được sử dụng trực tiếp cho Đội 5 Biệt động Thành trong trận tấn công Dinh Độc Lập vào Tết Mậu Thân năm 1968.\nDi tích vì vậy không chỉ là nơi lưu giữ một căn hầm vật chất mà còn là chứng tích trực tiếp về hoạt động bí mật của lực lượng Biệt động Thành trong lòng đô thị Sài Gòn.\nDi tích thể hiện rõ sự mưu trí, sáng tạo, dũng cảm, khả năng tổ chức hoạt động bí mật và sự hy sinh của cán bộ, chiến sĩ Biệt động Thành.\nNgày nay, di tích có giá trị lớn trong việc giáo dục lịch sử, giáo dục truyền thống yêu nước và giáo dục thế hệ trẻ. Đây là một địa chỉ giúp học sinh, sinh viên hiểu rõ hơn về cuộc kháng chiến chống Mỹ cũng như vai trò của lực lượng Biệt động Sài Gòn – Gia Định.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/C%E1%BB%95ng%20h%E1%BA%BBm%20d%E1%BA%ABn%20v%C3%A0o%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ: 287/70 Nguyễn Đình Chiểu.",
         "🔎 Gắn với lực lượng Biệt động Thành.",
@@ -13508,25 +14902,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập tại Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_28_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/B%C3%A0n%20th%E1%BB%9D%20danh%20s%C6%B0%20V%C3%B5%20Tr%C6%B0%E1%BB%9Dng%20To%E1%BA%A3n%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Bàn thờ danh sư Võ Trường Toản tại Đình Chí Hòa",
+        "caption": "Bàn thờ danh sư Võ Trường Toản tại Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập.",
-        "year": "Hiện vật"
+        "id": "mon_28_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/B%C3%ACnh%20phong%20h%E1%BB%95%20trong%20khu%C3%B4n%20vi%C3%AAn%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Bình phong hổ trong khuôn viên Đình Chí Hòa",
+        "caption": "Bình phong hổ trong khuôn viên Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_28_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/B%C3%ACnh%20phong%20h%E1%BB%95%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Bình phong hổ tại Đình Chí Hòa",
+        "caption": "Bình phong hổ tại Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_28_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/C%E1%BB%95ng%20h%E1%BA%BBm%20d%E1%BA%ABn%20v%C3%A0o%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Cổng hẻm dẫn vào Đình Chí Hòa",
+        "caption": "Cổng hẻm dẫn vào Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_28_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/Khu%C3%B4n%20vi%C3%AAn%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Khuôn viên Đình Chí Hòa",
+        "caption": "Khuôn viên Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_28_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/Kh%C3%B4ng%20gian%20b%C3%AAn%20trong%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Không gian bên trong Đình Chí Hòa",
+        "caption": "Không gian bên trong Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_28_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20b%C3%AAn%20trong%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Không gian thờ tự bên trong Đình Chí Hòa",
+        "caption": "Không gian thờ tự bên trong Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_28_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Không gian thờ tự tại Đình Chí Hòa",
+        "caption": "Không gian thờ tự tại Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_28_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/Trang%20tr%C3%AD%20n%E1%BB%99i%20th%E1%BA%A5t%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Trang trí nội thất tại Đình Chí Hòa",
+        "caption": "Trang trí nội thất tại Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_28_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
+        "title": "Đình Chí Hòa",
+        "caption": "Đình Chí Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -13865,7 +15318,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn có giá trị tiêu biểu trong việc nghiên cứu lịch sử hoạt động tuyên truyền, thông tin và xây dựng cơ sở phục vụ phong trào kháng chiến. Di tích cho thấy bên cạnh đấu tranh trực tiếp, việc in ấn tài liệu, truyền đạt thông tin, cổ động tinh thần và vận động quần chúng là một bộ phận quan trọng của hoạt động cách mạng. Một cơ sở in ấn bí mật còn phản ánh yêu cầu bảo mật, tổ chức nhân lực, phương tiện và mạng lưới phân phối tài liệu trong điều kiện chiến tranh. Đối với nghiên cứu lịch sử địa phương, di tích góp phần làm rõ vai trò của các cơ sở dân sự và những người tham gia hoạt động hậu cần, tuyên truyền cho phong trào cách mạng.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/C%E1%BB%95ng%20tam%20quan%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
       "emCoBiet": [
         "🔎 Thường gọi: Hầm B.",
         "🔎 Địa điểm lịch sử: hẻm 122 Ngô Gia Tự.",
@@ -14008,25 +15461,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn tại Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_29_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Bia Di tích lịch sử quốc gia Đình Phong Phú",
+        "caption": "Bia Di tích lịch sử quốc gia Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn.",
-        "year": "Hiện vật"
+        "id": "mon_29_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Chánh điện Đình Phong Phú",
+        "caption": "Chánh điện Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_29_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/C%E1%BB%95ng%20tam%20quan%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Cổng tam quan Đình Phong Phú",
+        "caption": "Cổng tam quan Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_29_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/C%E1%BB%95ng%20v%C3%A0o%20khu%C3%B4n%20vi%C3%AAn%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Cổng vào khuôn viên Đình Phong Phú",
+        "caption": "Cổng vào khuôn viên Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_29_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/C%E1%BB%95ng%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Cổng Đình Phong Phú",
+        "caption": "Cổng Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_29_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/H%C6%B0%C6%A1ng%20%C3%A1n%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Hương án tại Đình Phong Phú",
+        "caption": "Hương án tại Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_29_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20trong%20ch%C3%A1nh%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Không gian thờ tự trong chánh điện Đình Phong Phú",
+        "caption": "Không gian thờ tự trong chánh điện Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_29_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/Tranh%20%C4%91%E1%BA%AFp%20n%E1%BB%95i%20r%E1%BB%93ng%20%E2%80%93%20h%E1%BB%95%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Tranh đắp nổi rồng – hổ tại Đình Phong Phú",
+        "caption": "Tranh đắp nổi rồng – hổ tại Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_29_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/T%C6%B0%E1%BB%A3ng%20th%E1%BB%9D%20trong%20khu%C3%B4n%20vi%C3%AAn%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Tượng thờ trong khuôn viên Đình Phong Phú",
+        "caption": "Tượng thờ trong khuôn viên Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_29_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/%C4%90%C3%ACnh%20ch%C3%ADnh%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+        "title": "Đình chính Đình Phong Phú",
+        "caption": "Đình chính Đình Phong Phú",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -14333,7 +15845,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Di tích 86 Phan Chu Trinh có giá trị về lịch sử cách mạng và lịch sử đô thị Vũng Tàu. Đây là một trong những địa điểm giúp nhận diện mạng lưới cơ sở cách mạng tồn tại ngay trong không gian dân cư đô thị. Giá trị của di tích không chỉ nằm ở công trình vật chất mà còn ở những ký ức, con người và hoạt động lịch sử từng gắn với địa điểm. Việc bảo tồn di tích giúp thế hệ sau hiểu rằng hoạt động cách mạng không chỉ diễn ra ở các căn cứ lớn mà còn được duy trì thông qua những ngôi nhà, cơ sở dân sự và sự hỗ trợ của nhân dân trong đô thị. Di tích vì vậy có giá trị trong giáo dục truyền thống, nghiên cứu lịch sử địa phương và bảo tồn ký ức cộng đồng.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/C%E1%BB%95ng%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
       "emCoBiet": [
         "🔎 Gắn với lịch sử cách mạng ở Vũng Tàu.",
         "📅 Được xếp hạng di tích quốc gia năm 1992.",
@@ -14476,25 +15988,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Di tích 86 Phan Chu Trinh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Di tích 86 Phan Chu Trinh tại Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_30_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/Ban%20th%E1%BB%9D%20T%E1%BA%A3%20Ban%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Ban thờ Tả Ban tại Đình Thông Tây Hội",
+        "caption": "Ban thờ Tả Ban tại Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Di tích 86 Phan Chu Trinh.",
-        "year": "Hiện vật"
+        "id": "mon_30_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/Bia%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Thông Tây Hội",
+        "caption": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_30_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/B%E1%BA%A3ng%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Bảng giới thiệu Di tích kiến trúc nghệ thuật quốc gia Đình Thông Tây Hội",
+        "caption": "Bảng giới thiệu Di tích kiến trúc nghệ thuật quốc gia Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_30_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/C%E1%BB%95ng%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Cổng Đình Thông Tây Hội",
+        "caption": "Cổng Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_30_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/L%E1%BB%91i%20%C4%91i%20trong%20khu%C3%B4n%20vi%C3%AAn%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Lối đi trong khuôn viên Đình Thông Tây Hội",
+        "caption": "Lối đi trong khuôn viên Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_30_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/Nh%C3%A0%20h%E1%BB%99i%20s%E1%BB%9F%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Nhà hội sở Đình Thông Tây Hội",
+        "caption": "Nhà hội sở Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_30_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/Ph%C3%B9%20%C4%91i%C3%AAu%20B%C3%A1t%20Ti%C3%AAn%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Phù điêu Bát Tiên tại Đình Thông Tây Hội",
+        "caption": "Phù điêu Bát Tiên tại Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_30_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/Ph%C3%B9%20%C4%91i%C3%AAu%20r%E1%BB%93ng%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Phù điêu rồng tại Đình Thông Tây Hội",
+        "caption": "Phù điêu rồng tại Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_30_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/Trang%20tr%C3%AD%20l%C6%B0%E1%BB%A1ng%20long%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Trang trí lưỡng long trên mái Đình Thông Tây Hội",
+        "caption": "Trang trí lưỡng long trên mái Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_30_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/V%C3%B5%20ca%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
+        "title": "Võ ca Đình Thông Tây Hội",
+        "caption": "Võ ca Đình Thông Tây Hội",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -14795,7 +16366,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Dinh Quận Hóc Môn có giá trị về lịch sử hành chính, lịch sử địa phương và quá trình hình thành không gian quản lý của Hóc Môn. Công trình phản ánh một giai đoạn trong quá trình tổ chức bộ máy hành chính và quản lý xã hội tại địa phương. Việc bảo tồn Dinh Quận Hóc Môn giúp nghiên cứu sự biến đổi của thiết chế hành chính, quan hệ giữa chính quyền và cộng đồng cư dân, cũng như những thay đổi về không gian đô thị và nông thôn Hóc Môn qua các thời kỳ. Di tích còn có thể được khai thác để giáo dục học sinh về lịch sử hình thành địa phương và sự thay đổi của bộ máy quản lý theo thời gian.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/M%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Gia%20Th%E1%BA%A1nh%20(Ch%C3%B9a%20%C3%94n%20L%C4%83ng).jpg",
       "emCoBiet": [
         "📅 Gắn với Nam Kỳ khởi nghĩa ngày 23/11/1940.",
         "🔎 Nằm trong vùng 18 thôn Vườn Trầu.",
@@ -14938,25 +16509,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Dinh Quận Hóc Môn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Dinh Quận Hóc Môn tại Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_31_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/B%E1%BA%A3ng%20hi%E1%BB%87u%20g%E1%BB%97%20v%C3%A0%20ni%C3%AAn%20%C4%91%E1%BA%A1i%20H%E1%BB%99i%20qu%C3%A1n%20Gia%20Th%E1%BA%A1nh.jpg",
+        "title": "Bảng hiệu gỗ và niên đại Hội quán Gia Thạnh",
+        "caption": "Bảng hiệu gỗ và niên đại Hội quán Gia Thạnh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Dinh Quận Hóc Môn.",
-        "year": "Hiện vật"
+        "id": "mon_31_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/B%E1%BB%99%20b%C3%A0n%20gh%E1%BA%BF%20ch%E1%BA%A1m%20r%E1%BB%93ng%20v%C3%A0%20b%C3%A0n%20th%E1%BB%9D%20ch%C3%ADnh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Bộ bàn ghế chạm rồng và bàn thờ chính điện",
+        "caption": "Bộ bàn ghế chạm rồng và bàn thờ chính điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_31_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/B%E1%BB%9D%20m%C3%A1i%20g%E1%BB%91m%20C%C3%A2y%20Mai%20%C4%91%E1%BA%AFp%20n%E1%BB%95i%20ch%C3%B5ng%20ngh%C3%AA%20v%C3%A0%20l%E1%BB%A3p%20ng%C3%B3i%20%C3%A2m%20d%C6%B0%C6%A1ng.jpg",
+        "title": "Bờ mái gốm Cây Mai đắp nổi chõng nghê và lợp ngói âm dương",
+        "caption": "Bờ mái gốm Cây Mai đắp nổi chõng nghê và lợp ngói âm dương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_31_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/Chi%20ti%E1%BA%BFt%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20g%E1%BB%97%20tinh%20x%E1%BA%A3o%20ch%E1%BB%AF%20Nghi%C3%AAm%20(%E5%9A%B4).jpg",
+        "title": "Chi tiết chạm khắc gỗ tinh xảo chữ Nghiêm (嚴)",
+        "caption": "Chi tiết chạm khắc gỗ tinh xảo chữ Nghiêm (嚴)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_31_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/Gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20v%C3%A0%20h%E1%BB%87%20th%E1%BB%91ng%20bao%20l%C6%A1n%2C%20ho%C3%A0nh%20phi%20g%E1%BB%97.jpg",
+        "title": "Gian chính điện và hệ thống bao lơn, hoành phi gỗ",
+        "caption": "Gian chính điện và hệ thống bao lơn, hoành phi gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_31_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/G%E1%BB%91m%20s%E1%BB%A9%20%C4%91%E1%BA%AFp%20n%E1%BB%95i%20h%C3%ACnh%20Chim%20Ph%C6%B0%E1%BB%A3ng%20tr%C3%AAn%20%C4%91%E1%BB%89nh%20m%C3%A1i%20%C4%91%E1%BB%81n.jpg",
+        "title": "Gốm sứ đắp nổi hình Chim Phượng trên đỉnh mái đền",
+        "caption": "Gốm sứ đắp nổi hình Chim Phượng trên đỉnh mái đền",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_31_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/Kh%C3%B4ng%20gian%20B%C3%A1i%20%C4%91%C6%B0%E1%BB%9Dng%20v%C3%A0%20Nghi%20m%C3%B4n%20g%E1%BB%97%20ch%E1%BA%A1m%20r%E1%BB%93ng.jpg",
+        "title": "Không gian Bái đường và Nghi môn gỗ chạm rồng",
+        "caption": "Không gian Bái đường và Nghi môn gỗ chạm rồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_31_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/M%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Gia%20Th%E1%BA%A1nh%20(Ch%C3%B9a%20%C3%94n%20L%C4%83ng).jpg",
+        "title": "Mặt tiền Hội quán Gia Thạnh (Chùa Ôn Lăng)",
+        "caption": "Mặt tiền Hội quán Gia Thạnh (Chùa Ôn Lăng)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_31_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/Qu%E1%BA%A7n%20th%E1%BB%83%20t%C6%B0%E1%BB%A3ng%20g%E1%BB%91m%20C%C3%A2y%20Mai%20ti%E1%BB%83u%20c%E1%BA%A3nh%20tr%C3%AAn%20m%C3%A1i%20%C4%91%E1%BB%81n.jpg",
+        "title": "Quần thể tượng gốm Cây Mai tiểu cảnh trên mái đền",
+        "caption": "Quần thể tượng gốm Cây Mai tiểu cảnh trên mái đền",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_31_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/To%C3%A0n%20c%E1%BA%A3nh%20ki%E1%BA%BFn%20tr%C3%BAc%20H%E1%BB%99i%20qu%C3%A1n%20Gia%20Th%E1%BA%A1nh%20(Ch%C3%B9a%20%C3%94n%20L%C4%83ng)%20x%C6%B0a.jpg",
+        "title": "Toàn cảnh kiến trúc Hội quán Gia Thạnh (Chùa Ôn Lăng) xưa",
+        "caption": "Toàn cảnh kiến trúc Hội quán Gia Thạnh (Chùa Ôn Lăng) xưa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -15285,7 +16915,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Địa đạo Long Phước có giá trị đặc biệt về lịch sử cách mạng, lịch sử quân sự và nghệ thuật chiến tranh nhân dân. Hệ thống địa đạo là kết quả của quá trình quân và dân địa phương tổ chức đào, mở rộng và sử dụng các công trình dưới lòng đất để thích ứng với điều kiện chiến tranh. Địa đạo vừa là nơi trú ẩn, vừa phục vụ hội họp, cất giấu tài liệu, bảo vệ cán bộ, vận chuyển và tổ chức chiến đấu. Giá trị lớn của di tích còn nằm ở sự tham gia của nhân dân: việc đào địa đạo đòi hỏi sức lao động, sự tổ chức và tinh thần bảo vệ bí mật của cả cộng đồng. Vì vậy, Địa đạo Long Phước không chỉ là chứng tích quân sự mà còn là biểu tượng của tinh thần đoàn kết, sáng tạo và ý chí bám đất của nhân dân.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/C%E1%BB%95ng%20ch%C3%ADnh%20%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D.jpg",
       "emCoBiet": [
         "📅 Hình thành: khoảng năm 1948",
         "📏 Tổng chiều dài lịch sử: khoảng 3.600 m",
@@ -15428,25 +17058,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Địa đạo Long Phước",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Địa đạo Long Phước tại Phường Tam Long, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_32_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/Bia%20%C4%91%C3%A1%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt.jpg",
+        "title": "Bia đá Di tích Kiến trúc Nghệ thuật",
+        "caption": "Bia đá Di tích Kiến trúc Nghệ thuật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Địa đạo Long Phước.",
-        "year": "Hiện vật"
+        "id": "mon_32_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Bằng xếp hạng Di tích Quốc gia",
+        "caption": "Bằng xếp hạng Di tích Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_32_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/C%E1%BB%95ng%20ch%C3%ADnh%20%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D.jpg",
+        "title": "Cổng chính Đình Trường Thọ",
+        "caption": "Cổng chính Đình Trường Thọ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_32_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/Gian%20th%E1%BB%9D%20ch%C3%ADnh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Gian thờ chính điện",
+        "caption": "Gian thờ chính điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_32_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/Kh%C3%B4ng%20gian%20B%C3%A1i%20%C4%91%C6%B0%E1%BB%9Dng%20v%C3%A0%20h%E1%BB%87%20c%E1%BB%99t%20k%C3%A8o.jpg",
+        "title": "Không gian Bái đường và hệ cột kèo",
+        "caption": "Không gian Bái đường và hệ cột kèo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_32_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/K%E1%BA%BFt%20c%E1%BA%A5u%20giao%20m%C3%A1i%20v%C3%A0%20ng%C3%B3i%20v%E1%BA%A3y%20c%C3%A1.jpg",
+        "title": "Kết cấu giao mái và ngói vảy cá",
+        "caption": "Kết cấu giao mái và ngói vảy cá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_32_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/Mi%E1%BA%BFu%20th%E1%BB%9D%20Th%E1%BA%A7n%20Linh%20%26%20Kh%C3%B4ng%20gian%20s%C3%A2n%20v%C6%B0%E1%BB%9Dn.jpg",
+        "title": "Miếu thờ Thần Linh & Không gian sân vườn",
+        "caption": "Miếu thờ Thần Linh & Không gian sân vườn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_32_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/M%E1%BA%B7t%20ti%E1%BB%81n%20Ti%E1%BB%81n%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D.jpg",
+        "title": "Mặt tiền Tiền điện Đình Trường Thọ",
+        "caption": "Mặt tiền Tiền điện Đình Trường Thọ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_32_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/T%C6%B0%E1%BB%A3ng%20Ngh%C3%AA%20K%E1%BB%B3%20l%C3%A2n%20v%C3%A0ng%20tr%C6%B0%E1%BB%9Bc%20ti%E1%BB%81n%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Tượng Nghê Kỳ lân vàng trước tiền điện",
+        "caption": "Tượng Nghê Kỳ lân vàng trước tiền điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_32_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/T%C6%B0%E1%BB%A3ng%20th%E1%BB%9D%20Th%C3%A0nh%20ho%C3%A0ng%20%20V%E1%BB%8B%20th%E1%BA%A7n.jpg",
+        "title": "Tượng thờ Thành hoàng  Vị thần",
+        "caption": "Tượng thờ Thành hoàng  Vị thần",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -15799,7 +17488,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba có giá trị quan trọng về lịch sử quân sự và giáo dục truyền thống. Việc ngày tháng được ghi trực tiếp trong tên di tích cho thấy địa điểm gắn với một trận chiến xác định về thời gian. Di tích là nơi lưu giữ ký ức về cuộc chiến đấu, sự hy sinh và những mất mát của con người trong thời kỳ chống Mỹ. Giá trị của địa điểm không chỉ nằm ở việc xác định vị trí một trận đánh mà còn ở khả năng giúp thế hệ trẻ hình dung chiến tranh đã tác động trực tiếp đến cộng đồng địa phương như thế nào. Đây đồng thời là địa điểm có ý nghĩa tưởng niệm và giáo dục lòng biết ơn đối với những người đã chiến đấu, hy sinh.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/C%E1%BB%95ng%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
       "emCoBiet": [
         "📅 Ngày diễn ra trận chiến: 6/6/1969",
         "🔎 53 cán bộ, chiến sĩ Tiểu đoàn 1, Trung đoàn 33 hy sinh",
@@ -15942,25 +17631,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba tại Xã Ngãi Giao, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_33_img_1",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Bia%20ghi%20danh%2033%20c%C3%A1n%20b%E1%BB%99%2C%20chi%E1%BA%BFn%20s%C4%A9%20Trung%20%C4%91o%C3%A0n%2033%20hy%20sinh%20trong%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
+        "title": "Bia ghi danh 33 cán bộ, chiến sĩ Trung đoàn 33 hy sinh trong trận chiến ngày 661969 tại Bình Ba",
+        "caption": "Bia ghi danh 33 cán bộ, chiến sĩ Trung đoàn 33 hy sinh trong trận chiến ngày 661969 tại Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba.",
-        "year": "Hiện vật"
+        "id": "mon_33_img_2",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Binh%20Ba%2C%20th%C3%A1ng%2061969%20%E2%80%93%20ch%E1%BB%89%20huy%20xe%20thi%E1%BA%BFt%20gi%C3%A1p%20quan%20s%C3%A1t%20khu%20v%E1%BB%B1c%20ven%20%C4%91%C6%B0%E1%BB%9Dng%20g%E1%BA%A7n%20B%C3%ACnh%20Ba.jpg",
+        "title": "Binh Ba, tháng 61969 – chỉ huy xe thiết giáp quan sát khu vực ven đường gần Bình Ba",
+        "caption": "Binh Ba, tháng 61969 – chỉ huy xe thiết giáp quan sát khu vực ven đường gần Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_33_img_3",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/B%E1%BA%A3n%20%C4%91%E1%BB%93%20khu%20v%E1%BB%B1c%20B%C3%ACnh%20Ba%20trong%20th%E1%BB%9Di%20k%E1%BB%B3%20chi%E1%BA%BFn%20tranh.jpg",
+        "title": "Bản đồ khu vực Bình Ba trong thời kỳ chiến tranh",
+        "caption": "Bản đồ khu vực Bình Ba trong thời kỳ chiến tranh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_33_img_4",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/C%E1%BB%95ng%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
+        "title": "Cổng Di tích lịch sử Địa điểm trận chiến ngày 661969 tại Bình Ba",
+        "caption": "Cổng Di tích lịch sử Địa điểm trận chiến ngày 661969 tại Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_33_img_5",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/D%E1%BA%A5u%20t%C3%ADch%20sau%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20t%E1%BA%A1i%20l%C3%A0ng%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
+        "title": "Dấu tích sau trận chiến tại làng Bình Ba, tháng 61969",
+        "caption": "Dấu tích sau trận chiến tại làng Bình Ba, tháng 61969",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_33_img_6",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/L%E1%BB%85%20%C4%91%C3%B3n%20nh%E1%BA%ADn%20B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
+        "title": "Lễ đón nhận Bằng xếp hạng Di tích Quốc gia Địa điểm trận chiến ngày 661969 tại Bình Ba",
+        "caption": "Lễ đón nhận Bằng xếp hạng Di tích Quốc gia Địa điểm trận chiến ngày 661969 tại Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_33_img_7",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/L%E1%BB%B1c%20l%C6%B0%E1%BB%A3ng%20b%E1%BB%99%20binh%20v%C3%A0%20xe%20t%C4%83ng%20t%E1%BA%A1i%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
+        "title": "Lực lượng bộ binh và xe tăng tại Bình Ba, tháng 61969",
+        "caption": "Lực lượng bộ binh và xe tăng tại Bình Ba, tháng 61969",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_33_img_8",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Quang%20c%E1%BA%A3nh%20l%C3%A0ng%20B%C3%ACnh%20Ba%20sau%20tr%E1%BA%ADn%20chi%E1%BA%BFn%2C%20th%C3%A1ng%2061969.jpg",
+        "title": "Quang cảnh làng Bình Ba sau trận chiến, tháng 61969",
+        "caption": "Quang cảnh làng Bình Ba sau trận chiến, tháng 61969",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_33_img_9",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Xe%20t%C4%83ng%20v%C3%A0%20xe%20thi%E1%BA%BFt%20gi%C3%A1p%20ti%E1%BA%BFn%20v%C3%A0o%20l%C3%A0ng%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
+        "title": "Xe tăng và xe thiết giáp tiến vào làng Bình Ba, tháng 61969",
+        "caption": "Xe tăng và xe thiết giáp tiến vào làng Bình Ba, tháng 61969",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_33_img_10",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/%E1%BA%A2nh%20trinh%20s%C3%A1t%20khu%20v%E1%BB%B1c%20l%C3%A0ng%20B%C3%ACnh%20Ba.jpg",
+        "title": "Ảnh trinh sát khu vực làng Bình Ba",
+        "caption": "Ảnh trinh sát khu vực làng Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -16299,7 +18047,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Bình Đông có giá trị về lịch sử cộng đồng, tín ngưỡng dân gian và văn hóa truyền thống Nam Bộ. Đình là nơi cộng đồng cư dân gửi gắm niềm tin, tưởng nhớ Thành hoàng và những người có công với vùng đất. Qua hệ thống bài vị, sắc phong, đồ thờ, kiến trúc và nghi lễ, di tích phản ánh quá trình hình thành cộng đồng và sự duy trì ký ức của cư dân qua nhiều thế hệ. Đình còn là không gian sinh hoạt cộng đồng, nơi các nghi lễ truyền thống tạo sự gắn kết giữa các thế hệ. Vì vậy, giá trị của Đình Bình Đông bao gồm cả giá trị vật thể và phi vật thể, phù hợp để nghiên cứu sự hình thành bản sắc cộng đồng.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/C%E1%BB%95ng%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
       "emCoBiet": [
         "🏛️ Cảnh quan: nằm giữa hệ thống rạch, kênh.",
         "🔎 Gắn với lịch sử làng Bình Đông.",
@@ -16442,25 +18190,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Đình Bình Đông",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Bình Đông tại Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_34_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/Bia%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
+        "title": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Xuân Hiệp",
+        "caption": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Xuân Hiệp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Bình Đông.",
-        "year": "Hiện vật"
+        "id": "mon_34_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
+        "title": "Bằng xếp hạng Di tích quốc gia Đình Xuân Hiệp",
+        "caption": "Bằng xếp hạng Di tích quốc gia Đình Xuân Hiệp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_34_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/Chi%20ti%E1%BA%BFt%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20l%C6%B0%E1%BB%A1ng%20long%20ch%E1%BA%A7u%20m%E1%BA%B7t%20tr%E1%BB%9Di%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
+        "title": "Chi tiết chạm khắc lưỡng long chầu mặt trời tại Đình Xuân Hiệp",
+        "caption": "Chi tiết chạm khắc lưỡng long chầu mặt trời tại Đình Xuân Hiệp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_34_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/C%E1%BB%95ng%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
+        "title": "Cổng Đình Xuân Hiệp",
+        "caption": "Cổng Đình Xuân Hiệp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_34_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/Kh%C3%B4ng%20gian%20n%E1%BB%99i%20th%E1%BA%A5t%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p%20(2).jpg",
+        "title": "Không gian nội thất Đình Xuân Hiệp (2)",
+        "caption": "Không gian nội thất Đình Xuân Hiệp (2)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_34_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/Ki%E1%BA%BFn%20tr%C3%BAc%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p%20nh%C3%ACn%20t%E1%BB%AB%20s%C3%A2n%20%C4%91%C3%ACnh.jpg",
+        "title": "Kiến trúc Đình Xuân Hiệp nhìn từ sân đình",
+        "caption": "Kiến trúc Đình Xuân Hiệp nhìn từ sân đình",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_34_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Đình Xuân Hiệp nhìn từ trên cao",
+        "caption": "Toàn cảnh Đình Xuân Hiệp nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_34_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/Trang%20tr%C3%AD%20l%C6%B0%E1%BB%A1ng%20long%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
+        "title": "Trang trí lưỡng long trên mái Đình Xuân Hiệp",
+        "caption": "Trang trí lưỡng long trên mái Đình Xuân Hiệp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_34_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/%C4%90%C3%A8n%20g%E1%BB%97%20trang%20tr%C3%AD%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
+        "title": "Đèn gỗ trang trí tại Đình Xuân Hiệp",
+        "caption": "Đèn gỗ trang trí tại Đình Xuân Hiệp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_34_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/%C4%90%C3%A8n%20trang%20tr%C3%AD%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
+        "title": "Đèn trang trí tại Đình Xuân Hiệp",
+        "caption": "Đèn trang trí tại Đình Xuân Hiệp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -16781,7 +18588,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Phong Phú có giá trị nổi bật về kiến trúc nghệ thuật, lịch sử hình thành cộng đồng và tín ngưỡng đình làng. Không gian đình phản ánh đặc trưng của kiến trúc truyền thống Nam Bộ, đồng thời gắn với quá trình khai phá và định cư của cư dân địa phương. Những yếu tố như bố cục kiến trúc, trang trí, đồ thờ và nghi lễ giúp nghiên cứu đời sống tinh thần của cộng đồng trong lịch sử. Việc bảo tồn đình có ý nghĩa không chỉ đối với kiến trúc mà còn đối với việc duy trì các phong tục, nghi lễ và ký ức cộng đồng. Đây là cơ sở thuận lợi để nghiên cứu mối quan hệ giữa di sản vật thể và di sản văn hóa phi vật thể.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Nam%20K%E1%BB%B3%20kh%E1%BB%9Fi%20ngh%C4%A9a%2023111940%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
       "emCoBiet": [
         "📏 Diện tích khuôn viên: khoảng 4,2 ha.",
         "📅 Khởi dựng khoảng cuối thế kỷ XIX.",
@@ -16924,25 +18731,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Đình Phong Phú",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Phong Phú tại Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_35_img_1",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Nam%20K%E1%BB%B3%20kh%E1%BB%9Fi%20ngh%C4%A9a%2023111940%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Bia tưởng niệm Nam Kỳ khởi nghĩa 23111940 tại Dinh Quận Hóc Môn",
+        "caption": "Bia tưởng niệm Nam Kỳ khởi nghĩa 23111940 tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Phong Phú.",
-        "year": "Hiện vật"
+        "id": "mon_35_img_2",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/D%C3%A2ng%20h%C6%B0%C6%A1ng%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Dâng hương tưởng niệm tại Dinh Quận Hóc Môn",
+        "caption": "Dâng hương tưởng niệm tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_35_img_3",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Hi%E1%BB%87n%20v%E1%BA%ADt%20chi%E1%BA%BFc%20xu%E1%BB%93ng%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Hiện vật chiếc xuồng tại Dinh Quận Hóc Môn",
+        "caption": "Hiện vật chiếc xuồng tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_35_img_4",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Hi%E1%BB%87n%20v%E1%BA%ADt%20chi%E1%BA%BFc%20xu%E1%BB%93ng%20%C4%91%C6%B0%E1%BB%A3c%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Hiện vật chiếc xuồng được trưng bày tại Dinh Quận Hóc Môn",
+        "caption": "Hiện vật chiếc xuồng được trưng bày tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_35_img_5",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20h%C3%ACnh%20%E1%BA%A3nh%2C%20t%C6%B0%20li%E1%BB%87u%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Không gian trưng bày hình ảnh, tư liệu tại Dinh Quận Hóc Môn",
+        "caption": "Không gian trưng bày hình ảnh, tư liệu tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_35_img_6",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20v%E1%BB%81%20nh%C3%A2n%20d%C3%A2n%20H%C3%B3c%20M%C3%B4n%20trong%20kh%C3%A1ng%20chi%E1%BA%BFn%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Không gian trưng bày về nhân dân Hóc Môn trong kháng chiến tại Dinh Quận Hóc Môn",
+        "caption": "Không gian trưng bày về nhân dân Hóc Môn trong kháng chiến tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_35_img_7",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Kh%C3%B4ng%20gian%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Không gian tưởng niệm tại Dinh Quận Hóc Môn",
+        "caption": "Không gian tưởng niệm tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_35_img_8",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/M%E1%BB%99t%20s%E1%BB%91%20hi%E1%BB%87n%20v%E1%BA%ADt%20%C4%91%C6%B0%E1%BB%A3c%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Một số hiện vật được trưng bày tại Dinh Quận Hóc Môn",
+        "caption": "Một số hiện vật được trưng bày tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_35_img_9",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20Nam%20K%E1%BB%B3%20kh%E1%BB%9Fi%20ngh%C4%A9a%20tr%C6%B0%E1%BB%9Bc%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Tượng đài Nam Kỳ khởi nghĩa trước Dinh Quận Hóc Môn",
+        "caption": "Tượng đài Nam Kỳ khởi nghĩa trước Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_35_img_10",
+        "src": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20Nam%20K%E1%BB%B3%20kh%E1%BB%9Fi%20ngh%C4%A9a%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+        "title": "Tượng đài Nam Kỳ khởi nghĩa tại Dinh Quận Hóc Môn",
+        "caption": "Tượng đài Nam Kỳ khởi nghĩa tại Dinh Quận Hóc Môn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -17275,7 +19141,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đồn ngã tư Giếng Nước có giá trị về lịch sử quân sự và lịch sử phát triển đô thị Vũng Tàu. Vị trí của công trình tại khu vực giao thông quan trọng cho thấy ý nghĩa của địa điểm trong việc kiểm soát và tổ chức phòng thủ. Di tích giúp nhận diện những thay đổi của không gian quân sự trong quá trình đô thị hóa Vũng Tàu. Những dấu tích còn lại, nếu được khảo sát và lập bản đồ, có thể giúp phục dựng một phần hệ thống phòng thủ và giao thông quân sự trước đây. Đây cũng là một ví dụ về việc các công trình quân sự lịch sử dần bị bao quanh bởi không gian đô thị hiện đại.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%93n%20ng%C3%A3%204%20Gi%E1%BA%BFng%20N%C6%B0%E1%BB%9Bc/Bia%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20di%E1%BB%87t%20%C4%91%E1%BB%93n%20gi%E1%BA%B7c%20t%E1%BA%A1i%20Khu%20Nh%C3%A0%20m%C3%A1y%20n%C6%B0%E1%BB%9Bc.jpg",
       "emCoBiet": [
         "🔎 Tên trong danh mục: Đồn Nhà máy nước.",
         "🏛️ Là công trình quân sự ở Vũng Tàu cũ.",
@@ -17418,25 +19284,20 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Đồn ngã tư Giếng Nước",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đồn ngã tư Giếng Nước tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_36_img_1",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%93n%20ng%C3%A3%204%20Gi%E1%BA%BFng%20N%C6%B0%E1%BB%9Bc/Bia%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20di%E1%BB%87t%20%C4%91%E1%BB%93n%20gi%E1%BA%B7c%20t%E1%BA%A1i%20Khu%20Nh%C3%A0%20m%C3%A1y%20n%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Bia di tích Chiến thắng diệt đồn giặc tại Khu Nhà máy nước",
+        "caption": "Bia di tích Chiến thắng diệt đồn giặc tại Khu Nhà máy nước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đồn ngã tư Giếng Nước.",
-        "year": "Hiện vật"
-      },
-      {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_36_img_2",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%93n%20ng%C3%A3%204%20Gi%E1%BA%BFng%20N%C6%B0%E1%BB%9Bc/Ph%C3%B9%20%C4%91%E1%BA%AFp%20n%E1%BB%95i%20%26%20Bia%20di%20t%C3%ADch%20Nh%C3%A0%20m%C3%A1y%20n%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Phù đắp nổi & Bia di tích Nhà máy nước",
+        "caption": "Phù đắp nổi & Bia di tích Nhà máy nước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -17769,7 +19630,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Địa đạo Hắc Dịch có giá trị về lịch sử cách mạng và nghệ thuật chiến tranh nhân dân. Hệ thống địa đạo thể hiện khả năng thích ứng của lực lượng cách mạng với địa hình và điều kiện chiến tranh. Việc xây dựng công trình dưới lòng đất tạo điều kiện để trú ẩn, bảo vệ cán bộ, cất giấu tài liệu, vận chuyển và tổ chức chiến đấu. Giá trị của di tích còn phản ánh sự đóng góp của nhân dân Hắc Dịch, bởi địa đạo không thể tồn tại nếu thiếu sức người, lương thực, thông tin và sự bảo vệ của cộng đồng. Di tích vì vậy là chứng tích về mối quan hệ giữa lực lượng cách mạng và nhân dân địa phương.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BB%95ng%20ch%C3%ADnh%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
       "emCoBiet": [
         "📅 Khởi đào: mùa khô năm 1961.",
         "🔎 Quy mô lịch sử: khoảng 2.500 m, gồm 4 tuyến.",
@@ -17912,25 +19773,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Địa đạo Hắc Dịch",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Địa đạo Hắc Dịch tại Phường Tân Thành, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_37_img_1",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/Bia%20T%E1%BB%95%20qu%E1%BB%91c%20ghi%20c%C3%B4ng%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Bia Tổ quốc ghi công tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Bia Tổ quốc ghi công tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Địa đạo Hắc Dịch.",
-        "year": "Hiện vật"
+        "id": "mon_37_img_2",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BA%ADn%20c%E1%BA%A3nh%20nh%C3%A0%20bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Cận cảnh nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Cận cảnh nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_37_img_3",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BB%95ng%20ch%C3%ADnh%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Cổng chính Khu di tích lịch sử Minh Đạm",
+        "caption": "Cổng chính Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_37_img_4",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BB%95ng%20v%C3%A0o%20khu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Cổng vào khu tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Cổng vào khu tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_37_img_5",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BB%95ng%20%E2%80%9CU%E1%BB%91ng%20n%C6%B0%E1%BB%9Bc%20nh%E1%BB%9B%20ngu%E1%BB%93n%E2%80%9D%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Cổng “Uống nước nhớ nguồn” tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Cổng “Uống nước nhớ nguồn” tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_37_img_6",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/Kh%C3%B4ng%20gian%20ki%E1%BA%BFn%20tr%C3%BAc%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m%20b%C3%AAn%20h%E1%BB%93%20sen.jpg",
+        "title": "Không gian kiến trúc Khu di tích lịch sử Minh Đạm bên hồ sen",
+        "caption": "Không gian kiến trúc Khu di tích lịch sử Minh Đạm bên hồ sen",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_37_img_7",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/L%E1%BB%91i%20b%E1%BA%ADc%20thang%20d%E1%BA%ABn%20l%C3%AAn%20khu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Lối bậc thang dẫn lên khu tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Lối bậc thang dẫn lên khu tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_37_img_8",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/Nh%C3%A0%20bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_37_img_9",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/To%C3%A0n%20c%E1%BA%A3nh%20c%C3%A1c%20c%C3%B4ng%20tr%C3%ACnh%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20gi%E1%BB%AFa%20n%C3%BAi%20r%E1%BB%ABng%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Toàn cảnh các công trình tưởng niệm giữa núi rừng Minh Đạm",
+        "caption": "Toàn cảnh các công trình tưởng niệm giữa núi rừng Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_37_img_10",
+        "src": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/%C4%90%E1%BB%81n%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20c%C3%A1c%20anh%20h%C3%B9ng%20li%E1%BB%87t%20s%C4%A9%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+        "title": "Đền tưởng niệm các anh hùng liệt sĩ tại Khu di tích lịch sử Minh Đạm",
+        "caption": "Đền tưởng niệm các anh hùng liệt sĩ tại Khu di tích lịch sử Minh Đạm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -18263,7 +20183,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước có giá trị đặc biệt về lịch sử tuyên truyền, lịch sử cộng đồng người Hoa và hoạt động cách mạng trong đô thị. Một cơ sở in tài liệu bí mật đòi hỏi phải có địa điểm kín đáo, người phụ trách, phương tiện in ấn và mạng lưới đưa tài liệu ra ngoài. Điều này cho thấy hoạt động tuyên truyền được tổ chức có hệ thống và phải đối mặt với nguy cơ bị phát hiện. Di tích cũng giúp nghiên cứu vai trò của Ban Tuyên huấn Hoa vận trong việc tiếp cận, tuyên truyền và vận động quần chúng người Hoa trong thời kỳ chống Mỹ.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/C%E1%BB%95ng%20tam%20quan%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 341/10 Gia Phú.",
         "🔎 Gắn với hoạt động tuyên truyền trong cộng đồng người Hoa.",
@@ -18406,25 +20326,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước tại Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_38_img_1",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/B%E1%BA%A3ng%20ghi%20nh%E1%BA%ADn%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m%20l%C3%A0%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%E2%80%93%20v%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bảng ghi nhận Chùa Giác Lâm là di tích lịch sử – văn hóa",
+        "caption": "Bảng ghi nhận Chùa Giác Lâm là di tích lịch sử – văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước.",
-        "year": "Hiện vật"
+        "id": "mon_38_img_2",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/B%E1%BA%A3o%20th%C3%A1p%20X%C3%A1%20L%E1%BB%A3i%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Bảo tháp Xá Lợi Chùa Giác Lâm",
+        "caption": "Bảo tháp Xá Lợi Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_38_img_3",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/C%E1%BB%95ng%20tam%20quan%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Cổng tam quan Chùa Giác Lâm",
+        "caption": "Cổng tam quan Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_38_img_4",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/hi%20ti%E1%BA%BFt%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20v%C3%A0%20ho%C3%A0nh%20phi%20trong%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "hi tiết chạm khắc và hoành phi trong Chùa Giác Lâm",
+        "caption": "hi tiết chạm khắc và hoành phi trong Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_38_img_5",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/H%E1%BB%87%20th%E1%BB%91ng%20t%C6%B0%E1%BB%A3ng%20th%E1%BB%9D%20trong%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Hệ thống tượng thờ trong chính điện Chùa Giác Lâm",
+        "caption": "Hệ thống tượng thờ trong chính điện Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_38_img_6",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/Khu%20gi%E1%BA%A3ng%20%C4%91%C6%B0%E1%BB%9Dng%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Khu giảng đường Chùa Giác Lâm",
+        "caption": "Khu giảng đường Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_38_img_7",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/Kh%C3%B4ng%20gian%20n%E1%BB%99i%20%C4%91i%E1%BB%87n%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Không gian nội điện Chùa Giác Lâm",
+        "caption": "Không gian nội điện Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_38_img_8",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20v%C3%A0%20h%E1%BB%87%20th%E1%BB%91ng%20t%C6%B0%E1%BB%A3ng%20c%E1%BB%95%20t%E1%BA%A1i%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Không gian thờ tự và hệ thống tượng cổ tại Chùa Giác Lâm",
+        "caption": "Không gian thờ tự và hệ thống tượng cổ tại Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_38_img_9",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/M%E1%BB%99t%20c%C3%B4ng%20tr%C3%ACnh%20ki%E1%BA%BFn%20tr%C3%BAc%20trong%20khu%C3%B4n%20vi%C3%AAn%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Một công trình kiến trúc trong khuôn viên Chùa Giác Lâm",
+        "caption": "Một công trình kiến trúc trong khuôn viên Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_38_img_10",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/Th%C3%A1p%20T%E1%BB%95%20t%E1%BA%A1i%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Tháp Tổ tại Chùa Giác Lâm",
+        "caption": "Tháp Tổ tại Chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -18757,7 +20736,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Mộ Phan Châu Trinh có giá trị đặc biệt về lịch sử tư tưởng, phong trào yêu nước và quá trình vận động cải cách xã hội Việt Nam đầu thế kỷ XX. Phan Châu Trinh là một nhà yêu nước tiêu biểu, chủ trương nâng cao dân trí, chấn hưng dân khí, phát triển dân quyền và canh tân xã hội. Vì vậy, mộ của ông không chỉ mang ý nghĩa tưởng niệm một nhân vật lịch sử mà còn là địa điểm để giáo dục về tinh thần yêu nước, ý thức cải cách và trách nhiệm đối với đất nước. Di tích có thể được khai thác trong giáo dục lịch sử, văn học, tư tưởng và hoạt động trải nghiệm cho học sinh.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/C%E1%BB%95ng%20v%C3%A0o%20T%E1%BB%95%20%C4%91%C3%ACnh%20Gi%C3%A1c%20Vi%C3%AAn.jpg",
       "emCoBiet": [
         "📏 Phan Châu Trinh: 1872–1926.",
         "🔎 Là nhà yêu nước và tư tưởng đầu thế kỷ XX.",
@@ -18900,25 +20879,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Mộ Phan Châu Trinh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Mộ Phan Châu Trinh tại Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_39_img_1",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/B%C3%A0n%20th%E1%BB%9D%20T%E1%BB%95%20v%C3%A0%20c%C3%A1c%20b%C3%A0i%20v%E1%BB%8B%20ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Bàn thờ Tổ và các bài vị chùa Giác Lâm",
+        "caption": "Bàn thờ Tổ và các bài vị chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Mộ Phan Châu Trinh.",
-        "year": "Hiện vật"
+        "id": "mon_39_img_2",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/Ch%C3%ADnh%20%C4%91i%E1%BB%87n%20son%20th%E1%BA%BFp%20v%C3%A0ng%20ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Chính điện son thếp vàng chùa Giác Lâm",
+        "caption": "Chính điện son thếp vàng chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_39_img_3",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/C%E1%BB%95ng%20v%C3%A0o%20T%E1%BB%95%20%C4%91%C3%ACnh%20Gi%C3%A1c%20Vi%C3%AAn.jpg",
+        "title": "Cổng vào Tổ đình Giác Viên",
+        "caption": "Cổng vào Tổ đình Giác Viên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_39_img_4",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/Ho%C3%A0nh%20phi%2C%20c%C3%A2u%20%C4%91%E1%BB%91i%20v%C3%A0%20ki%E1%BA%BFn%20tr%C3%BAc%20trang%20tr%C3%AD%20b%C3%AAn%20trong%20T%E1%BB%95%20%C4%91%C3%ACnh%20Gi%C3%A1c%20Vi%C3%AAn.jpg",
+        "title": "Hoành phi, câu đối và kiến trúc trang trí bên trong Tổ đình Giác Viên",
+        "caption": "Hoành phi, câu đối và kiến trúc trang trí bên trong Tổ đình Giác Viên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_39_img_5",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/H%C3%A0nh%20h%C3%A0nh%20lang%20v%C3%A0%20h%C3%B2n%20h%C3%B2n%20b%E1%BB%99%20ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Hành hành lang và hòn hòn bộ chùa Giác Lâm",
+        "caption": "Hành hành lang và hòn hòn bộ chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_39_img_6",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/H%E1%BB%87%20th%E1%BB%91ng%20t%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20th%E1%BB%9D%20t%E1%BA%A1i%20Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn.jpg",
+        "title": "Hệ thống tượng Phật thờ tại Chùa Giác Viên",
+        "caption": "Hệ thống tượng Phật thờ tại Chùa Giác Viên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_39_img_7",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20v%C3%A0%20ngh%E1%BB%87%20thu%E1%BA%ADt%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20g%E1%BB%97%20b%C3%AAn%20trong%20Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn.jpg",
+        "title": "Không gian thờ tự và nghệ thuật chạm khắc gỗ bên trong Chùa Giác Viên",
+        "caption": "Không gian thờ tự và nghệ thuật chạm khắc gỗ bên trong Chùa Giác Viên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_39_img_8",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/Ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1i%20ng%C3%B3i%20v%C3%A0%20cu%E1%BB%91n%20th%C6%B0%20c%E1%BB%95%20ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Kiến trúc mái ngói và cuốn thư cổ chùa Giác Lâm",
+        "caption": "Kiến trúc mái ngói và cuốn thư cổ chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_39_img_9",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/Th%C3%A1p%20T%E1%BB%95%20b%E1%BA%A3o%20l%C6%B0u%20trong%20khu%C3%B4n%20vi%C3%AAn%20ch%C3%B9a.jpg",
+        "title": "Tháp Tổ bảo lưu trong khuôn viên chùa",
+        "caption": "Tháp Tổ bảo lưu trong khuôn viên chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_39_img_10",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/V%C6%B0%E1%BB%9Dn%20th%C3%A1p%20T%E1%BB%95%20ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
+        "title": "Vườn tháp Tổ chùa Giác Lâm",
+        "caption": "Vườn tháp Tổ chùa Giác Lâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -19251,7 +21289,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà Cao Cẳng có giá trị về lịch sử cách mạng tại Vũng Tàu và vai trò của các cơ sở dân sự trong hoạt động bí mật. Những ngôi nhà trong khu dân cư có ưu thế tạo vỏ bọc tự nhiên cho các hoạt động liên lạc và hỗ trợ cách mạng. Giá trị của di tích vì thế không chỉ nằm ở công trình mà còn ở câu chuyện về những con người đã biến không gian đời thường thành địa điểm phục vụ hoạt động cách mạng. Di tích giúp mở rộng cách nhìn về chiến tranh, cho thấy sự đóng góp của nhân dân và các gia đình cơ sở có ý nghĩa không kém những chiến trường lớn.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ: 18 Lê Lợi, Vũng Tàu cũ.",
         "🔎 Gắn với hoạt động cách mạng thời chống Mỹ.",
@@ -19394,25 +21432,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh “Nhà cao cẳng” số 18 Lê Lợi.",
-        "caption": "Không gian kiến trúc và cảnh quan di tích “Nhà cao cẳng” số 18 Lê Lợi. tại Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_40_img_1",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20%C4%91i%E1%BB%87n%20trung%20t%C3%A2m.jpg",
+        "title": "Bàn thờ Phật điện trung tâm",
+        "caption": "Bàn thờ Phật điện trung tâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với “Nhà cao cẳng” số 18 Lê Lợi..",
-        "year": "Hiện vật"
+        "id": "mon_40_img_2",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/B%C3%A0n%20th%E1%BB%9D%20Quan%20C%C3%B4ng.jpg",
+        "title": "Bàn thờ Quan Công",
+        "caption": "Bàn thờ Quan Công",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_40_img_3",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n.jpg",
+        "title": "Cổng Tam quan Chùa Phụng Sơn",
+        "caption": "Cổng Tam quan Chùa Phụng Sơn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_40_img_4",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/G%C3%B3c%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20v%C3%A0%20T%C6%B0%E1%BB%A3ng%20Qu%C3%A1n%20Th%E1%BA%BF%20%C3%82m.jpg",
+        "title": "Góc Chánh điện và Tượng Quán Thế Âm",
+        "caption": "Góc Chánh điện và Tượng Quán Thế Âm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_40_img_5",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/Khu%C3%B4n%20vi%C3%AAn%20b%E1%BB%93n%20hoa%20v%C3%A0%20t%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20ng%E1%BB%93i.jpg",
+        "title": "Khuôn viên bồn hoa và tượng Phật ngồi",
+        "caption": "Khuôn viên bồn hoa và tượng Phật ngồi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_40_img_6",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/N%E1%BB%99i%20th%E1%BA%A5t%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20c%E1%BB%95%20k%C3%ADnh.jpg",
+        "title": "Nội thất Chánh điện cổ kính",
+        "caption": "Nội thất Chánh điện cổ kính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_40_img_7",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/To%C3%A0n%20c%E1%BA%A3nh%20kho%E1%BA%A3ng%20s%C3%A2n%20v%C3%A0%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Toàn cảnh khoảng sân và Chánh điện",
+        "caption": "Toàn cảnh khoảng sân và Chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_40_img_8",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/T%C6%B0%E1%BB%A3ng%20Qu%C3%A1n%20Th%E1%BA%BF%20%C3%82m%20gi%E1%BB%AFa%20s%C3%A2n%20ch%C3%B9a.jpg",
+        "title": "Tượng Quán Thế Âm giữa sân chùa",
+        "caption": "Tượng Quán Thế Âm giữa sân chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_40_img_9",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/T%C6%B0%E1%BB%A3ng%20V%C4%83n%20Th%C3%B9%20B%E1%BB%93%20T%C3%A1t%20c%C6%B0%E1%BB%A1i%20S%C6%B0%20t%E1%BB%AD%20xanh.jpg",
+        "title": "Tượng Văn Thù Bồ Tát cưỡi Sư tử xanh",
+        "caption": "Tượng Văn Thù Bồ Tát cưỡi Sư tử xanh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_40_img_10",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/T%E1%BA%A3ng%20%C4%91%C3%A1%20kh%E1%BA%AFc%20t%C3%AAn%20ch%C3%B9a.jpg",
+        "title": "Tảng đá khắc tên chùa",
+        "caption": "Tảng đá khắc tên chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -19737,7 +21834,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà Má Tám Nhung có giá trị đặc biệt về lịch sử cách mạng, lịch sử địa phương và vai trò của phụ nữ trong chiến tranh. Theo Bảo tàng Bà Rịa–Vũng Tàu, ngôi nhà trước đây là khu vườn do gia đình Má Tám Nhung khai phá, trong Cách mạng tháng Tám năm 1945 là nơi họp của Ủy ban Mặt trận Việt Minh; trong hai cuộc kháng chiến, ngôi nhà trở thành cơ sở nuôi giấu cán bộ hoạt động trong nội ô của Tỉnh ủy và Thị ủy Vũng Tàu. Giá trị của di tích vì vậy không chỉ nằm ở sự kiện mà còn ở hình ảnh người mẹ, người phụ nữ và gia đình cơ sở đã đóng góp vào hoạt động cách mạng. Bức phù điêu chân dung Má Tám được nhân dân Vũng Tàu xây dựng năm 1987 cũng thể hiện ký ức và tình cảm cộng đồng đối với bà và gia đình.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/C%E1%BB%95ng%20ph%E1%BB%A5%20c%E1%BB%A7a%20ch%C3%B9a.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 42/11 Trần Phú.",
         "🔎 Gắn với cơ sở cách mạng tại Vũng Tàu.",
@@ -19880,25 +21977,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Ngôi nhà 42/11 (nhà má Tám Nhung)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Ngôi nhà 42/11 (nhà má Tám Nhung) tại Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_41_img_1",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20trang%20tr%C3%AD%20c%C3%A0nh%20mai.jpg",
+        "title": "Bàn thờ Phật trang trí cành mai",
+        "caption": "Bàn thờ Phật trang trí cành mai",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Ngôi nhà 42/11 (nhà má Tám Nhung).",
-        "year": "Hiện vật"
+        "id": "mon_41_img_2",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20%C4%91i%E1%BB%87n%20ch%C3%ADnh.jpg",
+        "title": "Bàn thờ Phật điện chính",
+        "caption": "Bàn thờ Phật điện chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_41_img_3",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/B%E1%BB%99%20t%C6%B0%E1%BB%A3ng%20Tam%20Th%E1%BA%BF%20Ph%E1%BA%ADt%20b%E1%BA%B1ng%20g%E1%BB%97.jpg",
+        "title": "Bộ tượng Tam Thế Phật bằng gỗ",
+        "caption": "Bộ tượng Tam Thế Phật bằng gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_41_img_4",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/C%E1%BB%95ng%20ph%E1%BB%A5%20c%E1%BB%A7a%20ch%C3%B9a.jpg",
+        "title": "Cổng phụ của chùa",
+        "caption": "Cổng phụ của chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_41_img_5",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/C%E1%BB%95ng%20Tam%20quan%20ch%C3%ADnh.jpg",
+        "title": "Cổng Tam quan chính",
+        "caption": "Cổng Tam quan chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_41_img_6",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/G%C3%B3c%20nh%C3%ACn%20t%E1%BB%AB%20b%C3%AAn%20trong%20c%E1%BB%95ng%20Tam%20quan.jpg",
+        "title": "Góc nhìn từ bên trong cổng Tam quan",
+        "caption": "Góc nhìn từ bên trong cổng Tam quan",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_41_img_7",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/Ho%C3%A0nh%20phi%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D%20T%E1%BB%B1.jpg",
+        "title": "Hoành phi Sắc Tứ Trường Thọ Tự",
+        "caption": "Hoành phi Sắc Tứ Trường Thọ Tự",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_41_img_8",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/S%C3%A2n%20%C4%91%C3%A0i%20Ph%E1%BA%ADt%20%C4%91%E1%BA%A3n.jpg",
+        "title": "Sân đài Phật đản",
+        "caption": "Sân đài Phật đản",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_41_img_9",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/T%C6%B0%E1%BB%A3ng%20Qu%C3%A1n%20Th%E1%BA%BF%20%C3%82m%20B%E1%BB%93%20T%C3%A1t%20ngo%C3%A0i%20tr%E1%BB%9Di.jpg",
+        "title": "Tượng Quán Thế Âm Bồ Tát ngoài trời",
+        "caption": "Tượng Quán Thế Âm Bồ Tát ngoài trời",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_41_img_10",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/%C4%90%E1%BA%A1i%20h%E1%BB%93ng%20chung%20(Chu%C3%B4ng%20%C4%91%E1%BB%93ng%20c%E1%BB%95).jpg",
+        "title": "Đại hồng chung (Chuông đồng cổ)",
+        "caption": "Đại hồng chung (Chuông đồng cổ)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -20203,7 +22359,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà ông Trương Quang Vinh có giá trị về lịch sử cách mạng và lịch sử cộng đồng tại Vũng Tàu. Di tích phản ánh vai trò của một gia đình và một ngôi nhà dân dụng trong mạng lưới cơ sở cách mạng. Việc bảo tồn địa điểm giúp làm rõ cách hoạt động bí mật được tổ chức trong khu dân cư, từ việc liên lạc, che giấu, hỗ trợ đến bảo vệ cán bộ. Di tích đồng thời cho thấy lịch sử chiến tranh cần được nhìn từ nhiều cấp độ, không chỉ từ các chiến dịch quân sự mà còn từ những gia đình bình thường đã tham gia vào quá trình lịch sử.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 36/29 Nguyễn An Ninh.",
         "🏅 Xếp hạng quốc gia: 25/3/1991.",
@@ -20346,25 +22502,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Nhà số 18/5 (nhà ông Trương Quang Vinh)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà số 18/5 (nhà ông Trương Quang Vinh) tại Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_42_img_1",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20%C4%91i%E1%BB%87n%20ch%C3%ADnh.jpg",
+        "title": "Bàn thờ Phật điện chính",
+        "caption": "Bàn thờ Phật điện chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà số 18/5 (nhà ông Trương Quang Vinh).",
-        "year": "Hiện vật"
+        "id": "mon_42_img_2",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "caption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_42_img_3",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng.jpg",
+        "title": "Cổng Tam quan Chùa Phước Tường",
+        "caption": "Cổng Tam quan Chùa Phước Tường",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_42_img_4",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/Gian%20th%E1%BB%9D%20Ng%C5%A9%20H%C3%A0nh%20N%C6%B0%C6%A1ng%20N%C6%B0%C6%A1ng.jpg",
+        "title": "Gian thờ Ngũ Hành Nương Nương",
+        "caption": "Gian thờ Ngũ Hành Nương Nương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_42_img_5",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/G%C3%B3c%20ch%E1%BA%ADu%20c%E1%BA%A3nh%20v%C3%A0%20lu%20g%E1%BB%91m.jpg",
+        "title": "Góc chậu cảnh và lu gốm",
+        "caption": "Góc chậu cảnh và lu gốm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_42_img_6",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/G%C3%B3c%20s%C3%A2n%20tr%C6%B0%E1%BB%9Bc%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Góc sân trước Chánh điện",
+        "caption": "Góc sân trước Chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_42_img_7",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/Hi%C3%AAn%20nh%C3%A0%20trang%20tr%C3%AD%20m%C3%A0nh%20tr%C3%BAc%20v%C3%A0%20hoa%20l%C3%A1.jpg",
+        "title": "Hiên nhà trang trí mành trúc và hoa lá",
+        "caption": "Hiên nhà trang trí mành trúc và hoa lá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_42_img_8",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/H%C3%A0nh%20lang%20g%E1%BA%A1ch%20c%E1%BB%95%20v%C3%A0%20ch%E1%BA%ADu%20hoa%20sen.jpg",
+        "title": "Hành lang gạch cổ và chậu hoa sen",
+        "caption": "Hành lang gạch cổ và chậu hoa sen",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_42_img_9",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Toàn cảnh mặt tiền Chánh điện",
+        "caption": "Toàn cảnh mặt tiền Chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_42_img_10",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/T%C6%B0%E1%BB%A3ng%20T%E1%BB%A9%20Th%E1%BA%ADp%20B%C3%A1t%20T%C3%BD%20Qu%C3%A1n%20Th%E1%BA%BF%20%C3%82m.jpg",
+        "title": "Tượng Tứ Thập Bát Tý Quán Thế Âm",
+        "caption": "Tượng Tứ Thập Bát Tý Quán Thế Âm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -20665,7 +22880,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà Tròn có giá trị về lịch sử đô thị và lịch sử cách mạng Bà Rịa. Công trình là một dấu mốc trong không gian đô thị, giúp nghiên cứu sự hình thành và biến đổi của trung tâm Bà Rịa qua thời gian. Nhà Tròn còn gắn với những biến động chính trị và xã hội của địa phương, vì vậy có thể được xem như một “điểm neo” ký ức trong không gian đô thị. Việc bảo tồn và giới thiệu Nhà Tròn góp phần giúp người dân nhận diện những lớp lịch sử nằm bên trong một đô thị hiện đại.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20n%C4%83m%201929/M%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20s%E1%BB%91%2068%20L%C3%AA%20L%E1%BB%A3i%20%E2%80%93%20N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20(%E1%BA%A3nh%20t%C6%B0%20li%E1%BB%87u%20%C4%91en%20tr%E1%BA%AFng).jpg",
       "emCoBiet": [
         "🏛️ Là công trình lịch sử tại Bà Rịa cũ.",
         "🏅 Xếp hạng quốc gia: 5/6/1987.",
@@ -20808,25 +23023,20 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Nhà Tròn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà Tròn tại Phường Bà Rịa, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_43_img_1",
+        "src": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20n%C4%83m%201929/H%C3%A0nh%20h%C3%A0nh%2C%20l%E1%BB%91i%20%C4%91i%20b%C3%AAn%20trong%20Di%20t%C3%ADch%20s%E1%BB%91%2068%20L%C3%AA%20L%E1%BB%A3i.jpg",
+        "title": "Hành hành, lối đi bên trong Di tích số 68 Lê Lợi",
+        "caption": "Hành hành, lối đi bên trong Di tích số 68 Lê Lợi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà Tròn.",
-        "year": "Hiện vật"
-      },
-      {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_43_img_2",
+        "src": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20n%C4%83m%201929/M%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20s%E1%BB%91%2068%20L%C3%AA%20L%E1%BB%A3i%20%E2%80%93%20N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20(%E1%BA%A3nh%20t%C6%B0%20li%E1%BB%87u%20%C4%91en%20tr%E1%BA%AFng).jpg",
+        "title": "Mặt tiền căn nhà số 68 Lê Lợi – Nơi thành lập An Nam Cộng sản Đảng (ảnh tư liệu đen trắng)",
+        "caption": "Mặt tiền căn nhà số 68 Lê Lợi – Nơi thành lập An Nam Cộng sản Đảng (ảnh tư liệu đen trắng)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -21147,7 +23357,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nơi thành lập Kỳ bộ Việt Nam Thanh niên Cách mạng Đồng chí Hội có giá trị đặc biệt đối với lịch sử cách mạng Việt Nam. Nguồn của Trung tâm Bảo tồn Di tích TP.HCM cho biết Việt Nam Thanh niên Cách mạng Đồng chí Hội do Nguyễn Ái Quốc sáng lập năm 1925 để chuẩn bị cho việc thành lập Đảng Cộng sản; cuối năm 1926 tổ chức ở Nam Kỳ ra đời, sau đó phát triển mạnh và tổ chức đại hội để bầu Kỳ bộ chính thức. Tháng 3/1929, Kỳ bộ Nam Kỳ bầu Kỳ bộ mới với Phạm Văn Đồng làm Bí thư. Quá trình hoạt động của tổ chức đã góp phần chuẩn bị những điều kiện về tư tưởng và tổ chức cho sự hình thành Đảng Cộng sản Việt Nam. Giá trị của di tích vì vậy vượt ra ngoài phạm vi một địa điểm cụ thể, bởi nó gắn với một giai đoạn quan trọng trong quá trình hình thành tổ chức cách mạng.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20K%E1%BB%B3%20b%E1%BB%99%20Vi%E1%BB%87t%20Nam%20Thanh%20ni%C3%AAn%20C%C3%A1ch%20m%E1%BA%A1ng%20%C4%90%E1%BB%93ng%20ch%C3%AD%20H%E1%BB%99i/Bi%E1%BB%83n%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20t%E1%BA%A1i%20c%C4%83n%20ph%C3%B2ng.jpg",
       "emCoBiet": [
         "📅 Sự kiện: thành lập Kỳ bộ tại Sài Gòn.",
         "📏 Gắn với phong trào Hội Việt Nam Cách mạng Thanh niên.",
@@ -21290,25 +23500,20 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội tại Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_44_img_1",
+        "src": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20K%E1%BB%B3%20b%E1%BB%99%20Vi%E1%BB%87t%20Nam%20Thanh%20ni%C3%AAn%20C%C3%A1ch%20m%E1%BA%A1ng%20%C4%90%E1%BB%93ng%20ch%C3%AD%20H%E1%BB%99i/Bi%E1%BB%83n%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20t%E1%BA%A1i%20c%C4%83n%20ph%C3%B2ng.jpg",
+        "title": "Biển di tích lịch sử quốc gia tại căn phòng",
+        "caption": "Biển di tích lịch sử quốc gia tại căn phòng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội.",
-        "year": "Hiện vật"
-      },
-      {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_44_img_2",
+        "src": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20K%E1%BB%B3%20b%E1%BB%99%20Vi%E1%BB%87t%20Nam%20Thanh%20ni%C3%AAn%20C%C3%A1ch%20m%E1%BA%A1ng%20%C4%90%E1%BB%93ng%20ch%C3%AD%20H%E1%BB%99i/C%E1%BB%ADa%20ph%C3%B2ng%20885%20%C4%91%C6%B0%E1%BB%9Dng%20L%C3%AA%20L%E1%BB%A3i.jpg",
+        "title": "Cửa phòng 885 đường Lê Lợi",
+        "caption": "Cửa phòng 885 đường Lê Lợi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -21634,7 +23839,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Núi Dinh có giá trị đặc biệt về lịch sử cách mạng và lịch sử quân sự. Địa hình núi rừng tạo điều kiện để xây dựng căn cứ, trú quân, tổ chức hội họp, huấn luyện và chiến đấu. Các căn cứ miền núi thường đòi hỏi sự phối hợp chặt chẽ giữa lực lượng cách mạng và nhân dân địa phương về lương thực, thông tin, vận chuyển và bảo vệ. Vì vậy, giá trị của Núi Dinh còn phản ánh sức mạnh của cộng đồng trong chiến tranh. Di tích cũng có thể được nghiên cứu dưới góc độ quan hệ giữa con người và môi trường tự nhiên, khi địa hình được sử dụng như một yếu tố chiến lược.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1i%20v%C3%A0%20th%C3%A1p%20cao%20to%C3%A0n%20c%E1%BA%A3nh%20H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An.jpg",
       "emCoBiet": [
         "🔎 Là căn cứ cách mạng quan trọng của Bà Rịa – Vũng Tàu cũ.",
         "🏅 Xếp hạng quốc gia: 16/12/1993.",
@@ -21777,25 +23982,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Khu căn cứ Núi Dinh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Khu căn cứ Núi Dinh tại Phường Tân Hải, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_45_img_1",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/C%E1%BA%ADn%20c%E1%BA%A3nh%20c%E1%BA%B7p%20t%C6%B0%E1%BB%A3ng%20k%E1%BB%B3%20l%C3%A2n%20%C4%91%C3%A1%20tr%C6%B0%E1%BB%9Bc%20l%E1%BB%91i%20v%C3%A0o.jpg",
+        "title": "Cận cảnh cặp tượng kỳ lân đá trước lối vào",
+        "caption": "Cận cảnh cặp tượng kỳ lân đá trước lối vào",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Khu căn cứ Núi Dinh.",
-        "year": "Hiện vật"
+        "id": "mon_45_img_2",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20th%E1%BB%9D%20Quan%20Th%C3%A1nh%20%C4%90%E1%BA%BF%20Qu%C3%A2n.jpg",
+        "title": "Gian chính điện thờ Quan Thánh Đế Quân",
+        "caption": "Gian chính điện thờ Quan Thánh Đế Quân",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_45_img_3",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Gian%20hi%E1%BB%83n%20gian%20nghi%20m%C3%B4n%20v%C3%A0%20bi%E1%BB%83n%20th%E1%BB%9D%20ch%C6%B0%20v%E1%BB%8B%20th%E1%BA%A7n%20linh.jpg",
+        "title": "Gian hiển gian nghi môn và biển thờ chư vị thần linh",
+        "caption": "Gian hiển gian nghi môn và biển thờ chư vị thần linh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_45_img_4",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Gian%20th%E1%BB%9D%20Quan%20B%C3%ACnh%20v%C3%A0%20Ch%C3%A2u%20X%C6%B0%C6%A1ng.jpg",
+        "title": "Gian thờ Quan Bình và Châu Xương",
+        "caption": "Gian thờ Quan Bình và Châu Xương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_45_img_5",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Gi%E1%BA%BFng%20tr%E1%BB%9Di%20(s%C3%A2n%20thi%C3%AAn%20t%C4%A9nh)%20ng%E1%BB%A3p%20nhang%20v%C3%B2ng.jpg",
+        "title": "Giếng trời (sân thiên tĩnh) ngợp nhang vòng",
+        "caption": "Giếng trời (sân thiên tĩnh) ngợp nhang vòng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_45_img_6",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/H%E1%BB%87%20th%E1%BB%91ng%20k%C3%A8o%20g%E1%BB%97%20v%C3%A0%20ho%C3%A0nh%20phi%20ch%E1%BA%A1m%20tr%E1%BB%95%20s%C6%A1n%20son%20th%E1%BA%BFp%20v%C3%A0ng.jpg",
+        "title": "Hệ thống kèo gỗ và hoành phi chạm trổ sơn son thếp vàng",
+        "caption": "Hệ thống kèo gỗ và hoành phi chạm trổ sơn son thếp vàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_45_img_7",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Khang%20%C3%A1n%20nghi%20m%C3%B4n%20v%C3%A0%20d%E1%BA%A3i%20%C4%91%C3%A8n%20l%E1%BB%93ng%20v%C3%A0ng%20trang%20tr%C3%AD.jpg",
+        "title": "Khang án nghi môn và dải đèn lồng vàng trang trí",
+        "caption": "Khang án nghi môn và dải đèn lồng vàng trang trí",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_45_img_8",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1i%20v%C3%A0%20th%C3%A1p%20cao%20to%C3%A0n%20c%E1%BA%A3nh%20H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An.jpg",
+        "title": "Kiến trúc mái và tháp cao toàn cảnh Hội quán Nghĩa An",
+        "caption": "Kiến trúc mái và tháp cao toàn cảnh Hội quán Nghĩa An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_45_img_9",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Ti%E1%BB%81n%20%C4%91i%E1%BB%87n%20v%C3%A0%20hai%20t%C6%B0%E1%BB%A3ng%20k%E1%BB%B3%20l%C3%A2n%20%C4%91%C3%A1%20che%20ch%E1%BA%AFn%20l%E1%BB%91i%20v%C3%A0o.jpg",
+        "title": "Tiền điện và hai tượng kỳ lân đá che chắn lối vào",
+        "caption": "Tiền điện và hai tượng kỳ lân đá che chắn lối vào",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_45_img_10",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20th%E1%BB%9Di%20Ph%C3%A1p%20thu%E1%BB%99c%20c%E1%BB%A7a%20H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An.jpg",
+        "title": "Ảnh tư liệu thời Pháp thuộc của Hội quán Nghĩa An",
+        "caption": "Ảnh tư liệu thời Pháp thuộc của Hội quán Nghĩa An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -22110,7 +24374,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 có giá trị đặc biệt về lịch sử quân sự và lịch sử chỉ huy. Di tích gắn với một chiến dịch lớn, trong đó công tác chỉ huy, truyền đạt mệnh lệnh, tổ chức lực lượng và phối hợp các hướng chiến đấu giữ vai trò quan trọng. Việc nghiên cứu địa điểm giúp hiểu hơn về cơ cấu tổ chức và phương thức điều hành lực lượng trong chiến tranh. Đồng thời, di tích có giá trị giáo dục khi giúp học sinh tiếp cận lịch sử thông qua một địa điểm cụ thể thay vì chỉ thông qua các mốc thời gian trong sách giáo khoa.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/B%E1%BB%A9c%20t%C6%B0%E1%BB%9Dng%20g%E1%BA%A1ch%20c%E1%BB%95%20v%C3%A0%20c%E1%BB%95ng%20ph%E1%BB%A5%20b%C3%AAn%20h%C3%B4ng%20ch%C3%B9a.jpg",
       "emCoBiet": [
         "📅 Gắn với Chiến dịch Mậu Thân năm 1968.",
         "🔎 Địa điểm lịch sử: số 7 Lý Chính Thắng.",
@@ -22253,25 +24517,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 tại Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_46_img_1",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/B%E1%BA%A3ng%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Bảng đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "caption": "Bảng đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968.",
-        "year": "Hiện vật"
+        "id": "mon_46_img_2",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/B%E1%BB%99%20ng%C5%A9%20s%E1%BB%B1%20b%E1%BA%B1ng%20%C4%91%E1%BB%93ng%20c%E1%BB%95%20tr%C3%AAn%20b%C3%A0n%20th%E1%BB%9D.jpg",
+        "title": "Bộ ngũ sự bằng đồng cổ trên bàn thờ",
+        "caption": "Bộ ngũ sự bằng đồng cổ trên bàn thờ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_46_img_3",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/B%E1%BB%A9c%20t%C6%B0%E1%BB%9Dng%20g%E1%BA%A1ch%20c%E1%BB%95%20v%C3%A0%20c%E1%BB%95ng%20ph%E1%BB%A5%20b%C3%AAn%20h%C3%B4ng%20ch%C3%B9a.jpg",
+        "title": "Bức tường gạch cổ và cổng phụ bên hông chùa",
+        "caption": "Bức tường gạch cổ và cổng phụ bên hông chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_46_img_4",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/Chi%20ti%E1%BA%BFt%20qu%E1%BA%A7n%20th%E1%BB%83%20t%C6%B0%E1%BB%A3ng%20g%E1%BB%91m%20s%E1%BB%A9%20tr%C3%AAn%20b%E1%BB%9D%20m%C3%A1i.jpg",
+        "title": "Chi tiết quần thể tượng gốm sứ trên bờ mái",
+        "caption": "Chi tiết quần thể tượng gốm sứ trên bờ mái",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_46_img_5",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/C%E1%BA%ADn%20c%E1%BA%A3nh%20ng%C3%B3i%20%C3%A2m%20d%C6%B0%C6%A1ng%20tr%C3%A1ng%20men%20xanh%20tr%C3%AAn%20m%C3%A1i.jpg",
+        "title": "Cận cảnh ngói âm dương tráng men xanh trên mái",
+        "caption": "Cận cảnh ngói âm dương tráng men xanh trên mái",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_46_img_6",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/D%C3%A3y%20nhang%20th%C3%A1p%20h%C3%ACnh%20n%C3%B3n%20treo%20d%C3%A0y%20%C4%91%E1%BA%B7c%20tr%C3%AAn%20tr%E1%BA%A7n.jpg",
+        "title": "Dãy nhang tháp hình nón treo dày đặc trên trần",
+        "caption": "Dãy nhang tháp hình nón treo dày đặc trên trần",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_46_img_7",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/Gian%20th%E1%BB%9D%20Thi%C3%AAn%20H%E1%BA%ADu%20Th%C3%A1nh%20M%E1%BA%ABu%20s%C6%A1n%20s%C6%A1n%20th%E1%BA%BFp%20v%C3%A0ng.jpg",
+        "title": "Gian thờ Thiên Hậu Thánh Mẫu sơn sơn thếp vàng",
+        "caption": "Gian thờ Thiên Hậu Thánh Mẫu sơn sơn thếp vàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_46_img_8",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/Khu%20v%E1%BB%B1c%20gi%E1%BA%BFng%20tr%E1%BB%9Di%20s%C3%A2n%20trung%20%C4%91i%E1%BB%87n%20nghi%20ng%C3%BAt%20kh%C3%B3i.jpg",
+        "title": "Khu vực giếng trời sân trung điện nghi ngút khói",
+        "caption": "Khu vực giếng trời sân trung điện nghi ngút khói",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_46_img_9",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/Kh%C3%B4ng%20gian%20thi%C3%AAn%20c%E1%BA%A3nh%20nghi%20ng%C3%BAt%20kh%C3%B3i%20h%C6%B0%C6%A1ng%20th%C3%A1p.jpg",
+        "title": "Không gian thiên cảnh nghi ngút khói hương tháp",
+        "caption": "Không gian thiên cảnh nghi ngút khói hương tháp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_46_img_10",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/To%C3%A0n%20c%E1%BA%A3nh%20c%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh.jpg",
+        "title": "Toàn cảnh cổng chính và mặt tiền Hội quán Tuệ Thành",
+        "caption": "Toàn cảnh cổng chính và mặt tiền Hội quán Tuệ Thành",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -22592,7 +24915,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Tịnh xá Ngọc Phương có giá trị về lịch sử Phật giáo Việt Nam, lịch sử Ni giới Khất sĩ và văn hóa cộng đồng. Di tích gắn với hoạt động tu học, hoằng pháp, giáo dục đạo đức và sinh hoạt tôn giáo. Không gian tịnh xá còn phản ánh vai trò của phụ nữ trong đời sống tôn giáo và sự phát triển của Ni giới. Bên cạnh giá trị tôn giáo, các hoạt động xã hội, từ thiện và giáo dục gắn với cơ sở tôn giáo cũng tạo nên giá trị xã hội của di tích.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Nh%E1%BB%8B%20Ph%E1%BB%A7.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 498/1 Lê Quang Định.",
         "🔎 Là cơ sở Phật giáo có giá trị lịch sử và kiến trúc.",
@@ -22735,25 +25058,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Tịnh xá Ngọc Phương",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Tịnh xá Ngọc Phương tại Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_47_img_1",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/Ban%20th%E1%BB%9D%20Quan%20Th%E1%BA%BF%20%C3%82m%20B%E1%BB%93%20T%C3%A1t.jpg",
+        "title": "Ban thờ Quan Thế Âm Bồ Tát",
+        "caption": "Ban thờ Quan Thế Âm Bồ Tát",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Tịnh xá Ngọc Phương.",
-        "year": "Hiện vật"
+        "id": "mon_47_img_2",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/B%C3%A0n%20th%E1%BB%9D%20H%E1%BB%95%20Ph%E1%BB%A7%20%20H%E1%BB%95%20T%C6%B0%E1%BB%9Bng%20Qu%C3%A2n.jpg",
+        "title": "Bàn thờ Hổ Phủ  Hổ Tướng Quân",
+        "caption": "Bàn thờ Hổ Phủ  Hổ Tướng Quân",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_47_img_3",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/B%C3%A0n%20th%E1%BB%9D%20Th%E1%BA%A7n%20B%E1%BA%A3o%20Sanh%20%20Ph%E1%BB%A5ng%20S%C6%A1n%20T%E1%BB%B1.jpg",
+        "title": "Bàn thờ Thần Bảo Sanh  Phụng Sơn Tự",
+        "caption": "Bàn thờ Thần Bảo Sanh  Phụng Sơn Tự",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_47_img_4",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/Chu%C3%B4ng%20%C4%91%E1%BB%93ng%20c%E1%BB%95%20trong%20h%E1%BB%99i%20qu%C3%A1n.jpg",
+        "title": "Chuông đồng cổ trong hội quán",
+        "caption": "Chuông đồng cổ trong hội quán",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_47_img_5",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/Gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20v%E1%BB%9Bi%20ho%C3%A0nh%20phi%20V%E1%BA%A1n%20Thi%E1%BB%87n%20%C4%90%E1%BB%93ng%20Tu.jpg",
+        "title": "Gian chính điện với hoành phi Vạn Thiện Đồng Tu",
+        "caption": "Gian chính điện với hoành phi Vạn Thiện Đồng Tu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_47_img_6",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/Gi%E1%BA%BFng%20tr%E1%BB%9Di%20(Thi%C3%AAn%20t%E1%BB%89nh)%20v%C3%A0%20l%C6%B0%20h%C6%B0%C6%A1ng%20l%E1%BB%9Bn.jpg",
+        "title": "Giếng trời (Thiên tỉnh) và lư hương lớn",
+        "caption": "Giếng trời (Thiên tỉnh) và lư hương lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_47_img_7",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/Gi%E1%BA%BFng%20tr%E1%BB%9Di%20nh%C3%ACn%20t%E1%BB%AB%20d%C6%B0%E1%BB%9Bi%20l%C3%AAn%20m%C3%A1i%20nh%C3%A0%20c%E1%BB%95.jpg",
+        "title": "Giếng trời nhìn từ dưới lên mái nhà cổ",
+        "caption": "Giếng trời nhìn từ dưới lên mái nhà cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_47_img_8",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Nh%E1%BB%8B%20Ph%E1%BB%A7.jpg",
+        "title": "Toàn cảnh mặt tiền Hội quán Nhị Phủ",
+        "caption": "Toàn cảnh mặt tiền Hội quán Nhị Phủ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_47_img_9",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/Trang%20tr%C3%AD%20L%C6%B0%E1%BB%A1ng%20long%20ch%E1%BA%A7u%20nguy%E1%BB%87t%20tr%C3%AAn%20m%C3%A1i%20ng%C3%B3i.jpg",
+        "title": "Trang trí Lưỡng long chầu nguyệt trên mái ngói",
+        "caption": "Trang trí Lưỡng long chầu nguyệt trên mái ngói",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_47_img_10",
+        "src": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/%C4%90i%E1%BB%87n%20th%E1%BB%9D%20ch%C3%ADnh%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20v%C3%A0ng%20son%20l%E1%BB%99ng%20l%E1%BA%ABy.jpg",
+        "title": "Điện thờ chính chạm khắc vàng son lộng lẫy",
+        "caption": "Điện thờ chính chạm khắc vàng son lộng lẫy",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -23078,7 +25460,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Tòa Đại sứ quán Mỹ có giá trị đặc biệt về lịch sử ngoại giao, lịch sử chiến tranh và lịch sử đô thị Sài Gòn. Đây là địa điểm gắn với hoạt động của cơ quan đại diện ngoại giao Hoa Kỳ trong một giai đoạn đặc biệt của lịch sử Việt Nam. Những biến động tại địa điểm trong giai đoạn cuối chiến tranh phản ánh sự thay đổi nhanh chóng của tình hình chính trị và quân sự. Di tích vì vậy có giá trị không chỉ đối với lịch sử Việt Nam mà còn đối với nghiên cứu quan hệ Việt Nam – Hoa Kỳ.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/To%C3%A0n%20c%E1%BA%A3nh%20c%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 4 Lê Duẩn.",
         "📅 Gắn với các sự kiện lịch sử năm 1975.",
@@ -23221,25 +25603,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Tòa Đại sứ quán Mỹ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Tòa Đại sứ quán Mỹ tại Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_48_img_1",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/B%E1%BA%A3ng%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20khu%20v%E1%BB%B1c%20Ao%20C%C3%A1%20Ph%C3%B3ng%20Sinh.jpg",
+        "title": "Bảng đá công nhận Di tích khu vực Ao Cá Phóng Sinh",
+        "caption": "Bảng đá công nhận Di tích khu vực Ao Cá Phóng Sinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Tòa Đại sứ quán Mỹ.",
-        "year": "Hiện vật"
+        "id": "mon_48_img_2",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/Chi%20ti%E1%BA%BFt%20ph%C3%B9%20%C4%91i%C3%AAu%20nh%C3%A2n%20v%E1%BA%ADt%20nh%E1%BB%8F%20trang%20tr%C3%AD%20g%C3%B3c%20c%E1%BB%99t.jpg",
+        "title": "Chi tiết phù điêu nhân vật nhỏ trang trí góc cột",
+        "caption": "Chi tiết phù điêu nhân vật nhỏ trang trí góc cột",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_48_img_3",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/C%E1%BA%ADn%20c%E1%BA%A3nh%20t%C6%B0%E1%BB%A3ng%20g%E1%BB%91m%20s%E1%BB%A9%20ch%C6%B0%20v%E1%BB%8B%20th%E1%BA%A7n%20ti%C3%AAn%20tr%C3%AAn%20b%E1%BB%9D%20m%C3%A1i.jpg",
+        "title": "Cận cảnh tượng gốm sứ chư vị thần tiên trên bờ mái",
+        "caption": "Cận cảnh tượng gốm sứ chư vị thần tiên trên bờ mái",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_48_img_4",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/Gian%20th%E1%BB%9D%20Quan%20%C3%82m%20B%E1%BB%93%20T%C3%A1t%20t%E1%BA%A1i%20%C4%91i%E1%BB%87n%20ch%C3%ADnh.jpg",
+        "title": "Gian thờ Quan Âm Bồ Tát tại điện chính",
+        "caption": "Gian thờ Quan Âm Bồ Tát tại điện chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_48_img_5",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/G%C3%B3c%20m%C3%A1i%20H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng%20v%C3%A0%20b%E1%BA%A3ng%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch.jpg",
+        "title": "Góc mái Hội quán Ôn Lăng và bảng công nhận di tích",
+        "caption": "Góc mái Hội quán Ôn Lăng và bảng công nhận di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_48_img_6",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/H%E1%BB%8Da%20ti%E1%BA%BFt%20%C4%91%C3%B4i%20r%E1%BB%93ng%20v%C3%A0%20b%E1%BB%A9c%20tranh%20g%E1%BB%91m%20s%E1%BB%A9%20tr%C3%AAn%20m%C3%A1i.jpg",
+        "title": "Họa tiết đôi rồng và bức tranh gốm sứ trên mái",
+        "caption": "Họa tiết đôi rồng và bức tranh gốm sứ trên mái",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_48_img_7",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/Kh%C3%B4ng%20gian%20gian%20ti%E1%BB%81n%20%C4%91i%E1%BB%87n%20v%E1%BB%9Bi%20c%E1%BA%B7p%20t%C6%B0%E1%BB%A3ng%20s%C6%B0%20t%E1%BB%AD%20%C4%91%C3%A1.jpg",
+        "title": "Không gian gian tiền điện với cặp tượng sư tử đá",
+        "caption": "Không gian gian tiền điện với cặp tượng sư tử đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_48_img_8",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/Kh%C3%B4ng%20gian%20%C4%91i%E1%BB%87n%20th%E1%BB%9D%20Thi%C3%AAn%20H%E1%BA%ADu%20Th%C3%A1nh%20M%E1%BA%ABu.jpg",
+        "title": "Không gian điện thờ Thiên Hậu Thánh Mẫu",
+        "caption": "Không gian điện thờ Thiên Hậu Thánh Mẫu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_48_img_9",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/To%C3%A0n%20c%E1%BA%A3nh%20c%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng.jpg",
+        "title": "Toàn cảnh cổng chính và mặt tiền Hội quán Ôn Lăng",
+        "caption": "Toàn cảnh cổng chính và mặt tiền Hội quán Ôn Lăng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_48_img_10",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/To%C3%A0n%20c%E1%BA%A3nh%20gian%20%C4%91i%E1%BB%87n%20th%E1%BB%9D%20Thi%C3%AAn%20H%E1%BA%ADu%20v%E1%BB%9Bi%20hai%20c%E1%BB%99t%20r%E1%BB%93ng%20cu%E1%BB%99n.jpg",
+        "title": "Toàn cảnh gian điện thờ Thiên Hậu với hai cột rồng cuộn",
+        "caption": "Toàn cảnh gian điện thờ Thiên Hậu với hai cột rồng cuộn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -23552,7 +25993,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Trại Đa-vít có giá trị đặc biệt về lịch sử ngoại giao – quân sự sau Hiệp định Paris năm 1973. Địa điểm phản ánh một giai đoạn mà hoạt động ngoại giao, quân sự và chính trị gắn bó chặt chẽ với nhau. Việc nghiên cứu Trại Đa-vít giúp hiểu rõ hơn hoạt động của các phái đoàn quân sự, quá trình liên lạc, trao đổi và đấu tranh trong giai đoạn cuối của cuộc chiến. Di tích còn cho thấy vai trò của ngoại giao trong việc giải quyết các vấn đề phát sinh sau một hiệp định quốc tế.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/C%E1%BB%95ng%20tr%E1%BB%A5%20s%E1%BB%9F%20Ban%20Li%C3%AAn%20h%E1%BB%A3p%20Qu%C3%A2n%20s%E1%BB%B1%20hai%20b%C3%AAn%20Trung%20%C6%B0%C6%A1ng%20t%E1%BA%A1i%20Tr%E1%BA%A1i%20Davis.jpg",
       "emCoBiet": [
         "🔎 Vị trí: khu vực sân bay Tân Sơn Nhất.",
         "🔎 Gắn với hoạt động của phái đoàn quân sự sau Hiệp định Paris.",
@@ -23695,25 +26136,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Trại Đa-vít",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Trại Đa-vít tại Phường Bảy Hiền, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_49_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/10.jpg",
+        "title": "10",
+        "caption": "10",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Trại Đa-vít.",
-        "year": "Hiện vật"
+        "id": "mon_49_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/B%E1%BA%A3ng%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Chuy%C3%AAn%20vi%C3%AAn%20James%20T.%20Davis.jpg",
+        "title": "Bảng tưởng niệm Chuyên viên James T. Davis",
+        "caption": "Bảng tưởng niệm Chuyên viên James T. Davis",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_49_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/Ch%C3%A2n%20dung%20%C4%90%E1%BA%A1i%20t%C3%A1%20V%C5%A9%20Nam%20B%C3%ACnh%20c%C3%B9ng%20l%E1%BB%B1c%20l%C6%B0%E1%BB%A3ng%20b%E1%BA%A3o%20v%E1%BB%87%20an%20ninh%20t%E1%BA%A1i%20Tr%E1%BA%A1i%20Davis%20(1973).jpg",
+        "title": "Chân dung Đại tá Vũ Nam Bình cùng lực lượng bảo vệ an ninh tại Trại Davis (1973)",
+        "caption": "Chân dung Đại tá Vũ Nam Bình cùng lực lượng bảo vệ an ninh tại Trại Davis (1973)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_49_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/Cu%E1%BB%99c%20h%E1%BB%8Dp%20Ban%20Li%C3%AAn%20h%E1%BB%A3p%20Qu%C3%A2n%20s%E1%BB%B1%20b%E1%BB%91n%20b%C3%AAn%20t%E1%BA%A1i%20Tr%E1%BA%A1i%20Davis.jpg",
+        "title": "Cuộc họp Ban Liên hợp Quân sự bốn bên tại Trại Davis",
+        "caption": "Cuộc họp Ban Liên hợp Quân sự bốn bên tại Trại Davis",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_49_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/C%E1%BB%95ng%20tr%E1%BB%A5%20s%E1%BB%9F%20Ban%20Li%C3%AAn%20h%E1%BB%A3p%20Qu%C3%A2n%20s%E1%BB%B1%20hai%20b%C3%AAn%20Trung%20%C6%B0%C6%A1ng%20t%E1%BA%A1i%20Tr%E1%BA%A1i%20Davis.jpg",
+        "title": "Cổng trụ sở Ban Liên hợp Quân sự hai bên Trung ương tại Trại Davis",
+        "caption": "Cổng trụ sở Ban Liên hợp Quân sự hai bên Trung ương tại Trại Davis",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_49_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/C%E1%BB%95ng%20v%C3%A0o%20c%C4%83n%20c%E1%BB%A9%20Tr%E1%BA%A1i%20Davis%20(Davis%20Station).jpg",
+        "title": "Cổng vào căn cứ Trại Davis (Davis Station)",
+        "caption": "Cổng vào căn cứ Trại Davis (Davis Station)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_49_img_7",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/C%E1%BB%9D%20gi%E1%BA%A3i%20ph%C3%B3ng%20tung%20bay%20tr%C3%AAn%20%C4%91%E1%BB%89nh%20b%E1%BB%93n%20n%C6%B0%E1%BB%9Bc%20Tr%E1%BA%A1i%20Davis.jpg",
+        "title": "Cờ giải phóng tung bay trên đỉnh bồn nước Trại Davis",
+        "caption": "Cờ giải phóng tung bay trên đỉnh bồn nước Trại Davis",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_49_img_8",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/D%C3%A3y%20nh%C3%A0%20g%E1%BB%97%20t%E1%BA%A1i%20Tr%E1%BA%A1i%20Davis%20(T%C3%A2n%20S%C6%A1n%20Nh%E1%BA%A5t).jpg",
+        "title": "Dãy nhà gỗ tại Trại Davis (Tân Sơn Nhất)",
+        "caption": "Dãy nhà gỗ tại Trại Davis (Tân Sơn Nhất)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_49_img_9",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/To%C3%A0n%20c%E1%BA%A3nh%20Tr%E1%BA%A1i%20Davis%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Trại Davis nhìn từ trên cao",
+        "caption": "Toàn cảnh Trại Davis nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_49_img_10",
+        "src": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/Tuy%C3%AAn%20hu%E1%BA%A5n%20v%C3%A0%20sinh%20ho%E1%BA%A1t%20c%E1%BB%A7a%20%C4%91o%C3%A0n%20%C4%91%E1%BA%A1i%20bi%E1%BB%83u%20t%E1%BA%A1i%20Tr%E1%BA%A1i%20Davis.jpg",
+        "title": "Tuyên huấn và sinh hoạt của đoàn đại biểu tại Trại Davis",
+        "caption": "Tuyên huấn và sinh hoạt của đoàn đại biểu tại Trại Davis",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -24018,7 +26518,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Trận địa pháo Cầu Đá có giá trị về lịch sử quân sự và hệ thống phòng thủ ven biển Vũng Tàu. Trận địa thể hiện cách sử dụng địa hình ven biển để bố trí công trình quân sự, tăng khả năng quan sát và kiểm soát khu vực. Các bệ pháo, công sự và dấu tích liên quan nếu còn tồn tại là nguồn tư liệu vật chất quan trọng để nghiên cứu kỹ thuật phòng thủ. Di tích cũng giúp kết nối lịch sử quân sự với lịch sử hình thành không gian đô thị biển Vũng Tàu.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Du%20kh%C3%A1ch%20quan%20s%C3%A1t%20c%E1%BA%ADn%20c%E1%BA%A3nh%20%C4%91u%C3%B4i%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95.jpg",
       "emCoBiet": [
         "🔎 Vị trí: khu vực Cầu Đá – Hạ Long.",
         "🏛️ Gắn với hệ thống phòng thủ ven biển Vũng Tàu.",
@@ -24161,25 +26661,28 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Trận địa pháo cổ Cầu Đá",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Trận địa pháo cổ Cầu Đá tại Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_50_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Du%20kh%C3%A1ch%20quan%20s%C3%A1t%20c%E1%BA%ADn%20c%E1%BA%A3nh%20%C4%91u%C3%B4i%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95.jpg",
+        "title": "Du khách quan sát cận cảnh đuôi khẩu pháo cổ",
+        "caption": "Du khách quan sát cận cảnh đuôi khẩu pháo cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Trận địa pháo cổ Cầu Đá.",
-        "year": "Hiện vật"
+        "id": "mon_50_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20%C4%91%E1%BA%B7t%20tr%C3%AAn%20b%E1%BB%87%20b%C3%AA%20t%C3%B4ng.jpg",
+        "title": "Khẩu pháo cổ đặt trên bệ bê tông",
+        "caption": "Khẩu pháo cổ đặt trên bệ bê tông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_50_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20n%E1%BA%B1m%20gi%E1%BB%AFa%20khu%20v%E1%BB%B1c%20c%C3%A2y%20c%E1%BB%91i%20r%E1%BA%ADm%20r%E1%BA%A1p.jpg",
+        "title": "Trận địa pháo cổ nằm giữa khu vực cây cối rậm rạp",
+        "caption": "Trận địa pháo cổ nằm giữa khu vực cây cối rậm rạp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -24472,7 +26975,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Trận địa pháo Núi Nhỏ có giá trị về lịch sử quân sự và kỹ thuật phòng thủ. Vị trí trên cao giúp trận địa có lợi thế về quan sát và kiểm soát không gian ven biển. Những dấu tích còn lại có thể giúp nghiên cứu cách bố trí pháo, công sự và đường tiếp cận. Trong hệ thống di tích Vũng Tàu, trận địa Núi Nhỏ có ý nghĩa khi đặt cạnh các trận địa Cầu Đá và Núi Lớn, qua đó có thể tái hiện một phần mạng lưới phòng thủ của thành phố.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20Nh%E1%BB%8F.jpg",
       "emCoBiet": [
         "🔎 Vị trí: Núi Nhỏ – Tao Phùng.",
         "🏛️ Là hệ thống trận địa pháo ven biển.",
@@ -24615,25 +27118,68 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ) tại Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_51_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20Nh%E1%BB%8F.jpg",
+        "title": "Bia công nhận Di tích Trận địa pháo cổ Núi Nhỏ",
+        "caption": "Bia công nhận Di tích Trận địa pháo cổ Núi Nhỏ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ).",
-        "year": "Hiện vật"
+        "id": "mon_51_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/D%C3%A3y%20ph%C3%A1o%20c%E1%BB%95%20tr%C6%B0ng%20b%C3%A0y%20ngo%C3%A0i%20tr%E1%BB%9Di.jpg",
+        "title": "Dãy pháo cổ trưng bày ngoài trời",
+        "caption": "Dãy pháo cổ trưng bày ngoài trời",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_51_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Kh%E1%BA%A9u%20ph%C3%A1o%20b%E1%BB%9D%20bi%E1%BB%83n%20c%E1%BB%A1%20l%E1%BB%9Bn%20trong%20c%C3%B4ng%20s%E1%BB%B1%20b%C3%A1n%20nguy%E1%BB%87t.jpg",
+        "title": "Khẩu pháo bờ biển cỡ lớn trong công sự bán nguyệt",
+        "caption": "Khẩu pháo bờ biển cỡ lớn trong công sự bán nguyệt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_51_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20%C4%91%E1%BA%B7t%20nghi%C3%AAng%20c%E1%BA%A1nh%20t%C6%B0%E1%BB%9Dng%20%C4%91%C3%A1%20b%E1%BB%9D%20k%C3%A8.jpg",
+        "title": "Khẩu pháo cổ đặt nghiêng cạnh tường đá bờ kè",
+        "caption": "Khẩu pháo cổ đặt nghiêng cạnh tường đá bờ kè",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_51_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/M%C3%A2m%20quay%20ch%C3%A2n%20%C4%91%E1%BA%BF%20tr%C3%B2n%20c%E1%BB%A7a%20ph%C3%A1o%20c%E1%BB%95.jpg",
+        "title": "Mâm quay chân đế tròn của pháo cổ",
+        "caption": "Mâm quay chân đế tròn của pháo cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_51_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/N%C3%B2ng%20ph%C3%A1o%20c%E1%BB%95%20r%E1%BA%A5t%20d%C3%A0i%20%C4%91%E1%BA%B7t%20d%C6%B0%E1%BB%9Bi%20b%E1%BB%87%20T%C6%B0%E1%BB%A3ng%20Ch%C3%BAa%20Kit%C3%B4%20Vua.jpg",
+        "title": "Nòng pháo cổ rất dài đặt dưới bệ Tượng Chúa Kitô Vua",
+        "caption": "Nòng pháo cổ rất dài đặt dưới bệ Tượng Chúa Kitô Vua",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_51_img_7",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Ph%C3%A1o%20c%E1%BB%95%20g%E1%BB%89%20s%C3%A9t%20h%C6%B0%E1%BB%9Bng%20v%E1%BB%81%20T%C6%B0%E1%BB%A3ng%20Ch%C3%BAa%20Kit%C3%B4%20Vua.jpg",
+        "title": "Pháo cổ gỉ sét hướng về Tượng Chúa Kitô Vua",
+        "caption": "Pháo cổ gỉ sét hướng về Tượng Chúa Kitô Vua",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_51_img_8",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Th%C3%A2n%20ph%C3%A1o%20c%E1%BB%95%20v%C3%A0%20b%E1%BB%87%20%C4%91%E1%BB%A1%20b%E1%BB%8B%20b%E1%BB%8F%20l%E1%BA%A1i%20trong%20r%E1%BB%ABng.jpg",
+        "title": "Thân pháo cổ và bệ đỡ bị bỏ lại trong rừng",
+        "caption": "Thân pháo cổ và bệ đỡ bị bỏ lại trong rừng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -24926,7 +27472,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Trận địa pháo Sao Mai (Núi Lớn) có giá trị về lịch sử quân sự, kỹ thuật công sự và lịch sử phòng thủ Vũng Tàu. Núi Lớn có vị trí địa hình thuận lợi cho việc quan sát và bố trí công trình quân sự. Trận địa pháo và hệ thống hầm thủy lôi liên quan tạo thành một không gian phòng thủ có nhiều lớp. Việc bảo tồn các dấu tích này giúp nghiên cứu cách con người sử dụng địa hình tự nhiên để phục vụ mục tiêu quân sự và đồng thời cho thấy những lớp lịch sử quân sự đang tồn tại trong cảnh quan đô thị – du lịch hiện nay.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Bi%E1%BB%83n%20t%C3%AAn%20di%20t%C3%ADch%20v%C3%A0%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
       "emCoBiet": [
         "🔎 Vị trí: Núi Lớn – Vũng Tàu.",
         "⚔️ Gồm trận địa pháo và hầm thủy lôi.",
@@ -25069,25 +27615,60 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_52_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Bi%E1%BB%83n%20t%C3%AAn%20di%20t%C3%ADch%20v%C3%A0%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Biển tên di tích và khẩu pháo cổ Núi Lớn",
+        "caption": "Biển tên di tích và khẩu pháo cổ Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn.",
-        "year": "Hiện vật"
+        "id": "mon_52_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/B%E1%BB%87%20ph%C3%A1o%20c%E1%BB%95%20v%C3%A0%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BB%91c%20l%C3%A1t%20g%E1%BA%A1ch%20trong%20di%20t%C3%ADch.jpg",
+        "title": "Bệ pháo cổ và đường dốc lát gạch trong di tích",
+        "caption": "Bệ pháo cổ và đường dốc lát gạch trong di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_52_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/C%E1%BA%ADn%20c%E1%BA%A3nh%20ch%E1%BB%AF%20kh%E1%BA%AFc%20s%E1%BB%91%20hi%E1%BB%87u%20tr%C3%AAn%20th%C3%A2n%20ph%C3%A1o.jpg",
+        "title": "Cận cảnh chữ khắc số hiệu trên thân pháo",
+        "caption": "Cận cảnh chữ khắc số hiệu trên thân pháo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_52_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Em%20b%C3%A9%20%C4%91%E1%BB%A9ng%20quan%20s%C3%A1t%20b%E1%BB%87%20m%C3%A2m%20quay%20c%E1%BB%A7a%20kh%E1%BA%A9u%20ph%C3%A1o.jpg",
+        "title": "Em bé đứng quan sát bệ mâm quay của khẩu pháo",
+        "caption": "Em bé đứng quan sát bệ mâm quay của khẩu pháo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_52_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Hai%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20tr%C3%AAn%20b%E1%BB%87%20%C4%91%C3%A1%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Hai khẩu pháo cổ trên bệ đá Núi Lớn",
+        "caption": "Hai khẩu pháo cổ trên bệ đá Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_52_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20tr%C3%AAn%20b%E1%BB%87%20l%C3%A1t%20%C4%91%C3%A1%20ngo%C3%A0i%20tr%E1%BB%9Di.jpg",
+        "title": "Trận địa pháo cổ trên bệ lát đá ngoài trời",
+        "caption": "Trận địa pháo cổ trên bệ lát đá ngoài trời",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_52_img_7",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/%C4%90%C6%B0%E1%BB%9Dng%20l%C3%A1t%20%C4%91%C3%A1%20v%C3%A0%20h%E1%BB%87%20th%E1%BB%91ng%20h%E1%BA%A7m%20c%C3%B4ng%20s%E1%BB%B1%20v%C3%B2m%20%C4%91%C3%A1.jpg",
+        "title": "Đường lát đá và hệ thống hầm công sự vòm đá",
+        "caption": "Đường lát đá và hệ thống hầm công sự vòm đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -25396,7 +27977,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Trụ sở Báo Dân Chúng có giá trị đối với lịch sử báo chí, truyền thông và đời sống chính trị – xã hội Sài Gòn. Báo chí không chỉ truyền tải tin tức mà còn góp phần hình thành dư luận, phản ánh các vấn đề xã hội và tác động đến nhận thức của công chúng. Di tích vì vậy giúp nghiên cứu lịch sử truyền thông từ góc độ không gian vật chất: nơi làm việc, nơi biên tập, in ấn và phát hành. Đây cũng là nguồn tư liệu có thể sử dụng để giáo dục học sinh về lịch sử báo chí và sự thay đổi của phương thức truyền thông.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/M%E1%BA%B7t%20ti%E1%BB%81n%20to%C3%A0n%20c%E1%BA%A3nh%20H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 43 Lê Thị Hồng Gấm.",
         "🏅 Xếp hạng quốc gia: 16/11/1988.",
@@ -25539,25 +28120,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Trụ sở Báo Dân Chúng",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Trụ sở Báo Dân Chúng tại Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_53_img_1",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/Bi%E1%BB%83n%20kim%20lo%E1%BA%A1i%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Biển kim loại công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "caption": "Biển kim loại công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Trụ sở Báo Dân Chúng.",
-        "year": "Hiện vật"
+        "id": "mon_53_img_2",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "caption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_53_img_3",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/Chi%20ti%E1%BA%BFt%20m%C3%A1i%20%C4%91ao%20ch%E1%BA%A1m%20r%E1%BB%93ng%20%C4%91%E1%BA%A5t%20nung.jpg",
+        "title": "Chi tiết mái đao chạm rồng đất nung",
+        "caption": "Chi tiết mái đao chạm rồng đất nung",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_53_img_4",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/Chu%C3%B4ng%20c%E1%BB%95%20b%E1%BA%B1ng%20%C4%91%E1%BB%93ng.jpg",
+        "title": "Chuông cổ bằng đồng",
+        "caption": "Chuông cổ bằng đồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_53_img_5",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/C%E1%BB%99t%20%C4%91%C3%A1%20ch%E1%BA%A1m%20r%E1%BB%93ng%20v%C3%A0%20l%E1%BB%91i%20v%C3%A0o%20trung%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Cột đá chạm rồng và lối vào trung điện",
+        "caption": "Cột đá chạm rồng và lối vào trung điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_53_img_6",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/Gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20linh%20thi%C3%AAng.jpg",
+        "title": "Gian chính điện linh thiêng",
+        "caption": "Gian chính điện linh thiêng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_53_img_7",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/Gian%20th%E1%BB%9D%20Quan%20C%C3%B4ng%20v%C3%A0%20X%C3%ADch%20Th%E1%BB%91%20m%E1%BA%A1.jpg",
+        "title": "Gian thờ Quan Công và Xích Thố mạ",
+        "caption": "Gian thờ Quan Công và Xích Thố mạ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_53_img_8",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/Gian%20th%E1%BB%9D%20v%E1%BB%9Bi%20b%E1%BA%A3ng%20bi%E1%BB%83n%20H%E1%BB%93i%20T%E1%BB%B5%20-%20T%C3%BAc%20T%C4%A9nh.jpg",
+        "title": "Gian thờ với bảng biển Hồi Tỵ - Túc Tĩnh",
+        "caption": "Gian thờ với bảng biển Hồi Tỵ - Túc Tĩnh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_53_img_9",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/H%C3%A0nh%20lang%20nghi%20m%C3%B4n%20v%C3%A0%20c%E1%BA%B7p%20s%C6%B0%20t%E1%BB%AD%20%C4%91%C3%A1.jpg",
+        "title": "Hành lang nghi môn và cặp sư tử đá",
+        "caption": "Hành lang nghi môn và cặp sư tử đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_53_img_10",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/M%E1%BA%B7t%20ti%E1%BB%81n%20to%C3%A0n%20c%E1%BA%A3nh%20H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng.jpg",
+        "title": "Mặt tiền toàn cảnh Hội quán Hà Chương",
+        "caption": "Mặt tiền toàn cảnh Hội quán Hà Chương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -25882,7 +28522,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam cạnh Phân ban Quốc tế có giá trị đặc biệt về lịch sử ngoại giao và quân sự. Di tích gắn với hoạt động của phái đoàn trong bối cảnh sau Hiệp định Genève, khi các vấn đề đình chiến và thực hiện hiệp định được đặt dưới cơ chế giám sát quốc tế. Nguồn của Nhà xuất bản Chính trị quốc gia – Sự thật cho biết phái đoàn hoạt động trong giai đoạn 1955–1958 và có hồi ký riêng về hoạt động của Phái đoàn Liên lạc Quân đội nhân dân Việt Nam bên cạnh Ủy ban Quốc tế. Di tích vì vậy có giá trị lớn trong nghiên cứu lịch sử ngoại giao, quân sự và quan hệ quốc tế.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/C%E1%BA%B7p%20t%C6%B0%E1%BB%A3ng%20s%C6%B0%20t%E1%BB%AD%20%C4%91%C3%A1%20g%C3%A1c%20c%E1%BB%95ng%20H%E1%BB%99i%20qu%C3%A1n.jpg",
       "emCoBiet": [
         "📅 Thời gian hoạt động: 1955–1958.",
         "🔎 Địa chỉ lịch sử: 87A Trần Kế Xương.",
@@ -26025,25 +28665,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958) tại Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_54_img_1",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Bia%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Bia đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "caption": "Bia đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958).",
-        "year": "Hiện vật"
+        "id": "mon_54_img_2",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Bia%20%C4%91%C3%A1%20c%E1%BB%95%20kh%E1%BA%AFc%20ch%E1%BB%AF%20H%C3%A1n%20l%C6%B0u%20danh%20c%C3%B4ng%20%C4%91%E1%BB%A9c.jpg",
+        "title": "Bia đá cổ khắc chữ Hán lưu danh công đức",
+        "caption": "Bia đá cổ khắc chữ Hán lưu danh công đức",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_54_img_3",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/B%C3%A0n%20th%E1%BB%9D%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20v%E1%BB%9Bi%20c%C3%A1c%20b%E1%BB%A9c%20ho%C3%A0nh%20phi%20th%E1%BA%BFp%20v%C3%A0ng.jpg",
+        "title": "Bàn thờ chính điện với các bức hoành phi thếp vàng",
+        "caption": "Bàn thờ chính điện với các bức hoành phi thếp vàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_54_img_4",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Chi%20ti%E1%BA%BFt%20l%C6%B0%20h%C6%B0%C6%A1ng%20%C4%91%E1%BB%93ng%20v%C3%A0%20c%C3%A1c%20v%E1%BA%ADt%20d%E1%BB%A5ng%20th%E1%BB%9D%20c%C3%BAng.jpg",
+        "title": "Chi tiết lư hương đồng và các vật dụng thờ cúng",
+        "caption": "Chi tiết lư hương đồng và các vật dụng thờ cúng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_54_img_5",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/C%E1%BA%B7p%20t%C6%B0%E1%BB%A3ng%20s%C6%B0%20t%E1%BB%AD%20%C4%91%C3%A1%20g%C3%A1c%20c%E1%BB%95ng%20H%E1%BB%99i%20qu%C3%A1n.jpg",
+        "title": "Cặp tượng sư tử đá gác cổng Hội quán",
+        "caption": "Cặp tượng sư tử đá gác cổng Hội quán",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_54_img_6",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Gian%20ti%E1%BB%81n%20%C4%91i%E1%BB%87n%20v%C3%A0%20hai%20b%E1%BB%A9c%20c%C3%A2u%20%C4%91%E1%BB%91i%20m%C3%A0u%20%C4%91%E1%BB%8F%20n%E1%BB%95i%20b%E1%BA%ADt.jpg",
+        "title": "Gian tiền điện và hai bức câu đối màu đỏ nổi bật",
+        "caption": "Gian tiền điện và hai bức câu đối màu đỏ nổi bật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_54_img_7",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Khung%20th%E1%BB%9D%20Thi%C3%AAn%20H%E1%BA%ADu%20Th%C3%A1nh%20M%E1%BA%ABu%20s%C6%A1n%20s%C6%A1n%20th%E1%BA%BFp%20v%C3%A0ng.jpg",
+        "title": "Khung thờ Thiên Hậu Thánh Mẫu sơn sơn thếp vàng",
+        "caption": "Khung thờ Thiên Hậu Thánh Mẫu sơn sơn thếp vàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_54_img_8",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Kh%C3%B4ng%20gian%20trung%20%C4%91i%E1%BB%87n%20r%E1%BB%99ng%20r%C3%A3i%20v%E1%BB%9Bi%20c%C3%A1c%20h%C3%A0ng%20gh%E1%BA%BF%20g%E1%BB%97.jpg",
+        "title": "Không gian trung điện rộng rãi với các hàng ghế gỗ",
+        "caption": "Không gian trung điện rộng rãi với các hàng ghế gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_54_img_9",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/L%C6%B0%20h%C6%B0%C6%A1ng%20%C4%91%C3%A1%20l%E1%BB%9Bn%20t%E1%BA%A1i%20gi%E1%BA%BFng%20tr%E1%BB%9Di%20trung%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Lư hương đá lớn tại giếng trời trung điện",
+        "caption": "Lư hương đá lớn tại giếng trời trung điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_54_img_10",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7.jpg",
+        "title": "Toàn cảnh mặt tiền Hội quán Quỳnh Phủ",
+        "caption": "Toàn cảnh mặt tiền Hội quán Quỳnh Phủ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -26356,7 +29055,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Trụ sở Ủy ban Việt Minh tại Vũng Tàu có giá trị đặc biệt về lịch sử Cách mạng tháng Tám năm 1945 tại địa phương. Di tích phản ánh quá trình tổ chức lực lượng, tuyên truyền, vận động quần chúng và chuẩn bị giành chính quyền. Đây là một mắt xích giúp kết nối lịch sử Vũng Tàu với tiến trình Cách mạng tháng Tám trên phạm vi cả nước. Giá trị của di tích còn nằm ở việc cho thấy vai trò của tổ chức quần chúng và sự tham gia của nhân dân trong quá trình chuyển biến chính trị năm 1945.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/C%E1%BB%95ng%20b%E1%BB%A9c%20b%C3%ACnh%20phong%20%C4%90%C3%ACnh%20Ngh%C4%A9a%20Nhu%E1%BA%ADn.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 1 Ba Cu.",
         "🏅 Xếp hạng quốc gia: 25/3/1991.",
@@ -26499,25 +29198,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Trụ sở Ủy ban Việt Minh tại Vũng Tàu",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Trụ sở Ủy ban Việt Minh tại Vũng Tàu tại Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_55_img_1",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/B%E1%BA%A3ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Bảng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "caption": "Bảng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Trụ sở Ủy ban Việt Minh tại Vũng Tàu.",
-        "year": "Hiện vật"
+        "id": "mon_55_img_2",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/Chi%20ti%E1%BA%BFt%20ng%C3%B3i%20l%E1%BB%A3p%20v%C3%A0%20t%C6%B0%E1%BB%A3ng%20g%E1%BB%91m%20trang%20tr%C3%AD%20g%C3%B3c%20m%C3%A1i.jpg",
+        "title": "Chi tiết ngói lợp và tượng gốm trang trí góc mái",
+        "caption": "Chi tiết ngói lợp và tượng gốm trang trí góc mái",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_55_img_3",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/C%E1%BA%ADn%20c%E1%BA%A3nh%20c%E1%BB%99t%20kh%E1%BA%AFc%20r%E1%BB%93ng%20g%E1%BB%97%20ch%E1%BA%A1m%20tr%E1%BB%95%20tinh%20x%E1%BA%A3o.jpg",
+        "title": "Cận cảnh cột khắc rồng gỗ chạm trổ tinh xảo",
+        "caption": "Cận cảnh cột khắc rồng gỗ chạm trổ tinh xảo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_55_img_4",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/C%E1%BB%95ng%20b%E1%BB%A9c%20b%C3%ACnh%20phong%20%C4%90%C3%ACnh%20Ngh%C4%A9a%20Nhu%E1%BA%ADn.jpg",
+        "title": "Cổng bức bình phong Đình Nghĩa Nhuận",
+        "caption": "Cổng bức bình phong Đình Nghĩa Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_55_img_5",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/C%E1%BB%95ng%20ph%E1%BB%A5%20Ch%C3%B9a%20Quan%20%C4%90%E1%BA%BF%20trong%20khu%C3%B4n%20vi%C3%AAn.jpg",
+        "title": "Cổng phụ Chùa Quan Đế trong khuôn viên",
+        "caption": "Cổng phụ Chùa Quan Đế trong khuôn viên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_55_img_6",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/Gian%20th%E1%BB%9D%20Quan%20C%C3%B4ng%20trong%20%C4%91i%E1%BB%87n%20th%E1%BB%9D.jpg",
+        "title": "Gian thờ Quan Công trong điện thờ",
+        "caption": "Gian thờ Quan Công trong điện thờ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_55_img_7",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/Khung%20c%E1%BA%A3nh%20gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20v%C3%A0%20b%C3%ACnh%20phong%20ch%E1%BA%A1m%20m%E1%BA%A1%20v%C3%A0ng.jpg",
+        "title": "Khung cảnh gian chính điện và bình phong chạm mạ vàng",
+        "caption": "Khung cảnh gian chính điện và bình phong chạm mạ vàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_55_img_8",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/S%C3%A2n%20trong%20v%C3%A0%20khu%C3%B4n%20vi%C3%AAn%20H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn.jpg",
+        "title": "Sân trong và khuôn viên Hội quán Nghĩa Nhuận",
+        "caption": "Sân trong và khuôn viên Hội quán Nghĩa Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_55_img_9",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/To%C3%A0n%20c%E1%BA%A3nh%20H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Hội quán Nghĩa Nhuận nhìn từ trên cao",
+        "caption": "Toàn cảnh Hội quán Nghĩa Nhuận nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_55_img_10",
+        "src": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn.jpg",
+        "title": "Toàn cảnh mặt tiền Hội quán Nghĩa Nhuận",
+        "caption": "Toàn cảnh mặt tiền Hội quán Nghĩa Nhuận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -26822,7 +29580,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Bạch Dinh được xây dựng từ năm 1898 đến khoảng năm 1902, dưới thời Toàn quyền Đông Dương Paul Doumer, trên khu vực từng có pháo đài Phước Thắng của triều Nguyễn. Công trình từng là nơi nghỉ dưỡng của các Toàn quyền Đông Dương, vua Bảo Đại và một số quan chức chính quyền Sài Gòn. Đặc biệt, từ tháng 9/1907 đến năm 1916, đây là nơi thực dân Pháp quản thúc vua Thành Thái. Bạch Dinh là chứng tích phản ánh lịch sử Vũng Tàu thời Pháp thuộc và những biến động của Việt Nam trong thế kỷ XX. Công trình còn có giá trị kiến trúc nghệ thuật với phong cách châu Âu cuối thế kỷ XIX, kết hợp các mảng trang trí bằng gốm sứ tráng men.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/M%E1%BA%B7t%20ti%E1%BB%81n%20B%E1%BA%A1ch%20Dinh%20nh%C3%ACn%20t%E1%BB%AB%20g%C3%B3c%20nghi%C3%AAng.jpg",
       "emCoBiet": [
         "🔎 Khởi công: 1898; hoàn thành khoảng 1902.",
         "🏛️ Công trình gồm 3 tầng.",
@@ -26965,25 +29723,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Bạch Dinh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Bạch Dinh tại Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_56_img_1",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/Kh%C3%B4ng%20gian%20ph%C3%B2ng%20l%C3%A0m%20vi%E1%BB%87c%20b%C3%AAn%20trong%20B%E1%BA%A1ch%20Dinh.jpg",
+        "title": "Không gian phòng làm việc bên trong Bạch Dinh",
+        "caption": "Không gian phòng làm việc bên trong Bạch Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Bạch Dinh.",
-        "year": "Hiện vật"
+        "id": "mon_56_img_2",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/Kh%C3%B4ng%20gian%20ph%C3%B2ng%20ng%E1%BB%A7%20b%C3%AAn%20trong%20B%E1%BA%A1ch%20Dinh.jpg",
+        "title": "Không gian phòng ngủ bên trong Bạch Dinh",
+        "caption": "Không gian phòng ngủ bên trong Bạch Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_56_img_3",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/Kh%C3%B4ng%20gian%20ph%C3%B2ng%20ng%E1%BB%A7%20v%C3%A0%20n%E1%BB%99i%20th%E1%BA%A5t%20t%E1%BA%A1i%20B%E1%BA%A1ch%20Dinh.jpg",
+        "title": "Không gian phòng ngủ và nội thất tại Bạch Dinh",
+        "caption": "Không gian phòng ngủ và nội thất tại Bạch Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_56_img_4",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/Kh%C3%B4ng%20gian%20ph%C3%B2ng%20tr%C6%B0ng%20b%C3%A0y%20b%C3%AAn%20trong%20B%E1%BA%A1ch%20Dinh.jpg",
+        "title": "Không gian phòng trưng bày bên trong Bạch Dinh",
+        "caption": "Không gian phòng trưng bày bên trong Bạch Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_56_img_5",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20ch%C3%A2n%20dung%20vua%20Th%C3%A0nh%20Th%C3%A1i%20t%E1%BA%A1i%20B%E1%BA%A1ch%20Dinh.jpg",
+        "title": "Không gian trưng bày chân dung vua Thành Thái tại Bạch Dinh",
+        "caption": "Không gian trưng bày chân dung vua Thành Thái tại Bạch Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_56_img_6",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/M%E1%BA%B7t%20ch%C3%ADnh%20B%E1%BA%A1ch%20Dinh%20nh%C3%ACn%20tr%E1%BB%B1c%20di%E1%BB%87n.jpg",
+        "title": "Mặt chính Bạch Dinh nhìn trực diện",
+        "caption": "Mặt chính Bạch Dinh nhìn trực diện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_56_img_7",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/M%E1%BA%B7t%20ti%E1%BB%81n%20B%E1%BA%A1ch%20Dinh%20nh%C3%ACn%20t%E1%BB%AB%20g%C3%B3c%20nghi%C3%AAng.jpg",
+        "title": "Mặt tiền Bạch Dinh nhìn từ góc nghiêng",
+        "caption": "Mặt tiền Bạch Dinh nhìn từ góc nghiêng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_56_img_8",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/M%E1%BA%B7t%20ti%E1%BB%81n%20B%E1%BA%A1ch%20Dinh%20v%C3%A0%20l%E1%BB%91i%20c%E1%BA%A7u%20thang%20ch%C3%ADnh.jpg",
+        "title": "Mặt tiền Bạch Dinh và lối cầu thang chính",
+        "caption": "Mặt tiền Bạch Dinh và lối cầu thang chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_56_img_9",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/To%C3%A0n%20c%E1%BA%A3nh%20B%E1%BA%A1ch%20Dinh%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20bi%E1%BB%83n.jpg",
+        "title": "Toàn cảnh Bạch Dinh nhìn từ phía biển",
+        "caption": "Toàn cảnh Bạch Dinh nhìn từ phía biển",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_56_img_10",
+        "src": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/To%C3%A0n%20c%E1%BA%A3nh%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20tr%C3%AAn%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Toàn cảnh hệ thống ăng-ten trên Núi Lớn",
+        "caption": "Toàn cảnh hệ thống ăng-ten trên Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -27284,7 +30101,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đây là một trong những bảo tàng có lịch sử lâu đời nhất ở miền Nam Việt Nam. Tòa nhà chính được xây dựng từ năm 1927, khánh thành đầu năm 1929, mang phong cách kiến trúc Đông Dương, kết hợp hài hòa giữa kiến trúc phương Đông và phương Tây. Bảo tàng lưu giữ hơn 40.000 hiện vật, tư liệu, phản ánh lịch sử và văn hóa Việt Nam từ thời nguyên thủy đến năm 1945, các nền văn hóa cổ ở Nam Bộ và một số quốc gia châu Á.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20ti%E1%BB%81n%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%20nh%C3%ACn%20t%E1%BB%AB%20ch%C3%ADnh%20di%E1%BB%87n.jpg",
       "emCoBiet": [
         "🔎 Khánh thành: 1/1/1929.",
         "📏 Khuôn viên: khoảng 6.057 m².",
@@ -27427,25 +30244,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh tại Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_57_img_1",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%ADn%20c%E1%BA%A3nh%20ki%E1%BA%BFn%20tr%C3%BAc%20th%C3%A1p%20b%C3%A1t%20gi%C3%A1c%20c%E1%BB%A7a%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Cận cảnh kiến trúc tháp bát giác của Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "caption": "Cận cảnh kiến trúc tháp bát giác của Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Bảo tàng Lịch sử Thành phố Hồ Chí Minh.",
-        "year": "Hiện vật"
+        "id": "mon_57_img_2",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Hi%E1%BB%87n%20v%E1%BA%ADt%20kh%E1%BA%A3o%20c%E1%BB%95%20b%E1%BA%B1ng%20%C4%91%C3%A1%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Hiện vật khảo cổ bằng đá trưng bày tại Bảo tàng Lịch sử Quốc gia",
+        "caption": "Hiện vật khảo cổ bằng đá trưng bày tại Bảo tàng Lịch sử Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_57_img_3",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Hi%E1%BB%87n%20v%E1%BA%ADt%20v%C5%A9%20kh%C3%AD%20c%E1%BB%95%20%C4%91%C6%B0%E1%BB%A3c%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Hiện vật vũ khí cổ được trưng bày tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "caption": "Hiện vật vũ khí cổ được trưng bày tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_57_img_4",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20ki%E1%BA%BFn%20tr%C3%BAc%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Không gian kiến trúc Bảo tàng Lịch sử Thành phố Hồ Chí Minh nhìn từ trên cao",
+        "caption": "Không gian kiến trúc Bảo tàng Lịch sử Thành phố Hồ Chí Minh nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_57_img_5",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20b%E1%BB%99%20s%C6%B0u%20t%E1%BA%ADp%20tr%E1%BB%91ng%20%C4%91%E1%BB%93ng%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Không gian trưng bày bộ sưu tập trống đồng tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "caption": "Không gian trưng bày bộ sưu tập trống đồng tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_57_img_6",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20t%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20v%C3%A0%20hi%E1%BB%87n%20v%E1%BA%ADt%20Ph%E1%BA%ADt%20gi%C3%A1o%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Không gian trưng bày tượng Phật và hiện vật Phật giáo tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "caption": "Không gian trưng bày tượng Phật và hiện vật Phật giáo tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_57_img_7",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%C3%B4%20h%C3%ACnh%20t%C3%A1i%20hi%E1%BB%87n%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20tr%C3%AAn%20s%C3%B4ng%20B%E1%BA%A1ch%20%C4%90%E1%BA%B1ng%20n%C4%83m%20938%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Mô hình tái hiện trận chiến trên sông Bạch Đằng năm 938 tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "caption": "Mô hình tái hiện trận chiến trên sông Bạch Đằng năm 938 tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_57_img_8",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20ti%E1%BB%81n%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%20nh%C3%ACn%20t%E1%BB%AB%20ch%C3%ADnh%20di%E1%BB%87n.jpg",
+        "title": "Mặt tiền Bảo tàng Lịch sử Thành phố Hồ Chí Minh nhìn từ chính diện",
+        "caption": "Mặt tiền Bảo tàng Lịch sử Thành phố Hồ Chí Minh nhìn từ chính diện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_57_img_9",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20ti%E1%BB%81n%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%20trong%20%E1%BA%A3nh%20t%C6%B0%20li%E1%BB%87u%20x%C6%B0a.jpg",
+        "title": "Mặt tiền Bảo tàng Lịch sử Thành phố Hồ Chí Minh trong ảnh tư liệu xưa",
+        "caption": "Mặt tiền Bảo tàng Lịch sử Thành phố Hồ Chí Minh trong ảnh tư liệu xưa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_57_img_10",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/To%C3%A0n%20c%E1%BA%A3nh%20ki%E1%BA%BFn%20tr%C3%BAc%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh kiến trúc Bảo tàng Lịch sử Quốc gia nhìn từ trên cao",
+        "caption": "Toàn cảnh kiến trúc Bảo tàng Lịch sử Quốc gia nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -27758,7 +30634,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Tòa nhà được xây dựng từ năm 1885 đến năm 1890, do kiến trúc sư người Pháp Alfred Foulhoux thiết kế theo phong cách Tân cổ điển phương Tây, kết hợp một số yếu tố kiến trúc bản địa. Trong khoảng 85 năm, công trình từng là dinh thự và trụ sở của nhiều chính quyền tại Nam Kỳ và miền Nam Việt Nam. Đây cũng là nơi lưu giữ, trưng bày lịch sử hình thành, đấu tranh và phát triển của Sài Gòn – Gia Định – Thành phố Hồ Chí Minh.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%A7u%20thang%20ch%C3%ADnh%20b%C3%AAn%20trong%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%20nh%C3%ACn%20t%E1%BB%AB%20ch%C3%ADnh%20di%E1%BB%87n.jpg",
       "emCoBiet": [
         "🔎 Khởi công: 1885; khánh thành: 1890.",
         "📏 Khuôn viên: hơn 12.000 m².",
@@ -27901,25 +30777,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Bảo tàng Thành phố Hồ Chí Minh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Bảo tàng Thành phố Hồ Chí Minh tại Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_58_img_1",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20c%E1%BB%A7a%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Bằng xếp hạng Di tích quốc gia của Bảo tàng Thành phố Hồ Chí Minh",
+        "caption": "Bằng xếp hạng Di tích quốc gia của Bảo tàng Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Bảo tàng Thành phố Hồ Chí Minh.",
-        "year": "Hiện vật"
+        "id": "mon_58_img_2",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%A7u%20thang%20ch%C3%ADnh%20b%C3%AAn%20trong%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%20nh%C3%ACn%20t%E1%BB%AB%20ch%C3%ADnh%20di%E1%BB%87n.jpg",
+        "title": "Cầu thang chính bên trong Bảo tàng Thành phố Hồ Chí Minh nhìn từ chính diện",
+        "caption": "Cầu thang chính bên trong Bảo tàng Thành phố Hồ Chí Minh nhìn từ chính diện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_58_img_3",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20h%C3%A0nh%20lang%20v%C3%A0%20c%E1%BA%A7u%20thang%20b%C3%AAn%20trong%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Không gian hành lang và cầu thang bên trong Bảo tàng Thành phố Hồ Chí Minh",
+        "caption": "Không gian hành lang và cầu thang bên trong Bảo tàng Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_58_img_4",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20ki%E1%BA%BFn%20tr%C3%BAc%20c%E1%BB%ADa%20s%E1%BB%95%20v%C3%B2m%20b%C3%AAn%20trong%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Không gian kiến trúc cửa sổ vòm bên trong Bảo tàng Thành phố Hồ Chí Minh",
+        "caption": "Không gian kiến trúc cửa sổ vòm bên trong Bảo tàng Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_58_img_5",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20chuy%C3%AAn%20%C4%91%E1%BB%81%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Không gian trưng bày chuyên đề tại Bảo tàng Thành phố Hồ Chí Minh",
+        "caption": "Không gian trưng bày chuyên đề tại Bảo tàng Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_58_img_6",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20hi%E1%BB%87n%20v%E1%BA%ADt%20b%C3%AAn%20trong%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Không gian trưng bày hiện vật bên trong Bảo tàng Thành phố Hồ Chí Minh",
+        "caption": "Không gian trưng bày hiện vật bên trong Bảo tàng Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_58_img_7",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20m%C3%A1y%20bay%20v%C3%A0%20ph%C6%B0%C6%A1ng%20ti%E1%BB%87n%20qu%C3%A2n%20s%E1%BB%B1%20ngo%C3%A0i%20tr%E1%BB%9Di%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Không gian trưng bày máy bay và phương tiện quân sự ngoài trời tại Bảo tàng Thành phố Hồ Chí Minh",
+        "caption": "Không gian trưng bày máy bay và phương tiện quân sự ngoài trời tại Bảo tàng Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_58_img_8",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20v%E1%BB%81%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%91%E1%BA%A5u%20tranh%20c%C3%A1ch%20m%E1%BA%A1ng%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Không gian trưng bày về lịch sử đấu tranh cách mạng tại Bảo tàng Thành phố Hồ Chí Minh",
+        "caption": "Không gian trưng bày về lịch sử đấu tranh cách mạng tại Bảo tàng Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_58_img_9",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20b%C3%AAn%20v%C3%A0%20s%E1%BA%A3nh%20ch%C3%ADnh%20c%E1%BB%A7a%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Mặt bên và sảnh chính của Bảo tàng Thành phố Hồ Chí Minh",
+        "caption": "Mặt bên và sảnh chính của Bảo tàng Thành phố Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_58_img_10",
+        "src": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20ti%E1%BB%81n%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%20nh%C3%ACn%20t%E1%BB%AB%20ch%C3%ADnh%20di%E1%BB%87n.jpg",
+        "title": "Mặt tiền Bảo tàng Thành phố Hồ Chí Minh nhìn từ chính diện",
+        "caption": "Mặt tiền Bảo tàng Thành phố Hồ Chí Minh nhìn từ chính diện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -28248,7 +31183,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Chùa Giác Lâm được xây dựng năm 1744, là một trong những ngôi chùa cổ tiêu biểu của Thành phố Hồ Chí Minh và được xem là tổ đình của dòng Lâm Tế tại Nam Bộ. Trong thế kỷ XIX, chùa từng là học viện, học xá Phật giáo; trong hai cuộc kháng chiến chống Pháp và chống Mỹ, chùa còn là cơ sở hội họp, che giấu và nuôi dưỡng cán bộ cách mạng.\n\nChùa mang đặc trưng kiến trúc chùa cổ Nam Bộ với mặt bằng hình chữ “tam”, mái dạng “bánh ít” và hệ thống 98 cột gỗ quý. Không gian chánh điện được bài trí trang nghiêm, gồm các bộ tượng Di Đà Tam Tôn, Tam Thế Phật, La Hán, Thập Điện cùng bộ tượng một vị Phật và bốn vị Bồ Tát được tạo tác theo hình thức “thượng kỳ thú”.\n\nGiá trị nghệ thuật của chùa thể hiện qua 113 pho tượng gỗ mít, 5 tượng đồng, 86 câu đối chữ Hán, cùng hệ thống hoành phi, bao lam chạm khắc và các mảng trang trí bằng gốm sứ Bình Dương. Nổi bật là hai bộ tượng La Hán bằng gỗ thếp vàng có niên đại từ thế kỷ XVIII–XIX. Khuôn viên chùa còn có cổng nhị quan và vườn tháp với 38 ngôi tháp thờ các vị tổ, trụ trì và tăng sĩ.\n\nNhờ giá trị nổi bật về lịch sử, tôn giáo, kiến trúc và nghệ thuật, chùa Giác Lâm được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia năm 1988.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
       "emCoBiet": [
         "📅 Khởi dựng: 1744.",
         "🔎 Có 4 lần trùng tu lớn.",
@@ -28391,25 +31326,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Chùa Giác Lâm",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Giác Lâm tại 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam.",
-        "year": "Tư liệu"
+        "id": "mon_59_img_1",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Cổng vào Di tích Địa đạo Phú Thọ Hòa",
+        "caption": "Cổng vào Di tích Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Giác Lâm.",
-        "year": "Hiện vật"
+        "id": "mon_59_img_2",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/Giao%20th%C3%B4ng%20h%C3%A0o%20t%E1%BA%A1i%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Giao thông hào tại Địa đạo Phú Thọ Hòa",
+        "caption": "Giao thông hào tại Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_59_img_3",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/L%E1%BB%91i%20l%C3%AAn%20xu%E1%BB%91ng%20b%C3%AAn%20trong%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Lối lên xuống bên trong Địa đạo Phú Thọ Hòa",
+        "caption": "Lối lên xuống bên trong Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_59_img_4",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/Mi%E1%BB%87ng%20h%E1%BA%A7m%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Miệng hầm Địa đạo Phú Thọ Hòa",
+        "caption": "Miệng hầm Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_59_img_5",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/M%C3%B4%20h%C3%ACnh%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Mô hình hệ thống Địa đạo Phú Thọ Hòa",
+        "caption": "Mô hình hệ thống Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_59_img_6",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/M%C3%B4%20h%C3%ACnh%20t%C3%A1i%20hi%E1%BB%87n%20vi%E1%BB%87c%20d%C3%B9ng%20ch%C3%B3%20nghi%E1%BB%87p%20v%E1%BB%A5%20d%C3%B2%20t%C3%ACm%20chi%E1%BA%BFn%20s%C4%A9%20d%C6%B0%E1%BB%9Bi%20%C4%91%E1%BB%8Ba%20%C4%91%E1%BA%A1o.jpg",
+        "title": "Mô hình tái hiện việc dùng chó nghiệp vụ dò tìm chiến sĩ dưới địa đạo",
+        "caption": "Mô hình tái hiện việc dùng chó nghiệp vụ dò tìm chiến sĩ dưới địa đạo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_59_img_7",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/M%C3%B4%20h%C3%ACnh%20t%C3%A1i%20hi%E1%BB%87n%20vi%E1%BB%87c%20%C4%91%C3%A0o%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Mô hình tái hiện việc đào Địa đạo Phú Thọ Hòa",
+        "caption": "Mô hình tái hiện việc đào Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_59_img_8",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/M%E1%BB%99t%20c%E1%BB%ADa%20h%E1%BA%A7m%20d%E1%BA%ABn%20xu%E1%BB%91ng%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Một cửa hầm dẫn xuống Địa đạo Phú Thọ Hòa",
+        "caption": "Một cửa hầm dẫn xuống Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_59_img_9",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/Tranh%20g%E1%BB%91m%20t%C3%A1i%20hi%E1%BB%87n%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%91%E1%BA%A5u%20tranh%20c%C3%A1ch%20m%E1%BA%A1ng%20t%E1%BA%A1i%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Tranh gốm tái hiện lịch sử đấu tranh cách mạng tại Địa đạo Phú Thọ Hòa",
+        "caption": "Tranh gốm tái hiện lịch sử đấu tranh cách mạng tại Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_59_img_10",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/%C4%90%C6%B0%E1%BB%9Dng%20h%E1%BA%A7m%20b%C3%AAn%20trong%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+        "title": "Đường hầm bên trong Địa đạo Phú Thọ Hòa",
+        "caption": "Đường hầm bên trong Địa đạo Phú Thọ Hòa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -28738,7 +31732,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Chùa Giác Viên là ngôi chùa cổ tiêu biểu của vùng Gia Định – Sài Gòn, hiện tọa lạc tại số 161/35/20 đường Lạc Long Quân, phường Bình Thới, Thành phố Hồ Chí Minh. Chùa có nguồn gốc từ một căn nhà nhỏ dựng tại bến Hố Đất để trông giữ gỗ phục vụ việc trùng tu chùa Giác Lâm năm 1798. Căn nhà dần trở thành am thờ Phật, được xây thành Quan Âm Viện năm 1805 và đổi tên thành chùa Giác Viên năm 1850. Chùa gắn với Thiền sư Tiên Giác – Hải Tịnh và Thiền sư Hoằng Ân – Minh Khiêm, những danh tăng có công đào tạo tăng sĩ, chấn chỉnh nghi lễ, giảng dạy kinh luật, sao chép kinh sách và khắc mộc bản Phật giáo. Vì vậy, Giác Viên từng là trung tâm đào tạo ứng phú sư và truyền bá Phật giáo có ảnh hưởng ở Nam Bộ. Một số mộc bản, kinh sách được tạo lập tại chùa từng được dùng làm tài liệu học tập cho tăng sĩ và lưu truyền tại nhiều chùa Nam Bộ. Phật Sự Online\n\nVề kiến trúc, chùa mang đậm phong cách chùa cổ Nam Bộ thế kỷ XIX, gồm chính điện, tổ đường, giảng đường, Đông lang và Tây lang, được bố trí cân đối. Kết cấu gỗ, sườn mái và cách tổ chức không gian giữ được vẻ cổ kính, đồng thời mặt tiền có cửa vòm, cột vuông và hoa văn đắp nổi, thể hiện ảnh hưởng kiến trúc phương Tây. Mặt chính của chùa trước kia hướng ra bến Hố Đất, phản ánh vai trò của giao thông đường thủy trong quá trình hình thành di tích. Sau nhiều lần trùng tu vào các năm 1899, 1910 và cuối thập niên 1920, chùa mang dấu ấn của nhiều giai đoạn nhưng vẫn bảo tồn được đặc trưng kiến trúc truyền thống. C3-TT\nGiá trị nghệ thuật nổi bật nhất của chùa là hệ thống tượng thờ và chạm khắc gỗ. Chùa lưu giữ 153 pho tượng, chủ yếu bằng gỗ mít, tiêu biểu như các bộ Thập bát La Hán, Thập điện Diêm Vương, Phật và bốn vị Bồ Tát, cùng tượng Giám Trai bằng gốm. Gần 60 bao lam được chạm lộng tinh xảo với các đề tài Bách điểu, Thập bát La Hán, Tô Vũ chăn dê, Lã Vọng câu cá, ngư – tiều – canh – mục, hoa lá và chim thú. Đặc biệt, các nghệ nhân đưa vào tác phẩm hình ảnh trâu, bò, dê, heo, chó và cảnh vật đồng quê, làm cho nghệ thuật Phật giáo trở nên dân gian, sinh động và đậm bản sắc Nam Bộ. Hệ thống hoành phi, đồ thờ cùng 128 câu đối Hán Nôm còn cung cấp tư liệu quý về tôn giáo, ngôn ngữ và mỹ thuật truyền thống.\n\nVới những giá trị đặc sắc đó, chùa Giác Viên được xếp hạng Di tích kiến trúc nghệ thuật quốc gia ngày 7/1/1993. Công trình trùng tu giai đoạn 2 được bàn giao ngày 14/1/2025, góp phần bảo vệ di tích và phục vụ nhu cầu tín ngưỡng, tham quan, nghiên cứu. Chùa là minh chứng tiêu biểu cho lịch sử Phật giáo, nghệ thuật chạm khắc gỗ và đời sống văn hóa của cư dân Nam Bộ.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/C%E1%BB%95ng%20ch%C3%ADnh%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i.jpg",
       "emCoBiet": [
         "📅 Đổi tên thành chùa Giác Viên: năm 1850.",
         "🏛️ Lưu giữ khoảng 153 pho tượng.",
@@ -28881,25 +31875,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Chùa Giác Viên",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Giác Viên tại Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_60_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/C%E1%BB%95ng%20ch%C3%ADnh%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i.jpg",
+        "title": "Cổng chính Di tích lịch sử Nhà tù Phú Lợi",
+        "caption": "Cổng chính Di tích lịch sử Nhà tù Phú Lợi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Giác Viên.",
-        "year": "Hiện vật"
+        "id": "mon_60_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/D%C3%A3y%20nh%C3%A0%20giam%20khu%20C%20(ho%E1%BA%B7c%20nh%C3%A0%20giam%20t%E1%BA%ADp%20th%E1%BB%83).jpg",
+        "title": "Dãy nhà giam khu C (hoặc nhà giam tập thể)",
+        "caption": "Dãy nhà giam khu C (hoặc nhà giam tập thể)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_60_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/H%C3%ACnh%20th%E1%BB%A9c%20tra%20t%E1%BA%A5n%20L%E1%BB%93ng%20k%E1%BA%BDm%20gai.jpg",
+        "title": "Hình thức tra tấn Lồng kẽm gai",
+        "caption": "Hình thức tra tấn Lồng kẽm gai",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_60_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/Khu%20tr%C6%B0ng%20b%C3%A0y%20t%C6%B0%20li%E1%BB%87u%20Ph%C3%A1t%20huy%20gi%C3%A1%20tr%E1%BB%8B%20di%20t%C3%ADch%20Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i.jpg",
+        "title": "Khu trưng bày tư liệu Phát huy giá trị di tích Nhà tù Phú Lợi",
+        "caption": "Khu trưng bày tư liệu Phát huy giá trị di tích Nhà tù Phú Lợi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_60_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/L%C3%B4%20c%E1%BB%91t%2C%20Ch%C3%B2i%20g%C3%A1c%20b%E1%BA%B1ng%20%C4%91%C3%A1.jpg",
+        "title": "Lô cốt, Chòi gác bằng đá",
+        "caption": "Lô cốt, Chòi gác bằng đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_60_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/M%C3%B4%20h%C3%ACnh%20t%C3%A1i%20hi%E1%BB%87n%20c%E1%BA%A3nh%20tra%20t%E1%BA%A5n%20t%C3%B9%20nh%C3%A2n.jpg",
+        "title": "Mô hình tái hiện cảnh tra tấn tù nhân",
+        "caption": "Mô hình tái hiện cảnh tra tấn tù nhân",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_60_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/M%C3%B4%20h%C3%ACnh%20t%C3%A1i%20hi%E1%BB%87n%20sinh%20ho%E1%BA%A1t%20c%E1%BB%A7a%20t%C3%B9%20nh%C3%A2n%20trong%20ph%C3%B2ng%20giam.jpg",
+        "title": "Mô hình tái hiện sinh hoạt của tù nhân trong phòng giam",
+        "caption": "Mô hình tái hiện sinh hoạt của tù nhân trong phòng giam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_60_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/S%C3%A0n%20n%E1%BA%B1m%20t%C3%B9%20nh%C3%A2n%20(B%E1%BB%87%20b%C3%AA%20t%C3%B4ng).jpg",
+        "title": "Sàn nằm tù nhân (Bệ bê tông)",
+        "caption": "Sàn nằm tù nhân (Bệ bê tông)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_60_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20C%C4%83m%20th%C3%B9.jpg",
+        "title": "Tượng đài Căm thù",
+        "caption": "Tượng đài Căm thù",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_60_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/%C4%90%C3%A0i%20quan%20s%C3%A1t%20trung%20t%C3%A2m.jpg",
+        "title": "Đài quan sát trung tâm",
+        "caption": "Đài quan sát trung tâm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -29200,7 +32253,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Chùa Hội Khánh được Thiền sư Đại Ngạn – Từ Tấn khai sơn năm 1741, là một trong những ngôi chùa cổ tiêu biểu của vùng Thủ Dầu Một và Nam Bộ. Chùa ban đầu được xây dựng trên một ngọn đồi nhưng bị quân Pháp thiêu hủy năm 1861; đến năm 1868, Thiền sư Chánh Đắc cho xây dựng lại dưới chân đồi tại vị trí hiện nay. Chùa còn gắn với phong trào yêu nước đầu thế kỷ XX. Khoảng năm 1923–1926, Phó bảng Nguyễn Sinh Sắc từng đến đây hoạt động, cùng Hòa thượng Từ Văn và các nhà yêu nước thành lập Hội Danh dự, truyền bá tư tưởng yêu nước, đạo đức và tinh thần tương trợ trong nhân dân.\n\nVề kiến trúc, chùa được xây dựng theo kiểu “trùng thiềm trùng lương”, các khối chánh điện, giảng đường, Đông lang và Tây lang nối tiếp nhau thành một quần thể khép kín. Đây được xem là một trong những công trình kiến trúc Phật giáo có kết cấu gỗ lớn tiêu biểu của Bình Dương, với hệ thống cột, kèo và vì gỗ liên kết chắc chắn. Chánh điện lưu giữ hơn 100 pho tượng gỗ mít sơn son thếp vàng, nổi bật là các bộ tượng Thập bát La Hán và Thập điện Minh Vương. Hệ thống bao lam, hoành phi, câu đối Hán Nôm và phù điêu được chạm khắc tinh xảo, thể hiện kỹ thuật điêu khắc gỗ truyền thống của nghệ nhân Thủ Dầu Một.\n\nKhuôn viên chùa còn có chín bảo tháp thờ các đời trụ trì và bốn công trình tượng trưng cho những dấu mốc trong cuộc đời Đức Phật gồm vườn Lâm Tỳ Ni, Bồ Đề đạo tràng, vườn Lộc Uyển và Câu Thi Na. Công trình nổi bật được bổ sung trong thời hiện đại là tượng Phật Thích Ca nhập Niết bàn dài khoảng 52 m, cao 12 m, đặt trên độ cao khoảng 24 m. Sự kết hợp giữa kiến trúc cổ, nghệ thuật chạm khắc, tượng thờ và cảnh quan tôn giáo đã tạo cho chùa Hội Khánh giá trị đặc biệt về lịch sử, văn hóa, kiến trúc và mỹ thuật. Chùa được xếp hạng di tích cấp quốc gia ngày 07/01/1993.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh.jpg",
       "emCoBiet": [
         "📅 Khởi dựng: năm 1741",
         "🏛️ Là công trình kiến trúc gỗ lớn của Bình Dương",
@@ -29343,25 +32396,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Chùa Hội Khánh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Hội Khánh tại Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_61_img_1",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/Bia%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bia đá công nhận Di tích Lịch sử - Văn hóa",
+        "caption": "Bia đá công nhận Di tích Lịch sử - Văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Hội Khánh.",
-        "year": "Hiện vật"
+        "id": "mon_61_img_2",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/B%C3%A0n%20th%E1%BB%9D%20T%E1%BB%95%20v%C3%A0%20ch%C6%B0%20Ph%E1%BA%ADt%20trong%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Bàn thờ Tổ và chư Phật trong Chánh điện",
+        "caption": "Bàn thờ Tổ và chư Phật trong Chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_61_img_3",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/B%E1%BB%99%20t%C6%B0%E1%BB%A3ng%2018%20v%E1%BB%8B%20La%20H%C3%A1n%20b%E1%BA%B1ng%20g%E1%BB%97.jpg",
+        "title": "Bộ tượng 18 vị La Hán bằng gỗ",
+        "caption": "Bộ tượng 18 vị La Hán bằng gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_61_img_4",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh.jpg",
+        "title": "Cổng Tam quan Chùa Hội Khánh",
+        "caption": "Cổng Tam quan Chùa Hội Khánh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_61_img_5",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/G%C3%B3c%20s%C3%A2n%20ch%C3%B9a%20ng%E1%BB%A3p%20b%C3%B3ng%20m%C3%A1t.jpg",
+        "title": "Góc sân chùa ngợp bóng mát",
+        "caption": "Góc sân chùa ngợp bóng mát",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_61_img_6",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/M%E1%BA%B7t%20ti%E1%BB%81n%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh.jpg",
+        "title": "Mặt tiền Chánh điện Chùa Hội Khánh",
+        "caption": "Mặt tiền Chánh điện Chùa Hội Khánh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_61_img_7",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/Th%C3%A1p%20T%E1%BB%AB%20T%C3%B4n%20v%C3%A0%20C%E1%BB%95ng%20Tam%20quan%20c%E1%BB%95.jpg",
+        "title": "Tháp Từ Tôn và Cổng Tam quan cổ",
+        "caption": "Tháp Từ Tôn và Cổng Tam quan cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_61_img_8",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/To%C3%A0n%20c%E1%BA%A3nh%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20v%C3%A0%20Th%C3%A1p%20T%E1%BB%AB%20T%C3%B4n.jpg",
+        "title": "Toàn cảnh Chánh điện và Tháp Từ Tôn",
+        "caption": "Toàn cảnh Chánh điện và Tháp Từ Tôn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_61_img_9",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/T%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20Th%C3%ADch%20Ca%20Nh%E1%BA%ADp%20Ni%E1%BA%BFt%20B%C3%A0n%20tr%C3%AAn%20m%C3%A1i%20d%C3%A0i%20nh%E1%BA%A5t%20Vi%E1%BB%87t%20Nam.jpg",
+        "title": "Tượng Phật Thích Ca Nhập Niết Bàn trên mái dài nhất Việt Nam",
+        "caption": "Tượng Phật Thích Ca Nhập Niết Bàn trên mái dài nhất Việt Nam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_61_img_10",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/%C4%90%C3%A0i%20Quan%20Th%E1%BA%BF%20%C3%82m%20B%E1%BB%93%20T%C3%A1t.jpg",
+        "title": "Đài Quan Thế Âm Bồ Tát",
+        "caption": "Đài Quan Thế Âm Bồ Tát",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -29682,7 +32794,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Chùa Hội Sơn là một trong những cổ tự lâu đời của vùng đất Thủ Đức – Gia Định, được hình thành từ khoảng thế kỷ XVIII, gắn với quá trình truyền bá và phát triển của Phật giáo ở Nam Bộ. Chùa nằm trên một gò cao ven sông Đồng Nai, có cảnh quan và kiến trúc đặc trưng của chùa cổ Nam Bộ. Đặc biệt, khu vực chùa còn chứa di chỉ khảo cổ Hội Sơn, chứng minh sự hiện diện của cư dân tiền sử tại vùng hạ lưu sông Đồng Nai khoảng 3.500–3.000 năm trước. Vì vậy, Hội Sơn có giá trị đồng thời về lịch sử Phật giáo, kiến trúc nghệ thuật và khảo cổ học.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/C%E1%BB%95ng%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
       "emCoBiet": [
         "📅 Hình thành khoảng thế kỷ XVIII.",
         "🔎 Nằm trên gò đồi bên sông Đồng Nai.",
@@ -29825,25 +32937,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Chùa Hội Sơn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Hội Sơn tại Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_62_img_1",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/C%C3%B4ng%20tr%C3%ACnh%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20trong%20Khu%20di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
+        "title": "Công trình tưởng niệm trong Khu di tích Địa đạo Tam Giác Sắt",
+        "caption": "Công trình tưởng niệm trong Khu di tích Địa đạo Tam Giác Sắt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Hội Sơn.",
-        "year": "Hiện vật"
+        "id": "mon_62_img_2",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/C%E1%BB%95ng%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
+        "title": "Cổng Khu di tích lịch sử Địa đạo Tam Giác Sắt",
+        "caption": "Cổng Khu di tích lịch sử Địa đạo Tam Giác Sắt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_62_img_3",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/Khu%20t%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20trung%20t%C3%A2m%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Khu tượng đài trung tâm Địa đạo Tam Giác Sắt nhìn từ trên cao",
+        "caption": "Khu tượng đài trung tâm Địa đạo Tam Giác Sắt nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_62_img_4",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/M%E1%BB%99t%20s%E1%BB%91%20h%E1%BA%A1ng%20m%E1%BB%A5c%20c%C3%B4ng%20tr%C3%ACnh%20trong%20Khu%20di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
+        "title": "Một số hạng mục công trình trong Khu di tích Địa đạo Tam Giác Sắt",
+        "caption": "Một số hạng mục công trình trong Khu di tích Địa đạo Tam Giác Sắt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_62_img_5",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/Nh%C3%A0%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Nhà tưởng niệm tại Khu di tích Địa đạo Tam Giác Sắt nhìn từ trên cao",
+        "caption": "Nhà tưởng niệm tại Khu di tích Địa đạo Tam Giác Sắt nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_62_img_6",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/To%C3%A0n%20c%E1%BA%A3nh%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Khu di tích lịch sử Địa đạo Tam Giác Sắt nhìn từ trên cao",
+        "caption": "Toàn cảnh Khu di tích lịch sử Địa đạo Tam Giác Sắt nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_62_img_7",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/To%C3%A0n%20c%E1%BA%A3nh%20khu%20t%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20trung%20t%C3%A2m%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
+        "title": "Toàn cảnh khu tượng đài trung tâm Địa đạo Tam Giác Sắt",
+        "caption": "Toàn cảnh khu tượng đài trung tâm Địa đạo Tam Giác Sắt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_62_img_8",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20trung%20t%C3%A2m%20Khu%20di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt%20nh%C3%ACn%20t%E1%BB%AB%20tr%E1%BB%A5c%20%C4%91%C6%B0%E1%BB%9Dng%20ch%C3%ADnh.jpg",
+        "title": "Tượng đài trung tâm Khu di tích Địa đạo Tam Giác Sắt nhìn từ trục đường chính",
+        "caption": "Tượng đài trung tâm Khu di tích Địa đạo Tam Giác Sắt nhìn từ trục đường chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_62_img_9",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20trung%20t%C3%A2m%20Khu%20di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
+        "title": "Tượng đài trung tâm Khu di tích Địa đạo Tam Giác Sắt",
+        "caption": "Tượng đài trung tâm Khu di tích Địa đạo Tam Giác Sắt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_62_img_10",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/%E1%BA%A2nh%20minh%20h%E1%BB%8Da%20c%E1%BA%A5u%20tr%C3%BAc%20%C4%91%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20%E2%80%93%20kh%C3%B4ng%20x%C3%A1c%20%C4%91%E1%BB%8Bnh%20l%C3%A0%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
+        "title": "Ảnh minh họa cấu trúc địa đạo – không xác định là Địa đạo Tam Giác Sắt",
+        "caption": "Ảnh minh họa cấu trúc địa đạo – không xác định là Địa đạo Tam Giác Sắt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -30169,7 +33340,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Chùa Long Bàn là một ngôi chùa cổ gắn với quá trình người Việt khai phá vùng đất Mô Xoài – Long Điền từ thế kỷ XVII. Chùa phản ánh quá trình hình thành cộng đồng cư dân và đời sống Phật giáo ở vùng Đông Nam Bộ. Giá trị nổi bật nhất của di tích là kiến trúc gỗ truyền thống, nghệ thuật chạm khắc và hệ thống tượng, đồ thờ tự cổ. Chùa cũng là nơi duy trì sinh hoạt Phật giáo và các lễ nghi truyền thống của cộng đồng địa phương.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/To%C3%A0n%20c%E1%BA%A3nh%20khu%20v%E1%BB%B1c%20C%C3%B9%20Lao%20R%C3%B9a%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "📅 Tuổi đời: hơn 180 năm.",
         "🔎 Giữ khá đầy đủ cấu trúc chùa cổ Nam Bộ.",
@@ -30312,25 +33483,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Chùa Long Bàn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Long Bàn tại Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_63_img_1",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/Bia%20Di%20t%C3%ADch%20c%E1%BA%A5p%20qu%E1%BB%91c%20gia%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Bia Di tích cấp quốc gia Di tích khảo cổ Cù Lao Rùa",
+        "caption": "Bia Di tích cấp quốc gia Di tích khảo cổ Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Long Bàn.",
-        "year": "Hiện vật"
+        "id": "mon_63_img_2",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/Bi%E1%BB%83u%20t%C6%B0%E1%BB%A3ng%20r%C3%B9a%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Biểu tượng rùa tại Di tích khảo cổ Cù Lao Rùa",
+        "caption": "Biểu tượng rùa tại Di tích khảo cổ Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_63_img_3",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/B%E1%BA%A3ng%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20c%E1%BA%A5p%20qu%E1%BB%91c%20gia%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Bảng giới thiệu Di tích khảo cổ cấp quốc gia Cù Lao Rùa",
+        "caption": "Bảng giới thiệu Di tích khảo cổ cấp quốc gia Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_63_img_4",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/C%C3%A1c%20hi%E1%BB%87n%20v%E1%BA%ADt%20g%E1%BB%91m%20kh%E1%BA%A3o%20c%E1%BB%95%20t%E1%BA%A1i%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Các hiện vật gốm khảo cổ tại Cù Lao Rùa",
+        "caption": "Các hiện vật gốm khảo cổ tại Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_63_img_5",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/C%E1%BA%A3nh%20quan%20khu%20v%E1%BB%B1c%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Cảnh quan khu vực Di tích khảo cổ Cù Lao Rùa",
+        "caption": "Cảnh quan khu vực Di tích khảo cổ Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_63_img_6",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/C%E1%BA%A3nh%20quan%20s%C3%B4ng%20n%C6%B0%E1%BB%9Bc%20khu%20v%E1%BB%B1c%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Cảnh quan sông nước khu vực Cù Lao Rùa",
+        "caption": "Cảnh quan sông nước khu vực Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_63_img_7",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/Hi%E1%BB%87n%20v%E1%BA%ADt%20c%C3%B4ng%20c%E1%BB%A5%20%C4%91%C3%A1%20ph%C3%A1t%20hi%E1%BB%87n%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Hiện vật công cụ đá phát hiện tại Di tích khảo cổ Cù Lao Rùa",
+        "caption": "Hiện vật công cụ đá phát hiện tại Di tích khảo cổ Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_63_img_8",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/Hi%E1%BB%87n%20v%E1%BA%ADt%20kh%E1%BA%A3o%20c%E1%BB%95%20t%E1%BA%A1i%20khu%20v%E1%BB%B1c%20khai%20qu%E1%BA%ADt%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Hiện vật khảo cổ tại khu vực khai quật Cù Lao Rùa",
+        "caption": "Hiện vật khảo cổ tại khu vực khai quật Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_63_img_9",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/Hi%E1%BB%87n%20v%E1%BA%ADt%20%C4%91%E1%BB%93%20g%E1%BB%91m%20ph%C3%A1t%20hi%E1%BB%87n%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Hiện vật đồ gốm phát hiện tại Di tích khảo cổ Cù Lao Rùa",
+        "caption": "Hiện vật đồ gốm phát hiện tại Di tích khảo cổ Cù Lao Rùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_63_img_10",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/To%C3%A0n%20c%E1%BA%A3nh%20khu%20v%E1%BB%B1c%20C%C3%B9%20Lao%20R%C3%B9a%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh khu vực Cù Lao Rùa nhìn từ trên cao",
+        "caption": "Toàn cảnh khu vực Cù Lao Rùa nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -30645,7 +33875,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Chùa Phụng Sơn được tạo lập vào đầu thế kỷ XIX, gắn với quá trình hình thành và phát triển của vùng Gia Định – Sài Gòn. Chùa được xây trên nền một ngôi chùa Chân Lạp cổ đã hoang phế, vì vậy có giá trị trong việc phản ánh lịch sử giao lưu văn hóa và Phật giáo ở Nam Bộ. Chùa vẫn bảo tồn nhiều yếu tố kiến trúc cổ qua các lần trùng tu.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/To%C3%A0n%20c%E1%BA%A3nh%20khu%20v%E1%BB%B1c%20th%E1%BB%9D%20t%E1%BB%B1%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
       "emCoBiet": [
         "🔎 Tên chữ: Phụng Sơn tự; thường gọi: chùa Gò.",
         "🔎 Gắn với lớp văn hóa khảo cổ Óc Eo.",
@@ -30788,25 +34018,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Chùa Phụng Sơn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Phụng Sơn tại Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_64_img_1",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/Chu%E1%BB%97i%20h%E1%BA%A1t%20trang%20s%E1%BB%A9c%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Chuỗi hạt trang sức tại Di tích khảo cổ Dốc Chùa",
+        "caption": "Chuỗi hạt trang sức tại Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Phụng Sơn.",
-        "year": "Hiện vật"
+        "id": "mon_64_img_2",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/C%C3%A1c%20hi%E1%BB%87n%20v%E1%BA%ADt%20b%E1%BA%B1ng%20%C4%91%E1%BB%93ng%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Các hiện vật bằng đồng tại Di tích khảo cổ Dốc Chùa",
+        "caption": "Các hiện vật bằng đồng tại Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_64_img_3",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/C%C3%A1c%20m%E1%BA%A3nh%20g%E1%BB%91m%20v%C3%A0%20v%E1%BA%ADt%20li%E1%BB%87u%20ki%E1%BA%BFn%20tr%C3%BAc%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Các mảnh gốm và vật liệu kiến trúc tại Di tích khảo cổ Dốc Chùa",
+        "caption": "Các mảnh gốm và vật liệu kiến trúc tại Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_64_img_4",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/C%C3%B4ng%20tr%C3%ACnh%20th%E1%BB%9D%20t%E1%BB%B1%20trong%20khu%20v%E1%BB%B1c%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Công trình thờ tự trong khu vực Di tích khảo cổ Dốc Chùa",
+        "caption": "Công trình thờ tự trong khu vực Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_64_img_5",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/C%E1%BA%A3nh%20quan%20khu%20v%E1%BB%B1c%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Cảnh quan khu vực Di tích khảo cổ Dốc Chùa",
+        "caption": "Cảnh quan khu vực Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_64_img_6",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/L%E1%BB%91i%20v%C3%A0o%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Lối vào Di tích khảo cổ Dốc Chùa",
+        "caption": "Lối vào Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_64_img_7",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/L%E1%BB%91i%20%C4%91i%20trong%20khu%20v%E1%BB%B1c%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Lối đi trong khu vực Di tích khảo cổ Dốc Chùa",
+        "caption": "Lối đi trong khu vực Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_64_img_8",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/M%E1%BB%99t%20s%E1%BB%91%20hi%E1%BB%87n%20v%E1%BA%ADt%20kh%E1%BA%A3o%20c%E1%BB%95%20t%E1%BA%A1i%20Di%20t%C3%ADch%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Một số hiện vật khảo cổ tại Di tích Dốc Chùa",
+        "caption": "Một số hiện vật khảo cổ tại Di tích Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_64_img_9",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/To%C3%A0n%20c%E1%BA%A3nh%20khu%20v%E1%BB%B1c%20th%E1%BB%9D%20t%E1%BB%B1%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Toàn cảnh khu vực thờ tự tại Di tích khảo cổ Dốc Chùa",
+        "caption": "Toàn cảnh khu vực thờ tự tại Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_64_img_10",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/T%C6%B0%E1%BB%A3ng%20%C4%91%E1%BB%99ng%20v%E1%BA%ADt%20b%E1%BA%B1ng%20%C4%91%E1%BB%93ng%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+        "title": "Tượng động vật bằng đồng tại Di tích khảo cổ Dốc Chùa",
+        "caption": "Tượng động vật bằng đồng tại Di tích khảo cổ Dốc Chùa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -31128,7 +34417,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Là một trong những ngôi chùa cổ của vùng Vũng Tàu, gắn với lịch sử hình thành và phát triển của Phật giáo tại địa phương; chùa có giá trị về lịch sử, văn hóa, kiến trúc và là nơi lưu giữ những cổ vật có giá trị nghiên cứu về lịch sử, văn hóa, tín ngưỡng vùng Vũng Tàu xưa.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/To%C3%A0n%20c%E1%BA%A3nh%20g%C3%B3c%20r%E1%BB%99ng%20t%E1%BB%AB%20tr%C3%AAn%20cao%20h%C6%B0%E1%BB%9Bng%20ra%20c%E1%BA%A7u%20v%C3%A0%20c%C3%B4ng%20vi%C3%AAn.jpg",
       "emCoBiet": [
         "🔎 Tên chữ: Phước Lâm Tự.",
         "🔎 Là cổ tự tiêu biểu của Vũng Tàu cũ.",
@@ -31271,25 +34560,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Chùa Phước Lâm (Phước Lâm Tự)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Phước Lâm (Phước Lâm Tự) tại Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_65_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/C%E1%BA%A3nh%20Nh%C3%A0%20tr%C3%B2n%20B%C3%A0%20R%E1%BB%8Ba%20v%E1%BB%81%20%C4%91%C3%AAm%20v%E1%BB%9Bi%20v%E1%BB%87t%20s%C3%A1ng%20giao%20th%C3%B4ng.jpg",
+        "title": "Cảnh Nhà tròn Bà Rịa về đêm với vệt sáng giao thông",
+        "caption": "Cảnh Nhà tròn Bà Rịa về đêm với vệt sáng giao thông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Phước Lâm (Phước Lâm Tự).",
-        "year": "Hiện vật"
+        "id": "mon_65_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/C%E1%BA%ADn%20c%E1%BA%A3nh%20k%E1%BA%BFt%20c%E1%BA%A5u%20ph%E1%BA%A7n%20tr%C3%AAn%20th%C3%A1p%20n%C6%B0%E1%BB%9Bc%20h%C6%B0%E1%BB%9Bng%20l%C3%AAn%20b%E1%BA%A7u%20tr%E1%BB%9Di.jpg",
+        "title": "Cận cảnh kết cấu phần trên tháp nước hướng lên bầu trời",
+        "caption": "Cận cảnh kết cấu phần trên tháp nước hướng lên bầu trời",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_65_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/H%E1%BB%8Dc%20sinh%20m%E1%BA%B7c%20%C3%A1o%20d%C3%A0i%20tr%E1%BA%AFng%20sang%20%C4%91%C6%B0%E1%BB%9Dng%20tr%C6%B0%E1%BB%9Bc%20th%C3%A1p%20n%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Học sinh mặc áo dài trắng sang đường trước tháp nước",
+        "caption": "Học sinh mặc áo dài trắng sang đường trước tháp nước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_65_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/Kh%C3%A1ch%20tham%20quan%20t%C3%ACm%20hi%E1%BB%83u%20bi%E1%BB%83n%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+        "title": "Khách tham quan tìm hiểu biển công nhận Di tích Lịch sử - Văn hóa",
+        "caption": "Khách tham quan tìm hiểu biển công nhận Di tích Lịch sử - Văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_65_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/Kh%C3%A1ch%20tham%20quan%20%C4%91%E1%BB%A9ng%20tr%C6%B0%E1%BB%9Bc%20c%E1%BB%ADa%20ch%C3%ADnh%20ch%C3%A2n%20th%C3%A1p.jpg",
+        "title": "Khách tham quan đứng trước cửa chính chân tháp",
+        "caption": "Khách tham quan đứng trước cửa chính chân tháp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_65_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/Th%C3%A1p%20n%C6%B0%E1%BB%9Bc%20nh%C3%ACn%20t%E1%BB%AB%20v%E1%BB%89a%20h%C3%A8%20%C4%91%C6%B0%E1%BB%9Dng%20ph%E1%BB%91%20r%E1%BB%A3p%20b%C3%B3ng%20c%C3%A2y.jpg",
+        "title": "Tháp nước nhìn từ vỉa hè đường phố rợp bóng cây",
+        "caption": "Tháp nước nhìn từ vỉa hè đường phố rợp bóng cây",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_65_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/Th%C3%A1p%20n%C6%B0%E1%BB%9Bc%20nh%C3%ACn%20t%E1%BB%AB%20%C4%91%E1%BA%A1i%20l%E1%BB%99%20g%C3%B3c%20th%E1%BA%A5p%20ban%20ng%C3%A0y.jpg",
+        "title": "Tháp nước nhìn từ đại lộ góc thấp ban ngày",
+        "caption": "Tháp nước nhìn từ đại lộ góc thấp ban ngày",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_65_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/To%C3%A0n%20c%E1%BA%A3nh%20g%C3%B3c%20r%E1%BB%99ng%20t%E1%BB%AB%20tr%C3%AAn%20cao%20h%C6%B0%E1%BB%9Bng%20ra%20c%E1%BA%A7u%20v%C3%A0%20c%C3%B4ng%20vi%C3%AAn.jpg",
+        "title": "Toàn cảnh góc rộng từ trên cao hướng ra cầu và công viên",
+        "caption": "Toàn cảnh góc rộng từ trên cao hướng ra cầu và công viên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_65_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/To%C3%A0n%20c%E1%BA%A3nh%20Nh%C3%A0%20tr%C3%B2n%20B%C3%A0%20R%E1%BB%8Ba%20ch%E1%BB%A5p%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Nhà tròn Bà Rịa chụp từ trên cao",
+        "caption": "Toàn cảnh Nhà tròn Bà Rịa chụp từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_65_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/To%C3%A0n%20c%E1%BA%A3nh%20v%C3%B2ng%20xoay%20Nh%C3%A0%20tr%C3%B2n%20B%C3%A0%20R%E1%BB%8Ba%20g%C3%B3c%20r%E1%BB%99ng%20ban%20ng%C3%A0y.jpg",
+        "title": "Toàn cảnh vòng xoay Nhà tròn Bà Rịa góc rộng ban ngày",
+        "caption": "Toàn cảnh vòng xoay Nhà tròn Bà Rịa góc rộng ban ngày",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -31616,7 +34964,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Chùa được khai sơn năm 1741, là một trong những ngôi cổ tự lâu đời của vùng Gia Định – Sài Gòn; có giá trị nổi bật về lịch sử Phật giáo, văn hóa và kiến trúc nghệ thuật Nam Bộ.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/C%E1%BB%95ng%20ch%C3%A0o%20di%20t%C3%ADch%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20v%C4%83n%20h%C3%B3a%20Nh%C3%A0%20L%E1%BB%9Bn%20Long%20S%C6%A1n.jpg",
       "emCoBiet": [
         "🔎 Còn gọi: Phước Tường cổ tự.",
         "🔎 Địa chỉ lịch sử: 13/32 Lã Xuân Oai.",
@@ -31759,25 +35107,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Chùa Phước Tường",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Phước Tường tại Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh..",
-        "year": "Tư liệu"
+        "id": "mon_66_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/B%E1%BB%A9c%20b%C3%ACnh%20phong%20%C4%91i%C3%AAu%20kh%E1%BA%AFc%20B%E1%BA%A1ch%20H%E1%BB%95.jpg",
+        "title": "Bức bình phong điêu khắc Bạch Hổ",
+        "caption": "Bức bình phong điêu khắc Bạch Hổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Phước Tường.",
-        "year": "Hiện vật"
+        "id": "mon_66_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/C%C3%A1c%20c%E1%BB%A5%20l%C3%A3o%20ni%C3%AAn%20%C4%91%E1%BA%A1o%20%C3%94ng%20Tr%E1%BA%A7n%20ng%E1%BB%93i%20u%E1%BB%91ng%20tr%C3%A0.jpg",
+        "title": "Các cụ lão niên đạo Ông Trần ngồi uống trà",
+        "caption": "Các cụ lão niên đạo Ông Trần ngồi uống trà",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_66_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/C%E1%BB%95ng%20ch%C3%A0o%20di%20t%C3%ADch%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20v%C4%83n%20h%C3%B3a%20Nh%C3%A0%20L%E1%BB%9Bn%20Long%20S%C6%A1n.jpg",
+        "title": "Cổng chào di tích Khu di tích lịch sử văn hóa Nhà Lớn Long Sơn",
+        "caption": "Cổng chào di tích Khu di tích lịch sử văn hóa Nhà Lớn Long Sơn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_66_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/C%E1%BB%95ng%20Tam%20quan%20Nh%C3%A0%20L%E1%BB%9Bn%20Long%20S%C6%A1n.jpg",
+        "title": "Cổng Tam quan Nhà Lớn Long Sơn",
+        "caption": "Cổng Tam quan Nhà Lớn Long Sơn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_66_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/C%E1%BB%ADa%20g%E1%BB%97%20c%E1%BB%95%20k%C3%ADnh%20kh%E1%BA%AFc%20ch%E1%BB%AF%20H%C3%A1n.jpg",
+        "title": "Cửa gỗ cổ kính khắc chữ Hán",
+        "caption": "Cửa gỗ cổ kính khắc chữ Hán",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_66_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/D%C3%A3y%20nh%C3%A0%20hai%20t%E1%BA%A7ng%20v%C3%A0%20c%E1%BB%95ng%20ph%E1%BB%A5%20ph%C3%ADa%20ngo%C3%A0i.jpg",
+        "title": "Dãy nhà hai tầng và cổng phụ phía ngoài",
+        "caption": "Dãy nhà hai tầng và cổng phụ phía ngoài",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_66_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/H%C3%A0nh%20lang%20c%E1%BA%A7u%20n%E1%BB%91i%20tr%C3%AAn%20m%C3%A1i%20ng%C3%B3i.jpg",
+        "title": "Hành lang cầu nối trên mái ngói",
+        "caption": "Hành lang cầu nối trên mái ngói",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_66_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/Kh%E1%BB%91i%20%C4%91%C3%A1%20kh%E1%BA%AFc%20t%C3%AAn%20Nh%C3%A0%20L%E1%BB%9Bn%20Long%20S%C6%A1n%20tr%C6%B0%E1%BB%9Bc%20d%C3%A3y%20nh%C3%A0%20ch%C3%ADnh.jpg",
+        "title": "Khối đá khắc tên Nhà Lớn Long Sơn trước dãy nhà chính",
+        "caption": "Khối đá khắc tên Nhà Lớn Long Sơn trước dãy nhà chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_66_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/To%C3%A0n%20c%E1%BA%A3nh%20qu%E1%BA%A7n%20th%E1%BB%83%20di%20t%C3%ADch%20nh%C3%ACn%20t%E1%BB%AB%20g%C3%B3c%20nghi%C3%AAng%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh quần thể di tích nhìn từ góc nghiêng trên cao",
+        "caption": "Toàn cảnh quần thể di tích nhìn từ góc nghiêng trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_66_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/To%C3%A0n%20c%E1%BA%A3nh%20s%C3%A2n%20v%C6%B0%E1%BB%9Dn%20v%C3%A0%20c%C3%A1c%20d%C3%A3y%20nh%C3%A0%20nh%C3%ACn%20th%E1%BA%B3ng%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh sân vườn và các dãy nhà nhìn thẳng từ trên cao",
+        "caption": "Toàn cảnh sân vườn và các dãy nhà nhìn thẳng từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -32090,7 +35497,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Là một ngôi cổ tự có lịch sử lâu đời, gắn với quá trình hình thành và phát triển của Phật giáo vùng Gia Định – Sài Gòn; chùa từng nhiều lần đổi tên và di chuyển trong bối cảnh lịch sử biến động, đồng thời lưu giữ nhiều di vật có giá trị từ thế kỷ XVIII–XIX.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/C%E1%BB%95ng%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam.jpg",
       "emCoBiet": [
         "🔎 Thuộc dòng thiền Lâm Tế Liễu Quán.",
         "🔎 Là cổ tự gắn với lịch sử Gia Định – Sài Gòn.",
@@ -32233,25 +35640,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Chùa Sắc Tứ Trường Thọ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Sắc Tứ Trường Thọ tại Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_67_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Ban%20th%E1%BB%9D%20trong%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam.jpg",
+        "title": "Ban thờ trong Đình Thần Thắng Tam",
+        "caption": "Ban thờ trong Đình Thần Thắng Tam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Sắc Tứ Trường Thọ.",
-        "year": "Hiện vật"
+        "id": "mon_67_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Ban%20th%E1%BB%9D%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam.jpg",
+        "title": "Ban thờ tại Đình Thần Thắng Tam",
+        "caption": "Ban thờ tại Đình Thần Thắng Tam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_67_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Bia%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%E2%80%93%20v%C4%83n%20h%C3%B3a%20%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam.jpg",
+        "title": "Bia giới thiệu Di tích lịch sử – văn hóa Đình Thắng Tam",
+        "caption": "Bia giới thiệu Di tích lịch sử – văn hóa Đình Thắng Tam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_67_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/C%E1%BB%95ng%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam.jpg",
+        "title": "Cổng Đình Thần Thắng Tam",
+        "caption": "Cổng Đình Thần Thắng Tam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_67_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20b%C3%AAn%20trong%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam.jpg",
+        "title": "Không gian thờ tự bên trong Đình Thần Thắng Tam",
+        "caption": "Không gian thờ tự bên trong Đình Thần Thắng Tam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_67_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam.jpg",
+        "title": "Không gian thờ tự tại Đình Thần Thắng Tam",
+        "caption": "Không gian thờ tự tại Đình Thần Thắng Tam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_67_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Ng%C3%B4i%20Ti%E1%BB%81n%20hi%E1%BB%81n%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam%20nh%C3%ACn%20tr%E1%BB%B1c%20di%E1%BB%87n.jpg",
+        "title": "Ngôi Tiền hiền Đình Thần Thắng Tam nhìn trực diện",
+        "caption": "Ngôi Tiền hiền Đình Thần Thắng Tam nhìn trực diện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_67_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Ng%C3%B4i%20Ti%E1%BB%81n%20hi%E1%BB%81n%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam%20nh%C3%ACn%20t%E1%BB%AB%20b%C3%AAn%20h%C3%B4ng.jpg",
+        "title": "Ngôi Tiền hiền Đình Thần Thắng Tam nhìn từ bên hông",
+        "caption": "Ngôi Tiền hiền Đình Thần Thắng Tam nhìn từ bên hông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_67_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/To%C3%A0n%20c%E1%BA%A3nh%20Khu%20di%20t%C3%ADch%20%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Khu di tích Đình Thắng Tam nhìn từ trên cao",
+        "caption": "Toàn cảnh Khu di tích Đình Thắng Tam nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_67_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/T%C6%B0%E1%BB%A3ng%20s%C6%B0%20t%E1%BB%AD%20%C4%91%C3%A1%20t%E1%BA%A1i%20c%E1%BB%95ng%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam.jpg",
+        "title": "Tượng sư tử đá tại cổng Đình Thần Thắng Tam",
+        "caption": "Tượng sư tử đá tại cổng Đình Thần Thắng Tam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -32580,7 +36046,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Dinh Cô là di tích tiêu biểu của tín ngưỡng dân gian cư dân biển Nam Bộ, gắn với tục thờ Long Hải Thần Nữ và đời sống tinh thần của ngư dân Long Hải; đồng thời là một danh thắng nằm dưới chân núi Thùy Vân, hướng ra biển.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/C%E1%BB%95ng%20Tam%20quan%20Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i.jpg",
       "emCoBiet": [
         "🔎 Vị trí: ven biển Long Hải.",
         "🏅 Xếp hạng danh lam thắng cảnh quốc gia: 16/1/1995.",
@@ -32723,25 +36189,92 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Dinh Cô",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Dinh Cô tại Xã Long Hải, Thành phố Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_68_img_1",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/Ban%20th%E1%BB%9D%20Th%C3%ADch%20Ca%20M%C3%A2u%20Ni%20trong%20ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Ban thờ Thích Ca Mâu Ni trong chánh điện",
+        "caption": "Ban thờ Thích Ca Mâu Ni trong chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Dinh Cô.",
-        "year": "Hiện vật"
+        "id": "mon_68_img_2",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/B%C3%A0n%20th%E1%BB%9D%20Qu%C3%A1n%20Th%E1%BA%BF%20%C3%82m%20B%E1%BB%93%20T%C3%A1t.jpg",
+        "title": "Bàn thờ Quán Thế Âm Bồ Tát",
+        "caption": "Bàn thờ Quán Thế Âm Bồ Tát",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_68_img_3",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/B%E1%BA%A3o%20th%C3%A1p%20X%C3%A1%20l%E1%BB%A3i%20Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i.jpg",
+        "title": "Bảo tháp Xá lợi Thích Ca Phật Đài",
+        "caption": "Bảo tháp Xá lợi Thích Ca Phật Đài",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_68_img_4",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/C%E1%BB%95ng%20Tam%20quan%20Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i.jpg",
+        "title": "Cổng Tam quan Thích Ca Phật Đài",
+        "caption": "Cổng Tam quan Thích Ca Phật Đài",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_68_img_5",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/C%E1%BB%A5m%20t%C6%B0%E1%BB%A3ng%20Th%C3%A1i%20t%E1%BB%AD%20T%E1%BA%A5t%20%C4%90%E1%BA%A1t%20%C4%90a%20xu%E1%BA%A5t%20gia.jpg",
+        "title": "Cụm tượng Thái tử Tất Đạt Đa xuất gia",
+        "caption": "Cụm tượng Thái tử Tất Đạt Đa xuất gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_68_img_6",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/C%E1%BB%A5m%20t%C6%B0%E1%BB%A3ng%20Voi%20ph%E1%BB%A5c%20c%C3%BAng%20c%C3%BAng%20Ph%E1%BA%ADt.jpg",
+        "title": "Cụm tượng Voi phục cúng cúng Phật",
+        "caption": "Cụm tượng Voi phục cúng cúng Phật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_68_img_7",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/To%C3%A0n%20c%E1%BA%A3nh%20ki%E1%BA%BFn%20tr%C3%BAc%20Ch%C3%B9a%20H%E1%BB%99%20Ph%C3%A1p.jpg",
+        "title": "Toàn cảnh kiến trúc Chùa Hộ Pháp",
+        "caption": "Toàn cảnh kiến trúc Chùa Hộ Pháp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_68_img_8",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/T%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20Th%C3%ADch%20Ca%20ng%E1%BB%93i%20thi%E1%BB%81n%20(%C4%90%E1%BA%A1i%20Ph%E1%BA%ADt%20S%E1%BB%AD).jpg",
+        "title": "Tượng Phật Thích Ca ngồi thiền (Đại Phật Sử)",
+        "caption": "Tượng Phật Thích Ca ngồi thiền (Đại Phật Sử)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_68_img_9",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/T%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20Th%C3%ADch%20Ca%20Nh%E1%BA%ADp%20Ni%E1%BA%BFt%20B%C3%A0n.jpg",
+        "title": "Tượng Phật Thích Ca Nhập Niết Bàn",
+        "caption": "Tượng Phật Thích Ca Nhập Niết Bàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_68_img_10",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/T%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20v%C3%A0ng%20ng%E1%BB%B1%20tr%C3%AAn%20h%C3%B2n%20%C4%91%E1%BA%AFp%20gi%E1%BA%A3%20s%C6%A1n.jpg",
+        "title": "Tượng Phật vàng ngự trên hòn đắp giả sơn",
+        "caption": "Tượng Phật vàng ngự trên hòn đắp giả sơn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_68_img_11",
+        "src": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/T%C6%B0%E1%BB%A3ng%20%C4%90%E1%BB%A9c%20Ph%E1%BA%ADt%20Th%C3%ADch%20Ca%20%C4%90%E1%BA%A3n%20Sinh.jpg",
+        "title": "Tượng Đức Phật Thích Ca Đản Sinh",
+        "caption": "Tượng Đức Phật Thích Ca Đản Sinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -33078,7 +36611,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Được xây dựng cuối thế kỷ XIX – đầu thế kỷ XX, gắn với cộng đồng người Hoa và quá trình giao lưu văn hóa, tín ngưỡng tại Sài Gòn; chùa là công trình tiêu biểu cho sự kết hợp giữa tín ngưỡng Đạo giáo, Phật giáo và tín ngưỡng dân gian.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/C%E1%BB%95ng%20ch%C3%ADnh%20Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1.jpg",
       "emCoBiet": [
         "🔎 Tên chữ: Phước Hải Tự.",
         "📅 Khởi dựng cuối thế kỷ XIX, hoàn thành khoảng đầu thế kỷ XX.",
@@ -33221,25 +36754,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Chùa Ngọc Hoàng",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Chùa Ngọc Hoàng tại Số 73 Mai Thị Lựu, \nphường Tân Định.",
-        "year": "Tư liệu"
+        "id": "mon_69_img_1",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/B%E1%BA%A3ng%20ch%E1%BB%89%20d%E1%BA%ABn%20c%C5%A9%20Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1.jpg",
+        "title": "Bảng chỉ dẫn cũ Niết Bàn Tịnh Xá",
+        "caption": "Bảng chỉ dẫn cũ Niết Bàn Tịnh Xá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Chùa Ngọc Hoàng.",
-        "year": "Hiện vật"
+        "id": "mon_69_img_2",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/B%E1%BA%ADc%20thang%20%C4%91i%20l%C3%AAn%20c%C3%A1c%20t%E1%BA%A7ng%20ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Bậc thang đi lên các tầng chánh điện",
+        "caption": "Bậc thang đi lên các tầng chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_69_img_3",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20Thi%E1%BB%81n%20vi%E1%BB%87n%20Tr%C3%BAc%20L%C3%A2m%20Ch%C3%A1nh%20Gi%C3%A1c%20(ho%E1%BA%B7c%20Ch%C3%B9a%20V%E1%BA%A1n%20Ph%E1%BA%ADt).jpg",
+        "title": "Chánh điện Thiền viện Trúc Lâm Chánh Giác (hoặc Chùa Vạn Phật)",
+        "caption": "Chánh điện Thiền viện Trúc Lâm Chánh Giác (hoặc Chùa Vạn Phật)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_69_img_4",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/C%E1%BB%95ng%20ch%C3%ADnh%20Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1.jpg",
+        "title": "Cổng chính Niết Bàn Tịnh Xá",
+        "caption": "Cổng chính Niết Bàn Tịnh Xá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_69_img_5",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/G%C3%B3c%20ch%C3%B2i%20v%E1%BB%8Dng%20c%E1%BA%A3nh%20v%C3%A0%20h%C3%A0nh%20lang%20ng%E1%BA%AFm%20bi%E1%BB%83n.jpg",
+        "title": "Góc chòi vọng cảnh và hành lang ngắm biển",
+        "caption": "Góc chòi vọng cảnh và hành lang ngắm biển",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_69_img_6",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/L%C6%B0%20h%C6%B0%C6%A1ng%20g%E1%BB%91m%20s%E1%BB%A9%2C%20m%E1%BA%A3nh%20s%C3%A0nh%20h%C3%ACnh%20%C4%91%E1%BA%A7u%20r%E1%BB%93ng.jpg",
+        "title": "Lư hương gốm sứ, mảnh sành hình đầu rồng",
+        "caption": "Lư hương gốm sứ, mảnh sành hình đầu rồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_69_img_7",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/L%E1%BA%A7u%20chu%C3%B4ng%2C%20Ch%C3%B2i%20v%E1%BB%8Dng%20c%E1%BA%A3nh%20ph%C3%ADa%20tr%C6%B0%E1%BB%9Bc%20Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1.jpg",
+        "title": "Lầu chuông, Chòi vọng cảnh phía trước Niết Bàn Tịnh Xá",
+        "caption": "Lầu chuông, Chòi vọng cảnh phía trước Niết Bàn Tịnh Xá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_69_img_8",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/L%E1%BA%A7u%20v%E1%BB%8Dng%20c%E1%BA%A3nh%20h%C6%B0%E1%BB%9Bng%20ra%20bi%E1%BB%83n%20t%E1%BA%A1i%20Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1.jpg",
+        "title": "Lầu vọng cảnh hướng ra biển tại Niết Bàn Tịnh Xá",
+        "caption": "Lầu vọng cảnh hướng ra biển tại Niết Bàn Tịnh Xá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_69_img_9",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/Thuy%E1%BB%81n%20B%C3%A1t%20Nh%C3%A3%20%C4%91%E1%BA%AFp%20n%E1%BB%95i%20h%C3%ACnh%20r%E1%BB%93ng.jpg",
+        "title": "Thuyền Bát Nhã đắp nổi hình rồng",
+        "caption": "Thuyền Bát Nhã đắp nổi hình rồng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_69_img_10",
+        "src": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/T%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20Ni%E1%BA%BFt%20B%C3%A0n%20(Ph%E1%BA%ADt%20Th%C3%ADch%20Ca%20nh%E1%BA%ADp%20Ni%E1%BA%BFt%20B%C3%A0n).jpg",
+        "title": "Tượng Phật Niết Bàn (Phật Thích Ca nhập Niết Bàn)",
+        "caption": "Tượng Phật Niết Bàn (Phật Thích Ca nhập Niết Bàn)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -33552,7 +37144,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Bình Hòa là một ngôi đình cổ của vùng Gia Định – Sài Gòn, gắn với quá trình hình thành cộng đồng cư dân và tín ngưỡng thờ Thành hoàng ở Bình Hòa; đình hiện còn lưu sắc phong của vua Tự Đức năm 1853, có giá trị đặc biệt về lịch sử và văn hóa.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/C%E1%BB%95ng%20l%E1%BB%91i%20l%C3%AAn%20%C4%91%E1%BB%81n%2C%20ch%C3%B9a%20tr%C3%AAn%20%C4%91%E1%BB%93i.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 15/77 Chu Văn An.",
         "🏅 Xếp hạng quốc gia: 7/1/1993.",
@@ -33695,25 +37287,124 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Đình Bình Hòa",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Bình Hòa tại Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_70_img_1",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/Ba%20mi%E1%BA%BFu%20th%E1%BB%9D%20nh%E1%BB%8F%20d%C6%B0%E1%BB%9Bi%20g%E1%BB%91c%20c%C3%A2y%20c%E1%BB%95%20th%E1%BB%A5.jpg",
+        "title": "Ba miếu thờ nhỏ dưới gốc cây cổ thụ",
+        "caption": "Ba miếu thờ nhỏ dưới gốc cây cổ thụ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Bình Hòa.",
-        "year": "Hiện vật"
+        "id": "mon_70_img_2",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/Ban%20th%E1%BB%9D%20Ph%E1%BA%ADt%20Th%C3%ADch%20Ca%20v%C3%A0%20hai%20B%E1%BB%93%20T%C3%A1t%20ngo%C3%A0i%20tr%E1%BB%9Di.jpg",
+        "title": "Ban thờ Phật Thích Ca và hai Bồ Tát ngoài trời",
+        "caption": "Ban thờ Phật Thích Ca và hai Bồ Tát ngoài trời",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_70_img_3",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/B%C3%A0n%20th%E1%BB%9D%20nhi%E1%BB%81u%20t%E1%BA%A7ng%20b%C3%AAn%20trong%20ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Bàn thờ nhiều tầng bên trong chánh điện",
+        "caption": "Bàn thờ nhiều tầng bên trong chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_4",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/C%E1%BB%95ng%20l%E1%BB%91i%20l%C3%AAn%20%C4%91%E1%BB%81n%2C%20ch%C3%B9a%20tr%C3%AAn%20%C4%91%E1%BB%93i.jpg",
+        "title": "Cổng lối lên đền, chùa trên đồi",
+        "caption": "Cổng lối lên đền, chùa trên đồi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_5",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/C%E1%BB%95ng%20Tam%20quan%20Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1%20V%C5%A9ng%20T%C3%A0u.jpg",
+        "title": "Cổng Tam quan Linh Sơn Cổ Tự Vũng Tàu",
+        "caption": "Cổng Tam quan Linh Sơn Cổ Tự Vũng Tàu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_6",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/D%C3%A3y%20nh%C3%A0%20t%C4%83ng%20x%C3%A1%2C%20gi%E1%BA%A3ng%20%C4%91%C6%B0%E1%BB%9Dng%20m%C3%A0u%20v%C3%A0ng%20nhi%E1%BB%81u%20t%E1%BA%A7ng.jpg",
+        "title": "Dãy nhà tăng xá, giảng đường màu vàng nhiều tầng",
+        "caption": "Dãy nhà tăng xá, giảng đường màu vàng nhiều tầng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_7",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/D%C3%A3y%20t%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20A%20Di%20%C4%90%C3%A0%20tr%E1%BA%AFng%20%C4%91%E1%BB%A9ng%20ngo%C3%A0i%20tr%E1%BB%9Di.jpg",
+        "title": "Dãy tượng Phật A Di Đà trắng đứng ngoài trời",
+        "caption": "Dãy tượng Phật A Di Đà trắng đứng ngoài trời",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_8",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/D%C3%A3y%20t%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20m%E1%BA%A1%20v%C3%A0ng%20quanh%20g%E1%BB%91c%20c%C3%A2y%20b%E1%BB%93%20%C4%91%E1%BB%81.jpg",
+        "title": "Dãy tượng Phật mạ vàng quanh gốc cây bồ đề",
+        "caption": "Dãy tượng Phật mạ vàng quanh gốc cây bồ đề",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_9",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/M%E1%BA%B7t%20ti%E1%BB%81n%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1.jpg",
+        "title": "Mặt tiền Chánh điện Linh Sơn Cổ Tự",
+        "caption": "Mặt tiền Chánh điện Linh Sơn Cổ Tự",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_10",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/Th%C3%A1p%20chu%C3%B4ng%2C%20%20B%E1%BA%A3o%20th%C3%A1p%20m%C3%A1i%20ng%C3%B3i%20cam.jpg",
+        "title": "Tháp chuông,  Bảo tháp mái ngói cam",
+        "caption": "Tháp chuông,  Bảo tháp mái ngói cam",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_11",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/Th%C3%A1p%20nh%E1%BB%8F%20v%C3%A0%20b%E1%BA%A3o%20th%C3%A1p%20ph%C3%ADa%20sau%20r%E1%BB%A3p%20b%C3%B3ng%20c%C3%A2y.jpg",
+        "title": "Tháp nhỏ và bảo tháp phía sau rợp bóng cây",
+        "caption": "Tháp nhỏ và bảo tháp phía sau rợp bóng cây",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_12",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/T%C6%B0%E1%BB%A3ng%20B%C3%A1n%20th%C3%A2n%20Ph%E1%BA%ADt%20Th%C3%ADch%20Ca%20v%C3%A0%20b%C3%A0n%20h%C6%B0%C6%A1ng.jpg",
+        "title": "Tượng Bán thân Phật Thích Ca và bàn hương",
+        "caption": "Tượng Bán thân Phật Thích Ca và bàn hương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_13",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/T%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20b%E1%BA%B1ng%20%C4%91%C3%A1%20c%E1%BB%95%20k%C3%ADnh.jpg",
+        "title": "Tượng Phật bằng đá cổ kính",
+        "caption": "Tượng Phật bằng đá cổ kính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_14",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/T%C6%B0%E1%BB%A3ng%20Quan%20Th%E1%BA%BF%20%C3%82m%20B%E1%BB%93%20T%C3%A1t%20%C4%91%E1%BB%A9ng%20tr%E1%BA%AFng%20cao.jpg",
+        "title": "Tượng Quan Thế Âm Bồ Tát đứng trắng cao",
+        "caption": "Tượng Quan Thế Âm Bồ Tát đứng trắng cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_70_img_15",
+        "src": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/%C4%90%C6%B0%E1%BB%9Dng%20c%E1%BA%A7u%20thang%20%C4%91%C3%A1%20d%E1%BA%ABn%20l%C3%AAn%20mi%E1%BA%BFu%2C%20ch%C3%B9a%20tr%C3%AAn%20n%C3%BAi.jpg",
+        "title": "Đường cầu thang đá dẫn lên miếu, chùa trên núi",
+        "caption": "Đường cầu thang đá dẫn lên miếu, chùa trên núi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -34026,7 +37717,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Chí Hòa là một trong những ngôi đình cổ của vùng Sài Gòn – Gia Định, gắn với lịch sử làng Hòa Hưng và đời sống tín ngưỡng của cư dân địa phương; đình từng là nơi nhà giáo Võ Trường Toản mở lớp dạy học và là địa điểm gắn với các phong trào yêu nước trong thế kỷ XX.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Du%20kh%C3%A1ch%20quan%20s%C3%A1t%20c%E1%BA%ADn%20c%E1%BA%A3nh%20%C4%91u%C3%B4i%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95.jpg",
       "emCoBiet": [
         "🔎 Địa chỉ lịch sử: 475 Cách Mạng Tháng Tám.",
         "🏅 Xếp hạng quốc gia: 28/6/1996.",
@@ -34169,25 +37860,28 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Đình Chí Hòa",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Chí Hòa tại Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_71_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Du%20kh%C3%A1ch%20quan%20s%C3%A1t%20c%E1%BA%ADn%20c%E1%BA%A3nh%20%C4%91u%C3%B4i%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95.jpg",
+        "title": "Du khách quan sát cận cảnh đuôi khẩu pháo cổ",
+        "caption": "Du khách quan sát cận cảnh đuôi khẩu pháo cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Chí Hòa.",
-        "year": "Hiện vật"
+        "id": "mon_71_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20%C4%91%E1%BA%B7t%20tr%C3%AAn%20b%E1%BB%87%20b%C3%AA%20t%C3%B4ng.jpg",
+        "title": "Khẩu pháo cổ đặt trên bệ bê tông",
+        "caption": "Khẩu pháo cổ đặt trên bệ bê tông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_71_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20n%E1%BA%B1m%20gi%E1%BB%AFa%20khu%20v%E1%BB%B1c%20c%C3%A2y%20c%E1%BB%91i%20r%E1%BA%ADm%20r%E1%BA%A1p.jpg",
+        "title": "Trận địa pháo cổ nằm giữa khu vực cây cối rậm rạp",
+        "caption": "Trận địa pháo cổ nằm giữa khu vực cây cối rậm rạp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -34500,7 +38194,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Dĩ An là công trình tín ngưỡng lâu đời gắn với quá trình khai phá, lập làng và phát triển của vùng Dĩ An; đình thờ Thành Hoàng Bổn Cảnh, từng là nơi sinh hoạt văn hóa, tín ngưỡng và trong thời Nguyễn còn là nơi làm việc của hương chức, hội tề địa phương. Trong hai cuộc kháng chiến, đình còn gắn với hoạt động cách mạng của địa phương.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20Nh%E1%BB%8F.jpg",
       "emCoBiet": [
         "🔎 Còn gọi: Đình thần Dĩ An.",
         "🏅 Xếp hạng quốc gia: 28/3/2019.",
@@ -34643,25 +38337,68 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Đình Dĩ An",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Dĩ An tại Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_72_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20Nh%E1%BB%8F.jpg",
+        "title": "Bia công nhận Di tích Trận địa pháo cổ Núi Nhỏ",
+        "caption": "Bia công nhận Di tích Trận địa pháo cổ Núi Nhỏ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Dĩ An.",
-        "year": "Hiện vật"
+        "id": "mon_72_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/D%C3%A3y%20ph%C3%A1o%20c%E1%BB%95%20tr%C6%B0ng%20b%C3%A0y%20ngo%C3%A0i%20tr%E1%BB%9Di.jpg",
+        "title": "Dãy pháo cổ trưng bày ngoài trời",
+        "caption": "Dãy pháo cổ trưng bày ngoài trời",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_72_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Kh%E1%BA%A9u%20ph%C3%A1o%20b%E1%BB%9D%20bi%E1%BB%83n%20c%E1%BB%A1%20l%E1%BB%9Bn%20trong%20c%C3%B4ng%20s%E1%BB%B1%20b%C3%A1n%20nguy%E1%BB%87t.jpg",
+        "title": "Khẩu pháo bờ biển cỡ lớn trong công sự bán nguyệt",
+        "caption": "Khẩu pháo bờ biển cỡ lớn trong công sự bán nguyệt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_72_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20%C4%91%E1%BA%B7t%20nghi%C3%AAng%20c%E1%BA%A1nh%20t%C6%B0%E1%BB%9Dng%20%C4%91%C3%A1%20b%E1%BB%9D%20k%C3%A8.jpg",
+        "title": "Khẩu pháo cổ đặt nghiêng cạnh tường đá bờ kè",
+        "caption": "Khẩu pháo cổ đặt nghiêng cạnh tường đá bờ kè",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_72_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/M%C3%A2m%20quay%20ch%C3%A2n%20%C4%91%E1%BA%BF%20tr%C3%B2n%20c%E1%BB%A7a%20ph%C3%A1o%20c%E1%BB%95.jpg",
+        "title": "Mâm quay chân đế tròn của pháo cổ",
+        "caption": "Mâm quay chân đế tròn của pháo cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_72_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/N%C3%B2ng%20ph%C3%A1o%20c%E1%BB%95%20r%E1%BA%A5t%20d%C3%A0i%20%C4%91%E1%BA%B7t%20d%C6%B0%E1%BB%9Bi%20b%E1%BB%87%20T%C6%B0%E1%BB%A3ng%20Ch%C3%BAa%20Kit%C3%B4%20Vua.jpg",
+        "title": "Nòng pháo cổ rất dài đặt dưới bệ Tượng Chúa Kitô Vua",
+        "caption": "Nòng pháo cổ rất dài đặt dưới bệ Tượng Chúa Kitô Vua",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_72_img_7",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Ph%C3%A1o%20c%E1%BB%95%20g%E1%BB%89%20s%C3%A9t%20h%C6%B0%E1%BB%9Bng%20v%E1%BB%81%20T%C6%B0%E1%BB%A3ng%20Ch%C3%BAa%20Kit%C3%B4%20Vua.jpg",
+        "title": "Pháo cổ gỉ sét hướng về Tượng Chúa Kitô Vua",
+        "caption": "Pháo cổ gỉ sét hướng về Tượng Chúa Kitô Vua",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_72_img_8",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Th%C3%A2n%20ph%C3%A1o%20c%E1%BB%95%20v%C3%A0%20b%E1%BB%87%20%C4%91%E1%BB%A1%20b%E1%BB%8B%20b%E1%BB%8F%20l%E1%BA%A1i%20trong%20r%E1%BB%ABng.jpg",
+        "title": "Thân pháo cổ và bệ đỡ bị bỏ lại trong rừng",
+        "caption": "Thân pháo cổ và bệ đỡ bị bỏ lại trong rừng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -34982,7 +38719,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Là một trong những ngôi đình cổ của vùng Sài Gòn – Chợ Lớn, gắn với lịch sử hình thành và phát triển của cộng đồng Minh Hương; phản ánh quá trình giao thoa văn hóa Việt – Hoa và quá trình cộng đồng người Minh Hương hội nhập vào xã hội Việt Nam. Đình được xây dựng từ cuối thế kỷ XVIII và là nơi lưu giữ nhiều tư liệu, hiện vật có giá trị lịch sử, văn hóa.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Bi%E1%BB%83n%20t%C3%AAn%20di%20t%C3%ADch%20v%C3%A0%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
       "emCoBiet": [
         "🔎 Tên đầy đủ: Minh Hương Gia Thạnh Hội quán.",
         "🔎 Địa chỉ lịch sử: 380 Trần Hưng Đạo.",
@@ -35125,25 +38862,60 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Đình Minh Hương Gia Thạnh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Minh Hương Gia Thạnh tại Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh.",
-        "year": "Tư liệu"
+        "id": "mon_73_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Bi%E1%BB%83n%20t%C3%AAn%20di%20t%C3%ADch%20v%C3%A0%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Biển tên di tích và khẩu pháo cổ Núi Lớn",
+        "caption": "Biển tên di tích và khẩu pháo cổ Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Minh Hương Gia Thạnh.",
-        "year": "Hiện vật"
+        "id": "mon_73_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/B%E1%BB%87%20ph%C3%A1o%20c%E1%BB%95%20v%C3%A0%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BB%91c%20l%C3%A1t%20g%E1%BA%A1ch%20trong%20di%20t%C3%ADch.jpg",
+        "title": "Bệ pháo cổ và đường dốc lát gạch trong di tích",
+        "caption": "Bệ pháo cổ và đường dốc lát gạch trong di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_73_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/C%E1%BA%ADn%20c%E1%BA%A3nh%20ch%E1%BB%AF%20kh%E1%BA%AFc%20s%E1%BB%91%20hi%E1%BB%87u%20tr%C3%AAn%20th%C3%A2n%20ph%C3%A1o.jpg",
+        "title": "Cận cảnh chữ khắc số hiệu trên thân pháo",
+        "caption": "Cận cảnh chữ khắc số hiệu trên thân pháo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_73_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Em%20b%C3%A9%20%C4%91%E1%BB%A9ng%20quan%20s%C3%A1t%20b%E1%BB%87%20m%C3%A2m%20quay%20c%E1%BB%A7a%20kh%E1%BA%A9u%20ph%C3%A1o.jpg",
+        "title": "Em bé đứng quan sát bệ mâm quay của khẩu pháo",
+        "caption": "Em bé đứng quan sát bệ mâm quay của khẩu pháo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_73_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Hai%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20tr%C3%AAn%20b%E1%BB%87%20%C4%91%C3%A1%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Hai khẩu pháo cổ trên bệ đá Núi Lớn",
+        "caption": "Hai khẩu pháo cổ trên bệ đá Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_73_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20tr%C3%AAn%20b%E1%BB%87%20l%C3%A1t%20%C4%91%C3%A1%20ngo%C3%A0i%20tr%E1%BB%9Di.jpg",
+        "title": "Trận địa pháo cổ trên bệ lát đá ngoài trời",
+        "caption": "Trận địa pháo cổ trên bệ lát đá ngoài trời",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_73_img_7",
+        "src": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Mai/%C4%90%C6%B0%E1%BB%9Dng%20l%C3%A1t%20%C4%91%C3%A1%20v%C3%A0%20h%E1%BB%87%20th%E1%BB%91ng%20h%E1%BA%A7m%20c%C3%B4ng%20s%E1%BB%B1%20v%C3%B2m%20%C4%91%C3%A1.jpg",
+        "title": "Đường lát đá và hệ thống hầm công sự vòm đá",
+        "caption": "Đường lát đá và hệ thống hầm công sự vòm đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -35468,7 +39240,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Phú Long là một công trình tín ngưỡng lâu đời của vùng Lái Thiêu, gắn với quá trình khai phá, lập làng và hình thành cộng đồng cư dân địa phương. Đình vừa là nơi thờ Thành Hoàng, vừa là không gian sinh hoạt văn hóa, tín ngưỡng của cộng đồng. Trong thời kỳ kháng chiến, đình còn gắn với hoạt động cách mạng tại địa phương. Công trình hiện còn nhiều yếu tố kiến trúc và trang trí truyền thống, góp phần phản ánh đặc trưng đình làng Nam Bộ.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20c%C3%A1c%20c%E1%BB%A5m%20%C4%83ng-ten%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "🔎 Là đình làng cổ của vùng Lái Thiêu.",
         "📏 Gắn với quá trình khai phá và lập làng.",
@@ -35611,25 +39383,60 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Đình Phú Long",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Phú Long tại Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_74_img_1",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/Chi%20ti%E1%BA%BFt%20k%E1%BA%BFt%20c%E1%BA%A5u%20tr%E1%BB%A5%20c%E1%BB%A7a%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten.jpg",
+        "title": "Chi tiết kết cấu trụ của hệ thống ăng-ten",
+        "caption": "Chi tiết kết cấu trụ của hệ thống ăng-ten",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Phú Long.",
-        "year": "Hiện vật"
+        "id": "mon_74_img_2",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/C%E1%BA%ADn%20c%E1%BA%A3nh%20k%E1%BA%BFt%20c%E1%BA%A5u%20c%C3%A1c%20c%E1%BB%A5m%20%C4%83ng-ten.jpg",
+        "title": "Cận cảnh kết cấu các cụm ăng-ten",
+        "caption": "Cận cảnh kết cấu các cụm ăng-ten",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_74_img_3",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/H%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20nh%C3%ACn%20t%E1%BB%AB%20d%C6%B0%E1%BB%9Bi%20l%C3%AAn.jpg",
+        "title": "Hệ thống ăng-ten nhìn từ dưới lên",
+        "caption": "Hệ thống ăng-ten nhìn từ dưới lên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_74_img_4",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/Kh%C3%B4ng%20gian%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20tr%C3%AAn%20N%C3%BAi%20L%E1%BB%9Bn%20th%E1%BB%9Di%20k%E1%BB%B3%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng.jpg",
+        "title": "Không gian hệ thống ăng-ten trên Núi Lớn thời kỳ hoạt động",
+        "caption": "Không gian hệ thống ăng-ten trên Núi Lớn thời kỳ hoạt động",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_74_img_5",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20c%C3%A1c%20c%E1%BB%A5m%20%C4%83ng-ten%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh các cụm ăng-ten nhìn từ trên cao",
+        "caption": "Toàn cảnh các cụm ăng-ten nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_74_img_6",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20d%E1%BA%A5u%20t%C3%ADch%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20tr%C3%AAn%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Toàn cảnh dấu tích hệ thống ăng-ten trên Núi Lớn",
+        "caption": "Toàn cảnh dấu tích hệ thống ăng-ten trên Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_74_img_7",
+        "src": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten%20tr%C3%AAn%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
+        "title": "Toàn cảnh hệ thống ăng-ten trên Núi Lớn",
+        "caption": "Toàn cảnh hệ thống ăng-ten trên Núi Lớn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -35942,7 +39749,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Phú Nhuận gắn với lịch sử hình thành và phát triển của làng Phú Nhuận từ đầu thế kỷ XIX. Đình là nơi cộng đồng cư dân thực hành tín ngưỡng thờ Thành Hoàng, tổ chức các lễ hội truyền thống và duy trì sinh hoạt văn hóa cộng đồng. Quá trình di chuyển, xây dựng và trùng tu đình phản ánh sự phát triển của khu vực Phú Nhuận từ một vùng cư trú nông nghiệp trở thành một bộ phận của đô thị Sài Gòn – TP.HCM.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/Dinh%20C%C3%B4/To%C3%A0n%20c%E1%BA%A3nh%20Dinh%20C%C3%B4%20Long%20H%E1%BA%A3i.jpg",
       "emCoBiet": [
         "🔎 Gắn với làng Phú Nhuận từ đầu thế kỷ XIX.",
         "🔎 Là thiết chế tín ngưỡng của cộng đồng làng.",
@@ -36085,25 +39892,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Đình Phú Nhuận",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Phú Nhuận tại Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_75_img_1",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20-%20v%C4%83n%20h%C3%B3a%20Dinh%20C%C3%B4%20v%C3%A0%20Ch%E1%BB%A9ng%20nh%E1%BA%ADn%20L%E1%BB%85%20h%E1%BB%99i%20Dinh%20C%C3%B4%20l%C3%A0%20Di%20s%E1%BA%A3n%20v%C4%83n%20h%C3%B3a%20phi%20v%E1%BA%ADt%20th%E1%BB%83%20qu%E1%BB%91c%20gia.jpg",
+        "title": "Bằng công nhận Di tích lịch sử - văn hóa Dinh Cô và Chứng nhận Lễ hội Dinh Cô là Di sản văn hóa phi vật thể quốc gia",
+        "caption": "Bằng công nhận Di tích lịch sử - văn hóa Dinh Cô và Chứng nhận Lễ hội Dinh Cô là Di sản văn hóa phi vật thể quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Phú Nhuận.",
-        "year": "Hiện vật"
+        "id": "mon_75_img_2",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20b%C3%AAn%20trong%20Dinh%20C%C3%B4.jpg",
+        "title": "Không gian thờ tự bên trong Dinh Cô",
+        "caption": "Không gian thờ tự bên trong Dinh Cô",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_75_img_3",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/Ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1i%20Dinh%20C%C3%B4%20nh%C3%ACn%20ra%20bi%E1%BB%83n%20Long%20H%E1%BA%A3i.jpg",
+        "title": "Kiến trúc mái Dinh Cô nhìn ra biển Long Hải",
+        "caption": "Kiến trúc mái Dinh Cô nhìn ra biển Long Hải",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_75_img_4",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/L%E1%BB%85%20h%E1%BB%99i%20Dinh%20C%C3%B4%20Long%20H%E1%BA%A3i.jpg",
+        "title": "Lễ hội Dinh Cô Long Hải",
+        "caption": "Lễ hội Dinh Cô Long Hải",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_75_img_5",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/L%E1%BB%91i%20l%C3%AAn%20Dinh%20C%C3%B4.jpg",
+        "title": "Lối lên Dinh Cô",
+        "caption": "Lối lên Dinh Cô",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_75_img_6",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/M%E1%BB%99%20C%C3%B4%20(L%C4%83ng%20C%C3%B4)%20tr%C3%AAn%20%C4%91%E1%BB%93i%20C%E1%BB%91%20S%C6%A1n.jpg",
+        "title": "Mộ Cô (Lăng Cô) trên đồi Cố Sơn",
+        "caption": "Mộ Cô (Lăng Cô) trên đồi Cố Sơn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_75_img_7",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/Ph%C3%B9%20%C4%91i%C3%AAu%20chim%20ph%C6%B0%E1%BB%A3ng%20t%E1%BA%A1i%20Dinh%20C%C3%B4.jpg",
+        "title": "Phù điêu chim phượng tại Dinh Cô",
+        "caption": "Phù điêu chim phượng tại Dinh Cô",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_75_img_8",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/To%C3%A0n%20c%E1%BA%A3nh%20Dinh%20C%C3%B4%20Long%20H%E1%BA%A3i.jpg",
+        "title": "Toàn cảnh Dinh Cô Long Hải",
+        "caption": "Toàn cảnh Dinh Cô Long Hải",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_75_img_9",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/Tranh%20ph%C3%B9%20%C4%91i%C3%AAu%20Mi%E1%BA%BFu%20th%E1%BB%9D%20C%C3%B4%20tr%C6%B0%E1%BB%9Bc%20n%C4%83m%201930.jpg",
+        "title": "Tranh phù điêu Miếu thờ Cô trước năm 1930",
+        "caption": "Tranh phù điêu Miếu thờ Cô trước năm 1930",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_75_img_10",
+        "src": "/assets/images/monuments/Dinh%20C%C3%B4/T%C6%B0%E1%BB%A3ng%20th%E1%BB%9D%20B%C3%A0%20L%C3%AA%20Th%E1%BB%8B%20H%E1%BB%93ng%20(C%C3%B4%20Dinh).jpg",
+        "title": "Tượng thờ Bà Lê Thị Hồng (Cô Dinh)",
+        "caption": "Tượng thờ Bà Lê Thị Hồng (Cô Dinh)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -36416,7 +40282,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Tân An (Bến Thế) là một công trình tín ngưỡng gắn với quá trình khai phá, lập làng ở vùng Tân An – Bến Thế. Đình vừa có giá trị lịch sử trong việc phản ánh đời sống cộng đồng cư dân Nam Bộ, vừa có giá trị văn hóa – nghệ thuật thông qua hệ thống kiến trúc gỗ, đồ thờ và các hình thức trang trí truyền thống. Việc lưu giữ sắc phong và các đồ thờ cổ góp phần thể hiện sự phát triển của thiết chế làng xã dưới triều Nguyễn.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/C%E1%BB%95ng%20v%C3%A0o%20di%20t%C3%ADch%20ph%E1%BB%A7%20k%C3%ADn%20c%C3%A2y%20xanh.jpg",
       "emCoBiet": [
         "🔎 Gắn với vùng Tân An – Bến Thế.",
         "🏛️ Là công trình tín ngưỡng của cộng đồng cư dân Nam Bộ.",
@@ -36559,25 +40425,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Đình Tân An (Bến Thế)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Tân An (Bến Thế) tại Khu phố 1, phường Phú An, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_76_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/Bia%20%C4%91%C3%A1%20kh%E1%BA%AFc%20l%E1%BB%9Di%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Bia đá khắc lời Chủ tịch Hồ Chí Minh",
+        "caption": "Bia đá khắc lời Chủ tịch Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Tân An (Bến Thế).",
-        "year": "Hiện vật"
+        "id": "mon_76_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/B%E1%BA%A3ng%20t%C3%AAn%20di%20t%C3%ADch%20Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u.jpg",
+        "title": "Bảng tên di tích Nhà lưu niệm Võ Thị Sáu",
+        "caption": "Bảng tên di tích Nhà lưu niệm Võ Thị Sáu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_76_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/C%E1%BB%95ng%20v%C3%A0o%20di%20t%C3%ADch%20ph%E1%BB%A7%20k%C3%ADn%20c%C3%A2y%20xanh.jpg",
+        "title": "Cổng vào di tích phủ kín cây xanh",
+        "caption": "Cổng vào di tích phủ kín cây xanh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_76_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/Gian%20th%E1%BB%9D%20N%E1%BB%AF%20anh%20h%C3%B9ng%20li%E1%BB%87t%20s%C4%A9%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u.jpg",
+        "title": "Gian thờ Nữ anh hùng liệt sĩ Võ Thị Sáu",
+        "caption": "Gian thờ Nữ anh hùng liệt sĩ Võ Thị Sáu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_76_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/G%C3%B3c%20h%C3%B4ng%20nh%C3%A0%20g%E1%BB%97%20l%C6%B0u%20ni%E1%BB%87m%20l%E1%BB%A3p%20m%C3%A1i%20ng%C3%B3i.jpg",
+        "title": "Góc hông nhà gỗ lưu niệm lợp mái ngói",
+        "caption": "Góc hông nhà gỗ lưu niệm lợp mái ngói",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_76_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/G%C3%B3c%20s%C3%A2n%20v%C6%B0%E1%BB%9Dn%20v%E1%BB%9Bi%20ch%E1%BA%ADu%20c%C3%A2y%20c%E1%BA%A3nh%20v%C3%A0%20gh%E1%BA%BF%20%C4%91%C3%A1.jpg",
+        "title": "Góc sân vườn với chậu cây cảnh và ghế đá",
+        "caption": "Góc sân vườn với chậu cây cảnh và ghế đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_76_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/M%E1%BA%B7t%20sau%2C%20b%C3%AAn%20nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20ph%E1%BB%A7%20h%C3%A0ng%20r%C3%A0o%20c%C3%A2y%20xanh.jpg",
+        "title": "Mặt sau, bên nhà lưu niệm phủ hàng rào cây xanh",
+        "caption": "Mặt sau, bên nhà lưu niệm phủ hàng rào cây xanh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_76_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/Ph%C3%B2ng%20tr%C6%B0ng%20b%C3%A0y%20h%C3%ACnh%20%E1%BA%A3nh%20t%C6%B0%20li%E1%BB%87u%20b%C3%AAn%20trong%20di%20t%C3%ADch.jpg",
+        "title": "Phòng trưng bày hình ảnh tư liệu bên trong di tích",
+        "caption": "Phòng trưng bày hình ảnh tư liệu bên trong di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_76_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/Ph%E1%BB%91i%20c%E1%BA%A3nh%20tr%E1%BB%B1c%20di%E1%BB%87n%20Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20v%C3%A0%20th%E1%BA%A3m%20%C4%91%E1%BB%8F.jpg",
+        "title": "Phối cảnh trực diện Nhà lưu niệm và thảm đỏ",
+        "caption": "Phối cảnh trực diện Nhà lưu niệm và thảm đỏ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_76_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/T%C6%B0%E1%BB%A3ng%20%C4%91i%C3%AAu%20kh%E1%BA%AFc%20%C4%91%C3%B4i%20b%C3%A0n%20tay%20v%C3%A0%20nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20ph%C3%ADa%20sau.jpg",
+        "title": "Tượng điêu khắc đôi bàn tay và nhà lưu niệm phía sau",
+        "caption": "Tượng điêu khắc đôi bàn tay và nhà lưu niệm phía sau",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -36891,7 +40816,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Thắng Tam có giá trị đặc biệt trong việc phản ánh lịch sử hình thành cộng đồng cư dân ven biển Vũng Tàu. Quần thể Đình Thắng Tam – Lăng Cá Ông – Miếu Bà thể hiện sự kết hợp giữa tín ngưỡng thờ Thành Hoàng, tín ngưỡng thờ Cá Ông và tín ngưỡng thờ nữ thần của cư dân miền biển. Đây cũng là không gian duy trì nhiều nghi lễ, lễ hội truyền thống của cộng đồng ngư dân, thể hiện sự gắn bó giữa đời sống tâm linh với môi trường biển.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/To%C3%A0n%20c%E1%BA%A3nh%20ki%E1%BA%BFn%20tr%C3%BAc%20m%E1%BA%B7t%20ti%E1%BB%81n%20di%20t%C3%ADch%20%C4%91%C6%B0%E1%BB%A3c%20th%E1%BA%AFp%20s%C3%A1ng%20r%E1%BB%B1c%20r%E1%BB%A1%20v%C3%A0o%20ban%20%C4%91%C3%AAm..jpg",
       "emCoBiet": [
         "🔎 Là đình làng nổi tiếng ở Vũng Tàu.",
         "🔎 Gắn với cộng đồng cư dân ven biển.",
@@ -37034,25 +40959,52 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Đình Thắng Tam",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Thắng Tam tại Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_77_img_1",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/G%C3%B3c%20nh%C3%ACn%20t%E1%BB%AB%20ban%20c%C3%B4ng%20l%E1%BA%A7u%20h%C6%B0%E1%BB%9Bng%20ra%20khu%20v%E1%BB%B1c%20B%C3%A3i%20Tr%C6%B0%E1%BB%9Bc%20v%C3%A0%20bi%E1%BB%83n%20V%C5%A9ng%20T%C3%A0u..jpg",
+        "title": "Góc nhìn từ ban công lầu hướng ra khu vực Bãi Trước và biển Vũng Tàu.",
+        "caption": "Góc nhìn từ ban công lầu hướng ra khu vực Bãi Trước và biển Vũng Tàu.",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Thắng Tam.",
-        "year": "Hiện vật"
+        "id": "mon_77_img_2",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/Khu%20v%E1%BB%B1c%20h%C3%A0nh%20lang%20v%C3%B2m%20cong%20v%C3%A0%20b%E1%BA%A3n%20%C4%91%E1%BB%93%20quy%20ho%E1%BA%A1ch%20%C4%91%C6%B0%E1%BB%A3c%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20di%20t%C3%ADch..jpg",
+        "title": "Khu vực hành lang vòm cong và bản đồ quy hoạch được trưng bày tại di tích.",
+        "caption": "Khu vực hành lang vòm cong và bản đồ quy hoạch được trưng bày tại di tích.",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_77_img_3",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/Kh%C3%B4ng%20gian%20c%E1%BB%ADa%20ra%20v%C3%A0o%20v%C3%A0%20c%C3%A1c%20ph%C3%B2ng%20tr%C6%B0ng%20b%C3%A0y%20t%C6%B0%20li%E1%BB%87u%20b%C3%AAn%20trong%20di%20t%C3%ADch..jpg",
+        "title": "Không gian cửa ra vào và các phòng trưng bày tư liệu bên trong di tích.",
+        "caption": "Không gian cửa ra vào và các phòng trưng bày tư liệu bên trong di tích.",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_77_img_4",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/Kh%C3%B4ng%20gian%20s%C3%A2n%20v%C6%B0%E1%BB%9Dn%20tho%C3%A1ng%20r%E1%BB%99ng%20nh%C3%ACn%20t%E1%BB%AB%20b%C3%AAn%20c%E1%BA%A1nh%20t%C3%B2a%20nh%C3%A0%20ch%C3%ADnh..jpg",
+        "title": "Không gian sân vườn thoáng rộng nhìn từ bên cạnh tòa nhà chính.",
+        "caption": "Không gian sân vườn thoáng rộng nhìn từ bên cạnh tòa nhà chính.",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_77_img_5",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/To%C3%A0n%20c%E1%BA%A3nh%20ki%E1%BA%BFn%20tr%C3%BAc%20m%E1%BA%B7t%20ti%E1%BB%81n%20di%20t%C3%ADch%20%C4%91%C6%B0%E1%BB%A3c%20th%E1%BA%AFp%20s%C3%A1ng%20r%E1%BB%B1c%20r%E1%BB%A1%20v%C3%A0o%20ban%20%C4%91%C3%AAm..jpg",
+        "title": "Toàn cảnh kiến trúc mặt tiền di tích được thắp sáng rực rỡ vào ban đêm.",
+        "caption": "Toàn cảnh kiến trúc mặt tiền di tích được thắp sáng rực rỡ vào ban đêm.",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_77_img_6",
+        "src": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20(Nh%C3%A0%20truy%E1%BB%81n%20th%E1%BB%91ng%20C%C3%A1ch%20m%E1%BA%A1ng%20s%E1%BB%91%201%20Ba%20Cu)%20v%E1%BB%9Bi%20hai%20kh%E1%BA%A9u%20s%C3%BAng%20th%E1%BA%A7n%20c%C3%B4ng%20%C4%91%E1%BA%B7t%20%E1%BB%9F%20hai%20b%C3%AAn%20b%E1%BA%ADc%20th%E1%BB%81m..jpg",
+        "title": "Toàn cảnh mặt tiền Trụ sở Ủy ban Việt Minh (Nhà truyền thống Cách mạng số 1 Ba Cu) với hai khẩu súng thần công đặt ở hai bên bậc thềm.",
+        "caption": "Toàn cảnh mặt tiền Trụ sở Ủy ban Việt Minh (Nhà truyền thống Cách mạng số 1 Ba Cu) với hai khẩu súng thần công đặt ở hai bên bậc thềm.",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -37367,7 +41319,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Thần Linh Đông là một trong những công trình tín ngưỡng cổ của vùng Thủ Đức, gắn với quá trình khai phá và hình thành làng Linh Đông. Đình thể hiện truyền thống “uống nước nhớ nguồn”, thờ phụng các bậc tiền hiền, hậu hiền có công với cộng đồng. Bên cạnh giá trị lịch sử, đình còn có giá trị về kiến trúc nghệ thuật với không gian thờ tự, kết cấu gỗ và hệ thống trang trí mang đặc trưng đình làng Nam Bộ.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Kim%20Long/Bi%E1%BB%83n%20ch%E1%BB%89%20d%E1%BA%ABn%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Kim%20Long.jpg",
       "emCoBiet": [
         "🔎 Là đình cổ của vùng Thủ Đức.",
         "📏 Gắn với quá trình khai phá và lập làng Linh Đông.",
@@ -37510,25 +41462,36 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Đình Thần Linh Đông",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Thần Linh Đông tại Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM.",
-        "year": "Tư liệu"
+        "id": "mon_78_img_1",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Kim%20Long/Bi%E1%BB%83n%20ch%E1%BB%89%20d%E1%BA%ABn%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Kim%20Long.jpg",
+        "title": "Biển chỉ dẫn Di tích Địa đạo Kim Long",
+        "caption": "Biển chỉ dẫn Di tích Địa đạo Kim Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Thần Linh Đông.",
-        "year": "Hiện vật"
+        "id": "mon_78_img_2",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Kim%20Long/C%E1%BA%A3nh%20quan%20khu%20v%E1%BB%B1c%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Kim%20Long.jpg",
+        "title": "Cảnh quan khu vực Di tích Địa đạo Kim Long",
+        "caption": "Cảnh quan khu vực Di tích Địa đạo Kim Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_78_img_3",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Kim%20Long/D%E1%BA%A5u%20t%C3%ADch%20c%C3%B4ng%20tr%C3%ACnh%20tr%C3%AAn%20m%E1%BA%B7t%20%C4%91%E1%BA%A5t%20t%E1%BA%A1i%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Kim%20Long.jpg",
+        "title": "Dấu tích công trình trên mặt đất tại Địa đạo Kim Long",
+        "caption": "Dấu tích công trình trên mặt đất tại Địa đạo Kim Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_78_img_4",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Kim%20Long/%C4%90%C6%B0%E1%BB%9Dng%20xu%E1%BB%91ng%20%C4%91%E1%BB%8Ba%20%C4%91%E1%BA%A1o.jpg",
+        "title": "Đường xuống địa đạo",
+        "caption": "Đường xuống địa đạo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -37841,7 +41804,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Thông Tây Hội được hình thành khoảng năm 1679, gắn với quá trình những cư dân từ miền Trung vào khai phá và định cư ở vùng Gia Định. Đây là một trong những ngôi đình cổ nhất còn tồn tại ở Nam Bộ. Đình ban đầu có quy mô đơn sơ, về sau được xây dựng kiên cố; năm 1944, khi hai làng Hạnh Thông Tây và An Hội sáp nhập, đình được chọn làm đình chung và mang tên Thông Tây Hội.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/C%E1%BB%95ng%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
       "emCoBiet": [
         "📅 Hình thành khoảng năm 1679.",
         "📏 Gắn với cư dân miền Trung vào khai phá Gia Định.",
@@ -37984,25 +41947,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Đình Thông Tây Hội",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Thông Tây Hội tại Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_79_img_1",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Bia%20ghi%20danh%2033%20c%C3%A1n%20b%E1%BB%99%2C%20chi%E1%BA%BFn%20s%C4%A9%20Trung%20%C4%91o%C3%A0n%2033%20hy%20sinh%20trong%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
+        "title": "Bia ghi danh 33 cán bộ, chiến sĩ Trung đoàn 33 hy sinh trong trận chiến ngày 661969 tại Bình Ba",
+        "caption": "Bia ghi danh 33 cán bộ, chiến sĩ Trung đoàn 33 hy sinh trong trận chiến ngày 661969 tại Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Thông Tây Hội.",
-        "year": "Hiện vật"
+        "id": "mon_79_img_2",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Binh%20Ba%2C%20th%C3%A1ng%2061969%20%E2%80%93%20ch%E1%BB%89%20huy%20xe%20thi%E1%BA%BFt%20gi%C3%A1p%20quan%20s%C3%A1t%20khu%20v%E1%BB%B1c%20ven%20%C4%91%C6%B0%E1%BB%9Dng%20g%E1%BA%A7n%20B%C3%ACnh%20Ba.jpg",
+        "title": "Binh Ba, tháng 61969 – chỉ huy xe thiết giáp quan sát khu vực ven đường gần Bình Ba",
+        "caption": "Binh Ba, tháng 61969 – chỉ huy xe thiết giáp quan sát khu vực ven đường gần Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_79_img_3",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/B%E1%BA%A3n%20%C4%91%E1%BB%93%20khu%20v%E1%BB%B1c%20B%C3%ACnh%20Ba%20trong%20th%E1%BB%9Di%20k%E1%BB%B3%20chi%E1%BA%BFn%20tranh.jpg",
+        "title": "Bản đồ khu vực Bình Ba trong thời kỳ chiến tranh",
+        "caption": "Bản đồ khu vực Bình Ba trong thời kỳ chiến tranh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_79_img_4",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/C%E1%BB%95ng%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
+        "title": "Cổng Di tích lịch sử Địa điểm trận chiến ngày 661969 tại Bình Ba",
+        "caption": "Cổng Di tích lịch sử Địa điểm trận chiến ngày 661969 tại Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_79_img_5",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/D%E1%BA%A5u%20t%C3%ADch%20sau%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20t%E1%BA%A1i%20l%C3%A0ng%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
+        "title": "Dấu tích sau trận chiến tại làng Bình Ba, tháng 61969",
+        "caption": "Dấu tích sau trận chiến tại làng Bình Ba, tháng 61969",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_79_img_6",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/L%E1%BB%85%20%C4%91%C3%B3n%20nh%E1%BA%ADn%20B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
+        "title": "Lễ đón nhận Bằng xếp hạng Di tích Quốc gia Địa điểm trận chiến ngày 661969 tại Bình Ba",
+        "caption": "Lễ đón nhận Bằng xếp hạng Di tích Quốc gia Địa điểm trận chiến ngày 661969 tại Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_79_img_7",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/L%E1%BB%B1c%20l%C6%B0%E1%BB%A3ng%20b%E1%BB%99%20binh%20v%C3%A0%20xe%20t%C4%83ng%20t%E1%BA%A1i%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
+        "title": "Lực lượng bộ binh và xe tăng tại Bình Ba, tháng 61969",
+        "caption": "Lực lượng bộ binh và xe tăng tại Bình Ba, tháng 61969",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_79_img_8",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Quang%20c%E1%BA%A3nh%20l%C3%A0ng%20B%C3%ACnh%20Ba%20sau%20tr%E1%BA%ADn%20chi%E1%BA%BFn%2C%20th%C3%A1ng%2061969.jpg",
+        "title": "Quang cảnh làng Bình Ba sau trận chiến, tháng 61969",
+        "caption": "Quang cảnh làng Bình Ba sau trận chiến, tháng 61969",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_79_img_9",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Xe%20t%C4%83ng%20v%C3%A0%20xe%20thi%E1%BA%BFt%20gi%C3%A1p%20ti%E1%BA%BFn%20v%C3%A0o%20l%C3%A0ng%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
+        "title": "Xe tăng và xe thiết giáp tiến vào làng Bình Ba, tháng 61969",
+        "caption": "Xe tăng và xe thiết giáp tiến vào làng Bình Ba, tháng 61969",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_79_img_10",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/%E1%BA%A2nh%20trinh%20s%C3%A1t%20khu%20v%E1%BB%B1c%20l%C3%A0ng%20B%C3%ACnh%20Ba.jpg",
+        "title": "Ảnh trinh sát khu vực làng Bình Ba",
+        "caption": "Ảnh trinh sát khu vực làng Bình Ba",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -38315,7 +42337,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Trường Thọ là thiết chế tín ngưỡng của cộng đồng cư dân vùng Thủ Đức, thờ Thành Hoàng Bổn Cảnh và phản ánh truyền thống thờ thần Thành Hoàng của làng xã Nam Bộ. Công trình có kiến trúc cổ kiểu trùng thềm điệp ốc, 5 gian 2 chái, đồng thời lưu giữ nhiều giá trị về kiến trúc, đồ thờ và nghi lễ dân gian.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/N%C3%BAi%20Dinh/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Khu%20c%C4%83n%20c%E1%BB%A9%20Ch%C3%B9a%20Di%E1%BB%87u%20Linh.jpg",
       "emCoBiet": [
         "🔎 Là đình làng của vùng Thủ Đức.",
         "🔎 Thờ Thành hoàng Bổn Cảnh.",
@@ -38458,25 +42480,44 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Đình Trường Thọ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Trường Thọ tại Tổ 5, phường Thủ Đức, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_80_img_1",
+        "src": "/assets/images/monuments/N%C3%BAi%20Dinh/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Khu%20c%C4%83n%20c%E1%BB%A9%20Ch%C3%B9a%20Di%E1%BB%87u%20Linh.jpg",
+        "title": "Bia tưởng niệm Khu căn cứ Chùa Diệu Linh",
+        "caption": "Bia tưởng niệm Khu căn cứ Chùa Diệu Linh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Trường Thọ.",
-        "year": "Hiện vật"
+        "id": "mon_80_img_2",
+        "src": "/assets/images/monuments/N%C3%BAi%20Dinh/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Th%C3%A0nh%20%C4%90o%C3%A0n%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh%20t%E1%BA%A1i%20N%C3%BAi%20Dinh.jpg",
+        "title": "Bia tưởng niệm Thành Đoàn TP. Hồ Chí Minh tại Núi Dinh",
+        "caption": "Bia tưởng niệm Thành Đoàn TP. Hồ Chí Minh tại Núi Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_80_img_3",
+        "src": "/assets/images/monuments/N%C3%BAi%20Dinh/Bi%E1%BB%83n%20ch%E1%BB%89%20d%E1%BA%ABn%20Di%20t%C3%ADch%20Khu%20c%C4%83n%20c%E1%BB%A9%20N%C3%BAi%20Dinh.jpg",
+        "title": "Biển chỉ dẫn Di tích Khu căn cứ Núi Dinh",
+        "caption": "Biển chỉ dẫn Di tích Khu căn cứ Núi Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_80_img_4",
+        "src": "/assets/images/monuments/N%C3%BAi%20Dinh/Kh%E1%BB%91i%20%C4%91%C3%A1%20kh%E1%BA%AFc%20ch%E1%BB%AF%20k%E1%BB%B7%20ni%E1%BB%87m%20C%C4%83n%20c%E1%BB%A9%20N%C3%BAi%20Dinh.jpg",
+        "title": "Khối đá khắc chữ kỷ niệm Căn cứ Núi Dinh",
+        "caption": "Khối đá khắc chữ kỷ niệm Căn cứ Núi Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_80_img_5",
+        "src": "/assets/images/monuments/N%C3%BAi%20Dinh/Nh%C3%A0%20tr%C6%B0ng%20b%C3%A0y%20Di%20t%C3%ADch%20N%C3%BAi%20Dinh.jpg",
+        "title": "Nhà trưng bày Di tích Núi Dinh",
+        "caption": "Nhà trưng bày Di tích Núi Dinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -38789,7 +42830,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Đình Xuân Hiệp gắn với quá trình hình thành làng Xuân Hiệp từ thế kỷ XIX, phản ánh đời sống tín ngưỡng của cư dân địa phương. Đình ban đầu được dựng bằng tre lá, sau được xây dựng khang trang theo kiểu kiến trúc cổ 5 gian 2 chái; hiện là một di tích tiêu biểu về kiến trúc nghệ thuật và tín ngưỡng dân gian ở khu vực Thủ Đức.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Long%20B%C3%A0n.jpg",
       "emCoBiet": [
         "📅 Hình thành từ thế kỷ XIX.",
         "🔎 Ban đầu dựng bằng tre lá, sau xây dựng kiên cố.",
@@ -38932,25 +42973,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Đình Xuân Hiệp",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Đình Xuân Hiệp tại Phường Linh Xuân, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_81_img_1",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20%C4%91i%E1%BB%87n%20ch%C3%ADnh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Bàn thờ Phật điện chính điện",
+        "caption": "Bàn thờ Phật điện chính điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Đình Xuân Hiệp.",
-        "year": "Hiện vật"
+        "id": "mon_81_img_2",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/Chi%20ti%E1%BA%BFt%20hoa%20v%C4%83n%20L%C6%B0%E1%BB%A1ng%20long%20ch%E1%BA%A7u%20nguy%E1%BB%87t.jpg",
+        "title": "Chi tiết hoa văn Lưỡng long chầu nguyệt",
+        "caption": "Chi tiết hoa văn Lưỡng long chầu nguyệt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_81_img_3",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/Ch%C6%B0%20v%E1%BB%8B%20H%C3%B2a%20th%C6%B0%E1%BB%A3ng.jpg",
+        "title": "Chư vị Hòa thượng",
+        "caption": "Chư vị Hòa thượng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_81_img_4",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Long%20B%C3%A0n.jpg",
+        "title": "Cổng Tam quan Chùa Long Bàn",
+        "caption": "Cổng Tam quan Chùa Long Bàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_81_img_5",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/D%C3%A3y%20h%C3%A0nh%20lang%20v%C3%A0%20c%E1%BB%ADa%20g%E1%BB%97%20l%C3%A1%20s%C3%A1ch.jpg",
+        "title": "Dãy hành lang và cửa gỗ lá sách",
+        "caption": "Dãy hành lang và cửa gỗ lá sách",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_81_img_6",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/Ho%C3%A0nh%20phi.jpg",
+        "title": "Hoành phi",
+        "caption": "Hoành phi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_81_img_7",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/Ki%E1%BA%BFn%20tr%C3%BAc%20x%C3%A0%20g%E1%BB%93%20v%C3%A0%20c%E1%BB%99t%20tr%E1%BB%A5%20%C4%91%E1%BB%91%20b%E1%BA%B1ng%20g%E1%BB%97.jpg",
+        "title": "Kiến trúc xà gồ và cột trụ đố bằng gỗ",
+        "caption": "Kiến trúc xà gồ và cột trụ đố bằng gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_81_img_8",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/M%E1%BA%B7t%20ti%E1%BB%81n%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20Ch%C3%B9a%20Long%20B%C3%A0n%20x%C6%B0a.jpg",
+        "title": "Mặt tiền Chánh điện Chùa Long Bàn xưa",
+        "caption": "Mặt tiền Chánh điện Chùa Long Bàn xưa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_81_img_9",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/M%E1%BA%B7t%20ti%E1%BB%81n%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20sau%20tr%C3%B9ng%20tu.jpg",
+        "title": "Mặt tiền Chánh điện sau trùng tu",
+        "caption": "Mặt tiền Chánh điện sau trùng tu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_81_img_10",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/To%C3%A0n%20c%E1%BA%A3nh%20Ch%C3%B9a%20Long%20B%C3%A0n%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Chùa Long Bàn từ trên cao",
+        "caption": "Toàn cảnh Chùa Long Bàn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -39263,7 +43363,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Hà Chương Hội quán là một công trình gắn với cộng đồng người Hoa gốc Phúc Kiến tại Chợ Lớn, vừa là nơi tín ngưỡng vừa là không gian hội họp, tương trợ cộng đồng. Công trình có giá trị nổi bật về kiến trúc Hoa truyền thống với hệ thống gỗ, đá, gạch ngói và các mảng trang trí sành sứ đặc sắc.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C3%A3i%20g%E1%BB%91m%20h%E1%BB%A7%2C%20lu%20s%C3%A0nh%20ph%C6%A1i%20ngo%C3%A0i%20s%C3%A2n%20l%C3%B2%20g%E1%BB%91m%20x%C6%B0%E1%BB%9Fng%20c%C5%A9.jpg",
       "emCoBiet": [
         "🔎 Thuộc mạng lưới hội quán người Hoa ở Chợ Lớn.",
         "🔎 Là nơi thờ tự và sinh hoạt đồng hương.",
@@ -39406,25 +43506,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Hội quán Hà Chương",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Hội quán Hà Chương tại Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ..",
-        "year": "Tư liệu"
+        "id": "mon_82_img_1",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C3%A3i%20g%E1%BB%91m%20h%E1%BB%A7%2C%20lu%20s%C3%A0nh%20ph%C6%A1i%20ngo%C3%A0i%20s%C3%A2n%20l%C3%B2%20g%E1%BB%91m%20x%C6%B0%E1%BB%9Fng%20c%C5%A9.jpg",
+        "title": "Bãi gốm hủ, lu sành phơi ngoài sân lò gốm xưởng cũ",
+        "caption": "Bãi gốm hủ, lu sành phơi ngoài sân lò gốm xưởng cũ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Hội quán Hà Chương.",
-        "year": "Hiện vật"
+        "id": "mon_82_img_2",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C3%AAn%20trong%20nh%C3%A0%20l%C3%B2%20nung%20g%E1%BB%91m%20truy%E1%BB%81n%20th%E1%BB%91ng.jpg",
+        "title": "Bên trong nhà lò nung gốm truyền thống",
+        "caption": "Bên trong nhà lò nung gốm truyền thống",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_82_img_3",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C6%B0u%20thi%E1%BA%BFp%20th%E1%BB%9Di%20Ph%C3%A1p%20ch%E1%BB%A5p%20x%C6%B0%E1%BB%9Fng%20g%E1%BB%91m%20x%C3%B3m%20l%C3%B2.jpg",
+        "title": "Bưu thiếp thời Pháp chụp xưởng gốm xóm lò",
+        "caption": "Bưu thiếp thời Pháp chụp xưởng gốm xóm lò",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_82_img_4",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/C%E1%BB%ADa%20v%C3%B2m%20l%C3%B2%20n%C6%B0%E1%BB%9Bng%20g%E1%BB%91m%20g%E1%BA%A1ch%20%C4%91%E1%BB%8F.jpg",
+        "title": "Cửa vòm lò nướng gốm gạch đỏ",
+        "caption": "Cửa vòm lò nướng gốm gạch đỏ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_82_img_5",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/Hi%E1%BB%87n%20v%E1%BA%ADt%20g%E1%BB%91m%20di%20t%C3%ADch%20l%C3%B2%20g%E1%BB%91m%20H%C6%B0ng%20L%E1%BB%A3i.jpg",
+        "title": "Hiện vật gốm di tích lò gốm Hưng Lợi",
+        "caption": "Hiện vật gốm di tích lò gốm Hưng Lợi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_82_img_6",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/H%E1%BB%91%20khai%20qu%E1%BA%ADt%20kh%E1%BA%A3o%20c%E1%BB%95%20di%20t%C3%ADch%20l%C3%B2%20g%E1%BB%91m.jpg",
+        "title": "Hố khai quật khảo cổ di tích lò gốm",
+        "caption": "Hố khai quật khảo cổ di tích lò gốm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_82_img_7",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/H%E1%BB%91%20khai%20qu%E1%BA%ADt%20v%C3%A1ch%20l%C3%B2%20g%E1%BA%A1ch%20c%E1%BB%95.jpg",
+        "title": "Hố khai quật vách lò gạch cổ",
+        "caption": "Hố khai quật vách lò gạch cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_82_img_8",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/Lu%20s%C3%A0nh%20c%E1%BB%95%20d%C3%ADnh%20ch%E1%BA%B7t%20trong%20v%C3%A1ch%20l%C3%B2%20g%E1%BA%A1ch%20khai%20qu%E1%BA%ADt.jpg",
+        "title": "Lu sành cổ dính chặt trong vách lò gạch khai quật",
+        "caption": "Lu sành cổ dính chặt trong vách lò gạch khai quật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_82_img_9",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/L%C3%B2%20g%E1%BB%91m%20b%E1%BA%A7u%20d%E1%BA%A1ng%20h%C3%ACnh%20th%C3%A1p%20tr%C3%B2n%20c%E1%BB%95.jpg",
+        "title": "Lò gốm bầu dạng hình tháp tròn cổ",
+        "caption": "Lò gốm bầu dạng hình tháp tròn cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_82_img_10",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/%C4%90%E1%BB%91ng%20m%E1%BA%A3nh%20g%E1%BB%91m%20v%E1%BB%A1%20v%C3%A0%20c%C3%A1c%20lu%20s%C3%A0nh%20c%E1%BB%95.jpg",
+        "title": "Đống mảnh gốm vỡ và các lu sành cổ",
+        "caption": "Đống mảnh gốm vỡ và các lu sành cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -39737,7 +43896,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Hội quán Nghĩa An là một trung tâm tín ngưỡng và sinh hoạt cộng đồng của người Hoa gốc Triều Châu ở Chợ Lớn. Việc thờ Quan Công thể hiện những giá trị được cộng đồng đề cao như trung nghĩa, chính trực và lòng hướng về quê hương; công trình đồng thời là một di sản kiến trúc nghệ thuật tiêu biểu của Chợ Lớn.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/B%E1%BB%99%20ba%20hi%E1%BB%87n%20v%E1%BA%ADt%20g%E1%BB%91m%20trang%20tr%C3%AD%20hoa%20v%C4%83n%20k%E1%BB%B7%20h%C3%A0.jpg",
       "emCoBiet": [
         "🔎 Gắn với cộng đồng người Hoa gốc Triều Châu.",
         "🔎 Là trung tâm tín ngưỡng thờ Quan Đế.",
@@ -39880,25 +44039,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) tại Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_83_img_1",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/B%E1%BB%99%20ba%20hi%E1%BB%87n%20v%E1%BA%ADt%20g%E1%BB%91m%20trang%20tr%C3%AD%20hoa%20v%C4%83n%20k%E1%BB%B7%20h%C3%A0.jpg",
+        "title": "Bộ ba hiện vật gốm trang trí hoa văn kỷ hà",
+        "caption": "Bộ ba hiện vật gốm trang trí hoa văn kỷ hà",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông).",
-        "year": "Hiện vật"
+        "id": "mon_83_img_2",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/B%E1%BB%99%20ba%20h%C5%A9%2C%20n%E1%BB%93i%20g%E1%BB%91m%20c%E1%BB%95%20hoa%20v%C4%83n%20ch%C3%ACm.jpg",
+        "title": "Bộ ba hũ, nồi gốm cổ hoa văn chìm",
+        "caption": "Bộ ba hũ, nồi gốm cổ hoa văn chìm",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_83_img_3",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/B%E1%BB%99%20s%C6%B0u%20t%E1%BA%ADp%20khuy%C3%AAn%20tai%20hai%20%C4%91%E1%BA%A7u%20th%C3%BA%20b%E1%BA%B1ng%20%C4%91%C3%A1%20ng%E1%BB%8Dc.jpg",
+        "title": "Bộ sưu tập khuyên tai hai đầu thú bằng đá ngọc",
+        "caption": "Bộ sưu tập khuyên tai hai đầu thú bằng đá ngọc",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_83_img_4",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/C%E1%BA%ADn%20c%E1%BA%A3nh%20hai%20m%E1%BB%99%20chum%20g%E1%BB%91m%20trong%20h%E1%BB%91%20khai%20qu%E1%BA%ADt.jpg",
+        "title": "Cận cảnh hai mộ chum gốm trong hố khai quật",
+        "caption": "Cận cảnh hai mộ chum gốm trong hố khai quật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_83_img_5",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/Hi%E1%BB%87n%20tr%C6%B0%E1%BB%9Dng%20h%E1%BB%91%20khai%20qu%E1%BA%ADt%20m%E1%BB%99%20chum%20(m%E1%BB%99%20n%E1%BB%93i%2C%20m%E1%BB%99%20g%E1%BB%91m).jpg",
+        "title": "Hiện trường hố khai quật mộ chum (mộ nồi, mộ gốm)",
+        "caption": "Hiện trường hố khai quật mộ chum (mộ nồi, mộ gốm)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_83_img_6",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/Ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20b%C3%B3c%20t%C3%A1ch%20t%E1%BA%A7ng%20%C4%91%E1%BA%A5t%20t%E1%BA%A1i%20h%E1%BB%91%20th%C3%A1m%20s%C3%A1t.jpg",
+        "title": "Hoạt động bóc tách tầng đất tại hố thám sát",
+        "caption": "Hoạt động bóc tách tầng đất tại hố thám sát",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_83_img_7",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/Khuy%C3%AAn%20tai%20hai%20%C4%91%E1%BA%A7u%20th%C3%BA%20(Hi%E1%BB%87n%20v%E1%BA%ADt%20%C4%91%C6%A1n).jpg",
+        "title": "Khuyên tai hai đầu thú (Hiện vật đơn)",
+        "caption": "Khuyên tai hai đầu thú (Hiện vật đơn)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_83_img_8",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/Nh%C3%A0%20kh%E1%BA%A3o%20c%E1%BB%95%20%C4%91ang%20x%E1%BB%AD%20l%C3%BD%20h%E1%BB%91%20m%E1%BB%99%20t%C3%A1ng.jpg",
+        "title": "Nhà khảo cổ đang xử lý hố mộ táng",
+        "caption": "Nhà khảo cổ đang xử lý hố mộ táng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_83_img_9",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/Nh%C3%B3m%20d%C3%B2n%20d%E1%BB%8Di%20%20Ch%C3%A2n%20%C4%91%E1%BA%BF%20%C4%91%E1%BB%93%20d%C3%B9ng%20b%E1%BA%B1ng%20%C4%91%E1%BA%A5t%20n%C6%B0%E1%BB%9Bng.jpg",
+        "title": "Nhóm dòn dọi  Chân đế đồ dùng bằng đất nướng",
+        "caption": "Nhóm dòn dọi  Chân đế đồ dùng bằng đất nướng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_83_img_10",
+        "src": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/Ti%C3%AAu%20b%E1%BA%A3n%20chum%20g%E1%BB%91m%20t%C3%A1ng%20(m%E1%BB%99%20n%E1%BB%93i%20g%E1%BB%91m)%20nguy%C3%AAn%20v%E1%BA%B9n.jpg",
+        "title": "Tiêu bản chum gốm táng (mộ nồi gốm) nguyên vẹn",
+        "caption": "Tiêu bản chum gốm táng (mộ nồi gốm) nguyên vẹn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -40211,7 +44429,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Hội quán Nghĩa Nhuận có nguồn gốc từ đình làng Tân Nhuận được thành lập từ đầu thế kỷ XIX. Năm 1872, đình trở thành hội quán của Hội Nghĩa Nhuận, thể hiện sự chuyển biến từ thiết chế làng xã của cư dân Việt sang không gian sinh hoạt tín ngưỡng và cộng đồng của người Hoa.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/B%E1%BA%A3ng%20c%E1%BB%95ng%20di%20t%C3%ADch%20M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh.jpg",
       "emCoBiet": [
         "🔎 Có nguồn gốc từ đình làng Tân Nhuận.",
         "🔎 Gắn với cộng đồng người Hoa ở Chợ Lớn.",
@@ -40354,25 +44572,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Hội quán Nghĩa Nhuận",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Hội quán Nghĩa Nhuận tại Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_84_img_1",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/B%C3%A0n%20th%E1%BB%9D%20di%20%E1%BA%A3nh%20c%C3%A1c%20s%C4%A9%20phu%2C%20th%C3%A2n%20nh%C3%A2n.jpg",
+        "title": "Bàn thờ di ảnh các sĩ phu, thân nhân",
+        "caption": "Bàn thờ di ảnh các sĩ phu, thân nhân",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Hội quán Nghĩa Nhuận.",
-        "year": "Hiện vật"
+        "id": "mon_84_img_2",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/B%E1%BA%A3ng%20c%E1%BB%95ng%20di%20t%C3%ADch%20M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh.jpg",
+        "title": "Bảng cổng di tích Mộ Phan Châu Trinh",
+        "caption": "Bảng cổng di tích Mộ Phan Châu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_84_img_3",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/B%E1%BB%A9c%20t%C6%B0%E1%BB%9Dng%20tr%C6%B0ng%20b%C3%A0y%20S%E1%BB%B1%20nghi%E1%BB%87p%20c%C3%A1ch%20m%E1%BA%A1ng.jpg",
+        "title": "Bức tường trưng bày Sự nghiệp cách mạng",
+        "caption": "Bức tường trưng bày Sự nghiệp cách mạng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_84_img_4",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/B%E1%BB%A9c%20t%C6%B0%E1%BB%9Dng%20t%C6%B0%20li%E1%BB%87u%20%C4%90%C3%A1m%20tang%20Phan%20Ch%C3%A2u%20Trinh.jpg",
+        "title": "Bức tường tư liệu Đám tang Phan Châu Trinh",
+        "caption": "Bức tường tư liệu Đám tang Phan Châu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_84_img_5",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/Gian%20th%E1%BB%9D%20ch%C3%ADnh%20trong%20%C4%90%E1%BB%81n%20th%E1%BB%9D%20Phan%20Ch%C3%A2u%20Trinh.jpg",
+        "title": "Gian thờ chính trong Đền thờ Phan Châu Trinh",
+        "caption": "Gian thờ chính trong Đền thờ Phan Châu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_84_img_6",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/Khu%20m%E1%BB%99%20v%C3%A0%20bia%20%C4%91%C3%A1%20nh%C3%A0%20c%C3%A1ch%20m%E1%BA%A1ng%20Phan%20Ch%C3%A2u%20Trinh.jpg",
+        "title": "Khu mộ và bia đá nhà cách mạng Phan Châu Trinh",
+        "caption": "Khu mộ và bia đá nhà cách mạng Phan Châu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_84_img_7",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/Ph%C3%B2ng%20l%C6%B0u%20gi%E1%BB%AF%20s%C3%A1ch%20b%C3%A1o%20t%C6%B0%20li%E1%BB%87u.jpg",
+        "title": "Phòng lưu giữ sách báo tư liệu",
+        "caption": "Phòng lưu giữ sách báo tư liệu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_84_img_8",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/Tr%C3%ADch%20d%E1%BA%ABn%20t%C6%B0%20t%C6%B0%E1%BB%9Fng%20v%C3%A0%20b%C3%A0i%20th%C6%A1%20%C4%90%E1%BA%ADp%20%C4%91%C3%A1.jpg",
+        "title": "Trích dẫn tư tưởng và bài thơ Đập đá",
+        "caption": "Trích dẫn tư tưởng và bài thơ Đập đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_84_img_9",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/T%C6%B0%E1%BB%A3ng%20b%C3%A1n%20th%C3%A2n%20v%C3%A0%20%C4%90%E1%BB%81n%20th%E1%BB%9D%20Phan%20Ch%C3%A2u%20Trinh.jpg",
+        "title": "Tượng bán thân và Đền thờ Phan Châu Trinh",
+        "caption": "Tượng bán thân và Đền thờ Phan Châu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_84_img_10",
+        "src": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/T%E1%BA%A5m%20b%E1%BA%A3ng%20l%E1%BB%9Bn%20ghi%20Ti%E1%BB%83u%20s%E1%BB%AD%20c%E1%BB%A5%20Phan%20Ch%C3%A2u%20Trinh.jpg",
+        "title": "Tấm bảng lớn ghi Tiểu sử cụ Phan Châu Trinh",
+        "caption": "Tấm bảng lớn ghi Tiểu sử cụ Phan Châu Trinh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -40685,7 +44962,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Hội quán Ôn Lăng là một trong những công trình tín ngưỡng lâu đời của cộng đồng người Hoa gốc Tuyền Châu, Phúc Kiến. Hội quán vừa giữ vai trò nơi thờ tự, vừa là không gian sinh hoạt cộng đồng; giá trị của di tích còn thể hiện qua sự giao thoa giữa tín ngưỡng người Hoa và văn hóa đô thị Chợ Lớn.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/B%E1%BB%A9c%20%E1%BA%A3nh%20kh%C3%B4ng%20%E1%BA%A3nh%20to%C3%A0n%20c%E1%BA%A3nh%20t%E1%BB%AB%20tr%C3%AAn%20cao%20c%E1%BB%A7a%20Khu%20di%20t%C3%ADch%20L%C4%83ng%20%C3%94ng.jpg",
       "emCoBiet": [
         "🔎 Gắn với cộng đồng người Hoa gốc Tuyền Châu, Phúc Kiến.",
         "🔎 Là hội quán – miếu có lịch sử lâu đời.",
@@ -40828,25 +45105,164 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Hội quán Ôn Lăng",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Hội quán Ôn Lăng tại Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_85_img_1",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/B%E1%BA%A3n%20%C4%91%E1%BB%93%20c%E1%BB%95%20Gia%20%C4%90%E1%BB%8Bnh%20T%E1%BB%89nh%20treo%20t%C6%B0%E1%BB%9Dng.jpg",
+        "title": "Bản đồ cổ Gia Định Tỉnh treo tường",
+        "caption": "Bản đồ cổ Gia Định Tỉnh treo tường",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Hội quán Ôn Lăng.",
-        "year": "Hiện vật"
+        "id": "mon_85_img_2",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20V%C4%83n%20h%C3%B3a%20c%E1%BA%A5p%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Bằng công nhận Di tích Lịch sử Văn hóa cấp Quốc gia",
+        "caption": "Bằng công nhận Di tích Lịch sử Văn hóa cấp Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_85_img_3",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/B%E1%BB%A9c%20b%E1%BB%A9c%20b%C3%ACnh%20phong%20kh%E1%BA%A3m%20s%C3%A0nh%20s%E1%BB%A9%20h%C3%ACnh%20K%E1%BB%B3%20L%C3%A2n.jpg",
+        "title": "Bức bức bình phong khảm sành sứ hình Kỳ Lân",
+        "caption": "Bức bức bình phong khảm sành sứ hình Kỳ Lân",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_4",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/B%E1%BB%A9c%20%E1%BA%A3nh%20kh%C3%B4ng%20%E1%BA%A3nh%20to%C3%A0n%20c%E1%BA%A3nh%20t%E1%BB%AB%20tr%C3%AAn%20cao%20c%E1%BB%A7a%20Khu%20di%20t%C3%ADch%20L%C4%83ng%20%C3%94ng.jpg",
+        "title": "Bức ảnh không ảnh toàn cảnh từ trên cao của Khu di tích Lăng Ông",
+        "caption": "Bức ảnh không ảnh toàn cảnh từ trên cao của Khu di tích Lăng Ông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_5",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/Chi%20ti%E1%BA%BFt%20hoa%20v%C4%83n%20trang%20tr%C3%AD%20g%E1%BB%91m%20s%E1%BB%A9%20v%C3%A0%20t%C6%B0%E1%BB%A3ng%20ng%C6%B0%E1%BB%9Di%20tr%C3%AAn%20m%C3%A1i%20l%C4%83ng.jpg",
+        "title": "Chi tiết hoa văn trang trí gốm sứ và tượng người trên mái lăng",
+        "caption": "Chi tiết hoa văn trang trí gốm sứ và tượng người trên mái lăng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_6",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/Chi%20ti%E1%BA%BFt%20m%C3%A1i%20ng%C3%B3i%20%C3%A2m%20d%C6%B0%C6%A1ng%20v%C3%A0%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20g%E1%BB%91m%20s%E1%BB%A9%20tinh%20x%E1%BA%A3o.jpg",
+        "title": "Chi tiết mái ngói âm dương và chạm khắc gốm sứ tinh xảo",
+        "caption": "Chi tiết mái ngói âm dương và chạm khắc gốm sứ tinh xảo",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_7",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/C%E1%BB%95ng%20tam%20quan%20Khu%20di%20t%C3%ADch%20L%C4%83ng%20T%E1%BA%A3%20qu%C3%A2n%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t.jpg",
+        "title": "Cổng tam quan Khu di tích Lăng Tả quân Lê Văn Duyệt",
+        "caption": "Cổng tam quan Khu di tích Lăng Tả quân Lê Văn Duyệt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_8",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/C%E1%BB%95ng%20tr%E1%BB%A5%20%C4%91%C3%A1%20v%C3%A0%20l%C6%B0%20h%C6%B0%C6%A1ng%20%C4%91%E1%BB%93ng%20d%C3%A1t%20v%C3%A0ng%20ngo%C3%A0i%20s%C3%A2n.jpg",
+        "title": "Cổng trụ đá và lư hương đồng dát vàng ngoài sân",
+        "caption": "Cổng trụ đá và lư hương đồng dát vàng ngoài sân",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_9",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/Gian%20Th%C6%B0%E1%BB%A3ng%20%C4%91i%E1%BB%87n%20(Mi%E1%BA%BFu%20th%E1%BB%9D)%20nh%C3%ACn%20t%E1%BB%AB%20kho%E1%BA%A3ng%20s%C3%A2n%20%C4%91%C3%A1.jpg",
+        "title": "Gian Thượng điện (Miếu thờ) nhìn từ khoảng sân đá",
+        "caption": "Gian Thượng điện (Miếu thờ) nhìn từ khoảng sân đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_10",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/Gian%20th%E1%BB%9D%20ch%C3%ADnh%20b%C3%AAn%20trong%20L%C4%83ng%20%C3%94ng%20B%C3%A0%20Chi%E1%BB%83u.jpg",
+        "title": "Gian thờ chính bên trong Lăng Ông Bà Chiểu",
+        "caption": "Gian thờ chính bên trong Lăng Ông Bà Chiểu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_11",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/G%C3%B3c%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao%20xu%E1%BB%91ng%20to%C3%A0n%20c%E1%BA%A3nh%20khu%20m%E1%BB%99%20v%C3%A0%20%C4%91%E1%BB%81n%20th%E1%BB%9D.jpg",
+        "title": "Góc nhìn từ trên cao xuống toàn cảnh khu mộ và đền thờ",
+        "caption": "Góc nhìn từ trên cao xuống toàn cảnh khu mộ và đền thờ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_12",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/Ki%E1%BA%BFn%20tr%C3%BAc%20tr%E1%BA%A7n%20nh%C3%A0%20g%E1%BB%91m%20k%C3%ADnh%20nhi%E1%BB%81u%20m%C3%A0u%20s%E1%BA%AFc%20trong%20%C4%91i%E1%BB%87n%20th%E1%BB%9D.jpg",
+        "title": "Kiến trúc trần nhà gốm kính nhiều màu sắc trong điện thờ",
+        "caption": "Kiến trúc trần nhà gốm kính nhiều màu sắc trong điện thờ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_13",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/Nh%C3%A0%20bia%20L%C3%AA%20C%C3%B4ng%20Bi%20%C4%90%C3%ACnh%20trong%20khu%C3%B4n%20vi%C3%AAn%20l%C4%83ng.jpg",
+        "title": "Nhà bia Lê Công Bi Đình trong khuôn viên lăng",
+        "caption": "Nhà bia Lê Công Bi Đình trong khuôn viên lăng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_14",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/Nh%C3%A0%20tr%C6%B0ng%20b%C3%A0y%20ti%E1%BB%83u%20s%E1%BB%AD%20v%C3%A0%20t%C6%B0%20li%E1%BB%87u%20v%E1%BB%81%20%C4%90%E1%BB%A9c%20Th%C6%B0%E1%BB%A3ng%20c%C3%B4ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t.jpg",
+        "title": "Nhà trưng bày tiểu sử và tư liệu về Đức Thượng công Lê Văn Duyệt",
+        "caption": "Nhà trưng bày tiểu sử và tư liệu về Đức Thượng công Lê Văn Duyệt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_15",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/Song%20m%E1%BB%99%20T%E1%BA%A3%20qu%C3%A2n%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t%20v%C3%A0%20Ch%C3%A1nh%20th%E1%BA%A5t%20Phu%20nh%C3%A2n.jpg",
+        "title": "Song mộ Tả quân Lê Văn Duyệt và Chánh thất Phu nhân",
+        "caption": "Song mộ Tả quân Lê Văn Duyệt và Chánh thất Phu nhân",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_16",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/S%C6%A1%20%C4%91%E1%BB%93%20B%E1%BA%A3ng%20%C4%91%E1%BB%93%20Th%C3%A0nh%20Gia%20%C4%90%E1%BB%8Bnh%20(Th%C3%A0nh%20B%C3%A1t%20Qu%C3%A1i).jpg",
+        "title": "Sơ đồ Bảng đồ Thành Gia Định (Thành Bát Quái)",
+        "caption": "Sơ đồ Bảng đồ Thành Gia Định (Thành Bát Quái)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_17",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/T%C6%B0%E1%BB%A3ng%20%C4%91%E1%BB%93ng%20d%C3%A1t%20v%C3%A0ng%20c%E1%BB%A7a%20T%E1%BA%A3%20qu%C3%A2n%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t.jpg",
+        "title": "Tượng đồng dát vàng của Tả quân Lê Văn Duyệt",
+        "caption": "Tượng đồng dát vàng của Tả quân Lê Văn Duyệt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_18",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/T%E1%BA%A5m%20bia%20%C4%91%C3%A1%20c%E1%BB%95%20L%C3%AA%20C%C3%B4ng%20Bi%20%C4%90%C3%ACnh%20%C4%91%E1%BA%B7t%20trong%20l%E1%BB%93ng%20k%C3%ADnh%20b%E1%BA%A3o%20v%E1%BB%87.jpg",
+        "title": "Tấm bia đá cổ Lê Công Bi Đình đặt trong lồng kính bảo vệ",
+        "caption": "Tấm bia đá cổ Lê Công Bi Đình đặt trong lồng kính bảo vệ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_19",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/%C4%90%C6%B0%E1%BB%9Dng%20n%E1%BB%99i%20b%E1%BB%99%20v%C3%A0%20t%C6%B0%E1%BB%9Dng%20bao%20quanh%20khu%20m%E1%BB%99.jpg",
+        "title": "Đường nội bộ và tường bao quanh khu mộ",
+        "caption": "Đường nội bộ và tường bao quanh khu mộ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_85_img_20",
+        "src": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/%C4%90%E1%BB%89nh%20m%C3%A1i%20l%C4%83ng%20trang%20tr%C3%AD%20bi%E1%BB%83u%20t%C6%B0%E1%BB%A3ng%20m%E1%BA%B7t%20r%E1%BB%93ng%20v%C3%A0%20hoa%20v%C4%83n%20g%E1%BB%91m%20s%E1%BB%A9.jpg",
+        "title": "Đỉnh mái lăng trang trí biểu tượng mặt rồng và hoa văn gốm sứ",
+        "caption": "Đỉnh mái lăng trang trí biểu tượng mặt rồng và hoa văn gốm sứ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -41159,7 +45575,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Quỳnh Phủ Hội quán gắn với cộng đồng người Hoa đến từ đảo Hải Nam và được thành lập năm 1824. Di tích phản ánh quá trình định cư, tổ chức cộng đồng và giao lưu văn hóa Việt – Hoa tại Chợ Lớn; đặc biệt có giá trị nhờ các hiện vật và tác phẩm nghệ thuật mang dấu ấn giao thoa văn hóa.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0o%20Khu%20di%20t%C3%ADch%20L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu.jpg",
       "emCoBiet": [
         "📅 Thành lập: năm 1824.",
         "🔎 Gắn với cộng đồng người Hoa Hải Nam.",
@@ -41302,25 +45718,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Hội quán Quỳnh Phủ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Hội quán Quỳnh Phủ tại Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_86_img_1",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/Bia%20%C4%91%C3%A1%20v%C3%A0%20b%E1%BB%87%20th%E1%BB%9D%20tr%C6%B0%E1%BB%9Bc%20m%E1%BB%99%20c%E1%BB%95.jpg",
+        "title": "Bia đá và bệ thờ trước mộ cổ",
+        "caption": "Bia đá và bệ thờ trước mộ cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Hội quán Quỳnh Phủ.",
-        "year": "Hiện vật"
+        "id": "mon_86_img_2",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/Bi%E1%BB%83n%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Biển đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "caption": "Biển đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_86_img_3",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia%20trong%20gian%20th%E1%BB%9D.jpg",
+        "title": "Bằng xếp hạng Di tích Quốc gia trong gian thờ",
+        "caption": "Bằng xếp hạng Di tích Quốc gia trong gian thờ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_86_img_4",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0o%20Khu%20di%20t%C3%ADch%20L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu.jpg",
+        "title": "Cổng chính vào Khu di tích Lăng Trương Tấn Bửu",
+        "caption": "Cổng chính vào Khu di tích Lăng Trương Tấn Bửu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_86_img_5",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/C%E1%BB%95ng%20g%E1%BA%A1ch%20r%C3%AAu%20phong%20v%C3%A0%20gi%C3%A0n%20hoa%20gi%E1%BA%A5y.jpg",
+        "title": "Cổng gạch rêu phong và giàn hoa giấy",
+        "caption": "Cổng gạch rêu phong và giàn hoa giấy",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_86_img_6",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/C%E1%BB%95ng%20v%C3%B2m%20g%E1%BA%A1ch%20c%E1%BB%95%20d%E1%BA%ABn%20v%C3%A0o%20khu%20m%E1%BB%99.jpg",
+        "title": "Cổng vòm gạch cổ dẫn vào khu mộ",
+        "caption": "Cổng vòm gạch cổ dẫn vào khu mộ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_86_img_7",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/Gian%20th%E1%BB%9D%20ch%C3%ADnh%20b%C3%AAn%20trong%20%C4%91%E1%BB%81n.jpg",
+        "title": "Gian thờ chính bên trong đền",
+        "caption": "Gian thờ chính bên trong đền",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_86_img_8",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/M%E1%BA%B7t%20ti%E1%BB%81n%20%C4%90%E1%BB%81n%20th%E1%BB%9D%20%C4%90%E1%BB%A9c%20Long%20V%C3%A2n%20H%E1%BA%ADu%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu.jpg",
+        "title": "Mặt tiền Đền thờ Đức Long Vân Hậu Trương Tấn Bửu",
+        "caption": "Mặt tiền Đền thờ Đức Long Vân Hậu Trương Tấn Bửu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_86_img_9",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/To%C3%A0n%20c%E1%BA%A3nh%20L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Lăng Trương Tấn Bửu nhìn từ trên cao",
+        "caption": "Toàn cảnh Lăng Trương Tấn Bửu nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_86_img_10",
+        "src": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/%C3%81o%20l%E1%BB%85%2C%20m%C3%A3ng%20ph%E1%BB%A5c%20th%E1%BB%9D%20trong%20t%E1%BB%A7%20k%C3%ADnh.jpg",
+        "title": "Áo lễ, mãng phục thờ trong tủ kính",
+        "caption": "Áo lễ, mãng phục thờ trong tủ kính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -41633,7 +46108,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Hội quán Tuệ Thành – Chùa Bà là trung tâm tín ngưỡng lâu đời của cộng đồng người Hoa gốc Quảng Châu/Quảng Đông. Công trình thờ Thiên Hậu Thánh Mẫu, đồng thời giữ vai trò quan trọng trong đời sống văn hóa, giáo dục, từ thiện và sinh hoạt cộng đồng người Hoa tại Chợ Lớn.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/To%C3%A0n%20c%E1%BA%A3nh%20khu%20l%C4%83ng%20m%E1%BB%99%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "🔎 Gắn với cộng đồng người Hoa Quảng Đông.",
         "🔎 Là trung tâm tín ngưỡng thờ Thiên Hậu.",
@@ -41776,25 +46251,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Hội quán Tuệ Thành (Chùa Bà)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Hội quán Tuệ Thành (Chùa Bà) tại Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_87_img_1",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/B%C3%A0n%20th%E1%BB%9D%20ch%C3%ADnh%20b%C3%AAn%20trong%20b%C3%A1i%20%C4%91%C6%B0%E1%BB%9Dng%20%C4%91%E1%BB%81n%20th%E1%BB%9D.jpg",
+        "title": "Bàn thờ chính bên trong bái đường đền thờ",
+        "caption": "Bàn thờ chính bên trong bái đường đền thờ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Hội quán Tuệ Thành (Chùa Bà).",
-        "year": "Hiện vật"
+        "id": "mon_87_img_2",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/B%E1%BB%A9c%20b%C3%ACnh%20phong%20v%C3%B4i%20c%E1%BB%95%20v%C3%A0%20ch%E1%BA%ADu%20c%C3%A2y%20bonsai.jpg",
+        "title": "Bức bình phong vôi cổ và chậu cây bonsai",
+        "caption": "Bức bình phong vôi cổ và chậu cây bonsai",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_87_img_3",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/B%E1%BB%A9c%20b%C3%ACnh%20phong%20%C4%91%C3%A1%20c%E1%BB%95%20ph%C3%ADa%20sau%20m%E1%BB%99.jpg",
+        "title": "Bức bình phong đá cổ phía sau mộ",
+        "caption": "Bức bình phong đá cổ phía sau mộ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_87_img_4",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/Gian%20th%E1%BB%9D%20ch%C3%ADnh%20v%E1%BB%9Bi%20h%E1%BB%87%20th%E1%BB%91ng%20binh%20kh%C3%AD%20th%E1%BB%9D.jpg",
+        "title": "Gian thờ chính với hệ thống binh khí thờ",
+        "caption": "Gian thờ chính với hệ thống binh khí thờ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_87_img_5",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/M%E1%BA%A3ng%20t%C6%B0%E1%BB%9Dng%20%C4%91%C3%A1%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20hoa%20v%C4%83n%20hoa%20chim.jpg",
+        "title": "Mảng tường đá chạm khắc hoa văn hoa chim",
+        "caption": "Mảng tường đá chạm khắc hoa văn hoa chim",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_87_img_6",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/N%E1%BA%A5m%20m%E1%BB%99%20%C4%91%C3%A1%20ong%20c%E1%BB%95%20k%C3%ADnh.jpg",
+        "title": "Nấm mộ đá ong cổ kính",
+        "caption": "Nấm mộ đá ong cổ kính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_87_img_7",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/To%C3%A0n%20c%E1%BA%A3nh%20khu%20l%C4%83ng%20m%E1%BB%99%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh khu lăng mộ nhìn từ trên cao",
+        "caption": "Toàn cảnh khu lăng mộ nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_87_img_8",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/T%C6%B0%E1%BB%9Dng%20th%C3%A0nh%20g%E1%BA%A1ch%20%C4%91%C3%A1%20bao%20quanh%20khu%20m%E1%BB%99.jpg",
+        "title": "Tường thành gạch đá bao quanh khu mộ",
+        "caption": "Tường thành gạch đá bao quanh khu mộ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_87_img_9",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/T%C6%B0%E1%BB%A3ng%20c%E1%BA%A9u%20%C4%91%C3%A1%20canh%20gi%E1%BB%AF%20tr%C3%AAn%20ch%C3%A2n%20tr%E1%BB%A5%20t%C6%B0%E1%BB%9Dng.jpg",
+        "title": "Tượng cẩu đá canh giữ trên chân trụ tường",
+        "caption": "Tượng cẩu đá canh giữ trên chân trụ tường",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_87_img_10",
+        "src": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/T%C6%B0%E1%BB%A3ng%20linh%20th%C3%BA%20ngh%C3%AA%20%C4%91%C3%A1%20g%C3%B3c%20t%C6%B0%E1%BB%9Dng.jpg",
+        "title": "Tượng linh thú nghê đá góc tường",
+        "caption": "Tượng linh thú nghê đá góc tường",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -42107,7 +46641,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Lăng Lê Văn Duyệt có giá trị đặc biệt về lịch sử, văn hóa và kiến trúc, gắn với cuộc đời và sự nghiệp của Tả quân Lê Văn Duyệt – một nhân vật quan trọng trong quá trình xây dựng, ổn định và phát triển Gia Định. Khu lăng miếu còn thể hiện sự giao thoa văn hóa Việt – Hoa và là nơi duy trì lễ giỗ Tả quân hằng năm.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/M%E1%BA%B7t%20ti%E1%BB%81n%20gian%20th%E1%BB%9D%20c%E1%BB%95.jpg",
       "emCoBiet": [
         "🔎 Gắn với Tả quân Lê Văn Duyệt.",
         "🔎 Là quần thể lăng mộ – nơi tưởng niệm danh nhân.",
@@ -42250,25 +46784,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Lăng Lê Văn Duyệt",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Lăng Lê Văn Duyệt tại Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_88_img_1",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/Bi%E1%BB%83n%20t%C3%AAn%20Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n.jpg",
+        "title": "Biển tên Chùa Hội Sơn",
+        "caption": "Biển tên Chùa Hội Sơn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Lăng Lê Văn Duyệt.",
-        "year": "Hiện vật"
+        "id": "mon_88_img_2",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/C%E1%BB%A5m%20t%C6%B0%E1%BB%A3ng%20T%C3%A2y%20Ph%C6%B0%C6%A1ng%20Tam%20Th%C3%A1nh%20v%C3%A0%20ch%C6%B0%20Ph%E1%BA%ADt.jpg",
+        "title": "Cụm tượng Tây Phương Tam Thánh và chư Phật",
+        "caption": "Cụm tượng Tây Phương Tam Thánh và chư Phật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_88_img_3",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/G%C3%B3c%20nghi%C3%AAng%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Góc nghiêng Chánh điện",
+        "caption": "Góc nghiêng Chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_88_img_4",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/H%E1%BB%93%20n%C6%B0%E1%BB%9Bc%20v%C3%A0%20T%C6%B0%E1%BB%A3ng%20B%E1%BB%93%20T%C3%A1t%20ngo%C3%A0i%20h%C3%A0nh%20lang.jpg",
+        "title": "Hồ nước và Tượng Bồ Tát ngoài hành lang",
+        "caption": "Hồ nước và Tượng Bồ Tát ngoài hành lang",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_88_img_5",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/Khu%20V%C6%B0%E1%BB%9Dn%20Th%C3%A1p%20C%E1%BB%95.jpg",
+        "title": "Khu Vườn Tháp Cổ",
+        "caption": "Khu Vườn Tháp Cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_88_img_6",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/M%E1%BA%B7t%20ti%E1%BB%81n%20gian%20th%E1%BB%9D%20c%E1%BB%95.jpg",
+        "title": "Mặt tiền gian thờ cổ",
+        "caption": "Mặt tiền gian thờ cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_88_img_7",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/Quan%20%C3%82m%20Thi%C3%AAn%20Th%E1%BB%A7%20Thi%C3%AAn%20Nh%C3%A3n.jpg",
+        "title": "Quan Âm Thiên Thủ Thiên Nhãn",
+        "caption": "Quan Âm Thiên Thủ Thiên Nhãn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_88_img_8",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/To%C3%A0n%20c%E1%BA%A3nh%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n.jpg",
+        "title": "Toàn cảnh Chánh điện Chùa Hội Sơn",
+        "caption": "Toàn cảnh Chánh điện Chùa Hội Sơn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_88_img_9",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/T%C6%B0%E1%BB%A3ng%20Ph%E1%BA%ADt%20Nh%E1%BA%ADp%20Ni%E1%BA%BFt%20B%C3%A0n%20(Ph%E1%BA%ADt%20n%E1%BA%B1m).jpg",
+        "title": "Tượng Phật Nhập Niết Bàn (Phật nằm)",
+        "caption": "Tượng Phật Nhập Niết Bàn (Phật nằm)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_88_img_10",
+        "src": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/V%C6%B0%E1%BB%9Dn%20Ph%E1%BA%ADt%20Th%C3%ADch%20Ca%20Thuy%E1%BA%BFt%20Ph%C3%A1p.jpg",
+        "title": "Vườn Phật Thích Ca Thuyết Pháp",
+        "caption": "Vườn Phật Thích Ca Thuyết Pháp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -42581,7 +47174,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Lăng Trương Tấn Bửu gắn với cuộc đời và sự nghiệp của Trương Tấn Bửu, một võ tướng triều Nguyễn có vai trò trong quá trình xây dựng, bảo vệ vùng Gia Định và phục vụ nhà Nguyễn. Di tích là nơi tưởng niệm nhân vật lịch sử, đồng thời phản ánh truyền thống thờ phụng danh nhân và cấu trúc lăng mộ của tầng lớp quan lại Nam Bộ thời Nguyễn.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0o%20%C4%90%C3%ACnh%20th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng.jpg",
       "emCoBiet": [
         "🔎 Gắn với võ tướng Trương Tấn Bửu.",
         "🔎 Là lăng mộ – không gian tưởng niệm danh nhân.",
@@ -42724,25 +47317,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Lăng Trương Tấn Bửu",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Lăng Trương Tấn Bửu tại Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_89_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/B%C3%A0n%20th%E1%BB%9D%20Ti%E1%BB%81n%20hi%E1%BB%81n%20v%C3%A0%20B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20TP.HCM.jpg",
+        "title": "Bàn thờ Tiền hiền và Bằng xếp hạng Di tích TP.HCM",
+        "caption": "Bàn thờ Tiền hiền và Bằng xếp hạng Di tích TP.HCM",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Lăng Trương Tấn Bửu.",
-        "year": "Hiện vật"
+        "id": "mon_89_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0o%20%C4%90%C3%ACnh%20th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng.jpg",
+        "title": "Cổng chính vào Đình thần Linh Đông",
+        "caption": "Cổng chính vào Đình thần Linh Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_89_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/Gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20v%C3%A0%20h%E1%BB%87%20th%E1%BB%91ng%20ho%C3%A0nh%20phi%20s%C6%A1n%20son%20th%E1%BA%BFp%20v%C3%A0ng.jpg",
+        "title": "Gian chính điện và hệ thống hoành phi sơn son thếp vàng",
+        "caption": "Gian chính điện và hệ thống hoành phi sơn son thếp vàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_89_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/H%C3%A0nh%20lang%20b%C3%A1i%20%C4%91%C6%B0%E1%BB%9Dng%20v%C3%A0%20c%C3%A2u%20%C4%91%E1%BB%91i%20tr%E1%BB%A5%20c%E1%BB%99t.jpg",
+        "title": "Hành lang bái đường và câu đối trụ cột",
+        "caption": "Hành lang bái đường và câu đối trụ cột",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_89_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/K%E1%BA%BFt%20c%E1%BA%A5u%20v%C3%AC%20k%C3%A8o%20g%E1%BB%97%20v%C3%A0%20con%20r%C6%B0%E1%BB%9Dng%20%C4%91%E1%BB%89nh%20m%C3%A1i.jpg",
+        "title": "Kết cấu vì kèo gỗ và con rường đỉnh mái",
+        "caption": "Kết cấu vì kèo gỗ và con rường đỉnh mái",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_89_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/M%C3%A0n%20b%E1%BB%A9c%20b%C3%ACnh%20phong%20C%E1%BB%8Dp%20v%C3%A0ng%20v%C3%A0%20tr%E1%BB%A5%20c%E1%BB%95ng%20n%E1%BB%99i%20khu%C3%B4n%20vi%C3%AAn.jpg",
+        "title": "Màn bức bình phong Cọp vàng và trụ cổng nội khuôn viên",
+        "caption": "Màn bức bình phong Cọp vàng và trụ cổng nội khuôn viên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_89_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/M%E1%BA%A3ng%20xanh%20v%C3%A0%20khu%C3%B4n%20vi%C3%AAn%20s%C3%A2n%20tr%C6%B0%E1%BB%9Bc%20%C4%90%C3%ACnh%20Linh%20%C4%90%C3%B4ng.jpg",
+        "title": "Mảng xanh và khuôn viên sân trước Đình Linh Đông",
+        "caption": "Mảng xanh và khuôn viên sân trước Đình Linh Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_89_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/Ph%E1%BB%91i%20c%E1%BA%A3nh%20t%E1%BB%AB%20tr%C3%AAn%20cao%20m%C3%A1i%20ng%C3%B3i%20%C4%90%C3%ACnh%20Linh%20%C4%90%C3%B4ng.jpg",
+        "title": "Phối cảnh từ trên cao mái ngói Đình Linh Đông",
+        "caption": "Phối cảnh từ trên cao mái ngói Đình Linh Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_89_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Linh%20%C4%90%C3%B4ng.jpg",
+        "title": "Quyết định xếp hạng Di tích Quốc gia Đình Linh Đông",
+        "caption": "Quyết định xếp hạng Di tích Quốc gia Đình Linh Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_89_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20Ti%E1%BB%81n%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20Linh%20%C4%90%C3%B4ng.jpg",
+        "title": "Toàn cảnh mặt tiền Tiền điện Đình Linh Đông",
+        "caption": "Toàn cảnh mặt tiền Tiền điện Đình Linh Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -43055,7 +47707,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Lăng Võ Di Nguy gắn với Võ Di Nguy, một võ tướng có công trong thời kỳ Nguyễn Ánh chống quân Tây Sơn và xây dựng lực lượng ở vùng Gia Định. Lăng mộ là dấu tích quan trọng liên quan đến lịch sử quân sự cuối thế kỷ XVIII – đầu XIX và quá trình hình thành vùng Gia Định dưới triều Nguyễn.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/C%E1%BB%95ng%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
       "emCoBiet": [
         "🔎 Gắn với võ tướng Võ Di Nguy.",
         "🔎 Là lăng mộ – nơi tưởng niệm nhân vật lịch sử.",
@@ -43198,25 +47850,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Lăng Võ Di Nguy",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Lăng Võ Di Nguy tại Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_90_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
+        "title": "Bia Di tích lịch sử quốc gia Đình Bình Đông",
+        "caption": "Bia Di tích lịch sử quốc gia Đình Bình Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Lăng Võ Di Nguy.",
-        "year": "Hiện vật"
+        "id": "mon_90_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
+        "title": "Chánh điện Đình Bình Đông",
+        "caption": "Chánh điện Đình Bình Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_90_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/C%E1%BB%95ng%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
+        "title": "Cổng Đình Bình Đông",
+        "caption": "Cổng Đình Bình Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_90_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/Kh%C3%A1m%20th%E1%BB%9D%20Th%E1%BA%A7n%20Th%C3%A0nh%20ho%C3%A0ng%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
+        "title": "Khám thờ Thần Thành hoàng tại Đình Bình Đông",
+        "caption": "Khám thờ Thần Thành hoàng tại Đình Bình Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_90_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/Kh%C3%B4ng%20gian%20b%C3%AAn%20trong%20Nh%C3%A0%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng.jpg",
+        "title": "Không gian bên trong Nhà tưởng niệm Chủ tịch Tôn Đức Thắng",
+        "caption": "Không gian bên trong Nhà tưởng niệm Chủ tịch Tôn Đức Thắng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_90_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/Nh%C3%A0%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
+        "title": "Nhà tưởng niệm Chủ tịch Tôn Đức Thắng tại Đình Bình Đông",
+        "caption": "Nhà tưởng niệm Chủ tịch Tôn Đức Thắng tại Đình Bình Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_90_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Đình Bình Đông nhìn từ trên cao",
+        "caption": "Toàn cảnh Đình Bình Đông nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_90_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng%20tr%C6%B0%E1%BB%9Bc%20Nh%C3%A0%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
+        "title": "Tượng đài Chủ tịch Tôn Đức Thắng trước Nhà tưởng niệm Chủ tịch Tôn Đức Thắng tại Đình Bình Đông",
+        "caption": "Tượng đài Chủ tịch Tôn Đức Thắng trước Nhà tưởng niệm Chủ tịch Tôn Đức Thắng tại Đình Bình Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_90_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/T%E1%BA%A3ng%20%C4%91%C3%A1%20treo%20Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
+        "title": "Tảng đá treo Bia Di tích lịch sử quốc gia Đình Bình Đông",
+        "caption": "Tảng đá treo Bia Di tích lịch sử quốc gia Đình Bình Đông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_90_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng%20nh%C3%ACn%20t%E1%BB%AB%20r%E1%BA%A1ch%20B%C3%A0%20T%C3%A0ng.jpg",
+        "title": "Đình Bình Đông nhìn từ rạch Bà Tàng",
+        "caption": "Đình Bình Đông nhìn từ rạch Bà Tàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -43530,7 +48241,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Linh Sơn Cổ Tự là một cơ sở Phật giáo lâu đời ở Vũng Tàu, có giá trị về lịch sử hình thành đời sống Phật giáo và văn hóa tín ngưỡng của cư dân địa phương. Công trình đồng thời góp phần tạo nên không gian văn hóa – tôn giáo đặc trưng của khu vực núi Nhỏ và thành phố Vũng Tàu.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/C%E1%BB%95ng%20T%E1%BB%8Bnh%20X%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng.jpg",
       "emCoBiet": [
         "🔎 Là một trong những chùa cổ tiêu biểu của Vũng Tàu.",
         "🔎 Gắn với lịch sử Phật giáo địa phương.",
@@ -43673,25 +48384,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Linh Sơn Cổ Tự",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Linh Sơn Cổ Tự tại Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_91_img_1",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/B%C3%A3i%20s%C3%A2n%20v%C3%A0%20khu%C3%B4n%20vi%C3%AAn%20T%E1%BB%8Bnh%20X%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng.jpg",
+        "title": "Bãi sân và khuôn viên Tịnh Xá Ngọc Phương",
+        "caption": "Bãi sân và khuôn viên Tịnh Xá Ngọc Phương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Linh Sơn Cổ Tự.",
-        "year": "Hiện vật"
+        "id": "mon_91_img_2",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/B%E1%BA%A3o%20th%C3%A1p%20ng%C3%B3i%20xanh%20nh%C3%ACn%20t%E1%BB%AB%20g%C3%B3c%20c%E1%BA%ADn.jpg",
+        "title": "Bảo tháp ngói xanh nhìn từ góc cận",
+        "caption": "Bảo tháp ngói xanh nhìn từ góc cận",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_91_img_3",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/B%E1%BA%A3o%20th%C3%A1p%20nhi%E1%BB%81u%20t%E1%BA%A7ng%20m%C3%A1i%20ng%C3%B3i%20xanh.jpg",
+        "title": "Bảo tháp nhiều tầng mái ngói xanh",
+        "caption": "Bảo tháp nhiều tầng mái ngói xanh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_91_img_4",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20V%C4%83n%20h%C3%B3a%20T%E1%BB%8Bnh%20X%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng.jpg",
+        "title": "Bằng công nhận Di tích Lịch sử Văn hóa Tịnh Xá Ngọc Phương",
+        "caption": "Bằng công nhận Di tích Lịch sử Văn hóa Tịnh Xá Ngọc Phương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_91_img_5",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20T%E1%BB%8Bnh%20X%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng.jpg",
+        "title": "Chánh điện Tịnh Xá Ngọc Phương",
+        "caption": "Chánh điện Tịnh Xá Ngọc Phương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_91_img_6",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/C%E1%BB%95ng%20T%E1%BB%8Bnh%20X%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng.jpg",
+        "title": "Cổng Tịnh Xá Ngọc Phương",
+        "caption": "Cổng Tịnh Xá Ngọc Phương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_91_img_7",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/Khu%20th%E1%BB%9D%20%C4%90%E1%BB%87%20Nh%E1%BA%A5t%20Ni%20Tr%C6%B0%E1%BB%9Fng%20Th%C3%ADch%20N%E1%BB%AF%20Hu%E1%BB%B3nh%20Li%C3%AAn.jpg",
+        "title": "Khu thờ Đệ Nhất Ni Trưởng Thích Nữ Huỳnh Liên",
+        "caption": "Khu thờ Đệ Nhất Ni Trưởng Thích Nữ Huỳnh Liên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_91_img_8",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/L%E1%BA%A7u%20Quan%20%C3%82m%20trong%20khu%C3%B4n%20vi%C3%AAn.jpg",
+        "title": "Lầu Quan Âm trong khuôn viên",
+        "caption": "Lầu Quan Âm trong khuôn viên",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_91_img_9",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/M%E1%BA%B7t%20ti%E1%BB%81n%20ch%C3%A1nh%20%C4%91i%E1%BB%87n%20T%E1%BB%8Bnh%20X%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng.jpg",
+        "title": "Mặt tiền chánh điện Tịnh Xá Ngọc Phương",
+        "caption": "Mặt tiền chánh điện Tịnh Xá Ngọc Phương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_91_img_10",
+        "src": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/Quang%20c%E1%BA%A3nh%20kh%C3%B3a%20l%E1%BB%85%20trong%20ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
+        "title": "Quang cảnh khóa lễ trong chánh điện",
+        "caption": "Quang cảnh khóa lễ trong chánh điện",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -44006,7 +48776,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Miếu Nhị Phủ là một trung tâm tín ngưỡng quan trọng của cộng đồng người Hoa ở Chợ Lớn, phản ánh quá trình người Hoa định cư, tổ chức cộng đồng và duy trì tín ngưỡng tại Nam Bộ. Di tích có giá trị nổi bật về kiến trúc, mỹ thuật và giao lưu văn hóa Việt – Hoa.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng%20(Ph%C6%B0%E1%BB%9Bc%20H%E1%BA%A3i%20T%E1%BB%B1).jpg",
       "emCoBiet": [
         "🔎 Là trung tâm tín ngưỡng của cộng đồng người Hoa Chợ Lớn.",
         "🔎 Gắn với tục thờ Ông Bổn.",
@@ -44149,25 +48919,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Miếu Nhị Phủ (Chùa Ông Bổn)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Miếu Nhị Phủ (Chùa Ông Bổn) tại Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_92_img_1",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/Bia%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng.jpg",
+        "title": "Bia Di tích kiến trúc nghệ thuật quốc gia Điện Ngọc Hoàng",
+        "caption": "Bia Di tích kiến trúc nghệ thuật quốc gia Điện Ngọc Hoàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Miếu Nhị Phủ (Chùa Ông Bổn).",
-        "year": "Hiện vật"
+        "id": "mon_92_img_2",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/B%C3%A0n%20th%E1%BB%9D%20Th%E1%BB%95%20%C4%90%E1%BB%8Ba%20t%E1%BA%A1i%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng.jpg",
+        "title": "Bàn thờ Thổ Địa tại Điện Ngọc Hoàng",
+        "caption": "Bàn thờ Thổ Địa tại Điện Ngọc Hoàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_92_img_3",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20th%E1%BB%9D%20Ng%E1%BB%8Dc%20Ho%C3%A0ng%20Th%C6%B0%E1%BB%A3ng%20%C4%90%E1%BA%BF.jpg",
+        "title": "Chánh điện thờ Ngọc Hoàng Thượng Đế",
+        "caption": "Chánh điện thờ Ngọc Hoàng Thượng Đế",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_92_img_4",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/C%C3%A1c%20b%E1%BB%A9c%20ch%E1%BA%A1m%20g%E1%BB%97%20t%E1%BA%A1i%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng.jpg",
+        "title": "Các bức chạm gỗ tại Điện Ngọc Hoàng",
+        "caption": "Các bức chạm gỗ tại Điện Ngọc Hoàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_92_img_5",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/Ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1i%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng.jpg",
+        "title": "Kiến trúc mái Điện Ngọc Hoàng",
+        "caption": "Kiến trúc mái Điện Ngọc Hoàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_92_img_6",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng%20(Ph%C6%B0%E1%BB%9Bc%20H%E1%BA%A3i%20T%E1%BB%B1).jpg",
+        "title": "Toàn cảnh Điện Ngọc Hoàng (Phước Hải Tự)",
+        "caption": "Toàn cảnh Điện Ngọc Hoàng (Phước Hải Tự)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_92_img_7",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng%20x%C6%B0a.jpg",
+        "title": "Điện Ngọc Hoàng xưa",
+        "caption": "Điện Ngọc Hoàng xưa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_92_img_8",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/%C4%90i%E1%BB%87n%20th%E1%BB%9D%20Kim%20Hoa%20Th%C3%A1nh%20M%E1%BA%ABu%20v%C3%A0%20Th%E1%BA%ADp%20Nh%E1%BB%8B%20B%C3%A0%20M%E1%BB%A5.jpg",
+        "title": "Điện thờ Kim Hoa Thánh Mẫu và Thập Nhị Bà Mụ",
+        "caption": "Điện thờ Kim Hoa Thánh Mẫu và Thập Nhị Bà Mụ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_92_img_9",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/%C4%90i%E1%BB%87n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20t%E1%BA%A1i%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng.jpg",
+        "title": "Điện thờ Phật tại Điện Ngọc Hoàng",
+        "caption": "Điện thờ Phật tại Điện Ngọc Hoàng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_92_img_10",
+        "src": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/%C4%90i%E1%BB%87n%20th%E1%BB%9D%20Th%E1%BA%ADp%20%C4%90i%E1%BB%87n%20Di%C3%AAm%20V%C6%B0%C6%A1ng.jpg",
+        "title": "Điện thờ Thập Điện Diêm Vương",
+        "caption": "Điện thờ Thập Điện Diêm Vương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -44480,7 +49309,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Miếu Thiên Hậu (Quảng Triệu hội quán) là nơi sinh hoạt tín ngưỡng của cộng đồng người Hoa gốc Quảng Đông/Quảng Châu. Việc thờ Thiên Hậu thể hiện niềm tin của cư dân đi biển và người Hoa di cư đối với vị thần bảo hộ; hội quán đồng thời là nơi duy trì quan hệ cộng đồng, tương trợ và các lễ nghi truyền thống.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/C%E1%BB%95ng%20v%C3%A0%20h%C3%A0ng%20r%C3%A0o%20Di%20t%C3%ADch%2018%20L%C3%AA%20L%E1%BB%A3i.jpg",
       "emCoBiet": [
         "🔎 Gắn với cộng đồng người Hoa Quảng Đông.",
         "🔎 Thờ Thiên Hậu Thánh Mẫu.",
@@ -44623,25 +49452,52 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Miếu Thiên Hậu (Quảng Triệu hội quán)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Miếu Thiên Hậu (Quảng Triệu hội quán) tại Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_93_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/Bia%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%2018%20L%C3%AA%20L%E1%BB%A3i.jpg",
+        "title": "Bia di tích lịch sử 18 Lê Lợi",
+        "caption": "Bia di tích lịch sử 18 Lê Lợi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Miếu Thiên Hậu (Quảng Triệu hội quán).",
-        "year": "Hiện vật"
+        "id": "mon_93_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/C%E1%BA%A7u%20thang%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20xu%E1%BB%91ng.jpg",
+        "title": "Cầu thang nhìn từ trên xuống",
+        "caption": "Cầu thang nhìn từ trên xuống",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_93_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/C%E1%BA%A7u%20thang%20%C4%91%C3%A1%20d%E1%BA%ABn%20l%C3%AAn%20c%E1%BB%ADa%20ch%C3%ADnh%20di%20t%C3%ADch.jpg",
+        "title": "Cầu thang đá dẫn lên cửa chính di tích",
+        "caption": "Cầu thang đá dẫn lên cửa chính di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_93_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/C%E1%BB%95ng%20v%C3%A0%20h%C3%A0ng%20r%C3%A0o%20Di%20t%C3%ADch%2018%20L%C3%AA%20L%E1%BB%A3i.jpg",
+        "title": "Cổng và hàng rào Di tích 18 Lê Lợi",
+        "caption": "Cổng và hàng rào Di tích 18 Lê Lợi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_93_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/M%E1%BA%B7t%20ti%E1%BB%81n%20nh%C3%A0%20s%C3%A0n%20Di%20t%C3%ADch%2018%20L%C3%AA%20L%E1%BB%A3i.jpg",
+        "title": "Mặt tiền nhà sàn Di tích 18 Lê Lợi",
+        "caption": "Mặt tiền nhà sàn Di tích 18 Lê Lợi",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_93_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/S%C3%A2n%20tr%C6%B0%E1%BB%9Bc%20v%C3%A0%20g%C3%B3c%20nh%C3%ACn%20to%C3%A0n%20c%E1%BA%A3nh%20nh%C3%A0%20di%20t%C3%ADch.jpg",
+        "title": "Sân trước và góc nhìn toàn cảnh nhà di tích",
+        "caption": "Sân trước và góc nhìn toàn cảnh nhà di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -44954,7 +49810,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà cổ Trần Công Vàng phản ánh đời sống của một gia đình khá giả ở Bình Dương cuối thế kỷ XIX – đầu thế kỷ XX, đồng thời là công trình tiêu biểu của kiến trúc nhà ở truyền thống Nam Bộ. Nhà được xây dựng giai đoạn 1889–1892 và nổi bật với kết cấu gỗ quý, chạm khắc tinh xảo.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/B%E1%BA%A3ng%20t%C3%AAn%20di%20t%C3%ADch%20t%E1%BA%A1i%20c%E1%BB%95ng%20%C4%90%E1%BB%81n%20th%E1%BB%9D%20T%E1%BB%95%20ngh%E1%BB%81%20Th%E1%BB%A3%20b%E1%BA%A1c.jpg",
       "emCoBiet": [
         "🔎 Là nhà ở truyền thống của Bình Dương cũ.",
         "🔎 Gắn với đời sống gia đình khá giả cuối thế kỷ XIX – đầu XX.",
@@ -45097,25 +49953,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Nhà cổ Trần Công Vàng",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà cổ Trần Công Vàng tại Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_94_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/B%C3%A0n%20th%E1%BB%9D%20%C4%90%E1%BB%87%20t%E1%BB%AD%20kh%E1%BA%A5n%20nguy%E1%BB%87n%20Tam%20v%E1%BB%8B%20T%E1%BB%95%20s%C6%B0.jpg",
+        "title": "Bàn thờ Đệ tử khấn nguyện Tam vị Tổ sư",
+        "caption": "Bàn thờ Đệ tử khấn nguyện Tam vị Tổ sư",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà cổ Trần Công Vàng.",
-        "year": "Hiện vật"
+        "id": "mon_94_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/B%E1%BA%A3ng%20t%C3%AAn%20di%20t%C3%ADch%20t%E1%BA%A1i%20c%E1%BB%95ng%20%C4%90%E1%BB%81n%20th%E1%BB%9D%20T%E1%BB%95%20ngh%E1%BB%81%20Th%E1%BB%A3%20b%E1%BA%A1c.jpg",
+        "title": "Bảng tên di tích tại cổng Đền thờ Tổ nghề Thợ bạc",
+        "caption": "Bảng tên di tích tại cổng Đền thờ Tổ nghề Thợ bạc",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_94_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+        "title": "Bằng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "caption": "Bằng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_94_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/C%E1%BA%B7p%20t%C6%B0%E1%BB%A3ng%20Ngh%C3%AA%2C%20K%E1%BB%B3%20l%C3%A2n%20%C4%91%C3%A1%20canh%20c%E1%BB%95ng.jpg",
+        "title": "Cặp tượng Nghê, Kỳ lân đá canh cổng",
+        "caption": "Cặp tượng Nghê, Kỳ lân đá canh cổng",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_94_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/Gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20th%E1%BB%9D%20T%E1%BB%95%20ngh%E1%BB%81%20th%E1%BB%A3%20b%E1%BA%A1c.jpg",
+        "title": "Gian chính điện thờ Tổ nghề thợ bạc",
+        "caption": "Gian chính điện thờ Tổ nghề thợ bạc",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_94_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/Gian%20ch%C3%ADnh%20%C4%91i%E1%BB%87n%20v%E1%BB%9Bi%20ho%C3%A0nh%20phi%20v%C3%A0%20b%E1%BA%A3ng%20ch%E1%BB%AF%20H%C3%A1n.jpg",
+        "title": "Gian chính điện với hoành phi và bảng chữ Hán",
+        "caption": "Gian chính điện với hoành phi và bảng chữ Hán",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_94_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20L%E1%BB%87%20Ch%C3%A2u.jpg",
+        "title": "Toàn cảnh mặt tiền Hội quán Lệ Châu",
+        "caption": "Toàn cảnh mặt tiền Hội quán Lệ Châu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_94_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/To%C3%A0n%20c%E1%BA%A3nh%20%C4%91i%E1%BB%87n%20th%E1%BB%9D%20ch%C3%ADnh%20ng%C3%B4i%20%C4%91%E1%BB%81n.jpg",
+        "title": "Toàn cảnh điện thờ chính ngôi đền",
+        "caption": "Toàn cảnh điện thờ chính ngôi đền",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_94_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/Tr%C6%B0%E1%BB%9Bng%20%C4%91%E1%BB%8F%20S%E1%BA%AFc%20phong%20T%E1%BB%95%20s%C6%B0%20th%E1%BB%9Di%20vua%20Kh%E1%BA%A3i%20%C4%90%E1%BB%8Bnh.jpg",
+        "title": "Trướng đỏ Sắc phong Tổ sư thời vua Khải Định",
+        "caption": "Trướng đỏ Sắc phong Tổ sư thời vua Khải Định",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_94_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/T%E1%BB%95ng%20h%E1%BB%A3p%20c%C3%A1c%20b%E1%BB%A9c%20tr%C6%B0%E1%BB%9Bng%20s%E1%BA%AFc%20phong%20T%E1%BB%95%20s%C6%B0%20Kim%20ho%C3%A0n.jpg",
+        "title": "Tổng hợp các bức trướng sắc phong Tổ sư Kim hoàn",
+        "caption": "Tổng hợp các bức trướng sắc phong Tổ sư Kim hoàn",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -45428,7 +50343,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà cổ Trần Văn Hổ phản ánh đời sống của tầng lớp quan lại, địa chủ và gia đình giàu có ở Thủ Dầu Một cuối thế kỷ XIX. Công trình do cụ Trần Văn Lân xây dựng năm 1890 cho gia đình Trần Văn Hổ, tự Đẩu, nguyên Đốc phủ sứ thời Pháp thuộc; ngôi nhà có giá trị lớn về kiến trúc, nghệ thuật trang trí và tư liệu về xã hội Bình Dương xưa.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20%C3%94ng%20Tr%C6%B0%C6%A1ng%20Quang%20Vinh/C%E1%BB%95ng%20g%E1%BA%A1ch%20c%E1%BB%95%20m%C3%A1i%20ng%C3%B3i%20%C4%91%E1%BB%8F.jpg",
       "emCoBiet": [
         "🔎 Gắn với tầng lớp giàu có ở Thủ Dầu Một xưa.",
         "🔎 Có giá trị về kiến trúc nhà ở truyền thống.",
@@ -45571,25 +50486,28 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Nhà cổ Trần Văn Hổ",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà cổ Trần Văn Hổ tại Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_95_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20%C3%94ng%20Tr%C6%B0%C6%A1ng%20Quang%20Vinh/C%E1%BB%95ng%20g%E1%BA%A1ch%20c%E1%BB%95%20m%C3%A1i%20ng%C3%B3i%20%C4%91%E1%BB%8F.jpg",
+        "title": "Cổng gạch cổ mái ngói đỏ",
+        "caption": "Cổng gạch cổ mái ngói đỏ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà cổ Trần Văn Hổ.",
-        "year": "Hiện vật"
+        "id": "mon_95_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20%C3%94ng%20Tr%C6%B0%C6%A1ng%20Quang%20Vinh/C%E1%BB%ADa%20g%E1%BB%97%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20r%E1%BB%93ng%20v%C3%A0%20hoa%20v%C4%83n%20c%E1%BB%95.jpg",
+        "title": "Cửa gỗ chạm khắc rồng và hoa văn cổ",
+        "caption": "Cửa gỗ chạm khắc rồng và hoa văn cổ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_95_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20%C3%94ng%20Tr%C6%B0%C6%A1ng%20Quang%20Vinh/T%C6%B0%E1%BB%9Dng%20g%E1%BA%A1ch%20th%E1%BA%BB%20v%C3%A0%20%C3%B4%20c%E1%BB%ADa%20s%E1%BB%95%20g%E1%BB%97.jpg",
+        "title": "Tường gạch thẻ và ô cửa sổ gỗ",
+        "caption": "Tường gạch thẻ và ô cửa sổ gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -45902,7 +50820,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà hát Thành phố Hồ Chí Minh là công trình kiến trúc tiêu biểu của Sài Gòn thời thuộc địa, phản ánh quá trình hình thành đô thị hiện đại cuối thế kỷ XIX – đầu thế kỷ XX. Công trình có giá trị nổi bật về kiến trúc nghệ thuật, là một trong những biểu tượng kiến trúc trung tâm của Thành phố Hồ Chí Minh.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/M%E1%BA%B7t%20ti%E1%BB%81n%20ng%C3%B4i%20nh%C3%A0%20g%E1%BB%97%20ba%20gian%20l%E1%BB%A3p%20m%C3%A1i%20ng%C3%B3i%20%C4%91%E1%BB%8F.jpg",
       "emCoBiet": [
         "🔎 Xây dựng cuối thế kỷ XIX – đầu thế kỷ XX.",
         "🏛️ Là công trình kiến trúc đô thị thời thuộc địa.",
@@ -46045,25 +50963,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Nhà hát Thành phố Hồ Chí Minh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà hát Thành phố Hồ Chí Minh tại Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_96_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "caption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà hát Thành phố Hồ Chí Minh.",
-        "year": "Hiện vật"
+        "id": "mon_96_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/Chi%20ti%E1%BA%BFt%20kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20n%E1%BB%99i%20th%E1%BA%A5t%20nh%C3%A0%20g%E1%BB%97.jpg",
+        "title": "Chi tiết không gian trưng bày nội thất nhà gỗ",
+        "caption": "Chi tiết không gian trưng bày nội thất nhà gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_96_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/G%C3%B3c%20s%C3%A2n%20b%C3%AAn%20h%C3%B4ng%20nh%C3%A0%20v%E1%BB%9Bi%20gi%E1%BA%BFng%20n%C6%B0%E1%BB%9Bc%20v%C3%A0%20b%E1%BB%A5i%20chu%E1%BB%91i.jpg",
+        "title": "Góc sân bên hông nhà với giếng nước và bụi chuối",
+        "caption": "Góc sân bên hông nhà với giếng nước và bụi chuối",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_96_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20%E1%BA%A9n%20gi%E1%BA%A5u%20c%C3%A1n%20b%E1%BB%99%20d%C6%B0%E1%BB%9Bi%20s%C3%A0n%2C%20v%C3%A1ch%20g%E1%BB%97.jpg",
+        "title": "Hầm bí mật ẩn giấu cán bộ dưới sàn, vách gỗ",
+        "caption": "Hầm bí mật ẩn giấu cán bộ dưới sàn, vách gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_96_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/M%E1%BA%B7t%20ti%E1%BB%81n%20ng%C3%B4i%20nh%C3%A0%20g%E1%BB%97%20ba%20gian%20l%E1%BB%A3p%20m%C3%A1i%20ng%C3%B3i%20%C4%91%E1%BB%8F.jpg",
+        "title": "Mặt tiền ngôi nhà gỗ ba gian lợp mái ngói đỏ",
+        "caption": "Mặt tiền ngôi nhà gỗ ba gian lợp mái ngói đỏ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_96_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/To%C3%A0n%20c%E1%BA%A3nh%20khu%C3%B4n%20vi%C3%AAn%20s%C3%A2n%20v%C3%A0%20Nh%C3%A0%20m%C3%A1%20T%C3%A1m%20Nhung.jpg",
+        "title": "Toàn cảnh khuôn viên sân và Nhà má Tám Nhung",
+        "caption": "Toàn cảnh khuôn viên sân và Nhà má Tám Nhung",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_96_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/T%C6%B0%E1%BB%A3ng%20m%C3%B4%20ph%E1%BB%8Fng%20cu%E1%BB%99c%20trao%20%C4%91%E1%BB%95i%20gi%E1%BB%AFa%20s%C4%A9%20quan%20v%C3%A0%20hai%20c%E1%BB%A5%20gi%C3%A0.jpg",
+        "title": "Tượng mô phỏng cuộc trao đổi giữa sĩ quan và hai cụ già",
+        "caption": "Tượng mô phỏng cuộc trao đổi giữa sĩ quan và hai cụ già",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_96_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/T%C6%B0%E1%BB%A3ng%20ph%C3%B9%20%C4%91i%C3%AAu%20v%C3%A0%20l%C6%B0%20h%C6%B0%C6%A1ng%20tr%C6%B0%E1%BB%9Bc%20di%20t%C3%ADch.jpg",
+        "title": "Tượng phù điêu và lư hương trước di tích",
+        "caption": "Tượng phù điêu và lư hương trước di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_96_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/T%E1%BB%95ng%20h%E1%BB%A3p%20kh%C3%B4ng%20gian%20sinh%20ho%E1%BA%A1t%20v%C3%A0%20v%E1%BA%ADt%20d%E1%BB%A5ng%20b%E1%BA%BFp.jpg",
+        "title": "Tổng hợp không gian sinh hoạt và vật dụng bếp",
+        "caption": "Tổng hợp không gian sinh hoạt và vật dụng bếp",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_96_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/T%E1%BB%95ng%20h%E1%BB%A3p%20n%E1%BB%99i%20th%E1%BA%A5t%20gian%20ch%C3%ADnh%20nh%C3%A0%20m%C3%A1%20T%C3%A1m%20Nhung.jpg",
+        "title": "Tổng hợp nội thất gian chính nhà má Tám Nhung",
+        "caption": "Tổng hợp nội thất gian chính nhà má Tám Nhung",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -46377,7 +51354,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà Lớn Long Sơn gắn với cuộc đời và hoạt động của ông Trần, người sáng lập cộng đồng Long Sơn. Đây vừa là trung tâm tín ngưỡng, vừa là không gian sinh hoạt cộng đồng và nơi lưu giữ nhiều giá trị văn hóa, kiến trúc, đạo đức của cộng đồng Long Sơn. Khu Nhà Lớn được làm chủ yếu bằng gỗ quý và được công nhận là di tích lịch sử – văn hóa cấp quốc gia.",
-      "heroImage": "/assets/images/so-do-kien-truc.jpg",
+      "heroImage": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/Bia%20%C4%91%C3%A1%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20S%E1%BB%9F%20ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
       "emCoBiet": [
         "🔎 Là quần thể tín ngưỡng – cộng đồng ở Long Sơn.",
         "🔎 Gắn với ông Trần và cộng đồng Long Sơn.",
@@ -46520,25 +51497,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Toàn cảnh Nhà Lớn Long Sơn",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà Lớn Long Sơn tại Thôn 5, phường Long Sơn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_97_img_1",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/Bia%20%C4%91%C3%A1%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20S%E1%BB%9F%20ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Bia đá Địa điểm Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh",
+        "caption": "Bia đá Địa điểm Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà Lớn Long Sơn.",
-        "year": "Hiện vật"
+        "id": "mon_97_img_2",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/Bi%E1%BB%83n%20hi%E1%BB%87u%20Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20B%E1%BB%99%20ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng.jpg",
+        "title": "Biển hiệu Nhà lưu niệm Bộ chỉ huy tiền phương",
+        "caption": "Biển hiệu Nhà lưu niệm Bộ chỉ huy tiền phương",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_97_img_3",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/Bi%E1%BB%83n%20t%C3%AAn%20Di%20t%C3%ADch%20S%E1%BB%9F%20ch%E1%BB%89%20huy%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Biển tên Di tích Sở chỉ huy Chiến dịch Hồ Chí Minh",
+        "caption": "Biển tên Di tích Sở chỉ huy Chiến dịch Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_97_img_4",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%C4%83n%20nh%C3%A0%20g%E1%BB%97%20trong%20khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.jpg",
+        "title": "Căn nhà gỗ trong khu di tích lịch sử",
+        "caption": "Căn nhà gỗ trong khu di tích lịch sử",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_97_img_5",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20b%C3%AAn%20trong%20nh%C3%A0%20l%C3%A0m%20vi%E1%BB%87c%2C%20h%E1%BA%A7m%20ch%E1%BB%89%20huy.jpg",
+        "title": "Không gian bên trong nhà làm việc, hầm chỉ huy",
+        "caption": "Không gian bên trong nhà làm việc, hầm chỉ huy",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_97_img_6",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%C3%B4%20h%C3%ACnh%20h%E1%BB%8Dp%20B%E1%BB%99%20ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20trong%20l%C3%A1n%20g%E1%BB%97.jpg",
+        "title": "Mô hình họp Bộ chỉ huy tiền phương trong lán gỗ",
+        "caption": "Mô hình họp Bộ chỉ huy tiền phương trong lán gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_97_img_7",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/Sa%20b%C3%A0n%20m%C3%B4%20ph%E1%BB%8Fng%20cu%E1%BB%99c%20h%E1%BB%8Dp%20B%E1%BB%99%20ch%E1%BB%89%20huy%20Chi%E1%BA%BFn%20d%E1%BB%8Bch.jpg",
+        "title": "Sa bàn mô phỏng cuộc họp Bộ chỉ huy Chiến dịch",
+        "caption": "Sa bàn mô phỏng cuộc họp Bộ chỉ huy Chiến dịch",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_97_img_8",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/%C4%90%C3%A0i%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20S%E1%BB%9F%20ch%E1%BB%89%20huy%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Đài tưởng niệm Sở chỉ huy Chiến dịch Hồ Chí Minh",
+        "caption": "Đài tưởng niệm Sở chỉ huy Chiến dịch Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_97_img_9",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20B%E1%BB%99%20ch%E1%BB%89%20huy%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+        "title": "Ảnh tư liệu Bộ chỉ huy Chiến dịch Hồ Chí Minh",
+        "caption": "Ảnh tư liệu Bộ chỉ huy Chiến dịch Hồ Chí Minh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_97_img_10",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20cu%E1%BB%99c%20h%E1%BB%8Dp%20B%E1%BB%99%20ch%E1%BB%89%20huy%20t%E1%BA%A1i%20c%C4%83n%20c%E1%BB%A9.jpg",
+        "title": "Ảnh tư liệu cuộc họp Bộ chỉ huy tại căn cứ",
+        "caption": "Ảnh tư liệu cuộc họp Bộ chỉ huy tại căn cứ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -46853,7 +51889,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) gắn với lịch sử hình thành và phát triển nghề kim hoàn tại Chợ Lớn. Đây là nơi thờ Tổ nghề, đồng thời là không gian hội họp, tương trợ và duy trì truyền thống nghề nghiệp của những người làm nghề bạc, kim hoàn.",
-      "heroImage": "/assets/images/may-danh-chu-hien-vat.jpg",
+      "heroImage": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/Bi%E1%BB%83n%20hi%E1%BB%87u%20Ph%E1%BB%9F%20B%C3%ACnh%20v%C3%A0%20b%E1%BA%A3ng%20di%20t%C3%ADch.jpg",
       "emCoBiet": [
         "🔎 Gắn với nghề kim hoàn ở Chợ Lớn.",
         "🔎 Là nơi thờ Tổ nghề và sinh hoạt hội nghề.",
@@ -46996,25 +52032,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Toàn cảnh Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) tại Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_98_img_1",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/Bi%E1%BB%83n%20hi%E1%BB%87u%20Ph%E1%BB%9F%20B%C3%ACnh%20v%C3%A0%20b%E1%BA%A3ng%20di%20t%C3%ADch.jpg",
+        "title": "Biển hiệu Phở Bình và bảng di tích",
+        "caption": "Biển hiệu Phở Bình và bảng di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Nhà thờ tổ thợ bạc (Hội quán Lệ Châu).",
-        "year": "Hiện vật"
+        "id": "mon_98_img_2",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/B%E1%BA%A3ng%20ch%C3%A2n%20dung%20B%E1%BB%99%20ph%E1%BA%ADn%20Tr%E1%BB%B1c%20ti%E1%BA%BFp%20Chi%E1%BA%BFn%20%C4%91%E1%BA%A5u.jpg",
+        "title": "Bảng chân dung Bộ phận Trực tiếp Chiến đấu",
+        "caption": "Bảng chân dung Bộ phận Trực tiếp Chiến đấu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_98_img_3",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/B%E1%BA%A3ng%20tr%C6%B0ng%20b%C3%A0y%20M%E1%BB%99t%20s%E1%BB%91%20tr%E1%BA%ADn%20%C4%91%C3%A1nh%20c%E1%BB%A7a%20c%C3%A1c%20%C4%91%E1%BB%99i%20bi%E1%BB%87t%20%C4%91%E1%BB%99ng.jpg",
+        "title": "Bảng trưng bày Một số trận đánh của các đội biệt động",
+        "caption": "Bảng trưng bày Một số trận đánh của các đội biệt động",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_98_img_4",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/B%E1%BA%A3ng%20%E1%BA%A3nh%20c%C3%A1c%20%C4%91%E1%BB%93ng%20ch%C3%AD%20B%E1%BB%99%20ch%E1%BB%89%20huy%20Ph%C3%A2n%20khu%206.jpg",
+        "title": "Bảng ảnh các đồng chí Bộ chỉ huy Phân khu 6",
+        "caption": "Bảng ảnh các đồng chí Bộ chỉ huy Phân khu 6",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_98_img_5",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "caption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_98_img_6",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/B%E1%BB%99%20b%C3%A0n%20gh%E1%BA%BF%20g%E1%BB%97%20t%E1%BA%A1i%20ph%C3%B2ng%20tr%C6%B0ng%20b%C3%A0y%20di%20t%C3%ADch.jpg",
+        "title": "Bộ bàn ghế gỗ tại phòng trưng bày di tích",
+        "caption": "Bộ bàn ghế gỗ tại phòng trưng bày di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_98_img_7",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/Gi%E1%BA%BFng%20tr%E1%BB%9Di%20v%C3%A0%20l%E1%BB%91i%20c%E1%BA%A7u%20thang%20b%C3%AAn%20trong%20di%20t%C3%ADch.jpg",
+        "title": "Giếng trời và lối cầu thang bên trong di tích",
+        "caption": "Giếng trời và lối cầu thang bên trong di tích",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_98_img_8",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/G%C3%B3c%20nh%C3%ACn%20t%E1%BB%95ng%20th%E1%BB%83%20ph%C3%B2ng%20tr%C6%B0ng%20b%C3%A0y%20di%20t%C3%ADch%20Ph%E1%BB%9F%20B%C3%ACnh.jpg",
+        "title": "Góc nhìn tổng thể phòng trưng bày di tích Phở Bình",
+        "caption": "Góc nhìn tổng thể phòng trưng bày di tích Phở Bình",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_98_img_9",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/M%C3%A3ng%20t%C6%B0%E1%BB%9Dng%20tr%C6%B0ng%20b%C3%A0y%20ch%C3%A2n%20dung%20c%C3%A1n%20b%E1%BB%99%20chi%E1%BA%BFn%20s%C4%A9.jpg",
+        "title": "Mãng tường trưng bày chân dung cán bộ chiến sĩ",
+        "caption": "Mãng tường trưng bày chân dung cán bộ chiến sĩ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_98_img_10",
+        "src": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20l%C3%A3nh%20%C4%91%E1%BA%A1o%20B%E1%BB%99%20ch%E1%BB%89%20huy%20Ph%C3%A2n%20khu%206.jpg",
+        "title": "Ảnh tư liệu lãnh đạo Bộ chỉ huy Phân khu 6",
+        "caption": "Ảnh tư liệu lãnh đạo Bộ chỉ huy Phân khu 6",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -47328,7 +52423,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Niết Bàn Tịnh Xá là công trình Phật giáo tiêu biểu của Vũng Tàu, có giá trị về lịch sử phát triển Phật giáo, kiến trúc tôn giáo và nghệ thuật tạo tác tượng, phù điêu. Không gian tịnh xá gắn với cảnh quan núi và biển, tạo nên giá trị văn hóa – tâm linh đặc trưng của Vũng Tàu.",
-      "heroImage": "/assets/images/dinh-doc-lap-front.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/To%C3%A0n%20c%E1%BA%A3nh%20khu%C3%B4n%20vi%C3%AAn%20nh%C3%A0%20c%E1%BB%95%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "🏛️ Là công trình Phật giáo nổi tiếng ở Vũng Tàu.",
         "🏛️ Nổi bật với tượng Phật và nghệ thuật tạo tác.",
@@ -47471,25 +52566,76 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dinh-doc-lap-front.jpg",
-        "title": "Toàn cảnh Niết Bàn Tịnh Xá",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Niết Bàn Tịnh Xá tại Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_99_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20-%20v%C4%83n%20h%C3%B3a.jpg",
+        "title": "Bia công nhận di tích lịch sử - văn hóa",
+        "caption": "Bia công nhận di tích lịch sử - văn hóa",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Niết Bàn Tịnh Xá.",
-        "year": "Hiện vật"
+        "id": "mon_99_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/B%C3%A0n%20th%E1%BB%9D%20gia%20ti%C3%AAn%20v%C3%A0%20%C3%B4%20c%E1%BB%ADa%20v%C3%B2m%20kh%E1%BA%A3m%20x%C3%A0%20c%E1%BB%AB.jpg",
+        "title": "Bàn thờ gia tiên và ô cửa vòm khảm xà cừ",
+        "caption": "Bàn thờ gia tiên và ô cửa vòm khảm xà cừ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_99_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/Ch%C3%A2n%20dung%20c%E1%BB%A5%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95%20(1881%20-%201957).jpg",
+        "title": "Chân dung cụ Trần Văn Hổ (1881 - 1957)",
+        "caption": "Chân dung cụ Trần Văn Hổ (1881 - 1957)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_99_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/C%E1%BA%ADn%20c%E1%BA%A3nh%20m%C3%A1i%20ng%C3%B3i%20v%E1%BA%A3y%20c%C3%A1%20v%C3%A0%20%C4%91%E1%BB%89nh%20b%E1%BB%9D%20m%C3%A1i.jpg",
+        "title": "Cận cảnh mái ngói vảy cá và đỉnh bờ mái",
+        "caption": "Cận cảnh mái ngói vảy cá và đỉnh bờ mái",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_99_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/Gian%20ti%E1%BB%81n%20s%E1%BA%A3nh%20v%E1%BB%9Bi%20hai%20%C4%91%E1%BA%A7u%20nai%20treo%20tr%C3%AAn%20c%E1%BB%99t.jpg",
+        "title": "Gian tiền sảnh với hai đầu nai treo trên cột",
+        "caption": "Gian tiền sảnh với hai đầu nai treo trên cột",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_99_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/Gian%20v%E1%BA%A1c%20ng%E1%BB%A7%2C%20v%C3%A1ch%20g%E1%BB%97%20m%C3%B4ng%20truy%E1%BB%81n%20th%E1%BB%91ng.jpg",
+        "title": "Gian vạc ngủ, vách gỗ mông truyền thống",
+        "caption": "Gian vạc ngủ, vách gỗ mông truyền thống",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_99_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/Khung%20c%E1%BB%ADa%20v%C3%B2m%20gian%20ch%C3%ADnh%20v%C3%A0%20b%E1%BB%99%20b%C3%A0n%20gh%E1%BA%BF%20g%E1%BB%97.jpg",
+        "title": "Khung cửa vòm gian chính và bộ bàn ghế gỗ",
+        "caption": "Khung cửa vòm gian chính và bộ bàn ghế gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_99_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/S%C3%A2n%20tr%C6%B0%E1%BB%9Bc%20nh%C3%A0%20c%E1%BB%95%20v%E1%BB%9Bi%20h%C3%B2n%20b%E1%BB%99%20v%C3%A0%20h%C3%A0ng%20gh%E1%BA%BF%20%C4%91%C3%A1.jpg",
+        "title": "Sân trước nhà cổ với hòn bộ và hàng ghế đá",
+        "caption": "Sân trước nhà cổ với hòn bộ và hàng ghế đá",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_99_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/To%C3%A0n%20c%E1%BA%A3nh%20khu%C3%B4n%20vi%C3%AAn%20nh%C3%A0%20c%E1%BB%95%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh khuôn viên nhà cổ nhìn từ trên cao",
+        "caption": "Toàn cảnh khuôn viên nhà cổ nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -47804,7 +52950,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Núi Châu Thới là danh thắng tự nhiên gắn với lịch sử khai phá và đời sống tín ngưỡng của cư dân vùng Đông Nam Bộ. Núi cùng hệ thống chùa, cảnh quan và không gian văn hóa xung quanh tạo thành một địa điểm có giá trị về thiên nhiên, lịch sử và tâm linh.",
-      "heroImage": "/assets/images/dia-dao-cu-chi.jpg",
+      "heroImage": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/To%C3%A0n%20c%E1%BA%A3nh%20m%C3%A1i%20nh%C3%A0%20c%E1%BB%95%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "📏 Độ cao: 82 m",
         "📏 Diện tích: khoảng 25 ha",
@@ -47947,25 +53093,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-cu-chi.jpg",
-        "title": "Toàn cảnh Núi Châu Thới",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Núi Châu Thới tại Núi Châu Thới, phường Đông Hòa, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_100_img_1",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/B%C3%A0n%20%C4%83n%20g%E1%BB%97%20v%C3%A0%20h%C3%A0ng%20c%E1%BB%99t%20gian%20nh%C3%A0%20ch%C3%ADnh.jpg",
+        "title": "Bàn ăn gỗ và hàng cột gian nhà chính",
+        "caption": "Bàn ăn gỗ và hàng cột gian nhà chính",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Núi Châu Thới.",
-        "year": "Hiện vật"
+        "id": "mon_100_img_2",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/B%E1%BB%A9c%20ho%C3%A0nh%20phi%20ch%E1%BB%AF%20H%C3%A1n%20H%C3%B2a%20Vi%20Qu%C3%BD.jpg",
+        "title": "Bức hoành phi chữ Hán Hòa Vi Quý",
+        "caption": "Bức hoành phi chữ Hán Hòa Vi Quý",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_100_img_3",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/Chi%20ti%E1%BA%BFt%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20g%E1%BB%97%20m%E1%BA%A1%20v%C3%A0ng%20h%C3%ACnh%20chi%E1%BA%BFc%20qu%E1%BA%A1t.jpg",
+        "title": "Chi tiết chạm khắc gỗ mạ vàng hình chiếc quạt",
+        "caption": "Chi tiết chạm khắc gỗ mạ vàng hình chiếc quạt",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_100_img_4",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/C%E1%BB%ADa%20g%E1%BB%97%20b%E1%BB%A9c%20b%C3%A0n%20v%C3%A0%20h%C3%A0ng%20ti%E1%BB%87n%20g%E1%BB%97.jpg",
+        "title": "Cửa gỗ bức bàn và hàng tiện gỗ",
+        "caption": "Cửa gỗ bức bàn và hàng tiện gỗ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_100_img_5",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/D%C3%A3y%20h%C3%A0nh%20lang%20g%E1%BB%97%20v%C3%A0%20c%C3%A1c%20t%E1%BB%A7%20tr%C6%B0ng%20b%C3%A0y%20c%E1%BB%95%20v%E1%BA%ADt.jpg",
+        "title": "Dãy hành lang gỗ và các tủ trưng bày cổ vật",
+        "caption": "Dãy hành lang gỗ và các tủ trưng bày cổ vật",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_100_img_6",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/Gia%20ph%E1%BA%A3%20d%C3%B2ng%20h%E1%BB%8D%20Tr%E1%BA%A7n%20C%C3%B4ng%20v%C3%A0%20t%C6%B0%E1%BB%A3ng%20t%E1%BB%B3%20h%C6%B0u.jpg",
+        "title": "Gia phả dòng họ Trần Công và tượng tỳ hưu",
+        "caption": "Gia phả dòng họ Trần Công và tượng tỳ hưu",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_100_img_7",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/Gian%20th%E1%BB%9D%20v%C3%A0%20khung%20c%E1%BB%ADa%20v%C3%B2m%20g%E1%BB%97%20kh%E1%BA%A3m%20x%C3%A0%20c%E1%BB%AB.jpg",
+        "title": "Gian thờ và khung cửa vòm gỗ khảm xà cừ",
+        "caption": "Gian thờ và khung cửa vòm gỗ khảm xà cừ",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_100_img_8",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/Hi%C3%AAn%20tr%C6%B0%E1%BB%9Bc%20nh%C3%A0%20c%E1%BB%95%20v%C3%A0%20d%C3%A3y%20ch%E1%BA%ADu%20c%C3%A2y%20c%E1%BA%A3nh.jpg",
+        "title": "Hiên trước nhà cổ và dãy chậu cây cảnh",
+        "caption": "Hiên trước nhà cổ và dãy chậu cây cảnh",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_100_img_9",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/Khu%20s%C3%A2n%20tr%C6%B0%E1%BB%9Bc%20v%C3%A0%20m%C3%A1i%20ng%C3%B3i%20%C3%A2m%20d%C6%B0%C6%A1ng%20(g%C3%B3c%20cao).jpg",
+        "title": "Khu sân trước và mái ngói âm dương (góc cao)",
+        "caption": "Khu sân trước và mái ngói âm dương (góc cao)",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_100_img_10",
+        "src": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/To%C3%A0n%20c%E1%BA%A3nh%20m%C3%A1i%20nh%C3%A0%20c%E1%BB%95%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh mái nhà cổ nhìn từ trên cao",
+        "caption": "Toàn cảnh mái nhà cổ nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -48279,7 +53484,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Thích Ca Phật Đài là quần thể kiến trúc Phật giáo nổi tiếng của Vũng Tàu, gắn với sự phát triển của Phật giáo Việt Nam thế kỷ XX. Di tích kết hợp cảnh quan núi, kiến trúc tôn giáo và các tượng Phật lớn, có giá trị về nghệ thuật, tôn giáo và du lịch văn hóa.",
-      "heroImage": "/assets/images/ben-nha-rong.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/C%E1%BB%95ng%20v%C3%A0o%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
       "emCoBiet": [
         "🔎 Là quần thể Phật giáo trên Núi Lớn.",
         "🏛️ Nổi bật với tượng Phật Thích Ca.",
@@ -48422,25 +53627,76 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/ben-nha-rong.jpg",
-        "title": "Toàn cảnh Thích Ca Phật Đài",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Thích Ca Phật Đài tại Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_101_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/Chi%20ti%E1%BA%BFt%20trang%20tr%C3%AD%20g%E1%BB%91m%20s%E1%BB%A9%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
+        "title": "Chi tiết trang trí gốm sứ trên mái Đình Phú Long",
+        "caption": "Chi tiết trang trí gốm sứ trên mái Đình Phú Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Thích Ca Phật Đài.",
-        "year": "Hiện vật"
+        "id": "mon_101_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/Chi%20ti%E1%BA%BFt%20trang%20tr%C3%AD%20g%E1%BB%91m%20s%E1%BB%A9%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh.jpg",
+        "title": "Chi tiết trang trí gốm sứ trên mái Đình",
+        "caption": "Chi tiết trang trí gốm sứ trên mái Đình",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_101_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/C%C3%B4ng%20tr%C3%ACnh%20ph%E1%BB%A5%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
+        "title": "Công trình phụ tại Đình Phú Long",
+        "caption": "Công trình phụ tại Đình Phú Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_101_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/C%E1%BB%95ng%20v%C3%A0o%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
+        "title": "Cổng vào Đình Phú Long",
+        "caption": "Cổng vào Đình Phú Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_101_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/Ki%E1%BA%BFn%20tr%C3%BAc%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long%20nh%C3%ACn%20t%E1%BB%AB%20b%C3%AAn%20h%C3%B4ng.jpg",
+        "title": "Kiến trúc Đình Phú Long nhìn từ bên hông",
+        "caption": "Kiến trúc Đình Phú Long nhìn từ bên hông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_101_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/M%E1%BA%B7t%20ti%E1%BB%81n%20ch%C3%A1nh%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
+        "title": "Mặt tiền chánh điện Đình Phú Long",
+        "caption": "Mặt tiền chánh điện Đình Phú Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_101_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/M%E1%BA%B7t%20ti%E1%BB%81n%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
+        "title": "Mặt tiền Đình Phú Long",
+        "caption": "Mặt tiền Đình Phú Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_101_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/Ngh%E1%BB%87%20thu%E1%BA%ADt%20trang%20tr%C3%AD%20g%E1%BB%91m%20s%E1%BB%A9%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
+        "title": "Nghệ thuật trang trí gốm sứ trên mái Đình Phú Long",
+        "caption": "Nghệ thuật trang trí gốm sứ trên mái Đình Phú Long",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_101_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh Đình Phú Long nhìn từ trên cao",
+        "caption": "Toàn cảnh Đình Phú Long nhìn từ trên cao",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -48755,7 +54011,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Tòa án nhân dân Thành phố Hồ Chí Minh là công trình kiến trúc tiêu biểu được xây dựng trong thời kỳ thuộc địa, phản ánh lịch sử hình thành hệ thống thiết chế tư pháp và kiến trúc công sở của Sài Gòn. Công trình có giá trị đặc biệt về kiến trúc nghệ thuật và lịch sử đô thị.",
-      "heroImage": "/assets/images/dia-dao-long-phuoc.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/C%E1%BB%95ng%20ph%E1%BB%A5%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
       "emCoBiet": [
         "🏛️ Là công trình công sở thời thuộc địa.",
         "🔎 Mang phong cách kiến trúc châu Âu cuối thế kỷ XIX – đầu XX.",
@@ -48898,25 +54154,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/dia-dao-long-phuoc.jpg",
-        "title": "Toàn cảnh Tòa án nhân dân Thành phố Hồ Chí Minh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Tòa án nhân dân Thành phố Hồ Chí Minh tại Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_102_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/Bia%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+        "title": "Bia xếp hạng Di tích quốc gia Đình Tân An",
+        "caption": "Bia xếp hạng Di tích quốc gia Đình Tân An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Tòa án nhân dân Thành phố Hồ Chí Minh.",
-        "year": "Hiện vật"
+        "id": "mon_102_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/B%E1%BA%A3ng%20t%C3%B3m%20t%E1%BA%AFt%20Di%20t%C3%ADch%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+        "title": "Bảng tóm tắt Di tích Đình Tân An",
+        "caption": "Bảng tóm tắt Di tích Đình Tân An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_102_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/C%E1%BB%95ng%20ph%E1%BB%A5%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+        "title": "Cổng phụ tại Đình Tân An",
+        "caption": "Cổng phụ tại Đình Tân An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_102_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/C%E1%BB%95ng%20%C4%91%C3%ACnh%20c%E1%BB%95%20%C4%91%C6%B0%E1%BB%A3c%20r%E1%BB%85%20c%C3%A2y%20%C4%91a%20bao%20ph%E1%BB%A7%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+        "title": "Cổng đình cổ được rễ cây đa bao phủ tại Đình Tân An",
+        "caption": "Cổng đình cổ được rễ cây đa bao phủ tại Đình Tân An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_102_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/C%E1%BB%95ng%20%C4%90%C3%ACnh%20T%C3%A2n%20An%20%E2%80%93%20B%E1%BA%BFn%20Th%E1%BA%BF.jpg",
+        "title": "Cổng Đình Tân An – Bến Thế",
+        "caption": "Cổng Đình Tân An – Bến Thế",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_102_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/Kh%C3%B4ng%20gian%20b%C3%AAn%20trong%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+        "title": "Không gian bên trong Đình Tân An",
+        "caption": "Không gian bên trong Đình Tân An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_102_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/Kh%C3%B4ng%20gian%20ki%E1%BA%BFn%20tr%C3%BAc%20v%C3%A0%20th%E1%BB%9D%20t%E1%BB%B1%20b%C3%AAn%20trong%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+        "title": "Không gian kiến trúc và thờ tự bên trong Đình Tân An",
+        "caption": "Không gian kiến trúc và thờ tự bên trong Đình Tân An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_102_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/Ki%E1%BA%BFn%20tr%C3%BAc%20%C4%90%C3%ACnh%20T%C3%A2n%20An%20nh%C3%ACn%20t%E1%BB%AB%20b%C3%AAn%20h%C3%B4ng.jpg",
+        "title": "Kiến trúc Đình Tân An nhìn từ bên hông",
+        "caption": "Kiến trúc Đình Tân An nhìn từ bên hông",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_102_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/Trang%20tr%C3%AD%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+        "title": "Trang trí trên mái Đình Tân An",
+        "caption": "Trang trí trên mái Đình Tân An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_102_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/Tr%E1%BB%91ng%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+        "title": "Trống tại Đình Tân An",
+        "caption": "Trống tại Đình Tân An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -49229,7 +54544,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh, theo tên chính thức trong file là Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh, là công trình công quyền tiêu biểu của Sài Gòn – TP.HCM, có giá trị về lịch sử đô thị, kiến trúc và quá trình hình thành trung tâm hành chính của Thành phố.",
-      "heroImage": "/assets/images/xe-tang-390-cong-dinh.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/C%E1%BB%95ng%20tam%20quan%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
       "emCoBiet": [
         "🏛️ Là công trình công quyền tiêu biểu của Sài Gòn.",
         "📅 Gắn với lịch sử hình thành trung tâm hành chính thành phố.",
@@ -49372,25 +54687,84 @@ export const allMonumentsList = [
     ],
     "gallery": [
       {
-        "id": 1,
-        "src": "/assets/images/xe-tang-390-cong-dinh.jpg",
-        "title": "Toàn cảnh Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
-        "caption": "Không gian kiến trúc và cảnh quan di tích Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh tại Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM..",
-        "year": "Tư liệu"
+        "id": "mon_103_img_1",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Bia công nhận Di tích quốc gia Đình Dĩ An",
+        "caption": "Bia công nhận Di tích quốc gia Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 2,
-        "src": "/assets/images/so-do-kien-truc.jpg",
-        "title": "Hiện vật & Tư liệu lịch sử",
-        "caption": "Hình ảnh tư liệu hiện vật gắn liền với Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh.",
-        "year": "Hiện vật"
+        "id": "mon_103_img_2",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Bia%20ghi%20danh%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Bia ghi danh tại Đình Dĩ An",
+        "caption": "Bia ghi danh tại Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       },
       {
-        "id": 3,
-        "src": "/assets/images/may-danh-chu-hien-vat.jpg",
-        "title": "Tư liệu sự kiện lịch sử",
-        "caption": "Các dấu mốc và hiện vật lịch sử tại di tích.",
-        "year": "Lịch sử"
+        "id": "mon_103_img_3",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Bia%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Bia xếp hạng Di tích quốc gia Đình Dĩ An",
+        "caption": "Bia xếp hạng Di tích quốc gia Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_103_img_4",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20D%C4%A9%20An%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20tr%C6%B0%E1%BB%9Bc.jpg",
+        "title": "Chánh điện Đình Dĩ An nhìn từ phía trước",
+        "caption": "Chánh điện Đình Dĩ An nhìn từ phía trước",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_103_img_5",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Chánh điện Đình Dĩ An",
+        "caption": "Chánh điện Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_103_img_6",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/C%E1%BB%95ng%20tam%20quan%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Cổng tam quan Đình Dĩ An",
+        "caption": "Cổng tam quan Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_103_img_7",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Kh%C3%B4ng%20gian%20n%E1%BB%99i%20th%E1%BA%A5t%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Không gian nội thất Đình Dĩ An",
+        "caption": "Không gian nội thất Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_103_img_8",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20b%C3%AAn%20trong%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Không gian thờ tự bên trong Đình Dĩ An",
+        "caption": "Không gian thờ tự bên trong Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_103_img_9",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20trong%20khu%C3%B4n%20vi%C3%AAn%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Không gian thờ tự trong khuôn viên Đình Dĩ An",
+        "caption": "Không gian thờ tự trong khuôn viên Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_103_img_10",
+        "src": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Tranh%20trang%20tr%C3%AD%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+        "title": "Tranh trang trí tại Đình Dĩ An",
+        "caption": "Tranh trang trí tại Đình Dĩ An",
+        "category": "Tư liệu ảnh di tích",
+        "year": "Tư liệu thực địa"
       }
     ],
     "audioScript": [
@@ -49647,13 +55021,18 @@ export const allMonumentsList = [
   }
 ];
 
-export const getMonumentByIdOrStt = (idOrStt) => {
-  if (!idOrStt) return allMonumentsList[0];
-  const num = parseInt(idOrStt);
-  if (!isNaN(num)) {
-    const found = allMonumentsList.find(m => m.stt === num);
+export const monumentsCount = allMonumentsList.length;
+
+export function getMonumentByIdOrStt(identifier) {
+  if (!identifier && identifier !== 0) return allMonumentsList[0];
+  const numericId = parseInt(identifier);
+  if (!isNaN(numericId)) {
+    const found = allMonumentsList.find(m => m.stt === numericId);
     if (found) return found;
   }
-  const foundById = allMonumentsList.find(m => m.id === idOrStt || m.slug === idOrStt);
-  return foundById || allMonumentsList[0];
-};
+  const strId = String(identifier).toLowerCase();
+  const foundStr = allMonumentsList.find(m => m.id === strId || m.stt.toString() === strId);
+  return foundStr || allMonumentsList[0];
+}
+
+export default allMonumentsList;
