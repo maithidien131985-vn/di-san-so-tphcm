@@ -25,6 +25,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { allMonumentsList } from '../data/allMonumentsData';
+import { speakVietnamese, stopVietnameseSpeech } from '../utils/vietnameseVoice';
 
 export default function HeritageAIChatbot({
   currentMonumentStt = 1,
@@ -361,32 +362,20 @@ export default function HeritageAIChatbot({
     }, 450);
   };
 
-  // Text-To-Speech
+  // Text-To-Speech Tiếng Việt Chuẩn Tự Nhiên
   const handleSpeak = (text) => {
-    if (!('speechSynthesis' in window)) {
-      alert('Trình duyệt của bạn chưa hỗ trợ tính năng đọc giọng nói.');
-      return;
-    }
-
     if (isSpeaking) {
-      window.speechSynthesis.cancel();
+      stopVietnameseSpeech();
       setIsSpeaking(false);
       return;
     }
 
-    window.speechSynthesis.cancel();
-    // Clean markdown symbols for cleaner speech
-    const cleanSpeech = text.replace(/[*#>`_-]/g, '').replace(/https?:\/\/\S+/g, '');
-    const utterance = new SpeechSynthesisUtterance(cleanSpeech);
-    utterance.lang = 'vi-VN';
-    utterance.rate = 1.0;
-    utterance.pitch = 1.0;
-
-    utterance.onend = () => setIsSpeaking(false);
-    utterance.onerror = () => setIsSpeaking(false);
-
-    setIsSpeaking(true);
-    window.speechSynthesis.speak(utterance);
+    speakVietnamese(text, {
+      rate: 1.0,
+      onStart: () => setIsSpeaking(true),
+      onEnd: () => setIsSpeaking(false),
+      onError: () => setIsSpeaking(false)
+    });
   };
 
   // Copy text to clipboard
@@ -399,7 +388,7 @@ export default function HeritageAIChatbot({
   // Reset / Clear chat
   const handleReset = () => {
     if (isSpeaking) {
-      window.speechSynthesis.cancel();
+      stopVietnameseSpeech();
       setIsSpeaking(false);
     }
     setMessages([

@@ -12,6 +12,7 @@ import {
   Sparkles,
   Download
 } from 'lucide-react';
+import { speakVietnamese, stopVietnameseSpeech } from '../utils/vietnameseVoice';
 
 export default function AudioNarratorModal({ 
   isOpen, 
@@ -31,12 +32,8 @@ export default function AudioNarratorModal({
 
   // Audio refs
   const studioAudioRef = useRef(null);
-  const synthRef = useRef(null);
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      synthRef.current = window.speechSynthesis;
-    }
     setTtsEngine(isDinhDocLap ? 'studio' : 'system');
 
     return () => {
@@ -48,9 +45,7 @@ export default function AudioNarratorModal({
     if (studioAudioRef.current) {
       studioAudioRef.current.pause();
     }
-    if (synthRef.current) {
-      synthRef.current.cancel();
-    }
+    stopVietnameseSpeech();
     setIsPlaying(false);
   };
 
@@ -105,31 +100,39 @@ export default function AudioNarratorModal({
     stopAllAudio();
     if (!audioScript || !audioScript[index]) return;
 
-    setIsPlaying(true);
-
     if (ttsEngine === 'studio' && isDinhDocLap) {
       if (studioAudioRef.current) {
         studioAudioRef.current.playbackRate = rate;
-        studioAudioRef.current.play().catch(err => console.warn('Studio audio err:', err));
+        studioAudioRef.current.play()
+          .then(() => setIsPlaying(true))
+          .catch(err => {
+            console.warn('Studio audio err, fallback to VN speech:', err);
+            speakWithVietnameseVoice(index);
+          });
       }
     } else {
-      if (!synthRef.current) return;
-      const textToSpeak = `${audioScript[index].title}. ${audioScript[index].text}`;
-      const utterance = new SpeechSynthesisUtterance(textToSpeak);
-      utterance.lang = 'vi-VN';
-      utterance.rate = rate;
+      speakWithVietnameseVoice(index);
+    }
+  };
 
-      utterance.onend = () => {
+  const speakWithVietnameseVoice = (index) => {
+    if (!audioScript || !audioScript[index]) return;
+    const textToSpeak = `${audioScript[index].title}. ${audioScript[index].text}`;
+
+    speakVietnamese(textToSpeak, {
+      rate: rate,
+      onStart: () => setIsPlaying(true),
+      onEnd: () => {
         if (index < audioScript.length - 1) {
-          setCurrentSectionIndex(index + 1);
-          speakSection(index + 1);
+          const nextIndex = index + 1;
+          setCurrentSectionIndex(nextIndex);
+          speakSection(nextIndex);
         } else {
           setIsPlaying(false);
         }
-      };
-
-      synthRef.current.speak(utterance);
-    }
+      },
+      onError: () => setIsPlaying(false)
+    });
   };
 
   const handleTogglePlay = () => {
