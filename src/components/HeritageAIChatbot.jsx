@@ -7,8 +7,6 @@ import {
   X, 
   Minimize2, 
   Maximize2, 
-  Volume2, 
-  VolumeX, 
   Copy, 
   Check, 
   RefreshCw, 
@@ -25,7 +23,6 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { allMonumentsList } from '../data/allMonumentsData';
-import { speakVietnamese, stopVietnameseSpeech } from '../utils/vietnameseVoice';
 
 export default function HeritageAIChatbot({
   currentMonumentStt = 1,
@@ -39,18 +36,10 @@ export default function HeritageAIChatbot({
   const [inputMessage, setInputMessage] = useState('');
   const [isThinking, setIsThinking] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState(null);
-  const [speakingMsgIndex, setSpeakingMsgIndex] = useState(null);
   const [hasUnread, setHasUnread] = useState(true);
 
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
-
-  // Cleanup speech synthesis on unmount
-  useEffect(() => {
-    return () => {
-      stopVietnameseSpeech();
-    };
-  }, []);
 
   // Current monument info if in detail mode
   const currentMonument = useMemo(() => {
@@ -369,25 +358,6 @@ export default function HeritageAIChatbot({
     }, 450);
   };
 
-  // Text-To-Speech Tiếng Việt Chuẩn Tự Nhiên
-  const handleSpeak = (text, index) => {
-    if (speakingMsgIndex === index) {
-      stopVietnameseSpeech();
-      setSpeakingMsgIndex(null);
-      return;
-    }
-
-    setSpeakingMsgIndex(index);
-
-    speakVietnamese(text, {
-      rate: 1.0,
-      onStart: () => setSpeakingMsgIndex(index),
-      onEnd: () => setSpeakingMsgIndex(null),
-      onError: () => setSpeakingMsgIndex(null),
-      onNoVoice: () => setSpeakingMsgIndex(null)
-    });
-  };
-
   // Copy text to clipboard
   const handleCopy = (text, index) => {
     navigator.clipboard.writeText(text);
@@ -397,8 +367,6 @@ export default function HeritageAIChatbot({
 
   // Reset / Clear chat
   const handleReset = () => {
-    stopVietnameseSpeech();
-    setSpeakingMsgIndex(null);
     setMessages([
       {
         id: `welcome_new_${Date.now()}`,
@@ -580,39 +548,18 @@ export default function HeritageAIChatbot({
                     </div>
                   )}
 
-                  {/* AI Message Action Buttons: Read Voice & Copy */}
+                  {/* AI Message Action Buttons: Copy */}
                   {msg.sender === 'ai' && (
                     <div className="flex items-center justify-between pt-1 text-[11px] text-stone-400">
                       <span className="text-[9px]">Trợ lý Di Sản AI</span>
-                      <div className="flex items-center gap-2">
-                        <button
-                          onClick={() => handleSpeak(msg.text, index)}
-                          className={`cursor-pointer flex items-center gap-1 transition-colors ${
-                            speakingMsgIndex === index ? 'text-[#8B1417] font-bold' : 'hover:text-[#8B1417]'
-                          }`}
-                          title="Đọc văn bản bằng tiếng Việt (vi-VN)"
-                        >
-                          {speakingMsgIndex === index ? (
-                            <>
-                              <VolumeX className="w-3.5 h-3.5 text-[#8B1417] animate-pulse" />
-                              <span className="text-[10px] text-[#8B1417]">Dừng đọc</span>
-                            </>
-                          ) : (
-                            <>
-                              <Volume2 className="w-3.5 h-3.5" />
-                              <span className="text-[10px]">Đọc (vi-VN)</span>
-                            </>
-                          )}
-                        </button>
-                        <button
-                          onClick={() => handleCopy(msg.text, index)}
-                          className="hover:text-[#8B1417] cursor-pointer flex items-center gap-1 transition-colors"
-                          title="Sao chép câu trả lời"
-                        >
-                          {copiedIndex === index ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                          <span className="text-[10px]">{copiedIndex === index ? 'Đã chép' : 'Chép'}</span>
-                        </button>
-                      </div>
+                      <button
+                        onClick={() => handleCopy(msg.text, index)}
+                        className="hover:text-[#8B1417] cursor-pointer flex items-center gap-1 transition-colors"
+                        title="Sao chép câu trả lời"
+                      >
+                        {copiedIndex === index ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                        <span className="text-[10px]">{copiedIndex === index ? 'Đã sao chép' : 'Sao chép'}</span>
+                      </button>
                     </div>
                   )}
                 </div>
