@@ -27,6 +27,7 @@ import MonumentsExplorerModal from './components/MonumentsExplorerModal';
 import MonumentSwitcherBar from './components/MonumentSwitcherBar';
 import ScrollProgressBar from './components/ScrollProgressBar';
 import ScrollReveal from './components/ScrollReveal';
+import HeritageAIChatbot from './components/HeritageAIChatbot';
 import Footer from './components/Footer';
 import { allMonumentsList, getMonumentByIdOrStt } from './data/allMonumentsData';
 
@@ -669,6 +670,15 @@ export default function App() {
         onApproveContribution={handleApproveContribution}
         onRejectContribution={handleRejectContribution}
         onDeleteContribution={handleDeleteContribution}
+      />
+
+      {/* Global AI Heritage Chatbot Widget (Trợ Lý Di Sản AI - Xuất hiện toàn trang & 103 trang con) */}
+      <HeritageAIChatbot
+        currentMonumentStt={currentStt}
+        viewMode={viewMode}
+        onSelectMonument={(stt) => handleSelectMonument(stt)}
+        onOpenExplorer={() => setExplorerModalOpen(true)}
+        onOpenMyMap={() => setMyMapModalOpen(true)}
       />
     </div>
   );
