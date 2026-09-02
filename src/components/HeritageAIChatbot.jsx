@@ -39,11 +39,18 @@ export default function HeritageAIChatbot({
   const [inputMessage, setInputMessage] = useState('');
   const [isThinking, setIsThinking] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState(null);
-  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [speakingMsgIndex, setSpeakingMsgIndex] = useState(null);
   const [hasUnread, setHasUnread] = useState(true);
 
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
+
+  // Cleanup speech synthesis on unmount
+  useEffect(() => {
+    return () => {
+      stopVietnameseSpeech();
+    };
+  }, []);
 
   // Current monument info if in detail mode
   const currentMonument = useMemo(() => {
@@ -363,18 +370,21 @@ export default function HeritageAIChatbot({
   };
 
   // Text-To-Speech Tiếng Việt Chuẩn Tự Nhiên
-  const handleSpeak = (text) => {
-    if (isSpeaking) {
+  const handleSpeak = (text, index) => {
+    if (speakingMsgIndex === index) {
       stopVietnameseSpeech();
-      setIsSpeaking(false);
+      setSpeakingMsgIndex(null);
       return;
     }
 
+    setSpeakingMsgIndex(index);
+
     speakVietnamese(text, {
       rate: 1.0,
-      onStart: () => setIsSpeaking(true),
-      onEnd: () => setIsSpeaking(false),
-      onError: () => setIsSpeaking(false)
+      onStart: () => setSpeakingMsgIndex(index),
+      onEnd: () => setSpeakingMsgIndex(null),
+      onError: () => setSpeakingMsgIndex(null),
+      onNoVoice: () => setSpeakingMsgIndex(null)
     });
   };
 
@@ -387,10 +397,8 @@ export default function HeritageAIChatbot({
 
   // Reset / Clear chat
   const handleReset = () => {
-    if (isSpeaking) {
-      stopVietnameseSpeech();
-      setIsSpeaking(false);
-    }
+    stopVietnameseSpeech();
+    setSpeakingMsgIndex(null);
     setMessages([
       {
         id: `welcome_new_${Date.now()}`,
@@ -578,12 +586,23 @@ export default function HeritageAIChatbot({
                       <span className="text-[9px]">Trợ lý Di Sản AI</span>
                       <div className="flex items-center gap-2">
                         <button
-                          onClick={() => handleSpeak(msg.text)}
-                          className="hover:text-[#8B1417] cursor-pointer flex items-center gap-1 transition-colors"
-                          title="Đọc nội dung này"
+                          onClick={() => handleSpeak(msg.text, index)}
+                          className={`cursor-pointer flex items-center gap-1 transition-colors ${
+                            speakingMsgIndex === index ? 'text-[#8B1417] font-bold' : 'hover:text-[#8B1417]'
+                          }`}
+                          title="Đọc văn bản bằng tiếng Việt (vi-VN)"
                         >
-                          {isSpeaking ? <VolumeX className="w-3.5 h-3.5 text-[#8B1417]" /> : <Volume2 className="w-3.5 h-3.5" />}
-                          <span className="text-[10px]">{isSpeaking ? 'Dừng đọc' : 'Đọc'}</span>
+                          {speakingMsgIndex === index ? (
+                            <>
+                              <VolumeX className="w-3.5 h-3.5 text-[#8B1417] animate-pulse" />
+                              <span className="text-[10px] text-[#8B1417]">Dừng đọc</span>
+                            </>
+                          ) : (
+                            <>
+                              <Volume2 className="w-3.5 h-3.5" />
+                              <span className="text-[10px]">Đọc (vi-VN)</span>
+                            </>
+                          )}
                         </button>
                         <button
                           onClick={() => handleCopy(msg.text, index)}
