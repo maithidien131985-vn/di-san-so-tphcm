@@ -6,8 +6,7 @@ import QuickActionCards from './components/QuickActionCards';
 import MonumentMediaAndLocationSection from './components/MonumentMediaAndLocationSection';
 import HistorySection from './components/HistorySection';
 import InfoSidebar from './components/InfoSidebar';
-import FlipCardGrid from './components/FlipCardGrid';
-import StatsCounterSection from './components/StatsCounterSection';
+import MonumentInteractiveMiniGame from './components/MonumentInteractiveMiniGame';
 import ThreeKeyHighlightsSection from './components/ThreeKeyHighlightsSection';
 import InvestigationSection from './components/InvestigationSection';
 import NextMonumentSection from './components/NextMonumentSection';
@@ -514,12 +513,9 @@ export default function App() {
               </ScrollReveal>
             </div>
 
-            {/* 5. Stats Counter Section */}
-            <StatsCounterSection />
-
-            {/* 6. Khám Phá Di Tích Qua 6 Môn Học */}
-            <FlipCardGrid
-              subjects={data.subjects6}
+            {/* 5. Trò Chơi Nhỏ Tương Tác: Thử thách đố vui & Chinh phục huy hiệu sau khi xem Video / Audio */}
+            <MonumentInteractiveMiniGame
+              quiz={data.investigation?.quiz}
               monumentName={data.info.name}
             />
 
