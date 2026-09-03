@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Gamepad2, 
   Trophy, 
@@ -13,9 +13,165 @@ import {
   BookOpen, 
   Share2, 
   Star,
-  Check
+  Check,
+  Volume2,
+  VolumeX,
+  Music
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
+
+// ==============================================================================
+// WEB AUDIO SOUND SYNTHESIZER (ÂM THANH & HIỆU ỨNG NHẠC TRÒ CHƠI NGUYÊN BẢN)
+// ==============================================================================
+class GameAudioEngine {
+  constructor() {
+    this.ctx = null;
+    this.soundEnabled = true;
+  }
+
+  init() {
+    if (!this.ctx && typeof window !== 'undefined') {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtx) this.ctx = new AudioCtx();
+    }
+    if (this.ctx && this.ctx.state === 'suspended') {
+      this.ctx.resume();
+    }
+  }
+
+  // Âm thanh khi trả lời Đúng: Hợp âm chuông vàng (Major Arpeggio Chime)
+  playCorrect() {
+    if (!this.soundEnabled) return;
+    this.init();
+    if (!this.ctx) return;
+
+    const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
+    const now = this.ctx.currentTime;
+
+    notes.forEach((freq, i) => {
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, now + i * 0.07);
+
+      gain.gain.setValueAtTime(0.001, now + i * 0.07);
+      gain.gain.exponentialRampToValueAtTime(0.2, now + i * 0.07 + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.07 + 0.35);
+
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+
+      osc.start(now + i * 0.07);
+      osc.stop(now + i * 0.07 + 0.38);
+    });
+  }
+
+  // Âm thanh khi trả lời Sai: Âm trầm nhẹ nhàng (Gentle low thud)
+  playWrong() {
+    if (!this.soundEnabled) return;
+    this.init();
+    if (!this.ctx) return;
+
+    const now = this.ctx.currentTime;
+    const osc = this.ctx.createOscillator();
+    const gain = this.ctx.createGain();
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(220, now);
+    osc.frequency.linearRampToValueAtTime(140, now + 0.22);
+
+    gain.gain.setValueAtTime(0.12, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.28);
+
+    osc.connect(gain);
+    gain.connect(this.ctx.destination);
+
+    osc.start(now);
+    osc.stop(now + 0.3);
+  }
+
+  // Âm thanh khi đạt chuỗi Combo: Âm vút cao sôi động (Rising streak pulse)
+  playStreak() {
+    if (!this.soundEnabled) return;
+    this.init();
+    if (!this.ctx) return;
+
+    const now = this.ctx.currentTime;
+    const osc = this.ctx.createOscillator();
+    const gain = this.ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(440, now);
+    osc.frequency.exponentialRampToValueAtTime(1320, now + 0.25);
+
+    gain.gain.setValueAtTime(0.001, now);
+    gain.gain.linearRampToValueAtTime(0.22, now + 0.04);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+
+    osc.connect(gain);
+    gain.connect(this.ctx.destination);
+
+    osc.start(now);
+    osc.stop(now + 0.32);
+  }
+
+  // Nhạc kèn chiến thắng Vinh Danh (Victory Fanfare Celebration)
+  playFanfare() {
+    if (!this.soundEnabled) return;
+    this.init();
+    if (!this.ctx) return;
+
+    const chords = [
+      { notes: [523.25, 659.25, 783.99], time: 0, dur: 0.18 },
+      { notes: [523.25, 659.25, 783.99], time: 0.2, dur: 0.18 },
+      { notes: [523.25, 659.25, 783.99], time: 0.4, dur: 0.18 },
+      { notes: [698.46, 880.00, 1046.50], time: 0.62, dur: 0.55 }
+    ];
+
+    const now = this.ctx.currentTime;
+    chords.forEach(c => {
+      c.notes.forEach(freq => {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, now + c.time);
+
+        gain.gain.setValueAtTime(0.001, now + c.time);
+        gain.gain.linearRampToValueAtTime(0.18, now + c.time + 0.03);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + c.time + c.dur);
+
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+
+        osc.start(now + c.time);
+        osc.stop(now + c.time + c.dur + 0.05);
+      });
+    });
+  }
+
+  // Âm thanh khi chạm nút (Tap click)
+  playTap() {
+    if (!this.soundEnabled) return;
+    this.init();
+    if (!this.ctx) return;
+
+    const now = this.ctx.currentTime;
+    const osc = this.ctx.createOscillator();
+    const gain = this.ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(800, now);
+    osc.frequency.exponentialRampToValueAtTime(400, now + 0.04);
+
+    gain.gain.setValueAtTime(0.08, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+
+    osc.connect(gain);
+    gain.connect(this.ctx.destination);
+
+    osc.start(now);
+    osc.stop(now + 0.06);
+  }
+}
+
+const gameAudio = new GameAudioEngine();
 
 export default function MonumentInteractiveMiniGame({
   quiz = [],
@@ -76,6 +232,12 @@ export default function MonumentInteractiveMiniGame({
   const [isGameOver, setIsGameOver] = useState(false);
   const [historyAnswers, setHistoryAnswers] = useState([]);
   const [copiedLink, setCopiedLink] = useState(false);
+  const [soundOn, setSoundOn] = useState(true);
+
+  // Sync sound setting with audio engine
+  useEffect(() => {
+    gameAudio.soundEnabled = soundOn;
+  }, [soundOn]);
 
   // Reset state when monumentName or quiz changes
   useEffect(() => {
@@ -99,8 +261,16 @@ export default function MonumentInteractiveMiniGame({
       newStreak = streak + 1;
       setStreak(newStreak);
       if (newStreak > maxStreak) setMaxStreak(newStreak);
+
+      // Play sound
+      if (newStreak > 1) {
+        gameAudio.playStreak();
+      } else {
+        gameAudio.playCorrect();
+      }
     } else {
       setStreak(0);
+      gameAudio.playWrong();
     }
 
     setHistoryAnswers(prev => [
@@ -115,16 +285,19 @@ export default function MonumentInteractiveMiniGame({
   };
 
   const handleNextQuestion = () => {
+    gameAudio.playTap();
     if (currentIdx < questions.length - 1) {
       setCurrentIdx(prev => prev + 1);
       setSelectedOption(null);
       setIsAnswered(false);
     } else {
       setIsGameOver(true);
+      gameAudio.playFanfare();
     }
   };
 
   const handleRestart = () => {
+    gameAudio.playTap();
     setCurrentIdx(0);
     setSelectedOption(null);
     setIsAnswered(false);
@@ -133,6 +306,13 @@ export default function MonumentInteractiveMiniGame({
     setMaxStreak(0);
     setIsGameOver(false);
     setHistoryAnswers([]);
+  };
+
+  const toggleSound = () => {
+    const next = !soundOn;
+    setSoundOn(next);
+    gameAudio.soundEnabled = next;
+    if (next) gameAudio.playTap();
   };
 
   // Badge calculation
@@ -175,7 +355,7 @@ export default function MonumentInteractiveMiniGame({
   }
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 select-none">
       <ScrollReveal>
         <div className="bg-gradient-to-br from-[#2D0A0D] via-[#4A0A0C] to-[#630E11] text-white rounded-3xl p-5 sm:p-7 md:p-9 border-2 border-rose-900/60 shadow-2xl relative overflow-hidden">
           {/* Background Decorative Shapes */}
@@ -185,10 +365,17 @@ export default function MonumentInteractiveMiniGame({
           {/* Top Bar: Title & Live Stats */}
           <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-5 border-b border-white/15">
             <div className="space-y-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/40 text-[11px] font-black uppercase tracking-wider">
-                <Gamepad2 className="w-3.5 h-3.5 text-amber-300" />
-                <span>Trò Chơi Tương Tác Sau Khi Xem Video &amp; Nghe Audio</span>
+              <div className="flex items-center gap-2 flex-wrap">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/40 text-[11px] font-black uppercase tracking-wider">
+                  <Gamepad2 className="w-3.5 h-3.5 text-amber-300" />
+                  <span>Trò Chơi Tương Tác Sau Khi Xem Video &amp; Nghe Audio</span>
+                </div>
+                <div className="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/10 text-rose-200 text-[10px] font-bold">
+                  <Music className="w-3 h-3 text-amber-300" />
+                  <span>Âm thanh sống động</span>
+                </div>
               </div>
+
               <h2 className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl text-amber-100">
                 Thử Thách Đố Vui &amp; Chinh Phục Huy Hiệu
               </h2>
@@ -197,32 +384,48 @@ export default function MonumentInteractiveMiniGame({
               </p>
             </div>
 
-            {/* Live Score & Progress Pills */}
-            {!isGameOver && (
-              <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap">
-                {/* XP Score */}
-                <div className="bg-black/40 border border-white/20 px-3.5 py-1.5 rounded-2xl flex items-center gap-2 backdrop-blur-md">
-                  <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
-                  <div>
-                    <span className="text-[10px] text-stone-300 uppercase block font-semibold leading-none">Điểm XP</span>
-                    <span className="text-sm sm:text-base font-black text-amber-300">{score}</span>
-                  </div>
-                </div>
+            {/* Live Score, Sound Toggle & Progress */}
+            <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap">
+              {/* Sound Toggle Button */}
+              <button
+                onClick={toggleSound}
+                className={`px-3 py-1.5 rounded-2xl border flex items-center gap-1.5 text-xs font-bold transition-all cursor-pointer ${
+                  soundOn
+                    ? 'bg-amber-400/20 border-amber-400/50 text-amber-300 hover:bg-amber-400/30'
+                    : 'bg-black/40 border-white/20 text-stone-400 hover:bg-white/10'
+                }`}
+                title={soundOn ? "Tắt âm thanh hiệu ứng" : "Bật âm thanh hiệu ứng"}
+              >
+                {soundOn ? <Volume2 className="w-4 h-4 text-amber-300" /> : <VolumeX className="w-4 h-4" />}
+                <span className="hidden sm:inline">{soundOn ? 'Âm thanh: Bật' : 'Tắt âm'}</span>
+              </button>
 
-                {/* Streak Combo */}
-                {streak > 1 && (
-                  <div className="bg-gradient-to-r from-amber-500 to-rose-600 px-3 py-1.5 rounded-2xl flex items-center gap-1.5 shadow-lg animate-bounce">
-                    <Flame className="w-4 h-4 text-yellow-200 fill-yellow-200" />
-                    <span className="text-xs font-black text-white uppercase">Combo x{streak}!</span>
+              {!isGameOver && (
+                <>
+                  {/* XP Score */}
+                  <div className="bg-black/40 border border-white/20 px-3.5 py-1.5 rounded-2xl flex items-center gap-2 backdrop-blur-md">
+                    <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
+                    <div>
+                      <span className="text-[10px] text-stone-300 uppercase block font-semibold leading-none">Điểm XP</span>
+                      <span className="text-sm sm:text-base font-black text-amber-300">{score}</span>
+                    </div>
                   </div>
-                )}
 
-                {/* Question counter */}
-                <div className="bg-white/15 border border-white/20 px-3.5 py-1.5 rounded-2xl text-xs font-bold text-white">
-                  Câu {currentIdx + 1}/{questions.length}
-                </div>
-              </div>
-            )}
+                  {/* Streak Combo */}
+                  {streak > 1 && (
+                    <div className="bg-gradient-to-r from-amber-500 to-rose-600 px-3 py-1.5 rounded-2xl flex items-center gap-1.5 shadow-lg animate-bounce">
+                      <Flame className="w-4 h-4 text-yellow-200 fill-yellow-200" />
+                      <span className="text-xs font-black text-white uppercase">Combo x{streak}!</span>
+                    </div>
+                  )}
+
+                  {/* Question counter */}
+                  <div className="bg-white/15 border border-white/20 px-3.5 py-1.5 rounded-2xl text-xs font-bold text-white">
+                    Câu {currentIdx + 1}/{questions.length}
+                  </div>
+                </>
+              )}
+            </div>
           </div>
 
           {/* GAME BODY */}
