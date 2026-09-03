@@ -176,12 +176,16 @@ class GameAudioEngine {
   }
 }
 
+import { markMonumentAsExplored } from '../utils/studentStorage';
+
 const gameAudio = new GameAudioEngine();
 
 export default function MonumentInteractiveMiniGame({
   quiz = [],
   monumentName = 'Di tích lịch sử',
-  onOpenNextMonument
+  monumentStt = 1,
+  onOpenNextMonument,
+  onOpenPassport
 }) {
   const defaultQuestions = [
     {
@@ -296,6 +300,12 @@ export default function MonumentInteractiveMiniGame({
     } else {
       setIsGameOver(true);
       gameAudio.playFanfare();
+      // Tự động ghi nhận di tích này vào Passport & cộng điểm XP
+      try {
+        markMonumentAsExplored(monumentStt, monumentName, score > 0 ? score : 100);
+      } catch (e) {
+        console.warn('Lỗi ghi nhận passport:', e);
+      }
     }
   };
 
@@ -642,6 +652,16 @@ export default function MonumentInteractiveMiniGame({
 
                 {/* Actions */}
                 <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+                  {onOpenPassport && (
+                    <button
+                      onClick={onOpenPassport}
+                      className="px-6 py-3 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-[#2D0A0D] font-black text-xs sm:text-sm shadow-xl transition-all hover:scale-104 cursor-pointer flex items-center gap-2"
+                    >
+                      <Award className="w-4 h-4 text-[#2D0A0D]" />
+                      <span>Xem Passport Di Sản Của Tôi (103 Di Tích)</span>
+                    </button>
+                  )}
+
                   <button
                     onClick={handleRestart}
                     className="px-6 py-3 rounded-2xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm border border-white/30 shadow-md transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
@@ -656,10 +676,10 @@ export default function MonumentInteractiveMiniGame({
                       setCopiedLink(true);
                       setTimeout(() => setCopiedLink(false), 2000);
                     }}
-                    className="px-6 py-3 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-[#2D0A0D] font-black text-xs sm:text-sm shadow-xl transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
+                    className="px-6 py-3 rounded-2xl bg-[#8B1417] hover:bg-[#a0181c] text-white font-bold text-xs sm:text-sm border border-amber-400/40 shadow-xl transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
                   >
-                    {copiedLink ? <Check className="w-4 h-4 text-[#2D0A0D]" /> : <Share2 className="w-4 h-4 text-[#2D0A0D]" />}
-                    <span>{copiedLink ? 'Đã sao chép liên kết!' : 'Chia sẻ Hộ Chiếu Di Sản'}</span>
+                    {copiedLink ? <Check className="w-4 h-4 text-amber-300" /> : <Share2 className="w-4 h-4 text-amber-300" />}
+                    <span>{copiedLink ? 'Đã sao chép liên kết!' : 'Chia sẻ thành tích'}</span>
                   </button>
                 </div>
               </div>
