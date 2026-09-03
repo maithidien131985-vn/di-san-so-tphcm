@@ -540,19 +540,19 @@ export default function HomePage({
             </div>
 
             {/* 3 Survey Steps Grid */}
-            <div className="space-y-5 sm:space-y-6">
+            <div className="space-y-6 sm:space-y-7">
               {/* BƯỚC 1: NƠI Ở / KHU VỰC CỦA BẠN */}
               <div className="space-y-2.5 sm:space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-black text-xs shadow-xs">
                     1
                   </div>
-                  <h3 className="font-serif-title font-bold text-xs sm:text-sm md:text-base text-[#2A1214]">
+                  <h3 className="font-serif-title font-black text-xs sm:text-sm md:text-base text-[#2A1214]">
                     Nơi ở / Khu vực địa lý của bạn:
                   </h3>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-2.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-2.5">
                   {locationOptions.map(loc => {
                     const isSelected = surveyLocation === loc.id;
                     return (
@@ -560,28 +560,30 @@ export default function HomePage({
                         key={loc.id}
                         type="button"
                         onClick={() => setSurveyLocation(loc.id)}
-                        className={`p-2.5 sm:p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 relative group ${
+                        className={`p-2.5 sm:p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-2.5 relative group shadow-2xs ${
                           isSelected
-                            ? 'bg-[#FDF2F3] border-[#8B1417] ring-2 ring-[#8B1417]/20 shadow-md'
-                            : 'bg-[#FAF4F0] border-rose-100 hover:border-[#8B1417]/60 hover:bg-[#FDF2F3]/60'
+                            ? 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border-amber-400 ring-2 ring-[#8B1417]/25 shadow-md scale-[1.02]'
+                            : 'bg-white hover:bg-[#FAF4F0] border-rose-200 text-[#2A1214] hover:border-[#8B1417]/50 hover:shadow-xs'
                         }`}
                       >
-                        <div className="flex items-center justify-between w-full">
-                          <span className="text-base sm:text-lg">{loc.icon}</span>
-                          {isSelected && (
-                            <span className="w-4 h-4 rounded-full bg-[#8B1417] text-white flex items-center justify-center text-[10px]">
-                              ✓
-                            </span>
-                          )}
+                        <div className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center text-base sm:text-lg shrink-0 shadow-2xs ${
+                          isSelected ? 'bg-white/20 border border-white/30' : 'bg-rose-50 border border-rose-200'
+                        }`}>
+                          {loc.icon}
                         </div>
-                        <div>
-                          <div className={`text-[11px] sm:text-xs font-bold leading-tight ${isSelected ? 'text-[#8B1417]' : 'text-stone-800'}`}>
+                        <div className="flex-1 min-w-0">
+                          <div className={`text-xs sm:text-[13px] font-black leading-snug truncate ${isSelected ? 'text-amber-200' : 'text-[#8B1417]'}`}>
                             {loc.name}
                           </div>
-                          <div className="text-[9px] sm:text-[10px] text-stone-500 line-clamp-1 mt-0.5">
+                          <div className={`text-[10px] sm:text-[11px] font-semibold truncate leading-tight mt-0.5 ${isSelected ? 'text-white/95' : 'text-stone-600'}`}>
                             {loc.tag}
                           </div>
                         </div>
+                        {isSelected && (
+                          <span className="w-4 h-4 rounded-full bg-amber-400 text-[#8B1417] font-black flex items-center justify-center text-[10px] shrink-0 shadow-xs">
+                            ✓
+                          </span>
+                        )}
                       </button>
                     );
                   })}
@@ -591,11 +593,11 @@ export default function HomePage({
               {/* BƯỚC 2: MỤC ĐÍCH KHÁM PHÁ CỦA BẠN */}
               <div className="space-y-2.5 sm:space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-black text-xs shadow-xs">
                     2
                   </div>
-                  <h3 className="font-serif-title font-bold text-xs sm:text-sm md:text-base text-[#2A1214]">
-                    Mục đích khám phá của bạn:
+                  <h3 className="font-serif-title font-black text-xs sm:text-sm md:text-base text-[#2A1214]">
+                    Mục đích chuyến đi của bạn:
                   </h3>
                 </div>
 
@@ -607,28 +609,30 @@ export default function HomePage({
                         key={pur.id}
                         type="button"
                         onClick={() => setSurveyPurpose(pur.id)}
-                        className={`p-3 sm:p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1.5 relative ${
+                        className={`p-3 sm:p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-start gap-3 relative shadow-2xs ${
                           isSelected
-                            ? 'bg-[#FDF2F3] border-[#8B1417] ring-2 ring-[#8B1417]/20 shadow-md'
-                            : 'bg-[#FAF4F0] border-rose-100 hover:border-[#8B1417]/60 hover:bg-[#FDF2F3]/60'
+                            ? 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border-amber-400 ring-2 ring-[#8B1417]/25 shadow-md scale-[1.02]'
+                            : 'bg-white hover:bg-[#FAF4F0] border-rose-200 text-[#2A1214] hover:border-[#8B1417]/50 hover:shadow-xs'
                         }`}
                       >
-                        <div className="flex items-center justify-between">
-                          <span className="text-lg sm:text-xl">{pur.icon}</span>
-                          {isSelected && (
-                            <span className="w-4 h-4 rounded-full bg-[#8B1417] text-white flex items-center justify-center text-[10px]">
-                              ✓
-                            </span>
-                          )}
+                        <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-lg sm:text-xl shrink-0 shadow-2xs mt-0.5 ${
+                          isSelected ? 'bg-white/20 border border-white/30' : 'bg-rose-50 border border-rose-200'
+                        }`}>
+                          {pur.icon}
                         </div>
-                        <div>
-                          <div className={`text-xs font-bold ${isSelected ? 'text-[#8B1417]' : 'text-stone-800'}`}>
+                        <div className="flex-1 min-w-0 space-y-0.5">
+                          <div className={`text-xs sm:text-[13px] font-black leading-snug ${isSelected ? 'text-amber-200' : 'text-[#8B1417]'}`}>
                             {pur.name}
                           </div>
-                          <div className="text-[10px] text-stone-500 line-clamp-2 mt-0.5 leading-snug">
+                          <div className={`text-[10px] sm:text-[11px] font-semibold leading-tight line-clamp-2 ${isSelected ? 'text-white/95' : 'text-stone-600'}`}>
                             {pur.desc}
                           </div>
                         </div>
+                        {isSelected && (
+                          <span className="w-4 h-4 rounded-full bg-amber-400 text-[#8B1417] font-black flex items-center justify-center text-[10px] shrink-0 shadow-xs">
+                            ✓
+                          </span>
+                        )}
                       </button>
                     );
                   })}
@@ -638,10 +642,10 @@ export default function HomePage({
               {/* BƯỚC 3: ĐAM MÊ & CHỦ ĐỀ BẠN YÊU THÍCH */}
               <div className="space-y-2.5 sm:space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-bold text-xs">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-black text-xs shadow-xs">
                     3
                   </div>
-                  <h3 className="font-serif-title font-bold text-xs sm:text-sm md:text-base text-[#2A1214]">
+                  <h3 className="font-serif-title font-black text-xs sm:text-sm md:text-base text-[#2A1214]">
                     Đam mê &amp; Chủ đề bạn quan tâm nhất:
                   </h3>
                 </div>
@@ -654,25 +658,27 @@ export default function HomePage({
                         key={top.id}
                         type="button"
                         onClick={() => setSurveyTopic(top.id)}
-                        className={`p-3 sm:p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-3 relative ${
+                        className={`p-3 sm:p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-3 relative shadow-2xs ${
                           isSelected
-                            ? 'bg-[#FDF2F3] border-[#8B1417] ring-2 ring-[#8B1417]/20 shadow-md'
-                            : 'bg-[#FAF4F0] border-rose-100 hover:border-[#8B1417]/60 hover:bg-[#FDF2F3]/60'
+                            ? 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border-amber-400 ring-2 ring-[#8B1417]/25 shadow-md scale-[1.02]'
+                            : 'bg-white hover:bg-[#FAF4F0] border-rose-200 text-[#2A1214] hover:border-[#8B1417]/50 hover:shadow-xs'
                         }`}
                       >
-                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white shadow-2xs flex items-center justify-center text-lg sm:text-xl shrink-0">
+                        <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-lg sm:text-xl shrink-0 shadow-2xs ${
+                          isSelected ? 'bg-white/20 border border-white/30' : 'bg-rose-50 border border-rose-200'
+                        }`}>
                           {top.icon}
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className={`text-xs font-bold truncate ${isSelected ? 'text-[#8B1417]' : 'text-stone-800'}`}>
+                          <div className={`text-xs sm:text-[13px] font-black leading-snug truncate ${isSelected ? 'text-amber-200' : 'text-[#8B1417]'}`}>
                             {top.name}
                           </div>
-                          <div className="text-[10px] text-stone-500 line-clamp-1 mt-0.5">
+                          <div className={`text-[10px] sm:text-[11px] font-semibold truncate leading-tight mt-0.5 ${isSelected ? 'text-white/95' : 'text-stone-600'}`}>
                             {top.desc}
                           </div>
                         </div>
                         {isSelected && (
-                          <span className="w-4 h-4 rounded-full bg-[#8B1417] text-white flex items-center justify-center text-[10px] shrink-0">
+                          <span className="w-4 h-4 rounded-full bg-amber-400 text-[#8B1417] font-black flex items-center justify-center text-[10px] shrink-0 shadow-xs">
                             ✓
                           </span>
                         )}
