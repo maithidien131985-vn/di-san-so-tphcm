@@ -13,7 +13,7 @@ export default function QuickActionCards({
     {
       id: 'explore',
       title: 'KHÁM PHÁ',
-      description: 'Tìm hiểu tổng quan về di tích',
+      description: 'Du hành thời gian & Nghe thuyết minh lịch sử',
       icon: (
         <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-100/20 border border-amber-200/30 flex items-center justify-center text-amber-200 shadow-inner">
           <BookOpen className="w-7 h-7 sm:w-8 sm:h-8" />
@@ -32,8 +32,8 @@ export default function QuickActionCards({
     },
     {
       id: 'investigate',
-      title: 'ĐIỀU TRA',
-      description: 'Khám phá chứng cứ và tư liệu',
+      title: 'GIẢI MÃ',
+      description: 'Truy tìm manh mối & Thử thách thám hiểm',
       icon: (
         <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-100/20 border border-amber-200/30 flex items-center justify-center text-amber-200 shadow-inner">
           <Search className="w-7 h-7 sm:w-8 sm:h-8" />
@@ -42,13 +42,18 @@ export default function QuickActionCards({
       bgClass: 'bg-[#475E3E] hover:bg-[#526c48]',
       onClick: () => {
         confetti({ particleCount: 40, spread: 60, origin: { y: 0.6 } });
-        if (onOpenInvestigation) onOpenInvestigation();
+        const el = document.getElementById('interactive-game-section');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        } else if (onOpenInvestigation) {
+          onOpenInvestigation();
+        }
       }
     },
     {
       id: 'act',
       title: 'HÀNH ĐỘNG',
-      description: 'Giữ gìn và phát huy giá trị di sản',
+      description: 'Đóng góp ý tưởng & Gìn giữ ngọn lửa di sản',
       icon: (
         <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-100/20 border border-amber-200/30 flex items-center justify-center text-amber-200 shadow-inner">
           <Sprout className="w-7 h-7 sm:w-8 sm:h-8" />
