@@ -391,112 +391,11 @@ export default function HomePage({
         </div>
       </section>
 
-      {/* 2. INSPIRATIONAL INTRODUCTION SECTION (LỜI NGỎ DI SẢN) */}
-      <section id="about-project" className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 sm:pt-20 pb-6 relative z-10">
+      {/* 2. BẢN ĐỒ SỐ 103 DI TÍCH VÀ LỜI NGỎ GIỚI THIỆU TRÊN CÙNG 1 HÀNG */}
+      <section id="map-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-8">
         <ScrollReveal>
-          <div className="relative bg-[#FFFDFB] rounded-3xl p-5 sm:p-8 md:p-10 border-2 border-rose-200 shadow-md shadow-rose-950/5 overflow-hidden">
-            <div className="absolute -right-8 -bottom-8 opacity-5 text-[#8B1417] pointer-events-none">
-              <Landmark className="w-48 sm:w-64 h-48 sm:h-64" />
-            </div>
-
-            <div className="relative z-10 space-y-3 sm:space-y-4 text-center max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-2xs">
-                <Sparkles className="w-3.5 h-3.5 text-[#8B1417]" />
-                <span>Ký Ức Thành Phố &amp; Hành Trình Kết Nối</span>
-              </div>
-
-              <p className="font-serif-title text-sm sm:text-base lg:text-lg text-[#2A1214] font-medium leading-relaxed italic">
-                “Mỗi viên gạch cũ đều mang một cái tên, một câu chuyện, một phần ký ức của thành phố này.”
-              </p>
-
-              <div className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-[#4E282B] leading-relaxed text-justify sm:text-center">
-                <p>
-                  Giữa nhịp sống hối hả của một Sài Gòn - Hồ Chí Minh không ngừng đổi thay, vẫn có những mái ngói, những bức tường rêu phong lặng lẽ giữ lại cả một dòng thời gian đã qua. Chúng chứng kiến những biến động của lịch sử, những đổi thay của thành phố, và cả những điều bình dị nhất trong đời sống của bao thế hệ đã từng đi qua nơi đây.
-                </p>
-                <p>
-                  Có bao nhiêu di tích bạn đã từng đi ngang qua mà chưa một lần dừng lại? Có bao nhiêu câu chuyện đang ngủ quên trong lòng thành phố, chỉ chờ một ai đó bước vào và lắng nghe?
-                </p>
-                <p className="font-bold text-[#8B1417] pt-1">
-                  Chúng tôi bắt đầu hành trình này — không phải để kể lại lịch sử theo cách khô khan trong sách vở, mà để mời bạn chạm vào nó, theo cách gần gũi nhất với thế hệ mình.
-                </p>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-      </section>
-
-      {/* 3. DI TÍCH HÔM NAY (FEATURED SPOTLIGHT BANNER) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
-        <ScrollReveal>
-          <div className="bg-gradient-to-br from-[#4A0A0C] via-[#660E11] to-[#801316] text-white rounded-3xl p-5 sm:p-7 md:p-8 shadow-2xl border-2 border-[#380608] relative overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-              {/* Left 5 cols: Image */}
-              <div className="md:col-span-5 h-48 sm:h-56 md:h-64 rounded-2xl overflow-hidden bg-black/40 border border-white/20 shadow-inner relative group">
-                <img
-                  src={featuredMonument.info.heroImage}
-                  alt={featuredMonument.info.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-amber-400 text-[#33080A] text-[11px] font-black uppercase tracking-wider shadow-md flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5 text-[#33080A]" />
-                  <span>Di tích hôm nay</span>
-                </div>
-              </div>
-
-              {/* Right 7 cols: Information & CTA */}
-              <div className="md:col-span-7 flex flex-col justify-between space-y-3 sm:space-y-4">
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-amber-300 uppercase tracking-widest">
-                      ⭐ GỢI Ý KHÁM PHÁ NỔI BẬT
-                    </span>
-                    <button
-                      onClick={onOpenExplorer}
-                      className="text-xs font-semibold text-rose-200 hover:text-white hover:underline cursor-pointer"
-                    >
-                      Xem toàn bộ 103 di tích →
-                    </button>
-                  </div>
-
-                  <h3 className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl text-amber-100">
-                    {featuredMonument.info.name}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-rose-100/90 leading-relaxed line-clamp-3 text-justify">
-                    {featuredMonument.info.overview}
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-white/95 pt-1">
-                  <div className="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl backdrop-blur-xs border border-white/10">
-                    <span className="text-amber-300 text-base">🔍</span>
-                    <span><strong>Hiện vật:</strong> Khảo cổ &amp; tư liệu quý nguyên bản.</span>
-                  </div>
-                  <div className="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl backdrop-blur-xs border border-white/10">
-                    <span className="text-amber-300 text-base">🏺</span>
-                    <span><strong>Giá trị:</strong> Dấu ấn lịch sử - văn hóa hào hùng.</span>
-                  </div>
-                </div>
-
-                <div className="pt-2">
-                  <button
-                    onClick={() => onSelectMonument(featuredMonument.stt)}
-                    className="w-full sm:w-auto px-8 py-3 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-[#33080A] font-black text-xs sm:text-sm shadow-lg shadow-black/40 transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
-                  >
-                    <span>Khám phá câu chuyện di tích này</span>
-                    <ArrowRight className="w-4 h-4 text-[#33080A]" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-      </section>
-
-      {/* 4. DI TÍCH QUANH EM (MASSIVE EXPANSIVE FULL-WIDTH MAP SECTION) */}
-      <section id="map-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <ScrollReveal>
-          <div className="bg-[#FFFDFB] rounded-3xl p-5 sm:p-7 md:p-8 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-4">
-            {/* Map Header */}
+          <div className="bg-[#FFFDFB] rounded-3xl p-5 sm:p-7 md:p-8 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-5">
+            {/* Header: Title & Action Controls */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-rose-100">
               <div className="space-y-1">
                 <div className="flex items-center gap-2.5 flex-wrap">
@@ -519,7 +418,7 @@ export default function HomePage({
               <div className="flex items-center gap-2 flex-wrap">
                 <button
                   onClick={onOpenMyMap}
-                  className="px-4 py-2.5 rounded-xl bg-[#8B1417] hover:bg-[#731013] text-white text-xs font-bold shadow-md transition-all hover:scale-102 cursor-pointer flex items-center gap-1.5"
+                  className="px-4 py-2 rounded-xl bg-[#8B1417] hover:bg-[#731013] text-white text-xs font-bold shadow-md transition-all hover:scale-102 cursor-pointer flex items-center gap-1.5"
                 >
                   <MapPin className="w-4 h-4 text-amber-200" />
                   <span>Mở toàn màn hình</span>
@@ -528,7 +427,7 @@ export default function HomePage({
                   href="https://www.google.com/maps/d/edit?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&usp=sharing"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-4 py-2.5 rounded-xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-200 text-[#8B1417] text-xs font-bold transition-all hover:scale-102 cursor-pointer flex items-center gap-1.5"
+                  className="px-4 py-2 rounded-xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-200 text-[#8B1417] text-xs font-bold transition-all hover:scale-102 cursor-pointer flex items-center gap-1.5"
                 >
                   <span>Mở Google Maps</span>
                   <ExternalLink className="w-4 h-4" />
@@ -536,45 +435,87 @@ export default function HomePage({
               </div>
             </div>
 
-            {/* Large Interactive Google My Maps Frame */}
-            <div className="h-[440px] sm:h-[540px] md:h-[620px] lg:h-[680px] w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-rose-200 relative z-0 bg-[#FDF7F5] shadow-inner">
-              <iframe
-                src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-                width="100%"
-                height="100%"
-                className="w-full h-full border-0"
-                title="Bản đồ Di tích TP. Hồ Chí Minh"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
+            {/* Grid 1 Hàng: Cột Trái là Bản Đồ (8 cols), Cột Phải là Phần Chữ Giới Thiệu (4 cols) */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+              
+              {/* CỘT TRÁI: BẢN ĐỒ SỐ TƯƠNG TÁC (8 cols) */}
+              <div className="lg:col-span-8 flex flex-col justify-between space-y-3">
+                <div className="h-[460px] sm:h-[520px] md:h-[580px] lg:h-[620px] w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-rose-200 relative z-0 bg-[#FDF7F5] shadow-inner">
+                  <iframe
+                    src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
+                    width="100%"
+                    height="100%"
+                    className="w-full h-full border-0"
+                    title="Bản đồ Di tích TP. Hồ Chí Minh"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
 
-            {/* Map Quick Region Shortcuts Footer */}
-            <div className="pt-2 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs">
-              <div className="flex items-center gap-1.5 text-stone-600 font-semibold text-xs shrink-0">
-                <Compass className="w-4 h-4 text-[#8B1417] shrink-0" />
-                <span>Khu vực trọng điểm:</span>
+                {/* Quick Region Jump Pills */}
+                <div className="flex flex-wrap items-center gap-1.5 pt-1">
+                  <span className="text-[11px] font-bold text-stone-600 flex items-center gap-1 shrink-0 mr-1">
+                    <Compass className="w-3.5 h-3.5 text-[#8B1417]" />
+                    <span>Khu vực:</span>
+                  </span>
+                  {[
+                    { name: 'Quận 1 & Trung tâm', stt: 1 },
+                    { name: 'Địa đạo Củ Chi', stt: 2 },
+                    { name: 'Bến Lộc An & Biển', stt: 3 },
+                    { name: 'Côn Đảo', stt: 4 },
+                    { name: 'Rừng Sác - Cần Giờ', stt: 7 },
+                    { name: 'Chợ Lớn - Quận 5', stt: 10 },
+                    { name: 'Tam Giác Sắt', stt: 8 }
+                  ].map((tag, tIdx) => (
+                    <button
+                      key={tIdx}
+                      onClick={() => onSelectMonument(tag.stt)}
+                      className="px-2.5 py-1 rounded-xl bg-[#FAF4F0] hover:bg-rose-100 text-[#8B1417] text-[11px] font-bold border border-rose-200/80 transition-all hover:scale-102 cursor-pointer shadow-2xs"
+                    >
+                      📍 {tag.name}
+                    </button>
+                  ))}
+                </div>
               </div>
 
-              <div className="flex flex-wrap items-center gap-1.5">
-                {[
-                  { name: 'Quận 1 & Trung tâm', stt: 1 },
-                  { name: 'Địa đạo Củ Chi', stt: 2 },
-                  { name: 'Bến Lộc An & Biển', stt: 3 },
-                  { name: 'Côn Đảo', stt: 4 },
-                  { name: 'Rừng Sác - Cần Giờ', stt: 7 },
-                  { name: 'Chợ Lớn - Quận 5', stt: 10 },
-                  { name: 'Tam Giác Sắt - Bình Dương', stt: 8 }
-                ].map((tag, tIdx) => (
+              {/* CỘT PHẢI: PHẦN CHỮ GIỚI THIỆU KÝ ỨC THÀNH PHỐ (4 cols) */}
+              <div id="about-project" className="lg:col-span-4 bg-gradient-to-br from-[#FAF4F0] via-[#FFFDFB] to-[#FDF2F3] rounded-2xl sm:rounded-3xl p-5 sm:p-6 border-2 border-rose-200 shadow-sm flex flex-col justify-between space-y-4">
+                <div className="space-y-3.5">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-[11px] font-black uppercase tracking-wider shadow-2xs">
+                    <Sparkles className="w-3.5 h-3.5 text-[#8B1417]" />
+                    <span>Ký Ức Thành Phố &amp; Kết Nối</span>
+                  </div>
+
+                  <p className="font-serif-title text-sm sm:text-base text-[#2A1214] font-bold leading-relaxed italic [text-wrap:balance]">
+                    “Mỗi viên gạch cũ đều mang một cái tên, một câu chuyện, một phần ký ức của thành phố này.”
+                  </p>
+
+                  <div className="space-y-2.5 text-xs text-[#4E282B] leading-relaxed text-justify">
+                    <p>
+                      Giữa nhịp sống hối hả của một Sài Gòn - Hồ Chí Minh không ngừng đổi thay, vẫn có những mái ngói, những bức tường rêu phong lặng lẽ giữ lại cả một dòng thời gian đã qua. Chúng chứng kiến những biến động của lịch sử và cả những điều bình dị nhất của bao thế hệ đã từng đi qua nơi đây.
+                    </p>
+                    <p>
+                      Có bao nhiêu di tích bạn đã từng đi ngang qua mà chưa một lần dừng lại? Có bao nhiêu câu chuyện đang ngủ quên trong lòng thành phố, chỉ chờ một ai đó bước vào và lắng nghe?
+                    </p>
+                    <p className="font-bold text-[#8B1417] pt-1 [text-wrap:balance]">
+                      Chúng tôi bắt đầu hành trình này — không phải để kể lại lịch sử khô khan trong sách vở, mà để mời bạn chạm vào nó, theo cách gần gũi nhất với thế hệ mình.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Bottom Explorer Action Button */}
+                <div className="pt-2 border-t border-rose-200/80">
                   <button
-                    key={tIdx}
-                    onClick={() => onSelectMonument(tag.stt)}
-                    className="px-3 py-1.5 rounded-xl bg-[#FAF4F0] hover:bg-rose-100 text-[#8B1417] text-[11px] font-bold border border-rose-200/80 transition-all hover:scale-102 cursor-pointer shadow-2xs"
+                    onClick={onOpenExplorer}
+                    className="w-full py-3 rounded-2xl bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#C42226] hover:from-[#731013] hover:to-[#96171a] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
                   >
-                    📍 {tag.name}
+                    <Landmark className="w-4 h-4 text-amber-200" />
+                    <span>Khám Phá 103 Di Tích</span>
+                    <ArrowRight className="w-4 h-4 text-amber-200" />
                   </button>
-                ))}
+                </div>
               </div>
+
             </div>
           </div>
         </ScrollReveal>
