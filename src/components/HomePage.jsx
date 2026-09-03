@@ -262,147 +262,22 @@ export default function HomePage({
 
   return (
     <div className="bg-[#FAF4F0] min-h-screen text-[#2A1214] font-sans antialiased selection:bg-[#8B1417] selection:text-white pb-20 md:pb-0">
-      {/* 1. HERO BANNER WITH RESPONSIVE DESKTOP, TABLET & MOBILE LAYOUT */}
-      <section className="relative bg-[#200507] text-white min-h-[500px] sm:min-h-[560px] md:min-h-[600px] flex flex-col justify-between overflow-visible shadow-2xl">
+      {/* 1. HERO BANNER WITH NATURAL MONUMENT BACKGROUND */}
+      <section className="relative bg-[#200507] text-white min-h-[460px] sm:min-h-[520px] md:min-h-[560px] flex flex-col justify-between overflow-visible shadow-2xl">
+        {/* Background Image: Giữ nguyên màu sắc tự nhiên, chỉ phủ bóng nhẹ vùng chữ */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src="/assets/images/dinh-doc-lap-front.jpg"
             alt="Di sản TP. Hồ Chí Minh"
-            className="w-full h-full object-cover object-center opacity-40 scale-105 transition-transform duration-1000"
+            className="w-full h-full object-cover object-center scale-100 transition-transform duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#200507] via-[#2D0A0D]/70 to-black/80" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#8B1417]/25 via-transparent to-black/75" />
+          {/* Localized soft gradient overlay: Chỉ làm tối vùng chữ bên trái & chân trang */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#200507]/90 via-transparent to-black/20 pointer-events-none" />
         </div>
 
-        {/* Responsive Navbar: Desktop, Tablet (md), Mobile (sm) */}
-        <header className="relative z-20 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between">
-          <div className="flex items-center gap-2.5 sm:gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-[#8B1417] to-[#B31D21] border border-amber-400/60 flex items-center justify-center text-amber-200 shadow-lg shadow-black/50 group-hover:scale-105 transition-transform">
-              <Landmark className="w-5 h-5" />
-            </div>
-            <div>
-              <span className="font-serif-title font-black text-sm sm:text-base lg:text-lg tracking-wider text-white block uppercase drop-shadow">
-                DI SẢN
-              </span>
-              <span className="text-[9px] sm:text-[10px] font-black text-amber-300 tracking-widest block uppercase drop-shadow-sm">
-                TP. HỒ CHÍ MINH
-              </span>
-            </div>
-          </div>
-
-          {/* Desktop & Tablet Navigation */}
-          <nav className="hidden md:flex items-center gap-1.5 lg:gap-3 text-xs sm:text-sm font-bold text-white/95">
-            <a 
-              href="#home" 
-              className="px-3.5 py-1.5 lg:px-4 lg:py-2 rounded-full bg-[#8B1417] text-white border border-amber-400/50 shadow-md shadow-black/30 text-xs sm:text-sm"
-            >
-              Trang chủ
-            </a>
-            <button 
-              onClick={onOpenExplorer} 
-              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer text-xs sm:text-sm"
-            >
-              Khám phá di tích
-            </button>
-            <button 
-              onClick={onOpenMyMap} 
-              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer text-xs sm:text-sm"
-            >
-              Bản đồ di tích
-            </button>
-            <button 
-              onClick={() => onSelectMonument(1)} 
-              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer text-xs sm:text-sm"
-            >
-              Thử thách
-            </button>
-            <button 
-              onClick={onOpenContribute} 
-              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all cursor-pointer text-xs sm:text-sm"
-            >
-              Ý tưởng – Hành động
-            </button>
-            <a 
-              href="#about-project" 
-              className="px-3 py-1.5 lg:px-3.5 lg:py-2 rounded-full hover:bg-white/15 text-white/90 hover:text-amber-200 transition-all text-xs sm:text-sm"
-            >
-              Giới thiệu
-            </a>
-          </nav>
-
-          {/* Right Header Actions & Mobile Toggle */}
-          <div className="flex items-center gap-2 sm:gap-3">
-            <button 
-              onClick={() => {
-                const el = document.getElementById('search-input-field');
-                if (el) el.focus();
-              }}
-              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/15 hover:bg-[#8B1417] border border-white/20 flex items-center justify-center text-white transition-all hover:scale-105 cursor-pointer shadow-md"
-              title="Tìm kiếm di tích"
-            >
-              <Search className="w-4 h-4 text-amber-200" />
-            </button>
-            <div 
-              onClick={onOpenContribute}
-              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-[#8B1417]/60 to-[#B31D21]/60 border border-amber-300/70 flex items-center justify-center text-amber-200 font-bold text-xs sm:text-sm cursor-pointer shadow-inner hover:scale-105 transition-all"
-              title="Cộng đồng & Đóng góp"
-            >
-              👤
-            </div>
-            {/* Mobile Menu Hamburger */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center text-white cursor-pointer"
-            >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
-          </div>
-        </header>
-
-        {/* Mobile Slide-down Menu Sheet */}
-        {mobileMenuOpen && (
-          <div className="md:hidden relative z-30 bg-[#2C0709] border-b border-rose-900/60 px-4 py-4 space-y-2 text-sm font-bold text-white animate-fadeIn shadow-2xl">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className="block w-full text-left px-3 py-2.5 rounded-xl bg-[#8B1417] text-white"
-            >
-              Trang chủ
-            </button>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenExplorer();
-              }}
-              className="block w-full text-left px-3 py-2.5 rounded-xl hover:bg-white/10 text-stone-200"
-            >
-              Khám phá di tích
-            </button>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenMyMap();
-              }}
-              className="block w-full text-left px-3 py-2.5 rounded-xl hover:bg-white/10 text-stone-200"
-            >
-              Bản đồ di tích
-            </button>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenContribute();
-              }}
-              className="block w-full text-left px-3 py-2.5 rounded-xl hover:bg-white/10 text-stone-200"
-            >
-              Ý tưởng – Hành động
-            </button>
-          </div>
-        )}
-
         {/* Hero Main Content */}
-        <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16 my-auto">
+        <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 my-auto">
           <div className="max-w-3xl space-y-3 sm:space-y-4">
             <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-xl">
               DI SẢN <br />
