@@ -451,12 +451,13 @@ export default function App() {
 
           {/* Main Detail Content Area */}
           <main className="flex-1 space-y-6 pb-6">
-            {/* 1. Hero Banner with Integrated Breadcrumb */}
+            {/* 1. Hero Banner with Integrated Breadcrumb & Bottom Gallery Thumbnails */}
             <HeroBanner
               info={data.info}
+              gallery={data.gallery}
               onOpenAudio={() => setAudioModalOpen(true)}
               onOpenVideo={() => setVideoModalOpen(true)}
-              onOpenGallery={() => handleOpenLightbox(0)}
+              onOpenGallery={(idx = 0) => handleOpenLightbox(idx)}
               isEditMode={isEditMode}
               onUpdateInfo={handleUpdateInfo}
               onNavigateHome={() => handleNavigate('home')}
