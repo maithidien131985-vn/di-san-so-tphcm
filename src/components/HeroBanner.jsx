@@ -99,20 +99,20 @@ export default function HeroBanner({
         )}
 
         {/* Top-Left Title & Information Block */}
-        <div className="absolute top-4 sm:top-6 lg:top-8 left-4 sm:left-6 lg:left-8 right-4 sm:right-6 lg:right-8 z-20 max-w-3xl space-y-2">
+        <div className="absolute top-4 sm:top-6 lg:top-8 left-4 sm:left-6 lg:left-8 right-4 sm:right-6 lg:right-8 z-20 max-w-4xl lg:max-w-5xl space-y-2">
           {/* Mobile Ranking Badge */}
           <div className="sm:hidden inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-amber-300 border border-amber-400/40 text-[11px] font-bold shadow-md">
             <Star className="w-3 h-3 fill-amber-300 text-amber-300" />
             <span>{info.badge || info.ranking || 'Di tích Quốc gia'}</span>
           </div>
 
-          {/* Monument Name */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black font-serif-title tracking-tight text-white leading-tight uppercase drop-shadow-xl text-shadow-lg">
+          {/* Monument Name with text-wrap: balance */}
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black font-serif-title tracking-tight text-white leading-tight uppercase drop-shadow-xl text-shadow-lg [text-wrap:balance]">
             {info.name}
           </h1>
 
-          {/* Subtitle / Historic Tagline */}
-          <p className="text-xs sm:text-sm md:text-base text-amber-200 font-medium leading-relaxed max-w-2xl drop-shadow-md">
+          {/* Subtitle / Historic Tagline with text-wrap: balance */}
+          <p className="text-xs sm:text-sm md:text-base text-amber-200 font-medium leading-relaxed max-w-3xl drop-shadow-md [text-wrap:balance]">
             {info.subtitle || 'Chứng nhân lịch sử & Di sản văn hóa trường tồn'}
           </p>
         </div>

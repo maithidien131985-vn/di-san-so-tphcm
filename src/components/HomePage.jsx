@@ -985,12 +985,12 @@ export default function HomePage({
               <span>📚</span>
             </div>
 
-            <div className="space-y-1 sm:space-y-1.5 max-w-2xl mx-auto">
-              <h3 className="font-serif-title text-sm sm:text-base md:text-xl font-black text-[#2A1214]">
+            <div className="space-y-1 sm:space-y-2 max-w-2xl mx-auto px-4 text-center">
+              <h3 className="font-serif-title text-base sm:text-lg md:text-xl font-black text-[#2A1214] [text-wrap:balance]">
                 Di tích kể câu chuyện của quá khứ.
               </h3>
-              <h3 className="font-serif-title text-sm sm:text-base md:text-xl font-black text-[#8B1417]">
-                Còn chúng ta quyết định câu chuyện ấy sẽ được tiếp tục như thế nào.
+              <h3 className="font-serif-title text-base sm:text-lg md:text-xl font-black text-[#8B1417] [text-wrap:balance]">
+                Còn chúng ta quyết định câu chuyện ấy sẽ được tiếp tục như&nbsp;thế&nbsp;nào.
               </h3>
             </div>
           </div>

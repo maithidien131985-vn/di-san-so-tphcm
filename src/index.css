@@ -35,10 +35,21 @@
 
 .font-serif-title {
   font-family: 'Merriweather', Georgia, serif;
+  text-wrap: balance;
 }
 
 .font-heading {
   font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  text-wrap: balance;
+}
+
+/* Typography: Chống rơi chữ 1 từ đơn lẻ xuống dòng (Anti-widow & Anti-orphan) */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p, blockquote, figcaption {
+  text-wrap: pretty;
 }
 
 /* Custom Scrollbar */
