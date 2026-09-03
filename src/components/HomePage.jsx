@@ -46,7 +46,9 @@ export default function HomePage({
   onSelectMonument, 
   onOpenExplorer, 
   onOpenMyMap,
-  onOpenContribute
+  onOpenContribute,
+  onOpenPassport,
+  activePassport
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -293,7 +295,7 @@ export default function HomePage({
             </p>
 
             {/* CTA Buttons: Full width on Mobile, Inline on Tablet & Desktop */}
-            <div className="pt-3 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+            <div className="pt-3 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 flex-wrap">
               <button
                 onClick={onOpenExplorer}
                 className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#C42226] hover:from-[#731013] hover:to-[#a0181c] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-red-950/50 ring-2 ring-amber-400/50 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
@@ -307,7 +309,16 @@ export default function HomePage({
                 className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-[#4A0A0C] via-[#630E11] to-[#7D1215] hover:from-[#3a0709] hover:to-[#570b0e] text-amber-100 font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-red-950/40 ring-2 ring-red-400/30 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
               >
                 <MapPin className="w-4 h-4 text-amber-200" />
-                <span>Khám Phá Gần Bạn</span>
+                <span>Bản Đồ Di Tích</span>
+              </button>
+
+              <button
+                onClick={onOpenPassport}
+                className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-[#200507] font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-950/40 ring-2 ring-amber-300 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
+                title="Mở Hộ Chiếu Di Sản & Lưu hành trình khám phá"
+              >
+                <Compass className="w-4 h-4 text-[#200507] animate-spin-slow" />
+                <span>{activePassport ? `Hộ Chiếu: ${activePassport.fullName}` : 'Hộ Chiếu Di Sản'}</span>
               </button>
             </div>
           </div>

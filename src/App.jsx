@@ -23,15 +23,14 @@ import MilestoneModal from './components/MilestoneModal';
 import AdminEditDrawer from './components/AdminEditDrawer';
 import ContributeModal from './components/ContributeModal';
 import MonumentsExplorerModal from './components/MonumentsExplorerModal';
-import StudentAuthModal from './components/StudentAuthModal';
-import StudentPassportModal from './components/StudentPassportModal';
 import MonumentSwitcherBar from './components/MonumentSwitcherBar';
 import ScrollProgressBar from './components/ScrollProgressBar';
 import ScrollReveal from './components/ScrollReveal';
 import HeritageAIChatbot from './components/HeritageAIChatbot';
+import HeritagePassportModal from './components/HeritagePassportModal';
 import Footer from './components/Footer';
 import { allMonumentsList, getMonumentByIdOrStt } from './data/allMonumentsData';
-import { getStudentProfile, getExplorationData, saveStudentProfile } from './utils/studentStorage';
+import { getActivePassport } from './utils/passportStorage';
 
 const CONTRIBUTIONS_KEY = 'di_san_so_contributions_v4';
 
@@ -219,13 +218,8 @@ export default function App() {
   const [adminDrawerOpen, setAdminDrawerOpen] = useState(false);
   const [contributeModalOpen, setContributeModalOpen] = useState(false);
   const [explorerModalOpen, setExplorerModalOpen] = useState(false);
-  
-  // Student Profile & Passport State
-  const [studentProfile, setStudentProfile] = useState(() => getStudentProfile());
-  const [studentAuthModalOpen, setStudentAuthModalOpen] = useState(false);
-  const [studentPassportModalOpen, setStudentPassportModalOpen] = useState(false);
-  const [studentPassportInitialTab, setStudentPassportInitialTab] = useState('passport');
-  const [explorationState, setExplorationState] = useState(() => getExplorationData());
+  const [passportModalOpen, setPassportModalOpen] = useState(false);
+  const [activePassport, setActivePassport] = useState(() => getActivePassport());
 
   const [isEditMode, setIsEditMode] = useState(false);
 
@@ -421,7 +415,7 @@ export default function App() {
       {/* Scroll Progress Bar at very top */}
       <ScrollProgressBar />
 
-      {/* Global Application Header with Student Passport & Quests */}
+      {/* Global Application Header */}
       <Header
         monumentName={data.info.name}
         monumentRanking={data.info.badge}
@@ -433,17 +427,8 @@ export default function App() {
         onOpenContribute={() => setContributeModalOpen(true)}
         onOpenExplorer={() => setExplorerModalOpen(true)}
         onOpenMyMap={() => setMyMapModalOpen(true)}
-        onOpenPassport={() => {
-          setStudentPassportInitialTab('passport');
-          setStudentPassportModalOpen(true);
-        }}
-        onOpenQuests={() => {
-          setStudentPassportInitialTab('quests');
-          setStudentPassportModalOpen(true);
-        }}
-        onOpenStudentAuth={() => setStudentAuthModalOpen(true)}
-        studentProfile={studentProfile}
-        completedMonumentsCount={explorationState?.exploredMonuments?.length || 7}
+        onOpenPassport={() => setPassportModalOpen(true)}
+        activePassport={activePassport}
         pendingContributionsCount={pendingContributionsCount}
         onNavigate={handleNavigate}
       />
@@ -457,6 +442,8 @@ export default function App() {
           onOpenExplorer={() => setExplorerModalOpen(true)}
           onOpenMyMap={() => setMyMapModalOpen(true)}
           onOpenContribute={() => setContributeModalOpen(true)}
+          onOpenPassport={() => setPassportModalOpen(true)}
+          activePassport={activePassport}
         />
       ) : (
         /* MONUMENT DETAIL PAGE */
@@ -539,10 +526,9 @@ export default function App() {
               quiz={data.investigation?.quiz}
               monumentName={data.info.name}
               monumentStt={currentStt}
-              onOpenPassport={() => {
-                setStudentPassportInitialTab('passport');
-                setStudentPassportModalOpen(true);
-              }}
+              activePassport={activePassport}
+              onOpenPassport={() => setPassportModalOpen(true)}
+              onPassportUpdate={(updatedPassport) => setActivePassport(updatedPassport)}
             />
 
             {/* 7. TRƯỚC PHẦN CÂU HỎI ĐIỀU TRA: 3 Ô Nhân vật liên quan, Hiện vật tiêu biểu, Sự kiện tiêu biểu */}
@@ -695,32 +681,13 @@ export default function App() {
         onDeleteContribution={handleDeleteContribution}
       />
 
-      {/* Student Authentication / Profile Modal */}
-      <StudentAuthModal
-        isOpen={studentAuthModalOpen}
-        onClose={() => setStudentAuthModalOpen(false)}
-        profile={studentProfile}
-        onUpdateProfile={(newProfile) => {
-          setStudentProfile(newProfile);
-          saveStudentProfile(newProfile);
-        }}
-      />
-
-      {/* Student Heritage Passport & Journey Map & Quests Modal */}
-      <StudentPassportModal
-        isOpen={studentPassportModalOpen}
-        onClose={() => {
-          setStudentPassportModalOpen(false);
-          setExplorationState(getExplorationData());
-        }}
-        profile={studentProfile}
-        onOpenAuth={() => {
-          setStudentPassportModalOpen(false);
-          setStudentAuthModalOpen(true);
-        }}
-        allMonuments={allMonumentsList}
+      {/* Heritage Passport Modal (Hộ Chiếu Di Sản Học Sinh & Sổ Sưu Tập 103 Dấu Mộc) */}
+      <HeritagePassportModal
+        isOpen={passportModalOpen}
+        onClose={() => setPassportModalOpen(false)}
+        activePassport={activePassport}
+        onPassportChange={(passport) => setActivePassport(passport)}
         onSelectMonument={(stt) => handleSelectMonument(stt)}
-        initialTab={studentPassportInitialTab}
       />
 
       {/* Global AI Heritage Chatbot Widget (Trợ Lý Di Sản AI - Xuất hiện toàn trang & 103 trang con) */}

@@ -176,16 +176,18 @@ class GameAudioEngine {
   }
 }
 
-import { markMonumentAsExplored } from '../utils/studentStorage';
-
 const gameAudio = new GameAudioEngine();
+
+import { checkInMonument } from '../utils/passportStorage';
 
 export default function MonumentInteractiveMiniGame({
   quiz = [],
   monumentName = 'Di tích lịch sử',
   monumentStt = 1,
-  onOpenNextMonument,
-  onOpenPassport
+  activePassport = null,
+  onOpenPassport,
+  onPassportUpdate,
+  onOpenNextMonument
 }) {
   const defaultQuestions = [
     {
@@ -300,11 +302,11 @@ export default function MonumentInteractiveMiniGame({
     } else {
       setIsGameOver(true);
       gameAudio.playFanfare();
-      // Tự động ghi nhận di tích này vào Passport & cộng điểm XP
-      try {
-        markMonumentAsExplored(monumentStt, monumentName, score > 0 ? score : 100);
-      } catch (e) {
-        console.warn('Lỗi ghi nhận passport:', e);
+      if (activePassport) {
+        const updated = checkInMonument(monumentStt, monumentName, score || 100);
+        if (updated && onPassportUpdate) {
+          onPassportUpdate(updated);
+        }
       }
     }
   };
@@ -650,18 +652,42 @@ export default function MonumentInteractiveMiniGame({
                   </div>
                 </div>
 
-                {/* Actions */}
-                <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
-                  {onOpenPassport && (
+                {/* Passport Integration Banner */}
+                {activePassport ? (
+                  <div className="p-3.5 bg-emerald-950/70 border-2 border-emerald-500/80 rounded-2xl text-xs sm:text-sm text-emerald-200 flex items-center justify-between gap-3 shadow-lg">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+                      <span>Đã tự động đóng dấu vào Hộ Chiếu của <strong>{activePassport.fullName}</strong> (Mã: <code className="text-amber-300 font-mono font-bold">{activePassport.code}</code>)</span>
+                    </div>
                     <button
                       onClick={onOpenPassport}
-                      className="px-6 py-3 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-[#2D0A0D] font-black text-xs sm:text-sm shadow-xl transition-all hover:scale-104 cursor-pointer flex items-center gap-2"
+                      className="px-3 py-1.5 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs shrink-0 cursor-pointer shadow-sm"
                     >
-                      <Award className="w-4 h-4 text-[#2D0A0D]" />
-                      <span>Xem Passport Di Sản Của Tôi (103 Di Tích)</span>
+                      Xem Hộ Chiếu
                     </button>
-                  )}
+                  </div>
+                ) : (
+                  <div className="p-4 bg-gradient-to-r from-[#8B1417] via-[#9E1A1E] to-[#680C0E] border-2 border-amber-400/70 rounded-2xl text-white flex flex-col sm:flex-row items-center justify-between gap-3 shadow-xl">
+                    <div className="space-y-0.5 text-center sm:text-left">
+                      <span className="font-serif-title font-black text-sm text-amber-200 block">
+                        LƯU LẠI HÀNH TRÌNH VÀO HỘ CHIẾU DI SẢN
+                      </span>
+                      <p className="text-xs text-rose-100">
+                        Nhận ngay Mã Số Hộ Chiếu độc nhất để tiếp tục khám phá các di tích tiếp theo mỗi ngày!
+                      </p>
+                    </div>
+                    <button
+                      onClick={onOpenPassport}
+                      className="px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-[#8B1417] font-black text-xs shrink-0 shadow-lg cursor-pointer transition-all hover:scale-103 flex items-center gap-1.5"
+                    >
+                      <Compass className="w-4 h-4" />
+                      <span>Nhận Mã Hộ Chiếu (+100 XP)</span>
+                    </button>
+                  </div>
+                )}
 
+                {/* Actions */}
+                <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
                   <button
                     onClick={handleRestart}
                     className="px-6 py-3 rounded-2xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm border border-white/30 shadow-md transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
@@ -676,10 +702,10 @@ export default function MonumentInteractiveMiniGame({
                       setCopiedLink(true);
                       setTimeout(() => setCopiedLink(false), 2000);
                     }}
-                    className="px-6 py-3 rounded-2xl bg-[#8B1417] hover:bg-[#a0181c] text-white font-bold text-xs sm:text-sm border border-amber-400/40 shadow-xl transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
+                    className="px-6 py-3 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-[#2D0A0D] font-black text-xs sm:text-sm shadow-xl transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
                   >
-                    {copiedLink ? <Check className="w-4 h-4 text-amber-300" /> : <Share2 className="w-4 h-4 text-amber-300" />}
-                    <span>{copiedLink ? 'Đã sao chép liên kết!' : 'Chia sẻ thành tích'}</span>
+                    {copiedLink ? <Check className="w-4 h-4 text-[#2D0A0D]" /> : <Share2 className="w-4 h-4 text-[#2D0A0D]" />}
+                    <span>{copiedLink ? 'Đã sao chép liên kết!' : 'Chia sẻ Hộ Chiếu Di Sản'}</span>
                   </button>
                 </div>
               </div>

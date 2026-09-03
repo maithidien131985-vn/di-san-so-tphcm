@@ -1,20 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Landmark, 
-  Menu, 
-  X, 
-  Settings, 
-  Upload, 
-  Home, 
-  Map, 
-  Award, 
-  Zap, 
-  User, 
-  Compass, 
-  FolderSearch, 
-  Info 
-} from 'lucide-react';
-import { AVATAR_OPTIONS } from '../utils/studentStorage';
+import { Landmark, Menu, X, Edit3, Settings, Upload, Grid, Home, Map, FolderSearch, Gamepad2, Info, Compass } from 'lucide-react';
 
 export default function Header({
   monumentName = 'DI TÍCH DINH ĐỘC LẬP',
@@ -28,10 +13,7 @@ export default function Header({
   onOpenExplorer,
   onOpenMyMap,
   onOpenPassport,
-  onOpenQuests,
-  onOpenStudentAuth,
-  studentProfile,
-  completedMonumentsCount = 7,
+  activePassport,
   pendingContributionsCount = 0,
   onNavigate
 }) {
@@ -48,30 +30,40 @@ export default function Header({
 
   const navLinks = [
     { id: 'home', label: 'Trang chủ', isHome: true },
-    { id: 'passport', label: 'Passport Di Sản', isPassport: true, badge: `${completedMonumentsCount}/103` },
-    { id: 'quests', label: 'Nhiệm vụ', isQuests: true, hasDot: true },
     { id: 'map', label: 'Bản đồ di tích', isMap: true },
     { id: 'monuments', label: 'Kho di tích', isExplorer: true },
+    { id: 'investigation', label: 'Hồ sơ điều tra', isInvestigation: true },
+    { id: 'quiz_game', label: 'Trò chơi', isQuizGame: true },
     { id: 'about', label: 'Về dự án', isAbout: true }
   ];
 
   const handleNavClick = (link) => {
     if (link.isHome) {
       if (onNavigate) onNavigate('home');
-    } else if (link.isPassport) {
-      if (onOpenPassport) onOpenPassport();
-    } else if (link.isQuests) {
-      if (onOpenQuests) onOpenQuests();
     } else if (link.isMap) {
       if (onOpenMyMap) onOpenMyMap();
     } else if (link.isExplorer) {
       if (onOpenExplorer) onOpenExplorer();
+    } else if (link.isInvestigation) {
+      if (viewMode !== 'detail' && onNavigate) {
+        onNavigate('detail');
+      }
+      setTimeout(() => {
+        const el = document.getElementById('investigation-section');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else if (link.isQuizGame) {
+      if (viewMode !== 'detail' && onNavigate) {
+        onNavigate('detail');
+      }
+      setTimeout(() => {
+        const el = document.getElementById('investigation-section');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     } else if (link.isAbout) {
       if (onNavigate) onNavigate('about');
     }
   };
-
-  const currentAvatar = AVATAR_OPTIONS.find(a => a.id === studentProfile?.avatarId) || AVATAR_OPTIONS[0];
 
   return (
     <header
@@ -103,65 +95,67 @@ export default function Header({
         </div>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-6 text-[13px] font-bold text-[#333333]">
+        <nav className="hidden lg:flex items-center gap-7 text-[13px] font-bold text-[#333333]">
           {navLinks.map((item) => (
             <button
               key={item.id}
               onClick={() => handleNavClick(item)}
-              className={`transition-colors py-1 cursor-pointer flex items-center gap-1.5 hover:text-[#7E1819] ${
+              className={`transition-colors py-1 cursor-pointer hover:text-[#7E1819] ${
                 item.isHome && viewMode === 'home'
                   ? 'text-[#7E1819] font-black'
                   : 'text-[#333333]'
               }`}
             >
-              <span>{item.label}</span>
-              {item.badge && (
-                <span className="px-1.5 py-0.2 rounded-full bg-amber-100 text-amber-900 border border-amber-300 text-[10px] font-black">
-                  {item.badge}
-                </span>
-              )}
-              {item.hasDot && (
-                <span className="w-2 h-2 rounded-full bg-rose-600 animate-pulse" />
-              )}
+              {item.label}
             </button>
           ))}
         </nav>
 
-        {/* Action Controls & Student Passport Chip */}
+        {/* Action Controls */}
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Student Profile & Passport Quick Button */}
+          {/* Nút HỘ CHIẾU DI SẢN (Chế độ Học sinh lưu hành trình) */}
           <button
             onClick={onOpenPassport}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-500/20 via-yellow-500/20 to-amber-500/20 hover:from-amber-500/30 hover:to-yellow-500/30 text-[#7E1819] border border-amber-400 text-xs font-black shadow-2xs cursor-pointer transition-all hover:scale-103"
-            title="Mở Passport Di Sản & Hành Trình Của Tôi"
+            className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-black shadow-xs cursor-pointer transition-all hover:scale-103 ${
+              activePassport
+                ? 'bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-[#2C0709] border border-amber-300 ring-2 ring-amber-400/40'
+                : 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border border-amber-400/50 hover:from-[#731013] hover:to-[#911d1e]'
+            }`}
+            title={activePassport ? `Hộ chiếu: ${activePassport.fullName} (${activePassport.code})` : "Mở Hộ Chiếu Di Sản / Lưu hành trình khám phá"}
           >
-            <span className="text-base leading-none">{currentAvatar.emoji}</span>
-            <span className="hidden sm:inline truncate max-w-[120px]">
-              {studentProfile?.name || 'Học Sinh'}
-            </span>
-            <span className="px-1.5 py-0.5 rounded-md bg-[#7E1819] text-amber-200 text-[10px] font-black">
-              {completedMonumentsCount}/103
-            </span>
+            {activePassport ? (
+              <>
+                <span className="text-sm leading-none">{activePassport.avatar || '🦁'}</span>
+                <span className="hidden sm:inline font-serif-title uppercase max-w-[110px] truncate">{activePassport.fullName}</span>
+                <span className="bg-black/30 text-amber-950 font-mono text-[10px] px-1.5 py-0.5 rounded font-black hidden md:inline">{activePassport.code}</span>
+              </>
+            ) : (
+              <>
+                <Compass className="w-3.5 h-3.5 text-amber-300 animate-spin-slow" />
+                <span className="hidden sm:inline">Hộ Chiếu Di Sản</span>
+                <span className="sm:hidden">Hộ Chiếu</span>
+              </>
+            )}
           </button>
 
           {/* Nút Đóng Góp */}
           <button
             onClick={onOpenContribute}
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300 text-xs font-black shadow-2xs cursor-pointer transition-all hover:scale-103"
+            className="flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300 text-xs font-black shadow-2xs cursor-pointer transition-all hover:scale-103"
             title="Đóng góp tư liệu di sản"
           >
             <Upload className="w-3.5 h-3.5 text-[#7E1819]" />
-            <span>Đóng góp</span>
+            <span className="hidden sm:inline">Đóng góp</span>
           </button>
 
           {/* Admin CMS Button */}
           <button
             onClick={onOpenAdmin}
-            className="relative flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white text-xs font-bold transition-all shadow-xs cursor-pointer hover:scale-103"
+            className="relative flex items-center gap-1.5 px-3.5 py-1.5 sm:py-2 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white text-xs font-bold transition-all shadow-xs cursor-pointer hover:scale-103"
             title="Quản trị CMS"
           >
             <Settings className="w-3.5 h-3.5 text-amber-300" />
-            <span className="hidden md:inline">Quản trị</span>
+            <span className="hidden sm:inline">Quản trị</span>
             {pendingContributionsCount > 0 && (
               <span className="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-white shadow-sm animate-bounce">
                 {pendingContributionsCount}
@@ -182,26 +176,6 @@ export default function Header({
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-[#EAE3D9] px-4 py-4 space-y-2 text-sm font-bold text-[#333333] shadow-lg animate-fadeIn">
-          {/* Mobile Student Profile Card */}
-          <div 
-            onClick={() => {
-              setMobileMenuOpen(false);
-              onOpenPassport();
-            }}
-            className="p-3 rounded-2xl bg-gradient-to-r from-amber-100 to-amber-200 border border-amber-300 flex items-center justify-between cursor-pointer mb-2"
-          >
-            <div className="flex items-center gap-2.5">
-              <span className="text-2xl">{currentAvatar.emoji}</span>
-              <div>
-                <div className="font-bold text-xs text-[#7E1819]">{studentProfile?.name || 'Học Sinh'}</div>
-                <div className="text-[10px] text-stone-600">{studentProfile?.school || 'THCS / THPT'} • {studentProfile?.className || ''}</div>
-              </div>
-            </div>
-            <span className="px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-200 text-xs font-black">
-              {completedMonumentsCount}/103 📜
-            </span>
-          </div>
-
           {navLinks.map((item) => (
             <button
               key={item.id}
@@ -209,16 +183,23 @@ export default function Header({
                 setMobileMenuOpen(false);
                 handleNavClick(item);
               }}
-              className="flex items-center justify-between w-full text-left px-3 py-2.5 rounded-xl hover:bg-gray-50 text-[#333333] hover:text-[#7E1819]"
+              className="block w-full text-left px-3 py-2.5 rounded-xl hover:bg-gray-50 text-[#333333] hover:text-[#7E1819]"
             >
-              <span>{item.label}</span>
-              {item.badge && (
-                <span className="px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300 text-xs font-black">
-                  {item.badge}
-                </span>
-              )}
+              {item.label}
             </button>
           ))}
+          <div className="pt-3 border-t border-gray-100 flex gap-2">
+            <button
+              onClick={() => {
+                onOpenExplorer();
+                setMobileMenuOpen(false);
+              }}
+              className="flex-1 py-2 px-3 rounded-xl bg-[#7E1819] text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow"
+            >
+              <Grid className="w-4 h-4 text-amber-300" />
+              <span>Kho 103 Di Tích</span>
+            </button>
+          </div>
         </div>
       )}
     </header>
