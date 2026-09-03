@@ -42,13 +42,15 @@ export default function VideoModal({ isOpen, onClose, videoInfo }) {
         </div>
 
         {/* Video Footer info */}
-        <div className="p-4 bg-neutral-900 flex items-center justify-between text-xs text-neutral-400">
-          <span>Xem trực tiếp trên YouTube:</span>
+        <div className="p-4 bg-neutral-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-neutral-300">
+          <span className="text-amber-200 font-medium">
+            {videoInfo?.copyright || (videoInfo?.channel ? `Video thuộc bản quyền Kênh YouTube ${videoInfo.channel}` : 'Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp')}
+          </span>
           <a
-            href={videoInfo.youtubeUrl || 'https://www.youtube.com/watch?v=cplxidwCHyE'}
+            href={videoInfo?.youtubeUrl || `https://www.youtube.com/watch?v=${videoInfo?.youtubeId || 'cplxidwCHyE'}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-red-400 hover:underline flex items-center gap-1 font-semibold"
+            className="text-red-400 hover:underline flex items-center gap-1 font-semibold shrink-0"
           >
             <span>Mở liên kết YouTube</span>
             <ExternalLink className="w-3.5 h-3.5" />

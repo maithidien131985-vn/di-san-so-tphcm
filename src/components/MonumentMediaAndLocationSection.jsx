@@ -46,13 +46,15 @@ export default function MonumentMediaAndLocationSection({
               />
             </div>
 
-            <div className="pt-2 flex items-center justify-between text-xs text-[#777777]">
-              <span>Kênh tư liệu lịch sử số hóa TP.HCM</span>
+            <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-[#555555]">
+              <span className="font-medium text-[#7E1819]">
+                {video?.copyright || (video?.channel ? `Video thuộc bản quyền Kênh YouTube ${video.channel}` : 'Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp')}
+              </span>
               <a
                 href={video?.youtubeUrl || `https://www.youtube.com/watch?v=${youtubeId}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-bold text-[#7E1819] hover:underline flex items-center gap-1"
+                className="font-bold text-[#7E1819] hover:underline flex items-center gap-1 shrink-0"
               >
                 <span>Xem trên YouTube</span>
                 <ExternalLink className="w-3.5 h-3.5" />

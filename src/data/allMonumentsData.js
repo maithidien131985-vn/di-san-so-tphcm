@@ -1,8 +1,3 @@
-// ==============================================================================
-// BÁCH KHOA TOÀN THƯ 103 DI TÍCH LỊCH SỬ - VĂN HÓA TP. HỒ CHÍ MINH & VÙNG PHỤ CẬN
-// TÍCH HỢP TOÀN BỘ 948+ TƯ LIỆU HÌNH ẢNH GỐC THEO TÊN CHUẨN TỪ GOOGLE DRIVE
-// ==============================================================================
-
 export const allMonumentsList = [
   {
     "id": "monument-1",
@@ -87,7 +82,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước",
       "youtubeUrl": "https://www.youtube.com/watch?v=cplxidwCHyE",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước tại 135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Tp. Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước tại 135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Tp. Hồ Chí Minh.",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -640,7 +637,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Di tích lịch sử Địa đạo Củ Chi",
       "youtubeUrl": "https://www.youtube.com/watch?v=7jx02k-wqNo",
       "youtubeId": "7jx02k-wqNo",
-      "description": "Thước phim tư liệu chân thực về di tích Di tích lịch sử Địa đạo Củ Chi tại Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Di tích lịch sử Địa đạo Củ Chi tại Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh..",
+      "channel": "Kỷ Lục TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Kỷ Lục TV"
     },
     "keyHighlights": {
       "figures": {
@@ -1191,7 +1190,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)",
       "youtubeUrl": "https://www.youtube.com/watch?v=PXJTRj2MK8Y",
       "youtubeId": "PXJTRj2MK8Y",
-      "description": "Thước phim tư liệu chân thực về di tích Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An) tại Xã Hồ Tràm, Thành phố Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An) tại Xã Hồ Tràm, Thành phố Hồ Chí Minh.",
+      "channel": "HTV TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV TV"
     },
     "keyHighlights": {
       "figures": {
@@ -1746,7 +1747,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Di tích lịch sử nhà tù Côn Đảo",
       "youtubeUrl": "Nhà tù Côn Đảo – Bản hùng ca ý chí Việt Nam giữa “địa ngục trần gian” | VTV24. https://www.youtube.com/watch?v=NyXUBHrXZQw",
       "youtubeId": "NyXUBHrXZQw",
-      "description": "Thước phim tư liệu chân thực về di tích Di tích lịch sử nhà tù Côn Đảo tại Đặc khu Côn Đảo, Thành phố Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Di tích lịch sử nhà tù Côn Đảo tại Đặc khu Côn Đảo, Thành phố Hồ Chí Minh.",
+      "channel": "VTV24",
+      "copyright": "Video thuộc bản quyền Kênh YouTube VTV24"
     },
     "keyHighlights": {
       "figures": {
@@ -2299,7 +2302,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
       "youtubeUrl": "https://www.youtube.com/watch?v=J17NSx8zUNE",
       "youtubeId": "J17NSx8zUNE",
-      "description": "Thước phim tư liệu chân thực về di tích Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo) tại Xã Ngãi Giao, Thành phố Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo) tại Xã Ngãi Giao, Thành phố Hồ Chí Minh.",
+      "channel": "DAQD",
+      "copyright": "Video thuộc bản quyền Kênh YouTube DAQD"
     },
     "keyHighlights": {
       "figures": {
@@ -2840,7 +2845,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Căn cứ Minh Đạm",
       "youtubeUrl": "https://www.youtube.com/watch?v=wQmupj1pTgs\nhttps://www.youtube.com/watch?v=iOnIb4srgSs",
       "youtubeId": "wQmupj1pTgs",
-      "description": "Thước phim tư liệu chân thực về di tích Căn cứ Minh Đạm tại xã Phước Hải, Thành phố Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Căn cứ Minh Đạm tại xã Phước Hải, Thành phố Hồ Chí Minh.",
+      "channel": "Hải đụng đâu làm đó",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hải đụng đâu làm đó"
     },
     "keyHighlights": {
       "figures": {
@@ -3393,7 +3400,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Căn cứ Rừng Sác",
       "youtubeUrl": "https://www.hcmcpv.org.vn/video/di-tich-lich-su-chien-khu-rung-sac-can-gio-1061?utm_source=chatgpt.com\n\nhttps://www.youtube.com/watch?v=fLrddJ4mjEg",
       "youtubeId": "fLrddJ4mjEg",
-      "description": "Thước phim tư liệu chân thực về di tích Căn cứ Rừng Sác tại xã Cần Giờ, Thành phố Hồ Chí Minh mới."
+      "description": "Thước phim tư liệu chân thực về di tích Căn cứ Rừng Sác tại xã Cần Giờ, Thành phố Hồ Chí Minh mới.",
+      "channel": "TheKingFavor",
+      "copyright": "Video thuộc bản quyền Kênh YouTube TheKingFavor"
     },
     "keyHighlights": {
       "figures": {
@@ -3946,7 +3955,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chiến khu Đ",
       "youtubeUrl": "https://www.youtube.com/watch?v=KH7rZSQA_J8",
       "youtubeId": "KH7rZSQA_J8",
-      "description": "Thước phim tư liệu chân thực về di tích Chiến khu Đ tại Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Chiến khu Đ tại Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh..",
+      "channel": "1312",
+      "copyright": "Video thuộc bản quyền Kênh YouTube 1312"
     },
     "keyHighlights": {
       "figures": {
@@ -4491,7 +4502,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Địa đạo Kim Long",
       "youtubeUrl": "https://www.youtube.com/watch?v=OkS2vC25_WY",
       "youtubeId": "OkS2vC25_WY",
-      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Kim Long tại Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Kim Long tại Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh..",
+      "channel": "Sở VH&TT Thành phố Hồ Chí Minh",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Sở VH&TT Thành phố Hồ Chí Minh"
     },
     "keyHighlights": {
       "figures": {
@@ -5032,7 +5045,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Địa đạo Phú Thọ Hòa",
       "youtubeUrl": "https://www.youtube.com/watch?v=B_6n0DStbfQ",
       "youtubeId": "B_6n0DStbfQ",
-      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Phú Thọ Hòa tại Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Phú Thọ Hòa tại Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -5585,7 +5600,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Địa Đạo Tây Nam ( Tam Giác Sắt)",
       "youtubeUrl": "https://www.youtube.com/watch?v=wH87DePbcDk",
       "youtubeId": "wH87DePbcDk",
-      "description": "Thước phim tư liệu chân thực về di tích Địa Đạo Tây Nam ( Tam Giác Sắt) tại Phường Tây Nam, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Địa Đạo Tây Nam ( Tam Giác Sắt) tại Phường Tây Nam, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -6138,7 +6155,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề",
       "youtubeUrl": "https://www.youtube.com/watch?v=qA3P6XaOgHg",
       "youtubeId": "qA3P6XaOgHg",
-      "description": "Thước phim tư liệu chân thực về di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề tại Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề tại Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh..",
+      "channel": "Trường CĐKT Cao Thắng",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Trường CĐKT Cao Thắng"
     },
     "keyHighlights": {
       "figures": {
@@ -6707,7 +6726,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ",
       "youtubeUrl": "https://www.youtube.com/watch?v=W5SQA5y1nQQ",
       "youtubeId": "W5SQA5y1nQQ",
-      "description": "Thước phim tư liệu chân thực về di tích Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ tại Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ tại Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -7272,7 +7293,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh",
       "youtubeUrl": "https://www.youtube.com/watch?v=eaTItla4gec",
       "youtubeId": "eaTItla4gec",
-      "description": "Thước phim tư liệu chân thực về di tích Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh tại Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh tại Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Tin Tức",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Tin Tức"
     },
     "keyHighlights": {
       "figures": {
@@ -7825,7 +7848,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Ngã Ba Giồng",
       "youtubeUrl": "https://www.youtube.com/watch?v=nFbinmURFKo",
       "youtubeId": "nFbinmURFKo",
-      "description": "Thước phim tư liệu chân thực về di tích Ngã Ba Giồng tại Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Ngã Ba Giồng tại Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -8370,7 +8395,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà lưu niệm Võ Thị Sáu",
       "youtubeUrl": "https://nhandan.vn/video-khanh-thanh-cong-vien-tuong-dai-nha-luu-niem-anh-hung-liet-si-vo-thi-sau-post875525.html?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà lưu niệm Võ Thị Sáu tại Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà lưu niệm Võ Thị Sáu tại Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -8903,7 +8930,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà tù Phú Lợi (căng Phú Lợi)",
       "youtubeUrl": "https://truyenhinh.baobinhduong.vn/video/xem-video/nha-tu-phu-loi-bieu-tuong-cua-long-dung-cam-997.html?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà tù Phú Lợi (căng Phú Lợi) tại Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà tù Phú Lợi (căng Phú Lợi) tại Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -9438,7 +9467,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước",
       "youtubeUrl": "https://thanhuytphcm.vn/tin-tuc/-video-nha-bac-ho-so-5-chau-van-liem-quan-5-niem-tu-hao-cua-dang-bo-chinh-quyen-va-nhan-dan-t-1491905572?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước tại Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước tại Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -9973,7 +10004,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nơi thành lập An Nam Cộng sản Đảng năm 1929",
       "youtubeUrl": "https://www.youtube.com/watch?v=BHTPaKsmfBw",
       "youtubeId": "BHTPaKsmfBw",
-      "description": "Thước phim tư liệu chân thực về di tích Nơi thành lập An Nam Cộng sản Đảng năm 1929 tại Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Nơi thành lập An Nam Cộng sản Đảng năm 1929 tại Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh..",
+      "channel": "Du lịch Tân Định",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Du lịch Tân Định"
     },
     "keyHighlights": {
       "figures": {
@@ -10514,7 +10547,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh",
       "youtubeUrl": "https://www.youtube.com/watch?v=-CFinDhPmlw",
       "youtubeId": "-CFinDhPmlw",
-      "description": "Thước phim tư liệu chân thực về di tích Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh tại Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh tại Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh..",
+      "channel": "BTV Chuyên Đề",
+      "copyright": "Video thuộc bản quyền Kênh YouTube BTV Chuyên Đề"
     },
     "keyHighlights": {
       "figures": {
@@ -11027,7 +11062,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Cù Lao Rùa",
       "youtubeUrl": "https://truyenhinh.baobinhduong.vn/video/xem-video/tap-11-cu-lao-rua-7545.html",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Cù Lao Rùa tại Phường Tân Khánh, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Cù Lao Rùa tại Phường Tân Khánh, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -11540,7 +11577,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Dốc Chùa",
       "youtubeUrl": "https://www.youtube.com/watch?v=0OYMT63jjiU",
       "youtubeId": "0OYMT63jjiU",
-      "description": "Thước phim tư liệu chân thực về di tích Dốc Chùa tại Phường Tân Uyên, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Dốc Chùa tại Phường Tân Uyên, Thành phố Hồ Chí Minh..",
+      "channel": "Sách & Podcast",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Sách & Podcast"
     },
     "keyHighlights": {
       "figures": {
@@ -12093,7 +12132,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Giồng Cá Vồ",
       "youtubeUrl": "https://www.youtube.com/watch?v=lbCmYg7Q-Lo",
       "youtubeId": "lbCmYg7Q-Lo",
-      "description": "Thước phim tư liệu chân thực về di tích Giồng Cá Vồ tại Xã Cần Giờ, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Giồng Cá Vồ tại Xã Cần Giờ, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Tin Tức",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Tin Tức"
     },
     "keyHighlights": {
       "figures": {
@@ -12630,7 +12671,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Lò gốm cổ Hưng Lợi",
       "youtubeUrl": "https://www.youtube.com/watch?v=tJp5yCMf3l0",
       "youtubeId": "tJp5yCMf3l0",
-      "description": "Thước phim tư liệu chân thực về di tích Lò gốm cổ Hưng Lợi tại Phường Phú Định, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Lò gốm cổ Hưng Lợi tại Phường Phú Định, Thành phố Hồ Chí Minh..",
+      "channel": "Kênh Tư Liệu Lịch Sử",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Kênh Tư Liệu Lịch Sử"
     },
     "keyHighlights": {
       "figures": {
@@ -13183,7 +13226,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Ăngten Parabol (đài viba) – Núi Lớn",
       "youtubeUrl": "https://www.youtube.com/watch?v=_KzNZTIqn9I",
       "youtubeId": "_KzNZTIqn9I",
-      "description": "Thước phim tư liệu chân thực về di tích Ăngten Parabol (đài viba) – Núi Lớn tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Ăngten Parabol (đài viba) – Núi Lớn tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Nhịp Sống Đương Đại",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Nhịp Sống Đương Đại"
     },
     "keyHighlights": {
       "figures": {
@@ -13686,7 +13731,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Bót Dây Thép",
       "youtubeUrl": "https://www.hcmcpv.org.vn/tin-tuc/-video-bot-day-thep-di-tich-lich-su-cap-quoc-gia-tai-tp-thu-duc-1491905509?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Bót Dây Thép tại Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Bót Dây Thép tại Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -14215,7 +14262,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ",
       "youtubeUrl": "https://hcmcpv.org.vn/tin-tuc/-video-co-so-ban-tuyen-huan-xu-uy-nam-bo-su-sang-tao-chien-tranh-nhan-dan-giua-long-dich-1491909610?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ tại Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ tại Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -14776,7 +14825,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập",
       "youtubeUrl": "https://hcmcpv.org.vn/tin-tuc/-video-co-so-giau-vu-khi-cua-biet-dong-thanh-danh-dinh-doc-lap-nam-1968-1491906670?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập tại Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập tại Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -15335,7 +15386,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
       "youtubeUrl": "https://hcmcpv.org.vn/tin-tuc/-video-ham-b-%E2%80%93-co-so-in-an-bi-mat-cua-hoi-ung-ho-ve-quoc-doan-1491906100",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn tại Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn tại Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -15862,7 +15915,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Di tích 86 Phan Chu Trinh",
       "youtubeUrl": "https://www.youtube.com/watch?v=_KzNZTIqn9I",
       "youtubeId": "_KzNZTIqn9I",
-      "description": "Thước phim tư liệu chân thực về di tích Di tích 86 Phan Chu Trinh tại Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Di tích 86 Phan Chu Trinh tại Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Nhịp Sống Đương Đại",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Nhịp Sống Đương Đại"
     },
     "keyHighlights": {
       "figures": {
@@ -16383,7 +16438,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Dinh Quận Hóc Môn",
       "youtubeUrl": "https://www.thanhuytphcm.vn/tin-tuc/-video-ve-di-tich-lich-su-dinh-quan-hoc-mon-1491911140?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Dinh Quận Hóc Môn tại Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Dinh Quận Hóc Môn tại Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -16932,7 +16989,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Địa đạo Long Phước",
       "youtubeUrl": "https://www.youtube.com/watch?v=-82-h4xWKxw",
       "youtubeId": "-82-h4xWKxw",
-      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Long Phước tại Phường Tam Long, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Long Phước tại Phường Tam Long, Thành phố Hồ Chí Minh..",
+      "channel": "Báo Nhân Dân",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Báo Nhân Dân"
     },
     "keyHighlights": {
       "figures": {
@@ -17505,7 +17564,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba",
       "youtubeUrl": "https://www.youtube.com/watch?v=z-xEJ_5Od8o",
       "youtubeId": "z-xEJ_5Od8o",
-      "description": "Thước phim tư liệu chân thực về di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba tại Xã Ngãi Giao, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba tại Xã Ngãi Giao, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Nhịp Sống Đương Đại",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Nhịp Sống Đương Đại"
     },
     "keyHighlights": {
       "figures": {
@@ -18064,7 +18125,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Bình Đông",
       "youtubeUrl": "https://www.hcmcpv.org.vn/tin-tuc/%E2%80%8B-video-dinh-binh-dong-%E2%80%93-ngoi-dinh-mang-y-nghia-quan-trong-cua-lich-su-cach-mang-viet-nam-1491905002?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Bình Đông tại Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Bình Đông tại Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -18605,7 +18668,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Phong Phú",
       "youtubeUrl": "https://www.facebook.com/100076125885479/videos/%C4%91%C3%ACnh-phong-ph%C3%BA-di-t%C3%ADch-l%E1%BB%8Bch-s%E1%BB%AD-v%C4%83n-h%C3%B3a-c%E1%BA%A5p-qu%E1%BB%91c-giaxin-tr%C3%A2n-tr%E1%BB%8Dng-c%E1%BA%A3m-%C6%A1n-tfs-htv/24713317145020114/",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Phong Phú tại Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Phong Phú tại Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -19158,7 +19223,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đồn ngã tư Giếng Nước",
       "youtubeUrl": "https://www.youtube.com/watch?v=o4nVqf1VA0E",
       "youtubeId": "o4nVqf1VA0E",
-      "description": "Thước phim tư liệu chân thực về di tích Đồn ngã tư Giếng Nước tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Đồn ngã tư Giếng Nước tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh..",
+      "channel": "nnga",
+      "copyright": "Video thuộc bản quyền Kênh YouTube nnga"
     },
     "keyHighlights": {
       "figures": {
@@ -19647,7 +19714,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Địa đạo Hắc Dịch",
       "youtubeUrl": "https://www.youtube.com/watch?v=IG18oapv440",
       "youtubeId": "IG18oapv440",
-      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Hắc Dịch tại Phường Tân Thành, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Hắc Dịch tại Phường Tân Thành, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Nhịp Sống Đương Đại",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Nhịp Sống Đương Đại"
     },
     "keyHighlights": {
       "figures": {
@@ -20200,7 +20269,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước",
       "youtubeUrl": "https://www.hcmcpv.org.vn/tin-tuc/-video-danh-thuc-tiem-nang-du-lich-tu-cac-di-tich-lich-su-van-hoa-1491900808?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước tại Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước tại Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -20753,7 +20824,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Mộ Phan Châu Trinh",
       "youtubeUrl": "https://www.youtube.com/watch?v=f-7oaRf2ezw",
       "youtubeId": "f-7oaRf2ezw",
-      "description": "Thước phim tư liệu chân thực về di tích Mộ Phan Châu Trinh tại Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Mộ Phan Châu Trinh tại Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -21306,7 +21379,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: “Nhà cao cẳng” số 18 Lê Lợi.",
       "youtubeUrl": "https://www.facebook.com/sovanhoavathethaotphcmcoso3/videos/di-t%C3%ADch-l%E1%BB%8Bch-s%E1%BB%AD-c%C3%A1ch-m%E1%BA%A1ng-nh%C3%A0-cao-c%E1%BA%B3ng-s%E1%BB%91-18-l%C3%AA-l%E1%BB%A3i-ditichlichsu-nhacaocang-18le/1355228216610265/",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích “Nhà cao cẳng” số 18 Lê Lợi. tại Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích “Nhà cao cẳng” số 18 Lê Lợi. tại Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -21851,7 +21926,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Ngôi nhà 42/11 (nhà má Tám Nhung)",
       "youtubeUrl": "https://www.youtube.com/watch?v=60Ric16wuS4",
       "youtubeId": "60Ric16wuS4",
-      "description": "Thước phim tư liệu chân thực về di tích Ngôi nhà 42/11 (nhà má Tám Nhung) tại Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Ngôi nhà 42/11 (nhà má Tám Nhung) tại Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Nhịp Sống Đương Đại",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Nhịp Sống Đương Đại"
     },
     "keyHighlights": {
       "figures": {
@@ -22376,7 +22453,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà số 18/5 (nhà ông Trương Quang Vinh)",
       "youtubeUrl": "https://www.youtube.com/watch?v=cplxidwCHyE",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà số 18/5 (nhà ông Trương Quang Vinh) tại Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà số 18/5 (nhà ông Trương Quang Vinh) tại Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -22897,7 +22976,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà Tròn",
       "youtubeUrl": "https://www.youtube.com/watch?v=Q97cfmvO6E8",
       "youtubeId": "Q97cfmvO6E8",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà Tròn tại Phường Bà Rịa, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà Tròn tại Phường Bà Rịa, Thành phố Hồ Chí Minh..",
+      "channel": "HTV TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV TV"
     },
     "keyHighlights": {
       "figures": {
@@ -23374,7 +23455,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội",
       "youtubeUrl": "https://www.youtube.com/watch?v=BHTPaKsmfBw",
       "youtubeId": "BHTPaKsmfBw",
-      "description": "Thước phim tư liệu chân thực về di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội tại Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội tại Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh..",
+      "channel": "Du lịch Tân Định",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Du lịch Tân Định"
     },
     "keyHighlights": {
       "figures": {
@@ -23856,7 +23939,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Khu căn cứ Núi Dinh",
       "youtubeUrl": "https://www.youtube.com/watch?v=ODlCCoJO6YE",
       "youtubeId": "ODlCCoJO6YE",
-      "description": "Thước phim tư liệu chân thực về di tích Khu căn cứ Núi Dinh tại Phường Tân Hải, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Khu căn cứ Núi Dinh tại Phường Tân Hải, Thành phố Hồ Chí Minh..",
+      "channel": "HTV TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV TV"
     },
     "keyHighlights": {
       "figures": {
@@ -24391,7 +24476,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968",
       "youtubeUrl": "https://www.thanhuytphcm.vn/tin-tuc/-video-pho-binh-%E2%80%93-tiem-pho-tru-danh-tung-la-so-chi-huy-tien-phuong-phan-khu-6-%C3%B0ac-khu-sai-gon-1491911751?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 tại Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 tại Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -24932,7 +25019,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Tịnh xá Ngọc Phương",
       "youtubeUrl": "https://www.youtube.com/watch?v=yvuWcYbTyew",
       "youtubeId": "yvuWcYbTyew",
-      "description": "Thước phim tư liệu chân thực về di tích Tịnh xá Ngọc Phương tại Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Tịnh xá Ngọc Phương tại Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh..",
+      "channel": "SaLa TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube SaLa TV"
     },
     "keyHighlights": {
       "figures": {
@@ -25477,7 +25566,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Tòa Đại sứ quán Mỹ",
       "youtubeUrl": "https://www.youtube.com/watch?v=6UL2_pQwpdw",
       "youtubeId": "6UL2_pQwpdw",
-      "description": "Thước phim tư liệu chân thực về di tích Tòa Đại sứ quán Mỹ tại Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Tòa Đại sứ quán Mỹ tại Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh..",
+      "channel": "BATTLECRY - NGƯỜI KỂ SỬ",
+      "copyright": "Video thuộc bản quyền Kênh YouTube BATTLECRY - NGƯỜI KỂ SỬ"
     },
     "keyHighlights": {
       "figures": {
@@ -26010,7 +26101,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Trại Đa-vít",
       "youtubeUrl": "https://antv.gov.vn/xa-hoi-4/trai-davis-chuyen-ke-nguoi-trong-cuoc--66616D7F4.html?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Trại Đa-vít tại Phường Bảy Hiền, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Trại Đa-vít tại Phường Bảy Hiền, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -26535,7 +26628,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Trận địa pháo cổ Cầu Đá",
       "youtubeUrl": "https://www.youtube.com/watch?v=JpukJ0c5UXY",
       "youtubeId": "JpukJ0c5UXY",
-      "description": "Thước phim tư liệu chân thực về di tích Trận địa pháo cổ Cầu Đá tại Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Trận địa pháo cổ Cầu Đá tại Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Nhịp Sống Đương Đại",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Nhịp Sống Đương Đại"
     },
     "keyHighlights": {
       "figures": {
@@ -26992,7 +27087,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)",
       "youtubeUrl": "https://www.youtube.com/watch?v=IKjrR9QDwmA",
       "youtubeId": "IKjrR9QDwmA",
-      "description": "Thước phim tư liệu chân thực về di tích Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ) tại Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ) tại Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "Khám Phá Việt Nam",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Khám Phá Việt Nam"
     },
     "keyHighlights": {
       "figures": {
@@ -27489,7 +27586,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
       "youtubeUrl": "https://www.youtube.com/watch?v=GdkULL8Fq4g",
       "youtubeId": "GdkULL8Fq4g",
-      "description": "Thước phim tư liệu chân thực về di tích Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "HTV TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV TV"
     },
     "keyHighlights": {
       "figures": {
@@ -27994,7 +28093,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Trụ sở Báo Dân Chúng",
       "youtubeUrl": "https://www.youtube.com/watch?v=toUPqbmSmKA",
       "youtubeId": "toUPqbmSmKA",
-      "description": "Thước phim tư liệu chân thực về di tích Trụ sở Báo Dân Chúng tại Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Trụ sở Báo Dân Chúng tại Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh..",
+      "channel": "HTV Tin Tức",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Tin Tức"
     },
     "keyHighlights": {
       "figures": {
@@ -28539,7 +28640,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)",
       "youtubeUrl": "https://www.youtube.com/watch?v=5-eELdgh9QQ",
       "youtubeId": "5-eELdgh9QQ",
-      "description": "Thước phim tư liệu chân thực về di tích Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958) tại Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958) tại Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh..",
+      "channel": "Hello3Dworld",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hello3Dworld"
     },
     "keyHighlights": {
       "figures": {
@@ -29072,7 +29175,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Trụ sở Ủy ban Việt Minh tại Vũng Tàu",
       "youtubeUrl": "https://www.youtube.com/watch?v=LP7NbSk31OY",
       "youtubeId": "LP7NbSk31OY",
-      "description": "Thước phim tư liệu chân thực về di tích Trụ sở Ủy ban Việt Minh tại Vũng Tàu tại Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Trụ sở Ủy ban Việt Minh tại Vũng Tàu tại Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "HTV TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV TV"
     },
     "keyHighlights": {
       "figures": {
@@ -29597,7 +29702,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Bạch Dinh",
       "youtubeUrl": "https://antv.gov.vn/video/viet-nam-que-huong-toi-144/bach-dinh-vung-tau-di-tich-kien-truc-lich-su-1E6A7D79B.html?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Bạch Dinh tại Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Bạch Dinh tại Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh.",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -30118,7 +30225,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
       "youtubeUrl": "https://www.youtube.com/%40baotanglichsuthanhphohochi1694?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh tại Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh tại Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM.",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -30651,7 +30760,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Bảo tàng Thành phố Hồ Chí Minh",
       "youtubeUrl": "https://hcmc-museum.edu.vn/?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Bảo tàng Thành phố Hồ Chí Minh tại Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Bảo tàng Thành phố Hồ Chí Minh tại Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM.",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -31200,7 +31311,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Giác Lâm",
       "youtubeUrl": "https://www.giaphatphcm.com/chua-giac-lam-mot-trong-nhung-chua-co-nam-bo?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Giác Lâm tại 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Giác Lâm tại 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam.",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -31749,7 +31862,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Giác Viên",
       "youtubeUrl": "https://vtv.vn/video/kham-pha-viet-nam-bao-lam-bach-dieu-o-chua-giac-vien-190332.htm?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Giác Viên tại Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Giác Viên tại Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM.",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -32270,7 +32385,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Hội Khánh",
       "youtubeUrl": "https://www.youtube.com/watch?v=HV28JC1S5Sk",
       "youtubeId": "HV28JC1S5Sk",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Hội Khánh tại Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Hội Khánh tại Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh.",
+      "channel": "Bình Dương 24h",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Bình Dương 24h"
     },
     "keyHighlights": {
       "figures": {
@@ -32811,7 +32928,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Hội Sơn",
       "youtubeUrl": "https://hcmcpv.org.vn/tin-tuc/-video-chua-hoi-son-minh-chung-song-dong-cho-su-hinh-thanh-va-phat-trien-phat-giao-nam-bo-1491933508?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Hội Sơn tại Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Hội Sơn tại Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM.",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -33357,7 +33476,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Long Bàn",
       "youtubeUrl": "https://www.youtube.com/watch?v=lbsaS9ThrEM",
       "youtubeId": "lbsaS9ThrEM",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Long Bàn tại Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Long Bàn tại Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh..",
+      "channel": "HTV TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV TV"
     },
     "keyHighlights": {
       "figures": {
@@ -33892,7 +34013,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Phụng Sơn",
       "youtubeUrl": "https://youtu.be/PTx4PmMDono?si=sRv9-6IQfjIh6BcZ",
       "youtubeId": "PTx4PmMDono",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Phụng Sơn tại Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Phụng Sơn tại Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh..",
+      "channel": "Khánh Đi Chùa Đây🙏",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Khánh Đi Chùa Đây🙏"
     },
     "keyHighlights": {
       "figures": {
@@ -34434,7 +34557,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Phước Lâm (Phước Lâm Tự)",
       "youtubeUrl": "https://www.youtube.com/watch?v=cplxidwCHyE",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Phước Lâm (Phước Lâm Tự) tại Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Phước Lâm (Phước Lâm Tự) tại Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -34981,7 +35106,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Phước Tường",
       "youtubeUrl": "https://youtu.be/GhpsuXR9X7g?si=EB5aMYDohyY-MmZo",
       "youtubeId": "GhpsuXR9X7g",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Phước Tường tại Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh.."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Phước Tường tại Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh..",
+      "channel": "KỂ CHUYỆN BẰNG HÌNH",
+      "copyright": "Video thuộc bản quyền Kênh YouTube KỂ CHUYỆN BẰNG HÌNH"
     },
     "keyHighlights": {
       "figures": {
@@ -35514,7 +35641,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Sắc Tứ Trường Thọ",
       "youtubeUrl": "https://youtu.be/r-IsUapr1KA?si=GqtKX8l44rzmuyxR",
       "youtubeId": "r-IsUapr1KA",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Sắc Tứ Trường Thọ tại Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Sắc Tứ Trường Thọ tại Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh.",
+      "channel": "SaLa TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube SaLa TV"
     },
     "keyHighlights": {
       "figures": {
@@ -36063,7 +36192,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Dinh Cô",
       "youtubeUrl": "https://www.youtube.com/watch?v=PMkSX5y8_YI&utm_source=chatgpt.com",
       "youtubeId": "PMkSX5y8_YI",
-      "description": "Thước phim tư liệu chân thực về di tích Dinh Cô tại Xã Long Hải, Thành phố Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Dinh Cô tại Xã Long Hải, Thành phố Hồ Chí Minh.",
+      "channel": "BONG NGO MARIO",
+      "copyright": "Video thuộc bản quyền Kênh YouTube BONG NGO MARIO"
     },
     "keyHighlights": {
       "figures": {
@@ -36628,7 +36759,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Chùa Ngọc Hoàng",
       "youtubeUrl": "https://www.youtube.com/watch?v=UWUsUkeJix4&utm_source=chatgpt.com",
       "youtubeId": "UWUsUkeJix4",
-      "description": "Thước phim tư liệu chân thực về di tích Chùa Ngọc Hoàng tại Số 73 Mai Thị Lựu, \nphường Tân Định."
+      "description": "Thước phim tư liệu chân thực về di tích Chùa Ngọc Hoàng tại Số 73 Mai Thị Lựu, \nphường Tân Định.",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -37161,7 +37294,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Bình Hòa",
       "youtubeUrl": "https://youtu.be/H9PMGfg8R7w?si=yry_3z4uywU-lF76",
       "youtubeId": "H9PMGfg8R7w",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Bình Hòa tại Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Bình Hòa tại Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh.",
+      "channel": "Khám Phá Việt Nam",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Khám Phá Việt Nam"
     },
     "keyHighlights": {
       "figures": {
@@ -37734,7 +37869,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Chí Hòa",
       "youtubeUrl": "https://vtv.vn/video/kham-pha-viet-nam-dinh-chi-hoa-dau-tich-lich-su-thanh-gia-dinh-473078.htm?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Chí Hòa tại Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Chí Hòa tại Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh.",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -38211,7 +38348,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Dĩ An",
       "youtubeUrl": "https://youtu.be/D0WOzGlXcJk?si=lDG5ae626ED2mBp6",
       "youtubeId": "D0WOzGlXcJk",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Dĩ An tại Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Dĩ An tại Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh.",
+      "channel": "TRINH GIA CHANNEL",
+      "copyright": "Video thuộc bản quyền Kênh YouTube TRINH GIA CHANNEL"
     },
     "keyHighlights": {
       "figures": {
@@ -38736,7 +38875,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Minh Hương Gia Thạnh",
       "youtubeUrl": "https://youtu.be/uIaRDZyOkSY?si=-1XI_5OkvnZlaGND",
       "youtubeId": "uIaRDZyOkSY",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Minh Hương Gia Thạnh tại Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Minh Hương Gia Thạnh tại Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh.",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -39257,7 +39398,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Phú Long",
       "youtubeUrl": "https://youtu.be/s4A9jKiB7RY?si=jOhC2uuYN8g_NkfQ",
       "youtubeId": "s4A9jKiB7RY",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Phú Long tại Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Phú Long tại Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM.",
+      "channel": "Travel ok la",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Travel ok la"
     },
     "keyHighlights": {
       "figures": {
@@ -39766,7 +39909,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Phú Nhuận",
       "youtubeUrl": "https://youtu.be/X0VFcSztZTM?si=MhmwpcTVgJuTmr7l",
       "youtubeId": "X0VFcSztZTM",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Phú Nhuận tại Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Phú Nhuận tại Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM.",
+      "channel": "Tuấn Anh Ngụy",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Tuấn Anh Ngụy"
     },
     "keyHighlights": {
       "figures": {
@@ -40299,7 +40444,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Tân An (Bến Thế)",
       "youtubeUrl": "https://youtu.be/ISSvBRxSSyE?si=lEV2J_RT3kRCRGV8",
       "youtubeId": "ISSvBRxSSyE",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Tân An (Bến Thế) tại Khu phố 1, phường Phú An, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Tân An (Bến Thế) tại Khu phố 1, phường Phú An, TP.HCM.",
+      "channel": "BTV Giải trí",
+      "copyright": "Video thuộc bản quyền Kênh YouTube BTV Giải trí"
     },
     "keyHighlights": {
       "figures": {
@@ -40833,7 +40980,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Thắng Tam",
       "youtubeUrl": "https://youtu.be/xUq_z0v5HLg?si=6ra5n-cxNtKI6Gl3",
       "youtubeId": "xUq_z0v5HLg",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Thắng Tam tại Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Thắng Tam tại Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM.",
+      "channel": "HTV Du lịch - Giải trí",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV Du lịch - Giải trí"
     },
     "keyHighlights": {
       "figures": {
@@ -41336,7 +41485,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Thần Linh Đông",
       "youtubeUrl": "https://youtu.be/6CZRgPhqtqU?si=AzotATO3DVDFx-7F",
       "youtubeId": "6CZRgPhqtqU",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Thần Linh Đông tại Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Thần Linh Đông tại Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM.",
+      "channel": "Thời Gian Hoài Cổ",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Thời Gian Hoài Cổ"
     },
     "keyHighlights": {
       "figures": {
@@ -41821,7 +41972,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Thông Tây Hội",
       "youtubeUrl": "https://vtcnews.vn/video-kham-pha-ngoi-dinh-hon-300-nam-tuoi-lau-doi-nhat-o-tphcm-ar568485.html?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Thông Tây Hội tại Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Thông Tây Hội tại Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -42354,7 +42507,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Trường Thọ",
       "youtubeUrl": "https://youtu.be/jWYy8amTxPI?si=BRT_0qGwKpluDXnw",
       "youtubeId": "jWYy8amTxPI",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Trường Thọ tại Tổ 5, phường Thủ Đức, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Trường Thọ tại Tổ 5, phường Thủ Đức, TP.HCM..",
+      "channel": "iLOU",
+      "copyright": "Video thuộc bản quyền Kênh YouTube iLOU"
     },
     "keyHighlights": {
       "figures": {
@@ -42847,7 +43002,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Đình Xuân Hiệp",
       "youtubeUrl": "https://youtu.be/xHX0oCbBb5Y?si=sC9teCHIMeUDivjR",
       "youtubeId": "xHX0oCbBb5Y",
-      "description": "Thước phim tư liệu chân thực về di tích Đình Xuân Hiệp tại Phường Linh Xuân, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Đình Xuân Hiệp tại Phường Linh Xuân, TP.HCM..",
+      "channel": "Văn hoá Văn nghệ",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Văn hoá Văn nghệ"
     },
     "keyHighlights": {
       "figures": {
@@ -43380,7 +43537,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Hội quán Hà Chương",
       "youtubeUrl": "https://youtu.be/NiTzguY5Q78?si=T3FFRosqmiMUCGoi",
       "youtubeId": "NiTzguY5Q78",
-      "description": "Thước phim tư liệu chân thực về di tích Hội quán Hà Chương tại Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ.."
+      "description": "Thước phim tư liệu chân thực về di tích Hội quán Hà Chương tại Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ..",
+      "channel": "Khánh Đi Chùa Đây🙏",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Khánh Đi Chùa Đây🙏"
     },
     "keyHighlights": {
       "figures": {
@@ -43913,7 +44072,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)",
       "youtubeUrl": "https://www.youtube.com/watch?v=HDhrKS9BDQk&utm_source=chatgpt.com",
       "youtubeId": "HDhrKS9BDQk",
-      "description": "Thước phim tư liệu chân thực về di tích Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) tại Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) tại Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -44446,7 +44607,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Hội quán Nghĩa Nhuận",
       "youtubeUrl": "https://youtu.be/s5-ayCMU0fk?si=UXW9a0La9WAt-6N6",
       "youtubeId": "s5-ayCMU0fk",
-      "description": "Thước phim tư liệu chân thực về di tích Hội quán Nghĩa Nhuận tại Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Hội quán Nghĩa Nhuận tại Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM..",
+      "channel": "Khánh Đi Chùa Đây🙏",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Khánh Đi Chùa Đây🙏"
     },
     "keyHighlights": {
       "figures": {
@@ -44979,7 +45142,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Hội quán Ôn Lăng",
       "youtubeUrl": "https://youtu.be/CXRjxrI_6N0?si=dXSV5uIb_2CmPrAr",
       "youtubeId": "CXRjxrI_6N0",
-      "description": "Thước phim tư liệu chân thực về di tích Hội quán Ôn Lăng tại Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Hội quán Ôn Lăng tại Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM..",
+      "channel": "Khánh Đi Chùa Đây🙏",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Khánh Đi Chùa Đây🙏"
     },
     "keyHighlights": {
       "figures": {
@@ -45592,7 +45757,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Hội quán Quỳnh Phủ",
       "youtubeUrl": "https://www.youtube.com/watch?v=57bNTtfHm8E",
       "youtubeId": "57bNTtfHm8E",
-      "description": "Thước phim tư liệu chân thực về di tích Hội quán Quỳnh Phủ tại Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Hội quán Quỳnh Phủ tại Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -46125,7 +46292,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Hội quán Tuệ Thành (Chùa Bà)",
       "youtubeUrl": "https://youtu.be/CT5O_u4gvwo?si=1L2wL_y7ejfSiLN0",
       "youtubeId": "CT5O_u4gvwo",
-      "description": "Thước phim tư liệu chân thực về di tích Hội quán Tuệ Thành (Chùa Bà) tại Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Hội quán Tuệ Thành (Chùa Bà) tại Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -46658,7 +46827,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Lăng Lê Văn Duyệt",
       "youtubeUrl": "https://youtu.be/57OonwEqKV8?si=cI-W-Ue2pbwuE1x6",
       "youtubeId": "57OonwEqKV8",
-      "description": "Thước phim tư liệu chân thực về di tích Lăng Lê Văn Duyệt tại Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Lăng Lê Văn Duyệt tại Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM..",
+      "channel": "Tin tức & Bình luận",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Tin tức & Bình luận"
     },
     "keyHighlights": {
       "figures": {
@@ -47191,7 +47362,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Lăng Trương Tấn Bửu",
       "youtubeUrl": "https://youtu.be/kSCX8TV7JWQ?si=5NxoJCHZ_HEmxQo3",
       "youtubeId": "kSCX8TV7JWQ",
-      "description": "Thước phim tư liệu chân thực về di tích Lăng Trương Tấn Bửu tại Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Lăng Trương Tấn Bửu tại Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM..",
+      "channel": "Tuấn Anh Ngụy",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Tuấn Anh Ngụy"
     },
     "keyHighlights": {
       "figures": {
@@ -47724,7 +47897,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Lăng Võ Di Nguy",
       "youtubeUrl": "https://youtu.be/1xRP68JmdvI?si=evkSVhuELzZEqi48",
       "youtubeId": "1xRP68JmdvI",
-      "description": "Thước phim tư liệu chân thực về di tích Lăng Võ Di Nguy tại Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Lăng Võ Di Nguy tại Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM..",
+      "channel": "Hello3Dworld",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hello3Dworld"
     },
     "keyHighlights": {
       "figures": {
@@ -48258,7 +48433,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Linh Sơn Cổ Tự",
       "youtubeUrl": "https://youtu.be/8PkJUkZevg8?si=6memcEEoYMtqJLC0",
       "youtubeId": "8PkJUkZevg8",
-      "description": "Thước phim tư liệu chân thực về di tích Linh Sơn Cổ Tự tại Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Linh Sơn Cổ Tự tại Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM..",
+      "channel": "ĐAO ĐONG TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube ĐAO ĐONG TV"
     },
     "keyHighlights": {
       "figures": {
@@ -48793,7 +48970,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Miếu Nhị Phủ (Chùa Ông Bổn)",
       "youtubeUrl": "https://voh.com.vn/video/van-hoc-nghe-thuat-cac-dan-toc-thieu-so/dac-sac-di-tich-mieu-nhi-phu-15250113000575500.html?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Miếu Nhị Phủ (Chùa Ông Bổn) tại Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Miếu Nhị Phủ (Chùa Ông Bổn) tại Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -49326,7 +49505,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Miếu Thiên Hậu (Quảng Triệu hội quán)",
       "youtubeUrl": "https://youtu.be/ikmlMMvKatU?si=g3Yc8Bl9eQG6eMCx",
       "youtubeId": "ikmlMMvKatU",
-      "description": "Thước phim tư liệu chân thực về di tích Miếu Thiên Hậu (Quảng Triệu hội quán) tại Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Miếu Thiên Hậu (Quảng Triệu hội quán) tại Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM..",
+      "channel": "Khánh Đi Chùa Đây🙏",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Khánh Đi Chùa Đây🙏"
     },
     "keyHighlights": {
       "figures": {
@@ -49827,7 +50008,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà cổ Trần Công Vàng",
       "youtubeUrl": "https://youtu.be/kgh5YlCWXHU?si=i-LEHCHdCZn_qlKq",
       "youtubeId": "kgh5YlCWXHU",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà cổ Trần Công Vàng tại Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà cổ Trần Công Vàng tại Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM..",
+      "channel": "PHÚ CƯỜNG ONLINE",
+      "copyright": "Video thuộc bản quyền Kênh YouTube PHÚ CƯỜNG ONLINE"
     },
     "keyHighlights": {
       "figures": {
@@ -50360,7 +50543,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà cổ Trần Văn Hổ",
       "youtubeUrl": "https://truyenhinh.baobinhduong.vn/video/xem-video/tap-6-nha-co-tran-van-ho-7440.html?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà cổ Trần Văn Hổ tại Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà cổ Trần Văn Hổ tại Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -50837,7 +51022,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà hát Thành phố Hồ Chí Minh",
       "youtubeUrl": "https://youtu.be/eo-ZqRbqSmQ?si=R50njjDLkQXm39oz",
       "youtubeId": "eo-ZqRbqSmQ",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà hát Thành phố Hồ Chí Minh tại Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà hát Thành phố Hồ Chí Minh tại Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -51371,7 +51558,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà Lớn Long Sơn",
       "youtubeUrl": "https://dantri.com.vn/video/chiem-nguong-kien-truc-doc-nhat-vo-nhi-cua-nha-lon-long-son-123982.htm?utm_source=chatgpt.com",
       "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà Lớn Long Sơn tại Thôn 5, phường Long Sơn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà Lớn Long Sơn tại Thôn 5, phường Long Sơn, TP.HCM..",
+      "channel": "THVL Tổng Hợp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
     "keyHighlights": {
       "figures": {
@@ -51906,7 +52095,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
       "youtubeUrl": "https://youtu.be/iXKDqvB19V4?si=YL0suGn_X5Q3jX85",
       "youtubeId": "iXKDqvB19V4",
-      "description": "Thước phim tư liệu chân thực về di tích Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) tại Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) tại Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM..",
+      "channel": "Hãng phim Nguyễn Đình Chiểu",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Hãng phim Nguyễn Đình Chiểu"
     },
     "keyHighlights": {
       "figures": {
@@ -52440,7 +52631,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Niết Bàn Tịnh Xá",
       "youtubeUrl": "https://youtu.be/m2kfKchbLqA?si=8m7TPzuSZiVZ--xG",
       "youtubeId": "m2kfKchbLqA",
-      "description": "Thước phim tư liệu chân thực về di tích Niết Bàn Tịnh Xá tại Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Niết Bàn Tịnh Xá tại Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM..",
+      "channel": "HTV TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV TV"
     },
     "keyHighlights": {
       "figures": {
@@ -52967,7 +53160,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Núi Châu Thới",
       "youtubeUrl": "https://www.youtube.com/watch?v=W5gYyG5jGD0&utm_source=chatgpt.com",
       "youtubeId": "W5gYyG5jGD0",
-      "description": "Thước phim tư liệu chân thực về di tích Núi Châu Thới tại Núi Châu Thới, phường Đông Hòa, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Núi Châu Thới tại Núi Châu Thới, phường Đông Hòa, TP.HCM..",
+      "channel": "Son Nguyen",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Son Nguyen"
     },
     "keyHighlights": {
       "figures": {
@@ -53501,7 +53696,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Thích Ca Phật Đài",
       "youtubeUrl": "https://youtu.be/OgXE8AgsrmY?si=ZoyyjheqSMaPbFbI",
       "youtubeId": "OgXE8AgsrmY",
-      "description": "Thước phim tư liệu chân thực về di tích Thích Ca Phật Đài tại Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Thích Ca Phật Đài tại Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM..",
+      "channel": "HTV TV",
+      "copyright": "Video thuộc bản quyền Kênh YouTube HTV TV"
     },
     "keyHighlights": {
       "figures": {
@@ -54028,7 +54225,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Tòa án nhân dân Thành phố Hồ Chí Minh",
       "youtubeUrl": "https://youtu.be/5LJ9vRi3WSw?si=aOEgRozw71bplToW",
       "youtubeId": "5LJ9vRi3WSw",
-      "description": "Thước phim tư liệu chân thực về di tích Tòa án nhân dân Thành phố Hồ Chí Minh tại Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Tòa án nhân dân Thành phố Hồ Chí Minh tại Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM..",
+      "channel": "AuClip Nguoi Tra Vinh ",
+      "copyright": "Video thuộc bản quyền Kênh YouTube AuClip Nguoi Tra Vinh "
     },
     "keyHighlights": {
       "figures": {
@@ -54561,7 +54760,9 @@ export const allMonumentsList = [
       "title": "Phim tư liệu lịch sử: Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
       "youtubeUrl": "https://youtu.be/AS4rnbYJ7sM?si=T16JS0X1SpV5qWOb",
       "youtubeId": "AS4rnbYJ7sM",
-      "description": "Thước phim tư liệu chân thực về di tích Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh tại Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM.."
+      "description": "Thước phim tư liệu chân thực về di tích Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh tại Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM..",
+      "channel": "Truyền Hình Đồng Tháp",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Truyền Hình Đồng Tháp"
     },
     "keyHighlights": {
       "figures": {
@@ -55021,18 +55222,14 @@ export const allMonumentsList = [
   }
 ];
 
-export const monumentsCount = allMonumentsList.length;
-
-export function getMonumentByIdOrStt(identifier) {
-  if (!identifier && identifier !== 0) return allMonumentsList[0];
-  const numericId = parseInt(identifier);
-  if (!isNaN(numericId)) {
-    const found = allMonumentsList.find(m => m.stt === numericId);
+export const getMonumentByIdOrStt = (idOrStt) => {
+  if (!idOrStt) return allMonumentsList[0];
+  const num = parseInt(idOrStt, 10);
+  if (!isNaN(num)) {
+    const found = allMonumentsList.find(m => m.stt === num);
     if (found) return found;
   }
-  const strId = String(identifier).toLowerCase();
-  const foundStr = allMonumentsList.find(m => m.id === strId || m.stt.toString() === strId);
-  return foundStr || allMonumentsList[0];
-}
+  return allMonumentsList.find(m => m.id === idOrStt) || allMonumentsList[0];
+};
 
-export default allMonumentsList;
+export const totalMonumentsCount = allMonumentsList.length;
