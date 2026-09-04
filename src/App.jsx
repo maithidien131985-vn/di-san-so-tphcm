@@ -549,11 +549,12 @@ export default function App() {
               />
             </div>
 
-            {/* 9. Next Monument Section: Gợi ý các di tích tiếp theo */}
+            {/* 9. Next Monument Section: Gợi ý các di tích gần đó và cùng loại hình */}
             <ScrollReveal>
               <NextMonumentSection
-                nextMonuments={nextMonumentsForSection}
-                onSelectMonument={handleSelectNextMonument}
+                currentStt={currentStt}
+                allMonuments={allMonumentsList}
+                onSelectMonument={(stt) => handleSelectMonument(stt)}
               />
             </ScrollReveal>
           </main>
