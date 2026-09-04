@@ -117,13 +117,14 @@ export default function App() {
     return getMonumentByIdOrStt(currentStt);
   }, [currentStt]);
 
-  const storageKey = `di_san_so_v10_monument_stt_${currentStt}`;
+  const storageKey = `di_san_so_v11_monument_stt_${currentStt}`;
 
   const mergeWithBase = (base, saved) => {
     if (!saved) return base;
     return {
       ...base,
       ...saved,
+      video: base.video, // Luôn đồng bộ video mới nhất từ dữ liệu hệ thống
       gallery: base.gallery, // Luôn đồng bộ danh sách ảnh thực tế từ Google Drive
       info: {
         ...base.info,
