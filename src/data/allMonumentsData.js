@@ -11042,10 +11042,10 @@ export const allMonumentsList = [
           "https://drive.google.com/file/d/1LRQkNg7G25-vtfzmUjCQ8zvB79aDSsJZ/view?usp=sharing",
           "https://drive.google.com/file/d/1XGNNmdi7rRjIKP-TzACyeDaCMTdAdes2/view?usp=sharing"
         ],
-        "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1umyCtj95mufnvInK-Zg5s2-f-Hj-RSvg?usp=sharing"
       },
       "overview": "Cù Lao Rùa là một trong những địa điểm khảo cổ được phát hiện và nghiên cứu sớm ở Đông Nam Bộ, có niên đại khoảng 3.500–2.700 năm cách ngày nay, trải qua hai giai đoạn phát triển. Các cuộc khai quật cho thấy đây là khu di tích cư trú kết hợp mộ táng, cung cấp tư liệu quan trọng về đời sống, kinh tế, xã hội và tín ngưỡng của cư dân tiền sử vùng Đông Nam Bộ.",
-      "heroImage": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/M%E1%BA%B7t%20ti%E1%BB%81n%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
+      "heroImage": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/To%C3%A0n%20c%E1%BA%A3nh%20khu%20di%20t%C3%ADch%20C%C3%B9%20Lao%20R%C3%B9a%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
       "emCoBiet": [
         "📏 Diện tích cù lao: 277 ha",
         "🔎 Gò khảo cổ cao: khoảng 15 m",
@@ -11059,10 +11059,10 @@ export const allMonumentsList = [
       }
     },
     "video": {
-      "title": "Phim tư liệu lịch sử: Cù Lao Rùa",
-      "youtubeUrl": "https://truyenhinh.baobinhduong.vn/video/xem-video/tap-11-cu-lao-rua-7545.html",
-      "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Cù Lao Rùa tại Phường Tân Khánh, Thành phố Hồ Chí Minh..",
+      "title": "Chuyện kể đất phương Nam: Cù lao Tân Uyên - Nơi dấu xưa vang vọng",
+      "youtubeUrl": "https://www.youtube.com/watch?v=SH7B9biddSs",
+      "youtubeId": "SH7B9biddSs",
+      "description": "Thước phim tư liệu chân thực về Di tích khảo cổ Cù Lao Rùa tại Xã Thạnh Hội, huyện Bắc Tân Uyên, TP. Hồ Chí Minh.",
       "channel": "THVL Tổng Hợp",
       "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
     },
@@ -11191,42 +11191,66 @@ export const allMonumentsList = [
     "gallery": [
       {
         "id": "mon_21_img_1",
-        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20c%C3%A1ch%20m%E1%BA%A1ng%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
-        "title": "Bia Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
-        "caption": "Bia Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
-        "category": "Tư liệu ảnh di tích",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/To%C3%A0n%20c%E1%BA%A3nh%20khu%20di%20t%C3%ADch%20C%C3%B9%20Lao%20R%C3%B9a%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+        "title": "Toàn cảnh khu di tích Cù Lao Rùa nhìn từ trên cao",
+        "caption": "Toàn cảnh không gian di tích khảo cổ Cù Lao Rùa ven sông Đồng Nai nhìn từ flycam trên cao.",
+        "category": "Cảnh quan tổng thể",
         "year": "Tư liệu thực địa"
       },
       {
         "id": "mon_21_img_2",
-        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/Chi%20ti%E1%BA%BFt%20ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1i%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
-        "title": "Chi tiết kiến trúc mái Nhà số 86 Phan Chu Trinh",
-        "caption": "Chi tiết kiến trúc mái Nhà số 86 Phan Chu Trinh",
-        "category": "Tư liệu ảnh di tích",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/B%E1%BA%A3ng%20hi%E1%BB%87u%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20khu%20di%20t%C3%ADch%20C%C3%B9%20Lao%20R%C3%B9a%20cho%20du%20kh%C3%A1ch%20tham%20quan.jpg",
+        "title": "Bảng hiệu giới thiệu khu di tích Cù Lao Rùa cho du khách tham quan",
+        "caption": "Bảng thông tin chỉ dẫn và giới thiệu di tích lịch sử khảo cổ Cù Lao Rùa đón tiếp khách tham quan.",
+        "category": "Bia chỉ dẫn & Tư liệu",
         "year": "Tư liệu thực địa"
       },
       {
         "id": "mon_21_img_3",
-        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/Ki%E1%BA%BFn%20tr%C3%BAc%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh%20nh%C3%ACn%20t%E1%BB%AB%20b%C3%AAn%20h%C3%B4ng.jpg",
-        "title": "Kiến trúc Nhà số 86 Phan Chu Trinh nhìn từ bên hông",
-        "caption": "Kiến trúc Nhà số 86 Phan Chu Trinh nhìn từ bên hông",
-        "category": "Tư liệu ảnh di tích",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/Ch%C3%B9a%20Kh%C3%A1nh%20S%C6%A1n%20linh%20thi%C3%AAng%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Chùa Khánh Sơn linh thiêng tại khu di tích Cù Lao Rùa",
+        "caption": "Ngôi chùa cổ kính Khánh Sơn tọa lạc trên đỉnh đồi Cù Lao Rùa với kiến trúc tôn nghiêm.",
+        "category": "Kiến trúc tâm linh",
         "year": "Tư liệu thực địa"
       },
       {
         "id": "mon_21_img_4",
-        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/M%E1%BA%B7t%20ti%E1%BB%81n%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
-        "title": "Mặt tiền Nhà số 86 Phan Chu Trinh",
-        "caption": "Mặt tiền Nhà số 86 Phan Chu Trinh",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/C%E1%BB%95%20v%E1%BA%ADt%20khai%20qu%E1%BA%ADt%20t%E1%BB%AB%20c%C3%B9%20lao%20R%C3%B9a.jpg",
+        "title": "Cổ vật khai quật từ cù lao Rùa",
+        "caption": "Các hiện vật đồ đá, rìu đá và công cụ lao động cổ thời tiền sử được khai quật tại tầng văn hóa Cù Lao Rùa.",
+        "category": "Hiện vật khảo cổ",
+        "year": "Hiện vật khảo cổ"
       },
       {
         "id": "mon_21_img_5",
-        "src": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/To%C3%A0n%20c%E1%BA%A3nh%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20b%C3%AAn%20h%C3%B4ng.jpg",
-        "title": "Toàn cảnh Nhà số 86 Phan Chu Trinh nhìn từ phía bên hông",
-        "caption": "Toàn cảnh Nhà số 86 Phan Chu Trinh nhìn từ phía bên hông",
-        "category": "Tư liệu ảnh di tích",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/C%C3%A1c%20n%C3%B4ng%20c%E1%BB%A5%20%C4%91%C6%B0%E1%BB%A3c%20t%C3%ACm%20th%E1%BA%A5y%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Các nông cụ được tìm thấy tại khu di tích Cù Lao Rùa",
+        "caption": "Tư liệu hiện vật nông cụ và dấu tích sinh hoạt của cư dân cổ Đồng Nai thời tiền sử.",
+        "category": "Hiện vật khảo cổ",
+        "year": "Hiện vật khảo cổ"
+      },
+      {
+        "id": "mon_21_img_6",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/C%C3%B9%20lao%20r%C3%B9a.jpg",
+        "title": "Cù lao Rùa giữa mênh mông sông nước",
+        "caption": "Hình dáng địa thế Cù Lao Rùa nổi bật giữa dòng sông xanh biếc như một chú rùa khổng lồ.",
+        "category": "Cảnh quan thiên nhiên",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_21_img_7",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/Khung%20c%E1%BA%A3nh%20%C4%91%E1%BA%B9p%20th%C6%A1%20m%E1%BB%99ng%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+        "title": "Khung cảnh đẹp thơ mộng tại khu di tích Cù Lao Rùa",
+        "caption": "Con đường rợp bóng cây xanh và thiên nhiên thanh bình bên bờ di tích.",
+        "category": "Cảnh quan thiên nhiên",
+        "year": "Tư liệu thực địa"
+      },
+      {
+        "id": "mon_21_img_8",
+        "src": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a/T%E1%BA%A1i%20khu%20di%20t%C3%ADch%20C%C3%B9%20Lao%20R%C3%B9a%20c%C3%B3%20%C4%91%E1%BB%81n%20ch%C3%B9a%20linh%20thi%C3%AAng%20cho%20du%20kh%C3%A1ch%20v%C3%A3n%20c%E1%BA%A3nh.jpg",
+        "title": "Không gian đền chùa linh thiêng tại Cù Lao Rùa",
+        "caption": "Khuôn viên tĩnh mịch, thanh tịnh dành cho du khách viếng thăm và tìm hiểu lịch sử.",
+        "category": "Kiến trúc tâm linh",
         "year": "Tư liệu thực địa"
       }
     ],
