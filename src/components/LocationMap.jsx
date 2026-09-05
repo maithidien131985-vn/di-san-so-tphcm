@@ -34,8 +34,10 @@ export default function LocationMap({
         attributionControl: false
       });
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        subdomains: 'abcd',
+        attribution: '&copy; CartoDB &amp; OpenStreetMap'
       }).addTo(map);
 
       mapInstanceRef.current = map;
@@ -44,15 +46,37 @@ export default function LocationMap({
       mapInstanceRef.current.invalidateSize();
     }
 
-    // Custom Red Pin Icon
+    // Custom Category Icon provided by the user
+    let iconUrl = '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png';
+    const rankingOrName = (ranking + ' ' + name).toLowerCase();
+    if (rankingOrName.includes('khảo cổ')) {
+      iconUrl = '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png';
+    } else if (rankingOrName.includes('kiến trúc')) {
+      iconUrl = '/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png';
+    }
+
     const customIcon = L.divIcon({
       className: 'custom-pin',
-      html: `<div style="background-color: #7B1113; color: white; width: 34px; height: 34px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.35); border: 2.5px solid white;">
-        <span style="transform: rotate(45deg); font-size: 15px; font-weight: bold;">🏛️</span>
+      html: `<div style="
+        width: 44px;
+        height: 44px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 4px 10px rgba(0,0,0,0.45));
+      ">
+        <img src="${iconUrl}" alt="${name}" style="
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 50%;
+          box-shadow: 0 0 0 3px #FBBF24, 0 0 16px rgba(251,191,36,0.8);
+        " />
       </div>`,
-      iconSize: [34, 34],
-      iconAnchor: [17, 34],
-      popupAnchor: [0, -30]
+      iconSize: [44, 44],
+      iconAnchor: [22, 22],
+      popupAnchor: [0, -22]
     });
 
     if (markerRef.current) {
@@ -61,12 +85,12 @@ export default function LocationMap({
 
     const marker = L.marker([lat, lng], { icon: customIcon }).addTo(mapInstanceRef.current);
     marker.bindPopup(`
-      <div style="font-family: inherit; padding: 4px; max-width: 230px;">
+      <div style="font-family: inherit; padding: 4px; max-width: 240px;">
         <div style="color: #7B1113; font-weight: 800; font-size: 13px; margin-bottom: 2px;">${name}</div>
         <div style="font-size: 11px; color: #555; margin-bottom: 4px;">📍 ${address}</div>
         <div style="font-size: 10px; color: #7B1113; background: #FAF0E6; padding: 2px 6px; border-radius: 4px; font-weight: 700; display: inline-block; margin-bottom: 4px;">${ranking}</div>
         <div style="font-size: 10px; color: #888; margin-bottom: 8px;">Tọa độ: ${lat.toFixed(5)}, ${lng.toFixed(5)}</div>
-        <a href="${googleMapsDirectionsUrl}" target="_blank" rel="noopener noreferrer" style="display: block; background: #7B1113; color: white; text-align: center; padding: 5px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; text-decoration: none;">
+        <a href="${googleMapsDirectionsUrl}" target="_blank" rel="noopener noreferrer" style="display: block; background: #7B1113; color: white; text-align: center; padding: 6px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; text-decoration: none;">
           Chỉ đường trên Google Maps &rarr;
         </a>
       </div>
