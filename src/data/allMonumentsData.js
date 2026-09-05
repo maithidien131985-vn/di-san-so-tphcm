@@ -12779,10 +12779,10 @@ export const allMonumentsList = [
           "https://drive.google.com/file/d/1yBFsMTOAS25ksPYZFujFQTNZ4mE63u5d/view?usp=sharing",
           "https://drive.google.com/file/d/1w7TJrlTLXBaZbqg8fWmt9i01gE7hZUGg/view?usp=sharing"
         ],
-        "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1BCX5KB-YjeuijD1ZUayC8pFLwxbGwuFF?usp=sharing"
       },
       "overview": "Lò gốm cổ Hưng Lợi là dấu tích vật chất quan trọng của nghề gốm Sài Gòn – Gia Định, phản ánh quá trình hình thành và phát triển của một làng nghề thủ công lâu đời trong hơn 300 năm lịch sử Sài Gòn. Di tích cung cấp tư liệu về nguồn nguyên liệu, kỹ thuật sản xuất, loại hình sản phẩm và đời sống kinh tế của cư dân đô thị Sài Gòn xưa. Đây cũng là di tích khảo cổ học có ý nghĩa đặc biệt vì các lò gốm cổ khác của khu vực Chợ Lớn xưa phần lớn đã biến mất do đô thị hóa.",
-      "heroImage": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C3%A3i%20g%E1%BB%91m%20h%E1%BB%A7%2C%20lu%20s%C3%A0nh%20ph%C6%A1i%20ngo%C3%A0i%20s%C3%A2n%20l%C3%B2%20g%E1%BB%91m%20x%C6%B0%E1%BB%9Fng%20c%C5%A9.jpg",
+      "heroImage": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/L%C3%B2%20g%E1%BB%91m%20b%E1%BA%A7u%20d%E1%BA%A1ng%20h%C3%ACnh%20th%C3%A1p%20tr%C3%B2n%20c%E1%BB%95.jpg",
       "emCoBiet": [
         "🔎 Loại hình: di tích khảo cổ nghề gốm",
         "🔎 Vị trí: làng Hòa Lục, ven kênh Ruột Ngựa và kênh Lò Gốm",
@@ -12928,10 +12928,10 @@ export const allMonumentsList = [
     "gallery": [
       {
         "id": "mon_24_img_1",
-        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C3%A3i%20g%E1%BB%91m%20h%E1%BB%A7%2C%20lu%20s%C3%A0nh%20ph%C6%A1i%20ngo%C3%A0i%20s%C3%A2n%20l%C3%B2%20g%E1%BB%91m%20x%C6%B0%E1%BB%9Fng%20c%C5%A9.jpg",
-        "title": "Bãi gốm hủ, lu sành phơi ngoài sân lò gốm xưởng cũ",
-        "caption": "Bãi gốm hủ, lu sành phơi ngoài sân lò gốm xưởng cũ",
-        "category": "Tư liệu ảnh di tích",
+        "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C3%A3i%20g%E1%BB%91m%20h%C5%A9%2C%20lu%20s%C3%A0nh%20ph%C6%A1i%20ngo%C3%A0i%20s%C3%A2n%20l%C3%B2%20g%E1%BB%91m%20x%C6%B0%E1%BB%9Fng%20c%C5%A9.jpg",
+        "title": "Bãi gốm hũ, lu sành phơi ngoài sân lò gốm xưởng cũ",
+        "caption": "Bãi gốm hũ, lu sành phơi ngoài sân lò gốm xưởng cũ",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -12939,7 +12939,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C3%AAn%20trong%20nh%C3%A0%20l%C3%B2%20nung%20g%E1%BB%91m%20truy%E1%BB%81n%20th%E1%BB%91ng.jpg",
         "title": "Bên trong nhà lò nung gốm truyền thống",
         "caption": "Bên trong nhà lò nung gốm truyền thống",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -12947,7 +12947,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C6%B0u%20thi%E1%BA%BFp%20th%E1%BB%9Di%20Ph%C3%A1p%20ch%E1%BB%A5p%20x%C6%B0%E1%BB%9Fng%20g%E1%BB%91m%20x%C3%B3m%20l%C3%B2.jpg",
         "title": "Bưu thiếp thời Pháp chụp xưởng gốm xóm lò",
         "caption": "Bưu thiếp thời Pháp chụp xưởng gốm xóm lò",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -12955,7 +12955,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/C%E1%BB%ADa%20v%C3%B2m%20l%C3%B2%20n%C6%B0%E1%BB%9Bng%20g%E1%BB%91m%20g%E1%BA%A1ch%20%C4%91%E1%BB%8F.jpg",
         "title": "Cửa vòm lò nướng gốm gạch đỏ",
         "caption": "Cửa vòm lò nướng gốm gạch đỏ",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -12963,7 +12963,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/Hi%E1%BB%87n%20v%E1%BA%ADt%20g%E1%BB%91m%20di%20t%C3%ADch%20l%C3%B2%20g%E1%BB%91m%20H%C6%B0ng%20L%E1%BB%A3i.jpg",
         "title": "Hiện vật gốm di tích lò gốm Hưng Lợi",
         "caption": "Hiện vật gốm di tích lò gốm Hưng Lợi",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -12971,7 +12971,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/H%E1%BB%91%20khai%20qu%E1%BA%ADt%20kh%E1%BA%A3o%20c%E1%BB%95%20di%20t%C3%ADch%20l%C3%B2%20g%E1%BB%91m.jpg",
         "title": "Hố khai quật khảo cổ di tích lò gốm",
         "caption": "Hố khai quật khảo cổ di tích lò gốm",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -12979,7 +12979,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/H%E1%BB%91%20khai%20qu%E1%BA%ADt%20v%C3%A1ch%20l%C3%B2%20g%E1%BA%A1ch%20c%E1%BB%95.jpg",
         "title": "Hố khai quật vách lò gạch cổ",
         "caption": "Hố khai quật vách lò gạch cổ",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -12987,7 +12987,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/Lu%20s%C3%A0nh%20c%E1%BB%95%20d%C3%ADnh%20ch%E1%BA%B7t%20trong%20v%C3%A1ch%20l%C3%B2%20g%E1%BA%A1ch%20khai%20qu%E1%BA%ADt.jpg",
         "title": "Lu sành cổ dính chặt trong vách lò gạch khai quật",
         "caption": "Lu sành cổ dính chặt trong vách lò gạch khai quật",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -12995,7 +12995,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/L%C3%B2%20g%E1%BB%91m%20b%E1%BA%A7u%20d%E1%BA%A1ng%20h%C3%ACnh%20th%C3%A1p%20tr%C3%B2n%20c%E1%BB%95.jpg",
         "title": "Lò gốm bầu dạng hình tháp tròn cổ",
         "caption": "Lò gốm bầu dạng hình tháp tròn cổ",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       },
       {
@@ -13003,7 +13003,7 @@ export const allMonumentsList = [
         "src": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/%C4%90%E1%BB%91ng%20m%E1%BA%A3nh%20g%E1%BB%91m%20v%E1%BB%A1%20v%C3%A0%20c%C3%A1c%20lu%20s%C3%A0nh%20c%E1%BB%95.jpg",
         "title": "Đống mảnh gốm vỡ và các lu sành cổ",
         "caption": "Đống mảnh gốm vỡ và các lu sành cổ",
-        "category": "Tư liệu ảnh di tích",
+        "category": "Tư liệu khảo cổ",
         "year": "Tư liệu thực địa"
       }
     ],
@@ -55593,5 +55593,6 @@ export const getMonumentByIdOrStt = (idOrStt) => {
 };
 
 export const totalMonumentsCount = allMonumentsList.length;
+
 
 
