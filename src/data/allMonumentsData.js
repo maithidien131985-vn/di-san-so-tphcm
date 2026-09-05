@@ -4499,12 +4499,12 @@ export const allMonumentsList = [
       }
     },
     "video": {
-      "title": "Phim tư liệu lịch sử: Địa đạo Kim Long",
-      "youtubeUrl": "https://www.youtube.com/watch?v=OkS2vC25_WY",
-      "youtubeId": "OkS2vC25_WY",
-      "description": "Thước phim tư liệu chân thực về di tích Địa đạo Kim Long tại Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh..",
-      "channel": "Sở VH&TT Thành phố Hồ Chí Minh",
-      "copyright": "Video thuộc bản quyền Kênh YouTube Sở VH&TT Thành phố Hồ Chí Minh"
+      "title": "Huyền thoại Địa đạo Kim Long – Pháo đài ngầm giữa lòng đất Châu Đức",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gkgHJ0aNsFg",
+      "youtubeId": "gkgHJ0aNsFg",
+      "description": "Thước phim tư liệu: Huyền thoại Địa đạo Kim Long – Pháo đài ngầm giữa lòng đất Châu Đức, phản ánh chân thực công trình lịch sử và tinh thần chiến đấu kiên cường của quân dân địa phương.",
+      "channel": "QueHuongQuaDiTich",
+      "copyright": "Video thuộc bản quyền Kênh YouTube QueHuongQuaDiTich (Quê Hương Qua Di Tích)"
     },
     "keyHighlights": {
       "figures": {
@@ -55593,4 +55593,5 @@ export const getMonumentByIdOrStt = (idOrStt) => {
 };
 
 export const totalMonumentsCount = allMonumentsList.length;
+
 
