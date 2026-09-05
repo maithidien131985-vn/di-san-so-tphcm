@@ -48,6 +48,17 @@ export default function MyMapModal({
       mapInstanceRef.current.invalidateSize();
     }
 
+    // Attach global click handler for popup buttons
+    window.__handleSelectMonumentFromMap = (stt) => {
+      const parsed = parseInt(stt, 10);
+      if (!isNaN(parsed) && onSelectMonument) {
+        onSelectMonument(parsed);
+      }
+      if (onClose) {
+        onClose();
+      }
+    };
+
     // Render all 103 pins with User's Custom 3 Icons
     if (markersGroupRef.current) {
       markersGroupRef.current.clearLayers();
@@ -122,7 +133,7 @@ export default function MyMapModal({
             <div style="color: #7B1113; font-weight: 800; font-size: 13px; margin-bottom: 3px; line-height: 1.3;">${mon.info.name}</div>
             <div style="font-size: 11px; color: #555; margin-bottom: 4px;">📍 ${mon.info.address}</div>
             <div style="font-size: 10px; color: #888; margin-bottom: 8px;">Tọa độ GPS: ${lat.toFixed(5)}, ${lng.toFixed(5)}</div>
-            <button id="btn-select-mon-${mon.stt}" style="width: 100%; background: linear-gradient(135deg, #7B1113, #96171a); color: white; border: none; padding: 7px 10px; border-radius: 8px; font-size: 11px; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+            <button onclick="window.__handleSelectMonumentFromMap(${mon.stt})" style="width: 100%; background: linear-gradient(135deg, #7B1113, #96171a); color: white; border: none; padding: 7px 10px; border-radius: 8px; font-size: 11px; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
               <span>Xem trang di tích này &rarr;</span>
             </button>
           </div>

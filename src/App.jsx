@@ -266,13 +266,23 @@ export default function App() {
     }
   };
 
-  const handleSelectMonument = (monumentIdOrStt) => {
-    let targetStt = currentStt;
-    if (typeof monumentIdOrStt === 'number') {
-      targetStt = monumentIdOrStt;
-    } else if (typeof monumentIdOrStt === 'string') {
-      const match = monumentIdOrStt.match(/\d+/);
+  const handleSelectMonument = (monumentIdOrSttOrObj) => {
+    let targetStt = 1;
+    if (typeof monumentIdOrSttOrObj === 'number' && !isNaN(monumentIdOrSttOrObj)) {
+      targetStt = monumentIdOrSttOrObj;
+    } else if (typeof monumentIdOrSttOrObj === 'string') {
+      const match = monumentIdOrSttOrObj.match(/\d+/);
       if (match) targetStt = parseInt(match[0]);
+    } else if (monumentIdOrSttOrObj && typeof monumentIdOrSttOrObj === 'object') {
+      if (typeof monumentIdOrSttOrObj.stt === 'number') {
+        targetStt = monumentIdOrSttOrObj.stt;
+      } else if (monumentIdOrSttOrObj.id) {
+        const match = String(monumentIdOrSttOrObj.id).match(/\d+/);
+        if (match) targetStt = parseInt(match[0]);
+      }
+    }
+    if (targetStt < 1 || targetStt > allMonumentsList.length) {
+      targetStt = 1;
     }
     setCurrentStt(targetStt);
     setViewMode('detail');
@@ -570,7 +580,7 @@ export default function App() {
         isOpen={explorerModalOpen}
         onClose={() => setExplorerModalOpen(false)}
         currentMonumentStt={currentStt}
-        onSelectMonument={(monument) => handleSelectMonument(monument.stt)}
+        onSelectMonument={handleSelectMonument}
       />
 
       {/* Reader Contribution Modal */}
@@ -622,7 +632,7 @@ export default function App() {
         isOpen={nextMonumentModalOpen}
         onClose={() => setNextMonumentModalOpen(false)}
         monument={selectedNextMonument}
-        onSelectMonument={(monument) => handleSelectMonument(monument.stt)}
+        onSelectMonument={handleSelectMonument}
       />
 
       {/* Lightbox Gallery Modal */}
@@ -656,7 +666,7 @@ export default function App() {
         mapData={data.map}
         allMonuments={allMonumentsList}
         currentMonumentStt={currentStt}
-        onSelectMonument={(monument) => handleSelectMonument(monument.stt)}
+        onSelectMonument={handleSelectMonument}
       />
 
       {/* Milestone Detail Modal */}
