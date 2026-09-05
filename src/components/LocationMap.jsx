@@ -34,10 +34,10 @@ export default function LocationMap({
         attributionControl: false
       });
 
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        maxZoom: 19,
-        subdomains: 'abcd',
-        attribution: '&copy; CartoDB &amp; OpenStreetMap'
+      L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Bản đồ Thành phố Hồ Chí Minh'
       }).addTo(map);
 
       mapInstanceRef.current = map;
