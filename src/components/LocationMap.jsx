@@ -3,11 +3,14 @@ import L from 'leaflet';
 import { MapPin, ExternalLink, Maximize2, Layers } from 'lucide-react';
 
 export default function LocationMap({
+  lat: latProp,
+  lng: lngProp,
+  coordinates,
   name = 'Dinh Độc Lập',
   address = '135 Nam Kỳ Khởi Nghĩa, Quận 1, TP.HCM',
   ranking = 'Quốc gia đặc biệt',
-  coordinates = [10.77715, 106.69534],
   embedUrl,
+  googleMapsDirectionsUrl: directDirectionsUrl,
   onOpenMyMap
 }) {
   const mapContainerRef = useRef(null);
@@ -15,40 +18,28 @@ export default function LocationMap({
   const markerRef = useRef(null);
   const [viewMode, setViewMode] = useState('interactive'); // 'interactive' (Leaflet) | 'mymaps' (Google My Maps)
 
-  const lat = coordinates && !isNaN(coordinates[0]) ? parseFloat(coordinates[0]) : 10.77715;
-  const lng = coordinates && !isNaN(coordinates[1]) ? parseFloat(coordinates[1]) : 106.69534;
+  // Resolve latitude & longitude with multi-fallback logic
+  const rawLat = latProp !== undefined && latProp !== null && !isNaN(parseFloat(latProp))
+    ? parseFloat(latProp)
+    : (Array.isArray(coordinates) && !isNaN(parseFloat(coordinates[0])) ? parseFloat(coordinates[0]) : 10.77715);
 
-  const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+  const rawLng = lngProp !== undefined && lngProp !== null && !isNaN(parseFloat(lngProp))
+    ? parseFloat(lngProp)
+    : (Array.isArray(coordinates) && !isNaN(parseFloat(coordinates[1])) ? parseFloat(coordinates[1]) : 106.69534);
+
+  const lat = rawLat;
+  const lng = rawLng;
+
+  const googleMapsDirectionsUrl = directDirectionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
   const googleMapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(lat + ',' + lng)}`;
   const myMapsSrc = embedUrl || 'https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F';
 
   useEffect(() => {
     if (viewMode !== 'interactive' || !mapContainerRef.current) return;
 
-    // Initialize or update Leaflet map
-    if (!mapInstanceRef.current) {
-      const map = L.map(mapContainerRef.current, {
-        center: [lat, lng],
-        zoom: 16,
-        zoomControl: true,
-        attributionControl: false
-      });
-
-      L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-        maxZoom: 20,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-        attribution: '&copy; Bản đồ Thành phố Hồ Chí Minh'
-      }).addTo(map);
-
-      mapInstanceRef.current = map;
-    } else {
-      mapInstanceRef.current.setView([lat, lng], 16);
-      mapInstanceRef.current.invalidateSize();
-    }
-
     // Custom Category Icon provided by the user
     let iconUrl = '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png';
-    const rankingOrName = (ranking + ' ' + name).toLowerCase();
+    const rankingOrName = ((ranking || '') + ' ' + (name || '')).toLowerCase();
     if (rankingOrName.includes('khảo cổ')) {
       iconUrl = '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png';
     } else if (rankingOrName.includes('kiến trúc')) {
@@ -79,12 +70,7 @@ export default function LocationMap({
       popupAnchor: [0, -22]
     });
 
-    if (markerRef.current) {
-      markerRef.current.remove();
-    }
-
-    const marker = L.marker([lat, lng], { icon: customIcon }).addTo(mapInstanceRef.current);
-    marker.bindPopup(`
+    const popupHtml = `
       <div style="font-family: inherit; padding: 4px; max-width: 240px;">
         <div style="color: #7B1113; font-weight: 800; font-size: 13px; margin-bottom: 2px;">${name}</div>
         <div style="font-size: 11px; color: #555; margin-bottom: 4px;">📍 ${address}</div>
@@ -94,9 +80,45 @@ export default function LocationMap({
           Chỉ đường trên Google Maps &rarr;
         </a>
       </div>
-    `);
+    `;
 
-    markerRef.current = marker;
+    // Initialize or update Leaflet map
+    if (!mapInstanceRef.current) {
+      const map = L.map(mapContainerRef.current, {
+        center: [lat, lng],
+        zoom: 16,
+        zoomControl: true,
+        attributionControl: false
+      });
+
+      L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Bản đồ Thành phố Hồ Chí Minh'
+      }).addTo(map);
+
+      const marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);
+      marker.bindPopup(popupHtml);
+      markerRef.current = marker;
+
+      mapInstanceRef.current = map;
+    } else {
+      mapInstanceRef.current.setView([lat, lng], 16);
+      if (markerRef.current) {
+        markerRef.current.setLatLng([lat, lng]);
+        markerRef.current.setIcon(customIcon);
+        markerRef.current.setPopupContent(popupHtml);
+      } else {
+        const marker = L.marker([lat, lng], { icon: customIcon }).addTo(mapInstanceRef.current);
+        marker.bindPopup(popupHtml);
+        markerRef.current = marker;
+      }
+      setTimeout(() => {
+        if (mapInstanceRef.current) {
+          mapInstanceRef.current.invalidateSize();
+        }
+      }, 100);
+    }
   }, [lat, lng, name, address, ranking, googleMapsDirectionsUrl, viewMode]);
 
   return (

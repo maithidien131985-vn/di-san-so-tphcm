@@ -12,6 +12,10 @@ export default function MonumentMediaAndLocationSection({
   const youtubeId = video?.youtubeId || 'cplxidwCHyE';
   const resolvedCoordinates = map?.coordinates || info?.coordinates || [10.77715, 106.69534];
 
+  const lat = resolvedCoordinates && !isNaN(resolvedCoordinates[0]) ? parseFloat(resolvedCoordinates[0]) : 10.77715;
+  const lng = resolvedCoordinates && !isNaN(resolvedCoordinates[1]) ? parseFloat(resolvedCoordinates[1]) : 106.69534;
+  const directionsUrl = info?.googleMapsDirectionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
       <ScrollReveal>
@@ -88,21 +92,24 @@ export default function MonumentMediaAndLocationSection({
             {/* Map Container */}
             <div className="relative aspect-video lg:aspect-auto flex-1 min-h-[220px] rounded-xl overflow-hidden border border-gray-200 shadow-sm">
               <LocationMap
-                lat={resolvedCoordinates[0]}
-                lng={resolvedCoordinates[1]}
+                lat={lat}
+                lng={lng}
+                coordinates={[lat, lng]}
                 name={info.name}
                 address={info.address}
-                googleMapsDirectionsUrl={info.googleMapsDirectionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${resolvedCoordinates[0]},${resolvedCoordinates[1]}`}
+                ranking={info.ranking || info.badge || 'Di tích'}
+                onOpenMyMap={onOpenMyMap}
+                googleMapsDirectionsUrl={directionsUrl}
               />
             </div>
 
             {/* Directions Link */}
             <div className="pt-2 flex items-center justify-between gap-3">
               <span className="text-[11px] text-[#777777] font-mono">
-                GPS: {resolvedCoordinates[0]?.toFixed(5)}, {resolvedCoordinates[1]?.toFixed(5)}
+                GPS: {lat.toFixed(5)}, {lng.toFixed(5)}
               </span>
               <a
-                href={info.googleMapsDirectionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${resolvedCoordinates[0]},${resolvedCoordinates[1]}`}
+                href={directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-3.5 py-1.5 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white text-xs font-bold shadow-xs transition-all flex items-center gap-1.5"

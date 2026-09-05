@@ -27,6 +27,10 @@ export default function InfoSidebar({
     (info?.lat && info?.lng ? [info.lat, info.lng] : null) || 
     [10.77715, 106.69534];
 
+  const lat = resolvedCoordinates && !isNaN(resolvedCoordinates[0]) ? parseFloat(resolvedCoordinates[0]) : 10.77715;
+  const lng = resolvedCoordinates && !isNaN(resolvedCoordinates[1]) ? parseFloat(resolvedCoordinates[1]) : 106.69534;
+  const directionsUrl = info?.googleMapsDirectionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+
   return (
     <aside className="space-y-5">
       {/* 1. Bảng thông tin chính & Nút Nghe thuyết minh */}
@@ -108,13 +112,18 @@ export default function InfoSidebar({
           </button>
         </div>
 
-        <LocationMap
-          lat={resolvedCoordinates[0]}
-          lng={resolvedCoordinates[1]}
-          name={info.name}
-          address={info.address}
-          googleMapsDirectionsUrl={info.googleMapsDirectionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${resolvedCoordinates[0]},${resolvedCoordinates[1]}`}
-        />
+        <div className="h-[200px] rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+          <LocationMap
+            lat={lat}
+            lng={lng}
+            coordinates={[lat, lng]}
+            name={info.name}
+            address={info.address}
+            ranking={info.ranking || info.badge || 'Di tích'}
+            onOpenMyMap={onOpenMyMap}
+            googleMapsDirectionsUrl={directionsUrl}
+          />
+        </div>
       </div>
 
       {/* 3. "Em có biết?" Box */}

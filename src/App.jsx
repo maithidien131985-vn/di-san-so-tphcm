@@ -124,11 +124,17 @@ export default function App() {
     return {
       ...base,
       ...saved,
+      map: base.map, // Luôn đồng bộ bản đồ tọa độ chính xác của di tích
       video: base.video, // Luôn đồng bộ video mới nhất từ dữ liệu hệ thống
       gallery: base.gallery, // Luôn đồng bộ danh sách ảnh thực tế từ Google Drive
       info: {
         ...base.info,
         ...(saved.info || {}),
+        coordinates: base.info?.coordinates, // Luôn ưu tiên tọa độ chuẩn của di tích
+        lat: base.info?.lat,
+        lng: base.info?.lng,
+        address: base.info?.address,
+        googleMapsDirectionsUrl: base.info?.googleMapsDirectionsUrl,
         heroImage: base.info.heroImage, // Luôn ưu tiên ảnh đại diện thực tế từ Google Drive của di tích
         emCoBiet: base.info?.emCoBiet || [],
         driveReferenceData: base.info?.driveReferenceData || null
