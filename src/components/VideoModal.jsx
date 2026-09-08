@@ -33,8 +33,12 @@ export default function VideoModal({ isOpen, onClose, videoInfo }) {
         {/* Video Embed */}
         <div className="aspect-video w-full bg-black">
           <iframe
-            src={`https://www.youtube.com/embed/${videoInfo.youtubeId || 'cplxidwCHyE'}?autoplay=1&rel=0`}
-            title="Video tư liệu Dinh Độc Lập"
+            src={
+              videoInfo?.videoType === 'drive' || videoInfo?.driveFileId || (videoInfo?.youtubeUrl && videoInfo.youtubeUrl.includes('drive.google.com'))
+                ? (videoInfo?.driveFileId ? `https://drive.google.com/file/d/${videoInfo.driveFileId}/preview` : videoInfo?.youtubeUrl?.replace(/\/view.*$/, '/preview'))
+                : (videoInfo?.embedUrl || `https://www.youtube.com/embed/${videoInfo.youtubeId || 'cplxidwCHyE'}?autoplay=1&rel=0`)
+            }
+            title={videoInfo?.title || "Video tư liệu di tích"}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="w-full h-full border-0"
@@ -44,15 +48,15 @@ export default function VideoModal({ isOpen, onClose, videoInfo }) {
         {/* Video Footer info */}
         <div className="p-4 bg-neutral-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-neutral-300">
           <span className="text-amber-200 font-medium">
-            {videoInfo?.copyright || (videoInfo?.channel ? `Video thuộc bản quyền Kênh YouTube ${videoInfo.channel}` : 'Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp')}
+            {videoInfo?.copyright || (videoInfo?.channel ? `Bản quyền: ${videoInfo.channel}` : 'Bản quyền Kênh Tư liệu')}
           </span>
           <a
-            href={videoInfo?.youtubeUrl || `https://www.youtube.com/watch?v=${videoInfo?.youtubeId || 'cplxidwCHyE'}`}
+            href={videoInfo?.youtubeUrl || (videoInfo?.driveFileId ? `https://drive.google.com/file/d/${videoInfo.driveFileId}/view` : `https://www.youtube.com/watch?v=${videoInfo?.youtubeId || 'cplxidwCHyE'}`)}
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-400 hover:underline flex items-center gap-1 font-semibold shrink-0"
           >
-            <span>Mở liên kết YouTube</span>
+            <span>{videoInfo?.videoType === 'drive' || videoInfo?.driveFileId || (videoInfo?.youtubeUrl && videoInfo.youtubeUrl.includes('drive.google.com')) ? 'Mở trên Google Drive' : 'Mở liên kết YouTube'}</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

@@ -281,7 +281,11 @@ export default function MediaAudioVideoRow({
             <div className="relative aspect-video rounded-xl overflow-hidden bg-black shadow-md border border-gray-200">
               <iframe
                 className="w-full h-full"
-                src={`https://www.youtube-nocookie.com/embed/${youtubeId}?rel=0&modestbranding=1`}
+                src={
+                  video?.videoType === 'drive' || video?.driveFileId || (video?.youtubeUrl && video.youtubeUrl.includes('drive.google.com'))
+                    ? (video?.driveFileId ? `https://drive.google.com/file/d/${video.driveFileId}/preview` : video?.youtubeUrl?.replace(/\/view.*$/, '/preview'))
+                    : (video?.embedUrl || `https://www.youtube-nocookie.com/embed/${youtubeId}?rel=0&modestbranding=1`)
+                }
                 title={video?.title || "Phim tư liệu di tích"}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -290,15 +294,15 @@ export default function MediaAudioVideoRow({
 
             <div className="pt-1 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-[#555555]">
               <span className="font-medium text-[#7E1819] truncate max-w-xs">
-                {video?.copyright || (video?.channel ? `Bản quyền: ${video.channel}` : 'Bản quyền Kênh YouTube')}
+                {video?.copyright || (video?.channel ? `Bản quyền: ${video.channel}` : 'Bản quyền Kênh Tư liệu')}
               </span>
               <a
-                href={video?.youtubeUrl || `https://www.youtube.com/watch?v=${youtubeId}`}
+                href={video?.youtubeUrl || (video?.driveFileId ? `https://drive.google.com/file/d/${video.driveFileId}/view` : `https://www.youtube.com/watch?v=${youtubeId}`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold text-[#7E1819] hover:underline flex items-center gap-1 shrink-0"
               >
-                <span>Mở trên YouTube</span>
+                <span>{video?.videoType === 'drive' || video?.driveFileId || (video?.youtubeUrl && video.youtubeUrl.includes('drive.google.com')) ? 'Mở trên Google Drive' : 'Mở trên YouTube'}</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
