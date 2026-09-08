@@ -871,11 +871,15 @@ export default function HomePage({
             </div>
 
             {/* Right 5 Cols: Ý TƯỞNG CỦA HỌC SINH */}
-            <div className="lg:col-span-5 bg-[#FFFDFB] rounded-3xl p-4 sm:p-5 md:p-6 border-2 border-rose-200 shadow-md shadow-rose-950/5 space-y-3 flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-[#FFFDFB] rounded-3xl p-4 sm:p-5 md:p-6 border-2 border-rose-200 shadow-md shadow-rose-950/5 space-y-3.5 flex flex-col justify-between">
               <div className="flex items-center justify-between">
-                <h3 className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#2A1214]">
-                  Ý TƯỞNG CỦA HỌC SINH
-                </h3>
+                <button
+                  onClick={onOpenContribute}
+                  className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-[#7E1819] via-[#8B1417] to-[#A81B1F] hover:from-[#6B1315] hover:to-[#8B1417] text-white font-serif-title font-black text-xs sm:text-sm uppercase tracking-wider shadow-md shadow-red-950/20 transition-all hover:scale-102 cursor-pointer flex items-center gap-1.5"
+                >
+                  <span>💡</span>
+                  <span>Ý TƯỞNG CỦA HỌC SINH</span>
+                </button>
                 <button
                   onClick={onOpenContribute}
                   className="text-xs font-bold text-[#8B1417] hover:underline cursor-pointer"
@@ -885,7 +889,7 @@ export default function HomePage({
               </div>
 
               {/* 3 Student Projects */}
-              <div className="space-y-2 sm:space-y-2.5">
+              <div className="space-y-2.5">
                 <div className="p-2 sm:p-2.5 rounded-2xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-100 flex items-center justify-between gap-2.5 sm:gap-3 transition-colors">
                   <div className="flex items-center gap-2.5 min-w-0">
                     <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden bg-rose-100 shrink-0 shadow-inner">
@@ -934,13 +938,6 @@ export default function HomePage({
                   </button>
                 </div>
               </div>
-
-              <button
-                onClick={onOpenContribute}
-                className="w-full py-2.5 sm:py-3 rounded-xl bg-[#8B1417] hover:bg-[#680E11] text-white font-black text-xs uppercase tracking-wider transition-colors cursor-pointer shadow-md"
-              >
-                + ĐỀ XUẤT Ý TƯỞNG
-              </button>
             </div>
           </div>
         </ScrollReveal>
