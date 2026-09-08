@@ -329,24 +329,20 @@ export default function HomePage({
               </div>
             </div>
 
-            {/* Right Column: Uploaded Heritage Map on Revolutionary Burgundy Background */}
-            <div className="lg:col-span-5 flex justify-center items-center relative">
-              <div className="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-none group">
-                {/* Radiant Backdrop Glow */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 via-rose-500/20 to-transparent rounded-3xl blur-2xl group-hover:scale-105 transition-transform duration-700 pointer-events-none" />
-                
-                {/* Map Graphic Container */}
-                <div className="relative p-2 sm:p-4 rounded-3xl bg-gradient-to-b from-white/10 to-transparent border border-amber-300/20 shadow-2xl backdrop-blur-xs flex items-center justify-center overflow-hidden">
-                  <img
-                    src="/assets/images/tphcm_heritage_map_hero.png"
-                    alt="Bản đồ các di tích tiêu biểu TP. Hồ Chí Minh"
-                    className="w-full h-auto max-h-[340px] sm:max-h-[380px] lg:max-h-[420px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)] filter contrast-105 hover:scale-103 transition-transform duration-500"
-                  />
-                  {/* Subtle corner badge */}
-                  <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-[#200507]/85 border border-[#BA8438]/40 text-[10px] sm:text-xs font-bold text-amber-200 shadow-md backdrop-blur-sm">
-                    103 Di tích lịch sử & văn hóa
-                  </div>
-                </div>
+            {/* Right Column: Uploaded Heritage Map - Maximized size, seamless blending, no box border */}
+            <div className="lg:col-span-5 flex justify-center items-center relative w-full overflow-visible">
+              {/* Ambient Warm Golden Glow directly behind map silhouette */}
+              <div className="absolute inset-0 bg-radial from-amber-500/30 via-rose-600/20 to-transparent blur-3xl scale-125 pointer-events-none" />
+              
+              <div className="relative w-full flex items-center justify-center">
+                <img
+                  src="/assets/images/tphcm_heritage_map_hero.png"
+                  alt="Bản đồ di sản TP. Hồ Chí Minh"
+                  className="w-full max-w-[540px] sm:max-w-[600px] lg:max-w-[680px] h-auto object-contain transition-transform duration-700 hover:scale-105"
+                  style={{
+                    filter: 'drop-shadow(0 20px 30px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 35px rgba(234, 179, 8, 0.25))'
+                  }}
+                />
               </div>
             </div>
 
