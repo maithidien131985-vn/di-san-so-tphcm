@@ -6,7 +6,9 @@ import {
   Lightbulb, 
   DoorClosed,
   Landmark,
-  Archive
+  Archive,
+  Sparkles,
+  Info
 } from 'lucide-react';
 
 export default function InfoSidebar({
@@ -16,9 +18,18 @@ export default function InfoSidebar({
 }) {
   return (
     <aside className="space-y-5">
-      {/* 1. Bảng thông tin chính & Nút Nghe thuyết minh */}
+      {/* 1. Bảng Thông Tin Nhanh */}
       <div className="bg-[#FAF7F2] rounded-2xl p-5 sm:p-6 border border-[#EAE3D9] shadow-xs space-y-4">
-        <div className="space-y-3.5 text-sm">
+        {/* Header Thông Tin Nhanh màu đỏ đô */}
+        <div className="flex items-center justify-between pb-3 border-b border-[#EFE8DE]">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#7E1819] text-white text-xs font-black uppercase tracking-wider shadow-sm">
+            <Info className="w-3.5 h-3.5 text-amber-300" />
+            <span>Thông tin nhanh</span>
+          </div>
+          <span className="text-[11px] text-[#7E1819] font-bold">Hồ sơ trích yếu</span>
+        </div>
+
+        <div className="space-y-3.5 text-sm pt-1">
           {/* Loại di tích */}
           <div className="flex items-center justify-between gap-3 pb-3 border-b border-[#EFE8DE]">
             <div className="flex items-center gap-2.5 text-[#333333]">
@@ -54,11 +65,14 @@ export default function InfoSidebar({
         </div>
       </div>
 
-      {/* 3. "Em có biết?" Box */}
-      <div className="bg-[#FEF9EE] rounded-2xl p-5 border border-amber-200 shadow-xs space-y-3">
-        <div className="flex items-center gap-2 text-amber-950 font-black text-sm">
-          <Lightbulb className="w-4 h-4 text-amber-600 fill-amber-500" />
-          <span>Em có biết?</span>
+      {/* 2. "Em có biết?" Box màu đỏ đô */}
+      <div className="bg-[#FAF7F2] rounded-2xl p-5 border border-[#EAE3D9] shadow-xs space-y-3.5">
+        <div className="flex items-center justify-between pb-2 border-b border-[#EFE8DE]">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#7E1819] text-white text-xs font-black uppercase tracking-wider shadow-sm">
+            <Lightbulb className="w-3.5 h-3.5 text-amber-300 fill-amber-300" />
+            <span>Em có biết?</span>
+          </div>
+          <span className="text-[11px] text-amber-800 font-bold">Khám phá thú vị</span>
         </div>
 
         <ul className="space-y-2.5 text-xs text-[#4A3E36]">
