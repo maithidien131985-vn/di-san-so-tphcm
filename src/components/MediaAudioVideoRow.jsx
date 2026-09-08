@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import ScrollReveal from './ScrollReveal';
+import { soundEffects } from '../utils/soundEffects';
 
 export default function MediaAudioVideoRow({
   video = {},
@@ -186,27 +187,30 @@ export default function MediaAudioVideoRow({
     setQuizCorrect(false);
   }, [monumentName]);
 
+  // Bấm chọn đáp án: Biết đúng/sai luôn, có âm thanh nhỏ và hiển thị giải thích
   const handleSelectQuiz = (idx) => {
     if (quizAnswered) return;
     setSelectedQuizOpt(idx);
-  };
-
-  const handleCheckQuiz = () => {
-    if (selectedQuizOpt === null) return;
-    const isRight = selectedQuizOpt === currentQuiz.correctIndex;
+    const isRight = idx === currentQuiz.correctIndex;
     setQuizCorrect(isRight);
     setQuizAnswered(true);
 
     if (isRight) {
-      confetti({
-        particleCount: 60,
-        spread: 70,
-        origin: { y: 0.7 }
-      });
+      soundEffects.playCorrect();
+      try {
+        confetti({
+          particleCount: 60,
+          spread: 70,
+          origin: { y: 0.7 }
+        });
+      } catch (e) {}
+    } else {
+      soundEffects.playWrong();
     }
   };
 
   const handleResetQuiz = () => {
+    soundEffects.playTap();
     setSelectedQuizOpt(null);
     setQuizAnswered(false);
     setQuizCorrect(false);
@@ -379,7 +383,7 @@ export default function MediaAudioVideoRow({
           </div>
         </div>
 
-        {/* HÀNG 2: HỘP CÂU HỎI THỬ THÁCH "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
+        {/* HÀNG 2: HỘP CÂU HỎI "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
         <div className="bg-gradient-to-br from-[#FFFDF9] to-[#FAF3E7] rounded-2xl p-5 sm:p-7 border-2 border-amber-300/80 shadow-md space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-amber-200/60">
             <div className="flex items-center gap-3 text-amber-950">
@@ -388,7 +392,7 @@ export default function MediaAudioVideoRow({
               </div>
               <div>
                 <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#7E1819]">
-                  Thử Thách: Bạn Vừa Khám Phá Được Gì?
+                  Bạn Vừa Khám Phá Được Gì?
                 </h3>
                 <p className="text-xs text-[#666666]">
                   Kiểm tra khả năng quan sát & lắng nghe tư liệu lịch sử
@@ -412,7 +416,7 @@ export default function MediaAudioVideoRow({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {currentQuiz.options.map((opt, idx) => {
               const isSelected = selectedQuizOpt === idx;
-              let btnStyle = "bg-white hover:bg-amber-50/60 border-gray-200 text-[#333333]";
+              let btnStyle = "bg-white hover:bg-amber-50/60 border-gray-200 text-[#333333] hover:scale-[1.01]";
 
               if (quizAnswered) {
                 if (idx === currentQuiz.correctIndex) {
@@ -422,8 +426,6 @@ export default function MediaAudioVideoRow({
                 } else {
                   btnStyle = "bg-gray-50 border-gray-200 text-gray-400 opacity-60";
                 }
-              } else if (isSelected) {
-                btnStyle = "bg-amber-100 border-[#7E1819] text-[#7E1819] font-bold ring-2 ring-amber-400 shadow-xs";
               }
 
               return (
@@ -473,26 +475,17 @@ export default function MediaAudioVideoRow({
           )}
 
           {/* Quiz Action Buttons */}
-          <div className="flex items-center justify-end gap-3 pt-2">
-            {!quizAnswered ? (
-              <button
-                onClick={handleCheckQuiz}
-                disabled={selectedQuizOpt === null}
-                className={`py-3 px-6 rounded-xl font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer ${selectedQuizOpt !== null ? 'bg-gradient-to-r from-[#7E1819] to-[#9E1B1D] hover:from-[#9E1B1D] hover:to-[#7E1819] text-white hover:scale-102 shadow-lg' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
-              >
-                <Sparkles className="w-4 h-4 text-amber-300" />
-                <span>Kiểm Tra Đáp Án</span>
-              </button>
-            ) : (
+          {quizAnswered && (
+            <div className="flex items-center justify-end gap-3 pt-2">
               <button
                 onClick={handleResetQuiz}
-                className="py-3 px-6 rounded-xl bg-amber-100 hover:bg-amber-200 text-[#7E1819] font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-300 shadow-xs hover:scale-102"
+                className="py-2.5 px-6 rounded-xl bg-amber-100 hover:bg-amber-200 text-[#7E1819] font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-300 shadow-xs hover:scale-102"
               >
                 <RotateCcw className="w-4 h-4" />
-                <span>Làm Lại Thử Thách</span>
+                <span>Làm Lại</span>
               </button>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </ScrollReveal>
     </section>

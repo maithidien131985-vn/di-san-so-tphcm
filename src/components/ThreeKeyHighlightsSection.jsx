@@ -66,6 +66,8 @@ const CARD_CONFIG = [
   }
 ];
 
+import { soundEffects } from '../utils/soundEffects';
+
 export default function ThreeKeyHighlightsSection({ keyHighlights, monumentName }) {
   if (!keyHighlights) return null;
 
@@ -81,6 +83,7 @@ export default function ThreeKeyHighlightsSection({ keyHighlights, monumentName 
   const unlockedCount = Object.values(unlockedCards).filter(Boolean).length;
 
   const handleUnlock = (id) => {
+    soundEffects.playUnlock();
     const newUnlocked = { ...unlockedCards, [id]: true };
     setUnlockedCards(newUnlocked);
     const count = Object.values(newUnlocked).filter(Boolean).length;

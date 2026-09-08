@@ -330,7 +330,7 @@ export default function InvestigationSection({
               {/* Tiến trình manh mối */}
               <div className="flex items-center justify-between text-xs text-rose-200">
                 <span className="font-bold text-amber-200 text-xs sm:text-sm">
-                  {currentQ?.category || '🔍 Thử Thách Di Sản'}
+                  {currentQ?.category || '🔍 Câu Hỏi Di Sản'}
                 </span>
                 <span className="text-xs font-mono bg-white/10 px-2.5 py-0.5 rounded-md text-amber-300">
                   {currentIdx + 1}/{questions.length}

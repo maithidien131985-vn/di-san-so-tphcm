@@ -4,6 +4,8 @@ import confetti from 'canvas-confetti';
 import LocationMap from './LocationMap';
 import ScrollReveal from './ScrollReveal';
 
+import { soundEffects } from '../utils/soundEffects';
+
 export default function MonumentLocationChallengeSection({
   info = {},
   map = {},
@@ -53,27 +55,30 @@ export default function MonumentLocationChallengeSection({
     setShuffledOptions(currentOptions.sort(() => Math.random() - 0.5));
   }, [name, address]);
 
+  // Bấm chọn đáp án: Biết đúng/sai luôn, có âm thanh nhỏ và hiển thị giải thích
   const handleSelectOption = (opt) => {
     if (isAnswered) return;
     setSelectedOption(opt);
-  };
-
-  const handleCheckAnswer = () => {
-    if (!selectedOption) return;
-    const correct = selectedOption === address;
+    const correct = opt === address;
     setIsCorrect(correct);
     setIsAnswered(true);
 
     if (correct) {
-      confetti({
-        particleCount: 50,
-        spread: 60,
-        origin: { y: 0.6 }
-      });
+      soundEffects.playCorrect();
+      try {
+        confetti({
+          particleCount: 50,
+          spread: 60,
+          origin: { y: 0.6 }
+        });
+      } catch (e) {}
+    } else {
+      soundEffects.playWrong();
     }
   };
 
   const handleReset = () => {
+    soundEffects.playTap();
     setSelectedOption(null);
     setIsAnswered(false);
     setIsCorrect(false);
@@ -108,7 +113,7 @@ export default function MonumentLocationChallengeSection({
           </div>
         </div>
 
-        {/* 2 Columns Layout: Left Map (7 cols), Right Interactive Location Challenge (5 cols) */}
+        {/* 2 Columns Layout: Left Map (7 cols), Right Interactive Location Box (5 cols) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           
           {/* CỘT 1: BẢN ĐỒ TỌA ĐỘ GPS LỚN (7 cols) */}
@@ -156,7 +161,7 @@ export default function MonumentLocationChallengeSection({
             </div>
           </div>
 
-          {/* CỘT 2: THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" (5 cols) (MÀU ĐỎ ĐÔ) */}
+          {/* CỘT 2: HỘP CÂU HỎI "BẠN ĐANG Ở ĐÂU?" (5 cols) (MÀU ĐỎ ĐÔ) */}
           <div className="lg:col-span-5 bg-gradient-to-br from-[#3A080B] via-[#590D11] to-[#7E1819] text-white rounded-2xl p-5 sm:p-7 border-2 border-amber-400/60 shadow-lg flex flex-col justify-between space-y-4 relative overflow-hidden">
             <div className="space-y-3">
               <div className="flex items-center justify-between pb-3 border-b border-amber-400/30">
@@ -166,7 +171,7 @@ export default function MonumentLocationChallengeSection({
                   </div>
                   <div>
                     <h3 className="font-serif-title text-xl sm:text-2xl text-amber-200 font-black">
-                      Thử Thách: Bạn Đang Ở Đâu?
+                      Bạn Đang Ở Đâu?
                     </h3>
                     <p className="text-xs text-rose-200 font-medium">
                       Khám phá & Xác định vị trí địa lý di tích
@@ -190,7 +195,7 @@ export default function MonumentLocationChallengeSection({
             <div className="space-y-2.5 my-2">
               {shuffledOptions.map((opt, idx) => {
                 const isSelected = selectedOption === opt;
-                let optionStyle = "bg-white/10 hover:bg-white/20 border-white/15 text-rose-50";
+                let optionStyle = "bg-white/10 hover:bg-white/20 border-white/15 text-rose-50 hover:scale-[1.01]";
 
                 if (isAnswered) {
                   if (opt === address) {
@@ -200,8 +205,6 @@ export default function MonumentLocationChallengeSection({
                   } else {
                     optionStyle = "bg-black/30 border-white/10 text-stone-400 opacity-60";
                   }
-                } else if (isSelected) {
-                  optionStyle = "bg-amber-400/25 border-amber-400 text-amber-200 font-bold ring-2 ring-amber-300 shadow-xs";
                 }
 
                 return (
@@ -235,7 +238,7 @@ export default function MonumentLocationChallengeSection({
                   {isCorrect ? (
                     <>
                       <Sparkles className="w-4 h-4 text-emerald-300" />
-                      <span>Chính xác tuyệt vời! Bạn đã mở khóa vị trí thành công.</span>
+                      <span>Chính xác tuyệt vời! Bạn đã xác định vị trí thành công.</span>
                     </>
                   ) : (
                     <>
@@ -256,26 +259,17 @@ export default function MonumentLocationChallengeSection({
             )}
 
             {/* Actions Button */}
-            <div className="pt-2">
-              {!isAnswered ? (
-                <button
-                  onClick={handleCheckAnswer}
-                  disabled={!selectedOption}
-                  className={`w-full py-3 px-4 rounded-xl font-black text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer ${selectedOption ? 'bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#7E1819]' : 'bg-white/10 text-stone-400 cursor-not-allowed border border-white/10'}`}
-                >
-                  <Sparkles className="w-4 h-4 text-amber-800" />
-                  <span>Xác Nhận Vị Trí</span>
-                </button>
-              ) : (
+            {isAnswered && (
+              <div className="pt-2">
                 <button
                   onClick={handleReset}
-                  className="w-full py-3 px-4 rounded-xl bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-400/50"
+                  className="w-full py-2.5 px-4 rounded-xl bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-400/50"
                 >
                   <RotateCcw className="w-4 h-4" />
-                  <span>Thử Thách Lại</span>
+                  <span>Làm Lại</span>
                 </button>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </ScrollReveal>

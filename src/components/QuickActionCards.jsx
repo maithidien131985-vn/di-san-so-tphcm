@@ -33,7 +33,7 @@ export default function QuickActionCards({
     {
       id: 'investigate',
       title: 'GIẢI MÃ',
-      description: 'Truy tìm manh mối & Thử thách thám hiểm',
+      description: 'Truy tìm manh mối & Khám phá bí mật',
       icon: (
         <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-100/20 border border-amber-200/30 flex items-center justify-center text-amber-200 shadow-inner">
           <Search className="w-7 h-7 sm:w-8 sm:h-8" />

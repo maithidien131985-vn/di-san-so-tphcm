@@ -17,6 +17,7 @@ import {
   Award
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { soundEffects } from '../utils/soundEffects';
 
 export default function HistorySection({
   overview = '',
@@ -64,27 +65,30 @@ export default function HistorySection({
     setShuffledTimelineOpts(opts.sort(() => Math.random() - 0.5));
   }, [milestoneYear, milestoneTitle]);
 
+  // Bấm chọn đáp án: Biết đúng/sai luôn, có âm thanh nhỏ và hiển thị giải thích
   const handleSelectTimelineOpt = (opt) => {
     if (timelineAnswered) return;
     setSelectedTimelineOpt(opt);
-  };
-
-  const handleCheckTimeline = () => {
-    if (!selectedTimelineOpt) return;
-    const isRight = selectedTimelineOpt.includes(milestoneYear) && selectedTimelineOpt.includes(milestoneTitle);
+    const isRight = opt.includes(milestoneYear) && opt.includes(milestoneTitle);
     setTimelineCorrect(isRight);
     setTimelineAnswered(true);
 
     if (isRight) {
-      confetti({
-        particleCount: 50,
-        spread: 60,
-        origin: { y: 0.6 }
-      });
+      soundEffects.playCorrect();
+      try {
+        confetti({
+          particleCount: 50,
+          spread: 60,
+          origin: { y: 0.6 }
+        });
+      } catch (e) {}
+    } else {
+      soundEffects.playWrong();
     }
   };
 
   const handleResetTimeline = () => {
+    soundEffects.playTap();
     setSelectedTimelineOpt(null);
     setTimelineAnswered(false);
     setTimelineCorrect(false);
@@ -177,13 +181,13 @@ export default function HistorySection({
             </div>
           </div>
 
-          {/* CỘT PHẢI (5 cols): HỘP THỬ THÁCH "GIẢI MÃ DÒNG THỜI GIAN" (MÀU ĐỎ ĐÔ) */}
+          {/* CỘT PHẢI (5 cols): HỘP CÂU HỎI "DÒNG THỜI GIAN" (MÀU ĐỎ ĐÔ) */}
           <div className="lg:col-span-5 bg-gradient-to-br from-[#3A080B] via-[#590D11] to-[#7E1819] text-white rounded-2xl p-5 sm:p-6 border-2 border-amber-400/60 shadow-lg space-y-4 relative overflow-hidden">
             <div className="flex items-center justify-between pb-2 border-b border-amber-400/30">
               <div className="flex items-center gap-2 text-amber-300 font-black">
                 <Sparkles className="w-5 h-5 text-amber-300" />
                 <h4 className="font-serif-title text-base sm:text-lg text-amber-200">
-                  Thử Thách: Dòng Thời Gian
+                  Dòng Thời Gian
                 </h4>
               </div>
               <span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/50 uppercase tracking-wider">
@@ -198,7 +202,7 @@ export default function HistorySection({
             <div className="space-y-2">
               {shuffledTimelineOpts.map((opt, idx) => {
                 const isSelected = selectedTimelineOpt === opt;
-                let optStyle = "bg-white/10 hover:bg-white/20 border-white/15 text-rose-50";
+                let optStyle = "bg-white/10 hover:bg-white/20 border-white/15 text-rose-50 hover:scale-[1.01]";
 
                 if (timelineAnswered) {
                   if (opt.includes(milestoneYear) && opt.includes(milestoneTitle)) {
@@ -208,8 +212,6 @@ export default function HistorySection({
                   } else {
                     optStyle = "bg-black/30 border-white/10 text-stone-400 opacity-60";
                   }
-                } else if (isSelected) {
-                  optStyle = "bg-amber-400/25 border-amber-400 text-amber-200 font-bold ring-2 ring-amber-300 shadow-xs";
                 }
 
                 return (
@@ -246,26 +248,17 @@ export default function HistorySection({
               </div>
             )}
 
-            <div className="pt-1">
-              {!timelineAnswered ? (
-                <button
-                  onClick={handleCheckTimeline}
-                  disabled={!selectedTimelineOpt}
-                  className={`w-full py-2.5 px-4 rounded-xl font-black text-xs shadow-md transition-all flex items-center justify-center gap-1.5 cursor-pointer ${selectedTimelineOpt ? 'bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#7E1819]' : 'bg-white/10 text-stone-400 cursor-not-allowed border border-white/10'}`}
-                >
-                  <Sparkles className="w-3.5 h-3.5 text-amber-800" />
-                  <span>Kiểm Tra Dấu Mốc</span>
-                </button>
-              ) : (
+            {timelineAnswered && (
+              <div className="pt-1">
                 <button
                   onClick={handleResetTimeline}
                   className="w-full py-2.5 px-4 rounded-xl bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 font-bold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer border border-amber-400/50"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
-                  <span>Thử Lại Dấu Mốc Khác</span>
+                  <span>Làm Lại</span>
                 </button>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
