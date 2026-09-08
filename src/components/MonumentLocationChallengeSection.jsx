@@ -156,32 +156,32 @@ export default function MonumentLocationChallengeSection({
             </div>
           </div>
 
-          {/* CỘT 2: THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" (5 cols) */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-[#FFFDF9] to-[#FAF4EA] rounded-2xl p-5 sm:p-6 border-2 border-amber-200/80 shadow-md flex flex-col justify-between space-y-4">
+          {/* CỘT 2: THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" (5 cols) (MÀU ĐỎ ĐÔ) */}
+          <div className="lg:col-span-5 bg-gradient-to-br from-[#3A080B] via-[#590D11] to-[#7E1819] text-white rounded-2xl p-5 sm:p-6 border-2 border-amber-400/60 shadow-lg flex flex-col justify-between space-y-4 relative overflow-hidden">
             <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 text-amber-950 font-black">
-                  <div className="w-8 h-8 rounded-xl bg-amber-500 text-white flex items-center justify-center shadow-xs">
+              <div className="flex items-center justify-between pb-2 border-b border-amber-400/30">
+                <div className="flex items-center gap-2 text-amber-300 font-black">
+                  <div className="w-8 h-8 rounded-xl bg-amber-400 text-[#7E1819] flex items-center justify-center shadow-xs font-bold">
                     <Compass className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-serif-title text-lg sm:text-xl text-[#7E1819] font-black">
+                    <h3 className="font-serif-title text-lg sm:text-xl text-amber-200 font-black">
                       Thử Thách: Bạn Đang Ở Đâu?
                     </h3>
-                    <p className="text-[11px] text-[#666666] font-medium">
+                    <p className="text-[11px] text-rose-200 font-medium">
                       Khám phá & Xác định vị trí địa lý di tích
                     </p>
                   </div>
                 </div>
-                <span className="px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-300 text-[10px] font-black uppercase tracking-wider">
+                <span className="px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/50 text-[10px] font-black uppercase tracking-wider">
                   +10 Điểm Thám Hiểm
                 </span>
               </div>
 
               {/* Question Text */}
-              <div className="p-3.5 rounded-xl bg-white border border-amber-200/60 shadow-xs">
-                <p className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E] leading-relaxed">
-                  🧭 Dựa vào bản đồ và kiến thức của bạn, hãy cho biết di tích <span className="text-[#7E1819]">"{name}"</span> tọa lạc tại địa chỉ nào dưới đây?
+              <div className="p-3.5 rounded-xl bg-black/30 border border-amber-400/30 shadow-xs">
+                <p className="font-serif-title font-bold text-sm sm:text-base text-amber-100 leading-relaxed">
+                  🧭 Dựa vào bản đồ và kiến thức của bạn, hãy cho biết di tích <span className="text-amber-300 font-extrabold underline decoration-amber-400/50">"{name}"</span> tọa lạc tại địa chỉ nào dưới đây?
                 </p>
               </div>
             </div>
@@ -190,18 +190,18 @@ export default function MonumentLocationChallengeSection({
             <div className="space-y-2.5 my-2">
               {shuffledOptions.map((opt, idx) => {
                 const isSelected = selectedOption === opt;
-                let optionStyle = "bg-white hover:bg-amber-50/50 border-gray-200 text-[#333333]";
+                let optionStyle = "bg-white/10 hover:bg-white/20 border-white/15 text-rose-50";
 
                 if (isAnswered) {
                   if (opt === address) {
-                    optionStyle = "bg-emerald-50 border-emerald-500 text-emerald-950 font-bold ring-2 ring-emerald-400";
+                    optionStyle = "bg-emerald-600/90 border-emerald-400 text-white font-bold ring-2 ring-emerald-300";
                   } else if (isSelected && !isCorrect) {
-                    optionStyle = "bg-rose-50 border-rose-500 text-rose-950 line-through ring-1 ring-rose-400";
+                    optionStyle = "bg-rose-700/80 border-rose-400 text-white line-through ring-1 ring-rose-300";
                   } else {
-                    optionStyle = "bg-gray-50 border-gray-200 text-gray-400 opacity-60";
+                    optionStyle = "bg-black/30 border-white/10 text-stone-400 opacity-60";
                   }
                 } else if (isSelected) {
-                  optionStyle = "bg-amber-100 border-[#7E1819] text-[#7E1819] font-bold ring-2 ring-amber-400 shadow-xs";
+                  optionStyle = "bg-amber-400/25 border-amber-400 text-amber-200 font-bold ring-2 ring-amber-300 shadow-xs";
                 }
 
                 return (
@@ -212,16 +212,16 @@ export default function MonumentLocationChallengeSection({
                     className={`w-full text-left p-3.5 rounded-xl border transition-all flex items-center justify-between gap-3 text-xs sm:text-sm cursor-pointer ${optionStyle}`}
                   >
                     <div className="flex items-start gap-2.5">
-                      <span className="w-5 h-5 rounded-full bg-amber-100 text-[#7E1819] font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5">
                         {String.fromCharCode(65 + idx)}
                       </span>
                       <span className="leading-snug">{opt}</span>
                     </div>
                     {isAnswered && opt === address && (
-                      <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-emerald-300 shrink-0" />
                     )}
                     {isAnswered && isSelected && !isCorrect && (
-                      <XCircle className="w-5 h-5 text-rose-600 shrink-0" />
+                      <XCircle className="w-5 h-5 text-rose-300 shrink-0" />
                     )}
                   </button>
                 );
@@ -230,49 +230,49 @@ export default function MonumentLocationChallengeSection({
 
             {/* Answer Result & Explanation Box */}
             {isAnswered && (
-              <div className={`p-4 rounded-xl border animate-fadeIn space-y-2 ${isCorrect ? 'bg-emerald-50 border-emerald-300 text-emerald-950' : 'bg-amber-50 border-amber-300 text-amber-950'}`}>
-                <div className="flex items-center gap-2 font-bold text-sm">
+              <div className={`p-4 rounded-xl border animate-fadeIn space-y-2 ${isCorrect ? 'bg-emerald-950/60 border-emerald-400/60 text-emerald-100' : 'bg-black/40 border-amber-400/40 text-rose-100'}`}>
+                <div className="flex items-center gap-2 font-bold text-sm text-amber-300">
                   {isCorrect ? (
                     <>
-                      <Sparkles className="w-4 h-4 text-emerald-600" />
+                      <Sparkles className="w-4 h-4 text-emerald-300" />
                       <span>Chính xác tuyệt vời! Bạn đã mở khóa vị trí thành công.</span>
                     </>
                   ) : (
                     <>
-                      <HelpCircle className="w-4 h-4 text-amber-700" />
+                      <HelpCircle className="w-4 h-4 text-amber-300" />
                       <span>Chưa chính xác, hãy xem lời giải thích bên dưới nhé!</span>
                     </>
                   )}
                 </div>
                 <div className="text-xs leading-relaxed space-y-1">
                   <p>
-                    📍 <strong>Địa chỉ chính xác:</strong> {address}
+                    📍 <strong className="text-amber-200">Địa chỉ chính xác:</strong> {address}
                   </p>
-                  <p className="text-gray-700">
-                    💡 <strong>Ý nghĩa vị trí:</strong> Đây là địa bàn trọng yếu gắn liền với tiến trình phát triển và các sự kiện lịch sử hào hùng của Thành phố Hồ Chí Minh.
+                  <p className="text-rose-100/80">
+                    💡 <em>Lời giải:</em> Di tích mang ý nghĩa lịch sử sâu sắc, được xếp hạng và gắn liền với vị trí địa lý tại {address}.
                   </p>
                 </div>
               </div>
             )}
 
-            {/* Action Buttons */}
-            <div className="pt-2 flex items-center gap-3">
+            {/* Actions Button */}
+            <div className="pt-2">
               {!isAnswered ? (
                 <button
                   onClick={handleCheckAnswer}
                   disabled={!selectedOption}
-                  className={`w-full py-3 px-4 rounded-xl font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer ${selectedOption ? 'bg-gradient-to-r from-[#7E1819] to-[#9E1B1D] hover:from-[#9E1B1D] hover:to-[#7E1819] text-white hover:scale-102 shadow-lg' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
+                  className={`w-full py-3 px-4 rounded-xl font-black text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer ${selectedOption ? 'bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#7E1819]' : 'bg-white/10 text-stone-400 cursor-not-allowed border border-white/10'}`}
                 >
-                  <Sparkles className="w-4 h-4 text-amber-300" />
-                  <span>Kiểm Tra Vị Trí</span>
+                  <Sparkles className="w-4 h-4 text-amber-800" />
+                  <span>Xác Nhận Vị Trí</span>
                 </button>
               ) : (
                 <button
                   onClick={handleReset}
-                  className="w-full py-3 px-4 rounded-xl bg-amber-100 hover:bg-amber-200 text-[#7E1819] font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-300 shadow-sm hover:scale-102"
+                  className="w-full py-3 px-4 rounded-xl bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-400/50"
                 >
                   <RotateCcw className="w-4 h-4" />
-                  <span>Thử Lại Câu Hỏi</span>
+                  <span>Thử Thách Lại</span>
                 </button>
               )}
             </div>
