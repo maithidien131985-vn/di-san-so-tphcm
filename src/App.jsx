@@ -230,6 +230,7 @@ export default function App() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const [actionModalOpen, setActionModalOpen] = useState(false);
+  const [actionStudentInfo, setActionStudentInfo] = useState(null);
   const [docsModalOpen, setDocsModalOpen] = useState(false);
   const [myMapModalOpen, setMyMapModalOpen] = useState(false);
   const [milestoneModalOpen, setMilestoneModalOpen] = useState(false);
@@ -666,7 +667,9 @@ export default function App() {
         onClose={() => setStudentReportOpen(false)}
         investigation={safeInvestigation}
         monumentName={safeInfo.name || ''}
-        onOpenActionModal={() => {
+        activePassport={activePassport}
+        onOpenActionModal={(info) => {
+          setActionStudentInfo(info);
           setStudentReportOpen(false);
           setActionModalOpen(true);
         }}
@@ -694,6 +697,8 @@ export default function App() {
         isOpen={actionModalOpen}
         onClose={() => setActionModalOpen(false)}
         monumentName={safeInfo.name || ''}
+        initialStudentInfo={actionStudentInfo}
+        activePassport={activePassport}
       />
 
       {/* Document Reference Modal */}

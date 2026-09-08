@@ -6,7 +6,9 @@ import soundEffects from '../utils/soundEffects';
 export default function ActionModal({ 
   isOpen, 
   onClose,
-  monumentName = 'Di tích lịch sử'
+  monumentName = 'Di tích lịch sử',
+  initialStudentInfo = null,
+  activePassport = null
 }) {
   const [pledgeName, setPledgeName] = React.useState('');
   const [pledgeMsg, setPledgeMsg] = React.useState('');
@@ -16,6 +18,47 @@ export default function ActionModal({
     { name: 'Lê Hoàng Nam', text: 'Tích cực chia sẻ các tư liệu lịch sử đúng đắn trên mạng xã hội để lan tỏa tinh thần yêu nước.' }
   ]);
   const [hasSubmitted, setHasSubmitted] = React.useState(false);
+
+  // Auto-fill student info and message when opened
+  React.useEffect(() => {
+    if (isOpen) {
+      let name = '';
+      let msg = '';
+
+      // 1. From initialStudentInfo (passed from StudentReportModal)
+      if (initialStudentInfo?.studentName) {
+        name = initialStudentInfo.studentName.trim();
+        if (initialStudentInfo.className) name += ` • ${initialStudentInfo.className.trim()}`;
+        if (initialStudentInfo.schoolName) name += ` • ${initialStudentInfo.schoolName.trim()}`;
+        if (initialStudentInfo.messageToFuture) msg = initialStudentInfo.messageToFuture.trim();
+      }
+      // 2. From activePassport
+      else if (activePassport?.fullName) {
+        name = activePassport.fullName;
+        if (activePassport.grade) name += ` • ${activePassport.grade}`;
+        if (activePassport.school) name += ` • ${activePassport.school}`;
+      }
+      // 3. From localStorage saved student info
+      else {
+        try {
+          const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+          if (saved.studentName) {
+            name = saved.studentName.trim();
+            if (saved.className) name += ` • ${saved.className.trim()}`;
+            if (saved.schoolName) name += ` • ${saved.schoolName.trim()}`;
+            if (saved.messageToFuture) msg = saved.messageToFuture.trim();
+          }
+        } catch (e) {}
+      }
+
+      if (name) setPledgeName(name);
+      if (msg) {
+        setPledgeMsg(msg);
+      } else {
+        setPledgeMsg(`Em xin hứa sẽ noi gương các thế hệ cha anh, tích cực học tập, rèn luyện và góp phần bảo tồn, phát huy giá trị di sản ${monumentName}!`);
+      }
+    }
+  }, [isOpen, initialStudentInfo, activePassport, monumentName]);
 
   if (!isOpen) return null;
 

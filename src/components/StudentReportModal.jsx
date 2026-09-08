@@ -8,11 +8,39 @@ export default function StudentReportModal({
   onClose,
   investigation,
   monumentName = 'Dinh Độc Lập',
-  onOpenActionModal
+  onOpenActionModal,
+  activePassport = null
 }) {
-  const [studentName, setStudentName] = useState('');
-  const [className, setClassName] = useState('');
-  const [schoolName, setSchoolName] = useState('');
+  const [studentName, setStudentName] = useState(() => {
+    if (activePassport?.fullName) return activePassport.fullName;
+    try {
+      const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+      return saved.studentName || '';
+    } catch (e) {
+      return '';
+    }
+  });
+
+  const [className, setClassName] = useState(() => {
+    if (activePassport?.grade) return activePassport.grade;
+    try {
+      const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+      return saved.className || '';
+    } catch (e) {
+      return '';
+    }
+  });
+
+  const [schoolName, setSchoolName] = useState(() => {
+    if (activePassport?.school) return activePassport.school;
+    try {
+      const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+      return saved.schoolName || '';
+    } catch (e) {
+      return '';
+    }
+  });
+
   const [analysisText, setAnalysisText] = useState('');
   const [messageToFuture, setMessageToFuture] = useState(
     'Em xin hứa sẽ noi gương các thế hệ cha anh, tích cực học tập, rèn luyện và góp phần bảo tồn, phát huy giá trị di sản lịch sử văn hóa của dân tộc!'
@@ -27,8 +55,19 @@ export default function StudentReportModal({
     if (isOpen) {
       setAnalysisText(defaultAnswer);
       setIsSubmitted(false);
+
+      // Auto fill if empty
+      if (!studentName && activePassport?.fullName) {
+        setStudentName(activePassport.fullName);
+      }
+      if (!className && activePassport?.grade) {
+        setClassName(activePassport.grade);
+      }
+      if (!schoolName && activePassport?.school) {
+        setSchoolName(activePassport.school);
+      }
     }
-  }, [isOpen, defaultAnswer]);
+  }, [isOpen, defaultAnswer, activePassport]);
 
   if (!isOpen) return null;
 
@@ -39,6 +78,16 @@ export default function StudentReportModal({
       alert('Vui lòng nhập họ và tên của học sinh!');
       return;
     }
+
+    try {
+      localStorage.setItem('di_san_so_last_student_info', JSON.stringify({
+        studentName: studentName.trim(),
+        className: className.trim(),
+        schoolName: schoolName.trim(),
+        messageToFuture: messageToFuture.trim()
+      }));
+    } catch (err) {}
+
     soundEffects.playCorrect();
     setIsSubmitted(true);
     confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
@@ -230,7 +279,12 @@ export default function StudentReportModal({
                     onClick={() => {
                       soundEffects.playUnlock();
                       if (onOpenActionModal) {
-                        onOpenActionModal();
+                        onOpenActionModal({
+                          studentName: studentName.trim(),
+                          className: className.trim(),
+                          schoolName: schoolName.trim(),
+                          messageToFuture: messageToFuture.trim()
+                        });
                       } else if (onClose) {
                         onClose();
                       }
