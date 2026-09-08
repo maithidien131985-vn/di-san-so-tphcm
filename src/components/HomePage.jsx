@@ -55,9 +55,8 @@ export default function HomePage({
   const [studentIdeaLikes, setStudentIdeaLikes] = useState({ 1: 128, 2: 94, 3: 73 });
   const [likedIdeas, setLikedIdeas] = useState({});
 
-  // 3-Dimension Survey State
+  // 2-Dimension Survey State
   const [surveyLocation, setSurveyLocation] = useState('q1_q3_q4');
-  const [surveyPurpose, setSurveyPurpose] = useState('study_tour');
   const [surveyTopic, setSurveyTopic] = useState('military');
 
   // Survey Location Options
@@ -70,13 +69,6 @@ export default function HomePage({
     { id: 'binh_thanh_pn_gv', name: 'Bình Thạnh, Phú Nhuận, Gò Vấp, Tân Bình', icon: '🏘️', tag: 'Khu Nội Thành Mở Rộng' },
     { id: 'ba_ria_vung_tau', name: 'Bà Rịa - Vũng Tàu', icon: '🌊', tag: 'Bến Lộc An, Côn Đảo, Bạch Dinh' },
     { id: 'binh_duong', name: 'Bình Dương', icon: '⛰️', tag: 'Phú Lợi, Hội Khánh, Tam Giác Sắt' }
-  ];
-
-  // Survey Purpose Options
-  const purposeOptions = [
-    { id: 'study_tour', name: 'Khám phá trải nghiệm sau giờ học', icon: '🎒', desc: 'Bán kính gần, thuận tiện di chuyển bằng xe buýt hoặc xe đạp' },
-    { id: 'family_group', name: 'Dã ngoại cùng lớp & Gia đình', icon: '👨‍👩‍👧‍👦', desc: 'Không gian mở, chụp ảnh check-in và hoạt động tập thể' },
-    { id: 'heritage_roots', name: 'Hành trình Về Nguồn & Tri ân', icon: '⭐', desc: 'Thắp hương, tìm hiểu truyền thống đấu tranh bất khuất' }
   ];
 
   // Survey Topic Options
@@ -134,16 +126,12 @@ export default function HomePage({
         if (m.stt === 7 || m.stt === 3 || m.stt === 8 || overview.includes('rừng') || overview.includes('sông')) score += 45;
       }
 
-      // 3. Purpose boost
-      if (surveyPurpose === 'khkt_stem' && m.investigation?.investigationQuestion) score += 15;
-      if (surveyPurpose === 'heritage_roots' && (m.info.ranking.includes('đặc biệt') || m.info.ranking.includes('Quốc gia'))) score += 15;
-
       return { monument: m, score };
     });
 
     scored.sort((a, b) => b.score - a.score);
     return scored.slice(0, 4).map(s => s.monument);
-  }, [allMonuments, surveyLocation, surveyPurpose, surveyTopic]);
+  }, [allMonuments, surveyLocation, surveyTopic]);
 
   // Smart Search Scoring & Best Match Linking
   const handlePerformSearch = (explicitTerm) => {
@@ -614,60 +602,11 @@ export default function HomePage({
                 </div>
               </div>
 
-              {/* BƯỚC 2: MỤC ĐÍCH KHÁM PHÁ CỦA BẠN */}
+              {/* BƯỚC 2: ĐAM MÊ & CHỦ ĐỀ BẠN YÊU THÍCH */}
               <div className="space-y-2.5 sm:space-y-3">
                 <div className="flex items-center gap-2">
                   <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-black text-xs shadow-xs">
                     2
-                  </div>
-                  <h3 className="font-serif-title font-black text-xs sm:text-sm md:text-base text-[#2A1214]">
-                    Mục đích chuyến đi của bạn:
-                  </h3>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3">
-                  {purposeOptions.map(pur => {
-                    const isSelected = surveyPurpose === pur.id;
-                    return (
-                      <button
-                        key={pur.id}
-                        type="button"
-                        onClick={() => setSurveyPurpose(pur.id)}
-                        className={`p-3 sm:p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-start gap-3 relative shadow-2xs ${
-                          isSelected
-                            ? 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border-amber-400 ring-2 ring-[#8B1417]/25 shadow-md scale-[1.02]'
-                            : 'bg-white hover:bg-[#FAF4F0] border-rose-200 text-[#2A1214] hover:border-[#8B1417]/50 hover:shadow-xs'
-                        }`}
-                      >
-                        <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-lg sm:text-xl shrink-0 shadow-2xs mt-0.5 ${
-                          isSelected ? 'bg-white/20 border border-white/30' : 'bg-rose-50 border border-rose-200'
-                        }`}>
-                          {pur.icon}
-                        </div>
-                        <div className="flex-1 min-w-0 space-y-0.5">
-                          <div className={`text-xs sm:text-[13px] font-black leading-snug ${isSelected ? 'text-amber-200' : 'text-[#8B1417]'}`}>
-                            {pur.name}
-                          </div>
-                          <div className={`text-[10px] sm:text-[11px] font-semibold leading-tight line-clamp-2 ${isSelected ? 'text-white/95' : 'text-stone-600'}`}>
-                            {pur.desc}
-                          </div>
-                        </div>
-                        {isSelected && (
-                          <span className="w-4 h-4 rounded-full bg-amber-400 text-[#8B1417] font-black flex items-center justify-center text-[10px] shrink-0 shadow-xs">
-                            ✓
-                          </span>
-                        )}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* BƯỚC 3: ĐAM MÊ & CHỦ ĐỀ BẠN YÊU THÍCH */}
-              <div className="space-y-2.5 sm:space-y-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-black text-xs shadow-xs">
-                    3
                   </div>
                   <h3 className="font-serif-title font-black text-xs sm:text-sm md:text-base text-[#2A1214]">
                     Đam mê &amp; Chủ đề bạn quan tâm nhất:
