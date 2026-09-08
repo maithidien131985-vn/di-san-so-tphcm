@@ -96,19 +96,19 @@ export default function HistorySection({
       <section className="bg-white rounded-2xl p-6 sm:p-8 border border-[#EAE3D9] shadow-sm space-y-4">
         <div className="flex items-center justify-between gap-3 pb-3 border-b border-[#F0EAE1]">
           <div className="flex items-center gap-3 text-[#7E1819]">
-            <div className="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center text-[#7E1819] shadow-2xs">
-              <Landmark className="w-5 h-5" />
+            <div className="w-12 h-12 rounded-2xl bg-red-50 border border-red-200 flex items-center justify-center text-[#7E1819] shadow-2xs shrink-0">
+              <Landmark className="w-6 h-6" />
             </div>
             <div>
-              <h2 className="text-xl sm:text-2xl font-black font-serif-title tracking-wide text-[#7E1819]">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black font-serif-title tracking-tight text-[#7E1819]">
                 Giá Trị Lịch Sử & Ý Nghĩa Di Sản
               </h2>
-              <p className="text-xs text-[#666666]">
+              <p className="text-xs sm:text-sm text-[#666666]">
                 Biên niên sử vàng son và dấu ấn không thể phai mờ
               </p>
             </div>
           </div>
-          <span className="hidden sm:inline-flex text-[11px] font-bold px-3 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
+          <span className="hidden sm:inline-flex text-xs font-bold px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
             Tư liệu lịch sử xác thực
           </span>
         </div>
@@ -118,11 +118,11 @@ export default function HistorySection({
             rows={5}
             value={overview || ''}
             onChange={(e) => onUpdateOverview && onUpdateOverview(e.target.value)}
-            className="w-full p-4 rounded-xl border-2 border-amber-400 bg-amber-50/30 text-[#2C241E] text-sm sm:text-base leading-relaxed outline-none focus:ring-2 focus:ring-amber-500 font-serif-title"
+            className="w-full p-4 rounded-xl border-2 border-amber-400 bg-amber-50/30 text-[#2C241E] text-base sm:text-lg leading-relaxed outline-none focus:ring-2 focus:ring-amber-500 font-serif-title"
           />
         ) : (
-          <div className="p-4 sm:p-5 rounded-xl bg-[#FAF7F2]/60 border border-[#EFE8DE]">
-            <p className="text-[#2C241E] text-sm sm:text-base leading-loose text-justify font-serif-title first-letter:text-3xl first-letter:font-black first-letter:text-[#7E1819] first-letter:float-left first-letter:mr-2">
+          <div className="p-5 sm:p-6 rounded-2xl bg-[#FAF7F2]/70 border border-[#EFE8DE]">
+            <p className="text-[#2C241E] text-base sm:text-lg md:text-xl leading-relaxed sm:leading-loose text-justify font-serif-title first-letter:text-4xl first-letter:font-black first-letter:text-[#7E1819] first-letter:float-left first-letter:mr-2.5 first-letter:leading-none">
               {overview || 'Thông tin tổng quan về di tích lịch sử đang được cập nhật.'}
             </p>
           </div>
@@ -133,8 +133,8 @@ export default function HistorySection({
       <section className="bg-white rounded-2xl p-6 sm:p-8 border border-[#EAE3D9] shadow-sm space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-[#F0EAE1]">
           <div className="flex items-center gap-2.5 text-[#7E1819]">
-            <Clock className="w-5 h-5 text-[#7E1819]" />
-            <h3 className="text-lg sm:text-xl font-bold font-serif-title text-[#2C241E]">
+            <Clock className="w-6 h-6 text-[#7E1819]" />
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-black font-serif-title text-[#2C241E]">
               Dấu Mốc Lịch Sử & Giải Mã Dòng Thời Gian
             </h3>
           </div>

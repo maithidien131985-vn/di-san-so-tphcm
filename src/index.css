@@ -34,8 +34,19 @@
 }
 
 .font-serif-title {
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Playfair Display', 'Merriweather', 'Lora', Georgia, serif;
   text-wrap: balance;
+  letter-spacing: -0.015em;
+}
+
+.font-heritage {
+  font-family: 'Playfair Display', 'Cinzel', Georgia, serif;
+  text-wrap: balance;
+  letter-spacing: 0.02em;
+}
+
+.font-body-historic {
+  font-family: 'Lora', 'Be Vietnam Pro', serif;
 }
 
 .font-heading {

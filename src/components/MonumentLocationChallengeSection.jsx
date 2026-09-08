@@ -84,14 +84,14 @@ export default function MonumentLocationChallengeSection({
       <ScrollReveal>
         {/* Section Header */}
         <div className="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-4 pb-3 border-b border-[#EAE3D9]">
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <div className="flex items-center gap-2.5 text-[#7E1819]">
-              <Compass className="w-6 h-6 text-[#7E1819]" />
-              <h2 className="font-serif-title font-black text-xl sm:text-2xl lg:text-3xl tracking-wide text-[#7E1819]">
+              <Compass className="w-7 h-7 text-[#7E1819]" />
+              <h2 className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#7E1819]">
                 Định Vị Không Gian & Tọa Độ Lịch Sử
               </h2>
             </div>
-            <p className="text-xs sm:text-sm text-[#666666]">
+            <p className="text-xs sm:text-sm md:text-base text-[#555555]">
               Khám phá tọa độ GPS thực địa, định vị trên bản đồ số và giải mã bí ẩn vị trí địa lý của di tích.
             </p>
           </div>
@@ -99,33 +99,33 @@ export default function MonumentLocationChallengeSection({
           <div className="flex items-center gap-2">
             <button
               onClick={onOpenMyMap}
-              className="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold text-xs shadow-md transition-all flex items-center gap-2 hover:scale-102 cursor-pointer"
+              className="px-4 py-2.5 rounded-xl bg-white border border-[#EAE3D9] text-[#7E1819] hover:bg-red-50 text-xs sm:text-sm font-black shadow-xs transition-all flex items-center gap-1.5 cursor-pointer hover:scale-102"
             >
-              <Layers className="w-4 h-4" />
-              <span>Mở Bản Đồ 103 Di Tích Toàn Cảnh</span>
+              <Layers className="w-4 h-4 text-[#7E1819]" />
+              <span>Xem Bản Đồ Toàn Cảnh</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </button>
           </div>
         </div>
 
-        {/* 2-Column Responsive Layout */}
+        {/* 2 Columns Layout: Left Map (7 cols), Right Interactive Location Challenge (5 cols) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-          {/* CỘT 1: BẢN ĐỒ TỌA ĐỘ GPS (7 cols) */}
-          <div className="lg:col-span-7 bg-white rounded-2xl p-5 sm:p-6 border border-[#EAE3D9] shadow-sm flex flex-col justify-between space-y-4">
-            <div className="flex items-center justify-between gap-2">
-              <div className="flex items-center gap-2 text-[#7E1819]">
-                <MapPin className="w-5 h-5" />
-                <h3 className="font-serif-title font-bold text-base sm:text-lg text-[#2C241E]">
-                  Bản Đồ Số Tọa Độ GPS
-                </h3>
+          
+          {/* CỘT 1: BẢN ĐỒ TỌA ĐỘ GPS LỚN (7 cols) */}
+          <div className="lg:col-span-7 bg-white rounded-2xl p-4 sm:p-5 border border-[#EAE3D9] shadow-sm flex flex-col justify-between space-y-3">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="font-bold text-xs sm:text-sm text-[#2C241E]">Bản Đồ GPS Trực Tuyến</span>
               </div>
-              <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-red-50 text-[#7E1819] border border-red-200 font-bold">
-                📍 {lat.toFixed(5)}°N, {lng.toFixed(5)}°E
-              </span>
+              <div className="flex items-center gap-1.5 text-xs text-[#7E1819] font-black bg-red-50 px-3 py-1 rounded-lg border border-red-200">
+                <MapPin className="w-3.5 h-3.5 text-[#7E1819]" />
+                <span>{lat.toFixed(5)}, {lng.toFixed(5)}</span>
+              </div>
             </div>
 
-            {/* Map Container */}
-            <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[420px] rounded-xl overflow-hidden border border-gray-200 shadow-inner">
+            {/* Main Interactive Leaflet Map Container */}
+            <div className="h-[340px] sm:h-[400px] rounded-xl overflow-hidden border border-gray-200 shadow-inner">
               <LocationMap
                 lat={lat}
                 lng={lng}
@@ -139,9 +139,9 @@ export default function MonumentLocationChallengeSection({
             </div>
 
             {/* Map Footer Bar */}
-            <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-[#555555]">
+            <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm text-[#555555]">
               <div className="flex items-center gap-2">
-                <span className="font-bold text-[#7E1819]">Địa chỉ thực địa:</span>
+                <span className="font-black text-[#7E1819]">Địa chỉ thực địa:</span>
                 <span className="text-[#333333] font-medium truncate max-w-md">{address}</span>
               </div>
               <a
@@ -157,30 +157,30 @@ export default function MonumentLocationChallengeSection({
           </div>
 
           {/* CỘT 2: THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" (5 cols) (MÀU ĐỎ ĐÔ) */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-[#3A080B] via-[#590D11] to-[#7E1819] text-white rounded-2xl p-5 sm:p-6 border-2 border-amber-400/60 shadow-lg flex flex-col justify-between space-y-4 relative overflow-hidden">
-            <div className="space-y-2">
-              <div className="flex items-center justify-between pb-2 border-b border-amber-400/30">
-                <div className="flex items-center gap-2 text-amber-300 font-black">
-                  <div className="w-8 h-8 rounded-xl bg-amber-400 text-[#7E1819] flex items-center justify-center shadow-xs font-bold">
+          <div className="lg:col-span-5 bg-gradient-to-br from-[#3A080B] via-[#590D11] to-[#7E1819] text-white rounded-2xl p-5 sm:p-7 border-2 border-amber-400/60 shadow-lg flex flex-col justify-between space-y-4 relative overflow-hidden">
+            <div className="space-y-3">
+              <div className="flex items-center justify-between pb-3 border-b border-amber-400/30">
+                <div className="flex items-center gap-2.5 text-amber-300 font-black">
+                  <div className="w-9 h-9 rounded-xl bg-amber-400 text-[#7E1819] flex items-center justify-center shadow-xs font-bold shrink-0">
                     <Compass className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-serif-title text-lg sm:text-xl text-amber-200 font-black">
+                    <h3 className="font-serif-title text-xl sm:text-2xl text-amber-200 font-black">
                       Thử Thách: Bạn Đang Ở Đâu?
                     </h3>
-                    <p className="text-[11px] text-rose-200 font-medium">
+                    <p className="text-xs text-rose-200 font-medium">
                       Khám phá & Xác định vị trí địa lý di tích
                     </p>
                   </div>
                 </div>
-                <span className="px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/50 text-[10px] font-black uppercase tracking-wider">
-                  +10 Điểm Thám Hiểm
+                <span className="px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/50 text-xs font-black uppercase tracking-wider shrink-0">
+                  +10 Điểm
                 </span>
               </div>
 
               {/* Question Text */}
-              <div className="p-3.5 rounded-xl bg-black/30 border border-amber-400/30 shadow-xs">
-                <p className="font-serif-title font-bold text-sm sm:text-base text-amber-100 leading-relaxed">
+              <div className="p-4 rounded-xl bg-black/35 border border-amber-400/40 shadow-xs">
+                <p className="font-serif-title font-bold text-base sm:text-lg text-amber-100 leading-relaxed">
                   🧭 Dựa vào bản đồ và kiến thức của bạn, hãy cho biết di tích <span className="text-amber-300 font-extrabold underline decoration-amber-400/50">"{name}"</span> tọa lạc tại địa chỉ nào dưới đây?
                 </p>
               </div>

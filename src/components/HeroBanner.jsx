@@ -106,13 +106,13 @@ export default function HeroBanner({
             <span>{info.badge || info.ranking || 'Di tích Quốc gia'}</span>
           </div>
 
-          {/* Monument Name with text-wrap: balance */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black font-serif-title tracking-tight text-white leading-tight uppercase drop-shadow-xl text-shadow-lg [text-wrap:balance]">
+          {/* Monument Name with text-wrap: balance and grand historic typography */}
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black font-serif-title tracking-tight text-white leading-tight uppercase drop-shadow-2xl text-shadow-lg [text-wrap:balance]">
             {info.name}
           </h1>
 
           {/* Subtitle / Historic Tagline with text-wrap: balance */}
-          <p className="text-xs sm:text-sm md:text-base text-amber-200 font-medium leading-relaxed max-w-3xl drop-shadow-md [text-wrap:balance]">
+          <p className="text-sm sm:text-base md:text-lg text-amber-200 font-semibold leading-relaxed max-w-4xl drop-shadow-md [text-wrap:balance]">
             {info.subtitle || 'Chứng nhân lịch sử & Di sản văn hóa trường tồn'}
           </p>
         </div>
