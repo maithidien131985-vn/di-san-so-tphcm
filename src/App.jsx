@@ -568,23 +568,15 @@ export default function App() {
               monumentName={safeInfo.name || ''}
             />
 
-            {/* 7. Trò Chơi Nhỏ Tương Tác: Thử thách đố vui & Chinh phục huy hiệu sau khi xem Video / Audio */}
-            <MonumentInteractiveMiniGame
-              quiz={safeInvestigation?.quiz}
-              monumentName={safeInfo.name || ''}
-              monumentStt={currentStt}
-              activePassport={activePassport}
-              onOpenPassport={() => setPassportModalOpen(true)}
-              onPassportUpdate={(updatedPassport) => setActivePassport(updatedPassport)}
-            />
-
-            {/* 8. HỒ SƠ ĐIỀU TRA & Ô TÀI LIỆU THAM KHẢO (Nút Bắt đầu điều tra & Nhận huy hiệu ấn tượng) */}
+            {/* 7. HÀNH TRÌNH ĐIỀU TRA & GIẢI MÃ DI SẢN (3 phần trên 1 hàng: Truy Tìm Manh Mối, Hồ Sơ Điều Tra, Tài Liệu Căn Cứ) */}
             <div id="investigation-section" className="pt-2">
               <InvestigationSection
                 investigation={safeInvestigation}
+                monumentName={safeInfo.name || ''}
+                monumentStt={currentStt}
                 monumentImage={safeInfo.heroImage || safeGallery[0]?.src || ''}
-                onOpenDossierDetail={handleOpenDossier}
-                onStartQuiz={handleStartQuiz}
+                activePassport={activePassport}
+                onPassportUpdate={(updatedPassport) => setActivePassport(updatedPassport)}
                 onOpenStudentReport={() => setStudentReportOpen(true)}
                 onOpenDocsModal={() => setDocsModalOpen(true)}
               />
