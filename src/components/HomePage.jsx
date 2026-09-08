@@ -57,7 +57,7 @@ export default function HomePage({
 
   // 3-Dimension Survey State
   const [surveyLocation, setSurveyLocation] = useState('q1_q3_q4');
-  const [surveyPurpose, setSurveyPurpose] = useState('khkt_stem');
+  const [surveyPurpose, setSurveyPurpose] = useState('study_tour');
   const [surveyTopic, setSurveyTopic] = useState('military');
 
   // Survey Location Options
@@ -74,7 +74,6 @@ export default function HomePage({
 
   // Survey Purpose Options
   const purposeOptions = [
-    { id: 'khkt_stem', name: 'Nghiên cứu KHKT / Dự án STEM', icon: '🔬', desc: 'Khảo sát hiện vật, tư liệu điều tra lịch sử chuyên sâu' },
     { id: 'study_tour', name: 'Khám phá trải nghiệm sau giờ học', icon: '🎒', desc: 'Bán kính gần, thuận tiện di chuyển bằng xe buýt hoặc xe đạp' },
     { id: 'family_group', name: 'Dã ngoại cùng lớp & Gia đình', icon: '👨‍👩‍👧‍👦', desc: 'Không gian mở, chụp ảnh check-in và hoạt động tập thể' },
     { id: 'heritage_roots', name: 'Hành trình Về Nguồn & Tri ân', icon: '⭐', desc: 'Thắp hương, tìm hiểu truyền thống đấu tranh bất khuất' }
@@ -626,7 +625,7 @@ export default function HomePage({
                   </h3>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-2.5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3">
                   {purposeOptions.map(pur => {
                     const isSelected = surveyPurpose === pur.id;
                     return (
