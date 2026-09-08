@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Compass, ArrowRight, MapPin, Sparkles, Navigation, Layers, ChevronRight, Award } from 'lucide-react';
 import { allMonumentsList } from '../data/allMonumentsData';
 
