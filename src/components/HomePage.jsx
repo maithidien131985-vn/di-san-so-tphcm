@@ -252,21 +252,21 @@ export default function HomePage({
   return (
     <div className="bg-[#FAF4F0] min-h-screen text-[#2A1214] font-sans antialiased selection:bg-[#8B1417] selection:text-white pb-20 md:pb-0">
       {/* 1. HERO BANNER WITH REVOLUTIONARY BURGUNDY RED THEME & HERITAGE MAP */}
-      <section className="relative bg-gradient-to-br from-[#4A0A0C] via-[#7E1819] to-[#200507] text-white min-h-[500px] sm:min-h-[540px] md:min-h-[580px] flex flex-col justify-between overflow-hidden shadow-2xl border-b-4 border-[#BA8438]/40">
+      <section className="relative bg-gradient-to-br from-[#4A0A0C] via-[#7E1819] to-[#200507] text-white min-h-[580px] sm:min-h-[640px] md:min-h-[700px] flex flex-col justify-between overflow-hidden shadow-2xl border-b-4 border-[#BA8438]/40 pb-12 sm:pb-16">
         {/* Background Decorative Elements: Subtle gold radial glow, historical star texture and heritage motifs */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-          <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#BA8438]/15 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 -right-20 w-[500px] h-[500px] bg-[#A81B1F]/30 rounded-full blur-3xl" />
+          <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-[#BA8438]/15 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 -right-20 w-[700px] h-[700px] bg-[#A81B1F]/35 rounded-full blur-3xl" />
           <div className="absolute inset-0 bg-[radial-gradient(#BA8438_1px,transparent_1px)] [background-size:24px_24px] opacity-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#200507]/90 via-transparent to-black/20" />
         </div>
 
         {/* Hero Main Content with 2-Column Grid on Desktop */}
-        <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16 my-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="relative z-10 max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-12 md:py-14 my-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
             
             {/* Left Column: Title, Subtitle & Action CTAs */}
-            <div className="lg:col-span-7 space-y-4 sm:space-y-5 text-center lg:text-left">
+            <div className="lg:col-span-5 space-y-4 sm:space-y-6 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#BA8438]/20 border border-[#BA8438]/40 text-amber-200 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-sm shadow-inner">
                 <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
                 <span>Số hóa 103 Di tích Lịch sử - Văn hóa TP. Hồ Chí Minh</span>
@@ -283,7 +283,7 @@ export default function HomePage({
                 Hành trình khám phá những câu chuyện còn sống mãi
               </h2>
 
-              <p className="text-xs sm:text-sm md:text-base text-rose-100/80 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0 drop-shadow-sm">
+              <p className="text-xs sm:text-sm md:text-base text-rose-100/80 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0 drop-shadow-sm">
                 Không gian học tập lịch sử số hóa tương tác dành cho học sinh, giáo viên và cộng đồng yêu di sản. Khám phá kho dữ liệu 103 di tích, sơ đồ địa lý, hồ sơ điều tra và thử thách kiến thức.
               </p>
 
@@ -316,18 +316,18 @@ export default function HomePage({
               </div>
             </div>
 
-            {/* Right Column: Uploaded Heritage Map - Maximized size, seamless blending, no box border */}
-            <div className="lg:col-span-5 flex justify-center items-center relative w-full overflow-visible">
-              {/* Ambient Warm Golden Glow directly behind map silhouette */}
-              <div className="absolute inset-0 bg-radial from-amber-500/30 via-rose-600/20 to-transparent blur-3xl scale-125 pointer-events-none" />
+            {/* Right Column: Double Size Uploaded Heritage Map */}
+            <div className="lg:col-span-7 flex justify-center items-center relative w-full overflow-visible py-4">
+              {/* Ambient Warm Golden Glow directly behind map */}
+              <div className="absolute inset-0 bg-radial from-amber-500/35 via-rose-600/25 to-transparent blur-3xl scale-150 pointer-events-none" />
               
-              <div className="relative w-full flex items-center justify-center">
+              <div className="relative w-full flex items-center justify-center lg:justify-end">
                 <img
                   src="/assets/images/tphcm_heritage_map_hero.png"
                   alt="Bản đồ di sản TP. Hồ Chí Minh"
-                  className="w-full max-w-[540px] sm:max-w-[600px] lg:max-w-[680px] h-auto object-contain transition-transform duration-700 hover:scale-105"
+                  className="w-full max-w-[620px] sm:max-w-[780px] md:max-w-[900px] lg:max-w-[1000px] max-h-[460px] sm:max-h-[560px] md:max-h-[640px] object-contain transition-transform duration-700 hover:scale-103"
                   style={{
-                    filter: 'drop-shadow(0 20px 30px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 35px rgba(234, 179, 8, 0.25))'
+                    filter: 'drop-shadow(0 25px 40px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 50px rgba(234, 179, 8, 0.3))'
                   }}
                 />
               </div>
@@ -336,17 +336,17 @@ export default function HomePage({
           </div>
         </div>
 
-        {/* Floating Search Bar */}
-        <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-8 sm:-mb-9">
+        {/* Floating Elevated Search Bar */}
+        <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-6 sm:-mb-8">
           <form 
             onSubmit={(e) => {
               e.preventDefault();
               handlePerformSearch();
             }}
-            className="bg-[#FFFDFB] rounded-2xl sm:rounded-full p-2 sm:p-3 shadow-2xl border-2 border-[#8B1417]/50 ring-4 ring-[#8B1417]/10 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 backdrop-blur-md"
+            className="bg-[#FFFDFB] rounded-2xl sm:rounded-full p-2.5 sm:p-3.5 shadow-[0_20px_50px_rgba(0,0,0,0.4)] border-2 border-amber-400/80 ring-4 ring-[#8B1417]/20 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 backdrop-blur-lg transform hover:-translate-y-0.5 transition-all"
           >
-            <div className="flex items-center gap-2 pl-2 sm:pl-3 text-xs sm:text-sm font-black text-[#8B1417] shrink-0">
-              <Search className="w-4 h-4 text-[#8B1417]" />
+            <div className="flex items-center gap-2 pl-2 sm:pl-4 text-xs sm:text-sm font-black text-[#8B1417] shrink-0">
+              <Search className="w-5 h-5 text-[#8B1417]" />
               <span className="tracking-tight">Bạn muốn khám phá điều gì?</span>
             </div>
 
