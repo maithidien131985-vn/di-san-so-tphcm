@@ -17579,7 +17579,7 @@ export const allMonumentsList = [
         "driveFolderUrl": "https://drive.google.com/drive/folders/1FZc-1NfRdcOMAFn-MxjSL2wEl8JrtNvT?usp=sharing"
       },
       "overview": "Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba có giá trị quan trọng về lịch sử quân sự và giáo dục truyền thống. Việc ngày tháng được ghi trực tiếp trong tên di tích cho thấy địa điểm gắn với một trận chiến xác định về thời gian. Di tích là nơi lưu giữ ký ức về cuộc chiến đấu, sự hy sinh và những mất mát của con người trong thời kỳ chống Mỹ. Giá trị của địa điểm không chỉ nằm ở việc xác định vị trí một trận đánh mà còn ở khả năng giúp thế hệ trẻ hình dung chiến tranh đã tác động trực tiếp đến cộng đồng địa phương như thế nào. Đây đồng thời là địa điểm có ý nghĩa tưởng niệm và giáo dục lòng biết ơn đối với những người đã chiến đấu, hy sinh.",
-      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Bia%20ghi%20danh%2033%20c%C3%A1n%20b%E1%BB%99%2C%20chi%E1%BA%BFn%20s%C4%A9%20Trung%20%C4%91o%C3%A0n%2033%20hy%20sinh%20trong%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
+      "heroImage": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/01_di_tich_lich_su_binh_ba.jpeg",
       "emCoBiet": [
         "📅 Ngày diễn ra trận chiến: 6/6/1969",
         "🔎 53 cán bộ, chiến sĩ Tiểu đoàn 1, Trung đoàn 33 hy sinh",
@@ -17723,87 +17723,119 @@ export const allMonumentsList = [
       }
     ],
     "gallery": [
-      {
+    {
         "id": "mon_33_img_1",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Bia%20ghi%20danh%2033%20c%C3%A1n%20b%E1%BB%99%2C%20chi%E1%BA%BFn%20s%C4%A9%20Trung%20%C4%91o%C3%A0n%2033%20hy%20sinh%20trong%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
-        "title": "Bia ghi danh 33 cán bộ, chiến sĩ Trung đoàn 33 hy sinh trong trận chiến ngày 661969 tại Bình Ba",
-        "caption": "Bia ghi danh 33 cán bộ, chiến sĩ Trung đoàn 33 hy sinh trong trận chiến ngày 661969 tại Bình Ba",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/01_di_tich_lich_su_binh_ba.jpeg",
+        "title": "Di tích lịch sử địa điểm trận chiến ngày 6.6.1969 tại Bình Ba",
+        "caption": "Di tích lịch sử địa điểm trận chiến ngày 6.6.1969 tại Bình Ba",
+        "category": "Tư liệu di tích thực địa",
+        "year": "Hiện vật thực địa"
+    },
+    {
         "id": "mon_33_img_2",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Binh%20Ba%2C%20th%C3%A1ng%2061969%20%E2%80%93%20ch%E1%BB%89%20huy%20xe%20thi%E1%BA%BFt%20gi%C3%A1p%20quan%20s%C3%A1t%20khu%20v%E1%BB%B1c%20ven%20%C4%91%C6%B0%E1%BB%9Dng%20g%E1%BA%A7n%20B%C3%ACnh%20Ba.jpg",
-        "title": "Binh Ba, tháng 61969 – chỉ huy xe thiết giáp quan sát khu vực ven đường gần Bình Ba",
-        "caption": "Binh Ba, tháng 61969 – chỉ huy xe thiết giáp quan sát khu vực ven đường gần Bình Ba",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/02_dai_tuong_niem_trung_doan_33.png",
+        "title": "Đài tưởng niệm Trung đoàn 33 Quân đội Nhân dân Việt Nam",
+        "caption": "Đài tưởng niệm Trung đoàn 33 Quân đội Nhân dân Việt Nam",
+        "category": "Tư liệu di tích thực địa",
+        "year": "Hiện vật thực địa"
+    },
+    {
         "id": "mon_33_img_3",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/B%E1%BA%A3n%20%C4%91%E1%BB%93%20khu%20v%E1%BB%B1c%20B%C3%ACnh%20Ba%20trong%20th%E1%BB%9Di%20k%E1%BB%B3%20chi%E1%BA%BFn%20tranh.jpg",
-        "title": "Bản đồ khu vực Bình Ba trong thời kỳ chiến tranh",
-        "caption": "Bản đồ khu vực Bình Ba trong thời kỳ chiến tranh",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/03_trao_bang_xep_hang_di_tich.jpeg",
+        "title": "Trao Bằng công nhận xếp hạng Di tích quốc gia cho đại diện UBND huyện Châu Đức",
+        "caption": "Trao Bằng công nhận xếp hạng Di tích quốc gia cho đại diện UBND huyện Châu Đức",
+        "category": "Tư liệu di tích thực địa",
+        "year": "Năm xếp hạng"
+    },
+    {
         "id": "mon_33_img_4",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/C%E1%BB%95ng%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
-        "title": "Cổng Di tích lịch sử Địa điểm trận chiến ngày 661969 tại Bình Ba",
-        "caption": "Cổng Di tích lịch sử Địa điểm trận chiến ngày 661969 tại Bình Ba",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/04_chien_truong_binh_ba_sau_tran_danh.jpg",
+        "title": "Chiến trường Bình Ba sau trận đánh",
+        "caption": "Chiến trường Bình Ba sau trận đánh",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
         "id": "mon_33_img_5",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/D%E1%BA%A5u%20t%C3%ADch%20sau%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20t%E1%BA%A1i%20l%C3%A0ng%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
-        "title": "Dấu tích sau trận chiến tại làng Bình Ba, tháng 61969",
-        "caption": "Dấu tích sau trận chiến tại làng Bình Ba, tháng 61969",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/05_trung_doan_33_vuot_song_rai.png",
+        "title": "Binh lính Trung đoàn 33 vượt sông Sông Rai thuộc tỉnh Phước Tuy",
+        "caption": "Binh lính Trung đoàn 33 vượt sông Sông Rai thuộc tỉnh Phước Tuy",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
         "id": "mon_33_img_6",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/L%E1%BB%85%20%C4%91%C3%B3n%20nh%E1%BA%ADn%20B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%20661969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba.jpg",
-        "title": "Lễ đón nhận Bằng xếp hạng Di tích Quốc gia Địa điểm trận chiến ngày 661969 tại Bình Ba",
-        "caption": "Lễ đón nhận Bằng xếp hạng Di tích Quốc gia Địa điểm trận chiến ngày 661969 tại Bình Ba",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/06_hanh_trinh_trung_doan_33_d440.png",
+        "title": "Hành trình của Trung đoàn 33 Quân đội Nhân dân Việt Nam và Tiểu đoàn D440 về phía Bình Ba",
+        "caption": "Hành trình của Trung đoàn 33 Quân đội Nhân dân Việt Nam và Tiểu đoàn D440 về phía Bình Ba",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
         "id": "mon_33_img_7",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/L%E1%BB%B1c%20l%C6%B0%E1%BB%A3ng%20b%E1%BB%99%20binh%20v%C3%A0%20xe%20t%C4%83ng%20t%E1%BA%A1i%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
-        "title": "Lực lượng bộ binh và xe tăng tại Bình Ba, tháng 61969",
-        "caption": "Lực lượng bộ binh và xe tăng tại Bình Ba, tháng 61969",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/07_nhan_vien_tin_hieu_qdpndvn.png",
+        "title": "Nhân viên vận hành tín hiệu của Quân đội Nhân dân Việt Nam",
+        "caption": "Nhân viên vận hành tín hiệu của Quân đội Nhân dân Việt Nam",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
         "id": "mon_33_img_8",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Quang%20c%E1%BA%A3nh%20l%C3%A0ng%20B%C3%ACnh%20Ba%20sau%20tr%E1%BA%ADn%20chi%E1%BA%BFn%2C%20th%C3%A1ng%2061969.jpg",
-        "title": "Quang cảnh làng Bình Ba sau trận chiến, tháng 61969",
-        "caption": "Quang cảnh làng Bình Ba sau trận chiến, tháng 61969",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/08_quan_doi_thiet_giap_uc_binh_ba.jpg",
+        "title": "Quân đội và thiết giáp Úc trong trận Bình Ba",
+        "caption": "Quân đội và thiết giáp Úc trong trận Bình Ba",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
         "id": "mon_33_img_9",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/Xe%20t%C4%83ng%20v%C3%A0%20xe%20thi%E1%BA%BFt%20gi%C3%A1p%20ti%E1%BA%BFn%20v%C3%A0o%20l%C3%A0ng%20B%C3%ACnh%20Ba%2C%20th%C3%A1ng%2061969.jpg",
-        "title": "Xe tăng và xe thiết giáp tiến vào làng Bình Ba, tháng 61969",
-        "caption": "Xe tăng và xe thiết giáp tiến vào làng Bình Ba, tháng 61969",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      },
-      {
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/09_xe_boc_thep_tien_vao_binh_ba.png",
+        "title": "Xe bọc thép chở quân và một xe tăng tiến vào khu vực ngoại ô Bình Ba",
+        "caption": "Xe bọc thép chở quân và một xe tăng tiến vào khu vực ngoại ô Bình Ba",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
         "id": "mon_33_img_10",
-        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/%E1%BA%A2nh%20trinh%20s%C3%A1t%20khu%20v%E1%BB%B1c%20l%C3%A0ng%20B%C3%ACnh%20Ba.jpg",
-        "title": "Ảnh trinh sát khu vực làng Bình Ba",
-        "caption": "Ảnh trinh sát khu vực làng Bình Ba",
-        "category": "Tư liệu ảnh di tích",
-        "year": "Tư liệu thực địa"
-      }
-    ],
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/10_xe_tang_di_chuyen_qua_lang.png",
+        "title": "Xe tăng và xe bọc thép chở quân di chuyển qua làng (Tư liệu ảnh AWM F04342)",
+        "caption": "Xe tăng và xe bọc thép chở quân di chuyển qua làng (Tư liệu ảnh AWM F04342)",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
+        "id": "mon_33_img_11",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/11_tranh_minh_hoa_nam_nhung_con_ho.png",
+        "title": "Quân đội NVA tấn công (Tranh minh họa Năm của những con hổ)",
+        "caption": "Quân đội NVA tấn công (Tranh minh họa Năm của những con hổ)",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
+        "id": "mon_33_img_12",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/12_binh_si_uc_chien_dich_bua.jpg",
+        "title": "Các binh sĩ thuộc Trung đội 6, Đại đội B, Tiểu đoàn 5, Trung đoàn Hoàng gia Úc (5RAR) trong Chiến dịch Búa",
+        "caption": "Các binh sĩ thuộc Trung đội 6, Đại đội B, Tiểu đoàn 5, Trung đoàn Hoàng gia Úc (5RAR) trong Chiến dịch Búa",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    },
+    {
+        "id": "mon_33_img_13",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/13_ban_do_chien_truong.png",
+        "title": "Bản đồ vị trí chiến lược và diễn biến trận chiến Bình Ba",
+        "caption": "Bản đồ vị trí chiến lược và diễn biến trận chiến Bình Ba",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Bản đồ quân sự"
+    },
+    {
+        "id": "mon_33_img_14",
+        "src": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/14_toa_nha_bi_pha_huy_binh_ba.jpg",
+        "title": "Các tòa nhà bị tàn phá ở Bình Ba sau trận chiến ác liệt",
+        "caption": "Các tòa nhà bị tàn phá ở Bình Ba sau trận chiến ác liệt",
+        "category": "Tư liệu lịch sử & Chiến trận",
+        "year": "Tháng 6/1969"
+    }
+],
     "audioScript": [
       {
         "index": 1,
