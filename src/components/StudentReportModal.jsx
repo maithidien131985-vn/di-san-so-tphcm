@@ -6,7 +6,8 @@ export default function StudentReportModal({
   isOpen, 
   onClose,
   investigation,
-  monumentName = 'Dinh Độc Lập'
+  monumentName = 'Dinh Độc Lập',
+  onOpenActionModal
 }) {
   const [studentName, setStudentName] = useState('');
   const [className, setClassName] = useState('');
@@ -204,7 +205,34 @@ export default function StudentReportModal({
                   </div>
                 </div>
 
-                <div className="flex gap-2 justify-center pt-2">
+                {/* Action Callout Before Leaving Monument */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-500/15 via-[#BA8438]/20 to-amber-500/15 border-2 border-[#BA8438]/40 text-center space-y-3 shadow-sm">
+                  <div className="flex items-center justify-center gap-2 text-[#8C5D1E] font-black text-xs uppercase tracking-wider">
+                    <span className="text-base">🌱</span>
+                    <span>BƯỚC TIẾP THEO TRƯỚC KHI RỜI DI TÍCH</span>
+                  </div>
+                  <h4 className="font-serif-title font-black text-sm sm:text-base text-[#2C241E]">
+                    Hãy biến bài học lịch sử thành hành động thiết thực!
+                  </h4>
+                  <p className="text-xs text-[#555] max-w-lg mx-auto leading-relaxed">
+                    Sau khi hoàn thành điều tra, hãy cùng nhau gửi thông điệp cam kết gìn giữ, bảo vệ và lan tỏa di sản <strong>{monumentName}</strong>.
+                  </p>
+                  <button
+                    onClick={() => {
+                      if (onOpenActionModal) {
+                        onOpenActionModal();
+                      } else if (onClose) {
+                        onClose();
+                      }
+                    }}
+                    className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-[#BA8438] hover:bg-[#a3702b] text-white font-black text-sm shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 mx-auto cursor-pointer border border-amber-200"
+                  >
+                    <span>🌱 HÀNH ĐỘNG: Đóng Góp Ý Tưởng & Gìn Giữ Di Sản</span>
+                    <span>&rarr;</span>
+                  </button>
+                </div>
+
+                <div className="flex flex-wrap gap-2.5 justify-center pt-1">
                   <button
                     onClick={() => window.print()}
                     className="px-5 py-2.5 rounded-xl bg-[#7B1113] text-white text-xs font-bold shadow hover:bg-[#96171a] flex items-center gap-1.5 cursor-pointer"
@@ -217,7 +245,7 @@ export default function StudentReportModal({
                     className="px-4 py-2.5 rounded-xl bg-gray-200 text-gray-800 text-xs font-bold hover:bg-gray-300 flex items-center gap-1.5 cursor-pointer"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
-                    <span>Làm lại báo cáo</span>
+                    <span>Chỉnh sửa lại</span>
                   </button>
                 </div>
               </div>

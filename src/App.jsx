@@ -647,6 +647,10 @@ export default function App() {
         onClose={() => setStudentReportOpen(false)}
         investigation={safeInvestigation}
         monumentName={safeInfo.name || ''}
+        onOpenActionModal={() => {
+          setStudentReportOpen(false);
+          setActionModalOpen(true);
+        }}
       />
 
       {/* Next Monument Modal */}
@@ -670,6 +674,7 @@ export default function App() {
       <ActionModal
         isOpen={actionModalOpen}
         onClose={() => setActionModalOpen(false)}
+        monumentName={safeInfo.name || ''}
       />
 
       {/* Document Reference Modal */}

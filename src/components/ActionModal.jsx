@@ -2,11 +2,15 @@ import React from 'react';
 import { X, Leaf, Heart, CheckCircle2, Shield, Share2, Send, Sparkles } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
-export default function ActionModal({ isOpen, onClose }) {
+export default function ActionModal({ 
+  isOpen, 
+  onClose,
+  monumentName = 'Di tích lịch sử'
+}) {
   const [pledgeName, setPledgeName] = React.useState('');
   const [pledgeMsg, setPledgeMsg] = React.useState('');
   const [pledges, setPledges] = React.useState([
-    { name: 'Nguyễn Văn An', text: 'Em cam kết tìm hiểu sâu sắc lịch sử dân tộc và giới thiệu di tích Dinh Độc Lập đến bạn bè quốc tế!' },
+    { name: 'Nguyễn Văn An', text: `Em cam kết tìm hiểu sâu sắc lịch sử dân tộc và giới thiệu di tích ${monumentName} đến bạn bè quốc tế!` },
     { name: 'Trần Thị Mai', text: 'Giữ gìn vệ sinh và tôn trọng không gian trang nghiêm khi đến tham quan các khu di tích lịch sử.' },
     { name: 'Lê Hoàng Nam', text: 'Tích cực chia sẻ các tư liệu lịch sử đúng đắn trên mạng xã hội để lan tỏa tinh thần yêu nước.' }
   ]);
@@ -104,7 +108,7 @@ export default function ActionModal({ isOpen, onClose }) {
               />
               <textarea
                 rows={2}
-                placeholder="Lời hứa hoặc cảm nghĩ của bạn sau khi tìm hiểu Di tích Dinh Độc Lập..."
+                placeholder={`Lời hứa hoặc cảm nghĩ của bạn sau khi tìm hiểu Di tích ${monumentName}...`}
                 value={pledgeMsg}
                 onChange={(e) => setPledgeMsg(e.target.value)}
                 className="w-full p-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm outline-none focus:border-[#A6732E]"
