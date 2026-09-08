@@ -7,10 +7,10 @@ import {
   SkipBack, 
   SkipForward, 
   Headphones, 
-  Clock,
-  VolumeX,
-  Sparkles,
-  Download
+  Clock, 
+  VolumeX, 
+  Sparkles, 
+  Download 
 } from 'lucide-react';
 import { speakVietnamese, stopVietnameseSpeech } from '../utils/vietnameseVoice';
 import soundEffects from '../utils/soundEffects';
@@ -19,14 +19,15 @@ export default function AudioNarratorModal({
   isOpen, 
   onClose, 
   audioScript = [], 
-  monumentName = 'Di tích Dinh Độc Lập',
-  audioUrl = '/assets/audio/thuyet-minh-dinh-doc-lap.mp3'
+  monumentName = 'Di tích Lịch sử',
+  monumentStt = 1,
+  audioUrl
 }) {
-  const isDinhDocLap = monumentName.toLowerCase().includes('dinh độc lập');
+  const resolvedAudioUrl = audioUrl || `/assets/audio/monument-audio-${monumentStt}.mp3`;
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const [rate, setRate] = useState(1);
-  const [ttsEngine, setTtsEngine] = useState(isDinhDocLap ? 'studio' : 'system');
+  const [ttsEngine, setTtsEngine] = useState('studio'); // 'studio' | 'system'
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
@@ -65,16 +66,19 @@ export default function AudioNarratorModal({
     return [{ index: 0, title: 'Thuyết minh tổng quan', text: `Chào mừng bạn đến với ${monumentName}.` }];
   }, [audioScript, monumentName]);
 
-  // Audio refs
+  // Audio ref
   const studioAudioRef = useRef(null);
 
   useEffect(() => {
-    setTtsEngine(isDinhDocLap ? 'studio' : 'system');
+    setTtsEngine('studio');
+    setCurrentTime(0);
+    setDuration(0);
+    setCurrentSectionIndex(0);
 
     return () => {
       stopAllAudio();
     };
-  }, [isOpen, isDinhDocLap]);
+  }, [isOpen, monumentStt, resolvedAudioUrl]);
 
   const stopAllAudio = () => {
     if (studioAudioRef.current) {
@@ -135,7 +139,7 @@ export default function AudioNarratorModal({
     stopAllAudio();
     if (!normalizedSections || !normalizedSections[index]) return;
 
-    if (ttsEngine === 'studio' && isDinhDocLap) {
+    if (ttsEngine === 'studio') {
       if (studioAudioRef.current) {
         studioAudioRef.current.playbackRate = rate;
         studioAudioRef.current.play()
@@ -173,10 +177,14 @@ export default function AudioNarratorModal({
   const handleTogglePlay = () => {
     soundEffects.playTap();
     if (!isPlaying) {
-      if (ttsEngine === 'studio' && isDinhDocLap && studioAudioRef.current) {
+      if (ttsEngine === 'studio' && studioAudioRef.current) {
         studioAudioRef.current.playbackRate = rate;
-        studioAudioRef.current.play().catch(e => console.warn('Audio play failed:', e));
-        setIsPlaying(true);
+        studioAudioRef.current.play()
+          .then(() => setIsPlaying(true))
+          .catch(e => {
+            console.warn('Audio play failed, fallback:', e);
+            speakWithVietnameseVoice(currentSectionIndex);
+          });
       } else {
         speakSection(currentSectionIndex);
       }
@@ -187,7 +195,7 @@ export default function AudioNarratorModal({
 
   const handleNext = () => {
     soundEffects.playTap();
-    if (ttsEngine === 'studio' && isDinhDocLap) {
+    if (ttsEngine === 'studio') {
       handleSeekOffset(15);
     } else if (currentSectionIndex < normalizedSections.length - 1) {
       const nextIdx = currentSectionIndex + 1;
@@ -198,7 +206,7 @@ export default function AudioNarratorModal({
 
   const handlePrev = () => {
     soundEffects.playTap();
-    if (ttsEngine === 'studio' && isDinhDocLap) {
+    if (ttsEngine === 'studio') {
       handleSeekOffset(-15);
     } else if (currentSectionIndex > 0) {
       const prevIdx = currentSectionIndex - 1;
@@ -210,11 +218,11 @@ export default function AudioNarratorModal({
   const handleSelectSection = (idx) => {
     soundEffects.playTap();
     setCurrentSectionIndex(idx);
-    if (ttsEngine === 'studio' && isDinhDocLap && studioAudioRef.current && duration > 0) {
+    if (ttsEngine === 'studio' && studioAudioRef.current && duration > 0) {
       const targetTime = (idx / normalizedSections.length) * duration;
       studioAudioRef.current.currentTime = targetTime;
       if (!isPlaying) {
-        studioAudioRef.current.play();
+        studioAudioRef.current.play().catch(() => {});
         setIsPlaying(true);
       }
     } else {
@@ -241,24 +249,19 @@ export default function AudioNarratorModal({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
       <div className="bg-[#FAF7F2] w-full max-w-4xl rounded-3xl overflow-hidden shadow-2xl border border-[#EADBC8] flex flex-col max-h-[92vh] animate-scaleUp">
-        {/* Hidden Audio Element */}
-        {isDinhDocLap && (
-          <audio
-            ref={studioAudioRef}
-            src={audioUrl}
-            onTimeUpdate={handleTimeUpdate}
-            onLoadedMetadata={() => {
-              if (studioAudioRef.current) setDuration(studioAudioRef.current.duration);
-            }}
-            onEnded={() => setIsPlaying(false)}
-            onError={() => {
-              if (studioAudioRef.current && !studioAudioRef.current.src.includes('drive.google.com')) {
-                studioAudioRef.current.src = 'https://drive.usercontent.google.com/download?id=1JcoOtDlFfUVT0PQJcAje0KTllUdfYt77&export=download&authuser=0&confirm=t';
-                studioAudioRef.current.load();
-              }
-            }}
-          />
-        )}
+        {/* Audio Element */}
+        <audio
+          ref={studioAudioRef}
+          src={resolvedAudioUrl}
+          onTimeUpdate={handleTimeUpdate}
+          onLoadedMetadata={() => {
+            if (studioAudioRef.current) setDuration(studioAudioRef.current.duration);
+          }}
+          onEnded={() => setIsPlaying(false)}
+          onError={(e) => {
+            console.warn('Audio file load error:', resolvedAudioUrl, e);
+          }}
+        />
 
         {/* Modal Header */}
         <div className="bg-gradient-to-r from-[#7B1113] via-[#96171a] to-[#7B1113] text-white p-5 sm:p-6 flex items-center justify-between shadow-md">
@@ -272,11 +275,11 @@ export default function AudioNarratorModal({
                   Thuyết Minh Giọng Đọc Di Tích
                 </h3>
                 <span className="px-2.5 py-0.5 rounded-full bg-amber-400 text-[#7B1113] text-[10px] font-black uppercase tracking-wider shadow-xs">
-                  {isDinhDocLap ? '🎙️ Studio Google Drive' : '🔊 AI Voice Tiếng Việt'}
+                  🎙️ Bản Thu Âm Thực Tế #{monumentStt}
                 </span>
               </div>
               <p className="text-xs text-white/80">
-                {monumentName} • Nghe thuyết minh lịch sử tự động
+                {monumentName} • Nghe thuyết minh lịch sử chuẩn hóa
               </p>
             </div>
           </div>
@@ -293,21 +296,19 @@ export default function AudioNarratorModal({
           <div className="flex items-center gap-2">
             <span className="font-bold text-[#7B1113]">Bộ phát:</span>
             <div className="inline-flex rounded-xl p-0.5 bg-white border border-[#EADBC8] shadow-2xs">
-              {isDinhDocLap && (
-                <button
-                  onClick={() => {
-                    stopAllAudio();
-                    setTtsEngine('studio');
-                  }}
-                  className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                    ttsEngine === 'studio'
-                      ? 'bg-[#7B1113] text-white shadow-xs'
-                      : 'text-[#6B5E55] hover:text-[#7B1113]'
-                  }`}
-                >
-                  🎙️ Bản thu âm Google Drive
-                </button>
-              )}
+              <button
+                onClick={() => {
+                  stopAllAudio();
+                  setTtsEngine('studio');
+                }}
+                className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                  ttsEngine === 'studio'
+                    ? 'bg-[#7B1113] text-white shadow-xs'
+                    : 'text-[#6B5E55] hover:text-[#7B1113]'
+                }`}
+              >
+                🎙️ Bản thu âm chính thức (MP3)
+              </button>
               <button
                 onClick={() => {
                   stopAllAudio();
@@ -325,17 +326,15 @@ export default function AudioNarratorModal({
           </div>
 
           <div className="flex items-center gap-2">
-            {isDinhDocLap && (
-              <a
-                href="https://drive.google.com/file/d/1JcoOtDlFfUVT0PQJcAje0KTllUdfYt77/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-[11px] font-bold text-[#7B1113] hover:underline"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Tải file MP3 gốc</span>
-              </a>
-            )}
+            <a
+              href={resolvedAudioUrl}
+              download={`thuyet-minh-di-tich-${monumentStt}.mp3`}
+              className="flex items-center gap-1 text-[11px] font-bold text-[#7B1113] hover:underline"
+              title="Tải file âm thanh MP3 về máy"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Tải file MP3 (#{monumentStt})</span>
+            </a>
           </div>
         </div>
 
@@ -403,6 +402,7 @@ export default function AudioNarratorModal({
                       onClick={() => {
                         soundEffects.playTap();
                         setRate(s);
+                        if (studioAudioRef.current) studioAudioRef.current.playbackRate = s;
                       }}
                       className={`px-2 py-1 rounded-lg transition-colors cursor-pointer ${
                         rate === s ? 'bg-[#7B1113] text-white' : 'hover:bg-gray-200'
@@ -413,20 +413,18 @@ export default function AudioNarratorModal({
                   ))}
                 </div>
 
-                {isDinhDocLap && (
-                  <button
-                    onClick={toggleMute}
-                    className="p-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer"
-                    title={isMuted ? "Bật âm thanh" : "Tắt tiếng"}
-                  >
-                    {isMuted ? <VolumeX className="w-4 h-4 text-red-600" /> : <Volume2 className="w-4 h-4" />}
-                  </button>
-                )}
+                <button
+                  onClick={toggleMute}
+                  className="p-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer"
+                  title={isMuted ? "Bật âm thanh" : "Tắt tiếng"}
+                >
+                  {isMuted ? <VolumeX className="w-4 h-4 text-red-600" /> : <Volume2 className="w-4 h-4" />}
+                </button>
               </div>
             </div>
 
             {/* Timeline Seek Bar */}
-            {isDinhDocLap && duration > 0 && (
+            {duration > 0 && (
               <div className="space-y-1 pt-2">
                 <div className="flex items-center justify-between text-[11px] text-gray-500 font-medium">
                   <span>{formatTime(currentTime)}</span>
@@ -493,7 +491,7 @@ export default function AudioNarratorModal({
         {/* Footer */}
         <div className="p-3.5 bg-[#FAF0E6] border-t border-[#EADBC8] flex items-center justify-between text-xs text-[#8C7A6B]">
           <span>Thuyết minh số hóa Di sản Văn hóa & Lịch sử TP.HCM</span>
-          <span className="font-bold text-[#7B1113]">Audio Lịch Sử</span>
+          <span className="font-bold text-[#7B1113]">Audio Di Tích #{monumentStt}</span>
         </div>
       </div>
     </div>

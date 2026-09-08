@@ -639,6 +639,8 @@ export default function App() {
         onClose={() => setAudioModalOpen(false)}
         audioScript={safeAudioScript}
         monumentName={safeInfo.name || ''}
+        monumentStt={currentStt}
+        audioUrl={`/assets/audio/monument-audio-${currentStt}.mp3`}
       />
 
       {/* Phim tư liệu Video Modal */}

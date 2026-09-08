@@ -32,128 +32,140 @@ export default function MediaAudioVideoRow({
   const monumentName = info?.name || 'Di tích lịch sử';
 
   // ==========================================
-  // AUDIO PLAYER STATE & SYNTHESIS
+  // AUDIO PLAYER STATE & REAL MP3 PLAYBACK
   // ==========================================
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(180); // default 3:00 min
   const [playbackRate, setPlaybackRate] = useState(1.0);
-  const timerRef = useRef(null);
+  const audioRef = useRef(null);
 
-  // Script text for audio narration — ensure it's always a string (audioScript can be array in some monuments)
+  const stt = info?.stt || 1;
+  const audioSrc = `/assets/audio/monument-audio-${stt}.mp3`;
+
+  // Script text for audio narration fallback
   const rawAudioScript = Array.isArray(audioScript)
     ? audioScript.map(s => (typeof s === 'string' ? s : (s?.text || s?.content || ''))).join(' ')
     : (typeof audioScript === 'string' ? audioScript : '');
   const narrationText = rawAudioScript || (typeof info?.overview === 'string' ? info.overview : '') || `Kính chào các em học sinh và quý độc giả. Chúng ta đang cùng nhau tìm hiểu về di tích lịch sử ${monumentName}. Đây là một công trình mang ý nghĩa đặc biệt trong lịch sử và văn hóa của Thành phố Hồ Chí Minh.`;
 
-  // Estimate duration based on text length (~150 words per minute)
+  // Initialize or update audio source when monument changes
   useEffect(() => {
-    const wordCount = narrationText ? narrationText.split(/\s+/).length : 50;
-    const estSec = Math.max(60, Math.round((wordCount / 130) * 60));
-    setDuration(estSec);
-    setCurrentTime(0);
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
     setIsPlaying(false);
+    setCurrentTime(0);
 
-    try {
-      if (typeof window !== 'undefined' && window.speechSynthesis) {
-        window.speechSynthesis.cancel();
+    const audio = new Audio(audioSrc);
+    audio.playbackRate = playbackRate;
+
+    const onLoadedMetadata = () => {
+      if (audio.duration && !isNaN(audio.duration)) {
+        setDuration(Math.round(audio.duration));
       }
-    } catch (e) {}
+    };
+
+    const onTimeUpdate = () => {
+      setCurrentTime(audio.currentTime);
+    };
+
+    const onEnded = () => {
+      setIsPlaying(false);
+      setCurrentTime(audio.duration || duration);
+    };
+
+    const onError = () => {
+      // Fallback: estimate duration from word count
+      const wordCount = narrationText ? narrationText.split(/\s+/).length : 50;
+      const estSec = Math.max(60, Math.round((wordCount / 130) * 60));
+      setDuration(estSec);
+    };
+
+    audio.addEventListener('loadedmetadata', onLoadedMetadata);
+    audio.addEventListener('timeupdate', onTimeUpdate);
+    audio.addEventListener('ended', onEnded);
+    audio.addEventListener('error', onError);
+
+    audioRef.current = audio;
 
     return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
+      audio.pause();
+      audio.removeEventListener('loadedmetadata', onLoadedMetadata);
+      audio.removeEventListener('timeupdate', onTimeUpdate);
+      audio.removeEventListener('ended', onEnded);
+      audio.removeEventListener('error', onError);
       try {
         if (typeof window !== 'undefined' && window.speechSynthesis) {
           window.speechSynthesis.cancel();
         }
       } catch (e) {}
     };
-  }, [monumentName, narrationText]);
+  }, [audioSrc, monumentName]);
 
-  // Audio Speech Synthesis / Simulated Timer
+  // Audio Play / Pause handler
   const handleTogglePlay = () => {
-    if (typeof window === 'undefined') return;
+    if (!audioRef.current) return;
 
     if (isPlaying) {
-      try {
-        if (window.speechSynthesis) {
-          window.speechSynthesis.pause();
-        }
-      } catch (e) {}
-      clearInterval(timerRef.current);
+      audioRef.current.pause();
       setIsPlaying(false);
     } else {
-      try {
-        if (window.speechSynthesis) {
-          if (window.speechSynthesis.paused) {
-            window.speechSynthesis.resume();
-          } else {
-            window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(narrationText);
-            utterance.lang = 'vi-VN';
-            utterance.rate = playbackRate;
-
-            // Find Vietnamese voice if available
-            const voices = window.speechSynthesis.getVoices ? window.speechSynthesis.getVoices() : [];
-            const viVoice = voices.find(v => v.lang && (v.lang.includes('vi') || v.name.includes('Vietnamese')));
-            if (viVoice) utterance.voice = viVoice;
-
-            utterance.onend = () => {
-              setIsPlaying(false);
-              setCurrentTime(duration);
-              clearInterval(timerRef.current);
-            };
-
-            window.speechSynthesis.speak(utterance);
-          }
+      audioRef.current.playbackRate = playbackRate;
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+      }).catch(err => {
+        console.warn('Audio play error, fallback to TTS:', err);
+        // Fallback TTS
+        if (typeof window !== 'undefined' && window.speechSynthesis) {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(narrationText);
+          utterance.lang = 'vi-VN';
+          utterance.rate = playbackRate;
+          utterance.onend = () => setIsPlaying(false);
+          window.speechSynthesis.speak(utterance);
+          setIsPlaying(true);
         }
-      } catch (e) {
-        console.warn('Speech synthesis error, falling back to audio timer:', e);
-      }
-
-      setIsPlaying(true);
-      timerRef.current = setInterval(() => {
-        setCurrentTime(prev => {
-          if (prev >= duration) {
-            clearInterval(timerRef.current);
-            setIsPlaying(false);
-            return duration;
-          }
-          return prev + 1;
-        });
-      }, 1000 / playbackRate);
+      });
     }
   };
 
   const handleSeek = (e) => {
     const newTime = parseFloat(e.target.value);
     setCurrentTime(newTime);
+    if (audioRef.current) {
+      audioRef.current.currentTime = newTime;
+    }
   };
 
   const handleRewind10 = () => {
-    setCurrentTime(prev => Math.max(0, prev - 10));
+    const newTime = Math.max(0, currentTime - 10);
+    setCurrentTime(newTime);
+    if (audioRef.current) {
+      audioRef.current.currentTime = newTime;
+    }
   };
 
   const handleForward10 = () => {
-    setCurrentTime(prev => Math.min(duration, prev + 10));
+    const newTime = Math.min(duration, currentTime + 10);
+    setCurrentTime(newTime);
+    if (audioRef.current) {
+      audioRef.current.currentTime = newTime;
+    }
   };
 
   const handleToggleSpeed = () => {
     const rates = [1.0, 1.25, 1.5];
     const nextRate = rates[(rates.indexOf(playbackRate) + 1) % rates.length];
     setPlaybackRate(nextRate);
-    try {
-      if (window.speechSynthesis && isPlaying) {
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(narrationText);
-        utterance.lang = 'vi-VN';
-        utterance.rate = nextRate;
-        window.speechSynthesis.speak(utterance);
-      }
-    } catch (e) {}
+    if (audioRef.current) {
+      audioRef.current.playbackRate = nextRate;
+    }
   };
 
   const formatTime = (seconds) => {
+    if (isNaN(seconds) || seconds === null) return '00:00';
     const mins = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
