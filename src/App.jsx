@@ -29,6 +29,7 @@ import ScrollProgressBar from './components/ScrollProgressBar';
 import ScrollReveal from './components/ScrollReveal';
 import HeritageAIChatbot from './components/HeritageAIChatbot';
 import HeritagePassportModal from './components/HeritagePassportModal';
+import PersonalJourneyPage from './components/PersonalJourneyPage';
 import Footer from './components/Footer';
 import { allMonumentsList, getMonumentByIdOrStt } from './data/allMonumentsData';
 import { getActivePassport } from './utils/passportStorage';
@@ -87,6 +88,9 @@ const initialSampleContributions = [
 function getInitialStateFromUrl() {
   if (typeof window !== 'undefined') {
     const hash = window.location.hash;
+    if (hash === '#journey' || hash === '#profile' || hash === '#hanh-trinh') {
+      return { stt: 1, mode: 'journey' };
+    }
     if (hash && hash.includes('monument')) {
       const match = hash.match(/\d+/);
       if (match) {
@@ -98,6 +102,10 @@ function getInitialStateFromUrl() {
       return { stt: 1, mode: 'detail' };
     }
     const params = new URLSearchParams(window.location.search);
+    const viewParam = params.get('view');
+    if (viewParam === 'journey' || viewParam === 'profile') {
+      return { stt: 1, mode: 'journey' };
+    }
     const sttParam = params.get('stt') || params.get('id');
     if (sttParam) {
       const parsed = parseInt(sttParam);
@@ -183,6 +191,8 @@ export default function App() {
       const hash = window.location.hash;
       if (hash === '#home' || hash === '' || hash === '#') {
         setViewMode('home');
+      } else if (hash === '#journey' || hash === '#profile' || hash === '#hanh-trinh') {
+        setViewMode('journey');
       } else if (hash.includes('monument')) {
         const match = hash.match(/\d+/);
         if (match) {
@@ -258,6 +268,10 @@ export default function App() {
     if (target === 'home') {
       setViewMode('home');
       window.location.hash = '#home';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (target === 'journey' || target === 'profile') {
+      setViewMode('journey');
+      window.location.hash = '#journey';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (target === 'map') {
       setMyMapModalOpen(true);
@@ -466,7 +480,7 @@ export default function App() {
         onNavigate={handleNavigate}
       />
 
-      {/* RENDER VIEW MODE: HOME OR DETAIL */}
+      {/* RENDER VIEW MODE: HOME, JOURNEY, OR DETAIL */}
       {viewMode === 'home' ? (
         /* HOME PAGE PORTAL HUB */
         <HomePage
@@ -477,6 +491,15 @@ export default function App() {
           onOpenContribute={() => setContributeModalOpen(true)}
           onOpenPassport={() => setPassportModalOpen(true)}
           activePassport={activePassport}
+          onNavigate={handleNavigate}
+        />
+      ) : viewMode === 'journey' ? (
+        /* PERSONAL JOURNEY ROADMAP & DIAGRAM PAGE */
+        <PersonalJourneyPage
+          activePassport={activePassport}
+          onOpenPassportModal={() => setPassportModalOpen(true)}
+          onSelectMonument={handleSelectMonument}
+          onNavigate={handleNavigate}
         />
       ) : (
         /* MONUMENT DETAIL PAGE */
@@ -723,6 +746,7 @@ export default function App() {
         activePassport={activePassport}
         onPassportChange={(passport) => setActivePassport(passport)}
         onSelectMonument={(stt) => handleSelectMonument(stt)}
+        onNavigate={handleNavigate}
       />
 
       {/* Global AI Heritage Chatbot Widget (Trợ Lý Di Sản AI - Xuất hiện toàn trang & 103 trang con) */}

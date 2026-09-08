@@ -30,6 +30,7 @@ export default function Header({
 
   const navLinks = [
     { id: 'home', label: 'Trang chủ', isHome: true },
+    { id: 'journey', label: 'Sơ đồ hành trình', isJourney: true },
     { id: 'map', label: 'Bản đồ di tích', isMap: true },
     { id: 'monuments', label: 'Kho di tích', isExplorer: true },
     { id: 'investigation', label: 'Hồ sơ điều tra', isInvestigation: true },
@@ -40,6 +41,8 @@ export default function Header({
   const handleNavClick = (link) => {
     if (link.isHome) {
       if (onNavigate) onNavigate('home');
+    } else if (link.isJourney) {
+      if (onNavigate) onNavigate('journey');
     } else if (link.isMap) {
       if (onOpenMyMap) onOpenMyMap();
     } else if (link.isExplorer) {
@@ -101,8 +104,8 @@ export default function Header({
               key={item.id}
               onClick={() => handleNavClick(item)}
               className={`transition-colors py-1 cursor-pointer hover:text-[#7E1819] ${
-                item.isHome && viewMode === 'home'
-                  ? 'text-[#7E1819] font-black'
+                (item.isHome && viewMode === 'home') || (item.isJourney && viewMode === 'journey')
+                  ? 'text-[#7E1819] font-black border-b-2 border-[#7E1819]'
                   : 'text-[#333333]'
               }`}
             >

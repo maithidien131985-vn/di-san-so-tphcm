@@ -27,13 +27,15 @@ import {
   logoutPassport 
 } from '../utils/passportStorage';
 import { allMonumentsList } from '../data/allMonumentsData';
+import soundEffects from '../utils/soundEffects';
 
 export default function HeritagePassportModal({
   isOpen,
   onClose,
   activePassport,
   onPassportChange,
-  onSelectMonument
+  onSelectMonument,
+  onNavigate
 }) {
   const [activeTab, setActiveTab] = useState(activePassport ? 'passport' : 'login');
   const [inputCode, setInputCode] = useState('');
@@ -364,13 +366,30 @@ export default function HeritagePassportModal({
                     </p>
                   </div>
 
-                  <button
-                    onClick={() => setActiveTab('stamps')}
-                    className="w-full py-2.5 rounded-xl bg-[#8B1417] hover:bg-[#A81B1F] text-white text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-md"
-                  >
-                    <BookOpen className="w-3.5 h-3.5 text-amber-200" />
-                    <span>Mở Sổ Sưu Tập 103 Dấu Mộc</span>
-                  </button>
+                  <div className="space-y-2">
+                    <button
+                      onClick={() => {
+                        soundEffects.playUnlock();
+                        onClose();
+                        if (onNavigate) onNavigate('journey');
+                      }}
+                      className="w-full py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-amber-950 text-xs font-black transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-md hover:scale-102"
+                    >
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>Xem Sơ Đồ Lộ Trình Hành Trình Toàn Cảnh</span>
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        soundEffects.playTap();
+                        setActiveTab('stamps');
+                      }}
+                      className="w-full py-2.5 rounded-xl bg-[#8B1417] hover:bg-[#A81B1F] text-white text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-md"
+                    >
+                      <BookOpen className="w-3.5 h-3.5 text-amber-200" />
+                      <span>Mở Sổ Sưu Tập 103 Dấu Mộc</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

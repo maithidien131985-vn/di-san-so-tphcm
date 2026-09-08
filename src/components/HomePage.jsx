@@ -48,7 +48,8 @@ export default function HomePage({
   onOpenMyMap,
   onOpenContribute,
   onOpenPassport,
-  activePassport
+  activePassport,
+  onNavigate
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -303,6 +304,17 @@ export default function HomePage({
                 >
                   <MapPin className="w-4 h-4 text-amber-300" />
                   <span>Bản Đồ Di Tích</span>
+                </button>
+
+                <button
+                  onClick={() => {
+                    if (onNavigate) onNavigate('journey');
+                  }}
+                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500/20 to-amber-600/30 hover:bg-amber-500/30 border border-amber-400/60 text-amber-200 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
+                  title="Xem sơ đồ hành trình cá nhân"
+                >
+                  <Sparkles className="w-4 h-4 text-amber-300" />
+                  <span>Sơ Đồ Hành Trình</span>
                 </button>
 
                 <button
