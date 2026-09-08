@@ -117,52 +117,44 @@ export default function NextMonumentSection({
   }, [currentName, nextName, distanceText]);
 
   return (
-    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-4 pb-12 space-y-6">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-2 pb-10 space-y-6">
       {/* ========================================================================= */}
-      {/* BANNER LỜI DẪN NỔI BẬT: CHUYỂN TIẾP HÀNH TRÌNH VỚI HIỆU ỨNG CHỮ XUẤT HIỆN */}
+      {/* BANNER LỜI DẪN CHUYỂN TIẾP HÀNH TRÌNH (THIẾT KẾ TRANG NHÃ, TINH TẾ) */}
       {/* ========================================================================= */}
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-r from-[#4A0609] via-[#7E1819] to-[#9E1B1D] text-white p-6 sm:p-8 border-2 border-amber-400/90 ring-4 ring-amber-500/25">
-        {/* Ambient background glow & Watermark */}
-        <div className="absolute -right-12 -top-12 w-64 h-64 bg-amber-400/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute right-6 bottom-0 opacity-10 pointer-events-none hidden md:block">
-          <Award className="w-48 h-48 text-amber-300" />
-        </div>
-
-        <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-          <div className="space-y-3.5 max-w-4xl flex-1">
+      <div className="rounded-2xl bg-gradient-to-r from-[#FFFDF9] via-[#FAF6ED] to-[#F5EFE4] p-5 sm:p-6 border border-amber-300/70 shadow-xs relative overflow-hidden">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
+          <div className="space-y-2 flex-1 max-w-4xl">
             {/* Tag Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/25 border border-amber-300/50 text-amber-300 text-xs font-black uppercase tracking-wider shadow-inner">
-              <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
-              <span>GHI NHẬN THÀNH TỰU THÁM HIỂM</span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
+              <Sparkles className="w-3.5 h-3.5 text-amber-700" />
+              <span>Cột Mốc Hành Trình</span>
             </div>
 
-            {/* Lời dẫn chính có hiệu ứng chữ xuất hiện (Typewriter) */}
-            <div className="space-y-2">
-              <h3 className="font-serif-title font-black text-lg sm:text-2xl text-amber-100 leading-snug min-h-[36px]">
+            {/* Lời dẫn chữ xuất hiện mượt mà */}
+            <div className="space-y-1">
+              <h3 className="font-serif-title font-black text-base sm:text-lg lg:text-xl text-[#7E1819] leading-snug">
                 {displayedTitle}
                 {typingStep === 'title' && (
-                  <span className="inline-block w-2.5 h-5 ml-1 bg-amber-400 animate-pulse align-middle shadow-[0_0_8px_#fbbf24]" />
+                  <span className="inline-block w-2 h-4 ml-1 bg-[#7E1819] animate-pulse align-middle" />
                 )}
               </h3>
               
-              <p className="text-sm sm:text-base text-rose-100/95 leading-relaxed font-medium min-h-[28px]">
+              <p className="text-xs sm:text-sm text-[#555555] font-medium leading-relaxed">
                 {displayedDesc}
                 {typingStep === 'desc' && (
-                  <span className="inline-block w-2 h-4 ml-1 bg-amber-300 animate-pulse align-middle shadow-[0_0_6px_#fde047]" />
+                  <span className="inline-block w-1.5 h-3.5 ml-1 bg-amber-700 animate-pulse align-middle" />
                 )}
               </p>
             </div>
           </div>
 
-          {/* Nút hành động 1-click khám phá di tích tiếp theo */}
+          {/* Nút hành động thanh lịch sang di tích tiếp theo */}
           <button
             onClick={() => handleChoose(featuredNext.stt)}
-            className={`w-full lg:w-auto px-7 py-4 rounded-2xl bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-300 text-[#7E1819] font-black text-sm sm:text-base shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 cursor-pointer shrink-0 border-2 border-white/60 group ${
-              typingStep === 'done' ? 'animate-bounce' : ''
-            }`}
+            className="w-full lg:w-auto px-5 py-3 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer shrink-0 border border-red-900 group"
           >
-            <span>🚀 Khám Phá "{nextName}" Ngay</span>
-            <ArrowRight className="w-5 h-5 text-[#7E1819] group-hover:translate-x-1.5 transition-transform" />
+            <span>Khám phá "{nextName}" tiếp theo</span>
+            <ArrowRight className="w-4 h-4 text-amber-200 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </div>
