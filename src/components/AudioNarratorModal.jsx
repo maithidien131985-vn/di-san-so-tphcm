@@ -23,7 +23,8 @@ export default function AudioNarratorModal({
   monumentStt = 1,
   audioUrl
 }) {
-  const resolvedAudioUrl = audioUrl || `/assets/audio/monument-audio-${monumentStt}.mp3`;
+  const baseUrl = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+  const resolvedAudioUrl = audioUrl || `${baseUrl}/assets/audio/monument-audio-${monumentStt}.mp3`;
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const [rate, setRate] = useState(1);
@@ -74,6 +75,9 @@ export default function AudioNarratorModal({
     setCurrentTime(0);
     setDuration(0);
     setCurrentSectionIndex(0);
+    if (studioAudioRef.current) {
+      studioAudioRef.current.load();
+    }
 
     return () => {
       stopAllAudio();

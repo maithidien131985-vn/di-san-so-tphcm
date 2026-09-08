@@ -25,6 +25,8 @@ export default function MediaAudioVideoRow({
   video = {},
   info = {},
   audioScript = '',
+  monumentStt,
+  stt,
   onOpenVideoModal,
   onOpenAudioModal
 }) {
@@ -40,8 +42,9 @@ export default function MediaAudioVideoRow({
   const [playbackRate, setPlaybackRate] = useState(1.0);
   const audioRef = useRef(null);
 
-  const stt = info?.stt || 1;
-  const audioSrc = `/assets/audio/monument-audio-${stt}.mp3`;
+  const currentStt = monumentStt || stt || info?.stt || 1;
+  const baseUrl = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+  const audioSrc = `${baseUrl}/assets/audio/monument-audio-${currentStt}.mp3`;
 
   // Script text for audio narration fallback
   const rawAudioScript = Array.isArray(audioScript)

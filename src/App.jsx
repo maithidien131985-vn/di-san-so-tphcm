@@ -134,12 +134,16 @@ export default function App() {
     return {
       ...safeBase,
       ...saved,
+      stt: safeBase.stt,
+      audioScript: safeBase.audioScript, // Luôn đồng bộ lời thuyết minh chuẩn của từng di tích
       map: safeBase.map, // Luôn đồng bộ bản đồ tọa độ chính xác của di tích
       video: safeBase.video, // Luôn đồng bộ video mới nhất từ dữ liệu hệ thống
       gallery: safeBase.gallery, // Luôn đồng bộ danh sách ảnh thực tế từ Google Drive
       info: {
         ...safeBase.info,
         ...(saved.info || {}),
+        name: safeBase.info?.name, // Luôn ưu tiên tên chính xác của di tích
+        stt: safeBase.stt,
         coordinates: safeBase.info?.coordinates, // Luôn ưu tiên tọa độ chuẩn của di tích
         lat: safeBase.info?.lat,
         lng: safeBase.info?.lng,
@@ -151,6 +155,7 @@ export default function App() {
       },
       keyHighlights: safeBase.keyHighlights || saved.keyHighlights,
       subjects6: safeBase.subjects6 || saved.subjects6,
+      timeline: safeBase.timeline || saved.timeline,
       investigation: {
         ...safeBase.investigation,
         ...(saved.investigation || {}),
@@ -549,7 +554,9 @@ export default function App() {
             <MediaAudioVideoRow
               video={safeVideo}
               info={safeInfo}
-              audioScript={safeAudioScript}
+              audioScript={currentMonumentData?.audioScript || safeAudioScript}
+              monumentStt={currentStt}
+              stt={currentStt}
               onOpenVideoModal={() => setVideoModalOpen(true)}
               onOpenAudioModal={() => setAudioModalOpen(true)}
             />
@@ -637,10 +644,10 @@ export default function App() {
       <AudioNarratorModal
         isOpen={audioModalOpen}
         onClose={() => setAudioModalOpen(false)}
-        audioScript={safeAudioScript}
+        audioScript={currentMonumentData?.audioScript || safeAudioScript}
         monumentName={safeInfo.name || ''}
         monumentStt={currentStt}
-        audioUrl={`/assets/audio/monument-audio-${currentStt}.mp3`}
+        audioUrl={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/assets/audio/monument-audio-${currentStt}.mp3`}
       />
 
       {/* Phim tư liệu Video Modal */}
