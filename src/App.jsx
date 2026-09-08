@@ -33,6 +33,7 @@ import PersonalJourneyPage from './components/PersonalJourneyPage';
 import Footer from './components/Footer';
 import { allMonumentsList, getMonumentByIdOrStt } from './data/allMonumentsData';
 import { getActivePassport } from './utils/passportStorage';
+import { trackContribution } from './utils/studentAnalytics';
 
 const CONTRIBUTIONS_KEY = 'di_san_so_contributions_v4';
 
@@ -390,6 +391,19 @@ export default function App() {
       status: 'pending'
     };
     setContributions(prev => [contributionItem, ...prev]);
+
+    try {
+      trackContribution({
+        passportCode: activePassport?.code || 'GUEST',
+        author: newContrib.authorName || activePassport?.fullName || 'Học sinh',
+        school: newContrib.school || activePassport?.school || 'TP.HCM',
+        grade: newContrib.grade || activePassport?.grade || 'THCS',
+        monumentName: safeInfo.name || 'Hệ sinh thái Di sản',
+        type: newContrib.type || 'Đóng góp ý kiến',
+        title: newContrib.title || newContrib.targetSection || 'Đóng góp tư liệu',
+        content: newContrib.content || newContrib.summary || ''
+      });
+    } catch (e) {}
   };
 
   const handleApproveContribution = (id) => {

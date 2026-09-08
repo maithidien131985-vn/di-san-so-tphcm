@@ -20,6 +20,8 @@ import {
 import confetti from 'canvas-confetti';
 import ScrollReveal from './ScrollReveal';
 import { soundEffects } from '../utils/soundEffects';
+import { trackQuizAttempt } from '../utils/studentAnalytics';
+import { getActivePassport } from '../utils/passportStorage';
 
 export default function MediaAudioVideoRow({
   video = {},
@@ -222,6 +224,18 @@ export default function MediaAudioVideoRow({
     } else {
       soundEffects.playWrong();
     }
+
+    try {
+      const passport = getActivePassport();
+      trackQuizAttempt({
+        passport,
+        monumentStt: currentStt,
+        monumentName,
+        question: currentQuiz.question,
+        isCorrect: isRight,
+        score: isRight ? 10 : 0
+      });
+    } catch (e) {}
   };
 
   const handleResetQuiz = () => {

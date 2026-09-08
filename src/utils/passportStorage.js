@@ -3,6 +3,8 @@
 // Hỗ trợ 2 chế độ: Khách tự do & Học sinh lưu hành trình qua Mã Số Hộ Chiếu
 // ==============================================================================
 
+import { trackStudentLogin, trackJourneyProgress, trackJourneyCompleted } from './studentAnalytics';
+
 const PASSPORTS_STORAGE_KEY = 'di_san_so_passports_v2';
 const ACTIVE_PASSPORT_ID_KEY = 'di_san_so_active_passport_id_v2';
 
@@ -55,6 +57,9 @@ export function loginPassport(code) {
 
   if (passport) {
     localStorage.setItem(ACTIVE_PASSPORT_ID_KEY, cleanCode);
+    try {
+      trackStudentLogin(passport);
+    } catch (e) {}
     return passport;
   }
   return null;
@@ -99,6 +104,10 @@ export function createPassport({ fullName, school, grade, avatar = '🦁' }) {
   all[code] = newPassport;
   localStorage.setItem(PASSPORTS_STORAGE_KEY, JSON.stringify(all));
   localStorage.setItem(ACTIVE_PASSPORT_ID_KEY, code);
+
+  try {
+    trackStudentLogin(newPassport);
+  } catch (e) {}
 
   return newPassport;
 }
@@ -161,6 +170,16 @@ export function checkInMonument(stt, monumentName, earnedXP = 100, note = '') {
 
   all[code] = passport;
   localStorage.setItem(PASSPORTS_STORAGE_KEY, JSON.stringify(all));
+
+  // Gửi telemetry tiến độ hành trình
+  try {
+    if (!isAlreadyVisited) {
+      trackJourneyProgress(passport, stt, monumentName, visitedCount);
+      if (visitedCount >= 103) {
+        trackJourneyCompleted(passport, { totalVisited: visitedCount, totalXP: passport.totalXP });
+      }
+    }
+  } catch (e) {}
 
   return passport;
 }

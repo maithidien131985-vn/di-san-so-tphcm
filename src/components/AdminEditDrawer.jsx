@@ -21,9 +21,16 @@ import {
   XCircle,
   Clock,
   User,
-  Sparkle
+  Sparkle,
+  BarChart3,
+  Link as LinkIcon,
+  Send,
+  Copy,
+  Database,
+  ExternalLink
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { getGoogleSheetWebhookUrl, setGoogleSheetWebhookUrl, sendTelemetryEvent } from '../utils/studentAnalytics';
 
 export default function AdminEditDrawer({
   isOpen,
@@ -54,6 +61,13 @@ export default function AdminEditDrawer({
   const [activeTab, setActiveTab] = useState('contributions');
   const [saveSuccess, setSaveSuccess] = useState(false);
   const fileInputRef = useRef(null);
+
+  // Google Sheets Webhook State
+  const [webhookUrl, setWebhookUrlState] = useState(() => getGoogleSheetWebhookUrl());
+  const [webhookSaved, setWebhookSaved] = useState(false);
+  const [testSending, setTestSending] = useState(false);
+  const [testSuccess, setTestSuccess] = useState(false);
+  const [copiedCode, setCopiedCode] = useState(false);
 
   // Filter state for contributions review
   const [statusFilter, setStatusFilter] = useState('all'); // 'all' | 'pending' | 'approved' | 'rejected'
@@ -224,7 +238,8 @@ export default function AdminEditDrawer({
             { id: 'gallery', label: 'Kho ảnh & Hiện vật', icon: ImageIcon },
             { id: 'nextMonuments', label: 'Di tích tiếp theo', icon: Landmark },
             { id: 'investigation', label: 'Hồ sơ điều tra', icon: Layers },
-            { id: 'audio', label: 'Thuyết minh', icon: Sparkles }
+            { id: 'audio', label: 'Thuyết minh', icon: Sparkles },
+            { id: 'analytics', label: '📊 Dữ liệu Google Sheets', icon: BarChart3 }
           ].map(tab => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -1114,6 +1129,258 @@ export default function AdminEditDrawer({
                   />
                 </div>
               ))}
+            </div>
+          )}
+
+          {/* TAB 8: THU THẬP DỮ LIỆU GOOGLE SHEETS */}
+          {activeTab === 'analytics' && (
+            <div className="space-y-6">
+              {/* Header Box */}
+              <div className="p-5 rounded-2xl bg-gradient-to-r from-emerald-800 via-teal-800 to-emerald-900 text-white shadow-md space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-white">
+                    <Database className="w-5 h-5 text-emerald-300" />
+                  </div>
+                  <div>
+                    <h4 className="font-serif-title font-bold text-base sm:text-lg text-emerald-100">
+                      Thu Thập Dữ Liệu Hành Vi Học Sinh (Google Sheets)
+                    </h4>
+                    <p className="text-xs text-emerald-200/90">
+                      Tự động ghi nhận số lượng học sinh đăng nhập, tiến độ hoàn thành 103 di tích, đóng góp ý kiến & kết quả làm bài.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-xs">
+                  <div className="bg-white/10 p-2.5 rounded-xl border border-white/10">
+                    <span className="text-[11px] text-emerald-200 block">1. Đăng nhập</span>
+                    <span className="font-bold text-white text-xs">Họ tên, Lớp, Trường</span>
+                  </div>
+                  <div className="bg-white/10 p-2.5 rounded-xl border border-white/10">
+                    <span className="text-[11px] text-emerald-200 block">2. Tiến độ</span>
+                    <span className="font-bold text-white text-xs">Di tích đã đi / 103</span>
+                  </div>
+                  <div className="bg-white/10 p-2.5 rounded-xl border border-white/10">
+                    <span className="text-[11px] text-emerald-200 block">3. Hoàn thành</span>
+                    <span className="font-bold text-white text-xs">Mốc 103/103 & XP</span>
+                  </div>
+                  <div className="bg-white/10 p-2.5 rounded-xl border border-white/10">
+                    <span className="text-[11px] text-emerald-200 block">4. Đóng góp & Quiz</span>
+                    <span className="font-bold text-white text-xs">Ý kiến & Điểm số</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Webhook Configuration Section */}
+              <div className="bg-white p-5 rounded-2xl border border-emerald-200 shadow-xs space-y-4">
+                <div className="flex items-center justify-between">
+                  <label className="text-xs font-bold text-emerald-950 flex items-center gap-1.5">
+                    <LinkIcon className="w-4 h-4 text-emerald-700" />
+                    <span>Google Apps Script Webhook URL (Link Web App):</span>
+                  </label>
+                  {webhookSaved && (
+                    <span className="text-xs text-emerald-600 font-bold flex items-center gap-1">
+                      <CheckCircle className="w-3.5 h-3.5" />
+                      <span>Đã lưu URL thành công!</span>
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-center gap-2">
+                  <input
+                    type="url"
+                    value={webhookUrl}
+                    onChange={(e) => {
+                      setWebhookUrlState(e.target.value);
+                      setWebhookSaved(false);
+                    }}
+                    placeholder="https://script.google.com/macros/s/.../exec"
+                    className="w-full text-xs font-mono p-2.5 rounded-xl border border-gray-300 focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 bg-emerald-50/20"
+                  />
+                  <button
+                    onClick={() => {
+                      setGoogleSheetWebhookUrl(webhookUrl);
+                      setWebhookSaved(true);
+                      setTimeout(() => setWebhookSaved(false), 3000);
+                    }}
+                    className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold shrink-0 transition-colors shadow-xs cursor-pointer flex items-center justify-center gap-1.5"
+                  >
+                    <Save className="w-3.5 h-3.5" />
+                    <span>Lưu Link</span>
+                  </button>
+                </div>
+
+                <div className="pt-2 flex flex-wrap items-center justify-between gap-3 border-t border-gray-100">
+                  <div className="text-xs text-gray-500">
+                    Trạng thái kết nối: {webhookUrl ? <span className="font-bold text-emerald-700">🟢 Đã kích hoạt thu thập</span> : <span className="font-bold text-amber-600">🟡 Đang lưu tạm trên máy học sinh (Offline Queue)</span>}
+                  </div>
+
+                  <button
+                    onClick={async () => {
+                      setTestSending(true);
+                      setTestSuccess(false);
+                      try {
+                        await sendTelemetryEvent('TEST_PING', {
+                          actionDetail: 'Kiểm tra kết nối thành công từ Trang Quản trị CMS Di Sản Số!',
+                          fullName: 'Giáo viên Quản trị',
+                          school: 'Trường THCS Xà Bang',
+                          grade: 'Ban Dự án KHKT'
+                        });
+                        setTestSuccess(true);
+                        setTimeout(() => setTestSuccess(false), 4000);
+                      } catch (err) {
+                        alert('Lỗi kiểm tra kết nối: ' + err.message);
+                      } finally {
+                        setTestSending(false);
+                      }
+                    }}
+                    disabled={testSending || !webhookUrl}
+                    className={`px-3.5 py-1.5 rounded-xl text-xs font-bold border transition-all flex items-center gap-1.5 cursor-pointer ${
+                      !webhookUrl
+                        ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
+                        : testSuccess
+                        ? 'bg-emerald-100 text-emerald-800 border-emerald-300'
+                        : 'bg-white text-emerald-800 border-emerald-300 hover:bg-emerald-50'
+                    }`}
+                  >
+                    <Send className={`w-3 h-3 ${testSending ? 'animate-spin' : ''}`} />
+                    <span>{testSending ? 'Đang gửi thử...' : testSuccess ? '✅ Gửi thử thành công!' : 'Gửi dòng kiểm tra vào Google Sheet'}</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Step-by-Step Instructions & Apps Script Code */}
+              <div className="bg-[#FAF7F2] p-5 rounded-2xl border border-[#EADBC8] space-y-4">
+                <div className="flex items-center justify-between">
+                  <h4 className="font-serif-title font-bold text-sm text-[#7B1113] flex items-center gap-2">
+                    <span>📝 Mã Nguồn Google Apps Script (Copy & Dán vào Google Sheets)</span>
+                  </h4>
+                  <button
+                    onClick={() => {
+                      const scriptCode = `function doPost(e) {
+  try {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var rawData = e.postData.contents;
+    var data = JSON.parse(rawData);
+    var eventType = data.eventType || 'GENERAL';
+    var timestamp = data.localTime || new Date().toLocaleString('vi-VN');
+    
+    // Tự động phân loại ghi vào các Sheet chuyên biệt
+    if (eventType === 'LOGIN') {
+      var sheet = getOrCreateSheet(ss, '1. Đăng Nhập Học Sinh', [
+        'Thời gian', 'Mã Hộ Chiếu', 'Họ và tên', 'Trường', 'Lớp', 'Điểm XP', 'Số di tích đã đi', 'Chi tiết'
+      ]);
+      sheet.appendRow([
+        timestamp,
+        data.passportCode || '',
+        data.fullName || '',
+        data.school || '',
+        data.grade || '',
+        data.totalXP || 0,
+        data.visitedCount || 0,
+        data.actionDetail || ''
+      ]);
+    } else if (eventType === 'JOURNEY_PROGRESS' || eventType === 'JOURNEY_COMPLETED') {
+      var sheet = getOrCreateSheet(ss, '2. Tiến Độ Hành Trình', [
+        'Thời gian', 'Mã Hộ Chiếu', 'Họ và tên', 'Trường', 'Lớp', 'STT Di Tích', 'Tên Di Tích', 'Tổng đã đi', 'Tiến độ (%)', 'Chi tiết'
+      ]);
+      sheet.appendRow([
+        timestamp,
+        data.passportCode || '',
+        data.fullName || '',
+        data.school || '',
+        data.grade || '',
+        data.monumentStt || '',
+        data.monumentName || '',
+        data.totalVisited || 0,
+        (data.progressPercent || 0) + '%',
+        data.actionDetail || ''
+      ]);
+    } else if (eventType === 'CONTRIBUTION') {
+      var sheet = getOrCreateSheet(ss, '3. Đóng Góp & Ý Kiến', [
+        'Thời gian', 'Mã Hộ Chiếu', 'Tác giả', 'Trường', 'Lớp', 'Di tích', 'Loại đóng góp', 'Tiêu đề', 'Nội dung'
+      ]);
+      sheet.appendRow([
+        timestamp,
+        data.passportCode || '',
+        data.author || '',
+        data.school || '',
+        data.grade || '',
+        data.monumentName || '',
+        data.type || '',
+        data.title || '',
+        data.content || ''
+      ]);
+    } else if (eventType === 'QUIZ') {
+      var sheet = getOrCreateSheet(ss, '4. Kết Quả Thử Thách', [
+        'Thời gian', 'Mã Hộ Chiếu', 'Họ và tên', 'Trường', 'Lớp', 'STT', 'Di tích', 'Câu hỏi', 'Kết quả', 'Điểm'
+      ]);
+      sheet.appendRow([
+        timestamp,
+        data.passportCode || '',
+        data.fullName || '',
+        data.school || '',
+        data.grade || '',
+        data.monumentStt || '',
+        data.monumentName || '',
+        data.questionSummary || '',
+        data.result || '',
+        data.score || 0
+      ]);
+    } else {
+      var sheet = getOrCreateSheet(ss, '5. Nhật Ký Hoạt Động', ['Thời gian', 'Loại sự kiện', 'Dữ liệu JSON']);
+      sheet.appendRow([timestamp, eventType, rawData]);
+    }
+
+    return ContentService.createTextOutput(JSON.stringify({ status: 'success', message: 'Logged successfully' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    return ContentService.createTextOutput(JSON.stringify({ status: 'error', message: error.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function getOrCreateSheet(ss, sheetName, headers) {
+  var sheet = ss.getSheetByName(sheetName);
+  if (!sheet) {
+    sheet = ss.insertSheet(sheetName);
+    if (headers && headers.length > 0) {
+      sheet.appendRow(headers);
+      var headerRange = sheet.getRange(1, 1, 1, headers.length);
+      headerRange.setBackground('#7B1113');
+      headerRange.setFontColor('#FFFFFF');
+      headerRange.setFontWeight('bold');
+      sheet.setFrozenRows(1);
+    }
+  }
+  return sheet;
+}`;
+                      navigator.clipboard.writeText(scriptCode);
+                      setCopiedCode(true);
+                      setTimeout(() => setCopiedCode(false), 3000);
+                    }}
+                    className="px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold flex items-center gap-1.5 cursor-pointer shadow-xs"
+                  >
+                    <Copy className="w-3.5 h-3.5" />
+                    <span>{copiedCode ? '✅ Đã sao chép mã!' : 'Sao chép mã Apps Script'}</span>
+                  </button>
+                </div>
+
+                <div className="text-xs text-gray-700 space-y-2 bg-white p-4 rounded-xl border border-gray-200">
+                  <p className="font-bold text-emerald-900">📖 Hướng dẫn 3 bước thiết lập trong 1 phút:</p>
+                  <ol className="list-decimal list-inside space-y-1 text-[#555555]">
+                    <li>Mở file Google Sheets mới trên Google Drive của bạn (ví dụ đặt tên <b>"Dữ Liệu Học Sinh - Di Sản Số"</b>).</li>
+                    <li>Trên thanh menu Google Sheets, chọn <b>Tiện ích mở rộng (Extensions) &rarr; Apps Script</b>. Xóa hết mã cũ và dán toàn bộ đoạn mã vừa sao chép ở trên vào.</li>
+                    <li>Bấm <b>Triển khai (Deploy) &rarr; Tùy chọn triển khai mới (New deployment)</b>:
+                      <ul className="list-disc list-inside ml-4 mt-1 space-y-0.5 text-[#333333]">
+                        <li>Loại: <b>Ứng dụng web (Web app)</b></li>
+                        <li>Người có quyền truy cập (Who has access): Chọn <b>Bất kỳ ai (Anyone)</b></li>
+                      </ul>
+                    </li>
+                    <li>Bấm <b>Triển khai</b> &rarr; Sao chép đường link <b>URL ứng dụng web</b> và dán vào ô bên trên &rarr; Bấm <b>Lưu Link</b>.</li>
+                  </ol>
+                </div>
+              </div>
             </div>
           )}
         </div>
