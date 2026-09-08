@@ -24,6 +24,7 @@ import {
   Download
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
+import { checkInMonument } from '../utils/passportStorage';
 
 // ==============================================================================
 // WEB AUDIO SOUND SYNTHESIZER (ÂM THANH THÁM HIỂM & KHÁM PHÁ BÁU VẬT)
@@ -177,8 +178,6 @@ class GameAudioEngine {
 }
 
 const gameAudio = new GameAudioEngine();
-
-import { checkInMonument } from '../utils/passportStorage';
 
 export default function MonumentInteractiveMiniGame({
   quiz = [],
