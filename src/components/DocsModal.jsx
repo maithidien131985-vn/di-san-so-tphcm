@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, FileText, Bookmark, BookOpen, ExternalLink, Download, FolderOpen } from 'lucide-react';
+import soundEffects from '../utils/soundEffects';
 
 export default function DocsModal({ 
   isOpen, 
@@ -47,7 +48,10 @@ export default function DocsModal({
             </div>
           </div>
           <button
-            onClick={onClose}
+            onClick={() => {
+              soundEffects.playTap();
+              onClose();
+            }}
             className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
@@ -124,7 +128,10 @@ export default function DocsModal({
         {/* Footer */}
         <div className="p-4 bg-white border-t border-[#EADBC8] text-center">
           <button
-            onClick={onClose}
+            onClick={() => {
+              soundEffects.playTap();
+              onClose();
+            }}
             className="px-6 py-2 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white text-xs font-bold shadow cursor-pointer"
           >
             Đóng cửa sổ

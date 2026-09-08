@@ -21,6 +21,7 @@ import {
 import confetti from 'canvas-confetti';
 import ScrollReveal from './ScrollReveal';
 import { checkInMonument } from '../utils/passportStorage';
+import soundEffects from '../utils/soundEffects';
 
 // Web Audio Sound Synthesizer for MiniGame
 class GameAudioEngine {
@@ -261,6 +262,7 @@ export default function InvestigationSection({
   const defaultQuestion = investigation?.investigationQuestion || "Vì sao di tích này trở thành dấu mốc lịch sử tiêu biểu của dân tộc?";
 
   const handleStartReport = () => {
+    soundEffects.playUnlock();
     try {
       confetti({ particleCount: 50, spread: 70, origin: { y: 0.6 } });
     } catch (e) {}
@@ -480,7 +482,10 @@ export default function InvestigationSection({
           {/* CỘT 3: TÀI LIỆU & CĂN CỨ LỊCH SỬ (KHO HỒ SƠ THAM KHẢO) */}
           {/* ========================================================================= */}
           <div
-            onClick={onOpenDocsModal}
+            onClick={() => {
+              soundEffects.playTap();
+              if (onOpenDocsModal) onOpenDocsModal();
+            }}
             className="bg-white rounded-3xl p-5 sm:p-6 border-2 border-amber-200 hover:border-[#7E1819] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group"
           >
             <div className="space-y-3.5">

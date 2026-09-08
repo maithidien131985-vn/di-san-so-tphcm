@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, Leaf, Heart, CheckCircle2, Shield, Share2, Send, Sparkles } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import soundEffects from '../utils/soundEffects';
 
 export default function ActionModal({ 
   isOpen, 
@@ -20,8 +21,12 @@ export default function ActionModal({
 
   const handleAddPledge = (e) => {
     e.preventDefault();
-    if (!pledgeName.trim() || !pledgeMsg.trim()) return;
+    if (!pledgeName.trim() || !pledgeMsg.trim()) {
+      soundEffects.playWrong();
+      return;
+    }
 
+    soundEffects.playCorrect();
     setPledges([{ name: pledgeName.trim(), text: pledgeMsg.trim() }, ...pledges]);
     setPledgeName('');
     setPledgeMsg('');
@@ -48,7 +53,10 @@ export default function ActionModal({
             </div>
           </div>
           <button
-            onClick={onClose}
+            onClick={() => {
+              soundEffects.playTap();
+              onClose();
+            }}
             className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />

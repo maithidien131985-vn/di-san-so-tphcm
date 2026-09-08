@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Send, CheckCircle2, Download, RotateCcw, HelpCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import soundEffects from '../utils/soundEffects';
 
 export default function StudentReportModal({ 
   isOpen, 
@@ -34,9 +35,11 @@ export default function StudentReportModal({
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!studentName.trim()) {
+      soundEffects.playWrong();
       alert('Vui lòng nhập họ và tên của học sinh!');
       return;
     }
+    soundEffects.playCorrect();
     setIsSubmitted(true);
     confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
   };
@@ -65,7 +68,10 @@ export default function StudentReportModal({
             </div>
           </div>
           <button
-            onClick={onClose}
+            onClick={() => {
+              soundEffects.playTap();
+              onClose();
+            }}
             className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
@@ -133,7 +139,10 @@ export default function StudentReportModal({
                   </label>
                   <button
                     type="button"
-                    onClick={() => setAnalysisText(defaultAnswer)}
+                    onClick={() => {
+                      soundEffects.playTap();
+                      setAnalysisText(defaultAnswer);
+                    }}
                     className="text-[11px] text-[#7B1113] hover:underline font-bold cursor-pointer"
                   >
                     Nạp gợi ý tư liệu
@@ -219,6 +228,7 @@ export default function StudentReportModal({
                   </p>
                   <button
                     onClick={() => {
+                      soundEffects.playUnlock();
                       if (onOpenActionModal) {
                         onOpenActionModal();
                       } else if (onClose) {
@@ -234,14 +244,20 @@ export default function StudentReportModal({
 
                 <div className="flex flex-wrap gap-2.5 justify-center pt-1">
                   <button
-                    onClick={() => window.print()}
+                    onClick={() => {
+                      soundEffects.playTap();
+                      window.print();
+                    }}
                     className="px-5 py-2.5 rounded-xl bg-[#7B1113] text-white text-xs font-bold shadow hover:bg-[#96171a] flex items-center gap-1.5 cursor-pointer"
                   >
                     <Download className="w-3.5 h-3.5" />
                     <span>In phiếu báo cáo</span>
                   </button>
                   <button
-                    onClick={() => setIsSubmitted(false)}
+                    onClick={() => {
+                      soundEffects.playTap();
+                      setIsSubmitted(false);
+                    }}
                     className="px-4 py-2.5 rounded-xl bg-gray-200 text-gray-800 text-xs font-bold hover:bg-gray-300 flex items-center gap-1.5 cursor-pointer"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />

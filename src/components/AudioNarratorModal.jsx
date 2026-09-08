@@ -13,6 +13,7 @@ import {
   Download
 } from 'lucide-react';
 import { speakVietnamese, stopVietnameseSpeech } from '../utils/vietnameseVoice';
+import soundEffects from '../utils/soundEffects';
 
 export default function AudioNarratorModal({ 
   isOpen, 
@@ -170,6 +171,7 @@ export default function AudioNarratorModal({
   };
 
   const handleTogglePlay = () => {
+    soundEffects.playTap();
     if (!isPlaying) {
       if (ttsEngine === 'studio' && isDinhDocLap && studioAudioRef.current) {
         studioAudioRef.current.playbackRate = rate;
@@ -184,6 +186,7 @@ export default function AudioNarratorModal({
   };
 
   const handleNext = () => {
+    soundEffects.playTap();
     if (ttsEngine === 'studio' && isDinhDocLap) {
       handleSeekOffset(15);
     } else if (currentSectionIndex < normalizedSections.length - 1) {
@@ -194,6 +197,7 @@ export default function AudioNarratorModal({
   };
 
   const handlePrev = () => {
+    soundEffects.playTap();
     if (ttsEngine === 'studio' && isDinhDocLap) {
       handleSeekOffset(-15);
     } else if (currentSectionIndex > 0) {
@@ -204,6 +208,7 @@ export default function AudioNarratorModal({
   };
 
   const handleSelectSection = (idx) => {
+    soundEffects.playTap();
     setCurrentSectionIndex(idx);
     if (ttsEngine === 'studio' && isDinhDocLap && studioAudioRef.current && duration > 0) {
       const targetTime = (idx / normalizedSections.length) * duration;
@@ -218,11 +223,13 @@ export default function AudioNarratorModal({
   };
 
   const handleClose = () => {
+    soundEffects.playTap();
     stopAllAudio();
     onClose();
   };
 
   const toggleMute = () => {
+    soundEffects.playTap();
     if (studioAudioRef.current) {
       studioAudioRef.current.muted = !isMuted;
       setIsMuted(!isMuted);
@@ -393,7 +400,10 @@ export default function AudioNarratorModal({
                   {[0.75, 1, 1.25, 1.5].map((s) => (
                     <button
                       key={s}
-                      onClick={() => setRate(s)}
+                      onClick={() => {
+                        soundEffects.playTap();
+                        setRate(s);
+                      }}
                       className={`px-2 py-1 rounded-lg transition-colors cursor-pointer ${
                         rate === s ? 'bg-[#7B1113] text-white' : 'hover:bg-gray-200'
                       }`}
