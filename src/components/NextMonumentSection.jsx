@@ -63,10 +63,58 @@ export default function NextMonumentSection({
     }
   };
 
-  if (!featuredNext) return null;
+  const currentName = currentMonument?.info?.name || 'Di tích lịch sử';
+  const nextName = featuredNext?.info?.name || 'Di tích tiếp theo';
+  const distanceText = activeTab === 'nearby' && featuredNext.distanceKm !== undefined && featuredNext.distanceKm < 9999
+    ? (featuredNext.distanceKm < 1 ? `khoảng ${Math.round(featuredNext.distanceKm * 1000)} mét` : `khoảng ${featuredNext.distanceKm.toFixed(1)} km`)
+    : 'trong khu vực lân cận';
 
   return (
-    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-8 pb-12">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-4 pb-12 space-y-6">
+      {/* ========================================================================= */}
+      {/* BANNER LỜI DẪN NỔI BẬT: CHUYỂN TIẾP HÀNH TRÌNH TỪ DI TÍCH HIỆN TẠI SANG KẾ TIẾP */}
+      {/* ========================================================================= */}
+      <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-r from-[#50080B] via-[#7E1819] to-[#9E1B1D] text-white p-6 sm:p-8 border-2 border-amber-400/80 ring-4 ring-amber-500/20 animate-fadeIn">
+        {/* Ambient background glow & Watermark */}
+        <div className="absolute -right-12 -top-12 w-64 h-64 bg-amber-400/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute right-6 bottom-0 opacity-10 pointer-events-none hidden md:block">
+          <Award className="w-48 h-48 text-amber-300" />
+        </div>
+
+        <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+          <div className="space-y-3 max-w-4xl">
+            {/* Tag Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/25 border border-amber-300/50 text-amber-300 text-xs font-black uppercase tracking-wider shadow-inner">
+              <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
+              <span>GHI NHẬN THÀNH TỰU THÁM HIỂM</span>
+            </div>
+
+            {/* Lời dẫn chính */}
+            <div className="space-y-2">
+              <h3 className="font-serif-title font-black text-lg sm:text-2xl text-amber-100 leading-snug">
+                🎉 Bạn vừa hoàn thành điều tra di tích <span className="text-amber-300 underline decoration-amber-400/60 underline-offset-4 font-bold">"{currentName}"</span> và tích lũy thành công <span className="text-amber-300 font-extrabold bg-black/30 px-2.5 py-0.5 rounded-lg border border-amber-300/40">+100 Điểm Thám Hiểm</span>!
+              </h3>
+              
+              <p className="text-sm sm:text-base text-rose-100/95 leading-relaxed font-medium">
+                🧭 Di tích tiếp theo dành cho bạn: <strong className="text-amber-200 text-base sm:text-lg">"{nextName}"</strong> <span className="text-amber-300/90 text-xs sm:text-sm font-semibold">({distanceText})</span>... Hãy tiếp tục mở rộng bản đồ và giải mã những bí ẩn lịch sử tiếp theo!
+              </p>
+            </div>
+          </div>
+
+          {/* Nút hành động 1-click khám phá di tích tiếp theo */}
+          <button
+            onClick={() => handleChoose(featuredNext.stt)}
+            className="w-full lg:w-auto px-7 py-4 rounded-2xl bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-300 text-[#7E1819] font-black text-sm sm:text-base shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 cursor-pointer shrink-0 border-2 border-white/60 group"
+          >
+            <span>🚀 Khám Phá "{nextName}" Ngay</span>
+            <ArrowRight className="w-5 h-5 text-[#7E1819] group-hover:translate-x-1.5 transition-transform" />
+          </button>
+        </div>
+      </div>
+
+      {/* ========================================================================= */}
+      {/* DANH SÁCH DI TÍCH GỢI Ý TIẾP THEO (GẦN ĐÓ NHẤT & CÙNG LOẠI HÌNH) */}
+      {/* ========================================================================= */}
       <div className="bg-[#FFFDFB] rounded-3xl p-5 sm:p-8 md:p-10 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-6 sm:space-y-8">
         
         {/* Header & Tabs */}
