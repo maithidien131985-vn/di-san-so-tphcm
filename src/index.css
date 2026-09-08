@@ -34,15 +34,33 @@
 }
 
 .font-serif-title {
-  font-family: 'Playfair Display', 'Merriweather', 'Lora', Georgia, serif;
+  font-family: 'Righteous', 'Playfair Display', 'Merriweather', 'Lora', Georgia, serif;
   text-wrap: balance;
-  letter-spacing: -0.015em;
+  letter-spacing: 0.01em;
 }
 
-.font-heritage {
-  font-family: 'Playfair Display', 'Cinzel', Georgia, serif;
+.font-retro-title {
+  font-family: 'Righteous', cursive, sans-serif;
   text-wrap: balance;
   letter-spacing: 0.02em;
+}
+
+.font-retro-3d {
+  font-family: 'Righteous', cursive, sans-serif;
+  letter-spacing: 0.03em;
+  text-shadow: 
+    0 1px 0 #3a0709,
+    0 2px 0 #3a0709,
+    0 3px 0 #3a0709,
+    0 4px 0 #3a0709,
+    0 5px 0 #200507,
+    0 6px 1px rgba(0,0,0,0.4),
+    0 0 5px rgba(0,0,0,0.2),
+    0 1px 3px rgba(0,0,0,0.3),
+    0 3px 5px rgba(0,0,0,0.2),
+    0 5px 10px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.2),
+    0 20px 20px rgba(0,0,0,0.15);
 }
 
 .font-body-historic {
