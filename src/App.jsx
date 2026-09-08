@@ -550,12 +550,8 @@ export default function App() {
                   <div className="lg:col-span-4">
                     <InfoSidebar
                       info={safeInfo}
-                      map={safeMap}
                       isEditMode={isEditMode}
                       onUpdateInfo={handleUpdateInfo}
-                      onOpenAudio={() => setAudioModalOpen(true)}
-                      onOpenDocsModal={() => setDocsModalOpen(true)}
-                      onOpenMyMap={() => setMyMapModalOpen(true)}
                     />
                   </div>
                 </div>
