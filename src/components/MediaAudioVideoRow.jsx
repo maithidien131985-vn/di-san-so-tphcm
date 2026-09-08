@@ -39,8 +39,11 @@ export default function MediaAudioVideoRow({
   const [playbackRate, setPlaybackRate] = useState(1.0);
   const timerRef = useRef(null);
 
-  // Script text for audio narration
-  const narrationText = audioScript || info?.overview || `Kính chào các em học sinh và quý độc giả. Chúng ta đang cùng nhau tìm hiểu về di tích lịch sử ${monumentName}. Đây là một công trình mang ý nghĩa đặc biệt trong lịch sử và văn hóa của Thành phố Hồ Chí Minh.`;
+  // Script text for audio narration — ensure it's always a string (audioScript can be array in some monuments)
+  const rawAudioScript = Array.isArray(audioScript)
+    ? audioScript.map(s => (typeof s === 'string' ? s : (s?.text || s?.content || ''))).join(' ')
+    : (typeof audioScript === 'string' ? audioScript : '');
+  const narrationText = rawAudioScript || (typeof info?.overview === 'string' ? info.overview : '') || `Kính chào các em học sinh và quý độc giả. Chúng ta đang cùng nhau tìm hiểu về di tích lịch sử ${monumentName}. Đây là một công trình mang ý nghĩa đặc biệt trong lịch sử và văn hóa của Thành phố Hồ Chí Minh.`;
 
   // Estimate duration based on text length (~150 words per minute)
   useEffect(() => {

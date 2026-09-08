@@ -438,7 +438,10 @@ export default function App() {
   const safeMap = currentMonumentData?.map || allMonumentsList[0]?.map || {};
   const safeInvestigation = currentMonumentData?.investigation || allMonumentsList[0]?.investigation || {};
   const safeHighlights = currentMonumentData?.keyHighlights || allMonumentsList[0]?.keyHighlights || {};
-  const safeAudioScript = currentMonumentData?.audioScript || safeInfo?.overview || '';
+  const rawAudioScript = currentMonumentData?.audioScript;
+  const safeAudioScript = Array.isArray(rawAudioScript)
+    ? rawAudioScript.map(s => (typeof s === 'string' ? s : (s?.text || s?.content || ''))).join(' ')
+    : (typeof rawAudioScript === 'string' ? rawAudioScript : (typeof safeInfo?.overview === 'string' ? safeInfo.overview : ''));
 
   return (
     <div className="min-h-screen bg-[#FDFBF7] text-[#2C241E] flex flex-col font-sans selection:bg-[#7E1819] selection:text-white">
