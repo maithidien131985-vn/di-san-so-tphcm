@@ -882,10 +882,31 @@ export default function HomePage({
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-12 text-center">
         <ScrollReveal>
           <div className="space-y-3 sm:space-y-4">
-            <div className="flex items-center justify-center gap-3 sm:gap-4 text-2xl sm:text-3xl md:text-4xl">
-              <span>🎒</span>
-              <span>🏛️</span>
-              <span>📚</span>
+            <div className="flex items-center justify-center gap-6 sm:gap-8">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 p-2 rounded-2xl bg-white border border-rose-200 shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png"
+                  alt="Di tích Lịch sử"
+                  className="w-full h-full object-contain drop-shadow-sm"
+                  title="Di tích Lịch sử"
+                />
+              </div>
+              <div className="w-12 h-12 sm:w-14 sm:h-14 p-2 rounded-2xl bg-white border border-rose-200 shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png"
+                  alt="Kiến trúc nghệ thuật"
+                  className="w-full h-full object-contain drop-shadow-sm"
+                  title="Kiến trúc nghệ thuật"
+                />
+              </div>
+              <div className="w-12 h-12 sm:w-14 sm:h-14 p-2 rounded-2xl bg-white border border-rose-200 shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png"
+                  alt="Khảo cổ học"
+                  className="w-full h-full object-contain drop-shadow-sm"
+                  title="Khảo cổ học"
+                />
+              </div>
             </div>
 
             <div className="space-y-1 sm:space-y-2 max-w-2xl mx-auto px-4 text-center">
