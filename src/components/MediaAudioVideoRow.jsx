@@ -21,9 +21,9 @@ import confetti from 'canvas-confetti';
 import ScrollReveal from './ScrollReveal';
 
 export default function MediaAudioVideoRow({
-  video,
-  info,
-  audioScript,
+  video = {},
+  info = {},
+  audioScript = '',
   onOpenVideoModal,
   onOpenAudioModal
 }) {
@@ -37,24 +37,33 @@ export default function MediaAudioVideoRow({
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(180); // default 3:00 min
   const [playbackRate, setPlaybackRate] = useState(1.0);
-  const [isMuted, setIsMuted] = useState(false);
   const timerRef = useRef(null);
-  const synthRef = useRef(null);
 
   // Script text for audio narration
   const narrationText = audioScript || info?.overview || `Kính chào các em học sinh và quý độc giả. Chúng ta đang cùng nhau tìm hiểu về di tích lịch sử ${monumentName}. Đây là một công trình mang ý nghĩa đặc biệt trong lịch sử và văn hóa của Thành phố Hồ Chí Minh.`;
 
   // Estimate duration based on text length (~150 words per minute)
   useEffect(() => {
-    const wordCount = narrationText.split(/\s+/).length;
+    const wordCount = narrationText ? narrationText.split(/\s+/).length : 50;
     const estSec = Math.max(60, Math.round((wordCount / 130) * 60));
     setDuration(estSec);
     setCurrentTime(0);
     setIsPlaying(false);
 
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-    }
+    try {
+      if (typeof window !== 'undefined' && window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      }
+    } catch (e) {}
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+      try {
+        if (typeof window !== 'undefined' && window.speechSynthesis) {
+          window.speechSynthesis.cancel();
+        }
+      } catch (e) {}
+    };
   }, [monumentName, narrationText]);
 
   // Audio Speech Synthesis / Simulated Timer
@@ -62,35 +71,40 @@ export default function MediaAudioVideoRow({
     if (typeof window === 'undefined') return;
 
     if (isPlaying) {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.pause();
-      }
+      try {
+        if (window.speechSynthesis) {
+          window.speechSynthesis.pause();
+        }
+      } catch (e) {}
       clearInterval(timerRef.current);
       setIsPlaying(false);
     } else {
-      if ('speechSynthesis' in window) {
-        if (window.speechSynthesis.paused) {
-          window.speechSynthesis.resume();
-        } else {
-          window.speechSynthesis.cancel();
-          const utterance = new SpeechSynthesisUtterance(narrationText);
-          utterance.lang = 'vi-VN';
-          utterance.rate = playbackRate;
+      try {
+        if (window.speechSynthesis) {
+          if (window.speechSynthesis.paused) {
+            window.speechSynthesis.resume();
+          } else {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(narrationText);
+            utterance.lang = 'vi-VN';
+            utterance.rate = playbackRate;
 
-          // Find Vietnamese voice if available
-          const voices = window.speechSynthesis.getVoices();
-          const viVoice = voices.find(v => v.lang.includes('vi') || v.name.includes('Vietnamese'));
-          if (viVoice) utterance.voice = viVoice;
+            // Find Vietnamese voice if available
+            const voices = window.speechSynthesis.getVoices ? window.speechSynthesis.getVoices() : [];
+            const viVoice = voices.find(v => v.lang && (v.lang.includes('vi') || v.name.includes('Vietnamese')));
+            if (viVoice) utterance.voice = viVoice;
 
-          utterance.onend = () => {
-            setIsPlaying(false);
-            setCurrentTime(duration);
-            clearInterval(timerRef.current);
-          };
+            utterance.onend = () => {
+              setIsPlaying(false);
+              setCurrentTime(duration);
+              clearInterval(timerRef.current);
+            };
 
-          synthRef.current = utterance;
-          window.speechSynthesis.speak(utterance);
+            window.speechSynthesis.speak(utterance);
+          }
         }
+      } catch (e) {
+        console.warn('Speech synthesis error, falling back to audio timer:', e);
       }
 
       setIsPlaying(true);
@@ -124,14 +138,15 @@ export default function MediaAudioVideoRow({
     const rates = [1.0, 1.25, 1.5];
     const nextRate = rates[(rates.indexOf(playbackRate) + 1) % rates.length];
     setPlaybackRate(nextRate);
-    if ('speechSynthesis' in window && isPlaying) {
-      // Re-trigger with new rate
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(narrationText);
-      utterance.lang = 'vi-VN';
-      utterance.rate = nextRate;
-      window.speechSynthesis.speak(utterance);
-    }
+    try {
+      if (window.speechSynthesis && isPlaying) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(narrationText);
+        utterance.lang = 'vi-VN';
+        utterance.rate = nextRate;
+        window.speechSynthesis.speak(utterance);
+      }
+    } catch (e) {}
   };
 
   const formatTime = (seconds) => {

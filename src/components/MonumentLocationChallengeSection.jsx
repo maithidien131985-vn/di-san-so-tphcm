@@ -5,8 +5,8 @@ import LocationMap from './LocationMap';
 import ScrollReveal from './ScrollReveal';
 
 export default function MonumentLocationChallengeSection({
-  info,
-  map,
+  info = {},
+  map = {},
   onOpenMyMap
 }) {
   const resolvedCoordinates = map?.coordinates || info?.coordinates || 
@@ -22,21 +22,6 @@ export default function MonumentLocationChallengeSection({
   const address = info?.address || 'Thành phố Hồ Chí Minh';
   const name = info?.name || 'Di tích lịch sử';
 
-  // Generate location questions & options
-  const locationQuestions = [
-    {
-      question: `Bạn có biết "${name}" hiện nay tọa lạc tại địa chỉ hoặc khu vực nào dưới đây?`,
-      correct: address,
-      options: [
-        address,
-        'Số 135 Nam Kỳ Khởi Nghĩa, Phường Bến Thành, Quận 1, TP.HCM',
-        'Ấp Phú Hiệp, Xã Phú Mỹ Hưng, Huyện Củ Chi, TP.HCM',
-        'Số 2 Đường Tôn Đức Thắng, Phường Bến Nghé, Quận 1, TP.HCM'
-      ].filter((v, i, a) => a.indexOf(v) === i) // deduplicate
-    }
-  ];
-
-  // If address matches one of the defaults, generate varied options
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -101,7 +86,7 @@ export default function MonumentLocationChallengeSection({
         <div className="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-4 pb-3 border-b border-[#EAE3D9]">
           <div className="space-y-1">
             <div className="flex items-center gap-2.5 text-[#7E1819]">
-              <Compass className="w-6 h-6 text-[#7E1819] animate-spin-slow" />
+              <Compass className="w-6 h-6 text-[#7E1819]" />
               <h2 className="font-serif-title font-black text-xl sm:text-2xl lg:text-3xl tracking-wide text-[#7E1819]">
                 Định Vị Không Gian & Tọa Độ Lịch Sử
               </h2>
@@ -145,9 +130,9 @@ export default function MonumentLocationChallengeSection({
                 lat={lat}
                 lng={lng}
                 coordinates={[lat, lng]}
-                name={info.name}
-                address={info.address}
-                ranking={info.ranking || info.badge || 'Di tích'}
+                name={name}
+                address={address}
+                ranking={info?.ranking || info?.badge || 'Di tích'}
                 onOpenMyMap={onOpenMyMap}
                 googleMapsDirectionsUrl={directionsUrl}
               />

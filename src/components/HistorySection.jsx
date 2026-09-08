@@ -19,7 +19,7 @@ import {
 import confetti from 'canvas-confetti';
 
 export default function HistorySection({
-  overview,
+  overview = '',
   timeline = [],
   gallery = [],
   isEditMode,
@@ -28,10 +28,10 @@ export default function HistorySection({
   onOpenMilestoneDetail,
   onOpenVideo
 }) {
-  // ==========================================
-  // TIMELINE CHALLENGE STATE
-  // ==========================================
-  const firstMilestone = timeline && timeline.length > 0 ? timeline[0] : null;
+  const safeTimeline = Array.isArray(timeline) ? timeline : [];
+  const safeGallery = Array.isArray(gallery) ? gallery : [];
+
+  const firstMilestone = safeTimeline && safeTimeline.length > 0 ? safeTimeline[0] : null;
   const milestoneYear = firstMilestone?.year || '1975';
   const milestoneTitle = firstMilestone?.title || 'Dấu mốc lịch sử tiêu biểu';
   const milestoneDesc = firstMilestone?.description || 'Sự kiện quan trọng gắn liền với di tích.';
@@ -116,14 +116,14 @@ export default function HistorySection({
         {isEditMode ? (
           <textarea
             rows={5}
-            value={overview}
-            onChange={(e) => onUpdateOverview(e.target.value)}
+            value={overview || ''}
+            onChange={(e) => onUpdateOverview && onUpdateOverview(e.target.value)}
             className="w-full p-4 rounded-xl border-2 border-amber-400 bg-amber-50/30 text-[#2C241E] text-sm sm:text-base leading-relaxed outline-none focus:ring-2 focus:ring-amber-500 font-serif-title"
           />
         ) : (
           <div className="p-4 sm:p-5 rounded-xl bg-[#FAF7F2]/60 border border-[#EFE8DE]">
             <p className="text-[#2C241E] text-sm sm:text-base leading-loose text-justify font-serif-title first-letter:text-3xl first-letter:font-black first-letter:text-[#7E1819] first-letter:float-left first-letter:mr-2">
-              {overview}
+              {overview || 'Thông tin tổng quan về di tích lịch sử đang được cập nhật.'}
             </p>
           </div>
         )}
@@ -151,7 +151,7 @@ export default function HistorySection({
             </h4>
 
             <div className="relative pl-6 sm:pl-8 space-y-4 before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-gradient-to-b before:from-[#7E1819] before:via-amber-500 before:to-[#7E1819]">
-              {timeline.slice(0, 4).map((item, idx) => (
+              {safeTimeline.slice(0, 4).map((item, idx) => (
                 <div 
                   key={item.id || idx}
                   onClick={() => onOpenMilestoneDetail && onOpenMilestoneDetail(item)}
@@ -286,13 +286,13 @@ export default function HistorySection({
           </div>
 
           <span className="text-xs font-bold text-[#7E1819] px-3 py-1 rounded-full bg-red-50 border border-red-200 shrink-0">
-            {gallery.length} tư liệu ảnh thực địa
+            {safeGallery.length} tư liệu ảnh thực địa
           </span>
         </div>
 
         {/* Photo Story Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-          {gallery.map((img, idx) => (
+          {safeGallery.map((img, idx) => (
             <div
               key={img.id || idx}
               onClick={() => onOpenLightbox && onOpenLightbox(idx)}
@@ -312,7 +312,7 @@ export default function HistorySection({
 
                 {/* Badge: Story Card */}
                 <div className="absolute top-2.5 left-2.5 flex items-center gap-1 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-xs text-amber-300 border border-amber-300/40 text-[10px] font-bold shadow-xs">
-                  <BookOpen className="w-3 h-3" />
+                  <BookOpen className="w-3.5 h-3.5" />
                   <span>Câu chuyện #{idx + 1}</span>
                 </div>
 
@@ -337,7 +337,7 @@ export default function HistorySection({
                 <div className="flex items-center justify-between pt-1 text-[10px] text-gray-500">
                   <span className="text-[#7E1819] font-bold flex items-center gap-0.5">
                     <span>Khám phá ngay</span>
-                    <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                    <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                   </span>
                   <span>{img.year || 'Tư liệu'}</span>
                 </div>

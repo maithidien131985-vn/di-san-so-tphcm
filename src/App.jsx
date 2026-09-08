@@ -118,38 +118,39 @@ export default function App() {
     return getMonumentByIdOrStt(currentStt);
   }, [currentStt]);
 
-  const storageKey = `di_san_so_v11_monument_stt_${currentStt}`;
+  const storageKey = `di_san_so_v12_monument_stt_${currentStt}`;
 
   const mergeWithBase = (base, saved) => {
-    if (!saved) return base;
+    if (!saved || typeof saved !== 'object') return base || allMonumentsList[0];
+    const safeBase = base || allMonumentsList[0];
     return {
-      ...base,
+      ...safeBase,
       ...saved,
-      map: base.map, // Luôn đồng bộ bản đồ tọa độ chính xác của di tích
-      video: base.video, // Luôn đồng bộ video mới nhất từ dữ liệu hệ thống
-      gallery: base.gallery, // Luôn đồng bộ danh sách ảnh thực tế từ Google Drive
+      map: safeBase.map, // Luôn đồng bộ bản đồ tọa độ chính xác của di tích
+      video: safeBase.video, // Luôn đồng bộ video mới nhất từ dữ liệu hệ thống
+      gallery: safeBase.gallery, // Luôn đồng bộ danh sách ảnh thực tế từ Google Drive
       info: {
-        ...base.info,
+        ...safeBase.info,
         ...(saved.info || {}),
-        coordinates: base.info?.coordinates, // Luôn ưu tiên tọa độ chuẩn của di tích
-        lat: base.info?.lat,
-        lng: base.info?.lng,
-        address: base.info?.address,
-        googleMapsDirectionsUrl: base.info?.googleMapsDirectionsUrl,
-        heroImage: base.info.heroImage, // Luôn ưu tiên ảnh đại diện thực tế từ Google Drive của di tích
-        emCoBiet: base.info?.emCoBiet || [],
-        driveReferenceData: base.info?.driveReferenceData || null
+        coordinates: safeBase.info?.coordinates, // Luôn ưu tiên tọa độ chuẩn của di tích
+        lat: safeBase.info?.lat,
+        lng: safeBase.info?.lng,
+        address: safeBase.info?.address,
+        googleMapsDirectionsUrl: safeBase.info?.googleMapsDirectionsUrl,
+        heroImage: safeBase.info?.heroImage, // Luôn ưu tiên ảnh đại diện thực tế từ Google Drive của di tích
+        emCoBiet: safeBase.info?.emCoBiet || [],
+        driveReferenceData: safeBase.info?.driveReferenceData || null
       },
-      keyHighlights: base.keyHighlights || saved.keyHighlights,
-      subjects6: base.subjects6 || saved.subjects6,
+      keyHighlights: safeBase.keyHighlights || saved.keyHighlights,
+      subjects6: safeBase.subjects6 || saved.subjects6,
       investigation: {
-        ...base.investigation,
+        ...safeBase.investigation,
         ...(saved.investigation || {}),
-        investigationQuestion: base.investigation?.investigationQuestion || saved.investigation?.investigationQuestion,
-        driveReferenceData: base.investigation?.driveReferenceData || null,
-        dossier: base.investigation?.dossier || null,
-        flashcards: base.investigation?.flashcards || saved.investigation?.flashcards,
-        matchingPairs: base.investigation?.matchingPairs || saved.investigation?.matchingPairs
+        investigationQuestion: safeBase.investigation?.investigationQuestion || saved.investigation?.investigationQuestion,
+        driveReferenceData: safeBase.investigation?.driveReferenceData || null,
+        dossier: safeBase.investigation?.dossier || null,
+        flashcards: safeBase.investigation?.flashcards || saved.investigation?.flashcards,
+        matchingPairs: safeBase.investigation?.matchingPairs || saved.investigation?.matchingPairs
       }
     };
   };
@@ -161,7 +162,7 @@ export default function App() {
     } catch (e) {
       console.warn('Failed to parse localStorage data:', e);
     }
-    return baseMonument;
+    return baseMonument || allMonumentsList[0];
   });
 
   useEffect(() => {
@@ -174,7 +175,7 @@ export default function App() {
     } catch (e) {
       console.warn('Failed to parse localStorage data:', e);
     }
-    setData(baseMonument);
+    setData(baseMonument || allMonumentsList[0]);
   }, [currentStt, storageKey, baseMonument]);
 
   useEffect(() => {
@@ -428,15 +429,26 @@ export default function App() {
     return list;
   }, [currentStt]);
 
+  // Safe Monument Data Accessors (Ensures 100% crash protection and no blank screens)
+  const currentMonumentData = data || baseMonument || allMonumentsList[0];
+  const safeInfo = currentMonumentData?.info || allMonumentsList[0]?.info || {};
+  const safeGallery = Array.isArray(currentMonumentData?.gallery) ? currentMonumentData.gallery : (allMonumentsList[0]?.gallery || []);
+  const safeTimeline = Array.isArray(currentMonumentData?.timeline) ? currentMonumentData.timeline : (allMonumentsList[0]?.timeline || []);
+  const safeVideo = currentMonumentData?.video || allMonumentsList[0]?.video || {};
+  const safeMap = currentMonumentData?.map || allMonumentsList[0]?.map || {};
+  const safeInvestigation = currentMonumentData?.investigation || allMonumentsList[0]?.investigation || {};
+  const safeHighlights = currentMonumentData?.keyHighlights || allMonumentsList[0]?.keyHighlights || {};
+  const safeAudioScript = currentMonumentData?.audioScript || safeInfo?.overview || '';
+
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF7F2] font-sans antialiased text-[#2C241E] selection:bg-[#7E1819] selection:text-white">
-      {/* Scroll Progress Bar at very top */}
+    <div className="min-h-screen bg-[#FDFBF7] text-[#2C241E] flex flex-col font-sans selection:bg-[#7E1819] selection:text-white">
+      {/* Dynamic Scroll Progress Bar */}
       <ScrollProgressBar />
 
-      {/* Global Application Header */}
+      {/* Global Header */}
       <Header
-        monumentName={data.info.name}
-        monumentRanking={data.info.badge}
+        monumentName={safeInfo.name || 'Hệ Thống Di Sản Số TP.HCM'}
+        monumentRanking={safeInfo.badge || 'Di tích Lịch sử'}
         monumentStt={currentStt}
         viewMode={viewMode}
         isEditMode={isEditMode}
@@ -478,8 +490,8 @@ export default function App() {
           <main className="w-full flex-1 space-y-6 pb-6">
             {/* 1. Hero Banner with Integrated Breadcrumb & Bottom Gallery Thumbnails */}
             <HeroBanner
-              info={data.info}
-              gallery={data.gallery}
+              info={safeInfo}
+              gallery={safeGallery}
               onOpenAudio={() => setAudioModalOpen(true)}
               onOpenVideo={() => setVideoModalOpen(true)}
               onOpenGallery={(idx = 0) => handleOpenLightbox(idx)}
@@ -501,16 +513,16 @@ export default function App() {
 
             {/* 3. BẢN ĐỒ VỊ TRÍ Ở TRÊN + THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" */}
             <MonumentLocationChallengeSection
-              info={data.info}
-              map={data.map}
+              info={safeInfo}
+              map={safeMap}
               onOpenMyMap={() => setMyMapModalOpen(true)}
             />
 
             {/* 4. VIDEO VÀ ÂM THANH CHUNG 1 DÒNG + THỬ THÁCH "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
             <MediaAudioVideoRow
-              video={data.video}
-              info={data.info}
-              audioScript={data.audioScript}
+              video={safeVideo}
+              info={safeInfo}
+              audioScript={safeAudioScript}
               onOpenVideoModal={() => setVideoModalOpen(true)}
               onOpenAudioModal={() => setAudioModalOpen(true)}
             />
@@ -521,9 +533,9 @@ export default function App() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                   <div className="lg:col-span-8">
                     <HistorySection
-                      overview={data.info.overview}
-                      timeline={data.timeline}
-                      gallery={data.gallery}
+                      overview={safeInfo.overview || ''}
+                      timeline={safeTimeline}
+                      gallery={safeGallery}
                       isEditMode={isEditMode}
                       onUpdateOverview={handleUpdateOverview}
                       onOpenLightbox={handleOpenLightbox}
@@ -534,8 +546,8 @@ export default function App() {
 
                   <div className="lg:col-span-4">
                     <InfoSidebar
-                      info={data.info}
-                      map={data.map}
+                      info={safeInfo}
+                      map={safeMap}
                       isEditMode={isEditMode}
                       onUpdateInfo={handleUpdateInfo}
                       onOpenAudio={() => setAudioModalOpen(true)}
@@ -549,14 +561,14 @@ export default function App() {
 
             {/* 6. TRƯỚC PHẦN CÂU HỎI ĐIỀU TRA: 3 Ô Nhân vật liên quan, Hiện vật tiêu biểu, Sự kiện tiêu biểu */}
             <ThreeKeyHighlightsSection
-              keyHighlights={data.keyHighlights}
-              monumentName={data.info.name}
+              keyHighlights={safeHighlights}
+              monumentName={safeInfo.name || ''}
             />
 
             {/* 7. Trò Chơi Nhỏ Tương Tác: Thử thách đố vui & Chinh phục huy hiệu sau khi xem Video / Audio */}
             <MonumentInteractiveMiniGame
-              quiz={data.investigation?.quiz}
-              monumentName={data.info.name}
+              quiz={safeInvestigation?.quiz}
+              monumentName={safeInfo.name || ''}
               monumentStt={currentStt}
               activePassport={activePassport}
               onOpenPassport={() => setPassportModalOpen(true)}
@@ -566,8 +578,8 @@ export default function App() {
             {/* 8. HỒ SƠ ĐIỀU TRA & Ô TÀI LIỆU THAM KHẢO (Nút Bắt đầu điều tra & Nhận huy hiệu ấn tượng) */}
             <div id="investigation-section" className="pt-2">
               <InvestigationSection
-                investigation={data.investigation}
-                monumentImage={data.info.heroImage || data.gallery?.[0]?.src}
+                investigation={safeInvestigation}
+                monumentImage={safeInfo.heroImage || safeGallery[0]?.src || ''}
                 onOpenDossierDetail={handleOpenDossier}
                 onStartQuiz={handleStartQuiz}
                 onOpenStudentReport={() => setStudentReportOpen(true)}
@@ -610,15 +622,15 @@ export default function App() {
       <AudioNarratorModal
         isOpen={audioModalOpen}
         onClose={() => setAudioModalOpen(false)}
-        audioScript={data.audioScript}
-        monumentName={data.info.name}
+        audioScript={safeAudioScript}
+        monumentName={safeInfo.name || ''}
       />
 
       {/* Phim tư liệu Video Modal */}
       <VideoModal
         isOpen={videoModalOpen}
         onClose={() => setVideoModalOpen(false)}
-        video={data.video}
+        video={safeVideo}
       />
 
       {/* Investigation Dossier, 5-question Quiz, Flashcards & Matching Pairs Modal */}
@@ -626,10 +638,10 @@ export default function App() {
         isOpen={investigationModalOpen}
         onClose={() => setInvestigationModalOpen(false)}
         dossier={selectedDossier}
-        quiz={data.investigation?.quiz}
-        flashcards={data.investigation?.flashcards}
-        matchingPairs={data.investigation?.matchingPairs}
-        monumentName={data.info.name}
+        quiz={safeInvestigation?.quiz}
+        flashcards={safeInvestigation?.flashcards}
+        matchingPairs={safeInvestigation?.matchingPairs}
+        monumentName={safeInfo.name || ''}
         mode={investigationMode}
         onSwitchToQuiz={() => setInvestigationMode('quiz')}
       />
@@ -638,8 +650,8 @@ export default function App() {
       <StudentReportModal
         isOpen={studentReportOpen}
         onClose={() => setStudentReportOpen(false)}
-        investigation={data.investigation}
-        monumentName={data.info.name}
+        investigation={safeInvestigation}
+        monumentName={safeInfo.name || ''}
       />
 
       {/* Next Monument Modal */}
@@ -654,7 +666,7 @@ export default function App() {
       <LightboxModal
         isOpen={lightboxOpen}
         onClose={() => setLightboxOpen(false)}
-        images={data.gallery}
+        images={safeGallery}
         currentIndex={lightboxIndex}
         setCurrentIndex={setLightboxIndex}
       />
@@ -669,16 +681,16 @@ export default function App() {
       <DocsModal
         isOpen={docsModalOpen}
         onClose={() => setDocsModalOpen(false)}
-        referencesList={data.info?.referencesList}
-        driveReferenceData={data.info?.driveReferenceData || data.investigation?.driveReferenceData}
-        monumentName={data.info?.name}
+        referencesList={safeInfo?.referencesList}
+        driveReferenceData={safeInfo?.driveReferenceData || safeInvestigation?.driveReferenceData}
+        monumentName={safeInfo?.name || ''}
       />
 
       {/* Full GPS Map Explorer Modal */}
       <MyMapModal
         isOpen={myMapModalOpen}
         onClose={() => setMyMapModalOpen(false)}
-        mapData={data.map}
+        mapData={safeMap}
         allMonuments={allMonumentsList}
         currentMonumentStt={currentStt}
         onSelectMonument={handleSelectMonument}
@@ -695,8 +707,8 @@ export default function App() {
       <AdminEditDrawer
         isOpen={adminDrawerOpen}
         onClose={() => setAdminDrawerOpen(false)}
-        data={data}
-        monumentData={data}
+        data={currentMonumentData}
+        monumentData={currentMonumentData}
         onSaveData={(newData) => setData(newData)}
         onUpdateOverview={handleUpdateOverview}
         onUpdateInfo={handleUpdateInfo}
