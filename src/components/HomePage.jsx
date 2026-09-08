@@ -264,63 +264,92 @@ export default function HomePage({
 
   return (
     <div className="bg-[#FAF4F0] min-h-screen text-[#2A1214] font-sans antialiased selection:bg-[#8B1417] selection:text-white pb-20 md:pb-0">
-      {/* 1. HERO BANNER WITH NATURAL MONUMENT BACKGROUND */}
-      <section className="relative bg-[#200507] text-white min-h-[460px] sm:min-h-[520px] md:min-h-[560px] flex flex-col justify-between overflow-visible shadow-2xl">
-        {/* Background Image: Giữ nguyên màu sắc tự nhiên, chỉ phủ bóng nhẹ vùng chữ */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <img
-            src="/assets/images/dinh-doc-lap-front.jpg"
-            alt="Di sản TP. Hồ Chí Minh"
-            className="w-full h-full object-cover object-center scale-100 transition-transform duration-1000"
-          />
-          {/* Localized soft gradient overlay: Chỉ làm tối vùng chữ bên trái & chân trang */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#200507]/90 via-transparent to-black/20 pointer-events-none" />
+      {/* 1. HERO BANNER WITH REVOLUTIONARY BURGUNDY RED THEME & HERITAGE MAP */}
+      <section className="relative bg-gradient-to-br from-[#4A0A0C] via-[#7E1819] to-[#200507] text-white min-h-[500px] sm:min-h-[540px] md:min-h-[580px] flex flex-col justify-between overflow-hidden shadow-2xl border-b-4 border-[#BA8438]/40">
+        {/* Background Decorative Elements: Subtle gold radial glow, historical star texture and heritage motifs */}
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#BA8438]/15 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 -right-20 w-[500px] h-[500px] bg-[#A81B1F]/30 rounded-full blur-3xl" />
+          <div className="absolute inset-0 bg-[radial-gradient(#BA8438_1px,transparent_1px)] [background-size:24px_24px] opacity-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#200507]/90 via-transparent to-black/20" />
         </div>
 
-        {/* Hero Main Content */}
-        <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 my-auto">
-          <div className="max-w-3xl space-y-3 sm:space-y-4">
-            <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-xl">
-              DI SẢN <br />
-              <span className="text-amber-200">TP. HỒ CHÍ MINH</span>
-            </h1>
+        {/* Hero Main Content with 2-Column Grid on Desktop */}
+        <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16 my-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            
+            {/* Left Column: Title, Subtitle & Action CTAs */}
+            <div className="lg:col-span-7 space-y-4 sm:space-y-5 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#BA8438]/20 border border-[#BA8438]/40 text-amber-200 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-sm shadow-inner">
+                <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
+                <span>Số hóa 103 Di tích Lịch sử - Văn hóa TP. Hồ Chí Minh</span>
+              </div>
 
-            <h2 className="font-serif-title text-base sm:text-xl lg:text-2xl text-amber-300 font-bold tracking-wide drop-shadow">
-              Hành trình khám phá những câu chuyện còn sống mãi
-            </h2>
+              <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-2xl">
+                BẢN ĐỒ DI SẢN <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
+                  TP. HỒ CHÍ MINH
+                </span>
+              </h1>
 
-            <p className="text-xs sm:text-sm md:text-base text-rose-100/90 leading-relaxed font-normal max-w-2xl drop-shadow-sm">
-              Hàng trăm di tích. Hàng nghìn câu chuyện. Và một thế hệ trẻ có thể tiếp nối.
-            </p>
+              <h2 className="font-serif-title text-base sm:text-xl lg:text-2xl text-amber-100/90 font-medium tracking-wide drop-shadow">
+                Hành trình khám phá những câu chuyện còn sống mãi
+              </h2>
 
-            {/* CTA Buttons: Full width on Mobile, Inline on Tablet & Desktop */}
-            <div className="pt-3 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 flex-wrap">
-              <button
-                onClick={onOpenExplorer}
-                className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#C42226] hover:from-[#731013] hover:to-[#a0181c] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-red-950/50 ring-2 ring-amber-400/50 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
-              >
-                <Landmark className="w-4 h-4 text-white" />
-                <span>Khám Phá Di Tích</span>
-              </button>
+              <p className="text-xs sm:text-sm md:text-base text-rose-100/80 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0 drop-shadow-sm">
+                Không gian học tập lịch sử số hóa tương tác dành cho học sinh, giáo viên và cộng đồng yêu di sản. Khám phá kho dữ liệu 103 di tích, sơ đồ địa lý, hồ sơ điều tra và thử thách kiến thức.
+              </p>
 
-              <button
-                onClick={onOpenMyMap}
-                className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-[#4A0A0C] via-[#630E11] to-[#7D1215] hover:from-[#3a0709] hover:to-[#570b0e] text-amber-100 font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-red-950/40 ring-2 ring-red-400/30 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
-              >
-                <MapPin className="w-4 h-4 text-amber-200" />
-                <span>Bản Đồ Di Tích</span>
-              </button>
+              {/* CTA Buttons */}
+              <div className="pt-2 sm:pt-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
+                <button
+                  onClick={onOpenExplorer}
+                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-[#200507] font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-950/40 ring-2 ring-amber-300 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
+                >
+                  <Landmark className="w-4 h-4 text-[#200507]" />
+                  <span>Khám Phá Di Tích</span>
+                </button>
 
-              <button
-                onClick={onOpenPassport}
-                className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-[#200507] font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-950/40 ring-2 ring-amber-300 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
-                title="Mở Hộ Chiếu Di Sản & Lưu hành trình khám phá"
-              >
-                <Compass className="w-4 h-4 text-[#200507] animate-spin-slow" />
-                <span>{activePassport ? `Hộ Chiếu: ${activePassport.fullName}` : 'Hộ Chiếu Di Sản'}</span>
-              </button>
+                <button
+                  onClick={onOpenMyMap}
+                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-[#4A0A0C]/80 hover:bg-[#380608] border border-amber-300/40 text-amber-100 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
+                >
+                  <MapPin className="w-4 h-4 text-amber-300" />
+                  <span>Bản Đồ Di Tích</span>
+                </button>
+
+                <button
+                  onClick={onOpenPassport}
+                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
+                  title="Mở Hộ Chiếu Di Sản & Lưu hành trình khám phá"
+                >
+                  <Compass className="w-4 h-4 text-amber-300" />
+                  <span>{activePassport ? `Hộ Chiếu: ${activePassport.fullName}` : 'Hộ Chiếu Di Sản'}</span>
+                </button>
+              </div>
             </div>
+
+            {/* Right Column: Uploaded Heritage Map on Revolutionary Burgundy Background */}
+            <div className="lg:col-span-5 flex justify-center items-center relative">
+              <div className="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-none group">
+                {/* Radiant Backdrop Glow */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 via-rose-500/20 to-transparent rounded-3xl blur-2xl group-hover:scale-105 transition-transform duration-700 pointer-events-none" />
+                
+                {/* Map Graphic Container */}
+                <div className="relative p-2 sm:p-4 rounded-3xl bg-gradient-to-b from-white/10 to-transparent border border-amber-300/20 shadow-2xl backdrop-blur-xs flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/assets/images/tphcm_heritage_map_hero.png"
+                    alt="Bản đồ các di tích tiêu biểu TP. Hồ Chí Minh"
+                    className="w-full h-auto max-h-[340px] sm:max-h-[380px] lg:max-h-[420px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)] filter contrast-105 hover:scale-103 transition-transform duration-500"
+                  />
+                  {/* Subtle corner badge */}
+                  <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-[#200507]/85 border border-[#BA8438]/40 text-[10px] sm:text-xs font-bold text-amber-200 shadow-md backdrop-blur-sm">
+                    103 Di tích lịch sử & văn hóa
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
