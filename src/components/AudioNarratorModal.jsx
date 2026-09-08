@@ -30,6 +30,40 @@ export default function AudioNarratorModal({
   const [duration, setDuration] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
 
+  // Normalize audioScript: whether it's a string, array of strings, or array of objects
+  const normalizedSections = React.useMemo(() => {
+    if (!audioScript) {
+      return [{ index: 0, title: 'Thuyết minh tổng quan', text: `Chào mừng bạn đến với ${monumentName}.` }];
+    }
+    if (typeof audioScript === 'string') {
+      const paragraphs = audioScript.split('\n\n').filter(p => p.trim().length > 0);
+      if (paragraphs.length > 0) {
+        return paragraphs.map((p, i) => ({
+          index: i,
+          title: `Phần ${i + 1}: ${p.slice(0, 35)}...`,
+          text: p.trim()
+        }));
+      }
+      return [{ index: 0, title: 'Thuyết minh di tích', text: audioScript }];
+    }
+    if (Array.isArray(audioScript)) {
+      if (audioScript.length === 0) {
+        return [{ index: 0, title: 'Thuyết minh tổng quan', text: `Chào mừng bạn đến với ${monumentName}.` }];
+      }
+      return audioScript.map((item, i) => {
+        if (typeof item === 'string') {
+          return { index: i, title: `Phần ${i + 1}`, text: item };
+        }
+        return {
+          index: item.index !== undefined ? item.index : i,
+          title: item.title || `Phần ${i + 1}`,
+          text: item.text || item.content || ''
+        };
+      });
+    }
+    return [{ index: 0, title: 'Thuyết minh tổng quan', text: `Chào mừng bạn đến với ${monumentName}.` }];
+  }, [audioScript, monumentName]);
+
   // Audio refs
   const studioAudioRef = useRef(null);
 
@@ -66,11 +100,11 @@ export default function AudioNarratorModal({
         const dur = studioAudioRef.current.duration;
         setDuration(dur);
         
-        if (audioScript && audioScript.length > 0 && dur > 0) {
+        if (normalizedSections && normalizedSections.length > 0 && dur > 0) {
           const prog = cur / dur;
           const estimatedSection = Math.min(
-            audioScript.length - 1,
-            Math.floor(prog * audioScript.length)
+            normalizedSections.length - 1,
+            Math.floor(prog * normalizedSections.length)
           );
           setCurrentSectionIndex(estimatedSection);
         }
@@ -98,7 +132,7 @@ export default function AudioNarratorModal({
 
   const speakSection = (index = currentSectionIndex) => {
     stopAllAudio();
-    if (!audioScript || !audioScript[index]) return;
+    if (!normalizedSections || !normalizedSections[index]) return;
 
     if (ttsEngine === 'studio' && isDinhDocLap) {
       if (studioAudioRef.current) {
@@ -116,14 +150,14 @@ export default function AudioNarratorModal({
   };
 
   const speakWithVietnameseVoice = (index) => {
-    if (!audioScript || !audioScript[index]) return;
-    const textToSpeak = `${audioScript[index].title}. ${audioScript[index].text}`;
+    if (!normalizedSections || !normalizedSections[index]) return;
+    const textToSpeak = `${normalizedSections[index].title}. ${normalizedSections[index].text}`;
 
     speakVietnamese(textToSpeak, {
       rate: rate,
       onStart: () => setIsPlaying(true),
       onEnd: () => {
-        if (index < audioScript.length - 1) {
+        if (index < normalizedSections.length - 1) {
           const nextIndex = index + 1;
           setCurrentSectionIndex(nextIndex);
           speakSection(nextIndex);
@@ -152,7 +186,7 @@ export default function AudioNarratorModal({
   const handleNext = () => {
     if (ttsEngine === 'studio' && isDinhDocLap) {
       handleSeekOffset(15);
-    } else if (currentSectionIndex < audioScript.length - 1) {
+    } else if (currentSectionIndex < normalizedSections.length - 1) {
       const nextIdx = currentSectionIndex + 1;
       setCurrentSectionIndex(nextIdx);
       if (isPlaying) speakSection(nextIdx);
@@ -172,7 +206,7 @@ export default function AudioNarratorModal({
   const handleSelectSection = (idx) => {
     setCurrentSectionIndex(idx);
     if (ttsEngine === 'studio' && isDinhDocLap && studioAudioRef.current && duration > 0) {
-      const targetTime = (idx / audioScript.length) * duration;
+      const targetTime = (idx / normalizedSections.length) * duration;
       studioAudioRef.current.currentTime = targetTime;
       if (!isPlaying) {
         studioAudioRef.current.play();
@@ -348,7 +382,7 @@ export default function AudioNarratorModal({
                     {isPlaying ? 'Đang phát thuyết minh...' : 'Đang tạm dừng'}
                   </div>
                   <div className="text-[11px] text-gray-500 font-medium truncate max-w-[200px]">
-                    {audioScript[currentSectionIndex]?.title || monumentName}
+                    {normalizedSections[currentSectionIndex]?.title || monumentName}
                   </div>
                 </div>
               </div>
@@ -404,14 +438,14 @@ export default function AudioNarratorModal({
           {/* Script Content Paragraphs with Synchronized Highlighting */}
           <div className="space-y-3">
             <h4 className="font-bold text-sm text-[#2C241E] flex items-center justify-between">
-              <span>Nội Dung Thuyết Minh Chi Tiết ({audioScript.length} phần):</span>
+              <span>Nội Dung Thuyết Minh Chi Tiết ({normalizedSections.length} phần):</span>
               <span className="text-xs text-[#7B1113] font-normal">
                 (Nhấn vào từng phần để nghe ngay)
               </span>
             </h4>
 
             <div className="space-y-2.5">
-              {audioScript.map((sec, idx) => {
+              {normalizedSections.map((sec, idx) => {
                 const isActive = currentSectionIndex === idx;
 
                 return (
