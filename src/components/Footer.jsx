@@ -17,7 +17,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs text-[#A89A8D] leading-relaxed max-w-md">
-              Dự án chuyển đổi số giáo dục lịch sử và quảng bá di sản văn hóa Thành phố Hồ Chí Minh. Mang đến không gian học tập trực quan, sinh động và kết nối lịch sử hào hùng đến thế hệ trẻ.
+              Dự án: &quot;Xây dựng hệ sinh thái số nhằm hỗ trợ học sinh THCS khám phá, tìm hiểu và nâng cao ý thức bảo tồn di tích lịch sử Thành phố Hồ Chí Minh&quot;
             </p>
           </div>
 
@@ -27,10 +27,9 @@ export default function Footer() {
               Danh mục khám phá
             </h4>
             <ul className="space-y-2 text-xs text-[#A89A8D]">
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Bản đồ di tích TP.HCM</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Kho hồ sơ điều tra 30/4</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Thuyết minh tương tác giọng nói</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Thư viện ảnh lịch sử</a></li>
+              <li className="hover:text-amber-300 transition-colors cursor-pointer">• Bản đồ tương tác</li>
+              <li className="hover:text-amber-300 transition-colors cursor-pointer">• Kho hồ sơ điều tra</li>
+              <li className="hover:text-amber-300 transition-colors cursor-pointer">• Video, thuyết minh, thư viện ảnh</li>
             </ul>
           </div>
 
@@ -40,8 +39,7 @@ export default function Footer() {
               Liên hệ & Bản quyền
             </h4>
             <p className="text-xs text-[#A89A8D] leading-relaxed">
-              📍 Địa chỉ: 135 Nam Kỳ Khởi Nghĩa, Phường Bến Thành, Quận 1, TP.HCM<br />
-              🏛️ Di tích Lịch sử Dinh Độc Lập
+              📍 Địa chỉ: Trường THCS Xà Bang, xã Châu Đức, TP. Hồ Chí Minh
             </p>
             <div className="pt-1 flex items-center gap-2 text-[11px] text-amber-300/80">
               <Shield className="w-3.5 h-3.5" />
