@@ -221,17 +221,6 @@ export default function MyMapModal({
               <Layers className="w-3.5 h-3.5" />
               <span>Google My Maps</span>
             </button>
-            <button
-              onClick={() => setViewMode('tphcm_map')}
-              className={`px-3 py-1.5 rounded-lg font-bold text-xs transition-all cursor-pointer flex items-center gap-1.5 ${
-                viewMode === 'tphcm_map'
-                  ? 'bg-[#7B1113] text-white shadow-xs'
-                  : 'text-[#6B5E55] hover:text-[#7B1113]'
-              }`}
-            >
-              <Compass className="w-3.5 h-3.5" />
-              <span>Bản Đồ TP.HCM (Tư Liệu)</span>
-            </button>
           </div>
 
           {/* Search & Type filter (only in Leaflet mode) */}
@@ -286,7 +275,7 @@ export default function MyMapModal({
         <div className="flex-1 w-full bg-gray-100 relative">
           {viewMode === 'leaflet103' ? (
             <div ref={mapContainerRef} className="w-full h-full" />
-          ) : viewMode === 'mymaps' ? (
+          ) : (
             <iframe
               src={embedUrl}
               width="100%"
@@ -296,17 +285,6 @@ export default function MyMapModal({
               loading="lazy"
               allowFullScreen
             />
-          ) : (
-            <div className="w-full h-full bg-[#1A1A1A] flex flex-col items-center justify-center p-4 relative overflow-auto">
-              <iframe
-                src="https://drive.google.com/file/d/1MncmQZXrDI_70HKjR0MIkYOM8Nx9hkrs/preview"
-                width="100%"
-                height="100%"
-                title="Bản đồ Thành phố Hồ Chí Minh"
-                className="w-full h-full border-0 rounded-2xl shadow-xl bg-white"
-                allowFullScreen
-              />
-            </div>
           )}
         </div>
 
