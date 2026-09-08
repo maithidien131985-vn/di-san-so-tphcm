@@ -3,7 +3,8 @@ import Header from './components/Header';
 import HomePage from './components/HomePage';
 import HeroBanner from './components/HeroBanner';
 import QuickActionCards from './components/QuickActionCards';
-import MonumentMediaAndLocationSection from './components/MonumentMediaAndLocationSection';
+import MonumentLocationChallengeSection from './components/MonumentLocationChallengeSection';
+import MediaAudioVideoRow from './components/MediaAudioVideoRow';
 import HistorySection from './components/HistorySection';
 import InfoSidebar from './components/InfoSidebar';
 import MonumentInteractiveMiniGame from './components/MonumentInteractiveMiniGame';
@@ -473,8 +474,8 @@ export default function App() {
             onOpenExplorer={() => setExplorerModalOpen(true)}
           />
 
-          {/* Main Detail Content Area */}
-          <main className="flex-1 space-y-6 pb-6">
+          {/* Main Detail Content Area - Full Width */}
+          <main className="w-full flex-1 space-y-6 pb-6">
             {/* 1. Hero Banner with Integrated Breadcrumb & Bottom Gallery Thumbnails */}
             <HeroBanner
               info={data.info}
@@ -487,7 +488,7 @@ export default function App() {
               onNavigateHome={() => handleNavigate('home')}
             />
 
-            {/* 2. Quick Action Cards (3 cards: KHÁM PHÁ - ĐIỀU TRA - HÀNH ĐỘNG) */}
+            {/* 2. Quick Action Cards (3 cards: KHÁM PHÁ - GIẢI MÃ - HÀNH ĐỘNG) */}
             <QuickActionCards
               onOpenAudio={() => setAudioModalOpen(true)}
               onOpenInvestigation={() => {
@@ -498,16 +499,24 @@ export default function App() {
               onOpenContribute={() => setContributeModalOpen(true)}
             />
 
-            {/* 3. Ô VIDEO VÀ Ô VỊ TRÍ (New Component) */}
-            <MonumentMediaAndLocationSection
-              video={data.video}
+            {/* 3. BẢN ĐỒ VỊ TRÍ Ở TRÊN + THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" */}
+            <MonumentLocationChallengeSection
               info={data.info}
               map={data.map}
               onOpenMyMap={() => setMyMapModalOpen(true)}
             />
 
-            {/* 4. Giá trị lịch sử, Dấu mốc & Bảng thông tin di tích */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">
+            {/* 4. VIDEO VÀ ÂM THANH CHUNG 1 DÒNG + THỬ THÁCH "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
+            <MediaAudioVideoRow
+              video={data.video}
+              info={data.info}
+              audioScript={data.audioScript}
+              onOpenVideoModal={() => setVideoModalOpen(true)}
+              onOpenAudioModal={() => setAudioModalOpen(true)}
+            />
+
+            {/* 5. Giá trị lịch sử, Dấu mốc & Thử thách dòng thời gian + Kho báu ảnh câu chuyện */}
+            <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-2">
               <ScrollReveal>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                   <div className="lg:col-span-8">
@@ -538,7 +547,13 @@ export default function App() {
               </ScrollReveal>
             </div>
 
-            {/* 5. Trò Chơi Nhỏ Tương Tác: Thử thách đố vui & Chinh phục huy hiệu sau khi xem Video / Audio */}
+            {/* 6. TRƯỚC PHẦN CÂU HỎI ĐIỀU TRA: 3 Ô Nhân vật liên quan, Hiện vật tiêu biểu, Sự kiện tiêu biểu */}
+            <ThreeKeyHighlightsSection
+              keyHighlights={data.keyHighlights}
+              monumentName={data.info.name}
+            />
+
+            {/* 7. Trò Chơi Nhỏ Tương Tác: Thử thách đố vui & Chinh phục huy hiệu sau khi xem Video / Audio */}
             <MonumentInteractiveMiniGame
               quiz={data.investigation?.quiz}
               monumentName={data.info.name}
@@ -548,13 +563,7 @@ export default function App() {
               onPassportUpdate={(updatedPassport) => setActivePassport(updatedPassport)}
             />
 
-            {/* 7. TRƯỚC PHẦN CÂU HỎI ĐIỀU TRA: 3 Ô Nhân vật liên quan, Hiện vật tiêu biểu, Sự kiện tiêu biểu */}
-            <ThreeKeyHighlightsSection
-              keyHighlights={data.keyHighlights}
-              monumentName={data.info.name}
-            />
-
-            {/* 8. HỒ SƠ ĐIỀU TRA & Ô TÀI LIỆU THAM KHẢO */}
+            {/* 8. HỒ SƠ ĐIỀU TRA & Ô TÀI LIỆU THAM KHẢO (Nút Bắt đầu điều tra & Nhận huy hiệu ấn tượng) */}
             <div id="investigation-section" className="pt-2">
               <InvestigationSection
                 investigation={data.investigation}

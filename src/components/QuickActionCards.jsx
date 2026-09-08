@@ -68,7 +68,7 @@ export default function QuickActionCards({
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-10 relative z-30">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 -mt-6 sm:-mt-10 relative z-30">
       <ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           {cards.map((card) => (

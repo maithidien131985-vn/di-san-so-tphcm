@@ -1,5 +1,6 @@
 import React from 'react';
-import { FolderSearch, ArrowRight, BookOpen, Award, ExternalLink, Bookmark } from 'lucide-react';
+import { FolderSearch, ArrowRight, BookOpen, Award, ExternalLink, Bookmark, Sparkles, ShieldCheck, Compass } from 'lucide-react';
+import confetti from 'canvas-confetti';
 import ScrollReveal from './ScrollReveal';
 
 export default function InvestigationSection({
@@ -9,7 +10,7 @@ export default function InvestigationSection({
   onOpenStudentReport,
   onOpenDocsModal
 }) {
-  const defaultQuestion = investigation?.investigationQuestion || "Vì sao ngày 30–4–1975 trở thành dấu mốc lịch sử?";
+  const defaultQuestion = investigation?.investigationQuestion || "Vì sao di tích này trở thành dấu mốc lịch sử tiêu biểu của dân tộc?";
   
   const driveRef = investigation?.driveReferenceData || {};
   const firstCitation = driveRef.citationsList?.[0]?.title || driveRef.citations?.split('\n')[0] || "Hồ sơ khoa học và văn bản di tích - Sở Văn hóa và Thể thao TP.HCM";
@@ -17,96 +18,130 @@ export default function InvestigationSection({
 
   const thumbnailImage = monumentImage || "/assets/images/dinh-doc-lap-front.jpg";
 
+  const handleStartReport = () => {
+    confetti({ particleCount: 35, spread: 60, origin: { y: 0.7 } });
+    if (onOpenStudentReport) onOpenStudentReport();
+  };
+
+  const handleStartBadgeQuiz = () => {
+    confetti({ particleCount: 50, spread: 70, origin: { y: 0.7 } });
+    if (onStartQuiz) onStartQuiz();
+  };
+
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-6">
       <ScrollReveal>
-        <div className="bg-[#FAF5ED] rounded-3xl p-6 sm:p-8 border border-[#EAE3D9] shadow-xs">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <div className="bg-gradient-to-br from-[#FFFDF9] via-[#FAF5ED] to-[#F5ECE0] rounded-3xl p-6 sm:p-9 border-2 border-amber-300/80 shadow-lg relative overflow-hidden">
+          {/* Subtle Background Badge Watermark */}
+          <div className="absolute right-0 top-0 translate-x-1/4 -translate-y-1/4 opacity-5 pointer-events-none">
+            <Award className="w-96 h-96 text-[#7E1819]" />
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch relative z-10">
             {/* Left 7 Cols: Red Folder Icon, Tailored Investigation Question & 2 Action Buttons */}
-            <div className="lg:col-span-7 flex flex-col justify-between space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#7E1819] text-white flex items-center justify-center font-bold shrink-0 shadow-sm mt-1">
-                  <FolderSearch className="w-6 h-6 text-amber-200" />
+            <div className="lg:col-span-7 flex flex-col justify-between space-y-6">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3.5">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#7E1819] to-[#9E1B1D] text-white flex items-center justify-center font-bold shrink-0 shadow-md border-2 border-amber-300">
+                    <FolderSearch className="w-7 h-7 text-amber-200" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-widest text-[#7E1819] block">
+                        HỒ SƠ ĐIỀU TRA DI SẢN
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full bg-amber-200/80 text-amber-950 font-black text-[10px] uppercase">
+                        Nhiệm Vụ Thám Hiểm
+                      </span>
+                    </div>
+                    <p className="text-xs text-[#666666]">
+                      Đóng vai nhà thám hiểm trẻ tuổi để phân tích tư liệu và giải mã lịch sử
+                    </p>
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <span className="font-serif-title font-black text-sm sm:text-base uppercase tracking-wider text-[#7E1819] block">
-                    HỒ SƠ ĐIỀU TRA
-                  </span>
+
+                {/* Main Challenge Box */}
+                <div className="p-5 rounded-2xl bg-white/90 border border-amber-200/80 shadow-sm space-y-2">
+                  <div className="flex items-center gap-2 text-amber-900 text-xs font-bold">
+                    <Sparkles className="w-4 h-4 text-amber-600" />
+                    <span>CÂU HỎI TRỌNG TÂM CẦN ĐIỀU TRA:</span>
+                  </div>
                   <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#2C241E] leading-snug">
                     {defaultQuestion}
                   </h3>
-                  <p className="text-xs text-[#777777] leading-relaxed">
-                    Hãy khám phá chứng cứ, phân tích tư liệu và đưa ra kết luận của riêng em.
+                  <p className="text-xs text-[#666666] leading-relaxed pt-1">
+                    Hãy vận dụng tất cả các chứng cứ đã quan sát từ Bản đồ GPS, Thước phim tư liệu, Audio thuyết minh và Trục thời gian để hoàn thành phiếu điều tra.
                   </p>
                 </div>
               </div>
 
-              {/* 2 Buttons at bottom of Left Column */}
-              <div className="pt-2 flex flex-wrap items-center gap-3">
-                {/* Nút 1: Bắt đầu điều tra -> Mở phiếu trả lời câu hỏi điều tra */}
+              {/* 2 Impressive Gamified Action Buttons */}
+              <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                {/* Nút 1: Bắt đầu điều tra -> Hiệu ứng Đỏ Đô Ánh Kim */}
                 <button
-                  onClick={onOpenStudentReport}
-                  className="px-5 py-2.5 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white text-xs sm:text-sm font-bold shadow-md transition-all hover:scale-102 flex items-center gap-2 cursor-pointer"
+                  onClick={handleStartReport}
+                  className="group relative px-6 py-4 rounded-2xl bg-gradient-to-r from-[#7E1819] via-[#9E1B1D] to-[#7E1819] text-white text-sm sm:text-base font-black shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 cursor-pointer border-2 border-amber-400 overflow-hidden"
                   title="Trả lời câu hỏi điều tra cốt lõi và ghi chép phiếu học tập"
                 >
-                  <span>🔭 Bắt đầu điều tra</span>
-                  <ArrowRight className="w-4 h-4 text-amber-200" />
+                  <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <Compass className="w-5 h-5 text-amber-300 group-hover:rotate-45 transition-transform duration-500" />
+                  <span>🔭 BẮT ĐẦU ĐIỀU TRA</span>
+                  <ArrowRight className="w-5 h-5 text-amber-200 group-hover:translate-x-1 transition-transform" />
                 </button>
 
-                {/* Nút 2: Chinh phục huy hiệu -> Mở modal trắc nghiệm, flashcard, ghép đôi */}
+                {/* Nút 2: Nhận huy hiệu -> Hiệu ứng Vàng Hoàng Gia 3D */}
                 <button
-                  onClick={onStartQuiz}
-                  className="px-4 py-2.5 rounded-xl bg-white hover:bg-amber-50 text-[#BA8438] hover:text-[#a06f2b] border-2 border-[#BA8438] text-xs sm:text-sm font-bold shadow-2xs transition-all hover:scale-102 flex items-center gap-2 cursor-pointer"
+                  onClick={handleStartBadgeQuiz}
+                  className="group relative px-6 py-4 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-amber-950 text-sm sm:text-base font-black shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 cursor-pointer border-2 border-yellow-200 overflow-hidden"
                   title="Thử thách trả lời câu hỏi trắc nghiệm, ghép đôi, flashcard để nhận huy hiệu"
                 >
-                  <Award className="w-4 h-4 text-[#BA8438]" />
-                  <span>🏆 Chinh phục huy hiệu</span>
+                  <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <Award className="w-5 h-5 text-amber-950 group-hover:scale-125 transition-transform duration-300 animate-bounce" />
+                  <span>🏆 NHẬN HUY HIỆU DI SẢN</span>
+                  <Sparkles className="w-4 h-4 text-amber-900" />
                 </button>
               </div>
             </div>
 
-            {/* Right 5 Cols: CHỈ 1 Ô "Tư liệu" (Tài liệu tham khảo từ Google Drive) */}
+            {/* Right 5 Cols: Ô "Tư liệu" (Tài liệu tham khảo từ Google Drive) */}
             <div className="lg:col-span-5 flex">
               <div
                 onClick={onOpenDocsModal}
-                className="w-full bg-white rounded-2xl p-4 sm:p-5 border border-[#EAE3D9] hover:border-[#7E1819]/50 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between cursor-pointer group"
+                className="w-full bg-white rounded-2xl p-5 border border-amber-200 hover:border-[#7E1819] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group"
               >
-                <div className="space-y-3">
-                  <div className="h-36 sm:h-40 rounded-xl overflow-hidden bg-gray-100 border border-gray-100 relative">
+                <div className="space-y-3.5">
+                  <div className="h-44 sm:h-48 rounded-xl overflow-hidden bg-gray-100 border border-gray-100 relative shadow-inner">
                     <img
                       src={thumbnailImage}
                       alt="Tư liệu tham khảo"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
-                      <span className="text-[11px] font-black uppercase tracking-wider text-amber-200 bg-[#7E1819]/80 px-2.5 py-1 rounded-lg backdrop-blur-xs">
-                        📚 Tài liệu tham khảo
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-3.5">
+                      <span className="text-xs font-black uppercase tracking-wider text-amber-200 bg-[#7E1819]/90 px-3 py-1 rounded-lg backdrop-blur-xs border border-amber-400/30">
+                        📚 Kho Hồ Sơ Tham Khảo
                       </span>
                     </div>
                   </div>
 
                   <div>
-                    <h4 className="font-serif-title font-black text-base text-[#2C241E] group-hover:text-[#7E1819] transition-colors flex items-center gap-1.5">
-                      <span>Tư liệu</span>
-                      <Bookmark className="w-3.5 h-3.5 text-[#7E1819]" />
+                    <h4 className="font-serif-title font-black text-base sm:text-lg text-[#2C241E] group-hover:text-[#7E1819] transition-colors flex items-center justify-between">
+                      <span>Tài Liệu & Căn Cứ Lịch Sử</span>
+                      <Bookmark className="w-4 h-4 text-[#7E1819]" />
                     </h4>
-                    <p className="text-[11px] text-[#666] leading-relaxed line-clamp-2 mt-1">
+                    <p className="text-xs text-[#555] leading-relaxed line-clamp-2 mt-1">
                       {firstCitation}
                     </p>
                     {secondCitation && (
-                      <p className="text-[11px] text-[#888] leading-relaxed line-clamp-1 mt-0.5">
+                      <p className="text-xs text-[#777] leading-relaxed line-clamp-1 mt-1">
                         • {secondCitation}
                       </p>
                     )}
                   </div>
                 </div>
 
-                <div className="pt-3 mt-3 border-t border-gray-100 text-xs font-bold text-[#7E1819] flex items-center justify-between group-hover:underline">
-                  <span className="flex items-center gap-1">
-                    <BookOpen className="w-3.5 h-3.5" />
-                    <span>Khám phá &amp; Đọc tài liệu</span>
-                  </span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                <div className="pt-3 border-t border-[#F0EAE1] flex items-center justify-between text-xs text-[#7E1819] font-bold">
+                  <span className="group-hover:underline">Tra cứu toàn bộ hồ sơ khoa học & văn bản pháp lý &rarr;</span>
+                  <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                 </div>
               </div>
             </div>

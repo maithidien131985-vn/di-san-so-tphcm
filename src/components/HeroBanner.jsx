@@ -37,7 +37,7 @@ export default function HeroBanner({
       ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-4 select-none">
+    <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-2 pb-4 select-none">
       {/* 1. Top Breadcrumb & Quick Badges */}
       <div className="flex items-center justify-between gap-2 text-xs sm:text-sm text-stone-600 font-medium py-2.5">
         <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
