@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   UserCheck, Package, Flag, Sparkles, BookOpen,
   Unlock, Lock, Eye, ShieldCheck, Award, Star, Zap
@@ -71,6 +71,12 @@ export default function ThreeKeyHighlightsSection({ keyHighlights, monumentName 
 
   const [unlockedCards, setUnlockedCards] = useState({});
   const [allUnlocked, setAllUnlocked] = useState(false);
+
+  // Reset state về trạng thái bị khóa mới mỗi khi học sinh chuyển sang di tích khác
+  useEffect(() => {
+    setUnlockedCards({});
+    setAllUnlocked(false);
+  }, [monumentName, keyHighlights]);
 
   const unlockedCount = Object.values(unlockedCards).filter(Boolean).length;
 
