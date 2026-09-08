@@ -269,11 +269,11 @@ export default function HomePage({
             <div className="lg:col-span-5 space-y-4 sm:space-y-6 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#BA8438]/20 border border-[#BA8438]/40 text-amber-200 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-sm shadow-inner">
                 <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
-                <span>Số hóa 103 Di tích Lịch sử - Văn hóa TP. Hồ Chí Minh</span>
+                <span>Số hóa 103 Di tích Lịch sử - Văn hóa cấp quốc gia và cấp quốc gia đặc biệt TP. Hồ Chí Minh</span>
               </div>
 
               <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-2xl">
-                BẢN ĐỒ DI SẢN <br />
+                DI SẢN <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
                   TP. HỒ CHÍ MINH
                 </span>
@@ -539,15 +539,11 @@ export default function HomePage({
           <div className="bg-[#FFFDFB] rounded-3xl p-4 sm:p-6 md:p-10 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-6 sm:space-y-8">
             {/* Header */}
             <div className="text-center space-y-2 max-w-2xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-2xs">
-                <Compass className="w-4 h-4 text-[#8B1417]" />
-                <span>Trắc Nghiệm Khảo Sát &amp; Gợi Ý Cá Nhân Hóa</span>
-              </div>
               <h2 className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl uppercase tracking-wider text-[#2A1214]">
                 KHÁM PHÁ THEO CÁCH CỦA BẠN
               </h2>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Hãy cho chúng tôi biết nơi bạn ở, mục đích chuyến đi và chủ đề đam mê để nhận ngay gợi ý di tích phù hợp nhất!
+                Hãy cho chúng tôi biết nơi bạn ở và chủ đề đam mê để nhận ngay gợi ý di tích phù hợp nhất!
               </p>
             </div>
 
@@ -658,7 +654,7 @@ export default function HomePage({
                 <div className="flex items-center gap-2">
                   <Flame className="w-5 h-5 text-[#8B1417] fill-[#8B1417]" />
                   <span className="font-serif-title font-black text-xs sm:text-sm md:text-base uppercase tracking-wider text-[#8B1417]">
-                    KẾT QUẢ GỢI Ý ({recommendedMonuments.length} Di Tích Hợp Lý Nhất)
+                    CÁC DI TÍCH DÀNH CHO BẠN
                   </span>
                 </div>
                 <button
