@@ -124,6 +124,43 @@ class GameAudioEngine {
       osc.stop(now + 0.06);
     } catch (e) {}
   }
+
+  // Âm thanh kèn thắng cuộc vui nhộn chúc mừng khi chinh phục đủ 5 câu
+  playVictoryFanfare() {
+    if (!this.soundEnabled) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      const notes = [
+        { freq: 523.25, time: 0.00, dur: 0.12, type: 'triangle' }, // C5
+        { freq: 659.25, time: 0.12, dur: 0.12, type: 'triangle' }, // E5
+        { freq: 783.99, time: 0.24, dur: 0.14, type: 'triangle' }, // G5
+        { freq: 1046.50, time: 0.38, dur: 0.22, type: 'triangle' }, // C6
+        { freq: 783.99, time: 0.60, dur: 0.12, type: 'triangle' }, // G5
+        { freq: 1046.50, time: 0.72, dur: 0.14, type: 'triangle' }, // C6
+        { freq: 1318.51, time: 0.86, dur: 0.45, type: 'triangle' }, // E6
+        // Hợp âm vang sáng
+        { freq: 523.25, time: 0.86, dur: 0.45, type: 'sine' }, // C5
+        { freq: 659.25, time: 0.86, dur: 0.45, type: 'sine' }, // E5
+        { freq: 1046.50, time: 0.86, dur: 0.45, type: 'sine' }  // C6
+      ];
+
+      const now = this.ctx.currentTime;
+      notes.forEach(({ freq, time, dur, type }) => {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = type || 'triangle';
+        osc.frequency.setValueAtTime(freq, now + time);
+        gain.gain.setValueAtTime(0.001, now + time);
+        gain.gain.linearRampToValueAtTime(0.18, now + time + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + time + dur);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(now + time);
+        osc.stop(now + time + dur + 0.05);
+      });
+    } catch (e) {}
+  }
 }
 
 const gameAudio = new GameAudioEngine();
@@ -140,15 +177,15 @@ export default function InvestigationSection({
   onCompleteInvestigation
 }) {
   // ==========================================
-  // CỘT 1: MINI-GAME TRUY TÌM MANH MỐI
+  // CỘT 1: CHINH PHỤC HUY HIỆU DI SẢN (5 CÂU HỎI THỬ THÁCH)
   // ==========================================
-  const defaultQuestions = [
+  const default5Questions = [
     {
       id: 1,
-      category: '🔍 Manh mối Sự kiện',
+      category: '⚔️ Mốc Son & Sự Kiện',
       question: `Sự kiện lịch sử nổi bật nhất gắn liền với di tích "${monumentName}" là gì?`,
       options: [
-        `Gắn liền với các mốc son đấu tranh hào hùng và dấu ấn lịch sử của dân tộc`,
+        `Gắn liền với các mốc son đấu tranh hào hùng và dấu ấn lịch sử vẻ vang của dân tộc`,
         'Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21',
         'Công trình xây dựng phục vụ du lịch sinh thái thuần túy',
         'Địa điểm tổ chức hội chợ nông sản thường niên'
@@ -158,8 +195,8 @@ export default function InvestigationSection({
     },
     {
       id: 2,
-      category: '🏺 Manh mối Hiện vật',
-      question: `Báu vật hiện vật hoặc nhân vật lịch sử gắn liền với "${monumentName}" truyền tải thông điệp gì?`,
+      category: '🏺 Hiện Vật & Báu Vật',
+      question: `Báu vật hiện vật hoặc các chứng tích nguyên bản tại "${monumentName}" truyền tải thông điệp gì?`,
       options: [
         'Tinh thần kiên cường bất khuất, sự cống hiến và di sản văn hóa quý báu cho thế hệ mai sau',
         'Những câu chuyện truyền thuyết không có thật',
@@ -171,8 +208,34 @@ export default function InvestigationSection({
     },
     {
       id: 3,
-      category: '🧭 Nhật ký Thám hiểm',
-      question: 'Sau hành trình khám phá, sứ mệnh cao đẹp nhất của Nhà Thám Hiểm Di Sản trẻ là gì?',
+      category: '👤 Nhân Vật & Chứng Nhân',
+      question: `Các anh hùng, nhân vật lịch sử và thế hệ đi trước gắn liền với "${monumentName}" tiêu biểu cho phẩm chất nào?`,
+      options: [
+        'Lòng yêu nước nồng nàn, ý chí quật cường và tinh thần hy sinh vì độc lập tự do của Tổ quốc',
+        'Lợi ích cá nhân và mong muốn làm giàu nhanh chóng',
+        'Sự thỏa hiệp và chấp nhận số phận',
+        'Thái độ bàng quan trước thời cuộc'
+      ],
+      correctIndex: 0,
+      explanation: `Tinh thần bất khuất của các thế hệ tiền nhân tại ${monumentName} mãi là tấm gương sáng ngời cho thế hệ trẻ học tập.`
+    },
+    {
+      id: 4,
+      category: '🏛️ Tinh Hoa Kiến Trúc',
+      question: `Nét độc đáo về mặt không gian, kiến trúc hoặc giá trị văn hóa tại "${monumentName}" được khẳng định qua điều gì?`,
+      options: [
+        'Sự kết tinh của bàn tay tài hoa, bản sắc văn hóa dân tộc và giá trị trường tồn cùng thời gian',
+        'Kiểu dáng sao chép hiện đại không có bản sắc',
+        'Công trình tạm bợ không được bảo tồn',
+        'Chỉ là kiến trúc dân dụng thông thường'
+      ],
+      correctIndex: 0,
+      explanation: `Không gian kiến trúc và cảnh quan tại ${monumentName} chứa đựng linh hồn văn hóa và kỹ nghệ xây dựng độc đáo của tiền nhân.`
+    },
+    {
+      id: 5,
+      category: '🧭 Ý Nghĩa & Trách Nhiệm',
+      question: `Sau khi chinh phục và tìm hiểu di tích "${monumentName}", sứ mệnh cao đẹp nhất của học sinh chúng ta là gì?`,
       options: [
         'Trân trọng lịch sử, bảo vệ cảnh quan di tích và tích cực lan tỏa niềm tự hào di sản đến mọi người',
         'Vẽ bậy, khắc tên lên tường và hiện vật',
@@ -180,11 +243,22 @@ export default function InvestigationSection({
         'Thờ ơ, không quan tâm đến các giá trị truyền thống'
       ],
       correctIndex: 0,
-      explanation: 'Gìn giữ và lan tỏa ngọn lửa tình yêu di sản chính là phần thưởng ý nghĩa nhất của chuyến thám hiểm này!'
+      explanation: 'Gìn giữ và lan tỏa ngọn lửa tình yêu di sản chính là phần thưởng ý nghĩa nhất của hành trình Chinh Phục Huy Hiệu!'
     }
   ];
 
-  const questions = (investigation?.quiz && investigation.quiz.length > 0) ? investigation.quiz : defaultQuestions;
+  // Đảm bảo luôn có đủ đúng 5 câu hỏi phong phú
+  const questions = React.useMemo(() => {
+    const customQuiz = investigation?.quiz || [];
+    if (customQuiz.length >= 5) {
+      return customQuiz.slice(0, 5);
+    }
+    if (customQuiz.length > 0) {
+      const remaining = default5Questions.slice(customQuiz.length);
+      return [...customQuiz, ...remaining];
+    }
+    return default5Questions;
+  }, [investigation, monumentName]);
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -216,7 +290,7 @@ export default function InvestigationSection({
 
     const isCorrect = index === currentQ.correctIndex;
     if (isCorrect) {
-      const earnedXP = 100 + streak * 25;
+      const earnedXP = 150 + streak * 25;
       setScore(prev => prev + earnedXP);
       setStreak(prev => prev + 1);
       if (streak > 0) {
@@ -230,6 +304,50 @@ export default function InvestigationSection({
     }
   };
 
+  const triggerVictoryCelebration = () => {
+    gameAudio.playVictoryFanfare();
+    try {
+      // Đợt 1: Bung pháo hoa tâm điểm rực rỡ
+      confetti({
+        particleCount: 110,
+        spread: 85,
+        origin: { y: 0.55 },
+        colors: ['#FFE81F', '#FFA500', '#FF3366', '#00E5FF', '#76FF03']
+      });
+
+      // Đợt 2: Pháo hoa cánh tả
+      setTimeout(() => {
+        confetti({
+          particleCount: 75,
+          angle: 60,
+          spread: 65,
+          origin: { x: 0.1, y: 0.6 }
+        });
+      }, 180);
+
+      // Đợt 3: Pháo hoa cánh hữu
+      setTimeout(() => {
+        confetti({
+          particleCount: 75,
+          angle: 120,
+          spread: 65,
+          origin: { x: 0.9, y: 0.6 }
+        });
+      }, 360);
+
+      // Đợt 4: Mưa ngôi sao vàng vinh danh
+      setTimeout(() => {
+        confetti({
+          particleCount: 60,
+          spread: 120,
+          origin: { y: 0.5 },
+          shapes: ['star'],
+          colors: ['#FFD700', '#FFA500', '#FFF8DC', '#FF4500']
+        });
+      }, 540);
+    } catch (e) {}
+  };
+
   const handleNextQuestion = () => {
     gameAudio.playTap();
     if (currentIdx < questions.length - 1) {
@@ -238,11 +356,10 @@ export default function InvestigationSection({
       setIsAnswered(false);
     } else {
       setIsGameOver(true);
-      try {
-        confetti({ particleCount: 80, spread: 80, origin: { y: 0.6 } });
-      } catch (e) {}
+      triggerVictoryCelebration();
+
       if (activePassport) {
-        const updated = checkInMonument(monumentStt, monumentName, score || 100);
+        const updated = checkInMonument(monumentStt, monumentName, score || 750);
         if (updated && onPassportUpdate) onPassportUpdate(updated);
       }
       if (onCompleteInvestigation) {
@@ -294,12 +411,12 @@ export default function InvestigationSection({
         <div className="mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-3 border-b border-[#EAE3D9]">
           <div className="space-y-1.5">
             <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
-              <Compass className="w-4 h-4 text-[#7E1819]" />
+              <Award className="w-4 h-4 text-[#7E1819]" />
               <span>HÀNH TRÌNH THÁM HIỂM & GIẢI MÃ DI SẢN</span>
             </div>
             <WordByWordTitle
               as="h2"
-              text="Truy Tìm Manh Mối • Hồ Sơ Điều Tra • Tài Liệu Di Tích"
+              text="Chinh Phục Huy Hiệu • Hồ Sơ Điều Tra • Tài Liệu Di Tích"
               className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl text-[#2C241E]"
               staggerDelay={0.05}
             />
@@ -313,15 +430,15 @@ export default function InvestigationSection({
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
           
           {/* ========================================================================= */}
-          {/* CỘT 1: TRUY TÌM MANH MỐI DI SẢN (MINI GAME) */}
+          {/* CỘT 1: CHINH PHỤC HUY HIỆU DI SẢN (MINI GAME 5 CÂU HỎI) */}
           {/* ========================================================================= */}
           <div className="bg-gradient-to-br from-[#220709] via-[#3B0A0E] to-[#4F0D12] text-white rounded-3xl p-5 sm:p-6 border-2 border-amber-500/30 shadow-xl flex flex-col justify-between relative overflow-hidden ring-2 ring-[#7E1819]/20">
             {/* Header MiniGame */}
             <div className="space-y-3 pb-3 border-b border-amber-400/20">
               <div className="flex items-center justify-between gap-2">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 text-xs font-black uppercase tracking-wider">
-                  <Key className="w-3.5 h-3.5 text-amber-300" />
-                  <span>TRUY TÌM MANH MỐI</span>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 text-xs font-black uppercase tracking-wider shadow-inner">
+                  <Award className="w-3.5 h-3.5 text-amber-300" />
+                  <span>CHINH PHỤC HUY HIỆU</span>
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -342,10 +459,11 @@ export default function InvestigationSection({
 
               {/* Tiến trình manh mối */}
               <div className="flex items-center justify-between text-xs text-rose-200">
-                <span className="font-bold text-amber-200 text-xs sm:text-sm">
-                  {currentQ?.category || '🔍 Câu Hỏi Di Sản'}
+                <span className="font-bold text-amber-200 text-xs sm:text-sm flex items-center gap-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                  <span>{currentQ?.category || '🔍 Thử Thách Di Sản'}</span>
                 </span>
-                <span className="text-xs font-mono bg-white/10 px-2.5 py-0.5 rounded-md text-amber-300">
+                <span className="text-xs font-mono font-bold bg-white/10 px-2.5 py-0.5 rounded-md text-amber-300 border border-amber-400/30">
                   {currentIdx + 1}/{questions.length}
                 </span>
               </div>
@@ -404,22 +522,32 @@ export default function InvestigationSection({
                 )}
               </div>
             ) : (
-              <div className="py-6 flex-1 flex flex-col items-center justify-center text-center space-y-3 animate-fadeIn">
-                <div className="w-14 h-14 rounded-2xl bg-amber-400 text-[#7E1819] flex items-center justify-center text-2xl shadow-lg">
-                  🏆
+              <div className="py-6 flex-1 flex flex-col items-center justify-center text-center space-y-3.5 animate-fadeIn">
+                <div className="relative">
+                  <div className="w-16 h-16 rounded-3xl bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 text-[#7E1819] flex items-center justify-center text-3xl shadow-xl shadow-amber-500/30 ring-4 ring-amber-300/40 animate-bounce">
+                    🎖️
+                  </div>
+                  <Sparkles className="w-5 h-5 text-amber-300 absolute -top-1 -right-1 animate-ping" />
                 </div>
-                <h4 className="font-serif-title font-black text-xl text-amber-200">
-                  Xuất Sắc! Hoàn Thành {score} XP
-                </h4>
-                <p className="text-xs sm:text-sm text-rose-200 max-w-xs">
-                  Em đã giải mã thành công các manh mối lịch sử của di tích {monumentName}.
-                </p>
+                
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-400/20 border border-amber-400/50 text-amber-300 text-[11px] font-black uppercase tracking-wider">
+                    <span>Huy Hiệu Nhà Thám Hiểm Di Sản</span>
+                  </div>
+                  <h4 className="font-serif-title font-black text-xl text-amber-200">
+                    Xuất Sắc! Hoàn Thành {score} XP
+                  </h4>
+                  <p className="text-xs sm:text-sm text-rose-200 max-w-xs leading-relaxed">
+                    Em đã xuất sắc chinh phục đúng đủ <strong>5/5 câu hỏi lịch sử</strong> của di tích <strong>{monumentName}</strong>!
+                  </p>
+                </div>
+
                 <button
                   onClick={handleRestartMiniGame}
-                  className="px-4 py-2.5 rounded-xl bg-amber-400 text-[#7E1819] font-bold text-xs sm:text-sm hover:bg-amber-300 transition-all flex items-center gap-1.5 cursor-pointer shadow-md"
+                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#7E1819] font-black text-xs sm:text-sm transition-all flex items-center gap-1.5 cursor-pointer shadow-lg hover:scale-105 transform duration-150"
                 >
-                  <RotateCcw className="w-3.5 h-3.5" />
-                  <span>Khám phá lại</span>
+                  <RotateCcw className="w-4 h-4" />
+                  <span>Chinh phục lại</span>
                 </button>
               </div>
             )}
@@ -430,7 +558,7 @@ export default function InvestigationSection({
                 onClick={handleNextQuestion}
                 className="mt-2 w-full py-3 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#7E1819] font-black text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-1.5 cursor-pointer"
               >
-                <span>{currentIdx < questions.length - 1 ? 'Manh mối tiếp theo' : 'Xem kết quả giải mã'}</span>
+                <span>{currentIdx < questions.length - 1 ? `Câu hỏi tiếp theo (${currentIdx + 2}/${questions.length})` : 'Nhận Huy Hiệu Vinh Danh 🎖️'}</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             )}
