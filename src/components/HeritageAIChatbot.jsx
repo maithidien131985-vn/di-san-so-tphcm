@@ -24,6 +24,18 @@ import {
 } from 'lucide-react';
 import { allMonumentsList } from '../data/allMonumentsData';
 
+// Helper to remove accents for robust search
+const removeAccents = (str) => {
+  if (!str) return '';
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'D')
+    .toLowerCase()
+    .trim();
+};
+
 export default function HeritageAIChatbot({
   currentMonumentStt = 1,
   viewMode = 'home', // 'home' | 'detail'
@@ -490,46 +502,37 @@ export default function HeritageAIChatbot({
     };
   };
 
-  // Helper to parse and format inline markdown (**bold**, *italic*)
+  // Helper to parse and format inline markdown (**bold**, *italic*) safely
   const formatInlineText = (text) => {
     if (!text) return null;
-    const parts = [];
-    const regex = /(\*\*.*?\*\*|\*.*?\*)/g;
-    let lastIndex = 0;
-    let match;
-
-    while ((match = regex.exec(text)) !== null) {
-      if (match.index > lastIndex) {
-        parts.push(text.substring(lastIndex, match.index));
-      }
-      const token = match[0];
-      if (token.startsWith('**') && token.endsWith('**')) {
-        parts.push(
-          <strong key={match.index} className="font-bold text-[#8B1417]">
-            {token.slice(2, -2)}
-          </strong>
-        );
-      } else if (token.startsWith('*') && token.endsWith('*')) {
-        parts.push(
-          <em key={match.index} className="italic text-stone-700">
-            {token.slice(1, -1)}
-          </em>
-        );
-      }
-      lastIndex = regex.lastIndex;
+    try {
+      const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+      return parts.map((part, i) => {
+        if (part.startsWith('**') && part.endsWith('**') && part.length >= 4) {
+          return (
+            <strong key={i} className="font-bold text-[#8B1417]">
+              {part.slice(2, -2)}
+            </strong>
+          );
+        }
+        if (part.startsWith('*') && part.endsWith('*') && part.length >= 2) {
+          return (
+            <em key={i} className="italic text-stone-700">
+              {part.slice(1, -1)}
+            </em>
+          );
+        }
+        return part;
+      });
+    } catch (e) {
+      return text;
     }
-
-    if (lastIndex < text.length) {
-      parts.push(text.substring(lastIndex));
-    }
-
-    return parts.length > 0 ? parts : text;
   };
 
-  // Handle Send Message (Instant response)
+  // Handle Send Message (Instant fail-safe execution)
   const handleSendMessage = (textToSend) => {
     const query = textToSend || inputMessage;
-    if (!query.trim()) return;
+    if (!query || !query.trim()) return;
 
     // Add user message
     const userMsg = {
@@ -539,23 +542,30 @@ export default function HeritageAIChatbot({
       timestamp: new Date()
     };
 
-    setMessages(prev => [...prev, userMsg]);
-    setInputMessage('');
-    setIsThinking(true);
-
-    // Instant local inference with ultra-fast responsiveness (< 50ms)
-    setTimeout(() => {
+    let aiMsg;
+    try {
       const result = processAIQuery(query);
-      const aiMsg = {
-        id: `ai_${Date.now()}`,
+      aiMsg = {
+        id: `ai_${Date.now() + 1}`,
         sender: 'ai',
-        text: result.text,
-        relatedMonuments: result.relatedMonuments || [],
+        text: result?.text || 'Không tìm thấy kết quả phù hợp.',
+        relatedMonuments: result?.relatedMonuments || [],
         timestamp: new Date()
       };
-      setMessages(prev => [...prev, aiMsg]);
-      setIsThinking(false);
-    }, 40);
+    } catch (err) {
+      console.error('Chatbot error:', err);
+      aiMsg = {
+        id: `ai_${Date.now() + 1}`,
+        sender: 'ai',
+        text: 'Xin chào! Bạn vui lòng thử lại với tên di tích cụ thể hoặc câu hỏi khác nhé.',
+        relatedMonuments: allMonumentsList.slice(0, 3),
+        timestamp: new Date()
+      };
+    }
+
+    setMessages(prev => [...prev, userMsg, aiMsg]);
+    setInputMessage('');
+    setIsThinking(false);
   };
 
   // Copy text to clipboard
