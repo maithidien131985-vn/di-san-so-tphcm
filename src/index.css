@@ -16,7 +16,8 @@
   body {
     background-color: #FAF7F2;
     color: #2C241E;
-    font-family: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -33,21 +34,36 @@
   }
 }
 
-.font-serif-title {
-  font-family: 'Righteous', 'Playfair Display', 'Merriweather', 'Lora', Georgia, serif;
+/* Fraunces Variable Font (with SOFT axis cranked for italic flourishes) */
+.font-serif-title,
+.font-fraunces,
+.font-display,
+.font-retro-title,
+.font-heading {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "SOFT" 100, "WONK" 0, "opsz" 144;
+  font-optical-sizing: auto;
   text-wrap: balance;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
 }
 
-.font-retro-title {
-  font-family: 'Righteous', cursive, sans-serif;
-  text-wrap: balance;
-  letter-spacing: 0.02em;
+/* Italic flourishes on Fraunces */
+.font-serif-title em,
+.font-serif-title i,
+.font-fraunces em,
+.font-fraunces i,
+em.font-serif-title,
+i.font-serif-title,
+.font-serif-title .italic,
+.italic.font-serif-title {
+  font-style: italic;
+  font-variation-settings: "SOFT" 100, "opsz" 144;
 }
 
 .font-retro-3d {
-  font-family: 'Righteous', cursive, sans-serif;
-  letter-spacing: 0.03em;
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "SOFT" 100, "opsz" 144;
+  letter-spacing: 0.02em;
   text-shadow: 
     0 1px 0 #3a0709,
     0 2px 0 #3a0709,
@@ -63,17 +79,25 @@
     0 20px 20px rgba(0,0,0,0.15);
 }
 
-.font-body-historic {
-  font-family: 'Lora', 'Be Vietnam Pro', serif;
+/* Inter for Body & Historic Context */
+.font-body-historic,
+.font-sans {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.font-heading {
-  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
-  text-wrap: balance;
+/* Tracked-out uppercase labels (as shown in image reference) */
+.font-label,
+.font-tracked {
+  font-family: 'Inter', system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
 }
 
-/* Typography: Chống rơi chữ 1 từ đơn lẻ xuống dòng (Anti-widow & Anti-orphan) */
+/* Typography: Headings default to Fraunces */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "SOFT" 100, "opsz" 144;
   text-wrap: balance;
 }
 
