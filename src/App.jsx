@@ -247,6 +247,31 @@ export default function App() {
   const [passportModalOpen, setPassportModalOpen] = useState(false);
   const [activePassport, setActivePassport] = useState(() => getActivePassport());
 
+  // Theo dõi trạng thái hoàn thành nhiệm vụ điều tra của từng di tích
+  const [completedInvestigations, setCompletedInvestigations] = useState(() => {
+    try {
+      const raw = localStorage.getItem('di_san_so_completed_investigations');
+      return raw ? JSON.parse(raw) : {};
+    } catch (e) {
+      return {};
+    }
+  });
+
+  const handleCompleteInvestigation = (stt = currentStt) => {
+    setCompletedInvestigations(prev => {
+      const updated = { ...prev, [stt]: true };
+      try {
+        localStorage.setItem('di_san_so_completed_investigations', JSON.stringify(updated));
+      } catch (e) {}
+      return updated;
+    });
+  };
+
+  const isCurrentInvestigationCompleted = Boolean(
+    completedInvestigations[currentStt] || 
+    activePassport?.visitedMonuments?.[currentStt]
+  );
+
   const [isEditMode, setIsEditMode] = useState(false);
 
   const [contributions, setContributions] = useState(() => {
@@ -620,6 +645,7 @@ export default function App() {
                 onPassportUpdate={(updatedPassport) => setActivePassport(updatedPassport)}
                 onOpenStudentReport={() => setStudentReportOpen(true)}
                 onOpenDocsModal={() => setDocsModalOpen(true)}
+                onCompleteInvestigation={handleCompleteInvestigation}
               />
             </div>
 
@@ -629,6 +655,7 @@ export default function App() {
                 currentStt={currentStt}
                 allMonuments={allMonumentsList}
                 onSelectMonument={(stt) => handleSelectMonument(stt)}
+                isCompleted={isCurrentInvestigationCompleted}
               />
             </ScrollReveal>
           </main>
@@ -691,6 +718,7 @@ export default function App() {
         investigation={safeInvestigation}
         monumentName={safeInfo.name || ''}
         activePassport={activePassport}
+        onCompleteInvestigation={handleCompleteInvestigation}
         onOpenActionModal={(info) => {
           setActionStudentInfo(info);
           setStudentReportOpen(false);

@@ -9,7 +9,8 @@ export default function StudentReportModal({
   investigation,
   monumentName = 'Dinh Độc Lập',
   onOpenActionModal,
-  activePassport = null
+  activePassport = null,
+  onCompleteInvestigation
 }) {
   const [studentName, setStudentName] = useState(() => {
     if (activePassport?.fullName) return activePassport.fullName;
@@ -90,6 +91,9 @@ export default function StudentReportModal({
 
     soundEffects.playCorrect();
     setIsSubmitted(true);
+    if (onCompleteInvestigation) {
+      onCompleteInvestigation();
+    }
     confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
   };
 

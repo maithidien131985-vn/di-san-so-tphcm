@@ -21,7 +21,8 @@ function calculateDistanceKm(lat1, lon1, lat2, lon2) {
 export default function NextMonumentSection({
   currentStt = 1,
   allMonuments = allMonumentsList,
-  onSelectMonument
+  onSelectMonument,
+  isCompleted = false
 }) {
   const [activeTab, setActiveTab] = useState('nearby'); // 'nearby' | 'same_type'
 
@@ -53,7 +54,7 @@ export default function NextMonumentSection({
   }, [currentMonument, currentStt, allMonuments]);
 
   const displayList = activeTab === 'nearby' ? nearbyMonuments : sameTypeMonuments;
-  const featuredNext = displayList[0];
+  const featuredNext = displayList[0] || allMonuments[0];
   const otherNext = displayList.slice(1, 4);
 
   const handleChoose = (stt) => {
@@ -63,9 +64,16 @@ export default function NextMonumentSection({
     }
   };
 
+  const handleScrollToInvestigation = () => {
+    const el = document.getElementById('investigation-section');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const currentName = currentMonument?.info?.name || 'Di tích lịch sử';
   const nextName = featuredNext?.info?.name || 'Di tích tiếp theo';
-  const distanceText = activeTab === 'nearby' && featuredNext.distanceKm !== undefined && featuredNext.distanceKm < 9999
+  const distanceText = activeTab === 'nearby' && featuredNext?.distanceKm !== undefined && featuredNext.distanceKm < 9999
     ? (featuredNext.distanceKm < 1 ? `khoảng ${Math.round(featuredNext.distanceKm * 1000)} mét` : `khoảng ${featuredNext.distanceKm.toFixed(1)} km`)
     : 'trong khu vực lân cận';
 
@@ -76,8 +84,13 @@ export default function NextMonumentSection({
   const [displayedDesc, setDisplayedDesc] = useState('');
   const [typingStep, setTypingStep] = useState('title'); // 'title' | 'desc' | 'done'
 
-  const fullTitle = `🎉 Bạn vừa hoàn thành điều tra di tích "${currentName}" và tích lũy thành công +100 Điểm Thám Hiểm!`;
-  const fullDesc = `🧭 Di tích tiếp theo dành cho bạn: "${nextName}" (${distanceText})... Hãy tiếp tục mở rộng bản đồ và giải mã những bí ẩn lịch sử tiếp theo!`;
+  const fullTitle = isCompleted
+    ? `🎉 Bạn vừa hoàn thành điều tra di tích "${currentName}" và tích lũy thành công +100 Điểm Thám Hiểm!`
+    : `🎯 Hoàn thành nhiệm vụ điều tra bên trên để tích lũy +100 Điểm Thám Hiểm!`;
+
+  const fullDesc = isCompleted
+    ? `🧭 Di tích tiếp theo dành cho bạn: "${nextName}" (${distanceText})... Hãy tiếp tục mở rộng bản đồ và giải mã những bí ẩn lịch sử tiếp theo!`
+    : `🧭 Gợi ý di tích tiếp theo dành cho bạn sau khi giải mã: "${nextName}" (${distanceText}). Hãy tham gia trả lời câu hỏi thử thách phía trên để mở khóa cột mốc này nhé!`;
 
   useEffect(() => {
     setDisplayedTitle('');
@@ -114,20 +127,37 @@ export default function NextMonumentSection({
     timer = setTimeout(typeTitle, 200);
 
     return () => clearTimeout(timer);
-  }, [currentName, nextName, distanceText]);
+  }, [currentName, nextName, distanceText, isCompleted, fullTitle, fullDesc]);
 
   return (
     <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-2 pb-10 space-y-6">
       {/* ========================================================================= */}
       {/* BANNER LỜI DẪN CHUYỂN TIẾP HÀNH TRÌNH (THIẾT KẾ TRANG NHÃ, TINH TẾ) */}
       {/* ========================================================================= */}
-      <div className="rounded-2xl bg-gradient-to-r from-[#FFFDF9] via-[#FAF6ED] to-[#F5EFE4] p-5 sm:p-6 border border-amber-300/70 shadow-xs relative overflow-hidden">
+      <div className={`rounded-2xl p-5 sm:p-6 border shadow-xs relative overflow-hidden transition-all duration-300 ${
+        isCompleted 
+          ? 'bg-gradient-to-r from-[#FFFDF9] via-[#FAF6ED] to-[#F5EFE4] border-amber-300/80 ring-1 ring-amber-400/30' 
+          : 'bg-gradient-to-r from-[#FAF7F2] via-[#F5EEE4] to-[#EFE7D8] border-stone-300/80'
+      }`}>
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
           <div className="space-y-2 flex-1 max-w-4xl">
             {/* Tag Badge */}
-            <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5 text-amber-700" />
-              <span>Cột Mốc Hành Trình</span>
+            <div className={`inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full border text-xs font-black uppercase tracking-wider ${
+              isCompleted 
+                ? 'bg-amber-100 border-amber-300 text-[#7E1819]' 
+                : 'bg-stone-200/80 border-stone-300 text-stone-700'
+            }`}>
+              {isCompleted ? (
+                <>
+                  <Sparkles className="w-3.5 h-3.5 text-amber-700" />
+                  <span>Cột Mốc Hành Trình</span>
+                </>
+              ) : (
+                <>
+                  <Compass className="w-3.5 h-3.5 text-stone-600" />
+                  <span>Hành Trình Thám Hiểm</span>
+                </>
+              )}
             </div>
 
             {/* Lời dẫn chữ xuất hiện mượt mà */}
@@ -148,14 +178,24 @@ export default function NextMonumentSection({
             </div>
           </div>
 
-          {/* Nút hành động thanh lịch sang di tích tiếp theo */}
-          <button
-            onClick={() => handleChoose(featuredNext.stt)}
-            className="w-full lg:w-auto px-5 py-3 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer shrink-0 border border-red-900 group"
-          >
-            <span>Khám phá "{nextName}" tiếp theo</span>
-            <ArrowRight className="w-4 h-4 text-amber-200 group-hover:translate-x-1 transition-transform" />
-          </button>
+          {/* Nút hành động */}
+          {isCompleted ? (
+            <button
+              onClick={() => handleChoose(featuredNext.stt)}
+              className="w-full lg:w-auto px-5 py-3 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer shrink-0 border border-red-900 group"
+            >
+              <span>Khám phá "{nextName}" tiếp theo</span>
+              <ArrowRight className="w-4 h-4 text-amber-200 group-hover:translate-x-1 transition-transform" />
+            </button>
+          ) : (
+            <button
+              onClick={handleScrollToInvestigation}
+              className="w-full lg:w-auto px-5 py-3 rounded-xl bg-[#8B1417] hover:bg-[#9E1B1F] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer shrink-0 border border-amber-900/30 group"
+            >
+              <span>Lên Thử Thách Điều Tra 👆</span>
+              <Compass className="w-4 h-4 text-amber-200 group-hover:rotate-45 transition-transform" />
+            </button>
+          )}
         </div>
       </div>
 

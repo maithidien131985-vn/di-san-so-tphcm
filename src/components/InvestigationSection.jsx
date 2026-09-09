@@ -136,7 +136,8 @@ export default function InvestigationSection({
   activePassport = null,
   onPassportUpdate,
   onOpenStudentReport,
-  onOpenDocsModal
+  onOpenDocsModal,
+  onCompleteInvestigation
 }) {
   // ==========================================
   // CỘT 1: MINI-GAME TRUY TÌM MANH MỐI
@@ -244,6 +245,9 @@ export default function InvestigationSection({
         const updated = checkInMonument(monumentStt, monumentName, score || 100);
         if (updated && onPassportUpdate) onPassportUpdate(updated);
       }
+      if (onCompleteInvestigation) {
+        onCompleteInvestigation();
+      }
     }
   };
 
@@ -267,6 +271,9 @@ export default function InvestigationSection({
     try {
       confetti({ particleCount: 50, spread: 70, origin: { y: 0.6 } });
     } catch (e) {}
+    if (onCompleteInvestigation) {
+      onCompleteInvestigation();
+    }
     if (onOpenStudentReport) {
       onOpenStudentReport();
     }
