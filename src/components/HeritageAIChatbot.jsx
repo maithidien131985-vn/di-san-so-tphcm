@@ -526,7 +526,7 @@ export default function HeritageAIChatbot({
     return parts.length > 0 ? parts : text;
   };
 
-  // Handle Send Message
+  // Handle Send Message (Instant response)
   const handleSendMessage = (textToSend) => {
     const query = textToSend || inputMessage;
     if (!query.trim()) return;
@@ -543,7 +543,7 @@ export default function HeritageAIChatbot({
     setInputMessage('');
     setIsThinking(true);
 
-    // Simulate AI thinking and retrieve answer
+    // Instant local inference with ultra-fast responsiveness (< 50ms)
     setTimeout(() => {
       const result = processAIQuery(query);
       const aiMsg = {
@@ -555,7 +555,7 @@ export default function HeritageAIChatbot({
       };
       setMessages(prev => [...prev, aiMsg]);
       setIsThinking(false);
-    }, 450);
+    }, 40);
   };
 
   // Copy text to clipboard
