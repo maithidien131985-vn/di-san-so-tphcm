@@ -99,176 +99,333 @@ export default function HeritageAIChatbot({
   }, [isOpen]);
 
   // =========================================================================
-  // LOCAL KNOWLEDGE BASE & AI INFERENCE ENGINE
+  // LOCAL KNOWLEDGE BASE & HIGH-PRECISION INFERENCE ENGINE
   // =========================================================================
-  const removeAccents = (str) => {
-    if (!str) return '';
-    return str
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/đ/g, 'd')
-      .replace(/Đ/g, 'D')
-      .toLowerCase();
+  const extractBriefOverview = (overview, maxLen = 190) => {
+    if (!overview) return 'Di tích lịch sử - văn hóa tiêu biểu.';
+    const sentences = overview.split(/(?<=[.!?])\s+/);
+    let brief = sentences[0] || '';
+    if (sentences.length > 1 && (brief + ' ' + sentences[1]).length <= maxLen) {
+      brief += ' ' + sentences[1];
+    }
+    if (brief.length > maxLen) {
+      brief = brief.slice(0, maxLen - 3) + '...';
+    }
+    return brief;
+  };
+
+  const formatMonumentResponse = (m) => {
+    let resp = `### 🏛️ ${m.info.name} (#STT ${m.stt})\n\n`;
+    resp += `- 📍 **Địa chỉ:** ${m.info.address}\n`;
+    resp += `- ⭐ **Xếp hạng:** ${m.info.badge || m.info.ranking || 'Di tích Lịch sử'}\n`;
+    
+    if (m.info.type) {
+      resp += `- 🏷️ **Loại hình:** ${m.info.type}\n`;
+    }
+    
+    resp += `\n💡 **Giá trị lịch sử cốt lõi:**\n${extractBriefOverview(m.info.overview, 220)}\n\n`;
+
+    if (m.keyHighlights) {
+      resp += `🔍 **Điểm nhấn nổi bật:**\n`;
+      if (m.keyHighlights.figures?.details) {
+        resp += `- 👤 **Nhân vật:** ${m.keyHighlights.figures.details}\n`;
+      }
+      if (m.keyHighlights.artifacts?.details) {
+        resp += `- 🏺 **Hiện vật:** ${m.keyHighlights.artifacts.details.replace(/\n/g, ' ')}\n`;
+      }
+    }
+
+    if (m.investigation?.investigationQuestion) {
+      resp += `\n🔭 **Gợi ý học tập & điều tra:**\n*${m.investigation.investigationQuestion}*`;
+    }
+
+    return {
+      text: resp.trim(),
+      relatedMonuments: [m]
+    };
   };
 
   const processAIQuery = (query) => {
     const rawQ = query.trim();
     const cleanQ = removeAccents(rawQ);
 
-    // 1. GREETINGS & INTRO
-    if (/^(chao|hello|hi|xin chao|ban la ai|gioi thieu ban|tro ly la ai)/i.test(cleanQ)) {
+    if (!cleanQ) {
       return {
-        text: `Chào bạn! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi được huấn luyện từ cơ sở dữ liệu chuyên sâu về **103 Di tích Lịch sử - Văn hóa** của TP. Hồ Chí Minh, Bà Rịa - Vũng Tàu và Bình Dương.\n\nBạn có thể hỏi tôi về:\n- 📜 **Lịch sử & kiến trúc** của bất kỳ di tích nào.\n- 👤 **Nhân vật & hiện vật** tiêu biểu.\n- 🔬 **Câu hỏi điều tra lịch sử & 6 môn học** (Lịch sử, Địa lý, Văn học, STEM...).\n- 🗺️ **Địa chỉ, tọa độ và tuyến tham quan** theo khu vực.`,
-        relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[2]]
+        text: 'Bạn hãy nhập câu hỏi về di tích, lịch sử, nhân vật hoặc bài học để tôi hỗ trợ nhé!',
+        relatedMonuments: []
       };
     }
 
-    // 2. QUERY ABOUT CURRENT MONUMENT (IF IN DETAIL MODE)
+    // 1. GREETINGS & INTRO
+    if (/^(chao|hello|hi|xin chao|ban la ai|gioi thieu ban|tro ly la ai|ban lam duoc gi)/i.test(cleanQ)) {
+      return {
+        text: `Xin chào! Tôi là **Trợ Lý Di Sản AI** 🏛️✨\n\nTôi hỗ trợ bạn tra cứu toàn diện về **103 Di tích Lịch sử - Văn hóa TP.HCM & Vùng phụ cận**:\n\n- 🔍 **Tra cứu nhanh:** Theo tên di tích, số STT (#1 - #103) hoặc địa chỉ Quận/Huyện.\n- 📜 **Lịch sử & Kiến trúc:** Tóm tắt ngắn gọn bối cảnh, niên đại và phong cách xây dựng.\n- 👤 **Nhân vật & Hiện vật:** Bác Hồ, Trần Phú, Võ Thị Sáu, xe tăng 390/843, hầm vũ khí...\n- 📚 **Học tập 6 môn:** Lịch sử, Địa lý, Ngữ văn, GDCD, STEM và câu hỏi điều tra.\n\n*Bạn hãy nhập tên di tích hoặc câu hỏi cần giải đáp nhé!*`,
+        relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[3]]
+      };
+    }
+
+    // 2. CONTEXT-AWARE: CURRENT MONUMENT IN DETAIL VIEW
     if (viewMode === 'detail' && currentMonument && (
-      cleanQ.includes('di tich nay') || cleanQ.includes('o day') || cleanQ.includes('noi nay') || cleanQ.includes('tom tat') || cleanQ.includes('hien vat') || cleanQ.includes('nhan vat') || cleanQ.includes('dieu tra')
+      cleanQ.includes('di tich nay') || cleanQ.includes('o day') || cleanQ.includes('noi nay') || 
+      cleanQ.includes('tom tat') || cleanQ.includes('hien vat') || cleanQ.includes('nhan vat') || 
+      cleanQ.includes('dieu tra') || cleanQ.includes('dia chi') || cleanQ.includes('mon hoc')
     )) {
       const m = currentMonument;
-      let resp = `### 🏛️ ${m.info.name}\n\n`;
-      resp += `📍 **Địa chỉ:** ${m.info.address}\n`;
-      resp += `⭐ **Xếp hạng:** ${m.info.ranking || 'Di tích Quốc gia'}\n\n`;
-      resp += `**Tóm tắt giá trị:**\n${m.info.overview}\n\n`;
-      
-      if (cleanQ.includes('hien vat') || cleanQ.includes('nhan vat') || cleanQ.includes('su kien')) {
-        if (m.keyHighlights) {
-          resp += `**Điểm nhấn tiêu biểu:**\n`;
-          if (m.keyHighlights.figures) resp += `- 👤 **Nhân vật:** ${m.keyHighlights.figures.title || m.keyHighlights.figures.name || 'Gắn liền với các anh hùng, chỉ huy và nhân dân thời kỳ đấu tranh'}\n`;
-          if (m.keyHighlights.artifacts) resp += `- 🏺 **Hiện vật:** ${m.keyHighlights.artifacts.title || m.keyHighlights.artifacts.name || 'Hệ thống hiện vật, vũ khí, tài liệu lưu giữ nguyên bản'}\n`;
-          if (m.keyHighlights.events) resp += `- ⚔️ **Sự kiện:** ${m.keyHighlights.events.title || m.keyHighlights.events.name || 'Dấu mốc lịch sử quan trọng trong tiến trình dựng nước và giữ nước'}\n`;
-        }
-      }
-
-      if (m.investigation?.investigationQuestion) {
-        resp += `\n**Hồ sơ điều tra gợi mở:**\n> 🔭 *${m.investigation.investigationQuestion}*`;
-      }
-
-      return {
-        text: resp,
-        relatedMonuments: [m]
-      };
-    }
-
-    // 3. STATISTICAL & AGGREGATE QUERIES
-    if (cleanQ.includes('bao nhieu di tich') || cleanQ.includes('tong so di tich') || cleanQ.includes('tat ca di tich')) {
-      const specialRankings = allMonumentsList.filter(m => m.info.ranking.toLowerCase().includes('dac biet')).length;
-      const nationalRankings = allMonumentsList.filter(m => m.info.ranking.toLowerCase().includes('quoc gia') && !m.info.ranking.toLowerCase().includes('dac biet')).length;
-      const cityRankings = allMonumentsList.filter(m => m.info.ranking.toLowerCase().includes('thanh pho') || m.info.ranking.toLowerCase().includes('tinh')).length;
-
-      return {
-        text: `Hệ thống Di Sản Số hiện đang lưu trữ và số hóa toàn diện **${allMonumentsList.length} Di tích Lịch sử - Văn hóa** tiêu biểu:\n\n` +
-          `- ⭐ **${specialRankings} Di tích Quốc gia Đặc biệt** (Dinh Độc Lập, Địa đạo Củ Chi, Côn Đảo, Rừng Sác, Bến Lộc An...)\n` +
-          `- 🏛️ **${nationalRankings} Di tích cấp Quốc gia**\n` +
-          `- 🏮 **${cityRankings} Di tích cấp Thành phố / Tỉnh**\n\n` +
-          `Các di tích trải dài khắp 21 quận huyện TP.HCM, TP. Thủ Đức và các địa bàn lịch sử liên kết như Côn Đảo, Bà Rịa - Vũng Tàu, Bình Dương.`,
-        relatedMonuments: allMonumentsList.slice(0, 4)
-      };
-    }
-
-    // 4. SPECIAL RANKINGS (QUỐC GIA ĐẶC BIỆT)
-    if (cleanQ.includes('dac biet') || cleanQ.includes('quoc gia dac biet')) {
-      const specials = allMonumentsList.filter(m => m.info.ranking.toLowerCase().includes('dac biet'));
-      let resp = `Hiện nay có **${specials.length} Di tích Quốc gia Đặc biệt** nổi bật trong hệ thống:\n\n`;
-      specials.forEach((m, idx) => {
-        resp += `${idx + 1}. **${m.info.name}**\n   - *Địa chỉ:* ${m.info.address}\n   - *Đặc điểm:* ${m.info.overview.slice(0, 110)}...\n\n`;
-      });
-      return {
-        text: resp,
-        relatedMonuments: specials.slice(0, 4)
-      };
-    }
-
-    // 5. REGIONAL QUERIES (Cần Giờ, Củ Chi, Quận 1, Chợ Lớn, Côn Đảo, Bình Dương, Vũng Tàu...)
-    const regions = [
-      { key: 'can gio', name: 'Cần Giờ', filter: m => m.info.address.toLowerCase().includes('cần giờ') || m.stt === 7 || m.stt === 83 },
-      { key: 'cu chi', name: 'Củ Chi', filter: m => m.info.address.toLowerCase().includes('củ chi') || m.stt === 2 },
-      { key: 'quan 1', name: 'Quận 1', filter: m => m.info.address.toLowerCase().includes('quận 1') || m.stt === 1 },
-      { key: 'quan 5', name: 'Quận 5 / Chợ Lớn', filter: m => m.info.address.toLowerCase().includes('quận 5') || m.info.name.includes('Hội quán') },
-      { key: 'con dao', name: 'Côn Đảo', filter: m => m.info.address.toLowerCase().includes('côn đảo') || m.stt === 4 },
-      { key: 'vung tau', name: 'Bà Rịa - Vũng Tàu', filter: m => m.info.address.toLowerCase().includes('vũng tàu') || m.info.address.toLowerCase().includes('bà rịa') || (m.stt >= 56 && m.stt <= 81) },
-      { key: 'binh duong', name: 'Bình Dương', filter: m => m.info.address.toLowerCase().includes('bình dương') || m.stt === 8 || (m.stt >= 60 && m.stt <= 64) }
-    ];
-
-    for (const r of regions) {
-      if (cleanQ.includes(r.key)) {
-        const matches = allMonumentsList.filter(r.filter);
-        let resp = `Tại khu vực **${r.name}**, hệ thống có **${matches.length} di tích** tiêu biểu:\n\n`;
-        matches.slice(0, 5).forEach((m, idx) => {
-          resp += `${idx + 1}. **${m.info.name}** (#${m.stt})\n   - 📍 ${m.info.address}\n   - 💡 ${m.info.overview.slice(0, 100)}...\n\n`;
-        });
-        if (matches.length > 5) {
-          resp += `*Và còn ${matches.length - 5} di tích khác trong khu vực này.*`;
-        }
+      if (cleanQ.includes('dia chi') || cleanQ.includes('o dau')) {
         return {
-          text: resp,
-          relatedMonuments: matches.slice(0, 4)
+          text: `### 📍 Địa chỉ ${m.info.name}\n\n- **Địa chỉ:** ${m.info.address}\n- **Xếp hạng:** ${m.info.ranking || 'Di tích Lịch sử'}\n- **Số thứ tự:** STT #${m.stt}`,
+          relatedMonuments: [m]
         };
       }
+      if (cleanQ.includes('hien vat') && m.keyHighlights?.artifacts) {
+        return {
+          text: `### 🏺 Hiện Vật Tiêu Biểu: ${m.info.name}\n\n${m.keyHighlights.artifacts.details || 'Các hiện vật nguyên bản được bảo tồn trang nghiêm tại di tích.'}`,
+          relatedMonuments: [m]
+        };
+      }
+      if (cleanQ.includes('nhan vat') && m.keyHighlights?.figures) {
+        return {
+          text: `### 👤 Nhân Vật Lịch Sử Gắn Liền: ${m.info.name}\n\n${m.keyHighlights.figures.details || 'Gắn liền với các chứng nhân và anh hùng lịch sử.'}`,
+          relatedMonuments: [m]
+        };
+      }
+      if (cleanQ.includes('dieu tra') && m.investigation?.investigationQuestion) {
+        return {
+          text: `### 🔬 Hồ Sơ Điều Tra Lịch Sử: ${m.info.name}\n\n> 🔭 **Câu hỏi điều tra:** *${m.investigation.investigationQuestion}*\n\n💡 **Gợi ý giải đáp:**\n${m.investigation.suggestedAnswer || extractBriefOverview(m.info.overview, 200)}`,
+          relatedMonuments: [m]
+        };
+      }
+      return formatMonumentResponse(m);
     }
 
-    // 6. HISTORICAL FIGURES (Bác Hồ, Võ Thị Sáu, Trần Phú, Lê Văn Duyệt, Ngô Viết Thụ, Bùi Quang Thận...)
+    // 3. DIRECT STT / ID LOOKUP (e.g. "stt 18", "di tích 14", "#1", "số 5")
+    const sttMatch = cleanQ.match(/(?:stt|so|di tich|#)\s*([0-9]{1,3})/i) || cleanQ.match(/^([0-9]{1,3})$/);
+    if (sttMatch) {
+      const targetStt = parseInt(sttMatch[1], 10);
+      const m = allMonumentsList.find(item => item.stt === targetStt);
+      if (m) {
+        return formatMonumentResponse(m);
+      }
+    }
+
+    // 4. HISTORICAL FIGURES (Bác Hồ, Võ Thị Sáu, Trần Phú, Tôn Đức Thắng, Ngô Viết Thụ, v.v.)
     const figures = [
-      { key: 'ho chi minh', name: 'Chủ tịch Hồ Chí Minh (Nguyễn Tất Thành)', stts: [11, 3, 1, 97] },
-      { key: 'nguyen tat thanh', name: 'Nguyễn Tất Thành (Bác Hồ)', stts: [11] },
-      { key: 'vo thi sau', name: 'Nữ anh hùng Võ Thị Sáu', stts: [4, 76] },
-      { key: 'tran phu', name: 'Tổng Bí thư Trần Phú', stts: [9] },
-      { key: 'le van duyet', name: 'Tả quân Lê Văn Duyệt', stts: [85] },
-      { key: 'ngo viet thu', name: 'Kiến trúc sư Ngô Viết Thụ', stts: [1] },
-      { key: 'bui quang than', name: 'Đại đội trưởng Bùi Quang Thận (Xe tăng 843)', stts: [1] },
-      { key: 'vu van thao', name: 'Trung úy Vũ Đăng Toàn (Xe tăng 390)', stts: [1] },
-      { key: 'phan chau trinh', name: 'Chí sĩ Phan Châu Trinh', stts: [84] }
+      {
+        keys: ['ho chi minh', 'nguyen tat thanh', 'bac ho', 'nguyen ai quoc', 'ben nha rong'],
+        name: 'Chủ tịch Hồ Chí Minh (Nguyễn Tất Thành)',
+        stts: [18, 12, 3, 20, 1],
+        summary: 'Người thanh niên Nguyễn Tất Thành đã ở tại căn nhà số 5 Châu Văn Liêm (Quận 5 - STT 18) trước khi ra đi tìm đường cứu nước ngày 5/6/1911. Tên Người gắn liền với Chiến dịch Hồ Chí Minh 1975 giải phóng miền Nam.'
+      },
+      {
+        keys: ['vo thi sau', 'chi sau', 'dat do', 'hang duong'],
+        name: 'Nữ anh hùng LLVTND Võ Thị Sáu (1933–1952)',
+        stts: [16, 4],
+        summary: 'Nữ anh hùng Đất Đỏ (STT 16) kiên trung, bất khuất, là nữ tù nhân duy nhất và đầu tiên bị thực dân Pháp xử bắn tại Hàng Dương, Côn Đảo (STT 4) khi mới 19 tuổi.'
+      },
+      {
+        keys: ['tran phu', 'tong bi thu dau tien', 'hay giu vung chi khi'],
+        name: 'Tổng Bí thư Trần Phú (1904–1931)',
+        stts: [14],
+        summary: 'Tổng Bí thư đầu tiên của Đảng, tác giả Luận cương chính trị 1930. Đồng chí bị địch giam cầm và hy sinh anh dũng tại Nhà thương Chợ Quán (STT 14) ngày 6/9/1931 với lời dặn bất hủ: *"Hãy giữ vững chí khí chiến đấu!"*.'
+      },
+      {
+        keys: ['ton duc thang', 'ba son', 'chu tich ton duc thang'],
+        name: 'Chủ tịch Tôn Đức Thắng (Bác Tôn)',
+        stts: [12],
+        summary: 'Gắn liền với phong trào công nhân xưởng Ba Son (STT 12), lãnh đạo cuộc bãi công lịch sử năm 1925 ủng hộ phong trào cách mạng của công nhân Quảng Châu.'
+      },
+      {
+        keys: ['le van duyet', 'ta quan', 'lang ong', 'ba chieu'],
+        name: 'Tả quân Lê Văn Duyệt (1764–1832)',
+        stts: [88],
+        summary: 'Tổng trấn Gia Định Thành, có công lớn trong việc khai phá, mở mang và bảo vệ vùng đất phương Nam thịnh vượng thế kỷ 19.'
+      },
+      {
+        keys: ['phan chau trinh', 'phan chu trinh', 'chi si'],
+        name: 'Nhà yêu nước Phan Châu Trinh (1872–1926)',
+        stts: [39, 30],
+        summary: 'Chí sĩ yêu nước khởi xướng phong trào Duy Tân với chủ trương "Khai dân trí, chấn dân khí, hậu dân sinh". Mộ của cụ tọa lạc tại Tân Bình, TP.HCM (STT 39).'
+      },
+      {
+        keys: ['ngo viet thu', 'kien truc su dinh doc lap', 'thiet ke dinh doc lap', 'ai thiet ke dinh doc lap'],
+        name: 'Kiến trúc sư Ngô Viết Thụ (1926–2000)',
+        stts: [1],
+        summary: 'KTS đoạt giải Khôi nguyên La Mã 1955, là người thiết kế Dinh Độc Lập (STT 1) với triết lý kiến trúc Á Đông kết hợp hiện đại độc đáo (mặt bằng chữ CÁT, KHẨU, CHỦ, TRUNG).'
+      },
+      {
+        keys: ['bui quang than', 'vu dang toan', 'xe tang 390', 'xe tang 843', 'huc do cong dinh doc lap', '30/4/1975', 'giai phong mien nam'],
+        name: 'Chứng nhân lịch sử ngày 30/4/1975 tại Dinh Độc Lập',
+        stts: [1],
+        summary: 'Xe tăng 843 do Đại đội trưởng Bùi Quang Thận chỉ huy và xe tăng 390 do Trung úy Vũ Đăng Toàn chỉ huy húc đổ cổng chính Dinh Độc Lập trưa 30/4/1975, cắm cờ giải phóng trên nóc Dinh.'
+      },
+      {
+        keys: ['rung sac', 'dac cong rung sac', 'trung doan 10', 'luong van nho'],
+        name: 'Chiến sĩ Đặc công Rừng Sác (Trung đoàn 10)',
+        stts: [7],
+        summary: 'Đội quân "xuất quỷ nhập thần" bám trụ rừng ngập mặn Cần Giờ hiểm trở, lập nên những chiến công vang dội như thiêu hủy kho bom Thành Tuy Hạ, kho xăng Nhà Bè.'
+      },
+      {
+        keys: ['biet dong thanh', 'biet dong sai gon', 'ham vu khi', 'ba muong', 'sau ba'],
+        name: 'Lực lượng Biệt động Sài Gòn - Gia Định',
+        stts: [28, 13, 1, 48],
+        summary: 'Lực lượng đặc biệt tinh nhuệ hoạt động ngay trong lòng địch. Các căn hầm bí mật như 287/70 Nguyễn Đình Chiểu (STT 28) và 183/4 Ba Tháng Hai (STT 13) chứa hàng tấn vũ khí tấn công Dinh Độc Lập, Đại sứ quán Mỹ Tết Mậu Thân 1968.'
+      }
     ];
 
     for (const fig of figures) {
-      if (cleanQ.includes(fig.key)) {
+      if (fig.keys.some(k => cleanQ.includes(k))) {
         const matches = allMonumentsList.filter(m => fig.stts.includes(m.stt));
-        let resp = `Về nhân vật lịch sử **${fig.name}**:\n\n`;
-        if (fig.key.includes('ho chi minh') || fig.key.includes('nguyen tat thanh')) {
-          resp += `Người thanh niên yêu nước Nguyễn Tất Thành đã ở tại căn nhà số 5 Châu Văn Liêm (Quận 5) trước khi đến Bến Nhà Rồng ngày 5/6/1911 để ra đi tìm đường cứu nước. Tên Người cũng gắn liền với Chiến dịch Hồ Chí Minh lịch sử năm 1975 và Đường Hồ Chí Minh trên biển huyền thoại.\n\n`;
-        } else if (fig.key.includes('vo thi sau')) {
-          resp += `Chị Võ Thị Sáu (1933–1952) là người nữ tử tù đầu tiên và duy nhất tại Côn Đảo thời Pháp. Chị kiên cường bất khuất trước họng súng quân thù tại Hàng Dương, Côn Đảo. Nhà lưu niệm của chị hiện tọa lạc tại Đất Đỏ (Bà Rịa - Vũng Tàu).\n\n`;
-        } else if (fig.key.includes('tran phu')) {
-          resp += `Đồng chí Trần Phú - Tổng Bí thư đầu tiên của Đảng Cộng sản Việt Nam đã hy sinh anh dũng tại Nhà thương Chợ Quán (nay là Bệnh viện Bệnh Nhiệt Đới TP.HCM) năm 1931 với câu nói bất hủ: *"Hãy giữ vững chí khí chiến đấu!"*.\n\n`;
-        }
-        resp += `**Các di tích trực tiếp gắn liền:**\n`;
+        let resp = `### 👤 ${fig.name}\n\n`;
+        resp += `💡 **Tóm tắt lịch sử:**\n${fig.summary}\n\n`;
+        resp += `🏛️ **Di tích gắn liền trực tiếp:**\n`;
         matches.forEach((m, idx) => {
-          resp += `${idx + 1}. **${m.info.name}** (#${m.stt}) - 📍 ${m.info.address}\n`;
+          resp += `${idx + 1}. **${m.info.name}** (#STT ${m.stt}) - 📍 ${m.info.address}\n`;
         });
         return {
-          text: resp,
+          text: resp.trim(),
           relatedMonuments: matches
         };
       }
     }
 
-    // 7. MULTI-FACTOR MONUMENT FUZZY SEARCH
+    // 5. ARCHAEOLOGICAL SITES ("Khảo cổ học")
+    if (cleanQ.includes('khao co') || cleanQ.includes('tien su') || cleanQ.includes('mo chum') || cleanQ.includes('gom co') || cleanQ.includes('oc eo') || cleanQ.includes('dong nai')) {
+      const archStts = [21, 22, 23, 24]; // Cù Lao Rùa, Dốc Chùa, Giồng Cá Vồ, Lò gốm Hưng Lợi
+      const matches = allMonumentsList.filter(m => archStts.includes(m.stt));
+      let resp = `Hệ thống ghi nhận **${matches.length} Di tích Khảo cổ học** quý giá phản ánh nền văn minh tiền sử và sơ sử tại Nam Bộ:\n\n`;
+      matches.forEach((m, idx) => {
+        resp += `${idx + 1}. **${m.info.name}** (#STT ${m.stt})\n   - 📍 ${m.info.address}\n   - 🏺 *Giá trị:* ${extractBriefOverview(m.info.overview, 140)}\n\n`;
+      });
+      return {
+        text: resp.trim(),
+        relatedMonuments: matches
+      };
+    }
+
+    // 6. SPECIAL NATIONAL MONUMENTS ("Quốc gia đặc biệt")
+    if ((cleanQ.includes('quoc gia dac biet') || cleanQ.includes('dac biet')) && !cleanQ.includes('cu chi') && !cleanQ.includes('dinh doc lap')) {
+      const specials = allMonumentsList.filter(m => removeAccents(m.info.ranking || '').includes('dac biet'));
+      let resp = `Hiện hệ thống có **${specials.length} Di tích Quốc gia Đặc biệt** tiêu biểu:\n\n`;
+      specials.forEach((m, idx) => {
+        resp += `${idx + 1}. **${m.info.name}** (#STT ${m.stt})\n   - 📍 *Địa chỉ:* ${m.info.address}\n   - ⭐ *Ý nghĩa:* ${extractBriefOverview(m.info.overview, 130)}\n\n`;
+      });
+      return {
+        text: resp.trim(),
+        relatedMonuments: specials.slice(0, 4)
+      };
+    }
+
+    // 7. STATISTICAL & AGGREGATE SUMMARY
+    if (cleanQ.includes('bao nhieu di tich') || cleanQ.includes('tong so di tich') || cleanQ.includes('tat ca di tich') || cleanQ.includes('thong ke di tich')) {
+      const specialRankings = allMonumentsList.filter(m => removeAccents(m.info.ranking || '').includes('dac biet')).length;
+      const nationalRankings = allMonumentsList.filter(m => removeAccents(m.info.ranking || '').includes('quoc gia') && !removeAccents(m.info.ranking || '').includes('dac biet')).length;
+      const cityRankings = allMonumentsList.filter(m => removeAccents(m.info.ranking || '').includes('thanh pho') || removeAccents(m.info.ranking || '').includes('tinh')).length;
+
+      return {
+        text: `Hệ thống Di Sản Số đang số hóa đầy đủ **${allMonumentsList.length} Di tích Lịch sử - Văn hóa**:\n\n` +
+          `- ⭐ **${specialRankings} Di tích Quốc gia Đặc biệt:** Dinh Độc Lập, Địa đạo Củ Chi, Côn Đảo, Rừng Sác, Đường HCM trên biển (Bến Lộc An)...\n` +
+          `- 🏛️ **${nationalRankings} Di tích cấp Quốc gia**\n` +
+          `- 🏮 **${cityRankings} Di tích cấp Thành phố / Tỉnh**\n\n` +
+          `💡 *Phân loại theo lĩnh vực:* Di tích Lịch sử cách mạng, Kiến trúc nghệ thuật cổ truyền/Pháp thuộc, và Di tích Khảo cổ học tiền sử.`,
+        relatedMonuments: allMonumentsList.slice(0, 4)
+      };
+    }
+
+    // 8. REGIONAL & DISTRICT FILTER
+    const regions = [
+      { keys: ['can gio', 'rung sac'], name: 'Huyện Cần Giờ', filter: m => m.info.address.toLowerCase().includes('cần giờ') || m.stt === 7 || m.stt === 23 },
+      { keys: ['cu chi', 'dia dao cu chi'], name: 'Huyện Củ Chi', filter: m => m.info.address.toLowerCase().includes('củ chi') || m.stt === 2 },
+      { keys: ['hoc mon', '18 thon vuon trau', 'nga ba giong'], name: 'Huyện Hóc Môn', filter: m => m.info.address.toLowerCase().includes('hóc môn') || m.stt === 15 || m.stt === 31 },
+      { keys: ['quan 1', 'q1', 'trung tam quan 1'], name: 'Quận 1', filter: m => m.info.address.toLowerCase().includes('quận 1') || m.stt === 1 || m.stt === 12 || m.stt === 48 || m.stt === 57 || m.stt === 58 || m.stt === 69 || m.stt === 96 || m.stt === 102 || m.stt === 103 },
+      { keys: ['quan 3', 'q3'], name: 'Quận 3', filter: m => m.info.address.toLowerCase().includes('quận 3') || m.stt === 27 || m.stt === 28 || m.stt === 46 },
+      { keys: ['quan 5', 'q5', 'cho lon', 'hoi quan'], name: 'Quận 5 (Chợ Lớn)', filter: m => m.info.address.toLowerCase().includes('quận 5') || (m.stt >= 82 && m.stt <= 87) || m.stt === 14 || m.stt === 18 || m.stt === 73 || m.stt === 92 || m.stt === 98 },
+      { keys: ['quan 10', 'q10'], name: 'Quận 10', filter: m => m.info.address.toLowerCase().includes('quận 10') || m.stt === 13 || m.stt === 29 || m.stt === 71 },
+      { keys: ['quan 8', 'q8'], name: 'Quận 8', filter: m => m.info.address.toLowerCase().includes('quận 8') || m.stt === 24 || m.stt === 34 },
+      { keys: ['thu duc', 'tp thu duc', 'quan 9', 'quan 2'], name: 'TP. Thủ Đức', filter: m => m.info.address.toLowerCase().includes('thủ đức') || m.info.address.toLowerCase().includes('quận 9') || m.stt === 26 || m.stt === 35 || m.stt === 62 || m.stt === 66 || m.stt === 78 || m.stt === 80 || m.stt === 81 },
+      { keys: ['tan binh', 'go vap', 'phu nhuan', 'binh thanh'], name: 'Khu vực Tân Bình - Gò Vấp - Phú Nhuận - Bình Thạnh', filter: m => m.info.address.toLowerCase().includes('tân bình') || m.info.address.toLowerCase().includes('gò vấp') || m.info.address.toLowerCase().includes('phú nhuận') || m.info.address.toLowerCase().includes('bình thạnh') || m.stt === 10 || m.stt === 39 || m.stt === 47 || m.stt === 49 || m.stt === 54 || m.stt === 59 || m.stt === 70 || m.stt === 75 || m.stt === 79 || m.stt === 88 || m.stt === 89 || m.stt === 90 },
+      { keys: ['con dao', 'nha tu con dao'], name: 'Huyện Côn Đảo', filter: m => m.info.address.toLowerCase().includes('côn đảo') || m.stt === 4 },
+      { keys: ['vung tau', 'ba ria', 'ba ria - vung tau', 'brvt'], name: 'Bà Rịa - Vũng Tàu', filter: m => m.info.address.toLowerCase().includes('vũng tàu') || m.info.address.toLowerCase().includes('bà rịa') || m.info.address.toLowerCase().includes('long điền') || m.info.address.toLowerCase().includes('đất đỏ') || (m.stt >= 50 && m.stt <= 56) || m.stt === 3 || m.stt === 5 || m.stt === 6 || m.stt === 9 || m.stt === 16 || m.stt === 25 || m.stt === 32 || m.stt === 33 || m.stt === 36 || m.stt === 37 || m.stt === 40 || m.stt === 41 || m.stt === 42 || m.stt === 43 || m.stt === 45 || m.stt === 63 || m.stt === 65 || m.stt === 68 || m.stt === 77 || m.stt === 91 || m.stt === 97 || m.stt === 99 || m.stt === 101 },
+      { keys: ['binh duong', 'song be', 'di an', 'thu dau mot', 'tan uyen', 'ben cat'], name: 'Bình Dương', filter: m => m.info.address.toLowerCase().includes('bình dương') || m.info.address.toLowerCase().includes('dĩ an') || m.info.address.toLowerCase().includes('tân uyên') || m.stt === 8 || m.stt === 11 || m.stt === 17 || m.stt === 21 || m.stt === 22 || m.stt === 61 || m.stt === 72 || m.stt === 74 || m.stt === 76 || m.stt === 94 || m.stt === 95 || m.stt === 100 }
+    ];
+
+    if (cleanQ.includes('di tich o') || cleanQ.includes('tai ') || cleanQ.includes('khu vuc') || cleanQ.includes('cac di tich')) {
+      for (const reg of regions) {
+        if (reg.keys.some(k => cleanQ.includes(k))) {
+          const matches = allMonumentsList.filter(reg.filter);
+          if (matches.length > 0) {
+            let resp = `Tại **${reg.name}**, hệ thống có **${matches.length} di tích** tiêu biểu:\n\n`;
+            matches.slice(0, 5).forEach((m, idx) => {
+              resp += `${idx + 1}. **${m.info.name}** (#STT ${m.stt})\n   - 📍 *Địa chỉ:* ${m.info.address}\n   - ⭐ *Xếp hạng:* ${m.info.ranking || 'Di tích Lịch sử'}\n\n`;
+            });
+            if (matches.length > 5) {
+              resp += `*Và còn ${matches.length - 5} di tích khác trong khu vực này.*`;
+            }
+            return {
+              text: resp.trim(),
+              relatedMonuments: matches.slice(0, 4)
+            };
+          }
+        }
+      }
+    }
+
+    // 9. INTERDISCIPLINARY & 6 SUBJECTS / KHKT
+    if (cleanQ.includes('mon hoc') || cleanQ.includes('khkt') || cleanQ.includes('de tai') || cleanQ.includes('stem') || cleanQ.includes('lien mon')) {
+      return {
+        text: `### 📚 Tích Hợp Di Sản Với 6 Môn Học THCS & Đề Tài KHKT\n\n` +
+          `- 📜 **Lịch sử:** Phân tích các mốc son chống Pháp, chống Mỹ, Chiến dịch Hồ Chí Minh (STT 1, 2, 4, 7, 20).\n` +
+          `- 🌍 **Địa lý:** Khảo sát phân bố không gian di tích, địa hình rừng ngập mặn Cần Giờ, địa đạo Củ Chi (STT 2, 7, 23).\n` +
+          `- 📖 **Ngữ văn:** Cảm thụ văn học qua thơ văn yêu nước, hình tượng nữ anh hùng Võ Thị Sáu, nhà tù Côn Đảo (STT 4, 16).\n` +
+          `- ⚖️ **GDCD / HĐTN:** Giáo dục lòng yêu nước, ý thức trách nhiệm bảo tồn và phát huy giá trị di sản văn hóa.\n` +
+          `- 🔬 **KHTN / STEM:** Nghiên cứu cấu trúc địa chất đất sét Củ Chi, kỹ thuật xây dựng vòm cuốn, bảo quản hiện vật gốm cổ.\n` +
+          `- 🎨 **Nghệ thuật:** Tìm hiểu nghệ thuật chạm khắc gỗ đình làng Nam Bộ, kiến trúc hoa văn Chợ Lớn (STT 59, 73, 83).`,
+        relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[6], allMonumentsList[15]]
+      };
+    }
+
+    // 10. HIGH-ACCURACY MONUMENT SEARCH (WEIGHTED MULTI-FACTOR)
     let bestMatch = null;
     let highestScore = 0;
     const scoredList = [];
 
+    const isAddressQuery = /o dau|dia chi|toa do|vi tri|nam o/i.test(cleanQ);
+    const isArtifactQuery = /hien vat|vu khi|trung bay|xe tang|sung|sung phao|xe jeep/i.test(cleanQ);
+    const isInvestigationQuery = /dieu tra|cau hoi|nghien cuu/i.test(cleanQ);
+
     allMonumentsList.forEach(m => {
       let score = 0;
       const mNameClean = removeAccents(m.info.name);
+      const mSlug = m.slug || '';
       const mOverviewClean = removeAccents(m.info.overview);
       const mAddrClean = removeAccents(m.info.address);
 
-      // Name direct match
-      if (mNameClean === cleanQ) score += 100;
-      else if (mNameClean.includes(cleanQ)) score += 50;
-      else if (cleanQ.includes(mNameClean)) score += 40;
+      // Exact name match
+      if (mNameClean === cleanQ) score += 150;
+      else if (mNameClean.includes(cleanQ)) score += 70;
+      else if (cleanQ.includes(mNameClean)) score += 60;
 
-      // Word-level matching
-      const words = cleanQ.split(/\s+/).filter(w => w.length > 2);
-      words.forEach(w => {
-        if (mNameClean.includes(w)) score += 15;
-        if (mOverviewClean.includes(w)) score += 8;
-        if (mAddrClean.includes(w)) score += 6;
-        if (m.keyHighlights?.figures?.title?.toLowerCase().includes(w)) score += 12;
-        if (m.keyHighlights?.artifacts?.title?.toLowerCase().includes(w)) score += 12;
+      // Slug match
+      if (mSlug.includes(cleanQ)) score += 40;
+
+      // Tokenized word matching with stopword filtering
+      const stopWords = ['di', 'tich', 'tai', 'la', 'gi', 'o', 'dau', 'nhu', 'the', 'nao', 'cho', 'toi', 'biet', 've', 'thong', 'tin', 'tp', 'hcm', 'thanh', 'pho', 'co', 'dac', 'biet'];
+      const queryWords = cleanQ.split(/\s+/).filter(w => w.length > 1 && !stopWords.includes(w));
+
+      let matchedWordCount = 0;
+      queryWords.forEach(w => {
+        if (mNameClean.includes(w)) {
+          score += 25;
+          matchedWordCount++;
+        }
+        if (mAddrClean.includes(w)) score += 10;
+        if (mOverviewClean.includes(w)) score += 5;
+        if (m.keyHighlights?.figures?.details && removeAccents(m.keyHighlights.figures.details).includes(w)) score += 15;
+        if (m.keyHighlights?.artifacts?.details && removeAccents(m.keyHighlights.artifacts.details).includes(w)) score += 15;
       });
+
+      if (queryWords.length > 0 && matchedWordCount === queryWords.length) {
+        score += 40;
+      }
 
       if (score > 0) {
         scoredList.push({ monument: m, score });
@@ -280,50 +437,93 @@ export default function HeritageAIChatbot({
       }
     });
 
-    if (bestMatch && highestScore >= 20) {
+    if (bestMatch && highestScore >= 30) {
       const m = bestMatch;
-      let resp = `### 🏛️ ${m.info.name} (#STT ${m.stt})\n\n`;
-      resp += `📍 **Địa chỉ:** ${m.info.address}\n`;
-      resp += `🏆 **Cấp xếp hạng:** ${m.info.badge || m.info.ranking}\n\n`;
-      resp += `📖 **Tổng quan lịch sử:**\n${m.info.overview}\n\n`;
 
-      if (m.keyHighlights) {
-        resp += `🔍 **Thông tin cốt lõi:**\n`;
-        if (m.keyHighlights.figures) {
-          resp += `- 👤 **Nhân vật:** ${m.keyHighlights.figures.title || m.keyHighlights.figures.name || 'Gắn liền với các chứng nhân lịch sử'}\n`;
-        }
-        if (m.keyHighlights.artifacts) {
-          resp += `- 🏺 **Hiện vật:** ${m.keyHighlights.artifacts.title || m.keyHighlights.artifacts.name || 'Hệ thống hiện vật và tài liệu lưu giữ nguyên bản'}\n`;
-        }
-        if (m.keyHighlights.events) {
-          resp += `- 📅 **Sự kiện:** ${m.keyHighlights.events.title || m.keyHighlights.events.name || 'Các mốc thời gian đấu tranh kiên cường'}\n`;
-        }
-        resp += `\n`;
+      // Specific: Address
+      if (isAddressQuery) {
+        return {
+          text: `### 📍 Địa chỉ ${m.info.name}\n\n` +
+            `- **Địa chỉ:** ${m.info.address}\n` +
+            `- **Xếp hạng:** ${m.info.ranking || 'Di tích Lịch sử'}\n` +
+            `- **Số thứ tự:** STT #${m.stt}\n\n` +
+            `💡 *Tóm lược:* ${extractBriefOverview(m.info.overview, 140)}`,
+          relatedMonuments: [m]
+        };
       }
 
-      if (m.investigation?.investigationQuestion) {
-        resp += `🔭 **Câu hỏi điều tra:** *${m.investigation.investigationQuestion}*\n`;
+      // Specific: Artifacts
+      if (isArtifactQuery && m.keyHighlights?.artifacts) {
+        return {
+          text: `### 🏺 Hiện Vật Tiêu Biểu: ${m.info.name} (#STT ${m.stt})\n\n` +
+            `**${m.keyHighlights.artifacts.title || 'Hiện vật di sản'}:**\n` +
+            `${m.keyHighlights.artifacts.details || 'Các hiện vật, vũ khí và tư liệu lịch sử được bảo tồn nguyên vẹn tại di tích.'}\n\n` +
+            `📍 *Địa chỉ:* ${m.info.address}`,
+          relatedMonuments: [m]
+        };
       }
 
-      scoredList.sort((a, b) => b.score - a.score);
-      const topRelated = scoredList.slice(0, 3).map(s => s.monument);
+      // Specific: Investigation
+      if (isInvestigationQuery && m.investigation?.investigationQuestion) {
+        return {
+          text: `### 🔬 Hồ Sơ Điều Tra Lịch Sử: ${m.info.name} (#STT ${m.stt})\n\n` +
+            `> 🔭 **Câu hỏi điều tra:** *${m.investigation.investigationQuestion}*\n\n` +
+            `💡 **Gợi ý giải đáp:**\n${m.investigation.suggestedAnswer || m.info.overview.slice(0, 180) + '...'}\n\n` +
+            `📍 *Địa chỉ:* ${m.info.address}`,
+          relatedMonuments: [m]
+        };
+      }
 
-      return {
-        text: resp,
-        relatedMonuments: topRelated
-      };
+      // Standard concise overview
+      return formatMonumentResponse(m);
     }
 
-    // 8. GENERAL INTENTIONAL FALLBACK RESPONSE
+    // 11. CLEAN FALLBACK
     return {
-      text: `Cảm ơn bạn đã đặt câu hỏi! Về nội dung *"**${rawQ}**"*, hệ thống gợi ý bạn có thể khám phá thêm thông qua các di tích tiêu biểu sau đây hoặc thử tìm kiếm cụ thể theo **Tên di tích, Địa phương (Quận/Huyện) hoặc Nhân vật lịch sử**:\n\n` +
-        `💡 *Mẹo:* Bạn có thể hỏi những câu như:\n` +
-        `- *"Kể cho tôi nghe về lịch sử Địa đạo Củ Chi"*\n` +
-        `- *"Dinh Độc Lập có những hiện vật nào?"*\n` +
-        `- *"Các di tích kiến trúc Pháp cổ tại TP.HCM"*\n` +
-        `- *"Di tích lịch sử nào ở Quận 5?"*`,
+      text: `Tôi chưa tìm thấy thông tin khớp hoàn toàn với câu hỏi *"**${rawQ}**"*. \n\n` +
+        `💡 **Gợi ý cách hỏi hiệu quả:**\n` +
+        `- Hỏi theo tên di tích: *"Dinh Độc Lập", "Địa đạo Củ Chi", "Chùa Giác Lâm"*\n` +
+        `- Hỏi theo số thứ tự: *"STT 1", "Di tích 18", "STT 14"*\n` +
+        `- Hỏi theo địa bàn: *"Di tích ở Cần Giờ", "Di tích ở Quận 5", "Di tích ở Côn Đảo"*\n` +
+        `- Hỏi theo nhân vật: *"Võ Thị Sáu", "Bác Hồ", "Trần Phú", "Ngô Viết Thụ"*`,
       relatedMonuments: allMonumentsList.slice(0, 3)
     };
+  };
+
+  // Helper to parse and format inline markdown (**bold**, *italic*)
+  const formatInlineText = (text) => {
+    if (!text) return null;
+    const parts = [];
+    const regex = /(\*\*.*?\*\*|\*.*?\*)/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(text.substring(lastIndex, match.index));
+      }
+      const token = match[0];
+      if (token.startsWith('**') && token.endsWith('**')) {
+        parts.push(
+          <strong key={match.index} className="font-bold text-[#8B1417]">
+            {token.slice(2, -2)}
+          </strong>
+        );
+      } else if (token.startsWith('*') && token.endsWith('*')) {
+        parts.push(
+          <em key={match.index} className="italic text-stone-700">
+            {token.slice(1, -1)}
+          </em>
+        );
+      }
+      lastIndex = regex.lastIndex;
+    }
+
+    if (lastIndex < text.length) {
+      parts.push(text.substring(lastIndex));
+    }
+
+    return parts.length > 0 ? parts : text;
   };
 
   // Handle Send Message
@@ -492,22 +692,57 @@ export default function HeritageAIChatbot({
                 className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'}`}
               >
                 <div
-                  className={`max-w-[88%] sm:max-w-[82%] rounded-2xl p-3 sm:p-3.5 text-xs sm:text-sm leading-relaxed shadow-xs ${
+                  className={`max-w-[90%] sm:max-w-[85%] rounded-2xl p-3 sm:p-3.5 text-xs sm:text-sm leading-relaxed shadow-xs ${
                     msg.sender === 'user'
                       ? 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white rounded-tr-xs'
                       : 'bg-white border border-rose-200 text-[#2A1214] rounded-tl-xs space-y-2'
                   }`}
                 >
-                  {/* Message content formatted */}
-                  <div className="whitespace-pre-line">
+                  {/* Rich Formatted Message content */}
+                  <div className="space-y-1">
                     {msg.text.split('\n').map((line, lIdx) => {
-                      if (line.startsWith('### ')) {
-                        return <h4 key={lIdx} className="font-serif-title font-black text-sm text-[#8B1417] pt-1">{line.replace('### ', '')}</h4>;
+                      const trimmedLine = line.trim();
+                      if (!trimmedLine) {
+                        return <div key={lIdx} className="h-1" />;
                       }
-                      if (line.startsWith('- ')) {
-                        return <div key={lIdx} className="pl-2 py-0.5">{line}</div>;
+                      if (trimmedLine.startsWith('### ')) {
+                        return (
+                          <h4 key={lIdx} className="font-serif-title font-black text-xs sm:text-sm text-[#8B1417] pt-1 pb-0.5 border-b border-rose-100">
+                            {trimmedLine.replace('### ', '')}
+                          </h4>
+                        );
                       }
-                      return <p key={lIdx} className={line === '' ? 'h-2' : ''}>{line}</p>;
+                      if (trimmedLine.startsWith('> ')) {
+                        return (
+                          <blockquote key={lIdx} className="border-l-3 border-amber-500 bg-amber-50/80 px-2.5 py-1 my-1 italic text-stone-800 rounded-r-md text-[11px] sm:text-xs">
+                            {formatInlineText(trimmedLine.replace('> ', ''))}
+                          </blockquote>
+                        );
+                      }
+                      if (trimmedLine.startsWith('- ')) {
+                        return (
+                          <div key={lIdx} className="flex items-start gap-1.5 py-0.5 pl-1 text-[11.5px] sm:text-xs">
+                            <span className="text-[#8B1417] font-bold shrink-0">•</span>
+                            <span className="leading-snug">{formatInlineText(trimmedLine.slice(2))}</span>
+                          </div>
+                        );
+                      }
+                      if (/^[0-9]+\.\s/.test(trimmedLine)) {
+                        const numMatch = trimmedLine.match(/^([0-9]+)\.\s(.*)$/);
+                        if (numMatch) {
+                          return (
+                            <div key={lIdx} className="flex items-start gap-1.5 py-0.5 pl-1 text-[11.5px] sm:text-xs">
+                              <span className="font-black text-[#8B1417] shrink-0">{numMatch[1]}.</span>
+                              <span className="leading-snug">{formatInlineText(numMatch[2])}</span>
+                            </div>
+                          );
+                        }
+                      }
+                      return (
+                        <p key={lIdx} className="leading-relaxed text-[11.5px] sm:text-xs">
+                          {formatInlineText(trimmedLine)}
+                        </p>
+                      );
                     })}
                   </div>
 
@@ -528,7 +763,7 @@ export default function HeritageAIChatbot({
                             className="p-2 rounded-xl bg-[#FAF4F0] hover:bg-rose-100/70 border border-rose-200/80 flex items-center justify-between cursor-pointer transition-colors group"
                           >
                             <div className="flex items-center gap-2 min-w-0">
-                              <div className="w-7 h-7 rounded-lg overflow-hidden bg-rose-100 shrink-0">
+                              <div className="w-8 h-8 rounded-lg overflow-hidden bg-rose-100 shrink-0 border border-rose-200">
                                 <img src={rm.info.heroImage} alt={rm.info.name} className="w-full h-full object-cover" />
                               </div>
                               <div className="min-w-0">
@@ -538,7 +773,7 @@ export default function HeritageAIChatbot({
                                 <div className="text-[9px] text-stone-500 truncate">{rm.info.address}</div>
                               </div>
                             </div>
-                            <div className="flex items-center gap-0.5 text-[10px] font-bold text-[#8B1417] shrink-0">
+                            <div className="flex items-center gap-0.5 text-[10px] font-bold text-[#8B1417] shrink-0 pl-1">
                               <span>Xem</span>
                               <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                             </div>
