@@ -22,6 +22,7 @@ import confetti from 'canvas-confetti';
 import ScrollReveal from './ScrollReveal';
 import { checkInMonument } from '../utils/passportStorage';
 import soundEffects from '../utils/soundEffects';
+import WordByWordTitle from './WordByWordTitle';
 
 // Web Audio Sound Synthesizer for MiniGame
 class GameAudioEngine {
@@ -289,9 +290,12 @@ export default function InvestigationSection({
               <Compass className="w-4 h-4 text-[#7E1819]" />
               <span>HÀNH TRÌNH THÁM HIỂM & GIẢI MÃ DI SẢN</span>
             </div>
-            <h2 className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl text-[#2C241E]">
-              Truy Tìm Manh Mối • Hồ Sơ Điều Tra • Tài Liệu Di Tích
-            </h2>
+            <WordByWordTitle
+              as="h2"
+              text="Truy Tìm Manh Mối • Hồ Sơ Điều Tra • Tài Liệu Di Tích"
+              className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl text-[#2C241E]"
+              staggerDelay={0.05}
+            />
           </div>
           <span className="hidden sm:inline-block text-xs sm:text-sm font-bold text-[#7E1819] bg-white px-4 py-2 rounded-xl border border-[#EAE3D9] shadow-2xs">
             🏛️ {monumentName}

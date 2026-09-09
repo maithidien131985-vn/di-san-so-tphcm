@@ -16,7 +16,7 @@
   body {
     background-color: #FAF7F2;
     color: #2C241E;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -30,43 +30,24 @@
     margin: 0;
     border: none;
     text-align: left;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
 
 .font-serif-title {
-  font-family: 'Fraunces', 'Playfair Display', Georgia, serif;
-  font-optical-sizing: auto;
-  font-variation-settings: "SOFT" 100, "opsz" 72;
-  letter-spacing: -0.01em;
+  font-family: 'Righteous', 'Playfair Display', 'Merriweather', 'Lora', Georgia, serif;
   text-wrap: balance;
-}
-
-.font-fraunces-italic {
-  font-family: 'Fraunces', Georgia, serif;
-  font-style: italic;
-  font-variation-settings: "SOFT" 100;
-}
-
-.font-label-tracked {
-  font-family: 'Inter', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.75rem;
-  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .font-retro-title {
-  font-family: 'Fraunces', Georgia, serif;
-  font-variation-settings: "SOFT" 100;
+  font-family: 'Righteous', cursive, sans-serif;
   text-wrap: balance;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
 }
 
 .font-retro-3d {
-  font-family: 'Fraunces', Georgia, serif;
-  font-variation-settings: "SOFT" 100;
-  letter-spacing: 0.01em;
+  font-family: 'Righteous', cursive, sans-serif;
+  letter-spacing: 0.03em;
   text-shadow: 
     0 1px 0 #3a0709,
     0 2px 0 #3a0709,
@@ -83,12 +64,11 @@
 }
 
 .font-body-historic {
-  font-family: 'Lora', 'Inter', serif;
+  font-family: 'Lora', 'Be Vietnam Pro', serif;
 }
 
 .font-heading {
-  font-family: 'Fraunces', Georgia, serif;
-  font-variation-settings: "SOFT" 80;
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
   text-wrap: balance;
 }
 

@@ -22,6 +22,7 @@ import ScrollReveal from './ScrollReveal';
 import { soundEffects } from '../utils/soundEffects';
 import { trackQuizAttempt } from '../utils/studentAnalytics';
 import { getActivePassport } from '../utils/passportStorage';
+import WordByWordTitle from './WordByWordTitle';
 
 export default function MediaAudioVideoRow({
   video = {},
@@ -253,9 +254,12 @@ export default function MediaAudioVideoRow({
           <div className="space-y-1">
             <div className="flex items-center gap-2.5 text-[#7E1819]">
               <Headphones className="w-6 h-6 text-[#7E1819]" />
-              <h2 className="font-serif-title font-black text-xl sm:text-2xl lg:text-3xl tracking-wide text-[#7E1819]">
-                Không Gian Đa Phương Tiện: Thính & Thị
-              </h2>
+              <WordByWordTitle
+                as="h2"
+                text="Không Gian Đa Phương Tiện: Thính & Thị"
+                className="font-serif-title font-black text-xl sm:text-2xl lg:text-3xl tracking-wide text-[#7E1819]"
+                staggerDelay={0.05}
+              />
             </div>
             <p className="text-xs sm:text-sm text-[#666666]">
               Xem phim tư liệu lịch sử sống động kết hợp lắng nghe lời thuyết minh truyền cảm hứng.

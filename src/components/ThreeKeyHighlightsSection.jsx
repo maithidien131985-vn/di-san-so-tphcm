@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 import confetti from 'canvas-confetti';
+import WordByWordTitle from './WordByWordTitle';
 
 const CARD_CONFIG = [
   {
@@ -107,9 +108,12 @@ export default function ThreeKeyHighlightsSection({ keyHighlights, monumentName 
                 <Zap className="w-3.5 h-3.5" />
                 <span>Kho Báu Di Tích · Cần Khám Phá</span>
               </div>
-              <h2 className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl text-[#2C241E]">
-                Nhân Vật · Hiện Vật · Sự Kiện Tiêu Biểu
-              </h2>
+              <WordByWordTitle
+                as="h2"
+                text="Nhân Vật · Hiện Vật · Sự Kiện Tiêu Biểu"
+                className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl text-[#2C241E]"
+                staggerDelay={0.05}
+              />
               <p className="text-xs sm:text-sm md:text-base text-[#666666]">
                 Bấm vào từng thẻ bí mật để mở khóa tư liệu lịch sử cốt lõi về di tích này
               </p>

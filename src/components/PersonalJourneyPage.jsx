@@ -32,6 +32,7 @@ import {
 import confetti from 'canvas-confetti';
 import { allMonumentsList } from '../data/allMonumentsData';
 import soundEffects from '../utils/soundEffects';
+import WordByWordTitle from './WordByWordTitle';
 
 export default function PersonalJourneyPage({
   activePassport,
@@ -231,9 +232,12 @@ export default function PersonalJourneyPage({
                       MÃ: {activePassport?.code || 'CHẾ ĐỘ TỰ DO'}
                     </span>
                   </div>
-                  <h2 className="font-serif-title font-black text-xl sm:text-2xl text-amber-100 leading-tight">
-                    {activePassport?.fullName || 'Nhà Thám Hiểm Trẻ Tuổi'}
-                  </h2>
+                  <WordByWordTitle
+                    as="h2"
+                    text={activePassport?.fullName || 'Nhà Thám Hiểm Trẻ Tuổi'}
+                    className="font-serif-title font-black text-xl sm:text-2xl text-amber-100 leading-tight"
+                    staggerDelay={0.06}
+                  />
                   <p className="text-xs text-rose-200/80">
                     {activePassport?.school || 'TP. Hồ Chí Minh'} {activePassport?.grade ? `• ${activePassport.grade}` : ''}
                   </p>

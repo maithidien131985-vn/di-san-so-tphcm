@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Sparkles, MapPin, ChevronRight, Home, Star, Image as ImageIcon, Camera } from 'lucide-react';
+import WordByWordTitle from './WordByWordTitle';
 
 export default function HeroBanner({
   info,
@@ -107,14 +108,22 @@ export default function HeroBanner({
           </div>
 
           {/* Monument Name with text-wrap: balance and grand historic typography */}
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black font-serif-title tracking-tight text-white leading-tight uppercase drop-shadow-2xl text-shadow-lg [text-wrap:balance]">
-            {info.name}
-          </h1>
+          <WordByWordTitle
+            as="h1"
+            text={info.name}
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black font-serif-title tracking-tight text-white leading-tight uppercase drop-shadow-2xl text-shadow-lg [text-wrap:balance]"
+            staggerDelay={0.04}
+            initialDelay={0.15}
+          />
 
           {/* Subtitle / Historic Tagline with text-wrap: balance */}
-          <p className="text-sm sm:text-base md:text-lg text-amber-200 font-semibold leading-relaxed max-w-4xl drop-shadow-md [text-wrap:balance]">
-            {info.subtitle || 'Chứng nhân lịch sử & Di sản văn hóa trường tồn'}
-          </p>
+          <WordByWordTitle
+            as="p"
+            text={info.subtitle || 'Chứng nhân lịch sử & Di sản văn hóa trường tồn'}
+            className="text-sm sm:text-base md:text-lg text-amber-200 font-semibold leading-relaxed max-w-4xl drop-shadow-md [text-wrap:balance]"
+            staggerDelay={0.03}
+            initialDelay={0.35}
+          />
         </div>
 
         {/* 3. THE 4 BOTTOM GALLERY THUMBNAIL CARDS (AS SHOWN IN SAMPLE IMAGE) */}

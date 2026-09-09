@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { soundEffects } from '../utils/soundEffects';
+import WordByWordTitle from './WordByWordTitle';
 
 export default function HistorySection({
   overview = '',
@@ -104,9 +105,12 @@ export default function HistorySection({
               <Landmark className="w-6 h-6" />
             </div>
             <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black font-serif-title tracking-tight text-[#7E1819]">
-                Giá Trị Lịch Sử & Ý Nghĩa Di Sản
-              </h2>
+              <WordByWordTitle
+                as="h2"
+                text="Giá Trị Lịch Sử & Ý Nghĩa Di Sản"
+                className="text-2xl sm:text-3xl lg:text-4xl font-black font-serif-title tracking-tight text-[#7E1819]"
+                staggerDelay={0.05}
+              />
               <p className="text-xs sm:text-sm text-[#666666]">
                 Biên niên sử vàng son và dấu ấn không thể phai mờ
               </p>

@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import WordByWordTitle from './WordByWordTitle';
 import { 
   Compass, 
   MapPin, 
@@ -40,7 +41,6 @@ import {
   Grid
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
-import SmoothScrollHero from './ui/smooth-scroll-hero';
 
 export default function HomePage({ 
   allMonuments = [], 
@@ -253,176 +253,172 @@ export default function HomePage({
 
   return (
     <div className="bg-[#FAF4F0] min-h-screen text-[#2A1214] font-sans antialiased selection:bg-[#8B1417] selection:text-white pb-20 md:pb-0">
-      {/* 1. HERO BANNER WITH SMOOTH SCROLL PARALLAX EXPANSION */}
-      <SmoothScrollHero
-        scrollHeight={900}
-        desktopImage="/assets/images/dinh-doc-lap-front.jpg"
-        mobileImage="/assets/images/dinh-doc-lap-front.jpg"
-        initialClipPercentage={18}
-        finalClipPercentage={82}
-      >
-        <section className="relative w-full h-full flex flex-col justify-between overflow-hidden shadow-2xl border-b-4 border-[#BA8438]/40 pb-12 sm:pb-16 bg-black/40 backdrop-blur-xs">
-          {/* Background Decorative Elements: Subtle gold radial glow, historical star texture and heritage motifs */}
-          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-            <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-[#BA8438]/15 rounded-full blur-3xl" />
-            <div className="absolute top-1/3 -right-20 w-[700px] h-[700px] bg-[#A81B1F]/35 rounded-full blur-3xl" />
-            <div className="absolute inset-0 bg-[radial-gradient(#BA8438_1px,transparent_1px)] [background-size:24px_24px] opacity-10" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#200507]/90 via-transparent to-black/20" />
-          </div>
+      {/* 1. HERO BANNER WITH REVOLUTIONARY BURGUNDY RED THEME & HERITAGE MAP */}
+      <section className="relative bg-gradient-to-br from-[#4A0A0C] via-[#7E1819] to-[#200507] text-white min-h-[580px] sm:min-h-[640px] md:min-h-[700px] flex flex-col justify-between overflow-hidden shadow-2xl border-b-4 border-[#BA8438]/40 pb-12 sm:pb-16">
+        {/* Background Decorative Elements: Subtle gold radial glow, historical star texture and heritage motifs */}
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-[#BA8438]/15 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 -right-20 w-[700px] h-[700px] bg-[#A81B1F]/35 rounded-full blur-3xl" />
+          <div className="absolute inset-0 bg-[radial-gradient(#BA8438_1px,transparent_1px)] [background-size:24px_24px] opacity-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#200507]/90 via-transparent to-black/20" />
+        </div>
 
-          {/* Hero Main Content with 2-Column Grid on Desktop */}
-          <div className="relative z-10 max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-12 md:py-14 my-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
-              
-              {/* Left Column: Title, Subtitle & Action CTAs */}
-              <div className="lg:col-span-5 space-y-4 sm:space-y-6 text-center lg:text-left">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#BA8438]/20 border border-[#BA8438]/40 text-amber-200 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-sm shadow-inner">
-                  <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
-                  <span>Số hóa 103 Di tích Lịch sử - Văn hóa cấp quốc gia và cấp quốc gia đặc biệt TP. Hồ Chí Minh</span>
-                </div>
-
-                <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-2xl">
-                  DI SẢN <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
-                    TP. HỒ CHÍ MINH
-                  </span>
-                </h1>
-
-                <h2 className="font-serif-title text-base sm:text-xl lg:text-2xl text-amber-100/90 font-medium tracking-wide drop-shadow">
-                  Hành trình khám phá những câu chuyện còn sống mãi
-                </h2>
-
-                <p className="text-xs sm:text-sm md:text-base text-rose-100/80 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0 drop-shadow-sm">
-                  Không gian học tập lịch sử số hóa tương tác dành cho học sinh, giáo viên và cộng đồng yêu di sản. Khám phá kho dữ liệu 103 di tích, sơ đồ địa lý, hồ sơ điều tra và thử thách kiến thức.
-                </p>
-
-                {/* CTA Buttons */}
-                <div className="pt-2 sm:pt-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
-                  <button
-                    onClick={onOpenExplorer}
-                    className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-[#200507] font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-950/40 ring-2 ring-amber-300 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
-                  >
-                    <Landmark className="w-4 h-4 text-[#200507]" />
-                    <span>Khám Phá Di Tích</span>
-                  </button>
-
-                  <button
-                    onClick={onOpenMyMap}
-                    className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-[#4A0A0C]/80 hover:bg-[#380608] border border-amber-300/40 text-amber-100 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
-                  >
-                    <MapPin className="w-4 h-4 text-amber-300" />
-                    <span>Bản Đồ Di Tích</span>
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      if (onNavigate) onNavigate('journey');
-                    }}
-                    className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500/20 to-amber-600/30 hover:bg-amber-500/30 border border-amber-400/60 text-amber-200 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
-                    title="Xem sơ đồ hành trình cá nhân"
-                  >
-                    <Sparkles className="w-4 h-4 text-amber-300" />
-                    <span>Sơ Đồ Hành Trình</span>
-                  </button>
-
-                  <button
-                    onClick={onOpenPassport}
-                    className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
-                    title="Mở Hộ Chiếu Di Sản & Lưu hành trình khám phá"
-                  >
-                    <Compass className="w-4 h-4 text-amber-300" />
-                    <span>{activePassport ? `Hộ Chiếu: ${activePassport.fullName}` : 'Hộ Chiếu Di Sản'}</span>
-                  </button>
-                </div>
+        {/* Hero Main Content with 2-Column Grid on Desktop */}
+        <div className="relative z-10 max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-12 md:py-14 my-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
+            
+            {/* Left Column: Title, Subtitle & Action CTAs */}
+            <div className="lg:col-span-5 space-y-4 sm:space-y-6 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#BA8438]/20 border border-[#BA8438]/40 text-amber-200 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-sm shadow-inner">
+                <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
+                <span>Số hóa 103 Di tích Lịch sử - Văn hóa cấp quốc gia và cấp quốc gia đặc biệt TP. Hồ Chí Minh</span>
               </div>
 
-              {/* Right Column: Double Size Uploaded Heritage Map */}
-              <div className="lg:col-span-7 flex justify-center items-center relative w-full overflow-visible py-4">
-                {/* Ambient Warm Golden Glow directly behind map */}
-                <div className="absolute inset-0 bg-radial from-amber-500/35 via-rose-600/25 to-transparent blur-3xl scale-150 pointer-events-none" />
-                
-                <div className="relative w-full flex items-center justify-center lg:justify-end">
-                  <img
-                    src="/assets/images/tphcm_heritage_map_hero.png"
-                    alt="Bản đồ di sản TP. Hồ Chí Minh"
-                    className="w-full max-w-[620px] sm:max-w-[780px] md:max-w-[900px] lg:max-w-[1000px] max-h-[460px] sm:max-h-[560px] md:max-h-[640px] object-contain transition-transform duration-700 hover:scale-103"
-                    style={{
-                      filter: 'drop-shadow(0 25px 40px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 50px rgba(234, 179, 8, 0.3))'
-                    }}
-                  />
-                </div>
-              </div>
+              <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-2xl">
+                DI SẢN <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
+                  TP. HỒ CHÍ MINH
+                </span>
+              </h1>
 
+              <WordByWordTitle
+                as="h2"
+                text="Hành trình khám phá những câu chuyện còn sống mãi"
+                className="font-serif-title text-base sm:text-xl lg:text-2xl text-amber-100/90 font-medium tracking-wide drop-shadow"
+                staggerDelay={0.04}
+                initialDelay={0.2}
+              />
+
+              <p className="text-xs sm:text-sm md:text-base text-rose-100/80 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0 drop-shadow-sm">
+                Không gian học tập lịch sử số hóa tương tác dành cho học sinh, giáo viên và cộng đồng yêu di sản. Khám phá kho dữ liệu 103 di tích, sơ đồ địa lý, hồ sơ điều tra và thử thách kiến thức.
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="pt-2 sm:pt-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
+                <button
+                  onClick={onOpenExplorer}
+                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-[#200507] font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-950/40 ring-2 ring-amber-300 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
+                >
+                  <Landmark className="w-4 h-4 text-[#200507]" />
+                  <span>Khám Phá Di Tích</span>
+                </button>
+
+                <button
+                  onClick={onOpenMyMap}
+                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-[#4A0A0C]/80 hover:bg-[#380608] border border-amber-300/40 text-amber-100 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
+                >
+                  <MapPin className="w-4 h-4 text-amber-300" />
+                  <span>Bản Đồ Di Tích</span>
+                </button>
+
+                <button
+                  onClick={() => {
+                    if (onNavigate) onNavigate('journey');
+                  }}
+                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500/20 to-amber-600/30 hover:bg-amber-500/30 border border-amber-400/60 text-amber-200 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
+                  title="Xem sơ đồ hành trình cá nhân"
+                >
+                  <Sparkles className="w-4 h-4 text-amber-300" />
+                  <span>Sơ Đồ Hành Trình</span>
+                </button>
+
+                <button
+                  onClick={onOpenPassport}
+                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
+                  title="Mở Hộ Chiếu Di Sản & Lưu hành trình khám phá"
+                >
+                  <Compass className="w-4 h-4 text-amber-300" />
+                  <span>{activePassport ? `Hộ Chiếu: ${activePassport.fullName}` : 'Hộ Chiếu Di Sản'}</span>
+                </button>
+              </div>
             </div>
-          </div>
 
-          {/* Floating Elevated Search Bar inside Hero */}
-          <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-4 sm:-mb-6">
-            <form 
-              onSubmit={(e) => {
-                e.preventDefault();
-                handlePerformSearch();
-              }}
-              className="bg-[#FFFDFB] rounded-2xl sm:rounded-full p-2.5 sm:p-3.5 shadow-[0_20px_50px_rgba(0,0,0,0.4)] border-2 border-amber-400/80 ring-4 ring-[#8B1417]/20 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 backdrop-blur-lg transform hover:-translate-y-0.5 transition-all"
-            >
-              <div className="flex items-center gap-2 pl-2 sm:pl-4 text-xs sm:text-sm font-black text-[#8B1417] shrink-0">
-                <Search className="w-5 h-5 text-[#8B1417]" />
-                <span className="tracking-tight">Bạn muốn khám phá điều gì?</span>
-              </div>
-
-              <div className="relative flex-1 w-full">
-                <input
-                  id="search-input-field"
-                  type="text"
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  placeholder="Tìm tên di tích, địa phương, nhân vật..."
-                  className="w-full py-2 sm:py-2.5 px-3 sm:px-4 text-xs sm:text-sm text-[#2A1214] placeholder-stone-400 bg-[#FAF4F0] rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] transition-all font-medium border border-rose-200/80"
+            {/* Right Column: Double Size Uploaded Heritage Map */}
+            <div className="lg:col-span-7 flex justify-center items-center relative w-full overflow-visible py-4">
+              {/* Ambient Warm Golden Glow directly behind map */}
+              <div className="absolute inset-0 bg-radial from-amber-500/35 via-rose-600/25 to-transparent blur-3xl scale-150 pointer-events-none" />
+              
+              <div className="relative w-full flex items-center justify-center lg:justify-end">
+                <img
+                  src="/assets/images/tphcm_heritage_map_hero.png"
+                  alt="Bản đồ di sản TP. Hồ Chí Minh"
+                  className="w-full max-w-[620px] sm:max-w-[780px] md:max-w-[900px] lg:max-w-[1000px] max-h-[460px] sm:max-h-[560px] md:max-h-[640px] object-contain transition-transform duration-700 hover:scale-103"
+                  style={{
+                    filter: 'drop-shadow(0 25px 40px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 50px rgba(234, 179, 8, 0.3))'
+                  }}
                 />
-
-                {searchResults.length > 0 && (
-                  <div className="absolute left-0 right-0 top-full mt-2 bg-[#FFFDFB] rounded-2xl shadow-2xl border border-rose-200 p-2 z-50 max-h-80 overflow-y-auto divide-y divide-rose-100 animate-fadeIn">
-                    <div className="px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-[#8B1417] bg-[#FDF2F3] rounded-lg mb-1 flex items-center justify-between">
-                      <span>Di tích phù hợp nhất ({searchResults.length})</span>
-                      <span className="text-stone-500 font-normal">Nhấn để mở ngay</span>
-                    </div>
-                    {searchResults.map(m => (
-                      <div
-                        key={m.stt}
-                        onClick={() => {
-                          onSelectMonument(m.stt);
-                          setSearchTerm('');
-                        }}
-                        className="p-3 hover:bg-[#FDF2F3] rounded-xl cursor-pointer flex items-center justify-between group transition-colors"
-                      >
-                        <div className="space-y-0.5">
-                          <div className="text-xs font-bold text-[#8B1417] group-hover:underline flex items-center gap-1.5">
-                            <span>{m.info.name}</span>
-                            <span className="px-1.5 py-0.2 rounded text-[9px] bg-rose-100 text-[#8B1417] font-black">{m.info.badge || m.info.ranking}</span>
-                          </div>
-                          <div className="text-[11px] text-stone-600 truncate max-w-[240px] sm:max-w-none">{m.info.address}</div>
-                        </div>
-                        <div className="flex items-center gap-1 text-xs font-bold text-[#8B1417] opacity-0 group-hover:opacity-100 transition-opacity">
-                          <span>Xem</span>
-                          <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
               </div>
+            </div>
 
-              <button
-                type="submit"
-                className="w-full sm:w-auto px-6 sm:px-7 py-2.5 sm:py-3 rounded-xl sm:rounded-full bg-gradient-to-r from-[#8B1417] to-[#B31D21] hover:from-[#731013] hover:to-[#96171a] text-white font-black text-xs sm:text-sm shadow-md transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
-              >
-                <Search className="w-4 h-4" />
-                <span>Tìm kiếm</span>
-              </button>
-            </form>
           </div>
-        </section>
-      </SmoothScrollHero>
+        </div>
+
+        {/* Floating Elevated Search Bar */}
+        <div className="relative z-40 max-w-4xl w-full mx-auto px-4 -mb-6 sm:-mb-8">
+          <form 
+            onSubmit={(e) => {
+              e.preventDefault();
+              handlePerformSearch();
+            }}
+            className="bg-[#FFFDFB] rounded-2xl sm:rounded-full p-2.5 sm:p-3.5 shadow-[0_20px_50px_rgba(0,0,0,0.4)] border-2 border-amber-400/80 ring-4 ring-[#8B1417]/20 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 backdrop-blur-lg transform hover:-translate-y-0.5 transition-all"
+          >
+            <div className="flex items-center gap-2 pl-2 sm:pl-4 text-xs sm:text-sm font-black text-[#8B1417] shrink-0">
+              <Search className="w-5 h-5 text-[#8B1417]" />
+              <span className="tracking-tight">Bạn muốn khám phá điều gì?</span>
+            </div>
+
+            <div className="relative flex-1 w-full">
+              <input
+                id="search-input-field"
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Tìm tên di tích, địa phương, nhân vật..."
+                className="w-full py-2 sm:py-2.5 px-3 sm:px-4 text-xs sm:text-sm text-[#2A1214] placeholder-stone-400 bg-[#FAF4F0] rounded-xl sm:rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] transition-all font-medium border border-rose-200/80"
+              />
+
+              {searchResults.length > 0 && (
+                <div className="absolute left-0 right-0 top-full mt-2 bg-[#FFFDFB] rounded-2xl shadow-2xl border border-rose-200 p-2 z-50 max-h-80 overflow-y-auto divide-y divide-rose-100 animate-fadeIn">
+                  <div className="px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-[#8B1417] bg-[#FDF2F3] rounded-lg mb-1 flex items-center justify-between">
+                    <span>Di tích phù hợp nhất ({searchResults.length})</span>
+                    <span className="text-stone-500 font-normal">Nhấn để mở ngay</span>
+                  </div>
+                  {searchResults.map(m => (
+                    <div
+                      key={m.stt}
+                      onClick={() => {
+                        onSelectMonument(m.stt);
+                        setSearchTerm('');
+                      }}
+                      className="p-3 hover:bg-[#FDF2F3] rounded-xl cursor-pointer flex items-center justify-between group transition-colors"
+                    >
+                      <div className="space-y-0.5">
+                        <div className="text-xs font-bold text-[#8B1417] group-hover:underline flex items-center gap-1.5">
+                          <span>{m.info.name}</span>
+                          <span className="px-1.5 py-0.2 rounded text-[9px] bg-rose-100 text-[#8B1417] font-black">{m.info.badge || m.info.ranking}</span>
+                        </div>
+                        <div className="text-[11px] text-stone-600 truncate max-w-[240px] sm:max-w-none">{m.info.address}</div>
+                      </div>
+                      <div className="flex items-center gap-1 text-xs font-bold text-[#8B1417] opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span>Xem</span>
+                        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <button
+              type="submit"
+              className="w-full sm:w-auto px-6 sm:px-7 py-2.5 sm:py-3 rounded-xl sm:rounded-full bg-gradient-to-r from-[#8B1417] to-[#B31D21] hover:from-[#731013] hover:to-[#96171a] text-white font-black text-xs sm:text-sm shadow-md transition-all hover:scale-103 cursor-pointer flex items-center justify-center gap-2"
+            >
+              <Search className="w-4 h-4" />
+              <span>Tìm kiếm</span>
+            </button>
+          </form>
+        </div>
+      </section>
 
       {/* 2. BẢN ĐỒ SỐ 103 DI TÍCH VÀ LỜI NGỎ GIỚI THIỆU TRÊN CÙNG 1 HÀNG */}
       <section id="map-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-8">
@@ -435,9 +431,12 @@ export default function HomePage({
                   <div className="w-9 h-9 rounded-xl bg-[#8B1417] text-white flex items-center justify-center shadow-xs">
                     <MapPin className="w-5 h-5 text-amber-200" />
                   </div>
-                  <h2 className="font-serif-title font-black text-lg sm:text-xl md:text-2xl uppercase tracking-wider text-[#8B1417]">
-                    DI TÍCH QUANH EM
-                  </h2>
+                  <WordByWordTitle
+                    as="h2"
+                    text="DI TÍCH QUANH EM"
+                    className="font-serif-title font-black text-lg sm:text-xl md:text-2xl uppercase tracking-wider text-[#8B1417]"
+                    staggerDelay={0.05}
+                  />
                   <span className="px-3 py-0.5 rounded-full bg-[#FDF2F3] text-[#8B1417] text-[11px] font-black uppercase tracking-wider border border-rose-200">
                     Bản đồ số 103 Di tích TP.HCM &amp; Vùng phụ cận
                   </span>
@@ -560,9 +559,12 @@ export default function HomePage({
           <div className="bg-[#FFFDFB] rounded-3xl p-4 sm:p-6 md:p-10 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-6 sm:space-y-8">
             {/* Header */}
             <div className="text-center space-y-2 max-w-2xl mx-auto">
-              <h2 className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl uppercase tracking-wider text-[#2A1214]">
-                KHÁM PHÁ THEO CÁCH CỦA BẠN
-              </h2>
+              <WordByWordTitle
+                as="h2"
+                text="KHÁM PHÁ THEO CÁCH CỦA BẠN"
+                className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl uppercase tracking-wider text-[#2A1214] justify-center"
+                staggerDelay={0.05}
+              />
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
                 Hãy cho chúng tôi biết nơi bạn ở và chủ đề đam mê để nhận ngay gợi ý di tích phù hợp nhất!
               </p>

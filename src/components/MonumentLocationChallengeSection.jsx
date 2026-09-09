@@ -3,6 +3,7 @@ import { MapPin, Compass, CheckCircle2, XCircle, HelpCircle, ExternalLink, Spark
 import confetti from 'canvas-confetti';
 import LocationMap from './LocationMap';
 import ScrollReveal from './ScrollReveal';
+import WordByWordTitle from './WordByWordTitle';
 
 import { soundEffects } from '../utils/soundEffects';
 
@@ -92,9 +93,12 @@ export default function MonumentLocationChallengeSection({
           <div className="space-y-1.5">
             <div className="flex items-center gap-2.5 text-[#7E1819]">
               <Compass className="w-7 h-7 text-[#7E1819]" />
-              <h2 className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#7E1819]">
-                Định Vị Không Gian & Tọa Độ Lịch Sử
-              </h2>
+              <WordByWordTitle
+                as="h2"
+                text="Định Vị Không Gian & Tọa Độ Lịch Sử"
+                className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#7E1819]"
+                staggerDelay={0.05}
+              />
             </div>
             <p className="text-xs sm:text-sm md:text-base text-[#555555]">
               Khám phá tọa độ GPS thực địa, định vị trên bản đồ số và giải mã bí ẩn vị trí địa lý của di tích.
