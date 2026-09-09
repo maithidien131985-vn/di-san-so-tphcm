@@ -4,6 +4,8 @@
  * Bám sát cơ sở dữ liệu 103 di tích lịch sử - văn hóa TP.HCM & Vùng phụ cận
  */
 
+import { monumentQaMap, systemFaqList } from '../data/chatbotTrainingData';
+
 const STORAGE_KEY = 'heritage_gemini_api_key';
 
 // Lấy API Key từ Environment Variable hoặc LocalStorage
@@ -110,29 +112,40 @@ export const queryGeminiAI = async ({
     throw new Error('MISSING_API_KEY');
   }
 
-  // 1. RAG Context: Lấy tối đa 5 di tích liên quan nhất
+  // 1. RAG Context: Lấy tối đa 5 di tích liên quan nhất từ bộ tri thức huấn luyện chính thức
   const relevantMonuments = retrieveRelevantMonuments(query, currentMonument, allMonumentsList, 5);
 
-  let groundingContext = 'DƯỚI ĐÂY LÀ DỮ LIỆU CHÍNH THỐNG TỪ CƠ SỞ DỮ LIỆU 103 DI TÍCH TP.HCM & VÙNG PHỤ CẬN:\n\n';
+  let groundingContext = 'DƯỚI ĐÂY LÀ DỮ LIỆU HUẤN LUYỆN CHÍNH THỐNG TỪ BỘ DỮ LIỆU 103 DI TÍCH TP.HCM & VÙNG PHỤ CẬN:\n\n';
+  
+  // Bổ sung thống kê toàn hệ thống
+  groundingContext += 'THỐNG KÊ HỆ THỐNG:\n';
+  groundingContext += '- Tổng số: 103 di tích lịch sử - văn hóa.\n';
+  groundingContext += '- Di tích Lịch sử: 51 | Kiến trúc nghệ thuật: 46 | Khảo cổ học: 4 | Danh lam thắng cảnh: 2.\n';
+  groundingContext += '- Xếp hạng Quốc gia đặc biệt: 4 (Dinh Độc Lập, Địa đạo Củ Chi, Nhà tù Côn Đảo, Căn cứ Rừng Sác) | Xếp hạng Quốc gia: 99.\n\n';
+
   if (relevantMonuments.length > 0) {
     relevantMonuments.forEach(m => {
-      groundingContext += '[STT #' + m.stt + '] ' + m.info.name + '\n';
-      groundingContext += '- Địa chỉ: ' + m.info.address + '\n';
-      groundingContext += '- Xếp hạng: ' + (m.info.badge || m.info.ranking || 'Di tích Lịch sử') + '\n';
-      groundingContext += '- Tóm tắt lịch sử: ' + m.info.overview + '\n';
-      if (m.keyHighlights?.figures?.details) {
-        groundingContext += '- Nhân vật liên quan: ' + m.keyHighlights.figures.details + '\n';
+      const trainedMon = monumentQaMap[m.stt];
+      groundingContext += `[STT #${m.stt}] ${m.info.name}\n`;
+      groundingContext += `- Địa chỉ hiện nay: ${trainedMon?.intents?.dc_sau?.answer || m.info.address}\n`;
+      groundingContext += `- Xếp hạng: ${trainedMon?.intents?.rank?.answer || m.info.badge || m.info.ranking || 'Di tích Lịch sử'}\n`;
+      groundingContext += `- Quyết định công nhận: ${trainedMon?.intents?.qd?.answer || 'Đã xếp hạng'}\n`;
+      groundingContext += `- Tóm tắt & Lịch sử: ${trainedMon?.intents?.tomtat?.answer || trainedMon?.intents?.lichsu?.answer || m.info.overview}\n`;
+      
+      if (trainedMon?.intents?.nhanvat?.answer) {
+        groundingContext += `- Nhân vật liên quan: ${trainedMon.intents.nhanvat.answer}\n`;
       }
-      if (m.keyHighlights?.artifacts?.details) {
-        groundingContext += '- Hiện vật tiêu biểu: ' + m.keyHighlights.artifacts.details + '\n';
+      if (trainedMon?.intents?.hientvat?.answer) {
+        groundingContext += `- Hiện vật tiêu biểu: ${trainedMon.intents.hientvat.answer}\n`;
+      }
+      if (trainedMon?.intents?.sukien?.answer) {
+        groundingContext += `- Sự kiện lịch sử: ${trainedMon.intents.sukien.answer}\n`;
       }
       if (m.investigation?.investigationQuestion) {
-        groundingContext += '- Câu hỏi điều tra học tập: ' + m.investigation.investigationQuestion + '\n';
+        groundingContext += `- Câu hỏi điều tra học tập: ${m.investigation.investigationQuestion}\n`;
       }
       groundingContext += '\n';
     });
-  } else {
-    groundingContext += 'Hệ thống gồm 103 di tích lịch sử - văn hóa tiêu biểu thuộc TP.HCM, Cần Giờ, Củ Chi, Côn Đảo, Bà Rịa - Vũng Tàu, Bình Dương.\n';
   }
 
   // 2. System Instructions
