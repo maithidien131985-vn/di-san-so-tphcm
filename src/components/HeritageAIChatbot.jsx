@@ -20,9 +20,20 @@ import {
   Award,
   Search,
   Flame,
-  ArrowRight
+  ArrowRight,
+  Key,
+  Settings,
+  Zap,
+  ExternalLink,
+  ShieldCheck
 } from 'lucide-react';
 import { allMonumentsList } from '../data/allMonumentsData';
+import { 
+  getGeminiApiKey, 
+  saveGeminiApiKey, 
+  hasGeminiApiKey, 
+  queryGeminiAI 
+} from '../utils/geminiService';
 
 // Helper to remove accents for robust search
 const removeAccents = (str) => {
@@ -49,6 +60,12 @@ export default function HeritageAIChatbot({
   const [isThinking, setIsThinking] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [hasUnread, setHasUnread] = useState(true);
+
+  // Gemini API Settings State
+  const [showSettings, setShowSettings] = useState(false);
+  const [apiKeyInput, setApiKeyInput] = useState(getGeminiApiKey() || '');
+  const [isGeminiEnabled, setIsGeminiEnabled] = useState(hasGeminiApiKey());
+  const [saveSuccessMsg, setSaveSuccessMsg] = useState(false);
 
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
@@ -529,43 +546,102 @@ export default function HeritageAIChatbot({
     }
   };
 
-  // Handle Send Message (Instant fail-safe execution)
-  const handleSendMessage = (textToSend) => {
+  // Handle Save API Key
+  const handleSaveApiKey = (e) => {
+    if (e) e.preventDefault();
+    const cleanKey = apiKeyInput.trim();
+    saveGeminiApiKey(cleanKey);
+    setIsGeminiEnabled(Boolean(cleanKey));
+    setSaveSuccessMsg(true);
+    setTimeout(() => setSaveSuccessMsg(false), 3000);
+  };
+
+  // Handle Clear API Key
+  const handleClearApiKey = () => {
+    saveGeminiApiKey('');
+    setApiKeyInput('');
+    setIsGeminiEnabled(false);
+  };
+
+  // Handle Send Message (Hybrid: Gemini Live AI + Local Fallback)
+  const handleSendMessage = async (textToSend) => {
     const query = textToSend || inputMessage;
     if (!query || !query.trim()) return;
+
+    const trimmedQ = query.trim();
 
     // Add user message
     const userMsg = {
       id: `user_${Date.now()}`,
       sender: 'user',
-      text: query.trim(),
+      text: trimmedQ,
       timestamp: new Date()
     };
 
-    let aiMsg;
-    try {
-      const result = processAIQuery(query);
-      aiMsg = {
-        id: `ai_${Date.now() + 1}`,
-        sender: 'ai',
-        text: result?.text || 'Không tìm thấy kết quả phù hợp.',
-        relatedMonuments: result?.relatedMonuments || [],
-        timestamp: new Date()
-      };
-    } catch (err) {
-      console.error('Chatbot error:', err);
-      aiMsg = {
-        id: `ai_${Date.now() + 1}`,
-        sender: 'ai',
-        text: 'Xin chào! Bạn vui lòng thử lại với tên di tích cụ thể hoặc câu hỏi khác nhé.',
-        relatedMonuments: allMonumentsList.slice(0, 3),
-        timestamp: new Date()
-      };
-    }
-
-    setMessages(prev => [...prev, userMsg, aiMsg]);
+    setMessages(prev => [...prev, userMsg]);
     setInputMessage('');
-    setIsThinking(false);
+
+    // Check if Gemini Live AI is active
+    if (isGeminiEnabled && getGeminiApiKey()) {
+      setIsThinking(true);
+      try {
+        const geminiRes = await queryGeminiAI({
+          query: trimmedQ,
+          chatHistory: messages,
+          currentMonument,
+          allMonumentsList
+        });
+
+        const aiMsg = {
+          id: `ai_${Date.now() + 1}`,
+          sender: 'ai',
+          text: geminiRes.text,
+          relatedMonuments: geminiRes.relatedMonuments || [],
+          isGemini: true,
+          timestamp: new Date()
+        };
+        setMessages(prev => [...prev, aiMsg]);
+      } catch (geminiErr) {
+        console.warn('Gemini API query error, falling back to local engine:', geminiErr);
+        // Fallback to local knowledge base
+        const localResult = processAIQuery(trimmedQ);
+        const aiMsg = {
+          id: `ai_${Date.now() + 1}`,
+          sender: 'ai',
+          text: `> ⚠️ *Đã tự động chuyển sang Chế độ Bản Địa do mạng hoặc API Key: ${geminiErr.message}*\n\n` + localResult.text,
+          relatedMonuments: localResult.relatedMonuments || [],
+          isGemini: false,
+          timestamp: new Date()
+        };
+        setMessages(prev => [...prev, aiMsg]);
+      } finally {
+        setIsThinking(false);
+      }
+    } else {
+      // Local Fast Offline Engine (< 1ms)
+      try {
+        const result = processAIQuery(trimmedQ);
+        const aiMsg = {
+          id: `ai_${Date.now() + 1}`,
+          sender: 'ai',
+          text: result?.text || 'Không tìm thấy kết quả phù hợp.',
+          relatedMonuments: result?.relatedMonuments || [],
+          isGemini: false,
+          timestamp: new Date()
+        };
+        setMessages(prev => [...prev, aiMsg]);
+      } catch (err) {
+        console.error('Local chatbot error:', err);
+        setMessages(prev => [...prev, {
+          id: `ai_${Date.now() + 1}`,
+          sender: 'ai',
+          text: 'Xin chào! Bạn vui lòng thử lại với tên di tích cụ thể hoặc câu hỏi khác nhé.',
+          relatedMonuments: allMonumentsList.slice(0, 3),
+          isGemini: false,
+          timestamp: new Date()
+        }]);
+      }
+    }
   };
 
   // Copy text to clipboard
@@ -631,7 +707,7 @@ export default function HeritageAIChatbot({
           className={`fixed z-50 transition-all duration-300 flex flex-col bg-[#FFFDFB] border-2 border-rose-200 shadow-2xl shadow-red-950/30 overflow-hidden ${
             isExpanded
               ? 'inset-2 sm:inset-6 md:inset-10 rounded-3xl'
-              : 'bottom-24 sm:bottom-20 right-2 sm:right-6 w-[calc(100vw-16px)] sm:w-[420px] md:w-[450px] h-[560px] sm:h-[620px] max-h-[85vh] rounded-3xl'
+              : 'bottom-24 sm:bottom-20 right-2 sm:right-6 w-[calc(100vw-16px)] sm:w-[420px] md:w-[460px] h-[560px] sm:h-[620px] max-h-[85vh] rounded-3xl'
           }`}
         >
           {/* Header */}
@@ -641,22 +717,45 @@ export default function HeritageAIChatbot({
                 <Bot className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div>
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-center gap-1.5 flex-wrap">
                   <h3 className="font-serif-title font-black text-xs sm:text-sm uppercase tracking-wide text-white">
                     TRỢ LÝ DI SẢN AI
                   </h3>
-                  <span className="px-1.5 py-0.2 rounded-full bg-amber-400 text-[#8B1417] text-[9px] font-black uppercase">
-                    103 Di Tích
-                  </span>
+                  {isGeminiEnabled && getGeminiApiKey() ? (
+                    <button
+                      onClick={() => setShowSettings(true)}
+                      className="px-2 py-0.2 rounded-full bg-amber-400 text-[#8B1417] text-[9px] font-black uppercase flex items-center gap-1 shadow-xs hover:scale-105 transition-transform cursor-pointer"
+                      title="Đang chạy Google Gemini AI trực tiếp"
+                    >
+                      <Sparkles className="w-2.5 h-2.5 fill-current" />
+                      <span>Gemini Live</span>
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => setShowSettings(true)}
+                      className="px-1.5 py-0.2 rounded-full bg-white/20 text-amber-200 text-[9px] font-bold uppercase hover:bg-white/30 transition-colors cursor-pointer"
+                      title="Nhấn để kết nối Gemini API"
+                    >
+                      Bản Địa (103 DT)
+                    </button>
+                  )}
                 </div>
                 <p className="text-[10px] text-rose-100/90 flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span>Sẵn sàng giải đáp lịch sử, tư liệu &amp; bài học</span>
+                  <span className={`w-1.5 h-1.5 rounded-full ${isGeminiEnabled && getGeminiApiKey() ? 'bg-amber-300 animate-pulse' : 'bg-emerald-400 animate-pulse'}`} />
+                  <span>{isGeminiEnabled && getGeminiApiKey() ? 'Google Gemini 1.5 Flash Sẵn Sàng' : 'Tri thức số hóa 103 di tích'}</span>
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-1 text-white/80">
+              <button
+                onClick={() => setShowSettings(!showSettings)}
+                className={`p-1.5 rounded-lg transition-colors cursor-pointer ${showSettings ? 'bg-white/25 text-amber-200' : 'hover:bg-white/15 hover:text-white'}`}
+                title="Cài đặt Gemini AI API"
+              >
+                <Settings className="w-4 h-4" />
+              </button>
+
               <button
                 onClick={handleReset}
                 className="p-1.5 rounded-lg hover:bg-white/15 hover:text-white transition-colors cursor-pointer"
@@ -683,8 +782,77 @@ export default function HeritageAIChatbot({
             </div>
           </div>
 
+          {/* Gemini API Settings Collapsible Drawer */}
+          {showSettings && (
+            <div className="bg-[#FFFDFB] border-b-2 border-rose-200 p-3.5 sm:p-4 text-xs space-y-3 shadow-inner animate-in slide-in-from-top-2 duration-200">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-1.5 font-bold text-[#8B1417]">
+                  <Sparkles className="w-4 h-4 text-amber-500" />
+                  <span className="font-serif-title uppercase text-xs">Cấu hình Google Gemini API</span>
+                </div>
+                <button
+                  onClick={() => setShowSettings(false)}
+                  className="text-stone-400 hover:text-stone-600 p-1 cursor-pointer"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+
+              <p className="text-[11px] text-stone-600 leading-relaxed">
+                Tích hợp mô hình <strong>Gemini 1.5 Flash</strong> giúp chatbot trả lời thông minh, linh hoạt mọi câu hỏi học tập và kết nối 6 môn học.
+              </p>
+
+              <form onSubmit={handleSaveApiKey} className="space-y-2">
+                <div className="relative">
+                  <input
+                    type="password"
+                    value={apiKeyInput}
+                    onChange={(e) => setApiKeyInput(e.target.value)}
+                    placeholder="Dán mã Gemini API Key (AIzaSy...)"
+                    className="w-full py-2 pl-3 pr-8 text-xs font-mono bg-[#FAF4F0] border border-rose-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417]"
+                  />
+                  {apiKeyInput && (
+                    <button
+                      type="button"
+                      onClick={handleClearApiKey}
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600 text-[10px] font-bold"
+                    >
+                      Xóa
+                    </button>
+                  )}
+                </div>
+
+                <div className="flex items-center justify-between pt-1">
+                  <a
+                    href="https://aistudio.google.com/app/apikey"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[10px] font-bold text-[#8B1417] hover:underline flex items-center gap-1"
+                  >
+                    <span>Lấy API Key miễn phí (Google AI Studio)</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+
+                  <button
+                    type="submit"
+                    className="px-3.5 py-1.5 rounded-lg bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold text-[11px] transition-colors cursor-pointer shadow-xs"
+                  >
+                    Lưu cấu hình
+                  </button>
+                </div>
+              </form>
+
+              {saveSuccessMsg && (
+                <div className="p-2 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-bold flex items-center gap-1.5 animate-in fade-in">
+                  <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Đã lưu API Key! Chatbot sẵn sàng hoạt động với Google Gemini Live.</span>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* Context Banner (If looking at specific monument) */}
-          {viewMode === 'detail' && currentMonument && (
+          {viewMode === 'detail' && currentMonument && !showSettings && (
             <div className="bg-[#FAF4F0] px-3.5 py-2 border-b border-rose-100 flex items-center justify-between text-xs text-[#8B1417]">
               <div className="flex items-center gap-1.5 font-bold truncate">
                 <Landmark className="w-3.5 h-3.5 shrink-0" />
@@ -795,8 +963,18 @@ export default function HeritageAIChatbot({
 
                   {/* AI Message Action Buttons: Copy */}
                   {msg.sender === 'ai' && (
-                    <div className="flex items-center justify-between pt-1 text-[11px] text-stone-400">
-                      <span className="text-[9px]">Trợ lý Di Sản AI</span>
+                    <div className="flex items-center justify-between pt-1.5 text-[11px] text-stone-400 border-t border-rose-50/60 mt-1">
+                      {msg.isGemini ? (
+                        <span className="text-[9.5px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200/80 flex items-center gap-1">
+                          <Sparkles className="w-2.5 h-2.5 text-amber-600 fill-current" />
+                          <span>Google Gemini 1.5 Flash</span>
+                        </span>
+                      ) : (
+                        <span className="text-[9.5px] font-bold text-[#8B1417] bg-rose-50 px-2 py-0.5 rounded-full border border-rose-100 flex items-center gap-1">
+                          <Landmark className="w-2.5 h-2.5" />
+                          <span>Trí tuệ Di Sản Số hóa</span>
+                        </span>
+                      )}
                       <button
                         onClick={() => handleCopy(msg.text, index)}
                         className="hover:text-[#8B1417] cursor-pointer flex items-center gap-1 transition-colors"
@@ -828,9 +1006,15 @@ export default function HeritageAIChatbot({
 
             {/* Thinking Indicator */}
             {isThinking && (
-              <div className="flex items-center gap-2 p-3 rounded-2xl bg-white border border-rose-200 w-fit text-xs text-[#8B1417]">
-                <Bot className="w-4 h-4 animate-spin text-[#8B1417]" />
-                <span className="font-bold">Đang tra cứu cơ sở dữ liệu 103 di tích...</span>
+              <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-white border border-rose-200 w-fit text-xs text-[#8B1417] shadow-sm animate-pulse">
+                {isGeminiEnabled && getGeminiApiKey() ? (
+                  <Sparkles className="w-4 h-4 animate-spin text-amber-600" />
+                ) : (
+                  <Bot className="w-4 h-4 animate-spin text-[#8B1417]" />
+                )}
+                <span className="font-bold">
+                  {isGeminiEnabled && getGeminiApiKey() ? 'Google Gemini 1.5 Flash đang suy nghĩ...' : 'Đang tra cứu cơ sở dữ liệu 103 di tích...'}
+                </span>
                 <span className="flex gap-0.5">
                   <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-pulse" />
                   <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-pulse delay-75" />
