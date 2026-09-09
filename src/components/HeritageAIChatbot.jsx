@@ -103,20 +103,20 @@ const MONUMENT_ALIASES = [
 
 // 3. INTENT RECOGNITION KEYWORDS (15 INTENT CATEGORIES)
 const INTENT_KEYWORDS = [
+  { intent: 'rank', label: '⭐ Xếp hạng & Giá trị di tích', keys: ['xep hang', 'hang di tich', 'cap quoc gia', 'cap thanh pho', 'quoc gia dac biet', 'xep hang gi', 'vi sao xep hang', 'tai sao xep hang', 'vi sao duoc xep hang', 'tai sao duoc xep hang', 'duoc xep hang', 'cong nhan cap', 'quoc gia', 'gia tri', 'y nghia', 'khong co gia tri', 'co gia tri gi', 'vi sao co gia tri', 'gia tri gi', 'vi sao', 'tai sao'] },
+  { intent: 'lichsu', label: '📜 Lịch sử & Nguồn gốc hình thành', keys: ['lich su', 'nguon goc', 'hinh thanh', 'xay dung nam nao', 'xay dung khi nao', 'nien dai', 'boi canh', 'qua trinh hinh thanh', 'lich su hinh thanh', 'ra doi khi nao', 'xay dung'] },
   { intent: 'nhanvat', label: '👤 Nhân vật lịch sử gắn liền', keys: ['nhan vat', 'gan lien voi ai', 'ai lanh dao', 'ai chi huy', 'ai hy sinh', 'ai thiet ke', 'ai dung dau', 'ai hoat dong', 'con nguoi', 'anh hung', 'chi si', 'ai'] },
   { intent: 'hientvat', label: '🏺 Hiện vật & Bảo vật tiêu biểu', keys: ['hien vat', 'vu khi', 'trung bay', 'bao vat', 'co gi trung bay', 'do vat', 'xe tang', 'sung phao', 'sung', 'tu lieu', 'hien vat quy'] },
   { intent: 'sukien', label: '⚔️ Sự kiện lịch sử tiêu biểu', keys: ['su kien', 'dien bien', 'su kien lich su', 'chuyen gi da dien ra', 'chien cong', 'tran danh', 'cuoc khoi nghia', 'bai cong', 'khoi nghia'] },
-  { intent: 'lichsu', label: '📜 Lịch sử & Nguồn gốc hình thành', keys: ['lich su', 'nguon goc', 'hinh thanh', 'xay dung nam nao', 'xay dung khi nao', 'nien dai', 'boi canh', 'qua trinh hinh thanh', 'lich su hinh thanh', 'ra doi khi nao'] },
-  { intent: 'rank', label: '⭐ Xếp hạng & Giá trị di tích', keys: ['xep hang', 'hang di tich', 'cap quoc gia', 'cap thanh pho', 'quoc gia dac biet', 'xep hang gi'] },
-  { intent: 'qd', label: '📋 Quyết định công nhận di tích', keys: ['quyet dinh', 'ngay cong nhan', 'so quyet dinh', 'cong nhan ngay nao', 'van ban cong nhan', 'nam cong nhan'] },
-  { intent: 'dc_sau', label: '📍 Địa chỉ & Vị trí hiện nay', keys: ['dia chi', 'o dau', 'vi tri', 'nam o dau', 'tai dau', 'phuong nao', 'quan nao', 'duong nao', 'toa lac o dau', 'dia diem'] },
+  { intent: 'dc_sau', label: '📍 Địa chỉ & Vị trí hiện nay', keys: ['dia chi', 'o dau', 'vi tri', 'nam o dau', 'tai dau', 'phuong nao', 'quan nao', 'duong nao', 'toa lac o dau', 'dia diem', 'cach di', 'tim duong'] },
   { intent: 'dc_truoc', label: '🏛️ Địa chỉ & Đơn vị hành chính trước đây', keys: ['dia chi truoc', 'don vi hanh chinh truoc', 'truoc day thuoc', 'ten cu', 'dia chi cu'] },
+  { intent: 'qd', label: '📋 Quyết định công nhận di tích', keys: ['quyet dinh', 'ngay cong nhan', 'so quyet dinh', 'cong nhan ngay nao', 'van ban cong nhan', 'nam cong nhan'] },
+  { intent: 'loai', label: '🏷️ Loại hình di tích', keys: ['loai hinh', 'thuoc loai nao', 'the loai di tich', 'loai di tich'] },
   { intent: 'toado', label: '🌐 Tọa độ GPS', keys: ['toa do', 'kinh do', 'vi do', 'gps'] },
   { intent: 'map', label: '🗺️ Bản đồ chỉ đường Google Maps', keys: ['ban do', 'google map', 'chi duong', 'map', 'vi tri tren ban do'] },
   { intent: 'video', label: '🎥 Video tư liệu & Thước phim', keys: ['video', 'clip', 'xem phim', 'thuoc phim', 'phim tu lieu', 'video di tich'] },
   { intent: 'tailieu', label: '📚 Hồ sơ & Tài liệu khoa học', keys: ['tai lieu', 'ho so', 'tai lieu khoa hoc', 'ho so khoa hoc'] },
-  { intent: 'loai', label: '🏷️ Loại hình di tích', keys: ['loai hinh', 'thuoc loai nao', 'the loai di tich', 'loai di tich'] },
-  { intent: 'tomtat', label: '💡 Tóm tắt & Giới thiệu tổng quan', keys: ['tom tat', 'tong quan', 'gioi thieu', 'so luoc', 'thong tin', 've di tich'] }
+  { intent: 'tomtat', label: '💡 Giới thiệu di tích', keys: ['tom tat', 'tong quan', 'gioi thieu', 'so luoc', 'thong tin', 've di tich', 'la gi'] }
 ];
 
 export default function HeritageAIChatbot({
@@ -202,14 +202,55 @@ export default function HeritageAIChatbot({
   // =========================================================================
   // TRAINED KNOWLEDGE BASE & HIGH-PRECISION INFERENCE ENGINE (3,605 Q&A)
   // =========================================================================
-  const formatTrainedResponse = (mon, intentKey, customAnswer = null, customLabel = null) => {
+  const formatTrainedResponse = (mon, intentKey, customAnswer = null, customLabel = null, rawQuery = '') => {
     const rawMon = allMonumentsList.find(m => m.stt === mon.stt) || allMonumentsList[0];
-    const answer = customAnswer || mon.intents[intentKey]?.answer || mon.intents.tomtat?.answer || mon.intents.lichsu?.answer;
-    const label = customLabel || (INTENT_KEYWORDS.find(k => k.intent === intentKey)?.label || '💡 Thông tin di tích');
-
-    let resp = `### 🏛️ ${mon.name} (#STT ${mon.stt})\n\n`;
-    resp += `**${label}:**\n${answer}\n\n`;
+    const answer = customAnswer || mon.intents[intentKey]?.answer || mon.intents.tomtat?.answer || mon.intents.lichsu?.answer || rawMon.info?.overview;
+    const cleanUserQ = removeAccents(rawQuery || '');
     
+    let resp = `### 🏛️ ${mon.name} (#STT ${mon.stt})\n\n`;
+
+    // Dynamic Context-Aware Lead-in: nương theo câu hỏi người dùng
+    if (intentKey === 'rank' || cleanUserQ.includes('xep hang') || cleanUserQ.includes('vi sao') || cleanUserQ.includes('tai sao') || cleanUserQ.includes('gia tri') || cleanUserQ.includes('y nghia') || cleanUserQ.includes('quoc gia')) {
+      const rankVal = mon.intents.rank?.answer || rawMon.info?.ranking || 'Di tích Lịch sử cấp Quốc gia';
+      const qdVal = mon.intents.qd?.answer ? ` (${mon.intents.qd.answer.replace(/\.$/, '')})` : '';
+      const historicalMeaning = mon.intents.lichsu?.answer || mon.intents.tomtat?.answer || rawMon.info?.overview;
+
+      if (cleanUserQ.includes('vi sao') || cleanUserQ.includes('tai sao') || cleanUserQ.includes('gia tri') || cleanUserQ.includes('khong co') || cleanUserQ.includes('y nghia')) {
+        resp += `Di tích **${mon.name}** được xếp hạng **${rankVal}**${qdVal} vì mang những giá trị lịch sử, văn hóa và kiến trúc tiêu biểu sau:\n\n`;
+        resp += `${historicalMeaning}\n\n`;
+      } else {
+        resp += `Di tích **${mon.name}** được xếp hạng cấp **${rankVal}**${qdVal}.\n\n`;
+        resp += `⭐ **Giá trị và ý nghĩa lịch sử tiêu biểu:**\n${historicalMeaning}\n\n`;
+      }
+    } else if (intentKey === 'lichsu' || cleanUserQ.includes('lich su') || cleanUserQ.includes('nguon goc') || cleanUserQ.includes('hinh thanh') || cleanUserQ.includes('xay dung')) {
+      resp += `Về lịch sử hình thành và nguồn gốc của **${mon.name}**:\n\n${answer}\n\n`;
+    } else if (intentKey === 'nhanvat' || cleanUserQ.includes('nhan vat') || cleanUserQ.includes('ai')) {
+      resp += `Gắn liền với lịch sử của **${mon.name}** là các nhân vật tiêu biểu:\n\n${answer}\n\n`;
+    } else if (intentKey === 'hientvat' || cleanUserQ.includes('hien vat') || cleanUserQ.includes('bao vat') || cleanUserQ.includes('vu khi')) {
+      resp += `Tại di tích **${mon.name}**, các hiện vật và bảo vật lịch sử tiêu biểu được lưu giữ gồm:\n\n${answer}\n\n`;
+    } else if (intentKey === 'sukien' || cleanUserQ.includes('su kien') || cleanUserQ.includes('chien cong')) {
+      resp += `Các sự kiện lịch sử và dấu mốc tiêu biểu diễn ra tại **${mon.name}**:\n\n${answer}\n\n`;
+    } else if (intentKey === 'dc_sau' || intentKey === 'dc_truoc' || cleanUserQ.includes('dia chi') || cleanUserQ.includes('o dau') || cleanUserQ.includes('vi tri')) {
+      resp += `Di tích **${mon.name}** hiện tọa lạc tại địa chỉ: **${answer}**\n\n`;
+      if (mon.intents.dc_truoc?.answer && mon.intents.dc_truoc.answer !== answer) {
+        resp += `*(Địa chỉ trước đây: ${mon.intents.dc_truoc.answer})*\n\n`;
+      }
+    } else if (intentKey === 'qd' || cleanUserQ.includes('quyet dinh') || cleanUserQ.includes('ngay cong nhan')) {
+      resp += `Di tích **${mon.name}** được công nhận chính thức theo: **${answer}** (Xếp hạng: **${mon.intents.rank?.answer || 'Quốc gia'}**).\n\n`;
+    } else if (intentKey === 'loai' || cleanUserQ.includes('loai hinh')) {
+      resp += `Di tích **${mon.name}** thuộc loại hình: **${answer}**.\n\n`;
+    } else if (intentKey === 'toado' || intentKey === 'map') {
+      resp += `Vị trí địa lý và định vị bản đồ của di tích **${mon.name}**:\n- 🌐 **Tọa độ GPS:** \`${mon.intents.toado?.answer || 'Đang cập nhật'}\`\n- 🗺️ **Bản đồ chỉ đường:** [Mở chỉ đường trên Google Maps](${mon.intents.map?.answer || '#'})\n\n`;
+    } else if (intentKey === 'video') {
+      resp += `Thước phim và video tư liệu về **${mon.name}**:\n- 🎥 **Xem tư liệu:** [Nhấp vào đây để xem video](${mon.intents.video?.answer})\n\n`;
+    } else if (intentKey === 'tailieu') {
+      resp += `Hồ sơ khoa học và tài liệu lưu trữ về di tích **${mon.name}**:\n\n${answer}\n\n`;
+    } else {
+      // Giới thiệu tổng quan tự nhiên, KHÔNG có chữ "Tóm tắt & Giới thiệu tổng quan:"
+      const cleanIntro = answer.startsWith(mon.name) ? answer.substring(mon.name.length).replace(/^[\s,.:\-–]+/, '') : answer;
+      resp += `**${mon.name}** là ${cleanIntro}\n\n`;
+    }
+
     // Quick meta line
     const addr = mon.intents.dc_sau?.answer || rawMon.info?.address;
     const rank = mon.intents.rank?.answer || rawMon.info?.ranking || 'Di tích Lịch sử';
@@ -220,7 +261,7 @@ export default function HeritageAIChatbot({
     if (rank) resp += `- ⭐ **Xếp hạng:** ${rank}\n`;
     if (type) resp += `- 🏷️ **Loại hình:** ${type}\n`;
 
-    if (rawMon.investigation?.investigationQuestion && intentKey === 'tomtat') {
+    if (rawMon.investigation?.investigationQuestion && (intentKey === 'tomtat' || intentKey === 'lichsu' || intentKey === 'rank')) {
       resp += `\n🔭 **Gợi ý học tập & điều tra:**\n*${rawMon.investigation.investigationQuestion}*`;
     }
 
@@ -250,36 +291,52 @@ export default function HeritageAIChatbot({
     }
 
     // 2. CONTEXT-AWARE: CURRENT MONUMENT IN DETAIL VIEW
-    if (viewMode === 'detail' && currentMonument && (
-      cleanQ.includes('di tich nay') || cleanQ.includes('o day') || cleanQ.includes('noi nay') || 
-      cleanQ.includes('tom tat') || cleanQ.includes('hien vat') || cleanQ.includes('nhan vat') || 
-      cleanQ.includes('su kien') || cleanQ.includes('lich su') || cleanQ.includes('dieu tra') || 
-      cleanQ.includes('dia chi') || cleanQ.includes('mon hoc')
-    )) {
-      const monData = monumentQaMap[currentMonument.stt];
-      if (monData) {
-        if (cleanQ.includes('dia chi') || cleanQ.includes('o dau')) {
-          return formatTrainedResponse(monData, 'dc_sau');
+    if (viewMode === 'detail' && currentMonument) {
+      const otherMonMatched = allMonumentsList.some(m => m.stt !== currentMonument.stt && cleanQ.includes(removeAccents(m.info.name)));
+      
+      if (!otherMonMatched) {
+        const monData = monumentQaMap[currentMonument.stt];
+        if (monData) {
+          if (cleanQ.includes('xep hang') || cleanQ.includes('quoc gia') || cleanQ.includes('gia tri') || cleanQ.includes('y nghia') || cleanQ.includes('vi sao') || cleanQ.includes('tai sao')) {
+            return formatTrainedResponse(monData, 'rank', null, null, rawQ);
+          }
+          if (cleanQ.includes('dia chi') || cleanQ.includes('o dau') || cleanQ.includes('vi tri') || cleanQ.includes('duong nao') || cleanQ.includes('quan nao')) {
+            return formatTrainedResponse(monData, 'dc_sau', null, null, rawQ);
+          }
+          if (cleanQ.includes('hien vat') || cleanQ.includes('bao vat') || cleanQ.includes('vu khi') || cleanQ.includes('trung bay')) {
+            return formatTrainedResponse(monData, 'hientvat', null, null, rawQ);
+          }
+          if (cleanQ.includes('nhan vat') || cleanQ.includes('ai lanh dao') || cleanQ.includes('ai chi huy') || cleanQ.includes('gan lien voi ai')) {
+            return formatTrainedResponse(monData, 'nhanvat', null, null, rawQ);
+          }
+          if (cleanQ.includes('su kien') || cleanQ.includes('dien bien') || cleanQ.includes('chien cong') || cleanQ.includes('tran danh')) {
+            return formatTrainedResponse(monData, 'sukien', null, null, rawQ);
+          }
+          if (cleanQ.includes('lich su') || cleanQ.includes('nguon goc') || cleanQ.includes('hinh thanh') || cleanQ.includes('xay dung')) {
+            return formatTrainedResponse(monData, 'lichsu', null, null, rawQ);
+          }
+          if (cleanQ.includes('quyet dinh') || cleanQ.includes('ngay cong nhan')) {
+            return formatTrainedResponse(monData, 'qd', null, null, rawQ);
+          }
+          if (cleanQ.includes('loai hinh') || cleanQ.includes('the loai')) {
+            return formatTrainedResponse(monData, 'loai', null, null, rawQ);
+          }
+          if (cleanQ.includes('toa do') || cleanQ.includes('gps') || cleanQ.includes('ban do') || cleanQ.includes('map')) {
+            return formatTrainedResponse(monData, 'map', null, null, rawQ);
+          }
+          if (cleanQ.includes('video') || cleanQ.includes('clip') || cleanQ.includes('phim')) {
+            return formatTrainedResponse(monData, 'video', null, null, rawQ);
+          }
+          if (cleanQ.includes('dieu tra') && currentMonument.investigation?.investigationQuestion) {
+            return {
+              text: `### 🔬 Hồ Sơ Điều Tra Lịch Sử: ${currentMonument.info.name} (#STT ${currentMonument.stt})\n\n> 🔭 **Câu hỏi điều tra:** *${currentMonument.investigation.investigationQuestion}*\n\n💡 **Gợi ý giải đáp:**\n${currentMonument.investigation.suggestedAnswer || monData.intents.tomtat?.answer || currentMonument.info.overview}\n\n📍 *Địa chỉ:* ${currentMonument.info.address}`,
+              relatedMonuments: [currentMonument]
+            };
+          }
+          if (cleanQ.includes('di tich nay') || cleanQ.includes('o day') || cleanQ.includes('noi nay') || cleanQ.includes('tom tat') || cleanQ.includes('gioi thieu')) {
+            return formatTrainedResponse(monData, 'tomtat', null, null, rawQ);
+          }
         }
-        if (cleanQ.includes('hien vat')) {
-          return formatTrainedResponse(monData, 'hientvat');
-        }
-        if (cleanQ.includes('nhan vat')) {
-          return formatTrainedResponse(monData, 'nhanvat');
-        }
-        if (cleanQ.includes('su kien')) {
-          return formatTrainedResponse(monData, 'sukien');
-        }
-        if (cleanQ.includes('lich su')) {
-          return formatTrainedResponse(monData, 'lichsu');
-        }
-        if (cleanQ.includes('dieu tra') && currentMonument.investigation?.investigationQuestion) {
-          return {
-            text: `### 🔬 Hồ Sơ Điều Tra Lịch Sử: ${currentMonument.info.name} (#STT ${currentMonument.stt})\n\n> 🔭 **Câu hỏi điều tra:** *${currentMonument.investigation.investigationQuestion}*\n\n💡 **Gợi ý giải đáp:**\n${currentMonument.investigation.suggestedAnswer || monData.intents.tomtat?.answer || currentMonument.info.overview}\n\n📍 *Địa chỉ:* ${currentMonument.info.address}`,
-            relatedMonuments: [currentMonument]
-          };
-        }
-        return formatTrainedResponse(monData, 'tomtat');
       }
     }
 
@@ -300,7 +357,7 @@ export default function HeritageAIChatbot({
       const matched = questionLookupMap.get(cleanQ);
       const monData = monumentQaMap[matched.stt];
       if (monData) {
-        return formatTrainedResponse(monData, matched.intent, matched.answer, matched.intentLabel);
+        return formatTrainedResponse(monData, matched.intent, matched.answer, matched.intentLabel, rawQ);
       }
     }
 
@@ -360,9 +417,9 @@ export default function HeritageAIChatbot({
       }
 
       if (matchedIntent && monData.intents[matchedIntent.intent]) {
-        return formatTrainedResponse(monData, matchedIntent.intent, null, matchedIntent.label);
+        return formatTrainedResponse(monData, matchedIntent.intent, null, matchedIntent.label, rawQ);
       } else {
-        return formatTrainedResponse(monData, 'tomtat', null, '💡 Tóm tắt & Giới thiệu tổng quan');
+        return formatTrainedResponse(monData, 'tomtat', null, null, rawQ);
       }
     }
 
@@ -596,10 +653,11 @@ export default function HeritageAIChatbot({
         console.warn('Gemini API query error, falling back to local engine:', geminiErr);
         // Fallback to local knowledge base
         const localResult = processAIQuery(trimmedQ);
+        const isApiKeyIssue = geminiErr?.message?.includes('API_KEY') || geminiErr?.message?.includes('API key');
         const aiMsg = {
           id: `ai_${Date.now() + 1}`,
           sender: 'ai',
-          text: `> ⚠️ *Đã tự động chuyển sang Chế độ Bản Địa do mạng hoặc API Key: ${geminiErr.message}*\n\n` + localResult.text,
+          text: (isApiKeyIssue ? '> ⚠️ *Chế độ Bản Địa (Cần kiểm tra lại Gemini API Key trong phần Cài đặt)*\n\n' : '> ⚡ *Chế độ Bản Địa (Dữ liệu chuẩn 103 Di tích)*\n\n') + localResult.text,
           relatedMonuments: localResult.relatedMonuments || [],
           isGemini: false,
           timestamp: new Date()

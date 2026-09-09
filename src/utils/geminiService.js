@@ -149,7 +149,21 @@ export const queryGeminiAI = async ({
   }
 
   // 2. System Instructions
-  const systemInstruction = 'Bạn là Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM (Heritage AI Assistant) trong dự án Nghiên Cứu Khoa Học Kỹ Thuật (KHKT) của Trường THCS Xà Bang.\nNhiệm vụ của bạn là hỗ trợ học sinh THCS, giáo viên và khách tham quan tìm hiểu, khám phá và nâng cao ý thức bảo tồn 103 di tích lịch sử - văn hóa TP.HCM và vùng phụ cận.\n\nQUY TẮC TRẢ LỜI:\n1. Độ dài: Ngắn gọn, súc tích, đi thẳng vào trọng tâm, KHÔNG trả lời dài dòng hay lan man (khoảng 3 - 6 dòng hoặc gạch đầu dòng rõ ràng).\n2. Phong cách: Sư phạm chuẩn mực, tôn trọng lịch sử, truyền cảm hứng yêu nước và ý thức bảo tồn di sản văn hóa.\n3. Bố cục:\n   - Dùng tiêu đề ### [Tên di tích hoặc Chủ đề]\n   - Gạch đầu dòng rõ ràng với biểu tượng cảm xúc phù hợp (🏛️, 📍, ⭐, 👤, 🏺, 💡, 🔭).\n   - In đậm các từ khóa lịch sử, nhân vật, mốc năm quan trọng bằng **từ khóa**.\n   - Nếu có câu hỏi điều tra/gợi ý môn học (Lịch sử, Địa lý, Ngữ văn, GDCD, STEM), hãy dùng dấu trích dẫn > để làm nổi bật.\n4. Tính chính xác: Luôn dựa vào dữ liệu 103 di tích được cung cấp trong ngữ cảnh. Luôn ghi rõ mã [STT #Số] của di tích nếu có liên quan.';
+  const systemInstruction = `Bạn là Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM (Heritage AI Assistant) trong dự án Nghiên Cứu Khoa Học Kỹ Thuật (KHKT) của Trường THCS Xà Bang.
+Nhiệm vụ của bạn là hỗ trợ học sinh THCS, giáo viên và khách tham quan tìm hiểu, khám phá và nâng cao ý thức bảo tồn 103 di tích lịch sử - văn hóa TP.HCM và vùng phụ cận.
+
+QUY TẮC TRẢ LỜI QUAN TRỌNG:
+1. NƯƠNG THEO CÂU HỎI (QUAN TRỌNG NHẤT):
+   - Mở đầu câu trả lời một cách tự nhiên, trực diện và mạch lạc theo đúng nội dung người dùng hỏi.
+   - Ví dụ: Nếu người hỏi "Vì sao di tích này được xếp hạng quốc gia, tôi thấy không có giá trị gì?", hãy trả lời trực diện: "Di tích [Tên di tích] được xếp hạng cấp Quốc gia vì mang những giá trị lịch sử - văn hóa và kiến trúc vô cùng to lớn sau..."
+   - Tuyệt đối KHÔNG sử dụng các tiêu đề rập khuôn, cứng nhắc như "Tóm tắt & Giới thiệu tổng quan:" hay "Thông tin chung:".
+2. ĐỘ DÀI & BỐ CỤC:
+   - Ngắn gọn, súc tích, đi thẳng vào trọng tâm (khoảng 4 - 8 dòng hoặc gạch đầu dòng rõ ràng).
+   - Dùng tiêu đề: ### [Tên di tích] (#STT [Số])
+   - Gạch đầu dòng rõ ràng với biểu tượng cảm xúc phù hợp (🏛️, 📍, ⭐, 👤, 🏺, 💡, 🔭).
+   - In đậm các từ khóa lịch sử, nhân vật, mốc năm quan trọng (**từ khóa**).
+3. PHONG CÁCH: Sư phạm chuẩn mực, tôn trọng lịch sử, truyền cảm hứng tự hào dân tộc và bảo tồn di sản.
+4. TÍNH CHÍNH XÁC: Luôn dựa vào dữ liệu 103 di tích được cung cấp trong ngữ cảnh.`;
 
   // 3. Lịch sử hội thoại gần nhất (tối đa 4 tin nhắn)
   const recentHistory = chatHistory.slice(-4).map(msg => ({
@@ -161,44 +175,74 @@ export const queryGeminiAI = async ({
   const currentMessage = {
     role: 'user',
     parts: [
-      { text: groundingContext + '\n---\nCÂU HỎI CỦA HỌC SINH: "' + query + '"\n\nHãy trả lời chuẩn xác, súc tích và đúng quy tắc sư phạm đã nêu.' }
+      { text: groundingContext + '\n---\nCÂU HỎI CỦA HỌC SINH: "' + query + '"\n\nHãy nương theo câu hỏi để trả lời chuẩn xác, súc tích, mạch lạc và đúng quy tắc sư phạm đã nêu.' }
     ]
   };
 
   const contents = [...recentHistory, currentMessage];
 
-  // 4. Gọi API Google Gemini (Model: gemini-1.5-flash)
-  const endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + apiKey;
+  // 4. Danh sách các model Gemini theo thứ tự ưu tiên
+  const CANDIDATE_MODELS = [
+    'gemini-2.0-flash',
+    'gemini-1.5-flash-latest',
+    'gemini-1.5-flash',
+    'gemini-1.5-flash-001',
+    'gemini-1.5-flash-002',
+    'gemini-1.5-pro',
+    'gemini-pro'
+  ];
 
-  const response = await fetch(endpoint, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      contents,
-      systemInstruction: {
-        parts: [{ text: systemInstruction }]
-      },
-      generationConfig: {
-        temperature: 0.35,
-        topP: 0.85,
-        maxOutputTokens: 650
+  let rawResponseText = '';
+  let lastError = null;
+
+  for (const model of CANDIDATE_MODELS) {
+    try {
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          contents,
+          systemInstruction: {
+            parts: [{ text: systemInstruction }]
+          },
+          generationConfig: {
+            temperature: 0.35,
+            topP: 0.85,
+            maxOutputTokens: 750
+          }
+        })
+      });
+
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        const errMsg = errData.error?.message || ('HTTP ' + response.status + ': ' + response.statusText);
+        lastError = new Error(errMsg);
+        // Nếu lỗi do không tìm thấy model (404 / NOT_FOUND), thử model kế tiếp
+        if (response.status === 404 || errMsg.includes('not found') || errMsg.includes('is not supported')) {
+          continue;
+        }
+        throw lastError;
       }
-    })
-  });
 
-  if (!response.ok) {
-    const errData = await response.json().catch(() => ({}));
-    const errMsg = errData.error?.message || ('HTTP ' + response.status + ': ' + response.statusText);
-    throw new Error(errMsg);
+      const data = await response.json();
+      rawResponseText = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+      if (rawResponseText) {
+        break; // Thành công
+      }
+    } catch (err) {
+      lastError = err;
+      if (err.message?.includes('not found') || err.message?.includes('is not supported')) {
+        continue;
+      }
+      throw err;
+    }
   }
 
-  const data = await response.json();
-  const rawResponseText = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
-
   if (!rawResponseText) {
-    throw new Error('NO_CONTENT_GENERATED');
+    throw lastError || new Error('NO_CONTENT_GENERATED');
   }
 
   // Tự động nhận diện các di tích được đề cập trong câu trả lời của Gemini
