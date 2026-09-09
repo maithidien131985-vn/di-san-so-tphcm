@@ -471,19 +471,120 @@ export default function HeritageAIChatbot({
       }
     }
 
-    // 4. STEP 2: SYSTEM FAQ MATCH (Exact & semantic sub-string)
-    const sortedFaqs = [...systemFaqList].sort((a, b) => b.q.length - a.q.length);
-    for (const faq of sortedFaqs) {
-      const normFaqQ = removeAccents(faq.q);
-      if (cleanQ === normFaqQ || (cleanQ.length > 10 && cleanQ.includes(normFaqQ))) {
+    // 4. STEP 2: OUT-OF-SCOPE, TRUTHFULNESS & ADVERSARIAL REASONING HANDLERS (Nguồn: D:\Thông tin 2 cho chat bot.docx)
+    // 4.1. Câu hỏi ngoài phạm vi di tích (Không nói dối, từ chối trung thực)
+    if (cleanQ.includes('tra sua') || cleanQ.includes('wifi') || cleanQ.includes('wi-fi') || cleanQ.includes('ve so') || cleanQ.includes('dien thoai') || cleanQ.includes('nuoi meo') || cleanQ.includes('mang con meo') || cleanQ.includes('thu cung') || cleanQ.includes('chay 10 vong') || cleanQ.includes('chay vong quanh') || cleanQ.includes('3 gio sang') || cleanQ.includes('gia xang') || cleanQ.includes('thoi tiet') || cleanQ.includes('xo so') || cleanQ.includes('bong da')) {
+      if (cleanQ.includes('tra sua') || cleanQ.includes('ve so') || cleanQ.includes('dien thoai')) {
         return {
-          text: `### 📊 ${faq.group} (${faq.id})\n\n${faq.a}\n\n💡 *Hệ thống đang lưu trữ và số hóa đầy đủ toàn bộ 103 di tích lịch sử - văn hóa TP.HCM & vùng phụ cận.*`,
-          relatedMonuments: allMonumentsList.slice(0, 4)
+          text: `### ☕ Thông tin dịch vụ\n\nTôi **chưa có dữ liệu xác nhận** về hoạt động kinh doanh/dịch vụ này tại di tích. Bạn nên kiểm tra thực tế khu vực xung quanh trước khi đến tham quan nhé!`,
+          relatedMonuments: []
+        };
+      }
+      if (cleanQ.includes('wifi') || cleanQ.includes('wi-fi')) {
+        return {
+          text: `### 📶 Kết nối mạng\n\nThông tin về Wi-Fi không thuộc nội dung hồ sơ di tích và tôi **chưa có dữ liệu xác nhận**. Nếu bạn chuẩn bị tham quan, tôi có thể giúp bạn kiểm tra vị trí, đường đi và thời gian mở cửa.`,
+          relatedMonuments: []
+        };
+      }
+      if (cleanQ.includes('meo') || cleanQ.includes('thu cung') || cleanQ.includes('dong vat')) {
+        return {
+          text: `### 🐾 Quy định tham quan\n\nTôi **chưa có dữ liệu xác nhận** về quy định mang thú cưng/vật nuôi tại di tích này. Bạn nên liên hệ ban quản lý di tích trước khi đưa thú cưng vào nhé.`,
+          relatedMonuments: []
+        };
+      }
+      if (cleanQ.includes('chay 10 vong') || cleanQ.includes('chay vong quanh')) {
+        return {
+          text: `### 🏃‍♂️ Hoạt động trải nghiệm\n\nHuy hiệu của hệ thống được trao dựa trên **hoạt động học tập và thử thách tương tác** được thiết kế trong website, không tính theo số vòng chạy quanh di tích bạn nhé! 😄`,
+          relatedMonuments: []
+        };
+      }
+      if (cleanQ.includes('3 gio sang') || cleanQ.includes('ban dem')) {
+        return {
+          text: `### ⏰ Thời gian tham quan\n\nViệc tham quan phụ thuộc vào **quy định và giờ mở cửa chính thức** của đơn vị quản lý di tích (thường từ 7:30 - 17:00). Bạn không nên đến vào ban đêm hoặc ngoài giờ mở cửa.`,
+          relatedMonuments: []
+        };
+      }
+      return {
+        text: `Nội dung này nằm ngoài phạm vi cơ sở dữ liệu chuyên biệt về 103 Di tích lịch sử - văn hóa TP.HCM. Tôi có thể hỗ trợ bạn tìm hiểu về lịch sử, nhân vật, hiện vật hoặc vị trí của các di tích!`,
+        relatedMonuments: []
+      };
+    }
+
+    // 4.2. Câu hỏi tâm linh / người ngoài hành tinh / chuyện ma (Không bịa đặt)
+    if (cleanQ.includes('chuyen ma') || cleanQ.includes('co ma') || cleanQ.includes('loi nguyen') || cleanQ.includes('nguoi ngoai hanh tinh') || cleanQ.includes('linh hon') || cleanQ.includes('bi mat')) {
+      if (cleanQ.includes('nguoi ngoai hanh tinh')) {
+        return {
+          text: `### 🛸 Xác thực thông tin\n\n**Hoàn toàn không có căn cứ lịch sử hay khoa học** nào cho thông tin đó. Tất cả các di tích lịch sử - văn hóa đều do bàn tay, khối óc và công lao to lớn của các thế hệ cha ông ta xây dựng và bảo vệ.`,
+          relatedMonuments: []
+        };
+      }
+      return {
+        text: `### 📜 Xác thực tư liệu\n\nTôi **không có căn cứ khoa học hay dữ liệu xác thực** để khẳng định các yếu tố tâm linh/ma quỷ. Trong nghiên cứu di sản, chúng ta cần phân biệt rõ giữa **sự kiện lịch sử đã được kiểm chứng** với các giai thoại truyền miệng trong dân gian.`,
+        relatedMonuments: []
+      };
+    }
+
+    // 4.3. Kiểm tra tính trung thực của Chatbot (Anti-Hallucination & Honest AI)
+    if (cleanQ.includes('chac 100%') || cleanQ.includes('co tu bia') || cleanQ.includes('neu ban sai') || cleanQ.includes('khong biet co noi') || cleanQ.includes('noi doi')) {
+      return {
+        text: `### 🛡️ Nguyên tắc hoạt động của Trợ Lý Di Sản AI\n\n- ⭐ **Tính trung thực:** Tôi chỉ cung cấp thông tin dựa trên **3.605 câu hỏi - đáp chính thống và hồ sơ khoa học** của Sở VH&TT TP.HCM.\n- 🔍 **Không bịa đặt:** Nếu chưa đủ dữ liệu xác thực, tôi sẽ nói rõ *"Tôi chưa có đủ thông tin để khẳng định"* chứ tuyệt đối không tự bịa thông tin.\n- 📚 **Kiểm chứng đa nguồn:** Luôn khuyến khích học sinh đối chiếu với văn bản pháp lý và quyết định xếp hạng chính thức.`,
+        relatedMonuments: []
+      };
+    }
+
+    // 4.4. So sánh với Google / Wikipedia
+    if (cleanQ.includes('google noi khac') || cleanQ.includes('wikipedia noi khac') || cleanQ.includes('ai dung')) {
+      return {
+        text: `### ⚖️ Đối chiếu nguồn thông tin\n\nGoogle là công cụ tìm kiếm, còn Wikipedia là bách khoa toàn thư mở có thể do nhiều người cùng đóng góp. Khi có sự khác biệt về niên đại, tên gọi hay cấp xếp hạng, chúng ta luôn **ưu tiên quyết định xếp hạng chính thức của Bộ VH-TT&DL và hồ sơ khoa học của Sở Văn hóa và Thể thao TP.HCM**.`,
+        relatedMonuments: []
+      };
+    }
+
+    // 4.5. Câu hỏi so sánh chủ quan ("Đẹp nhất", "Quan trọng nhất", "Nổi tiếng nhất")
+    if (cleanQ.includes('dep nhat') || cleanQ.includes('quan trong nhat') || cleanQ.includes('noi tieng nhat') || cleanQ.includes('dang di nhat')) {
+      return {
+        text: `### 🏛️ Tiêu chí đánh giá Di sản\n\nKhái niệm *"đẹp nhất"* hay *"quan trọng nhất"* mang tính chủ quan. Mỗi di tích đều có giá trị độc đáo riêng:\n- 📜 **Lịch sử cách mạng:** *Dinh Độc Lập, Địa đạo Củ Chi, Căn cứ Rừng Sác, Côn Đảo...*\n- 🏛️ **Kiến trúc nghệ thuật:** *Trụ sở UBND TP, Nhà hát Lớn, Đình Thông Tây Hội, Lăng Ông Bà Chiểu...*\n- 🏺 **Khảo cổ học:** *Lò gốm Hưng Lợi, Giồng Cá Vồ...*\n\nBạn có thể chọn điểm đến dựa trên sở thích và mục tiêu học tập cụ thể!`,
+        relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[95], allMonumentsList[87]]
+      };
+    }
+
+    // 4.6. Câu hỏi về bảo tồn & giá trị ("Đập đi xây lại", "Sao không xây cái mới", "Chẳng có gì đặc biệt")
+    if (cleanQ.includes('dap di') || cleanQ.includes('xay lai') || cleanQ.includes('xay moi') || cleanQ.includes('ton tien') || cleanQ.includes('chang co gi dac biet') || cleanQ.includes('khong xung dang')) {
+      return {
+        text: `### 🏛️ Giá trị cốt lõi của Bảo tồn Di sản\n\n1. **Tính xác thực (Authenticity):** Một công trình mới dù mô phỏng đẹp đến đâu cũng không thể thay thế được những dấu tích lịch sử và giá trị nguyên gốc của di tích.\n2. **Nhiều tầng giá trị:** Di tích không chỉ là gạch ngói mà là nơi lưu giữ ký ức, sự kiện và sự hy sinh của các thế hệ cha ông.\n3. **Quy định pháp lý:** Mọi hoạt động tu bổ, tôn tạo phải tuân thủ nghiêm ngặt Luật Di sản văn hóa để giữ gìn hồn cốt dân tộc.`,
+        relatedMonuments: allMonumentsList.slice(0, 3)
+      };
+    }
+
+    // 4.7. Lập hành trình theo thời gian & sở thích (30 phút, 1 ngày, thích khảo cổ, tránh chiến tranh)
+    if (cleanQ.includes('30 phut') || cleanQ.includes('2 tieng') || cleanQ.includes('1 ngay') || cleanQ.includes('tranh chien tranh') || cleanQ.includes('thich khao co') || cleanQ.includes('hanh trinh')) {
+      if (cleanQ.includes('30 phut')) {
+        return {
+          text: `### ⏱️ Kế hoạch Khám phá Nhanh 30 Phút\n\nVới 30 phút, bạn nên chọn 01 di tích trọng điểm để trải nghiệm trọn vẹn:\n- 🎯 **5 phút:** Đọc tổng quan và xem vị trí bản đồ.\n- 🎧 **10 phút:** Nghe audio thuyết minh và xem video tư liệu.\n- 🔍 **10 phút:** Khám phá hiện vật và dấu mốc lịch sử.\n- 🏆 **5 phút:** Chinh phục thử thách 5 câu hỏi để nhận Huy hiệu Di sản!`,
+          relatedMonuments: [allMonumentsList[0], allMonumentsList[1]]
+        };
+      }
+      if (cleanQ.includes('thich khao co') || cleanQ.includes('tranh chien tranh')) {
+        return {
+          text: `### 🏺 Hành trình Di sản Khảo Cổ Học & Kiến Trúc Nghệ Thuật Cổ\n\nƯu tiên các địa điểm khảo cổ và kiến trúc cổ kính (tránh chủ đề chiến tranh):\n1. 🏺 **Di tích Khảo cổ học Lò gốm Hưng Lợi** (#STT 24 - Quận 8)\n2. 🏺 **Di tích Khảo cổ học Giồng Cá Vồ** (#STT 23 - Cần Giờ)\n3. 🏛️ **Đình Thông Tây Hội** (#STT 59 - Gò Vấp - Ngôi đình cổ nhất vùng đất Nam Bộ)\n4. 🏛️ **Chùa Giác Lâm** (#STT 70 - Tân Bình - Tổ đình Phật giáo cổ kính thế kỷ 18)`,
+          relatedMonuments: [allMonumentsList[23], allMonumentsList[22], allMonumentsList[58], allMonumentsList[69]]
         };
       }
     }
 
-    // 5. STEP 3: EXACT MATCH IN 3,605 PRE-TRAINED QUESTIONS
+    // 5. STEP 3: SYSTEM FAQ MATCH (Exact & semantic sub-string)
+    const sortedFaqs = [...systemFaqList].sort((a, b) => b.q.length - a.q.length);
+    for (const faq of sortedFaqs) {
+      const normFaqQ = removeAccents(faq.q);
+      if (cleanQ === normFaqQ || (cleanQ.length > 8 && cleanQ.includes(normFaqQ)) || (normFaqQ.length > 8 && normFaqQ.includes(cleanQ))) {
+        return {
+          text: `### 💡 ${faq.group} (${faq.id})\n\n${faq.a}\n\n📌 *Dữ liệu chính thống từ bộ tri thức 103 di tích TP.HCM.*`,
+          relatedMonuments: allMonumentsList.slice(0, 3)
+        };
+      }
+    }
+
+    // 6. STEP 4: EXACT MATCH IN 3,605 PRE-TRAINED QUESTIONS
     if (questionLookupMap.has(cleanQ)) {
       const matched = questionLookupMap.get(cleanQ);
       const monData = monumentQaMap[matched.stt];

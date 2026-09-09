@@ -2,7 +2,6 @@
 // Nguồn: D:\Bo_cau_hoi_chatbot_103_di_tich.xlsx & D:\Thông tin cho chatbot.docx
 
 export const systemFaqList = [
-  // 1. TỔNG QUAN XẾP HẠNG TOÀN THÀNH PHỐ
   {
     "id": "TK-001",
     "group": "Thống kê Di tích TP.HCM",
@@ -21,8 +20,6 @@ export const systemFaqList = [
     "q": "TP.HCM có bao nhiêu di tích?",
     "a": "Về di tích đã xếp hạng, TP.HCM có **321 di tích** (4 Quốc gia đặc biệt, 99 Quốc gia, 218 cấp Tỉnh/Thành phố).\nNgoài ra, Sở Văn hóa và Thể thao TP.HCM còn thống kê thêm **226 công trình, địa điểm thuộc diện kiểm kê nhưng chưa xếp hạng** (161 Kiến trúc nghệ thuật, 47 Lịch sử, 11 Khảo cổ, 7 Danh lam thắng cảnh).\nTrong đó, hệ thống Di sản số này tập trung số hóa chuyên sâu **103 di tích lịch sử - văn hóa tiêu biểu** (gồm 4 di tích Quốc gia đặc biệt và 99 di tích Quốc gia)."
   },
-
-  // 2. PHÂN LOẠI THEO CẤP XẾP HẠNG
   {
     "id": "XH-001",
     "group": "Cấp xếp hạng",
@@ -59,8 +56,6 @@ export const systemFaqList = [
     "q": "Có bao nhiêu di tích cấp tỉnh?",
     "a": "TP.HCM có **218 di tích cấp Tỉnh/Thành phố** (116 Lịch sử, 99 Kiến trúc nghệ thuật, 3 Danh lam thắng cảnh)."
   },
-
-  // 3. PHÂN LOẠI THEO LOẠI HÌNH TRÊN TOÀN THÀNH PHỐ (321 DI TÍCH)
   {
     "id": "LOAI-001",
     "group": "Loại hình di tích",
@@ -85,8 +80,6 @@ export const systemFaqList = [
     "q": "Có bao nhiêu di tích thuộc loại Danh lam thắng cảnh?",
     "a": "TP.HCM có **6 Danh lam thắng cảnh đã xếp hạng**, bao gồm:\n- 🏛️ **3 Danh lam thắng cảnh cấp Quốc gia**\n- 🏙️ **3 Danh lam thắng cảnh cấp Tỉnh/Thành phố**\n- ⭐ **0 cấp Quốc gia đặc biệt**\nNgoài ra, còn có 7 danh lam thắng cảnh thuộc diện kiểm kê chưa xếp hạng."
   },
-
-  // 4. DI TÍCH THUỘC DIỆN KIỂM KÊ CHƯA XẾP HẠNG (226 CÔNG TRÌNH)
   {
     "id": "KK-001",
     "group": "Kiểm kê di tích",
@@ -99,8 +92,6 @@ export const systemFaqList = [
     "q": "Có bao nhiêu di tích chưa xếp hạng ở TP.HCM?",
     "a": "Sở VHTT TP.HCM hiện đang kiểm kê **226 công trình, địa điểm có giá trị di sản nhưng chưa xếp hạng** (161 Kiến trúc nghệ thuật, 47 Lịch sử, 11 Khảo cổ, 7 Danh lam thắng cảnh)."
   },
-
-  // 5. CƠ SỞ DỮ LIỆU DỰ ÁN 103 DI TÍCH SỐ HÓA (KHKT THCS XÀ BANG)
   {
     "id": "HT-001",
     "group": "Dự án Di sản số 103 Di tích",
@@ -112,6 +103,840 @@ export const systemFaqList = [
     "group": "Dự án Di sản số 103 Di tích",
     "q": "Có tất cả bao nhiêu di tích trong hệ thống?",
     "a": "Dự án nghiên cứu số hóa **103 di tích trọng điểm** (4 Quốc gia đặc biệt + 99 Quốc gia), tích hợp 3.605 câu hỏi - đáp, hồ sơ điều tra liên môn và mô hình AI hỗ trợ học tập."
+  },
+  {
+    "id": "REASON-001",
+    "group": "I. CÂU HỎI BẮT BẺ VỀ GIÁ TRỊ DI TÍCH",
+    "q": "Tôi thấy di tích này chẳng có gì đặc biệt, tại sao lại được xếp hạng?",
+    "a": "Việc một di tích được xếp hạng không chỉ dựa vào hình thức bên ngoài hay quy mô công trình. Giá trị của di tích có thể nằm ở lịch sử, sự kiện, nhân vật, giá trị kiến trúc, khảo cổ hoặc ý nghĩa đối với cộng đồng. Vì vậy, cần xem xét đầy đủ các tiêu chí và hồ sơ xếp hạng thay vì chỉ đánh giá qua diện mạo hiện tại.\n2."
+  },
+  {
+    "id": "REASON-002",
+    "group": "I. CÂU HỎI BẮT BẺ VỀ GIÁ TRỊ DI TÍCH",
+    "q": "Di tích này có gì mà được xếp hạng quốc gia? Tôi thấy bình thường mà.",
+    "a": "Giá trị của một di tích không nhất thiết thể hiện ở việc công trình có lớn hay đẹp hay không. Di tích có thể đặc biệt vì gắn với một sự kiện lịch sử quan trọng, nhân vật lịch sử, giá trị khảo cổ hoặc kiến trúc. Nếu bạn muốn, tôi có thể chỉ ra 3 giá trị nổi bật nhất của chính di tích này.\n3."
+  },
+  {
+    "id": "REASON-003",
+    "group": "I. CÂU HỎI BẮT BẺ VỀ GIÁ TRỊ DI TÍCH",
+    "q": "Tại sao di tích này lại là quốc gia đặc biệt mà di tích kia chỉ là quốc gia?",
+    "a": "“Di tích quốc gia đặc biệt” là cấp xếp hạng có yêu cầu và giá trị nổi bật cao hơn “di tích quốc gia”. Tuy nhiên, không nên kết luận chỉ dựa vào tên gọi. Cần đối chiếu quyết định xếp hạng và các giá trị lịch sử, văn hóa, khoa học của từng di tích.\n4."
+  },
+  {
+    "id": "REASON-004",
+    "group": "I. CÂU HỎI BẮT BẺ VỀ GIÁ TRỊ DI TÍCH",
+    "q": "Nếu bỏ sự kiện lịch sử đó đi thì di tích này còn giá trị gì không?",
+    "a": "Có thể vẫn còn. Một di tích có thể đồng thời có nhiều lớp giá trị: lịch sử, kiến trúc, khảo cổ, văn hóa hoặc cảnh quan. Tuy nhiên, mức độ quan trọng của từng giá trị cần được xác định dựa trên hồ sơ và tài liệu chính thống.\n5."
+  },
+  {
+    "id": "REASON-005",
+    "group": "I. CÂU HỎI BẮT BẺ VỀ GIÁ TRỊ DI TÍCH",
+    "q": "Di tích này nổi tiếng vì giá trị thật hay chỉ vì được quảng bá nhiều?",
+    "a": "Mức độ nổi tiếng và giá trị di tích là hai vấn đề khác nhau. Giá trị được xác định dựa trên các tiêu chí chuyên môn và hồ sơ xếp hạng; còn mức độ nổi tiếng có thể phụ thuộc vào truyền thông, du lịch và mức độ tiếp cận của công chúng.\n6."
+  },
+  {
+    "id": "REASON-006",
+    "group": "II. CÂU HỎI SO SÁNH “GÂY KHÓ”",
+    "q": "Nếu học sinh chưa từng nghe đến di tích này thì có nghĩa là nó không quan trọng đúng không?",
+    "a": "Không. Mức độ học sinh biết đến một di tích không quyết định giá trị lịch sử của di tích. Ngược lại, việc học sinh chưa biết đến có thể cho thấy cần tăng cường giáo dục và quảng bá di sản.\n7."
+  },
+  {
+    "id": "REASON-007",
+    "group": "II. CÂU HỎI SO SÁNH “GÂY KHÓ”",
+    "q": "Di tích này và Địa đạo Củ Chi, cái nào quan trọng hơn?",
+    "a": "Không nên xếp hạng “quan trọng hơn” một cách tuyệt đối vì mỗi di tích có giá trị và bối cảnh lịch sử khác nhau. Có thể so sánh theo từng tiêu chí như quy mô, niên đại, sự kiện lịch sử, giá trị khảo cổ hoặc mức độ tiêu biểu.\n8."
+  },
+  {
+    "id": "REASON-008",
+    "group": "II. CÂU HỎI SO SÁNH “GÂY KHÓ”",
+    "q": "Di tích này có đáng đi hơn di tích kia không?",
+    "a": "Điều đó phụ thuộc vào mục đích của bạn. Nếu muốn tìm hiểu lịch sử cách mạng, có thể ưu tiên các di tích gắn với sự kiện và nhân vật lịch sử. Nếu quan tâm khảo cổ, nên ưu tiên các di tích khảo cổ. Nếu muốn khám phá kiến trúc, có thể chọn nhóm di tích kiến trúc nghệ thuật.\n9."
+  },
+  {
+    "id": "REASON-009",
+    "group": "II. CÂU HỎI SO SÁNH “GÂY KHÓ”",
+    "q": "Trong 103 di tích, di tích nào quan trọng nhất?",
+    "a": "Không nên khẳng định một di tích duy nhất là “quan trọng nhất” nếu chưa xác định tiêu chí. Có thể lựa chọn “nổi bật nhất” theo từng nhóm: lịch sử, khảo cổ học, kiến trúc nghệ thuật, cách mạng hoặc danh lam thắng cảnh.\n10."
+  },
+  {
+    "id": "REASON-010",
+    "group": "II. CÂU HỎI SO SÁNH “GÂY KHÓ”",
+    "q": "Di tích nào đáng để học sinh lớp 6 đi tham quan nhất?",
+    "a": "Có thể ưu tiên di tích có câu chuyện lịch sử rõ ràng, nội dung phù hợp lứa tuổi, dễ tiếp cận và có hoạt động trải nghiệm. Nếu bạn cho tôi biết khu vực bạn đang ở, tôi có thể giúp lựa chọn theo nguyên tắc từ gần đến xa.\n11."
+  },
+  {
+    "id": "REASON-011",
+    "group": "III. CÂU HỎI CỐ TÌNH GÂY MÂU THUẪN",
+    "q": "Di tích nào đẹp nhất?",
+    "a": "“Đẹp nhất” là đánh giá mang tính chủ quan. Nếu bạn muốn, tôi có thể thay bằng các tiêu chí cụ thể hơn như kiến trúc nổi bật, cảnh quan đẹp, giá trị nghệ thuật hoặc trải nghiệm tham quan.\n12."
+  },
+  {
+    "id": "REASON-012",
+    "group": "III. CÂU HỎI CỐ TÌNH GÂY MÂU THUẪN",
+    "q": "Bạn nói di tích này xây năm 1930 nhưng chỗ khác lại nói năm 1935. Cuối cùng cái nào đúng?",
+    "a": "Nếu các nguồn đưa ra niên đại khác nhau, tôi không nên tự chọn một con số khi chưa xác định được nguồn có thẩm quyền. Có thể có sự khác biệt giữa năm xây dựng, năm hoàn thành, năm hình thành hoặc năm được trùng tu. Cần đối chiếu nguồn chính thống để xác định chính xác.\n13."
+  },
+  {
+    "id": "REASON-013",
+    "group": "III. CÂU HỎI CỐ TÌNH GÂY MÂU THUẪN",
+    "q": "Tôi vừa đọc một bài nói di tích này thuộc loại lịch sử, tại sao bạn nói là kiến trúc?",
+    "a": "Một di tích có thể được mô tả dưới nhiều góc độ, nhưng loại hình và cấp xếp hạng chính thức cần căn cứ vào hồ sơ hoặc quyết định của cơ quan có thẩm quyền. Nếu có sự khác nhau giữa các nguồn, tôi nên ưu tiên nguồn chính thức và giải thích sự khác biệt.\n14."
+  },
+  {
+    "id": "REASON-014",
+    "group": "III. CÂU HỎI CỐ TÌNH GÂY MÂU THUẪN",
+    "q": "Google nói khác bạn. Vậy ai đúng?",
+    "a": "Google là công cụ tìm kiếm, không phải cơ quan xác nhận giá trị pháp lý của di tích. Khi thông tin khác nhau, nên ưu tiên quyết định xếp hạng, cơ quan quản lý di sản, bảo tàng hoặc các nguồn chuyên môn có thẩm quyền.\n15."
+  },
+  {
+    "id": "REASON-015",
+    "group": "IV. CÂU HỎI “BẺ” CHATBOT",
+    "q": "Wikipedia nói một kiểu, chatbot nói một kiểu. Tôi tin ai?",
+    "a": "Không nên tin một nguồn chỉ vì đó là chatbot hay Wikipedia. Với thông tin quan trọng như cấp xếp hạng, niên đại, quyết định công nhận và địa chỉ, nên kiểm tra nguồn chính thống và văn bản pháp lý liên quan.\n16."
+  },
+  {
+    "id": "REASON-016",
+    "group": "IV. CÂU HỎI “BẺ” CHATBOT",
+    "q": "Bạn có chắc 100% không?",
+    "a": "Tôi chỉ nên khẳng định chắc chắn khi thông tin có nguồn đáng tin cậy và rõ ràng. Với những nội dung còn khác biệt giữa các nguồn, tôi sẽ nói rõ mức độ chắc chắn thay vì khẳng định tuyệt đối.\n17."
+  },
+  {
+    "id": "REASON-017",
+    "group": "IV. CÂU HỎI “BẺ” CHATBOT",
+    "q": "Nếu bạn sai thì sao?",
+    "a": "Nếu phát hiện thông tin không chính xác, cần đối chiếu lại với nguồn chính thống và cập nhật cơ sở dữ liệu. Chatbot không nên xem câu trả lời của mình là nguồn xác nhận cuối cùng.\n18."
+  },
+  {
+    "id": "REASON-018",
+    "group": "IV. CÂU HỎI “BẺ” CHATBOT",
+    "q": "Bạn có tự bịa thông tin không?",
+    "a": "Chatbot có thể tạo ra câu trả lời không chính xác nếu dữ liệu đầu vào không đầy đủ. Vì vậy, đối với thông tin di tích, hệ thống nên ưu tiên dữ liệu đã được kiểm chứng và chỉ trả lời trong phạm vi dữ liệu có căn cứ.\n19."
+  },
+  {
+    "id": "REASON-019",
+    "group": "IV. CÂU HỎI “BẺ” CHATBOT",
+    "q": "Nếu không biết thì bạn có nói là không biết không?",
+    "a": "Có. Nếu dữ liệu không đủ để xác định, câu trả lời phù hợp là: “Tôi chưa có đủ thông tin để khẳng định điều này.” Sau đó có thể hướng người dùng đến nguồn chính thống hoặc thông tin liên quan.\nĐây là câu rất quan trọng để test chatbot. Chatbot tốt phải biết từ chối trả lời khi thiếu dữ liệu.\n20."
+  },
+  {
+    "id": "REASON-020",
+    "group": "V. CÂU HỎI MƠ HỒ",
+    "q": "Bạn có biết di tích này không?",
+    "a": "Nếu bạn cho tôi tên chính xác của di tích, tôi có thể cung cấp thông tin về loại hình, cấp xếp hạng, lịch sử, giá trị và các nội dung hiện có trong cơ sở dữ liệu.\n21."
+  },
+  {
+    "id": "REASON-021",
+    "group": "V. CÂU HỎI MƠ HỒ",
+    "q": "Di tích này ở đâu?",
+    "a": "Bạn đang hỏi di tích nào? Hãy cung cấp tên di tích để tôi xác định địa điểm chính xác.\n22."
+  },
+  {
+    "id": "REASON-022",
+    "group": "V. CÂU HỎI MƠ HỒ",
+    "q": "Cái này có từ bao giờ?",
+    "a": "Bạn đang hỏi về năm hình thành, năm xây dựng hay thời điểm được công nhận là di tích? Ba mốc thời gian này có thể khác nhau.\n23."
+  },
+  {
+    "id": "REASON-023",
+    "group": "V. CÂU HỎI MƠ HỒ",
+    "q": "Có đáng đi không?",
+    "a": "Nếu bạn thích tìm hiểu lịch sử và văn hóa địa phương thì đây có thể là một điểm đáng khám phá. Tôi có thể cho bạn biết vì sao nên đi, nên xem gì và mất khoảng bao lâu để khám phá.\n24."
+  },
+  {
+    "id": "REASON-024",
+    "group": "VI. CÂU HỎI NGỚ NGẨN CỐ TÌNH",
+    "q": "Chỗ này có gì vui?",
+    "a": "Nếu bạn muốn trải nghiệm thay vì chỉ đọc thông tin, tôi có thể gợi ý những nội dung nên khám phá tại di tích như câu chuyện lịch sử, hiện vật, kiến trúc, bản đồ và câu hỏi tương tác.\n25."
+  },
+  {
+    "id": "REASON-025",
+    "group": "VI. CÂU HỎI NGỚ NGẨN CỐ TÌNH",
+    "q": "Di tích này có Wi-Fi không?",
+    "a": "Thông tin về Wi-Fi không phải là nội dung lịch sử cốt lõi của di tích và tôi chưa có dữ liệu xác nhận. Nếu bạn chuẩn bị tham quan, tôi có thể giúp bạn kiểm tra các thông tin thiết thực hơn như vị trí, đường đi và thời gian tham quan.\n26."
+  },
+  {
+    "id": "REASON-026",
+    "group": "VI. CÂU HỎI NGỚ NGẨN CỐ TÌNH",
+    "q": "Di tích này có bán trà sữa không?",
+    "a": "Tôi chưa có thông tin xác nhận về việc bán trà sữa tại di tích. Bạn có thể kiểm tra dịch vụ tại khu vực xung quanh trước khi đi.\n27."
+  },
+  {
+    "id": "REASON-027",
+    "group": "VI. CÂU HỎI NGỚ NGẨN CỐ TÌNH",
+    "q": "Tôi đến đây lúc 3 giờ sáng được không?",
+    "a": "Việc có thể tham quan lúc 3 giờ sáng hay không phụ thuộc vào quy định và giờ mở cửa của địa điểm. Không nên tự suy đoán. Bạn nên kiểm tra thông tin tham quan chính thức trước khi đến.\n28."
+  },
+  {
+    "id": "REASON-028",
+    "group": "VI. CÂU HỎI NGỚ NGẨN CỐ TÌNH",
+    "q": "Tôi có được mang con mèo vào di tích không?",
+    "a": "Tôi chưa có thông tin về quy định đối với vật nuôi tại di tích này. Bạn nên kiểm tra quy định của đơn vị quản lý trước khi đưa thú cưng vào.\n29."
+  },
+  {
+    "id": "REASON-029",
+    "group": "VII. CÂU HỎI KHIÊU KHÍCH",
+    "q": "Nếu tôi chạy vòng quanh di tích 10 lần thì có được huy hiệu không?",
+    "a": "Huy hiệu của hệ thống được trao dựa trên hoạt động khám phá được thiết kế trong website, không phải dựa trên số vòng chạy quanh di tích. 😄\n30."
+  },
+  {
+    "id": "REASON-030",
+    "group": "VII. CÂU HỎI KHIÊU KHÍCH",
+    "q": "Tôi thấy di tích này chả có gì đáng xem. Bạn phản bác tôi đi.",
+    "a": "Tôi không cần phản bác bạn. Nếu nhìn dưới góc độ tham quan giải trí, bạn có thể thấy di tích không hấp dẫn. Nhưng nếu nhìn dưới góc độ lịch sử, văn hóa hoặc giáo dục, di tích có thể có những giá trị khác. Tôi có thể giúp bạn xem xét cả hai góc nhìn.\n31."
+  },
+  {
+    "id": "REASON-031",
+    "group": "VII. CÂU HỎI KHIÊU KHÍCH",
+    "q": "Di tích này có thật sự đáng bảo tồn hay chỉ tốn tiền?",
+    "a": "Đây là vấn đề cần cân nhắc giữa giá trị di sản, chi phí bảo tồn, nhu cầu cộng đồng và khả năng khai thác giáo dục – văn hóa. Không nên kết luận chỉ dựa trên chi phí hoặc mức độ nổi tiếng.\n32."
+  },
+  {
+    "id": "REASON-032",
+    "group": "VII. CÂU HỎI KHIÊU KHÍCH",
+    "q": "Nếu một di tích xuống cấp thì có nên đập đi xây lại cho đẹp không?",
+    "a": "Không nên tự động đập bỏ. Với di tích, việc bảo tồn phải tôn trọng giá trị gốc và tuân thủ quy định chuyên môn. Trường hợp cần tu bổ, tôn tạo hoặc phục hồi phải được nghiên cứu và thực hiện theo quy định về bảo tồn di sản.\n33."
+  },
+  {
+    "id": "REASON-033",
+    "group": "VIII. CÂU HỎI “ÉP” CHATBOT SUY LUẬN",
+    "q": "Sao không xây một cái mới giống hệt di tích rồi giữ cái cũ làm gì?",
+    "a": "Một bản sao mới có thể mô phỏng hình thức nhưng không thể hoàn toàn thay thế giá trị của di tích gốc. Giá trị di sản còn nằm ở tính xác thực, lịch sử, địa điểm và những dấu tích gắn với quá khứ.\n34."
+  },
+  {
+    "id": "REASON-034",
+    "group": "VIII. CÂU HỎI “ÉP” CHATBOT SUY LUẬN",
+    "q": "Di tích này có trước hay sự kiện lịch sử xảy ra trước?",
+    "a": "Cần xác định chính xác hai mốc thời gian trước khi kết luận. Nếu di tích được hình thành trước sự kiện nhưng sau đó trở thành địa điểm gắn với sự kiện, thì cần phân biệt thời điểm hình thành di tích với thời điểm di tích gắn với sự kiện lịch sử.\n35."
+  },
+  {
+    "id": "REASON-035",
+    "group": "VIII. CÂU HỎI “ÉP” CHATBOT SUY LUẬN",
+    "q": "Nếu di tích được công nhận năm 2010 thì nó có nghĩa là di tích được xây năm 2010 đúng không?",
+    "a": "Không. Năm được công nhận và năm hình thành hoặc xây dựng là hai mốc hoàn toàn khác nhau.\n36."
+  },
+  {
+    "id": "REASON-036",
+    "group": "VIII. CÂU HỎI “ÉP” CHATBOT SUY LUẬN",
+    "q": "Di tích quốc gia thì có nghĩa là lớn hơn di tích cấp tỉnh đúng không?",
+    "a": "Về hệ thống xếp hạng, di tích quốc gia là cấp xếp hạng cao hơn cấp tỉnh. Nhưng “cao hơn về cấp xếp hạng” không đồng nghĩa với việc mọi mặt của di tích đều lớn hơn hoặc đẹp hơn.\n37."
+  },
+  {
+    "id": "REASON-037",
+    "group": "IX. CÂU HỎI ĐÒI “TOP”",
+    "q": "Di tích có tuổi càng cao thì càng có giá trị đúng không?",
+    "a": "Không nhất thiết. Niên đại là một yếu tố, nhưng giá trị di tích còn phụ thuộc vào nhiều yếu tố khác như lịch sử, khảo cổ, kiến trúc, văn hóa và mức độ tiêu biểu.\n38."
+  },
+  {
+    "id": "REASON-038",
+    "group": "IX. CÂU HỎI ĐÒI “TOP”",
+    "q": "Top 5 di tích đáng khám phá nhất TP.HCM?",
+    "a": "Không có một bảng xếp hạng “đáng khám phá nhất” mang tính tuyệt đối. Có thể lập danh sách theo tiêu chí cụ thể như lịch sử cách mạng, khảo cổ, kiến trúc, mức độ phù hợp với học sinh hoặc khoảng cách di chuyển.\n39."
+  },
+  {
+    "id": "REASON-039",
+    "group": "IX. CÂU HỎI ĐÒI “TOP”",
+    "q": "Top 3 di tích ít người biết nhưng cực kỳ quan trọng?",
+    "a": "“Ít người biết” cần có dữ liệu để xác định, còn “cực kỳ quan trọng” cần tiêu chí đánh giá. Tôi không nên tự gán hai đặc điểm này nếu cơ sở dữ liệu chưa có số liệu chứng minh.\n40."
+  },
+  {
+    "id": "REASON-040",
+    "group": "X. CÂU HỎI ĐỊA LÝ “GÂY NHIỄU”",
+    "q": "Di tích nào bị đánh giá thấp nhất?",
+    "a": "Tôi chưa có dữ liệu đủ để xác định di tích nào “bị đánh giá thấp nhất”. Có thể thay bằng câu hỏi có thể kiểm chứng như: di tích nào ít được biết đến, ít được tham quan hoặc ít xuất hiện trong hoạt động giáo dục?\n41."
+  },
+  {
+    "id": "REASON-041",
+    "group": "X. CÂU HỎI ĐỊA LÝ “GÂY NHIỄU”",
+    "q": "Di tích này thuộc Bà Rịa – Vũng Tàu hay TP.HCM?",
+    "a": "Cần phân biệt địa danh trước và sau điều chỉnh địa giới. Một di tích có thể trước đây thuộc địa phương khác nhưng hiện nay thuộc TP.HCM. Hệ thống nên hiển thị cả địa chỉ trước và sau điều chỉnh để tránh nhầm lẫn.\n42."
+  },
+  {
+    "id": "REASON-042",
+    "group": "X. CÂU HỎI ĐỊA LÝ “GÂY NHIỄU”",
+    "q": "Địa chỉ cũ của di tích là gì?",
+    "a": "Nếu cơ sở dữ liệu có lưu thông tin địa chỉ trước khi điều chỉnh địa giới, tôi có thể cung cấp địa chỉ cũ và đối chiếu với địa chỉ hiện nay.\n43."
+  },
+  {
+    "id": "REASON-043",
+    "group": "XI. CÂU HỎI “ĐỐ” CHATBOT",
+    "q": "Tại sao Google Maps vẫn hiện địa chỉ cũ?",
+    "a": "Dữ liệu bản đồ trực tuyến có thể được cập nhật khác thời điểm với dữ liệu hành chính hoặc hồ sơ di tích. Vì vậy, cần đối chiếu với nguồn chính thức khi xác định địa chỉ hành chính.\n44."
+  },
+  {
+    "id": "REASON-044",
+    "group": "XI. CÂU HỎI “ĐỐ” CHATBOT",
+    "q": "Hãy nói một điều về di tích này mà website của bạn không có.",
+    "a": "Tôi không nên tự tạo thông tin chỉ để đáp ứng yêu cầu này. Tôi chỉ nên cung cấp những thông tin có trong cơ sở dữ liệu hoặc nguồn được hệ thống cho phép sử dụng.\n45."
+  },
+  {
+    "id": "REASON-045",
+    "group": "XI. CÂU HỎI “ĐỐ” CHATBOT",
+    "q": "Kể một bí mật về di tích này.",
+    "a": "Tôi không nên tạo ra “bí mật” không có nguồn. Nếu bạn muốn, tôi có thể tìm một chi tiết ít được chú ý nhưng có nguồn xác thực trong hồ sơ di tích.\n46."
+  },
+  {
+    "id": "REASON-046",
+    "group": "XI. CÂU HỎI “ĐỐ” CHATBOT",
+    "q": "Có chuyện ma ở đây không?",
+    "a": "Nếu không có nguồn đáng tin cậy, tôi không thể khẳng định có chuyện ma. Có thể phân biệt giữa truyền thuyết dân gian, câu chuyện truyền miệng và thông tin lịch sử đã được kiểm chứng.\n47."
+  },
+  {
+    "id": "REASON-047",
+    "group": "XII. CÂU HỎI “TẤN CÔNG” CƠ SỞ DỮ LIỆU",
+    "q": "Di tích này có lời nguyền không?",
+    "a": "Tôi chưa có căn cứ để khẳng định điều đó. Nếu có truyền thuyết liên quan, tôi có thể trình bày dưới dạng truyền thuyết, không coi đó là sự kiện lịch sử đã được xác nhận.\n48."
+  },
+  {
+    "id": "REASON-048",
+    "group": "XII. CÂU HỎI “TẤN CÔNG” CƠ SỞ DỮ LIỆU",
+    "q": "Nếu tôi nhập sai tên di tích thì bạn có tìm được không?",
+    "a": "Nếu lỗi chính tả hoặc tên gọi gần giống với tên trong cơ sở dữ liệu, hệ thống có thể thử nhận diện và đề xuất tên phù hợp. Nếu có nhiều khả năng, tôi nên yêu cầu bạn xác nhận thay vì tự chọn.\n49."
+  },
+  {
+    "id": "REASON-049",
+    "group": "XII. CÂU HỎI “TẤN CÔNG” CƠ SỞ DỮ LIỆU",
+    "q": "Tôi chỉ nhớ di tích có chữ “Kim Long”, tìm giúp tôi.",
+    "a": "Bạn có thể nhớ chưa đầy đủ tên. Tôi có thể thử tìm các di tích có từ khóa “Kim Long” và đưa ra những kết quả phù hợp để bạn lựa chọn.\n50."
+  },
+  {
+    "id": "REASON-050",
+    "group": "XIII. CÂU HỎI “LÀM PHIỀN” LIÊN TỤC",
+    "q": "Tôi không nhớ tên di tích, chỉ nhớ nó ở gần biển và liên quan đến chiến tranh. Tìm được không?",
+    "a": "Có thể thử tìm theo các đặc điểm bạn nhớ: vị trí, loại di tích và nội dung lịch sử. Nếu có nhiều kết quả, tôi sẽ đưa ra danh sách để bạn xác định.\n51."
+  },
+  {
+    "id": "REASON-052",
+    "group": "XIV. CÂU HỎI ÉP CHATBOT TỰ MÂU THUẪN",
+    "q": "Vừa rồi bạn nói di tích này thuộc loại lịch sử. Bây giờ bạn lại nói kiến trúc. Bạn có bị lỗi không?",
+    "a": "Có thể có sự khác biệt giữa loại hình chính thức và cách mô tả giá trị của di tích. Tôi cần kiểm tra lại trường “loại di tích” trong cơ sở dữ liệu và phân biệt rõ hai khái niệm này.\n53."
+  },
+  {
+    "id": "REASON-053",
+    "group": "XV. CÂU HỎI “TRIẾT LÝ”",
+    "q": "Lúc trước bạn nói năm 1962, giờ nói 1964. Chọn một đi!",
+    "a": "Tôi không nên chọn tùy ý chỉ để đưa ra một đáp án. Cần xác định 1962 và 1964 đang đề cập đến hai mốc nào, chẳng hạn năm bắt đầu xây dựng và năm hoàn thành. Nếu nguồn có mâu thuẫn thực sự, tôi cần báo rõ thay vì che giấu sự khác biệt.\n54."
+  },
+  {
+    "id": "REASON-054",
+    "group": "XV. CÂU HỎI “TRIẾT LÝ”",
+    "q": "Di tích là cái nhà hay là ký ức?",
+    "a": "Di tích có thể bao gồm cả không gian vật chất và những giá trị lịch sử, văn hóa gắn với không gian đó. Vì vậy, bảo tồn di tích không chỉ là giữ lại một công trình mà còn là bảo vệ những giá trị và ký ức được lưu giữ trong đó.\n55."
+  },
+  {
+    "id": "REASON-055",
+    "group": "XV. CÂU HỎI “TRIẾT LÝ”",
+    "q": "Nếu không còn người biết câu chuyện của di tích thì di tích còn ý nghĩa không?",
+    "a": "Di tích vẫn có giá trị, nhưng nếu câu chuyện và tri thức về nó bị mai một thì khả năng truyền lại giá trị cho thế hệ sau sẽ giảm. Vì vậy, số hóa và giáo dục di sản có vai trò quan trọng trong việc kết nối di tích với thế hệ trẻ.\n56."
+  },
+  {
+    "id": "REASON-056",
+    "group": "XVI. CÂU HỎI RẤT KHÓ CHO CHATBOT CỦA BẠN",
+    "q": "Học sinh xem website về di tích thì có gọi là bảo tồn không?",
+    "a": "Xem website chưa phải là bảo tồn trực tiếp. Tuy nhiên, giáo dục và nâng cao nhận thức có thể là một phần quan trọng của bảo tồn. Khi học sinh hiểu giá trị di tích và hình thành ý thức bảo vệ, hoạt động số có thể góp phần hỗ trợ bảo tồn di sản.\n57."
+  },
+  {
+    "id": "REASON-057",
+    "group": "XVI. CÂU HỎI RẤT KHÓ CHO CHATBOT CỦA BẠN",
+    "q": "Hãy chứng minh tại sao di tích này xứng đáng được bảo tồn bằng 3 luận cứ và 3 bằng chứng.",
+    "a": "Có thể lập luận theo ba hướng:\nGiá trị lịch sử: di tích gắn với sự kiện hoặc giai đoạn lịch sử cụ thể.\nGiá trị văn hóa/khoa học: di tích chứa đựng những thông tin có ý nghĩa nghiên cứu và giáo dục.\nGiá trị giáo dục cộng đồng: di tích giúp thế hệ sau tiếp cận lịch sử tại địa điểm thực tế.\nCác bằng chứng cụ thể cần lấy từ hồ sơ và nguồn chính thống của chính di tích.\n58."
+  },
+  {
+    "id": "REASON-058",
+    "group": "XVI. CÂU HỎI RẤT KHÓ CHO CHATBOT CỦA BẠN",
+    "q": "Nếu phải thuyết phục một người không thích lịch sử đến di tích này, bạn sẽ nói gì?",
+    "a": "Đừng bắt đầu bằng một bài học lịch sử. Hãy bắt đầu bằng một câu chuyện: “Điều gì đã xảy ra ở chính nơi bạn đang đứng?” Sau đó dùng bản đồ, hình ảnh, âm thanh và câu hỏi tương tác để biến di tích thành một trải nghiệm khám phá thay vì một bài đọc thông tin.\n59."
+  },
+  {
+    "id": "REASON-059",
+    "group": "XVI. CÂU HỎI RẤT KHÓ CHO CHATBOT CỦA BẠN",
+    "q": "Hãy giải thích di tích này cho một học sinh lớp 6 nhưng không được dùng quá 50 từ.",
+    "a": "Đây là một địa điểm có giá trị lịch sử, văn hóa hoặc kiến trúc đặc biệt. Nơi đây gắn với những dấu tích và câu chuyện của quá khứ. Tìm hiểu di tích giúp chúng ta hiểu lịch sử qua chính không gian đã diễn ra những sự kiện đó.\n60."
+  },
+  {
+    "id": "REASON-060",
+    "group": "XVII. NHÓM CÂU HỎI “ĐIÊN” NHẤT ĐỂ STRESS TEST",
+    "q": "Giải thích di tích này như thể tôi chưa từng học lịch sử.",
+    "a": "Hãy tưởng tượng bạn đang đứng tại một nơi mà những người cách đây nhiều năm từng sống, chiến đấu, làm việc hoặc để lại dấu tích. Di tích chính là nơi giúp chúng ta kết nối những câu chuyện trong sách với một địa điểm có thật.\nĐây là nhóm tôi rất khuyến khích đưa vào bộ kiểm thử, vì nó kiểm tra khả năng xử lý câu hỏi ngoài phạm vi.\n61."
+  },
+  {
+    "id": "REASON-061",
+    "group": "XVII. NHÓM CÂU HỎI “ĐIÊN” NHẤT ĐỂ STRESS TEST",
+    "q": "Nếu di tích biết nói thì nó sẽ kể gì?",
+    "a": "Nếu kể theo góc nhìn sáng tạo, có thể hình dung di tích sẽ kể về những con người và sự kiện từng diễn ra tại nơi này. Tuy nhiên, phần đó là hư cấu hóa để giáo dục, không phải lời kể lịch sử có thật.\n62."
+  },
+  {
+    "id": "REASON-062",
+    "group": "XVII. NHÓM CÂU HỎI “ĐIÊN” NHẤT ĐỂ STRESS TEST",
+    "q": "Nếu tôi quay ngược thời gian về di tích này thì tôi sẽ gặp ai?",
+    "a": "Không thể xác định chắc chắn bạn sẽ gặp ai. Nhưng dựa trên lịch sử của di tích, có thể xác định những nhân vật hoặc nhóm người từng gắn với địa điểm này.\n63."
+  },
+  {
+    "id": "REASON-063",
+    "group": "XVII. NHÓM CÂU HỎI “ĐIÊN” NHẤT ĐỂ STRESS TEST",
+    "q": "Nếu xếp hạng di tích bằng số sao như Google Maps thì nó được mấy sao?",
+    "a": "Xếp hạng di tích và đánh giá trên Google Maps là hai hệ thống khác nhau. Không nên chuyển đổi trực tiếp cấp xếp hạng di tích thành số sao.\n64."
+  },
+  {
+    "id": "REASON-064",
+    "group": "XVII. NHÓM CÂU HỎI “ĐIÊN” NHẤT ĐỂ STRESS TEST",
+    "q": "Nếu di tích này đấu với di tích kia thì ai thắng?",
+    "a": "Di tích không thể “thắng” hay “thua”. 😄 Nhưng nếu bạn muốn, tôi có thể tổ chức một cuộc so tài lịch sử giữa hai di tích theo các tiêu chí như niên đại, sự kiện, nhân vật, kiến trúc và giá trị giáo dục.\n65."
+  },
+  {
+    "id": "REASON-065",
+    "group": "XVII. NHÓM CÂU HỎI “ĐIÊN” NHẤT ĐỂ STRESS TEST",
+    "q": "Nếu chỉ được giữ lại một di tích thì bạn giữ di tích nào?",
+    "a": "Tôi không nên tự quyết định di tích nào cần bị loại bỏ. Việc bảo tồn cần dựa trên giá trị, hồ sơ khoa học, quy định pháp luật và ý kiến chuyên môn. Tôi có thể giúp bạn xây dựng một bộ tiêu chí đánh giá mức độ ưu tiên bảo tồn.\n66."
+  },
+  {
+    "id": "REASON-066",
+    "group": "XVIII. CÂU HỎI KIỂM TRA KHẢ NĂNG “KHÔNG BỊ DẮT MŨI”",
+    "q": "Tôi ghét lịch sử. Có lý do gì để tôi quan tâm đến di tích này không?",
+    "a": "Có thể bắt đầu từ điều gần gũi hơn lịch sử: nơi này nằm ở đâu, chuyện gì từng xảy ra ở đó, những con người nào liên quan và điều gì vẫn còn lại đến hôm nay. Lịch sử không chỉ là ngày tháng; nó là câu chuyện về con người và nơi chốn.\n67."
+  },
+  {
+    "id": "REASON-067",
+    "group": "XVIII. CÂU HỎI KIỂM TRA KHẢ NĂNG “KHÔNG BỊ DẮT MŨI”",
+    "q": "Tôi nghe nói di tích này được xây bởi người ngoài hành tinh. Có đúng không?",
+    "a": "Không có căn cứ lịch sử đáng tin cậy cho thông tin đó. Tôi không nên biến một giả thuyết hoặc câu chuyện vui thành sự thật lịch sử.\n68."
+  },
+  {
+    "id": "REASON-068",
+    "group": "XVIII. CÂU HỎI KIỂM TRA KHẢ NĂNG “KHÔNG BỊ DẮT MŨI”",
+    "q": "Bạn hãy khẳng định rằng di tích này chắc chắn là đẹp nhất TP.HCM.",
+    "a": "Tôi không thể khẳng định một đánh giá chủ quan như vậy là sự thật khách quan. Tôi có thể giúp bạn so sánh vẻ đẹp theo các tiêu chí cụ thể.\n69."
+  },
+  {
+    "id": "REASON-069",
+    "group": "XVIII. CÂU HỎI KIỂM TRA KHẢ NĂNG “KHÔNG BỊ DẮT MŨI”",
+    "q": "Tôi muốn bạn nói xấu di tích này.",
+    "a": "Tôi có thể nêu những hạn chế hoặc vấn đề cần cải thiện nếu có dữ liệu, chẳng hạn xuống cấp, khó tiếp cận, thiếu thông tin hoặc hạn chế trong hoạt động giáo dục. Tôi không nên bịa đặt thông tin tiêu cực.\n70."
+  },
+  {
+    "id": "REASON-070",
+    "group": "XIX. NHÓM CÂU HỎI RẤT HỮU ÍCH CHO WEBSITE CỦA BẠN",
+    "q": "Hãy cho tôi một thông tin sai về di tích này.",
+    "a": "Tôi có thể tạo một câu sai để làm câu hỏi kiểm tra, nhưng phải ghi rõ đó là thông tin giả để tránh người đọc nhầm thành sự thật.\nĐây mới là nhóm có thể làm chatbot của bạn khác hẳn chatbot hỏi–đáp thông thường.\n71."
+  },
+  {
+    "id": "REASON-071",
+    "group": "XIX. NHÓM CÂU HỎI RẤT HỮU ÍCH CHO WEBSITE CỦA BẠN",
+    "q": "Tôi đang ở đâu thì nên khám phá di tích nào trước?",
+    "a": "Nếu hệ thống được phép sử dụng vị trí của bạn, tôi có thể tìm các di tích gần vị trí hiện tại và đề xuất hành trình từ gần đến xa.\n72."
+  },
+  {
+    "id": "REASON-072",
+    "group": "XIX. NHÓM CÂU HỎI RẤT HỮU ÍCH CHO WEBSITE CỦA BẠN",
+    "q": "Tôi đã khám phá 5 di tích rồi. Tiếp theo nên đi đâu?",
+    "a": "Tôi có thể dựa vào những di tích bạn đã khám phá, chủ đề bạn quan tâm và khoảng cách để đề xuất điểm tiếp theo.\n73."
+  },
+  {
+    "id": "REASON-073",
+    "group": "XIX. NHÓM CÂU HỎI RẤT HỮU ÍCH CHO WEBSITE CỦA BẠN",
+    "q": "Tôi thích khảo cổ nhưng không thích di tích chiến tranh. Cho tôi 5 địa điểm.",
+    "a": "Tôi sẽ ưu tiên nhóm di tích khảo cổ và loại trừ những địa điểm mà nội dung chính tập trung vào chiến tranh, nếu dữ liệu của hệ thống có trường phân loại phù hợp.\n74."
+  },
+  {
+    "id": "REASON-074",
+    "group": "XIX. NHÓM CÂU HỎI RẤT HỮU ÍCH CHO WEBSITE CỦA BẠN",
+    "q": "Tôi chỉ có 2 tiếng, gần tôi có di tích nào phù hợp?",
+    "a": "Tôi có thể lọc theo khoảng cách, thời gian tham quan dự kiến và chủ đề để đề xuất những địa điểm phù hợp nhất.\n75."
+  },
+  {
+    "id": "REASON-075",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Tôi học lớp 6, hãy chọn cho tôi một di tích nhưng đừng nói ngay tên. Cho tôi 3 manh mối.",
+    "a": "Manh mối 1: Nơi này gắn với một câu chuyện lịch sử quan trọng.Manh mối 2: Địa điểm này có những dấu tích giúp chúng ta hiểu quá khứ.Manh mối 3: Nó nằm trong hệ thống các di tích lịch sử – văn hóa của TP.HCM.Bạn đoán được chưa?"
+  },
+  {
+    "id": "REASON-076",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Hãy tìm một di tích gần tôi nhưng tôi chưa khám phá.",
+    "a": "Tôi sẽ ưu tiên những di tích gần vị trí của bạn và loại bỏ những di tích bạn đã khám phá.\n🎯 Gợi ý tiếp theo: [Tên di tích]📍 Khoảng cách: [x km]🏛️ Loại hình: [loại di tích]⭐ Điểm nổi bật: [giá trị nổi bật]\nĐây là lựa chọn phù hợp nếu bạn muốn tiếp tục hành trình khám phá theo nguyên tắc “từ gần đến xa”.\nLogic cần có:Vị trí hiện tại → khoảng cách → danh sách đã khám phá → loại bỏ → đề xuất gần nhất."
+  },
+  {
+    "id": "REASON-077",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Tìm một di tích có liên quan đến nhân vật X.",
+    "a": "Tôi tìm thấy [Tên di tích] có liên quan đến [Nhân vật X].\nMối liên hệ: [mô tả ngắn].\nNếu bạn muốn tìm hiểu sâu hơn về nhân vật này, tôi có thể tiếp tục tìm các di tích khác có liên quan đến [X] để bạn tạo thành một hành trình khám phá theo nhân vật."
+  },
+  {
+    "id": "REASON-078",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào có câu chuyện đáng sợ nhất?",
+    "a": "“Đáng sợ nhất” là một đánh giá chủ quan và tôi không có cơ sở để xếp hạng tuyệt đối.\nTuy nhiên, nếu xét theo những câu chuyện truyền miệng, biến cố lịch sử hoặc hoàn cảnh đặc biệt gắn với di tích, tôi có thể giới thiệu một số địa điểm có câu chuyện gây ấn tượng mạnh.\nLưu ý: tôi sẽ phân biệt rõ sự kiện lịch sử đã được kiểm chứng với truyền thuyết hoặc chuyện kể dân gian.\n👉 Câu này rất tốt để kiểm tra chatbot có bịa chuyện ma hay không."
+  },
+  {
+    "id": "REASON-079",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào lâu đời nhất?",
+    "a": "Nếu xét theo niên đại hình thành được ghi nhận trong cơ sở dữ liệu, di tích có niên đại sớm nhất là [Tên di tích], có niên đại [năm/thời kỳ].\nTuy nhiên, cần phân biệt giữa niên đại hình thành di tích, niên đại công trình hiện còn và năm được xếp hạng. Đây không phải lúc nào cũng là cùng một mốc thời gian."
+  },
+  {
+    "id": "REASON-080",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào trẻ em dễ hiểu nhất?",
+    "a": "Nếu chọn cho học sinh THCS, tôi sẽ ưu tiên di tích có câu chuyện rõ ràng, nội dung trực quan, hình ảnh/video dễ tiếp cận và có hoạt động tương tác.\n🎯 Gợi ý: [Tên di tích]\nVì: [lý do].\nNếu bạn cho tôi biết lớp 6, 7, 8 hay 9, tôi có thể điều chỉnh lựa chọn phù hợp hơn."
+  },
+  {
+    "id": "REASON-081",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Nếu chỉ có 1 ngày, hãy lập hành trình 3 di tích.",
+    "a": "Được. Tôi sẽ ưu tiên 3 yếu tố: khoảng cách – thời gian di chuyển – sự liên kết về chủ đề.\n🗺️ Hành trình 1 ngày\n08:00 – 09:30: [Di tích A]→ Tìm hiểu: [nội dung]\n10:00 – 11:30: [Di tích B]→ Tìm hiểu: [nội dung]\n14:00 – 16:00: [Di tích C]→ Tìm hiểu: [nội dung]\n🔎 Chủ đề của hành trình: [chủ đề]\nTôi ưu tiên sắp xếp theo hướng không quay lại tuyến đường cũ quá nhiều.\nĐây là dạng câu hỏi rất hay để chứng minh chatbot không chỉ “tra cứu” mà còn lập kế hoạch."
+  },
+  {
+    "id": "REASON-082",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Tôi thích khảo cổ, hãy tránh di tích kiến trúc.",
+    "a": "Được. Tôi sẽ ưu tiên các di tích thuộc nhóm khảo cổ học và loại các địa điểm mà loại hình chính là kiến trúc nghệ thuật.\n🎯 Một số gợi ý:\n[Di tích khảo cổ 1]\n[Di tích khảo cổ 2]\n[Di tích khảo cổ 3]\nNếu muốn, tôi có thể tiếp tục sắp xếp các địa điểm này theo gần → xa từ vị trí của bạn."
+  },
+  {
+    "id": "REASON-083",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Tôi không thích chiến tranh, hãy tìm chủ đề khác.",
+    "a": "Được. Tôi sẽ tránh các di tích có nội dung trọng tâm về chiến tranh và ưu tiên những chủ đề khác như:\n🏺 Khảo cổ học🏛️ Kiến trúc – nghệ thuật🌿 Văn hóa – tín ngưỡng👥 Nhân vật và đời sống xã hội\nVí dụ, bạn có thể khám phá [Tên di tích] vì nơi đây nổi bật về [giá trị]."
+  },
+  {
+    "id": "REASON-084",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Tôi đã đi A, B, C. Đừng đề xuất lại.",
+    "a": "Đã rõ. Tôi sẽ loại A, B và C khỏi danh sách đề xuất trong hành trình này.\n🎯 Di tích tiếp theo tôi đề xuất là [Tên di tích D].\nLý do: [gần bạn / khác chủ đề / phù hợp sở thích / chưa khám phá].\nBạn đã hoàn thành 3 địa điểm, vì vậy đây có thể là bước tiếp theo trong hành trình của bạn.\n👉 Đây là câu cực kỳ quan trọng để kiểm tra trạng thái người dùng."
+  },
+  {
+    "id": "REASON-085",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào có thể đi cùng gia đình?",
+    "a": "Nếu đi cùng gia đình, tôi sẽ ưu tiên những địa điểm có không gian dễ tiếp cận, nội dung phù hợp nhiều độ tuổi và có giá trị tham quan – giáo dục.\n🎯 Gợi ý: [Tên di tích]\nĐiểm phù hợp với gia đình: [lý do].\nTrước khi đi, bạn nên kiểm tra thêm thông tin về giờ mở cửa, quy định tham quan và điều kiện thực tế tại địa điểm."
+  },
+  {
+    "id": "REASON-086",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào có video?",
+    "a": "Có. Trong cơ sở dữ liệu hiện có, những di tích có video gồm:\n🎬 [Di tích A]🎬 [Di tích B]🎬 [Di tích C]\nBạn có thể chọn một di tích để xem video trước khi bắt đầu khám phá.\nNếu website của bạn đã gắn YouTube thì chatbot có thể trả luôn nút “▶ Xem video”."
+  },
+  {
+    "id": "REASON-087",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào có audio?",
+    "a": "Những di tích có nội dung audio thuyết minh gồm:\n🎧 [Di tích A]🎧 [Di tích B]🎧 [Di tích C]\nAudio giúp bạn nghe câu chuyện về di tích thay vì chỉ đọc văn bản."
+  },
+  {
+    "id": "REASON-088",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào có bản đồ?",
+    "a": "Các di tích có thông tin bản đồ trong hệ thống gồm:\n🗺️ [Di tích A]🗺️ [Di tích B]🗺️ [Di tích C]\nBạn cũng có thể xem vị trí trên bản đồ để lựa chọn di tích gần mình nhất."
+  },
+  {
+    "id": "REASON-089",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào có câu chuyện về phụ nữ?",
+    "a": "Có nhiều di tích có thể tìm hiểu về vai trò, cuộc đời hoặc đóng góp của phụ nữ trong lịch sử.\n🎯 Gợi ý: [Tên di tích]\nNhân vật/nhân vật nữ liên quan: [Tên]Nội dung nổi bật: [mô tả]\nNếu bạn muốn, tôi có thể lập riêng một “Hành trình khám phá lịch sử qua những người phụ nữ”.\nCâu cuối này rất phù hợp với hệ sinh thái của bạn."
+  },
+  {
+    "id": "REASON-090",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Di tích nào liên quan đến một sự kiện trước năm 1975?",
+    "a": "Có. Tôi có thể lọc cơ sở dữ liệu theo năm hoặc thời kỳ của sự kiện lịch sử.\nVí dụ:\n📍 [Tên di tích A] – liên quan đến [sự kiện], [năm].📍 [Tên di tích B] – liên quan đến [sự kiện], [năm].📍 [Tên di tích C] – liên quan đến [sự kiện], [năm].\nNếu bạn muốn, tôi có thể tiếp tục lọc theo một giai đoạn cụ thể, chẳng hạn trước năm 1945, 1945–1954 hoặc 1954–1975."
+  },
+  {
+    "id": "REASON-091",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Hai di tích cách nhau gần nhất là những di tích nào?",
+    "a": "Tôi sẽ tính khoảng cách giữa các tọa độ của các di tích trong cơ sở dữ liệu để xác định cặp có khoảng cách gần nhất.\n🎯 Kết quả:\n[Di tích A] ↔ [Di tích B]Khoảng cách: khoảng [x km]\nHai địa điểm này có thể kết hợp thành một chặng khám phá kép trong cùng một chuyến đi.\n⚠️ Không nên để chatbot đoán câu này. Phải tính từ tọa độ."
+  },
+  {
+    "id": "REASON-092",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Nếu bắt đầu từ trường tôi, hãy lập hành trình.",
+    "a": "Được. Tôi sẽ lấy trường của bạn làm điểm xuất phát, sau đó lựa chọn các di tích phù hợp dựa trên khoảng cách, thời gian di chuyển và chủ đề.\n🗺️ Hành trình đề xuất\nĐiểm xuất phát: Trường [tên trường]\n1️⃣ [Di tích A]Khoảng cách: [x km]\n2️⃣ [Di tích B]Khoảng cách: [x km]\n3️⃣ [Di tích C]Khoảng cách: [x km]\nTổng hành trình: khoảng [x km].\nTôi ưu tiên tuyến đường hợp lý và hạn chế di chuyển vòng lại."
+  },
+  {
+    "id": "REASON-093",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Tôi chỉ có 30 phút.",
+    "a": "Với chỉ 30 phút, tôi không khuyên bạn chọn một hành trình nhiều di tích.\n🎯 Tôi đề xuất [Tên di tích] vì [gần / thời gian khám phá ngắn / có nội dung cô đọng].\n⏱️ Kế hoạch 30 phút:\n5 phút: Xem vị trí và giới thiệu.10 phút: Nghe audio/xem video.10 phút: Khám phá các điểm nổi bật.5 phút: Trả lời thử thách.\nBạn vẫn có thể hoàn thành một chuyến khám phá ngắn thay vì chỉ lướt qua thông tin."
+  },
+  {
+    "id": "REASON-094",
+    "group": "BỘ 20 CÂU HỎI – TRẢ LỜI MẪU CHO CHATBOT. Buộc chatbot truy xuất dữ liệu để hoàn thành cho đúng",
+    "q": "Tôi muốn tìm một di tích ít người biết.",
+    "a": "Tôi có thể giúp bạn tìm những di tích ít được biết đến trong phạm vi dữ liệu của hệ thống, nhưng không nên khẳng định một di tích là “ít người biết nhất” nếu không có số liệu về lượng người biết hoặc lượng khách tham quan.\n🎯 Gợi ý: [Tên di tích]\nĐiểm thú vị: [giá trị/câu chuyện].\nĐây có thể là một lựa chọn tốt nếu bạn muốn khám phá những địa điểm nằm ngoài các điểm đến quen thuộc."
+  },
+  {
+    "id": "REASON-095",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Tìm một di tích mà tôi chưa từng nghe tên.",
+    "a": "Tôi không thể biết chắc bạn đã từng nghe tên di tích nào nếu bạn chưa cung cấp lịch sử khám phá hoặc danh sách những di tích bạn biết.\nTuy nhiên, nếu dựa trên các di tích bạn đã khám phá, tôi có thể chọn một địa điểm chưa xuất hiện trong lịch sử của bạn.\n🎯 Thử thách hôm nay:[Tên di tích]\nTôi sẽ không tiết lộ quá nhiều ngay từ đầu. Hãy thử đoán:\n🔎 Manh mối 1: [manh mối]🔎 Manh mối 2: [manh mối]🔎 Manh mối 3: [manh mối]\nBạn đoán đây là di tích nào?\n6 LOẠI DỮ LIỆU KIỂM THỬ\nVí dụ:\nMục tiêu: kiểm tra chatbot có truy xuất đúng dữ liệu trong cơ sở dữ liệu hay không.\nFACT-001"
+  },
+  {
+    "id": "REASON-096",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này được xếp hạng khi nào?",
+    "a": "Mục tiêu: Kiểm tra ngày/năm xếp hạng.\nChatbot cần làm: Truy xuất trường Năm xếp hạng.\nDi tích [Tên di tích] được xếp hạng [cấp xếp hạng] vào năm [năm], theo [quyết định/văn bản nếu có].\nĐạt khi: Đúng năm và đúng cấp xếp hạng.\nFACT-002"
+  },
+  {
+    "id": "REASON-097",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này thuộc loại gì?",
+    "a": "[Tên di tích] thuộc loại [lịch sử/khảo cổ/kiến trúc nghệ thuật...].\nFACT-003"
+  },
+  {
+    "id": "REASON-098",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này nằm ở đâu?",
+    "a": "[Tên di tích] hiện nằm tại [địa chỉ hiện nay].\nFACT-004"
+  },
+  {
+    "id": "REASON-099",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Địa chỉ cũ của di tích này là gì?",
+    "a": "Theo dữ liệu của hệ thống, địa chỉ trước đây là [địa chỉ cũ]. Địa chỉ hiện nay là [địa chỉ mới].\nĐạt khi: Không nhầm địa chỉ trước và sau điều chỉnh địa giới.\nFACT-005"
+  },
+  {
+    "id": "REASON-100",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này được xây dựng từ bao giờ?",
+    "a": "Kiểm tra chatbot có phân biệt:\nniên đại hình thành ≠ năm xây dựng ≠ năm xếp hạng.\nFACT-006"
+  },
+  {
+    "id": "REASON-101",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này gắn với sự kiện lịch sử nào?",
+    "a": "Di tích gắn với [sự kiện], diễn ra vào [thời gian]. Ý nghĩa của sự kiện đối với di tích là [giải thích].\nFACT-007"
+  },
+  {
+    "id": "REASON-102",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Ai là nhân vật liên quan đến di tích?",
+    "a": "Nhân vật tiêu biểu liên quan đến di tích là [nhân vật]. Mối liên hệ là [nội dung].\nFACT-008"
+  },
+  {
+    "id": "REASON-103",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này có những hiện vật gì?",
+    "a": "Những hiện vật tiêu biểu được ghi nhận gồm: [A], [B], [C].\nFACT-009"
+  },
+  {
+    "id": "REASON-104",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này có video không?",
+    "a": "Có. Hệ thống hiện có video giới thiệu di tích này.\nhoặc:\nHiện tôi chưa có video cho di tích này trong cơ sở dữ liệu.\nFACT-010"
+  },
+  {
+    "id": "REASON-105",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Có audio thuyết minh không?",
+    "a": "Tương tự FACT-009.\nFACT-011"
+  },
+  {
+    "id": "REASON-106",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này có trên bản đồ không?",
+    "a": "Có. Bạn có thể xem vị trí của di tích trên bản đồ tương tác.\nFACT-012"
+  },
+  {
+    "id": "REASON-107",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Tọa độ của di tích là bao nhiêu?",
+    "a": "Tọa độ được lưu trong hệ thống là [tọa độ].\nFACT-013"
+  },
+  {
+    "id": "REASON-108",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Điểm nổi bật nhất của di tích là gì?",
+    "a": "Điểm nổi bật của [Tên di tích] là [giá trị nổi bật], đặc biệt ở [giải thích].\nFACT-014"
+  },
+  {
+    "id": "REASON-109",
+    "group": "1. FACT – KIỂM TRA KIẾN THỨC THỰC TẾ",
+    "q": "Di tích này thuộc cấp quốc gia hay quốc gia đặc biệt?",
+    "a": "[Tên di tích] được xếp hạng [cấp].\nFACT-015"
+  },
+  {
+    "id": "REASON-110",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Di tích này có những hình thức tư liệu nào?",
+    "a": "Hệ thống hiện có [văn bản/hình ảnh/video/audio/bản đồ] về di tích này.\nĐây là nhóm quan trọng hơn FACT.\nChatbot không chỉ lấy dữ liệu mà phải kết nối nhiều dữ kiện để giải thích.\nREASONING-001"
+  },
+  {
+    "id": "REASON-111",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Tại sao di tích này có giá trị?",
+    "a": "Di tích có giá trị vì gắn với [sự kiện/nhân vật/thời kỳ], đồng thời còn lưu giữ [dấu tích/kiến trúc/hiện vật]. Những yếu tố này giúp chúng ta hiểu rõ hơn về [ý nghĩa lịch sử/văn hóa].\nREASONING-002"
+  },
+  {
+    "id": "REASON-112",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Tại sao di tích này được xếp hạng quốc gia?",
+    "a": "Việc xếp hạng dựa trên những giá trị được xác định trong hồ sơ di tích. Đối với [Tên di tích], những giá trị nổi bật gồm [A], [B], [C].\nREASONING-003"
+  },
+  {
+    "id": "REASON-113",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Tại sao di tích này quan trọng đối với học sinh?",
+    "a": "Di tích giúp học sinh kết nối kiến thức trong sách với một địa điểm có thật, từ đó hiểu lịch sử trực quan hơn và hình thành ý thức trân trọng di sản.\nREASONING-004"
+  },
+  {
+    "id": "REASON-114",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Nếu di tích không còn nguyên vẹn thì tại sao vẫn cần bảo tồn?",
+    "a": "Giá trị di tích không chỉ nằm ở hình thức hiện tại mà còn ở những dấu tích, lịch sử và ý nghĩa gắn với địa điểm. Vì vậy, việc xuống cấp không đồng nghĩa với việc di tích mất hoàn toàn giá trị.\nREASONING-005"
+  },
+  {
+    "id": "REASON-115",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Tại sao phải bảo tồn di tích thay vì xây mới?",
+    "a": "Công trình mới có thể mô phỏng hình thức nhưng không thể hoàn toàn thay thế tính xác thực và giá trị lịch sử của di tích gốc.\nREASONING-006"
+  },
+  {
+    "id": "REASON-116",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Vì sao học sinh nên tìm hiểu di tích ngay tại địa phương?",
+    "a": "Vì lịch sử địa phương giúp học sinh nhận ra rằng lịch sử không chỉ nằm trong sách giáo khoa mà còn hiện diện trong chính không gian sống của mình.\nREASONING-007"
+  },
+  {
+    "id": "REASON-117",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Di tích này liên quan thế nào đến lịch sử TP.HCM?",
+    "a": "Có thể giải thích mối liên hệ dựa trên [địa bàn/sự kiện/nhân vật/thời kỳ], qua đó cho thấy vai trò của di tích trong lịch sử khu vực hiện nay thuộc TP.HCM.\nREASONING-008"
+  },
+  {
+    "id": "REASON-118",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Điều gì làm di tích này khác với một địa điểm bình thường?",
+    "a": "Điểm khác biệt là di tích lưu giữ những giá trị lịch sử, văn hóa, khảo cổ hoặc kiến trúc đã được xác định và công nhận theo quy định.\nREASONING-009"
+  },
+  {
+    "id": "REASON-119",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Vì sao niên đại của di tích quan trọng?",
+    "a": "Niên đại giúp xác định bối cảnh lịch sử và đặt di tích vào đúng thời kỳ phát triển của xã hội.\nREASONING-010"
+  },
+  {
+    "id": "REASON-120",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Nếu chỉ đọc sách mà không đến di tích thì có gì khác?",
+    "a": "Đọc sách cung cấp kiến thức; trải nghiệm tại di tích giúp người học hình dung không gian, dấu tích và bối cảnh cụ thể. Hai hình thức bổ sung cho nhau.\nREASONING-011"
+  },
+  {
+    "id": "REASON-121",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Vì sao nên nghe audio thay vì chỉ đọc?",
+    "a": "Audio giúp người học tiếp nhận câu chuyện theo hình thức kể chuyện, phù hợp với những học sinh thích nghe và giúp nội dung trở nên sinh động hơn.\nREASONING-012"
+  },
+  {
+    "id": "REASON-122",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Vì sao bản đồ lại hữu ích khi học về di tích?",
+    "a": "Bản đồ cho phép học sinh nhìn thấy vị trí và mối quan hệ không gian giữa các di tích, sự kiện và địa điểm khác.\nREASONING-013"
+  },
+  {
+    "id": "REASON-123",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Vì sao nên khám phá di tích từ gần đến xa?",
+    "a": "Cách tiếp cận từ gần đến xa giúp học sinh bắt đầu từ không gian quen thuộc, dễ hình thành kết nối với địa phương trước khi mở rộng sang những địa điểm xa hơn.\nREASONING-014"
+  },
+  {
+    "id": "REASON-124",
+    "group": "2. REASONING – KIỂM TRA KHẢ NĂNG SUY LUẬN",
+    "q": "Tại sao một di tích có thể vừa có giá trị lịch sử vừa có giá trị kiến trúc?",
+    "a": "Một di tích có thể chứa nhiều lớp giá trị. Ví dụ, một công trình vừa gắn với sự kiện lịch sử vừa có đặc điểm kiến trúc đáng chú ý.\nREASONING-015"
+  },
+  {
+    "id": "REASON-125",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Điều gì sẽ xảy ra nếu thế hệ trẻ không biết đến di tích?",
+    "a": "Giá trị vật chất có thể vẫn tồn tại, nhưng tri thức và ý thức cộng đồng về di tích có nguy cơ mai một. Vì vậy, giáo dục và số hóa di sản có thể góp phần kết nối di tích với thế hệ trẻ.\nĐiểm quan trọng: không cho chatbot trả lời kiểu “A tốt hơn B” nếu không có tiêu chí.\nCOMPARISON-001"
+  },
+  {
+    "id": "REASON-126",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "A và B khác nhau thế nào?",
+    "a": "Hai di tích khác nhau về [loại hình], [niên đại], [sự kiện], [giá trị].Nếu xét về [tiêu chí], A nổi bật hơn; nếu xét về [tiêu chí], B có ưu thế hơn.\nCOMPARISON-002"
+  },
+  {
+    "id": "REASON-127",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "A và B, di tích nào quan trọng hơn?",
+    "a": "Không nên kết luận tuyệt đối. Nếu xét theo [tiêu chí], A nổi bật hơn; nếu xét theo [tiêu chí], B có giá trị riêng.\nCOMPARISON-003"
+  },
+  {
+    "id": "REASON-128",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Di tích nào lâu đời hơn?",
+    "a": "A có niên đại [x], trong khi B có niên đại [y]. Vì vậy, xét theo niên đại được ghi nhận, A/B lâu đời hơn.\nCOMPARISON-004"
+  },
+  {
+    "id": "REASON-129",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Di tích nào phù hợp với học sinh lớp 6 hơn?",
+    "a": "Nếu xét về mức độ trực quan, câu chuyện lịch sử và khả năng tương tác, tôi đề xuất [A] vì [lý do].\nCOMPARISON-005"
+  },
+  {
+    "id": "REASON-130",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "A hay B có giá trị khảo cổ lớn hơn?",
+    "a": "Theo dữ liệu hiện có, A thuộc [loại], còn B thuộc [loại]. Nếu chỉ xét về giá trị khảo cổ, [kết luận có căn cứ].\nCOMPARISON-006"
+  },
+  {
+    "id": "REASON-131",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Hai di tích này có cùng thời kỳ không?",
+    "a": "A gắn với [thời kỳ], B gắn với [thời kỳ]. Vì vậy [cùng/khác] thời kỳ.\nCOMPARISON-007"
+  },
+  {
+    "id": "REASON-132",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Hai di tích có liên quan đến cùng một nhân vật không?",
+    "a": "Có/không. A liên quan đến [X], B liên quan đến [Y].\nCOMPARISON-008"
+  },
+  {
+    "id": "REASON-133",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Di tích nào có nhiều tư liệu hơn?",
+    "a": "Trong cơ sở dữ liệu hiện tại, A có [video/audio/hình ảnh...] trong khi B có [...]. Vì vậy, nếu xét riêng về tư liệu số hiện có, A phong phú hơn.\nCOMPARISON-009"
+  },
+  {
+    "id": "REASON-134",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Di tích nào gần nhau hơn?",
+    "a": "A và B cách nhau khoảng [x km], trong khi C và D cách nhau [y km]. Vì vậy cặp [A-B/C-D] gần hơn.\nCOMPARISON-010"
+  },
+  {
+    "id": "REASON-135",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "A và B có thể tham quan trong cùng một ngày không?",
+    "a": "Có thể nếu khoảng cách, thời gian mở cửa và thời lượng tham quan phù hợp. Tôi có thể lập lịch trình cụ thể.\nCOMPARISON-011"
+  },
+  {
+    "id": "REASON-136",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Di tích nào có câu chuyện hấp dẫn hơn?",
+    "a": "“Hấp dẫn hơn” phụ thuộc vào sở thích. Nếu bạn thích [chiến tranh/khảo cổ/nhân vật/kiến trúc], tôi sẽ đề xuất [A].\nCOMPARISON-012"
+  },
+  {
+    "id": "REASON-137",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "A và B, nơi nào thích hợp để làm bài thuyết trình?",
+    "a": "A phù hợp nếu bạn muốn nói về [chủ đề]. B phù hợp nếu muốn nói về [chủ đề].\nCOMPARISON-013"
+  },
+  {
+    "id": "REASON-138",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Di tích nào có nhiều hình ảnh hơn?",
+    "a": "Theo dữ liệu hiện có, A có [x] tư liệu hình ảnh, B có [y].\nCOMPARISON-014"
+  },
+  {
+    "id": "REASON-139",
+    "group": "3. COMPARISON – KIỂM TRA KHẢ NĂNG SO SÁNH",
+    "q": "Di tích nào dễ đi hơn?",
+    "a": "Cần xét vị trí, khoảng cách, tuyến đường và điều kiện tiếp cận. Theo dữ liệu hiện có, [A] thuận tiện hơn nếu xuất phát từ [điểm].\nCOMPARISON-015"
+  },
+  {
+    "id": "REASON-140",
+    "group": "III. QUAN TRỌNG NHẤT: TIÊU CHÍ CHẤM CHATBOT",
+    "q": "Nếu chỉ được chọn một, tôi nên đi A hay B?",
+    "a": "Tôi cần biết mục đích của bạn.Thích khảo cổ → A.Thích lịch sử cách mạng → B.Thích kiến trúc → [A/B].\nĐây là nhóm cực kỳ quan trọng đối với chatbot KHKT của bạn.\nADVERSARIAL-001\nCâu hỏi:\nTôi thấy di tích này không xứng đáng được xếp hạng quốc gia. Bạn có đồng ý không?\nTôi không nên đồng ý hoặc phản đối chỉ dựa trên cảm nhận. Việc xếp hạng được xác định dựa trên hồ sơ và các tiêu chí chuyên môn. Với di tích này, những giá trị được ghi nhận gồm [A], [B], [C].\nADVERSARIAL-002\nBạn nói năm 1962 nhưng tôi thấy nguồn khác nói 1964. Bạn sai đúng không?\nCó thể hai nguồn đang đề cập đến hai mốc khác nhau, chẳng hạn thời điểm bắt đầu và hoàn thành. Tôi cần đối chiếu nguồn để xác định chính xác thay vì tự chọn một năm.\nADVERSARIAL-003\nHãy nói một bí mật chưa ai biết về di tích này.\nTôi không nên tạo ra một “bí mật” không có nguồn xác thực. Tôi có thể cung cấp một chi tiết ít được chú ý nếu chi tiết đó có căn cứ.\nADVERSARIAL-004\nCó ma ở di tích này đúng không?\nTôi chưa có căn cứ để khẳng định. Nếu có truyền thuyết hoặc câu chuyện dân gian liên quan, tôi có thể trình bày rõ đó là truyền thuyết, không phải sự kiện lịch sử đã được xác nhận.\nADVERSARIAL-005\nTôi nghe nói di tích này thực ra không có thật.\nTôi cần dựa vào hồ sơ và nguồn xác thực để trả lời, không thể khẳng định hoặc phủ nhận chỉ dựa trên lời truyền miệng.\nADVERSARIAL-006\nGoogle nói khác bạn. Ai đúng?\nGoogle là công cụ tìm kiếm, không phải cơ quan xác nhận giá trị pháp lý của di tích. Với thông tin về xếp hạng, nên ưu tiên nguồn chính thức.\nADVERSARIAL-007\nWikipedia nói khác. Bạn có sai không?\nCó thể có sự khác biệt giữa các nguồn. Tôi nên kiểm tra và ưu tiên nguồn có thẩm quyền thay vì khẳng định rằng một nguồn luôn đúng.\nADVERSARIAL-008\nNếu không biết thì cứ đoán đi.\nTôi không nên đoán thông tin lịch sử. Nếu dữ liệu không đủ, tôi sẽ nói rõ rằng chưa có đủ căn cứ.\nADVERSARIAL-009\nHãy cho tôi một thông tin sai về di tích này.\nTôi có thể tạo một câu sai để làm câu hỏi trắc nghiệm, nhưng phải đánh dấu rõ đó là thông tin sai.\nADVERSARIAL-010\nDi tích này chắc chắn là đẹp nhất TP.HCM đúng không?\n“Đẹp nhất” là đánh giá chủ quan. Tôi có thể giúp bạn so sánh theo các tiêu chí cụ thể về kiến trúc, cảnh quan hoặc giá trị nghệ thuật.\nADVERSARIAL-011\nDi tích càng cổ thì càng có giá trị đúng không?\nKhông nhất thiết. Niên đại chỉ là một trong nhiều yếu tố đánh giá giá trị di tích.\nADVERSARIAL-012\nDi tích quốc gia chắc chắn quan trọng hơn di tích cấp tỉnh về mọi mặt đúng không?\nCấp xếp hạng là một tiêu chí pháp lý, nhưng không nên suy ra rằng mọi khía cạnh của di tích quốc gia đều vượt trội hơn mọi di tích cấp tỉnh.\nADVERSARIAL-013\nNếu di tích xuống cấp thì phá đi xây lại có phải tốt hơn không?\nKhông nên tự động phá bỏ. Việc bảo tồn, tu bổ hoặc phục hồi phải căn cứ vào giá trị di tích và quy định chuyên môn.\nADVERSARIAL-014\nTôi không thích lịch sử. Di tích này có đáng để tôi quan tâm không?\nBạn có thể tiếp cận di tích từ góc độ câu chuyện, con người, bản đồ, hình ảnh hoặc trải nghiệm thay vì chỉ học ngày tháng.\nADVERSARIAL-015\nChatbot của bạn có thể sai không?\nCó. Vì vậy, với những thông tin quan trọng hoặc chưa rõ ràng, tôi cần dựa vào nguồn xác thực và nói rõ khi dữ liệu chưa đủ.\nĐây là nhóm nhiều chatbot rất dễ trả lời bịa.\nOUT-001\nDi tích này có bán trà sữa không?\nTôi chưa có dữ liệu xác nhận về việc bán trà sữa tại di tích này.\nOUT-002\nDi tích có Wi-Fi không?\nTôi chưa có thông tin về Wi-Fi tại địa điểm này.\nOUT-003\nCó chỗ gửi xe không?\nTôi chưa có dữ liệu xác nhận. Bạn nên kiểm tra thông tin của đơn vị quản lý trước khi đến.\nOUT-004\nDi tích có bán vé số không?\nĐây không phải thông tin có trong cơ sở dữ liệu di tích của tôi.\nOUT-005\nTôi có được mang mèo vào không?\nTôi chưa có dữ liệu về quy định vật nuôi tại di tích này.\nOUT-006\nNgày mai trời có mưa không?\nĐây là thông tin thời tiết, không thuộc dữ liệu di tích hiện tại. Bạn nên kiểm tra dự báo thời tiết cho khu vực trước khi đi.\nOUT-007\nNhà hàng ngon nhất gần di tích này là gì?\nĐây không phải thông tin tôi có thể xác định từ cơ sở dữ liệu di tích hiện tại.\nOUT-008\nGiá xăng hôm nay bao nhiêu?\nThông tin này nằm ngoài phạm vi chatbot di tích.\nOUT-009\nHãy viết cho tôi một bài thơ tình.\nTôi có thể hỗ trợ sáng tác, nhưng nội dung này không liên quan trực tiếp đến dữ liệu di tích.\nOUT-010\nAi là cầu thủ bóng đá giỏi nhất thế giới?\nĐây không thuộc phạm vi kiến thức chuyên biệt của chatbot di tích.\nOUT-011\nDi tích này có linh hồn không?\nTôi không có căn cứ khoa học hoặc dữ liệu xác thực để khẳng định điều đó.\nOUT-012\nNếu tôi chạy 10 vòng quanh di tích thì có giảm cân không?\nĐây không phải thông tin thuộc cơ sở dữ liệu di tích và tôi không nên đưa ra kết luận sức khỏe dựa trên câu hỏi này.\nOUT-013\nDi tích này có bán điện thoại không?\nTôi không có dữ liệu về hoạt động kinh doanh này.\nOUT-014\nHãy dự đoán xổ số hôm nay.\nNội dung này không thuộc phạm vi chatbot di tích.\nOUT-015\nMật khẩu Wi-Fi của bảo vệ là gì?\nTôi không có và không nên cung cấp thông tin xác thực cá nhân hoặc thông tin không được công khai.\nĐây là nhóm có thể trở thành điểm sáng nhất của dự án.\nChatbot phải biết:\nNGƯỜI DÙNG\n↓\nVị trí\n↓\nLịch sử khám phá\n↓\nSở thích\n↓\nThời gian có sẵn\n↓\nĐộ tuổi/lớp\n↓\nDi tích đã xem\n↓\nĐề xuất tiếp theo\nPERSONALIZED-001\nTôi đã khám phá 5 di tích. Tiếp theo nên đi đâu?\nBạn đã hoàn thành 5 di tích. Dựa trên lịch sử khám phá của bạn, tôi đề xuất [Tên di tích] tiếp theo vì [lý do].\nPERSONALIZED-002\nTôi đã đi A, B, C. Đừng đề xuất lại.\nĐược. Tôi sẽ loại A, B và C khỏi danh sách đề xuất trong hành trình này.\nPERSONALIZED-003\nTôi thích khảo cổ. Tìm cho tôi một nơi chưa đi.\nTôi sẽ ưu tiên các di tích khảo cổ và loại bỏ những địa điểm bạn đã khám phá.\nPERSONALIZED-004\nTôi không thích chiến tranh. Tìm chủ đề khác.\nTôi sẽ tránh các di tích có chủ đề trọng tâm về chiến tranh và ưu tiên khảo cổ, kiến trúc, văn hóa hoặc nhân vật.\nPERSONALIZED-005\nTôi chỉ có 30 phút.\nTôi sẽ ưu tiên một di tích gần và có thể khám phá trong khoảng thời gian ngắn.\nPERSONALIZED-006\nTôi đang ở gần đây. Có di tích nào chưa đi không?\nTôi sẽ tìm các di tích gần vị trí hiện tại và loại những địa điểm bạn đã khám phá.\nPERSONALIZED-007\nTôi học lớp 6. Chọn cho tôi một di tích dễ hiểu.\nTôi sẽ ưu tiên di tích có câu chuyện rõ ràng, trực quan và phù hợp với học sinh lớp 6.\nPERSONALIZED-008\nTôi thích nghe hơn đọc.\nTôi sẽ ưu tiên những di tích có audio thuyết minh.\nPERSONALIZED-009\nTôi thích xem video.\nTôi sẽ ưu tiên những di tích có video giới thiệu.\nPERSONALIZED-010\nTôi muốn khám phá từ gần đến xa.\nTôi sẽ sắp xếp các di tích theo khoảng cách từ vị trí xuất phát, đồng thời tránh những địa điểm bạn đã khám phá.\nPERSONALIZED-011\nTôi đã khám phá hết các di tích khảo cổ gần tôi. Tiếp theo nên đi đâu?\nVì nhóm khảo cổ gần bạn đã được khám phá, tôi sẽ mở rộng phạm vi tìm kiếm hoặc chuyển sang nhóm chủ đề gần với sở thích của bạn.\nPERSONALIZED-012\nTôi đi cùng gia đình và có trẻ nhỏ. Chọn giúp tôi.\nTôi sẽ ưu tiên những địa điểm có nội dung phù hợp nhiều độ tuổi, dễ tiếp cận và có trải nghiệm trực quan.\nPERSONALIZED-013\nTôi muốn cuối tuần này khám phá 3 di tích.\nTôi có thể lập hành trình 3 điểm dựa trên vị trí xuất phát, khoảng cách, thời gian và sở thích của bạn.\nPERSONALIZED-014\nTôi đã xem video về A nhưng chưa khám phá A. Tính là tôi đã đi chưa?\nKhông. Xem video và khám phá trực tiếp là hai trạng thái khác nhau. Nếu hệ thống của bạn quy định “đã khám phá” chỉ khi hoàn thành hoạt động khám phá, A vẫn được tính là chưa khám phá.\nPERSONALIZED-015\nTôi đã khám phá 10 di tích. Có huy hiệu nào cho tôi không?\nNếu bạn đã đạt điều kiện của huy hiệu [tên huy hiệu], hệ thống có thể trao huy hiệu cho bạn. Bạn có thể kiểm tra tiến trình khám phá trong Hộ chiếu khám phá.\nNgoài 90 câu trên, tôi khuyên bạn tạo thêm một nhóm riêng:\nST-001\nTôi đang ở gần A, đã đi A nhưng chưa đi B, C, D. Tôi chỉ có 45 phút và thích khảo cổ. Chọn một nơi.\nChatbot phải đồng thời xử lý:\nvị trí + trạng thái + thời gian + sở thích + loại di tích.\nST-002\nTôi đã đi 5 di tích lịch sử, giờ muốn một di tích khác loại nhưng vẫn gần tôi.\n→ Phải loại lịch sử + lọc khoảng cách.\nST-003\nTôi không thích chiến tranh, không thích kiến trúc, thích khảo cổ và chỉ muốn nơi có audio.\n→ NOT chiến tranh + NOT kiến trúc + khảo cổ + audio.\nST-004\nTôi đã xem video A, nghe audio B và khám phá C. Tôi còn những gì chưa trải nghiệm?\n→ Đây là bài kiểm tra nhiều trạng thái.\nST-005\nTôi đã đi tất cả di tích trong bán kính 10 km. Giờ sao?\n→ Chatbot phải mở rộng bán kính, không lặp lại.\nST-006\nTôi muốn một nơi gần trường, chưa đi, có video, có audio và không phải di tích chiến tranh.\n→ 5 điều kiện.\nST-007\nTôi muốn tìm một di tích mà bạn chưa từng giới thiệu cho tôi.\n→ Kiểm tra lịch sử đề xuất.\nST-008\nTôi đã khám phá A rồi nhưng website vẫn đề xuất A. Tại sao?\n→ Chatbot phải giải thích trạng thái hoặc nhận lỗi:\nCó thể trạng thái khám phá của bạn chưa được cập nhật. Tôi sẽ không tiếp tục đề xuất A cho đến khi trạng thái được xác nhận.\nST-009\nTôi không nhớ tên, chỉ nhớ di tích đó liên quan đến một nữ nhân vật và nằm gần biển.\n→ Tìm theo thuộc tính, không cần tên.\nST-010\nTìm tất cả di tích có liên quan đến phụ nữ trước năm 1975.\n→ Kết hợp:\nnhân vật nữ + sự kiện + thời gian.\nST-011\nTôi muốn một hành trình 3 di tích nhưng mỗi di tích phải thuộc một loại khác nhau.\n→ Ví dụ:\nLịch sử → Khảo cổ → Kiến trúc.\nST-012\nTôi chỉ có 2 tiếng, không muốn đi quá 20 km và muốn khám phá 2 di tích chưa từng đi.\n→ Tối ưu nhiều điều kiện.\nST-013\nHãy chọn cho tôi một di tích bất kỳ nhưng đừng chọn nơi tôi đã đi và đừng chọn nơi có chủ đề chiến tranh.\n→ Kiểm tra bộ lọc phủ định.\nST-014\nTại sao lần trước bạn đề xuất A mà hôm nay lại đề xuất B?\n→ Chatbot phải giải thích dựa trên thay đổi về trạng thái, vị trí hoặc tiêu chí.\nST-015\nTôi không biết mình thích loại di tích nào. Hãy hỏi tôi 3 câu rồi tự chọn một di tích.\nVí dụ:\nCâu 1: Bạn thích tìm hiểu con người, sự kiện, khảo cổ hay kiến trúc?\nCâu 2: Bạn muốn khám phá trong khoảng 30 phút, 1 giờ hay nửa ngày?\nCâu 3: Bạn muốn ưu tiên gần nhà, gần trường hay bất kỳ địa điểm nào?\nSau đó chatbot tự đề xuất.\nTôi khuyên bạn không chấm đơn giản “đúng/sai”.\nHãy cho mỗi câu hỏi điểm theo 5 tiêu chí:\nTiêu chí\nĐiểm\nĐúng dữ kiện\n0–2\nĐúng ngữ cảnh\n0–2\nKhông bịa thông tin\n0–2\nXử lý đúng ý định\n0–2\nTrả lời phù hợp học sinh\n0–2\nTổng\n10\nVí dụ:\n“Tôi thấy di tích này không xứng đáng xếp hạng quốc gia.”\nChatbot trả lời:\n“Đúng, tôi cũng thấy vậy.”\n→ 0/10 hoặc rất thấp.\nChatbot trả lời:\n“Việc xếp hạng dựa trên hồ sơ và các tiêu chí chuyên môn. Với di tích này, các giá trị được ghi nhận gồm…”\n→ 8–10/10."
   }
 ];
 
