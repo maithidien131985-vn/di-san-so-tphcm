@@ -1,54 +1,117 @@
 // BỘ DỮ LIỆU HUẤN LUYỆN 3.605 CÂU HỎI - ĐÁP CHÍNH THỨC 103 DI TÍCH
-// Nguồn: D:\Bo_cau_hoi_chatbot_103_di_tich.xlsx
+// Nguồn: D:\Bo_cau_hoi_chatbot_103_di_tich.xlsx & D:\Thông tin cho chatbot.docx
 
 export const systemFaqList = [
+  // 1. TỔNG QUAN XẾP HẠNG TOÀN THÀNH PHỐ
   {
-    "id": "LOAI-001",
-    "group": "Thống kê",
-    "q": "Có bao nhiêu di tích thuộc loại Lịch sử?",
-    "a": "Có 51 di tích thuộc loại Lịch sử trong cơ sở dữ liệu."
+    "id": "TK-001",
+    "group": "Thống kê Di tích TP.HCM",
+    "q": "TP.HCM có bao nhiêu di tích đã xếp hạng?",
+    "a": "TP.HCM hiện có **321 di tích đã được xếp hạng**, bao gồm:\n- ⭐ **4 di tích Quốc gia đặc biệt** (100% thuộc loại hình Lịch sử).\n- 🏛️ **99 di tích Quốc gia** (48 Lịch sử, 44 Kiến trúc nghệ thuật, 4 Khảo cổ, 3 Danh lam thắng cảnh).\n- 🏙️ **218 di tích cấp Tỉnh/Thành phố** (116 Lịch sử, 99 Kiến trúc nghệ thuật, 3 Danh lam thắng cảnh).\n\n*Phân theo loại hình:* 168 Lịch sử | 143 Kiến trúc nghệ thuật | 6 Danh lam thắng cảnh | 4 Khảo cổ."
   },
   {
-    "id": "LOAI-002",
-    "group": "Thống kê",
-    "q": "Có bao nhiêu di tích thuộc loại Kiến trúc nghệ thuật?",
-    "a": "Có 46 di tích thuộc loại Kiến trúc nghệ thuật trong cơ sở dữ liệu."
+    "id": "TK-002",
+    "group": "Thống kê Di tích TP.HCM",
+    "q": "Có tất cả bao nhiêu di tích đã xếp hạng ở TP.HCM?",
+    "a": "TP.HCM có tổng cộng **321 di tích đã được xếp hạng chính thức** (4 Quốc gia đặc biệt, 99 Quốc gia, 218 cấp Tỉnh/Thành phố)."
   },
   {
-    "id": "LOAI-003",
-    "group": "Thống kê",
-    "q": "Có bao nhiêu di tích thuộc loại Khảo cổ học?",
-    "a": "Có 4 di tích thuộc loại Khảo cổ học trong cơ sở dữ liệu."
+    "id": "TK-003",
+    "group": "Thống kê Di tích TP.HCM",
+    "q": "TP.HCM có bao nhiêu di tích?",
+    "a": "Về di tích đã xếp hạng, TP.HCM có **321 di tích** (4 Quốc gia đặc biệt, 99 Quốc gia, 218 cấp Tỉnh/Thành phố).\nNgoài ra, Sở Văn hóa và Thể thao TP.HCM còn thống kê thêm **226 công trình, địa điểm thuộc diện kiểm kê nhưng chưa xếp hạng** (161 Kiến trúc nghệ thuật, 47 Lịch sử, 11 Khảo cổ, 7 Danh lam thắng cảnh).\nTrong đó, hệ thống Di sản số này tập trung số hóa chuyên sâu **103 di tích lịch sử - văn hóa tiêu biểu** (gồm 4 di tích Quốc gia đặc biệt và 99 di tích Quốc gia)."
+  },
+
+  // 2. PHÂN LOẠI THEO CẤP XẾP HẠNG
+  {
+    "id": "XH-001",
+    "group": "Cấp xếp hạng",
+    "q": "Có bao nhiêu di tích Quốc gia đặc biệt?",
+    "a": "TP.HCM có **4 di tích Quốc gia đặc biệt** (và cả 4 đều thuộc loại hình Lịch sử), gồm:\n1. **Dinh Độc Lập** (#STT 1)\n2. **Địa đạo Củ Chi** (#STT 2)\n3. **Căn cứ Rừng Sác Cần Giờ** (#STT 7)\n4. **Nhà tù Côn Đảo** (#STT 4)"
   },
   {
-    "id": "LOAI-004",
-    "group": "Thống kê",
-    "q": "Có bao nhiêu di tích thuộc loại Danh lam thắng cảnh?",
-    "a": "Có 2 di tích thuộc loại Danh lam thắng cảnh trong cơ sở dữ liệu."
+    "id": "XH-002",
+    "group": "Cấp xếp hạng",
+    "q": "Có bao nhiêu di tích được xếp hạng Quốc gia đặc biệt?",
+    "a": "Có **4 di tích Quốc gia đặc biệt** tại TP.HCM và khu vực phụ cận lịch sử, tất cả đều là di tích Lịch sử: Dinh Độc Lập, Địa đạo Củ Chi, Căn cứ Rừng Sác và Nhà tù Côn Đảo."
+  },
+  {
+    "id": "XH-003",
+    "group": "Cấp xếp hạng",
+    "q": "Có bao nhiêu di tích Quốc gia?",
+    "a": "TP.HCM có **99 di tích cấp Quốc gia**. Phân loại gồm:\n- 📜 **48 di tích Lịch sử**\n- 🏛️ **44 di tích Kiến trúc nghệ thuật**\n- 🏺 **4 di tích Khảo cổ** (Lò gốm Hưng Lợi, Giồng Cá Vồ, Giồng Phệt, Bến Chùa)\n- 🌲 **3 Danh lam thắng cảnh**"
+  },
+  {
+    "id": "XH-004",
+    "group": "Cấp xếp hạng",
+    "q": "Có bao nhiêu di tích được xếp hạng Quốc gia?",
+    "a": "TP.HCM có **99 di tích Quốc gia** (48 Lịch sử, 44 Kiến trúc nghệ thuật, 4 Khảo cổ, 3 Danh lam thắng cảnh)."
   },
   {
     "id": "XH-005",
-    "group": "Thống kê",
-    "q": "Có bao nhiêu di tích được xếp hạng Quốc gia?",
-    "a": "Có 99 di tích được xếp hạng Quốc gia trong cơ sở dữ liệu."
+    "group": "Cấp xếp hạng",
+    "q": "Có bao nhiêu di tích cấp tỉnh thành phố?",
+    "a": "TP.HCM có **218 di tích cấp Tỉnh/Thành phố**, bao gồm:\n- 📜 **116 di tích Lịch sử**\n- 🏛️ **99 di tích Kiến trúc nghệ thuật**\n- 🌲 **3 Danh lam thắng cảnh**\n- 🏺 **0 di tích Khảo cổ**"
   },
   {
     "id": "XH-006",
-    "group": "Thống kê",
-    "q": "Có bao nhiêu di tích được xếp hạng Quốc gia đặc biệt?",
-    "a": "Có 4 di tích được xếp hạng Quốc gia đặc biệt trong cơ sở dữ liệu."
+    "group": "Cấp xếp hạng",
+    "q": "Có bao nhiêu di tích cấp tỉnh?",
+    "a": "TP.HCM có **218 di tích cấp Tỉnh/Thành phố** (116 Lịch sử, 99 Kiến trúc nghệ thuật, 3 Danh lam thắng cảnh)."
+  },
+
+  // 3. PHÂN LOẠI THEO LOẠI HÌNH TRÊN TOÀN THÀNH PHỐ (321 DI TÍCH)
+  {
+    "id": "LOAI-001",
+    "group": "Loại hình di tích",
+    "q": "Có bao nhiêu di tích thuộc loại Lịch sử?",
+    "a": "Trên toàn TP.HCM có **168 di tích Lịch sử đã xếp hạng**, bao gồm:\n- ⭐ **4 di tích Quốc gia đặc biệt**\n- 🏛️ **48 di tích Quốc gia**\n- 🏙️ **116 di tích cấp Tỉnh/Thành phố**\n*(Riêng trong cơ sở dữ liệu số hóa chuyên sâu của dự án, có 51 di tích lịch sử tiêu biểu được tích hợp đầy đủ hồ sơ học tập)*."
   },
   {
-    "id": "HT01",
-    "group": "Tổng quan",
+    "id": "LOAI-002",
+    "group": "Loại hình di tích",
+    "q": "Có bao nhiêu di tích thuộc loại Kiến trúc nghệ thuật?",
+    "a": "Trên toàn TP.HCM có **143 di tích Kiến trúc nghệ thuật đã xếp hạng**, bao gồm:\n- ⭐ **0 di tích Quốc gia đặc biệt**\n- 🏛️ **44 di tích Quốc gia**\n- 🏙️ **99 di tích cấp Tỉnh/Thành phố**\n*(Trong hệ thống số hóa 103 di tích của dự án có 46 di tích kiến trúc nghệ thuật tiêu biểu)*."
+  },
+  {
+    "id": "LOAI-003",
+    "group": "Loại hình di tích",
+    "q": "Có bao nhiêu di tích thuộc loại Khảo cổ học?",
+    "a": "TP.HCM có **4 di tích Khảo cổ học đã xếp hạng** (tất cả 4 di tích đều là cấp **Quốc gia**): Lò gốm Hưng Lợi (Q.8), Giồng Cá Vồ (Cần Giờ), Giồng Phệt (Cần Giờ) và Bến Chùa.\nNgoài ra, còn có 11 địa điểm khảo cổ nằm trong danh mục kiểm kê chưa xếp hạng."
+  },
+  {
+    "id": "LOAI-004",
+    "group": "Loại hình di tích",
+    "q": "Có bao nhiêu di tích thuộc loại Danh lam thắng cảnh?",
+    "a": "TP.HCM có **6 Danh lam thắng cảnh đã xếp hạng**, bao gồm:\n- 🏛️ **3 Danh lam thắng cảnh cấp Quốc gia**\n- 🏙️ **3 Danh lam thắng cảnh cấp Tỉnh/Thành phố**\n- ⭐ **0 cấp Quốc gia đặc biệt**\nNgoài ra, còn có 7 danh lam thắng cảnh thuộc diện kiểm kê chưa xếp hạng."
+  },
+
+  // 4. DI TÍCH THUỘC DIỆN KIỂM KÊ CHƯA XẾP HẠNG (226 CÔNG TRÌNH)
+  {
+    "id": "KK-001",
+    "group": "Kiểm kê di tích",
+    "q": "Có bao nhiêu công trình thuộc diện kiểm kê chưa xếp hạng?",
+    "a": "Theo Sở Văn hóa và Thể thao TP.HCM, ngoài 321 di tích đã xếp hạng, còn có **226 công trình, địa điểm thuộc diện kiểm kê nhưng chưa xếp hạng**, bao gồm:\n- 🏛️ **161 công trình Kiến trúc nghệ thuật**\n- 📜 **47 công trình/địa điểm Lịch sử**\n- 🏺 **11 địa điểm Khảo cổ**\n- 🌲 **7 Danh lam thắng cảnh**"
+  },
+  {
+    "id": "KK-002",
+    "group": "Kiểm kê di tích",
+    "q": "Có bao nhiêu di tích chưa xếp hạng ở TP.HCM?",
+    "a": "Sở VHTT TP.HCM hiện đang kiểm kê **226 công trình, địa điểm có giá trị di sản nhưng chưa xếp hạng** (161 Kiến trúc nghệ thuật, 47 Lịch sử, 11 Khảo cổ, 7 Danh lam thắng cảnh)."
+  },
+
+  // 5. CƠ SỞ DỮ LIỆU DỰ ÁN 103 DI TÍCH SỐ HÓA (KHKT THCS XÀ BANG)
+  {
+    "id": "HT-001",
+    "group": "Dự án Di sản số 103 Di tích",
     "q": "Hệ thống hiện có bao nhiêu di tích?",
-    "a": "Cơ sở dữ liệu hiện có 103 di tích."
+    "a": "Hệ thống Di sản số Trường THCS Xà Bang hiện số hóa chuyên sâu **103 di tích lịch sử - văn hóa tiêu biểu**, gồm **4 di tích Quốc gia đặc biệt** và **99 di tích Quốc gia** tại TP.HCM và vùng phụ cận."
   },
   {
-    "id": "HT02",
-    "group": "Tổng quan",
+    "id": "HT-002",
+    "group": "Dự án Di sản số 103 Di tích",
     "q": "Có tất cả bao nhiêu di tích trong hệ thống?",
-    "a": "Hiện có 103 di tích trong cơ sở dữ liệu."
+    "a": "Dự án nghiên cứu số hóa **103 di tích trọng điểm** (4 Quốc gia đặc biệt + 99 Quốc gia), tích hợp 3.605 câu hỏi - đáp, hồ sơ điều tra liên môn và mô hình AI hỗ trợ học tập."
   }
 ];
 

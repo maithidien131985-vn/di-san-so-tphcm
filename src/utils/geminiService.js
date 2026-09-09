@@ -115,13 +115,21 @@ export const queryGeminiAI = async ({
   // 1. RAG Context: Lấy tối đa 5 di tích liên quan nhất từ bộ tri thức huấn luyện chính thức
   const relevantMonuments = retrieveRelevantMonuments(query, currentMonument, allMonumentsList, 5);
 
-  let groundingContext = 'DƯỚI ĐÂY LÀ DỮ LIỆU HUẤN LUYỆN CHÍNH THỐNG TỪ BỘ DỮ LIỆU 103 DI TÍCH TP.HCM & VÙNG PHỤ CẬN:\n\n';
+  let groundingContext = 'DƯỚI ĐÂY LÀ DỮ LIỆU HUẤN LUYỆN CHÍNH THỐNG TỪ BỘ DỮ LIỆU 103 DI TÍCH TP.HCM & THỐNG KÊ TOÀN THÀNH PHỐ:\n\n';
   
-  // Bổ sung thống kê toàn hệ thống
-  groundingContext += 'THỐNG KÊ HỆ THỐNG:\n';
-  groundingContext += '- Tổng số: 103 di tích lịch sử - văn hóa.\n';
-  groundingContext += '- Di tích Lịch sử: 51 | Kiến trúc nghệ thuật: 46 | Khảo cổ học: 4 | Danh lam thắng cảnh: 2.\n';
-  groundingContext += '- Xếp hạng Quốc gia đặc biệt: 4 (Dinh Độc Lập, Địa đạo Củ Chi, Nhà tù Côn Đảo, Căn cứ Rừng Sác) | Xếp hạng Quốc gia: 99.\n\n';
+  // Bổ sung thống kê chính thống toàn diện (Nguồn: Sở VH&TT TP.HCM & D:\Thông tin cho chatbot.docx)
+  groundingContext += 'BẢNG THỐNG KÊ DI TÍCH TP.HCM CHÍNH THỨC:\n';
+  groundingContext += '1. TỔNG SỐ DI TÍCH ĐÃ XẾP HẠNG TẠI TP.HCM: 321 di tích, gồm:\n';
+  groundingContext += '   - 4 di tích Quốc gia đặc biệt (100% thuộc loại hình Lịch sử: Dinh Độc Lập, Địa đạo Củ Chi, Căn cứ Rừng Sác, Nhà tù Côn Đảo).\n';
+  groundingContext += '   - 99 di tích Quốc gia (gồm: 48 Lịch sử, 44 Kiến trúc nghệ thuật, 4 Khảo cổ học, 3 Danh lam thắng cảnh).\n';
+  groundingContext += '   - 218 di tích cấp Tỉnh/Thành phố (gồm: 116 Lịch sử, 99 Kiến trúc nghệ thuật, 3 Danh lam thắng cảnh, 0 Khảo cổ).\n';
+  groundingContext += '2. PHÂN LOẠI 321 DI TÍCH THEO LOẠI HÌNH TRÊN TOÀN TP.HCM:\n';
+  groundingContext += '   - Lịch sử: 168 di tích (4 QG đặc biệt + 48 Quốc gia + 116 Cấp TP).\n';
+  groundingContext += '   - Kiến trúc nghệ thuật: 143 di tích (0 QG đặc biệt + 44 Quốc gia + 99 Cấp TP).\n';
+  groundingContext += '   - Danh lam thắng cảnh: 6 di tích (0 QG đặc biệt + 3 Quốc gia + 3 Cấp TP).\n';
+  groundingContext += '   - Khảo cổ: 4 di tích (0 QG đặc biệt + 4 Quốc gia + 0 Cấp TP: Lò gốm Hưng Lợi, Giồng Cá Vồ, Giồng Phệt, Bến Chùa).\n';
+  groundingContext += '3. CÔNG TRÌNH KIỂM KÊ CHƯA XẾP HẠNG: 226 công trình/địa điểm (161 Kiến trúc nghệ thuật, 47 Lịch sử, 11 Khảo cổ, 7 Danh lam thắng cảnh).\n';
+  groundingContext += '4. DỰ ÁN DI SẢN SỐ (THCS XÀ BANG): Số hóa chuyên sâu 103 di tích lịch sử - văn hóa tiêu biểu (toàn bộ 4 di tích Quốc gia đặc biệt + 99 di tích Quốc gia).\n\n';
 
   if (relevantMonuments.length > 0) {
     relevantMonuments.forEach(m => {
@@ -155,15 +163,14 @@ Nhiệm vụ của bạn là hỗ trợ học sinh THCS, giáo viên và khách 
 QUY TẮC TRẢ LỜI QUAN TRỌNG:
 1. NƯƠNG THEO CÂU HỎI (QUAN TRỌNG NHẤT):
    - Mở đầu câu trả lời một cách tự nhiên, trực diện và mạch lạc theo đúng nội dung người dùng hỏi.
-   - Ví dụ: Nếu người hỏi "Vì sao di tích này được xếp hạng quốc gia, tôi thấy không có giá trị gì?", hãy trả lời trực diện: "Di tích [Tên di tích] được xếp hạng cấp Quốc gia vì mang những giá trị lịch sử - văn hóa và kiến trúc vô cùng to lớn sau..."
+   - Khi hỏi về số lượng di tích: Trả lời chuẩn xác các con số theo thống kê chính thức (321 di tích đã xếp hạng: 4 Quốc gia đặc biệt, 99 Quốc gia, 218 Cấp tỉnh/TP; 226 công trình kiểm kê chưa xếp hạng; 103 di tích trọng điểm được số hóa trong dự án).
    - Tuyệt đối KHÔNG sử dụng các tiêu đề rập khuôn, cứng nhắc như "Tóm tắt & Giới thiệu tổng quan:" hay "Thông tin chung:".
 2. ĐỘ DÀI & BỐ CỤC:
    - Ngắn gọn, súc tích, đi thẳng vào trọng tâm (khoảng 4 - 8 dòng hoặc gạch đầu dòng rõ ràng).
-   - Dùng tiêu đề: ### [Tên di tích] (#STT [Số])
-   - Gạch đầu dòng rõ ràng với biểu tượng cảm xúc phù hợp (🏛️, 📍, ⭐, 👤, 🏺, 💡, 🔭).
-   - In đậm các từ khóa lịch sử, nhân vật, mốc năm quan trọng (**từ khóa**).
+   - Gạch đầu dòng rõ ràng với biểu tượng cảm xúc phù hợp (🏛️, 📍, ⭐, 👤, 🏺, 💡, 🔭, 📊).
+   - In đậm các con số, từ khóa lịch sử, nhân vật, mốc năm quan trọng (**từ khóa**).
 3. PHONG CÁCH: Sư phạm chuẩn mực, tôn trọng lịch sử, truyền cảm hứng tự hào dân tộc và bảo tồn di sản.
-4. TÍNH CHÍNH XÁC: Luôn dựa vào dữ liệu 103 di tích được cung cấp trong ngữ cảnh.`;
+4. TÍNH CHÍNH XÁC: Luôn dựa vào dữ liệu 103 di tích và bảng thống kê chính thức được cung cấp trong ngữ cảnh.`;
 
   // 3. Lịch sử hội thoại gần nhất (tối đa 4 tin nhắn)
   const recentHistory = chatHistory.slice(-4).map(msg => ({

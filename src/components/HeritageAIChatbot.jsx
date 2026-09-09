@@ -155,10 +155,10 @@ export default function HeritageAIChatbot({
       text: `Xin chào! Tôi là **Trợ Lý Di Sản AI** được huấn luyện với bộ tri thức chuẩn **3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa TP.HCM & Vùng phụ cận** 🏛️✨\n\nBạn có thể hỏi tôi về:\n- 📜 **Lịch sử & Niên đại** của bất kỳ di tích nào.\n- 👤 **Nhân vật & Sự kiện** hào hùng gắn liền.\n- 🏺 **Hiện vật & Bảo vật** quý giá được lưu giữ.\n- 📍 **Địa chỉ, Tọa độ GPS, Bản đồ & Video** tư liệu.\n- 📚 **Tích hợp 6 môn học THCS & Đề tài KHKT**.\n\n*Hãy nhập tên di tích, số STT hoặc câu hỏi để bắt đầu!*`,
       timestamp: new Date(),
       suggestions: [
-        'Có bao nhiêu di tích thuộc loại Lịch sử?',
-        'Dinh Độc Lập có những hiện vật tiêu biểu nào?',
-        'Nhân vật lịch sử gắn liền với Bến Nhà Rồng là ai?',
-        'Địa chỉ của Địa đạo Củ Chi ở đâu?'
+        'TP.HCM có bao nhiêu di tích đã xếp hạng?',
+        'Có bao nhiêu di tích Quốc gia đặc biệt?',
+        'Có bao nhiêu di tích thuộc loại Khảo cổ học?',
+        'Dinh Độc Lập có những hiện vật tiêu biểu nào?'
       ]
     }
   ]);
@@ -168,7 +168,7 @@ export default function HeritageAIChatbot({
     if (viewMode === 'detail' && currentMonument) {
       const name = currentMonument.info.name;
       return [
-        `Tóm tắt lịch sử ${name}`,
+        `Vì sao ${name} được xếp hạng di tích?`,
         `Nhân vật và sự kiện gắn liền với ${name}`,
         `Hiện vật tiêu biểu tại ${name}`,
         `Địa chỉ và cách di chuyển đến ${name}`,
@@ -176,10 +176,10 @@ export default function HeritageAIChatbot({
       ];
     }
     return [
-      'Có bao nhiêu di tích thuộc loại Lịch sử?',
-      'Có bao nhiêu di tích được xếp hạng Quốc gia đặc biệt?',
-      'Dinh Độc Lập có những hiện vật tiêu biểu nào?',
-      'Kể về lịch sử Căn cứ Rừng Sác',
+      'TP.HCM có bao nhiêu di tích đã xếp hạng?',
+      'Có bao nhiêu di tích Quốc gia đặc biệt?',
+      'Có bao nhiêu di tích cấp Quốc gia?',
+      'Có bao nhiêu công trình kiểm kê chưa xếp hạng?',
       'Những di tích lịch sử nổi bật ở Côn Đảo'
     ];
   }, [viewMode, currentMonument]);
@@ -340,7 +340,138 @@ export default function HeritageAIChatbot({
       }
     }
 
-    // 3. STEP 1: SYSTEM FAQ MATCH (Exact & semantic sub-string)
+    // 3. STEP 1: SMART STATISTICAL & QUANTITY QUERIES (Nguồn: Sở VHTT & D:\Thông tin cho chatbot.docx)
+    const isCountQuery = cleanQ.includes('bao nhieu') || cleanQ.includes('so luong') || cleanQ.includes('thong ke') || cleanQ.includes('tong so') || cleanQ.includes('may di tich');
+    
+    if (isCountQuery) {
+      // 3.1. Quốc gia đặc biệt
+      if (cleanQ.includes('dac biet') || cleanQ.includes('qgdb')) {
+        return {
+          text: `### 📊 Thống kê Di tích Quốc gia Đặc biệt tại TP.HCM\n\n` +
+            `TP.HCM hiện có **4 di tích Quốc gia đặc biệt** (và cả **4 di tích đều thuộc loại hình Lịch sử**):\n\n` +
+            `1. 🏛️ **Dinh Độc Lập** (#STT 1) - *Quận 1*\n` +
+            `2. 🌲 **Địa đạo Củ Chi** (#STT 2) - *Huyện Củ Chi*\n` +
+            `3. 🌊 **Căn cứ Rừng Sác Cần Giờ** (#STT 7) - *Huyện Cần Giờ*\n` +
+            `4. ⛓️ **Nhà tù Côn Đảo** (#STT 4) - *Huyện Côn Đảo*\n\n` +
+            `💡 *Toàn bộ 4 di tích Quốc gia đặc biệt này đều đã được số hóa 3D/VR, thuyết minh audio và video đầy đủ trong hệ thống.*`,
+          relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[6], allMonumentsList[3]]
+        };
+      }
+
+      // 3.2. Di tích cấp Quốc gia
+      if ((cleanQ.includes('quoc gia') || cleanQ.includes('cap quoc gia')) && !cleanQ.includes('dac biet')) {
+        return {
+          text: `### 📊 Thống kê 99 Di tích Cấp Quốc gia tại TP.HCM\n\n` +
+            `TP.HCM hiện có **99 di tích được xếp hạng cấp Quốc gia**, bao gồm:\n\n` +
+            `- 📜 **48 di tích Lịch sử**\n` +
+            `- 🏛️ **44 di tích Kiến trúc nghệ thuật**\n` +
+            `- 🏺 **4 di tích Khảo cổ học** (*Lò gốm Hưng Lợi, Giồng Cá Vồ, Giồng Phệt, Bến Chùa*)\n` +
+            `- 🌲 **3 Danh lam thắng cảnh**\n\n` +
+            `💡 *Toàn bộ 99 di tích Quốc gia này đã được tích hợp đầy đủ trong hệ thống Di sản số THCS Xà Bang.*`,
+          relatedMonuments: allMonumentsList.slice(0, 4)
+        };
+      }
+
+      // 3.3. Di tích cấp Tỉnh / Thành phố
+      if (cleanQ.includes('cap tinh') || cleanQ.includes('cap thanh pho') || cleanQ.includes('cap tp') || cleanQ.includes('tinh thanh')) {
+        return {
+          text: `### 📊 Thống kê Di tích Cấp Tỉnh / Thành phố tại TP.HCM\n\n` +
+            `TP.HCM hiện có **218 di tích được xếp hạng cấp Tỉnh/Thành phố**, bao gồm:\n\n` +
+            `- 📜 **116 di tích Lịch sử**\n` +
+            `- 🏛️ **99 di tích Kiến trúc nghệ thuật**\n` +
+            `- 🌲 **3 Danh lam thắng cảnh**\n` +
+            `- 🏺 **0 di tích Khảo cổ**\n\n` +
+            `💡 *Tổng cộng cùng với 4 di tích Quốc gia đặc biệt và 99 di tích Quốc gia, TP.HCM có 321 di tích đã xếp hạng.*`,
+          relatedMonuments: allMonumentsList.slice(0, 3)
+        };
+      }
+
+      // 3.4. Di tích Khảo cổ
+      if (cleanQ.includes('khao co')) {
+        return {
+          text: `### 📊 Thống kê Di tích Khảo Cổ Học tại TP.HCM\n\n` +
+            `TP.HCM hiện có **4 di tích Khảo cổ học đã xếp hạng** (tất cả 4 di tích đều là cấp **Quốc gia**):\n\n` +
+            `1. 🏺 **Di tích Khảo cổ học Lò gốm Hưng Lợi** (Quận 8)\n` +
+            `2. 🏺 **Di tích Khảo cổ học Giồng Cá Vồ** (Cần Giờ)\n` +
+            `3. 🏺 **Di tích Khảo cổ học Giồng Phệt** (Cần Giờ)\n` +
+            `4. 🏺 **Di tích Khảo cổ học Bến Chùa**\n\n` +
+            `📌 *Ngoài ra, còn có **11 địa điểm khảo cổ** khác đang nằm trong danh mục kiểm kê của Sở VHTT TP.HCM.*`,
+          relatedMonuments: allMonumentsList.filter(m => m.info.type?.toLowerCase().includes('khảo cổ')).slice(0, 4)
+        };
+      }
+
+      // 3.5. Di tích Kiến trúc nghệ thuật
+      if (cleanQ.includes('kien truc') || cleanQ.includes('nghe thuat')) {
+        return {
+          text: `### 📊 Thống kê Di tích Kiến Trúc Nghệ Thuật tại TP.HCM\n\n` +
+            `TP.HCM hiện có **143 di tích Kiến trúc nghệ thuật đã xếp hạng**, bao gồm:\n\n` +
+            `- ⭐ **0** di tích Quốc gia đặc biệt\n` +
+            `- 🏛️ **44** di tích cấp Quốc gia (như *Nhà hát Thành phố, Trụ sở HĐND - UBND, Chợ Bến Thành, Đình Thông Tây Hội, Lăng Tả quân Lê Văn Duyệt...*)\n` +
+            `- 🏙️ **99** di tích cấp Tỉnh/Thành phố\n\n` +
+            `📌 *Ngoài ra, còn có **161 công trình kiến trúc nghệ thuật** thuộc diện kiểm kê chưa xếp hạng.*`,
+          relatedMonuments: allMonumentsList.filter(m => m.info.type?.toLowerCase().includes('kiến trúc')).slice(0, 4)
+        };
+      }
+
+      // 3.6. Di tích Lịch sử
+      if (cleanQ.includes('lich su')) {
+        return {
+          text: `### 📊 Thống kê Di tích Lịch Sử tại TP.HCM\n\n` +
+            `TP.HCM hiện có **168 di tích Lịch sử đã xếp hạng**, bao gồm:\n\n` +
+            `- ⭐ **4** di tích Quốc gia đặc biệt (*Dinh Độc Lập, Địa đạo Củ Chi, Căn cứ Rừng Sác, Nhà tù Côn Đảo*)\n` +
+            `- 🏛️ **48** di tích cấp Quốc gia (*Bến Nhà Rồng, Xưởng Ba Son, Hầm bí mật chứa vũ khí, Cột cờ Thủ Ngữ...*)\n` +
+            `- 🏙️ **116** di tích cấp Tỉnh/Thành phố\n\n` +
+            `📌 *Ngoài ra, còn có **47 công trình/địa điểm lịch sử** thuộc diện kiểm kê chưa xếp hạng.*`,
+          relatedMonuments: allMonumentsList.filter(m => m.info.type?.toLowerCase().includes('lịch sử')).slice(0, 4)
+        };
+      }
+
+      // 3.7. Danh lam thắng cảnh
+      if (cleanQ.includes('danh lam') || cleanQ.includes('thang canh')) {
+        return {
+          text: `### 📊 Thống kê Danh Lam Thắng Cảnh tại TP.HCM\n\n` +
+            `TP.HCM hiện có **6 Danh lam thắng cảnh đã xếp hạng**, bao gồm:\n\n` +
+            `- 🏛️ **3** Danh lam thắng cảnh cấp Quốc gia\n` +
+            `- 🏙️ **3** Danh lam thắng cảnh cấp Tỉnh/Thành phố\n` +
+            `- ⭐ **0** cấp Quốc gia đặc biệt\n\n` +
+            `📌 *Ngoài ra, còn có **7 danh lam thắng cảnh** thuộc diện kiểm kê chưa xếp hạng.*`,
+          relatedMonuments: allMonumentsList.filter(m => m.info.type?.toLowerCase().includes('thắng cảnh')).slice(0, 4)
+        };
+      }
+
+      // 3.8. Công trình kiểm kê chưa xếp hạng
+      if (cleanQ.includes('kiem ke') || cleanQ.includes('chua xep hang')) {
+        return {
+          text: `### 📊 Thống kê Công Trình Kiểm Kê Chưa Xếp Hạng tại TP.HCM\n\n` +
+            `Theo số liệu thống kê của Sở Văn hóa và Thể thao TP.HCM, ngoài 321 di tích đã xếp hạng, hiện còn có **226 công trình, địa điểm thuộc diện kiểm kê nhưng chưa xếp hạng**, gồm:\n\n` +
+            `- 🏛️ **161** công trình Kiến trúc nghệ thuật\n` +
+            `- 📜 **47** công trình/địa điểm Lịch sử\n` +
+            `- 🏺 **11** địa điểm Khảo cổ\n` +
+            `- 🌲 **7** Danh lam thắng cảnh`,
+          relatedMonuments: allMonumentsList.slice(0, 3)
+        };
+      }
+
+      // 3.9. Tổng số di tích toàn TP.HCM / Hệ thống
+      if (cleanQ.includes('tp') || cleanQ.includes('hcm') || cleanQ.includes('thanh pho') || cleanQ.includes('tat ca') || cleanQ.includes('he thong') || cleanQ.includes('da xep hang')) {
+        return {
+          text: `### 📊 Bảng Thống Kê Tổng Quan Di Tích TP.HCM (Sở VH&TT)\n\n` +
+            `TP.HCM hiện có tổng cộng **321 di tích đã được xếp hạng**, bao gồm:\n\n` +
+            `| Cấp xếp hạng | Số lượng | Tỷ lệ |\n` +
+            `| :--- | :--- | :--- |\n` +
+            `| ⭐ **Quốc gia đặc biệt** | **4** di tích | 1.2% |\n` +
+            `| 🏛️ **Cấp Quốc gia** | **99** di tích | 30.8% |\n` +
+            `| 🏙️ **Cấp Tỉnh/Thành phố** | **218** di tích | 67.9% |\n` +
+            `| **TỔNG CỘNG ĐÃ XẾP HẠNG** | **321** di tích | **100%** |\n\n` +
+            `📌 **Phân theo loại hình:** 168 Lịch sử | 143 Kiến trúc nghệ thuật | 6 Danh lam thắng cảnh | 4 Khảo cổ học.\n\n` +
+            `📌 **Diện kiểm kê chưa xếp hạng:** 226 công trình (161 Kiến trúc nghệ thuật, 47 Lịch sử, 11 Khảo cổ, 7 Thắng cảnh).\n\n` +
+            `💡 *Hệ thống Di sản số THCS Xà Bang hiện đang số hóa chuyên sâu toàn bộ **103 di tích trọng điểm** (4 Quốc gia đặc biệt + 99 Quốc gia).*`,
+          relatedMonuments: allMonumentsList.slice(0, 4)
+        };
+      }
+    }
+
+    // 4. STEP 2: SYSTEM FAQ MATCH (Exact & semantic sub-string)
     const sortedFaqs = [...systemFaqList].sort((a, b) => b.q.length - a.q.length);
     for (const faq of sortedFaqs) {
       const normFaqQ = removeAccents(faq.q);
@@ -352,7 +483,7 @@ export default function HeritageAIChatbot({
       }
     }
 
-    // 4. STEP 2: EXACT MATCH IN 3,605 PRE-TRAINED QUESTIONS
+    // 5. STEP 3: EXACT MATCH IN 3,605 PRE-TRAINED QUESTIONS
     if (questionLookupMap.has(cleanQ)) {
       const matched = questionLookupMap.get(cleanQ);
       const monData = monumentQaMap[matched.stt];
