@@ -217,6 +217,7 @@ QUY TẮC TRẢ LỜI & SUY LUẬN CHUẨN MỰC (BIẾT SUY LUẬN NHƯNG TUY�
 
   let rawResponseText = '';
   let lastError = null;
+  let safetyBlocked = false;
 
   for (const model of CANDIDATE_MODELS) {
     try {
@@ -251,10 +252,33 @@ QUY TẮC TRẢ LỜI & SUY LUẬN CHUẨN MỰC (BIẾT SUY LUẬN NHƯNG TUY�
       }
 
       const data = await response.json();
+
+      // Kiểm tra bộ lọc an toàn ở cấp độ prompt (promptFeedback)
+      const blockReason = data.promptFeedback?.blockReason;
+      if (blockReason) {
+        safetyBlocked = true;
+        lastError = new Error('SAFETY_BLOCK:' + blockReason);
+        // Thử model khác — đôi khi model khác có ngưỡng an toàn khác nhau
+        continue;
+      }
+
+      // Kiểm tra finishReason của candidate
+      const finishReason = data.candidates?.[0]?.finishReason;
+      if (finishReason === 'SAFETY' || finishReason === 'RECITATION') {
+        safetyBlocked = true;
+        lastError = new Error('SAFETY_BLOCK:' + finishReason);
+        continue; // Thử model tiếp theo
+      }
+
       rawResponseText = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
       if (rawResponseText) {
+        safetyBlocked = false;
         break; // Thành công
       }
+      // Nếu response rỗng nhưng không có lỗi, thử model kế tiếp
+      lastError = new Error('EMPTY_RESPONSE');
+      continue;
+
     } catch (err) {
       lastError = err;
       if (err.message?.includes('not found') || err.message?.includes('is not supported')) {
@@ -265,6 +289,14 @@ QUY TẮC TRẢ LỜI & SUY LUẬN CHUẨN MỰC (BIẾT SUY LUẬN NHƯNG TUY�
   }
 
   if (!rawResponseText) {
+    // Trả về thông báo thân thiện thay vì crash khi bị safety filter
+    if (safetyBlocked) {
+      return {
+        text: '🙏 Câu hỏi này nằm ngoài phạm vi thông tin di tích mà tôi có thể hỗ trợ. Bạn vui lòng đặt câu hỏi liên quan đến 103 di tích lịch sử – văn hóa TP.HCM nhé!',
+        relatedMonuments: [],
+        source: 'safety_fallback'
+      };
+    }
     throw lastError || new Error('NO_CONTENT_GENERATED');
   }
 
