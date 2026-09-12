@@ -167,7 +167,7 @@ export default function HeritageAIChatbot({
     {
       id: 'welcome_1',
       sender: 'ai',
-      text: `Xin chào! Tôi là **Trợ Lý Di Sản AI** được huấn luyện với bộ tri thức chuẩn **3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa TP.HCM & Vùng phụ cận** 🏛️✨\n\nBạn có thể hỏi tôi về:\n- 📜 **Lịch sử & Niên đại** của bất kỳ di tích nào.\n- 👤 **Nhân vật & Sự kiện** hào hùng gắn liền.\n- 🏺 **Hiện vật & Bảo vật** quý giá được lưu giữ.\n- 📍 **Địa chỉ, Tọa độ GPS, Bản đồ & Video** tư liệu.\n- 📚 **Tích hợp 6 môn học THCS & Đề tài KHKT**.\n\n*Hãy nhập tên di tích, số STT hoặc câu hỏi để bắt đầu!*`,
+      text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi được huấn luyện chuyên sâu với bộ tri thức chuẩn mực gồm **3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt** của Thành phố Hồ Chí Minh.\n\n📌 **Phạm vi hỗ trợ tra cứu chuẩn xác:**\n- 📜 **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh lịch sử và quá trình hình thành.\n- 👤 **Nhân vật & Sự kiện:** Dấu ấn các anh hùng, danh nhân và chiến công hào hùng.\n- 🏺 **Hiện vật & Bảo vật:** Các di vật, vũ khí và giá trị khảo cổ quý báu.\n- ⭐ **Giá trị & Pháp lý:** Quyết định xếp hạng, loại hình và ý nghĩa bảo tồn.\n- 📍 **Địa lý & Tọa độ:** Vị trí, bản đồ chỉ đường và thước phim tư liệu.\n\n*Kính mời bạn nhập câu hỏi để bắt đầu tra cứu!*`,
       timestamp: new Date(),
       suggestions: [
         'TP.HCM có bao nhiêu di tích đã xếp hạng?',
@@ -224,44 +224,43 @@ export default function HeritageAIChatbot({
     
     let resp = `### 🏛️ ${mon.name} (#STT ${mon.stt})\n\n`;
 
-    // Dynamic Context-Aware Lead-in: nương theo câu hỏi người dùng
+    // Dynamic Context-Aware Lead-in: nương theo câu hỏi người dùng, văn phong trang trọng, sử học
     if (intentKey === 'rank' || cleanUserQ.includes('xep hang') || cleanUserQ.includes('vi sao') || cleanUserQ.includes('tai sao') || cleanUserQ.includes('gia tri') || cleanUserQ.includes('y nghia') || cleanUserQ.includes('quoc gia')) {
       const rankVal = mon.intents.rank?.answer || rawMon.info?.ranking || 'Di tích Lịch sử cấp Quốc gia';
       const qdVal = mon.intents.qd?.answer ? ` (${mon.intents.qd.answer.replace(/\.$/, '')})` : '';
       const historicalMeaning = mon.intents.lichsu?.answer || mon.intents.tomtat?.answer || rawMon.info?.overview;
 
       if (cleanUserQ.includes('vi sao') || cleanUserQ.includes('tai sao') || cleanUserQ.includes('gia tri') || cleanUserQ.includes('khong co') || cleanUserQ.includes('y nghia')) {
-        resp += `Di tích **${mon.name}** được xếp hạng **${rankVal}**${qdVal} vì mang những giá trị lịch sử, văn hóa và kiến trúc tiêu biểu sau:\n\n`;
+        resp += `Di tích **${mon.name}** được công nhận xếp hạng **${rankVal}**${qdVal} bởi những giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
         resp += `${historicalMeaning}\n\n`;
       } else {
         resp += `Di tích **${mon.name}** được xếp hạng cấp **${rankVal}**${qdVal}.\n\n`;
         resp += `⭐ **Giá trị và ý nghĩa lịch sử tiêu biểu:**\n${historicalMeaning}\n\n`;
       }
     } else if (intentKey === 'lichsu' || cleanUserQ.includes('lich su') || cleanUserQ.includes('nguon goc') || cleanUserQ.includes('hinh thanh') || cleanUserQ.includes('xay dung')) {
-      resp += `Về lịch sử hình thành và nguồn gốc của **${mon.name}**:\n\n${answer}\n\n`;
+      resp += `📜 **Lịch sử hình thành và bối cảnh:**\n\n${answer}\n\n`;
     } else if (intentKey === 'nhanvat' || cleanUserQ.includes('nhan vat') || cleanUserQ.includes('ai')) {
-      resp += `Gắn liền với lịch sử của **${mon.name}** là các nhân vật tiêu biểu:\n\n${answer}\n\n`;
+      resp += `👤 **Nhân vật lịch sử tiêu biểu gắn liền:**\n\n${answer}\n\n`;
     } else if (intentKey === 'hientvat' || cleanUserQ.includes('hien vat') || cleanUserQ.includes('bao vat') || cleanUserQ.includes('vu khi')) {
-      resp += `Tại di tích **${mon.name}**, các hiện vật và bảo vật lịch sử tiêu biểu được lưu giữ gồm:\n\n${answer}\n\n`;
+      resp += `🏺 **Hiện vật & Bảo vật lịch sử lưu giữ:**\n\n${answer}\n\n`;
     } else if (intentKey === 'sukien' || cleanUserQ.includes('su kien') || cleanUserQ.includes('chien cong')) {
-      resp += `Các sự kiện lịch sử và dấu mốc tiêu biểu diễn ra tại **${mon.name}**:\n\n${answer}\n\n`;
+      resp += `⚔️ **Dấu mốc & Sự kiện lịch sử tiêu biểu:**\n\n${answer}\n\n`;
     } else if (intentKey === 'dc_sau' || intentKey === 'dc_truoc' || cleanUserQ.includes('dia chi') || cleanUserQ.includes('o dau') || cleanUserQ.includes('vi tri')) {
-      resp += `Di tích **${mon.name}** hiện tọa lạc tại địa chỉ: **${answer}**\n\n`;
+      resp += `📍 **Địa chỉ hiện nay:** **${answer}**\n\n`;
       if (mon.intents.dc_truoc?.answer && mon.intents.dc_truoc.answer !== answer) {
         resp += `*(Địa chỉ trước đây: ${mon.intents.dc_truoc.answer})*\n\n`;
       }
     } else if (intentKey === 'qd' || cleanUserQ.includes('quyet dinh') || cleanUserQ.includes('ngay cong nhan')) {
-      resp += `Di tích **${mon.name}** được công nhận chính thức theo: **${answer}** (Xếp hạng: **${mon.intents.rank?.answer || 'Quốc gia'}**).\n\n`;
+      resp += `📋 **Căn cứ pháp lý công nhận di tích:** **${answer}** (Xếp hạng: **${mon.intents.rank?.answer || 'Quốc gia'}**).\n\n`;
     } else if (intentKey === 'loai' || cleanUserQ.includes('loai hinh')) {
-      resp += `Di tích **${mon.name}** thuộc loại hình: **${answer}**.\n\n`;
+      resp += `🏷️ **Loại hình di tích:** **${answer}**.\n\n`;
     } else if (intentKey === 'toado' || intentKey === 'map') {
-      resp += `Vị trí địa lý và định vị bản đồ của di tích **${mon.name}**:\n- 🌐 **Tọa độ GPS:** \`${mon.intents.toado?.answer || 'Đang cập nhật'}\`\n- 🗺️ **Bản đồ chỉ đường:** [Mở chỉ đường trên Google Maps](${mon.intents.map?.answer || '#'})\n\n`;
+      resp += `🌐 **Tọa độ GPS & Định vị bản đồ:**\n- Tọa độ: \`${mon.intents.toado?.answer || 'Đang cập nhật'}\`\n- [Mở định vị chỉ đường trên Google Maps](${mon.intents.map?.answer || '#'})\n\n`;
     } else if (intentKey === 'video') {
-      resp += `Thước phim và video tư liệu về **${mon.name}**:\n- 🎥 **Xem tư liệu:** [Nhấp vào đây để xem video](${mon.intents.video?.answer})\n\n`;
+      resp += `🎥 **Tư liệu nghe nhìn & Thước phim lịch sử:**\n- [Nhấp vào đây để xem video tư liệu](${mon.intents.video?.answer})\n\n`;
     } else if (intentKey === 'tailieu') {
-      resp += `Hồ sơ khoa học và tài liệu lưu trữ về di tích **${mon.name}**:\n\n${answer}\n\n`;
+      resp += `📚 **Hồ sơ khoa học và tư liệu lưu trữ:**\n\n${answer}\n\n`;
     } else {
-      // Giới thiệu tổng quan tự nhiên, KHÔNG có chữ "Tóm tắt & Giới thiệu tổng quan:"
       const cleanIntro = answer.startsWith(mon.name) ? answer.substring(mon.name.length).replace(/^[\s,.:\-–]+/, '') : answer;
       resp += `**${mon.name}** là ${cleanIntro}\n\n`;
     }
