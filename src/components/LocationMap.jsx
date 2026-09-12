@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 import { MapPin, ExternalLink, Maximize2, Layers } from 'lucide-react';
 
 export default function LocationMap({

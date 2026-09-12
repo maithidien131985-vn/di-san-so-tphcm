@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import L from 'leaflet';
-import { X, MapPin, ExternalLink, Compass, Layers, Search, Navigation, Check, Landmark, ArrowRight } from 'lucide-react';
+import 'leaflet/dist/leaflet.css';
+import { X, MapPin, ExternalLink, Compass, Layers, Search, Navigation, Check, Landmark, ArrowRight, RefreshCw } from 'lucide-react';
 import { allMonumentsList } from '../data/allMonumentsData';
 
 export default function MyMapModal({ 
@@ -20,32 +21,72 @@ export default function MyMapModal({
 
   const fullMapUrl = 'https://www.google.com/maps/d/viewer?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&usp=sharing';
 
+  // 1. Initialize Leaflet Map Instance with Lifecycle Cleanup
   useEffect(() => {
     if (!isOpen || viewMode !== 'leaflet103' || !mapContainerRef.current) return;
 
-    // Center on current monument or TP.HCM center
+    // Remove any previous map instance to prevent "Map container is already initialized"
+    if (mapInstanceRef.current) {
+      try {
+        mapInstanceRef.current.remove();
+      } catch (e) {
+        console.warn('Error removing old map instance:', e);
+      }
+      mapInstanceRef.current = null;
+      markersGroupRef.current = null;
+    }
+
+    // Determine initial center
     const current = allMonumentsList.find(m => m.stt === currentMonumentStt) || allMonumentsList[0];
-    const initialLat = current.map?.lat || 10.77715;
-    const initialLng = current.map?.lng || 106.69534;
+    const initialLat = current?.map?.lat || current?.info?.lat || 10.77715;
+    const initialLng = current?.map?.lng || current?.info?.lng || 106.69534;
 
-    if (!mapInstanceRef.current) {
-      const map = L.map(mapContainerRef.current, {
-        center: [initialLat, initialLng],
-        zoom: 14,
-        zoomControl: true,
-        attributionControl: false
-      });
+    const map = L.map(mapContainerRef.current, {
+      center: [initialLat, initialLng],
+      zoom: 13,
+      zoomControl: true,
+      attributionControl: false
+    });
 
-      L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-        maxZoom: 20,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-        attribution: '&copy; Bản đồ Thành phố Hồ Chí Minh'
-      }).addTo(map);
+    // Primary High-Performance Tile Layer (OpenStreetMap / CartoDB with fallback to Google)
+    const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      subdomains: ['a', 'b', 'c'],
+      attribution: '&copy; OpenStreetMap contributors &copy; Di sản số TP.HCM'
+    });
 
-      mapInstanceRef.current = map;
-      markersGroupRef.current = L.layerGroup().addTo(map);
-    } else {
-      mapInstanceRef.current.invalidateSize();
+    const googleRoadmap = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+      attribution: '&copy; Google Maps'
+    });
+
+    // Default to OpenStreetMap which is 100% reliable and doesn't block referrers
+    osmLayer.addTo(map);
+
+    // Layer control for user convenience
+    const baseMaps = {
+      "Bản đồ Tiêu chuẩn (OSM)": osmLayer,
+      "Bản đồ Google Maps": googleRoadmap
+    };
+    L.control.layers(baseMaps, null, { position: 'topright' }).addTo(map);
+
+    const markersGroup = L.layerGroup().addTo(map);
+    mapInstanceRef.current = map;
+    markersGroupRef.current = markersGroup;
+
+    // Multi-stage size invalidation to guarantee render in animated modal
+    const t1 = setTimeout(() => map.invalidateSize(), 60);
+    const t2 = setTimeout(() => map.invalidateSize(), 200);
+    const t3 = setTimeout(() => map.invalidateSize(), 500);
+
+    const resizeObserver = new ResizeObserver(() => {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.invalidateSize();
+      }
+    });
+    if (mapContainerRef.current) {
+      resizeObserver.observe(mapContainerRef.current);
     }
 
     // Attach global click handler for popup buttons
@@ -59,108 +100,113 @@ export default function MyMapModal({
       }
     };
 
-    // Render all 103 pins with User's Custom 3 Icons
-    if (markersGroupRef.current) {
-      markersGroupRef.current.clearLayers();
-
-      allMonumentsList.forEach((mon) => {
-        // Filter check
-        if (typeFilter !== 'all' && !mon.info.type.includes(typeFilter)) return;
-        if (mapSearch) {
-          const q = mapSearch.toLowerCase().trim();
-          const match = mon.info.name.toLowerCase().includes(q) || 
-            mon.info.address.toLowerCase().includes(q) ||
-            mon.stt.toString() === q;
-          if (!match) return;
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+      clearTimeout(t3);
+      resizeObserver.disconnect();
+      if (mapInstanceRef.current) {
+        try {
+          mapInstanceRef.current.remove();
+        } catch (e) {
+          console.warn('Error on map cleanup:', e);
         }
+        mapInstanceRef.current = null;
+        markersGroupRef.current = null;
+      }
+    };
+  }, [isOpen, viewMode, currentMonumentStt]);
 
-        const isCurrent = mon.stt === currentMonumentStt;
-        const lat = mon.map?.lat || mon.info?.lat;
-        const lng = mon.map?.lng || mon.info?.lng;
-        if (!lat || !lng || isNaN(lat) || isNaN(lng)) return;
+  // 2. Render and Update 103 Markers when filters or search change
+  useEffect(() => {
+    if (!isOpen || viewMode !== 'leaflet103' || !mapInstanceRef.current || !markersGroupRef.current) return;
 
-        // Custom 3 Category Icons provided by the user
-        const monType = mon.info?.type || 'Lịch sử';
-        let iconUrl = '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png';
-        if (monType.includes('Khảo cổ')) {
-          iconUrl = '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png';
-        } else if (monType.includes('Kiến trúc')) {
-          iconUrl = '/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png';
-        }
+    const markersGroup = markersGroupRef.current;
+    markersGroup.clearLayers();
 
-        const pinSize = isCurrent ? 46 : 36;
+    allMonumentsList.forEach((mon) => {
+      // Filter check
+      if (typeFilter !== 'all' && !mon.info?.type?.toLowerCase().includes(typeFilter.toLowerCase())) return;
+      if (mapSearch) {
+        const q = mapSearch.toLowerCase().trim();
+        const match = mon.info?.name?.toLowerCase().includes(q) || 
+          mon.info?.address?.toLowerCase().includes(q) ||
+          mon.stt?.toString() === q;
+        if (!match) return;
+      }
 
-        const customIcon = L.divIcon({
-          className: 'custom-monument-icon',
-          html: `<div style="
-            width: ${pinSize}px;
-            height: ${pinSize}px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.45));
-            ${isCurrent ? 'transform: scale(1.15); z-index: 999;' : ''}
-            transition: transform 0.2s ease;
-          ">
-            <img src="${iconUrl}" alt="${monType}" style="
-              width: 100%;
-              height: 100%;
-              object-fit: contain;
-              border-radius: ${isCurrent ? '50%' : '6px'};
-              ${isCurrent ? 'box-shadow: 0 0 0 3px #FBBF24, 0 0 16px rgba(251,191,36,0.9);' : ''}
-            " />
-            ${isCurrent ? '<div style="position:absolute; bottom:-8px; background:#D97706; color:white; font-size:8px; font-weight:900; padding:1px 4px; border-radius:4px; border:1px solid white; white-space:nowrap;">ĐANG XEM</div>' : ''}
-          </div>`,
-          iconSize: [pinSize, pinSize],
-          iconAnchor: [pinSize / 2, pinSize / 2],
-          popupAnchor: [0, -pinSize / 2]
-        });
+      const isCurrent = mon.stt === currentMonumentStt;
+      const lat = mon.map?.lat || mon.info?.lat;
+      const lng = mon.map?.lng || mon.info?.lng;
+      if (!lat || !lng || isNaN(lat) || isNaN(lng)) return;
 
-        const marker = L.marker([lat, lng], { icon: customIcon });
+      // Custom 3 Category Icons
+      const monType = mon.info?.type || 'Lịch sử';
+      let iconUrl = '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png';
+      if (monType.includes('Khảo cổ')) {
+        iconUrl = '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png';
+      } else if (monType.includes('Kiến trúc')) {
+        iconUrl = '/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png';
+      }
 
-        const heroImg = mon.info?.heroImage || mon.gallery?.[0]?.src || '';
+      const pinSize = isCurrent ? 46 : 36;
 
-        const popupContent = `
-          <div style="font-family: inherit; padding: 4px; max-width: 270px;">
-            ${heroImg ? `<div style="width: 100%; height: 110px; border-radius: 8px; overflow: hidden; margin-bottom: 6px; background: #222;">
-              <img src="${heroImg}" alt="${mon.info.name}" style="width: 100%; height: 100%; object-fit: cover;" />
-            </div>` : ''}
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
-              <span style="background: #7B1113; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 4px;">#${mon.stt}/103</span>
-              <span style="background: #FEF3C7; color: #92400E; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 4px;">${mon.info.ranking || 'Di tích Quốc gia'}</span>
-            </div>
-            <div style="color: #7B1113; font-weight: 800; font-size: 13px; margin-bottom: 3px; line-height: 1.3;">${mon.info.name}</div>
-            <div style="font-size: 11px; color: #555; margin-bottom: 4px;">📍 ${mon.info.address}</div>
-            <div style="font-size: 10px; color: #888; margin-bottom: 8px;">Tọa độ GPS: ${lat.toFixed(5)}, ${lng.toFixed(5)}</div>
-            <button onclick="window.__handleSelectMonumentFromMap(${mon.stt})" style="width: 100%; background: linear-gradient(135deg, #7B1113, #96171a); color: white; border: none; padding: 7px 10px; border-radius: 8px; font-size: 11px; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-              <span>Xem trang di tích này &rarr;</span>
-            </button>
-          </div>
-        `;
-
-        marker.bindPopup(popupContent);
-        
-        marker.on('popupopen', () => {
-          const btn = document.getElementById(`btn-select-mon-${mon.stt}`);
-          if (btn) {
-            btn.onclick = () => {
-              if (onSelectMonument) {
-                onSelectMonument(mon.stt);
-              }
-              onClose();
-            };
-          }
-        });
-
-        markersGroupRef.current.addLayer(marker);
-
-        if (isCurrent) {
-          marker.openPopup();
-        }
+      const customIcon = L.divIcon({
+        className: 'custom-monument-icon',
+        html: `<div style="
+          width: ${pinSize}px;
+          height: ${pinSize}px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          filter: drop-shadow(0 4px 8px rgba(0,0,0,0.45));
+          ${isCurrent ? 'transform: scale(1.15); z-index: 999;' : ''}
+          transition: transform 0.2s ease;
+        ">
+          <img src="${iconUrl}" alt="${monType}" style="
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: ${isCurrent ? '50%' : '6px'};
+            ${isCurrent ? 'box-shadow: 0 0 0 3px #FBBF24, 0 0 16px rgba(251,191,36,0.9);' : ''}
+          " />
+          ${isCurrent ? '<div style="position:absolute; bottom:-8px; background:#D97706; color:white; font-size:8px; font-weight:900; padding:1px 4px; border-radius:4px; border:1px solid white; white-space:nowrap;">ĐANG XEM</div>' : ''}
+        </div>`,
+        iconSize: [pinSize, pinSize],
+        iconAnchor: [pinSize / 2, pinSize / 2],
+        popupAnchor: [0, -pinSize / 2]
       });
-    }
-  }, [isOpen, viewMode, currentMonumentStt, typeFilter, mapSearch, onSelectMonument, onClose]);
+
+      const marker = L.marker([lat, lng], { icon: customIcon });
+      const heroImg = mon.info?.heroImage || mon.gallery?.[0]?.src || '';
+
+      const popupContent = `
+        <div style="font-family: inherit; padding: 4px; max-width: 270px;">
+          ${heroImg ? `<div style="width: 100%; height: 110px; border-radius: 8px; overflow: hidden; margin-bottom: 6px; background: #222;">
+            <img src="${heroImg}" alt="${mon.info.name}" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>` : ''}
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+            <span style="background: #7B1113; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 4px;">#${mon.stt}/103</span>
+            <span style="background: #FEF3C7; color: #92400E; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 4px;">${mon.info.ranking || 'Di tích Quốc gia'}</span>
+          </div>
+          <div style="color: #7B1113; font-weight: 800; font-size: 13px; margin-bottom: 3px; line-height: 1.3;">${mon.info.name}</div>
+          <div style="font-size: 11px; color: #555; margin-bottom: 4px;">📍 ${mon.info.address}</div>
+          <div style="font-size: 10px; color: #888; margin-bottom: 8px;">Tọa độ GPS: ${lat.toFixed(5)}, ${lng.toFixed(5)}</div>
+          <button onclick="window.__handleSelectMonumentFromMap(${mon.stt})" style="width: 100%; background: linear-gradient(135deg, #7B1113, #96171a); color: white; border: none; padding: 7px 10px; border-radius: 8px; font-size: 11px; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+            <span>Xem trang di tích này &rarr;</span>
+          </button>
+        </div>
+      `;
+
+      marker.bindPopup(popupContent);
+      markersGroup.addLayer(marker);
+
+      if (isCurrent) {
+        marker.openPopup();
+      }
+    });
+  }, [isOpen, viewMode, currentMonumentStt, typeFilter, mapSearch]);
 
   if (!isOpen) return null;
 
@@ -272,16 +318,20 @@ export default function MyMapModal({
         )}
 
         {/* Map Body */}
-        <div className="flex-1 w-full bg-gray-100 relative">
+        <div className="flex-1 w-full bg-gray-100 relative min-h-[400px]">
           {viewMode === 'leaflet103' ? (
-            <div ref={mapContainerRef} className="w-full h-full" />
+            <div 
+              ref={mapContainerRef} 
+              className="w-full h-full absolute inset-0 z-0"
+              style={{ width: '100%', height: '100%', minHeight: '400px' }}
+            />
           ) : (
             <iframe
               src={embedUrl}
               width="100%"
               height="100%"
               title="Google My Maps Di Tích Lịch Sử TP.HCM"
-              className="border-0 w-full h-full"
+              className="border-0 w-full h-full absolute inset-0"
               loading="lazy"
               allowFullScreen
             />
