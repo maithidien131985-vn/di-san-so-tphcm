@@ -274,12 +274,22 @@ export default function HomePage({
                 <span>Số hóa 103 Di tích Lịch sử - Văn hóa cấp quốc gia và cấp quốc gia đặc biệt TP. Hồ Chí Minh</span>
               </div>
 
-              <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-2xl">
-                DI SẢN <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
-                  TP. HỒ CHÍ MINH
-                </span>
-              </h1>
+              <div className="flex items-center justify-between sm:justify-start lg:justify-start gap-3 sm:gap-4">
+                <h1 className="font-serif-title font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight drop-shadow-2xl text-left">
+                  DI SẢN <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
+                    TP. HỒ CHÍ MINH
+                  </span>
+                </h1>
+                {/* Mobile miniature illustration alongside title */}
+                <div className="lg:hidden shrink-0">
+                  <img
+                    src="/assets/images/tphcm_heritage_map_hero.png"
+                    alt="Di sản TP.HCM"
+                    className="w-20 h-20 sm:w-24 sm:h-24 object-contain rounded-2xl bg-white/10 p-1.5 border border-amber-300/40 shadow-xl drop-shadow-md"
+                  />
+                </div>
+              </div>
 
               <WordByWordTitle
                 as="h2"
@@ -289,7 +299,7 @@ export default function HomePage({
                 initialDelay={0.2}
               />
 
-              <p className="text-xs sm:text-sm md:text-base text-rose-100/80 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0 drop-shadow-sm">
+              <p className="hidden md:block text-xs sm:text-sm md:text-base text-rose-100/80 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0 drop-shadow-sm">
                 Không gian học tập lịch sử số hóa tương tác dành cho học sinh, giáo viên và cộng đồng yêu di sản. Khám phá kho dữ liệu 103 di tích, sơ đồ địa lý, hồ sơ điều tra và thử thách kiến thức.
               </p>
 
@@ -333,12 +343,13 @@ export default function HomePage({
               </div>
             </div>
 
-            {/* Right Column: Double Size Uploaded Heritage Map */}
-            <div className="lg:col-span-7 flex justify-center items-center relative w-full overflow-visible py-4">
-              {/* Ambient Warm Golden Glow directly behind map */}
-              <div className="absolute inset-0 bg-radial from-amber-500/35 via-rose-600/25 to-transparent blur-3xl scale-150 pointer-events-none" />
-              
-              <div className="relative w-full flex items-center justify-center lg:justify-end">
+            {/* Right Column: Double Size Uploaded Heritage Map on Desktop & Embedded Interactive MyMap on Mobile */}
+            <div className="lg:col-span-7 flex justify-center items-center relative w-full overflow-visible py-2 sm:py-4">
+              {/* DESKTOP VIEW: Large Graphic Artwork */}
+              <div className="hidden lg:flex relative w-full items-center justify-end">
+                {/* Ambient Warm Golden Glow directly behind map */}
+                <div className="absolute inset-0 bg-radial from-amber-500/35 via-rose-600/25 to-transparent blur-3xl scale-150 pointer-events-none" />
+                
                 <img
                   src="/assets/images/tphcm_heritage_map_hero.png"
                   alt="Bản đồ di sản TP. Hồ Chí Minh"
@@ -347,6 +358,33 @@ export default function HomePage({
                     filter: 'drop-shadow(0 25px 40px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 50px rgba(234, 179, 8, 0.3))'
                   }}
                 />
+              </div>
+
+              {/* MOBILE VIEW: Interactive Google MyMap directly embedded in place of standalone static image */}
+              <div className="w-full lg:hidden rounded-2xl overflow-hidden border-2 border-amber-400/60 shadow-2xl bg-[#200507]/80 backdrop-blur-md">
+                <div className="bg-[#4A0A0C] px-3.5 py-2.5 border-b border-amber-300/30 flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-xs font-bold text-amber-200">
+                    <MapPin className="w-4 h-4 text-amber-300 animate-bounce" />
+                    <span>Bản đồ số 103 Di tích TP.HCM</span>
+                  </div>
+                  <button
+                    onClick={onOpenMyMap}
+                    className="text-[10px] px-2.5 py-1 rounded-lg bg-amber-400 hover:bg-amber-300 text-[#200507] font-black uppercase tracking-wide cursor-pointer transition-all shadow-sm"
+                  >
+                    Toàn màn hình
+                  </button>
+                </div>
+                <div className="h-[360px] sm:h-[420px] w-full relative z-0 bg-[#FDF7F5]">
+                  <iframe
+                    src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
+                    width="100%"
+                    height="100%"
+                    className="w-full h-full border-0"
+                    title="Bản đồ Di tích TP. Hồ Chí Minh - Trực quan Mobile"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
 
@@ -510,8 +548,8 @@ export default function HomePage({
                 </div>
               </div>
 
-              {/* CỘT PHẢI: PHẦN CHỮ GIỚI THIỆU KÝ ỨC THÀNH PHỐ (4 cols) */}
-              <div id="about-project" className="lg:col-span-4 bg-gradient-to-br from-[#FAF4F0] via-[#FFFDFB] to-[#FDF2F3] rounded-2xl sm:rounded-3xl p-5 sm:p-6 border-2 border-rose-200 shadow-sm flex flex-col justify-between space-y-4">
+              {/* CỘT PHẢI: PHẦN CHỮ GIỚI THIỆU KÝ ỨC THÀNH PHỐ (4 cols) - ẨN TRÊN MOBILE, HIỂN THỊ TRÊN MÁY TÍNH */}
+              <div id="about-project" className="hidden lg:flex lg:col-span-4 bg-gradient-to-br from-[#FAF4F0] via-[#FFFDFB] to-[#FDF2F3] rounded-2xl sm:rounded-3xl p-5 sm:p-6 border-2 border-rose-200 shadow-sm flex-col justify-between space-y-4">
                 <div className="space-y-3.5">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-[11px] font-black uppercase tracking-wider shadow-2xs">
                     <Sparkles className="w-3.5 h-3.5 text-[#8B1417]" />
