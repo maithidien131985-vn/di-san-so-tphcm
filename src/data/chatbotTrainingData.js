@@ -2255,6 +2255,21 @@ export const monumentQaMap = {
     "stt": 11,
     "name": "Địa Đạo Tây Nam\n ( Tam Giác Sắt)",
     "intents": {
+      "tengoi": {
+        "answer": "Tên gọi \"Tam Giác Sắt\" (Iron Triangle) do chính quân đội Mỹ đặt trong thời kỳ Chiến tranh Việt Nam để chỉ một khu vực chiến lược có hệ thống Địa đạo Tây Nam Bến Cát.\n\nLý do vùng này được gọi là \"Tam Giác Sắt\":\n1. 📐 **Hình học chiến lược:** Vùng đất này tạo thành một hình tam giác có ba đỉnh gồm thị tứ Bến Súc, thị trấn Bến Cát và một điểm giáp ranh trên sông Thị Tính (gần chỗ đổ ra sông Sài Gòn), bao trùm phần đất giáp ranh giữa ba huyện/thị Củ Chi, Bến Cát và Trảng Bàng.\n2. 🛡️ **Sự kiên cố và hiểm trở:** Chữ \"Sắt\" (Iron) tượng trưng cho sức mạnh phòng thủ kiên cường, vững chắc như sắt thép của lực lượng cách mạng ta bám trụ nơi đây. Dù quân đội Mỹ và chính quyền Sài Gòn mở nhiều cuộc càn quét lớn (tiêu biểu như Chiến dịch Cedar Falls năm 1967), họ vẫn bất lực trước hệ thống địa đạo chằng chịt, biến hóa khôn lường và sự kiên bám của quân dân ta.",
+        "field": "Nguồn gốc tên gọi",
+        "questions": [
+          "Vì sao có tên gọi Tam Giác Sắt?",
+          "Tại sao gọi là Tam Giác Sắt?",
+          "Nguồn gốc tên gọi Tam Giác Sắt là gì?",
+          "Vì sao vùng này được gọi là Tam Giác Sắt?",
+          "Tên gọi Tam Giác Sắt do ai đặt?",
+          "Tam Giác Sắt có nghĩa là gì?",
+          "Iron Triangle là gì?",
+          "Ba đỉnh của Tam Giác Sắt gồm những đâu?",
+          "Chiến dịch Cedar Falls năm 1967 tại Tam Giác Sắt"
+        ]
+      },
       "ten": {
         "answer": "Địa Đạo Tây Nam\n ( Tam Giác Sắt)",
         "field": "Tên di tích",

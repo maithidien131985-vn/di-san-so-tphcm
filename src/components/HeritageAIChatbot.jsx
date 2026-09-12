@@ -76,7 +76,7 @@ const MONUMENT_ALIASES = [
   { stt: 8, aliases: ['chien khu d'] },
   { stt: 9, aliases: ['dia dao kim long'] },
   { stt: 10, aliases: ['dia dao phu tho hoa', 'phu tho hoa'] },
-  { stt: 11, aliases: ['dia dao tay nam', 'tam giac sat'] },
+  { stt: 11, aliases: ['dia dao tay nam', 'tam giac sat', 'tay nam ben cat', 'ben suc', 'cedar falls', 'dia dao tam giac sat', 'iron triangle'] },
   { stt: 12, aliases: ['ba son', 'ton duc thang', 'u tau ba son', 'bac ton'] },
   { stt: 13, aliases: ['ham vu khi ba thang hai', 'ham 183 4 ba thang hai', '183 4 ba thang hai'] },
   { stt: 14, aliases: ['tran phu', 'benh vien cho quan', 'trai giam cho quan', 'nha thuong cho quan', 'hay giu vung chi khi'] },
@@ -102,13 +102,14 @@ const MONUMENT_ALIASES = [
   { stt: 103, aliases: ['tru so ubnd', 'toa do chinh'] }
 ];
 
-// 3. INTENT RECOGNITION KEYWORDS (15 INTENT CATEGORIES)
+// 3. INTENT RECOGNITION KEYWORDS (16 INTENT CATEGORIES)
 const INTENT_KEYWORDS = [
-  { intent: 'rank', label: '⭐ Xếp hạng & Giá trị di tích', keys: ['xep hang', 'hang di tich', 'cap quoc gia', 'cap thanh pho', 'quoc gia dac biet', 'xep hang gi', 'vi sao xep hang', 'tai sao xep hang', 'vi sao duoc xep hang', 'tai sao duoc xep hang', 'duoc xep hang', 'cong nhan cap', 'quoc gia', 'gia tri', 'y nghia', 'khong co gia tri', 'co gia tri gi', 'vi sao co gia tri', 'gia tri gi', 'vi sao', 'tai sao'] },
-  { intent: 'lichsu', label: '📜 Lịch sử & Nguồn gốc hình thành', keys: ['lich su', 'nguon goc', 'hinh thanh', 'xay dung nam nao', 'xay dung khi nao', 'nien dai', 'boi canh', 'qua trinh hinh thanh', 'lich su hinh thanh', 'ra doi khi nao', 'xay dung'] },
-  { intent: 'nhanvat', label: '👤 Nhân vật lịch sử gắn liền', keys: ['nhan vat', 'gan lien voi ai', 'ai lanh dao', 'ai chi huy', 'ai hy sinh', 'ai thiet ke', 'ai dung dau', 'ai hoat dong', 'con nguoi', 'anh hung', 'chi si', 'ai'] },
+  { intent: 'tengoi', label: '🏷️ Nguồn gốc tên gọi & Ý nghĩa', keys: ['ten goi', 'vi sao co ten', 'tai sao goi la', 'nguon goc ten', 'y nghia ten', 'tam giac sat', 'iron triangle', 'ben suc', 'cedar falls', 'y nghia ten goi', 'sao goi la', 'sao lai goi'] },
+  { intent: 'rank', label: '⭐ Xếp hạng & Giá trị di tích', keys: ['xep hang', 'hang di tich', 'cap quoc gia', 'cap thanh pho', 'quoc gia dac biet', 'xep hang gi', 'vi sao xep hang', 'tai sao xep hang', 'vi sao duoc xep hang', 'tai sao duoc xep hang', 'duoc xep hang', 'cong nhan cap', 'gia tri lich su', 'y nghia lich su', 'khong co gia tri', 'co gia tri gi', 'vi sao co gia tri', 'gia tri gi'] },
+  { intent: 'lichsu', label: '📜 Lịch sử & Nguồn gốc hình thành', keys: ['lich su', 'nguon goc hinh thanh', 'hinh thanh', 'xay dung nam nao', 'xay dung khi nao', 'nien dai', 'boi canh', 'qua trinh hinh thanh', 'lich su hinh thanh', 'ra doi khi nao', 'xay dung'] },
+  { intent: 'nhanvat', label: '👤 Nhân vật lịch sử gắn liền', keys: ['nhan vat', 'gan lien voi ai', 'ai lanh dao', 'ai chi huy', 'ai hy sinh', 'ai thiet ke', 'ai dung dau', 'ai hoat dong', 'con nguoi', 'anh hung', 'chi si'] },
   { intent: 'hientvat', label: '🏺 Hiện vật & Bảo vật tiêu biểu', keys: ['hien vat', 'vu khi', 'trung bay', 'bao vat', 'co gi trung bay', 'do vat', 'xe tang', 'sung phao', 'sung', 'tu lieu', 'hien vat quy'] },
-  { intent: 'sukien', label: '⚔️ Sự kiện lịch sử tiêu biểu', keys: ['su kien', 'dien bien', 'su kien lich su', 'chuyen gi da dien ra', 'chien cong', 'tran danh', 'cuoc khoi nghia', 'bai cong', 'khoi nghia'] },
+  { intent: 'sukien', label: '⚔️ Sự kiện lịch sử tiêu biểu', keys: ['su kien', 'dien bien', 'su kien lich su', 'chuyen gi da dien ra', 'chien cong', 'tran danh', 'cuoc khoi nghia', 'bai cong', 'khoi nghia', 'chien dich'] },
   { intent: 'dc_sau', label: '📍 Địa chỉ & Vị trí hiện nay', keys: ['dia chi', 'o dau', 'vi tri', 'nam o dau', 'tai dau', 'phuong nao', 'quan nao', 'duong nao', 'toa lac o dau', 'dia diem', 'cach di', 'tim duong'] },
   { intent: 'dc_truoc', label: '🏛️ Địa chỉ & Đơn vị hành chính trước đây', keys: ['dia chi truoc', 'don vi hanh chinh truoc', 'truoc day thuoc', 'ten cu', 'dia chi cu'] },
   { intent: 'qd', label: '📋 Quyết định công nhận di tích', keys: ['quyet dinh', 'ngay cong nhan', 'so quyet dinh', 'cong nhan ngay nao', 'van ban cong nhan', 'nam cong nhan'] },
@@ -173,18 +174,61 @@ export default function HeritageAIChatbot({
       suggestions: [
         'TP.HCM có bao nhiêu di tích đã xếp hạng?',
         'Có bao nhiêu di tích Quốc gia đặc biệt?',
-        'Có bao nhiêu di tích thuộc loại Khảo cổ học?',
+        'Vì sao có tên gọi Tam Giác Sắt?',
         'Dinh Độc Lập có những hiện vật tiêu biểu nào?'
       ]
     }
   ]);
+
+  // Auto-clear / reset chat history when switching to a new monument
+  const prevMonumentSttRef = useRef(currentMonumentStt);
+  const prevViewModeRef = useRef(viewMode);
+
+  useEffect(() => {
+    if (prevMonumentSttRef.current !== currentMonumentStt || prevViewModeRef.current !== viewMode) {
+      prevMonumentSttRef.current = currentMonumentStt;
+      prevViewModeRef.current = viewMode;
+      
+      if (viewMode === 'detail' && currentMonument) {
+        setMessages([
+          {
+            id: `welcome_${currentMonumentStt}_${Date.now()}`,
+            sender: 'ai',
+            text: `Kính chào bạn! Bạn đang tìm hiểu di tích **${currentMonument.info.name}** (#STT ${currentMonument.stt}) 🏛️✨\n\nTôi sẵn sàng giải đáp chuẩn xác về **lịch sử, nhân vật, sự kiện, hiện vật, xếp hạng và vị trí** của di tích này. Kính mời bạn đặt câu hỏi!`,
+            timestamp: new Date(),
+            suggestions: [
+              currentMonument.stt === 11 ? 'Vì sao có tên gọi Tam Giác Sắt?' : `Vì sao ${currentMonument.info.name} được xếp hạng di tích?`,
+              `Nhân vật và sự kiện gắn liền với ${currentMonument.info.name}`,
+              `Hiện vật tiêu biểu tại ${currentMonument.info.name}`,
+              `Địa chỉ và cách di chuyển đến ${currentMonument.info.name}`
+            ]
+          }
+        ]);
+      } else {
+        setMessages([
+          {
+            id: `welcome_home_${Date.now()}`,
+            sender: 'ai',
+            text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi được huấn luyện chuyên sâu với bộ tri thức chuẩn mực gồm **3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt** của Thành phố Hồ Chí Minh.\n\n*Kính mời bạn nhập câu hỏi hoặc tên di tích để bắt đầu tra cứu!*`,
+            timestamp: new Date(),
+            suggestions: [
+              'TP.HCM có bao nhiêu di tích đã xếp hạng?',
+              'Có bao nhiêu di tích Quốc gia đặc biệt?',
+              'Vì sao có tên gọi Tam Giác Sắt?',
+              'Dinh Độc Lập có những hiện vật tiêu biểu nào?'
+            ]
+          }
+        ]);
+      }
+    }
+  }, [currentMonumentStt, viewMode, currentMonument]);
 
   // Dynamic context suggestions based on current screen
   const contextualSuggestions = useMemo(() => {
     if (viewMode === 'detail' && currentMonument) {
       const name = currentMonument.info.name;
       return [
-        `Vì sao ${name} được xếp hạng di tích?`,
+        currentMonument.stt === 11 ? 'Vì sao có tên gọi Tam Giác Sắt?' : `Vì sao ${name} được xếp hạng di tích?`,
         `Nhân vật và sự kiện gắn liền với ${name}`,
         `Hiện vật tiêu biểu tại ${name}`,
         `Địa chỉ và cách di chuyển đến ${name}`,
@@ -194,7 +238,7 @@ export default function HeritageAIChatbot({
     return [
       'TP.HCM có bao nhiêu di tích đã xếp hạng?',
       'Có bao nhiêu di tích Quốc gia đặc biệt?',
-      'Có bao nhiêu di tích cấp Quốc gia?',
+      'Vì sao có tên gọi Tam Giác Sắt?',
       'Có bao nhiêu công trình kiểm kê chưa xếp hạng?',
       'Những di tích lịch sử nổi bật ở Côn Đảo'
     ];
@@ -226,12 +270,14 @@ export default function HeritageAIChatbot({
     let resp = `### 🏛️ ${mon.name} (#STT ${mon.stt})\n\n`;
 
     // Dynamic Context-Aware Lead-in: nương theo câu hỏi người dùng, văn phong trang trọng, sử học
-    if (intentKey === 'rank' || cleanUserQ.includes('xep hang') || cleanUserQ.includes('vi sao') || cleanUserQ.includes('tai sao') || cleanUserQ.includes('gia tri') || cleanUserQ.includes('y nghia') || cleanUserQ.includes('quoc gia')) {
+    if (intentKey === 'tengoi' || cleanUserQ.includes('ten goi') || cleanUserQ.includes('vi sao co ten') || cleanUserQ.includes('tai sao goi la') || cleanUserQ.includes('tam giac sat') || cleanUserQ.includes('iron triangle') || cleanUserQ.includes('nguon goc ten')) {
+      resp += `🏷️ **Nguồn gốc tên gọi & Ý nghĩa lịch sử:**\n\n${mon.intents.tengoi?.answer || answer}\n\n`;
+    } else if (intentKey === 'rank' || cleanUserQ.includes('xep hang') || cleanUserQ.includes('vi sao xep hang') || cleanUserQ.includes('tai sao xep hang') || cleanUserQ.includes('vi sao duoc xep hang') || cleanUserQ.includes('tai sao duoc xep hang') || cleanUserQ.includes('cap quoc gia') || cleanUserQ.includes('quoc gia dac biet')) {
       const rankVal = mon.intents.rank?.answer || rawMon.info?.ranking || 'Di tích Lịch sử cấp Quốc gia';
       const qdVal = mon.intents.qd?.answer ? ` (${mon.intents.qd.answer.replace(/\.$/, '')})` : '';
       const historicalMeaning = mon.intents.lichsu?.answer || mon.intents.tomtat?.answer || rawMon.info?.overview;
 
-      if (cleanUserQ.includes('vi sao') || cleanUserQ.includes('tai sao') || cleanUserQ.includes('gia tri') || cleanUserQ.includes('khong co') || cleanUserQ.includes('y nghia')) {
+      if (cleanUserQ.includes('gia tri') || cleanUserQ.includes('khong co') || cleanUserQ.includes('y nghia')) {
         resp += `Di tích **${mon.name}** được công nhận xếp hạng **${rankVal}**${qdVal} bởi những giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
         resp += `${historicalMeaning}\n\n`;
       } else {
@@ -321,14 +367,17 @@ export default function HeritageAIChatbot({
       };
     }
 
-    // 2. CONTEXT-AWARE: CURRENT MONUMENT IN DETAIL VIEW
+    // 3. CONTEXT-AWARE: CURRENT MONUMENT IN DETAIL VIEW
     if (viewMode === 'detail' && currentMonument) {
       const otherMonMatched = allMonumentsList.some(m => m.stt !== currentMonument.stt && cleanQ.includes(removeAccents(m.info.name)));
       
       if (!otherMonMatched) {
         const monData = monumentQaMap[currentMonument.stt];
         if (monData) {
-          if (cleanQ.includes('xep hang') || cleanQ.includes('quoc gia') || cleanQ.includes('gia tri') || cleanQ.includes('y nghia') || cleanQ.includes('vi sao') || cleanQ.includes('tai sao')) {
+          if (cleanQ.includes('ten goi') || cleanQ.includes('vi sao co ten') || cleanQ.includes('tai sao goi la') || cleanQ.includes('tam giac sat') || cleanQ.includes('iron triangle') || cleanQ.includes('nguon goc ten') || cleanQ.includes('y nghia ten')) {
+            return formatTrainedResponse(monData, 'tengoi', null, null, rawQ);
+          }
+          if (cleanQ.includes('xep hang') || cleanQ.includes('vi sao xep hang') || cleanQ.includes('tai sao xep hang') || cleanQ.includes('vi sao duoc xep hang') || cleanQ.includes('tai sao duoc xep hang') || cleanQ.includes('cap quoc gia') || cleanQ.includes('quoc gia dac biet') || cleanQ.includes('cap thanh pho')) {
             return formatTrainedResponse(monData, 'rank', null, null, rawQ);
           }
           if (cleanQ.includes('dia chi') || cleanQ.includes('o dau') || cleanQ.includes('vi tri') || cleanQ.includes('duong nao') || cleanQ.includes('quan nao')) {
@@ -340,7 +389,7 @@ export default function HeritageAIChatbot({
           if (cleanQ.includes('nhan vat') || cleanQ.includes('ai lanh dao') || cleanQ.includes('ai chi huy') || cleanQ.includes('gan lien voi ai')) {
             return formatTrainedResponse(monData, 'nhanvat', null, null, rawQ);
           }
-          if (cleanQ.includes('su kien') || cleanQ.includes('dien bien') || cleanQ.includes('chien cong') || cleanQ.includes('tran danh')) {
+          if (cleanQ.includes('su kien') || cleanQ.includes('dien bien') || cleanQ.includes('chien cong') || cleanQ.includes('tran danh') || cleanQ.includes('chien dich')) {
             return formatTrainedResponse(monData, 'sukien', null, null, rawQ);
           }
           if (cleanQ.includes('lich su') || cleanQ.includes('nguon goc') || cleanQ.includes('hinh thanh') || cleanQ.includes('xay dung')) {
