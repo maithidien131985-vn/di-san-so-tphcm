@@ -600,14 +600,25 @@ export default function App() {
               onOpenContribute={() => setContributeModalOpen(true)}
             />
 
-            {/* 3. BẢN ĐỒ VỊ TRÍ Ở TRÊN + THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" */}
+            {/* 3. BẢNG THÔNG TIN NHANH & EM CÓ BIẾT (Được đưa lên trên ngay sau Action Cards) */}
+            <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10">
+              <ScrollReveal>
+                <InfoSidebar
+                  info={safeInfo}
+                  isEditMode={isEditMode}
+                  onUpdateInfo={handleUpdateInfo}
+                />
+              </ScrollReveal>
+            </div>
+
+            {/* 4. BẢN ĐỒ VỊ TRÍ Ở TRÊN + THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" */}
             <MonumentLocationChallengeSection
               info={safeInfo}
               map={safeMap}
               onOpenMyMap={() => setMyMapModalOpen(true)}
             />
 
-            {/* 4. VIDEO VÀ ÂM THANH CHUNG 1 DÒNG + THỬ THÁCH "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
+            {/* 5. VIDEO VÀ ÂM THANH CHUNG 1 DÒNG + THỬ THÁCH "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
             <MediaAudioVideoRow
               video={safeVideo}
               info={safeInfo}
@@ -618,31 +629,19 @@ export default function App() {
               onOpenAudioModal={() => setAudioModalOpen(true)}
             />
 
-            {/* 5. Giá trị lịch sử, Dấu mốc & Thử thách dòng thời gian + Kho báu ảnh câu chuyện */}
+            {/* 6. Giá trị lịch sử, Dấu mốc & Thử thách dòng thời gian + Kho báu ảnh câu chuyện */}
             <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-2">
               <ScrollReveal>
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                  <div className="lg:col-span-8">
-                    <HistorySection
-                      overview={safeInfo.overview || ''}
-                      timeline={safeTimeline}
-                      gallery={safeGallery}
-                      isEditMode={isEditMode}
-                      onUpdateOverview={handleUpdateOverview}
-                      onOpenLightbox={handleOpenLightbox}
-                      onOpenMilestoneDetail={handleOpenMilestone}
-                      onOpenVideo={() => setVideoModalOpen(true)}
-                    />
-                  </div>
-
-                  <div className="lg:col-span-4">
-                    <InfoSidebar
-                      info={safeInfo}
-                      isEditMode={isEditMode}
-                      onUpdateInfo={handleUpdateInfo}
-                    />
-                  </div>
-                </div>
+                <HistorySection
+                  overview={safeInfo.overview || ''}
+                  timeline={safeTimeline}
+                  gallery={safeGallery}
+                  isEditMode={isEditMode}
+                  onUpdateOverview={handleUpdateOverview}
+                  onOpenLightbox={handleOpenLightbox}
+                  onOpenMilestoneDetail={handleOpenMilestone}
+                  onOpenVideo={() => setVideoModalOpen(true)}
+                />
               </ScrollReveal>
             </div>
 
