@@ -117,8 +117,8 @@ export const queryGeminiAI = async ({
   const relevantMonuments = retrieveRelevantMonuments(query, currentMonument, allMonumentsList, 5);
 
   // Kiểm tra nhận diện 100 tình huống hỏi xoáy, troll, phá game, thử AI (từ D:\chatbot_di_san_so_100_tinh_huong.json)
-  const situationMatch = match100Situation(query, 0.45);
-  if (situationMatch && situationMatch.score >= 0.70) {
+  const situationMatch = match100Situation(query, 0.70);
+  if (situationMatch && situationMatch.score >= 0.85) {
     const item = situationMatch.item;
     let text = item.response;
     if (item.follow_up && !text.includes(item.follow_up)) {

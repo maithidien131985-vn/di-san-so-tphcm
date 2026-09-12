@@ -1794,18 +1794,21 @@ export const removeAccentsClean = (str) => {
     .trim();
 };
 
-// Từ dừng tiếng Việt thông dụng
+// Từ dừng tiếng Việt thông dụng (loại trừ các từ đệm và từ chỉ định chung để tránh false positive)
 const STOP_WORDS = new Set([
-  'va', 'la', 'co', 'cua', 'cho', 'trong', 'de', 'voi', 'mot', 'cac', 'nhung', 'thi', 'o', 'tai', 'nao'
+  'va', 'la', 'co', 'cua', 'cho', 'trong', 'de', 'voi', 'mot', 'cac', 'nhung', 'thi', 'o', 'tai', 
+  'nao', 'gi', 'sao', 'khong', 'the', 'nhieu', 'it', 'may', 'rat', 'duoc', 'bi', 'da', 'dang', 'se',
+  'tp', 'hcm', 'thanh', 'pho', 'di', 'tich', 'ha', 'a', 'oi', 'nhe', 'nhi', 'day', 'do', 'nay', 'kia',
+  'toi', 'minh', 'ban', 'chung', 'ta'
 ]);
 
 /**
  * Thuật toán so khớp tương đồng (Fuzzy Semantic & Token Matcher) với 100 tình huống
  * @param {string} query - Câu hỏi người dùng
- * @param {number} threshold - Ngưỡng điểm tối thiểu (mặc định 0.45)
+ * @param {number} threshold - Ngưỡng điểm tối thiểu (mặc định 0.70)
  * @returns {object|null} - Kết quả tình huống phù hợp nhất hoặc null
  */
-export const match100Situation = (query, threshold = 0.45) => {
+export const match100Situation = (query, threshold = 0.70) => {
   if (!query || typeof query !== 'string') return null;
 
   const cleanQ = removeAccentsClean(query);
@@ -1830,43 +1833,31 @@ export const match100Situation = (query, threshold = 0.45) => {
         return { item, score: 1.0, exact: true };
       }
 
-      // Substring match
-      if (cleanQ.includes(cleanEx) || cleanEx.includes(cleanQ)) {
+      // Substring match if substantial length
+      if ((cleanQ.length >= 8 && cleanQ.includes(cleanEx)) || (cleanEx.length >= 8 && cleanEx.includes(cleanQ))) {
         const subRatio = Math.min(cleanQ.length, cleanEx.length) / Math.max(cleanQ.length, cleanEx.length);
-        itemScore = Math.max(itemScore, 0.82 * subRatio + 0.15);
+        if (subRatio >= 0.7) {
+          itemScore = Math.max(itemScore, 0.85 * subRatio + 0.1);
+        }
       }
 
       // Jaccard & Dice Token Overlap
       const exWords = cleanEx.split(' ').filter(w => w.length > 1 && !STOP_WORDS.has(w));
       const exWordSet = new Set(exWords);
 
-      let intersectionCount = 0;
-      for (const w of qWords) {
-        if (exWordSet.has(w)) intersectionCount++;
-      }
-
       if (qWords.length > 0 && exWords.length > 0) {
-        const unionCount = new Set([...qWords, ...exWords]).size;
-        const jaccard = intersectionCount / unionCount;
-        const dice = (2 * intersectionCount) / (qWords.length + exWords.length);
-        const tokenScore = Math.max(jaccard, dice);
-        itemScore = Math.max(itemScore, tokenScore);
-      }
-    }
-
-    // 2. So khớp theo danh sách từ khóa (keywords)
-    if (item.keywords && item.keywords.length > 0) {
-      let kwHit = 0;
-      const cleanKws = item.keywords.map(k => removeAccentsClean(k)).filter(k => k.length > 1);
-      for (const kw of cleanKws) {
-        if (cleanQ.includes(kw) || qWordSet.has(kw)) {
-          kwHit++;
+        let intersectionCount = 0;
+        for (const w of qWords) {
+          if (exWordSet.has(w)) intersectionCount++;
         }
-      }
-      if (cleanKws.length > 0) {
-        const kwScore = kwHit / cleanKws.length;
-        if (kwHit >= 2) {
-          itemScore = Math.max(itemScore, 0.65 * kwScore + 0.15);
+
+        // Yêu cầu ít nhất 2 từ khóa quan trọng trùng lặp (hoặc 1 nếu cả 2 câu đều chỉ có 1 từ khóa)
+        if (intersectionCount >= 2 || (qWords.length === 1 && exWords.length === 1 && intersectionCount === 1)) {
+          const unionCount = new Set([...qWords, ...exWords]).size;
+          const jaccard = intersectionCount / unionCount;
+          const dice = (2 * intersectionCount) / (qWords.length + exWords.length);
+          const tokenScore = Math.max(jaccard, dice);
+          itemScore = Math.max(itemScore, tokenScore);
         }
       }
     }

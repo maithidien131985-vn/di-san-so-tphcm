@@ -351,23 +351,7 @@ export default function HeritageAIChatbot({
       };
     }
 
-    // 2. ƯU TIÊN 1: NHẬN DIỆN 100 TÌNH HUỐNG HỎI XOÁY, TROLL, PHÁ GAME, THỬ AI (D:\chatbot_di_san_so_100_tinh_huong.json)
-    const sitMatch = match100Situation(rawQ, 0.45);
-    if (sitMatch && sitMatch.item) {
-      const item = sitMatch.item;
-      let text = item.response;
-      if (item.follow_up && !text.includes(item.follow_up)) {
-        text += `\n\n💡 *${item.follow_up}*`;
-      }
-      return {
-        text,
-        relatedMonuments: allMonumentsList.slice(0, 2),
-        isSituation100: true,
-        situationId: item.id
-      };
-    }
-
-    // 3. CONTEXT-AWARE: CURRENT MONUMENT IN DETAIL VIEW
+    // 2. CONTEXT-AWARE: CURRENT MONUMENT IN DETAIL VIEW
     if (viewMode === 'detail' && currentMonument) {
       const otherMonMatched = allMonumentsList.some(m => m.stt !== currentMonument.stt && cleanQ.includes(removeAccents(m.info.name)));
       
@@ -867,7 +851,23 @@ export default function HeritageAIChatbot({
       };
     }
 
-    // 9. CLEAN FALLBACK THEO QUY TẮC SYSTEM PROMPT CHUẨN
+    // 9. NHẬN DIỆN 100 TÌNH HUỐNG HỎI XOÁY, TROLL, PHÁ GAME, THỬ AI (D:\chatbot_di_san_so_100_tinh_huong.json)
+    const sitMatch = match100Situation(rawQ, 0.70);
+    if (sitMatch && sitMatch.item) {
+      const item = sitMatch.item;
+      let text = item.response;
+      if (item.follow_up && !text.includes(item.follow_up)) {
+        text += `\n\n💡 *${item.follow_up}*`;
+      }
+      return {
+        text,
+        relatedMonuments: allMonumentsList.slice(0, 2),
+        isSituation100: true,
+        situationId: item.id
+      };
+    }
+
+    // 10. CLEAN FALLBACK THEO QUY TẮC SYSTEM PROMPT CHUẨN
     return {
       text: `Mình chưa có đủ căn cứ để trả lời chắc chắn câu này. Bạn hãy cho mình thêm tên di tích, sự kiện hoặc nguồn tài liệu; mình sẽ cùng bạn kiểm tra nhé.`,
       relatedMonuments: allMonumentsList.slice(0, 3)
