@@ -23,6 +23,7 @@ import ScrollReveal from './ScrollReveal';
 import { checkInMonument } from '../utils/passportStorage';
 import soundEffects from '../utils/soundEffects';
 import WordByWordTitle from './WordByWordTitle';
+import { shuffleQuestions } from '../utils/quizUtils';
 
 // Web Audio Sound Synthesizer for MiniGame
 class GameAudioEngine {
@@ -248,7 +249,7 @@ export default function InvestigationSection({
   ];
 
   // Đảm bảo luôn có đủ đúng 5 câu hỏi phong phú
-  const questions = React.useMemo(() => {
+  const baseQuestions = React.useMemo(() => {
     const customQuiz = investigation?.quiz || [];
     if (customQuiz.length >= 5) {
       return customQuiz.slice(0, 5);
@@ -260,6 +261,7 @@ export default function InvestigationSection({
     return default5Questions;
   }, [investigation, monumentName]);
 
+  const [shuffledQuestions, setShuffledQuestions] = useState(() => shuffleQuestions(baseQuestions));
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -273,15 +275,16 @@ export default function InvestigationSection({
   }, [soundOn]);
 
   useEffect(() => {
+    setShuffledQuestions(shuffleQuestions(baseQuestions));
     setCurrentIdx(0);
     setSelectedOption(null);
     setIsAnswered(false);
     setScore(0);
     setStreak(0);
     setIsGameOver(false);
-  }, [monumentName, investigation]);
+  }, [baseQuestions]);
 
-  const currentQ = questions[currentIdx] || questions[0];
+  const currentQ = shuffledQuestions[currentIdx] || shuffledQuestions[0] || baseQuestions[0];
 
   const handleSelectOption = (index) => {
     if (isAnswered) return;
@@ -350,7 +353,7 @@ export default function InvestigationSection({
 
   const handleNextQuestion = () => {
     gameAudio.playTap();
-    if (currentIdx < questions.length - 1) {
+    if (currentIdx < shuffledQuestions.length - 1) {
       setCurrentIdx(prev => prev + 1);
       setSelectedOption(null);
       setIsAnswered(false);
@@ -370,6 +373,7 @@ export default function InvestigationSection({
 
   const handleRestartMiniGame = () => {
     gameAudio.playTap();
+    setShuffledQuestions(shuffleQuestions(baseQuestions));
     setCurrentIdx(0);
     setSelectedOption(null);
     setIsAnswered(false);

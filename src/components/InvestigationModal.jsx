@@ -14,6 +14,7 @@ import {
   Printer
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { shuffleQuestions } from '../utils/quizUtils';
 
 const defaultFallbackQuiz = [
   {
@@ -55,7 +56,8 @@ export default function InvestigationModal({
   mode = 'quiz', // 'dossier' | 'quiz' | 'flashcard' | 'matching'
   onSwitchToQuiz
 }) {
-  const currentQuestions = quiz && quiz.length > 0 ? quiz : defaultFallbackQuiz;
+  const rawQuestions = quiz && quiz.length > 0 ? quiz : defaultFallbackQuiz;
+  const [shuffledQuestions, setShuffledQuestions] = useState(() => shuffleQuestions(rawQuestions));
   const currentFlashcards = flashcards && flashcards.length > 0 ? flashcards : defaultFallbackFlashcards;
   const initialMatching = matchingPairs && matchingPairs.length > 0 ? matchingPairs : defaultFallbackMatching;
 
@@ -78,6 +80,7 @@ export default function InvestigationModal({
   useEffect(() => {
     if (isOpen) {
       setActiveTab(mode === 'dossier' ? 'dossier' : 'quiz');
+      setShuffledQuestions(shuffleQuestions(rawQuestions));
       setSelectedAnswers({});
       setIsSubmitted(false);
       setBadgeUnlocked(false);
@@ -89,7 +92,7 @@ export default function InvestigationModal({
       setMatchedCount(0);
       setMatchingMessage('');
     }
-  }, [isOpen, mode, matchingPairs]);
+  }, [isOpen, mode, matchingPairs, quiz]);
 
   // Quiz select
   const handleSelectOption = (questionId, optionIdx) => {
@@ -101,11 +104,11 @@ export default function InvestigationModal({
   const handleCheckQuiz = () => {
     setIsSubmitted(true);
     let correctCount = 0;
-    currentQuestions.forEach(q => {
+    shuffledQuestions.forEach(q => {
       if (selectedAnswers[q.id] === q.correctIndex) correctCount++;
     });
 
-    if (correctCount >= Math.ceil(currentQuestions.length * 0.6)) {
+    if (correctCount >= Math.ceil(shuffledQuestions.length * 0.6)) {
       setBadgeUnlocked(true);
       confetti({
         particleCount: 120,
@@ -312,14 +315,14 @@ export default function InvestigationModal({
                 </div>
                 <div className="text-right">
                   <span className="text-xs font-bold text-[#7E1819]">
-                    Đã trả lời: {Object.keys(selectedAnswers).length} / {currentQuestions.length}
+                    Đã trả lời: {Object.keys(selectedAnswers).length} / {shuffledQuestions.length}
                   </span>
                 </div>
               </div>
 
               {/* Questions List */}
               <div className="space-y-6">
-                {currentQuestions.map((q, idx) => {
+                {shuffledQuestions.map((q, idx) => {
                   const selectedIdx = selectedAnswers[q.id];
                   const isCorrect = selectedIdx === q.correctIndex;
                   return (
@@ -392,7 +395,7 @@ export default function InvestigationModal({
                 {!isSubmitted ? (
                   <button
                     onClick={handleCheckQuiz}
-                    disabled={Object.keys(selectedAnswers).length < currentQuestions.length}
+                    disabled={Object.keys(selectedAnswers).length < shuffledQuestions.length}
                     className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-[#7E1819] hover:bg-[#911d1e] disabled:opacity-50 text-white font-bold text-sm shadow-md cursor-pointer transition-all hover:scale-105"
                   >
                     Nộp Bài & Chấm Điểm Thử Thách
@@ -400,10 +403,11 @@ export default function InvestigationModal({
                 ) : (
                   <div className="flex items-center gap-3 w-full justify-between">
                     <span className="text-xs sm:text-sm font-bold text-[#7E1819]">
-                      Kết quả: {currentQuestions.filter(q => selectedAnswers[q.id] === q.correctIndex).length} / {currentQuestions.length} câu đúng
+                      Kết quả: {shuffledQuestions.filter(q => selectedAnswers[q.id] === q.correctIndex).length} / {shuffledQuestions.length} câu đúng
                     </span>
                     <button
                       onClick={() => {
+                        setShuffledQuestions(shuffleQuestions(rawQuestions));
                         setIsSubmitted(false);
                         setSelectedAnswers({});
                       }}

@@ -29,6 +29,7 @@ import { soundEffects } from '../utils/soundEffects';
 import { trackQuizAttempt } from '../utils/studentAnalytics';
 import { getActivePassport } from '../utils/passportStorage';
 import WordByWordTitle from './WordByWordTitle';
+import { buildMonumentMediaQuiz } from '../utils/quizUtils';
 
 export default function MediaAudioVideoRow({
   video = {},
@@ -36,6 +37,7 @@ export default function MediaAudioVideoRow({
   audioScript = '',
   monumentStt,
   stt,
+  monumentData,
   onOpenVideoModal,
   onOpenAudioModal
 }) {
@@ -195,21 +197,9 @@ export default function MediaAudioVideoRow({
   // ==========================================
   // DISCOVERY QUIZ ("BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?")
   // ==========================================
-  const quizQuestions = [
-    {
-      question: `Sau khi theo dõi thước phim và lắng nghe thuyết minh, giá trị lịch sử - văn hóa cốt lõi của di tích "${monumentName}" được thể hiện rõ nhất qua điều gì?`,
-      options: [
-        `Ghi dấu những mốc son đấu tranh kiên cường của dân tộc và là địa chỉ đỏ giáo dục truyền thống yêu nước cho thế hệ trẻ.`,
-        `Một địa điểm vui chơi giải trí thương mại ngắn hạn không mang dấu ấn lịch sử nào.`,
-        `Công trình kiến trúc hiện đại mới xây dựng gần đây để phục vụ kinh doanh du lịch.`,
-        `Địa điểm tổ chức các hoạt động hội chợ thông thường.`
-      ],
-      correctIndex: 0,
-      explanation: `Di tích ${monumentName} là chứng tích lịch sử - văn hóa vô giá, phản ánh tinh thần đấu tranh bất khuất, bàn tay tài hoa của cha anh và là biểu tượng tự hào ngàn đời của Thành phố.`
-    }
-  ];
-
-  const currentQuiz = quizQuestions[0];
+  const [currentQuiz, setCurrentQuiz] = useState(() =>
+    buildMonumentMediaQuiz(monumentData || { info, video, audioScript, stt: currentStt })
+  );
   const [selectedQuizOpt, setSelectedQuizOpt] = useState(null);
   const [quizAnswered, setQuizAnswered] = useState(false);
   const [quizCorrect, setQuizCorrect] = useState(false);
@@ -218,7 +208,8 @@ export default function MediaAudioVideoRow({
     setSelectedQuizOpt(null);
     setQuizAnswered(false);
     setQuizCorrect(false);
-  }, [monumentName]);
+    setCurrentQuiz(buildMonumentMediaQuiz(monumentData || { info, video, audioScript, stt: currentStt }));
+  }, [monumentData, monumentName, video, currentStt]);
 
   const handleSelectQuiz = (idx) => {
     if (quizAnswered) return;
@@ -258,6 +249,7 @@ export default function MediaAudioVideoRow({
     setSelectedQuizOpt(null);
     setQuizAnswered(false);
     setQuizCorrect(false);
+    setCurrentQuiz(buildMonumentMediaQuiz(monumentData || { info, video, audioScript, stt: currentStt }));
   };
 
   // Progress percentage for visual audio bar

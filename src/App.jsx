@@ -615,6 +615,7 @@ export default function App() {
               audioScript={currentMonumentData?.audioScript || safeAudioScript}
               monumentStt={currentStt}
               stt={currentStt}
+              monumentData={currentMonumentData}
               onOpenVideoModal={() => setVideoModalOpen(true)}
               onOpenAudioModal={() => setAudioModalOpen(true)}
             />
@@ -631,6 +632,10 @@ export default function App() {
                   onOpenLightbox={handleOpenLightbox}
                   onOpenMilestoneDetail={handleOpenMilestone}
                   onOpenVideo={() => setVideoModalOpen(true)}
+                  monumentData={currentMonumentData}
+                  monumentName={safeInfo.name || ''}
+                  info={safeInfo}
+                  keyHighlights={safeHighlights}
                 />
               </ScrollReveal>
             </div>

@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 import { checkInMonument } from '../utils/passportStorage';
+import { shuffleQuestions } from '../utils/quizUtils';
 
 // ==============================================================================
 // WEB AUDIO SOUND SYNTHESIZER (ÂM THANH THÁM HIỂM & KHÁM PHÁ BÁU VẬT)
@@ -230,7 +231,8 @@ export default function MonumentInteractiveMiniGame({
     }
   ];
 
-  const questions = quiz && quiz.length > 0 ? quiz : defaultQuestions;
+  const baseQuestions = quiz && quiz.length > 0 ? quiz : defaultQuestions;
+  const [shuffledQuestions, setShuffledQuestions] = useState(() => shuffleQuestions(baseQuestions));
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -253,7 +255,7 @@ export default function MonumentInteractiveMiniGame({
     handleRestart();
   }, [monumentName, quiz]);
 
-  const currentQ = questions[currentIdx] || questions[0];
+  const currentQ = shuffledQuestions[currentIdx] || shuffledQuestions[0] || baseQuestions[0];
 
   const handleSelectOption = (index) => {
     if (isAnswered) return;
@@ -294,7 +296,7 @@ export default function MonumentInteractiveMiniGame({
 
   const handleNextQuestion = () => {
     gameAudio.playTap();
-    if (currentIdx < questions.length - 1) {
+    if (currentIdx < shuffledQuestions.length - 1) {
       setCurrentIdx(prev => prev + 1);
       setSelectedOption(null);
       setIsAnswered(false);
@@ -312,6 +314,7 @@ export default function MonumentInteractiveMiniGame({
 
   const handleRestart = () => {
     gameAudio.playTap();
+    setShuffledQuestions(shuffleQuestions(baseQuestions));
     setCurrentIdx(0);
     setSelectedOption(null);
     setIsAnswered(false);

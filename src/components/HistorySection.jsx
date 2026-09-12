@@ -19,6 +19,7 @@ import {
 import confetti from 'canvas-confetti';
 import { soundEffects } from '../utils/soundEffects';
 import WordByWordTitle from './WordByWordTitle';
+import { buildMonumentTimelineQuiz } from '../utils/quizUtils';
 
 export default function HistorySection({
   overview = '',
@@ -28,49 +29,36 @@ export default function HistorySection({
   onUpdateOverview,
   onOpenLightbox,
   onOpenMilestoneDetail,
-  onOpenVideo
+  onOpenVideo,
+  monumentData,
+  monumentName = '',
+  info,
+  keyHighlights
 }) {
   const safeTimeline = Array.isArray(timeline) ? timeline : [];
   const safeGallery = Array.isArray(gallery) ? gallery : [];
 
-  const firstMilestone = safeTimeline && safeTimeline.length > 0 ? safeTimeline[0] : null;
-  const milestoneYear = firstMilestone?.year || '1975';
-  const milestoneTitle = firstMilestone?.title || 'Dấu mốc lịch sử tiêu biểu';
-  const milestoneDesc = firstMilestone?.description || 'Sự kiện quan trọng gắn liền với di tích.';
-
-  const [selectedTimelineOpt, setSelectedTimelineOpt] = useState(null);
+  const [timelineQuiz, setTimelineQuiz] = useState(() =>
+    buildMonumentTimelineQuiz(monumentData || { info, timeline: safeTimeline, keyHighlights, name: monumentName }, safeTimeline)
+  );
+  const [selectedTimelineOptIdx, setSelectedTimelineOptIdx] = useState(null);
   const [timelineAnswered, setTimelineAnswered] = useState(false);
   const [timelineCorrect, setTimelineCorrect] = useState(false);
-  const [shuffledTimelineOpts, setShuffledTimelineOpts] = useState([]);
 
   useEffect(() => {
-    setSelectedTimelineOpt(null);
+    setSelectedTimelineOptIdx(null);
     setTimelineAnswered(false);
     setTimelineCorrect(false);
-
-    // Build timeline options from actual milestones or plausible distractors
-    const correctOpt = `${milestoneYear}: ${milestoneTitle}`;
-    const distractors = [
-      `Năm 1858: Tiếng súng Đà Nẵng mở đầu cuộc kháng chiến chống Pháp`,
-      `Năm 1930: Thành lập Đảng Cộng sản Việt Nam`,
-      `Năm 1945: Thắng lợi Cách mạng Tháng Tám và lập nước VNDCCH`
-    ].filter(d => !d.includes(milestoneYear));
-
-    const opts = [
-      correctOpt,
-      distractors[0] || 'Năm 1945: Kháng chiến Nam Bộ',
-      distractors[1] || 'Năm 1975: Đại thắng mùa Xuân',
-      distractors[2] || 'Năm 1911: Bác Hồ ra đi tìm đường cứu nước'
-    ];
-
-    setShuffledTimelineOpts(opts.sort(() => Math.random() - 0.5));
-  }, [milestoneYear, milestoneTitle]);
+    setTimelineQuiz(
+      buildMonumentTimelineQuiz(monumentData || { info, timeline: safeTimeline, keyHighlights, name: monumentName }, safeTimeline)
+    );
+  }, [monumentData, monumentName, info, keyHighlights, safeTimeline]);
 
   // Bấm chọn đáp án: Biết đúng/sai luôn, có âm thanh nhỏ và hiển thị giải thích
-  const handleSelectTimelineOpt = (opt) => {
+  const handleSelectTimelineOpt = (idx) => {
     if (timelineAnswered) return;
-    setSelectedTimelineOpt(opt);
-    const isRight = opt.includes(milestoneYear) && opt.includes(milestoneTitle);
+    setSelectedTimelineOptIdx(idx);
+    const isRight = idx === timelineQuiz.correctIndex;
     setTimelineCorrect(isRight);
     setTimelineAnswered(true);
 
@@ -90,9 +78,12 @@ export default function HistorySection({
 
   const handleResetTimeline = () => {
     soundEffects.playTap();
-    setSelectedTimelineOpt(null);
+    setSelectedTimelineOptIdx(null);
     setTimelineAnswered(false);
     setTimelineCorrect(false);
+    setTimelineQuiz(
+      buildMonumentTimelineQuiz(monumentData || { info, timeline: safeTimeline, keyHighlights, name: monumentName }, safeTimeline)
+    );
   };
 
   return (
@@ -200,16 +191,16 @@ export default function HistorySection({
             </div>
 
             <p className="font-serif-title font-bold text-xs sm:text-sm text-amber-100 leading-relaxed">
-              ⏳ Theo bạn, dấu mốc lịch sử nào dưới đây gắn liền mật thiết với quá trình hình thành & phát triển của di tích?
+              ⏳ {timelineQuiz.question}
             </p>
 
             <div className="space-y-2">
-              {shuffledTimelineOpts.map((opt, idx) => {
-                const isSelected = selectedTimelineOpt === opt;
+              {timelineQuiz.options.map((opt, idx) => {
+                const isSelected = selectedTimelineOptIdx === idx;
                 let optStyle = "bg-white/10 hover:bg-white/20 border-white/15 text-rose-50 hover:scale-[1.01]";
 
                 if (timelineAnswered) {
-                  if (opt.includes(milestoneYear) && opt.includes(milestoneTitle)) {
+                  if (idx === timelineQuiz.correctIndex) {
                     optStyle = "bg-emerald-600/90 border-emerald-400 text-white font-bold ring-2 ring-emerald-300";
                   } else if (isSelected && !timelineCorrect) {
                     optStyle = "bg-rose-700/80 border-rose-400 text-white line-through ring-1 ring-rose-300";
@@ -221,7 +212,7 @@ export default function HistorySection({
                 return (
                   <button
                     key={idx}
-                    onClick={() => handleSelectTimelineOpt(opt)}
+                    onClick={() => handleSelectTimelineOpt(idx)}
                     disabled={timelineAnswered}
                     className={`w-full text-left p-3 rounded-xl border transition-all flex items-start justify-between gap-2 text-xs cursor-pointer ${optStyle}`}
                   >
@@ -231,7 +222,7 @@ export default function HistorySection({
                       </span>
                       <span className="leading-snug">{opt}</span>
                     </div>
-                    {timelineAnswered && opt.includes(milestoneYear) && opt.includes(milestoneTitle) && (
+                    {timelineAnswered && idx === timelineQuiz.correctIndex && (
                       <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
                     )}
                     {timelineAnswered && isSelected && !timelineCorrect && (
@@ -248,7 +239,7 @@ export default function HistorySection({
                   {timelineCorrect ? <Award className="w-4 h-4 text-amber-300" /> : <Clock className="w-4 h-4 text-amber-300" />}
                   <span>{timelineCorrect ? "Chính xác! Bạn có trí nhớ sử học rất tốt." : "Dấu mốc chính xác là:"}</span>
                 </div>
-                <p><strong>Năm {milestoneYear}:</strong> {milestoneDesc}</p>
+                <p><strong>Ý nghĩa lịch sử:</strong> {timelineQuiz.explanation}</p>
               </div>
             )}
 
