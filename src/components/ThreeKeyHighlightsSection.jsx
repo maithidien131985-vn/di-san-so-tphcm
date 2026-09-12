@@ -74,11 +74,13 @@ export default function ThreeKeyHighlightsSection({ keyHighlights, monumentName 
 
   const [unlockedCards, setUnlockedCards] = useState({});
   const [allUnlocked, setAllUnlocked] = useState(false);
+  const [showCelebration, setShowCelebration] = useState(false);
 
   // Reset state về trạng thái bị khóa mới mỗi khi học sinh chuyển sang di tích khác
   useEffect(() => {
     setUnlockedCards({});
     setAllUnlocked(false);
+    setShowCelebration(false);
   }, [monumentName, keyHighlights]);
 
   const unlockedCount = Object.values(unlockedCards).filter(Boolean).length;
@@ -90,9 +92,13 @@ export default function ThreeKeyHighlightsSection({ keyHighlights, monumentName 
     const count = Object.values(newUnlocked).filter(Boolean).length;
     if (count === 3 && !allUnlocked) {
       setAllUnlocked(true);
+      setShowCelebration(true);
       setTimeout(() => {
         try { confetti({ particleCount: 120, spread: 100, origin: { y: 0.6 } }); } catch (e) {}
       }, 200);
+      setTimeout(() => {
+        setShowCelebration(false);
+      }, 5000);
     }
   };
 
@@ -258,25 +264,37 @@ export default function ThreeKeyHighlightsSection({ keyHighlights, monumentName 
             })}
           </div>
 
-          {/* ====== ALL-UNLOCKED CELEBRATION BANNER ====== */}
-          {allUnlocked && (
-            <div className="rounded-2xl bg-gradient-to-r from-[#7E1819] via-[#9E1B1D] to-[#BA8438] p-5 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-white/20 border-2 border-amber-300 flex items-center justify-center shadow-lg">
-                  <Award className="w-8 h-8 text-amber-300" />
+          {/* ====== ALL-UNLOCKED CIRCULAR POPUP (Hình tròn hiện ra 5 giây rồi biến mất) ====== */}
+          {showCelebration && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center pointer-events-none p-4 animate-fadeIn">
+              <div 
+                onClick={() => setShowCelebration(false)}
+                className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full bg-gradient-to-br from-[#7E1819] via-[#9E1B1D] to-[#45080A] border-4 border-amber-300 shadow-[0_0_50px_rgba(245,158,11,0.6)] flex flex-col items-center justify-center text-center p-6 text-white pointer-events-auto cursor-pointer transform hover:scale-105 transition-transform"
+              >
+                {/* Glowing & rotating decorative borders */}
+                <div className="absolute inset-0 rounded-full border-2 border-dashed border-amber-300/60 animate-spin-slow pointer-events-none" />
+                <div className="absolute -inset-1.5 rounded-full bg-amber-400/25 blur-lg pointer-events-none" />
+
+                {/* Badge Icon */}
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-amber-300 via-amber-400 to-yellow-500 flex items-center justify-center shadow-lg border-2 border-white mb-2 transform">
+                  <Award className="w-9 h-9 sm:w-11 sm:h-11 text-[#7E1819]" />
                 </div>
-                <div className="text-white">
-                  <div className="font-serif-title font-black text-base sm:text-lg leading-tight">
-                    🎉 Bạn đã khám phá đủ 3 tư liệu cốt lõi về di tích này!
-                  </div>
-                  <div className="text-xs text-white/80 mt-1">
-                    Huy hiệu "Nhà Nghiên Cứu Di Sản" đã được ghi vào hồ sơ. Tiếp tục điều tra phần bên dưới!
-                  </div>
+
+                <div className="font-serif-title font-black text-sm sm:text-base text-amber-200 leading-tight">
+                  🎉 ĐỦ 3 TƯ LIỆU CỐT LÕI!
                 </div>
-              </div>
-              <div className="flex items-center gap-2 bg-white/15 border border-amber-300/50 rounded-xl px-4 py-2.5 shrink-0">
-                <Eye className="w-5 h-5 text-amber-300" />
-                <span className="text-white font-black text-sm">+60 Điểm Thám Hiểm</span>
+                <p className="text-[11px] sm:text-xs text-rose-100 mt-1 line-clamp-2 px-2 leading-tight">
+                  Huy hiệu "Nhà Nghiên Cứu Di Sản"
+                </p>
+
+                <div className="mt-2 inline-flex items-center gap-1 bg-amber-400/30 border border-amber-300 px-3 py-1 rounded-full text-amber-200 font-black text-xs">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                  <span>+60 Điểm Thám Hiểm</span>
+                </div>
+
+                <div className="absolute bottom-3 text-[10px] text-amber-200/70 font-mono">
+                  (Tự đóng sau 5s)
+                </div>
               </div>
             </div>
           )}
