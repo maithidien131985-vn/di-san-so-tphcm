@@ -43,33 +43,17 @@ export default function MyMapModal({
 
     const map = L.map(mapContainerRef.current, {
       center: [initialLat, initialLng],
-      zoom: 13,
+      zoom: 14,
       zoomControl: true,
       attributionControl: false
     });
 
-    // Primary High-Performance Tile Layer (OpenStreetMap / CartoDB with fallback to Google)
-    const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      subdomains: ['a', 'b', 'c'],
-      attribution: '&copy; OpenStreetMap contributors &copy; Di sản số TP.HCM'
-    });
-
-    const googleRoadmap = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+    // Google Maps Roadmap Vector Tiles (exactly as shown in the original design)
+    L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
       maxZoom: 20,
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
       attribution: '&copy; Google Maps'
-    });
-
-    // Default to OpenStreetMap which is 100% reliable and doesn't block referrers
-    osmLayer.addTo(map);
-
-    // Layer control for user convenience
-    const baseMaps = {
-      "Bản đồ Tiêu chuẩn (OSM)": osmLayer,
-      "Bản đồ Google Maps": googleRoadmap
-    };
-    L.control.layers(baseMaps, null, { position: 'topright' }).addTo(map);
+    }).addTo(map);
 
     const markersGroup = L.layerGroup().addTo(map);
     mapInstanceRef.current = map;
@@ -203,7 +187,13 @@ export default function MyMapModal({
       markersGroup.addLayer(marker);
 
       if (isCurrent) {
-        marker.openPopup();
+        setTimeout(() => {
+          try {
+            marker.openPopup();
+          } catch (e) {
+            // popup open fail safe
+          }
+        }, 250);
       }
     });
   }, [isOpen, viewMode, currentMonumentStt, typeFilter, mapSearch]);
