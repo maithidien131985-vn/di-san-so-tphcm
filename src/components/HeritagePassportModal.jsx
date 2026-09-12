@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { 
   X, 
+  Home,
   Compass, 
   Sparkles, 
   ShieldCheck, 
@@ -211,16 +212,32 @@ export default function HeritagePassportModal({
             )}
           </div>
 
-          {activePassport && (
+          <div className="flex items-center gap-1.5">
             <button
-              onClick={handleLogout}
-              className="px-3 py-1.5 rounded-xl bg-stone-200 hover:bg-stone-300 text-stone-700 text-xs font-bold transition-colors cursor-pointer flex items-center gap-1"
-              title="Đăng xuất về chế độ xem tự do"
+              onClick={() => {
+                soundEffects.playTap();
+                onClose();
+                if (onNavigate) onNavigate('home');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="px-3 py-1.5 rounded-xl bg-amber-100 hover:bg-amber-200 text-[#8B1417] border border-amber-300 text-xs font-bold transition-all cursor-pointer flex items-center gap-1 shadow-2xs hover:scale-102 shrink-0"
+              title="Trở về Trang chủ để bắt đầu hành trình khám phá"
             >
-              <LogOut className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Về Chế Độ Tự Do</span>
+              <Home className="w-3.5 h-3.5 text-[#8B1417]" />
+              <span>Về Trang Chủ</span>
             </button>
-          )}
+
+            {activePassport && (
+              <button
+                onClick={handleLogout}
+                className="px-3 py-1.5 rounded-xl bg-stone-200 hover:bg-stone-300 text-stone-700 text-xs font-bold transition-colors cursor-pointer flex items-center gap-1 shrink-0"
+                title="Đăng xuất về chế độ xem tự do"
+              >
+                <LogOut className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Về Chế Độ Tự Do</span>
+              </button>
+            )}
+          </div>
         </div>
 
         {/* MODAL BODY */}
@@ -369,6 +386,19 @@ export default function HeritagePassportModal({
                   <div className="space-y-2">
                     <button
                       onClick={() => {
+                        soundEffects.playTap();
+                        onClose();
+                        if (onNavigate) onNavigate('home');
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }}
+                      className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#731013] hover:from-[#731013] hover:to-[#57090b] text-white text-xs font-black transition-all cursor-pointer flex items-center justify-center gap-2 shadow-md hover:scale-102 border border-amber-300/40"
+                    >
+                      <Home className="w-3.5 h-3.5 text-amber-300" />
+                      <span>Bắt Đầu Khám Phá Từ Trang Chủ</span>
+                    </button>
+
+                    <button
+                      onClick={() => {
                         soundEffects.playUnlock();
                         onClose();
                         if (onNavigate) onNavigate('journey');
@@ -384,9 +414,9 @@ export default function HeritagePassportModal({
                         soundEffects.playTap();
                         setActiveTab('stamps');
                       }}
-                      className="w-full py-2.5 rounded-xl bg-[#8B1417] hover:bg-[#A81B1F] text-white text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-md"
+                      className="w-full py-2.5 rounded-xl bg-white hover:bg-rose-50 text-[#8B1417] border border-rose-200 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-2xs"
                     >
-                      <BookOpen className="w-3.5 h-3.5 text-amber-200" />
+                      <BookOpen className="w-3.5 h-3.5 text-[#8B1417]" />
                       <span>Mở Sổ Sưu Tập 103 Dấu Mộc</span>
                     </button>
                   </div>
@@ -630,17 +660,31 @@ export default function HeritagePassportModal({
         </div>
 
         {/* MODAL FOOTER */}
-        <div className="p-3 bg-[#FAF4F0] border-t border-rose-200 flex items-center justify-between text-xs text-stone-600">
+        <div className="p-3 bg-[#FAF4F0] border-t border-rose-200 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-stone-600">
           <span className="flex items-center gap-1 text-[11px]">
             <ShieldCheck className="w-3.5 h-3.5 text-[#8B1417]" />
             <span>Thẻ khám phá được lưu trữ bảo mật và khôi phục dễ dàng bằng Mã số</span>
           </span>
-          <button
-            onClick={onClose}
-            className="px-4 py-1.5 rounded-lg bg-[#8B1417] text-white font-bold text-xs hover:bg-[#731013] transition-colors cursor-pointer"
-          >
-            Đóng
-          </button>
+          <div className="flex items-center gap-2 self-end sm:self-auto">
+            <button
+              onClick={() => {
+                soundEffects.playTap();
+                onClose();
+                if (onNavigate) onNavigate('home');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-amber-950 font-black text-xs transition-all cursor-pointer flex items-center gap-1.5 shadow-xs hover:scale-103"
+            >
+              <Home className="w-3.5 h-3.5" />
+              <span>Về Trang Chủ</span>
+            </button>
+            <button
+              onClick={onClose}
+              className="px-4 py-1.5 rounded-lg bg-[#8B1417] text-white font-bold text-xs hover:bg-[#731013] transition-colors cursor-pointer"
+            >
+              Đóng
+            </button>
+          </div>
         </div>
 
       </div>
