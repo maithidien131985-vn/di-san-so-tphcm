@@ -96,7 +96,8 @@ const MONUMENT_ALIASES = [
   { stt: 57, aliases: ['bao tang lich su tp hcm', 'bao tang lich su'] },
   { stt: 58, aliases: ['bao tang thanh pho ho chi minh', 'dinh gia long'] },
   { stt: 59, aliases: ['chua giac lam', 'giac lam'] },
-  { stt: 70, aliases: ['chua giac vien', 'giac vien'] },
+  { stt: 60, aliases: ['chua giac vien', 'giac vien'] },
+  { stt: 79, aliases: ['dinh thong tay hoi', 'thong tay hoi'] },
   { stt: 88, aliases: ['lang ong ba chieu', 'lang ong', 'le van duyet', 'ta quan le van duyet'] },
   { stt: 96, aliases: ['nha hat thanh pho', 'nha hat lon'] },
   { stt: 103, aliases: ['tru so ubnd', 'toa do chinh'] }
