@@ -343,47 +343,68 @@ export default function HomePage({
               </div>
             </div>
 
-            {/* Right Column: Double Size Uploaded Heritage Map on Desktop & Embedded Interactive MyMap on Mobile */}
+            {/* Right Column: Embedded Interactive Google MyMap (Bản đồ số 103 Di tích) */}
             <div className="lg:col-span-7 flex justify-center items-center relative w-full overflow-visible py-2 sm:py-4">
-              {/* DESKTOP VIEW: Large Graphic Artwork */}
-              <div className="hidden lg:flex relative w-full items-center justify-end">
-                {/* Ambient Warm Golden Glow directly behind map */}
-                <div className="absolute inset-0 bg-radial from-amber-500/35 via-rose-600/25 to-transparent blur-3xl scale-150 pointer-events-none" />
-                
-                <img
-                  src="/assets/images/tphcm_heritage_map_hero.png"
-                  alt="Bản đồ di sản TP. Hồ Chí Minh"
-                  className="w-full max-w-[620px] sm:max-w-[780px] md:max-w-[900px] lg:max-w-[1000px] max-h-[460px] sm:max-h-[560px] md:max-h-[640px] object-contain transition-transform duration-700 hover:scale-103"
-                  style={{
-                    filter: 'drop-shadow(0 25px 40px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 50px rgba(234, 179, 8, 0.3))'
-                  }}
-                />
-              </div>
-
-              {/* MOBILE VIEW: Interactive Google MyMap directly embedded in place of standalone static image */}
-              <div className="w-full lg:hidden rounded-2xl overflow-hidden border-2 border-amber-400/60 shadow-2xl bg-[#200507]/80 backdrop-blur-md">
-                <div className="bg-[#4A0A0C] px-3.5 py-2.5 border-b border-amber-300/30 flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-xs font-bold text-amber-200">
+              <div className="w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-amber-400/60 shadow-2xl bg-[#200507]/80 backdrop-blur-md">
+                <div className="bg-[#4A0A0C] px-3.5 sm:px-4 py-2.5 sm:py-3 border-b border-amber-300/30 flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-200">
                     <MapPin className="w-4 h-4 text-amber-300 animate-bounce" />
                     <span>Bản đồ số 103 Di tích TP.HCM</span>
                   </div>
-                  <button
-                    onClick={onOpenMyMap}
-                    className="text-[10px] px-2.5 py-1 rounded-lg bg-amber-400 hover:bg-amber-300 text-[#200507] font-black uppercase tracking-wide cursor-pointer transition-all shadow-sm"
-                  >
-                    Toàn màn hình
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={onOpenMyMap}
+                      className="text-[10px] sm:text-xs px-3 py-1 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#200507] font-black uppercase tracking-wide cursor-pointer transition-all shadow-sm flex items-center gap-1"
+                    >
+                      <MapPin className="w-3.5 h-3.5" />
+                      <span>Toàn màn hình</span>
+                    </button>
+                    <a
+                      href="https://www.google.com/maps/d/edit?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&usp=sharing"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hidden sm:flex text-[10px] sm:text-xs px-2.5 py-1 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold border border-white/20 transition-all items-center gap-1"
+                    >
+                      <span>Google Maps</span>
+                      <ExternalLink className="w-3 h-3 text-amber-300" />
+                    </a>
+                  </div>
                 </div>
-                <div className="h-[360px] sm:h-[420px] w-full relative z-0 bg-[#FDF7F5]">
+
+                <div className="h-[360px] sm:h-[420px] lg:h-[460px] w-full relative z-0 bg-[#FDF7F5]">
                   <iframe
                     src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
                     width="100%"
                     height="100%"
                     className="w-full h-full border-0"
-                    title="Bản đồ Di tích TP. Hồ Chí Minh - Trực quan Mobile"
+                    title="Bản đồ Di tích TP. Hồ Chí Minh"
                     allowFullScreen
                     loading="lazy"
                   />
+                </div>
+
+                {/* Quick Region Jump Pills */}
+                <div className="bg-[#380608]/90 px-3 sm:px-4 py-2 border-t border-amber-300/20 flex flex-wrap items-center gap-1.5">
+                  <span className="text-[10px] sm:text-[11px] font-bold text-amber-200/80 flex items-center gap-1 shrink-0 mr-1">
+                    <Compass className="w-3 h-3 text-amber-400" />
+                    <span>Khu vực:</span>
+                  </span>
+                  {[
+                    { name: 'Quận 1 & TT', stt: 1 },
+                    { name: 'Củ Chi', stt: 2 },
+                    { name: 'Cần Giờ', stt: 7 },
+                    { name: 'Chợ Lớn', stt: 10 },
+                    { name: 'Côn Đảo', stt: 4 },
+                    { name: 'Lộc An', stt: 3 }
+                  ].map((tag, tIdx) => (
+                    <button
+                      key={tIdx}
+                      onClick={() => onSelectMonument(tag.stt)}
+                      className="px-2 py-0.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#200507] text-amber-100 text-[10px] sm:text-[11px] font-medium border border-amber-300/30 transition-all cursor-pointer"
+                    >
+                      📍 {tag.name}
+                    </button>
+                  ))}
                 </div>
               </div>
             </div>
@@ -458,141 +479,8 @@ export default function HomePage({
         </div>
       </section>
 
-      {/* 2. BẢN ĐỒ SỐ 103 DI TÍCH VÀ LỜI NGỎ GIỚI THIỆU TRÊN CÙNG 1 HÀNG */}
-      <section id="map-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-8">
-        <ScrollReveal>
-          <div className="bg-[#FFFDFB] rounded-3xl p-5 sm:p-7 md:p-8 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-5">
-            {/* Header: Title & Action Controls */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-rose-100">
-              <div className="space-y-1">
-                <div className="flex items-center gap-2.5 flex-wrap">
-                  <div className="w-9 h-9 rounded-xl bg-[#8B1417] text-white flex items-center justify-center shadow-xs">
-                    <MapPin className="w-5 h-5 text-amber-200" />
-                  </div>
-                  <WordByWordTitle
-                    as="h2"
-                    text="DI TÍCH QUANH EM"
-                    className="font-serif-title font-black text-lg sm:text-xl md:text-2xl uppercase tracking-wider text-[#8B1417]"
-                    staggerDelay={0.05}
-                  />
-                  <span className="px-3 py-0.5 rounded-full bg-[#FDF2F3] text-[#8B1417] text-[11px] font-black uppercase tracking-wider border border-rose-200">
-                    Bản đồ số 103 Di tích TP.HCM &amp; Vùng phụ cận
-                  </span>
-                </div>
-                <p className="text-xs sm:text-sm text-stone-600">
-                  Khám phá toàn cảnh tọa độ, hành trình và địa điểm 103 Di tích Lịch sử - Văn hóa trên bản đồ số tương tác
-                </p>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex items-center gap-2 flex-wrap">
-                <button
-                  onClick={onOpenMyMap}
-                  className="px-4 py-2 rounded-xl bg-[#8B1417] hover:bg-[#731013] text-white text-xs font-bold shadow-md transition-all hover:scale-102 cursor-pointer flex items-center gap-1.5"
-                >
-                  <MapPin className="w-4 h-4 text-amber-200" />
-                  <span>Mở toàn màn hình</span>
-                </button>
-                <a
-                  href="https://www.google.com/maps/d/edit?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&usp=sharing"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-4 py-2 rounded-xl bg-[#FAF4F0] hover:bg-[#FDF2F3] border border-rose-200 text-[#8B1417] text-xs font-bold transition-all hover:scale-102 cursor-pointer flex items-center gap-1.5"
-                >
-                  <span>Mở Google Maps</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-
-            {/* Grid 1 Hàng: Cột Trái là Bản Đồ (8 cols), Cột Phải là Phần Chữ Giới Thiệu (4 cols) */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-              
-              {/* CỘT TRÁI: BẢN ĐỒ SỐ TƯƠNG TÁC (8 cols) */}
-              <div className="lg:col-span-8 flex flex-col justify-between space-y-3">
-                <div className="h-[460px] sm:h-[520px] md:h-[580px] lg:h-[620px] w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-rose-200 relative z-0 bg-[#FDF7F5] shadow-inner">
-                  <iframe
-                    src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-                    width="100%"
-                    height="100%"
-                    className="w-full h-full border-0"
-                    title="Bản đồ Di tích TP. Hồ Chí Minh"
-                    allowFullScreen
-                    loading="lazy"
-                  />
-                </div>
-
-                {/* Quick Region Jump Pills */}
-                <div className="flex flex-wrap items-center gap-1.5 pt-1">
-                  <span className="text-[11px] font-bold text-stone-600 flex items-center gap-1 shrink-0 mr-1">
-                    <Compass className="w-3.5 h-3.5 text-[#8B1417]" />
-                    <span>Khu vực:</span>
-                  </span>
-                  {[
-                    { name: 'Quận 1 & Trung tâm', stt: 1 },
-                    { name: 'Địa đạo Củ Chi', stt: 2 },
-                    { name: 'Bến Lộc An & Biển', stt: 3 },
-                    { name: 'Côn Đảo', stt: 4 },
-                    { name: 'Rừng Sác - Cần Giờ', stt: 7 },
-                    { name: 'Chợ Lớn - Quận 5', stt: 10 },
-                    { name: 'Tam Giác Sắt', stt: 8 }
-                  ].map((tag, tIdx) => (
-                    <button
-                      key={tIdx}
-                      onClick={() => onSelectMonument(tag.stt)}
-                      className="px-2.5 py-1 rounded-xl bg-[#FAF4F0] hover:bg-rose-100 text-[#8B1417] text-[11px] font-bold border border-rose-200/80 transition-all hover:scale-102 cursor-pointer shadow-2xs"
-                    >
-                      📍 {tag.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* CỘT PHẢI: PHẦN CHỮ GIỚI THIỆU KÝ ỨC THÀNH PHỐ (4 cols) - ẨN TRÊN MOBILE, HIỂN THỊ TRÊN MÁY TÍNH */}
-              <div id="about-project" className="hidden lg:flex lg:col-span-4 bg-gradient-to-br from-[#FAF4F0] via-[#FFFDFB] to-[#FDF2F3] rounded-2xl sm:rounded-3xl p-5 sm:p-6 border-2 border-rose-200 shadow-sm flex-col justify-between space-y-4">
-                <div className="space-y-3.5">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FDF2F3] border border-rose-300/80 text-[#8B1417] text-[11px] font-black uppercase tracking-wider shadow-2xs">
-                    <Sparkles className="w-3.5 h-3.5 text-[#8B1417]" />
-                    <span>Ký Ức Thành Phố &amp; Kết Nối</span>
-                  </div>
-
-                  <p className="font-serif-title text-sm sm:text-base text-[#2A1214] font-bold leading-relaxed italic [text-wrap:balance]">
-                    “Mỗi viên gạch cũ đều mang một cái tên, một câu chuyện, một phần ký ức của thành phố này.”
-                  </p>
-
-                  <div className="space-y-2.5 text-xs text-[#4E282B] leading-relaxed text-justify">
-                    <p>
-                      Giữa nhịp sống hối hả của một Sài Gòn - Hồ Chí Minh không ngừng đổi thay, vẫn có những mái ngói, những bức tường rêu phong lặng lẽ giữ lại cả một dòng thời gian đã qua. Chúng chứng kiến những biến động của lịch sử và cả những điều bình dị nhất của bao thế hệ đã từng đi qua nơi đây.
-                    </p>
-                    <p>
-                      Có bao nhiêu di tích bạn đã từng đi ngang qua mà chưa một lần dừng lại? Có bao nhiêu câu chuyện đang ngủ quên trong lòng thành phố, chỉ chờ một ai đó bước vào và lắng nghe?
-                    </p>
-                    <p className="font-bold text-[#8B1417] pt-1 [text-wrap:balance]">
-                      Chúng tôi bắt đầu hành trình này — không phải để kể lại lịch sử khô khan trong sách vở, mà để mời bạn chạm vào nó, theo cách gần gũi nhất với thế hệ mình.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Bottom Explorer Action Button */}
-                <div className="pt-2 border-t border-rose-200/80">
-                  <button
-                    onClick={onOpenExplorer}
-                    className="w-full py-3 rounded-2xl bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#C42226] hover:from-[#731013] hover:to-[#96171a] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
-                  >
-                    <Landmark className="w-4 h-4 text-amber-200" />
-                    <span>Khám Phá 103 Di Tích</span>
-                    <ArrowRight className="w-4 h-4 text-amber-200" />
-                  </button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </ScrollReveal>
-      </section>
-
-      {/* 4. BẢNG KHẢO SÁT & GỢI Ý HÀNH TRÌNH (RESPONSIVE GRID) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      {/* 2. BẢNG KHẢO SÁT & GỢI Ý HÀNH TRÌNH (KHÁM PHÁ THEO CÁCH CỦA BẠN) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-8">
         <ScrollReveal>
           <div className="bg-[#FFFDFB] rounded-3xl p-4 sm:p-6 md:p-10 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-6 sm:space-y-8">
             {/* Header */}
