@@ -256,6 +256,7 @@ export default function MonumentInteractiveMiniGame({
   }, [monumentName, quiz]);
 
   const currentQ = shuffledQuestions[currentIdx] || shuffledQuestions[0] || baseQuestions[0];
+  const questions = shuffledQuestions;
 
   const handleSelectOption = (index) => {
     if (isAnswered) return;
