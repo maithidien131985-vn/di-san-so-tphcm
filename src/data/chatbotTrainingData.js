@@ -36,7 +36,7 @@ export const systemFaqList = [
     "id": "XH-003",
     "group": "Cấp xếp hạng",
     "q": "Có bao nhiêu di tích Quốc gia?",
-    "a": "TP.HCM có **99 di tích cấp Quốc gia**. Phân loại gồm:\n- 📜 **48 di tích Lịch sử**\n- 🏛️ **44 di tích Kiến trúc nghệ thuật**\n- 🏺 **4 di tích Khảo cổ** (Lò gốm Hưng Lợi, Giồng Cá Vồ, Giồng Phệt, Bến Chùa)\n- 🌲 **3 Danh lam thắng cảnh**"
+    "a": "TP.HCM có **99 di tích cấp Quốc gia**. Phân loại gồm:\n- 📜 **48 di tích Lịch sử**\n- 🏛️ **44 di tích Kiến trúc nghệ thuật**\n- 🏺 **4 di tích Khảo cổ** (Cù Lao Rùa #STT 21, Dốc Chùa #STT 22, Giồng Cá Vồ #STT 23, Lò gốm cổ Hưng Lợi #STT 24)\n- 🌲 **3 Danh lam thắng cảnh**"
   },
   {
     "id": "XH-004",
@@ -72,7 +72,7 @@ export const systemFaqList = [
     "id": "LOAI-003",
     "group": "Loại hình di tích",
     "q": "Có bao nhiêu di tích thuộc loại Khảo cổ học?",
-    "a": "TP.HCM có **4 di tích Khảo cổ học đã xếp hạng** (tất cả 4 di tích đều là cấp **Quốc gia**): Lò gốm Hưng Lợi (Q.8), Giồng Cá Vồ (Cần Giờ), Giồng Phệt (Cần Giờ) và Bến Chùa.\nNgoài ra, còn có 11 địa điểm khảo cổ nằm trong danh mục kiểm kê chưa xếp hạng."
+    "a": "Hệ thống số hóa hiện có **4 di tích Khảo cổ học tiêu biểu** (tất cả 4 di tích đều là cấp **Quốc gia**): Cù Lao Rùa (#STT 21), Dốc Chùa (#STT 22), Giồng Cá Vồ (#STT 23 - Cần Giờ) và Lò gốm cổ Hưng Lợi (#STT 24 - Q.8).\nNgoài ra, còn có 11 địa điểm khảo cổ nằm trong danh mục kiểm kê của TP.HCM."
   },
   {
     "id": "LOAI-004",

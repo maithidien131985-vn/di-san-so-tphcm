@@ -469,6 +469,19 @@ export default function InvestigationSection({
               </div>
             </div>
 
+            {/* NÚT CÂU HỎI TIẾP THEO ĐẶT NGAY PHÍA TRÊN ĐỂ HỌC SINH KHÔNG PHẢI CUỘN XUỐNG DƯỚI */}
+            {!isGameOver && isAnswered && (
+              <div className="pt-2 animate-fadeIn">
+                <button
+                  onClick={handleNextQuestion}
+                  className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#7E1819] font-black text-xs sm:text-sm shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer animate-pulse hover:scale-102"
+                >
+                  <span>{currentIdx < questions.length - 1 ? `👉 Câu hỏi tiếp theo (${currentIdx + 2}/${questions.length})` : '🎉 Nhận Huy Hiệu Vinh Danh 🎖️'}</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </div>
+            )}
+
             {/* Thân câu hỏi & Đáp án */}
             {!isGameOver ? (
               <div className="py-3 flex-1 flex flex-col justify-between space-y-3">

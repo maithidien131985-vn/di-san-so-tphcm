@@ -376,11 +376,11 @@ export default function HeritageAIChatbot({
       // 3.2. Di tích cấp Quốc gia
       if ((cleanQ.includes('quoc gia') || cleanQ.includes('cap quoc gia')) && !cleanQ.includes('dac biet')) {
         return {
-          text: `### 📊 Thống kê 99 Di tích Cấp Quốc gia tại TP.HCM\n\n` +
-            `TP.HCM hiện có **99 di tích được xếp hạng cấp Quốc gia**, bao gồm:\n\n` +
+          text: `### 📊 Thống kê 99 Di tích Cấp Quốc gia\n\n` +
+            `Hệ thống hiện có **99 di tích được xếp hạng cấp Quốc gia**, bao gồm:\n\n` +
             `- 📜 **48 di tích Lịch sử**\n` +
             `- 🏛️ **44 di tích Kiến trúc nghệ thuật**\n` +
-            `- 🏺 **4 di tích Khảo cổ học** (*Lò gốm Hưng Lợi, Giồng Cá Vồ, Giồng Phệt, Bến Chùa*)\n` +
+            `- 🏺 **4 di tích Khảo cổ học** (*Cù Lao Rùa #STT 21, Dốc Chùa #STT 22, Giồng Cá Vồ #STT 23, Lò gốm cổ Hưng Lợi #STT 24*)\n` +
             `- 🌲 **3 Danh lam thắng cảnh**\n\n` +
             `💡 *Toàn bộ 99 di tích Quốc gia này đã được tích hợp đầy đủ trong hệ thống Di sản số THCS Xà Bang.*`,
           relatedMonuments: allMonumentsList.slice(0, 4)
@@ -404,14 +404,14 @@ export default function HeritageAIChatbot({
       // 3.4. Di tích Khảo cổ
       if (cleanQ.includes('khao co')) {
         return {
-          text: `### 📊 Thống kê Di tích Khảo Cổ Học tại TP.HCM\n\n` +
-            `TP.HCM hiện có **4 di tích Khảo cổ học đã xếp hạng** (tất cả 4 di tích đều là cấp **Quốc gia**):\n\n` +
-            `1. 🏺 **Di tích Khảo cổ học Lò gốm Hưng Lợi** (Quận 8)\n` +
-            `2. 🏺 **Di tích Khảo cổ học Giồng Cá Vồ** (Cần Giờ)\n` +
-            `3. 🏺 **Di tích Khảo cổ học Giồng Phệt** (Cần Giờ)\n` +
-            `4. 🏺 **Di tích Khảo cổ học Bến Chùa**\n\n` +
-            `📌 *Ngoài ra, còn có **11 địa điểm khảo cổ** khác đang nằm trong danh mục kiểm kê của Sở VHTT TP.HCM.*`,
-          relatedMonuments: allMonumentsList.filter(m => m.info.type?.toLowerCase().includes('khảo cổ')).slice(0, 4)
+          text: `### 📊 Thống kê 4 Di tích Khảo Cổ Học\n\n` +
+            `Hệ thống số hóa hiện có **4 di tích Khảo cổ học tiêu biểu** (tất cả 4 di tích đều là cấp **Quốc gia**):\n\n` +
+            `1. 🏺 **Di tích Khảo cổ học Cù Lao Rùa** (#STT 21)\n` +
+            `2. 🏺 **Di tích Khảo cổ học Dốc Chùa** (#STT 22)\n` +
+            `3. 🏺 **Di tích Khảo cổ học Giồng Cá Vồ** (#STT 23 - Huyện Cần Giờ)\n` +
+            `4. 🏺 **Di tích Khảo cổ học Lò gốm cổ Hưng Lợi** (#STT 24 - Quận 8)\n\n` +
+            `📌 *Cả 4 di tích khảo cổ học trên đều đã được xếp hạng cấp Quốc gia và được số hóa chuyên sâu trong hệ thống Di sản số THCS Xà Bang.*`,
+          relatedMonuments: [allMonumentsList[20], allMonumentsList[21], allMonumentsList[22], allMonumentsList[23]]
         };
       }
 

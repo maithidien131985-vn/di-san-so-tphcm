@@ -127,7 +127,7 @@ export const queryGeminiAI = async ({
   groundingContext += '   - Lịch sử: 168 di tích (4 QG đặc biệt + 48 Quốc gia + 116 Cấp TP).\n';
   groundingContext += '   - Kiến trúc nghệ thuật: 143 di tích (0 QG đặc biệt + 44 Quốc gia + 99 Cấp TP).\n';
   groundingContext += '   - Danh lam thắng cảnh: 6 di tích (0 QG đặc biệt + 3 Quốc gia + 3 Cấp TP).\n';
-  groundingContext += '   - Khảo cổ: 4 di tích (0 QG đặc biệt + 4 Quốc gia + 0 Cấp TP: Lò gốm Hưng Lợi, Giồng Cá Vồ, Giồng Phệt, Bến Chùa).\n';
+  groundingContext += '   - Khảo cổ: 4 di tích (0 QG đặc biệt + 4 Quốc gia + 0 Cấp TP: Cù Lao Rùa #STT 21, Dốc Chùa #STT 22, Giồng Cá Vồ #STT 23, Lò gốm cổ Hưng Lợi #STT 24).\n';
   groundingContext += '3. CÔNG TRÌNH KIỂM KÊ CHƯA XẾP HẠNG: 226 công trình/địa điểm (161 Kiến trúc nghệ thuật, 47 Lịch sử, 11 Khảo cổ, 7 Danh lam thắng cảnh).\n';
   groundingContext += '4. DỰ ÁN DI SẢN SỐ (THCS XÀ BANG): Số hóa chuyên sâu 103 di tích lịch sử - văn hóa tiêu biểu (toàn bộ 4 di tích Quốc gia đặc biệt + 99 di tích Quốc gia).\n\n';
 
