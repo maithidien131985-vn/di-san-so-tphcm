@@ -106,6 +106,35 @@ class SoundEffectsEngine {
       osc.stop(now + 0.05);
     } catch (e) {}
   }
+
+  // Nhạc kèn chiến thắng chúc mừng hoàn thành nhiệm vụ (Victory Fanfare)
+  playVictoryFanfare() {
+    if (!this.enabled) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      const notes = [
+        { freq: 523.25, time: 0, dur: 0.15 },
+        { freq: 659.25, time: 0.16, dur: 0.15 },
+        { freq: 783.99, time: 0.32, dur: 0.15 },
+        { freq: 1046.50, time: 0.48, dur: 0.55 }
+      ];
+      const now = this.ctx.currentTime;
+      notes.forEach(n => {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(n.freq, now + n.time);
+        gain.gain.setValueAtTime(0.001, now + n.time);
+        gain.gain.exponentialRampToValueAtTime(0.18, now + n.time + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + n.time + n.dur);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(now + n.time);
+        osc.stop(now + n.time + n.dur + 0.05);
+      });
+    } catch (e) {}
+  }
 }
 
 export const soundEffects = new SoundEffectsEngine();

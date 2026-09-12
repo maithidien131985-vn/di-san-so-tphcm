@@ -1,6 +1,8 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { Compass, ArrowRight, MapPin, Sparkles, Navigation, Layers, ChevronRight, Award } from 'lucide-react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { Compass, ArrowRight, MapPin, Sparkles, Navigation, Layers, ChevronRight, Award, Trophy } from 'lucide-react';
+import confetti from 'canvas-confetti';
 import { allMonumentsList } from '../data/allMonumentsData';
+import { soundEffects } from '../utils/soundEffects';
 
 // Haversine formula to compute exact distance in km between two GPS points
 function calculateDistanceKm(lat1, lon1, lat2, lon2) {
@@ -25,10 +27,36 @@ export default function NextMonumentSection({
   isCompleted = false
 }) {
   const [activeTab, setActiveTab] = useState('nearby'); // 'nearby' | 'same_type'
+  const [showCelebrationPopup, setShowCelebrationPopup] = useState(false);
+  const prevCompletedRef = useRef(isCompleted);
 
   const currentMonument = useMemo(() => {
     return allMonuments.find(m => m.stt === currentStt) || allMonuments[0];
   }, [currentStt, allMonuments]);
+
+  const currentName = currentMonument?.info?.name || 'Di tích lịch sử';
+
+  // Trigger 7-second celebration circular popup + fanfare sound when completed
+  useEffect(() => {
+    if (isCompleted && !prevCompletedRef.current) {
+      setShowCelebrationPopup(true);
+      soundEffects.playVictoryFanfare();
+      try {
+        confetti({ particleCount: 140, spread: 90, origin: { y: 0.55 } });
+      } catch (e) {}
+      const timer = setTimeout(() => {
+        setShowCelebrationPopup(false);
+      }, 7000);
+      return () => clearTimeout(timer);
+    }
+    prevCompletedRef.current = isCompleted;
+  }, [isCompleted, currentStt]);
+
+  // Reset when changing monument
+  useEffect(() => {
+    setShowCelebrationPopup(false);
+    prevCompletedRef.current = isCompleted;
+  }, [currentStt]);
 
   // 1. Nearby Monuments (Sorted by real GPS distance)
   const nearbyMonuments = useMemo(() => {
@@ -45,7 +73,7 @@ export default function NextMonumentSection({
       .slice(0, 4);
   }, [currentMonument, currentStt, allMonuments]);
 
-  // 2. Same Type Monuments (Matching info.type, e.g. Lịch sử, Kiến trúc nghệ thuật, Khảo cổ học...)
+  // 2. Same Type Monuments (Matching info.type)
   const sameTypeMonuments = useMemo(() => {
     const curType = currentMonument?.info?.type || 'Lịch sử';
     return allMonuments
@@ -54,8 +82,6 @@ export default function NextMonumentSection({
   }, [currentMonument, currentStt, allMonuments]);
 
   const displayList = activeTab === 'nearby' ? nearbyMonuments : sameTypeMonuments;
-  const featuredNext = displayList[0] || allMonuments[0];
-  const otherNext = displayList.slice(1, 4);
 
   const handleChoose = (stt) => {
     if (onSelectMonument) {
@@ -64,312 +90,139 @@ export default function NextMonumentSection({
     }
   };
 
-  const handleScrollToInvestigation = () => {
-    const el = document.getElementById('investigation-section');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const currentName = currentMonument?.info?.name || 'Di tích lịch sử';
-  const nextName = featuredNext?.info?.name || 'Di tích tiếp theo';
-  const distanceText = activeTab === 'nearby' && featuredNext?.distanceKm !== undefined && featuredNext.distanceKm < 9999
-    ? (featuredNext.distanceKm < 1 ? `khoảng ${Math.round(featuredNext.distanceKm * 1000)} mét` : `khoảng ${featuredNext.distanceKm.toFixed(1)} km`)
-    : 'trong khu vực lân cận';
-
-  // ==========================================
-  // HIỆU ỨNG CHỮ XUẤT HIỆN TỪNG KÝ TỰ (TYPEWRITER REVEAL EFFECT)
-  // ==========================================
-  const [displayedTitle, setDisplayedTitle] = useState('');
-  const [displayedDesc, setDisplayedDesc] = useState('');
-  const [typingStep, setTypingStep] = useState('title'); // 'title' | 'desc' | 'done'
-
-  const fullTitle = isCompleted
-    ? `🎉 Bạn vừa hoàn thành điều tra di tích "${currentName}" và tích lũy thành công +100 Điểm Thám Hiểm!`
-    : `🎯 Hoàn thành nhiệm vụ điều tra bên trên để tích lũy +100 Điểm Thám Hiểm!`;
-
-  const fullDesc = isCompleted
-    ? `🧭 Di tích tiếp theo dành cho bạn: "${nextName}" (${distanceText})... Hãy tiếp tục mở rộng bản đồ và giải mã những bí ẩn lịch sử tiếp theo!`
-    : `🧭 Gợi ý di tích tiếp theo dành cho bạn sau khi giải mã: "${nextName}" (${distanceText}). Hãy tham gia trả lời câu hỏi thử thách phía trên để mở khóa cột mốc này nhé!`;
-
-  useEffect(() => {
-    setDisplayedTitle('');
-    setDisplayedDesc('');
-    setTypingStep('title');
-
-    let titleIdx = 0;
-    let descIdx = 0;
-    let timer;
-
-    const typeTitle = () => {
-      if (titleIdx <= fullTitle.length) {
-        setDisplayedTitle(fullTitle.slice(0, titleIdx));
-        titleIdx += 2; // Gõ nhanh mượt mà
-        timer = setTimeout(typeTitle, 20);
-      } else {
-        setDisplayedTitle(fullTitle);
-        setTypingStep('desc');
-        timer = setTimeout(typeDesc, 150);
-      }
-    };
-
-    const typeDesc = () => {
-      if (descIdx <= fullDesc.length) {
-        setDisplayedDesc(fullDesc.slice(0, descIdx));
-        descIdx += 2;
-        timer = setTimeout(typeDesc, 18);
-      } else {
-        setDisplayedDesc(fullDesc);
-        setTypingStep('done');
-      }
-    };
-
-    timer = setTimeout(typeTitle, 200);
-
-    return () => clearTimeout(timer);
-  }, [currentName, nextName, distanceText, isCompleted, fullTitle, fullDesc]);
-
   return (
-    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-2 pb-10 space-y-6">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-2 pb-8">
       {/* ========================================================================= */}
-      {/* BANNER LỜI DẪN CHUYỂN TIẾP HÀNH TRÌNH (THIẾT KẾ TRANG NHÃ, TINH TẾ) */}
+      {/* 7-SECOND CIRCULAR CELEBRATION BADGE POPUP (KÈM ÂM THANH CHÚC MỪNG) */}
       {/* ========================================================================= */}
-      <div className={`rounded-2xl p-5 sm:p-6 border shadow-xs relative overflow-hidden transition-all duration-300 ${
-        isCompleted 
-          ? 'bg-gradient-to-r from-[#FFFDF9] via-[#FAF6ED] to-[#F5EFE4] border-amber-300/80 ring-1 ring-amber-400/30' 
-          : 'bg-gradient-to-r from-[#FAF7F2] via-[#F5EEE4] to-[#EFE7D8] border-stone-300/80'
-      }`}>
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
-          <div className="space-y-2 flex-1 max-w-4xl">
-            {/* Tag Badge */}
-            <div className={`inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full border text-xs font-black uppercase tracking-wider ${
-              isCompleted 
-                ? 'bg-amber-100 border-amber-300 text-[#7E1819]' 
-                : 'bg-stone-200/80 border-stone-300 text-stone-700'
-            }`}>
-              {isCompleted ? (
-                <>
-                  <Sparkles className="w-3.5 h-3.5 text-amber-700" />
-                  <span>Cột Mốc Hành Trình</span>
-                </>
-              ) : (
-                <>
-                  <Compass className="w-3.5 h-3.5 text-stone-600" />
-                  <span>Hành Trình Thám Hiểm</span>
-                </>
-              )}
+      {showCelebrationPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center pointer-events-none p-4 animate-fadeIn">
+          <div
+            onClick={() => setShowCelebrationPopup(false)}
+            className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-gradient-to-br from-[#7E1819] via-[#9E1B1D] to-[#45080A] border-4 border-amber-300 shadow-[0_0_60px_rgba(245,158,11,0.65)] flex flex-col items-center justify-center text-center p-6 text-white pointer-events-auto cursor-pointer transform hover:scale-105 transition-transform select-none"
+          >
+            {/* Glowing & rotating decorative borders */}
+            <div className="absolute inset-0 rounded-full border-2 border-dashed border-amber-300/60 animate-spin-slow pointer-events-none" />
+            <div className="absolute -inset-1.5 rounded-full bg-amber-400/25 blur-lg pointer-events-none" />
+
+            {/* Trophy Icon */}
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-amber-300 via-amber-400 to-yellow-500 flex items-center justify-center shadow-lg border-2 border-white mb-2 transform">
+              <Trophy className="w-9 h-9 sm:w-11 sm:h-11 text-[#7E1819]" />
             </div>
 
-            {/* Lời dẫn chữ xuất hiện mượt mà */}
-            <div className="space-y-1">
-              <h3 className="font-serif-title font-black text-base sm:text-lg lg:text-xl text-[#7E1819] leading-snug">
-                {displayedTitle}
-                {typingStep === 'title' && (
-                  <span className="inline-block w-2 h-4 ml-1 bg-[#7E1819] animate-pulse align-middle" />
-                )}
-              </h3>
-              
-              <p className="text-xs sm:text-sm text-[#555555] font-medium leading-relaxed">
-                {displayedDesc}
-                {typingStep === 'desc' && (
-                  <span className="inline-block w-1.5 h-3.5 ml-1 bg-amber-700 animate-pulse align-middle" />
-                )}
-              </p>
+            <div className="font-serif-title font-black text-sm sm:text-base text-amber-200 leading-tight px-2">
+              🎉 HOÀN THÀNH ĐIỀU TRA!
+            </div>
+            <p className="text-[11px] sm:text-xs text-rose-100 mt-1 line-clamp-2 px-3 leading-tight">
+              Di tích "{currentName}"
+            </p>
+
+            <div className="mt-2 inline-flex items-center gap-1 bg-amber-400/30 border border-amber-300 px-3 py-1 rounded-full text-amber-200 font-black text-xs">
+              <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+              <span>+100 Điểm Thám Hiểm</span>
+            </div>
+
+            <div className="absolute bottom-3 text-[10px] text-amber-200/70 font-mono">
+              (Tự đóng sau 7s)
             </div>
           </div>
-
-          {/* Nút hành động */}
-          {isCompleted ? (
-            <button
-              onClick={() => handleChoose(featuredNext.stt)}
-              className="w-full lg:w-auto px-5 py-3 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer shrink-0 border border-red-900 group"
-            >
-              <span>Khám phá "{nextName}" tiếp theo</span>
-              <ArrowRight className="w-4 h-4 text-amber-200 group-hover:translate-x-1 transition-transform" />
-            </button>
-          ) : (
-            <button
-              onClick={handleScrollToInvestigation}
-              className="w-full lg:w-auto px-5 py-3 rounded-xl bg-[#8B1417] hover:bg-[#9E1B1F] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer shrink-0 border border-amber-900/30 group"
-            >
-              <span>Lên Thử Thách Điều Tra 👆</span>
-              <Compass className="w-4 h-4 text-amber-200 group-hover:rotate-45 transition-transform" />
-            </button>
-          )}
         </div>
-      </div>
+      )}
 
       {/* ========================================================================= */}
-      {/* DANH SÁCH DI TÍCH GỢI Ý TIẾP THEO (GẦN ĐÓ NHẤT & CÙNG LOẠI HÌNH) */}
+      {/* COMPACT & MINIMALIST NEXT MONUMENT SUGGESTIONS CONTAINER */}
       {/* ========================================================================= */}
-      <div className="bg-[#FFFDFB] rounded-3xl p-5 sm:p-8 md:p-10 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-6 sm:space-y-8">
-        
-        {/* Header & Tabs */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-rose-100">
-          <div className="space-y-1">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FDF2F3] border border-rose-300 text-[#8B1417] text-[11px] font-black uppercase tracking-wider shadow-2xs">
-              <Compass className="w-3.5 h-3.5 text-[#8B1417]" />
-              <span>Gợi Ý Hành Trình Tiếp Nối</span>
-            </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-[#2A1214] font-serif-title tracking-tight">
-              Khám Phá Di Tích Gần Đó &amp; Cùng Loại Hình
-            </h2>
+      <div className="bg-white/80 backdrop-blur-xs rounded-2xl p-4 sm:p-5 border border-rose-200/80 shadow-xs space-y-4">
+        {/* Compact Header */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-rose-100">
+          <div className="flex items-center gap-2 text-[#7E1819]">
+            <Compass className="w-4 h-4 text-[#7E1819]" />
+            <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E]">
+              Gợi Ý Hành Trình Tiếp Theo
+            </h3>
+            <span className="text-[11px] text-stone-500 font-normal hidden sm:inline">
+              (Di tích phụ cận & cùng thể loại)
+            </span>
           </div>
 
-          {/* Tab Filter Controls */}
-          <div className="flex items-center gap-2 bg-[#FAF4F0] p-1.5 rounded-2xl border border-rose-200/80 self-start md:self-auto">
+          {/* Compact Tab Switcher */}
+          <div className="flex items-center gap-1.5 bg-rose-50/80 p-1 rounded-xl border border-rose-200/60 self-start sm:self-auto">
             <button
               onClick={() => setActiveTab('nearby')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 ${
+              className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 ${
                 activeTab === 'nearby'
-                  ? 'bg-[#8B1417] text-white shadow-md'
-                  : 'text-stone-700 hover:text-[#8B1417] hover:bg-white/60'
+                  ? 'bg-[#7E1819] text-white shadow-xs'
+                  : 'text-stone-600 hover:text-[#7E1819] hover:bg-white/60'
               }`}
             >
-              <Navigation className="w-3.5 h-3.5" />
-              <span>Di tích gần đó nhất</span>
+              <Navigation className="w-3 h-3" />
+              <span>Gần nhất</span>
             </button>
-
             <button
               onClick={() => setActiveTab('same_type')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 ${
+              className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 ${
                 activeTab === 'same_type'
-                  ? 'bg-[#8B1417] text-white shadow-md'
-                  : 'text-stone-700 hover:text-[#8B1417] hover:bg-white/60'
+                  ? 'bg-[#7E1819] text-white shadow-xs'
+                  : 'text-stone-600 hover:text-[#7E1819] hover:bg-white/60'
               }`}
             >
-              <Layers className="w-3.5 h-3.5" />
-              <span>Cùng loại ({currentMonument?.info?.type || 'Lịch sử'})</span>
+              <Layers className="w-3 h-3" />
+              <span>Cùng loại</span>
             </button>
           </div>
         </div>
 
-        {/* Featured Card (Spanning full top banner) */}
-        <div
-          onClick={() => handleChoose(featuredNext.stt)}
-          className="group bg-gradient-to-br from-white to-[#FAF4F0] rounded-3xl overflow-hidden border-2 border-rose-200/90 hover:border-[#8B1417] shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch"
-        >
-          {/* Image (5 cols) */}
-          <div className="lg:col-span-5 relative aspect-[16/10] lg:aspect-auto overflow-hidden bg-stone-900 min-h-[240px] sm:min-h-[280px]">
-            <img
-              src={featuredNext.info?.heroImage || featuredNext.gallery?.[0]?.src || '/assets/images/fallback.jpg'}
-              alt={featuredNext.info?.name}
-              className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
+        {/* Compact 4-Columns Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {displayList.slice(0, 4).map((monument, idx) => {
+            const imgUrl = monument.info?.heroImage || monument.gallery?.[0]?.src || '/assets/images/fallback.jpg';
+            const dist = monument.distanceKm !== undefined && monument.distanceKm < 9999
+              ? (monument.distanceKm < 1 ? `${Math.round(monument.distanceKm * 1000)}m` : `${monument.distanceKm.toFixed(1)}km`)
+              : null;
 
-            {/* Badges on Image */}
-            <div className="absolute top-3.5 left-3.5 flex items-center gap-2 flex-wrap">
-              <span className="px-3 py-1 rounded-xl bg-[#8B1417] text-white text-[11px] font-black uppercase tracking-wider shadow-md">
-                Di tích đề xuất #1
-              </span>
-              <span className="px-2.5 py-1 rounded-xl bg-amber-400 text-stone-900 text-[11px] font-black shadow-md">
-                #{featuredNext.stt}/103
-              </span>
-            </div>
-
-            {activeTab === 'nearby' && featuredNext.distanceKm !== undefined && featuredNext.distanceKm < 9999 && (
-              <div className="absolute bottom-3.5 left-3.5 px-3 py-1 rounded-xl bg-black/70 backdrop-blur-md text-amber-300 border border-amber-400/40 text-xs font-black shadow-md flex items-center gap-1.5">
-                <Navigation className="w-3.5 h-3.5 text-amber-300" />
-                <span>Cách đây ~{featuredNext.distanceKm < 1 ? `${Math.round(featuredNext.distanceKm * 1000)} m` : `${featuredNext.distanceKm.toFixed(1)} km`}</span>
-              </div>
-            )}
-          </div>
-
-          {/* Details (7 cols) */}
-          <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between space-y-4">
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="px-2.5 py-0.5 rounded-md bg-[#FDF2F3] text-[#8B1417] text-[11px] font-black border border-rose-200">
-                  {featuredNext.info?.ranking || 'Di tích Quốc gia'}
-                </span>
-                <span className="px-2.5 py-0.5 rounded-md bg-stone-100 text-stone-700 text-[11px] font-bold">
-                  {featuredNext.info?.type || 'Lịch sử'}
-                </span>
-              </div>
-
-              <h3 className="text-xl sm:text-2xl font-black text-[#8B1417] font-serif-title group-hover:text-[#630d10] transition-colors leading-snug">
-                {featuredNext.info?.name}
-              </h3>
-
-              <div className="flex items-start gap-1.5 text-xs text-stone-600">
-                <MapPin className="w-4 h-4 text-[#8B1417] shrink-0 mt-0.5" />
-                <span className="line-clamp-2">{featuredNext.info?.address || 'TP. Hồ Chí Minh'}</span>
-              </div>
-
-              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed line-clamp-3 text-justify">
-                {featuredNext.info?.overview || 'Khám phá không gian lịch sử văn hóa hào hùng của thành phố.'}
-              </p>
-            </div>
-
-            <div className="pt-3 border-t border-rose-200/70 flex items-center justify-between">
-              <span className="text-xs text-[#8B1417] font-black group-hover:translate-x-1 transition-transform flex items-center gap-1.5">
-                <span>Khám phá chi tiết di tích này</span>
-                <ArrowRight className="w-4 h-4" />
-              </span>
-              <button className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#8B1417] to-[#B31D21] text-white text-xs font-black shadow-md hover:scale-103 transition-transform cursor-pointer">
-                Xem ngay →
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* 3 Secondary Cards Grid */}
-        {otherNext.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-            {otherNext.map(monument => {
-              const imgUrl = monument.info?.heroImage || monument.gallery?.[0]?.src || '/assets/images/fallback.jpg';
-              return (
-                <div
-                  key={monument.stt}
-                  onClick={() => handleChoose(monument.stt)}
-                  className="group bg-white rounded-2xl p-4 border-2 border-rose-100 hover:border-[#8B1417] shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between space-y-3 cursor-pointer"
-                >
-                  <div className="space-y-2.5">
-                    <div className="relative aspect-video rounded-xl overflow-hidden bg-stone-900 shadow-inner">
-                      <img
-                        src={imgUrl}
-                        alt={monument.info?.name}
-                        className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
-                      />
-                      <div className="absolute top-2 left-2 px-2 py-0.5 rounded-lg bg-[#8B1417] text-white text-[10px] font-black shadow-md">
-                        #{monument.stt}
+            return (
+              <div
+                key={monument.stt || idx}
+                onClick={() => handleChoose(monument.stt)}
+                className="group bg-[#FAF8F5] hover:bg-white rounded-xl p-3 border border-rose-100/90 hover:border-[#7E1819] shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between space-y-2.5 cursor-pointer hover:scale-[1.01]"
+              >
+                <div className="space-y-2">
+                  <div className="relative aspect-[16/9] rounded-lg overflow-hidden bg-stone-900 shadow-inner">
+                    <img
+                      src={imgUrl}
+                      alt={monument.info?.name}
+                      className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-300"
+                    />
+                    <div className="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold">
+                      #{monument.stt}
+                    </div>
+                    {activeTab === 'nearby' && dist && (
+                      <div className="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded bg-amber-400/90 text-stone-900 text-[10px] font-bold">
+                        📍 ~{dist}
                       </div>
-                      {activeTab === 'nearby' && monument.distanceKm !== undefined && monument.distanceKm < 9999 && (
-                        <div className="absolute bottom-2 left-2 px-2 py-0.5 rounded-lg bg-black/70 backdrop-blur-xs text-amber-300 text-[10px] font-black">
-                          📍 ~{monument.distanceKm < 1 ? `${Math.round(monument.distanceKm * 1000)}m` : `${monument.distanceKm.toFixed(1)}km`}
-                        </div>
-                      )}
-                    </div>
+                    )}
+                  </div>
 
-                    <div className="flex items-center gap-1.5 flex-wrap">
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#FDF2F3] text-[#8B1417]">
-                        {monument.info?.type || 'Lịch sử'}
-                      </span>
-                      <span className="text-[10px] font-medium text-stone-500 truncate max-w-[130px]">
-                        {monument.info?.ranking}
-                      </span>
+                  <div>
+                    <div className="flex items-center gap-1 text-[10px] text-[#7E1819] font-bold">
+                      <span>{monument.info?.type || 'Lịch sử'}</span>
+                      <span>•</span>
+                      <span className="text-stone-500 font-medium truncate">{monument.info?.ranking}</span>
                     </div>
-
-                    <h4 className="font-bold text-xs sm:text-sm text-[#2A1214] group-hover:text-[#8B1417] transition-colors line-clamp-2 font-serif-title leading-snug">
+                    <h4 className="font-serif-title font-bold text-xs text-[#2C241E] group-hover:text-[#7E1819] transition-colors line-clamp-1 mt-0.5">
                       {monument.info?.name}
                     </h4>
-
-                    <p className="text-[11px] text-stone-500 line-clamp-2 leading-relaxed">
-                      {monument.info?.overview}
-                    </p>
-                  </div>
-
-                  <div className="pt-2 border-t border-rose-100 flex items-center justify-between text-xs text-[#8B1417] font-bold">
-                    <span>Xem di tích #{monument.stt}</span>
-                    <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
-              );
-            })}
-          </div>
-        )}
 
+                <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-[#7E1819] font-bold">
+                  <span>Khám phá</span>
+                  <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
