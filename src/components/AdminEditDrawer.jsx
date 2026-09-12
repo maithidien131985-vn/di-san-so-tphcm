@@ -27,10 +27,15 @@ import {
   Send,
   Copy,
   Database,
-  ExternalLink
+  ExternalLink,
+  Lock,
+  KeyRound,
+  LogOut,
+  Shield
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { getGoogleSheetWebhookUrl, setGoogleSheetWebhookUrl, sendTelemetryEvent } from '../utils/studentAnalytics';
+import { getStoredAdminPassword, setStoredAdminPassword, setAdminLoggedIn } from './AdminAuthModal';
 
 export default function AdminEditDrawer({
   isOpen,
@@ -74,6 +79,37 @@ export default function AdminEditDrawer({
   const [typeFilter, setTypeFilter] = useState('all');
   const [editingContribId, setEditingContribId] = useState(null);
   const [tempEditValues, setTempEditValues] = useState({});
+
+  // Security & Password Management State
+  const [currentPwd, setCurrentPwd] = useState(() => getStoredAdminPassword());
+  const [newPwd, setNewPwd] = useState('');
+  const [confirmPwd, setConfirmPwd] = useState('');
+  const [pwdMsg, setPwdMsg] = useState({ type: '', text: '' });
+
+  const handleChangePassword = (e) => {
+    e.preventDefault();
+    if (!newPwd || newPwd.trim().length < 4) {
+      setPwdMsg({ type: 'error', text: 'Mật khẩu mới phải có ít nhất 4 ký tự!' });
+      return;
+    }
+    if (newPwd !== confirmPwd) {
+      setPwdMsg({ type: 'error', text: 'Mật khẩu xác nhận không khớp!' });
+      return;
+    }
+    setStoredAdminPassword(newPwd);
+    setCurrentPwd(newPwd);
+    setNewPwd('');
+    setConfirmPwd('');
+    setPwdMsg({ type: 'success', text: 'Đã đổi mật khẩu quản trị thành công!' });
+    setTimeout(() => setPwdMsg({ type: '', text: '' }), 4000);
+  };
+
+  const handleLogout = () => {
+    if (confirm('Bạn có chắc muốn đăng xuất và khóa khu vực Quản trị?')) {
+      setAdminLoggedIn(false);
+      onClose();
+    }
+  };
 
   useEffect(() => {
     if (isOpen) {
@@ -215,12 +251,22 @@ export default function AdminEditDrawer({
               </p>
             </div>
           </div>
-          <button
-            onClick={onClose}
-            className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-black/30 hover:bg-black/50 text-amber-200 border border-amber-300/30 text-xs font-bold transition-colors cursor-pointer"
+              title="Đăng xuất & Khóa bảo mật CMS"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Đăng xuất</span>
+            </button>
+            <button
+              onClick={onClose}
+              className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors cursor-pointer"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Navigation Tabs Bar */}
@@ -239,7 +285,8 @@ export default function AdminEditDrawer({
             { id: 'nextMonuments', label: 'Di tích tiếp theo', icon: Landmark },
             { id: 'investigation', label: 'Hồ sơ điều tra', icon: Layers },
             { id: 'audio', label: 'Thuyết minh', icon: Sparkles },
-            { id: 'analytics', label: '📊 Dữ liệu Google Sheets', icon: BarChart3 }
+            { id: 'analytics', label: '📊 Dữ liệu Google Sheets', icon: BarChart3 },
+            { id: 'security', label: '🔒 Bảo mật & Đổi MK', icon: Shield }
           ].map(tab => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -1380,6 +1427,106 @@ function getOrCreateSheet(ss, sheetName, headers) {
                     <li>Bấm <b>Triển khai</b> &rarr; Sao chép đường link <b>URL ứng dụng web</b> và dán vào ô bên trên &rarr; Bấm <b>Lưu Link</b>.</li>
                   </ol>
                 </div>
+              </div>
+            </div>
+          )}
+
+          {/* TAB 9: BẢO MẬT & ĐỔI MẬT KHẨU QUẢN TRỊ */}
+          {activeTab === 'security' && (
+            <div className="space-y-6 max-w-xl mx-auto py-2">
+              <div className="bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-200/80 rounded-2xl p-5 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-[#7B1113] text-amber-300 flex items-center justify-center">
+                    <Shield className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-serif-title font-bold text-base text-[#7B1113]">
+                      Bảo Mật & Phân Quyền Quản Trị Viên
+                    </h4>
+                    <p className="text-xs text-gray-600">
+                      Chỉ người có mật khẩu này mới có quyền mở Trung Tâm Quản Trị CMS.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white/80 border border-amber-200 rounded-xl p-3.5 text-xs text-gray-700 space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-gray-500">Mật khẩu ban đầu mặc định:</span>
+                    <code className="px-2 py-0.5 rounded bg-gray-100 font-mono font-bold text-[#7B1113]">admin</code>
+                  </div>
+                  <div className="flex items-center justify-between pt-1 border-t border-gray-100">
+                    <span className="font-semibold text-gray-500">Trạng thái bảo vệ:</span>
+                    <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold text-[11px] flex items-center gap-1">
+                      <Shield className="w-3 h-3" /> Đang bảo vệ bằng mật khẩu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Form Đổi mật khẩu */}
+              <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-xs space-y-4">
+                <h5 className="font-bold text-sm text-gray-800 flex items-center gap-2">
+                  <KeyRound className="w-4 h-4 text-[#7B1113]" />
+                  <span>Thay Đổi Mật Khẩu Quản Trị Mới</span>
+                </h5>
+
+                <form onSubmit={handleChangePassword} className="space-y-4">
+                  <div>
+                    <label className="block text-xs font-bold text-gray-700 mb-1">
+                      Mật khẩu mới (Tối thiểu 4 ký tự):
+                    </label>
+                    <input
+                      type="password"
+                      value={newPwd}
+                      onChange={(e) => setNewPwd(e.target.value)}
+                      placeholder="Nhập mật khẩu mới của bạn..."
+                      className="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:ring-2 focus:ring-[#7B1113] focus:border-transparent outline-hidden font-medium"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-bold text-gray-700 mb-1">
+                      Xác nhận lại mật khẩu mới:
+                    </label>
+                    <input
+                      type="password"
+                      value={confirmPwd}
+                      onChange={(e) => setConfirmPwd(e.target.value)}
+                      placeholder="Nhập lại mật khẩu mới..."
+                      className="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:ring-2 focus:ring-[#7B1113] focus:border-transparent outline-hidden font-medium"
+                    />
+                  </div>
+
+                  {pwdMsg.text && (
+                    <div className={`p-3 rounded-xl text-xs font-bold flex items-center gap-2 ${
+                      pwdMsg.type === 'success' 
+                        ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' 
+                        : 'bg-red-50 text-red-800 border border-red-200'
+                    }`}>
+                      <span>{pwdMsg.text}</span>
+                    </div>
+                  )}
+
+                  <div className="pt-2 flex items-center gap-3">
+                    <button
+                      type="submit"
+                      className="flex-1 py-2.5 px-4 rounded-xl bg-[#7B1113] hover:bg-[#96171a] text-white text-xs font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
+                    >
+                      <Save className="w-4 h-4 text-amber-300" />
+                      <span>Cập Nhật Mật Khẩu Mới</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={handleLogout}
+                      className="py-2.5 px-4 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer"
+                      title="Đăng xuất khỏi phiên quản trị"
+                    >
+                      <LogOut className="w-4 h-4 text-rose-700" />
+                      <span>Đăng xuất</span>
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           )}

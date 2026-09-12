@@ -22,6 +22,7 @@ import DocsModal from './components/DocsModal';
 import MyMapModal from './components/MyMapModal';
 import MilestoneModal from './components/MilestoneModal';
 import AdminEditDrawer from './components/AdminEditDrawer';
+import AdminAuthModal, { isAdminLoggedIn } from './components/AdminAuthModal';
 import ContributeModal from './components/ContributeModal';
 import MonumentsExplorerModal from './components/MonumentsExplorerModal';
 import MonumentSwitcherBar from './components/MonumentSwitcherBar';
@@ -242,6 +243,16 @@ export default function App() {
   const [milestoneModalOpen, setMilestoneModalOpen] = useState(false);
   const [selectedMilestone, setSelectedMilestone] = useState(null);
   const [adminDrawerOpen, setAdminDrawerOpen] = useState(false);
+  const [adminAuthModalOpen, setAdminAuthModalOpen] = useState(false);
+
+  const handleOpenAdmin = () => {
+    if (isAdminLoggedIn()) {
+      setAdminDrawerOpen(true);
+    } else {
+      setAdminAuthModalOpen(true);
+    }
+  };
+
   const [contributeModalOpen, setContributeModalOpen] = useState(false);
   const [explorerModalOpen, setExplorerModalOpen] = useState(false);
   const [passportModalOpen, setPassportModalOpen] = useState(false);
@@ -515,7 +526,7 @@ export default function App() {
         viewMode={viewMode}
         isEditMode={isEditMode}
         setIsEditMode={setIsEditMode}
-        onOpenAdmin={() => setAdminDrawerOpen(true)}
+        onOpenAdmin={handleOpenAdmin}
         onOpenContribute={() => setContributeModalOpen(true)}
         onOpenExplorer={() => setExplorerModalOpen(true)}
         onOpenMyMap={() => setMyMapModalOpen(true)}
@@ -776,6 +787,13 @@ export default function App() {
         isOpen={milestoneModalOpen}
         onClose={() => setMilestoneModalOpen(false)}
         milestone={selectedMilestone}
+      />
+
+      {/* Admin Auth Modal (Mật khẩu bảo vệ khu vực Quản trị) */}
+      <AdminAuthModal
+        isOpen={adminAuthModalOpen}
+        onClose={() => setAdminAuthModalOpen(false)}
+        onSuccess={() => setAdminDrawerOpen(true)}
       />
 
       {/* Admin CMS Drawer */}
