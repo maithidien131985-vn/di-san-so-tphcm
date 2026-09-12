@@ -50,6 +50,14 @@ export default function HeritagePassportModal({
   const [copiedCode, setCopiedCode] = useState(false);
   const [stampSearch, setStampSearch] = useState('');
 
+  React.useEffect(() => {
+    if (isOpen) {
+      setActiveTab(activePassport ? 'passport' : 'login');
+      setLoginError('');
+      setInputCode('');
+    }
+  }, [isOpen, activePassport]);
+
   if (!isOpen) return null;
 
   const avatars = ['🦁', '🦅', '🐯', '🌟', '🚀', '🔭', '🏛️', '🛡️', '👑', '🎓'];

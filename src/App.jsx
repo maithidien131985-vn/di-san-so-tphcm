@@ -260,7 +260,7 @@ export default function App() {
     setExplorerCategoryFilter(category || 'all');
     setExplorerModalOpen(true);
   };
-  const [passportModalOpen, setPassportModalOpen] = useState(false);
+  const [passportModalOpen, setPassportModalOpen] = useState(true);
   const [aiChatOpen, setAiChatOpen] = useState(false);
   const [activePassport, setActivePassport] = useState(() => getActivePassport());
 
