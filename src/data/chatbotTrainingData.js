@@ -24,13 +24,13 @@ export const systemFaqList = [
     "id": "XH-001",
     "group": "Cấp xếp hạng",
     "q": "Có bao nhiêu di tích Quốc gia đặc biệt?",
-    "a": "TP.HCM có **4 di tích Quốc gia đặc biệt** (và cả 4 đều thuộc loại hình Lịch sử), gồm:\n1. **Dinh Độc Lập** (#STT 1)\n2. **Địa đạo Củ Chi** (#STT 2)\n3. **Căn cứ Rừng Sác Cần Giờ** (#STT 7)\n4. **Nhà tù Côn Đảo** (#STT 4)"
+    "a": "TP.HCM có **4 di tích Quốc gia đặc biệt** (và cả 4 đều thuộc loại hình Lịch sử), gồm:\n1. **Dinh Độc Lập** (#STT 1)\n2. **Địa đạo Củ Chi** (#STT 2)\n3. **Đường Hồ Chí Minh trên biển (Bến Lộc An)** (#STT 3)\n4. **Nhà tù Côn Đảo** (#STT 4)"
   },
   {
     "id": "XH-002",
     "group": "Cấp xếp hạng",
     "q": "Có bao nhiêu di tích được xếp hạng Quốc gia đặc biệt?",
-    "a": "Có **4 di tích Quốc gia đặc biệt** tại TP.HCM và khu vực phụ cận lịch sử, tất cả đều là di tích Lịch sử: Dinh Độc Lập, Địa đạo Củ Chi, Căn cứ Rừng Sác và Nhà tù Côn Đảo."
+    "a": "Có **4 di tích Quốc gia đặc biệt** tại TP.HCM và khu vực phụ cận lịch sử, tất cả đều là di tích Lịch sử: Dinh Độc Lập (#STT 1), Địa đạo Củ Chi (#STT 2), Đường Hồ Chí Minh trên biển (Bến Lộc An) (#STT 3) và Nhà tù Côn Đảo (#STT 4)."
   },
   {
     "id": "XH-003",

@@ -416,10 +416,10 @@ export default function HeritageAIChatbot({
             `TP.HCM hiện có **4 di tích Quốc gia đặc biệt** (và cả **4 di tích đều thuộc loại hình Lịch sử**):\n\n` +
             `1. 🏛️ **Dinh Độc Lập** (#STT 1) - *Quận 1*\n` +
             `2. 🌲 **Địa đạo Củ Chi** (#STT 2) - *Huyện Củ Chi*\n` +
-            `3. 🌊 **Căn cứ Rừng Sác Cần Giờ** (#STT 7) - *Huyện Cần Giờ*\n` +
+            `3. 🚢 **Đường Hồ Chí Minh trên biển (Bến Lộc An)** (#STT 3) - *Khu vực ven biển*\n` +
             `4. ⛓️ **Nhà tù Côn Đảo** (#STT 4) - *Huyện Côn Đảo*\n\n` +
             `💡 *Toàn bộ 4 di tích Quốc gia đặc biệt này đều đã được số hóa 3D/VR, thuyết minh audio và video đầy đủ trong hệ thống.*`,
-          relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[6], allMonumentsList[3]]
+          relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[2], allMonumentsList[3]]
         };
       }
 
@@ -483,8 +483,8 @@ export default function HeritageAIChatbot({
         return {
           text: `### 📊 Thống kê Di tích Lịch Sử tại TP.HCM\n\n` +
             `TP.HCM hiện có **168 di tích Lịch sử đã xếp hạng**, bao gồm:\n\n` +
-            `- ⭐ **4** di tích Quốc gia đặc biệt (*Dinh Độc Lập, Địa đạo Củ Chi, Căn cứ Rừng Sác, Nhà tù Côn Đảo*)\n` +
-            `- 🏛️ **48** di tích cấp Quốc gia (*Bến Nhà Rồng, Xưởng Ba Son, Hầm bí mật chứa vũ khí, Cột cờ Thủ Ngữ...*)\n` +
+            `- ⭐ **4** di tích Quốc gia đặc biệt (*Dinh Độc Lập, Địa đạo Củ Chi, Đường Hồ Chí Minh trên biển - Bến Lộc An, Nhà tù Côn Đảo*)\n` +
+            `- 🏛️ **48** di tích cấp Quốc gia (*Căn cứ Rừng Sác, Bến Nhà Rồng, Xưởng Ba Son, Hầm bí mật chứa vũ khí, Cột cờ Thủ Ngữ...*)\n` +
             `- 🏙️ **116** di tích cấp Tỉnh/Thành phố\n\n` +
             `📌 *Ngoài ra, còn có **47 công trình/địa điểm lịch sử** thuộc diện kiểm kê chưa xếp hạng.*`,
           relatedMonuments: allMonumentsList.filter(m => m.info.type?.toLowerCase().includes('lịch sử')).slice(0, 4)

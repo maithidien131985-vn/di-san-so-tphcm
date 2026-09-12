@@ -147,7 +147,7 @@ export const queryGeminiAI = async ({
   // Bổ sung thống kê chính thống toàn diện (Nguồn: Sở VH&TT TP.HCM & D:\Thông tin cho chatbot.docx)
   groundingContext += 'BẢNG THỐNG KÊ DI TÍCH TP.HCM CHÍNH THỨC:\n';
   groundingContext += '1. TỔNG SỐ DI TÍCH ĐÃ XẾP HẠNG TẠI TP.HCM: 321 di tích, gồm:\n';
-  groundingContext += '   - 4 di tích Quốc gia đặc biệt (100% thuộc loại hình Lịch sử: Dinh Độc Lập, Địa đạo Củ Chi, Căn cứ Rừng Sác, Nhà tù Côn Đảo).\n';
+  groundingContext += '   - 4 di tích Quốc gia đặc biệt (100% thuộc loại hình Lịch sử: Dinh Độc Lập, Địa đạo Củ Chi, Đường Hồ Chí Minh trên biển (Bến Lộc An), Nhà tù Côn Đảo).\n';
   groundingContext += '   - 99 di tích Quốc gia (gồm: 48 Lịch sử, 44 Kiến trúc nghệ thuật, 4 Khảo cổ học, 3 Danh lam thắng cảnh).\n';
   groundingContext += '   - 218 di tích cấp Tỉnh/Thành phố (gồm: 116 Lịch sử, 99 Kiến trúc nghệ thuật, 3 Danh lam thắng cảnh, 0 Khảo cổ).\n';
   groundingContext += '2. PHÂN LOẠI 321 DI TÍCH THEO LOẠI HÌNH TRÊN TOÀN TP.HCM:\n';
@@ -216,7 +216,7 @@ FALLBACK CHUẨN:
 
 THỐNG KÊ 103 DI TÍCH & TOÀN TP.HCM CHÍNH THỨC:
 - 321 di tích đã xếp hạng (4 Quốc gia đặc biệt, 99 Quốc gia, 218 Cấp tỉnh/TP).
-- 4 Di tích Quốc gia Đặc biệt: Dinh Độc Lập, Địa đạo Củ Chi, Căn cứ Rừng Sác Cần Giờ, Nhà tù Côn Đảo (100% thuộc loại hình Lịch sử).
+- 4 Di tích Quốc gia Đặc biệt: Dinh Độc Lập (#STT 1), Địa đạo Củ Chi (#STT 2), Đường Hồ Chí Minh trên biển (Bến Lộc An) (#STT 3), Nhà tù Côn Đảo (#STT 4) (100% thuộc loại hình Lịch sử).
 - 4 Di tích Khảo cổ học cấp Quốc gia: Cù Lao Rùa (#STT 21), Dốc Chùa (#STT 22), Giồng Cá Vồ (#STT 23 - Cần Giờ), Lò gốm cổ Hưng Lợi (#STT 24 - Quận 8).
 - 103 di tích số hóa trọng điểm trong hệ thống Di sản số THCS Xà Bang.`;
 
