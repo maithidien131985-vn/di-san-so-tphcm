@@ -33,6 +33,7 @@ import {
   monumentQaMap, 
   fullQaDataset 
 } from '../data/chatbotTrainingData';
+import { match100Situation } from '../data/chatbot100SituationsData';
 import { 
   getGeminiApiKey, 
   saveGeminiApiKey, 
@@ -297,10 +298,26 @@ export default function HeritageAIChatbot({
     }
 
     // 1. GREETINGS & INTRO
-    if (/^(chao|hello|hi|xin chao|ban la ai|gioi thieu ban|tro ly la ai|ban lam duoc gi)/i.test(cleanQ)) {
+    if (/^(chao|hello|hi|xin chao|ban la ai|gioi thieu ban|tro ly la ai|ban lam duoc gi)$/i.test(cleanQ)) {
       return {
-        text: `Xin chào! Tôi là **Trợ Lý Di Sản AI** 🏛️✨\n\nTôi hỗ trợ bạn tra cứu toàn diện với **bộ tri thức chuẩn 3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa TP.HCM & Vùng phụ cận**:\n\n- 🔍 **Tra cứu nhanh:** Theo tên di tích, số STT (#1 - #103) hoặc địa bàn Quận/Huyện.\n- 📜 **Lịch sử & Niên đại:** Tóm tắt bối cảnh, nguồn gốc và quá trình hình thành.\n- 👤 **Nhân vật & Hiện vật:** Bác Hồ, Võ Thị Sáu, Trần Phú, Tôn Đức Thắng, xe tăng 390/843, hầm vũ khí...\n- ⚔️ **Sự kiện & Chiến công:** Các trận đánh, khởi nghĩa, chiến dịch giải phóng...\n- 📚 **Học tập 6 môn:** Lịch sử, Địa lý, Ngữ văn, GDCD, STEM và hồ sơ điều tra KHKT.\n\n*Bạn hãy nhập câu hỏi cần giải đáp nhé!*`,
+        text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi hỗ trợ bạn tra cứu toàn diện với **bộ tri thức chuẩn 3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa TP.HCM & Vùng phụ cận**:\n\n- 🔍 **Tra cứu nhanh:** Theo tên di tích, số STT (#1 - #103) hoặc địa bàn Quận/Huyện.\n- 📜 **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh lịch sử và quá trình hình thành.\n- 👤 **Nhân vật & Hiện vật:** Bác Hồ, Võ Thị Sáu, Trần Phú, Tôn Đức Thắng, xe tăng 390/843, hầm vũ khí...\n- ⚔️ **Sự kiện & Chiến công:** Các trận đánh, khởi nghĩa, chiến dịch giải phóng...\n- 📚 **Học tập 6 môn:** Lịch sử, Địa lý, Ngữ văn, GDCD, STEM và hồ sơ điều tra KHKT.\n\n*Kính mời bạn nhập câu hỏi để bắt đầu tra cứu!*`,
         relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[3]]
+      };
+    }
+
+    // 2. ƯU TIÊN 1: NHẬN DIỆN 100 TÌNH HUỐNG HỎI XOÁY, TROLL, PHÁ GAME, THỬ AI (D:\chatbot_di_san_so_100_tinh_huong.json)
+    const sitMatch = match100Situation(rawQ, 0.45);
+    if (sitMatch && sitMatch.item) {
+      const item = sitMatch.item;
+      let text = item.response;
+      if (item.follow_up && !text.includes(item.follow_up)) {
+        text += `\n\n💡 *${item.follow_up}*`;
+      }
+      return {
+        text,
+        relatedMonuments: allMonumentsList.slice(0, 2),
+        isSituation100: true,
+        situationId: item.id
       };
     }
 
@@ -801,14 +818,9 @@ export default function HeritageAIChatbot({
       };
     }
 
-    // 9. CLEAN FALLBACK WITH INSTRUCTIVE GUIDANCE
+    // 9. CLEAN FALLBACK THEO QUY TẮC SYSTEM PROMPT CHUẨN
     return {
-      text: `Tôi chưa tìm thấy câu trả lời chính xác cho câu hỏi *"**${rawQ}**"*. \n\n` +
-        `💡 **Gợi ý cách hỏi hiệu quả để nhận phản hồi từ bộ huấn luyện:**\n` +
-        `- Hỏi theo tên di tích: *"Dinh Độc Lập có hiện vật gì?", "Lịch sử Địa đạo Củ Chi", "Nhân vật gắn liền với Bến Nhà Rồng"*\n` +
-        `- Hỏi theo số thứ tự: *"STT 1", "Di tích 14", "STT 18"*\n` +
-        `- Hỏi theo địa bàn: *"Di tích ở Cần Giờ", "Di tích ở Quận 5", "Di tích ở Côn Đảo"*\n` +
-        `- Hỏi theo thống kê: *"Có bao nhiêu di tích thuộc loại Lịch sử?", "Có bao nhiêu di tích Quốc gia đặc biệt?"*`,
+      text: `Mình chưa có đủ căn cứ để trả lời chắc chắn câu này. Bạn hãy cho mình thêm tên di tích, sự kiện hoặc nguồn tài liệu; mình sẽ cùng bạn kiểm tra nhé.`,
       relatedMonuments: allMonumentsList.slice(0, 3)
     };
   };
