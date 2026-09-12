@@ -30,6 +30,7 @@ import ScrollProgressBar from './components/ScrollProgressBar';
 import ScrollReveal from './components/ScrollReveal';
 import HeritageAIChatbot from './components/HeritageAIChatbot';
 import HeritagePassportModal from './components/HeritagePassportModal';
+import MobileBottomNav from './components/MobileBottomNav';
 import PersonalJourneyPage from './components/PersonalJourneyPage';
 import Footer from './components/Footer';
 import { allMonumentsList, getMonumentByIdOrStt } from './data/allMonumentsData';
@@ -256,6 +257,7 @@ export default function App() {
   const [contributeModalOpen, setContributeModalOpen] = useState(false);
   const [explorerModalOpen, setExplorerModalOpen] = useState(false);
   const [passportModalOpen, setPassportModalOpen] = useState(false);
+  const [aiChatOpen, setAiChatOpen] = useState(false);
   const [activePassport, setActivePassport] = useState(() => getActivePassport());
 
   // Theo dõi trạng thái hoàn thành nhiệm vụ điều tra của từng di tích
@@ -514,7 +516,7 @@ export default function App() {
     : (typeof rawAudioScript === 'string' ? rawAudioScript : (typeof safeInfo?.overview === 'string' ? safeInfo.overview : ''));
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] text-[#2C241E] flex flex-col font-sans selection:bg-[#7E1819] selection:text-white">
+    <div className="min-h-screen bg-[#FDFBF7] text-[#2C241E] flex flex-col font-sans selection:bg-[#7E1819] selection:text-white pb-16 md:pb-0">
       {/* Dynamic Scroll Progress Bar */}
       <ScrollProgressBar />
 
@@ -830,6 +832,20 @@ export default function App() {
         onSelectMonument={(stt) => handleSelectMonument(stt)}
         onOpenExplorer={() => setExplorerModalOpen(true)}
         onOpenMyMap={() => setMyMapModalOpen(true)}
+        isOpen={aiChatOpen}
+        onToggleOpen={setAiChatOpen}
+      />
+
+      {/* Mobile Bottom Navigation Bar (Thanh điều hướng nhanh thân thiện ngón tay cho Học sinh) */}
+      <MobileBottomNav
+        viewMode={viewMode}
+        onNavigate={handleNavigate}
+        onOpenExplorer={() => setExplorerModalOpen(true)}
+        onOpenMyMap={() => setMyMapModalOpen(true)}
+        onOpenPassport={() => setPassportModalOpen(true)}
+        onToggleAIChat={() => setAiChatOpen(prev => !prev)}
+        activePassport={activePassport}
+        isChatOpen={aiChatOpen}
       />
     </div>
   );

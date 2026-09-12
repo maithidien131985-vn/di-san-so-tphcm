@@ -124,9 +124,24 @@ export default function HeritageAIChatbot({
   viewMode = 'home', // 'home' | 'detail'
   onSelectMonument,
   onOpenExplorer,
-  onOpenMyMap
+  onOpenMyMap,
+  isOpen: controlledIsOpen,
+  onToggleOpen
 }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [internalIsOpen, setInternalIsOpen] = useState(false);
+  const isOpen = controlledIsOpen !== undefined ? controlledIsOpen : internalIsOpen;
+  const setIsOpen = (val) => {
+    if (onToggleOpen) {
+      if (typeof val === 'function') {
+        onToggleOpen(val(isOpen));
+      } else {
+        onToggleOpen(val);
+      }
+    } else {
+      setInternalIsOpen(val);
+    }
+  };
+
   const [isExpanded, setIsExpanded] = useState(false);
   const [inputMessage, setInputMessage] = useState('');
   const [isThinking, setIsThinking] = useState(false);
@@ -948,7 +963,7 @@ export default function HeritageAIChatbot({
   return (
     <>
       {/* 1. FLOATING AVATAR LAUNCHER BUTTON (ALWAYS VISIBLE CORNER) */}
-      <div className="fixed bottom-16 sm:bottom-6 right-4 sm:right-6 z-50 flex items-end gap-2 pointer-events-auto">
+      <div className="fixed bottom-20 sm:bottom-6 right-3 sm:right-6 z-50 flex items-end gap-2 pointer-events-auto">
         {!isOpen && hasUnread && (
           <div 
             onClick={() => setIsOpen(true)}
@@ -984,13 +999,20 @@ export default function HeritageAIChatbot({
 
       {/* 2. EXPANDABLE CHATBOT WINDOW */}
       {isOpen && (
-        <div 
-          className={`fixed z-50 transition-all duration-300 flex flex-col bg-[#FFFDFB] border-2 border-rose-200 shadow-2xl shadow-red-950/30 overflow-hidden ${
-            isExpanded
-              ? 'inset-2 sm:inset-6 md:inset-10 rounded-3xl'
-              : 'bottom-24 sm:bottom-20 right-2 sm:right-6 w-[calc(100vw-16px)] sm:w-[420px] md:w-[460px] h-[560px] sm:h-[620px] max-h-[85vh] rounded-3xl'
-          }`}
-        >
+        <>
+          {/* Backdrop on mobile for better focus */}
+          <div 
+            onClick={() => setIsOpen(false)}
+            className="sm:hidden fixed inset-0 z-50 bg-black/40 backdrop-blur-xs animate-fadeIn" 
+          />
+
+          <div 
+            className={`fixed z-50 transition-all duration-300 flex flex-col bg-[#FFFDFB] border-2 border-rose-200 shadow-2xl shadow-red-950/30 overflow-hidden ${
+              isExpanded
+                ? 'inset-2 sm:inset-6 md:inset-10 rounded-3xl'
+                : 'inset-x-0 bottom-0 sm:bottom-20 sm:right-6 sm:inset-x-auto w-full sm:w-[420px] md:w-[460px] h-[90vh] sm:h-[620px] rounded-t-3xl sm:rounded-3xl'
+            }`}
+          >
           {/* Header */}
           <div className="bg-gradient-to-r from-[#8B1417] via-[#9B1C1E] to-[#B31D21] text-white p-3.5 sm:p-4 flex items-center justify-between shadow-md">
             <div className="flex items-center gap-2.5">
@@ -1351,6 +1373,7 @@ export default function HeritageAIChatbot({
             </button>
           </form>
         </div>
+        </>
       )}
     </>
   );
