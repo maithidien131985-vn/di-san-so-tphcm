@@ -256,6 +256,11 @@ export default function App() {
 
   const [contributeModalOpen, setContributeModalOpen] = useState(false);
   const [explorerModalOpen, setExplorerModalOpen] = useState(false);
+  const [explorerCategoryFilter, setExplorerCategoryFilter] = useState('all');
+  const handleOpenExplorer = (category = 'all') => {
+    setExplorerCategoryFilter(category || 'all');
+    setExplorerModalOpen(true);
+  };
   const [passportModalOpen, setPassportModalOpen] = useState(false);
   const [aiChatOpen, setAiChatOpen] = useState(false);
   const [activePassport, setActivePassport] = useState(() => getActivePassport());
@@ -530,7 +535,7 @@ export default function App() {
         setIsEditMode={setIsEditMode}
         onOpenAdmin={handleOpenAdmin}
         onOpenContribute={() => setContributeModalOpen(true)}
-        onOpenExplorer={() => setExplorerModalOpen(true)}
+        onOpenExplorer={handleOpenExplorer}
         onOpenMyMap={() => setMyMapModalOpen(true)}
         onOpenPassport={() => setPassportModalOpen(true)}
         activePassport={activePassport}
@@ -544,7 +549,7 @@ export default function App() {
         <HomePage
           allMonuments={allMonumentsList}
           onSelectMonument={handleSelectMonument}
-          onOpenExplorer={() => setExplorerModalOpen(true)}
+          onOpenExplorer={handleOpenExplorer}
           onOpenMyMap={() => setMyMapModalOpen(true)}
           onOpenContribute={() => setContributeModalOpen(true)}
           onOpenPassport={() => setPassportModalOpen(true)}
@@ -567,7 +572,7 @@ export default function App() {
             allMonuments={allMonumentsList}
             currentStt={currentStt}
             onSelectMonument={(stt) => handleSelectMonument(stt)}
-            onOpenExplorer={() => setExplorerModalOpen(true)}
+            onOpenExplorer={handleOpenExplorer}
           />
 
           {/* Main Detail Content Area - Full Width */}
@@ -647,7 +652,7 @@ export default function App() {
               monumentName={safeInfo.name || ''}
             />
 
-            {/* 7. HÀNH TRÌNH ĐIỀU TRA & GIẢI MÃ DI SẢN (3 phần trên 1 hàng: Truy Tìm Manh Mối, Hồ Sơ Điều Tra, Tài Liệu Căn Cứ) */}
+            {/* 7. HÀNH TRRJNH ĐIỀU TRA & GIẢI MÃ DI SẢN (3 phần trên 1 hàng: Truy Tìm Manh Mối, Hồ Sơ Điều Tra, Tài Liệu Căn Cứ) */}
             <div id="investigation-section" className="pt-2">
               <InvestigationSection
                 investigation={safeInvestigation}
@@ -684,6 +689,7 @@ export default function App() {
         onClose={() => setExplorerModalOpen(false)}
         currentMonumentStt={currentStt}
         onSelectMonument={handleSelectMonument}
+        initialCategory={explorerCategoryFilter}
       />
 
       {/* Reader Contribution Modal */}

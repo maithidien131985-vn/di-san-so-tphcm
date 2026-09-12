@@ -58,7 +58,7 @@ export default function HeritagePassportModal({
     e.preventDefault();
     setLoginError('');
     if (!inputCode.trim()) {
-      setLoginError('Vui lòng nhập mã số hộ chiếu của bạn');
+      setLoginError('Vui lòng nhập mã số thẻ khám phá của bạn');
       return;
     }
 
@@ -69,7 +69,7 @@ export default function HeritagePassportModal({
       setActiveTab('passport');
       setInputCode('');
     } else {
-      setLoginError('Không tìm thấy Hộ chiếu với mã số này. Vui lòng kiểm tra lại hoặc tạo Hộ chiếu mới!');
+      setLoginError('Không tìm thấy Thẻ khám phá với mã số này. Vui lòng kiểm tra lại hoặc nhận thẻ mới!');
     }
   };
 
@@ -129,7 +129,7 @@ export default function HeritagePassportModal({
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="font-serif-title font-black text-base sm:text-lg uppercase tracking-wider text-white">
-                  HỘ CHIẾU DI SẢN SỐ
+                  THẺ KHÁM PHÁ DI SẢN
                 </h3>
                 <span className="px-2 py-0.5 rounded-full bg-amber-400 text-[#8B1417] text-[10px] font-black uppercase">
                   103 Di Tích TP.HCM
@@ -137,7 +137,7 @@ export default function HeritagePassportModal({
               </div>
               <p className="text-xs text-rose-100/90">
                 {activePassport 
-                  ? `Chủ sở hữu: ${activePassport.fullName} • Mã: ${activePassport.code}`
+                  ? `Chủ sở hữu: ${activePassport.fullName} • Mã thẻ: ${activePassport.code}`
                   : 'Lưu giữ hành trình khám phá di tích mỗi ngày cho học sinh'}
               </p>
             </div>
@@ -165,7 +165,7 @@ export default function HeritagePassportModal({
                   }`}
                 >
                   <ShieldCheck className="w-4 h-4" />
-                  <span>Hộ Chiếu Của Tôi</span>
+                  <span>Thẻ Của Tôi</span>
                 </button>
 
                 <button
@@ -186,26 +186,26 @@ export default function HeritagePassportModal({
               <>
                 <button
                   onClick={() => setActiveTab('login')}
-                  className={`px-3.5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 ${
+                  className={`px-4 py-2 rounded-xl font-black text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 ${
                     activeTab === 'login'
                       ? 'bg-[#8B1417] text-white shadow-md'
                       : 'bg-white hover:bg-rose-50 text-[#8B1417] border border-rose-200'
                   }`}
                 >
                   <LogIn className="w-4 h-4" />
-                  <span>Đăng Nhập Mã Hộ Chiếu</span>
+                  <span>Nhập mã</span>
                 </button>
 
                 <button
                   onClick={() => setActiveTab('register')}
-                  className={`px-3.5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 ${
+                  className={`px-4 py-2 rounded-xl font-black text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 ${
                     activeTab === 'register'
                       ? 'bg-[#8B1417] text-white shadow-md'
                       : 'bg-white hover:bg-rose-50 text-[#8B1417] border border-rose-200'
                   }`}
                 >
                   <UserPlus className="w-4 h-4" />
-                  <span>Cấp Hộ Chiếu Mới</span>
+                  <span>Nhận mã mới</span>
                 </button>
               </>
             )}
@@ -244,11 +244,11 @@ export default function HeritagePassportModal({
                         CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
                       </span>
                       <h4 className="font-serif-title font-black text-lg sm:text-2xl text-amber-100 tracking-wider uppercase">
-                        HỘ CHIẾU THÁM HIỂM DI SẢN SỐ
+                        THẺ KHÁM PHÁ DI SẢN SỐ
                       </h4>
                     </div>
                     <div className="text-right">
-                      <span className="text-[10px] text-amber-200 block font-bold">MÃ HỘ CHIẾU:</span>
+                      <span className="text-[10px] text-amber-200 block font-bold">MÃ THẺ:</span>
                       <span className="font-mono font-black text-sm sm:text-base text-white tracking-widest bg-black/40 px-2.5 py-1 rounded-lg border border-amber-400/40">
                         {activePassport.code}
                       </span>
@@ -489,16 +489,16 @@ export default function HeritagePassportModal({
                   <LogIn className="w-7 h-7" />
                 </div>
                 <h4 className="font-serif-title font-black text-xl sm:text-2xl text-[#8B1417]">
-                  Đăng Nhập Mã Hộ Chiếu
+                  Nhập mã khám phá
                 </h4>
                 <p className="text-xs sm:text-sm text-stone-600">
-                  Nhập mã số hộ chiếu đã được cấp (VD: <code className="bg-rose-100 px-1.5 py-0.5 rounded text-[#8B1417] font-mono">HC-2026-8942</code>) để tiếp tục hành trình của bạn.
+                  Nhập mã số thẻ đã được cấp (VD: <code className="bg-rose-100 px-1.5 py-0.5 rounded text-[#8B1417] font-mono">HC-2026-8942</code>) để tiếp tục hành trình của bạn.
                 </p>
               </div>
 
               <form onSubmit={handleLogin} className="space-y-4">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-stone-700 block">Mã số Hộ Chiếu của bạn:</label>
+                  <label className="text-xs font-bold text-stone-700 block">Mã số thẻ của bạn:</label>
                   <input
                     type="text"
                     value={inputCode}
@@ -522,12 +522,12 @@ export default function HeritagePassportModal({
 
               <div className="pt-4 border-t border-rose-100 text-center">
                 <p className="text-xs text-stone-500">
-                  Chưa có Hộ Chiếu?{' '}
+                  Chưa có thẻ?{' '}
                   <button
                     onClick={() => setActiveTab('register')}
                     className="font-bold text-[#8B1417] hover:underline cursor-pointer"
                   >
-                    Nhấn vào đây để nhận Mã Hộ Chiếu mới (Miễn phí)
+                    Nhấn vào đây để nhận mã mới (Miễn phí)
                   </button>
                 </p>
               </div>
@@ -542,10 +542,10 @@ export default function HeritagePassportModal({
                   <UserPlus className="w-7 h-7" />
                 </div>
                 <h4 className="font-serif-title font-black text-xl sm:text-2xl text-[#8B1417]">
-                  Cấp Hộ Chiếu Di Sản Mới
+                  Nhận thẻ khám phá mới
                 </h4>
                 <p className="text-xs text-stone-600">
-                  Điền thông tin đơn giản để nhận ngay <strong>Mã Số Hộ Chiếu</strong> và bắt đầu tích lũy dấu mộc 103 di tích.
+                  Điền thông tin đơn giản để nhận ngay <strong>Mã Số Thẻ</strong> và bắt đầu tích lũy dấu mộc 103 di tích.
                 </p>
               </div>
 
@@ -612,7 +612,7 @@ export default function HeritagePassportModal({
                   className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[#8B1417] to-[#B31D21] hover:from-[#731013] hover:to-[#96171a] text-white font-black text-sm shadow-xl transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
                 >
                   <Sparkles className="w-4 h-4 text-amber-200" />
-                  <span>Cấp Hộ Chiếu &amp; Nhận Mã Số Ngay</span>
+                  <span>Nhận mã số thẻ ngay</span>
                 </button>
               </form>
 
@@ -621,7 +621,7 @@ export default function HeritagePassportModal({
                   onClick={() => setActiveTab('login')}
                   className="text-xs font-bold text-[#8B1417] hover:underline cursor-pointer"
                 >
-                  Đã có mã số? Nhấn để đăng nhập
+                  Đã có mã số? Nhấn để nhập mã
                 </button>
               </div>
             </div>
@@ -633,7 +633,7 @@ export default function HeritagePassportModal({
         <div className="p-3 bg-[#FAF4F0] border-t border-rose-200 flex items-center justify-between text-xs text-stone-600">
           <span className="flex items-center gap-1 text-[11px]">
             <ShieldCheck className="w-3.5 h-3.5 text-[#8B1417]" />
-            <span>Hộ chiếu được lưu trữ bảo mật và khôi phục dễ dàng bằng Mã số</span>
+            <span>Thẻ khám phá được lưu trữ bảo mật và khôi phục dễ dàng bằng Mã số</span>
           </span>
           <button
             onClick={onClose}

@@ -206,7 +206,7 @@ export default function PersonalJourneyPage({
                 className="px-3.5 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-amber-950 text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 shadow-md hover:scale-102"
               >
                 <RefreshCw className="w-3.5 h-3.5" />
-                <span>{activePassport ? 'Đổi Hộ Chiếu' : 'Đăng Nhập / Nhận Mã'}</span>
+                <span>{activePassport ? 'Đổi Thẻ Khám Phá' : 'Nhập Mã / Nhận Mã Mới'}</span>
               </button>
             </div>
           </div>
@@ -804,7 +804,7 @@ export default function PersonalJourneyPage({
                   ) : (
                     <>
                       <Lock className="w-4 h-4 text-neutral-500" />
-                      <span>Chưa mở khóa trong Hộ Chiếu</span>
+                      <span>Chưa mở khóa trong Thẻ khám phá</span>
                     </>
                   )}
                 </div>

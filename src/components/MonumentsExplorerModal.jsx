@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   X, 
   Search, 
@@ -13,13 +13,25 @@ export default function MonumentsExplorerModal({
   isOpen,
   onClose,
   currentMonumentStt,
-  onSelectMonument
+  onSelectMonument,
+  initialCategory = 'all'
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedRank, setSelectedRank] = useState('all');
-  const [selectedType, setSelectedType] = useState('all');
+  const [selectedType, setSelectedType] = useState(initialCategory || 'all');
   const [page, setPage] = useState(1);
   const itemsPerPage = 12;
+
+  useEffect(() => {
+    if (isOpen) {
+      if (initialCategory && initialCategory !== 'all') {
+        setSelectedType(initialCategory);
+      } else {
+        setSelectedType('all');
+      }
+      setPage(1);
+    }
+  }, [isOpen, initialCategory]);
 
   const filteredMonuments = useMemo(() => {
     return allMonumentsList.filter(m => {

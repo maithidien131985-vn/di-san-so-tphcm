@@ -71,7 +71,7 @@ export default function MobileBottomNav({
             )}
           </div>
           <span className="text-[10px] mt-0.5 tracking-tight font-bold text-[#7E1819]">
-            {activePassport ? 'Hộ chiếu' : 'Nhiệm vụ'}
+            {activePassport ? 'Thẻ khám phá' : 'Khám phá'}
           </span>
         </button>
 

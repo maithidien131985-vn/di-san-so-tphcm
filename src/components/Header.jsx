@@ -30,41 +30,17 @@ export default function Header({
 
   const navLinks = [
     { id: 'home', label: 'Trang chủ', isHome: true },
-    { id: 'journey', label: 'Sơ đồ hành trình', isJourney: true },
     { id: 'map', label: 'Bản đồ di tích', isMap: true },
-    { id: 'monuments', label: 'Kho di tích', isExplorer: true },
-    { id: 'investigation', label: 'Hồ sơ điều tra', isInvestigation: true },
-    { id: 'quiz_game', label: 'Trò chơi', isQuizGame: true },
-    { id: 'about', label: 'Về dự án', isAbout: true }
+    { id: 'monuments', label: 'Kho di tích', isExplorer: true }
   ];
 
   const handleNavClick = (link) => {
     if (link.isHome) {
       if (onNavigate) onNavigate('home');
-    } else if (link.isJourney) {
-      if (onNavigate) onNavigate('journey');
     } else if (link.isMap) {
       if (onOpenMyMap) onOpenMyMap();
     } else if (link.isExplorer) {
       if (onOpenExplorer) onOpenExplorer();
-    } else if (link.isInvestigation) {
-      if (viewMode !== 'detail' && onNavigate) {
-        onNavigate('detail');
-      }
-      setTimeout(() => {
-        const el = document.getElementById('investigation-section');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else if (link.isQuizGame) {
-      if (viewMode !== 'detail' && onNavigate) {
-        onNavigate('detail');
-      }
-      setTimeout(() => {
-        const el = document.getElementById('investigation-section');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else if (link.isAbout) {
-      if (onNavigate) onNavigate('about');
     }
   };
 
@@ -104,7 +80,7 @@ export default function Header({
               key={item.id}
               onClick={() => handleNavClick(item)}
               className={`transition-colors py-1 cursor-pointer hover:text-[#7E1819] ${
-                (item.isHome && viewMode === 'home') || (item.isJourney && viewMode === 'journey')
+                item.isHome && viewMode === 'home'
                   ? 'text-[#7E1819] font-black border-b-2 border-[#7E1819]'
                   : 'text-[#333333]'
               }`}
@@ -115,8 +91,8 @@ export default function Header({
         </nav>
 
         {/* Action Controls */}
-        <div className="flex items-center gap-2 sm:gap-3">
-          {/* Nút HỘ CHIẾU DI SẢN (Chế độ Học sinh lưu hành trình) */}
+        <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Nút THẺ KHÁM PHÁ DI SẢN */}
           <button
             onClick={onOpenPassport}
             className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-black shadow-xs cursor-pointer transition-all hover:scale-103 ${
@@ -124,7 +100,7 @@ export default function Header({
                 ? 'bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-[#2C0709] border border-amber-300 ring-2 ring-amber-400/40'
                 : 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border border-amber-400/50 hover:from-[#731013] hover:to-[#911d1e]'
             }`}
-            title={activePassport ? `Hộ chiếu: ${activePassport.fullName} (${activePassport.code})` : "Mở Hộ Chiếu Di Sản / Lưu hành trình khám phá"}
+            title={activePassport ? `Thẻ khám phá: ${activePassport.fullName} (${activePassport.code})` : "Mở Thẻ khám phá di sản / Lưu hành trình khám phá"}
           >
             {activePassport ? (
               <>
@@ -135,32 +111,48 @@ export default function Header({
             ) : (
               <>
                 <Compass className="w-3.5 h-3.5 text-amber-300 animate-spin-slow" />
-                <span className="hidden sm:inline">Hộ Chiếu Di Sản</span>
-                <span className="sm:hidden">Hộ Chiếu</span>
+                <span className="hidden sm:inline">Thẻ khám phá di sản</span>
+                <span className="sm:hidden">Thẻ khám phá</span>
               </>
             )}
+          </button>
+
+          {/* Nút SƠ ĐỒ HÀNH TRÌNH (Đặt ngay phía sau Thẻ khám phá di sản) */}
+          <button
+            onClick={() => {
+              if (onNavigate) onNavigate('journey');
+            }}
+            className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-3 sm:py-2 rounded-xl text-xs font-bold transition-all border cursor-pointer hover:scale-103 ${
+              viewMode === 'journey'
+                ? 'bg-amber-100 text-[#7E1819] border-amber-400 font-black shadow-xs'
+                : 'bg-[#FAF4F0] hover:bg-amber-50 text-[#7E1819] border-rose-200/80 hover:border-amber-300'
+            }`}
+            title="Sơ đồ hành trình khám phá cá nhân"
+          >
+            <Compass className="w-3.5 h-3.5 text-[#7E1819]" />
+            <span className="hidden sm:inline">Sơ đồ hành trình</span>
           </button>
 
           {/* Nút Đóng Góp */}
           <button
             onClick={onOpenContribute}
-            className="flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300 text-xs font-black shadow-2xs cursor-pointer transition-all hover:scale-103"
+            className="flex items-center gap-1.5 px-3 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300/80 text-xs font-bold shadow-2xs cursor-pointer transition-all hover:scale-103"
             title="Đóng góp tư liệu di sản"
           >
             <Upload className="w-3.5 h-3.5 text-[#7E1819]" />
-            <span className="hidden sm:inline">Đóng góp</span>
+            <span className="hidden md:inline">Đóng góp</span>
           </button>
 
-          {/* Admin CMS Button */}
+          {/* Nút Quản trị - Màu trong suốt, không màu đỏ, ở góc tận cùng bên phải, ít được chú ý */}
           <button
             onClick={onOpenAdmin}
-            className="relative flex items-center gap-1.5 px-3.5 py-1.5 sm:py-2 rounded-xl bg-[#7E1819] hover:bg-[#911d1e] text-white text-xs font-bold transition-all shadow-xs cursor-pointer hover:scale-103"
-            title="Quản trị CMS"
+            className="relative flex items-center gap-1 px-2 py-1.5 sm:px-2.5 sm:py-1.5 rounded-lg bg-transparent hover:bg-stone-100 text-stone-400 hover:text-stone-600 text-[11px] font-medium transition-colors cursor-pointer"
+            title="Quản trị hệ thống"
           >
-            <Settings className="w-3.5 h-3.5 text-amber-300" />
-            <span className="hidden sm:inline">Quản trị</span>
+            <Settings className="w-3.5 h-3.5 text-stone-400 group-hover:text-stone-600" />
+            <span className="hidden lg:inline text-[11px]">Quản trị</span>
             {pendingContributionsCount > 0 && (
-              <span className="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-white shadow-sm animate-bounce">
+              <span className="absolute -top-1 -right-1 bg-amber-500 text-white text-[9px] font-black w-4 h-4 rounded-full flex items-center justify-center shadow-xs">
                 {pendingContributionsCount}
               </span>
             )}

@@ -293,52 +293,36 @@ export default function HomePage({
 
               <WordByWordTitle
                 as="h2"
-                text="Hành trình khám phá những câu chuyện còn sống mãi"
+                text="Hành trình chạm vào ký ức sống động của thành phố"
                 className="font-serif-title text-base sm:text-xl lg:text-2xl text-amber-100/90 font-medium tracking-wide drop-shadow"
                 staggerDelay={0.04}
                 initialDelay={0.2}
               />
 
-              <p className="hidden md:block text-xs sm:text-sm md:text-base text-rose-100/80 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0 drop-shadow-sm">
-                Không gian học tập lịch sử số hóa tương tác dành cho học sinh, giáo viên và cộng đồng yêu di sản. Khám phá kho dữ liệu 103 di tích, sơ đồ địa lý, hồ sơ điều tra và thử thách kiến thức.
-              </p>
+              {/* Poetic Heritage Narrative */}
+              <div className="space-y-2.5 sm:space-y-3 text-xs sm:text-[13px] md:text-sm text-rose-100/90 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0 drop-shadow-sm text-left">
+                <p className="font-serif-title italic text-amber-200 text-sm sm:text-base border-l-2 border-amber-400 pl-3 py-0.5">
+                  “Mỗi viên gạch cũ đều mang một cái tên, một câu chuyện, một phần ký ức của thành phố này.”
+                </p>
+                <p>
+                  Giữa nhịp sống hối hả của một Sài Gòn - Hồ Chí Minh không ngừng đổi thay, vẫn có những mái ngói, những bức tường rêu phong lặng lẽ giữ lại cả một dòng thời gian đã qua. Chúng chứng kiến những biến động của lịch sử và cả những điều bình dị nhất của bao thế hệ đã từng đi qua nơi đây.
+                </p>
+                <p>
+                  Có bao nhiêu di tích bạn đã từng đi ngang qua mà chưa một lần dừng lại? Có bao nhiêu câu chuyện đang ngủ quên trong lòng thành phố, chỉ chờ một ai đó bước vào và lắng nghe?
+                </p>
+                <p>
+                  Chúng tôi bắt đầu hành trình này — không phải để kể lại lịch sử khô khan trong sách vở, mà để mời bạn chạm vào nó, theo cách gần gũi nhất với thế hệ mình.
+                </p>
+              </div>
 
-              {/* CTA Buttons */}
-              <div className="pt-2 sm:pt-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
+              {/* Single CTA Button: Khám Phá Di Tích */}
+              <div className="pt-2 sm:pt-3 flex items-center justify-center lg:justify-start">
                 <button
-                  onClick={onOpenExplorer}
-                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-[#200507] font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-amber-950/40 ring-2 ring-amber-300 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
+                  onClick={() => onOpenExplorer && onOpenExplorer()}
+                  className="w-full sm:w-auto px-8 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-[#200507] font-black text-sm sm:text-base uppercase tracking-wider shadow-xl shadow-amber-950/40 ring-2 ring-amber-300 transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5"
                 >
-                  <Landmark className="w-4 h-4 text-[#200507]" />
+                  <Landmark className="w-5 h-5 text-[#200507]" />
                   <span>Khám Phá Di Tích</span>
-                </button>
-
-                <button
-                  onClick={onOpenMyMap}
-                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-[#4A0A0C]/80 hover:bg-[#380608] border border-amber-300/40 text-amber-100 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
-                >
-                  <MapPin className="w-4 h-4 text-amber-300" />
-                  <span>Bản Đồ Di Tích</span>
-                </button>
-
-                <button
-                  onClick={() => {
-                    if (onNavigate) onNavigate('journey');
-                  }}
-                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500/20 to-amber-600/30 hover:bg-amber-500/30 border border-amber-400/60 text-amber-200 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
-                  title="Xem sơ đồ hành trình cá nhân"
-                >
-                  <Sparkles className="w-4 h-4 text-amber-300" />
-                  <span>Sơ Đồ Hành Trình</span>
-                </button>
-
-                <button
-                  onClick={onOpenPassport}
-                  className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center justify-center gap-2.5 backdrop-blur-sm"
-                  title="Mở Hộ Chiếu Di Sản & Lưu hành trình khám phá"
-                >
-                  <Compass className="w-4 h-4 text-amber-300" />
-                  <span>{activePassport ? `Hộ Chiếu: ${activePassport.fullName}` : 'Hộ Chiếu Di Sản'}</span>
                 </button>
               </div>
             </div>
@@ -832,30 +816,42 @@ export default function HomePage({
         <ScrollReveal>
           <div className="space-y-3 sm:space-y-4">
             <div className="flex items-center justify-center gap-6 sm:gap-8">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 p-2 rounded-2xl bg-white border border-rose-200 shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
+              <button
+                type="button"
+                onClick={() => onOpenExplorer && onOpenExplorer('Lịch sử')}
+                className="w-14 h-14 sm:w-16 sm:h-16 p-2 rounded-2xl bg-white border-2 border-rose-200 hover:border-[#8B1417] shadow-md hover:shadow-xl flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer group"
+                title="Khám phá Di tích Lịch sử"
+              >
                 <img
                   src="/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png"
                   alt="Di tích Lịch sử"
-                  className="w-full h-full object-contain drop-shadow-sm"
-                  title="Di tích Lịch sử"
+                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
                 />
-              </div>
-              <div className="w-12 h-12 sm:w-14 sm:h-14 p-2 rounded-2xl bg-white border border-rose-200 shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
+              </button>
+              <button
+                type="button"
+                onClick={() => onOpenExplorer && onOpenExplorer('Kiến trúc')}
+                className="w-14 h-14 sm:w-16 sm:h-16 p-2 rounded-2xl bg-white border-2 border-rose-200 hover:border-[#8B1417] shadow-md hover:shadow-xl flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer group"
+                title="Khám phá Di tích Kiến trúc nghệ thuật"
+              >
                 <img
                   src="/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png"
                   alt="Kiến trúc nghệ thuật"
-                  className="w-full h-full object-contain drop-shadow-sm"
-                  title="Kiến trúc nghệ thuật"
+                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
                 />
-              </div>
-              <div className="w-12 h-12 sm:w-14 sm:h-14 p-2 rounded-2xl bg-white border border-rose-200 shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
+              </button>
+              <button
+                type="button"
+                onClick={() => onOpenExplorer && onOpenExplorer('Khảo cổ')}
+                className="w-14 h-14 sm:w-16 sm:h-16 p-2 rounded-2xl bg-white border-2 border-rose-200 hover:border-[#8B1417] shadow-md hover:shadow-xl flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer group"
+                title="Khám phá Di tích Khảo cổ học"
+              >
                 <img
                   src="/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png"
                   alt="Khảo cổ học"
-                  className="w-full h-full object-contain drop-shadow-sm"
-                  title="Khảo cổ học"
+                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
                 />
-              </div>
+              </button>
             </div>
 
             <div className="space-y-1 sm:space-y-2 max-w-2xl mx-auto px-4 text-center">

@@ -566,7 +566,7 @@ export default function MonumentInteractiveMiniGame({
                         onClick={handleNextQuestion}
                         className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-[#2D0A0D] font-black text-xs sm:text-sm shadow-lg transition-all hover:scale-104 cursor-pointer flex items-center gap-1.5"
                       >
-                        <span>{currentIdx < questions.length - 1 ? 'Khám phá manh mối tiếp theo' : 'Mở Hộ Chiếu Di Sản'}</span>
+                        <span>{currentIdx < questions.length - 1 ? 'Khám phá manh mối tiếp theo' : 'Mở Thẻ Khám Phá Di Sản'}</span>
                         <ArrowRight className="w-4 h-4 text-[#2D0A0D]" />
                       </button>
                     </div>
@@ -593,10 +593,10 @@ export default function MonumentInteractiveMiniGame({
                       </div>
                       <div>
                         <span className="font-serif-title font-black text-sm sm:text-base text-[#8B1417] uppercase tracking-wider block">
-                          HỘ CHIẾU THÁM HIỂM DI SẢN
+                          THẺ KHÁM PHÁ DI SẢN
                         </span>
                         <span className="text-[10px] text-stone-500 font-bold uppercase tracking-widest block">
-                          SAIGON HERITAGE PASSPORT • SỐ HÓA 2026
+                          SAIGON HERITAGE CARD • SỐ HÓA 2026
                         </span>
                       </div>
                     </div>
@@ -656,23 +656,23 @@ export default function MonumentInteractiveMiniGame({
                   <div className="p-3.5 bg-emerald-950/70 border-2 border-emerald-500/80 rounded-2xl text-xs sm:text-sm text-emerald-200 flex items-center justify-between gap-3 shadow-lg">
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
-                      <span>Đã tự động đóng dấu vào Hộ Chiếu của <strong>{activePassport.fullName}</strong> (Mã: <code className="text-amber-300 font-mono font-bold">{activePassport.code}</code>)</span>
+                      <span>Đã tự động đóng dấu vào Thẻ khám phá của <strong>{activePassport.fullName}</strong> (Mã: <code className="text-amber-300 font-mono font-bold">{activePassport.code}</code>)</span>
                     </div>
                     <button
                       onClick={onOpenPassport}
                       className="px-3 py-1.5 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs shrink-0 cursor-pointer shadow-sm"
                     >
-                      Xem Hộ Chiếu
+                      Xem Thẻ Khám Phá
                     </button>
                   </div>
                 ) : (
                   <div className="p-4 bg-gradient-to-r from-[#8B1417] via-[#9E1A1E] to-[#680C0E] border-2 border-amber-400/70 rounded-2xl text-white flex flex-col sm:flex-row items-center justify-between gap-3 shadow-xl">
                     <div className="space-y-0.5 text-center sm:text-left">
                       <span className="font-serif-title font-black text-sm text-amber-200 block">
-                        LƯU LẠI HÀNH TRÌNH VÀO HỘ CHIẾU DI SẢN
+                        LƯU LẠI HÀNH TRÌNH VÀO THẺ KHÁM PHÁ DI SẢN
                       </span>
                       <p className="text-xs text-rose-100">
-                        Nhận ngay Mã Số Hộ Chiếu độc nhất để tiếp tục khám phá các di tích tiếp theo mỗi ngày!
+                        Nhận ngay Mã Số Thẻ độc nhất để tiếp tục khám phá các di tích tiếp theo mỗi ngày!
                       </p>
                     </div>
                     <button
@@ -680,7 +680,7 @@ export default function MonumentInteractiveMiniGame({
                       className="px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-[#8B1417] font-black text-xs shrink-0 shadow-lg cursor-pointer transition-all hover:scale-103 flex items-center gap-1.5"
                     >
                       <Compass className="w-4 h-4" />
-                      <span>Nhận Mã Hộ Chiếu (+100 XP)</span>
+                      <span>Nhận Mã Thẻ (+100 XP)</span>
                     </button>
                   </div>
                 )}
@@ -704,7 +704,7 @@ export default function MonumentInteractiveMiniGame({
                     className="px-6 py-3 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-[#2D0A0D] font-black text-xs sm:text-sm shadow-xl transition-all hover:scale-103 cursor-pointer flex items-center gap-2"
                   >
                     {copiedLink ? <Check className="w-4 h-4 text-[#2D0A0D]" /> : <Share2 className="w-4 h-4 text-[#2D0A0D]" />}
-                    <span>{copiedLink ? 'Đã sao chép liên kết!' : 'Chia sẻ Hộ Chiếu Di Sản'}</span>
+                    <span>{copiedLink ? 'Đã sao chép liên kết!' : 'Chia sẻ Thẻ Khám Phá Di Sản'}</span>
                   </button>
                 </div>
               </div>
