@@ -6,7 +6,6 @@ import QuickActionCards from './components/QuickActionCards';
 import MonumentLocationChallengeSection from './components/MonumentLocationChallengeSection';
 import MediaAudioVideoRow from './components/MediaAudioVideoRow';
 import HistorySection from './components/HistorySection';
-import InfoSidebar from './components/InfoSidebar';
 import MonumentInteractiveMiniGame from './components/MonumentInteractiveMiniGame';
 import ThreeKeyHighlightsSection from './components/ThreeKeyHighlightsSection';
 import InvestigationSection from './components/InvestigationSection';
@@ -600,22 +599,13 @@ export default function App() {
               onOpenContribute={() => setContributeModalOpen(true)}
             />
 
-            {/* 3. BẢNG THÔNG TIN NHANH & EM CÓ BIẾT (Được đưa lên trên ngay sau Action Cards) */}
-            <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10">
-              <ScrollReveal>
-                <InfoSidebar
-                  info={safeInfo}
-                  isEditMode={isEditMode}
-                  onUpdateInfo={handleUpdateInfo}
-                />
-              </ScrollReveal>
-            </div>
-
-            {/* 4. BẢN ĐỒ VỊ TRÍ Ở TRÊN + THỬ THÁCH "BẠN ĐANG Ở ĐÂU?" */}
+            {/* 3. BẢN ĐỒ ĐỊNH VỊ GPS VÀ HỒ SƠ THÔNG TIN NHANH / EM CÓ BIẾT */}
             <MonumentLocationChallengeSection
               info={safeInfo}
               map={safeMap}
               onOpenMyMap={() => setMyMapModalOpen(true)}
+              isEditMode={isEditMode}
+              onUpdateInfo={handleUpdateInfo}
             />
 
             {/* 5. VIDEO VÀ ÂM THANH CHUNG 1 DÒNG + THỬ THÁCH "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
