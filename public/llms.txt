@@ -1,0 +1,140 @@
+# DI SẢN SỐ TP.HCM - HỆ THỐNG SỐ HÓA 103 DI TÍCH LỊCH SỬ & VĂN HÓA
+
+> Hệ thống học tập số hóa di sản văn hóa, lịch sử TP.HCM phục vụ giáo dục địa phương, tích hợp công nghệ AI, bản đồ số, audio thuyết minh đồng bộ, mô hình 3D/VR, thước phim tư liệu và ngân hàng 3.605 câu hỏi - đáp trắc nghiệm.
+
+## 1. TỔNG QUAN HỆ THỐNG & CÔNG NGHỆ
+- **Đơn vị phát triển:** Dự án Nghiên cứu Khoa học Kỹ thuật (KHKT) trường THCS Xà Bang.
+- **Quy mô số hóa:** Toàn bộ 103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt tại TP.HCM & các địa bàn lịch sử phụ cận liên quan (Côn Đảo, Căn cứ Rừng Sác, Địa đạo Bến Cát...).
+- **Tính năng cốt lõi:**
+  1. **Bản đồ tương tác (Interactive Heritage Map):** Định vị GPS chuẩn xác 103 di tích, phân loại theo địa bàn quận/huyện, bộ lọc di tích theo cấp xếp hạng và loại hình.
+  2. **Đa phương tiện đồng bộ:** Audio thuyết minh chuẩn chất giọng kèm kịch bản đọc chữ đồng bộ thời gian thực; Thước phim video tư liệu lịch sử cho từng di tích.
+  3. **Thám hiểm 3D / VR:** Không gian tham quan ảo, mô hình hiện vật và di vật khảo cổ quý.
+  4. **Trợ lý AI Di sản (Heritage AI Chatbot):** Tích hợp kép (Google Gemini 1.5 Flash Live & Bộ quy tắc NLP suy luận cục bộ 3.605 cặp hỏi - đáp chính thống từ Sở VH&TT).
+  5. **Tích hợp Sư phạm Liên môn:** Kết nối 6 môn học (Lịch sử, Địa lý, Ngữ văn, GDCD, STEM/Khoa học tự nhiên, KHKT) cùng hệ thống hồ sơ điều tra giải mã di sản.
+  6. **Đánh giá & Gamification:** Trắc nghiệm tương tác 5 câu hỏi ngẫu nhiên cho từng di tích, hệ thống Hộ chiếu Di sản (Passport) và bộ sưu tập huy hiệu thành tựu.
+
+## 2. THỐNG KÊ KHOA HỌC VỀ DI TÍCH TP.HCM (SỞ VĂN HÓA & THỂ THAO)
+- **Tổng số di tích đã xếp hạng:** 321 di tích (4 Quốc gia đặc biệt, 99 Cấp Quốc gia, 218 Cấp Tỉnh/Thành phố).
+- **Phân loại di tích:** 168 di tích Lịch sử, 143 di tích Kiến trúc nghệ thuật, 4 di tích Khảo cổ học, 6 Danh lam thắng cảnh.
+- **Công trình kiểm kê chưa xếp hạng:** 226 công trình (161 Kiến trúc nghệ thuật, 47 Lịch sử, 11 Khảo cổ, 7 Thắng cảnh).
+- **Phạm vi số hóa trọng điểm của dự án:** 103 di tích (gồm 100% 4 di tích Quốc gia đặc biệt và 99 di tích Quốc gia).
+
+## 3. DANH MỤC 103 DI TÍCH TRỌNG ĐIỂM ĐÃ SỐ HÓA
+
+- [#{stt} Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước](/#monument-1): Quốc gia đặc biệt | Loại hình: Lịch sử | Địa chỉ: 135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Tp. Hồ Chí Minh
+- [#{stt} Di tích lịch sử Địa đạo Củ Chi](/#monument-2): Quốc gia đặc biệt | Loại hình: Lịch sử | Địa chỉ: Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh.
+- [#{stt} Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)](/#monument-3): Quốc gia đặc biệt | Loại hình: Lịch sử | Địa chỉ: Xã Hồ Tràm, Thành phố Hồ Chí Minh
+- [#{stt} Di tích lịch sử nhà tù Côn Đảo](/#monument-4): Quốc gia đặc biệt | Loại hình: Lịch sử | Địa chỉ: Đặc khu Côn Đảo, Thành phố Hồ Chí Minh
+- [#{stt} Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)](/#monument-5): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Xã Ngãi Giao, Thành phố Hồ Chí Minh
+- [#{stt} Căn cứ Minh Đạm](/#monument-6): Quốc gia | Loại hình: Lịch sử | Địa chỉ: xã Phước Hải, Thành phố Hồ Chí Minh
+- [#{stt} Căn cứ Rừng Sác](/#monument-7): Quốc gia | Loại hình: Lịch sử | Địa chỉ: xã Cần Giờ, Thành phố Hồ Chí Minh mới
+- [#{stt} Chiến khu Đ](/#monument-8): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh.
+- [#{stt} Địa đạo Kim Long](/#monument-9): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh.
+- [#{stt} Địa đạo Phú Thọ Hòa](/#monument-10): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh.
+- [#{stt} Địa Đạo Tây Nam ( Tam Giác Sắt)](/#monument-11): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Phường Tây Nam, Thành phố Hồ Chí Minh.
+- [#{stt} Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề](/#monument-12): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh.
+- [#{stt} Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ](/#monument-13): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh.
+- [#{stt} Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh](/#monument-14): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 190 đường Võ Văn 
+Kiệt, phường Chợ Quán, Thành phố Hồ Chí Minh.
+- [#{stt} Ngã Ba Giồng](/#monument-15): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh.
+- [#{stt} Nhà lưu niệm Võ Thị Sáu](/#monument-16): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh.
+- [#{stt} Nhà tù Phú Lợi (căng Phú Lợi)](/#monument-17): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh.
+- [#{stt} Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước](/#monument-18): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh.
+- [#{stt} Nơi thành lập An Nam Cộng sản Đảng năm 1929](/#monument-19): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh.
+- [#{stt} Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh](/#monument-20): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh.
+- [#{stt} Cù Lao Rùa](/#monument-21): Quốc gia | Loại hình: Khảo cổ học | Địa chỉ: Phường Tân Khánh, Thành phố Hồ Chí Minh.
+- [#{stt} Dốc Chùa](/#monument-22): Quốc gia | Loại hình: Khảo cổ học | Địa chỉ: Phường Tân Uyên, Thành phố Hồ Chí Minh.
+- [#{stt} Giồng Cá Vồ](/#monument-23): Quốc gia | Loại hình: Khảo cổ học | Địa chỉ: Xã Cần Giờ, Thành phố Hồ Chí Minh.
+- [#{stt} Lò gốm cổ Hưng Lợi](/#monument-24): Quốc gia | Loại hình: Khảo cổ học | Địa chỉ: Phường Phú Định, Thành phố Hồ Chí Minh.
+- [#{stt} Ăngten Parabol (đài viba) – Núi Lớn](/#monument-25): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Bót Dây Thép](/#monument-26): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh.
+- [#{stt} Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ](/#monument-27): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh.
+- [#{stt} Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập](/#monument-28): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh.
+- [#{stt} Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn](/#monument-29): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh.
+- [#{stt} Di tích 86 Phan Chu Trinh](/#monument-30): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Dinh Quận Hóc Môn](/#monument-31): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh.
+- [#{stt} Địa đạo Long Phước](/#monument-32): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Phường Tam Long, Thành phố Hồ Chí Minh.
+- [#{stt} Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba](/#monument-33): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Xã Ngãi Giao, Thành phố Hồ Chí Minh.
+- [#{stt} Đình Bình Đông](/#monument-34): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh.
+- [#{stt} Đình Phong Phú](/#monument-35): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh.
+- [#{stt} Đồn ngã tư Giếng Nước](/#monument-36): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh.
+- [#{stt} Địa đạo Hắc Dịch](/#monument-37): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Phường Tân Thành, Thành phố Hồ Chí Minh.
+- [#{stt} Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước](/#monument-38): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh.
+- [#{stt} Mộ Phan Châu Trinh](/#monument-39): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh.
+- [#{stt} “Nhà cao cẳng” số 18 Lê Lợi.](/#monument-40): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Ngôi nhà 42/11 (nhà má Tám Nhung)](/#monument-41): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Nhà số 18/5 (nhà ông Trương Quang Vinh)](/#monument-42): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Nhà Tròn](/#monument-43): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Phường Bà Rịa, Thành phố Hồ Chí Minh.
+- [#{stt} Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội](/#monument-44): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh.
+- [#{stt} Khu căn cứ Núi Dinh](/#monument-45): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Phường Tân Hải, Thành phố Hồ Chí Minh.
+- [#{stt} Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968](/#monument-46): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh.
+- [#{stt} Tịnh xá Ngọc Phương](/#monument-47): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh.
+- [#{stt} Tòa Đại sứ quán Mỹ](/#monument-48): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh.
+- [#{stt} Trại Đa-vít](/#monument-49): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Phường Bảy Hiền, Thành phố Hồ Chí Minh.
+- [#{stt} Trận địa pháo cổ Cầu Đá](/#monument-50): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)](/#monument-51): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn](/#monument-52): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Trụ sở Báo Dân Chúng](/#monument-53): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh.
+- [#{stt} Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)](/#monument-54): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh.
+- [#{stt} Trụ sở Ủy ban Việt Minh tại Vũng Tàu](/#monument-55): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Bạch Dinh](/#monument-56): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh
+- [#{stt} Bảo tàng Lịch sử Thành phố Hồ Chí Minh](/#monument-57): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM
+- [#{stt} Bảo tàng Thành phố Hồ Chí Minh](/#monument-58): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM
+- [#{stt} Chùa Giác Lâm](/#monument-59): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam
+- [#{stt} Chùa Giác Viên](/#monument-60): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM
+- [#{stt} Chùa Hội Khánh](/#monument-61): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh
+- [#{stt} Chùa Hội Sơn](/#monument-62): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM
+- [#{stt} Chùa Long Bàn](/#monument-63): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh.
+- [#{stt} Chùa Phụng Sơn](/#monument-64): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh.
+- [#{stt} Chùa Phước Lâm (Phước Lâm Tự)](/#monument-65): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 65 đường Nguyễn Bảo, 
+phường Vũng Tàu, Thành phố Hồ Chí Minh.
+- [#{stt} Chùa Phước Tường](/#monument-66): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 13/32 đường Lã Xuân 
+Oai, phường Tăng Nhơn 
+Phú, Thành phố Hồ Chí Minh.
+- [#{stt} Chùa Sắc Tứ Trường Thọ](/#monument-67): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh
+- [#{stt} Dinh Cô](/#monument-68): Quốc gia | Loại hình: Danh lam thắng cảnh | Địa chỉ: Xã Long Hải, Thành phố Hồ Chí Minh
+- [#{stt} Chùa Ngọc Hoàng](/#monument-69): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 73 Mai Thị Lựu, 
+phường Tân Định
+- [#{stt} Đình Bình Hòa](/#monument-70): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh
+- [#{stt} Đình Chí Hòa](/#monument-71): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh
+- [#{stt} Đình Dĩ An](/#monument-72): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh
+- [#{stt} Đình Minh Hương Gia Thạnh](/#monument-73): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh
+- [#{stt} Đình Phú Long](/#monument-74): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM
+- [#{stt} Đình Phú Nhuận](/#monument-75): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM
+- [#{stt} Đình Tân An (Bến Thế)](/#monument-76): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Khu phố 1, phường Phú An, TP.HCM
+- [#{stt} Đình Thắng Tam](/#monument-77): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM
+- [#{stt} Đình Thần Linh Đông](/#monument-78): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM
+- [#{stt} Đình Thông Tây Hội](/#monument-79): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM.
+- [#{stt} Đình Trường Thọ](/#monument-80): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Tổ 5, phường Thủ Đức, TP.HCM.
+- [#{stt} Đình Xuân Hiệp](/#monument-81): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Phường Linh Xuân, TP.HCM.
+- [#{stt} Hội quán Hà Chương](/#monument-82): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ.
+- [#{stt} Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)](/#monument-83): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.
+- [#{stt} Hội quán Nghĩa Nhuận](/#monument-84): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM.
+- [#{stt} Hội quán Ôn Lăng](/#monument-85): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM.
+- [#{stt} Hội quán Quỳnh Phủ](/#monument-86): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.
+- [#{stt} Hội quán Tuệ Thành (Chùa Bà)](/#monument-87): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.
+- [#{stt} Lăng Lê Văn Duyệt](/#monument-88): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM.
+- [#{stt} Lăng Trương Tấn Bửu](/#monument-89): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM.
+- [#{stt} Lăng Võ Di Nguy](/#monument-90): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM.
+- [#{stt} Linh Sơn Cổ Tự](/#monument-91): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM.
+- [#{stt} Miếu Nhị Phủ (Chùa Ông Bổn)](/#monument-92): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM.
+- [#{stt} Miếu Thiên Hậu (Quảng Triệu hội quán)](/#monument-93): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM.
+- [#{stt} Nhà cổ Trần Công Vàng](/#monument-94): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM.
+- [#{stt} Nhà cổ Trần Văn Hổ](/#monument-95): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM.
+- [#{stt} Nhà hát Thành phố Hồ Chí Minh](/#monument-96): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM.
+- [#{stt} Nhà Lớn Long Sơn](/#monument-97): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Thôn 5, phường Long Sơn, TP.HCM.
+- [#{stt} Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)](/#monument-98): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.
+- [#{stt} Niết Bàn Tịnh Xá](/#monument-99): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM.
+- [#{stt} Núi Châu Thới](/#monument-100): Quốc gia | Loại hình: Danh lam thắng cảnh | Địa chỉ: Núi Châu Thới, phường Đông Hòa, TP.HCM.
+- [#{stt} Thích Ca Phật Đài](/#monument-101): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM.
+- [#{stt} Tòa án nhân dân Thành phố Hồ Chí Minh](/#monument-102): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM.
+- [#{stt} Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh](/#monument-103): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM.
+
+## 4. TÀI LIỆU CHI TIẾT DÀNH CHO AI (FULL DOSSIER)
+- Xem toàn bộ dữ liệu chi tiết, nhân vật, sự kiện, hiện vật, quyết định xếp hạng tại: [/llms-full.txt](/llms-full.txt)
+
+## 5. TIÊU CHÍ ĐÁNH GIÁ & ĐỀ NGHỊ PHẢN BIỆN DÀNH CHO CHUYÊN GIA / CHATGPT
+1. **Tính chính xác khoa học & lịch sử:** Kiểm tra độ chuẩn xác của các mốc niên đại, số quyết định xếp hạng, nhân vật và sự kiện lịch sử.
+2. **Giá trị sư phạm & giáo dục địa phương:** Đánh giá mức độ phù hợp với chương trình GDPT 2018 và tính hiệu quả khi học sinh THCS/THPT tự học.
+3. **Tính ứng dụng & trải nghiệm người dùng (UX/UI):** Đánh giá tính trực quan của bản đồ, tính đồng bộ của âm thanh kịch bản, và khả năng phản hồi của Trợ lý AI.
+4. **Tính sáng tạo & đóng góp của dự án KHKT:** Khả năng bảo tồn và lan tỏa giá trị di sản số trong kỷ nguyên chuyển đổi số quốc gia.

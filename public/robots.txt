@@ -1,0 +1,31 @@
+# Robots.txt for Di Sản Số TP.HCM
+User-agent: *
+Allow: /
+
+# AI Crawlers specific access
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# LLM Direct Knowledge Base Reference (https://llmstxt.org/)
+llms-txt: https://di-san-so-tphcm.vercel.app/llms.txt
+llms-full-txt: https://di-san-so-tphcm.vercel.app/llms-full.txt
+
+Sitemap: https://di-san-so-tphcm.vercel.app/sitemap.xml
