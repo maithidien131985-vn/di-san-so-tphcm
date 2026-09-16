@@ -19861,11 +19861,14 @@ export const allMonumentsList = [
     },
     "video": {
       "title": "Phim tư liệu lịch sử: Đồn ngã tư Giếng Nước",
-      "youtubeUrl": "https://www.youtube.com/watch?v=o4nVqf1VA0E",
-      "youtubeId": "o4nVqf1VA0E",
-      "description": "Thước phim tư liệu chân thực về di tích Đồn ngã tư Giếng Nước tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh..",
-      "channel": "nnga",
-      "copyright": "Video thuộc bản quyền Kênh YouTube nnga"
+      "videoType": "local",
+      "src": "/assets/videos/monument-video-36.mp4",
+      "localUrl": "/assets/videos/monument-video-36.mp4",
+      "mp4Url": "/assets/videos/monument-video-36.mp4",
+      "youtubeUrl": "/assets/videos/monument-video-36.mp4",
+      "description": "Thước phim tư liệu chân thực về di tích Đồn ngã tư Giếng Nước.",
+      "channel": "Tư liệu gốc Di sản số",
+      "copyright": "Video tư liệu gốc Đồn ngã tư Giếng Nước"
     },
     "keyHighlights": {
       "figures": {

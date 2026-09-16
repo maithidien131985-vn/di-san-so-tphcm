@@ -236,19 +236,32 @@ export default function MediaAudioVideoRow({
               </h3>
             </div>
 
-            {/* Video Iframe Theater Bezel */}
+            {/* Video Iframe / Local Video Theater Bezel */}
             <div className="relative z-10 aspect-video rounded-2xl overflow-hidden bg-black shadow-2xl border-2 border-amber-500/30 ring-4 ring-black/60">
-              <iframe
-                className="w-full h-full"
-                src={
-                  video?.videoType === 'drive' || video?.driveFileId || (video?.youtubeUrl && video.youtubeUrl.includes('drive.google.com'))
-                    ? (video?.driveFileId ? `https://drive.google.com/file/d/${video.driveFileId}/preview` : video?.youtubeUrl?.replace(/\/view.*$/, '/preview'))
-                    : (video?.embedUrl || `https://www.youtube-nocookie.com/embed/${youtubeId}?rel=0&modestbranding=1&color=white`)
-                }
-                title={video?.title || "Phim tư liệu di tích"}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              {video?.videoType === 'local' || video?.localUrl || video?.mp4Url || (video?.src && video.src.endsWith('.mp4')) ? (
+                <video
+                  className="w-full h-full object-contain bg-black"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  src={video?.localUrl || video?.mp4Url || video?.src}
+                  title={video?.title || "Phim tư liệu di tích"}
+                >
+                  Trình duyệt không hỗ trợ phát video MP4.
+                </video>
+              ) : (
+                <iframe
+                  className="w-full h-full"
+                  src={
+                    video?.videoType === 'drive' || video?.driveFileId || (video?.youtubeUrl && video.youtubeUrl.includes('drive.google.com'))
+                      ? (video?.driveFileId ? `https://drive.google.com/file/d/${video.driveFileId}/preview` : video?.youtubeUrl?.replace(/\/view.*$/, '/preview'))
+                      : (video?.embedUrl || `https://www.youtube-nocookie.com/embed/${youtubeId}?rel=0&modestbranding=1&color=white`)
+                  }
+                  title={video?.title || "Phim tư liệu di tích"}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
             </div>
 
             {/* Cinema Chapter Highlights & Actions */}
@@ -274,12 +287,20 @@ export default function MediaAudioVideoRow({
                 </span>
 
                 <a
-                  href={video?.youtubeUrl || (video?.driveFileId ? `https://drive.google.com/file/d/${video.driveFileId}/view` : `https://www.youtube.com/watch?v=${youtubeId}`)}
+                  href={
+                    video?.videoType === 'local' || video?.localUrl || video?.mp4Url || (video?.src && video.src.endsWith('.mp4'))
+                      ? (video?.localUrl || video?.mp4Url || video?.src)
+                      : (video?.youtubeUrl || (video?.driveFileId ? `https://drive.google.com/file/d/${video.driveFileId}/view` : `https://www.youtube.com/watch?v=${youtubeId}`))
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-amber-300 hover:text-amber-200 hover:underline flex items-center gap-1 shrink-0 transition-colors"
                 >
-                  <span>{video?.videoType === 'drive' || video?.driveFileId || (video?.youtubeUrl && video.youtubeUrl.includes('drive.google.com')) ? 'Mở Drive' : 'Xem trên YouTube'}</span>
+                  <span>
+                    {video?.videoType === 'local' || video?.localUrl || video?.mp4Url || (video?.src && video.src.endsWith('.mp4'))
+                      ? 'Xem video gốc MP4'
+                      : (video?.videoType === 'drive' || video?.driveFileId || (video?.youtubeUrl && video.youtubeUrl.includes('drive.google.com')) ? 'Mở Drive' : 'Xem trên YouTube')}
+                  </span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>

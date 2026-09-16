@@ -39,28 +39,45 @@ export default function MonumentMediaAndLocationSection({
               </p>
             </div>
 
-            {/* Video Iframe Container */}
+            {/* Video Iframe / Local Video Container */}
             <div className="relative aspect-video rounded-xl overflow-hidden bg-black shadow-md border border-gray-200">
-              <iframe
-                className="w-full h-full"
-                src={`https://www.youtube-nocookie.com/embed/${youtubeId}?rel=0&modestbranding=1`}
-                title={video?.title || "Phim tư liệu di tích"}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              {video?.videoType === 'local' || video?.localUrl || video?.mp4Url || (video?.src && video.src.endsWith('.mp4')) ? (
+                <video
+                  className="w-full h-full object-contain bg-black"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  src={video?.localUrl || video?.mp4Url || video?.src}
+                  title={video?.title || "Phim tư liệu di tích"}
+                >
+                  Trình duyệt không hỗ trợ xem video trực tiếp.
+                </video>
+              ) : (
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube-nocookie.com/embed/${youtubeId}?rel=0&modestbranding=1`}
+                  title={video?.title || "Phim tư liệu di tích"}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
             </div>
 
             <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-[#555555]">
               <span className="font-medium text-[#7E1819]">
-                {video?.copyright || (video?.channel ? `Video thuộc bản quyền Kênh YouTube ${video.channel}` : 'Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp')}
+                {video?.copyright || (video?.channel ? `Video thuộc bản quyền Kênh YouTube ${video.channel}` : 'Video thuộc bản quyền')}
               </span>
               <a
-                href={video?.youtubeUrl || `https://www.youtube.com/watch?v=${youtubeId}`}
+                href={
+                  video?.videoType === 'local' || video?.localUrl || video?.mp4Url || (video?.src && video.src.endsWith('.mp4'))
+                    ? (video?.localUrl || video?.mp4Url || video?.src)
+                    : (video?.youtubeUrl || `https://www.youtube.com/watch?v=${youtubeId}`)
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold text-[#7E1819] hover:underline flex items-center gap-1 shrink-0"
               >
-                <span>Xem trên YouTube</span>
+                <span>{video?.videoType === 'local' || video?.localUrl || video?.mp4Url || (video?.src && video.src.endsWith('.mp4')) ? 'Xem video MP4' : 'Xem trên YouTube'}</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>

@@ -5613,7 +5613,7 @@ export const monumentQaMap = {
         ]
       },
       "video": {
-        "answer": "https://www.youtube.com/watch?v=o4nVqf1VA0E",
+        "answer": "/assets/videos/monument-video-36.mp4",
         "field": "Video",
         "questions": [
           "Di tích này có video giới thiệu không?",
@@ -25653,7 +25653,7 @@ export const fullQaDataset = [
     "stt": 36,
     "intent": "video",
     "q": "Di tích này có video giới thiệu không?",
-    "a": "https://www.youtube.com/watch?v=o4nVqf1VA0E",
+    "a": "/assets/videos/monument-video-36.mp4",
     "field": "Video",
     "kw": "Đồn ngã tư Giếng Nước;Video"
   },
@@ -25662,7 +25662,7 @@ export const fullQaDataset = [
     "stt": 36,
     "intent": "video",
     "q": "Cho tôi video giới thiệu về di tích này.",
-    "a": "https://www.youtube.com/watch?v=o4nVqf1VA0E",
+    "a": "/assets/videos/monument-video-36.mp4",
     "field": "Video",
     "kw": "Đồn ngã tư Giếng Nước;Video"
   },

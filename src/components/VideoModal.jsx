@@ -32,17 +32,30 @@ export default function VideoModal({ isOpen, onClose, videoInfo }) {
 
         {/* Video Embed */}
         <div className="aspect-video w-full bg-black">
-          <iframe
-            src={
-              videoInfo?.videoType === 'drive' || videoInfo?.driveFileId || (videoInfo?.youtubeUrl && videoInfo.youtubeUrl.includes('drive.google.com'))
-                ? (videoInfo?.driveFileId ? `https://drive.google.com/file/d/${videoInfo.driveFileId}/preview` : videoInfo?.youtubeUrl?.replace(/\/view.*$/, '/preview'))
-                : (videoInfo?.embedUrl || `https://www.youtube.com/embed/${videoInfo.youtubeId || 'cplxidwCHyE'}?autoplay=1&rel=0`)
-            }
-            title={videoInfo?.title || "Video tư liệu di tích"}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="w-full h-full border-0"
-          />
+          {videoInfo?.videoType === 'local' || videoInfo?.localUrl || videoInfo?.mp4Url || (videoInfo?.src && videoInfo.src.endsWith('.mp4')) ? (
+            <video
+              className="w-full h-full object-contain bg-black"
+              controls
+              autoPlay
+              playsInline
+              src={videoInfo?.localUrl || videoInfo?.mp4Url || videoInfo?.src}
+              title={videoInfo?.title || "Video tư liệu di tích"}
+            >
+              Trình duyệt không hỗ trợ xem video trực tiếp.
+            </video>
+          ) : (
+            <iframe
+              src={
+                videoInfo?.videoType === 'drive' || videoInfo?.driveFileId || (videoInfo?.youtubeUrl && videoInfo.youtubeUrl.includes('drive.google.com'))
+                  ? (videoInfo?.driveFileId ? `https://drive.google.com/file/d/${videoInfo.driveFileId}/preview` : videoInfo?.youtubeUrl?.replace(/\/view.*$/, '/preview'))
+                  : (videoInfo?.embedUrl || `https://www.youtube.com/embed/${videoInfo.youtubeId || 'cplxidwCHyE'}?autoplay=1&rel=0`)
+              }
+              title={videoInfo?.title || "Video tư liệu di tích"}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full h-full border-0"
+            />
+          )}
         </div>
 
         {/* Video Footer info */}
@@ -51,12 +64,20 @@ export default function VideoModal({ isOpen, onClose, videoInfo }) {
             {videoInfo?.copyright || (videoInfo?.channel ? `Bản quyền: ${videoInfo.channel}` : 'Bản quyền Kênh Tư liệu')}
           </span>
           <a
-            href={videoInfo?.youtubeUrl || (videoInfo?.driveFileId ? `https://drive.google.com/file/d/${videoInfo.driveFileId}/view` : `https://www.youtube.com/watch?v=${videoInfo?.youtubeId || 'cplxidwCHyE'}`)}
+            href={
+              videoInfo?.videoType === 'local' || videoInfo?.localUrl || videoInfo?.mp4Url || (videoInfo?.src && videoInfo.src.endsWith('.mp4'))
+                ? (videoInfo?.localUrl || videoInfo?.mp4Url || videoInfo?.src)
+                : (videoInfo?.youtubeUrl || (videoInfo?.driveFileId ? `https://drive.google.com/file/d/${videoInfo.driveFileId}/view` : `https://www.youtube.com/watch?v=${videoInfo?.youtubeId || 'cplxidwCHyE'}`))
+            }
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-400 hover:underline flex items-center gap-1 font-semibold shrink-0"
           >
-            <span>{videoInfo?.videoType === 'drive' || videoInfo?.driveFileId || (videoInfo?.youtubeUrl && videoInfo.youtubeUrl.includes('drive.google.com')) ? 'Mở trên Google Drive' : 'Mở liên kết YouTube'}</span>
+            <span>
+              {videoInfo?.videoType === 'local' || videoInfo?.localUrl || videoInfo?.mp4Url || (videoInfo?.src && videoInfo.src.endsWith('.mp4'))
+                ? 'Mở video gốc MP4'
+                : (videoInfo?.videoType === 'drive' || videoInfo?.driveFileId || (videoInfo?.youtubeUrl && videoInfo.youtubeUrl.includes('drive.google.com')) ? 'Mở trên Google Drive' : 'Mở liên kết YouTube')}
+            </span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
