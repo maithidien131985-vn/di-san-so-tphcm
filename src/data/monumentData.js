@@ -125,56 +125,36 @@ export const initialMonumentData = {
   ],
   audioScript: [
     {
-      index: 1,
-      title: "1. Vị trí và lịch sử khởi đầu Dinh Norodom",
-      text: "Di tích Dinh Độc Lập nay thuộc địa chỉ 135 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, quận 1, Thành phố Hồ Chí Minh. Với khuôn viên rộng 12 ha, kiến trúc đầu tiên được xây dựng trên nền đất thuộc khuôn viên Dinh Thống đốc Nam Kỳ hay còn gọi là Dinh Norodom, vì mặt tiền cắt ngang đường Norodom (nay là đường Lê Duẩn). Dinh Thống đốc Nam Kỳ được Lagrandière đặt viên đá đầu tiên để khai trương, công trình xây dựng vào ngày 23.02.1863, đến ngày 25.9.1869 hoàn thành phần kiến trúc, đến năm 1875 phần trang trí kiến trúc hoàn thành, công trình mới hoàn chỉnh."
+        "index": 1,
+        "title": "1. Vị trí và đặc điểm di tích",
+        "text": "Dinh Độc Lập tọa lạc tại số 135 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, Thành phố Hồ Chí Minh. Công trình được đặc cách xếp hạng di tích lịch sử quốc gia theo Quyết định số 77A/VHQĐ ngày 25/6/1976 và được Thủ tướng Chính phủ xếp hạng di tích quốc gia đặc biệt theo Quyết định số 1272/QĐ-TTg ngày 12/8/2009. Hiện nay, di tích tiếp tục được bảo tồn, nghiên cứu, sưu tầm và phát huy giá trị phục vụ tham quan, giáo dục lịch sử."
     },
     {
-      index: 2,
-      title: "2. Giai đoạn 1955 - 1966 và thiết kế KTS Ngô Viết Thụ",
-      text: "Năm 1955, dinh được bàn giao cho chính quyền Ngô Đình Diệm. Năm 1962, dinh bị ném bom làm hư hỏng nặng, Ngô Đình Diệm quyết định cho xây mới lại toàn bộ, đặt tên cho công trình là Dinh Độc Lập, bản vẽ thiết kế do kiến trúc sư Ngô Viết Thụ thực hiện. Đến cuối 1963, Ngô Đình Diệm bị lật đổ, chính quyền Nguyễn Văn Thiệu lên thay và tiếp tục xây dựng. Năm 1966, công trình xây dựng được hoàn thành."
+        "index": 2,
+        "title": "2. Lịch sử hình thành và phát triển",
+        "text": "Dinh Thống đốc Nam Kỳ được Lagrandière đặt viên đá đầu tiên để khai trương, công trình xây dựng vào ngày 23/2/1863, đến ngày 25/9/1869 hoàn thành phần kiến trúc, đến năm 1875 phần trang trí kiến trúc hoàn thành, công trình mới hoàn chỉnh. Năm 1955, dinh được bàn giao cho chính quyền Ngô Đình Diệm. Năm 1962, dinh bị ném bom làm hư hỏng nặng, Ngô Đình Diệm quyết định cho xây mới lại toàn bộ, đặt tên cho công trình là Dinh Độc Lập, bản vẽ thiết kế do kiến trúc sư Ngô Viết Thụ thực hiện. Năm 1966, công trình xây dựng được hoàn thành. Trong cuộc Tổng tiến công và nổi dậy năm 1968, cùng nhiều địa điểm khác ở Sài Gòn như Đại sứ quán Mỹ, Đài phát thanh, Bộ Tổng tham mưu ngụy... Dinh Độc Lập đã được đặc cách công nhận là di tích lịch sử quốc gia theo Quyết định số 77A/VH-QĐ ngày 25.6.1976 của Bộ trưởng Bộ Văn hóa Thông tin."
     },
     {
-      index: 3,
-      title: "3. Kiến trúc 4 tầng, 95 phòng và hầm điện đài",
-      text: "Dinh Độc Lập có 4 tầng, tầng thượng có sân đáp máy bay lên thẳng, với 95 phòng, mỗi phòng có cấu trúc và trang trí khác nhau, tùy theo công năng sử dụng; tầng hầm là hệ thống điện đài. Dinh Độc Lập trở thành thủ phủ của chính quyền Sài Gòn trong suốt quá trình đế quốc Mỹ tiến hành xâm lược Việt Nam."
+        "index": 3,
+        "title": "3. Miêu tả và đặc điểm nổi bật",
+        "text": "Dinh Độc Lập có 4 tầng, tầng thượng có sân đáp máy bay lên thẳng, với 95 phòng, mỗi phòng có cấu trúc và trang trí khác nhau, tùy theo công năng sử dụng; tầng hầm là hệ thống điện đài. Cùng với sự thất bại của quân đội Thiệu đang diễn ra ở nhiều nơi, sự kiện này đã khiến Nguyễn Văn Thiệu hoang mang cực độ, để rồi khi phòng tuyến phòng thủ từ xa là Phan Rang và Xuân Lộc bị đánh tan, ngày 21/4/1975 Nguyễn Văn Thiệu đã từ chức và giao lại chính quyền cho Trần Văn Hương, rời khỏi Dinh Độc Lập và trốn chạy ra nước ngoài. Tháng 12.1975, tại nơi đây đã diễn ra Hội nghị Hiệp thương thống nhất đất nước và phòng họp tại Dinh Độc Lập được gọi với tên là Hội trường Thống Nhất (có ý kiến cho rằng Dinh Độc Lập được đổi tên là Hội trường Thống Nhất)."
     },
     {
-      index: 4,
-      title: "4. Cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968",
-      text: "Trong cuộc Tổng tiến công và nổi dậy năm 1968, cùng nhiều địa điểm khác ở Sài Gòn như Đại sứ quán Mỹ, Đài phát thanh, Bộ Tổng tham mưu ngụy... Dinh Độc Lập cũng bị các chiến sĩ Biệt động Thành phố Sài Gòn tiến đánh, gây cho chính quyền Nguyễn Văn Thiệu sự bất ngờ, choáng váng và hoang mang."
+        "index": 4,
+        "title": "4. Quá trình hoạt động và những sự kiện tiêu biểu",
+        "text": "Ngày 8/4/1975, nhân dịp quân đội Thiệu cử phi đội đi ném bom, Nguyễn Thành Trung lái chiếc máy bay F-5E của Mỹ trang bị cho chính quyền Sài Gòn đã tìm cách quay lại ném bom rồi bay ra vùng giải phóng. Trong Chiến dịch Hồ Chí Minh, Dinh Độc Lập là một trong những mục tiêu trọng điểm. Bùi Quang Thận nhảy khỏi xe chạy lên sân thượng hạ cờ vàng ba sọc đỏ của chế độ Sài Gòn, kéo cờ giải phóng lên. Lúc 10 giờ 30 phút tại Dinh Độc Lập đã diễn ra sự kiện toàn bộ Nội các của chính quyền Sài Gòn đầu hàng và đến đúng 11 giờ 30 phút, chính phủ Dương Văn Minh đã phát tuyên bố đầu hàng tại Đài Phát thanh Sài Gòn."
     },
     {
-      index: 5,
-      title: "5. Sự kiện ném bom Dinh Độc Lập ngày 8/4/1975",
-      text: "Ngày 8.4.1975, nhân dịp quân đội Thiệu cử phi đội đi ném bom, Nguyễn Thành Trung lái chiếc máy bay F-5E của Mỹ trang bị cho chính quyền Sài Gòn đã tìm cách quay lại ném bom rồi bay ra vùng giải phóng. Cùng với sự thất bại của quân đội Thiệu đang diễn ra ở nhiều nơi, sự kiện này đã khiến Nguyễn Văn Thiệu hoang mang cực độ, để rồi khi phòng tuyến phòng thủ từ xa là Phan Rang và Xuân Lộc bị đánh tan, ngày 21.4.1975 Nguyễn Văn Thiệu đã từ chức và giao lại chính quyền cho Trần Văn Hương, rời khỏi Dinh Độc Lập và trốn chạy ra nước ngoài. Ông Hương làm tổng thống được một tuần lại giao cho Dương Văn Minh."
+        "index": 5,
+        "title": "5. Dấu tích, công trình và hiện vật",
+        "text": "Dinh Độc Lập đã thành tiêu điểm đánh dấu sự chiến thắng toàn vẹn của quân và dân ta trong suốt cuộc kháng chiến hơn hai mươi năm chống sự can thiệp và xâm lược của đế quốc Mỹ và chính quyền tay sai của chúng, giành lại hòa bình, độc lập, thống nhất Tổ quốc."
     },
     {
-      index: 6,
-      title: "6. Mũi tiến công Chiến dịch Hồ Chí Minh",
-      text: "Trong Chiến dịch Hồ Chí Minh, Dinh Độc Lập là một trong những mục tiêu trọng điểm. Quân đoàn 2 thuộc mũi tiến công hướng đông và đông nam được giao tiến đánh Dinh Độc Lập, trong đó có Lữ đoàn xe tăng 203, Sư đoàn 304, được lệnh tiến thẳng vào Dinh."
-    },
-    {
-      index: 7,
-      title: "7. Thời khắc lịch sử trưa ngày 30/4/1975",
-      text: "Xe tăng T54 mang số 843 do Trung úy, Đại đội trưởng Đại đội 4 Bùi Quang Thận là trưởng xe đã cho xe húc nghiêng cánh cổng phụ; xe tăng T59 mang số 390 do Trung úy Vũ Đăng Toàn, Chính trị viên Đại đội 4, là trưởng xe đã cho húc bật cánh cổng chính rồi tiến thẳng vào Dinh. Bùi Quang Thận nhảy khỏi xe chạy lên sân thượng hạ cờ vàng ba sọc đỏ của chế độ Sài Gòn, kéo cờ giải phóng lên. Lúc 10 giờ 30 phút tại Dinh Độc Lập đã diễn ra sự kiện toàn bộ Nội các của chính quyền Sài Gòn đầu hàng và đến đúng 11 giờ 30 phút, chính phủ Dương Văn Minh đã phát tuyên bố đầu hàng tại Đài Phát thanh Sài Gòn."
-    },
-    {
-      index: 8,
-      title: "8. Ý nghĩa lịch sử đại thắng mùa xuân 1975",
-      text: "Dinh Độc Lập đã thành tiêu điểm đánh dấu sự chiến thắng toàn vẹn của quân và dân ta trong suốt cuộc kháng chiến hơn hai mươi năm chống sự can thiệp và xâm lược của đế quốc Mỹ và chính quyền tay sai của chúng, giành lại hòa bình, độc lập, thống nhất Tổ quốc."
-    },
-    {
-      index: 9,
-      title: "9. Hội nghị Hiệp thương thống nhất đất nước",
-      text: "Tháng 12.1975, tại nơi đây đã diễn ra Hội nghị Hiệp thương thống nhất đất nước và phòng họp tại Dinh Độc Lập được gọi với tên là Hội trường Thống Nhất (có ý kiến cho rằng Dinh Độc Lập được đổi tên là Hội trường Thống Nhất)."
-    },
-    {
-      index: 10,
-      title: "10. Di tích quốc gia đặc biệt & Bảo tồn di sản",
-      text: "Dinh Độc Lập đã được đặc cách công nhận là di tích lịch sử quốc gia theo Quyết định số 77A/VH-QĐ ngày 25.6.1976 của Bộ trưởng Bộ Văn hóa Thông tin. Di tích Dinh Độc Lập đã thu hút đông đảo khách tham quan trong nước và quốc tế, hiện nay Ban Giám đốc ở đây đang tiếp tục chỉ đạo việc nghiên cứu, sưu tầm hiện vật liên quan đến di tích nhằm tạo điều kiện phát huy giá trị của di tích tốt nhất, đồng thời đang chuẩn bị đề nghị nâng di tích thành di tích quốc gia đặc biệt quan trọng."
+        "index": 6,
+        "title": "6. Giá trị lịch sử và văn hóa",
+        "text": "Sau cuộc đảo chính ngày 1/11/1963, chính quyền Sài Gòn trải qua nhiều biến động chính trị. Công trình Dinh Độc Lập vẫn tiếp tục được xây dựng theo thiết kế của kiến trúc sư Ngô Viết Thụ và hoàn thành năm 1966. Nguyễn Văn Thiệu trở thành Tổng thống Việt Nam Cộng hòa năm 1967 và sử dụng Dinh Độc Lập làm nơi làm việc cho đến tháng 4/1975."
     }
-  ],
+],
   investigation: {
     title: "Vì sao ngày 30–4–1975 trở thành dấu mốc lịch sử?",
     subtitle: "Hãy khám phá chứng cứ, phân tích tư liệu và đưa ra kết luận của riêng em.",
