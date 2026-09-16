@@ -295,9 +295,9 @@ export default function HeritageAIChatbot({
       
       let leadIn = '';
       if (cleanUserQ.includes('tai sao')) {
-        leadIn = `Tại vì di tích **${mon.name}** (được xếp hạng **${rankVal}** - ${rankTitle}${qdVal}) sở hữu những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
+        leadIn = `Tại vì di tích **${mon.name}** (${rankTitle}${qdVal}) sở hữu những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
       } else if (cleanUserQ.includes('vi sao')) {
-        leadIn = `Bởi vì di tích **${mon.name}** (được xếp hạng **${rankVal}** - ${rankTitle}${qdVal}) mang những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
+        leadIn = `Bởi vì di tích **${mon.name}** (${rankTitle}${qdVal}) mang những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
       } else {
         leadIn = `Di tích **${mon.name}** được xếp hạng **${rankVal}** (${rankTitle}${qdVal}) vì những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
       }
@@ -373,16 +373,10 @@ export default function HeritageAIChatbot({
       const intro = customAnswer || mon.intents?.tomtat?.answer || lichSuVal || rawMon.info?.overview;
       const cleanIntro = intro.startsWith(mon.name) ? intro.substring(mon.name.length).replace(/^[\s,.:\-–]+/, '') : intro;
       resp += `**${mon.name}** là ${cleanIntro}\n\n`;
-    }
-
-    // Metadata Footer
-    resp += `---\n`;
-    if (addrSau) resp += `- 📍 **Địa chỉ:** ${addrSau}\n`;
-    if (rankVal) resp += `- ⭐ **Xếp hạng:** ${rankVal}\n`;
-    if (loaiVal) resp += `- 🏷️ **Loại hình:** ${loaiVal}\n`;
-
-    if (rawMon.investigation?.investigationQuestion && (intentKey === 'tomtat' || intentKey === 'lichsu' || intentKey === 'rank')) {
-      resp += `\n🔭 **Gợi ý học tập & điều tra:**\n*${rawMon.investigation.investigationQuestion}*`;
+      resp += `---\n`;
+      if (addrSau) resp += `- 📍 **Địa chỉ:** ${addrSau}\n`;
+      if (rankVal) resp += `- ⭐ **Xếp hạng:** ${rankVal}\n`;
+      if (loaiVal) resp += `- 🏷️ **Loại hình:** ${loaiVal}\n`;
     }
 
     return {
