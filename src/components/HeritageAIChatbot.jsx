@@ -165,62 +165,57 @@ export default function HeritageAIChatbot({
     return allMonumentsList.find(m => m.stt === currentMonumentStt) || allMonumentsList[0];
   }, [currentMonumentStt]);
 
-  // Initial Welcome Messages
-  const [messages, setMessages] = useState([
-    {
-      id: 'welcome_1',
-      sender: 'ai',
-      text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi được huấn luyện chuyên sâu với bộ tri thức chuẩn mực gồm **3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt** của Thành phố Hồ Chí Minh.\n\n📌 **Phạm vi hỗ trợ tra cứu chuẩn xác:**\n- 📜 **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh lịch sử và quá trình hình thành.\n- 👤 **Nhân vật & Sự kiện:** Dấu ấn các anh hùng, danh nhân và chiến công hào hùng.\n- 🏺 **Hiện vật & Bảo vật:** Các di vật, vũ khí và giá trị khảo cổ quý báu.\n- ⭐ **Giá trị & Pháp lý:** Quyết định xếp hạng, loại hình và ý nghĩa bảo tồn.\n- 📍 **Địa lý & Tọa độ:** Vị trí, bản đồ chỉ đường và thước phim tư liệu.\n\n*Kính mời bạn nhập câu hỏi để bắt đầu tra cứu!*`,
-      timestamp: new Date(),
-      suggestions: [
-        'TP.HCM có bao nhiêu di tích đã xếp hạng?',
-        'Có bao nhiêu di tích Quốc gia đặc biệt?',
-        'Vì sao có tên gọi Tam Giác Sắt?',
-        'Dinh Độc Lập có những hiện vật tiêu biểu nào?'
-      ]
+  // Helper to generate context-specific welcome message & suggestions
+  const getWelcomeMessage = (mode, mon) => {
+    if (mode === 'detail' && mon) {
+      const name = mon.info.name;
+      const suggestions = [
+        mon.stt === 11 ? 'Vì sao có tên gọi Tam Giác Sắt?' : `Vì sao ${name} được xếp hạng di tích?`,
+        `Nhân vật và sự kiện gắn liền với ${name}`,
+        `Hiện vật tiêu biểu tại ${name}`,
+        `Địa chỉ và vị trí của ${name}`
+      ];
+      if (mon.investigation?.investigationQuestion) {
+        suggestions.push(`Điều tra: ${mon.investigation.investigationQuestion}`);
+      }
+      return [
+        {
+          id: `welcome_${mon.stt}_${Date.now()}`,
+          sender: 'ai',
+          text: `Kính chào bạn! Bạn đang tìm hiểu di tích **${name}** (#STT ${mon.stt}) 🏛️✨\n\nTôi sẵn sàng giải đáp chuẩn xác về **lịch sử, nhân vật, sự kiện, hiện vật, xếp hạng và vị trí** của di tích này. Kính mời bạn đặt câu hỏi!`,
+          timestamp: new Date(),
+          suggestions: suggestions
+        }
+      ];
     }
-  ]);
+    return [
+      {
+        id: `welcome_home_${Date.now()}`,
+        sender: 'ai',
+        text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi được huấn luyện chuyên sâu với bộ tri thức chuẩn mực gồm **3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt** của Thành phố Hồ Chí Minh.\n\n📌 **Phạm vi hỗ trợ tra cứu chuẩn xác:**\n- 📜 **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh lịch sử và quá trình hình thành.\n- 👤 **Nhân vật & Sự kiện:** Dấu ấn các anh hùng, danh nhân và chiến công hào hùng.\n- 🏺 **Hiện vật & Bảo vật:** Các di vật, vũ khí và giá trị khảo cổ quý báu.\n- ⭐ **Giá trị & Pháp lý:** Quyết định xếp hạng, loại hình và ý nghĩa bảo tồn.\n- 📍 **Địa lý & Tọa độ:** Vị trí, bản đồ chỉ đường và thước phim tư liệu.\n\n*Kính mời bạn nhập câu hỏi để bắt đầu tra cứu!*`,
+        timestamp: new Date(),
+        suggestions: [
+          'TP.HCM có bao nhiêu di tích đã xếp hạng?',
+          'Có bao nhiêu di tích Quốc gia đặc biệt?',
+          'Có bao nhiêu công trình kiểm kê chưa xếp hạng?',
+          'Những di tích lịch sử nổi bật ở TP.HCM'
+        ]
+      }
+    ];
+  };
+
+  // Initial Welcome Messages
+  const [messages, setMessages] = useState(() => getWelcomeMessage(viewMode, currentMonument));
 
   // Auto-clear / reset chat history when switching to a new monument
-  const prevMonumentSttRef = useRef(currentMonumentStt);
-  const prevViewModeRef = useRef(viewMode);
+  const prevMonumentSttRef = useRef(null);
+  const prevViewModeRef = useRef(null);
 
   useEffect(() => {
     if (prevMonumentSttRef.current !== currentMonumentStt || prevViewModeRef.current !== viewMode) {
       prevMonumentSttRef.current = currentMonumentStt;
       prevViewModeRef.current = viewMode;
-      
-      if (viewMode === 'detail' && currentMonument) {
-        setMessages([
-          {
-            id: `welcome_${currentMonumentStt}_${Date.now()}`,
-            sender: 'ai',
-            text: `Kính chào bạn! Bạn đang tìm hiểu di tích **${currentMonument.info.name}** (#STT ${currentMonument.stt}) 🏛️✨\n\nTôi sẵn sàng giải đáp chuẩn xác về **lịch sử, nhân vật, sự kiện, hiện vật, xếp hạng và vị trí** của di tích này. Kính mời bạn đặt câu hỏi!`,
-            timestamp: new Date(),
-            suggestions: [
-              currentMonument.stt === 11 ? 'Vì sao có tên gọi Tam Giác Sắt?' : `Vì sao ${currentMonument.info.name} được xếp hạng di tích?`,
-              `Nhân vật và sự kiện gắn liền với ${currentMonument.info.name}`,
-              `Hiện vật tiêu biểu tại ${currentMonument.info.name}`,
-              `Địa chỉ và cách di chuyển đến ${currentMonument.info.name}`
-            ]
-          }
-        ]);
-      } else {
-        setMessages([
-          {
-            id: `welcome_home_${Date.now()}`,
-            sender: 'ai',
-            text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi được huấn luyện chuyên sâu với bộ tri thức chuẩn mực gồm **3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt** của Thành phố Hồ Chí Minh.\n\n*Kính mời bạn nhập câu hỏi hoặc tên di tích để bắt đầu tra cứu!*`,
-            timestamp: new Date(),
-            suggestions: [
-              'TP.HCM có bao nhiêu di tích đã xếp hạng?',
-              'Có bao nhiêu di tích Quốc gia đặc biệt?',
-              'Vì sao có tên gọi Tam Giác Sắt?',
-              'Dinh Độc Lập có những hiện vật tiêu biểu nào?'
-            ]
-          }
-        ]);
-      }
+      setMessages(getWelcomeMessage(viewMode, currentMonument));
     }
   }, [currentMonumentStt, viewMode, currentMonument]);
 
@@ -228,20 +223,22 @@ export default function HeritageAIChatbot({
   const contextualSuggestions = useMemo(() => {
     if (viewMode === 'detail' && currentMonument) {
       const name = currentMonument.info.name;
-      return [
+      const suggestions = [
         currentMonument.stt === 11 ? 'Vì sao có tên gọi Tam Giác Sắt?' : `Vì sao ${name} được xếp hạng di tích?`,
         `Nhân vật và sự kiện gắn liền với ${name}`,
         `Hiện vật tiêu biểu tại ${name}`,
-        `Địa chỉ và cách di chuyển đến ${name}`,
-        `Điều tra: ${currentMonument.investigation?.investigationQuestion || 'Giá trị lịch sử cốt lõi'}`
+        `Địa chỉ và cách di chuyển đến ${name}`
       ];
+      if (currentMonument.investigation?.investigationQuestion) {
+        suggestions.push(`Điều tra: ${currentMonument.investigation.investigationQuestion}`);
+      }
+      return suggestions;
     }
     return [
       'TP.HCM có bao nhiêu di tích đã xếp hạng?',
       'Có bao nhiêu di tích Quốc gia đặc biệt?',
-      'Vì sao có tên gọi Tam Giác Sắt?',
       'Có bao nhiêu công trình kiểm kê chưa xếp hạng?',
-      'Những di tích lịch sử nổi bật ở Côn Đảo'
+      'Những di tích lịch sử nổi bật ở TP.HCM'
     ];
   }, [viewMode, currentMonument]);
 
@@ -1065,15 +1062,7 @@ export default function HeritageAIChatbot({
 
   // Reset / Clear chat
   const handleReset = () => {
-    setMessages([
-      {
-        id: `welcome_new_${Date.now()}`,
-        sender: 'ai',
-        text: `Đã làm mới hội thoại! Bạn muốn tìm hiểu hoặc hỏi đáp về di tích nào tiếp theo? 🏛️✨`,
-        timestamp: new Date(),
-        suggestions: contextualSuggestions
-      }
-    ]);
+    setMessages(getWelcomeMessage(viewMode, currentMonument));
   };
 
   return (
