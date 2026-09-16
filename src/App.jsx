@@ -128,7 +128,7 @@ export default function App() {
     return getMonumentByIdOrStt(currentStt);
   }, [currentStt]);
 
-  const storageKey = `di_san_so_v12_monument_stt_${currentStt}`;
+  const storageKey = `di_san_so_v15_monument_stt_${currentStt}`;
 
   const mergeWithBase = (base, saved) => {
     if (!saved || typeof saved !== 'object') return base || allMonumentsList[0];
