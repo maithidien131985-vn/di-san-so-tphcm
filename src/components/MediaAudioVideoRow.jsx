@@ -46,18 +46,18 @@ export default function MediaAudioVideoRow({
   const monumentName = info?.name || 'Di tích lịch sử';
 
   // ==========================================
-  // AUDIO PLAYER STATE & REAL MP3 PLAYBACK
+  // SHARED SYNCHRONIZED AUDIO PLAYER (MP3)
   // ==========================================
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(180); // default 3:00 min
-  const [playbackRate, setPlaybackRate] = useState(1.0);
-  const [isMuted, setIsMuted] = useState(false);
-  const audioRef = useRef(null);
-
   const currentStt = monumentStt || stt || info?.stt || 1;
   const baseUrl = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
   const audioSrc = `${baseUrl}/assets/audio/monument-audio-${currentStt}.mp3`;
+
+  const sharedAudio = useSharedAudio(currentStt, audioSrc);
+  const isPlaying = sharedAudio.isPlaying;
+  const currentTime = sharedAudio.currentTime;
+  const duration = sharedAudio.duration || 180;
+  const playbackRate = sharedAudio.playbackRate;
+  const isMuted = sharedAudio.isMuted;
 
   // Script text for audio narration fallback
   const rawAudioScript = Array.isArray(audioScript)
@@ -65,135 +65,42 @@ export default function MediaAudioVideoRow({
     : (typeof audioScript === 'string' ? audioScript : '');
   const narrationText = rawAudioScript || (typeof info?.overview === 'string' ? info.overview : '') || `Kính chào các em học sinh và quý độc giả. Chúng ta đang cùng nhau tìm hiểu về di tích lịch sử ${monumentName}. Đây là một công trình mang ý nghĩa đặc biệt trong lịch sử và văn hóa của Thành phố Hồ Chí Minh.`;
 
-  // Initialize or update audio source when monument changes
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-    }
-    setIsPlaying(false);
-    setCurrentTime(0);
-
-    const audio = new Audio(audioSrc);
-    audio.playbackRate = playbackRate;
-    audio.muted = isMuted;
-
-    const onLoadedMetadata = () => {
-      if (audio.duration && !isNaN(audio.duration)) {
-        setDuration(Math.round(audio.duration));
-      }
-    };
-
-    const onTimeUpdate = () => {
-      setCurrentTime(audio.currentTime);
-    };
-
-    const onEnded = () => {
-      setIsPlaying(false);
-      setCurrentTime(audio.duration || duration);
-    };
-
-    const onError = () => {
-      // Fallback: estimate duration from word count
-      const wordCount = narrationText ? narrationText.split(/\s+/).length : 50;
-      const estSec = Math.max(60, Math.round((wordCount / 130) * 60));
-      setDuration(estSec);
-    };
-
-    audio.addEventListener('loadedmetadata', onLoadedMetadata);
-    audio.addEventListener('timeupdate', onTimeUpdate);
-    audio.addEventListener('ended', onEnded);
-    audio.addEventListener('error', onError);
-
-    audioRef.current = audio;
-
-    return () => {
-      audio.pause();
-      audio.removeEventListener('loadedmetadata', onLoadedMetadata);
-      audio.removeEventListener('timeupdate', onTimeUpdate);
-      audio.removeEventListener('ended', onEnded);
-      audio.removeEventListener('error', onError);
-      try {
-        if (typeof window !== 'undefined' && window.speechSynthesis) {
-          window.speechSynthesis.cancel();
-        }
-      } catch (e) {}
-    };
-  }, [audioSrc, monumentName]);
-
-  // Audio Play / Pause handler
+  // Audio Play / Pause handler seamlessly connected to shared manager
   const handleTogglePlay = () => {
-    if (!audioRef.current) return;
-
-    if (isPlaying) {
-      audioRef.current.pause();
-      setIsPlaying(false);
-    } else {
-      audioRef.current.playbackRate = playbackRate;
-      audioRef.current.muted = isMuted;
-      audioRef.current.play().then(() => {
-        setIsPlaying(true);
-      }).catch(err => {
-        console.warn('Audio play error, fallback to TTS:', err);
-        // Fallback TTS
-        if (typeof window !== 'undefined' && window.speechSynthesis) {
-          window.speechSynthesis.cancel();
-          const utterance = new SpeechSynthesisUtterance(narrationText);
-          utterance.lang = 'vi-VN';
-          utterance.rate = playbackRate;
-          utterance.onend = () => setIsPlaying(false);
-          window.speechSynthesis.speak(utterance);
-          setIsPlaying(true);
-        }
-      });
-    }
+    sharedAudio.togglePlay().catch(err => {
+      console.warn('Audio play error, fallback to TTS:', err);
+      if (typeof window !== 'undefined' && window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(narrationText);
+        utterance.lang = 'vi-VN';
+        utterance.rate = playbackRate;
+        window.speechSynthesis.speak(utterance);
+      }
+    });
   };
 
   const handleSeek = (e) => {
     const newTime = parseFloat(e.target.value);
-    setCurrentTime(newTime);
-    if (audioRef.current) {
-      audioRef.current.currentTime = newTime;
-    }
+    sharedAudio.seek(newTime);
   };
 
   const handleRewind10 = () => {
-    const newTime = Math.max(0, currentTime - 10);
-    setCurrentTime(newTime);
-    if (audioRef.current) {
-      audioRef.current.currentTime = newTime;
-    }
+    sharedAudio.seekOffset(-10);
   };
 
   const handleForward10 = () => {
-    const newTime = Math.min(duration, currentTime + 10);
-    setCurrentTime(newTime);
-    if (audioRef.current) {
-      audioRef.current.currentTime = newTime;
-    }
+    sharedAudio.seekOffset(10);
   };
 
   const handleSetSpeed = (rate) => {
-    setPlaybackRate(rate);
-    if (audioRef.current) {
-      audioRef.current.playbackRate = rate;
-    }
+    sharedAudio.setPlaybackRate(rate);
   };
 
   const handleToggleMute = () => {
-    const nextMuted = !isMuted;
-    setIsMuted(nextMuted);
-    if (audioRef.current) {
-      audioRef.current.muted = nextMuted;
-    }
+    sharedAudio.toggleMute();
   };
 
-  const formatTime = (seconds) => {
-    if (isNaN(seconds) || seconds === null) return '00:00';
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-  };
+  const formatTime = sharedAudio.formatTime;
 
   // ==========================================
   // DISCOVERY QUIZ ("BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?")
