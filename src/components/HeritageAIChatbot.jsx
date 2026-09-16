@@ -281,7 +281,8 @@ export default function HeritageAIChatbot({
 
     let resp = `### 🏛️ ${mon.name} (#STT ${mon.stt})\n\n`;
 
-    // 1. INTENT: VÌ SAO XẾP HẠNG / LÀ DI TÍCH LỊCH SỬ CẤP QUỐC GIA / CẤP QUỐC GIA ĐẶC BIỆT / GIÁ TRỊ LỊCH SỬ
+    // Dynamic Context-Aware Lead-in: Nương theo câu hỏi người dùng, văn phong trang trọng, sử học
+    // 1. INTENT: VÌ SAO / TẠI SAO XẾP HẠNG / LÀ DI TÍCH LỊCH SỬ CẤP QUỐC GIA / CẤP QUỐC GIA ĐẶC BIỆT / GIÁ TRỊ LỊCH SỬ
     const isRankOrReasonQuery = intentKey === 'rank' || 
       cleanUserQ.includes('vi sao') || cleanUserQ.includes('tai sao') || 
       cleanUserQ.includes('xep hang') || cleanUserQ.includes('cap quoc gia') || 
@@ -292,7 +293,15 @@ export default function HeritageAIChatbot({
       const isDacBiet = rankVal.toLowerCase().includes('đặc biệt') || rankVal.toLowerCase().includes('dac biet');
       const rankTitle = isDacBiet ? `Di tích ${loaiVal} cấp Quốc gia đặc biệt` : `Di tích ${loaiVal} cấp Quốc gia`;
       
-      resp += `Di tích **${mon.name}** được xếp hạng **${rankVal}** (${rankTitle}${qdVal}) vì những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
+      let leadIn = '';
+      if (cleanUserQ.includes('tai sao')) {
+        leadIn = `Tại vì di tích **${mon.name}** (được xếp hạng **${rankVal}** - ${rankTitle}${qdVal}) sở hữu những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
+      } else if (cleanUserQ.includes('vi sao')) {
+        leadIn = `Bởi vì di tích **${mon.name}** (được xếp hạng **${rankVal}** - ${rankTitle}${qdVal}) mang những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
+      } else {
+        leadIn = `Di tích **${mon.name}** được xếp hạng **${rankVal}** (${rankTitle}${qdVal}) vì những lý do và giá trị lịch sử - văn hóa tiêu biểu sau:\n\n`;
+      }
+      resp += leadIn;
 
       if (lichSuVal) {
         resp += `📜 **1. Giá trị & Vai trò lịch sử cốt lõi:**\n${lichSuVal}\n\n`;
@@ -308,23 +317,29 @@ export default function HeritageAIChatbot({
     } 
     // 2. INTENT: NGUỒN GỐC TÊN GỌI & Ý NGHĨA
     else if (intentKey === 'tengoi' || cleanUserQ.includes('ten goi') || cleanUserQ.includes('vi sao co ten') || cleanUserQ.includes('tai sao goi la') || cleanUserQ.includes('nguon goc ten') || cleanUserQ.includes('tam giac sat') || cleanUserQ.includes('iron triangle')) {
-      resp += `🏷️ **Nguồn gốc tên gọi & Ý nghĩa lịch sử:**\n\n${tenGoiVal || customAnswer || lichSuVal}\n\n`;
+      if (cleanUserQ.includes('tai sao')) {
+        resp += `Tại vì tên gọi của di tích **${mon.name}** có nguồn gốc và ý nghĩa lịch sử như sau:\n\n${tenGoiVal || customAnswer || lichSuVal}\n\n`;
+      } else if (cleanUserQ.includes('vi sao')) {
+        resp += `Bởi vì tên gọi của di tích **${mon.name}** có nguồn gốc và ý nghĩa lịch sử như sau:\n\n${tenGoiVal || customAnswer || lichSuVal}\n\n`;
+      } else {
+        resp += `🏷️ **Nguồn gốc tên gọi & Ý nghĩa lịch sử:**\n\n${tenGoiVal || customAnswer || lichSuVal}\n\n`;
+      }
     } 
     // 3. INTENT: LỊCH SỬ HÌNH THÀNH / NIÊN ĐẠI / XÂY DỰNG
-    else if (intentKey === 'lichsu' || cleanUserQ.includes('lich su') || cleanUserQ.includes('nguon goc') || cleanUserQ.includes('hinh thanh') || cleanUserQ.includes('xay dung') || cleanUserQ.includes('nien dai')) {
+    else if (intentKey === 'lichsu' || cleanUserQ.includes('lich su') || cleanUserQ.includes('nguon goc') || cleanUserQ.includes('hinh thanh') || cleanUserQ.includes('xay dung') || cleanUserQ.includes('nien dai') || cleanUserQ.includes('khi nao') || cleanUserQ.includes('nam nao')) {
       resp += `Về **lịch sử hình thành và bối cảnh** của di tích **${mon.name}**:\n\n${customAnswer || lichSuVal}\n\n`;
     } 
     // 4. INTENT: NHÂN VẬT LỊCH SỬ GẮN LIỀN
     else if (intentKey === 'nhanvat' || cleanUserQ.includes('nhan vat') || cleanUserQ.includes('ai lanh dao') || cleanUserQ.includes('ai chi huy') || cleanUserQ.includes('gan lien voi ai') || cleanUserQ.includes('ai')) {
-      resp += `Những **nhân vật lịch sử tiêu biểu gắn liền** với di tích **${mon.name}** bao gồm:\n\n${customAnswer || nhanVatVal || 'Đang cập nhật danh sách nhân vật.'}\n\n`;
+      resp += `Những **nhân vật lịch sử tiêu biểu gắn liền** với di tích **${mon.name}** gồm có:\n\n${customAnswer || nhanVatVal || 'Đang cập nhật danh sách nhân vật.'}\n\n`;
     } 
     // 5. INTENT: HIỆN VẬT / BẢO VẬT / VŨ KHÍ
     else if (intentKey === 'hientvat' || cleanUserQ.includes('hien vat') || cleanUserQ.includes('bao vat') || cleanUserQ.includes('vu khi') || cleanUserQ.includes('trung bay')) {
-      resp += `Tại di tích **${mon.name}**, các **hiện vật và bảo vật tiêu biểu** được lưu giữ gồm:\n\n${customAnswer || hienVatVal || 'Đang cập nhật danh mục hiện vật.'}\n\n`;
+      resp += `Các **hiện vật và bảo vật tiêu biểu** được lưu giữ tại di tích **${mon.name}** gồm có:\n\n${customAnswer || hienVatVal || 'Đang cập nhật danh mục hiện vật.'}\n\n`;
     } 
     // 6. INTENT: SỰ KIỆN LỊCH SỬ / CHIẾN CÔNG / MỐC SON
     else if (intentKey === 'sukien' || cleanUserQ.includes('su kien') || cleanUserQ.includes('dien bien') || cleanUserQ.includes('chien cong') || cleanUserQ.includes('tran danh') || cleanUserQ.includes('chien dich')) {
-      resp += `Những **sự kiện và mốc son lịch sử tiêu biểu** tại di tích **${mon.name}** gồm:\n\n${customAnswer || suKienVal || 'Đang cập nhật sự kiện lịch sử.'}\n\n`;
+      resp += `Những **sự kiện và mốc son lịch sử tiêu biểu** tại di tích **${mon.name}** gồm có:\n\n${customAnswer || suKienVal || 'Đang cập nhật sự kiện lịch sử.'}\n\n`;
     } 
     // 7. INTENT: ĐỊA CHỈ & VỊ TRÍ
     else if (intentKey === 'dc_sau' || intentKey === 'dc_truoc' || cleanUserQ.includes('dia chi') || cleanUserQ.includes('o dau') || cleanUserQ.includes('vi tri') || cleanUserQ.includes('toa lac') || cleanUserQ.includes('duong nao') || cleanUserQ.includes('quan nao')) {

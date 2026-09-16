@@ -52,7 +52,10 @@ function cleanText(str) {
   if (!str) return '';
   return str
     .replace(/^1\+A10/i, '')
-    .replace(/^[0-9+–\-:]+\s*/, '')
+    // Only strip numbered list markers like "1. ", "2) ", but never dates like "15/4/1966" or "1975:"
+    .replace(/^[0-9]+\s*[.)]\s+/, '')
+    // Strip leading dashes or bullets like "- ", "* ", "• "
+    .replace(/^[-*•–—]\s*/, '')
     .replace(/\s+/g, ' ')
     .trim();
 }
