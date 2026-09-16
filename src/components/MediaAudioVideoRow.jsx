@@ -1,3 +1,4 @@
+import { useSharedAudio } from '../utils/sharedAudioManager';
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   Film, 

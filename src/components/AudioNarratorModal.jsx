@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   X, 
   Play, 
@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { speakVietnamese, stopVietnameseSpeech } from '../utils/vietnameseVoice';
 import soundEffects from '../utils/soundEffects';
+import { useSharedAudio } from '../utils/sharedAudioManager';
 
 export default function AudioNarratorModal({ 
   isOpen, 
@@ -25,16 +26,15 @@ export default function AudioNarratorModal({
 }) {
   const baseUrl = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
   const resolvedAudioUrl = audioUrl || `${baseUrl}/assets/audio/monument-audio-${monumentStt}.mp3`;
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
-  const [rate, setRate] = useState(1);
+
+  const sharedAudio = useSharedAudio(monumentStt, resolvedAudioUrl);
+
   const [ttsEngine, setTtsEngine] = useState('studio'); // 'studio' | 'system'
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const [isMuted, setIsMuted] = useState(false);
+  const [ttsPlaying, setTtsPlaying] = useState(false);
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
 
   // Normalize audioScript: whether it's a string, array of strings, or array of objects
-  const normalizedSections = React.useMemo(() => {
+  const normalizedSections = useMemo(() => {
     if (!audioScript) {
       return [{ index: 0, title: 'Thuyết minh tổng quan', text: `Chào mừng bạn đến với ${monumentName}.` }];
     }
@@ -67,185 +67,114 @@ export default function AudioNarratorModal({
     return [{ index: 0, title: 'Thuyết minh tổng quan', text: `Chào mừng bạn đến với ${monumentName}.` }];
   }, [audioScript, monumentName]);
 
-  // Audio ref
-  const studioAudioRef = useRef(null);
-
+  // Sync active section from sharedAudio.currentTime
   useEffect(() => {
-    setTtsEngine('studio');
-    setCurrentTime(0);
-    setDuration(0);
-    setCurrentSectionIndex(0);
-    if (studioAudioRef.current) {
-      studioAudioRef.current.load();
+    if (ttsEngine === 'studio' && sharedAudio.duration > 0 && normalizedSections.length > 0) {
+      const prog = sharedAudio.currentTime / sharedAudio.duration;
+      const estimatedSection = Math.min(
+        normalizedSections.length - 1,
+        Math.floor(prog * normalizedSections.length)
+      );
+      setCurrentSectionIndex(estimatedSection);
     }
+  }, [sharedAudio.currentTime, sharedAudio.duration, normalizedSections.length, ttsEngine]);
 
-    return () => {
-      stopAllAudio();
-    };
-  }, [isOpen, monumentStt, resolvedAudioUrl]);
+  const isPlaying = ttsEngine === 'studio' ? sharedAudio.isPlaying : ttsPlaying;
+  const currentTime = sharedAudio.currentTime;
+  const duration = sharedAudio.duration;
+  const rate = sharedAudio.playbackRate;
+  const isMuted = sharedAudio.isMuted;
+  const formatTime = sharedAudio.formatTime;
 
-  const stopAllAudio = () => {
-    if (studioAudioRef.current) {
-      studioAudioRef.current.pause();
-    }
-    stopVietnameseSpeech();
-    setIsPlaying(false);
-  };
+  const speakWithVietnameseVoice = (index) => {
+    if (!normalizedSections || !normalizedSections[index]) return;
+    const textToSpeak = `${normalizedSections[index].title}. ${normalizedSections[index].text}`;
 
-  // Format seconds to mm:ss
-  const formatTime = (secs) => {
-    if (isNaN(secs) || secs < 0) return '00:00';
-    const m = Math.floor(secs / 60);
-    const s = Math.floor(secs % 60);
-    return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
-  };
-
-  const handleTimeUpdate = () => {
-    if (studioAudioRef.current) {
-      const cur = studioAudioRef.current.currentTime;
-      setCurrentTime(cur);
-      
-      if (studioAudioRef.current.duration) {
-        const dur = studioAudioRef.current.duration;
-        setDuration(dur);
-        
-        if (normalizedSections && normalizedSections.length > 0 && dur > 0) {
-          const prog = cur / dur;
-          const estimatedSection = Math.min(
-            normalizedSections.length - 1,
-            Math.floor(prog * normalizedSections.length)
-          );
-          setCurrentSectionIndex(estimatedSection);
+    setTtsPlaying(true);
+    speakVietnamese(textToSpeak, {
+      rate: rate,
+      onStart: () => setTtsPlaying(true),
+      onEnd: () => {
+        if (index < normalizedSections.length - 1) {
+          const nextIndex = index + 1;
+          setCurrentSectionIndex(nextIndex);
+          speakWithVietnameseVoice(nextIndex);
+        } else {
+          setTtsPlaying(false);
         }
+      },
+      onError: () => setTtsPlaying(false)
+    });
+  };
+
+  const handleTogglePlay = () => {
+    soundEffects.playTap();
+    if (ttsEngine === 'studio') {
+      stopVietnameseSpeech();
+      setTtsPlaying(false);
+      sharedAudio.togglePlay();
+    } else {
+      if (ttsPlaying) {
+        stopVietnameseSpeech();
+        setTtsPlaying(false);
+      } else {
+        sharedAudio.pause();
+        speakWithVietnameseVoice(currentSectionIndex);
       }
     }
   };
 
   const handleSeek = (e) => {
     const targetTime = parseFloat(e.target.value);
-    setCurrentTime(targetTime);
-    if (studioAudioRef.current) {
-      studioAudioRef.current.currentTime = targetTime;
-    }
-  };
-
-  const handleSeekOffset = (seconds) => {
-    if (studioAudioRef.current) {
-      const dur = studioAudioRef.current.duration || duration || 0;
-      studioAudioRef.current.currentTime = Math.max(
-        0,
-        Math.min(dur, studioAudioRef.current.currentTime + seconds)
-      );
-    }
-  };
-
-  const speakSection = (index = currentSectionIndex) => {
-    stopAllAudio();
-    if (!normalizedSections || !normalizedSections[index]) return;
-
-    if (ttsEngine === 'studio') {
-      if (studioAudioRef.current) {
-        studioAudioRef.current.playbackRate = rate;
-        studioAudioRef.current.play()
-          .then(() => setIsPlaying(true))
-          .catch(err => {
-            console.warn('Studio audio err, fallback to VN speech:', err);
-            speakWithVietnameseVoice(index);
-          });
-      }
-    } else {
-      speakWithVietnameseVoice(index);
-    }
-  };
-
-  const speakWithVietnameseVoice = (index) => {
-    if (!normalizedSections || !normalizedSections[index]) return;
-    const textToSpeak = `${normalizedSections[index].title}. ${normalizedSections[index].text}`;
-
-    speakVietnamese(textToSpeak, {
-      rate: rate,
-      onStart: () => setIsPlaying(true),
-      onEnd: () => {
-        if (index < normalizedSections.length - 1) {
-          const nextIndex = index + 1;
-          setCurrentSectionIndex(nextIndex);
-          speakSection(nextIndex);
-        } else {
-          setIsPlaying(false);
-        }
-      },
-      onError: () => setIsPlaying(false)
-    });
-  };
-
-  const handleTogglePlay = () => {
-    soundEffects.playTap();
-    if (!isPlaying) {
-      if (ttsEngine === 'studio' && studioAudioRef.current) {
-        studioAudioRef.current.playbackRate = rate;
-        studioAudioRef.current.play()
-          .then(() => setIsPlaying(true))
-          .catch(e => {
-            console.warn('Audio play failed, fallback:', e);
-            speakWithVietnameseVoice(currentSectionIndex);
-          });
-      } else {
-        speakSection(currentSectionIndex);
-      }
-    } else {
-      stopAllAudio();
-    }
+    sharedAudio.seek(targetTime);
   };
 
   const handleNext = () => {
     soundEffects.playTap();
     if (ttsEngine === 'studio') {
-      handleSeekOffset(15);
+      sharedAudio.seekOffset(15);
     } else if (currentSectionIndex < normalizedSections.length - 1) {
       const nextIdx = currentSectionIndex + 1;
       setCurrentSectionIndex(nextIdx);
-      if (isPlaying) speakSection(nextIdx);
+      if (ttsPlaying) speakWithVietnameseVoice(nextIdx);
     }
   };
 
   const handlePrev = () => {
     soundEffects.playTap();
     if (ttsEngine === 'studio') {
-      handleSeekOffset(-15);
+      sharedAudio.seekOffset(-15);
     } else if (currentSectionIndex > 0) {
       const prevIdx = currentSectionIndex - 1;
       setCurrentSectionIndex(prevIdx);
-      if (isPlaying) speakSection(prevIdx);
+      if (ttsPlaying) speakWithVietnameseVoice(prevIdx);
     }
   };
 
   const handleSelectSection = (idx) => {
     soundEffects.playTap();
     setCurrentSectionIndex(idx);
-    if (ttsEngine === 'studio' && studioAudioRef.current && duration > 0) {
-      const targetTime = (idx / normalizedSections.length) * duration;
-      studioAudioRef.current.currentTime = targetTime;
-      if (!isPlaying) {
-        studioAudioRef.current.play().catch(() => {});
-        setIsPlaying(true);
-      }
-    } else {
-      speakSection(idx);
+    if (ttsEngine === 'studio' && sharedAudio.duration > 0 && normalizedSections.length > 0) {
+      const targetTime = (idx / normalizedSections.length) * sharedAudio.duration;
+      sharedAudio.seek(targetTime);
+      sharedAudio.play();
+    } else if (ttsEngine === 'system') {
+      speakWithVietnameseVoice(idx);
     }
   };
 
   const handleClose = () => {
     soundEffects.playTap();
-    stopAllAudio();
+    if (ttsEngine === 'system') {
+      stopVietnameseSpeech();
+      setTtsPlaying(false);
+    }
     onClose();
   };
 
   const toggleMute = () => {
     soundEffects.playTap();
-    if (studioAudioRef.current) {
-      studioAudioRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
-    }
+    sharedAudio.toggleMute();
   };
 
   if (!isOpen) return null;
@@ -253,20 +182,7 @@ export default function AudioNarratorModal({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
       <div className="bg-[#FAF7F2] w-full max-w-4xl rounded-3xl overflow-hidden shadow-2xl border border-[#EADBC8] flex flex-col max-h-[92vh] animate-scaleUp">
-        {/* Audio Element */}
-        <audio
-          ref={studioAudioRef}
-          src={resolvedAudioUrl}
-          onTimeUpdate={handleTimeUpdate}
-          onLoadedMetadata={() => {
-            if (studioAudioRef.current) setDuration(studioAudioRef.current.duration);
-          }}
-          onEnded={() => setIsPlaying(false)}
-          onError={(e) => {
-            console.warn('Audio file load error:', resolvedAudioUrl, e);
-          }}
-        />
-
+        
         {/* Modal Header */}
         <div className="bg-gradient-to-r from-[#7B1113] via-[#96171a] to-[#7B1113] text-white p-5 sm:p-6 flex items-center justify-between shadow-md">
           <div className="flex items-center gap-3.5">
@@ -302,7 +218,8 @@ export default function AudioNarratorModal({
             <div className="inline-flex rounded-xl p-0.5 bg-white border border-[#EADBC8] shadow-2xs">
               <button
                 onClick={() => {
-                  stopAllAudio();
+                  stopVietnameseSpeech();
+                  setTtsPlaying(false);
                   setTtsEngine('studio');
                 }}
                 className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
@@ -315,7 +232,7 @@ export default function AudioNarratorModal({
               </button>
               <button
                 onClick={() => {
-                  stopAllAudio();
+                  sharedAudio.pause();
                   setTtsEngine('system');
                 }}
                 className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
@@ -351,86 +268,73 @@ export default function AudioNarratorModal({
               <div className="flex items-center gap-3">
                 <button
                   onClick={handlePrev}
-                  className="w-10 h-10 rounded-2xl bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center transition-all cursor-pointer hover:scale-105"
-                  title="Tua lùi 15s"
+                  className="w-10 h-10 rounded-2xl bg-[#FAF0E6] hover:bg-[#F3E5D8] flex items-center justify-center text-[#7B1113] transition-colors cursor-pointer"
+                  title="Lùi lại 15 giây"
                 >
                   <SkipBack className="w-5 h-5" />
                 </button>
 
                 <button
                   onClick={handleTogglePlay}
-                  className={`w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg transition-all transform hover:scale-105 cursor-pointer ${
-                    isPlaying
-                      ? 'bg-amber-600 hover:bg-amber-700 ring-4 ring-amber-300/50'
-                      : 'bg-[#7B1113] hover:bg-[#96171a]'
-                  }`}
+                  className="w-14 h-14 rounded-2xl bg-[#7B1113] hover:bg-[#96171a] text-white flex items-center justify-center shadow-lg transition-transform hover:scale-105 cursor-pointer"
+                  title={isPlaying ? "Tạm dừng" : "Phát tiếp âm thanh"}
                 >
-                  {isPlaying ? <Pause className="w-7 h-7" /> : <Play className="w-7 h-7 ml-1" />}
+                  {isPlaying ? (
+                    <Pause className="w-7 h-7 fill-white" />
+                  ) : (
+                    <Play className="w-7 h-7 fill-white ml-0.5" />
+                  )}
                 </button>
 
                 <button
                   onClick={handleNext}
-                  className="w-10 h-10 rounded-2xl bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center transition-all cursor-pointer hover:scale-105"
-                  title="Tua nhanh 15s"
+                  className="w-10 h-10 rounded-2xl bg-[#FAF0E6] hover:bg-[#F3E5D8] flex items-center justify-center text-[#7B1113] transition-colors cursor-pointer"
+                  title="Tua tới 15 giây"
                 >
                   <SkipForward className="w-5 h-5" />
                 </button>
               </div>
 
-              {/* Status and soundwave */}
-              <div className="flex items-center gap-3 text-center sm:text-left">
-                {isPlaying && (
-                  <div className="flex items-center gap-1 h-5">
-                    <span className="w-1 bg-[#7B1113] rounded-full animate-bounce h-3" />
-                    <span className="w-1 bg-[#7B1113] rounded-full animate-bounce h-5" style={{ animationDelay: '0.2s' }} />
-                    <span className="w-1 bg-[#7B1113] rounded-full animate-bounce h-4" style={{ animationDelay: '0.4s' }} />
-                    <span className="w-1 bg-[#7B1113] rounded-full animate-bounce h-2" style={{ animationDelay: '0.1s' }} />
-                  </div>
-                )}
-                <div>
-                  <div className="text-xs font-bold text-[#7B1113]">
-                    {isPlaying ? 'Đang phát thuyết minh...' : 'Đang tạm dừng'}
-                  </div>
-                  <div className="text-[11px] text-gray-500 font-medium truncate max-w-[200px]">
-                    {normalizedSections[currentSectionIndex]?.title || monumentName}
-                  </div>
+              {/* Status information */}
+              <div className="text-center sm:text-left flex-1 min-w-0 px-2">
+                <div className="text-xs font-bold text-[#7B1113] truncate">
+                  {isPlaying ? 'Đang phát thuyết minh...' : 'Đang tạm dừng'}
+                </div>
+                <div className="text-xs text-[#6B5E55] truncate mt-0.5">
+                  {normalizedSections[currentSectionIndex]?.title || 'Thuyết minh di tích'}
                 </div>
               </div>
 
-              {/* Speed & Mute */}
+              {/* Rate & Volume Controls */}
               <div className="flex items-center gap-2">
-                <div className="flex items-center gap-1 bg-gray-100 rounded-xl p-1 text-xs font-bold text-gray-700">
-                  {[0.75, 1, 1.25, 1.5].map((s) => (
+                <div className="flex items-center bg-[#FAF0E6] rounded-xl p-1 text-xs font-bold text-[#7B1113]">
+                  {[0.75, 1, 1.25, 1.5].map((r) => (
                     <button
-                      key={s}
-                      onClick={() => {
-                        soundEffects.playTap();
-                        setRate(s);
-                        if (studioAudioRef.current) studioAudioRef.current.playbackRate = s;
-                      }}
-                      className={`px-2 py-1 rounded-lg transition-colors cursor-pointer ${
-                        rate === s ? 'bg-[#7B1113] text-white' : 'hover:bg-gray-200'
+                      key={r}
+                      onClick={() => sharedAudio.setPlaybackRate(r)}
+                      className={`px-2 py-0.5 rounded-lg transition-colors cursor-pointer ${
+                        rate === r ? 'bg-[#7B1113] text-white' : 'hover:bg-white'
                       }`}
                     >
-                      {s}x
+                      {r}x
                     </button>
                   ))}
                 </div>
 
                 <button
                   onClick={toggleMute}
-                  className="p-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer"
+                  className="w-9 h-9 rounded-xl bg-[#FAF0E6] hover:bg-[#F3E5D8] flex items-center justify-center text-[#7B1113] transition-colors cursor-pointer"
                   title={isMuted ? "Bật âm thanh" : "Tắt tiếng"}
                 >
-                  {isMuted ? <VolumeX className="w-4 h-4 text-red-600" /> : <Volume2 className="w-4 h-4" />}
+                  {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
                 </button>
               </div>
             </div>
 
-            {/* Timeline Seek Bar */}
-            {duration > 0 && (
-              <div className="space-y-1 pt-2">
-                <div className="flex items-center justify-between text-[11px] text-gray-500 font-medium">
+            {/* Visual Timeline Seek Slider */}
+            {ttsEngine === 'studio' && (
+              <div className="space-y-1.5 pt-1">
+                <div className="flex justify-between text-xs font-mono text-[#6B5E55]">
                   <span>{formatTime(currentTime)}</span>
                   <span>{formatTime(duration)}</span>
                 </div>
