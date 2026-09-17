@@ -306,3 +306,31 @@ p, blockquote, figcaption {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Eye-catching Hero Call-To-Action Button Animation */
+@keyframes shimmerSweep {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  50%, 100% { transform: translateX(250%) skewX(-20deg); }
+}
+
+@keyframes pulseGlowHero {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.5), 0 4px 15px rgba(123, 17, 19, 0.4);
+    border-color: rgba(251, 191, 36, 0.9);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(245, 158, 11, 0.85), 0 8px 25px rgba(185, 28, 28, 0.6);
+    border-color: rgba(254, 240, 138, 1);
+    transform: scale(1.02);
+  }
+}
+
+.btn-hero-pulse {
+  animation: pulseGlowHero 2.4s infinite ease-in-out;
+}
+
+.shimmer-sweep {
+  animation: shimmerSweep 2.8s infinite ease-in-out;
+}
+

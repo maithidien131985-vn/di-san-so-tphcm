@@ -399,10 +399,26 @@ export default function HeritagePassportModal({
                         if (onNavigate) onNavigate('home');
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
-                      className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#731013] hover:from-[#731013] hover:to-[#57090b] text-white text-xs font-black transition-all cursor-pointer flex items-center justify-center gap-2 shadow-md hover:scale-102 border border-amber-300/40"
+                      className="relative overflow-hidden w-full py-3 px-3.5 rounded-xl bg-gradient-to-r from-[#8B1417] via-[#B81D22] to-[#731013] hover:from-[#9B171B] hover:to-[#57090B] text-white text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center justify-between shadow-xl hover:scale-103 active:scale-98 border-2 border-amber-300/90 btn-hero-pulse group"
                     >
-                      <Home className="w-3.5 h-3.5 text-amber-300" />
-                      <span>Bắt Đầu Khám Phá Từ Trang Chủ</span>
+                      {/* Automatic light sweep shimmer reflection */}
+                      <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/35 to-transparent shimmer-sweep pointer-events-none" />
+
+                      {/* Left: Animated Icon + Title */}
+                      <div className="flex items-center gap-2 relative z-10">
+                        <div className="w-6 h-6 rounded-lg bg-amber-400/25 border border-amber-300/60 flex items-center justify-center shrink-0 group-hover:rotate-12 transition-transform shadow-inner">
+                          <Home className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
+                        </div>
+                        <span className="tracking-wide text-amber-50 drop-shadow-xs font-black uppercase text-[11px] sm:text-xs">
+                          Bắt Đầu Khám Phá Từ Trang Chủ
+                        </span>
+                      </div>
+
+                      {/* Right: Sparkling Call-to-action badge */}
+                      <div className="flex items-center gap-1 relative z-10 bg-amber-400/25 px-2 py-0.5 rounded-full border border-amber-300/50 group-hover:bg-amber-400/40 transition-colors">
+                        <span className="text-[10px] font-bold text-amber-200">Vào ngay</span>
+                        <ChevronRight className="w-3 h-3 text-amber-300 group-hover:translate-x-1 transition-transform" />
+                      </div>
                     </button>
 
                     <button
