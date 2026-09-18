@@ -133,13 +133,13 @@ export default function FlipCardGrid({ subjects = [], monumentName = 'Di tích L
             <div className="space-y-1.5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-bold uppercase tracking-wider">
                 <GraduationCap className="w-3.5 h-3.5" />
-                <span>Giáo Dục Liên Môn GDPT 2018</span>
+                <span>Giáo Dục Địa Phương & Lịch Sử</span>
               </div>
               <h2 className="font-serif-title font-black text-2xl sm:text-3xl text-[#2C241E]">
-                Khám Phá Di Tích Qua 6 Môn Học: {monumentName}
+                Khám Phá Bài Học Di Tích: {monumentName}
               </h2>
               <p className="text-xs sm:text-sm text-[#666666] max-w-2xl">
-                Tích hợp kiến thức đa chiều giúp học sinh thấu hiểu sâu sắc giá trị lịch sử, địa lí, kiến trúc, pháp luật, ngữ văn và nghệ thuật quân sự của di tích.
+                Tìm hiểu sâu sắc giá trị lịch sử, kiến trúc, văn hóa và nghệ thuật của di tích.
               </p>
             </div>
             <span className="text-xs text-[#7E1819] font-bold bg-white px-3 py-1.5 rounded-xl border border-[#EAE3D9] shadow-2xs self-start sm:self-auto">

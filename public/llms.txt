@@ -1,17 +1,15 @@
 # DI SẢN SỐ TP.HCM - HỆ THỐNG SỐ HÓA 103 DI TÍCH LỊCH SỬ & VĂN HÓA
 
-> Hệ thống học tập số hóa di sản văn hóa, lịch sử TP.HCM phục vụ giáo dục địa phương, tích hợp công nghệ AI, bản đồ số, audio thuyết minh đồng bộ, mô hình 3D/VR, thước phim tư liệu và ngân hàng 3.605 câu hỏi - đáp trắc nghiệm.
+> Hệ thống học tập số hóa di sản văn hóa, lịch sử TP.HCM phục vụ giáo dục địa phương, tích hợp công nghệ AI, bản đồ số, audio thuyết minh đồng bộ kịch bản tự sáng, thước phim tư liệu và ngân hàng 3.605 câu hỏi - đáp trắc nghiệm.
 
 ## 1. TỔNG QUAN HỆ THỐNG & CÔNG NGHỆ
 - **Đơn vị phát triển:** Dự án Nghiên cứu Khoa học Kỹ thuật (KHKT) trường THCS Xà Bang.
 - **Quy mô số hóa:** Toàn bộ 103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt tại TP.HCM & các địa bàn lịch sử phụ cận liên quan (Côn Đảo, Căn cứ Rừng Sác, Địa đạo Bến Cát...).
 - **Tính năng cốt lõi:**
   1. **Bản đồ tương tác (Interactive Heritage Map):** Định vị GPS chuẩn xác 103 di tích, phân loại theo địa bàn quận/huyện, bộ lọc di tích theo cấp xếp hạng và loại hình.
-  2. **Đa phương tiện đồng bộ:** Audio thuyết minh chuẩn chất giọng kèm kịch bản đọc chữ đồng bộ thời gian thực; Thước phim video tư liệu lịch sử cho từng di tích.
-  3. **Thám hiểm 3D / VR:** Không gian tham quan ảo, mô hình hiện vật và di vật khảo cổ quý.
-  4. **Trợ lý AI Di sản (Heritage AI Chatbot):** Tích hợp kép (Google Gemini 1.5 Flash Live & Bộ quy tắc NLP suy luận cục bộ 3.605 cặp hỏi - đáp chính thống từ Sở VH&TT).
-  5. **Tích hợp Sư phạm Liên môn:** Kết nối 6 môn học (Lịch sử, Địa lý, Ngữ văn, GDCD, STEM/Khoa học tự nhiên, KHKT) cùng hệ thống hồ sơ điều tra giải mã di sản.
-  6. **Đánh giá & Gamification:** Trắc nghiệm tương tác 5 câu hỏi ngẫu nhiên cho từng di tích, hệ thống Hộ chiếu Di sản (Passport) và bộ sưu tập huy hiệu thành tựu.
+  2. **Đa phương tiện đồng bộ:** Audio thuyết minh chuẩn chất giọng kèm kịch bản đọc chữ tự sáng đồng bộ thời gian thực; Thước phim video tư liệu lịch sử cho từng di tích.
+  3. **Trợ lý AI Di sản (Heritage AI Chatbot):** Tích hợp kép (Google Gemini 1.5 Flash Live & Bộ quy tắc NLP suy luận cục bộ 3.605 cặp hỏi - đáp chính thống từ Sở VH&TT).
+  4. **Đánh giá & Gamification:** Trắc nghiệm tương tác 5 câu hỏi ngẫu nhiên cho từng di tích, hệ thống Hộ chiếu Di sản (Passport) và bộ sưu tập huy hiệu thành tựu.
 
 ## 2. THỐNG KÊ KHOA HỌC VỀ DI TÍCH TP.HCM (SỞ VĂN HÓA & THỂ THAO)
 - **Tổng số di tích đã xếp hạng:** 321 di tích (4 Quốc gia đặc biệt, 99 Cấp Quốc gia, 218 Cấp Tỉnh/Thành phố).

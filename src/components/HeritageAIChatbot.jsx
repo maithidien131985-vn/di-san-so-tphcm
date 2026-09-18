@@ -396,7 +396,7 @@ export default function HeritageAIChatbot({
     // 1. GREETINGS & INTRO
     if (/^(chao|hello|hi|xin chao|ban la ai|gioi thieu ban|tro ly la ai|ban lam duoc gi)$/i.test(cleanQ)) {
       return {
-        text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi hỗ trợ bạn tra cứu toàn diện với **bộ tri thức chuẩn 3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa TP.HCM & Vùng phụ cận**:\n\n- 🔍 **Tra cứu nhanh:** Theo tên di tích, số STT (#1 - #103) hoặc địa bàn Quận/Huyện.\n- 📜 **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh lịch sử và quá trình hình thành.\n- 👤 **Nhân vật & Hiện vật:** Bác Hồ, Võ Thị Sáu, Trần Phú, Tôn Đức Thắng, xe tăng 390/843, hầm vũ khí...\n- ⚔️ **Sự kiện & Chiến công:** Các trận đánh, khởi nghĩa, chiến dịch giải phóng...\n- 📚 **Học tập 6 môn:** Lịch sử, Địa lý, Ngữ văn, GDCD, STEM và hồ sơ điều tra KHKT.\n\n*Kính mời bạn nhập câu hỏi để bắt đầu tra cứu!*`,
+        text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi hỗ trợ bạn tra cứu toàn diện với **bộ tri thức chuẩn 3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa TP.HCM & Vùng phụ cận**:\n\n- 🔍 **Tra cứu nhanh:** Theo tên di tích, số STT (#1 - #103) hoặc địa bàn Quận/Huyện.\n- 📜 **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh lịch sử và quá trình hình thành.\n- 👤 **Nhân vật & Hiện vật:** Bác Hồ, Võ Thị Sáu, Trần Phú, Tôn Đức Thắng, xe tăng 390/843, hầm vũ khí...\n- ⚔️ **Sự kiện & Chiến công:** Các trận đánh, khởi nghĩa, chiến dịch giải phóng...\n- 🎧 **Đa phương tiện & Vị trí:** Thuyết minh audio kịch bản tự sáng, video tư liệu và bản đồ GPS.\n\n*Kính mời bạn nhập câu hỏi để bắt đầu tra cứu!*`,
         relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[3]]
       };
     }
@@ -470,7 +470,7 @@ export default function HeritageAIChatbot({
             `2. 🌲 **Địa đạo Củ Chi** (#STT 2) - *Huyện Củ Chi*\n` +
             `3. 🚢 **Đường Hồ Chí Minh trên biển (Bến Lộc An)** (#STT 3) - *Khu vực ven biển*\n` +
             `4. ⛓️ **Nhà tù Côn Đảo** (#STT 4) - *Huyện Côn Đảo*\n\n` +
-            `💡 *Toàn bộ 4 di tích Quốc gia đặc biệt này đều đã được số hóa 3D/VR, thuyết minh audio và video đầy đủ trong hệ thống.*`,
+            `💡 *Toàn bộ 4 di tích Quốc gia đặc biệt này đều đã được số hóa thông tin, thuyết minh audio đồng bộ kịch bản và video tư liệu đầy đủ trong hệ thống.*`,
           relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[2], allMonumentsList[3]]
         };
       }
@@ -890,17 +890,14 @@ export default function HeritageAIChatbot({
       }
     }
 
-    // 8. STEP 6: INTERDISCIPLINARY & 6 SUBJECTS / KHKT
-    if (cleanQ.includes('mon hoc') || cleanQ.includes('khkt') || cleanQ.includes('de tai') || cleanQ.includes('stem') || cleanQ.includes('lien mon')) {
+    // 8. STEP 6: DỰ ÁN KHKT & DI SẢN SỐ
+    if (cleanQ.includes('khkt') || cleanQ.includes('de tai') || cleanQ.includes('du an')) {
       return {
-        text: `### 📚 Tích Hợp Di Sản Với 6 Môn Học THCS & Đề Tài KHKT\n\n` +
-          `- 📜 **Lịch sử:** Phân tích các mốc son chống Pháp, chống Mỹ, Chiến dịch Hồ Chí Minh (STT 1, 2, 4, 7, 20).\n` +
-          `- 🌍 **Địa lý:** Khảo sát phân bố không gian di tích, địa hình rừng ngập mặn Cần Giờ, địa đạo Củ Chi (STT 2, 7, 23).\n` +
-          `- 📖 **Ngữ văn:** Cảm thụ văn học qua thơ văn yêu nước, hình tượng nữ anh hùng Võ Thị Sáu, nhà tù Côn Đảo (STT 4, 16).\n` +
-          `- ⚖️ **GDCD / HĐTN:** Giáo dục lòng yêu nước, ý thức trách nhiệm bảo tồn và phát huy giá trị di sản văn hóa.\n` +
-          `- 🔬 **KHTN / STEM:** Nghiên cứu cấu trúc địa chất đất sét Củ Chi, kỹ thuật xây dựng vòm cuốn, bảo quản hiện vật gốm cổ.\n` +
-          `- 🎨 **Nghệ thuật:** Tìm hiểu nghệ thuật chạm khắc gỗ đình làng Nam Bộ, kiến trúc hoa văn Chợ Lớn (STT 59, 73, 83).`,
-        relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[6], allMonumentsList[15]]
+        text: `### 🏛️ Dự Án Nghiên Cứu KHKT - Di Sản Số TP.HCM\n\n` +
+          `- 🎯 **Mục tiêu:** Số hóa toàn diện 103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt tại TP.HCM & vùng phụ cận phục vụ giáo dục truyền thống.\n` +
+          `- 📱 **Nền tảng công nghệ:** Bản đồ số tương tác định vị GPS, Audio thuyết minh đồng bộ kịch bản tự sáng, Thước phim video tư liệu lịch sử, Trắc nghiệm kiến thức và Trợ lý AI Di sản.\n` +
+          `- 🏫 **Đơn vị thực hiện:** Trường THCS Xà Bang.`,
+        relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[6]]
       };
     }
 
@@ -1207,7 +1204,7 @@ export default function HeritageAIChatbot({
               </div>
 
               <p className="text-[11px] text-stone-600 leading-relaxed">
-                Tích hợp mô hình <strong>Gemini 1.5 Flash</strong> giúp chatbot trả lời thông minh, linh hoạt mọi câu hỏi học tập và kết nối 6 môn học.
+                Tích hợp mô hình <strong>Gemini 1.5 Flash</strong> giúp chatbot trả lời thông minh, linh hoạt mọi câu hỏi học tập và lịch sử di sản.
               </p>
 
               <form onSubmit={handleSaveApiKey} className="space-y-2">
