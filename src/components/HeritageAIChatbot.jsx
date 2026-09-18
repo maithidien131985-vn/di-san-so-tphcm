@@ -1582,18 +1582,26 @@ export default function HeritageAIChatbot({
             {/* Thinking Indicator */}
             {isThinking && (
               <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-white border border-rose-200 w-fit text-xs text-[#8B1417] shadow-sm animate-pulse">
-                {isGeminiEnabled && getGeminiApiKey() ? (
+                {isDeepSeekEnabled && hasDeepSeekApiKey() ? (
+                  <div className="w-5 h-5 rounded-lg bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center text-[#200507] shadow-2xs">
+                    <Zap className="w-3.5 h-3.5 fill-current animate-bounce" />
+                  </div>
+                ) : isGeminiEnabled && getGeminiApiKey() ? (
                   <Sparkles className="w-4 h-4 animate-spin text-amber-600" />
                 ) : (
                   <Bot className="w-4 h-4 animate-spin text-[#8B1417]" />
                 )}
-                <span className="font-bold">
-                  {isGeminiEnabled && getGeminiApiKey() ? 'Google Gemini 1.5 Flash đang suy nghĩ...' : 'Đang tra cứu cơ sở dữ liệu 103 di tích...'}
+                <span className="font-bold text-[#8B1417]">
+                  {isDeepSeekEnabled && hasDeepSeekApiKey()
+                    ? 'DeepSeek-V3 LLM đang suy nghĩ...'
+                    : isGeminiEnabled && getGeminiApiKey()
+                    ? 'Google Gemini 1.5 Flash đang suy nghĩ...'
+                    : 'Đang tra cứu cơ sở dữ liệu 103 di tích...'}
                 </span>
-                <span className="flex gap-0.5">
-                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-pulse" />
-                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-pulse delay-75" />
-                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-pulse delay-150" />
+                <span className="flex gap-1 items-center">
+                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-bounce [animation-delay:-0.3s]" />
+                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-bounce [animation-delay:-0.15s]" />
+                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-bounce" />
                 </span>
               </div>
             )}
