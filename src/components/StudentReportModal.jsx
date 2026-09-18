@@ -43,9 +43,7 @@ export default function StudentReportModal({
   });
 
   const [analysisText, setAnalysisText] = useState('');
-  const [messageToFuture, setMessageToFuture] = useState(
-    'Em xin hứa sẽ noi gương các thế hệ cha anh, tích cực học tập, rèn luyện và góp phần bảo tồn, phát huy giá trị di sản lịch sử văn hóa của dân tộc!'
-  );
+  const [messageToFuture, setMessageToFuture] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const topicTitle = investigation?.investigationTopic || `Khảo sát & Nghiên cứu Di tích ${monumentName}`;
@@ -54,7 +52,8 @@ export default function StudentReportModal({
 
   useEffect(() => {
     if (isOpen) {
-      setAnalysisText(defaultAnswer);
+      setAnalysisText('');
+      setMessageToFuture('');
       setIsSubmitted(false);
 
       // Auto fill if empty
@@ -68,7 +67,7 @@ export default function StudentReportModal({
         setSchoolName(activePassport.school);
       }
     }
-  }, [isOpen, defaultAnswer, activePassport]);
+  }, [isOpen, activePassport]);
 
   if (!isOpen) return null;
 
@@ -219,6 +218,7 @@ export default function StudentReportModal({
                   type="text"
                   value={messageToFuture}
                   onChange={(e) => setMessageToFuture(e.target.value)}
+                  placeholder="Nhập lời hứa và thông điệp của em gửi tới thế hệ tương lai..."
                   className="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white outline-none focus:border-[#7B1113]"
                 />
               </div>
