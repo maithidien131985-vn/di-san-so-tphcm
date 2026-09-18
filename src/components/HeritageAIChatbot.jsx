@@ -159,14 +159,58 @@ export default function HeritageAIChatbot({
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [hasUnread, setHasUnread] = useState(true);
 
-  // Gemini API Settings State
+  // DeepSeek & AI Settings State
   const [showSettings, setShowSettings] = useState(false);
-  const [apiKeyInput, setApiKeyInput] = useState(getGeminiApiKey() || '');
-  const [isGeminiEnabled, setIsGeminiEnabled] = useState(hasGeminiApiKey());
+  const [apiKeyInput, setApiKeyInput] = useState(() => getDeepSeekApiKey() || getGeminiApiKey() || '');
   const [isDeepSeekEnabled, setIsDeepSeekEnabled] = useState(hasDeepSeekApiKey());
-  const [deepSeekKeyInput, setDeepSeekKeyInput] = useState('');
-  const [isTestingDeepSeek, setIsTestingDeepSeek] = useState(false);
-  const [deepSeekStatusMsg, setDeepSeekStatusMsg] = useState(null);
+  const [isGeminiEnabled, setIsGeminiEnabled] = useState(hasGeminiApiKey());
+  const [isTestingKey, setIsTestingKey] = useState(false);
+  const [statusMessage, setStatusMessage] = useState(null);
+  const [saveSuccessMsg, setSaveSuccessMsg] = useState(false);
+
+  // Handlers for API Key Configuration
+  const handleSaveApiKey = (e) => {
+    if (e) e.preventDefault();
+    const key = apiKeyInput.trim();
+    if (!key) {
+      removeDeepSeekApiKey();
+      setIsDeepSeekEnabled(false);
+      setStatusMessage({ type: 'info', text: 'Đã xóa API Key. Chatbot chuyển về chế độ tri thức cục bộ (3.605 Q&A).' });
+      return;
+    }
+    saveDeepSeekApiKey(key);
+    setIsDeepSeekEnabled(true);
+    setSaveSuccessMsg(true);
+    setStatusMessage({ type: 'success', text: 'Đã lưu DeepSeek API Key thành công! Chatbot sẵn sàng kích hoạt DeepSeek-V3.' });
+    setTimeout(() => setSaveSuccessMsg(false), 4000);
+  };
+
+  const handleClearApiKey = () => {
+    setApiKeyInput('');
+    removeDeepSeekApiKey();
+    setIsDeepSeekEnabled(false);
+    setStatusMessage({ type: 'info', text: 'Đã xóa API Key.' });
+  };
+
+  const handleTestConnection = async () => {
+    const key = apiKeyInput.trim() || getDeepSeekApiKey();
+    if (!key) {
+      setStatusMessage({ type: 'error', text: 'Vui lòng nhập API Key trước khi kiểm tra!' });
+      return;
+    }
+    setIsTestingKey(true);
+    setStatusMessage(null);
+    try {
+      const res = await testDeepSeekConnection(key);
+      setStatusMessage({ type: 'success', text: 'Kết nối thành công tới máy chủ DeepSeek (' + res.model + ')!' });
+      saveDeepSeekApiKey(key);
+      setIsDeepSeekEnabled(true);
+    } catch (err) {
+      setStatusMessage({ type: 'error', text: err.message || 'Lỗi kết nối tới DeepSeek API.' });
+    } finally {
+      setIsTestingKey(false);
+    }
+  };
 
   // Sync API Keys with localStorage across components
   useEffect(() => {
@@ -182,7 +226,6 @@ export default function HeritageAIChatbot({
       window.removeEventListener('focus', syncKeys);
     };
   }, []);
-  const [saveSuccessMsg, setSaveSuccessMsg] = useState(false);
 
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
@@ -1010,22 +1053,7 @@ export default function HeritageAIChatbot({
     setTimeout(() => setDeepSeekStatusMsg(null), 3000);
   };
 
-  // Handle Save API Key
-  const handleSaveApiKey = (e) => {
-    if (e) e.preventDefault();
-    const cleanKey = apiKeyInput.trim();
-    saveGeminiApiKey(cleanKey);
-    setIsGeminiEnabled(Boolean(cleanKey));
-    setSaveSuccessMsg(true);
-    setTimeout(() => setSaveSuccessMsg(false), 3000);
-  };
 
-  // Handle Clear API Key
-  const handleClearApiKey = () => {
-    saveGeminiApiKey('');
-    setApiKeyInput('');
-    setIsGeminiEnabled(false);
-  };
 
     // Handle Send Message (Hierarchy: DeepSeek-V3 LLM -> Gemini AI -> Local Fast Engine)
   const handleSendMessage = async (textToSend) => {
@@ -1242,7 +1270,7 @@ export default function HeritageAIChatbot({
               <button
                 onClick={() => setShowSettings(!showSettings)}
                 className={`p-1.5 rounded-lg transition-colors cursor-pointer ${showSettings ? 'bg-white/25 text-amber-200' : 'hover:bg-white/15 hover:text-white'}`}
-                title="Cài đặt Gemini AI API"
+                title="Cài đặt DeepSeek AI API"
               >
                 <Settings className="w-4 h-4" />
               </button>
@@ -1273,70 +1301,106 @@ export default function HeritageAIChatbot({
             </div>
           </div>
 
-          {/* Gemini API Settings Collapsible Drawer */}
+          {/* DeepSeek API Settings Collapsible Drawer */}
           {showSettings && (
             <div className="bg-[#FFFDFB] border-b-2 border-rose-200 p-3.5 sm:p-4 text-xs space-y-3 shadow-inner animate-in slide-in-from-top-2 duration-200">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1.5 font-bold text-[#8B1417]">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
-                  <span className="font-serif-title uppercase text-xs">Cấu hình Google Gemini API</span>
+                  <Sparkles className="w-4 h-4 text-amber-500 fill-amber-500" />
+                  <span className="font-serif-title uppercase text-xs sm:text-[13px] tracking-wide">CẤU HÌNH DEEPSEEK API</span>
                 </div>
                 <button
                   onClick={() => setShowSettings(false)}
                   className="text-stone-400 hover:text-stone-600 p-1 cursor-pointer"
+                  title="Đóng cấu hình"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
               </div>
 
               <p className="text-[11px] text-stone-600 leading-relaxed">
-                Tích hợp mô hình <strong>Gemini 1.5 Flash</strong> giúp chatbot trả lời thông minh, linh hoạt mọi câu hỏi học tập và lịch sử di sản.
+                Tích hợp mô hình <strong>DeepSeek-V3</strong> giúp chatbot trả lời thông minh, linh hoạt mọi câu hỏi học tập và lịch sử di sản.
               </p>
 
-              <form onSubmit={handleSaveApiKey} className="space-y-2">
+              <form onSubmit={handleSaveApiKey} className="space-y-2.5">
                 <div className="relative">
                   <input
                     type="password"
                     value={apiKeyInput}
                     onChange={(e) => setApiKeyInput(e.target.value)}
-                    placeholder="Dán mã Gemini API Key (AIzaSy...)"
-                    className="w-full py-2 pl-3 pr-8 text-xs font-mono bg-[#FAF4F0] border border-rose-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417]"
+                    onCopy={(e) => e.preventDefault()}
+                    onCut={(e) => e.preventDefault()}
+                    style={{ userSelect: 'none' }}
+                    autoComplete="off"
+                    spellCheck="false"
+                    placeholder="Dán mã DeepSeek API Key (sk-...)"
+                    className="w-full py-2.5 pl-3.5 pr-14 text-xs font-mono bg-[#FAF4F0] border border-rose-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] shadow-inner select-none"
                   />
                   {apiKeyInput && (
                     <button
                       type="button"
                       onClick={handleClearApiKey}
-                      className="absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600 text-[10px] font-bold"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-[#8B1417] text-[11px] font-bold cursor-pointer"
                     >
                       Xóa
                     </button>
                   )}
                 </div>
 
-                <div className="flex items-center justify-between pt-1">
+                <div className="flex items-center justify-between gap-2 pt-1 flex-wrap">
                   <a
-                    href="https://aistudio.google.com/app/apikey"
+                    href="https://platform.deepseek.com/api_keys"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[10px] font-bold text-[#8B1417] hover:underline flex items-center gap-1"
+                    className="text-[10px] sm:text-[11px] font-bold text-[#8B1417] hover:underline flex items-center gap-1"
                   >
-                    <span>Lấy API Key miễn phí (Google AI Studio)</span>
+                    <span>Lấy API Key DeepSeek (platform.deepseek.com)</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
 
-                  <button
-                    type="submit"
-                    className="px-3.5 py-1.5 rounded-lg bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold text-[11px] transition-colors cursor-pointer shadow-xs"
-                  >
-                    Lưu cấu hình
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={handleTestConnection}
+                      disabled={isTestingKey || !apiKeyInput}
+                      className="px-2.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-[#8B1417] border border-rose-200 font-bold text-[11px] transition-colors cursor-pointer disabled:opacity-50 flex items-center gap-1"
+                    >
+                      {isTestingKey ? (
+                        <>
+                          <RefreshCw className="w-3 h-3 animate-spin" />
+                          <span>Đang thử...</span>
+                        </>
+                      ) : (
+                        <span>Kiểm tra kết nối</span>
+                      )}
+                    </button>
+
+                    <button
+                      type="submit"
+                      className="px-3.5 py-1.5 rounded-lg bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold text-[11px] transition-colors cursor-pointer shadow-xs"
+                    >
+                      Lưu cấu hình
+                    </button>
+                  </div>
                 </div>
               </form>
 
-              {saveSuccessMsg && (
-                <div className="p-2 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-bold flex items-center gap-1.5 animate-in fade-in">
-                  <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Đã lưu API Key! Chatbot sẵn sàng hoạt động với Google Gemini Live.</span>
+              {statusMessage && (
+                <div className={"p-2.5 rounded-xl border text-[11px] font-bold flex items-center gap-2 animate-in fade-in " + (
+                  statusMessage.type === 'success' 
+                    ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+                    : statusMessage.type === 'error'
+                    ? 'bg-rose-50 border-rose-200 text-rose-800'
+                    : 'bg-stone-50 border-stone-200 text-stone-800'
+                )}>
+                  {statusMessage.type === 'success' ? (
+                    <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+                  ) : statusMessage.type === 'error' ? (
+                    <X className="w-4 h-4 text-rose-600 shrink-0" />
+                  ) : (
+                    <Sparkles className="w-4 h-4 text-stone-500 shrink-0" />
+                  )}
+                  <span>{statusMessage.text}</span>
                 </div>
               )}
             </div>
