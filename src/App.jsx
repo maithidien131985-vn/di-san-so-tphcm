@@ -552,6 +552,7 @@ export default function App() {
           onOpenMyMap={() => setMyMapModalOpen(true)}
           onOpenContribute={() => setContributeModalOpen(true)}
           onOpenPassport={() => setPassportModalOpen(true)}
+          onOpenChatbot={() => setAiChatOpen(true)}
           activePassport={activePassport}
           onNavigate={handleNavigate}
         />

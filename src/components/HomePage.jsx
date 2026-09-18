@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import WordByWordTitle from './WordByWordTitle';
+import DeepSeekApiPortal from './DeepSeekApiPortal';
 import { 
   Compass, 
   MapPin, 
@@ -49,6 +50,7 @@ export default function HomePage({
   onOpenMyMap,
   onOpenContribute,
   onOpenPassport,
+  onOpenChatbot,
   activePassport,
   onNavigate
 }) {
@@ -651,6 +653,9 @@ export default function HomePage({
           </div>
         </ScrollReveal>
       </section>
+
+      {/* CỔNG KẾT NỐI TRÍ TUỆ NHÂN TẠO DEEPSEEK AI CHO CHATBOT */}
+      <DeepSeekApiPortal onOpenChatbot={onOpenChatbot} />
 
       {/* 5. DI SẢN CẦN BẠN & Ý TƯỞNG CỦA HỌC SINH */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">

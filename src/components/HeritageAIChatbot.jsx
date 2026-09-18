@@ -40,6 +40,14 @@ import {
   hasGeminiApiKey, 
   queryGeminiAI 
 } from '../utils/geminiService';
+import { 
+  getDeepSeekApiKey, 
+  saveDeepSeekApiKey, 
+  removeDeepSeekApiKey, 
+  hasDeepSeekApiKey, 
+  queryDeepSeekAI,
+  testDeepSeekConnection
+} from '../utils/deepseekService';
 
 // Helper to remove accents and clean punctuation for robust search
 const removeAccents = (str) => {
@@ -155,6 +163,25 @@ export default function HeritageAIChatbot({
   const [showSettings, setShowSettings] = useState(false);
   const [apiKeyInput, setApiKeyInput] = useState(getGeminiApiKey() || '');
   const [isGeminiEnabled, setIsGeminiEnabled] = useState(hasGeminiApiKey());
+  const [isDeepSeekEnabled, setIsDeepSeekEnabled] = useState(hasDeepSeekApiKey());
+  const [deepSeekKeyInput, setDeepSeekKeyInput] = useState('');
+  const [isTestingDeepSeek, setIsTestingDeepSeek] = useState(false);
+  const [deepSeekStatusMsg, setDeepSeekStatusMsg] = useState(null);
+
+  // Sync API Keys with localStorage across components
+  useEffect(() => {
+    const syncKeys = () => {
+      setIsDeepSeekEnabled(hasDeepSeekApiKey());
+      setIsGeminiEnabled(hasGeminiApiKey());
+    };
+    syncKeys();
+    window.addEventListener('storage', syncKeys);
+    window.addEventListener('focus', syncKeys);
+    return () => {
+      window.removeEventListener('storage', syncKeys);
+      window.removeEventListener('focus', syncKeys);
+    };
+  }, []);
   const [saveSuccessMsg, setSaveSuccessMsg] = useState(false);
 
   const messagesEndRef = useRef(null);
@@ -951,6 +978,38 @@ export default function HeritageAIChatbot({
     }
   };
 
+    // Handle Save / Connect DeepSeek API Key
+  const handleSaveDeepSeek = async (e) => {
+    if (e) e.preventDefault();
+    const cleanKey = deepSeekKeyInput.trim();
+    if (!cleanKey) {
+      setDeepSeekStatusMsg({ type: 'error', text: 'Vui lòng dán mã API DeepSeek (sk-...).' });
+      return;
+    }
+    setIsTestingDeepSeek(true);
+    setDeepSeekStatusMsg({ type: 'info', text: 'Đang kiểm tra kết nối DeepSeek...' });
+    try {
+      await testDeepSeekConnection(cleanKey);
+      saveDeepSeekApiKey(cleanKey);
+      setIsDeepSeekEnabled(true);
+      setDeepSeekKeyInput('');
+      setDeepSeekStatusMsg({ type: 'success', text: 'Kết nối DeepSeek-V3 LLM thành công!' });
+      setTimeout(() => setDeepSeekStatusMsg(null), 3500);
+    } catch (err) {
+      setDeepSeekStatusMsg({ type: 'error', text: err.message || 'Lỗi kết nối DeepSeek API.' });
+    } finally {
+      setIsTestingDeepSeek(false);
+    }
+  };
+
+  const handleDisconnectDeepSeek = () => {
+    removeDeepSeekApiKey();
+    setIsDeepSeekEnabled(false);
+    setDeepSeekKeyInput('');
+    setDeepSeekStatusMsg({ type: 'info', text: 'Đã ngắt kết nối DeepSeek API.' });
+    setTimeout(() => setDeepSeekStatusMsg(null), 3000);
+  };
+
   // Handle Save API Key
   const handleSaveApiKey = (e) => {
     if (e) e.preventDefault();
@@ -968,7 +1027,7 @@ export default function HeritageAIChatbot({
     setIsGeminiEnabled(false);
   };
 
-  // Handle Send Message (Hybrid: Gemini Live AI + Local Fallback)
+    // Handle Send Message (Hierarchy: DeepSeek-V3 LLM -> Gemini AI -> Local Fast Engine)
   const handleSendMessage = async (textToSend) => {
     const query = textToSend || inputMessage;
     if (!query || !query.trim()) return;
@@ -986,7 +1045,36 @@ export default function HeritageAIChatbot({
     setMessages(prev => [...prev, userMsg]);
     setInputMessage('');
 
-    // Check if Gemini Live AI is active
+    // 1. PRIORITY 1: DEEPSEEK-V3 LLM
+    if (hasDeepSeekApiKey()) {
+      setIsThinking(true);
+      try {
+        const dsRes = await queryDeepSeekAI({
+          query: trimmedQ,
+          chatHistory: messages,
+          currentMonument,
+          allMonumentsList
+        });
+
+        const aiMsg = {
+          id: `ai_${Date.now() + 1}`,
+          sender: 'ai',
+          text: dsRes.text,
+          relatedMonuments: dsRes.relatedMonuments || [],
+          isDeepSeek: true,
+          model: dsRes.model || 'deepseek-chat',
+          timestamp: new Date()
+        };
+        setMessages(prev => [...prev, aiMsg]);
+        return;
+      } catch (dsErr) {
+        console.warn('DeepSeek API query error, checking fallbacks:', dsErr);
+      } finally {
+        setIsThinking(false);
+      }
+    }
+
+    // 2. PRIORITY 2: GOOGLE GEMINI AI
     if (isGeminiEnabled && getGeminiApiKey()) {
       setIsThinking(true);
       try {
@@ -1006,47 +1094,36 @@ export default function HeritageAIChatbot({
           timestamp: new Date()
         };
         setMessages(prev => [...prev, aiMsg]);
+        return;
       } catch (geminiErr) {
         console.warn('Gemini API query error, falling back to local engine:', geminiErr);
-        // Fallback to local knowledge base
-        const localResult = processAIQuery(trimmedQ);
-        const isApiKeyIssue = geminiErr?.message?.includes('API_KEY') || geminiErr?.message?.includes('API key');
-        const aiMsg = {
-          id: `ai_${Date.now() + 1}`,
-          sender: 'ai',
-          text: (isApiKeyIssue ? '> ⚠️ *Chế độ Bản Địa (Cần kiểm tra lại Gemini API Key trong phần Cài đặt)*\n\n' : '> ⚡ *Chế độ Bản Địa (Dữ liệu chuẩn 103 Di tích)*\n\n') + localResult.text,
-          relatedMonuments: localResult.relatedMonuments || [],
-          isGemini: false,
-          timestamp: new Date()
-        };
-        setMessages(prev => [...prev, aiMsg]);
       } finally {
         setIsThinking(false);
       }
-    } else {
-      // Local Fast Offline Engine (< 1ms)
-      try {
-        const result = processAIQuery(trimmedQ);
-        const aiMsg = {
-          id: `ai_${Date.now() + 1}`,
-          sender: 'ai',
-          text: result?.text || 'Không tìm thấy kết quả phù hợp.',
-          relatedMonuments: result?.relatedMonuments || [],
-          isGemini: false,
-          timestamp: new Date()
-        };
-        setMessages(prev => [...prev, aiMsg]);
-      } catch (err) {
-        console.error('Local chatbot error:', err);
-        setMessages(prev => [...prev, {
-          id: `ai_${Date.now() + 1}`,
-          sender: 'ai',
-          text: 'Xin chào! Bạn vui lòng thử lại với tên di tích cụ thể hoặc câu hỏi khác nhé.',
-          relatedMonuments: allMonumentsList.slice(0, 3),
-          isGemini: false,
-          timestamp: new Date()
-        }]);
-      }
+    }
+
+    // 3. PRIORITY 3: LOCAL KNOWLEDGE BASE (3,605 Q&A pairs)
+    try {
+      const result = processAIQuery(trimmedQ);
+      const aiMsg = {
+        id: `ai_${Date.now() + 1}`,
+        sender: 'ai',
+        text: result?.text || 'Không tìm thấy kết quả phù hợp.',
+        relatedMonuments: result?.relatedMonuments || [],
+        isLocal: true,
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, aiMsg]);
+    } catch (err) {
+      console.error('Local chatbot error:', err);
+      setMessages(prev => [...prev, {
+        id: `ai_${Date.now() + 1}`,
+        sender: 'ai',
+        text: 'Xin chào! Bạn vui lòng thử lại với tên di tích cụ thể hoặc câu hỏi khác nhé.',
+        relatedMonuments: allMonumentsList.slice(0, 3),
+        isLocal: true,
+        timestamp: new Date()
+      }]);
     }
   };
 
@@ -1126,7 +1203,16 @@ export default function HeritageAIChatbot({
                   <h3 className="font-serif-title font-black text-xs sm:text-sm uppercase tracking-wide text-white">
                     TRỢ LÝ DI SẢN AI
                   </h3>
-                  {isGeminiEnabled && getGeminiApiKey() ? (
+                                    {isDeepSeekEnabled && hasDeepSeekApiKey() ? (
+                    <button
+                      onClick={() => setShowSettings(true)}
+                      className="px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 text-[#200507] text-[9px] font-black uppercase flex items-center gap-1 shadow-xs hover:scale-105 transition-transform cursor-pointer"
+                      title="Đang chạy mô hình DeepSeek-V3 LLM"
+                    >
+                      <Zap className="w-2.5 h-2.5 fill-current" />
+                      <span>DeepSeek V3</span>
+                    </button>
+                  ) : isGeminiEnabled && getGeminiApiKey() ? (
                     <button
                       onClick={() => setShowSettings(true)}
                       className="px-2 py-0.2 rounded-full bg-amber-400 text-[#8B1417] text-[9px] font-black uppercase flex items-center gap-1 shadow-xs hover:scale-105 transition-transform cursor-pointer"
@@ -1139,15 +1225,15 @@ export default function HeritageAIChatbot({
                     <button
                       onClick={() => setShowSettings(true)}
                       className="px-1.5 py-0.2 rounded-full bg-white/20 text-amber-200 text-[9px] font-bold uppercase hover:bg-white/30 transition-colors cursor-pointer"
-                      title="Nhấn để kết nối Gemini API"
+                      title="Nhấn để kết nối DeepSeek hoặc Gemini API"
                     >
                       Bản Địa (103 DT)
                     </button>
                   )}
                 </div>
                 <p className="text-[10px] text-rose-100/90 flex items-center gap-1">
-                  <span className={`w-1.5 h-1.5 rounded-full ${isGeminiEnabled && getGeminiApiKey() ? 'bg-amber-300 animate-pulse' : 'bg-emerald-400 animate-pulse'}`} />
-                  <span>{isGeminiEnabled && getGeminiApiKey() ? 'Google Gemini 1.5 Flash Sẵn Sàng' : 'Tri thức số hóa 103 di tích'}</span>
+                  <span className={`w-1.5 h-1.5 rounded-full ${isDeepSeekEnabled && hasDeepSeekApiKey() ? 'bg-amber-300 animate-ping' : isGeminiEnabled && getGeminiApiKey() ? 'bg-amber-300 animate-pulse' : 'bg-emerald-400 animate-pulse'}`} />
+                  <span>{isDeepSeekEnabled && hasDeepSeekApiKey() ? 'DeepSeek-V3 LLM Siêu Trí Tuệ Sẵn Sàng' : isGeminiEnabled && getGeminiApiKey() ? 'Google Gemini 1.5 Flash Sẵn Sàng' : 'Tri thức số hóa 103 di tích'}</span>
                 </p>
               </div>
             </div>
@@ -1368,6 +1454,26 @@ export default function HeritageAIChatbot({
 
                   {/* AI Message Action Buttons: Copy */}
                   {msg.sender === 'ai' && (
+                  <div className="flex items-center gap-1.5 mb-1 text-[10px]">
+                    {msg.isDeepSeek ? (
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500 text-[#200507] font-black uppercase tracking-wider shadow-2xs">
+                        <Zap className="w-2.5 h-2.5 fill-current" />
+                        <span>DeepSeek V3 LLM</span>
+                      </span>
+                    ) : msg.isGemini ? (
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 text-[#8B1417] font-black uppercase tracking-wider">
+                        <Sparkles className="w-2.5 h-2.5 fill-current text-amber-600" />
+                        <span>Gemini Live</span>
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-rose-100 text-[#8B1417] font-bold">
+                        <Bot className="w-2.5 h-2.5" />
+                        <span>AI Bản Địa 3.605 Q&A</span>
+                      </span>
+                    )}
+                  </div>
+                )}
+                {false && msg.sender === 'ai' && (
                     <div className="flex items-center justify-between pt-1.5 text-[11px] text-stone-400 border-t border-rose-50/60 mt-1">
                       {msg.isGemini ? (
                         <span className="text-[9.5px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200/80 flex items-center gap-1">
