@@ -1,5 +1,5 @@
 import { useSharedAudio } from '../utils/sharedAudioManager';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { 
   Film, 
   Volume2, 
@@ -31,6 +31,7 @@ import { trackQuizAttempt } from '../utils/studentAnalytics';
 import { getActivePassport } from '../utils/passportStorage';
 import WordByWordTitle from './WordByWordTitle';
 import { buildMonumentMediaQuiz } from '../utils/quizUtils';
+import { parseScriptIntoSentences, getActiveSentenceIndex } from '../utils/audioScriptSync';
 
 export default function MediaAudioVideoRow({
   video = {},
@@ -64,6 +65,35 @@ export default function MediaAudioVideoRow({
     ? audioScript.map(s => (typeof s === 'string' ? s : (s?.text || s?.content || ''))).join(' ')
     : (typeof audioScript === 'string' ? audioScript : '');
   const narrationText = rawAudioScript || (typeof info?.overview === 'string' ? info.overview : '') || `Kính chào các em học sinh và quý độc giả. Chúng ta đang cùng nhau tìm hiểu về di tích lịch sử ${monumentName}. Đây là một công trình mang ý nghĩa đặc biệt trong lịch sử và văn hóa của Thành phố Hồ Chí Minh.`;
+
+  // Parse sections for sentence-by-sentence synchronization
+  const normalizedSections = useMemo(() => {
+    if (Array.isArray(audioScript) && audioScript.length > 0) {
+      return audioScript.map((item, i) => ({
+        index: i,
+        title: typeof item === 'string' ? `Phần ${i + 1}` : (item.title || `Phần ${i + 1}`),
+        text: typeof item === 'string' ? item : (item.text || item.content || '')
+      }));
+    }
+    const paragraphs = (narrationText || '').split('\n\n').filter(p => p.trim().length > 0);
+    return paragraphs.map((p, i) => ({
+      index: i,
+      title: `Phần ${i + 1}`,
+      text: p.trim()
+    }));
+  }, [audioScript, narrationText]);
+
+  const syncedSentences = useMemo(() => {
+    return parseScriptIntoSentences(normalizedSections, duration);
+  }, [normalizedSections, duration]);
+
+  const activeSentenceIndex = useMemo(() => {
+    return getActiveSentenceIndex(syncedSentences, currentTime);
+  }, [syncedSentences, currentTime]);
+
+  const currentSentence = syncedSentences[activeSentenceIndex] || {
+    text: narrationText.slice(0, 140) + '...'
+  };
 
   // Audio Play / Pause handler seamlessly connected to shared manager
   const handleTogglePlay = () => {
@@ -466,11 +496,30 @@ export default function MediaAudioVideoRow({
               </div>
             </div>
 
-            {/* Teleprompter Quote Excerpt Teaser */}
-            <div className="relative z-10 p-3 rounded-xl bg-black/40 border border-amber-400/20 text-xs text-amber-100/90 leading-relaxed flex items-start gap-2">
-              <Disc className={`w-4 h-4 text-amber-400 shrink-0 mt-0.5 ${isPlaying ? 'animate-spin' : ''}`} />
-              <p className="line-clamp-2 italic">
-                "{narrationText.slice(0, 160)}..."
+            {/* Teleprompter Dynamic Glowing Excerpt */}
+            <div 
+              onClick={onOpenAudioModal}
+              className="relative z-10 p-3 rounded-xl bg-black/45 border border-amber-400/30 hover:border-amber-400/60 transition-all cursor-pointer group shadow-inner"
+              title="Bấm để mở toàn văn kịch bản thuyết minh tự sáng"
+            >
+              <div className="flex items-center justify-between gap-2 mb-1.5 pb-1 border-b border-white/10 text-[10px]">
+                <div className="flex items-center gap-1.5 text-amber-300 font-bold">
+                  <Disc className={`w-3.5 h-3.5 text-amber-400 shrink-0 ${isPlaying ? 'animate-spin' : ''}`} />
+                  <span>{isPlaying ? 'LỜI THUYẾT MINH TRỰC TIẾP' : 'TRÍCH ĐOẠN THUYẾT MINH'}</span>
+                </div>
+                {isPlaying && (
+                  <span className="px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 font-black flex items-center gap-1 border border-amber-400/30 animate-pulse text-[9px] uppercase tracking-wider">
+                    <Sparkles className="w-2.5 h-2.5 fill-current" />
+                    <span>Tự sáng theo giọng đọc</span>
+                  </span>
+                )}
+              </div>
+              <p className={`text-xs leading-relaxed transition-all duration-300 ${
+                isPlaying 
+                  ? 'text-amber-200 font-bold bg-amber-500/20 px-2 py-1.5 rounded-lg border-l-4 border-amber-400 shadow-sm' 
+                  : 'text-amber-100/80 italic'
+              }`}>
+                "{currentSentence?.text || narrationText.slice(0, 150)}..."
               </p>
             </div>
           </div>

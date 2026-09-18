@@ -15,6 +15,7 @@ import {
 import { speakVietnamese, stopVietnameseSpeech } from '../utils/vietnameseVoice';
 import soundEffects from '../utils/soundEffects';
 import { useSharedAudio } from '../utils/sharedAudioManager';
+import { parseScriptIntoSentences, getActiveSentenceIndex } from '../utils/audioScriptSync';
 
 export default function AudioNarratorModal({ 
   isOpen, 
@@ -32,6 +33,7 @@ export default function AudioNarratorModal({
   const [ttsEngine, setTtsEngine] = useState('studio'); // 'studio' | 'system'
   const [ttsPlaying, setTtsPlaying] = useState(false);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
+  const activeSentenceRef = useRef(null);
 
   // Normalize audioScript: whether it's a string, array of strings, or array of objects
   const normalizedSections = useMemo(() => {
@@ -67,17 +69,32 @@ export default function AudioNarratorModal({
     return [{ index: 0, title: 'Thuyết minh tổng quan', text: `Chào mừng bạn đến với ${monumentName}.` }];
   }, [audioScript, monumentName]);
 
-  // Sync active section from sharedAudio.currentTime
+  // Synchronized sentence time map
+  const syncedSentences = useMemo(() => {
+    return parseScriptIntoSentences(normalizedSections, sharedAudio.duration || 180);
+  }, [normalizedSections, sharedAudio.duration]);
+
+  // Active glowing sentence index
+  const activeSentenceIndex = useMemo(() => {
+    return getActiveSentenceIndex(syncedSentences, sharedAudio.currentTime);
+  }, [syncedSentences, sharedAudio.currentTime]);
+
+  // Sync active section from active sentence
   useEffect(() => {
-    if (ttsEngine === 'studio' && sharedAudio.duration > 0 && normalizedSections.length > 0) {
-      const prog = sharedAudio.currentTime / sharedAudio.duration;
-      const estimatedSection = Math.min(
-        normalizedSections.length - 1,
-        Math.floor(prog * normalizedSections.length)
-      );
-      setCurrentSectionIndex(estimatedSection);
+    if (syncedSentences[activeSentenceIndex]) {
+      setCurrentSectionIndex(syncedSentences[activeSentenceIndex].secIdx);
     }
-  }, [sharedAudio.currentTime, sharedAudio.duration, normalizedSections.length, ttsEngine]);
+  }, [activeSentenceIndex, syncedSentences]);
+
+  // Auto-scroll active glowing sentence into view smoothly
+  useEffect(() => {
+    if (sharedAudio.isPlaying && activeSentenceRef.current) {
+      activeSentenceRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest'
+      });
+    }
+  }, [activeSentenceIndex, sharedAudio.isPlaying]);
 
   const isPlaying = ttsEngine === 'studio' ? sharedAudio.isPlaying : ttsPlaying;
   const currentTime = sharedAudio.currentTime;
@@ -360,35 +377,76 @@ export default function AudioNarratorModal({
               </span>
             </h4>
 
-            <div className="space-y-2.5">
+            <div className="space-y-3">
               {normalizedSections.map((sec, idx) => {
-                const isActive = currentSectionIndex === idx;
+                const isActiveSection = currentSectionIndex === idx;
+                const sectionSentences = syncedSentences.filter(s => s.secIdx === idx);
 
                 return (
                   <div
                     key={sec.index || idx}
                     onClick={() => handleSelectSection(idx)}
-                    className={`p-4 rounded-2xl border transition-all duration-300 cursor-pointer ${
-                      isActive
-                        ? 'bg-amber-50/90 border-[#7B1113] ring-1 ring-[#7B1113]/30 shadow-xs'
-                        : 'bg-white border-[#EADBC8] hover:border-[#7B1113]/40'
+                    className={`p-4 sm:p-5 rounded-2xl border transition-all duration-300 cursor-pointer ${
+                      isActiveSection
+                        ? 'bg-gradient-to-br from-amber-50 via-white to-amber-50/60 border-[#8B1417] ring-2 ring-[#8B1417]/30 shadow-md'
+                        : 'bg-white border-[#EADBC8] hover:border-[#8B1417]/40 hover:bg-stone-50/50'
                     }`}
                   >
-                    <div className="flex items-center justify-between gap-2 mb-1.5">
-                      <h5 className={`font-bold text-xs sm:text-sm ${
-                        isActive ? 'text-[#7B1113]' : 'text-[#2C241E]'
-                      }`}>
-                        {sec.title}
-                      </h5>
-                      {isActive && (
-                        <span className="px-2 py-0.5 rounded-full bg-emerald-600 text-white text-[9px] font-black uppercase tracking-wider">
-                          Đang nghe
+                    <div className="flex items-center justify-between gap-2 mb-2 pb-1.5 border-b border-rose-100/60">
+                      <div className="flex items-center gap-2">
+                        <div className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-black ${
+                          isActiveSection ? 'bg-[#8B1417] text-amber-200' : 'bg-stone-100 text-stone-600'
+                        }`}>
+                          {idx + 1}
+                        </div>
+                        <h5 className={`font-serif-title font-bold text-xs sm:text-sm ${
+                          isActiveSection ? 'text-[#8B1417]' : 'text-[#2C241E]'
+                        }`}>
+                          {sec.title}
+                        </h5>
+                      </div>
+                      {isActiveSection && isPlaying && (
+                        <span className="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-red-600 to-[#8B1417] text-amber-200 text-[10px] font-black uppercase tracking-wider flex items-center gap-1 shadow-xs animate-pulse">
+                          <Sparkles className="w-2.5 h-2.5 fill-current" />
+                          <span>Đang đọc tự sáng</span>
                         </span>
                       )}
                     </div>
-                    <p className="text-xs sm:text-sm text-[#4A3E36] leading-relaxed">
-                      {sec.text}
-                    </p>
+
+                    {/* Sentence-by-Sentence Glowing Text */}
+                    <div className="text-xs sm:text-sm leading-relaxed">
+                      {sectionSentences.length > 0 ? (
+                        sectionSentences.map((sent) => {
+                          const isCurrent = sent.globalIndex === activeSentenceIndex && isPlaying;
+                          const isPast = sent.globalIndex < activeSentenceIndex;
+
+                          return (
+                            <span
+                              key={sent.id}
+                              ref={isCurrent ? activeSentenceRef : null}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                soundEffects.playTap();
+                                sharedAudio.seek(sent.startTime);
+                                sharedAudio.play();
+                              }}
+                              className={`inline rounded-md transition-all duration-300 cursor-pointer mr-1.5 px-1 py-0.5 ${
+                                isCurrent
+                                  ? 'bg-amber-300/80 text-[#8B1417] font-black shadow-md ring-2 ring-amber-400 ring-offset-1 ring-offset-amber-50 drop-shadow-xs animate-pulse'
+                                  : isPast
+                                  ? 'text-[#2C241E] font-medium hover:bg-amber-100/70 hover:text-[#8B1417]'
+                                  : 'text-stone-500/80 font-normal hover:bg-amber-50 hover:text-[#8B1417]'
+                              }`}
+                              title={`Bấm để nghe từ: ${formatTime(sent.startTime)}`}
+                            >
+                              {sent.text}
+                            </span>
+                          );
+                        })
+                      ) : (
+                        <p className="text-[#4A3E36]">{sec.text}</p>
+                      )}
+                    </div>
                   </div>
                 );
               })}
