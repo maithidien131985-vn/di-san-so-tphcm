@@ -111,7 +111,7 @@ phường Tân Định
 - [#{stt} Hội quán Ôn Lăng](/#monument-85): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM.
 - [#{stt} Hội quán Quỳnh Phủ](/#monument-86): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.
 - [#{stt} Hội quán Tuệ Thành (Chùa Bà)](/#monument-87): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.
-- [#{stt} Lăng Lê Văn Duyệt](/#monument-88): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM.
+- [#{stt} Lăng Lê Văn Duyệt](/#monument-88): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM.
 - [#{stt} Lăng Trương Tấn Bửu](/#monument-89): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM.
 - [#{stt} Lăng Võ Di Nguy](/#monument-90): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM.
 - [#{stt} Linh Sơn Cổ Tự](/#monument-91): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM.
@@ -124,7 +124,7 @@ phường Tân Định
 - [#{stt} Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)](/#monument-98): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.
 - [#{stt} Niết Bàn Tịnh Xá](/#monument-99): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM.
 - [#{stt} Núi Châu Thới](/#monument-100): Quốc gia | Loại hình: Danh lam thắng cảnh | Địa chỉ: Núi Châu Thới, phường Đông Hòa, TP.HCM.
-- [#{stt} Thích Ca Phật Đài](/#monument-101): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM.
+- [#{stt} Thích Ca Phật Đài](/#monument-101): Quốc gia | Loại hình: Danh lam thắng cảnh | Địa chỉ: Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM.
 - [#{stt} Tòa án nhân dân Thành phố Hồ Chí Minh](/#monument-102): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM.
 - [#{stt} Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh](/#monument-103): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM.
 

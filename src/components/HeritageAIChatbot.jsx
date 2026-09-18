@@ -483,7 +483,7 @@ export default function HeritageAIChatbot({
             `- 📜 **48 di tích Lịch sử**\n` +
             `- 🏛️ **44 di tích Kiến trúc nghệ thuật**\n` +
             `- 🏺 **4 di tích Khảo cổ học** (*Cù Lao Rùa #STT 21, Dốc Chùa #STT 22, Giồng Cá Vồ #STT 23, Lò gốm cổ Hưng Lợi #STT 24*)\n` +
-            `- 🌲 **3 Danh lam thắng cảnh**\n\n` +
+            `- 🌲 **3 Danh lam thắng cảnh** (*Dinh Cô #STT 68, Núi Châu Thới #STT 100, Thích Ca Phật Đài #STT 101*)\n\n` +
             `💡 *Toàn bộ 99 di tích Quốc gia này đã được tích hợp đầy đủ trong hệ thống Di sản số THCS Xà Bang.*`,
           relatedMonuments: allMonumentsList.slice(0, 4)
         };

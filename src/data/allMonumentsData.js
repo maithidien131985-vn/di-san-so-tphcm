@@ -48290,9 +48290,9 @@ export const allMonumentsList = [
     "note": "######",
     "info": {
       "name": "Lăng Lê Văn Duyệt",
-      "subtitle": "Kiến trúc nghệ thuật • Quốc gia",
+      "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
-      "type": "Kiến trúc nghệ thuật",
+      "type": "Lịch sử",
       "ranking": "Quốc gia",
       "decision": "Số 1288-VH/QĐ ngày 16/11/1998 của Bộ Văn hóa – Thông tin.",
       "addressOld": "Số 1 đường Vũ Tùng, phường 13, quận Bình Thạnh, TP.HCM.",
@@ -55527,9 +55527,9 @@ export const allMonumentsList = [
     "note": "######",
     "info": {
       "name": "Thích Ca Phật Đài",
-      "subtitle": "Kiến trúc nghệ thuật • Quốc gia",
+      "subtitle": "Danh lam thắng cảnh • Quốc gia",
       "badge": "Quốc gia",
-      "type": "Kiến trúc nghệ thuật",
+      "type": "Danh lam thắng cảnh",
       "ranking": "Quốc gia",
       "decision": "Số 1987/VH.QĐ ngày 14/12/1989.",
       "addressOld": "Số 610 đường Trần Phú, phường 5, thành phố Vũng Tàu, tỉnh Bà Rịa – Vũng Tàu.",

@@ -12368,7 +12368,7 @@ export const monumentQaMap = {
         ]
       },
       "loai": {
-        "answer": "Kiến trúc nghệ thuật",
+        "answer": "Lịch sử",
         "field": "Loại di tích",
         "questions": [
           "Di tích này thuộc loại di tích gì?",
@@ -14071,7 +14071,7 @@ export const monumentQaMap = {
         ]
       },
       "loai": {
-        "answer": "Kiến trúc nghệ thuật",
+        "answer": "Danh lam thắng cảnh",
         "field": "Loại di tích",
         "questions": [
           "Di tích này thuộc loại di tích gì?",
@@ -41898,7 +41898,7 @@ export const fullQaDataset = [
     "stt": 88,
     "intent": "loai",
     "q": "Di tích này thuộc loại di tích gì?",
-    "a": "Kiến trúc nghệ thuật",
+    "a": "Lịch sử",
     "field": "Loại di tích",
     "kw": "Lăng Lê Văn Duyệt;Loại di tích"
   },
@@ -41907,7 +41907,7 @@ export const fullQaDataset = [
     "stt": 88,
     "intent": "loai",
     "q": "Loại hình của di tích này là gì?",
-    "a": "Kiến trúc nghệ thuật",
+    "a": "Lịch sử",
     "field": "Loại di tích",
     "kw": "Lăng Lê Văn Duyệt;Loại di tích"
   },
@@ -45993,7 +45993,7 @@ export const fullQaDataset = [
     "stt": 101,
     "intent": "loai",
     "q": "Di tích này thuộc loại di tích gì?",
-    "a": "Kiến trúc nghệ thuật",
+    "a": "Danh lam thắng cảnh",
     "field": "Loại di tích",
     "kw": "Thích Ca Phật Đài;Loại di tích"
   },
@@ -46002,7 +46002,7 @@ export const fullQaDataset = [
     "stt": 101,
     "intent": "loai",
     "q": "Loại hình của di tích này là gì?",
-    "a": "Kiến trúc nghệ thuật",
+    "a": "Danh lam thắng cảnh",
     "field": "Loại di tích",
     "kw": "Thích Ca Phật Đài;Loại di tích"
   },
