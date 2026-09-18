@@ -25,7 +25,11 @@ import {
   Settings,
   Zap,
   ExternalLink,
-  ShieldCheck
+  ShieldCheck,
+  Lock,
+  Eye,
+  EyeOff,
+  AlertCircle
 } from 'lucide-react';
 import { allMonumentsList } from '../data/allMonumentsData';
 import { 
