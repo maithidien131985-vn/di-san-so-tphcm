@@ -10914,10 +10914,10 @@ export const monumentQaMap = {
   },
   "77": {
     "stt": 77,
-    "name": "Đình Thắng Tam",
+    "name": "Đình Thắng Tam (đình ThắngTam,Lăng Cá Ông, Miếu Bà)",
     "intents": {
       "ten": {
-        "answer": "Đình Thắng Tam",
+        "answer": "Đình Thắng Tam (đình ThắngTam,Lăng Cá Ông, Miếu Bà)",
         "field": "Tên di tích",
         "questions": [
           "Tên đầy đủ của di tích này là gì?",
@@ -10927,7 +10927,7 @@ export const monumentQaMap = {
         ]
       },
       "loai": {
-        "answer": "Kiến trúc nghệ thuật",
+        "answer": "Lịch sử",
         "field": "Loại di tích",
         "questions": [
           "Di tích này thuộc loại di tích gì?",
@@ -12368,7 +12368,7 @@ export const monumentQaMap = {
         ]
       },
       "loai": {
-        "answer": "Lịch sử",
+        "answer": "Kiến trúc nghệ thuật",
         "field": "Loại di tích",
         "questions": [
           "Di tích này thuộc loại di tích gì?",
@@ -38433,7 +38433,7 @@ export const fullQaDataset = [
     "stt": 77,
     "intent": "loai",
     "q": "Di tích này thuộc loại di tích gì?",
-    "a": "Kiến trúc nghệ thuật",
+    "a": "Lịch sử",
     "field": "Loại di tích",
     "kw": "Đình Thắng Tam;Loại di tích"
   },
@@ -38442,7 +38442,7 @@ export const fullQaDataset = [
     "stt": 77,
     "intent": "loai",
     "q": "Loại hình của di tích này là gì?",
-    "a": "Kiến trúc nghệ thuật",
+    "a": "Lịch sử",
     "field": "Loại di tích",
     "kw": "Đình Thắng Tam;Loại di tích"
   },
@@ -41898,7 +41898,7 @@ export const fullQaDataset = [
     "stt": 88,
     "intent": "loai",
     "q": "Di tích này thuộc loại di tích gì?",
-    "a": "Lịch sử",
+    "a": "Kiến trúc nghệ thuật",
     "field": "Loại di tích",
     "kw": "Lăng Lê Văn Duyệt;Loại di tích"
   },
@@ -41907,7 +41907,7 @@ export const fullQaDataset = [
     "stt": 88,
     "intent": "loai",
     "q": "Loại hình của di tích này là gì?",
-    "a": "Lịch sử",
+    "a": "Kiến trúc nghệ thuật",
     "field": "Loại di tích",
     "kw": "Lăng Lê Văn Duyệt;Loại di tích"
   },

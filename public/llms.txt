@@ -100,7 +100,7 @@ phường Tân Định
 - [#{stt} Đình Phú Long](/#monument-74): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM
 - [#{stt} Đình Phú Nhuận](/#monument-75): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM
 - [#{stt} Đình Tân An (Bến Thế)](/#monument-76): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Khu phố 1, phường Phú An, TP.HCM
-- [#{stt} Đình Thắng Tam](/#monument-77): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM
+- [#{stt} Đình Thắng Tam (đình ThắngTam,Lăng Cá Ông, Miếu Bà)](/#monument-77): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM
 - [#{stt} Đình Thần Linh Đông](/#monument-78): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM
 - [#{stt} Đình Thông Tây Hội](/#monument-79): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM.
 - [#{stt} Đình Trường Thọ](/#monument-80): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Tổ 5, phường Thủ Đức, TP.HCM.
@@ -111,7 +111,7 @@ phường Tân Định
 - [#{stt} Hội quán Ôn Lăng](/#monument-85): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM.
 - [#{stt} Hội quán Quỳnh Phủ](/#monument-86): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.
 - [#{stt} Hội quán Tuệ Thành (Chùa Bà)](/#monument-87): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.
-- [#{stt} Lăng Lê Văn Duyệt](/#monument-88): Quốc gia | Loại hình: Lịch sử | Địa chỉ: Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM.
+- [#{stt} Lăng Lê Văn Duyệt](/#monument-88): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM.
 - [#{stt} Lăng Trương Tấn Bửu](/#monument-89): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM.
 - [#{stt} Lăng Võ Di Nguy](/#monument-90): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM.
 - [#{stt} Linh Sơn Cổ Tự](/#monument-91): Quốc gia | Loại hình: Kiến trúc nghệ thuật | Địa chỉ: Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM.
