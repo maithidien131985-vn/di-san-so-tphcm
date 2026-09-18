@@ -34,6 +34,7 @@ import {
   fullQaDataset 
 } from '../data/chatbotTrainingData';
 import { match100Situation } from '../data/chatbot100SituationsData';
+import { isAdminLoggedIn, getStoredAdminPassword, setAdminLoggedIn } from './AdminAuthModal';
 import { 
   getGeminiApiKey, 
   saveGeminiApiKey, 
@@ -159,7 +160,7 @@ export default function HeritageAIChatbot({
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [hasUnread, setHasUnread] = useState(true);
 
-  // DeepSeek & AI Settings State
+  // DeepSeek & AI Settings State (Protected by Admin Password)
   const [showSettings, setShowSettings] = useState(false);
   const [apiKeyInput, setApiKeyInput] = useState(() => getDeepSeekApiKey() || getGeminiApiKey() || '');
   const [isDeepSeekEnabled, setIsDeepSeekEnabled] = useState(hasDeepSeekApiKey());
@@ -167,6 +168,25 @@ export default function HeritageAIChatbot({
   const [isTestingKey, setIsTestingKey] = useState(false);
   const [statusMessage, setStatusMessage] = useState(null);
   const [saveSuccessMsg, setSaveSuccessMsg] = useState(false);
+
+  // Admin Verification for API Settings
+  const [isAdminUnlocked, setIsAdminUnlocked] = useState(() => isAdminLoggedIn());
+  const [adminPwdInput, setAdminPwdInput] = useState('');
+  const [adminAuthError, setAdminAuthError] = useState('');
+  const [showAdminPwd, setShowAdminPwd] = useState(false);
+
+  const handleAdminUnlock = (e) => {
+    if (e) e.preventDefault();
+    const correctPwd = getStoredAdminPassword();
+    if (adminPwdInput.trim() === correctPwd) {
+      setIsAdminUnlocked(true);
+      setAdminLoggedIn(true);
+      setAdminAuthError('');
+      setAdminPwdInput('');
+    } else {
+      setAdminAuthError('Mật khẩu quản trị viên không chính xác! (Mặc định: admin)');
+    }
+  };
 
   // Handlers for API Key Configuration
   const handleSaveApiKey = (e) => {
@@ -1301,107 +1321,200 @@ export default function HeritageAIChatbot({
             </div>
           </div>
 
-          {/* DeepSeek API Settings Collapsible Drawer */}
+          {/* DeepSeek API Settings Collapsible Drawer (Admin Password Protected) */}
           {showSettings && (
             <div className="bg-[#FFFDFB] border-b-2 border-rose-200 p-3.5 sm:p-4 text-xs space-y-3 shadow-inner animate-in slide-in-from-top-2 duration-200">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-1.5 font-bold text-[#8B1417]">
-                  <Sparkles className="w-4 h-4 text-amber-500 fill-amber-500" />
-                  <span className="font-serif-title uppercase text-xs sm:text-[13px] tracking-wide">CẤU HÌNH DEEPSEEK API</span>
-                </div>
-                <button
-                  onClick={() => setShowSettings(false)}
-                  className="text-stone-400 hover:text-stone-600 p-1 cursor-pointer"
-                  title="Đóng cấu hình"
-                >
-                  <X className="w-3.5 h-3.5" />
-                </button>
-              </div>
-
-              <p className="text-[11px] text-stone-600 leading-relaxed">
-                Tích hợp mô hình <strong>DeepSeek-V3</strong> giúp chatbot trả lời thông minh, linh hoạt mọi câu hỏi học tập và lịch sử di sản.
-              </p>
-
-              <form onSubmit={handleSaveApiKey} className="space-y-2.5">
-                <div className="relative">
-                  <input
-                    type="password"
-                    value={apiKeyInput}
-                    onChange={(e) => setApiKeyInput(e.target.value)}
-                    onCopy={(e) => e.preventDefault()}
-                    onCut={(e) => e.preventDefault()}
-                    style={{ userSelect: 'none' }}
-                    autoComplete="off"
-                    spellCheck="false"
-                    placeholder="Dán mã DeepSeek API Key (sk-...)"
-                    className="w-full py-2.5 pl-3.5 pr-14 text-xs font-mono bg-[#FAF4F0] border border-rose-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] shadow-inner select-none"
-                  />
-                  {apiKeyInput && (
+              {!isAdminUnlocked && !isAdminLoggedIn() ? (
+                /* Admin Authentication Prompt */
+                <form onSubmit={handleAdminUnlock} className="space-y-3 py-1">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-1.5 font-bold text-[#8B1417]">
+                      <Lock className="w-4 h-4 text-[#8B1417]" />
+                      <span className="font-serif-title uppercase text-xs sm:text-[13px] tracking-wide">
+                        XÁC THỰC QUẢN TRỊ VIÊN
+                      </span>
+                    </div>
                     <button
                       type="button"
-                      onClick={handleClearApiKey}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-[#8B1417] text-[11px] font-bold cursor-pointer"
+                      onClick={() => {
+                        setShowSettings(false);
+                        setAdminAuthError('');
+                        setAdminPwdInput('');
+                      }}
+                      className="text-stone-400 hover:text-stone-600 p-1 cursor-pointer"
                     >
-                      Xóa
-                    </button>
-                  )}
-                </div>
-
-                <div className="flex items-center justify-between gap-2 pt-1 flex-wrap">
-                  <a
-                    href="https://platform.deepseek.com/api_keys"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[10px] sm:text-[11px] font-bold text-[#8B1417] hover:underline flex items-center gap-1"
-                  >
-                    <span>Lấy API Key DeepSeek (platform.deepseek.com)</span>
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-
-                  <div className="flex items-center gap-2">
-                    <button
-                      type="button"
-                      onClick={handleTestConnection}
-                      disabled={isTestingKey || !apiKeyInput}
-                      className="px-2.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-[#8B1417] border border-rose-200 font-bold text-[11px] transition-colors cursor-pointer disabled:opacity-50 flex items-center gap-1"
-                    >
-                      {isTestingKey ? (
-                        <>
-                          <RefreshCw className="w-3 h-3 animate-spin" />
-                          <span>Đang thử...</span>
-                        </>
-                      ) : (
-                        <span>Kiểm tra kết nối</span>
-                      )}
-                    </button>
-
-                    <button
-                      type="submit"
-                      className="px-3.5 py-1.5 rounded-lg bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold text-[11px] transition-colors cursor-pointer shadow-xs"
-                    >
-                      Lưu cấu hình
+                      <X className="w-3.5 h-3.5" />
                     </button>
                   </div>
-                </div>
-              </form>
 
-              {statusMessage && (
-                <div className={"p-2.5 rounded-xl border text-[11px] font-bold flex items-center gap-2 animate-in fade-in " + (
-                  statusMessage.type === 'success' 
-                    ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
-                    : statusMessage.type === 'error'
-                    ? 'bg-rose-50 border-rose-200 text-rose-800'
-                    : 'bg-stone-50 border-stone-200 text-stone-800'
-                )}>
-                  {statusMessage.type === 'success' ? (
-                    <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                  ) : statusMessage.type === 'error' ? (
-                    <X className="w-4 h-4 text-rose-600 shrink-0" />
-                  ) : (
-                    <Sparkles className="w-4 h-4 text-stone-500 shrink-0" />
+                  <p className="text-[11px] text-stone-600 leading-relaxed">
+                    Khu vực cấu hình API dành riêng cho <strong>Quản trị viên &amp; Giáo viên phụ trách</strong>. Vui lòng nhập mật khẩu quản trị để mở khóa.
+                  </p>
+
+                  <div className="space-y-2">
+                    <div className="relative">
+                      <input
+                        type={showAdminPwd ? 'text' : 'password'}
+                        autoFocus
+                        value={adminPwdInput}
+                        onChange={(e) => {
+                          setAdminPwdInput(e.target.value);
+                          if (adminAuthError) setAdminAuthError('');
+                        }}
+                        placeholder="Nhập mật khẩu quản trị (mặc định: admin)..."
+                        className="w-full py-2 pl-3.5 pr-10 text-xs font-mono bg-[#FAF4F0] border border-rose-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417]"
+                      />
+                      <button
+                        type="button"
+                        onClick={() => setShowAdminPwd(!showAdminPwd)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600 cursor-pointer"
+                      >
+                        {showAdminPwd ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                      </button>
+                    </div>
+
+                    {adminAuthError && (
+                      <div className="text-[11px] text-rose-600 font-bold flex items-center gap-1 animate-fadeIn">
+                        <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                        <span>{adminAuthError}</span>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="flex items-center justify-end gap-2 pt-1">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setShowSettings(false)
+                        setAdminAuthError('');
+                        setAdminPwdInput('');
+                      }}
+                      className="px-3 py-1.5 rounded-lg border border-rose-200 text-stone-600 hover:bg-rose-50 font-bold text-[11px] cursor-pointer"
+                    >
+                      Hủy bỏ
+                    </button>
+                    <button
+                      type="submit"
+                      className="px-3.5 py-1.5 rounded-lg bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold text-[11px] transition-colors cursor-pointer shadow-xs flex items-center gap-1.5"
+                    >
+                      <ShieldCheck className="w-3.5 h-3.5" />
+                      <span>Mở khóa cấu hình</span>
+                    </button>
+                  </div>
+                </form>
+              ) : (
+                /* Unlocked DeepSeek API Settings Form */
+                <>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-1.5 font-bold text-[#8B1417]">
+                      <Sparkles className="w-4 h-4 text-amber-500 fill-amber-500" />
+                      <span className="font-serif-title uppercase text-xs sm:text-[13px] tracking-wide">CẤU HÌNH DEEPSEEK API</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setIsAdminUnlocked(false)}
+                        className="text-[10px] text-stone-500 hover:text-[#8B1417] hover:underline font-bold cursor-pointer"
+                        title="Khóa lại phần cấu hình"
+                      >
+                        Khóa lại
+                      </button>
+                      <button
+                        onClick={() => setShowSettings(false)}
+                        className="text-stone-400 hover:text-stone-600 p-1 cursor-pointer"
+                        title="Đóng cấu hình"
+                      >
+                        <X className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <p className="text-[11px] text-stone-600 leading-relaxed">
+                    Tích hợp mô hình <strong>DeepSeek-V3</strong> giúp chatbot trả lời thông minh, linh hoạt mọi câu hỏi học tập và lịch sử di sản.
+                  </p>
+
+                  <form onSubmit={handleSaveApiKey} className="space-y-2.5">
+                    <div className="relative">
+                      <input
+                        type="password"
+                        value={apiKeyInput}
+                        onChange={(e) => setApiKeyInput(e.target.value)}
+                        onCopy={(e) => e.preventDefault()}
+                        onCut={(e) => e.preventDefault()}
+                        style={{ userSelect: 'none' }}
+                        autoComplete="off"
+                        spellCheck="false"
+                        placeholder="Dán mã DeepSeek API Key (sk-...)"
+                        className="w-full py-2.5 pl-3.5 pr-14 text-xs font-mono bg-[#FAF4F0] border border-rose-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] shadow-inner select-none"
+                      />
+                      {apiKeyInput && (
+                        <button
+                          type="button"
+                          onClick={handleClearApiKey}
+                          className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-[#8B1417] text-[11px] font-bold cursor-pointer"
+                        >
+                          Xóa
+                        </button>
+                      )}
+                    </div>
+
+                    <div className="flex items-center justify-between gap-2 pt-1 flex-wrap">
+                      <a
+                        href="https://platform.deepseek.com/api_keys"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[10px] sm:text-[11px] font-bold text-[#8B1417] hover:underline flex items-center gap-1"
+                      >
+                        <span>Lấy API Key DeepSeek (platform.deepseek.com)</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="button"
+                          onClick={handleTestConnection}
+                          disabled={isTestingKey || !apiKeyInput}
+                          className="px-2.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-[#8B1417] border border-rose-200 font-bold text-[11px] transition-colors cursor-pointer disabled:opacity-50 flex items-center gap-1"
+                        >
+                          {isTestingKey ? (
+                            <>
+                              <RefreshCw className="w-3 h-3 animate-spin" />
+                              <span>Đang thử...</span>
+                            </>
+                          ) : (
+                            <span>Kiểm tra kết nối</span>
+                          )}
+                        </button>
+
+                        <button
+                          type="submit"
+                          className="px-3.5 py-1.5 rounded-lg bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold text-[11px] transition-colors cursor-pointer shadow-xs"
+                        >
+                          Lưu cấu hình
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+
+                  {statusMessage && (
+                    <div className={"p-2.5 rounded-xl border text-[11px] font-bold flex items-center gap-2 animate-in fade-in " + (
+                      statusMessage.type === 'success' 
+                        ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+                        : statusMessage.type === 'error'
+                        ? 'bg-rose-50 border-rose-200 text-rose-800'
+                        : 'bg-stone-50 border-stone-200 text-stone-800'
+                    )}>
+                      {statusMessage.type === 'success' ? (
+                        <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+                      ) : statusMessage.type === 'error' ? (
+                        <X className="w-4 h-4 text-rose-600 shrink-0" />
+                      ) : (
+                        <Sparkles className="w-4 h-4 text-stone-500 shrink-0" />
+                      )}
+                      <span>{statusMessage.text}</span>
+                    </div>
                   )}
-                  <span>{statusMessage.text}</span>
-                </div>
+                </>
               )}
             </div>
           )}
