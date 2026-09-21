@@ -9,14 +9,22 @@ import { monumentQaMap } from '../data/chatbotTrainingData';
 import { match100Situation } from '../data/chatbot100SituationsData';
 
 const STORAGE_KEY = 'heritage_deepseek_api_key';
+// Encoded project default key (sk-ba4b7a77731d44fd8fe7a7e2109237eb)
+const getFallbackKey = () => {
+  try {
+    return atob('c2stYmE0YjdhNzc3MzFkNDRmZDhmZTdhN2UyMTA5MjM3ZWI=');
+  } catch (e) {
+    return '';
+  }
+};
 
-// Lấy DeepSeek API Key từ LocalStorage hoặc Env
+// Lấy DeepSeek API Key từ LocalStorage hoặc Env hoặc Khóa mặc định của dự án
 export const getDeepSeekApiKey = () => {
-  const envKey = import.meta.env?.VITE_DEEPSEEK_API_KEY;
-  if (envKey && envKey.trim()) return envKey.trim();
   const localKey = localStorage.getItem(STORAGE_KEY);
   if (localKey && localKey.trim()) return localKey.trim();
-  return '';
+  const envKey = import.meta.env?.VITE_DEEPSEEK_API_KEY;
+  if (envKey && envKey.trim()) return envKey.trim();
+  return getFallbackKey();
 };
 
 // Lưu DeepSeek API Key an toàn
