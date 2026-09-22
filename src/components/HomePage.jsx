@@ -38,7 +38,9 @@ import {
   Menu,
   X,
   Home,
-  Grid
+  Grid,
+  ClipboardCheck,
+  FileText
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
@@ -805,6 +807,96 @@ export default function HomePage({
                     <span>❤️</span>
                     <span>{studentIdeaLikes[3]}</span>
                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
+
+      {/* 5.5 SECTION KHẢO SÁT & ĐÁNH GIÁ (TRƯỚC & SAU TRẢI NGHIỆM WEB) */}
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+        <ScrollReveal>
+          <div className="bg-gradient-to-br from-[#FFFDF9] via-[#FAF5ED] to-[#F5ECE0] rounded-3xl p-6 sm:p-8 md:p-10 border-2 border-amber-300/80 shadow-xl relative overflow-hidden">
+            <div className="max-w-3xl mx-auto text-center space-y-3 mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
+                <FileText className="w-4 h-4 text-[#7E1819]" />
+                <span>PHIẾU KHẢO SÁT & ĐÁNH GIÁ ĐỀ TÀI</span>
+              </div>
+              <WordByWordTitle
+                as="h2"
+                text="Khảo Sát Nhận Thức & Đánh Giá Trải Nghiệm Học Tập"
+                className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl text-[#2C241E]"
+              />
+              <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-2xl mx-auto">
+                Ý kiến đóng góp quý báu của Thầy Cô và các bạn học sinh là nguồn động lực to lớn giúp nhóm tác giả hoàn thiện hệ sinh thái giáo dục di sản số ngày càng hiệu quả và sinh động hơn.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+              {/* KHẢO SÁT TRƯỚC */}
+              <div className="bg-white rounded-2xl p-6 border-2 border-emerald-200/80 hover:border-emerald-400 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold shadow-inner border border-emerald-200">
+                      <ClipboardCheck className="w-6 h-6" />
+                    </div>
+                    <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-black text-xs uppercase tracking-wider">
+                      Giai đoạn 1
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#2C241E] group-hover:text-emerald-700 transition-colors">
+                      Khảo sát trước
+                    </h3>
+                    <p className="text-xs sm:text-sm text-stone-600 mt-1 leading-relaxed">
+                      Khảo sát mức độ hiểu biết và nhu cầu tìm hiểu về các di tích lịch sử - văn hóa TP.HCM trước khi tiếp cận nền tảng số.
+                    </p>
+                  </div>
+                </div>
+                <div className="pt-6">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdaWRyPsEJi4EiAl2IchLIfdbmLdpNKJw-HV9KiIQolcCBkBw/viewform?usp=sharing&ouid=113410705406929590560"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group-hover:scale-102"
+                  >
+                    <span>Khảo sát trước</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+
+              {/* KHẢO SÁT SAU TRẢI NGHIỆM WEB */}
+              <div className="bg-white rounded-2xl p-6 border-2 border-amber-300/80 hover:border-amber-500 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-50 text-[#7E1819] flex items-center justify-center font-bold shadow-inner border border-amber-200">
+                      <Sparkles className="w-6 h-6 text-amber-600" />
+                    </div>
+                    <span className="px-3 py-1 rounded-full bg-amber-100 text-[#7E1819] font-black text-xs uppercase tracking-wider">
+                      Giai đoạn 2
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#2C241E] group-hover:text-[#7E1819] transition-colors">
+                      Khảo sát sau trải nghiệm Web
+                    </h3>
+                    <p className="text-xs sm:text-sm text-stone-600 mt-1 leading-relaxed">
+                      Đánh giá cảm nhận, tính tiện ích, hứng thú học tập và đóng góp ý kiến nâng cấp các tính năng trên website Di Sản Số.
+                    </p>
+                  </div>
+                </div>
+                <div className="pt-6">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd6K1zzzExf19zYVIG3NBbl70gkQ2VOnq6fJTgyKm0JvI54Fg/viewform?usp=sharing&ouid=113410705406929590560"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-[#7E1819] via-[#8B1417] to-[#A81B1F] hover:from-[#6B1315] hover:to-[#8B1417] text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group-hover:scale-102"
+                  >
+                    <span>Khảo sát sau trải nghiệm Web</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </div>

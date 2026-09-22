@@ -1,5 +1,5 @@
 import React from 'react';
-import { Landmark, Heart, Shield, Globe, Award } from 'lucide-react';
+import { Landmark, Heart, Shield, Globe, Award, ExternalLink, FileSpreadsheet, ClipboardCheck, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -24,12 +24,33 @@ export default function Footer() {
           {/* Col 2 */}
           <div className="space-y-3">
             <h4 className="font-serif-title font-bold text-sm text-white uppercase tracking-wider">
-              Danh mục khám phá
+              Khảo sát & Đánh giá
             </h4>
-            <ul className="space-y-2 text-xs text-[#A89A8D]">
-              <li className="hover:text-amber-300 transition-colors cursor-pointer">• Bản đồ tương tác</li>
-              <li className="hover:text-amber-300 transition-colors cursor-pointer">• Kho hồ sơ điều tra</li>
-              <li className="hover:text-amber-300 transition-colors cursor-pointer">• Video, thuyết minh, thư viện ảnh</li>
+            <ul className="space-y-2.5 text-xs text-[#A89A8D]">
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdaWRyPsEJi4EiAl2IchLIfdbmLdpNKJw-HV9KiIQolcCBkBw/viewform?usp=sharing&ouid=113410705406929590560"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-300 transition-colors flex items-center gap-1.5 text-emerald-300 hover:underline"
+                >
+                  <ClipboardCheck className="w-3.5 h-3.5 shrink-0" />
+                  <span>Khảo sát trước</span>
+                  <ExternalLink className="w-3 h-3 opacity-70" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd6K1zzzExf19zYVIG3NBbl70gkQ2VOnq6fJTgyKm0JvI54Fg/viewform?usp=sharing&ouid=113410705406929590560"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-300 transition-colors flex items-center gap-1.5 text-amber-300 hover:underline"
+                >
+                  <Sparkles className="w-3.5 h-3.5 shrink-0" />
+                  <span>Khảo sát sau trải nghiệm Web</span>
+                  <ExternalLink className="w-3 h-3 opacity-70" />
+                </a>
+              </li>
             </ul>
           </div>
 
