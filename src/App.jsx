@@ -675,6 +675,7 @@ export default function App() {
                 activePassport={activePassport}
                 onPassportUpdate={(updatedPassport) => setActivePassport(updatedPassport)}
                 onOpenStudentReport={() => setStudentReportOpen(true)}
+                onOpenActionModal={() => setActionModalOpen(true)}
                 onOpenDocsModal={() => setDocsModalOpen(true)}
                 onCompleteInvestigation={handleCompleteInvestigation}
               />

@@ -132,7 +132,7 @@ export default function StudentReportModal({
       submittedAt: new Date().toISOString()
     };
 
-    // 1. Lưu thông tin học sinh vào localStorage dùng cho các lần sau
+    // 1. Lưu thông tin học sinh vào localStorage dùng cho các lần sau & đồng bộ sang Danh sách Cam kết
     try {
       localStorage.setItem('di_san_so_last_student_info', JSON.stringify({
         studentName: studentName.trim(),
@@ -141,6 +141,22 @@ export default function StudentReportModal({
         messageToFuture: messageToFuture.trim()
       }));
       localStorage.setItem(`di_san_so_report_${monumentStt}`, JSON.stringify(reportData));
+
+      if (messageToFuture.trim()) {
+        const studentTag = studentName.trim() + (className ? ` • ${className.trim()}` : '') + (schoolName ? ` • ${schoolName.trim()}` : '');
+        const pledgeItem = {
+          name: studentTag,
+          text: messageToFuture.trim(),
+          monumentName,
+          time: 'Vừa xong'
+        };
+        localStorage.setItem(`di_san_so_pledge_${monumentStt}`, JSON.stringify(pledgeItem));
+        const rawPledges = localStorage.getItem('di_san_so_pledges');
+        const savedList = rawPledges ? JSON.parse(rawPledges) : [];
+        savedList.unshift(pledgeItem);
+        if (savedList.length > 50) savedList.pop();
+        localStorage.setItem('di_san_so_pledges', JSON.stringify(savedList));
+      }
     } catch (err) {}
 
     // 2. Lưu vào Hộ Chiếu Di Sản & Thưởng +300 XP

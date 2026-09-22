@@ -56,28 +56,44 @@ export default function ActionModal({
 
       const passport = activePassport || getActivePassport();
 
-      // 1. From initialStudentInfo (passed from StudentReportModal)
+      // 1. Lấy thông tin họ tên, trường, lớp
       if (initialStudentInfo?.studentName) {
         name = initialStudentInfo.studentName.trim();
         if (initialStudentInfo.className) name += ` • ${initialStudentInfo.className.trim()}`;
         if (initialStudentInfo.schoolName) name += ` • ${initialStudentInfo.schoolName.trim()}`;
-        if (initialStudentInfo.messageToFuture) msg = initialStudentInfo.messageToFuture.trim();
-      }
-      // 2. From activePassport
-      else if (passport?.fullName) {
+      } else if (passport?.fullName) {
         name = passport.fullName;
         if (passport.grade) name += ` • ${passport.grade}`;
         if (passport.school) name += ` • ${passport.school}`;
-      }
-      // 3. From localStorage saved student info
-      else {
+      } else {
         try {
           const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
           if (saved.studentName) {
             name = saved.studentName.trim();
             if (saved.className) name += ` • ${saved.className.trim()}`;
             if (saved.schoolName) name += ` • ${saved.schoolName.trim()}`;
-            if (saved.messageToFuture) msg = saved.messageToFuture.trim();
+          }
+        } catch (e) {}
+      }
+
+      // 2. Lấy nội dung thông điệp/cam kết từ Báo Cáo Điều Tra đã nhập
+      if (initialStudentInfo?.messageToFuture && initialStudentInfo.messageToFuture.trim()) {
+        msg = initialStudentInfo.messageToFuture.trim();
+      } else {
+        try {
+          const savedReport = JSON.parse(localStorage.getItem(`di_san_so_report_${monumentStt}`) || '{}');
+          if (savedReport?.messageToFuture && savedReport.messageToFuture.trim()) {
+            msg = savedReport.messageToFuture.trim();
+          } else {
+            const savedPledge = JSON.parse(localStorage.getItem(`di_san_so_pledge_${monumentStt}`) || '{}');
+            if (savedPledge?.text && savedPledge.text.trim()) {
+              msg = savedPledge.text.trim();
+            } else {
+              const lastInfo = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+              if (lastInfo?.messageToFuture && lastInfo.messageToFuture.trim()) {
+                msg = lastInfo.messageToFuture.trim();
+              }
+            }
           }
         } catch (e) {}
       }
@@ -89,7 +105,7 @@ export default function ActionModal({
         setPledgeMsg(`Em xin hứa sẽ noi gương các thế hệ cha anh, tích cực học tập, rèn luyện và góp phần bảo tồn, phát huy giá trị di sản ${monumentName}!`);
       }
     }
-  }, [isOpen, initialStudentInfo, activePassport, monumentName]);
+  }, [isOpen, initialStudentInfo, activePassport, monumentName, monumentStt]);
 
   if (!isOpen) return null;
 
@@ -123,6 +139,7 @@ export default function ActionModal({
       if (savedList.length > 50) savedList.pop();
       localStorage.setItem('di_san_so_pledges', JSON.stringify(savedList));
       localStorage.setItem(`di_san_so_pledge_${monumentStt}`, JSON.stringify(newPledgeItem));
+      window.dispatchEvent(new Event('storage'));
     } catch (err) {}
 
     // 3. Cập nhật Hộ Chiếu Di Sản & cộng thêm +100 XP

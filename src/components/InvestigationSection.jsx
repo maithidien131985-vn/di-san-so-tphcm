@@ -16,7 +16,10 @@ import {
   Award,
   Key,
   HelpCircle,
-  ShieldCheck
+  ShieldCheck,
+  Leaf,
+  Heart,
+  Send
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import ScrollReveal from './ScrollReveal';
@@ -175,9 +178,35 @@ export default function InvestigationSection({
   activePassport = null,
   onPassportUpdate,
   onOpenStudentReport,
+  onOpenActionModal,
   onOpenDocsModal,
   onCompleteInvestigation
 }) {
+  // Đồng bộ danh sách lời cam kết hành động từ LocalStorage
+  const [pledgesList, setPledgesList] = useState(() => {
+    try {
+      const saved = localStorage.getItem('di_san_so_pledges');
+      if (saved) return JSON.parse(saved);
+    } catch (e) {}
+    return [
+      { name: 'Trương Mai Lan • 9a1 • THCS Xà Bang', text: `Em xin hứa sẽ noi gương các thế hệ cha anh, tích cực học tập, rèn luyện và góp phần bảo tồn, phát huy giá trị di sản ${monumentName}!`, time: 'Vừa xong' },
+      { name: 'Nguyễn Văn An • THCS Xà Bang', text: `Em cam kết tìm hiểu sâu sắc lịch sử dân tộc và giới thiệu di tích ${monumentName} đến bạn bè quốc tế!`, time: 'Hôm nay' },
+      { name: 'Trần Thị Mai • 9A1', text: `Giữ gìn vệ sinh và tôn trọng không gian trang nghiêm khi đến tham quan khu di tích ${monumentName}.`, time: 'Hôm nay' }
+    ];
+  });
+
+  useEffect(() => {
+    const handleStorageUpdate = () => {
+      try {
+        const saved = localStorage.getItem('di_san_so_pledges');
+        if (saved) setPledgesList(JSON.parse(saved));
+      } catch (e) {}
+    };
+    window.addEventListener('storage', handleStorageUpdate);
+    handleStorageUpdate();
+    return () => window.removeEventListener('storage', handleStorageUpdate);
+  }, [monumentStt]);
+
   // ==========================================
   // CỘT 1: CHINH PHỤC HUY HIỆU DI SẢN (5 CÂU HỎI THỬ THÁCH)
   // ==========================================
@@ -682,17 +711,32 @@ export default function InvestigationSection({
               </div>
             </div>
 
-            {/* DUY NHẤT 1 NÚT: BẮT ĐẦU ĐIỀU TRA (MỞ BẢNG ĐIỀU TRA NGAY) */}
-            <div className="pt-4">
+            {/* 2 NÚT HÀNH ĐỘNG: BẮT ĐẦU ĐIỀU TRA & SỔ TAY CAM KẾT */}
+            <div className="pt-4 space-y-2.5">
               <button
                 onClick={handleStartReport}
-                className="w-full group relative py-4 px-4 rounded-2xl bg-gradient-to-r from-[#7E1819] via-[#9E1B1D] to-[#7E1819] hover:from-[#9E1B1D] hover:to-[#7E1819] text-white text-sm sm:text-base font-black shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 cursor-pointer border-2 border-amber-400 overflow-hidden"
+                className="w-full group relative py-3.5 px-4 rounded-2xl bg-gradient-to-r from-[#7E1819] via-[#9E1B1D] to-[#7E1819] hover:from-[#9E1B1D] hover:to-[#7E1819] text-white text-sm sm:text-base font-black shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 cursor-pointer border-2 border-amber-400 overflow-hidden"
                 title="Bấm để mở ngay Bảng Điều Tra & Phiếu Học Tập Lịch Sử"
               >
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <Compass className="w-5 h-5 text-amber-300 group-hover:rotate-45 transition-transform duration-500" />
-                <span>🔭 BẮT ĐẦU ĐIỀU TRA</span>
+                <span>🔭 BẮT ĐẦU ĐIỀU TRA (+300 XP)</span>
                 <ArrowRight className="w-5 h-5 text-amber-200 group-hover:translate-x-1 transition-transform" />
+              </button>
+
+              <button
+                onClick={() => {
+                  soundEffects.playUnlock();
+                  if (onOpenActionModal) {
+                    onOpenActionModal();
+                  }
+                }}
+                className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#A6732E] via-[#8C5D1E] to-[#A6732E] hover:from-[#8C5D1E] hover:to-[#A6732E] text-white text-xs sm:text-sm font-black shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-300/60 transform hover:-translate-y-0.5"
+                title="Bấm để mở Sổ tay Cam kết hành động và xem thông điệp của học sinh"
+              >
+                <Leaf className="w-4 h-4 text-amber-300" />
+                <span>🌱 SỔ TAY CAM KẾT HÀNH ĐỘNG (+100 XP)</span>
+                <ArrowRight className="w-4 h-4 text-amber-300" />
               </button>
             </div>
           </div>
@@ -746,6 +790,63 @@ export default function InvestigationSection({
             </div>
           </div>
 
+        </div>
+
+        {/* ========================================================================= */}
+        {/* PHẦN HIỂN THỊ TRỰC TIẾP: THÔNG ĐIỆP HÀNH ĐỘNG TỪ CÁC BẠN HỌC SINH */}
+        {/* ========================================================================= */}
+        <div className="mt-8 p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-[#FFFDF9] via-[#FAF5ED] to-[#F5ECE0] border-2 border-[#EADBC8] shadow-sm space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#EADBC8]">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-[#A6732E] text-amber-100 flex items-center justify-center shadow-md">
+                <Heart className="w-5 h-5 text-red-300 fill-red-300" />
+              </div>
+              <div>
+                <h3 className="font-serif-title font-black text-base sm:text-lg text-[#7E1819] flex items-center gap-2">
+                  <span>🌟 Thông Điệp Hành Động & Cam Kết Từ Các Bạn Học Sinh</span>
+                  <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">
+                    Cộng đồng
+                  </span>
+                </h3>
+                <p className="text-xs text-[#6B5E55]">
+                  Lời hứa và thông điệp tri ân gửi thế hệ tương lai sau khi hoàn thành hồ sơ điều tra di tích {monumentName}
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={() => {
+                soundEffects.playUnlock();
+                if (onOpenActionModal) onOpenActionModal();
+              }}
+              className="px-4 py-2 rounded-xl bg-[#A6732E] hover:bg-[#8C5D1E] text-white font-black text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-1.5 cursor-pointer shrink-0 hover:scale-102"
+            >
+              <Leaf className="w-4 h-4 text-amber-200" />
+              <span>✍️ Viết Cam Kết Của Em (+100 XP)</span>
+            </button>
+          </div>
+
+          {/* Danh sách thông điệp hành động trực tiếp trên web */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-h-64 overflow-y-auto pr-1">
+            {pledgesList.map((p, idx) => (
+              <div 
+                key={idx} 
+                className="p-4 rounded-2xl bg-white border border-[#EADBC8] shadow-2xs hover:shadow-md transition-shadow flex flex-col justify-between space-y-2 animate-fadeIn"
+              >
+                <div className="flex items-center justify-between text-xs">
+                  <strong className="text-[#7E1819] font-bold line-clamp-1">{p.name}</strong>
+                  <span className="text-[10px] text-gray-400 font-medium shrink-0 ml-2">{p.time || 'Hôm nay'}</span>
+                </div>
+                <p className="text-xs text-[#4A3E36] leading-relaxed italic line-clamp-3">
+                  "{p.text}"
+                </p>
+                <div className="pt-1 flex items-center gap-1 text-[10px] text-emerald-700 font-bold">
+                  <CheckCircle2 className="w-3 h-3 text-emerald-600" />
+                  <span>Đã ghi nhận trên Web & Google Sheet</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </ScrollReveal>
     </section>
