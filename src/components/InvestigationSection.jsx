@@ -24,6 +24,7 @@ import { checkInMonument } from '../utils/passportStorage';
 import soundEffects from '../utils/soundEffects';
 import WordByWordTitle from './WordByWordTitle';
 import { shuffleQuestions } from '../utils/quizUtils';
+import { trackQuizAttempt } from '../utils/studentAnalytics';
 
 // Web Audio Sound Synthesizer for MiniGame
 class GameAudioEngine {
@@ -266,6 +267,7 @@ export default function InvestigationSection({
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [score, setScore] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const [streak, setStreak] = useState(0);
   const [soundOn, setSoundOn] = useState(true);
   const [isGameOver, setIsGameOver] = useState(false);
@@ -280,6 +282,7 @@ export default function InvestigationSection({
     setSelectedOption(null);
     setIsAnswered(false);
     setScore(0);
+    setCorrectCount(0);
     setStreak(0);
     setIsGameOver(false);
   }, [baseQuestions]);
@@ -296,6 +299,7 @@ export default function InvestigationSection({
     if (isCorrect) {
       const earnedXP = 150 + streak * 25;
       setScore(prev => prev + earnedXP);
+      setCorrectCount(prev => prev + 1);
       setStreak(prev => prev + 1);
       if (streak > 0) {
         gameAudio.playStreak();
@@ -306,49 +310,71 @@ export default function InvestigationSection({
       setStreak(0);
       gameAudio.playWrong();
     }
+
+    // Ghi nhận telemetry trắc nghiệm gửi về Google Sheets
+    try {
+      trackQuizAttempt({
+        passport: activePassport,
+        monumentStt,
+        monumentName,
+        question: currentQ?.question,
+        isCorrect,
+        score: isCorrect ? (150 + streak * 25) : 0,
+        totalQuestions: questions.length
+      });
+    } catch (e) {}
   };
 
-  const triggerVictoryCelebration = () => {
+  const triggerVictoryCelebration = (isPerfect = true) => {
     gameAudio.playVictoryFanfare();
     try {
-      // Đợt 1: Bung pháo hoa tâm điểm rực rỡ
-      confetti({
-        particleCount: 110,
-        spread: 85,
-        origin: { y: 0.55 },
-        colors: ['#FFE81F', '#FFA500', '#FF3366', '#00E5FF', '#76FF03']
-      });
-
-      // Đợt 2: Pháo hoa cánh tả
-      setTimeout(() => {
+      if (isPerfect) {
+        // Đợt 1: Bung pháo hoa tâm điểm rực rỡ
         confetti({
-          particleCount: 75,
-          angle: 60,
-          spread: 65,
-          origin: { x: 0.1, y: 0.6 }
+          particleCount: 110,
+          spread: 85,
+          origin: { y: 0.55 },
+          colors: ['#FFE81F', '#FFA500', '#FF3366', '#00E5FF', '#76FF03']
         });
-      }, 180);
 
-      // Đợt 3: Pháo hoa cánh hữu
-      setTimeout(() => {
-        confetti({
-          particleCount: 75,
-          angle: 120,
-          spread: 65,
-          origin: { x: 0.9, y: 0.6 }
-        });
-      }, 360);
+        // Đợt 2: Pháo hoa cánh tả
+        setTimeout(() => {
+          confetti({
+            particleCount: 75,
+            angle: 60,
+            spread: 65,
+            origin: { x: 0.1, y: 0.6 }
+          });
+        }, 180);
 
-      // Đợt 4: Mưa ngôi sao vàng vinh danh
-      setTimeout(() => {
+        // Đợt 3: Pháo hoa cánh hữu
+        setTimeout(() => {
+          confetti({
+            particleCount: 75,
+            angle: 120,
+            spread: 65,
+            origin: { x: 0.9, y: 0.6 }
+          });
+        }, 360);
+
+        // Đợt 4: Mưa ngôi sao vàng vinh danh
+        setTimeout(() => {
+          confetti({
+            particleCount: 60,
+            spread: 120,
+            origin: { y: 0.5 },
+            shapes: ['star'],
+            colors: ['#FFD700', '#FFA500', '#FFF8DC', '#FF4500']
+          });
+        }, 540);
+      } else {
+        // Pháo hoa nhẹ nhàng khích lệ
         confetti({
-          particleCount: 60,
-          spread: 120,
-          origin: { y: 0.5 },
-          shapes: ['star'],
-          colors: ['#FFD700', '#FFA500', '#FFF8DC', '#FF4500']
+          particleCount: 50,
+          spread: 70,
+          origin: { y: 0.6 }
         });
-      }, 540);
+      }
     } catch (e) {}
   };
 
@@ -360,10 +386,17 @@ export default function InvestigationSection({
       setIsAnswered(false);
     } else {
       setIsGameOver(true);
-      triggerVictoryCelebration();
+      const isPerfect = correctCount === shuffledQuestions.length;
+      const isPassed = correctCount >= 3;
+
+      if (isPassed) {
+        triggerVictoryCelebration(isPerfect);
+      } else {
+        gameAudio.playTap();
+      }
 
       if (activePassport) {
-        const updated = checkInMonument(monumentStt, monumentName, score || 750);
+        const updated = checkInMonument(monumentStt, monumentName, score);
         if (updated && onPassportUpdate) onPassportUpdate(updated);
       }
       if (onCompleteInvestigation) {
@@ -379,6 +412,7 @@ export default function InvestigationSection({
     setSelectedOption(null);
     setIsAnswered(false);
     setScore(0);
+    setCorrectCount(0);
     setStreak(0);
     setIsGameOver(false);
   };
@@ -542,21 +576,49 @@ export default function InvestigationSection({
             ) : (
               <div className="py-6 flex-1 flex flex-col items-center justify-center text-center space-y-3.5 animate-fadeIn">
                 <div className="relative">
-                  <div className="w-16 h-16 rounded-3xl bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 text-[#7E1819] flex items-center justify-center text-3xl shadow-xl shadow-amber-500/30 ring-4 ring-amber-300/40 animate-bounce">
-                    🎖️
+                  <div className={`w-16 h-16 rounded-3xl text-white flex items-center justify-center text-3xl shadow-xl ring-4 ${
+                    correctCount === questions.length
+                      ? 'bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 text-[#7E1819] shadow-amber-500/30 ring-amber-300/40 animate-bounce'
+                      : correctCount >= 3
+                      ? 'bg-gradient-to-br from-emerald-400 to-emerald-600 shadow-emerald-500/30 ring-emerald-300/40'
+                      : 'bg-gradient-to-br from-orange-400 to-rose-600 shadow-rose-500/30 ring-rose-300/40'
+                  }`}>
+                    {correctCount === questions.length ? '🏆' : correctCount >= 3 ? '🎖️' : '💡'}
                   </div>
-                  <Sparkles className="w-5 h-5 text-amber-300 absolute -top-1 -right-1 animate-ping" />
+                  {correctCount >= 3 && <Sparkles className="w-5 h-5 text-amber-300 absolute -top-1 -right-1 animate-ping" />}
                 </div>
                 
                 <div className="space-y-1">
-                  <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-400/20 border border-amber-400/50 text-amber-300 text-[11px] font-black uppercase tracking-wider">
-                    <span>Huy Hiệu Nhà Thám Hiểm Di Sản</span>
+                  <div className={`inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full border text-[11px] font-black uppercase tracking-wider ${
+                    correctCount === questions.length
+                      ? 'bg-amber-400/20 border-amber-400/50 text-amber-300'
+                      : correctCount >= 3
+                      ? 'bg-emerald-400/20 border-emerald-400/50 text-emerald-300'
+                      : 'bg-rose-400/20 border-rose-400/50 text-rose-300'
+                  }`}>
+                    <span>
+                      {correctCount === questions.length
+                        ? 'Huy Hiệu Nhà Thám Hiểm Xuất Sắc'
+                        : correctCount >= 3
+                        ? 'Nhà Khám Phá Di Sản Tiêu Biểu'
+                        : 'Cần Cố Gắng Thêm'}
+                    </span>
                   </div>
                   <h4 className="font-serif-title font-black text-xl text-amber-200">
-                    Xuất Sắc! Hoàn Thành {score} XP
+                    {correctCount === questions.length
+                      ? `Xuất Sắc! Tuyệt Đối +${score} XP`
+                      : correctCount >= 3
+                      ? `Rất Tốt! Đạt +${score} XP`
+                      : `Đạt +${score} XP (${correctCount}/${questions.length} Câu Đúng)`}
                   </h4>
                   <p className="text-xs sm:text-sm text-rose-200 max-w-xs leading-relaxed">
-                    Em đã xuất sắc chinh phục đúng đủ <strong>5/5 câu hỏi lịch sử</strong> của di tích <strong>{monumentName}</strong>!
+                    {correctCount === questions.length ? (
+                      <>Em đã xuất sắc chinh phục đúng đủ <strong>{correctCount}/{questions.length} câu hỏi lịch sử</strong> của di tích <strong>{monumentName}</strong>!</>
+                    ) : correctCount >= 3 ? (
+                      <>Em đã trả lời chính xác <strong>{correctCount}/{questions.length} câu hỏi</strong> của di tích <strong>{monumentName}</strong>. Hãy tiếp tục phát huy nhé!</>
+                    ) : (
+                      <>Em đã trả lời đúng <strong>{correctCount}/{questions.length} câu hỏi</strong>. Hãy xem lại tư liệu và bấm nút bên dưới để chinh phục lại nhé!</>
+                    )}
                   </p>
                 </div>
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X, Send, CheckCircle2, Download, RotateCcw, HelpCircle, Sparkles, CloudCheck, ShieldCheck } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import soundEffects from '../utils/soundEffects';
-import { checkInMonument, getSavedInvestigationReport } from '../utils/passportStorage';
+import { checkInMonument, getSavedInvestigationReport, getActivePassport } from '../utils/passportStorage';
 import { trackInvestigationReport } from '../utils/studentAnalytics';
 
 export default function StudentReportModal({ 
@@ -16,8 +16,10 @@ export default function StudentReportModal({
   onPassportUpdate,
   onCompleteInvestigation
 }) {
+  const initialPassport = activePassport || (typeof window !== 'undefined' ? getActivePassport() : null);
+
   const [studentName, setStudentName] = useState(() => {
-    if (activePassport?.fullName) return activePassport.fullName;
+    if (initialPassport?.fullName) return initialPassport.fullName;
     try {
       const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
       return saved.studentName || '';
@@ -27,7 +29,7 @@ export default function StudentReportModal({
   });
 
   const [className, setClassName] = useState(() => {
-    if (activePassport?.grade) return activePassport.grade;
+    if (initialPassport?.grade) return initialPassport.grade;
     try {
       const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
       return saved.className || '';
@@ -37,7 +39,7 @@ export default function StudentReportModal({
   });
 
   const [schoolName, setSchoolName] = useState(() => {
-    if (activePassport?.school) return activePassport.school;
+    if (initialPassport?.school) return initialPassport.school;
     try {
       const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
       return saved.schoolName || '';
@@ -58,6 +60,21 @@ export default function StudentReportModal({
   useEffect(() => {
     if (isOpen) {
       setIsSubmitted(false);
+
+      // Ưu tiên cao nhất: Tự động điền theo Hộ Chiếu Di Sản đang đăng nhập
+      const passport = activePassport || getActivePassport();
+      if (passport?.fullName) {
+        setStudentName(passport.fullName);
+        setClassName(passport.grade || '');
+        setSchoolName(passport.school || '');
+      } else {
+        try {
+          const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+          if (saved.studentName) setStudentName(saved.studentName);
+          if (saved.className) setClassName(saved.className);
+          if (saved.schoolName) setSchoolName(saved.schoolName);
+        } catch (e) {}
+      }
 
       // Kiểm tra xem học sinh đã từng lưu báo cáo điều tra cho di tích này chưa
       const savedReport = getSavedInvestigationReport(monumentStt);
@@ -83,17 +100,6 @@ export default function StudentReportModal({
           setMessageToFuture('');
           setIsSavedLocally(false);
         }
-      }
-
-      // Auto fill student info if empty
-      if (!studentName && activePassport?.fullName) {
-        setStudentName(activePassport.fullName);
-      }
-      if (!className && activePassport?.grade) {
-        setClassName(activePassport.grade);
-      }
-      if (!schoolName && activePassport?.school) {
-        setSchoolName(activePassport.school);
       }
     }
   }, [isOpen, activePassport, monumentStt]);
@@ -232,37 +238,51 @@ export default function StudentReportModal({
               </div>
 
               {/* Student info */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <div>
-                  <label className="text-xs font-bold text-gray-700 block mb-1">Họ và tên học sinh *</label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Ví dụ: Nguyễn Văn An"
-                    value={studentName}
-                    onChange={(e) => setStudentName(e.target.value)}
-                    className="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white outline-none focus:border-[#7B1113]"
-                  />
-                </div>
-                <div>
-                  <label className="text-xs font-bold text-gray-700 block mb-1">Lớp</label>
-                  <input
-                    type="text"
-                    placeholder="Ví dụ: 9A1 / 12 chuyên Sử"
-                    value={className}
-                    onChange={(e) => setClassName(e.target.value)}
-                    className="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white outline-none focus:border-[#7B1113]"
-                  />
-                </div>
-                <div>
-                  <label className="text-xs font-bold text-gray-700 block mb-1">Trường</label>
-                  <input
-                    type="text"
-                    placeholder="Ví dụ: THPT Nguyễn Thị Minh Khai"
-                    value={schoolName}
-                    onChange={(e) => setSchoolName(e.target.value)}
-                    className="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white outline-none focus:border-[#7B1113]"
-                  />
+              <div className="space-y-2">
+                {Boolean((activePassport || getActivePassport())?.fullName) && (
+                  <div className="flex items-center justify-between px-3.5 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold">
+                    <span className="flex items-center gap-1.5">
+                      <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+                      <span>Đã liên kết Hộ Chiếu: <strong>{(activePassport || getActivePassport())?.fullName}</strong> ({(activePassport || getActivePassport())?.code || 'HC-ACTIVE'})</span>
+                    </span>
+                    <span className="text-[10px] bg-emerald-600 text-white font-bold px-2 py-0.5 rounded-full shrink-0">
+                      Tự động điền
+                    </span>
+                  </div>
+                )}
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div>
+                    <label className="text-xs font-bold text-gray-700 block mb-1">Họ và tên học sinh *</label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="Ví dụ: Nguyễn Văn An"
+                      value={studentName}
+                      onChange={(e) => setStudentName(e.target.value)}
+                      className="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white outline-none focus:border-[#7B1113] font-medium"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-xs font-bold text-gray-700 block mb-1">Lớp</label>
+                    <input
+                      type="text"
+                      placeholder="Ví dụ: 9A1 / 12 chuyên Sử"
+                      value={className}
+                      onChange={(e) => setClassName(e.target.value)}
+                      className="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white outline-none focus:border-[#7B1113]"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-xs font-bold text-gray-700 block mb-1">Trường</label>
+                    <input
+                      type="text"
+                      placeholder="Ví dụ: THPT Nguyễn Thị Minh Khai"
+                      value={schoolName}
+                      onChange={(e) => setSchoolName(e.target.value)}
+                      className="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white outline-none focus:border-[#7B1113]"
+                    />
+                  </div>
                 </div>
               </div>
 
