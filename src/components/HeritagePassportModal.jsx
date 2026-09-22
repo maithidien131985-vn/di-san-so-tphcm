@@ -38,21 +38,42 @@ export default function HeritagePassportModal({
   onSelectMonument,
   onNavigate
 }) {
-  const [activeTab, setActiveTab] = useState(activePassport ? 'passport' : 'login');
+  const [activeTab, setActiveTab] = useState(activePassport ? 'passport' : 'register');
   const [inputCode, setInputCode] = useState('');
   const [loginError, setLoginError] = useState('');
   
-  // Registration Form State
-  const [fullName, setFullName] = useState('');
-  const [school, setSchool] = useState('');
-  const [grade, setGrade] = useState('');
-  const [selectedAvatar, setSelectedAvatar] = useState('🦁');
+  // Registration Form State (Auto-sync with saved student info if available)
+  const [fullName, setFullName] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+      return saved.studentName || '';
+    } catch (e) {
+      return '';
+    }
+  });
+  const [school, setSchool] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+      return saved.schoolName || '';
+    } catch (e) {
+      return '';
+    }
+  });
+  const [grade, setGrade] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+      return saved.className || '';
+    } catch (e) {
+      return '';
+    }
+  });
+  const [selectedAvatar, setSelectedAvatar] = useState('🛡️');
   const [copiedCode, setCopiedCode] = useState(false);
   const [stampSearch, setStampSearch] = useState('');
 
   React.useEffect(() => {
     if (isOpen) {
-      setActiveTab(activePassport ? 'passport' : 'login');
+      setActiveTab(activePassport ? 'passport' : 'register');
       setLoginError('');
       setInputCode('');
     }
@@ -194,26 +215,30 @@ export default function HeritagePassportModal({
             {!activePassport && (
               <>
                 <button
-                  onClick={() => setActiveTab('login')}
-                  className={`px-4 py-2 rounded-xl font-black text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 ${
-                    activeTab === 'login'
-                      ? 'bg-[#8B1417] text-white shadow-md'
-                      : 'bg-white hover:bg-rose-50 text-[#8B1417] border border-rose-200'
+                  onClick={() => {
+                    soundEffects.playTap();
+                    setActiveTab('login');
+                  }}
+                  className={`px-4 py-2 rounded-xl font-black text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 shadow-md bg-gradient-to-r from-[#8B1417] via-[#A81B1F] to-[#8B1417] text-white ring-2 ring-amber-400 animate-pulse hover:scale-105 transform duration-150 ${
+                    activeTab === 'login' ? 'ring-4 ring-amber-300 scale-102' : ''
                   }`}
+                  title="Nhập mã số thẻ khám phá đã có"
                 >
-                  <LogIn className="w-4 h-4" />
+                  <LogIn className="w-4 h-4 text-amber-300" />
                   <span>Nhập mã</span>
                 </button>
 
                 <button
-                  onClick={() => setActiveTab('register')}
-                  className={`px-4 py-2 rounded-xl font-black text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 ${
-                    activeTab === 'register'
-                      ? 'bg-[#8B1417] text-white shadow-md'
-                      : 'bg-white hover:bg-rose-50 text-[#8B1417] border border-rose-200'
+                  onClick={() => {
+                    soundEffects.playTap();
+                    setActiveTab('register');
+                  }}
+                  className={`px-4 py-2 rounded-xl font-black text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-1.5 bg-white text-[#8B1417] border-2 border-rose-300 shadow-xs hover:bg-rose-50 hover:scale-102 ${
+                    activeTab === 'register' ? 'ring-2 ring-[#8B1417]/40 shadow-sm' : ''
                   }`}
+                  title="Nhận mã số thẻ khám phá mới"
                 >
-                  <UserPlus className="w-4 h-4" />
+                  <UserPlus className="w-4 h-4 text-[#8B1417]" />
                   <span>Nhận mã mới</span>
                 </button>
               </>
