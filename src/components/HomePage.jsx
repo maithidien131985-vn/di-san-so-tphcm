@@ -889,7 +889,7 @@ export default function HomePage({
                 </div>
                 <div className="pt-6">
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSd6K1zzzExf19zYVIG3NBbl70gkQ2VOnq6fJTgyKm0JvI54Fg/viewform?usp=sharing&ouid=113410705406929590560"
+                    href="https://forms.gle/ZuZ4vvcvUKmXA38K6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-[#7E1819] via-[#8B1417] to-[#A81B1F] hover:from-[#6B1315] hover:to-[#8B1417] text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group-hover:scale-102"

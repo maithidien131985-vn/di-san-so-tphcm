@@ -104,7 +104,7 @@ export default function Header({
 
           {/* Nút Khảo sát sau trải nghiệm Web */}
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd6K1zzzExf19zYVIG3NBbl70gkQ2VOnq6fJTgyKm0JvI54Fg/viewform?usp=sharing&ouid=113410705406929590560"
+            href="https://forms.gle/ZuZ4vvcvUKmXA38K6"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300 text-xs font-bold transition-all hover:scale-103 shadow-2xs"
@@ -226,7 +226,7 @@ export default function Header({
             </a>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSd6K1zzzExf19zYVIG3NBbl70gkQ2VOnq6fJTgyKm0JvI54Fg/viewform?usp=sharing&ouid=113410705406929590560"
+              href="https://forms.gle/ZuZ4vvcvUKmXA38K6"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between w-full px-3.5 py-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300 text-xs font-bold shadow-xs"

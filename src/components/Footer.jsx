@@ -41,7 +41,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSd6K1zzzExf19zYVIG3NBbl70gkQ2VOnq6fJTgyKm0JvI54Fg/viewform?usp=sharing&ouid=113410705406929590560"
+                  href="https://forms.gle/ZuZ4vvcvUKmXA38K6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-amber-300 transition-colors flex items-center gap-1.5 text-amber-300 hover:underline"
