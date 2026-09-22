@@ -565,7 +565,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.777152445580176,106.6953370089775",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.777152445580176,106.6953370089775",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Ai là kiến trúc sư thiết kế Dinh Độc Lập hiện nay?",
+        "options": [
+          "Ngô Viết Thụ",
+          "Ernest Hébrard",
+          "Alfred Foulhoux",
+          "Huỳnh Tấn Phát"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Ngô Viết Thụ."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Dinh Độc Lập hiện nay được khởi công xây dựng vào thời điểm nào?",
+        "options": [
+          "27/02/1962",
+          "01/7/1962",
+          "31/10/1966",
+          "30/4/1975"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 01/7/1962."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Sự kiện nào xảy ra tại Dinh Độc Lập lúc 11 giờ 30 phút ngày 30/4/1975?",
+        "options": [
+          "Máy bay F5E ném bom dinh",
+          "Nguyễn Văn Thiệu tuyên bố từ chức",
+          "Lá cờ của Mặt trận Dân tộc Giải phóng miền Nam Việt Nam được kéo lên nóc dinh",
+          "Dinh được khánh thành"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Lá cờ của Mặt trận Dân tộc Giải phóng miền Nam Việt Nam được kéo lên nóc dinh."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Xe tăng nào đã húc tung cổng chính Dinh Độc Lập trưa 30/4/1975?",
+        "options": [
+          "843",
+          "846",
+          "985",
+          "390"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 390."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Tổng thể mặt bằng Dinh Độc Lập được bố trí theo hình chữ Hán nào?",
+        "options": [
+          "CÁT (吉)",
+          "SƠN (山)",
+          "NHẬT (日)",
+          "QUỐC (國)"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: CÁT (吉)."
+      }
+    ]
   },
   {
     "id": "monument-2",
@@ -1135,7 +1207,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=11.141525139733433,106.46212044155315",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=11.141525139733433,106.46212044155315",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hai khu tham quan tiêu biểu của Di tích lịch sử Địa đạo Củ Chi là những nơi nào?",
+        "options": [
+          "Bến Lộc An và Bến Đá",
+          "Bến Dược và Bến Đình",
+          "Bến Nghé và Bến Thành",
+          "Bến Nhà Rồng và Bến Bạch Đằng"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Bến Dược và Bến Đình."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hệ thống địa đạo Củ Chi thường được tổ chức thành bao nhiêu tầng chính?",
+        "options": [
+          "Bốn tầng",
+          "Năm tầng",
+          "Ba tầng",
+          "Hai tầng"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Ba tầng."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Loại bếp nào được sử dụng để hạn chế khói bốc lên, tránh bị phát hiện?",
+        "options": [
+          "Bếp lò gạch",
+          "Bếp dầu",
+          "Bếp kiềng ba chân",
+          "Bếp Hoàng Cầm"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Bếp Hoàng Cầm."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Trong kháng chiến, địa đạo Củ Chi chủ yếu giúp lực lượng cách mạng thực hiện hoạt động nào?",
+        "options": [
+          "Ẩn náu, liên lạc, hội họp và chiến đấu",
+          "Sản xuất gốm xuất khẩu",
+          "Khai thác khoáng sản",
+          "Đóng tàu vận tải biển"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Ẩn náu, liên lạc, hội họp và chiến đấu."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Địa đạo Củ Chi được xếp hạng Di tích quốc gia đặc biệt vào năm nào?",
+        "options": [
+          "2020",
+          "2015",
+          "2004",
+          "2010"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 2015."
+      }
+    ]
   },
   {
     "id": "monument-3",
@@ -1689,7 +1833,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=9.832616798696527,106.65656177017404",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=9.832616798696527,106.65656177017404",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Bến Lộc An gắn với tuyến vận tải chiến lược nào trong kháng chiến chống Mỹ?",
+        "options": [
+          "Đường Trường Sơn Đông",
+          "Đường sắt Bắc – Nam",
+          "Đường Hồ Chí Minh trên biển",
+          "Đường số 4"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Đường Hồ Chí Minh trên biển."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Phương tiện gắn đặc biệt với tuyến đường Hồ Chí Minh trên biển là loại tàu nào?",
+        "options": [
+          "Tàu du lịch",
+          "Tàu điện",
+          "Tàu kéo đường sông",
+          "Tàu không số"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Tàu không số."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Bến Lộc An có vai trò nổi bật nào?",
+        "options": [
+          "Tiếp nhận vũ khí, hàng hóa chi viện bằng đường biển",
+          "Là nơi sản xuất vũ khí quy mô lớn",
+          "Là sân bay dã chiến",
+          "Là nơi đặt đài phát thanh quốc gia"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tiếp nhận vũ khí, hàng hóa chi viện bằng đường biển."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Điểm Bến Lộc An thuộc vùng ven biển của địa phương nào trước đây?",
+        "options": [
+          "Bình Dương",
+          "Bà Rịa – Vũng Tàu",
+          "Tây Ninh",
+          "Đồng Tháp"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Bà Rịa – Vũng Tàu."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Giá trị lịch sử nổi bật của Bến Lộc An phản ánh hoạt động nào?",
+        "options": [
+          "Khai hoang nông nghiệp thời Nguyễn",
+          "Giao thương gốm sứ thời cổ",
+          "Chi viện chiến trường miền Nam bằng đường biển",
+          "Xây dựng đường sắt thời Pháp"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Chi viện chiến trường miền Nam bằng đường biển."
+      }
+    ]
   },
   {
     "id": "monument-4",
@@ -2273,7 +2489,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=8.688233939345261,106.61422492122314",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=8.688233939345261,106.61422492122314",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hệ thống nhà tù Côn Đảo được thiết lập đầu tiên dưới chính quyền nào?",
+        "options": [
+          "Nhà Nguyễn",
+          "Quân đội Nhật Bản",
+          "Chính quyền Việt Nam sau 1975",
+          "Thực dân Pháp"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thực dân Pháp."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tên gọi nào gắn với kiểu khu giam giữ khắc nghiệt nổi tiếng tại Côn Đảo?",
+        "options": [
+          "Chuồng cọp",
+          "Ụ tàu nhỏ",
+          "Lũy Bán Bích",
+          "Hầm thủy lôi"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chuồng cọp."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Nghĩa trang nào ở Côn Đảo là nơi an nghỉ của nhiều chiến sĩ cách mạng?",
+        "options": [
+          "Bình An",
+          "Hàng Dương",
+          "Hàng Xanh",
+          "Hàng Gòn"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Hàng Dương."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Nữ anh hùng Võ Thị Sáu bị xử tử tại Côn Đảo vào năm nào?",
+        "options": [
+          "1950",
+          "1954",
+          "1952",
+          "1948"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1952."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Giá trị lịch sử nổi bật của hệ thống nhà tù Côn Đảo gắn với nội dung nào?",
+        "options": [
+          "Lịch sử hình thành nghề gốm",
+          "Lịch sử thương mại đường sông",
+          "Lịch sử khai thác dầu khí",
+          "Lịch sử đấu tranh của các tù nhân chính trị và chiến sĩ cách mạng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Lịch sử đấu tranh của các tù nhân chính trị và chiến sĩ cách mạng."
+      }
+    ]
   },
   {
     "id": "monument-5",
@@ -2818,7 +3106,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.65478624954869,107.24834876091408",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.65478624954869,107.24834876091408",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Chiến dịch Bình Giã diễn ra chủ yếu vào khoảng thời gian nào?",
+        "options": [
+          "Cuối năm 1964 – đầu năm 1965",
+          "Cuối năm 1974 – đầu năm 1975",
+          "Cuối năm 1954 – đầu năm 1955",
+          "Cuối năm 1968 – đầu năm 1969"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Cuối năm 1964 – đầu năm 1965."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Chiến thắng Bình Giã diễn ra trên địa bàn thuộc tỉnh nào trước đây?",
+        "options": [
+          "An Giang",
+          "Bà Rịa – Vũng Tàu",
+          "Bình Dương",
+          "Long An"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Bà Rịa – Vũng Tàu."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Chiến thắng Bình Giã gắn với sự thất bại nghiêm trọng của chiến lược chiến tranh nào của Mỹ?",
+        "options": [
+          "Chiến tranh đơn phương",
+          "Chiến tranh cục bộ",
+          "Chiến tranh đặc biệt",
+          "Việt Nam hóa chiến tranh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Chiến tranh đặc biệt."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Tên di tích Chiến thắng Bình Giã bao gồm địa điểm quân sự nào?",
+        "options": [
+          "Cảng Nhà Bè",
+          "Sân bay Tân Sơn Nhất",
+          "Căn cứ Đồng Dù",
+          "Chi khu quân sự Đức Thạnh"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Chi khu quân sự Đức Thạnh."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Di tích Chiến thắng Bình Giã được công nhận là di tích lịch sử cách mạng cấp quốc gia vào năm nào?",
+        "options": [
+          "1994",
+          "1989",
+          "2001",
+          "2010"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1994."
+      }
+    ]
   },
   {
     "id": "monument-6",
@@ -3388,7 +3748,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.40548579382776,107.26077350902882",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.40548579382776,107.26077350902882",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Khu căn cứ Minh Đạm thuộc vùng địa hình nào?",
+        "options": [
+          "Núi Châu Thới",
+          "Núi Minh Đạm",
+          "Núi Bà Đen",
+          "Núi Sam"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Núi Minh Đạm."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tên gọi Minh Đạm gắn với hai cán bộ cách mạng nào?",
+        "options": [
+          "Nguyễn Văn Cừ và Phan Đăng Lưu",
+          "Lê Hồng Phong và Hà Huy Tập",
+          "Bùi Công Minh và Mạc Thanh Đạm",
+          "Tôn Đức Thắng và Châu Văn Liêm"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Bùi Công Minh và Mạc Thanh Đạm."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Trong kháng chiến, địa hình núi rừng Minh Đạm thuận lợi nhất cho hoạt động nào?",
+        "options": [
+          "Phát triển cảng biển nước sâu",
+          "Xây dựng sân bay quốc tế",
+          "Khai thác đồng bằng lúa nước",
+          "Xây dựng căn cứ và che giấu lực lượng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Xây dựng căn cứ và che giấu lực lượng."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Khu căn cứ Minh Đạm gắn với lịch sử đấu tranh cách mạng của địa phương nào?",
+        "options": [
+          "Bà Rịa – Vũng Tàu",
+          "Cà Mau",
+          "Đồng Tháp",
+          "Bến Tre"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Bà Rịa – Vũng Tàu."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Yếu tố tự nhiên nào góp phần quan trọng giúp căn cứ Minh Đạm tồn tại trong chiến tranh?",
+        "options": [
+          "Cồn cát ven biển hoàn toàn bằng phẳng",
+          "Địa hình núi đá, hang động và rừng cây",
+          "Kênh đào nhân tạo dày đặc",
+          "Đồng bằng trống trải"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Địa hình núi đá, hang động và rừng cây."
+      }
+    ]
   },
   {
     "id": "monument-7",
@@ -3963,7 +4395,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.414924408006014,106.88183143501408",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.414924408006014,106.88183143501408",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Căn cứ Rừng Sác gắn với khu vực nào của Thành phố Hồ Chí Minh?",
+        "options": [
+          "Hóc Môn",
+          "Bình Chánh",
+          "Cần Giờ",
+          "Củ Chi"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Cần Giờ."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Lực lượng nào gắn nổi bật với chiến trường Rừng Sác trong kháng chiến chống Mỹ?",
+        "options": [
+          "Đội du kích Ba Tơ",
+          "Trung đoàn Thủ đô",
+          "Thanh niên xung phong Ngã ba Đồng Lộc",
+          "Đặc công Rừng Sác"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Đặc công Rừng Sác."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đặc điểm tự nhiên nổi bật của Rừng Sác là gì?",
+        "options": [
+          "Rừng ngập mặn và mạng lưới sông rạch",
+          "Sa mạc cát",
+          "Cao nguyên bazan",
+          "Núi đá vôi karst"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Rừng ngập mặn và mạng lưới sông rạch."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Căn cứ Rừng Sác được xếp hạng di tích lịch sử cấp quốc gia vào năm nào?",
+        "options": [
+          "2015",
+          "2004",
+          "1994",
+          "2000"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 2004."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Vị trí Rừng Sác có ý nghĩa chiến lược vì nằm gần tuyến giao thông nào?",
+        "options": [
+          "Tuyến biên giới Việt – Lào",
+          "Đường sắt xuyên Việt",
+          "Đường thủy nối Sài Gòn với biển",
+          "Đường mòn qua Tây Bắc"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Đường thủy nối Sài Gòn với biển."
+      }
+    ]
   },
   {
     "id": "monument-8",
@@ -4533,7 +5037,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=11.12594035725486,106.86328916335086",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=11.12594035725486,106.86328916335086",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Chiến khu Đ được hình thành vào thời điểm nào?",
+        "options": [
+          "Tháng 5/1954",
+          "Tháng 8/1945",
+          "Tháng 12/1946",
+          "Tháng 2/1946"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Tháng 2/1946."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Địa bàn ban đầu của Chiến khu Đ gồm bao nhiêu xã?",
+        "options": [
+          "5 xã",
+          "3 xã",
+          "7 xã",
+          "9 xã"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 5 xã."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Địa danh nào sau đây thuộc 5 xã hạt nhân ban đầu của Chiến khu Đ?",
+        "options": [
+          "Bà Điểm",
+          "Lạc An",
+          "Long Phước",
+          "Phú Nhuận"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Lạc An."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Chiến khu Đ là căn cứ quan trọng của cách mạng ở khu vực nào?",
+        "options": [
+          "Tây Bắc",
+          "Bắc Trung Bộ",
+          "Miền Đông Nam Bộ",
+          "Tây Nguyên"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Miền Đông Nam Bộ."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chiến khu Đ được công nhận là di tích lịch sử cấp quốc gia vào ngày nào?",
+        "options": [
+          "18/3/1996",
+          "15/12/2004",
+          "23/12/2015",
+          "11/5/2010"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 11/5/2010."
+      }
+    ]
   },
   {
     "id": "monument-9",
@@ -5160,7 +5736,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.719626707385835,107.22760041074827",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.719626707385835,107.22760041074827",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Địa đạo Kim Long nằm tại địa bàn nào của Châu Đức?",
+        "options": [
+          "Tam Long, Kim Long",
+          "Phước Hải, Đất Đỏ",
+          "Hòa Long, Bà Rịa",
+          "Long Hải, Long Điền"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tam Long, Kim Long."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Địa đạo Kim Long gắn chủ yếu với thời kỳ kháng chiến nào?",
+        "options": [
+          "Khởi nghĩa Lam Sơn",
+          "Kháng chiến chống Mỹ",
+          "Phong trào Cần Vương",
+          "Kháng chiến chống quân Nguyên"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Kháng chiến chống Mỹ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Hệ thống địa đạo Kim Long dài gần bao nhiêu?",
+        "options": [
+          "1 km",
+          "5 km",
+          "2 km",
+          "500 m"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 2 km."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Dọc địa đạo Kim Long có khoảng bao nhiêu cửa hầm lên xuống?",
+        "options": [
+          "8",
+          "20",
+          "6",
+          "12"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 12."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Địa đạo Kim Long được công nhận là di tích lịch sử cách mạng vào năm nào?",
+        "options": [
+          "1994",
+          "2010",
+          "1989",
+          "2001"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1994."
+      }
+    ]
   },
   {
     "id": "monument-10",
@@ -5730,7 +6378,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.78388607955183,106.63089939238137",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.78388607955183,106.63089939238137",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Địa đạo Phú Thọ Hòa được xây dựng vào năm nào?",
+        "options": [
+          "1954",
+          "1947",
+          "1945",
+          "1950"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1947."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Địa đạo Phú Thọ Hòa được đào đầu tiên trong cuộc kháng chiến nào?",
+        "options": [
+          "Kháng chiến chống Nguyên – Mông",
+          "Kháng chiến chống Mỹ",
+          "Kháng chiến chống Pháp",
+          "Kháng chiến chống quân Thanh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Kháng chiến chống Pháp."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Địa đạo Phú Thọ Hòa hiện gắn với địa bàn nào của Thành phố Hồ Chí Minh?",
+        "options": [
+          "Thủ Đức",
+          "Cần Giờ",
+          "Nhà Bè",
+          "Tân Phú"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Tân Phú."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Trận đánh nào năm 1948 được nhắc đến trong lịch sử đấu tranh của khu vực Phú Thọ Hòa?",
+        "options": [
+          "Đánh kho bom Bảy Hiền",
+          "Trận Ấp Bắc",
+          "Trận Bình Giã",
+          "Trận Xuân Lộc"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Đánh kho bom Bảy Hiền."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "So với Địa đạo Củ Chi, Địa đạo Phú Thọ Hòa có đặc điểm thời gian nào?",
+        "options": [
+          "Được xây dựng cùng ngày",
+          "Được xây dựng sớm hơn",
+          "Được xây dựng sau năm 1975",
+          "Chỉ hình thành sau năm 2000"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Được xây dựng sớm hơn."
+      }
+    ]
   },
   {
     "id": "monument-11",
@@ -6300,7 +7020,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=11.0899618656236,106.54076260179036",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=11.0899618656236,106.54076260179036",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Địa đạo Tây Nam Bến Cát xưa nằm trên vùng đất của ba xã nào?",
+        "options": [
+          "Tân Hòa, Mỹ Lộc, Lạc An",
+          "Bà Điểm, Xuân Thới Thượng, Tân Xuân",
+          "An Điền, An Tây, Phú An",
+          "Long Phước, Hòa Long, Kim Long"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: An Điền, An Tây, Phú An."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hệ thống Địa đạo Tam Giác Sắt được xây dựng từ khoảng năm nào?",
+        "options": [
+          "1945",
+          "1954",
+          "1968",
+          "1948"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1948."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tên gọi nào khác được dùng cho Địa đạo Tây Nam Bến Cát?",
+        "options": [
+          "Tam Giác Sắt",
+          "Chiến khu Đ",
+          "Đất Thép",
+          "Rừng Sác"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tam Giác Sắt."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Địa đạo Tây Nam Bến Cát có vai trò nào trong chiến tranh?",
+        "options": [
+          "Trung tâm khai thác than",
+          "Nơi ở, tránh bom đạn và đặt cơ quan lãnh đạo địa phương",
+          "Trạm khí tượng dân sự",
+          "Kho chứa hàng xuất khẩu đường biển"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Nơi ở, tránh bom đạn và đặt cơ quan lãnh đạo địa phương."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Địa đạo Tam Giác Sắt được công nhận di tích lịch sử cách mạng cấp quốc gia vào ngày nào?",
+        "options": [
+          "11/5/2010",
+          "30/12/2002",
+          "18/3/1996",
+          "20/7/1994"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 18/3/1996."
+      }
+    ]
   },
   {
     "id": "monument-12",
@@ -6838,7 +7630,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.778419640042815,106.7062557598295",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.778419640042815,106.7062557598295",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Sự kiện đấu tranh công nhân nổi bật tại Ba Son diễn ra vào năm nào?",
+        "options": [
+          "1929",
+          "1930",
+          "1920",
+          "1925"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1925."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Ai là người gắn nổi bật với việc lãnh đạo cuộc bãi công Ba Son năm 1925?",
+        "options": [
+          "Tôn Đức Thắng",
+          "Trần Phú",
+          "Phan Bội Châu",
+          "Nguyễn An Ninh"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tôn Đức Thắng."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Công nhân Ba Son bãi công nhằm góp phần làm chậm việc sửa chữa chiến hạm nào?",
+        "options": [
+          "La Motte-Picquet",
+          "Jules Michelet",
+          "Dumont d’Urville",
+          "Amiral Charner"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Jules Michelet."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Cuộc bãi công Ba Son năm 1925 thể hiện rõ tinh thần nào của công nhân Việt Nam?",
+        "options": [
+          "Phát triển du lịch đường biển",
+          "Phục hồi chế độ quân chủ",
+          "Đoàn kết quốc tế vô sản",
+          "Mở rộng thương mại thuộc địa"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Đoàn kết quốc tế vô sản."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hai hạng mục được nêu trong tên Di tích lưu niệm Chủ tịch Tôn Đức Thắng tại Ba Son là gì?",
+        "options": [
+          "Nhà giam và vọng gác",
+          "Chuồng cọp và cầu tàu",
+          "Hầm thủy lôi và trận địa pháo",
+          "Ụ tàu nhỏ và Triền nề"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Ụ tàu nhỏ và Triền nề."
+      }
+    ]
   },
   {
     "id": "monument-13",
@@ -7428,7 +8292,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.771857251306303,106.67498699673442",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.771857251306303,106.67498699673442",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hầm bí mật chứa vũ khí tại số 183/4 đường 3 Tháng 2 gắn với lực lượng nào?",
+        "options": [
+          "Biệt động Sài Gòn",
+          "Đặc công Rừng Sác",
+          "Du kích Ba Tơ",
+          "Vệ quốc đoàn Hà Nội"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Biệt động Sài Gòn."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Người chủ căn nhà được giao xây hầm bí mật đầu năm 1965 là ai?",
+        "options": [
+          "Nguyễn Văn Trỗi",
+          "Đỗ Văn Căn (Ba Mủ)",
+          "Bùi Quang Thận",
+          "Võ Văn Tần"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Đỗ Văn Căn (Ba Mủ)."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Hầm bí mật được xây dựng chủ yếu để làm gì?",
+        "options": [
+          "Lưu trữ cổ vật khảo cổ",
+          "Chứa hàng hóa thương mại",
+          "Cất giấu vũ khí phục vụ chiến đấu trong nội thành",
+          "Làm hầm bảo quản thực phẩm dân dụng"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Cất giấu vũ khí phục vụ chiến đấu trong nội thành."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Địa chỉ 183/4 đường Trần Quốc Toản trước đây nay thuộc đường nào?",
+        "options": [
+          "Cách Mạng Tháng Tám",
+          "Nguyễn Đình Chiểu",
+          "Điện Biên Phủ",
+          "3 Tháng 2"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 3 Tháng 2."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Nghề nghiệp của ông Đỗ Văn Căn, chủ căn nhà có hầm bí mật, là gì?",
+        "options": [
+          "Thợ giày",
+          "Thợ gốm",
+          "Thợ đóng tàu",
+          "Thợ bạc"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thợ giày."
+      }
+    ]
   },
   {
     "id": "monument-14",
@@ -7998,7 +8934,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.753291478346345,106.6791565532884",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.753291478346345,106.6791565532884",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đồng chí Trần Phú giữ cương vị lịch sử nào?",
+        "options": [
+          "Tổng tư lệnh đầu tiên của Quân đội nhân dân Việt Nam",
+          "Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương",
+          "Chủ tịch Quốc hội đầu tiên",
+          "Chủ tịch nước đầu tiên"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trần Phú hy sinh vào năm nào?",
+        "options": [
+          "1930",
+          "1940",
+          "1931",
+          "1929"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1931."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Địa điểm giam giữ Trần Phú trước khi hy sinh nằm trong cơ sở nào?",
+        "options": [
+          "Nhà tù Phú Lợi",
+          "Nhà tù Côn Đảo",
+          "Khám Lớn Sài Gòn",
+          "Bệnh viện Chợ Quán"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Bệnh viện Chợ Quán."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Di tích này gắn trực tiếp với giai đoạn đấu tranh cách mạng nào?",
+        "options": [
+          "Những năm đầu thập niên 1930",
+          "Chiến dịch Hồ Chí Minh năm 1975",
+          "Phong trào Đông Du đầu thế kỷ XX",
+          "Kháng chiến chống Mỹ cuối thập niên 1960"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Những năm đầu thập niên 1930."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Giá trị lưu niệm nổi bật của di tích Bệnh viện Chợ Quán gắn với nhân vật nào?",
+        "options": [
+          "Phan Châu Trinh",
+          "Trần Phú",
+          "Võ Thị Sáu",
+          "Tôn Đức Thắng"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Trần Phú."
+      }
+    ]
   },
   {
     "id": "monument-15",
@@ -8558,7 +9566,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.868326056842957,106.56114184448106",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.868326056842957,106.56114184448106",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Ngã Ba Giồng gắn đặc biệt với cuộc khởi nghĩa nào?",
+        "options": [
+          "Khởi nghĩa Hương Khê",
+          "Khởi nghĩa Yên Bái",
+          "Khởi nghĩa Nam Kỳ",
+          "Khởi nghĩa Ba Đình"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Khởi nghĩa Nam Kỳ."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Khởi nghĩa Nam Kỳ bùng nổ vào ngày nào?",
+        "options": [
+          "23/9/1945",
+          "19/8/1945",
+          "2/9/1945",
+          "23/11/1940"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 23/11/1940."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Nhân vật nào sau đây đã bị thực dân Pháp xử bắn tại Ngã Ba Giồng?",
+        "options": [
+          "Nguyễn Văn Cừ",
+          "Phan Bội Châu",
+          "Nguyễn Thái Học",
+          "Hoàng Hoa Thám"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Nguyễn Văn Cừ."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Ngã Ba Giồng thuộc vùng đất lịch sử nào của Hóc Môn – Bà Điểm?",
+        "options": [
+          "Lục tỉnh Nam Kỳ",
+          "18 thôn vườn trầu",
+          "Tứ giác Long Xuyên",
+          "Đồng Tháp Mười"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 18 thôn vườn trầu."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Ngã Ba Giồng được công nhận di tích lịch sử cấp quốc gia vào năm nào?",
+        "options": [
+          "1994",
+          "1998",
+          "2002",
+          "2010"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 2002."
+      }
+    ]
   },
   {
     "id": "monument-16",
@@ -9111,7 +10191,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.489238260856842,107.26906343191851",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.489238260856842,107.26906343191851",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Nhà lưu niệm Võ Thị Sáu nằm ở địa phương nào trước đây?",
+        "options": [
+          "Củ Chi, Thành phố Hồ Chí Minh",
+          "Tân Uyên, Bình Dương",
+          "Gò Công, Tiền Giang",
+          "Đất Đỏ, Bà Rịa – Vũng Tàu"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Đất Đỏ, Bà Rịa – Vũng Tàu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Võ Thị Sáu bị thực dân Pháp xử tử tại đâu?",
+        "options": [
+          "Côn Đảo",
+          "Hỏa Lò",
+          "Khám Lớn Sài Gòn",
+          "Phú Quốc"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Côn Đảo."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Võ Thị Sáu hy sinh vào năm nào?",
+        "options": [
+          "1950",
+          "1952",
+          "1954",
+          "1949"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1952."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Nhà lưu niệm Võ Thị Sáu được công nhận là di tích lịch sử – lưu niệm vào năm nào?",
+        "options": [
+          "2002",
+          "2015",
+          "1989",
+          "1994"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1989."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Loại hình giá trị chính của Nhà lưu niệm Võ Thị Sáu là gì?",
+        "options": [
+          "Kiến trúc cung đình",
+          "Lịch sử thương mại đường biển",
+          "Khảo cổ học tiền sử",
+          "Lưu niệm về cuộc đời và hoạt động của một nữ anh hùng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Lưu niệm về cuộc đời và hoạt động của một nữ anh hùng."
+      }
+    ]
   },
   {
     "id": "monument-17",
@@ -9664,7 +10816,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.990875383171833,106.68172397856634",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.990875383171833,106.68172397856634",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Nhà tù Phú Lợi tồn tại chủ yếu trong khoảng thời gian nào?",
+        "options": [
+          "1957–1964",
+          "1975–1986",
+          "1945–1954",
+          "1965–1973"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1957–1964."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Sự kiện 'Phú Lợi căm thù' gắn với ngày nào?",
+        "options": [
+          "30/4/1975",
+          "01/12/1958",
+          "20/7/1954",
+          "02/9/1945"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 01/12/1958."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đối tượng bị giam giữ chủ yếu tại Nhà tù Phú Lợi là ai?",
+        "options": [
+          "Thương nhân nước ngoài",
+          "Tù binh trong chiến tranh thế giới thứ nhất",
+          "Tù nhân chính trị và những người tham gia cách mạng",
+          "Tội phạm hàng hải"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Tù nhân chính trị và những người tham gia cách mạng."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Nhà tù Phú Lợi trước đây thuộc địa bàn tỉnh nào?",
+        "options": [
+          "Long An",
+          "Bà Rịa – Vũng Tàu",
+          "Tây Ninh",
+          "Bình Dương"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Bình Dương."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Sự kiện năm 1958 tại Nhà tù Phú Lợi đã dẫn đến điều gì?",
+        "options": [
+          "Làn sóng phản đối và đấu tranh rộng rãi",
+          "Việc mở tuyến đường Hồ Chí Minh trên biển",
+          "Sự thành lập An Nam Cộng sản Đảng",
+          "Việc xây dựng Dinh Độc Lập mới"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Làn sóng phản đối và đấu tranh rộng rãi."
+      }
+    ]
   },
   {
     "id": "monument-18",
@@ -10219,7 +11443,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.75116845073847,106.65892268503289",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.75116845073847,106.65892268503289",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Di tích nơi Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước hiện mang số nhà nào trên đường Châu Văn Liêm?",
+        "options": [
+          "Số 1",
+          "Số 5",
+          "Số 18",
+          "Số 86"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Số 5."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Nguyễn Tất Thành rời Sài Gòn ra đi tìm đường cứu nước vào ngày nào?",
+        "options": [
+          "05/6/1908",
+          "03/02/1930",
+          "05/6/1911",
+          "02/9/1945"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 05/6/1911."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Căn nhà số 5 Châu Văn Liêm xưa thuộc cơ sở nào?",
+        "options": [
+          "Hội quán Nghĩa An",
+          "Xưởng Ba Son",
+          "Trụ sở Báo Dân Chúng",
+          "Phân cuộc Liên Thành thương quán"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Phân cuộc Liên Thành thương quán."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Trước khi vào Sài Gòn, Nguyễn Tất Thành từng dạy học tại trường nào?",
+        "options": [
+          "Dục Thanh",
+          "Bưởi",
+          "Pétrus Ký",
+          "Quốc Học Huế"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Dục Thanh."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Địa danh lịch sử gắn với nơi Nguyễn Tất Thành xuống tàu ra đi tìm đường cứu nước là đâu?",
+        "options": [
+          "Bến Lộc An",
+          "Bến Nhà Rồng",
+          "Bến Dược",
+          "Bến Bạch Đằng"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Bến Nhà Rồng."
+      }
+    ]
   },
   {
     "id": "monument-19",
@@ -10729,7 +12025,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.773462235716813,106.69957480365504",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.773462235716813,106.69957480365504",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "An Nam Cộng sản Đảng được thành lập vào năm nào?",
+        "options": [
+          "1927",
+          "1931",
+          "1929",
+          "1925"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1929."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Địa điểm thành lập An Nam Cộng sản Đảng nằm tại số nhà nào trên đường Nguyễn Trung Trực hiện nay?",
+        "options": [
+          "Số 18",
+          "Số 86",
+          "Số 5",
+          "Số 1"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Số 1."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Căn phòng diễn ra hội nghị thành lập nằm ở vị trí nào trong tòa nhà?",
+        "options": [
+          "Phòng 1, lầu 2",
+          "Phòng 8, tầng hầm",
+          "Phòng 5, tầng trệt",
+          "Phòng 2, lầu 4"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Phòng 1, lầu 2."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Khách sạn nơi diễn ra hội nghị thành lập An Nam Cộng sản Đảng có tên gì?",
+        "options": [
+          "Caravelle",
+          "Phong cảnh khách lầu",
+          "Continental",
+          "Majestic"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Phong cảnh khách lầu."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "An Nam Cộng sản Đảng là một trong bao nhiêu tổ chức cộng sản tiền thân dẫn tới sự thành lập Đảng Cộng sản Việt Nam?",
+        "options": [
+          "Năm",
+          "Hai",
+          "Ba",
+          "Bốn"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Ba."
+      }
+    ]
   },
   {
     "id": "monument-20",
@@ -11299,7 +12667,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=11.393758719278207,106.50301280115599",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=11.393758719278207,106.50301280115599",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh được đặt tại khu vực nào trước đây?",
+        "options": [
+          "Long Phước – Bà Rịa",
+          "Bến Dược – Củ Chi",
+          "Rừng Sác – Cần Giờ",
+          "Căm Xe – Minh Thạnh"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Căm Xe – Minh Thạnh."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Sở chỉ huy tiền phương được chuyển đến gần chiến trường nhằm mục đích chính nào?",
+        "options": [
+          "Trực tiếp chỉ huy chiến dịch sát tình hình tác chiến",
+          "Tổ chức khai thác lâm sản",
+          "Xây dựng khu dân cư mới",
+          "Mở tuyến thương mại đường sông"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Trực tiếp chỉ huy chiến dịch sát tình hình tác chiến."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Chiến dịch Hồ Chí Minh diễn ra vào năm nào?",
+        "options": [
+          "1968",
+          "1975",
+          "1972",
+          "1973"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1975."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Nhân vật nào được nêu là cùng quyết định chuyển Sở chỉ huy tới Căm Xe?",
+        "options": [
+          "Tôn Đức Thắng và Trần Phú",
+          "Nguyễn Văn Cừ và Phan Đăng Lưu",
+          "Lê Đức Thọ và Văn Tiến Dũng",
+          "Võ Thị Sáu và Nguyễn An Ninh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Lê Đức Thọ và Văn Tiến Dũng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Sở chỉ huy tiền phương này phục vụ trực tiếp cho mục tiêu chiến lược nào?",
+        "options": [
+          "Mở đường Hồ Chí Minh trên biển",
+          "Tổ chức Nam Kỳ khởi nghĩa",
+          "Thành lập An Nam Cộng sản Đảng",
+          "Giải phóng Sài Gòn, kết thúc chiến tranh"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Giải phóng Sài Gòn, kết thúc chiến tranh."
+      }
+    ]
   },
   {
     "id": "monument-21",
@@ -11904,7 +13344,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.981609182199021,106.78390677676012",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.981609182199021,106.78390677676012",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Cù Lao Rùa còn được biết đến với tên địa danh nào?",
+        "options": [
+          "Thạnh Hội",
+          "Long Hòa",
+          "Hòa Lục",
+          "Tân Mỹ"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thạnh Hội."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Di tích khảo cổ Cù Lao Rùa có niên đại giai đoạn sớm khoảng bao nhiêu năm cách ngày nay?",
+        "options": [
+          "2.700–2.300 năm",
+          "3.500–3.000 năm",
+          "4.500–4.000 năm",
+          "2.000–1.500 năm"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 3.500–3.000 năm."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Cuộc khai quật quy mô gần 400 m² tại Cù Lao Rùa được tiến hành vào năm nào?",
+        "options": [
+          "2001",
+          "2009",
+          "2003",
+          "1998"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 2003."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Kết quả khảo cổ cho thấy Cù Lao Rùa là loại hình di tích nào?",
+        "options": [
+          "Thành lũy quân sự",
+          "Bến cảng cổ",
+          "Xưởng chế tác đá đơn thuần",
+          "Cư trú – mộ táng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Cư trú – mộ táng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Cù Lao Rùa được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2009",
+          "2014",
+          "2000",
+          "2001"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 2009."
+      }
+    ]
   },
   {
     "id": "monument-22",
@@ -12479,7 +13991,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=11.067343480738144,106.82521994256845",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=11.067343480738144,106.82521994256845",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Di tích khảo cổ Dốc Chùa nằm bên bờ con sông nào?",
+        "options": [
+          "Sông Thị Tính",
+          "Sông Đồng Nai",
+          "Sông Sài Gòn",
+          "Sông Bé"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Sông Đồng Nai."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đợt điều tra khảo cổ năm 1976 dẫn tới việc xác định Dốc Chùa diễn ra trong khi các nhà khảo cổ đi kiểm chứng địa điểm nào?",
+        "options": [
+          "Óc Eo",
+          "Cù Lao Rùa",
+          "Mỹ Lộc",
+          "Giồng Cá Vồ"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Mỹ Lộc."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Dốc Chùa được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2009",
+          "1993",
+          "1998",
+          "2001"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 2001."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Địa hình chính của di tích Dốc Chùa là gì?",
+        "options": [
+          "Một ngọn đồi ven sông",
+          "Một cù lao giữa sông",
+          "Một hang đá trên núi",
+          "Một giồng cát ven biển"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Một ngọn đồi ven sông."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Tên gọi khác được nhắc đến của Dốc Chùa là gì?",
+        "options": [
+          "Gò Chùa",
+          "Cầu Chùa",
+          "Bến Chùa",
+          "Đồi Chùa"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Cầu Chùa."
+      }
+    ]
   },
   {
     "id": "monument-23",
@@ -13059,7 +14643,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.41214603381856,106.92439756540267",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.41214603381856,106.92439756540267",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Di tích khảo cổ Giồng Cá Vồ thuộc khu vực nào?",
+        "options": [
+          "Củ Chi",
+          "Hóc Môn",
+          "Cần Giờ",
+          "Thủ Đức"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Cần Giờ."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Giồng Cá Vồ có niên đại vào khoảng bao nhiêu năm cách ngày nay?",
+        "options": [
+          "Khoảng 1.000 năm",
+          "Khoảng 2.000 năm",
+          "Khoảng 5.000 năm",
+          "Khoảng 3.000 năm"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Khoảng 3.000 năm."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Hình thức mai táng đặc biệt được phát hiện tại Giồng Cá Vồ là gì?",
+        "options": [
+          "Mộ chum",
+          "Mộ gạch hình vòm",
+          "Mộ đá cự thạch",
+          "Mộ thuyền"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Mộ chum."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Di tích Giồng Cá Vồ được phát hiện qua khảo sát vào năm nào?",
+        "options": [
+          "1988",
+          "1993",
+          "2000",
+          "1976"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1993."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Giồng Cá Vồ được xếp hạng di tích khảo cổ quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "2004",
+          "2000",
+          "1994"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 2000."
+      }
+    ]
   },
   {
     "id": "monument-24",
@@ -13644,7 +15300,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.725161836697179,106.62619057624681",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.725161836697179,106.62619057624681",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Lò gốm cổ Hưng Lợi nằm trong địa phận làng cổ nào?",
+        "options": [
+          "Thạnh Hội",
+          "Long Hòa",
+          "Tân Khánh",
+          "Hòa Lục"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Hòa Lục."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Làng Hòa Lục gắn với Lò gốm Hưng Lợi nằm ven hai tuyến thủy nào?",
+        "options": [
+          "Kênh Ruột Ngựa và kênh Lò Gốm",
+          "Kênh Đôi và sông Đồng Nai",
+          "Kênh Nhiêu Lộc và rạch Thị Nghè",
+          "Kênh Tẻ và rạch Bến Nghé"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Kênh Ruột Ngựa và kênh Lò Gốm."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Theo Gia Định thành thông chí, kênh Ruột Ngựa được đào vào năm nào?",
+        "options": [
+          "1815",
+          "1772",
+          "1698",
+          "1757"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1772."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Bản đồ phủ Gia Định cuối năm 1815 ghi lại địa danh nào liên quan trực tiếp đến nghề gốm?",
+        "options": [
+          "Xóm Dầu",
+          "Xóm Chiếu",
+          "Xóm Lò Gốm",
+          "Xóm Củi"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Xóm Lò Gốm."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Lò gốm cổ Hưng Lợi được xếp hạng di tích khảo cổ quốc gia vào năm nào?",
+        "options": [
+          "2001",
+          "1993",
+          "2000",
+          "1998"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1998."
+      }
+    ]
   },
   {
     "id": "monument-25",
@@ -14175,7 +15903,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.360621170790981,107.06865658591083",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.360621170790981,107.06865658591083",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Cụm Ăngten Parabol Núi Lớn do quân đội Mỹ dựng vào năm nào?",
+        "options": [
+          "1967",
+          "1963",
+          "1965",
+          "1969"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1967."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Ban đầu cụm di tích có bao nhiêu giàn ăngten parabol?",
+        "options": [
+          "Một",
+          "Hai",
+          "Ba",
+          "Bốn"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Hai."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Mỗi giàn ăngten parabol ban đầu cao khoảng bao nhiêu?",
+        "options": [
+          "19,6 m",
+          "29,6 m",
+          "39,6 m",
+          "49,6 m"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 39,6 m."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Cụm ăngten trên Núi Lớn được xây dựng chủ yếu để phục vụ lĩnh vực nào?",
+        "options": [
+          "Khai thác nước ngầm",
+          "Quan sát thiên văn",
+          "Dẫn đường hàng hải dân sự",
+          "Thông tin liên lạc viba"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thông tin liên lạc viba."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Di tích Ăngten Parabol Núi Lớn được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1993",
+          "1991",
+          "2001",
+          "1989"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-26",
@@ -14710,7 +16510,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.84432300518277,106.79344348946373",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.84432300518277,106.79344348946373",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Bót Dây Thép tọa lạc trên tuyến đường nào?",
+        "options": [
+          "Lã Xuân Oai",
+          "Lê Văn Việt",
+          "Võ Chí Công",
+          "Nguyễn Xiển"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Lê Văn Việt."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Kiến trúc chính của Bót Dây Thép có đặc điểm nào?",
+        "options": [
+          "Nhà dài một tầng mái tranh",
+          "Tháp tròn bằng đá",
+          "Một trệt, một lầu",
+          "Ba tầng hoàn toàn bằng gỗ"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Một trệt, một lầu."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Bên trong Bót Dây Thép có công trình nào dùng để giam giữ người?",
+        "options": [
+          "Một hầm thủy lôi",
+          "Một nhà giam nổi trên sông",
+          "Một dãy chuồng cọp ngoài trời",
+          "Một căn hầm chỉ có lỗ thông hơi phía trên"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Một căn hầm chỉ có lỗ thông hơi phía trên."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Sau khi tiếp quản Bót Dây Thép, lực lượng thực dân Pháp đã sử dụng nơi đây chủ yếu để làm gì?",
+        "options": [
+          "Giam giữ, tra khảo người bị nghi liên quan đến cách mạng",
+          "Làm trạm nghiên cứu nông nghiệp",
+          "Mở trường đào tạo công chức",
+          "Làm kho lương thực dân sự"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Giam giữ, tra khảo người bị nghi liên quan đến cách mạng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Bót Dây Thép được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2004",
+          "1993",
+          "1988",
+          "1998"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-27",
@@ -15248,7 +17120,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.770082759284733,106.68102171071199",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.770082759284733,106.68102171071199",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ nằm tại địa chỉ nào?",
+        "options": [
+          "122/351 Ngô Gia Tự",
+          "287/70 Nguyễn Đình Chiểu",
+          "51/10/14 Cao Thắng",
+          "341/10 Gia Phú"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 51/10/14 Cao Thắng."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Cơ sở này được Xứ ủy Nam Bộ sử dụng sau sự kiện nào?",
+        "options": [
+          "Chiến dịch Hồ Chí Minh năm 1975",
+          "Cách mạng Tháng Tám năm 1945",
+          "Hiệp định Paris năm 1973",
+          "Hiệp định Genève năm 1954"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Hiệp định Genève năm 1954."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tại cơ sở, cán bộ dùng máy thu thanh để nhận tin chủ yếu từ đâu?",
+        "options": [
+          "Đài Phát thanh Hà Nội",
+          "Đài BBC",
+          "Đài Sài Gòn",
+          "Đài Manila"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Đài Phát thanh Hà Nội."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Ai được giao phụ trách cơ sở và việc thu tin, biên tập tài liệu?",
+        "options": [
+          "Trần Văn Lai",
+          "Đỗ Văn Ba",
+          "Trương Hoàng Thanh",
+          "Phan Công Hớn"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Đỗ Văn Ba."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Ban Tuyên huấn Xứ ủy Nam Bộ chuyển từ cơ sở này về Chiến khu Đ vào năm nào?",
+        "options": [
+          "1955",
+          "1960",
+          "1957",
+          "1965"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1957."
+      }
+    ]
   },
   {
     "id": "monument-28",
@@ -15856,7 +17800,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.772156049190235,106.68593062724516",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.772156049190235,106.68593062724516",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Cơ sở giấu vũ khí của Biệt động Thành nằm tại địa chỉ nào hiện nay?",
+        "options": [
+          "51/10/14 Cao Thắng",
+          "183/4 đường 3 Tháng 2",
+          "341/10 Gia Phú",
+          "287/70 Nguyễn Đình Chiểu"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 287/70 Nguyễn Đình Chiểu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Ai là cán bộ Biệt động Thành đã chọn mua căn nhà làm nơi cất giấu vũ khí từ năm 1966?",
+        "options": [
+          "Trần Văn Lai",
+          "Tôn Đức Thắng",
+          "Nguyễn Văn Cừ",
+          "Đỗ Văn Ba"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Trần Văn Lai."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Số vũ khí được cất giấu tại cơ sở này có khối lượng hơn bao nhiêu?",
+        "options": [
+          "1 tấn",
+          "2 tấn",
+          "5 tấn",
+          "500 kg"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 2 tấn."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Đơn vị nào nhận vũ khí tại đây rồi xuất phát tấn công Dinh Độc Lập rạng sáng Tết Mậu Thân 1968?",
+        "options": [
+          "Tiểu đoàn 1 Trung đoàn 33",
+          "Thanh niên Tiền phong",
+          "Đội 5 Biệt động",
+          "Đặc công Rừng Sác"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Đội 5 Biệt động."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Cuộc xuất phát từ cơ sở để tấn công Dinh Độc Lập diễn ra vào rạng sáng ngày nào?",
+        "options": [
+          "05/6/1968",
+          "30/4/1975",
+          "01/01/1968",
+          "31/01/1968"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 31/01/1968."
+      }
+    ]
   },
   {
     "id": "monument-29",
@@ -16411,7 +18427,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.765932992834673,106.67278044315532",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.765932992834673,106.67278044315532",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn còn được gọi bằng mật danh nào?",
+        "options": [
+          "Hầm B",
+          "Hầm D",
+          "Hầm A",
+          "Hầm C"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Hầm B."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hầm B được đưa vào sử dụng từ thời điểm nào?",
+        "options": [
+          "Tháng 1/1960",
+          "Tháng 7/1952",
+          "Tháng 5/1954",
+          "Tháng 7/1956"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Tháng 7/1952."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Cơ sở in ấn này nằm tại địa chỉ nào?",
+        "options": [
+          "5 Châu Văn Liêm",
+          "341/10 Gia Phú",
+          "122/351 Ngô Gia Tự",
+          "287/70 Nguyễn Đình Chiểu"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 122/351 Ngô Gia Tự."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Hoạt động chính tại Hầm B là gì?",
+        "options": [
+          "Điều trị thương binh",
+          "Sửa chữa tàu chiến",
+          "Cất giấu lương thực",
+          "In ấn, sao lưu tài liệu và truyền đơn cách mạng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: In ấn, sao lưu tài liệu và truyền đơn cách mạng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1988",
+          "1976",
+          "1998",
+          "2004"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1988."
+      }
+    ]
   },
   {
     "id": "monument-30",
@@ -16898,7 +18986,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.339254350562614,107.07929444545312",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.339254350562614,107.07929444545312",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Nhà số 86 Phan Chu Trinh hiện mang số nhà nào trên đường Phan Chu Trinh?",
+        "options": [
+          "Số 1",
+          "Số 5",
+          "Số 18",
+          "Số 86"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Số 5."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Chủ nhân người Pháp gắn với ngôi nhà này là ai?",
+        "options": [
+          "Paul Doumer",
+          "Ernest Hébrard",
+          "Pierre Chappus",
+          "Alfred Foulhoux"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Pierre Chappus."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Trong thời kỳ cách mạng, ngôi nhà từng được sử dụng làm cơ sở của cơ quan nào?",
+        "options": [
+          "Ban Tuyên huấn Xứ ủy Nam Bộ",
+          "Ủy ban Việt Minh Sài Gòn",
+          "Trung ương Cục miền Nam",
+          "Văn phòng Tỉnh ủy Bà Rịa – Long Khánh"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Văn phòng Tỉnh ủy Bà Rịa – Long Khánh."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Ngôi nhà mang phong cách kiến trúc chủ yếu nào?",
+        "options": [
+          "Kiến trúc Pháp đầu thế kỷ XX",
+          "Kiến trúc Khmer Angkor",
+          "Kiến trúc nhà dài Tây Nguyên",
+          "Kiến trúc cung đình Huế"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Kiến trúc Pháp đầu thế kỷ XX."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Nhà số 86 Phan Chu Trinh được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1991",
+          "1992",
+          "1994",
+          "1989"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1992."
+      }
+    ]
   },
   {
     "id": "monument-31",
@@ -17451,7 +19611,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.889130485738628,106.59508153607723",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.889130485738628,106.59508153607723",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Dinh Quận Hóc Môn gắn với hai sự kiện đấu tranh nổi bật nào?",
+        "options": [
+          "Phong trào Đông Du và Duy Tân",
+          "Chiến dịch Bình Giã và Xuân Lộc",
+          "Khởi nghĩa 18 Thôn Vườn Trầu và Nam Kỳ khởi nghĩa",
+          "Khởi nghĩa Yên Bái và Xô viết Nghệ Tĩnh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Khởi nghĩa 18 Thôn Vườn Trầu và Nam Kỳ khởi nghĩa."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Ai lãnh đạo cuộc khởi nghĩa 18 Thôn Vườn Trầu năm 1885 đánh vào Dinh Quận?",
+        "options": [
+          "Nguyễn Trung Trực",
+          "Thiên Hộ Dương",
+          "Trương Định",
+          "Phan Công Hớn"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Phan Công Hớn."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Nam Kỳ khởi nghĩa bùng nổ vào ngày nào?",
+        "options": [
+          "23/11/1940",
+          "19/12/1946",
+          "19/8/1945",
+          "23/9/1945"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 23/11/1940."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Dinh Quận Hóc Môn hiện tọa lạc tại địa chỉ nào?",
+        "options": [
+          "Số 18 Lê Lợi",
+          "Số 1 Lý Nam Đế",
+          "Số 5 Châu Văn Liêm",
+          "Số 9 Phan Thúc Duyện"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Số 1 Lý Nam Đế."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Dinh Quận Hóc Môn được công nhận di tích lịch sử văn hóa cấp quốc gia vào năm nào?",
+        "options": [
+          "2002",
+          "1988",
+          "1993",
+          "1990"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-32",
@@ -18033,7 +20265,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.534984337591599,107.2343453676219",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.534984337591599,107.2343453676219",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Địa đạo Long Phước cách trung tâm thành phố Bà Rịa trước đây khoảng bao nhiêu kilômét về phía đông bắc?",
+        "options": [
+          "12 km",
+          "3 km",
+          "5 km",
+          "7 km"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 7 km."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Địa đạo Long Phước là chứng tích của quân dân địa phương trong những cuộc kháng chiến nào?",
+        "options": [
+          "Chống Pháp và chống Mỹ",
+          "Chống Tống và chống Nguyên",
+          "Chống Nhật và chiến tranh biên giới phía Bắc",
+          "Chống Xiêm và chống Thanh"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chống Pháp và chống Mỹ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Trận chiến đấu kéo dài 44 ngày đêm tại Long Phước diễn ra vào năm nào?",
+        "options": [
+          "1954",
+          "1963",
+          "1960",
+          "1968"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1963."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Tuyến địa đạo được trùng tu, khai thác hiện nay gồm một phần địa đạo Ấp Tây và tuyến nào?",
+        "options": [
+          "Ấp Đông",
+          "Ấp Nam",
+          "Ấp Bắc",
+          "Ấp Trung"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Ấp Bắc."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Địa đạo Long Phước được xếp hạng di tích lịch sử cách mạng cấp quốc gia vào ngày nào?",
+        "options": [
+          "03/8/1991",
+          "04/8/1992",
+          "19/01/2001",
+          "09/01/1990"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 09/01/1990."
+      }
+    ]
   },
   {
     "id": "monument-33",
@@ -18650,7 +20954,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.615782349945976,107.23380016501724",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.615782349945976,107.23380016501724",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Trận chiến được di tích ghi dấu diễn ra vào ngày nào?",
+        "options": [
+          "06/6/1969",
+          "30/4/1975",
+          "18/8/1966",
+          "06/6/1968"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 06/6/1969."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đơn vị nào gắn với trận đánh tại Bình Ba được tưởng niệm tại di tích?",
+        "options": [
+          "Đoàn 10 Đặc công Rừng Sác",
+          "Tiểu đoàn 1, Trung đoàn 33",
+          "Tiểu đoàn 307",
+          "Đội 5 Biệt động Thành"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Tiểu đoàn 1, Trung đoàn 33."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Có bao nhiêu cán bộ, chiến sĩ được ghi nhận đã hy sinh trong trận đánh ác liệt này?",
+        "options": [
+          "43",
+          "63",
+          "53",
+          "33"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 53."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Trước khi được xếp hạng quốc gia, khu tưởng niệm trận đánh được xếp hạng di tích cấp tỉnh theo Quyết định 931/QĐ-UBND vào năm nào?",
+        "options": [
+          "2018",
+          "2020",
+          "2010",
+          "2012"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 2012."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2023",
+          "2022",
+          "2018",
+          "2020"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 2023."
+      }
+    ]
   },
   {
     "id": "monument-34",
@@ -19205,7 +21581,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.727831895787673,106.64140501401909",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.727831895787673,106.64140501401909",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Bình Đông tọa lạc trên địa hình nào?",
+        "options": [
+          "Một gò đất đỏ ở Cần Giờ",
+          "Một cù lao giữa rạch Bà Tàng",
+          "Một ngọn đồi ven sông Đồng Nai",
+          "Một triền núi sát biển"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Một cù lao giữa rạch Bà Tàng."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đình Bình Đông được xây dựng từ khoảng thời gian nào?",
+        "options": [
+          "Những năm 1954",
+          "Những năm 1750",
+          "Những năm 1852",
+          "Những năm 1920"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Những năm 1852."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Vua nào đã ban sắc phong cho Đình Bình Đông vào năm 1853?",
+        "options": [
+          "Khải Định",
+          "Gia Long",
+          "Minh Mạng",
+          "Tự Đức"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Tự Đức."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Từ năm 1925, Đình Bình Đông gắn với hoạt động của tổ chức nào do Tôn Đức Thắng thành lập?",
+        "options": [
+          "Công hội bí mật Sài Gòn",
+          "Việt Nam Quốc dân đảng",
+          "Tân Việt Cách mạng Đảng",
+          "Hội Duy Tân"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Công hội bí mật Sài Gòn."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Bình Đông được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1993",
+          "1997",
+          "1994",
+          "2000"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1997."
+      }
+    ]
   },
   {
     "id": "monument-35",
@@ -19778,7 +22226,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.836977371206373,106.78149115859911",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.836977371206373,106.78149115859911",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Phong Phú được lập để thờ vị thần nào theo tín ngưỡng đình làng?",
+        "options": [
+          "Thiên Hậu Thánh Mẫu",
+          "Quan Thánh Đế Quân",
+          "Thần Thành Hoàng",
+          "Ông Bổn"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Thần Thành Hoàng."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Nét đặc trưng trong hình thức thờ tự của Đình Phong Phú là gì?",
+        "options": [
+          "Chỉ thờ ngoài trời, không có chánh điện",
+          "Không có tượng hay bài vị",
+          "Chỉ thờ các vị thần biển",
+          "Thờ tượng tròn thay vì chủ yếu thờ bài vị"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thờ tượng tròn thay vì chủ yếu thờ bài vị."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Trong kháng chiến chống Pháp, Đình Phong Phú từng là nơi thành lập và luyện tập của lực lượng nào?",
+        "options": [
+          "Thanh niên Tiền phong làng Phong Phú",
+          "Đặc công Rừng Sác",
+          "Tiểu đoàn 1 Trung đoàn 33",
+          "Đội 5 Biệt động Thành"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thanh niên Tiền phong làng Phong Phú."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Lễ Kỳ Yên tại Đình Phong Phú thường diễn ra vào thời gian nào?",
+        "options": [
+          "15–17 tháng 7 âm lịch",
+          "14–16 tháng 11 âm lịch",
+          "1–3 tháng Giêng âm lịch",
+          "12–14 tháng 2 âm lịch"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 14–16 tháng 11 âm lịch."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Phong Phú được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "2004",
+          "1993",
+          "1988"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-36",
@@ -20287,7 +22807,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.36917181081688,107.0845814321904",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.36917181081688,107.0845814321904",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Vì sao Đồn Nhà máy nước có vị trí quân sự quan trọng trong thời kỳ kháng chiến chống Pháp?",
+        "options": [
+          "Bảo vệ sân bay quân sự trên Núi Lớn",
+          "Kiểm soát tuyến vận chuyển vũ khí trên biển",
+          "Kiểm soát tuyến đường sắt nối Vũng Tàu với Sài Gòn",
+          "Bảo vệ hệ thống cung cấp nước ngọt quan trọng của Vũng Tàu"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Bảo vệ hệ thống cung cấp nước ngọt quan trọng của Vũng Tàu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đặc điểm nào của Đồn Nhà máy nước cho thấy rõ chức năng phòng thủ của công trình?",
+        "options": [
+          "Có các lỗ châu mai hướng về bốn phía",
+          "Có đường hầm nối trực tiếp ra biển",
+          "Có hệ thống hào nước bao quanh",
+          "Có tháp quan sát hình tròn trên mái"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Có các lỗ châu mai hướng về bốn phía."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Bức phù điêu kỷ niệm được xây dựng trước Đồn Nhà máy nước vào năm 1985 nhằm ghi nhớ sự kiện nào?",
+        "options": [
+          "Ngày giải phóng Vũng Tàu năm 1975",
+          "Hai trận đánh tại đồn năm 1948",
+          "Cuộc Tổng tiến công Tết Mậu Thân năm 1968",
+          "Trận Bình Giã cuối năm 1964"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Hai trận đánh tại đồn năm 1948."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Đồn Nhà máy nước được xếp hạng di tích lịch sử cấp quốc gia vào thời điểm nào?",
+        "options": [
+          "19/01/2001",
+          "25/3/1991",
+          "04/8/1992",
+          "03/8/1991"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 04/8/1992."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Vì sao Đồn Nhà máy nước được di dời khoảng 13 m so với vị trí cũ vào năm 2007?",
+        "options": [
+          "Để phục hồi hệ thống cấp nước cũ",
+          "Để xây dựng khu trưng bày mới",
+          "Để đưa di tích vào khuôn viên bảo tàng",
+          "Để mở rộng đường 30/4 và bảo đảm an toàn giao thông"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Để mở rộng đường 30/4 và bảo đảm an toàn giao thông."
+      }
+    ]
   },
   {
     "id": "monument-37",
@@ -20836,7 +23428,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.660656731295813,107.15437217202476",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.660656731295813,107.15437217202476",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Địa đạo Hắc Dịch trước đây thuộc địa bàn nào của Bà Rịa – Vũng Tàu?",
+        "options": [
+          "Phú Mỹ",
+          "Đất Đỏ",
+          "Long Điền",
+          "Xuyên Mộc"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Phú Mỹ."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Địa đạo Hắc Dịch gắn nổi bật với cuộc kháng chiến nào?",
+        "options": [
+          "Kháng chiến chống quân Thanh",
+          "Kháng chiến chống Mỹ",
+          "Kháng chiến chống Nguyên – Mông",
+          "Khởi nghĩa Cần Vương"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Kháng chiến chống Mỹ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Về quy mô, Địa đạo Hắc Dịch được giới thiệu là một trong những hệ thống địa đạo lớn của khu vực nào?",
+        "options": [
+          "Đồng bằng sông Hồng",
+          "Tây Bắc",
+          "Miền Đông Nam Bộ",
+          "Bắc Trung Bộ"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Miền Đông Nam Bộ."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Địa đạo Hắc Dịch được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1990",
+          "1994",
+          "2010",
+          "2001"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 2001."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Quyết định xếp hạng Địa đạo Hắc Dịch được ban hành vào ngày nào?",
+        "options": [
+          "19/01/2001",
+          "28/12/2001",
+          "03/3/2009",
+          "09/01/1990"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 19/01/2001."
+      }
+    ]
   },
   {
     "id": "monument-38",
@@ -21409,7 +24073,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.744829344447906,106.64910630231155",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.744829344447906,106.64910630231155",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận nằm tại địa chỉ nào?",
+        "options": [
+          "51/10/14 Cao Thắng",
+          "341/10 Gia Phú",
+          "287/70 Nguyễn Đình Chiểu",
+          "122/351 Ngô Gia Tự"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 341/10 Gia Phú."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tổ in bí mật chuyển về hoạt động tại căn nhà 341/10 Gia Phú vào năm nào?",
+        "options": [
+          "1962",
+          "1968",
+          "1965",
+          "1961"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1965."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Dưới nền căn nhà, cán bộ đã đào bao nhiêu hầm bí mật để phục vụ hoạt động in ấn?",
+        "options": [
+          "Bốn",
+          "Năm",
+          "Hai",
+          "Ba"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Ba."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Tờ báo nào được xuất bản tại cơ sở trong giai đoạn hoạt động cao trào 1965–1967?",
+        "options": [
+          "Công Nhân",
+          "Tiền Phong",
+          "Dân Chúng",
+          "Thanh Niên"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Công Nhân."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận được công nhận di tích quốc gia vào năm nào?",
+        "options": [
+          "2004",
+          "1998",
+          "1988",
+          "1993"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1998."
+      }
+    ]
   },
   {
     "id": "monument-39",
@@ -21969,7 +24705,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.804355392612553,106.66177186964825",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.804355392612553,106.66177186964825",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Phan Châu Trinh sinh năm nào?",
+        "options": [
+          "1892",
+          "1862",
+          "1872",
+          "1882"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1872."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Phan Châu Trinh còn được biết đến với hiệu nào?",
+        "options": [
+          "Bạch Vân",
+          "Sào Nam",
+          "Ức Trai",
+          "Tây Hồ"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Tây Hồ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Phan Châu Trinh qua đời vào năm nào?",
+        "options": [
+          "1926",
+          "1925",
+          "1927",
+          "1930"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1926."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Khu mộ Phan Châu Trinh hiện nằm trên đường nào?",
+        "options": [
+          "Phan Chu Trinh",
+          "Phan Thúc Duyện",
+          "Nguyễn Thái Học",
+          "Lê Hồng Phong"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Phan Thúc Duyện."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Mộ Phan Châu Trinh được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1988",
+          "1990",
+          "1994",
+          "2000"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1994."
+      }
+    ]
   },
   {
     "id": "monument-40",
@@ -22510,7 +25318,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.34970623680699,107.07445125486903",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.34970623680699,107.07445125486903",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "“Nhà cao cẳng” tọa lạc tại địa chỉ nào?",
+        "options": [
+          "Số 5 đường Phan Chu Trinh",
+          "Số 1 đường Ba Cu",
+          "Số 14 đường 30/4",
+          "Số 18 đường Lê Lợi"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Số 18 đường Lê Lợi."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trong kháng chiến chống Mỹ, “Nhà cao cẳng” là nơi diễn ra nhiều cuộc họp bí mật của cơ quan nào?",
+        "options": [
+          "Tỉnh ủy Bà Rịa – Long Khánh",
+          "Ủy ban Việt Minh Sài Gòn",
+          "Bộ Tổng tham mưu",
+          "Ban Tuyên huấn Xứ ủy Nam Bộ"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tỉnh ủy Bà Rịa – Long Khánh."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Giá trị nổi bật của “Nhà cao cẳng” số 18 Lê Lợi thuộc loại hình nào?",
+        "options": [
+          "Danh lam thắng cảnh",
+          "Di tích lịch sử cách mạng",
+          "Di tích kiến trúc cung đình",
+          "Di tích khảo cổ"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Di tích lịch sử cách mạng."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "“Nhà cao cẳng” gắn chủ yếu với giai đoạn lịch sử nào?",
+        "options": [
+          "Khởi nghĩa Nam Kỳ năm 1940",
+          "Thời tiền sử",
+          "Kháng chiến chống Mỹ",
+          "Phong trào Cần Vương"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Kháng chiến chống Mỹ."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "“Nhà cao cẳng” số 18 Lê Lợi được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1992",
+          "1993",
+          "1989",
+          "1991"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1991."
+      }
+    ]
   },
   {
     "id": "monument-41",
@@ -23050,7 +25930,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.37033093678849,107.07444299419018",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.37033093678849,107.07444299419018",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Tên thật của má Tám Nhung là gì?",
+        "options": [
+          "Hồ Thị Khuyên",
+          "Nguyễn Thị Minh Khai",
+          "Nguyễn Thị Đẹp",
+          "Lê Thị Riêng"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Hồ Thị Khuyên."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trong những ngày Cách mạng tháng Tám năm 1945, ngôi nhà má Tám Nhung từng là nơi họp của tổ chức nào?",
+        "options": [
+          "Công hội bí mật Sài Gòn",
+          "Ủy ban Mặt trận Việt Minh",
+          "Ban Liên hợp quân sự bốn bên",
+          "An Nam Cộng sản Đảng"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Ủy ban Mặt trận Việt Minh."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Trong hai cuộc kháng chiến, nhà má Tám Nhung có vai trò nổi bật nào?",
+        "options": [
+          "Làm cơ sở khảo cổ học",
+          "Làm xưởng sửa chữa tàu chiến",
+          "Nuôi giấu cán bộ hoạt động trong nội ô",
+          "Làm nơi đặt trận địa pháo ven biển"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Nuôi giấu cán bộ hoạt động trong nội ô."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Địa chỉ hiện nay của di tích nhà má Tám Nhung là gì?",
+        "options": [
+          "Số 1 Ba Cu",
+          "Số 18 Lê Lợi",
+          "Số 5 Phan Chu Trinh",
+          "Số 1 Trần Xuân Độ"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Số 1 Trần Xuân Độ."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Nhà má Tám Nhung được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1989",
+          "1987",
+          "1991",
+          "1993"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1989."
+      }
+    ]
   },
   {
     "id": "monument-42",
@@ -23517,7 +26469,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.369161367333705,107.0776155903031",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.369161367333705,107.0776155903031",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Địa chỉ hiện nay của di tích nhà ông Trương Quang Vinh là gì?",
+        "options": [
+          "1 Trần Xuân Độ",
+          "36/29 Nguyễn An Ninh",
+          "18 Lê Lợi",
+          "5 Phan Chu Trinh"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 36/29 Nguyễn An Ninh."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Nhà ông Trương Quang Vinh được xếp hạng di tích cấp nào?",
+        "options": [
+          "Quốc gia đặc biệt",
+          "Cấp tỉnh",
+          "Quốc gia",
+          "Di sản thế giới"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Quốc gia."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Quyết định xếp hạng nhà ông Trương Quang Vinh được ban hành vào ngày nào?",
+        "options": [
+          "04/8/1992",
+          "14/12/1989",
+          "23/7/1993",
+          "25/3/1991"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 25/3/1991."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị chính của nhà ông Trương Quang Vinh thuộc loại hình di tích nào?",
+        "options": [
+          "Lịch sử cách mạng",
+          "Danh lam thắng cảnh",
+          "Kiến trúc tôn giáo",
+          "Khảo cổ"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Lịch sử cách mạng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Di tích nhà ông Trương Quang Vinh thuộc không gian lịch sử của đô thị nào?",
+        "options": [
+          "Biên Hòa",
+          "Vũng Tàu",
+          "Tây Ninh",
+          "Thủ Dầu Một"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Vũng Tàu."
+      }
+    ]
   },
   {
     "id": "monument-43",
@@ -24057,7 +27081,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.497347165928701,107.16746821340014",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.497347165928701,107.16746821340014",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Tên gọi “Nhà Tròn” thực chất chỉ loại công trình nào?",
+        "options": [
+          "Tháp chuông",
+          "Đài quan sát thiên văn",
+          "Tháp nước",
+          "Hải đăng"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Tháp nước."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Nhà Tròn được chính quyền thực dân Pháp xây dựng ban đầu nhằm mục đích gì?",
+        "options": [
+          "Bảo vệ cửa biển bằng pháo",
+          "Làm nhà ga đường sắt",
+          "Phát tín hiệu vô tuyến",
+          "Cung cấp nước sạch cho sinh hoạt"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Cung cấp nước sạch cho sinh hoạt."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Nhà Tròn cao khoảng bao nhiêu mét?",
+        "options": [
+          "20 m",
+          "30 m",
+          "10 m",
+          "15 m"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 20 m."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Ngày 1/5/1975, tại Nhà Tròn diễn ra hoạt động nào?",
+        "options": [
+          "Lễ ký Hiệp định Paris",
+          "Mít-tinh chào mừng miền Nam hoàn toàn giải phóng",
+          "Hội nghị thành lập An Nam Cộng sản Đảng",
+          "Cuộc bãi công của công nhân Ba Son"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Mít-tinh chào mừng miền Nam hoàn toàn giải phóng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Nhà Tròn – Bà Rịa được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1994",
+          "1989",
+          "1987",
+          "1991"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1987."
+      }
+    ]
   },
   {
     "id": "monument-44",
@@ -24582,7 +27678,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.772980876899364,106.69933094006532",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.772980876899364,106.69933094006532",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Địa điểm thành lập Kỳ bộ nằm tại căn phòng nào của số 88 Lê Lợi?",
+        "options": [
+          "Phòng 8",
+          "Phòng 1",
+          "Phòng 3",
+          "Phòng 5"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Phòng 5."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Kỳ bộ Việt Nam Thanh niên Cách mạng đồng chí Hội ở Nam Kỳ được thành lập vào năm nào?",
+        "options": [
+          "1928",
+          "1925",
+          "1927",
+          "1930"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1928."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tổ chức Kỳ bộ này thuộc tổ chức cách mạng nào do Nguyễn Ái Quốc sáng lập?",
+        "options": [
+          "Đông Dương Cộng sản Liên đoàn",
+          "Hội Việt Nam Cách mạng Thanh niên",
+          "Việt Nam Quốc dân đảng",
+          "Tân Việt Cách mạng Đảng"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Hội Việt Nam Cách mạng Thanh niên."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Địa điểm số 88 Lê Lợi nằm ở khu vực trung tâm đô thị nào?",
+        "options": [
+          "Bà Rịa",
+          "Thủ Dầu Một",
+          "Sài Gòn",
+          "Cần Giờ"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Sài Gòn."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội được xếp hạng quốc gia vào năm nào?",
+        "options": [
+          "1976",
+          "1994",
+          "2004",
+          "1988"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1988."
+      }
+    ]
   },
   {
     "id": "monument-45",
@@ -25117,7 +28285,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.538882112465636,107.12478099385694",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.538882112465636,107.12478099385694",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Khu căn cứ Núi Dinh nằm kề tuyến quốc lộ nào?",
+        "options": [
+          "Quốc lộ 51",
+          "Quốc lộ 13",
+          "Quốc lộ 22",
+          "Quốc lộ 1A"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Quốc lộ 51."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đỉnh cao nhất trong khu vực Núi Dinh là núi nào?",
+        "options": [
+          "Châu Thới",
+          "Ông Trịnh",
+          "Minh Đạm",
+          "Tao Phùng"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Ông Trịnh."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đỉnh Ông Trịnh cao khoảng bao nhiêu mét?",
+        "options": [
+          "404 m",
+          "604 m",
+          "504 m",
+          "304 m"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 504 m."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Khu căn cứ Núi Dinh từng che chở lực lượng cách mạng trong những cuộc kháng chiến nào?",
+        "options": [
+          "Chống Xiêm và chống Thanh",
+          "Chống Minh và chống Pháp",
+          "Chống Tống và chống Nguyên",
+          "Chống Pháp và chống Mỹ"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Chống Pháp và chống Mỹ."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Khu căn cứ Núi Dinh được xếp hạng di tích quốc gia vào ngày nào?",
+        "options": [
+          "16/12/1993",
+          "20/7/1994",
+          "25/3/1991",
+          "04/8/1992"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 16/12/1993."
+      }
+    ]
   },
   {
     "id": "monument-46",
@@ -25655,7 +28895,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.790878038103427,106.68710986507587",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.790878038103427,106.68710986507587",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Sở Chỉ huy tiền phương Phân khu 6 được đặt tại cơ sở kinh doanh nào?",
+        "options": [
+          "Xưởng in Dân Chúng",
+          "Tiệm phở Bình",
+          "Tiệm cơm Năm Đô",
+          "Nhà thuốc Minh Châu"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Tiệm phở Bình."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tiệm phở Bình trước đây nằm trên đường nào?",
+        "options": [
+          "Charner",
+          "Hamelin",
+          "Yên Đỗ",
+          "Catinat"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Yên Đỗ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đường Yên Đỗ nơi có di tích hiện mang tên gì?",
+        "options": [
+          "Nam Kỳ Khởi Nghĩa",
+          "Lê Thị Hồng Gấm",
+          "Nguyễn Trung Trực",
+          "Lý Chính Thắng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Lý Chính Thắng."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Di tích gắn trực tiếp với cuộc Tổng tiến công và nổi dậy nào?",
+        "options": [
+          "Xuân Mậu Thân 1968",
+          "Xuân Ất Mão 1975",
+          "Nam Kỳ 1940",
+          "Tháng Tám 1945"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Xuân Mậu Thân 1968."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Vai trò nổi bật của cơ sở này trong Mậu Thân 1968 là gì?",
+        "options": [
+          "Nơi ký hiệp định đình chiến",
+          "Nơi đặt sở chỉ huy tiền phương và phát lệnh tác chiến",
+          "Nơi tiếp nhận tàu không số",
+          "Nơi tổ chức khai quật khảo cổ"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Nơi đặt sở chỉ huy tiền phương và phát lệnh tác chiến."
+      }
+    ]
   },
   {
     "id": "monument-47",
@@ -26240,7 +29552,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.815347772160434,106.68971140693309",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.815347772160434,106.68971140693309",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Tịnh xá Ngọc Phương thuộc truyền thống Phật giáo nào?",
+        "options": [
+          "Thiền phái Trúc Lâm thời Trần",
+          "Phật giáo Nam tông Khmer",
+          "Hệ phái Khất sĩ",
+          "Mật tông Tây Tạng"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Hệ phái Khất sĩ."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tịnh xá Ngọc Phương hiện là trụ sở trung ương của tổ chức nào?",
+        "options": [
+          "Hội quán người Hải Nam",
+          "Ban trị sự đình làng",
+          "Hội quán người Phúc Kiến",
+          "Ni giới Hệ phái Khất sĩ"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Ni giới Hệ phái Khất sĩ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Ngày 27/10/1974, chính quyền Sài Gòn đã làm gì đối với Tịnh xá Ngọc Phương?",
+        "options": [
+          "Bao vây, phong tỏa tịnh xá",
+          "Chuyển tịnh xá thành bảo tàng",
+          "Tổ chức lễ khánh thành",
+          "Cho xây mới chánh điện"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Bao vây, phong tỏa tịnh xá."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Tịnh xá Ngọc Phương chỉ được giải tỏa hoàn toàn vào thời điểm nào?",
+        "options": [
+          "02/9/1945",
+          "30/4/1975",
+          "20/7/1954",
+          "27/01/1973"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 30/4/1975."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Tịnh xá Ngọc Phương được xếp hạng di tích lịch sử quốc gia vào năm nào?",
+        "options": [
+          "2000",
+          "2004",
+          "1994",
+          "1988"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1994."
+      }
+    ]
   },
   {
     "id": "monument-48",
@@ -26843,7 +30227,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.787056272731409,106.70435105568858",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.787056272731409,106.70435105568858",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Tòa Đại sứ quán Mỹ tại Sài Gòn là một mục tiêu tiến công nổi bật trong sự kiện nào?",
+        "options": [
+          "Cách mạng Tháng Tám 1945",
+          "Chiến dịch Điện Biên Phủ 1954",
+          "Khởi nghĩa Nam Kỳ 1940",
+          "Tổng tiến công và nổi dậy Xuân Mậu Thân 1968"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Tổng tiến công và nổi dậy Xuân Mậu Thân 1968."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đơn vị biệt động nào gắn với trận đánh Tòa Đại sứ quán Mỹ trong Mậu Thân 1968?",
+        "options": [
+          "Đội 11 Biệt động Thành",
+          "Tiểu đoàn 1 Trung đoàn 33",
+          "Đội 5 Biệt động Thành",
+          "Đoàn 10 Đặc công Rừng Sác"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Đội 11 Biệt động Thành."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Địa chỉ của di tích Tòa Đại sứ quán Mỹ là số mấy đường Lê Duẩn?",
+        "options": [
+          "Số 18",
+          "Số 4",
+          "Số 1",
+          "Số 7"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Số 4."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Tòa Đại sứ quán Mỹ chấm dứt sứ mạng vào ngày nào?",
+        "options": [
+          "02/9/1945",
+          "27/01/1973",
+          "30/4/1975",
+          "31/01/1968"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 30/4/1975."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Di tích Tòa Đại sứ quán Mỹ được xếp hạng di tích lịch sử quốc gia vào năm nào?",
+        "options": [
+          "2017",
+          "1988",
+          "1994",
+          "1976"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1976."
+      }
+    ]
   },
   {
     "id": "monument-49",
@@ -27401,7 +30857,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.825870869658717,106.65680532165945",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.825870869658717,106.65680532165945",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Trại Davis nằm trong khu căn cứ quân sự nào?",
+        "options": [
+          "Tân Sơn Nhất",
+          "Long Bình",
+          "Biên Hòa",
+          "Đồng Dù"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tân Sơn Nhất."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hoạt động tại Trại Davis gắn trực tiếp với việc thi hành hiệp định nào?",
+        "options": [
+          "Hiệp định Genève năm 1954",
+          "Hiệp định Paris năm 1973",
+          "Hiệp định Sơ bộ năm 1946",
+          "Hiệp định Élysée năm 1949"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Hiệp định Paris năm 1973."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Hai đoàn đại biểu quân sự cách mạng bắt đầu hoạt động tại Trại Davis từ ngày nào?",
+        "options": [
+          "27/01/1973",
+          "30/4/1975",
+          "28/01/1973",
+          "23/01/1973"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 28/01/1973."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Các đoàn đại biểu cách mạng hoạt động tại Trại Davis trong bao nhiêu ngày?",
+        "options": [
+          "365 ngày",
+          "545 ngày",
+          "700 ngày",
+          "823 ngày"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 823 ngày."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Trại Davis được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2017",
+          "2010",
+          "2020",
+          "2004"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 2017."
+      }
+    ]
   },
   {
     "id": "monument-50",
@@ -27876,7 +31404,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.337952808077102,107.07205855570365",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.337952808077102,107.07205855570365",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Trận địa pháo cổ Cầu Đá thuộc khu vực nào của Vũng Tàu?",
+        "options": [
+          "Bãi Sau – đường Thùy Vân",
+          "Cầu Đá – đường Hạ Long",
+          "Long Sơn – đường Hoàng Sa",
+          "Bãi Dâu – đường Trần Phú"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Cầu Đá – đường Hạ Long."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trận địa pháo cổ Cầu Đá là một bộ phận của hệ thống phòng thủ do lực lượng nào xây dựng?",
+        "options": [
+          "Quân đội Mỹ",
+          "Quân đội Nhật sau 1945",
+          "Thực dân Pháp",
+          "Nhà Nguyễn"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Thực dân Pháp."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Theo tư liệu về di tích, Trận địa pháo cổ Cầu Đá có bao nhiêu khẩu pháo lớn?",
+        "options": [
+          "3",
+          "6",
+          "2",
+          "4"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 4."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Mục tiêu chiến lược của hệ thống pháo ven biển Vũng Tàu là kiểm soát tuyến nào?",
+        "options": [
+          "Đường hàng hải từ biển vào Sài Gòn",
+          "Tuyến biên giới Việt – Campuchia",
+          "Đường sắt Sài Gòn – Mỹ Tho",
+          "Đường bộ lên Tây Nguyên"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Đường hàng hải từ biển vào Sài Gòn."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Trận địa pháo cổ Cầu Đá được xếp hạng di tích quốc gia vào ngày nào?",
+        "options": [
+          "04/8/1992",
+          "20/7/1994",
+          "18/01/1993",
+          "23/7/1993"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 20/7/1994."
+      }
+    ]
   },
   {
     "id": "monument-51",
@@ -28375,7 +31975,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.328571373067225,107.08243963200462",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.328571373067225,107.08243963200462",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Trận địa pháo cổ Tao Phùng nằm trên ngọn núi nào?",
+        "options": [
+          "Núi Châu Thới",
+          "Núi Lớn",
+          "Núi Nhỏ",
+          "Núi Dinh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Núi Nhỏ."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trận địa Tao Phùng thuộc hệ thống phòng thủ ven biển do lực lượng nào xây dựng?",
+        "options": [
+          "Quân đội Xiêm",
+          "Quân đội Mỹ",
+          "Nhà Tây Sơn",
+          "Thực dân Pháp"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thực dân Pháp."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Trận địa Tao Phùng cùng Cầu Đá và Núi Lớn tạo thành hệ thống nhằm bảo vệ khu vực nào?",
+        "options": [
+          "Vũng Tàu và tuyến biển vào Sài Gòn",
+          "Cửa khẩu Mộc Bài",
+          "Đồng bằng sông Cửu Long",
+          "Cao nguyên Lâm Viên"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Vũng Tàu và tuyến biển vào Sài Gòn."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Loại hình của Trận địa pháo cổ Tao Phùng trong hồ sơ xếp hạng là gì?",
+        "options": [
+          "Di tích khảo cổ",
+          "Di tích lịch sử",
+          "Danh lam thắng cảnh",
+          "Di tích kiến trúc tôn giáo"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Di tích lịch sử."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Trận địa pháo cổ trên núi Tao Phùng được xếp hạng di tích quốc gia vào ngày nào?",
+        "options": [
+          "23/7/1993",
+          "20/7/1994",
+          "18/01/1993",
+          "14/12/1989"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 18/01/1993."
+      }
+    ]
   },
   {
     "id": "monument-52",
@@ -28906,7 +32578,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.381098149862096,107.05852023440399",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.381098149862096,107.05852023440399",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Trận địa pháo cổ và Hầm thủy lôi nằm trên ngọn núi nào?",
+        "options": [
+          "Núi Nhỏ",
+          "Núi Dinh",
+          "Núi Minh Đạm",
+          "Núi Lớn"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Núi Lớn."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hai lực lượng nước ngoài nào được ghi nhận gắn với việc xây dựng các công trình quân sự tại Núi Lớn?",
+        "options": [
+          "Pháp và Nhật",
+          "Pháp và Bồ Đào Nha",
+          "Nhật và Hà Lan",
+          "Mỹ và Anh"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Pháp và Nhật."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Hầm thủy lôi tại Núi Lớn gắn với nhiệm vụ phòng thủ ở môi trường nào?",
+        "options": [
+          "Đường hàng không",
+          "Đường biển",
+          "Đường núi",
+          "Đường sắt"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Đường biển."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Trận địa pháo cổ và Hầm thủy lôi Núi Lớn được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1994",
+          "2001",
+          "1992",
+          "1989"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1992."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Giá trị nổi bật của cụm di tích Núi Lớn là minh chứng cho hệ thống nào?",
+        "options": [
+          "Giao thương gốm cổ",
+          "Tín ngưỡng đình làng",
+          "Thủy lợi nông nghiệp Nam Bộ",
+          "Phòng thủ quân sự ven biển Vũng Tàu"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Phòng thủ quân sự ven biển Vũng Tàu."
+      }
+    ]
   },
   {
     "id": "monument-53",
@@ -29461,7 +33205,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.769025732274935,106.69783421085772",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.769025732274935,106.69783421085772",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Báo Dân Chúng ra đời vào năm nào?",
+        "options": [
+          "1938",
+          "1945",
+          "1929",
+          "1936"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1938."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trụ sở Báo Dân Chúng khi đó nằm tại số 43 đường nào?",
+        "options": [
+          "Pellerin",
+          "Hamelin",
+          "Catinat",
+          "Bonard"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Hamelin."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đường Hamelin xưa nay là đường nào?",
+        "options": [
+          "Pasteur",
+          "Lý Tự Trọng",
+          "Lê Thị Hồng Gấm",
+          "Nguyễn Trung Trực"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Lê Thị Hồng Gấm."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Báo Dân Chúng là diễn đàn tuyên truyền hệ tư tưởng nào?",
+        "options": [
+          "Tư tưởng phục hồi chế độ phong kiến",
+          "Chủ nghĩa quân chủ lập hiến",
+          "Chủ nghĩa thực dân",
+          "Chủ nghĩa Mác – Lênin và đường lối cách mạng của Đảng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Chủ nghĩa Mác – Lênin và đường lối cách mạng của Đảng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Trụ sở Báo Dân Chúng được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1988",
+          "1976",
+          "1994",
+          "2012"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1988."
+      }
+    ]
   },
   {
     "id": "monument-54",
@@ -29980,7 +33796,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.802987698357986,106.68733333079545",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.802987698357986,106.68733333079545",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Phái đoàn liên lạc tại Sài Gòn hoạt động trong khoảng thời gian nào?",
+        "options": [
+          "1945–1946",
+          "1955–1958",
+          "1968–1972",
+          "1973–1975"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1955–1958."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hoạt động của Phái đoàn gắn với việc giám sát thực hiện hiệp định nào?",
+        "options": [
+          "Hiệp định Paris năm 1973",
+          "Hiệp định Sơ bộ năm 1946",
+          "Hiệp định Genève năm 1954",
+          "Hiệp định Élysée năm 1949"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Hiệp định Genève năm 1954."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Trụ sở Phái đoàn nằm tại địa chỉ nào?",
+        "options": [
+          "43 Lê Thị Hồng Gấm",
+          "4 Lê Duẩn",
+          "7 Lý Chính Thắng",
+          "87A Trần Kế Xương"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 87A Trần Kế Xương."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Phái đoàn trực thuộc cơ quan quân sự nào của Việt Nam?",
+        "options": [
+          "Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam",
+          "Bộ chỉ huy quân đội Pháp",
+          "Ban Liên hợp quân sự bốn bên",
+          "Bộ Tư lệnh Hải quân Việt Nam Cộng hòa"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Trụ sở Phái đoàn liên lạc được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1994",
+          "1988",
+          "2004",
+          "1976"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1988."
+      }
+    ]
   },
   {
     "id": "monument-55",
@@ -30488,7 +34376,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.34798620615014,107.07313618065731",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.34798620615014,107.07313618065731",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Trụ sở Ủy ban Việt Minh tại Vũng Tàu hiện nằm ở địa chỉ nào?",
+        "options": [
+          "Số 1 Trần Xuân Độ",
+          "Số 6 Trần Phú",
+          "Số 1 Ba Cu",
+          "Số 18 Lê Lợi"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Số 1 Ba Cu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trụ sở này gắn đặc biệt với thắng lợi cách mạng nào ở Vũng Tàu?",
+        "options": [
+          "Chiến dịch Bình Giã 1964",
+          "Hiệp định Paris 1973",
+          "Tổng tiến công Mậu Thân 1968",
+          "Cách mạng tháng Tám năm 1945"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Cách mạng tháng Tám năm 1945."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Công trình hiện được sử dụng với chức năng nào?",
+        "options": [
+          "Nhà truyền thống cách mạng Vũng Tàu",
+          "Nhà ga đường sắt",
+          "Bảo tàng khảo cổ học",
+          "Trụ sở hội quán người Hoa"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Nhà truyền thống cách mạng Vũng Tàu."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Loại hình giá trị chính của Trụ sở Ủy ban Việt Minh tại Vũng Tàu là gì?",
+        "options": [
+          "Di tích kiến trúc Phật giáo",
+          "Di tích lịch sử cách mạng",
+          "Di tích khảo cổ",
+          "Danh lam thắng cảnh"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Di tích lịch sử cách mạng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Trụ sở Ủy ban Việt Minh tại Vũng Tàu được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1994",
+          "1987",
+          "1991",
+          "1989"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1991."
+      }
+    ]
   },
   {
     "id": "monument-56",
@@ -31011,7 +34971,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.35087105854076,107.06866876117707",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.35087105854076,107.06866876117707",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Bạch Dinh có tên tiếng Pháp là gì?",
+        "options": [
+          "Palais Bleu",
+          "Villa Rouge",
+          "Maison Verte",
+          "Villa Blanche"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Villa Blanche."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Bạch Dinh được khởi công xây dựng vào năm nào?",
+        "options": [
+          "1898",
+          "1885",
+          "1890",
+          "1907"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1898."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Bạch Dinh ban đầu được xây dựng làm nơi nghỉ mát cho Toàn quyền Đông Dương nào?",
+        "options": [
+          "Jean Decoux",
+          "Paul Doumer",
+          "Albert Sarraut",
+          "Jules Brévié"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Paul Doumer."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Vị vua nào từng bị giam lỏng tại Bạch Dinh từ năm 1907 đến 1916?",
+        "options": [
+          "Hàm Nghi",
+          "Duy Tân",
+          "Thành Thái",
+          "Bảo Đại"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Thành Thái."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Bạch Dinh được công nhận là di tích lịch sử văn hóa quốc gia vào năm nào?",
+        "options": [
+          "1989",
+          "1994",
+          "2001",
+          "1992"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1992."
+      }
+    ]
   },
   {
     "id": "monument-57",
@@ -31581,7 +35613,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.7880998220292,106.70473082107647",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.7880998220292,106.70473082107647",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Bảo tàng Lịch sử Thành phố Hồ Chí Minh được thành lập năm 1929 với tên ban đầu là gì?",
+        "options": [
+          "Musée Blanchard de la Brosse",
+          "Musée Paul Doumer",
+          "Musée de Cochinchine",
+          "Musée de Gia Định"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Musée Blanchard de la Brosse."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Bảo tàng được xem là bảo tàng đầu tiên ở khu vực nào của Việt Nam?",
+        "options": [
+          "Tây Nguyên",
+          "Phía Nam",
+          "Bắc Trung Bộ",
+          "Phía Bắc"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Phía Nam."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tòa nhà trước của Bảo tàng được xây dựng vào năm nào?",
+        "options": [
+          "1929",
+          "1970",
+          "1927",
+          "1885"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1927."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Ai là kiến trúc sư thiết kế tòa nhà trước của Bảo tàng?",
+        "options": [
+          "Ngô Viết Thụ",
+          "Ernest Hébrard",
+          "Alfred Foulhoux",
+          "Auguste Delaval"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Auguste Delaval."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Bảo tàng chính thức mang tên Bảo tàng Lịch sử Thành phố Hồ Chí Minh từ năm nào?",
+        "options": [
+          "1979",
+          "1988",
+          "1956",
+          "1975"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1979."
+      }
+    ]
   },
   {
     "id": "monument-58",
@@ -32199,7 +36303,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.776016764087215,106.69955393549671",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.776016764087215,106.69955393549671",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Tòa nhà Bảo tàng Thành phố Hồ Chí Minh được xây dựng trong khoảng thời gian nào?",
+        "options": [
+          "1927–1929",
+          "1885–1890",
+          "1863–1880",
+          "1902–1908"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1885–1890."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Ai là kiến trúc sư thiết kế tòa nhà Bảo tàng Thành phố Hồ Chí Minh?",
+        "options": [
+          "Gustave Eiffel",
+          "Auguste Delaval",
+          "Alfred Foulhoux",
+          "Ngô Viết Thụ"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Alfred Foulhoux."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Mục đích dự kiến ban đầu khi xây tòa nhà là gì?",
+        "options": [
+          "Làm trường đại học",
+          "Làm nhà ga xe lửa",
+          "Làm trụ sở ngân hàng",
+          "Làm Bảo tàng Thương mại trưng bày sản phẩm Nam Kỳ"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Làm Bảo tàng Thương mại trưng bày sản phẩm Nam Kỳ."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Trước năm 1975, tòa nhà thường được gọi bằng tên nào?",
+        "options": [
+          "Dinh Gia Long",
+          "Dinh Norodom",
+          "Bạch Dinh",
+          "Dinh Thượng Thơ"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Dinh Gia Long."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Bảo tàng Thành phố Hồ Chí Minh hiện tọa lạc tại số 65 đường nào?",
+        "options": [
+          "Lê Duẩn",
+          "Lý Tự Trọng",
+          "Nam Kỳ Khởi Nghĩa",
+          "Nguyễn Trung Trực"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Lý Tự Trọng."
+      }
+    ]
   },
   {
     "id": "monument-59",
@@ -32782,7 +36958,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.778819897568113,106.64918370829508",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.778819897568113,106.64918370829508",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Chùa Giác Lâm được xây dựng vào năm nào?",
+        "options": [
+          "1698",
+          "1772",
+          "1744",
+          "1798"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1744."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Người có công xây dựng chùa ban đầu là ai?",
+        "options": [
+          "Trịnh Hoài Đức",
+          "Nguyễn Hữu Cảnh",
+          "Lê Văn Duyệt",
+          "Lý Thụy Long"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Lý Thụy Long."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tên ban đầu của chùa Giác Lâm là gì?",
+        "options": [
+          "Sơn Can",
+          "Phụng Sơn",
+          "Sắc Tứ",
+          "Giác Viên"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Sơn Can."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Chùa Giác Lâm được xem là tổ đình của dòng thiền nào ở Nam Bộ?",
+        "options": [
+          "Tào Động Nhật Bản",
+          "Lâm Tế",
+          "Thiên Thai",
+          "Trúc Lâm Yên Tử"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Lâm Tế."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chùa Giác Lâm được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "2000",
+          "1988",
+          "1993"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1988."
+      }
+    ]
   },
   {
     "id": "monument-60",
@@ -33310,7 +37558,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.76314796160562,106.63918448311219",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.76314796160562,106.63918448311219",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Chùa Giác Viên còn có tên dân gian nào?",
+        "options": [
+          "Chùa Ông Bổn",
+          "Chùa Bà",
+          "Chùa Cây Mai",
+          "Chùa Hố Đất"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Chùa Hố Đất."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Nguồn gốc hình thành chùa Giác Viên gắn với đợt đại trùng tu chùa nào vào năm 1798?",
+        "options": [
+          "Chùa Giác Lâm",
+          "Chùa Sắc Tứ Trường Thọ",
+          "Chùa Phụng Sơn",
+          "Chùa Hội Sơn"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chùa Giác Lâm."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Vật liệu gỗ phục vụ trùng tu năm 1798 được vận chuyển chủ yếu bằng phương thức nào?",
+        "options": [
+          "Đường bộ bằng xe cơ giới",
+          "Đường thủy qua hệ thống rạch",
+          "Đường sắt",
+          "Đường hàng không"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Đường thủy qua hệ thống rạch."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Chùa Giác Viên trước đây nằm bên con rạch nào?",
+        "options": [
+          "Rạch Cầu Bông",
+          "Rạch Bến Nghé",
+          "Rạch Hố Đất",
+          "Rạch Thị Nghè"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Rạch Hố Đất."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chùa Giác Viên được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "1988",
+          "1991",
+          "1993"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-61",
@@ -33860,7 +38180,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.980312946035541,106.65886278772359",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.980312946035541,106.65886278772359",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Ai là người khai sơn chùa Hội Khánh vào năm 1741?",
+        "options": [
+          "Thiền sư Đại Ngạn",
+          "Hòa thượng Chánh Đắc",
+          "Thiền sư Khánh Long",
+          "Hòa thượng Liễu Kiện"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thiền sư Đại Ngạn."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Sự kiện nào xảy ra với chùa Hội Khánh vào năm 1861?",
+        "options": [
+          "Được vua ban sắc tứ",
+          "Bị quân Pháp thiêu hủy",
+          "Được xây tháp bảy tầng",
+          "Được xếp hạng quốc gia"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Bị quân Pháp thiêu hủy."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Nhân vật nào cùng các nhà sư chùa Hội Khánh tham gia Hội Danh dự trong giai đoạn 1923–1926?",
+        "options": [
+          "Phan Châu Trinh",
+          "Huỳnh Thúc Kháng",
+          "Nguyễn Sinh Sắc",
+          "Nguyễn An Ninh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Nguyễn Sinh Sắc."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Bộ tượng nào là hiện vật nghệ thuật nổi bật được lưu giữ tại chùa Hội Khánh?",
+        "options": [
+          "Mười hai tượng đá Chăm",
+          "Bộ tượng đồng Cửu Đỉnh",
+          "Tượng binh sĩ bằng đất nung",
+          "Thập Bát La Hán bằng gỗ mít sơn son thếp vàng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thập Bát La Hán bằng gỗ mít sơn son thếp vàng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chùa Hội Khánh được xếp hạng di tích quốc gia vào ngày nào?",
+        "options": [
+          "07/01/1993",
+          "26/4/2014",
+          "28/3/2019",
+          "28/12/2001"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 07/01/1993."
+      }
+    ]
   },
   {
     "id": "monument-62",
@@ -34428,7 +38820,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.871140824793784,106.84095365214384",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.871140824793784,106.84095365214384",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Ai được ghi nhận là người khai lập chùa Hội Sơn?",
+        "options": [
+          "Hòa thượng Chánh Đắc",
+          "Thiền sư Khánh Long",
+          "Thiền sư Liễu Quán",
+          "Thiền sư Đại Ngạn"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Thiền sư Khánh Long."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Chùa Hội Sơn tọa lạc trên dạng địa hình nào?",
+        "options": [
+          "Một hang đá sát biển",
+          "Một giồng cát ven biển",
+          "Một ngọn đồi cao khoảng 15 m",
+          "Một cù lao giữa sông"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Một ngọn đồi cao khoảng 15 m."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tên gọi nào của chùa gắn với vị thiền sư khai lập?",
+        "options": [
+          "Chùa Cây Mai",
+          "Chùa Hố Đất",
+          "Chùa Gò",
+          "Chùa Khánh Long"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Chùa Khánh Long."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Sự cố nghiêm trọng nào xảy ra tại chùa Hội Sơn vào tháng 7/2012?",
+        "options": [
+          "Hỏa hoạn làm chùa cổ bị cháy",
+          "Sét đánh đổ bảo tháp",
+          "Sạt lở làm sập tam quan",
+          "Lũ lớn cuốn mất chánh điện"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Hỏa hoạn làm chùa cổ bị cháy."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chùa Hội Sơn được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2004",
+          "1993",
+          "1988",
+          "1998"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-63",
@@ -34981,7 +39445,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.485861508976331,107.21752235304554",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.485861508976331,107.21752235304554",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Tên gọi Long Bàn được giải thích từ đặc điểm tự nhiên nào quanh chùa?",
+        "options": [
+          "Có dãy núi hình bàn cờ",
+          "Có hồ nước hình rồng",
+          "Có nhiều tảng đá phẳng như bàn thạch",
+          "Có hai cây long não cổ thụ"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Có nhiều tảng đá phẳng như bàn thạch."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Người dân địa phương còn gọi chùa Long Bàn bằng tên nào?",
+        "options": [
+          "Chùa Ông Bổn",
+          "Chùa Gò",
+          "Chùa Cây Mai",
+          "Chùa làng Long Điền"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Chùa làng Long Điền."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Chùa Long Bàn nằm ở phần cuối của dãy núi nào?",
+        "options": [
+          "Thùy Vân",
+          "Tao Phùng",
+          "Núi Dinh",
+          "Minh Đạm"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thùy Vân."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị nổi bật được nhắc đến ở chùa Long Bàn là gì?",
+        "options": [
+          "Hệ thống địa đạo nhiều tầng",
+          "Kiến trúc trang trí và hệ thống tượng, hiện vật cổ",
+          "Trận địa pháo ven biển",
+          "Di chỉ mộ chum tiền sử"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Kiến trúc trang trí và hệ thống tượng, hiện vật cổ."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chùa Long Bàn được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1989",
+          "1995",
+          "1991",
+          "2001"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1991."
+      }
+    ]
   },
   {
     "id": "monument-64",
@@ -35531,7 +40067,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.756620025748866,106.64480484242095",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.756620025748866,106.64480484242095",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Chùa Phụng Sơn còn được gọi bằng tên dân gian nào?",
+        "options": [
+          "Chùa Cây Mai",
+          "Chùa Hố Đất",
+          "Chùa Ông",
+          "Chùa Gò"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Chùa Gò."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Chùa Phụng Sơn hiện tọa lạc trên đường nào?",
+        "options": [
+          "Ba Tháng Hai",
+          "Nguyễn Trãi",
+          "Phan Văn Trị",
+          "Lạc Long Quân"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Ba Tháng Hai."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Điểm nổi bật của chùa Phụng Sơn được giới thiệu là sự kết hợp hài hòa giữa kiến trúc với yếu tố nào?",
+        "options": [
+          "Cảng sông cổ",
+          "Cảnh quan thiên nhiên",
+          "Thành lũy quân sự",
+          "Hệ thống hầm ngầm"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Cảnh quan thiên nhiên."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Chùa Phụng Sơn được xây trên nền một ngôi chùa cũ của cộng đồng nào?",
+        "options": [
+          "Người Hoa Hải Nam",
+          "Người Nhật",
+          "Người Khmer",
+          "Người Chăm"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Người Khmer."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chùa Phụng Sơn được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "2002",
+          "1993",
+          "1988"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1988."
+      }
+    ]
   },
   {
     "id": "monument-65",
@@ -36070,7 +40678,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.371205473766906,107.07952767596208",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.371205473766906,107.07952767596208",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Phước Lâm Tự trong danh sách di tích thuộc khu vực Bà Rịa – Vũng Tàu cũ là loại công trình nào?",
+        "options": [
+          "Chùa Phật giáo",
+          "Nhà thờ Công giáo",
+          "Đình làng",
+          "Hội quán người Hoa"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chùa Phật giáo."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tên gọi “Phước Lâm Tự” có chữ “Tự” dùng để chỉ loại cơ sở nào?",
+        "options": [
+          "Miếu thờ Thành hoàng",
+          "Chùa",
+          "Lăng",
+          "Đình"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Chùa."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Không gian thờ tự trung tâm của Phước Lâm Tự gắn chủ yếu với tôn giáo nào?",
+        "options": [
+          "Cao Đài",
+          "Công giáo",
+          "Phật giáo",
+          "Hồi giáo"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Phật giáo."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị của Phước Lâm Tự cần được nhận diện chủ yếu qua nhóm yếu tố nào?",
+        "options": [
+          "Địa đạo và giao thông hào",
+          "Hệ thống pháo và hầm thủy lôi",
+          "Mộ chum và đồ tùy táng",
+          "Lịch sử ngôi chùa, kiến trúc và hiện vật thờ tự"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Lịch sử ngôi chùa, kiến trúc và hiện vật thờ tự."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Khi phân loại trong bộ 103 di tích, Phước Lâm Tự gần nhất với nhóm nào?",
+        "options": [
+          "Chùa và cơ sở Phật giáo cổ",
+          "Căn cứ kháng chiến",
+          "Di chỉ khảo cổ",
+          "Công trình hành chính thuộc địa"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chùa và cơ sở Phật giáo cổ."
+      }
+    ]
   },
   {
     "id": "monument-66",
@@ -36615,7 +41295,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.842216656202178,106.7887960814335",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.842216656202178,106.7887960814335",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Chùa Phước Tường hiện nằm trên đường nào?",
+        "options": [
+          "Nguyễn Xiển",
+          "Lã Xuân Oai",
+          "Chương Dương",
+          "Lê Văn Việt"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Lã Xuân Oai."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Chùa Phước Tường thuộc khu vực nào của Thành phố Hồ Chí Minh trước khi tổ chức lại đơn vị hành chính?",
+        "options": [
+          "Quận 5",
+          "Quận Gò Vấp",
+          "Thành phố Thủ Đức",
+          "Huyện Cần Giờ"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Thành phố Thủ Đức."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Loại hình giá trị nổi bật của chùa Phước Tường là gì?",
+        "options": [
+          "Di tích chiến trường",
+          "Di chỉ mộ táng",
+          "Công trình phòng thủ ven biển",
+          "Kiến trúc nghệ thuật Phật giáo"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Kiến trúc nghệ thuật Phật giáo."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Không gian chính điện của chùa Phước Tường phục vụ hoạt động nào?",
+        "options": [
+          "Thờ Phật và sinh hoạt Phật giáo",
+          "Giam giữ tù nhân",
+          "Quan sát tàu biển",
+          "Hội họp quân sự"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thờ Phật và sinh hoạt Phật giáo."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chùa Phước Tường được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "1993",
+          "2004",
+          "1988"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-67",
@@ -37170,7 +41922,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.828500565698352,106.68408850683683",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.828500565698352,106.68408850683683",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Chùa Sắc Tứ Trường Thọ thuộc dòng thiền nào?",
+        "options": [
+          "Tào Động Nhật Bản",
+          "Nam tông Khmer",
+          "Lâm Tế Liễu Quán",
+          "Trúc Lâm Yên Tử"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Lâm Tế Liễu Quán."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tên cũ của chùa Sắc Tứ Trường Thọ là gì?",
+        "options": [
+          "Phước Tường",
+          "Giác Viên",
+          "Hội Sơn",
+          "Vĩnh Trường"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Vĩnh Trường."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Năm 1822, vua Minh Mạng ban cho chùa tên nào?",
+        "options": [
+          "Pháp Vũ",
+          "Hội Khánh",
+          "Trường Thọ",
+          "Sơn Can"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Pháp Vũ."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Vì sao chùa phải dời khỏi khu vực cũ khoảng năm 1859?",
+        "options": [
+          "Triều đình yêu cầu chuyển chùa ra Huế",
+          "Quân Pháp đánh chiếm Gia Định và phá các công trình để lập phòng tuyến",
+          "Một trận động đất lớn",
+          "Sông đổi dòng làm sạt lở toàn bộ khuôn viên"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Quân Pháp đánh chiếm Gia Định và phá các công trình để lập phòng tuyến."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Chùa Sắc Tứ Trường Thọ được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2004",
+          "1993",
+          "2000",
+          "1998"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 2000."
+      }
+    ]
   },
   {
     "id": "monument-68",
@@ -37785,7 +42609,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.386575500382035,107.2341463440673",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.386575500382035,107.2341463440673",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Theo truyền thuyết phổ biến, Dinh Cô thờ cô gái có tên gì?",
+        "options": [
+          "Lê Thị Riêng",
+          "Nguyễn Thị Đẹp",
+          "Võ Thị Sáu",
+          "Lê Thị Hồng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Lê Thị Hồng."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Người dân Long Hải tôn xưng Bà Cô bằng danh hiệu nào?",
+        "options": [
+          "Long Hải Thần Nữ",
+          "Thiên Hậu Thánh Mẫu",
+          "Thủy Long Thần Nữ",
+          "Bà Chúa Xứ"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Long Hải Thần Nữ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Mộ Cô nằm trên địa hình nào, cách điện thờ Dinh Cô khoảng 1 km?",
+        "options": [
+          "Núi Tao Phùng",
+          "Đồi Cô Sơn",
+          "Núi Lớn",
+          "Đồi Hội Sơn"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Đồi Cô Sơn."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Lối lên điện Cô có bao nhiêu bậc tam cấp?",
+        "options": [
+          "27",
+          "47",
+          "37",
+          "57"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 37."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Dinh Cô được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1991",
+          "1993",
+          "2001",
+          "1995"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1995."
+      }
+    ]
   },
   {
     "id": "monument-69",
@@ -38350,7 +43246,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.79174764740094,106.69788126124845",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.79174764740094,106.69788126124845",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Điện Ngọc Hoàng còn thường được gọi bằng tên nào?",
+        "options": [
+          "Chùa Ngọc Hoàng",
+          "Chùa Cây Mai",
+          "Chùa Hố Đất",
+          "Chùa Gò"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chùa Ngọc Hoàng."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Điện Ngọc Hoàng hiện nằm trên đường nào?",
+        "options": [
+          "Hải Thượng Lãn Ông",
+          "Mai Thị Lựu",
+          "Phan Văn Trị",
+          "Nguyễn Trãi"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Mai Thị Lựu."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Nhân vật được thờ ở vị trí trung tâm, tạo nên tên gọi của di tích là ai?",
+        "options": [
+          "Thành hoàng Bổn cảnh",
+          "Lê Văn Duyệt",
+          "Ngọc Hoàng Thượng Đế",
+          "Quan Thánh Đế Quân"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Ngọc Hoàng Thượng Đế."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Điện Ngọc Hoàng nổi bật về loại hình giá trị nào?",
+        "options": [
+          "Lịch sử quân sự ven biển",
+          "Địa đạo kháng chiến",
+          "Khảo cổ học tiền sử",
+          "Kiến trúc nghệ thuật và tín ngưỡng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Kiến trúc nghệ thuật và tín ngưỡng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Điện Ngọc Hoàng được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1994",
+          "2001",
+          "1988",
+          "1993"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1994."
+      }
+    ]
   },
   {
     "id": "monument-70",
@@ -38905,7 +43873,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.811700389346413,106.69644906762382",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.811700389346413,106.69644906762382",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Bình Hòa hiện nằm trên đường nào?",
+        "options": [
+          "Chương Dương",
+          "Chu Văn An",
+          "Mai Văn Ngọc",
+          "Nguyễn Văn Lượng"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Chu Văn An."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đình Bình Hòa là loại hình cơ sở tín ngưỡng truyền thống nào?",
+        "options": [
+          "Nhà thờ Công giáo",
+          "Hội quán người Hoa",
+          "Đình làng Nam Bộ",
+          "Chùa Phật giáo"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Đình làng Nam Bộ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đối tượng thờ chính thường gắn với chức năng của Đình Bình Hòa là ai?",
+        "options": [
+          "Phật Thích Ca",
+          "Ngọc Hoàng Thượng Đế",
+          "Thiên Hậu Thánh Mẫu",
+          "Thành hoàng và các bậc tiền hiền"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thành hoàng và các bậc tiền hiền."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Ngoài thờ tự, đình làng như Bình Hòa có vai trò truyền thống nào đối với cư dân địa phương?",
+        "options": [
+          "Không gian sinh hoạt cộng đồng và lễ hội",
+          "Trạm liên lạc vô tuyến",
+          "Nhà máy sản xuất gốm",
+          "Kho quân khí ven biển"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Không gian sinh hoạt cộng đồng và lễ hội."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Bình Hòa được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1988",
+          "1993",
+          "1997",
+          "2002"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-71",
@@ -39468,7 +44508,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.781495968270306,106.67305225228048",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.781495968270306,106.67305225228048",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Chí Hòa hiện tọa lạc trên tuyến đường nào?",
+        "options": [
+          "Ba Tháng Hai",
+          "Lạc Long Quân",
+          "Cách Mạng Tháng Tám",
+          "Trần Hưng Đạo"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Cách Mạng Tháng Tám."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đình Chí Hòa thuộc loại hình kiến trúc truyền thống nào?",
+        "options": [
+          "Chùa Phật giáo",
+          "Hội quán",
+          "Lăng mộ",
+          "Đình làng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Đình làng."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Không gian thờ chính của đình Chí Hòa gắn với tín ngưỡng nào?",
+        "options": [
+          "Thờ Thành hoàng và tiền hiền",
+          "Thờ Quan Đế",
+          "Thờ Phật A Di Đà",
+          "Thờ Thiên Hậu"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thờ Thành hoàng và tiền hiền."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị kiến trúc của đình Chí Hòa phản ánh rõ văn hóa cộng đồng nào?",
+        "options": [
+          "Thương cảng Hội An",
+          "Làng xã Nam Bộ",
+          "Làng Chăm Ninh Thuận",
+          "Cung đình Huế"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Làng xã Nam Bộ."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Chí Hòa được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "2004",
+          "1996",
+          "1993"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1996."
+      }
+    ]
   },
   {
     "id": "monument-72",
@@ -40033,7 +45145,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.901594883611589,106.75870979646022",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.901594883611589,106.75870979646022",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Khi mới hình thành, đình Dĩ An từng được gọi là gì?",
+        "options": [
+          "Văn miếu",
+          "Miếu Bà",
+          "Võ miếu",
+          "Cổ miếu"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Cổ miếu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Năm nào ngôi miếu được tổ chức xây dựng lại và đổi tên thành đình?",
+        "options": [
+          "1838",
+          "1880",
+          "1820",
+          "1852"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1838."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Vua Tự Đức ban sắc phong cho Thành hoàng đình Dĩ An vào năm nào?",
+        "options": [
+          "1872",
+          "1852",
+          "1842",
+          "1862"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1852."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Ngoài thờ tự, dưới thời Nguyễn đình Dĩ An còn có chức năng nào?",
+        "options": [
+          "Trường dạy tiếng Pháp",
+          "Trạm kiểm soát đường biển",
+          "Nơi làm việc của hương chức, hội tề địa phương",
+          "Xưởng đóng tàu"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Nơi làm việc của hương chức, hội tề địa phương."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Dĩ An được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2014",
+          "2001",
+          "2010",
+          "2019"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 2019."
+      }
+    ]
   },
   {
     "id": "monument-73",
@@ -40608,7 +45792,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.75217534282721,106.66109305535474",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.75217534282721,106.66109305535474",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Minh Hương Gia Thạnh hiện tọa lạc trên đường nào?",
+        "options": [
+          "Trần Hưng Đạo",
+          "Nguyễn Trãi",
+          "Lão Tử",
+          "Phan Văn Khỏe"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Trần Hưng Đạo."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tên gọi “Minh Hương” của đình gắn với cộng đồng cư dân nào trong lịch sử Sài Gòn – Chợ Lớn?",
+        "options": [
+          "Người Chăm",
+          "Người Minh Hương",
+          "Người Khmer",
+          "Người Nhật"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Người Minh Hương."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đình Minh Hương Gia Thạnh thuộc loại hình di tích nào?",
+        "options": [
+          "Khảo cổ",
+          "Chiến trường",
+          "Kiến trúc nghệ thuật",
+          "Danh lam thắng cảnh tự nhiên"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Kiến trúc nghệ thuật."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Không gian đình phản ánh sự giao thoa văn hóa nổi bật giữa truyền thống Việt Nam với cộng đồng nào?",
+        "options": [
+          "Chăm",
+          "Khmer Nam Bộ",
+          "Ấn Độ",
+          "Hoa – Minh Hương"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Hoa – Minh Hương."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Minh Hương Gia Thạnh được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1993",
+          "1998",
+          "2001",
+          "1988"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-74",
@@ -41155,7 +46411,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.8954642703731,106.69559303693825",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.8954642703731,106.69559303693825",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Phú Long nằm bên bờ con sông nào?",
+        "options": [
+          "Sông Bé",
+          "Sông Sài Gòn",
+          "Sông Vàm Cỏ Đông",
+          "Sông Đồng Nai"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Sông Sài Gòn."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đình Phú Long được xây dựng khoảng năm nào theo nguồn giới thiệu chính thức?",
+        "options": [
+          "1942",
+          "1952",
+          "1842",
+          "1742"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1842."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đình Phú Long thờ vị thần nào?",
+        "options": [
+          "Quan Thánh Đế Quân",
+          "Ngọc Hoàng Thượng Đế",
+          "Thiên Hậu Thánh Mẫu",
+          "Thành Hoàng Bổn Xứ"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thành Hoàng Bổn Xứ."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Kiến trúc đình Phú Long được bố cục theo kiểu chữ nào?",
+        "options": [
+          "Chữ Tam",
+          "Chữ Công",
+          "Chữ Đinh",
+          "Chữ Nhất"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chữ Tam."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Phú Long được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2019",
+          "2001",
+          "1993",
+          "2014"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 2001."
+      }
+    ]
   },
   {
     "id": "monument-75",
@@ -41705,7 +47033,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.795362511439716,106.673864254131",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.795362511439716,106.673864254131",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Phú Nhuận hiện tọa lạc tại số 18 đường nào?",
+        "options": [
+          "Nguyễn Văn Trỗi",
+          "Phan Đăng Lưu",
+          "Mai Văn Ngọc",
+          "Huỳnh Văn Bánh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Mai Văn Ngọc."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Vị trí đầu tiên của đình Phú Nhuận được ghi nhận ở đâu?",
+        "options": [
+          "Bên rạch Bà Tàng",
+          "Bên sông Sài Gòn tại Lái Thiêu",
+          "Trên đồi Cô Sơn",
+          "Bên bờ rạch Thị Nghè"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Bên bờ rạch Thị Nghè."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Ai đã hiến khu đất để dời đình Phú Nhuận về vị trí cao ráo hơn?",
+        "options": [
+          "Xã trưởng Lê Tự Tài",
+          "Thiền sư Đại Ngạn",
+          "Tiền quân Nguyễn Văn Thành",
+          "Tổng đốc Trương Tấn Bửu"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Xã trưởng Lê Tự Tài."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Khu đất nơi đình được dời đến có tên dân gian là gì?",
+        "options": [
+          "Gò Cây Mai",
+          "Gò Kim Qui",
+          "Gò Chùa",
+          "Gò Cá Vồ"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Gò Kim Qui."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Phú Nhuận được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1993",
+          "1994",
+          "1997",
+          "2002"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1997."
+      }
+    ]
   },
   {
     "id": "monument-76",
@@ -42260,7 +47660,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=11.01970405639836,106.61830219646122",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=11.01970405639836,106.61830219646122",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Tân An được xây dựng vào năm nào?",
+        "options": [
+          "1780",
+          "1853",
+          "1880",
+          "1820"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1820."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đình Tân An thờ vị khai quốc công thần triều Nguyễn nào?",
+        "options": [
+          "Nguyễn Văn Thành",
+          "Trương Tấn Bửu",
+          "Võ Di Nguy",
+          "Lê Văn Duyệt"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Nguyễn Văn Thành."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Sắc phong hiện lưu giữ tại đình Tân An được vua nào ban năm 1853?",
+        "options": [
+          "Minh Mạng",
+          "Tự Đức",
+          "Thành Thái",
+          "Gia Long"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Tự Đức."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Hình ảnh đặc biệt ở cổng đình Tân An thường được nhắc đến là gì?",
+        "options": [
+          "Một tháp nước hình tròn",
+          "Một tượng Phật nằm trên mái",
+          "Cây đa cổ thụ với bộ rễ quấn lấy cổng đình",
+          "Hai khẩu thần công bằng đồng"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Cây đa cổ thụ với bộ rễ quấn lấy cổng đình."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Tân An được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "2004",
+          "2019",
+          "2001",
+          "2014"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 2014."
+      }
+    ]
   },
   {
     "id": "monument-77",
@@ -42818,7 +48290,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.34013008979058,107.08295979645634",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.34013008979058,107.08295979645634",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Khu di tích Đình Thắng Tam gồm ba thành phần chính nào?",
+        "options": [
+          "Đình Thần Thắng Tam, Lăng Ông Nam Hải và Miếu Bà Ngũ Hành",
+          "Đình Thắng Tam, Miếu Thiên Hậu và Hội quán Nghĩa An",
+          "Đình Thắng Tam, Bạch Dinh và Hải đăng",
+          "Đình Thắng Tam, Dinh Cô và Mộ Cô"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Đình Thần Thắng Tam, Lăng Ông Nam Hải và Miếu Bà Ngũ Hành."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đình Thần Thắng Tam được khởi dựng vào năm nào?",
+        "options": [
+          "1965",
+          "1820",
+          "1835",
+          "1853"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1820."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tín ngưỡng tại Lăng Ông Nam Hải gắn với loài vật nào?",
+        "options": [
+          "Cá kiếm",
+          "Rùa biển",
+          "Cá voi",
+          "Cá heo"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Cá voi."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Lễ hội Nghinh Ông tại khu di tích thường diễn ra vào tháng nào theo âm lịch?",
+        "options": [
+          "Tháng 11",
+          "Tháng 2",
+          "Tháng 5",
+          "Tháng 8"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Tháng 8."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Khu di tích Đình Thắng Tam được công nhận di tích quốc gia vào năm nào?",
+        "options": [
+          "1991",
+          "1989",
+          "1995",
+          "2001"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1991."
+      }
+    ]
   },
   {
     "id": "monument-78",
@@ -43363,7 +48907,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.853322555076566,106.76024317192255",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.853322555076566,106.76024317192255",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Dòng chữ Hán trên đòn nóc cho phép xác định đình Linh Đông được dựng vào năm nào?",
+        "options": [
+          "1783",
+          "1823",
+          "1853",
+          "1883"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1823."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Đình Linh Đông hiện tọa lạc trên đường nào?",
+        "options": [
+          "Nguyễn Văn Lượng",
+          "Lã Xuân Oai",
+          "Chương Dương",
+          "Nguyễn Xiển"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Chương Dương."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Mặt tiền đình Linh Đông quay về hướng nào?",
+        "options": [
+          "Tây – Bắc",
+          "Chính Bắc",
+          "Chính Tây",
+          "Đông – Nam"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Đông – Nam."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị xã hội nổi bật của đình Linh Đông được cơ quan văn hóa nhấn mạnh là gì?",
+        "options": [
+          "Thể hiện sự gắn kết cộng đồng làng xã và tưởng nhớ tiền hiền",
+          "Là trung tâm khai thác khoáng sản",
+          "Là nơi huấn luyện pháo binh",
+          "Phản ánh hoạt động thương mại đường biển"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thể hiện sự gắn kết cộng đồng làng xã và tưởng nhớ tiền hiền."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Linh Đông được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2010",
+          "2020",
+          "2017",
+          "2002"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 2020."
+      }
+    ]
   },
   {
     "id": "monument-79",
@@ -43911,7 +49527,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.840000633777274,106.66493947622094",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.840000633777274,106.66493947622094",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Tên “Thông Tây Hội” hình thành sau sự kiện nào năm 1944?",
+        "options": [
+          "Đổi tên đường Nguyễn Văn Lượng",
+          "Thành lập quận Gò Vấp",
+          "Sáp nhập hai làng Hanh Thông Tây và An Hội",
+          "Sáp nhập hai chùa Giác Lâm và Giác Viên"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Sáp nhập hai làng Hanh Thông Tây và An Hội."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trước năm 1944, đình Thông Tây Hội còn được gọi là gì?",
+        "options": [
+          "Đình Phú Long",
+          "Đình Tân An",
+          "Đình Minh Hương",
+          "Đình Hanh Thông Tây"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Đình Hanh Thông Tây."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đình Thông Tây Hội thường được nhắc đến với đặc điểm nổi bật nào?",
+        "options": [
+          "Một trong những ngôi đình cổ nhất còn tồn tại ở vùng Gia Định",
+          "Đình có địa đạo ba tầng",
+          "Ngôi đình duy nhất xây trên đảo",
+          "Đình có trận địa pháo lớn nhất Nam Bộ"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Một trong những ngôi đình cổ nhất còn tồn tại ở vùng Gia Định."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Đình Thông Tây Hội hiện nằm trên đường nào?",
+        "options": [
+          "Chương Dương",
+          "Nguyễn Văn Lượng",
+          "Mai Văn Ngọc",
+          "Chu Văn An"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Nguyễn Văn Lượng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Thông Tây Hội được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2002",
+          "1993",
+          "1998",
+          "1997"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1998."
+      }
+    ]
   },
   {
     "id": "monument-80",
@@ -44456,7 +50144,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.83363325813424,106.75664891425093",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.83363325813424,106.75664891425093",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Trong chính điện đình Trường Thọ, đối tượng được thờ ở gian giữa là ai?",
+        "options": [
+          "Ngọc Hoàng",
+          "Thiên Hậu Thánh Mẫu",
+          "Quan Thánh Đế Quân",
+          "Thành hoàng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thành hoàng."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hiện vật đặc biệt ở đình Trường Thọ chỉ được đánh mỗi năm một lần vào Đại lễ Cầu an là gì?",
+        "options": [
+          "Mõ gỗ cổ",
+          "Trống đồng",
+          "Chuông đá",
+          "Khánh đồng"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Mõ gỗ cổ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đại lễ Cầu an tại đình Trường Thọ diễn ra vào tháng nào theo âm lịch?",
+        "options": [
+          "Tháng 5",
+          "Tháng 2",
+          "Tháng 8",
+          "Tháng 11"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Tháng 2."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Tượng cốt thần trong chính điện được đặt thờ vào năm nào?",
+        "options": [
+          "1989",
+          "1993",
+          "1999",
+          "2004"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1999."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Trường Thọ được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "2000",
+          "2004",
+          "2002"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 2002."
+      }
+    ]
   },
   {
     "id": "monument-81",
@@ -45001,7 +50761,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.877636787952133,106.76533819216165",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.877636787952133,106.76533819216165",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Đình Xuân Hiệp hiện tọa lạc trên tuyến đường nào?",
+        "options": [
+          "Quốc lộ 1A",
+          "Quốc lộ 13",
+          "Đường Nguyễn Xiển",
+          "Xa lộ Hà Nội"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Quốc lộ 1A."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Lễ hội quan trọng nhất được tổ chức tại Đình Xuân Hiệp là lễ nào?",
+        "options": [
+          "Lễ vía Bà Thiên Hậu",
+          "Lễ Kỳ yên",
+          "Lễ Trùng cửu",
+          "Lễ Nghinh Ông"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Lễ Kỳ yên."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Ngoài Thành hoàng, khuôn viên Đình Xuân Hiệp còn có miếu thờ vị thần gắn với sông nước nào?",
+        "options": [
+          "Ông Bổn",
+          "Ngọc Hoàng",
+          "Bà Thủy Long",
+          "Quan Thánh Đế Quân"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Bà Thủy Long."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Lễ Hạ nêu tại Đình Xuân Hiệp diễn ra vào ngày nào theo âm lịch?",
+        "options": [
+          "Mùng 10 tháng Mười",
+          "Rằm tháng Bảy",
+          "Rằm tháng Giêng",
+          "Mùng 7 tháng Giêng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Mùng 7 tháng Giêng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Đình Xuân Hiệp được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "2004",
+          "2010",
+          "1998",
+          "2001"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 2004."
+      }
+    ]
   },
   {
     "id": "monument-82",
@@ -45546,7 +51378,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.753116410259468,106.65795025596664",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.753116410259468,106.65795025596664",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hội quán Hà Chương do cộng đồng người Hoa thuộc nhóm phương ngữ nào xây dựng?",
+        "options": [
+          "Hải Nam",
+          "Phúc Kiến",
+          "Triều Châu",
+          "Quảng Đông"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Phúc Kiến."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hội quán Hà Chương được xây dựng vào năm nào?",
+        "options": [
+          "1849",
+          "1789",
+          "1809",
+          "1829"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1809."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Chi tiết kiến trúc đặc sắc nào còn được bảo tồn tại Hội quán Hà Chương?",
+        "options": [
+          "Tám khẩu pháo cổ",
+          "Hai tháp nước bằng thép",
+          "Hệ thống địa đạo ba tầng",
+          "Bốn cột đá nguyên khối chạm rồng"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Bốn cột đá nguyên khối chạm rồng."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Các tượng Li Vẫn bằng mảnh gốm trên mái Hội quán Hà Chương mang ý nghĩa gì?",
+        "options": [
+          "Trấn hỏa, cầu bình an cho công trình",
+          "Đánh dấu hướng ra biển",
+          "Tưởng niệm người khai hoang",
+          "Báo hiệu giờ sinh hoạt"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Trấn hỏa, cầu bình an cho công trình."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hội quán Hà Chương được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "1993",
+          "2001",
+          "1998",
+          "2004"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 2001."
+      }
+    ]
   },
   {
     "id": "monument-83",
@@ -46096,7 +52000,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.753662453000011,106.66210427805626",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.753662453000011,106.66210427805626",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hội quán Nghĩa An gắn chủ yếu với cộng đồng người Hoa nào?",
+        "options": [
+          "Phúc Kiến",
+          "Hải Nam",
+          "Triều Châu",
+          "Khách Gia"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Triều Châu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Vị thần được thờ chính tại Hội quán Nghĩa An là ai?",
+        "options": [
+          "Thiên Hậu Thánh Mẫu",
+          "Ngọc Hoàng Thượng Đế",
+          "Ông Bổn",
+          "Quan Thánh Đế Quân"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Quan Thánh Đế Quân."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tên gọi “Nghĩa An” của hội quán gợi nhắc quê quán cũ của cộng đồng Triều Châu ở tỉnh nào của Trung Quốc?",
+        "options": [
+          "Quảng Đông",
+          "Hải Nam",
+          "Vân Nam",
+          "Phúc Kiến"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Quảng Đông."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Lễ vía Quan Đế tại Hội quán Nghĩa An diễn ra vào ngày nào theo âm lịch?",
+        "options": [
+          "15 tháng 1",
+          "24 tháng 6",
+          "9 tháng 9",
+          "23 tháng 3"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 24 tháng 6."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hội quán Nghĩa An được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "2002",
+          "1993",
+          "1988"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-84",
@@ -46641,7 +52617,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.749193750473093,106.65441869988231",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.749193750473093,106.65441869988231",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hội quán Nghĩa Nhuận hiện tọa lạc trên đường nào?",
+        "options": [
+          "Lão Tử",
+          "Hải Thượng Lãn Ông",
+          "Nguyễn Trãi",
+          "Phan Văn Khỏe"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Phan Văn Khỏe."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Nghệ thuật trang trí nổi bật tại Hội quán Nghĩa Nhuận là loại hình nào?",
+        "options": [
+          "Chạm khắc gỗ",
+          "Điêu khắc đá Chăm",
+          "Tranh sơn dầu châu Âu",
+          "Khảm trai cung đình Huế"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chạm khắc gỗ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Mô-típ nào được ghi nhận trong nghệ thuật chạm gỗ tại Hội quán Nghĩa Nhuận?",
+        "options": [
+          "Vũ nữ Apsara",
+          "Trái đào lộn hột và măng cụt",
+          "Hoa sen trên trống đồng",
+          "Chim Lạc và thuyền chiến"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Trái đào lộn hột và măng cụt."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Chi tiết đá đặc sắc ở phía trước Hội quán Nghĩa Nhuận là gì?",
+        "options": [
+          "Một cầu đá ba nhịp",
+          "Một bia đá Chăm",
+          "Hai cột đá chạm rồng",
+          "Hai tượng voi đá"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Hai cột đá chạm rồng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hội quán Nghĩa Nhuận được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "2001",
+          "1988",
+          "1998",
+          "1993"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-85",
@@ -47186,7 +53234,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.754131971849885,106.659624625907",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.754131971849885,106.659624625907",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hội quán Ôn Lăng gắn với cộng đồng người Hoa đến từ địa phương nào của Phúc Kiến?",
+        "options": [
+          "Tuyền Châu",
+          "Phúc Châu",
+          "Hạ Môn",
+          "Chương Châu"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tuyền Châu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hội quán Ôn Lăng hiện tọa lạc tại số 12 đường nào?",
+        "options": [
+          "Nguyễn Trãi",
+          "Lão Tử",
+          "Triệu Quang Phục",
+          "Phan Văn Khỏe"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Lão Tử."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tên gọi dân gian nào sau đây cũng dùng để chỉ Hội quán Ôn Lăng?",
+        "options": [
+          "Chùa Bà",
+          "Chùa Ông Bổn",
+          "Chùa Quan Âm",
+          "Chùa Ngọc Hoàng"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Chùa Quan Âm."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Hội quán Ôn Lăng đã trải qua một đợt trùng tu vào năm nào sau đây?",
+        "options": [
+          "2009",
+          "1988",
+          "1975",
+          "2017"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 2017."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hội quán Ôn Lăng được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "2002",
+          "1998",
+          "2004",
+          "1993"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 2002."
+      }
+    ]
   },
   {
     "id": "monument-86",
@@ -47731,7 +53851,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.752445654286207,106.66323119645925",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.752445654286207,106.66323119645925",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hội quán Quỳnh Phủ tại Thành phố Hồ Chí Minh còn được gọi bằng tên nào?",
+        "options": [
+          "Chùa Quan Âm",
+          "Chùa Hải Nam",
+          "Chùa Ngọc Hoàng",
+          "Chùa Ông Bổn"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Chùa Hải Nam."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hội quán Quỳnh Phủ gắn với cộng đồng người Hoa nào?",
+        "options": [
+          "Phúc Kiến",
+          "Khách Gia",
+          "Hải Nam",
+          "Triều Châu"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Hải Nam."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Hội quán Quỳnh Phủ hiện tọa lạc trên đường nào?",
+        "options": [
+          "Lão Tử",
+          "Hải Thượng Lãn Ông",
+          "Nguyễn Trãi",
+          "Trần Hưng Đạo"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Trần Hưng Đạo."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Chức năng truyền thống quan trọng của hội quán đối với người Hải Nam là gì?",
+        "options": [
+          "Nơi sinh hoạt tín ngưỡng và gắn kết đồng hương",
+          "Nhà tù thuộc địa",
+          "Trạm phòng thủ quân sự",
+          "Xưởng sản xuất gốm"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Nơi sinh hoạt tín ngưỡng và gắn kết đồng hương."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hội quán Quỳnh Phủ được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "2012",
+          "2001",
+          "1998",
+          "2004"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 2001."
+      }
+    ]
   },
   {
     "id": "monument-87",
@@ -48281,7 +54473,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.753253542057488,106.66117684816919",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.753253542057488,106.66117684816919",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hội quán Tuệ Thành thường được người dân gọi là gì?",
+        "options": [
+          "Chùa Ngọc Hoàng",
+          "Chùa Ông",
+          "Chùa Bà",
+          "Chùa Ông Bổn"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Chùa Bà."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Vị thần được thờ chính tại Hội quán Tuệ Thành là ai?",
+        "options": [
+          "Tề Thiên Đại Thánh",
+          "Quan Thánh Đế Quân",
+          "Ngọc Hoàng",
+          "Thiên Hậu Thánh Mẫu"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thiên Hậu Thánh Mẫu."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Hội quán Tuệ Thành gắn chủ yếu với cộng đồng người Hoa nào?",
+        "options": [
+          "Quảng Đông",
+          "Hải Nam",
+          "Triều Châu",
+          "Phúc Kiến"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Quảng Đông."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Hội quán Tuệ Thành hiện tọa lạc trên đường nào?",
+        "options": [
+          "Trần Hưng Đạo",
+          "Nguyễn Trãi",
+          "Lão Tử",
+          "Phan Văn Khỏe"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Nguyễn Trãi."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hội quán Tuệ Thành được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "1988",
+          "1998",
+          "1993",
+          "2001"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-88",
@@ -48906,7 +55170,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.802217454675066,106.69708365535504",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.802217454675066,106.69708365535504",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Lăng Lê Văn Duyệt còn được người dân gọi bằng tên quen thuộc nào?",
+        "options": [
+          "Lăng Ông Nam Hải",
+          "Lăng Tả quân Gia Định",
+          "Lăng Đức Quốc Công",
+          "Lăng Ông Bà Chiểu"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Lăng Ông Bà Chiểu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Lê Văn Duyệt từng hai lần giữ chức vụ nào ở Gia Định?",
+        "options": [
+          "Tổng trấn Gia Định thành",
+          "Kinh lược sứ Bắc Kỳ",
+          "Thống đốc Nam Kỳ",
+          "Tổng đốc Hà Nội"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tổng trấn Gia Định thành."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Khu lăng là nơi an táng Lê Văn Duyệt cùng ai?",
+        "options": [
+          "Con trai Lê Văn Khôi",
+          "Phu nhân Đỗ Thị Phận",
+          "Phó tổng trấn Trương Tấn Bửu",
+          "Mẹ là bà Nguyễn Thị"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Phu nhân Đỗ Thị Phận."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Lễ hội truyền thống quan trọng tại Lăng Lê Văn Duyệt gắn với ngày nào của ông?",
+        "options": [
+          "Ngày nhậm chức",
+          "Ngày được phong tước",
+          "Ngày giỗ",
+          "Ngày sinh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Ngày giỗ."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Lăng Lê Văn Duyệt được xếp hạng di tích quốc gia vào giai đoạn nào?",
+        "options": [
+          "Cuối thập niên 1990",
+          "Sau năm 2010",
+          "Đầu thập niên 1970",
+          "Cuối thập niên 1980"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Cuối thập niên 1980."
+      }
+    ]
   },
   {
     "id": "monument-89",
@@ -49451,7 +55787,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.796197458827,106.67557949093708",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.796197458827,106.67557949093708",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Trương Tấn Bửu là danh thần phục vụ chủ yếu dưới triều đại nào?",
+        "options": [
+          "Nhà Nguyễn",
+          "Nhà Tây Sơn",
+          "Nhà Trần",
+          "Nhà Lý"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Nhà Nguyễn."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Trương Tấn Bửu có công lớn trong quá trình khai phá và ổn định vùng nào?",
+        "options": [
+          "Đồng bằng sông Hồng",
+          "Nam Bộ",
+          "Tây Bắc",
+          "Bắc Trung Bộ"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Nam Bộ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Lăng Trương Tấn Bửu hiện nằm trên đường nào?",
+        "options": [
+          "Mai Văn Ngọc",
+          "Vũ Tùng",
+          "Nguyễn Thị Huỳnh",
+          "Cô Giang"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Nguyễn Thị Huỳnh."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị chính của Lăng Trương Tấn Bửu gắn với việc tưởng niệm điều gì?",
+        "options": [
+          "Một thương nhân người Hoa",
+          "Một thủ lĩnh phong trào Đông Du",
+          "Một nhà khảo cổ học",
+          "Công lao của một danh thần có đóng góp cho vùng đất phương Nam"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Công lao của một danh thần có đóng góp cho vùng đất phương Nam."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Lăng Trương Tấn Bửu được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2004",
+          "1993",
+          "1998",
+          "2012"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 2004."
+      }
+    ]
   },
   {
     "id": "monument-90",
@@ -49991,7 +56399,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.795762006729788,106.68295119645941",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.795762006729788,106.68295119645941",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Võ Di Nguy là võ tướng dưới triều vua nào?",
+        "options": [
+          "Tự Đức",
+          "Gia Long",
+          "Thành Thái",
+          "Bảo Đại"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Gia Long."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Võ Di Nguy hy sinh trong trận chiến nào năm 1801?",
+        "options": [
+          "Trận Rạch Gầm – Xoài Mút",
+          "Trận Ngọc Hồi – Đống Đa",
+          "Trận Thị Nại",
+          "Trận Đà Nẵng"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Trận Thị Nại."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Lăng Võ Di Nguy hiện nằm trên đường nào?",
+        "options": [
+          "Vũ Tùng",
+          "Nguyễn Thị Huỳnh",
+          "Phan Thúc Duyện",
+          "Cô Giang"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Cô Giang."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Chức danh quân sự thường gắn với Võ Di Nguy là gì?",
+        "options": [
+          "Thủy quân Đô đốc",
+          "Đốc học Gia Định",
+          "Kinh lược sứ",
+          "Tổng trấn Gia Định"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thủy quân Đô đốc."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Lăng Võ Di Nguy được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "1993",
+          "2004",
+          "1988"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-91",
@@ -50589,7 +57069,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.339395637686106,107.08382801424735",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.339395637686106,107.08382801424735",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Năm 1919, dân làng Thắng Tam dời Linh Sơn Cổ Tự về khu vực gần công trình nào?",
+        "options": [
+          "Hải đăng Vũng Tàu",
+          "Nhà Lớn Long Sơn",
+          "Đình Thắng Tam",
+          "Bạch Dinh"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Đình Thắng Tam."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Thế đất của Linh Sơn Cổ Tự được mô tả bằng cụm từ nào?",
+        "options": [
+          "Long chầu hổ phục",
+          "Tiền thủy hậu sơn",
+          "Tọa sơn hướng hải",
+          "Án sơn tụ thủy"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Án sơn tụ thủy."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Hiện vật đặc biệt được bảo lưu tại chính điện Linh Sơn Cổ Tự là gì?",
+        "options": [
+          "Tượng Phật bằng đá cao khoảng 1,2 m",
+          "Bộ tượng Thập Bát La Hán bằng đá",
+          "Tượng Quan Âm bằng đồng cao 10 m",
+          "Chuông đồng nặng 5 tấn"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tượng Phật bằng đá cao khoảng 1,2 m."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Linh Sơn Cổ Tự được trùng tu thành diện mạo gần với hiện nay vào năm nào?",
+        "options": [
+          "1975",
+          "1959",
+          "1919",
+          "1945"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1959."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Linh Sơn Cổ Tự được công nhận di tích lịch sử – văn hóa quốc gia vào năm nào?",
+        "options": [
+          "2001",
+          "1989",
+          "1991",
+          "1993"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1991."
+      }
+    ]
   },
   {
     "id": "monument-92",
@@ -51137,7 +57689,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.751397624528153,106.6572630964593",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.751397624528153,106.6572630964593",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Miếu Nhị Phủ còn được gọi bằng tên nào?",
+        "options": [
+          "Chùa Quan Âm",
+          "Chùa Ông",
+          "Chùa Bà",
+          "Chùa Ông Bổn"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Chùa Ông Bổn."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tên gọi “Nhị Phủ” phản ánh sự liên kết của người Hoa đến từ hai phủ nào ở Phúc Kiến?",
+        "options": [
+          "Tuyền Châu và Chương Châu",
+          "Quảng Châu và Triều Châu",
+          "Hải Khẩu và Tam Á",
+          "Phúc Châu và Nam Kinh"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tuyền Châu và Chương Châu."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Miếu Nhị Phủ hiện tọa lạc trên đường nào?",
+        "options": [
+          "Nguyễn Trãi",
+          "Hải Thượng Lãn Ông",
+          "Lão Tử",
+          "Trần Hưng Đạo"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Hải Thượng Lãn Ông."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Vị thần được thờ chính tại Miếu Nhị Phủ là ai?",
+        "options": [
+          "Quan Thánh Đế Quân",
+          "Thiên Hậu Thánh Mẫu",
+          "Ông Bổn",
+          "Ngọc Hoàng"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Ông Bổn."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Miếu Nhị Phủ được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "1993",
+          "2001",
+          "2004",
+          "1998"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1998."
+      }
+    ]
   },
   {
     "id": "monument-93",
@@ -51682,7 +58306,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.765062486177206,106.69908366923417",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.765062486177206,106.69908366923417",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Miếu Thiên Hậu trong Quảng Triệu hội quán thờ vị thần nào?",
+        "options": [
+          "Thiên Hậu Thánh Mẫu",
+          "Ông Bổn",
+          "Ngọc Hoàng",
+          "Quan Thánh Đế Quân"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Thiên Hậu Thánh Mẫu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tên gọi “Quảng Triệu” phản ánh cộng đồng người Hoa đến từ hai khu vực nào?",
+        "options": [
+          "Quảng Tây và Triệu Sơn",
+          "Quảng Châu và Triệu Khánh",
+          "Quảng Đông và Phúc Kiến",
+          "Quảng Châu và Triều Châu"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Quảng Châu và Triệu Khánh."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Miếu Thiên Hậu – Quảng Triệu hội quán trước đây nằm trên tuyến đường nào ven trung tâm Sài Gòn?",
+        "options": [
+          "Lão Tử",
+          "Hải Thượng Lãn Ông",
+          "Bến Chương Dương",
+          "Nguyễn Trãi"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Bến Chương Dương."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Tín ngưỡng Thiên Hậu đặc biệt gắn với mong ước bảo hộ cho hoạt động nào?",
+        "options": [
+          "Khai thác mỏ",
+          "Săn bắt trong rừng",
+          "Trồng lúa trên núi",
+          "Đi biển và hành trình đường thủy"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Đi biển và hành trình đường thủy."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Miếu Thiên Hậu – Quảng Triệu hội quán được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1998",
+          "2012",
+          "1993",
+          "2001"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1998."
+      }
+    ]
   },
   {
     "id": "monument-94",
@@ -52227,7 +58923,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.97868162166789,106.6515762320429",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.97868162166789,106.6515762320429",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Nhà cổ Trần Công Vàng nằm ở khu vực đô thị nào của Bình Dương cũ?",
+        "options": [
+          "Tân Uyên",
+          "Thủ Dầu Một",
+          "Dĩ An",
+          "Thuận An"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Thủ Dầu Một."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Ngôi nhà cổ Trần Công Vàng tiêu biểu cho loại hình kiến trúc nào?",
+        "options": [
+          "Nhà sàn người Thái",
+          "Biệt thự Pháp ven biển",
+          "Nhà ở truyền thống Nam Bộ",
+          "Nhà dài Tây Nguyên"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Nhà ở truyền thống Nam Bộ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Vật liệu chủ đạo tạo nên hệ khung của nhà cổ Trần Công Vàng là gì?",
+        "options": [
+          "Gạch kính",
+          "Thép",
+          "Bê tông cốt thép",
+          "Gỗ"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Gỗ."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị nổi bật của ngôi nhà thể hiện rõ qua yếu tố nào?",
+        "options": [
+          "Nghệ thuật chạm khắc gỗ và bố cục nhà truyền thống",
+          "Hệ thống pháo phòng thủ",
+          "Hầm giam dưới lòng đất",
+          "Mộ chum khảo cổ"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Nghệ thuật chạm khắc gỗ và bố cục nhà truyền thống."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Nhà cổ Trần Công Vàng được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1988",
+          "1993",
+          "2001",
+          "2009"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-95",
@@ -52767,7 +59535,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.97799448073809,106.65064343404006",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.97799448073809,106.65064343404006",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Nhà cổ Trần Văn Hổ nằm tại khu vực nào của Bình Dương cũ?",
+        "options": [
+          "Bến Cát",
+          "Dầu Tiếng",
+          "Thủ Dầu Một",
+          "Phú Giáo"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Thủ Dầu Một."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Nhà cổ Trần Văn Hổ phản ánh rõ nét không gian sống của tầng lớp nào ở Nam Bộ xưa?",
+        "options": [
+          "Công nhân hầm mỏ",
+          "Ngư dân ven biển",
+          "Cư dân du mục",
+          "Gia đình khá giả ở đô thị – miệt vườn Nam Bộ"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Gia đình khá giả ở đô thị – miệt vườn Nam Bộ."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Đặc điểm nghệ thuật đáng chú ý của nhà cổ Trần Văn Hổ là gì?",
+        "options": [
+          "Trang trí và chạm khắc gỗ tinh xảo",
+          "Phù điêu đá Chăm",
+          "Khảm gốm Nhật Bản",
+          "Tranh kính Gothic châu Âu"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Trang trí và chạm khắc gỗ tinh xảo."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Nhà cổ Trần Văn Hổ thuộc nhóm di tích nào?",
+        "options": [
+          "Lịch sử quân sự",
+          "Kiến trúc nghệ thuật",
+          "Danh lam thắng cảnh",
+          "Khảo cổ"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Kiến trúc nghệ thuật."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Nhà cổ Trần Văn Hổ được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2001",
+          "2014",
+          "1993",
+          "1989"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1993."
+      }
+    ]
   },
   {
     "id": "monument-96",
@@ -53307,7 +60147,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.77661542428395,106.70316881425052",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.77661542428395,106.70316881425052",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Nhà hát Thành phố Hồ Chí Minh được khánh thành vào năm nào?",
+        "options": [
+          "1909",
+          "1929",
+          "1898",
+          "1900"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1900."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Kiến trúc Nhà hát Thành phố mang ảnh hưởng chủ yếu của phong cách nào?",
+        "options": [
+          "Kiến trúc Pháp cuối thế kỷ XIX",
+          "Kiến trúc Khmer",
+          "Kiến trúc đình làng Nam Bộ",
+          "Kiến trúc Chăm"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Kiến trúc Pháp cuối thế kỷ XIX."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Sau năm 1956, tòa nhà Nhà hát từng được sử dụng làm trụ sở của cơ quan nào?",
+        "options": [
+          "Bộ chỉ huy quân đội Pháp",
+          "Quốc hội của chính quyền Việt Nam Cộng hòa",
+          "Hội đồng thành phố Sài Gòn",
+          "Tòa án Nam Kỳ"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Quốc hội của chính quyền Việt Nam Cộng hòa."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Sau năm 1975, công trình trở lại chức năng chính nào?",
+        "options": [
+          "Trụ sở hành chính",
+          "Nhà ga trung tâm",
+          "Biểu diễn nghệ thuật",
+          "Bảo tàng lịch sử"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Biểu diễn nghệ thuật."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Nhà hát Thành phố Hồ Chí Minh được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "2020",
+          "1998",
+          "2004",
+          "2012"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 2012."
+      }
+    ]
   },
   {
     "id": "monument-97",
@@ -53853,7 +60765,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.454542774719467,107.09629591324035",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.454542774719467,107.09629591324035",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Người sáng lập Nhà Lớn Long Sơn, thường được gọi là Ông Trần, có tên thật là gì?",
+        "options": [
+          "Lê Văn Mưu",
+          "Trần Văn Hổ",
+          "Trương Tấn Bửu",
+          "Lê Văn Duyệt"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Lê Văn Mưu."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Quần thể Nhà Lớn Long Sơn được xây dựng chủ yếu trong khoảng thời gian nào?",
+        "options": [
+          "1850–1860",
+          "1910–1929",
+          "1939–1945",
+          "1960–1975"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1910–1929."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Ngày giỗ Ông Trần tại Nhà Lớn diễn ra vào ngày nào theo âm lịch?",
+        "options": [
+          "23 tháng 3",
+          "24 tháng 6",
+          "20 tháng 2",
+          "9 tháng 9"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 20 tháng 2."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Lễ hội lớn khác tại Nhà Lớn diễn ra vào ngày 9 tháng 9 âm lịch có tên là gì?",
+        "options": [
+          "Lễ Kỳ yên",
+          "Lễ Nghinh Ông",
+          "Lễ Thượng nguyên",
+          "Tết Trùng cửu"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Tết Trùng cửu."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Nhà Lớn Long Sơn được công nhận di tích lịch sử – văn hóa quốc gia vào năm nào?",
+        "options": [
+          "1991",
+          "1993",
+          "2001",
+          "1989"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1991."
+      }
+    ]
   },
   {
     "id": "monument-98",
@@ -54393,7 +61377,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.752307300714847,106.65514511225754",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.752307300714847,106.65514511225754",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Hội quán Lệ Châu còn được biết đến với chức năng nào?",
+        "options": [
+          "Chùa Phật giáo",
+          "Nhà thờ tổ nghề kim hoàn – thợ bạc",
+          "Lăng danh thần",
+          "Miếu thờ thần biển"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Nhà thờ tổ nghề kim hoàn – thợ bạc."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Hội quán Lệ Châu hiện tọa lạc trên đường nào?",
+        "options": [
+          "Lão Tử",
+          "Hải Thượng Lãn Ông",
+          "Trần Hưng Đạo",
+          "Nguyễn Trãi"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Trần Hưng Đạo."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Cộng đồng nghề nghiệp nào gắn bó trực tiếp với Hội quán Lệ Châu?",
+        "options": [
+          "Thợ gốm",
+          "Thợ dệt",
+          "Thợ đóng tàu",
+          "Thợ kim hoàn, thợ bạc"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Thợ kim hoàn, thợ bạc."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị văn hóa đặc trưng của Hội quán Lệ Châu là gì?",
+        "options": [
+          "Gìn giữ tín ngưỡng tổ nghề và truyền thống nghề kim hoàn",
+          "Bảo vệ tuyến hàng hải",
+          "Ghi dấu chiến trường Mậu Thân",
+          "Lưu giữ mộ chum tiền sử"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Gìn giữ tín ngưỡng tổ nghề và truyền thống nghề kim hoàn."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Hội quán Lệ Châu được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "2004",
+          "1998",
+          "1993",
+          "2001"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 1998."
+      }
+    ]
   },
   {
     "id": "monument-99",
@@ -54936,7 +61992,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.330648018102252,107.07685410888055",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.330648018102252,107.07685410888055",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Niết Bàn Tịnh Xá được xây dựng trong khoảng thời gian nào?",
+        "options": [
+          "1989–1994",
+          "1954–1959",
+          "1969–1974",
+          "1975–1980"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1969–1974."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Niết Bàn Tịnh Xá nằm gần bãi biển nào của Vũng Tàu?",
+        "options": [
+          "Bãi Vọng Nguyệt",
+          "Bãi Sau",
+          "Bãi Dâu",
+          "Bãi Dứa"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Bãi Dứa."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Các phù điêu dọc lối lên Niết Bàn Tịnh Xá kể về nội dung nào?",
+        "options": [
+          "Cuộc đời Đức Phật Thích Ca",
+          "Cuộc đời Lê Văn Duyệt",
+          "Lịch sử khai phá Long Sơn",
+          "Trận chiến Bình Giã"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Cuộc đời Đức Phật Thích Ca."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Một hiện vật kiến trúc – nghệ thuật đặc sắc tại Niết Bàn Tịnh Xá là chiếc lọng bát giác bằng chất liệu gì?",
+        "options": [
+          "Đá granite",
+          "Đồng thau",
+          "Gỗ mít",
+          "Sắt đúc"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Đồng thau."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Niết Bàn Tịnh Xá được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "1991",
+          "1993",
+          "1989",
+          "2001"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 1989."
+      }
+    ]
   },
   {
     "id": "monument-100",
@@ -55518,7 +62646,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.914737613693179,106.80529937294139",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.914737613693179,106.80529937294139",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Núi Châu Thới nằm trong vùng địa hình nào của Bình Dương cũ?",
+        "options": [
+          "Dầu Tiếng",
+          "Bến Cát",
+          "Phú Giáo",
+          "Dĩ An"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Dĩ An."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Công trình tôn giáo nổi bật trên Núi Châu Thới là gì?",
+        "options": [
+          "Chùa Châu Thới",
+          "Chùa Phước Tường",
+          "Chùa Giác Lâm",
+          "Chùa Hội Khánh"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Chùa Châu Thới."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Núi Châu Thới nổi bật trong cảnh quan địa phương vì đặc điểm nào?",
+        "options": [
+          "Là miệng núi lửa đang hoạt động",
+          "Là khối núi cao nổi lên giữa vùng đồng bằng đô thị",
+          "Là dãy núi tuyết cao",
+          "Là đảo đá giữa biển"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Là khối núi cao nổi lên giữa vùng đồng bằng đô thị."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Giá trị của Núi Châu Thới kết hợp nổi bật giữa yếu tố nào?",
+        "options": [
+          "Địa đạo và chiến hào",
+          "Pháo đài và hầm thủy lôi",
+          "Cảnh quan thiên nhiên và không gian tín ngưỡng",
+          "Khảo cổ mộ chum và cảng cổ"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Cảnh quan thiên nhiên và không gian tín ngưỡng."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Núi Châu Thới được xếp hạng di tích danh thắng quốc gia vào năm nào?",
+        "options": [
+          "2001",
+          "2009",
+          "1993",
+          "1989"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1989."
+      }
+    ]
   },
   {
     "id": "monument-101",
@@ -56069,7 +63269,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.374377082142972,107.07057046638222",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.374377082142972,107.07057046638222",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Thích Ca Phật Đài nằm trên sườn ngọn núi nào?",
+        "options": [
+          "Núi Lớn",
+          "Núi Châu Thới",
+          "Núi Nhỏ",
+          "Núi Dinh"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Núi Lớn."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Quần thể Thích Ca Phật Đài tái hiện chủ yếu nội dung nào?",
+        "options": [
+          "Chiến dịch Hồ Chí Minh",
+          "Các sự kiện chính trong cuộc đời Đức Phật Thích Ca",
+          "Cuộc đời Tôn Đức Thắng",
+          "Lịch sử khẩn hoang Nam Bộ"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Các sự kiện chính trong cuộc đời Đức Phật Thích Ca."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tượng trung tâm nổi bật của quần thể là hình ảnh nào?",
+        "options": [
+          "Di Lặc ngồi cười",
+          "Phật nhập Niết bàn nằm",
+          "Đức Phật Thích Ca ngồi thiền",
+          "Quan Âm nghìn mắt nghìn tay"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Đức Phật Thích Ca ngồi thiền."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Không gian Thích Ca Phật Đài kết hợp kiến trúc Phật giáo với yếu tố tự nhiên nào?",
+        "options": [
+          "Cù lao giữa sông",
+          "Hang động đá vôi",
+          "Rừng ngập mặn",
+          "Địa hình sườn núi và cảnh quan hướng biển"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Địa hình sườn núi và cảnh quan hướng biển."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Thích Ca Phật Đài được xếp hạng di tích quốc gia vào năm nào?",
+        "options": [
+          "1989",
+          "1991",
+          "1993",
+          "2001"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1989."
+      }
+    ]
   },
   {
     "id": "monument-102",
@@ -56609,7 +63881,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.775681684736224,106.69791498036552",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.775681684736224,106.69791498036552",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Tòa nhà Tòa án nhân dân Thành phố Hồ Chí Minh được xây dựng vào cuối thế kỷ nào?",
+        "options": [
+          "Thế kỷ XVIII",
+          "Thế kỷ XIX",
+          "Thế kỷ XX",
+          "Thế kỷ XXI"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Thế kỷ XIX."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tòa nhà mang dấu ấn chủ yếu của phong cách kiến trúc nào?",
+        "options": [
+          "Kiến trúc đình làng Nam Bộ",
+          "Kiến trúc Chăm",
+          "Kiến trúc Pháp thời thuộc địa",
+          "Kiến trúc Khmer Angkor"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Kiến trúc Pháp thời thuộc địa."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tòa án nhân dân Thành phố Hồ Chí Minh tọa lạc trên đường nào?",
+        "options": [
+          "Lê Duẩn",
+          "Nguyễn Huệ",
+          "Lý Tự Trọng",
+          "Nam Kỳ Khởi Nghĩa"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: Nam Kỳ Khởi Nghĩa."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Chức năng của công trình được duy trì đến hiện nay thuộc lĩnh vực nào?",
+        "options": [
+          "Tư pháp – xét xử",
+          "Bảo tàng",
+          "Tín ngưỡng",
+          "Biểu diễn nghệ thuật"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: Tư pháp – xét xử."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Tòa án nhân dân Thành phố Hồ Chí Minh được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "2010",
+          "2012",
+          "2020",
+          "2004"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: 2012."
+      }
+    ]
   },
   {
     "id": "monument-103",
@@ -57157,7 +64501,79 @@ export const allMonumentsList = [
       "googleMapsDirectionsUrl": "https://www.google.com/maps/dir/?api=1&destination=10.776543101648452,106.70091960695338",
       "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=10.776543101648452,106.70091960695338",
       "googleMapsEmbedUrl": "https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-    }
+    },
+    "quiz": [
+      {
+        "id": 1,
+        "category": "⚔️ Mốc Son & Sự Kiện",
+        "question": "Ai là kiến trúc sư thiết kế tòa nhà Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh?",
+        "options": [
+          "Auguste Delaval",
+          "Ngô Viết Thụ",
+          "Paul Gardès",
+          "Alfred Foulhoux"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: Paul Gardès."
+      },
+      {
+        "id": 2,
+        "category": "🏺 Hiện Vật & Chứng Tích",
+        "question": "Tòa nhà được khởi công xây dựng vào năm nào?",
+        "options": [
+          "1900",
+          "1909",
+          "1885",
+          "1898"
+        ],
+        "correctIndex": 3,
+        "correctLetter": "D",
+        "explanation": "Đáp án chính xác: 1898."
+      },
+      {
+        "id": 3,
+        "category": "🏛️ Kiến Trúc & Không Gian",
+        "question": "Tòa nhà được hoàn tất và khánh thành vào năm nào?",
+        "options": [
+          "1909",
+          "1929",
+          "1898",
+          "1900"
+        ],
+        "correctIndex": 0,
+        "correctLetter": "A",
+        "explanation": "Đáp án chính xác: 1909."
+      },
+      {
+        "id": 4,
+        "category": "👤 Nhân Vật & Lịch Sử",
+        "question": "Trong thời Pháp thuộc, người dân thường gọi công trình bằng tên nào?",
+        "options": [
+          "Bạch Dinh",
+          "Dinh Đốc lý hoặc Dinh Xã Tây",
+          "Dinh Norodom",
+          "Dinh Gia Long"
+        ],
+        "correctIndex": 1,
+        "correctLetter": "B",
+        "explanation": "Đáp án chính xác: Dinh Đốc lý hoặc Dinh Xã Tây."
+      },
+      {
+        "id": 5,
+        "category": "🧭 Giá Trị & Tự Hào Di Sản",
+        "question": "Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
+        "options": [
+          "2024",
+          "2012",
+          "2020",
+          "2017 ĐÁP ÁN Chinh Phục Huy Hiệu – 103 di tích"
+        ],
+        "correctIndex": 2,
+        "correctLetter": "C",
+        "explanation": "Đáp án chính xác: 2020."
+      }
+    ]
   }
 ];
 
