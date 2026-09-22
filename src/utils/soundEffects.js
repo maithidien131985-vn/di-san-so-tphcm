@@ -135,6 +135,37 @@ class SoundEffectsEngine {
       });
     } catch (e) {}
   }
+
+  // Phát âm thanh giọng đọc tiếng Việt rõ ràng
+  speakVoice(text = 'Bạn đã khám phá xong di tích này, hãy khám phá di tích tiếp theo') {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    try {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'vi-VN';
+      utterance.rate = 0.95;
+      utterance.pitch = 1.05;
+      
+      const voices = window.speechSynthesis.getVoices();
+      const viVoice = voices.find(v => v.lang.includes('vi') || v.lang.includes('VI'));
+      if (viVoice) utterance.voice = viVoice;
+      
+      window.speechSynthesis.speak(utterance);
+    } catch (e) {
+      console.warn('Speech synthesis error:', e);
+    }
+  }
+
+  // Âm thanh vinh danh hoàn thành di tích kết hợp kèn chiến thắng + giọng đọc
+  playMonumentCompletion(monumentName = '') {
+    this.playVictoryFanfare();
+    setTimeout(() => {
+      const msg = monumentName 
+        ? `Chúc mừng bạn đã hoàn thành khám phá di tích ${monumentName}! Hãy cùng khám phá di tích tiếp theo nhé!`
+        : 'Bạn đã khám phá xong di tích này, hãy khám phá di tích tiếp theo!';
+      this.speakVoice(msg);
+    }, 450);
+  }
 }
 
 export const soundEffects = new SoundEffectsEngine();

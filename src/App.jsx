@@ -782,8 +782,16 @@ export default function App() {
         isOpen={actionModalOpen}
         onClose={() => setActionModalOpen(false)}
         monumentName={safeInfo.name || ''}
+        monumentStt={currentStt}
         initialStudentInfo={actionStudentInfo}
         activePassport={activePassport}
+        onPassportUpdate={setActivePassport}
+        onCompleteInvestigation={handleCompleteInvestigation}
+        onNavigateNext={() => {
+          const nextStt = (currentStt % allMonumentsList.length) + 1;
+          handleSelectMonument(nextStt);
+        }}
+        onOpenPassport={() => setPassportModalOpen(true)}
       />
 
       {/* Document Reference Modal */}

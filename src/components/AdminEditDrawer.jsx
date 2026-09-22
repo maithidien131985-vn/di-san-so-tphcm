@@ -1349,19 +1349,19 @@ export default function AdminEditDrawer({
         (data.progressPercent || 0) + '%',
         data.actionDetail || ''
       ]);
-    } else if (eventType === 'CONTRIBUTION') {
+    } else if (eventType === 'CONTRIBUTION' || eventType === 'PLEDGE_ACTION') {
       var sheet = getOrCreateSheet(ss, '4. Đóng Góp & Ý Kiến', [
         'Thời gian', 'Mã Hộ Chiếu', 'Tác giả', 'Trường', 'Lớp', 'Di tích', 'Loại đóng góp', 'Tiêu đề', 'Nội dung'
       ]);
       sheet.appendRow([
         timestamp,
         data.passportCode || '',
-        data.author || '',
+        data.author || data.fullName || '',
         data.school || '',
         data.grade || '',
         data.monumentName || '',
-        data.type || '',
-        data.title || '',
+        data.type || 'Cam kết hành động',
+        data.title || 'Hành động bảo tồn di tích',
         data.content || ''
       ]);
     } else if (eventType === 'QUIZ') {
