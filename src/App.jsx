@@ -128,7 +128,7 @@ export default function App() {
     return getMonumentByIdOrStt(currentStt);
   }, [currentStt]);
 
-  const storageKey = `di_san_so_v15_monument_stt_${currentStt}`;
+  const storageKey = `di_san_so_v2026_sync_monument_stt_${currentStt}`;
 
   const mergeWithBase = (base, saved) => {
     if (!saved || typeof saved !== 'object') return base || allMonumentsList[0];
@@ -137,6 +137,7 @@ export default function App() {
       ...safeBase,
       ...saved,
       stt: safeBase.stt,
+      quiz: safeBase.quiz, // Luôn đồng bộ 5 câu hỏi trắc nghiệm mới nhất
       audioScript: safeBase.audioScript, // Luôn đồng bộ lời thuyết minh chuẩn của từng di tích
       map: safeBase.map, // Luôn đồng bộ bản đồ tọa độ chính xác của di tích
       video: safeBase.video, // Luôn đồng bộ video mới nhất từ dữ liệu hệ thống
@@ -145,6 +146,7 @@ export default function App() {
         ...safeBase.info,
         ...(saved.info || {}),
         name: safeBase.info?.name, // Luôn ưu tiên tên chính xác của di tích
+        decision: safeBase.info?.decision, // Luôn ưu tiên số quyết định chuẩn
         stt: safeBase.stt,
         coordinates: safeBase.info?.coordinates, // Luôn ưu tiên tọa độ chuẩn của di tích
         lat: safeBase.info?.lat,
@@ -162,6 +164,8 @@ export default function App() {
         ...safeBase.investigation,
         ...(saved.investigation || {}),
         investigationQuestion: safeBase.investigation?.investigationQuestion || saved.investigation?.investigationQuestion,
+        suggestedAnswer: safeBase.investigation?.suggestedAnswer || saved.investigation?.suggestedAnswer,
+        quiz: safeBase.investigation?.quiz || safeBase.quiz,
         driveReferenceData: safeBase.investigation?.driveReferenceData || null,
         dossier: safeBase.investigation?.dossier || null,
         flashcards: safeBase.investigation?.flashcards || saved.investigation?.flashcards,
@@ -192,6 +196,20 @@ export default function App() {
     }
     setData(baseMonument || allMonumentsList[0]);
   }, [currentStt, storageKey, baseMonument]);
+
+  useEffect(() => {
+    // Tự động dọn dẹp các bản cache cũ của phiên bản trước để bảo đảm 100% hiển thị dữ liệu mới nhất
+    try {
+      const keysToClean = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && (k.startsWith('di_san_so_v') || k.startsWith('di_san_so_monument_data_')) && !k.startsWith('di_san_so_v2026_sync_')) {
+          keysToClean.push(k);
+        }
+      }
+      keysToClean.forEach(k => localStorage.removeItem(k));
+    } catch (e) {}
+  }, []);
 
   useEffect(() => {
     const handleHashChange = () => {

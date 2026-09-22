@@ -376,73 +376,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Ai là kiến trúc sư thiết kế Dinh Độc Lập hiện nay?",
           "options": [
-            "Sự kiện tiêu biểu nhất gắn với Dinh Độc Lập diễn ra vào trưa ngày 30/4/1975. Khoảng 10 giờ 45 p...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Ngô Viết Thụ",
+            "Ernest Hébrard",
+            "Alfred Foulhoux",
+            "Huỳnh Tấn Phát"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước ghi dấu sự kiện: Sự kiện tiêu biểu nhất gắn với Dinh Độc Lập diễn ra vào trưa ngày 30/4/1975. Khoảng 10 giờ 45 phút, xe tăng của Quân Giải phóng tiến vào trung tâm Sài Gòn, húc đổ cổng Dinh Độc Lập. Các chiến sĩ nhanh chóng tiến vào bên trong, tiếp quản Dinh và buộc Tổng thống Dương Văn Minh cùng nội các chính quyền Sài Gòn tuyên bố đầu hàng vô điều kiện.\nLúc 11 giờ 30 phút, lá cờ cách mạng được kéo lên nóc Dinh Độc Lập. Sự kiện này đánh dấu Chiến dịch Hồ Chí Minh toàn thắng, chính quyền Việt Nam Cộng hòa sụp đổ, miền Nam được hoàn toàn giải phóng và cuộc kháng chiến chống Mỹ kết thúc thắng lợi; mở ra thời kỳ hòa bình, độc lập, thống nhất đất nước.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Ngô Viết Thụ."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Dinh Độc Lập hiện nay được khởi công xây dựng vào thời điểm nào?",
           "options": [
-            "Ngô Viết Thụ, Nguyễn Văn Thiệu, Dương Văn Minh, Bùi Quang Thận và các chiến sĩ Quân đ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "27/02/1962",
+            "01/7/1962",
+            "31/10/1966",
+            "30/4/1975"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Ngô Viết Thụ, Nguyễn Văn Thiệu, Dương Văn Minh, Bùi Quang Thận và các chiến sĩ Quân đoàn 2. - Hiện vật: 1+A10Xe tăng 390 và 843; xe Jeep M151A2; trực thăng UH-1; xe Mercedes; các tài liệu, phương tiện thông tin liên lạc, đồ dùng và nội thất lịch sử được bảo tồn tại Dinh.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 01/7/1962."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia đặc biệt (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Sự kiện nào xảy ra tại Dinh Độc Lập lúc 11 giờ 30 phút ngày 30/4/1975?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia đặc biệt",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Máy bay F5E ném bom dinh",
+            "Nguyễn Văn Thiệu tuyên bố từ chức",
+            "Lá cờ của Mặt trận Dân tộc Giải phóng miền Nam Việt Nam được kéo lên nóc dinh",
+            "Dinh được khánh thành"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước được xếp hạng cấp Quốc gia đặc biệt theo Quyết định số 1272/QĐ-TTg ngày 12/8/2009.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Lá cờ của Mặt trận Dân tộc Giải phóng miền Nam Việt Nam được kéo lên nóc dinh."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Xe tăng nào đã húc tung cổng chính Dinh Độc Lập trưa 30/4/1975?",
           "options": [
-            "Tọa lạc tại địa chỉ: 135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Tp. Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "843",
+            "846",
+            "985",
+            "390"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại 135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Tp. Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 390."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Tổng thể mặt bằng Dinh Độc Lập được bố trí theo hình chữ Hán nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "CÁT (吉)",
+            "SƠN (山)",
+            "NHẬT (日)",
+            "QUỐC (國)"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: CÁT (吉)."
         }
       ],
       "flashcards": [
@@ -1018,73 +1018,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Di tích lịch sử Địa đạo Củ Chi\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hai khu tham quan tiêu biểu của Di tích lịch sử Địa đạo Củ Chi là những nơi nào?",
           "options": [
-            "Địa đạo bắt đầu hình thành trong kháng chiến chống Pháp, khoảng năm 1947–1948; được mở rộng mạn...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Bến Lộc An và Bến Đá",
+            "Bến Dược và Bến Đình",
+            "Bến Nghé và Bến Thành",
+            "Bến Nhà Rồng và Bến Bạch Đằng"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Di tích lịch sử Địa đạo Củ Chi ghi dấu sự kiện: Địa đạo bắt đầu hình thành trong kháng chiến chống Pháp, khoảng năm 1947–1948; được mở rộng mạnh từ năm 1961. Nơi đây đã chống lại nhiều cuộc càn quét lớn, tiêu biểu là Chiến dịch Crimp năm 1966, Chiến dịch Cedar Falls tháng 1-1967 và cuộc càn quét tháng 3-1967. Địa đạo tiếp tục phát huy vai trò trong Tổng tiến công và nổi dậy Xuân Mậu Thân 1968 và Chiến dịch Hồ Chí Minh năm 1975.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Bến Dược và Bến Đình."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Di tích lịch sử Địa đạo Củ Chi\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hệ thống địa đạo Củ Chi thường được tổ chức thành bao nhiêu tầng chính?",
           "options": [
-            "Các cán bộ từng hoạt động, chỉ đạo chiến đấu tại căn cứ Củ Chi như Võ Văn Kiệt, Trần ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Bốn tầng",
+            "Năm tầng",
+            "Ba tầng",
+            "Hai tầng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các cán bộ từng hoạt động, chỉ đạo chiến đấu tại căn cứ Củ Chi như Võ Văn Kiệt, Trần Hải Phụng, Nguyễn Văn Linh; cùng cán bộ Khu ủy Sài Gòn – Gia Định, Huyện ủy Củ Chi và đông đảo quân dân địa phương. - Hiện vật: Cửa hầm bí mật, nắp hầm ngụy trang, bếp Hoàng Cầm, hầm chống bom, hầm hội họp, hầm chỉ huy, hầm cứu thương, giếng nước, ụ chiến đấu, bẫy chông, vũ khí tự tạo và các vật dụng sinh hoạt của cán bộ, chiến sĩ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Ba tầng."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Di tích lịch sử Địa đạo Củ Chi\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia đặc biệt (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Loại bếp nào được sử dụng để hạn chế khói bốc lên, tránh bị phát hiện?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia đặc biệt",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Bếp lò gạch",
+            "Bếp dầu",
+            "Bếp kiềng ba chân",
+            "Bếp Hoàng Cầm"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Di tích lịch sử Địa đạo Củ Chi được xếp hạng cấp Quốc gia đặc biệt theo Số 2367/QĐ-TTg ngày \n23/12/2015."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Bếp Hoàng Cầm."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Di tích lịch sử Địa đạo Củ Chi\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Trong kháng chiến, địa đạo Củ Chi chủ yếu giúp lực lượng cách mạng thực hiện hoạt động nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Ẩn náu, liên lạc, hội họp và chiến đấu",
+            "Sản xuất gốm xuất khẩu",
+            "Khai thác khoáng sản",
+            "Đóng tàu vận tải biển"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Ẩn náu, liên lạc, hội họp và chiến đấu."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Di tích lịch sử Địa đạo Củ Chi\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Địa đạo Củ Chi được xếp hạng Di tích quốc gia đặc biệt vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2020",
+            "2015",
+            "2004",
+            "2010"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 2015."
         }
       ],
       "flashcards": [
@@ -1598,9 +1598,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)",
+      "title": "Hồ sơ điều tra: Di tích lịch sử đường Hồ Chí Minh trên biển (Điểm Bến Lộc An)",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Xã Hồ Tràm, Thành phố Hồ Chí Minh.",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích lịch sử đường Hồ Chí Minh trên biển (Điểm Bến Lộc An)",
       "investigationQuestion": "Đường Hồ Chí Minh trên biển và Bến Lộc An cho thấy sự phối hợp giữa thủy thủ, bộ đội và nhân dân địa phương có vai trò như thế nào trong việc vượt qua hiểm nguy để bảo đảm hậu cần cho chiến trường?",
       "suggestedAnswer": "Từ năm 1961, những con tàu “không số” (ngụy trang như tàu đánh cá) chở vũ khí, hàng hóa vượt biển vào miền Nam. Bến Lộc An (Đất Đỏ) là một trong những điểm tiếp nhận: thủy thủ vượt biển giữa sự truy lùng của hải quân đối phương; bộ đội và nhân dân địa phương canh gác, ngụy trang, bốc dỡ, cất giấu và vận chuyển hàng vào căn cứ. Chỉ cần một khâu lộ ra là cả chuyến đi thất bại, nên sự bí mật, tin cậy và phối hợp chặt chẽ chính là chìa khóa bảo đảm hậu cần cho chiến trường.",
       "referencesList": [
@@ -1646,73 +1646,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Bến Lộc An gắn với tuyến vận tải chiến lược nào trong kháng chiến chống Mỹ?",
           "options": [
-            "Ngày 23/10/1961: Thành lập Đoàn 759, lực lượng vận tải quân sự trên biển, mở đầu quá trình xây ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Đường Trường Sơn Đông",
+            "Đường sắt Bắc – Nam",
+            "Đường Hồ Chí Minh trên biển",
+            "Đường số 4"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An) ghi dấu sự kiện: Ngày 23/10/1961: Thành lập Đoàn 759, lực lượng vận tải quân sự trên biển, mở đầu quá trình xây dựng Đường Hồ Chí Minh trên biển.\nĐầu năm 1961: Trung ương Cục miền Nam tổ chức khảo sát vùng biển Hàm Tân – Hồ Cốc – Lộc An và lựa chọn cửa sông Ray làm bến tiếp nhận vũ khí.\nTháng 6/1963: Thành lập Đoàn 1500 với khoảng 200 cán bộ, chiến sĩ để chuẩn bị bến bãi, kho chứa và lực lượng bảo vệ.\nNgày 30/11/1963: Chuyến tàu không số đầu tiên cập Bến Lộc An nhưng mắc cạn tại cửa biển. Hơn 600 dân công được huy động để bốc dỡ và vận chuyển an toàn khoảng 20 tấn vũ khí.\nĐêm 12, rạng sáng 13/2/1964: Bến Lộc An tiếp nhận an toàn chuyến tàu thứ hai; vũ khí được đưa qua Bến Tranh và chuyển về căn cứ Tỉnh đội Bà Rịa.\nNgày 15/3/1965: Chuyến tàu thứ ba, có quy mô lớn nhất, cập Bến Lộc An, đưa nhiều loại súng, đạn, mìn, lựu đạn và thuốc nổ vào chiến trường.\nSau tháng 3/1965: Bến Lộc An ngừng hoạt động để bảo đảm bí mật cho tuyến vận tải.\nNgày 26/11/2024: Thủ tướng Chính phủ ban hành Quyết định số 1473/QĐ-TTg, xếp hạng Di tích Đường Hồ Chí Minh trên biển là di tích quốc gia đặc biệt; Bến Lộc An là một trong những địa điểm tiêu biểu của di tích.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Đường Hồ Chí Minh trên biển."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Phương tiện gắn đặc biệt với tuyến đường Hồ Chí Minh trên biển là loại tàu nào?",
           "options": [
-            "Lê Văn Một: Thuyền trưởng chỉ huy chuyến tàu không số đầu tiên cập Bến Lộc An vào cuố...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Tàu du lịch",
+            "Tàu điện",
+            "Tàu kéo đường sông",
+            "Tàu không số"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Lê Văn Một: Thuyền trưởng chỉ huy chuyến tàu không số đầu tiên cập Bến Lộc An vào cuối tháng 11/1963.\nĐặng Văn Thanh: Chính trị viên của chuyến tàu đầu tiên vào Bến Lộc An.\nNguyễn Văn Chí (Sáu Chí): Phó Bí thư Khu ủy miền Đông, Chính ủy Đoàn 1500, tham gia tổ chức lực lượng và chuẩn bị bến tiếp nhận vũ khí.\nMai Văn Bình: Trưởng Đoàn 1500, phụ trách lực lượng khảo sát, xây dựng bến bãi, kho chứa và tổ chức tiếp nhận vũ khí.\nTrần Văn Trà: Cán bộ lãnh đạo, chỉ đạo tiếp tục tổ chức các chuyến vận chuyển vũ khí vào Bến Lộc An.\nCán bộ, chiến sĩ Đoàn 759, Đoàn 125 và Đoàn 1500: Trực tiếp thực hiện nhiệm vụ vận chuyển, tiếp nhận, bảo vệ và phân phối vũ khí.\nNhân dân Xuyên Mộc – Long Đất: Tham gia bảo vệ bến, ngụy trang, bốc dỡ, che giấu và vận chuyển vũ khí về căn cứ. - Hiện vật: Hiện nay, tại Bến Lộc An hầu như không còn nguyên vẹn các hiện vật gốc của ba chuyến tàu do sự thay đổi của địa hình, tác động của chiến tranh và thời gian. Những dấu tích tiêu biểu gắn với di tích gồm:\nCửa biển Lộc An, nơi chuyến tàu đầu tiên mắc cạn.\nRạch Bà Phin Cát, nơi che giấu và sửa chữa con tàu đầu tiên.\nRạch sông Sao, nơi các chuyến tàu thứ hai và thứ ba neo đậu, bốc dỡ vũ khí.\nBến Tranh, nơi tập kết vũ khí trước khi chuyển về căn cứ.\nBến Khỉ, nơi lực lượng cảnh giới tiền tiêu đóng quân.\nBưng Sậy, nơi Đoàn 1500 đóng quân và chuẩn bị hậu cần.\nSở Thằng Tây, nơi tập kết vũ khí của chuyến tàu đầu tiên.\nCác hầm bí mật, kho chứa, giao thông hào và địa điểm vận chuyển vũ khí.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Tàu không số."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia đặc biệt (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Bến Lộc An có vai trò nổi bật nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia đặc biệt",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Tiếp nhận vũ khí, hàng hóa chi viện bằng đường biển",
+            "Là nơi sản xuất vũ khí quy mô lớn",
+            "Là sân bay dã chiến",
+            "Là nơi đặt đài phát thanh quốc gia"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An) được xếp hạng cấp Quốc gia đặc biệt theo Quyết định số 1473/QĐ-TTgNgày 26/11/2024, Thủ tướng Chính phủ."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tiếp nhận vũ khí, hàng hóa chi viện bằng đường biển."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Điểm Bến Lộc An thuộc vùng ven biển của địa phương nào trước đây?",
           "options": [
-            "Tọa lạc tại địa chỉ: Xã Hồ Tràm, Thành phố Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Bình Dương",
+            "Bà Rịa – Vũng Tàu",
+            "Tây Ninh",
+            "Đồng Tháp"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Xã Hồ Tràm, Thành phố Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Bà Rịa – Vũng Tàu."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Giá trị lịch sử nổi bật của Bến Lộc An phản ánh hoạt động nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Khai hoang nông nghiệp thời Nguyễn",
+            "Giao thương gốm sứ thời cổ",
+            "Chi viện chiến trường miền Nam bằng đường biển",
+            "Xây dựng đường sắt thời Pháp"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Chi viện chiến trường miền Nam bằng đường biển."
         }
       ],
       "flashcards": [
@@ -2242,9 +2242,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Di tích lịch sử nhà tù Côn Đảo",
+      "title": "Hồ sơ điều tra: Khu di tích LSCM nhà tù Côn Đảo",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Đặc khu Côn Đảo, Thành phố Hồ Chí Minh.",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích lịch sử nhà tù Côn Đảo",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Khu di tích LSCM nhà tù Côn Đảo",
       "investigationQuestion": "Lịch sử Nhà tù Côn Đảo cho thấy những người bị giam cầm đã giữ vững phẩm chất và niềm tin như thế nào, và thế hệ trẻ hôm nay cần làm gì để trân trọng tự do, hòa bình?",
       "suggestedAnswer": "Nhà tù do thực dân Pháp lập từ năm 1862, sau đó chính quyền Sài Gòn tiếp tục sử dụng (có cả “chuồng cọp”). Hàng vạn người yêu nước bị giam giữ, nhiều người hy sinh vì tra tấn, đói khát, lao dịch. Dù vậy, họ vẫn giữ khí tiết, đoàn kết, học tập và tổ chức đấu tranh – biến nhà tù thành “trường học cách mạng”. Thế hệ trẻ trân trọng tự do, hòa bình bằng cách học tập chăm chỉ, sống trách nhiệm, tri ân người đi trước, tìm hiểu và giữ gìn di tích.",
       "referencesList": [
@@ -2298,73 +2298,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Di tích lịch sử nhà tù Côn Đảo\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hệ thống nhà tù Côn Đảo được thiết lập đầu tiên dưới chính quyền nào?",
           "options": [
-            "Ngày 28/11/1861: Quân Pháp chiếm Côn Đảo.\nNgày 1/2/1862: Thống đốc Nam Kỳ Bonard ký quyết định ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Nhà Nguyễn",
+            "Quân đội Nhật Bản",
+            "Chính quyền Việt Nam sau 1975",
+            "Thực dân Pháp"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Di tích lịch sử nhà tù Côn Đảo ghi dấu sự kiện: Ngày 28/11/1861: Quân Pháp chiếm Côn Đảo.\nNgày 1/2/1862: Thống đốc Nam Kỳ Bonard ký quyết định thành lập Nhà tù Côn Đảo.\nTháng 3/1862: 50 tù nhân đầu tiên bị đưa ra giam giữ tại Côn Đảo.\nNăm 1908: Nhiều người tham gia phong trào chống thuế Trung Kỳ, trong đó có Phan Châu Trinh và Huỳnh Thúc Kháng, bị đày ra Côn Đảo.\nNgày 2/7/1930: Tôn Đức Thắng bị đưa ra Côn Đảo và bị giam tại Banh I.\nCuối năm 1932: Chi bộ cộng sản đầu tiên trong Nhà tù Côn Đảo được thành lập tại Banh I, nay là Trại Phú Hải.\nGiai đoạn 1941–1943: Số tù nhân tăng mạnh sau cuộc Khởi nghĩa Nam Kỳ; nhiều người chết do bệnh tật, đói khát, lao dịch và điều kiện giam giữ khắc nghiệt.\nTháng 9/1945: Hơn 2.000 tù chính trị nổi dậy giành quyền làm chủ Côn Đảo và trở về đất liền tham gia kháng chiến.\nNgày 18/4/1946: Thực dân Pháp tái chiếm Côn Đảo và khôi phục hệ thống nhà tù.\nNgày 23/1/1952: Võ Thị Sáu bị xử bắn tại Côn Đảo.\nNăm 1955: Chính quyền Sài Gòn tiếp quản và tiếp tục sử dụng Nhà tù Côn Đảo.\nGiai đoạn 1970–1972: Số người bị giam tại Côn Đảo có thời điểm gần 10.000 người.\nTháng 7/1970: Hệ thống Chuồng Cọp Pháp bị phanh phui, gây chấn động dư luận quốc tế.\nGiai đoạn 1973–1974: Có 4.075 tù chính trị Côn Đảo được trao trả theo Hiệp định Paris.\nRạng sáng ngày 1/5/1975: Tù chính trị nổi dậy tự giải phóng, chấm dứt 113 năm tồn tại của Nhà tù Côn Đảo.\nNgày 29/4/1979: Khu di tích lịch sử Côn Đảo được xếp hạng di tích quốc gia.\nNgày 10/5/2012: Nhà tù Côn Đảo được xếp hạng di tích quốc gia đặc biệt theo Quyết định số 548/QĐ-TTg.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thực dân Pháp."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Di tích lịch sử nhà tù Côn Đảo\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tên gọi nào gắn với kiểu khu giam giữ khắc nghiệt nổi tiếng tại Côn Đảo?",
           "options": [
-            "Phan Châu Trinh: Nhà yêu nước, bị thực dân Pháp đày ra Côn Đảo sau phong trào chống t...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chuồng cọp",
+            "Ụ tàu nhỏ",
+            "Lũy Bán Bích",
+            "Hầm thủy lôi"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Phan Châu Trinh: Nhà yêu nước, bị thực dân Pháp đày ra Côn Đảo sau phong trào chống thuế Trung Kỳ năm 1908.\nHuỳnh Thúc Kháng: Nhà yêu nước, bị giam tại Côn Đảo từ năm 1908 đến năm 1921.\nNgô Đức Kế: Nhà yêu nước, một trong những nhân vật tiêu biểu của phong trào Duy Tân, từng bị lưu đày tại Côn Đảo.\nTôn Đức Thắng: Bị đày ra Côn Đảo năm 1930 và bị giam giữ đến năm 1945; tích cực tham gia xây dựng tổ chức, đoàn kết và giáo dục tù nhân.\nNguyễn An Ninh: Nhà báo, nhà yêu nước; nhiều lần bị bắt và mất tại Côn Đảo ngày 14/8/1943.\nLê Hồng Phong: Tổng Bí thư Đảng Cộng sản Đông Dương, bị đày ra Côn Đảo và mất tại đây ngày 6/9/1942.\nNguyễn Văn Cừ: Tổng Bí thư Đảng Cộng sản Đông Dương, từng bị giam tại Côn Đảo trong giai đoạn 1932–1936.\nPhạm Văn Đồng: Nhà hoạt động cách mạng, từng bị thực dân Pháp kết án và đày ra Côn Đảo.\nLê Duẩn: Nhà hoạt động cách mạng, từng bị giam tại Nhà tù Côn Đảo.\nVõ Thị Sáu: Nữ chiến sĩ cách mạng bị đưa ra Côn Đảo cuối năm 1951 và bị xử bắn ngày 23/1/1952.\nCao Văn Ngọc: Chiến sĩ cách mạng, bị xử bắn tại Côn Đảo năm 1961.\nHàng vạn người Việt Nam yêu nước và chiến sĩ cách mạng thuộc nhiều thế hệ đã bị giam giữ, lưu đày tại đây. - Hiện vật: Hệ thống cùm sắt, xiềng chân và khóa dùng để giam giữ tù nhân.\nCác cánh cửa sắt, song sắt, bệ nằm và nền giam có gắn cùm tại các phòng giam tập thể.\nDụng cụ lao động khổ sai như búa đập đá, cuốc, xẻng, quang gánh và cối xay lúa.\nĐồ dùng sinh hoạt đơn sơ của tù nhân như chén, bát, ca đựng nước và dụng cụ tự chế.\nHồ sơ, thẻ tù, sổ bộ, danh sách tù nhân và một số tài liệu quản lý của bộ máy nhà tù.\nBáo, tài liệu học tập và những bản ghi chép được tù chính trị bí mật thực hiện trong nhà tù.\nDi vật, hình ảnh và tư liệu liên quan đến Chủ tịch Tôn Đức Thắng cùng các chiến sĩ cách mạng từng bị giam tại Côn Đảo.\nCác công trình gốc còn lại như phòng giam, xà lim, khu Chuồng Cọp Pháp, Chuồng Cọp Mỹ, hầm xay lúa, Sở Lò Vôi và khu Chuồng Bò.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chuồng cọp."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Di tích lịch sử nhà tù Côn Đảo\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia đặc biệt (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Nghĩa trang nào ở Côn Đảo là nơi an nghỉ của nhiều chiến sĩ cách mạng?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia đặc biệt",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Bình An",
+            "Hàng Dương",
+            "Hàng Xanh",
+            "Hàng Gòn"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Di tích lịch sử nhà tù Côn Đảo được xếp hạng cấp Quốc gia đặc biệt theo Quyết định số 548/QĐ-TTg ngày 10/5/2012 của Thủ tướng Chính phủ.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Hàng Dương."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Di tích lịch sử nhà tù Côn Đảo\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Nữ anh hùng Võ Thị Sáu bị xử tử tại Côn Đảo vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Đặc khu Côn Đảo, Thành phố Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "1950",
+            "1954",
+            "1952",
+            "1948"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Đặc khu Côn Đảo, Thành phố Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1952."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Di tích lịch sử nhà tù Côn Đảo\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Giá trị lịch sử nổi bật của hệ thống nhà tù Côn Đảo gắn với nội dung nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Lịch sử hình thành nghề gốm",
+            "Lịch sử thương mại đường sông",
+            "Lịch sử khai thác dầu khí",
+            "Lịch sử đấu tranh của các tù nhân chính trị và chiến sĩ cách mạng"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Lịch sử đấu tranh của các tù nhân chính trị và chiến sĩ cách mạng."
         }
       ],
       "flashcards": [
@@ -2921,73 +2921,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Chiến dịch Bình Giã diễn ra chủ yếu vào khoảng thời gian nào?",
           "options": [
-            "Ngày 11/10/1964: Quân ủy Trung ương và Bộ Tổng Tư lệnh chỉ thị mở đợt hoạt động quân sự trên ch...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Cuối năm 1964 – đầu năm 1965",
+            "Cuối năm 1974 – đầu năm 1975",
+            "Cuối năm 1954 – đầu năm 1955",
+            "Cuối năm 1968 – đầu năm 1969"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo) ghi dấu sự kiện: Ngày 11/10/1964: Quân ủy Trung ương và Bộ Tổng Tư lệnh chỉ thị mở đợt hoạt động quân sự trên chiến trường miền Nam.\nCuối tháng 10/1964: Đảng ủy và Bộ Tư lệnh Miền xây dựng kế hoạch chiến dịch, chọn Bình Giã làm điểm quyết chiến.\nĐêm 2/12/1964: Đại đội 445 Bà Rịa tiến công ấp chiến lược Bình Giã, mở màn chiến dịch.\nĐêm 7/12/1964: Đại đội 445 phối hợp với một đại đội của Trung đoàn 762 tiến công Bình Giã lần thứ hai.\nNgày 13/12/1964: Trung đoàn 762 tiến công Chi đoàn 3 thiết giáp tại khu vực Núi Nghệ, phá hủy 14 xe M113.\nĐêm 22/12/1964: Bến Lộc An tiếp nhận chuyến tàu thứ hai chở 44 tấn vũ khí từ miền Bắc; một phần vũ khí được đưa vào phục vụ chiến dịch.\nĐêm 27/12/1964: Đợt hai của chiến dịch mở màn; lực lượng ta tiến công, làm chủ ấp chiến lược Bình Giã.\nNgày 28/12/1964: Trung đoàn 761 tiến công lực lượng đổ bộ đường không, tiêu diệt phần lớn Tiểu đoàn 33 Biệt động quân.\nNgày 31/12/1964: Trung đoàn 761 bao vây và tiêu diệt phần lớn Tiểu đoàn 4 Thủy quân lục chiến tại Quảng Giới.\nNgày 1/1/1965: Quân đội Sài Gòn mở cuộc hành quân “Hùng Vương 2” với khoảng 2.000 quân nhằm giải tỏa Đức Thạnh – Bình Giã.\nNgày 3/1/1965: Trung đoàn 762 phục kích trên đường số 2, đánh thiệt hại nặng Tiểu đoàn 35 Biệt động quân. Chiến dịch Bình Giã kết thúc.\nNgày 15/10/1994: Di tích Chiến thắng Bình Giã được xếp hạng di tích lịch sử cấp quốc gia theo Quyết định số 2754-QĐ/BT.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Cuối năm 1964 – đầu năm 1965."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Chiến thắng Bình Giã diễn ra trên địa bàn thuộc tỉnh nào trước đây?",
           "options": [
-            "Bộ Chỉ huy Chiến dịch Bình Giã\nTrần Đình Xu: Chỉ huy trưởng chiến dịch.\nLê Văn Tưởng:...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "An Giang",
+            "Bà Rịa – Vũng Tàu",
+            "Bình Dương",
+            "Long An"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Bộ Chỉ huy Chiến dịch Bình Giã\nTrần Đình Xu: Chỉ huy trưởng chiến dịch.\nLê Văn Tưởng: Chính ủy chiến dịch.\nLê Xuân Lựu: Phó Chính ủy chiến dịch.\nNguyễn Hồng Lâm (Hai Bứa): Chỉ huy phó.\nNguyễn Hòa: Chỉ huy phó, Tham mưu trưởng chiến dịch.\nNhững người tham gia, phục vụ chiến dịch được tài liệu nhắc đến\nNguyễn Văn Quang: Cán bộ Đại đội 445 Bà Rịa, trực tiếp chỉ huy lực lượng sử dụng hỏa lực phá cổng ấp Bình Giã.\nĐồng chí Hướng: Sử dụng súng chống tăng trong trận tiến công mở màn.\nCụ Lia, cụ Đé: Người Chơ Ro ở Xuân Sơn, tham gia dẫn đường cho bộ đội.\nAnh Tròn: Thành viên đội công tác, tham gia phục vụ chiến dịch.\nTổng Văn Then: Người Chơ Ro ở Xuyên Mộc, tham gia vận chuyển thương binh từ Hiệp Hòa về căn cứ Khu I.\nLê Thị Trà: Vận động phụ nữ Chơ Ro nấu ăn và chăm sóc thương binh.\nNhững người đánh giá ý nghĩa chiến thắng\nĐại tướng Hoàng Văn Thái: Đánh giá Chiến dịch Bình Giã là chiến dịch tiến công mang tính tổng hợp, có ý nghĩa chiến lược.\nTổng Bí thư Lê Duẩn: Khẳng định Chiến dịch Bình Giã đánh dấu sự thay đổi quan trọng trong tương quan giữa ta và đối phương.\nĐại tướng Võ Nguyên Giáp: Nhận định Chiến thắng Bình Giã đánh dấu sự thất bại về cơ bản của chiến lược “Chiến tranh đặc biệt”. - Hiện vật: Những tài liệu hiện có chưa cung cấp danh mục kiểm kê cụ thể các hiện vật gốc đang lưu giữ tại Di tích Chiến thắng Bình Giã. Vì vậy, không nên tự ghi xe M113, súng hoặc máy bay là hiện vật của di tích nếu chưa có xác nhận của đơn vị quản lý.\nCác công trình và tư liệu tiêu biểu có thể giới thiệu gồm:\nTượng đài Chiến thắng Bình Giã: Hình tượng ba bàn tay nắm chặt đốc lê, phía trên là ba lưỡi lê vươn lên, tượng trưng cho lực lượng ba thứ quân và ba mũi giáp công.\nHai bức phù điêu: Khắc họa hoạt động chiến đấu của bộ đội, sự tham gia của nhân dân và phong trào phá ấp chiến lược.\nBia giới thiệu và bia khoanh vùng bảo vệ di tích.\nHình ảnh, bản đồ và sơ đồ Chiến dịch Bình Giã.\nTư liệu về Đại đội 445 Bà Rịa, Trung đoàn 761, Trung đoàn 762 và các lực lượng tham gia chiến dịch.\nHình ảnh xe thiết giáp M113, máy bay trực thăng, vũ khí và phương tiện xuất hiện trong chiến dịch, được lưu giữ dưới dạng ảnh, tài liệu hoặc trưng bày tại bảo tàng.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Bà Rịa – Vũng Tàu."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Chiến thắng Bình Giã gắn với sự thất bại nghiêm trọng của chiến lược chiến tranh nào của Mỹ?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Chiến tranh đơn phương",
+            "Chiến tranh cục bộ",
+            "Chiến tranh đặc biệt",
+            "Việt Nam hóa chiến tranh"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo) được xếp hạng cấp Quốc gia theo Quyết định số 2754-QĐ/BT ngày 15/10/1994. của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Chiến tranh đặc biệt."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Tên di tích Chiến thắng Bình Giã bao gồm địa điểm quân sự nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Xã Ngãi Giao, Thành phố Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Cảng Nhà Bè",
+            "Sân bay Tân Sơn Nhất",
+            "Căn cứ Đồng Dù",
+            "Chi khu quân sự Đức Thạnh"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Xã Ngãi Giao, Thành phố Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Chi khu quân sự Đức Thạnh."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Di tích Chiến thắng Bình Giã được công nhận là di tích lịch sử cách mạng cấp quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1994",
+            "1989",
+            "2001",
+            "2010"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1994."
         }
       ],
       "flashcards": [
@@ -3509,9 +3509,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Căn cứ Minh Đạm",
+      "title": "Hồ sơ điều tra: Khu căn cứ Minh Đạm",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại xã Phước Hải, Thành phố Hồ Chí Minh.",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Căn cứ Minh Đạm",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Khu căn cứ Minh Đạm",
       "investigationQuestion": "Căn cứ Minh Đạm cho thấy địa hình tự nhiên và sự che chở của nhân dân đã góp phần như thế nào vào việc xây dựng căn cứ cách mạng, và em học được gì về sức mạnh của lòng dân?",
       "suggestedAnswer": "Căn cứ Minh Đạm (Bà Rịa) nằm ở vùng đồi núi, rừng rậm, có nhiều chỗ ẩn nấp và quan sát, thuận lợi để đặt cơ quan chỉ huy và giữ lực lượng. Nhưng địa hình chỉ phát huy khi có lòng dân: người dân nuôi giấu cán bộ, tiếp tế lương thực, báo tin và che chở khi bị càn quét. Em học được rằng địa hình là điều kiện, còn lòng dân mới là “bức tường” vững chắc nhất; trong lớp học, sự tin tưởng và giúp đỡ lẫn nhau cũng tạo nên một tập thể mạnh.",
       "referencesList": [
@@ -3559,73 +3559,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Căn cứ Minh Đạm\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Khu căn cứ Minh Đạm thuộc vùng địa hình nào?",
           "options": [
-            "Cuối năm 1948: tên gọi Minh Đạm được xác lập để tưởng nhớ hai đồng chí Bùi Công Minh và Mạc Tha...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Núi Châu Thới",
+            "Núi Minh Đạm",
+            "Núi Bà Đen",
+            "Núi Sam"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Căn cứ Minh Đạm ghi dấu sự kiện: Cuối năm 1948: tên gọi Minh Đạm được xác lập để tưởng nhớ hai đồng chí Bùi Công Minh và Mạc Thanh Đạm. Năm 1962: Trung ương Cục đặt đài trinh sát kỹ thuật tại căn cứ. Năm 1966: liên quân Mỹ, quân đội Sài Gòn và quân Nam Triều Tiên tiến công căn cứ nhưng bị lực lượng cách mạng đánh trả. Tháng 2/1967: quân đội Hoàng gia Úc dựng hàng rào dài khoảng 11 km, gài hàng chục nghìn quả mìn nhằm phong tỏa căn cứ; lực lượng cách mạng từng bước phá hàng rào và bãi mìn. Tháng 5/1968: máy bay B-52 ném bom khu căn cứ. Năm 1969: lực lượng cách mạng đánh bại cuộc hành quân thường được gọi là “Chiến dịch ụ ngầm”. Ngày 30/4/1975: căn cứ hoàn thành vai trò lịch sử khi miền Nam được giải phóng. Ngày 18/01/1993: khu căn cứ được xếp hạng di tích quốc gia.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Núi Minh Đạm."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Căn cứ Minh Đạm\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tên gọi Minh Đạm gắn với hai cán bộ cách mạng nào?",
           "options": [
-            "Bùi Công Minh – Bí thư Huyện ủy Long Điền; Mạc Thanh Đạm – Phó Bí thư Huyện ủy Long Đ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nguyễn Văn Cừ và Phan Đăng Lưu",
+            "Lê Hồng Phong và Hà Huy Tập",
+            "Bùi Công Minh và Mạc Thanh Đạm",
+            "Tôn Đức Thắng và Châu Văn Liêm"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Bùi Công Minh – Bí thư Huyện ủy Long Điền; Mạc Thanh Đạm – Phó Bí thư Huyện ủy Long Điền. Sau khi hai ông hy sinh trong một chuyến công tác năm 1948, tên của hai người được ghép lại thành tên Minh Đạm. Ngoài ra, đền thờ tại khu di tích còn tưởng niệm các anh hùng liệt sĩ, trong đó có Anh hùng Lực lượng vũ trang nhân dân Võ Thị Sáu. - Hiện vật: Khuôn đúc mìn chống tăng tự tạo tại hang Quân giới; mìn E.3 do quân Mỹ và Úc sử dụng; vỏ thuốc và dụng cụ y tế tại hang Quân y; đồ dùng sinh hoạt của cán bộ, chiến sĩ; các loại vỏ đạn, vỏ pháo, bom và vũ khí còn lại sau những đợt đánh phá căn cứ; sa bàn tái hiện toàn bộ khu căn cứ. Ngoài hiện vật rời, hệ thống hang Huyện ủy, Huyện đội, Quân y, Quân giới, Thị xã Cấp và khu Đá Chẻ là những dấu tích gốc tiêu biểu.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Bùi Công Minh và Mạc Thanh Đạm."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Căn cứ Minh Đạm\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Trong kháng chiến, địa hình núi rừng Minh Đạm thuận lợi nhất cho hoạt động nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Phát triển cảng biển nước sâu",
+            "Xây dựng sân bay quốc tế",
+            "Khai thác đồng bằng lúa nước",
+            "Xây dựng căn cứ và che giấu lực lượng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Căn cứ Minh Đạm được xếp hạng cấp Quốc gia theo QĐ số: 57VH/QĐ ngày \n18/01/1993 - Bộ Văn Hóa \nThông Tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Xây dựng căn cứ và che giấu lực lượng."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Căn cứ Minh Đạm\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Khu căn cứ Minh Đạm gắn với lịch sử đấu tranh cách mạng của địa phương nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: xã Phước Hải, Thành phố Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Bà Rịa – Vũng Tàu",
+            "Cà Mau",
+            "Đồng Tháp",
+            "Bến Tre"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại xã Phước Hải, Thành phố Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Bà Rịa – Vũng Tàu."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Căn cứ Minh Đạm\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Yếu tố tự nhiên nào góp phần quan trọng giúp căn cứ Minh Đạm tồn tại trong chiến tranh?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Cồn cát ven biển hoàn toàn bằng phẳng",
+            "Địa hình núi đá, hang động và rừng cây",
+            "Kênh đào nhân tạo dày đặc",
+            "Đồng bằng trống trải"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Địa hình núi đá, hang động và rừng cây."
         }
       ],
       "flashcards": [
@@ -4206,73 +4206,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Căn cứ Rừng Sác\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Căn cứ Rừng Sác gắn với khu vực nào của Thành phố Hồ Chí Minh?",
           "options": [
-            "15/4/1966: thành lập Đặc khu Quân sự Rừng Sác, mật danh T10. Sau đó lực lượng phát triển thành ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Hóc Môn",
+            "Bình Chánh",
+            "Cần Giờ",
+            "Củ Chi"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Căn cứ Rừng Sác ghi dấu sự kiện: 15/4/1966: thành lập Đặc khu Quân sự Rừng Sác, mật danh T10. Sau đó lực lượng phát triển thành Đoàn 10 Đặc công Rừng Sác. 5/12/1972: Đoàn 10 đánh phá kho bom Thành Tuy Hạ, phá hủy một khối lượng lớn bom đạn. 3/12/1973: lực lượng Đoàn 10 tổ chức trận đánh kho xăng Nhà Bè, gây thiệt hại rất lớn cho hệ thống hậu cần của đối phương. Ngoài ra còn nhiều trận đánh tàu trên sông Lòng Tàu và các mục tiêu quân sự khác.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Cần Giờ."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Căn cứ Rừng Sác\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Lực lượng nào gắn nổi bật với chiến trường Rừng Sác trong kháng chiến chống Mỹ?",
           "options": [
-            "Tiêu biểu có Lương Văn Nho (Hai Nhã) – Đặc khu trưởng kiêm Chính ủy Đặc khu Quân sự R...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Đội du kích Ba Tơ",
+            "Trung đoàn Thủ đô",
+            "Thanh niên xung phong Ngã ba Đồng Lộc",
+            "Đặc công Rừng Sác"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Tiêu biểu có Lương Văn Nho (Hai Nhã) – Đặc khu trưởng kiêm Chính ủy Đặc khu Quân sự Rừng Sác; Lê Bá Ước (Bảy Ước) – chỉ huy, sau là Trung đoàn trưởng Đoàn 10 Đặc công Rừng Sác; cùng nhiều cán bộ, chiến sĩ Đoàn 10 và nhân dân Cần Giờ, Nhơn Trạch, Nhà Bè - Hiện vật: Khu di tích hiện bảo tồn/tái hiện nhà cảnh vệ, nhà đón tiếp, hội trường, hầm trú ẩn, nhà hậu cần, nhà quân y, nhà quân giới, nhà cơ yếu; đồng thời trưng bày hình ảnh và hiện vật liên quan đến cán bộ, chiến sĩ Đoàn 10. Một số không gian được phục dựng để tái hiện cảnh chỉ huy, chuẩn bị chiến đấu, đưa tiễn chiến sĩ ra trận, trận địa DKZ và kỹ thuật chưng cất nước mặn thành nước ngọt.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Đặc công Rừng Sác."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Căn cứ Rừng Sác\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đặc điểm tự nhiên nổi bật của Rừng Sác là gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Rừng ngập mặn và mạng lưới sông rạch",
+            "Sa mạc cát",
+            "Cao nguyên bazan",
+            "Núi đá vôi karst"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Căn cứ Rừng Sác được xếp hạng cấp Quốc gia theo Quyết định số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ trưởng Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Rừng ngập mặn và mạng lưới sông rạch."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Căn cứ Rừng Sác\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Căn cứ Rừng Sác được xếp hạng di tích lịch sử cấp quốc gia vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: xã Cần Giờ, Thành phố Hồ Chí Minh mới, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "2015",
+            "2004",
+            "1994",
+            "2000"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại xã Cần Giờ, Thành phố Hồ Chí Minh mới, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 2004."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Căn cứ Rừng Sác\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Vị trí Rừng Sác có ý nghĩa chiến lược vì nằm gần tuyến giao thông nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Tuyến biên giới Việt – Lào",
+            "Đường sắt xuyên Việt",
+            "Đường thủy nối Sài Gòn với biển",
+            "Đường mòn qua Tây Bắc"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Đường thủy nối Sài Gòn với biển."
         }
       ],
       "flashcards": [
@@ -4848,73 +4848,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chiến khu Đ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Chiến khu Đ được hình thành vào thời điểm nào?",
           "options": [
-            "Cuối tháng 2/1946: Chiến khu Đ được hình thành. 19/3/1948: trận đánh tháp canh cầu Bà Kiên ở Tâ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tháng 5/1954",
+            "Tháng 8/1945",
+            "Tháng 12/1946",
+            "Tháng 2/1946"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Chiến khu Đ ghi dấu sự kiện: Cuối tháng 2/1946: Chiến khu Đ được hình thành. 19/3/1948: trận đánh tháp canh cầu Bà Kiên ở Tân Uyên, một dấu mốc quan trọng trong sự phát triển của nghệ thuật đánh đặc công. 9/1961: lực lượng cách mạng tiến công Tiểu khu Phước Thành. 10/1964: pháo binh tập kích sân bay Biên Hòa. Tháng 1/1975: Chiến khu Đ là một trong những địa bàn xuất phát chiến dịch giải phóng Phước Long. 9–21/4/1975: từ khu vực căn cứ, lực lượng cách mạng tiến hành chiến dịch giải phóng Long Khánh, mở đường cho Chiến dịch Hồ Chí Minh.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Tháng 2/1946."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chiến khu Đ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Địa bàn ban đầu của Chiến khu Đ gồm bao nhiêu xã?",
           "options": [
-            "Tiêu biểu nhất là Trung tướng Nguyễn Bình – Khu trưởng Khu 7; Thi tướng Huỳnh Văn Ngh...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "5 xã",
+            "3 xã",
+            "7 xã",
+            "9 xã"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Tiêu biểu nhất là Trung tướng Nguyễn Bình – Khu trưởng Khu 7; Thi tướng Huỳnh Văn Nghệ – người có vai trò quan trọng trong khảo sát, xây dựng căn cứ và tổ chức lực lượng ở vùng Chiến khu Đ; cùng các cán bộ lãnh đạo, chỉ huy Khu 7 và lực lượng vũ trang miền Đông Nam Bộ. Tài liệu của tỉnh Bình Dương cũng ghi nhận Nguyễn Bình và Huỳnh Văn Nghệ gắn với giai đoạn hình thành Chiến khu Đ. - Hiện vật: “Hiện vật và tư liệu trưng bày/tái hiện” gồm: vũ khí, trang bị quân sự, bản đồ chiến khu, ảnh tư liệu, tài liệu cách mạng và các mô hình tái hiện đời sống – chiến đấu của quân dân Chiến khu Đ. Khu tưởng niệm được quy hoạch có nhà trưng bày, khu trưng bày ngoài trời, nhà bia tưởng niệm, tượng đài và mô hình tái hiện cuộc sống của quân và dân trong chiến khu.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 5 xã."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chiến khu Đ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Địa danh nào sau đây thuộc 5 xã hạt nhân ban đầu của Chiến khu Đ?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Bà Điểm",
+            "Lạc An",
+            "Long Phước",
+            "Phú Nhuận"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chiến khu Đ được xếp hạng cấp Quốc gia theo Quyết định số 1631/QĐ-BVHTTDL ngày 11/5/2010 của Bộ Văn hóa, Thể thao và Du lịch."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Lạc An."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chiến khu Đ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Chiến khu Đ là căn cứ quan trọng của cách mạng ở khu vực nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Tây Bắc",
+            "Bắc Trung Bộ",
+            "Miền Đông Nam Bộ",
+            "Tây Nguyên"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Miền Đông Nam Bộ."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chiến khu Đ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chiến khu Đ được công nhận là di tích lịch sử cấp quốc gia vào ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "18/3/1996",
+            "15/12/2004",
+            "23/12/2015",
+            "11/5/2010"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 11/5/2010."
         }
       ],
       "flashcards": [
@@ -5551,73 +5551,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Địa đạo Kim Long\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Địa đạo Kim Long nằm tại địa bàn nào của Châu Đức?",
           "options": [
-            "1962–1964: xây dựng hệ thống địa đạo Kim Long. Cuối năm 1964: địa đạo và lực lượng cách mạng tạ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tam Long, Kim Long",
+            "Phước Hải, Đất Đỏ",
+            "Hòa Long, Bà Rịa",
+            "Long Hải, Long Điền"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Địa đạo Kim Long ghi dấu sự kiện: 1962–1964: xây dựng hệ thống địa đạo Kim Long. Cuối năm 1964: địa đạo và lực lượng cách mạng tại khu vực Kim Long góp phần vào Chiến thắng Bình Giã. 1966–1967: địa đạo tiếp tục là nơi dựa để lực lượng du kích chống các cuộc càn quét của Mỹ và chính quyền Việt Nam Cộng hòa. Đêm 18 rạng sáng 19/6/1967: diễn ra trận Lòng Chảo – Kim Long, một trận đánh lớn tại khu vực Kim Long.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tam Long, Kim Long."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Địa đạo Kim Long\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Địa đạo Kim Long gắn chủ yếu với thời kỳ kháng chiến nào?",
           "options": [
-            "Di tích gắn chủ yếu với các cán bộ, chiến sĩ, du kích và nhân dân Kim Long – Châu Đức...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Khởi nghĩa Lam Sơn",
+            "Kháng chiến chống Mỹ",
+            "Phong trào Cần Vương",
+            "Kháng chiến chống quân Nguyên"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Di tích gắn chủ yếu với các cán bộ, chiến sĩ, du kích và nhân dân Kim Long – Châu Đức, những người trực tiếp đào địa đạo, xây dựng công sự, nuôi giấu và bảo vệ lực lượng cách mạng. Tư liệu hiện có không cho thấy một cá nhân duy nhất được xác định là “nhân vật của di tích” theo nghĩa như các di tích lưu niệm danh nhân. - Hiện vật: Hệ thống địa đạo dài khoảng 2.000 m, sâu khoảng 5 m, rộng khoảng 0,8 m; 12 cửa lên xuống; nhiều ngách trú ẩn; 3 ụ chiến đấu; hào công sự và lỗ châu mai. Bên trong từng có phòng họp, trạm y tế, nơi cất giữ vũ khí và kho lương thực.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Kháng chiến chống Mỹ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Địa đạo Kim Long\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Hệ thống địa đạo Kim Long dài gần bao nhiêu?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1 km",
+            "5 km",
+            "2 km",
+            "500 m"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Địa đạo Kim Long được xếp hạng cấp Quốc gia theo QĐ số: 961QĐ/BT ngày \n20/07/1994 - Bộ Văn Hóa \nThông Tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 2 km."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Địa đạo Kim Long\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Dọc địa đạo Kim Long có khoảng bao nhiêu cửa hầm lên xuống?",
           "options": [
-            "Tọa lạc tại địa chỉ: Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "8",
+            "20",
+            "6",
+            "12"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 12."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Địa đạo Kim Long\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Địa đạo Kim Long được công nhận là di tích lịch sử cách mạng vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1994",
+            "2010",
+            "1989",
+            "2001"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1994."
         }
       ],
       "flashcards": [
@@ -6189,73 +6189,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Địa đạo Phú Thọ Hòa\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Địa đạo Phú Thọ Hòa được xây dựng vào năm nào?",
           "options": [
-            "Năm 1947: bắt đầu xây dựng địa đạo tại thôn Lộc Hòa. 29/3/1948: trận đánh kho bom Bảy Hiền. 12/...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1954",
+            "1947",
+            "1945",
+            "1950"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Địa đạo Phú Thọ Hòa ghi dấu sự kiện: Năm 1947: bắt đầu xây dựng địa đạo tại thôn Lộc Hòa. 29/3/1948: trận đánh kho bom Bảy Hiền. 12/1949: lực lượng cách mạng nhiều lần đánh vào sân bay Tân Sơn Nhất. 1952 và 1954: tấn công kho bom Phú Thọ. Đêm 31/5 – rạng sáng 1/6/1954: Tiểu đoàn Quyết tử 950 đánh vào kho bom Phú Thọ Hòa. Tháng 4/1966: địa đạo bị lực lượng đối phương dùng xe ủi phá hủy và bao vây khu vực, chấm dứt gần hai thập kỷ hoạt động của địa đạo. Năm 1985: địa đạo được trùng tu, phục dựng một phần để bảo tồn và phát huy giá trị. Năm 1996: được xếp hạng di tích lịch sử cấp quốc gia.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1947."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Địa đạo Phú Thọ Hòa\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Địa đạo Phú Thọ Hòa được đào đầu tiên trong cuộc kháng chiến nào?",
           "options": [
-            "Bùi Văn Ba và Phạm Văn Hai – chỉ huy Tiểu đoàn Quyết tử 950 trong trận đánh kho bom P...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Kháng chiến chống Nguyên – Mông",
+            "Kháng chiến chống Mỹ",
+            "Kháng chiến chống Pháp",
+            "Kháng chiến chống quân Thanh"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Bùi Văn Ba và Phạm Văn Hai – chỉ huy Tiểu đoàn Quyết tử 950 trong trận đánh kho bom Phú Thọ Hòa đêm 31/5 rạng sáng 1/6/1954; Nguyễn Văn Linh – Tổng Bí thư, người từng đến thăm địa đạo năm 1984 và nhấn mạnh việc phục dựng, giáo dục truyền thống về Phú Thọ Hòa. Ngoài ra còn có đông đảo cán bộ, chiến sĩ và nhân dân Lộc Hòa, Phú Thọ Hòa tham gia xây dựng, bảo vệ và sử dụng địa đạo. - Hiện vật: Hệ thống địa đạo được phục dựng, nhà trưng bày, hình ảnh và tư liệu lịch sử, mô hình tái hiện hoạt động chiến đấu của quân dân Phú Thọ Hòa, các loại vũ khí và trang bị quân sự được sử dụng/trưng bày tại khu di tích. Đoạn địa đạo được khôi phục để tham quan dài khoảng 100 m; địa đạo lịch sử trước đây có hệ thống kéo dài hơn 10 km theo địa hình.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Kháng chiến chống Pháp."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Địa đạo Phú Thọ Hòa\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Địa đạo Phú Thọ Hòa hiện gắn với địa bàn nào của Thành phố Hồ Chí Minh?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Thủ Đức",
+            "Cần Giờ",
+            "Nhà Bè",
+            "Tân Phú"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Địa đạo Phú Thọ Hòa được xếp hạng cấp Quốc gia theo Số 1460 – QĐ/VH ngày \n28/6/1996 của Bộ Văn hóa \nThông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Tân Phú."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Địa đạo Phú Thọ Hòa\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Trận đánh nào năm 1948 được nhắc đến trong lịch sử đấu tranh của khu vực Phú Thọ Hòa?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Đánh kho bom Bảy Hiền",
+            "Trận Ấp Bắc",
+            "Trận Bình Giã",
+            "Trận Xuân Lộc"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Đánh kho bom Bảy Hiền."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Địa đạo Phú Thọ Hòa\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "So với Địa đạo Củ Chi, Địa đạo Phú Thọ Hòa có đặc điểm thời gian nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Được xây dựng cùng ngày",
+            "Được xây dựng sớm hơn",
+            "Được xây dựng sau năm 1975",
+            "Chỉ hình thành sau năm 2000"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Được xây dựng sớm hơn."
         }
       ],
       "flashcards": [
@@ -6831,73 +6831,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Địa đạo Tây Nam Bến Cát xưa nằm trên vùng đất của ba xã nào?",
           "options": [
-            "1948: hệ thống địa đạo đầu tiên được hình thành tại vùng Tây Nam Bến Cát. Từ năm 1961: quân dân...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tân Hòa, Mỹ Lộc, Lạc An",
+            "Bà Điểm, Xuân Thới Thượng, Tân Xuân",
+            "An Điền, An Tây, Phú An",
+            "Long Phước, Hòa Long, Kim Long"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Địa Đạo Tây Nam ( Tam Giác Sắt) ghi dấu sự kiện: 1948: hệ thống địa đạo đầu tiên được hình thành tại vùng Tây Nam Bến Cát. Từ năm 1961: quân dân ba xã An Điền, An Tây, Phú An đẩy mạnh đào và mở rộng hệ thống địa đạo. Chiến dịch Mậu Thân 1968: địa đạo là nơi tập kết, che giấu và hỗ trợ lực lượng tiến công. Mùa Xuân 1975: nhiều cánh quân lớn tập kết tại khu vực Tam Giác Sắt trước khi tiến về Sài Gòn.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: An Điền, An Tây, Phú An."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hệ thống Địa đạo Tam Giác Sắt được xây dựng từ khoảng năm nào?",
           "options": [
-            "Nguyễn Văn Đực – chiến sĩ bắn tỉa nổi tiếng của vùng Tam Giác Sắt; Võ Thị Huynh – Anh...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1945",
+            "1954",
+            "1968",
+            "1948"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Nguyễn Văn Đực – chiến sĩ bắn tỉa nổi tiếng của vùng Tam Giác Sắt; Võ Thị Huynh – Anh hùng Lực lượng vũ trang nhân dân, có nhiều đóng góp trong chiến đấu và chăm sóc thương binh. Ngoài ra còn có đông đảo cán bộ, du kích và nhân dân ba xã An Điền, An Tây, Phú An tham gia xây dựng, bảo vệ địa đạo. - Hiện vật: Hệ thống địa đạo và các công trình dưới lòng đất; mô hình địa đạo; vũ khí, dụng cụ chiến đấu và sản xuất; hình ảnh, tài liệu lịch sử; mô hình sinh hoạt của quân dân trong địa đạo. Khu di tích hiện có nhà tưởng niệm, nhà trưng bày, khu tượng đài trung tâm, mô hình địa đạo, đài vọng cảnh và khu tái hiện.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1948."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tên gọi nào khác được dùng cho Địa đạo Tây Nam Bến Cát?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Tam Giác Sắt",
+            "Chiến khu Đ",
+            "Đất Thép",
+            "Rừng Sác"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Địa Đạo Tây Nam ( Tam Giác Sắt) được xếp hạng cấp Quốc gia theo Quyết định số 460/QĐ/BT ngày 18/3/1996 của Bộ Văn hóa - Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tam Giác Sắt."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Địa đạo Tây Nam Bến Cát có vai trò nào trong chiến tranh?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Tây Nam, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Trung tâm khai thác than",
+            "Nơi ở, tránh bom đạn và đặt cơ quan lãnh đạo địa phương",
+            "Trạm khí tượng dân sự",
+            "Kho chứa hàng xuất khẩu đường biển"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Tây Nam, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Nơi ở, tránh bom đạn và đặt cơ quan lãnh đạo địa phương."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Địa Đạo Tây Nam ( Tam Giác Sắt)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Địa đạo Tam Giác Sắt được công nhận di tích lịch sử cách mạng cấp quốc gia vào ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "11/5/2010",
+            "30/12/2002",
+            "18/3/1996",
+            "20/7/1994"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 18/3/1996."
         }
       ],
       "flashcards": [
@@ -7391,9 +7391,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề",
+      "title": "Hồ sơ điều tra: Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhỏ và Triền nề",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh..",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhỏ và Triền nề",
       "investigationQuestion": "Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son giúp em hiểu như thế nào về mối liên hệ giữa người lao động, quá trình học nghề và con đường hoạt động cách mạng?",
       "suggestedAnswer": "Tôn Đức Thắng học nghề cơ khí ở trường Bá Nghệ (Sài Gòn) rồi làm công nhân ở xưởng Ba Son. Tại đây ông chứng kiến công nhân bị bóc lột, nhận ra sức mạnh đoàn kết của giai cấp công nhân và dần trở thành người tổ chức đấu tranh, tiêu biểu là cuộc bãi công Ba Son năm 1925 (công nhân không sửa chữa tàu chiến Pháp chở quân sang đàn áp cách mạng Trung Quốc). Quá trình học nghề – lao động – giác ngộ cho thấy hiểu biết và lý tưởng có thể lớn lên từ chính nơi mình học tập và làm việc.",
       "referencesList": [
@@ -7441,73 +7441,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Sự kiện đấu tranh công nhân nổi bật tại Ba Son diễn ra vào năm nào?",
           "options": [
-            "Tháng 8/1925 – Cuộc bãi công Ba Son: khoảng 1.000 công nhân Ba Son đấu tranh đòi tăng lương, gi...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1929",
+            "1930",
+            "1920",
+            "1925"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề ghi dấu sự kiện: Tháng 8/1925 – Cuộc bãi công Ba Son: khoảng 1.000 công nhân Ba Son đấu tranh đòi tăng lương, giảm giờ làm; dưới sự lãnh đạo của Công hội do Tôn Đức Thắng đứng đầu, cuộc đình công đồng thời làm chậm việc sửa chữa chiến hạm Jules Michelet của Pháp. Công nhân giành được mức tăng lương 10%. Đây được xem là một dấu mốc quan trọng của phong trào công nhân Sài Gòn và phong trào công nhân Việt Nam.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1925."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Ai là người gắn nổi bật với việc lãnh đạo cuộc bãi công Ba Son năm 1925?",
           "options": [
-            "Chủ tịch Tôn Đức Thắng là nhân vật trung tâm của di tích; ông từng làm việc tại Ba So...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Tôn Đức Thắng",
+            "Trần Phú",
+            "Phan Bội Châu",
+            "Nguyễn An Ninh"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Chủ tịch Tôn Đức Thắng là nhân vật trung tâm của di tích; ông từng làm việc tại Ba Son và là người đứng đầu Công hội bí mật/Công hội đỏ, tổ chức và lãnh đạo cuộc bãi công Ba Son năm 1925. Ngoài ra còn có hàng nghìn công nhân Ba Son tham gia cuộc đấu tranh. - Hiện vật: Máy sọc S.3 – máy công cụ được xác định là hiện vật gắn với thời gian đồng chí Tôn Đức Thắng sử dụng khi thực tập tại Xưởng cơ khí; cùng với Ụ tàu nhỏ và Triền nề là những yếu tố vật chất quan trọng cấu thành di tích. Theo phương án tu bổ hiện nay, Ụ tàu nhỏ và Triền nề được bảo tồn theo nguyên trạng.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tôn Đức Thắng."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Công nhân Ba Son bãi công nhằm góp phần làm chậm việc sửa chữa chiến hạm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "La Motte-Picquet",
+            "Jules Michelet",
+            "Dumont d’Urville",
+            "Amiral Charner"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề được xếp hạng cấp Quốc gia theo Quyết định xếp hạng số \n1269/QĐ-BVHTTDL ngày \n30/3/2016 của Bộ Văn hóa - Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Jules Michelet."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Cuộc bãi công Ba Son năm 1925 thể hiện rõ tinh thần nào của công nhân Việt Nam?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Phát triển du lịch đường biển",
+            "Phục hồi chế độ quân chủ",
+            "Đoàn kết quốc tế vô sản",
+            "Mở rộng thương mại thuộc địa"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Đoàn kết quốc tế vô sản."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hai hạng mục được nêu trong tên Di tích lưu niệm Chủ tịch Tôn Đức Thắng tại Ba Son là gì?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Nhà giam và vọng gác",
+            "Chuồng cọp và cầu tàu",
+            "Hầm thủy lôi và trận địa pháo",
+            "Ụ tàu nhỏ và Triền nề"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Ụ tàu nhỏ và Triền nề."
         }
       ],
       "flashcards": [
@@ -8099,73 +8099,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hầm bí mật chứa vũ khí tại số 183/4 đường 3 Tháng 2 gắn với lực lượng nào?",
           "options": [
-            "Năm 1965: ông Đỗ Văn Căn được giao xây dựng hầm bí mật tại nhà để chứa vũ khí. Tháng 7/1965: hầ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Biệt động Sài Gòn",
+            "Đặc công Rừng Sác",
+            "Du kích Ba Tơ",
+            "Vệ quốc đoàn Hà Nội"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ ghi dấu sự kiện: Năm 1965: ông Đỗ Văn Căn được giao xây dựng hầm bí mật tại nhà để chứa vũ khí. Tháng 7/1965: hầm bắt đầu được sử dụng làm kho vũ khí bí mật; trong 4 tháng tiếp theo, nhiều vũ khí, thuốc nổ và đạn dược được đưa về cất giữ. Tết Mậu Thân 1968: căn nhà là điểm hẹn để một số cánh quân vào Sài Gòn tiếp nhận vũ khí, đạn dược phục vụ Tổng tiến công và nổi dậy. 30/4/1975: kho vũ khí vẫn được bảo vệ và giữ bí mật cho đến ngày giải phóng.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Biệt động Sài Gòn."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Người chủ căn nhà được giao xây hầm bí mật đầu năm 1965 là ai?",
           "options": [
-            "Đỗ Văn Căn (bí danh Ba Mủ/Ba Mũ) – chiến sĩ Biệt động Sài Gòn, chủ căn nhà, trực tiếp...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nguyễn Văn Trỗi",
+            "Đỗ Văn Căn (Ba Mủ)",
+            "Bùi Quang Thận",
+            "Võ Văn Tần"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Đỗ Văn Căn (bí danh Ba Mủ/Ba Mũ) – chiến sĩ Biệt động Sài Gòn, chủ căn nhà, trực tiếp đào hầm và tổ chức cất giấu, bảo vệ vũ khí; Nguyễn Văn Trí – chính trị viên đơn vị “Đảm bảo chiến đấu biệt động thành”, người chỉ đạo xây dựng hầm; Ngô Thanh Vân (Ba Đen) – chỉ huy đơn vị J9T700 cùng tham gia tổ chức cơ sở. Nguyễn Thị Cúc – cùng ông Đỗ Văn Căn tham gia xây dựng, vận chuyển và bảo vệ kho vũ khí. - Hiện vật: Căn hầm bí mật dài khoảng 2,2 m, rộng 1,8 m, sâu 1,7 m; nắp hầm 0,4 × 0,6 m được ngụy trang dưới bộ ghế salon; dụng cụ ép đế giày cao su của ông Đỗ Văn Căn; hình ảnh, tư liệu về hoạt động của cơ sở; các loại vũ khí và vật liệu quân sự được trưng bày/tái hiện như thuốc nổ TNT, lựu đạn, đạn và súng.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Đỗ Văn Căn (Ba Mủ)."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Hầm bí mật được xây dựng chủ yếu để làm gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Lưu trữ cổ vật khảo cổ",
+            "Chứa hàng hóa thương mại",
+            "Cất giấu vũ khí phục vụ chiến đấu trong nội thành",
+            "Làm hầm bảo quản thực phẩm dân dụng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ được xếp hạng cấp Quốc gia theo Số 1288 – VH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Cất giấu vũ khí phục vụ chiến đấu trong nội thành."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Địa chỉ 183/4 đường Trần Quốc Toản trước đây nay thuộc đường nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Cách Mạng Tháng Tám",
+            "Nguyễn Đình Chiểu",
+            "Điện Biên Phủ",
+            "3 Tháng 2"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 3 Tháng 2."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Nghề nghiệp của ông Đỗ Văn Căn, chủ căn nhà có hầm bí mật, là gì?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Thợ giày",
+            "Thợ gốm",
+            "Thợ đóng tàu",
+            "Thợ bạc"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thợ giày."
         }
       ],
       "flashcards": [
@@ -8745,73 +8745,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đồng chí Trần Phú giữ cương vị lịch sử nào?",
           "options": [
-            "Năm 1931: Trần Phú bị thực dân Pháp bắt và giam giữ; 26/8/1931: đồng chí được đưa vào khu trại ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tổng tư lệnh đầu tiên của Quân đội nhân dân Việt Nam",
+            "Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương",
+            "Chủ tịch Quốc hội đầu tiên",
+            "Chủ tịch nước đầu tiên"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh ghi dấu sự kiện: Năm 1931: Trần Phú bị thực dân Pháp bắt và giam giữ; 26/8/1931: đồng chí được đưa vào khu trại giam tại Bệnh viện Chợ Quán do bị bệnh nặng; 6/9/1931: Trần Phú hy sinh tại đây, để lại lời nhắn “Hãy giữ vững ý chí chiến đấu”. Trong các giai đoạn kháng chiến chống Pháp và chống Mỹ, khu trại tiếp tục được sử dụng để giam giữ nhiều chiến sĩ cách mạng. 24/4/2024: khánh thành giai đoạn 1 công trình tu bổ, tôn tạo di tích nhân kỷ niệm 120 năm ngày sinh Trần Phú.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trần Phú hy sinh vào năm nào?",
           "options": [
-            "Trần Phú – Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương, nhân vật trung tâm của ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1930",
+            "1940",
+            "1931",
+            "1929"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Trần Phú – Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương, nhân vật trung tâm của di tích; Hà Huy Tập – Tổng Bí thư thứ ba của Đảng Cộng sản Đông Dương; cùng các chiến sĩ cách mạng Trần Não, Nguyễn Văn Trỗi, Trần Bạch Đằng và nhiều cán bộ, chiến sĩ khác từng bị giam giữ tại đây. - Hiện vật: Khu nhà trại giam được bảo tồn, phòng giam, chốt canh, hệ thống cửa và kiến trúc của khu trại giam; ảnh, tài liệu và kỷ vật liên quan đến đồng chí Trần Phú; tượng/bia tưởng niệm và không gian trưng bày về cuộc đời, hoạt động cách mạng của Trần Phú. Công trình tu bổ giai đoạn 1 được thực hiện theo hướng bảo tồn khu vực trại giam và chốt canh theo nguyên trạng.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1931."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Địa điểm giam giữ Trần Phú trước khi hy sinh nằm trong cơ sở nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Nhà tù Phú Lợi",
+            "Nhà tù Côn Đảo",
+            "Khám Lớn Sài Gòn",
+            "Bệnh viện Chợ Quán"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh được xếp hạng cấp Quốc gia theo Số 1288 – \nVH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Bệnh viện Chợ Quán."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Di tích này gắn trực tiếp với giai đoạn đấu tranh cách mạng nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Những năm đầu thập niên 1930",
+            "Chiến dịch Hồ Chí Minh năm 1975",
+            "Phong trào Đông Du đầu thế kỷ XX",
+            "Kháng chiến chống Mỹ cuối thập niên 1960"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Những năm đầu thập niên 1930."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Giá trị lưu niệm nổi bật của di tích Bệnh viện Chợ Quán gắn với nhân vật nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Phan Châu Trinh",
+            "Trần Phú",
+            "Võ Thị Sáu",
+            "Tôn Đức Thắng"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Trần Phú."
         }
       ],
       "flashcards": [
@@ -9377,73 +9377,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Ngã Ba Giồng\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Ngã Ba Giồng gắn đặc biệt với cuộc khởi nghĩa nào?",
           "options": [
-            "Đêm 22 rạng sáng 23/11/1940: Khởi nghĩa Nam Kỳ bùng nổ, nhân dân Hóc Môn – Bà Điểm tham gia đấu...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Khởi nghĩa Hương Khê",
+            "Khởi nghĩa Yên Bái",
+            "Khởi nghĩa Nam Kỳ",
+            "Khởi nghĩa Ba Đình"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Ngã Ba Giồng ghi dấu sự kiện: Đêm 22 rạng sáng 23/11/1940: Khởi nghĩa Nam Kỳ bùng nổ, nhân dân Hóc Môn – Bà Điểm tham gia đấu tranh. Sau Khởi nghĩa Nam Kỳ: thực dân Pháp lập các trường bắn tại Hóc Môn để đàn áp và xử tử cán bộ, chiến sĩ cách mạng. Ngày 28/8/1941: Hà Huy Tập, Nguyễn Văn Cừ, Võ Văn Tần, Phan Đăng Lưu, Nguyễn Thị Minh Khai và nhiều chiến sĩ, đồng bào yêu nước bị xử tử tại các trường bắn ở Hóc Môn; Ngã Ba Giồng là địa điểm gắn liền với sự kiện này. 30/12/2002: Ngã Ba Giồng được xếp hạng di tích lịch sử cấp quốc gia.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Khởi nghĩa Nam Kỳ."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Ngã Ba Giồng\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Khởi nghĩa Nam Kỳ bùng nổ vào ngày nào?",
           "options": [
-            "Hà Huy Tập, Nguyễn Văn Cừ, Võ Văn Tần, Phan Đăng Lưu, Nguyễn Thị Minh Khai là những n...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "23/9/1945",
+            "19/8/1945",
+            "2/9/1945",
+            "23/11/1940"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Hà Huy Tập, Nguyễn Văn Cừ, Võ Văn Tần, Phan Đăng Lưu, Nguyễn Thị Minh Khai là những nhân vật tiêu biểu gắn với Ngã Ba Giồng và sự kiện ngày 28/8/1941. Ngoài ra còn có nhiều cán bộ, chiến sĩ và đồng bào yêu nước tham gia Khởi nghĩa Nam Kỳ bị thực dân Pháp sát hại tại khu vực này. - Hiện vật: Các hình ảnh, tài liệu và hiện vật cách mạng được trưng bày tại Nhà trưng bày; các cụm tượng đài “Bất khuất”, “Chiến sĩ vô danh”; Đền tưởng niệm và không gian tái hiện trường bắn. Khu tưởng niệm hiện có Đền tưởng niệm, Nhà trưng bày, quảng trường với các cụm tượng đài và vườn trầu cau.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 23/11/1940."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Ngã Ba Giồng\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Nhân vật nào sau đây đã bị thực dân Pháp xử bắn tại Ngã Ba Giồng?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Nguyễn Văn Cừ",
+            "Phan Bội Châu",
+            "Nguyễn Thái Học",
+            "Hoàng Hoa Thám"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Ngã Ba Giồng được xếp hạng cấp Quốc gia theo Số 39/2002/QĐ-BVHTT \nngày 30/12/2002 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Nguyễn Văn Cừ."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Ngã Ba Giồng\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Ngã Ba Giồng thuộc vùng đất lịch sử nào của Hóc Môn – Bà Điểm?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Lục tỉnh Nam Kỳ",
+            "18 thôn vườn trầu",
+            "Tứ giác Long Xuyên",
+            "Đồng Tháp Mười"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 18 thôn vườn trầu."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Ngã Ba Giồng\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Ngã Ba Giồng được công nhận di tích lịch sử cấp quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1994",
+            "1998",
+            "2002",
+            "2010"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 2002."
         }
       ],
       "flashcards": [
@@ -9964,9 +9964,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Nhà lưu niệm Võ Thị Sáu",
+      "title": "Hồ sơ điều tra: Nhà lưu niệm chị Võ Thị Sáu",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh..",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà lưu niệm Võ Thị Sáu",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà lưu niệm chị Võ Thị Sáu",
       "investigationQuestion": "Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu đặt ra câu hỏi gì về lòng dũng cảm, tuổi trẻ và sự hy sinh, và em có thể biến bài học ấy thành hành động cụ thể nào trong cuộc sống?",
       "suggestedAnswer": "Võ Thị Sáu (sinh năm 1933, ở Đất Đỏ) tham gia hoạt động cách mạng từ khi còn rất nhỏ, bị bắt, bị đày ra Côn Đảo và bị xử bắn ngày 23/1/1952 khi mới 19 tuổi. Chị bình tĩnh, hô vang khẩu hiệu và hát vang trước lúc hy sinh. Câu chuyện đặt ra câu hỏi: tuổi trẻ sống để làm gì và dũng cảm là gì? Học sinh có thể biến bài học thành việc làm cụ thể: dám nói lên sự thật, bênh vực bạn bị bắt nạt, làm tốt trách nhiệm của mình, tham gia hoạt động tình nguyện, kể lại câu chuyện của chị cho các bạn nhỏ.",
       "referencesList": [
@@ -10006,73 +10006,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà lưu niệm Võ Thị Sáu\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Nhà lưu niệm Võ Thị Sáu nằm ở địa phương nào trước đây?",
           "options": [
-            "1939: gia đình Võ Thị Sáu thuê và sinh sống tại căn nhà này; 1946–1947: Võ Thị Sáu bắt đầu tham...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Củ Chi, Thành phố Hồ Chí Minh",
+            "Tân Uyên, Bình Dương",
+            "Gò Công, Tiền Giang",
+            "Đất Đỏ, Bà Rịa – Vũng Tàu"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nhà lưu niệm Võ Thị Sáu ghi dấu sự kiện: 1939: gia đình Võ Thị Sáu thuê và sinh sống tại căn nhà này; 1946–1947: Võ Thị Sáu bắt đầu tham gia hoạt động cách mạng tại quê hương Đất Đỏ; 23/01/1952: Võ Thị Sáu bị xử bắn tại Côn Đảo; 1980: căn nhà được UBND huyện Long Đất tu bổ, xây dựng thành Nhà lưu niệm Võ Thị Sáu; 06/12/1989: di tích được Bộ Văn hóa – Thông tin xếp hạng cấp quốc gia; 26/04/2025: khánh thành dự án cải tạo, nâng cấp và mở rộng Công viên tượng đài, Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Đất Đỏ, Bà Rịa – Vũng Tàu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà lưu niệm Võ Thị Sáu\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Võ Thị Sáu bị thực dân Pháp xử tử tại đâu?",
           "options": [
-            "Võ Thị Sáu (1933–1952) – nữ du kích, Anh hùng Lực lượng vũ trang nhân dân; ông Võ Văn...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Côn Đảo",
+            "Hỏa Lò",
+            "Khám Lớn Sài Gòn",
+            "Phú Quốc"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Võ Thị Sáu (1933–1952) – nữ du kích, Anh hùng Lực lượng vũ trang nhân dân; ông Võ Văn Hợi – cha của Võ Thị Sáu; bà Nguyễn Thị Đậu – mẹ của Võ Thị Sáu. Ông Hợi và bà Đậu đã thuê căn nhà này để sinh sống từ năm 1939. - Hiện vật: Các cấu kiện bằng gỗ của ngôi nhà cũ được lưu giữ; bàn thờ cha mẹ Võ Thị Sáu; bàn thờ Võ Thị Sáu; hình ảnh, tư liệu và các hiện vật, quà tặng liên quan đến nữ anh hùng. Nhà lưu niệm được bố trí thành các không gian tiếp khách – trưng bày, phòng gia tiên, nơi thờ Võ Thị Sáu và khu lưu giữ cấu kiện nhà cũ.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Côn Đảo."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà lưu niệm Võ Thị Sáu\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Võ Thị Sáu hy sinh vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1950",
+            "1952",
+            "1954",
+            "1949"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà lưu niệm Võ Thị Sáu được xếp hạng cấp Quốc gia theo Quyết định số 199-VH/QĐ ngày 06/12/1989 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1952."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà lưu niệm Võ Thị Sáu\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Nhà lưu niệm Võ Thị Sáu được công nhận là di tích lịch sử – lưu niệm vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "2002",
+            "2015",
+            "1989",
+            "1994"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1989."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà lưu niệm Võ Thị Sáu\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Loại hình giá trị chính của Nhà lưu niệm Võ Thị Sáu là gì?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Kiến trúc cung đình",
+            "Lịch sử thương mại đường biển",
+            "Khảo cổ học tiền sử",
+            "Lưu niệm về cuộc đời và hoạt động của một nữ anh hùng"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Lưu niệm về cuộc đời và hoạt động của một nữ anh hùng."
         }
       ],
       "flashcards": [
@@ -10631,73 +10631,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Nhà tù Phú Lợi tồn tại chủ yếu trong khoảng thời gian nào?",
           "options": [
-            "1957: Nhà tù Phú Lợi được xây dựng. 1957–1958: số tù nhân tăng nhanh, đến cuối năm 1958 lên gần...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1957–1964",
+            "1975–1986",
+            "1945–1954",
+            "1965–1973"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Nhà tù Phú Lợi (căng Phú Lợi) ghi dấu sự kiện: 1957: Nhà tù Phú Lợi được xây dựng. 1957–1958: số tù nhân tăng nhanh, đến cuối năm 1958 lên gần 6.000 người, trong đó khoảng 1.000 tù nhân nữ. 30/11–1/12/1958: xảy ra vụ đầu độc tù nhân Phú Lợi, được biết đến với tên “Phú Lợi căm thù”; hàng trăm tù nhân bị ngộ độc, nhiều người tử vong. Tù nhân đã tổ chức đấu tranh, phá mái nhà giam và sử dụng loa phát thanh để tố cáo sự việc. Tin tức sau đó gây chấn động dư luận trong và ngoài nước. 1964: Nhà tù Phú Lợi chấm dứt hoạt động.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1957–1964."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Sự kiện 'Phú Lợi căm thù' gắn với ngày nào?",
           "options": [
-            "Vũ Duy Hanh – nguyên Bí thư Tỉnh ủy Thủ Dầu Một, tham gia Đảng ủy Trung tâm Phú Lợi; ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "30/4/1975",
+            "01/12/1958",
+            "20/7/1954",
+            "02/9/1945"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Vũ Duy Hanh – nguyên Bí thư Tỉnh ủy Thủ Dầu Một, tham gia Đảng ủy Trung tâm Phú Lợi; Nguyễn Văn Trung – thành viên Đảng ủy Trung tâm Phú Lợi; cùng các cán bộ, đảng viên và tù nhân chính trị đã tổ chức các chi bộ bí mật, duy trì hoạt động đấu tranh trong nhà tù. Một số quản lý nhà tù được tư liệu địa phương nhắc đến gồm Nguyễn Văn Bông, Trần Vĩnh Đắc, Hồ Văn Tần. - Hiện vật: Chuồng cọp, xà lim, khu nhà giam, mô hình nhà tù, tranh ảnh và tư liệu về tù nhân chính trị, các kỷ vật thời chiến, hệ thống giam giữ và những vật dụng phục dựng liên quan đến đời sống tù nhân. Khu di tích hiện được bảo tồn, trùng tu và sử dụng để phục vụ tham quan, nghiên cứu, giáo dục lịch sử.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 01/12/1958."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đối tượng bị giam giữ chủ yếu tại Nhà tù Phú Lợi là ai?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Thương nhân nước ngoài",
+            "Tù binh trong chiến tranh thế giới thứ nhất",
+            "Tù nhân chính trị và những người tham gia cách mạng",
+            "Tội phạm hàng hải"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà tù Phú Lợi (căng Phú Lợi) được xếp hạng cấp Quốc gia theo Quyết định số 92/VH/QĐ ngày 10/7/1980 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Tù nhân chính trị và những người tham gia cách mạng."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Nhà tù Phú Lợi trước đây thuộc địa bàn tỉnh nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Long An",
+            "Bà Rịa – Vũng Tàu",
+            "Tây Ninh",
+            "Bình Dương"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Bình Dương."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà tù Phú Lợi (căng Phú Lợi)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Sự kiện năm 1958 tại Nhà tù Phú Lợi đã dẫn đến điều gì?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Làn sóng phản đối và đấu tranh rộng rãi",
+            "Việc mở tuyến đường Hồ Chí Minh trên biển",
+            "Sự thành lập An Nam Cộng sản Đảng",
+            "Việc xây dựng Dinh Độc Lập mới"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Làn sóng phản đối và đấu tranh rộng rãi."
         }
       ],
       "flashcards": [
@@ -11260,73 +11260,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Di tích nơi Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước hiện mang số nhà nào trên đường Châu Văn Liêm?",
           "options": [
-            "19/9/1910: Nguyễn Tất Thành từ Trường Dục Thanh vào Sài Gòn. Tháng 9/1910 – 4/6/1911: Người ở t...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Số 1",
+            "Số 5",
+            "Số 18",
+            "Số 86"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước ghi dấu sự kiện: 19/9/1910: Nguyễn Tất Thành từ Trường Dục Thanh vào Sài Gòn. Tháng 9/1910 – 4/6/1911: Người ở tại cơ sở Liên Thành phân cuộc, nay là nhà số 5 Châu Văn Liêm. 4/6/1911: Người rời nhà số 5 với tên Văn Ba để chuẩn bị xuống cảng Nhà Rồng. 5/6/1911: Nguyễn Tất Thành lên tàu Đô đốc Latouche-Tréville tại Bến Nhà Rồng, bắt đầu hành trình ra nước ngoài tìm đường cứu nước.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Số 5."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Nguyễn Tất Thành rời Sài Gòn ra đi tìm đường cứu nước vào ngày nào?",
           "options": [
-            "Nguyễn Tất Thành (Chủ tịch Hồ Chí Minh) là nhân vật trung tâm. Ngoài ra có các nhân v...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "05/6/1908",
+            "03/02/1930",
+            "05/6/1911",
+            "02/9/1945"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Nguyễn Tất Thành (Chủ tịch Hồ Chí Minh) là nhân vật trung tâm. Ngoài ra có các nhân vật gắn với Liên Thành thương quán, tổ chức do các sĩ phu yêu nước Bình Thuận thành lập năm 1906 và đã hỗ trợ Nguyễn Tất Thành trong thời gian ở Sài Gòn. - Hiện vật: Các tư liệu, hình ảnh về Nguyễn Tất Thành – Hồ Chí Minh; bản đồ Sài Gòn – Chợ Lớn năm 1911; hình ảnh Sài Gòn giai đoạn 1910–1911; tư liệu về Liên Thành thương quán; hình ảnh tàu Đô đốc Latouche-Tréville; các vật dụng và không gian sinh hoạt gắn với thời gian Người ở tại đây. Di tích hiện có phòng tưởng niệm và phòng trưng bày.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 05/6/1911."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Căn nhà số 5 Châu Văn Liêm xưa thuộc cơ sở nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Hội quán Nghĩa An",
+            "Xưởng Ba Son",
+            "Trụ sở Báo Dân Chúng",
+            "Phân cuộc Liên Thành thương quán"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước được xếp hạng cấp Quốc gia theo Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Phân cuộc Liên Thành thương quán."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Trước khi vào Sài Gòn, Nguyễn Tất Thành từng dạy học tại trường nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Dục Thanh",
+            "Bưởi",
+            "Pétrus Ký",
+            "Quốc Học Huế"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Dục Thanh."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Địa danh lịch sử gắn với nơi Nguyễn Tất Thành xuống tàu ra đi tìm đường cứu nước là đâu?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Bến Lộc An",
+            "Bến Nhà Rồng",
+            "Bến Dược",
+            "Bến Bạch Đằng"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Bến Nhà Rồng."
         }
       ],
       "flashcards": [
@@ -11842,73 +11842,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "An Nam Cộng sản Đảng được thành lập vào năm nào?",
           "options": [
-            "Năm 1929: phong trào Hội Việt Nam Cách mạng Thanh niên có sự phân hóa, xuất hiện các tổ chức cộ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1927",
+            "1931",
+            "1929",
+            "1925"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nơi thành lập An Nam Cộng sản Đảng năm 1929 ghi dấu sự kiện: Năm 1929: phong trào Hội Việt Nam Cách mạng Thanh niên có sự phân hóa, xuất hiện các tổ chức cộng sản. Cuối tháng 9 – đầu tháng 10/1929: thành lập chi bộ An Nam Cộng sản Đảng và tổ chức hội nghị tại Sài Gòn. Tháng 11/1929: thành lập Ban Lâm thời chỉ đạo An Nam Cộng sản Đảng tại Sài Gòn, do Châu Văn Liêm làm Bí thư. 03/02/1930: đại diện An Nam Cộng sản Đảng tham dự hội nghị do Nguyễn Ái Quốc chủ trì tại Hồng Kông, góp phần vào quá trình hợp nhất các tổ chức cộng sản thành Đảng Cộng sản Việt Nam.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1929."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Địa điểm thành lập An Nam Cộng sản Đảng nằm tại số nhà nào trên đường Nguyễn Trung Trực hiện nay?",
           "options": [
-            "Châu Văn Liêm là nhân vật nổi bật nhất, người chủ trì hội nghị tổ chức An Nam Cộng sả...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Số 18",
+            "Số 86",
+            "Số 5",
+            "Số 1"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Châu Văn Liêm là nhân vật nổi bật nhất, người chủ trì hội nghị tổ chức An Nam Cộng sản Đảng tại Sài Gòn. Các nhân vật liên quan khác gồm Hồ Tùng Mậu, Lê Hồng Sơn, Lê Duy Điếm, Nguyễn Nghĩa, Ung Văn Khiêm, Đỗ Quảng và Huỳnh Quảng. - Hiện vật: Di tích chủ yếu có giá trị về không gian lịch sử và tư liệu. Các tư liệu tiêu biểu liên quan gồm hình ảnh di tích, hình ảnh đồng chí Châu Văn Liêm, tư liệu về An Nam Cộng sản Đảng và Báo Đỏ – cơ quan tuyên truyền của An Nam Cộng sản Đảng.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Số 1."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Căn phòng diễn ra hội nghị thành lập nằm ở vị trí nào trong tòa nhà?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Phòng 1, lầu 2",
+            "Phòng 8, tầng hầm",
+            "Phòng 5, tầng trệt",
+            "Phòng 2, lầu 4"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nơi thành lập An Nam Cộng sản Đảng năm 1929 được xếp hạng cấp Quốc gia theo Quyết định số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Phòng 1, lầu 2."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Khách sạn nơi diễn ra hội nghị thành lập An Nam Cộng sản Đảng có tên gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Caravelle",
+            "Phong cảnh khách lầu",
+            "Continental",
+            "Majestic"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Phong cảnh khách lầu."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nơi thành lập An Nam Cộng sản Đảng năm 1929\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "An Nam Cộng sản Đảng là một trong bao nhiêu tổ chức cộng sản tiền thân dẫn tới sự thành lập Đảng Cộng sản Việt Nam?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Năm",
+            "Hai",
+            "Ba",
+            "Bốn"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Ba."
         }
       ],
       "flashcards": [
@@ -12478,73 +12478,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh được đặt tại khu vực nào trước đây?",
           "options": [
-            "25/3/1975: Bộ Chính trị quyết định thành lập Bộ Chỉ huy Chiến dịch giải phóng Sài Gòn – Gia Địn...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Long Phước – Bà Rịa",
+            "Bến Dược – Củ Chi",
+            "Rừng Sác – Cần Giờ",
+            "Căm Xe – Minh Thạnh"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh ghi dấu sự kiện: 25/3/1975: Bộ Chính trị quyết định thành lập Bộ Chỉ huy Chiến dịch giải phóng Sài Gòn – Gia Định tại căn cứ Tà Thiết. 14/4/1975: chiến dịch được chính thức mang tên Chiến dịch Hồ Chí Minh. 26/4/1975: Sở Chỉ huy tiền phương Căm Xe bắt đầu hoạt động và Chiến dịch Hồ Chí Minh chính thức mở màn lúc 17 giờ. 26–30/4/1975: tại đây diễn ra quá trình theo dõi, chỉ đạo và điều hành chiến dịch cho đến khi Sài Gòn được giải phóng ngày 30/4/1975.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Căm Xe – Minh Thạnh."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Sở chỉ huy tiền phương được chuyển đến gần chiến trường nhằm mục đích chính nào?",
           "options": [
-            "Các nhân vật tiêu biểu gắn với Sở Chỉ huy gồm Lê Đức Thọ, Phạm Hùng và Đại tướng Văn ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Trực tiếp chỉ huy chiến dịch sát tình hình tác chiến",
+            "Tổ chức khai thác lâm sản",
+            "Xây dựng khu dân cư mới",
+            "Mở tuyến thương mại đường sông"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các nhân vật tiêu biểu gắn với Sở Chỉ huy gồm Lê Đức Thọ, Phạm Hùng và Đại tướng Văn Tiến Dũng; cùng các thành viên Bộ Tư lệnh Chiến dịch Hồ Chí Minh và cán bộ Trung ương Cục, Quân ủy Miền. Đặc biệt, Đại tướng Văn Tiến Dũng là người đã xác định lại vị trí căn cứ Căm Xe vào năm 1987, dựa trên các dấu tích còn lại và ký ức của những người từng hoạt động tại đây. - Hiện vật: Bia chiến thắng/bia di tích; nhà tưởng niệm; khu tái hiện phòng hội nghị của Sở Chỉ huy; địa đạo; bếp Hoàng Cầm; các dấu tích hố bom, hầm hào và khu rừng nguyên sinh. Bia cũ được dựng làm mốc sau khi xác định địa điểm; năm 1990 Bảo tàng Quân khu 7 dựng bia mới và bia được trùng tu bằng đá hoa cương năm 2005.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Trực tiếp chỉ huy chiến dịch sát tình hình tác chiến."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Chiến dịch Hồ Chí Minh diễn ra vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1968",
+            "1975",
+            "1972",
+            "1973"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh được xếp hạng cấp Quốc gia theo Quyết định số 1630/QĐ-BVHTTDL ngày \n11/5/2010 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1975."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Nhân vật nào được nêu là cùng quyết định chuyển Sở chỉ huy tới Căm Xe?",
           "options": [
-            "Tọa lạc tại địa chỉ: Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Tôn Đức Thắng và Trần Phú",
+            "Nguyễn Văn Cừ và Phan Đăng Lưu",
+            "Lê Đức Thọ và Văn Tiến Dũng",
+            "Võ Thị Sáu và Nguyễn An Ninh"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Lê Đức Thọ và Văn Tiến Dũng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Sở chỉ huy tiền phương này phục vụ trực tiếp cho mục tiêu chiến lược nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Mở đường Hồ Chí Minh trên biển",
+            "Tổ chức Nam Kỳ khởi nghĩa",
+            "Thành lập An Nam Cộng sản Đảng",
+            "Giải phóng Sài Gòn, kết thúc chiến tranh"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Giải phóng Sài Gòn, kết thúc chiến tranh."
         }
       ],
       "flashcards": [
@@ -13155,73 +13155,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Cù Lao Rùa\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Cù Lao Rùa còn được biết đến với tên địa danh nào?",
           "options": [
-            "1888: E. Cartailhac ghi nhận Cù Lao Rùa; 1889: E.T. Hamy công bố tư liệu về di tích tại Paris; ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Thạnh Hội",
+            "Long Hòa",
+            "Hòa Lục",
+            "Tân Mỹ"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Cù Lao Rùa ghi dấu sự kiện: 1888: E. Cartailhac ghi nhận Cù Lao Rùa; 1889: E.T. Hamy công bố tư liệu về di tích tại Paris; 1976, 1998–2001: tiến hành nhiều đợt điều tra, thám sát khảo cổ; 2003: khai quật quy mô gần 400 m² với 5 hố đào, phát hiện số lượng lớn hiện vật và 12 mộ táng; 03/3/2009: Cù Lao Rùa được xếp hạng di tích quốc gia theo Quyết định 836/QĐ-BVHTTDL; 15/5/2026: TP.HCM tổ chức trưng bày chuyên đề “Khảo cổ học Cù Lao Rùa – Bức tranh đời sống cư dân cổ ở Bình Dương – Thành phố Hồ Chí Minh”, giới thiệu hơn 100 hình ảnh và 420 hiện vật.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thạnh Hội."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Cù Lao Rùa\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Di tích khảo cổ Cù Lao Rùa có niên đại giai đoạn sớm khoảng bao nhiêu năm cách ngày nay?",
           "options": [
-            "Các nhà khảo cổ và nhà nghiên cứu gắn với quá trình phát hiện, nghiên cứu Cù Lao Rùa ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "2.700–2.300 năm",
+            "3.500–3.000 năm",
+            "4.500–4.000 năm",
+            "2.000–1.500 năm"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các nhà khảo cổ và nhà nghiên cứu gắn với quá trình phát hiện, nghiên cứu Cù Lao Rùa gồm E. Cartailhac – người ghi nhận di tích năm 1888; E.T. Hamy – người công bố tư liệu về Cù Lao Rùa năm 1889; TS. Bùi Chí Hoàng – chủ trì/nghiên cứu các kết quả khảo cổ và đánh giá giá trị của di tích. Các nhà khảo cổ thuộc Viện Khoa học Xã hội vùng Nam Bộ cũng tiến hành nhiều đợt điều tra, thám sát tại đây. - Hiện vật: Cuộc khai quật năm 2003 phát hiện 1.254 hiện vật nguyên vẹn bằng đá và đất nung, gồm rìu, cuốc, đục, bàn mài, khuôn đúc, vòng tay, bi gốm, dọi se sợi, dao và đồ tùy táng; phục chế được 48 hiện vật gốm như bát bồng, nồi, chậu, đĩa chân cao, tô, âu, hũ; ngoài ra thống kê 85.901 mảnh gốm và phát hiện 12 mộ táng. Đáng chú ý có bộ răng voi và những chiếc cuốc đá được chế tác hoàn chỉnh.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 3.500–3.000 năm."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Cù Lao Rùa\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Khảo cổ học) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Cuộc khai quật quy mô gần 400 m² tại Cù Lao Rùa được tiến hành vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "2001",
+            "2009",
+            "2003",
+            "1998"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Cù Lao Rùa được xếp hạng cấp Quốc gia theo Quyết định số 836/QĐ-BVHTTDL ngày 03/3/2009 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 2003."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Cù Lao Rùa\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Kết quả khảo cổ cho thấy Cù Lao Rùa là loại hình di tích nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Tân Khánh, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Thành lũy quân sự",
+            "Bến cảng cổ",
+            "Xưởng chế tác đá đơn thuần",
+            "Cư trú – mộ táng"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Tân Khánh, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Cư trú – mộ táng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Cù Lao Rùa\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Cù Lao Rùa được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2009",
+            "2014",
+            "2000",
+            "2001"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 2009."
         }
       ],
       "flashcards": [
@@ -13802,73 +13802,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Dốc Chùa\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Di tích khảo cổ Dốc Chùa nằm bên bờ con sông nào?",
           "options": [
-            "Tháng 6/1976: Nguyễn Văn Long phát hiện dấu tích tầng văn hóa Dốc Chùa. 16/12/1976–8/1/1977: kh...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Sông Thị Tính",
+            "Sông Đồng Nai",
+            "Sông Sài Gòn",
+            "Sông Bé"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Dốc Chùa ghi dấu sự kiện: Tháng 6/1976: Nguyễn Văn Long phát hiện dấu tích tầng văn hóa Dốc Chùa. 16/12/1976–8/1/1977: khai quật lần thứ nhất, thu được 803 hiện vật. 12/4–8/5/1977: khai quật lần thứ hai, phát hiện 20 ngôi mộ và 663 hiện vật, trong đó có Tượng động vật bằng đồng. Tháng 2/1979: khai quật lần thứ ba, tiếp tục phát hiện nhiều hiện vật đá, gốm và đồng. Năm 2009: tiến hành một đợt khai quật tiếp theo. 28/12/2001: Dốc Chùa được xếp hạng di tích khảo cổ cấp quốc gia. 30/12/2013: Tượng động vật Dốc Chùa được công nhận là Bảo vật quốc gia.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Sông Đồng Nai."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Dốc Chùa\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đợt điều tra khảo cổ năm 1976 dẫn tới việc xác định Dốc Chùa diễn ra trong khi các nhà khảo cổ đi kiểm chứng địa điểm nào?",
           "options": [
-            "Nguyễn Văn Long – cán bộ khảo cổ học, người phát hiện dấu tích khảo cổ Dốc Chùa vào t...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Óc Eo",
+            "Cù Lao Rùa",
+            "Mỹ Lộc",
+            "Giồng Cá Vồ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Nguyễn Văn Long – cán bộ khảo cổ học, người phát hiện dấu tích khảo cổ Dốc Chùa vào tháng 6/1976 trong quá trình khảo sát địa điểm Mỹ Lộc; Đào Linh Côn, Bùi Xuân Long – các cán bộ tham gia đợt khai quật đầu tiên; Nguyễn Duy Tỳ, Phạm Đức Mạnh – tham gia đợt khai quật năm 1977. Đây là các nhà nghiên cứu gắn trực tiếp với quá trình phát hiện và khai quật di tích. - Hiện vật: Tiêu biểu nhất là Tượng động vật Dốc Chùa bằng đồng, được khai quật năm 1977 và được công nhận Bảo vật quốc gia theo Quyết định 2599/QĐ-TTg ngày 30/12/2013. Ngoài ra còn có 76 khuôn đúc đồng, nhiều công cụ và vũ khí bằng đồng, công cụ đá, đồ gốm, đồ tùy táng và các di vật liên quan đến đời sống cư dân cổ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Mỹ Lộc."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Dốc Chùa\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Khảo cổ học) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Dốc Chùa được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "2009",
+            "1993",
+            "1998",
+            "2001"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Dốc Chùa được xếp hạng cấp Quốc gia theo Quyết định số 53/QĐ-BVHTT ngày 28/12/2001 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 2001."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Dốc Chùa\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Địa hình chính của di tích Dốc Chùa là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Tân Uyên, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Một ngọn đồi ven sông",
+            "Một cù lao giữa sông",
+            "Một hang đá trên núi",
+            "Một giồng cát ven biển"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Tân Uyên, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Một ngọn đồi ven sông."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Dốc Chùa\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Tên gọi khác được nhắc đến của Dốc Chùa là gì?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Gò Chùa",
+            "Cầu Chùa",
+            "Bến Chùa",
+            "Đồi Chùa"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Cầu Chùa."
         }
       ],
       "flashcards": [
@@ -14454,73 +14454,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Giồng Cá Vồ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Di tích khảo cổ Giồng Cá Vồ thuộc khu vực nào?",
           "options": [
-            "Năm 1993: khảo sát và thám sát, phát hiện 38 mộ chum trong đợt đầu. Năm 1994–1995: tiến hành kh...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Củ Chi",
+            "Hóc Môn",
+            "Cần Giờ",
+            "Thủ Đức"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Giồng Cá Vồ ghi dấu sự kiện: Năm 1993: khảo sát và thám sát, phát hiện 38 mộ chum trong đợt đầu. Năm 1994–1995: tiến hành khai quật khảo cổ, phát hiện nhiều mộ chum, mộ đất, di cốt và hiện vật. Năm 2000: Giồng Cá Vồ được xếp hạng di tích khảo cổ cấp quốc gia. Năm 2018: tiếp tục thám sát khảo cổ. Giai đoạn 2021–2022: khai quật tiếp và công bố nhiều phát hiện quan trọng về mộ táng, di cốt và hiện vật. Năm 2023: công bố kết quả khai quật 2021–2022; đồng thời dự án tu bổ, tôn tạo di tích tiếp tục được triển khai.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Cần Giờ."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Giồng Cá Vồ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Giồng Cá Vồ có niên đại vào khoảng bao nhiêu năm cách ngày nay?",
           "options": [
-            "Vì đây là di tích khảo cổ tiền – sơ sử nên không có nhân vật lịch sử cụ thể được xác ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Khoảng 1.000 năm",
+            "Khoảng 2.000 năm",
+            "Khoảng 5.000 năm",
+            "Khoảng 3.000 năm"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Vì đây là di tích khảo cổ tiền – sơ sử nên không có nhân vật lịch sử cụ thể được xác định như các di tích cách mạng. Những người có vai trò quan trọng trong việc phát hiện, nghiên cứu di tích gồm các nhà khảo cổ thuộc Bảo tàng Lịch sử Việt Nam TP.HCM, Bảo tàng Lịch sử Việt Nam (nay là Bảo tàng Lịch sử Quốc gia) và Viện Khảo cổ học. - Hiện vật: Tiêu biểu nhất là mộ chum và di cốt người cổ, cùng các khuyên tai hai đầu thú, khuyên tai ba mấu, vòng tay đá và thủy tinh, hạt chuỗi, răng nanh thú, công cụ xương, giáo, lao, lưỡi câu, rìu bằng kim loại và đồ gốm. Đặc biệt, bộ sưu tập hơn 30 khuyên tai hai đầu thú tại Giồng Cá Vồ được Bảo tàng Lịch sử TP.HCM đánh giá là bộ sưu tập lớn nhất của loại hiện vật độc đáo này ở Đông Nam Á.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Khoảng 3.000 năm."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Giồng Cá Vồ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Khảo cổ học) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Hình thức mai táng đặc biệt được phát hiện tại Giồng Cá Vồ là gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Mộ chum",
+            "Mộ gạch hình vòm",
+            "Mộ đá cự thạch",
+            "Mộ thuyền"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Giồng Cá Vồ được xếp hạng cấp Quốc gia theo Quyết định số 2000/QĐ-BVHTT ngày 13/4/2000 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Mộ chum."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Giồng Cá Vồ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Di tích Giồng Cá Vồ được phát hiện qua khảo sát vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Xã Cần Giờ, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "1988",
+            "1993",
+            "2000",
+            "1976"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Xã Cần Giờ, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1993."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Giồng Cá Vồ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Giồng Cá Vồ được xếp hạng di tích khảo cổ quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "2004",
+            "2000",
+            "1994"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 2000."
         }
       ],
       "flashcards": [
@@ -15111,73 +15111,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Lò gốm cổ Hưng Lợi\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Lò gốm cổ Hưng Lợi nằm trong địa phận làng cổ nào?",
           "options": [
-            "Khoảng giữa thế kỷ XVIII: hình thành khu lò gốm Hưng Lợi. Năm 1772: kênh Ruột Ngựa được đào, gó...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Thạnh Hội",
+            "Long Hòa",
+            "Tân Khánh",
+            "Hòa Lục"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Lò gốm cổ Hưng Lợi ghi dấu sự kiện: Khoảng giữa thế kỷ XVIII: hình thành khu lò gốm Hưng Lợi. Năm 1772: kênh Ruột Ngựa được đào, góp phần kết nối khu vực Lò Gốm với mạng lưới giao thông đường thủy Sài Gòn. Năm 1815: bản đồ của Trần Văn Học ghi địa danh “xóm Lò Gốm”. Cuối năm 1997 – đầu năm 1998: tiến hành khai quật, phát hiện 3 lò gốm và nhiều di vật. 25/4/1998: di tích được xếp hạng di tích khảo cổ học cấp quốc gia theo Quyết định 722/QĐ-BVHTT. Khoảng năm 1940: các lò gốm cuối cùng của xóm Lò Gốm ngừng hoạt động do những biến đổi kinh tế – xã hội và quá trình đô thị hóa.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Hòa Lục."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Lò gốm cổ Hưng Lợi\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Làng Hòa Lục gắn với Lò gốm Hưng Lợi nằm ven hai tuyến thủy nào?",
           "options": [
-            "Không có nhân vật lịch sử cụ thể được xác định là nhân vật chính của di tích. Di tích...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Kênh Ruột Ngựa và kênh Lò Gốm",
+            "Kênh Đôi và sông Đồng Nai",
+            "Kênh Nhiêu Lộc và rạch Thị Nghè",
+            "Kênh Tẻ và rạch Bến Nghé"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Không có nhân vật lịch sử cụ thể được xác định là nhân vật chính của di tích. Di tích gắn với cộng đồng thợ gốm người Hoa và cư dân làng Hòa Lục – xóm Lò Gốm. Tư liệu khảo cổ cho thấy các nhóm thợ người Hẹ, Tiều và Quảng Đông từng chuyên sản xuất những dòng sản phẩm khác nhau. Các nhà nghiên cứu Nguyễn Thị Hậu, Đặng Văn Thắng có vai trò quan trọng trong khảo sát, khai quật và nghiên cứu di tích. - Hiện vật: Mảnh vỡ lu, khạp, siêu, ơ, chậu, hũ men nâu, men vàng, chén, đĩa men xanh trắng, tô, bát, cốc, ly, muỗng, đèn, lư hương, ấm trà, bình rượu và các phế phẩm sản xuất gốm. Đặc biệt, cuộc khai quật phát hiện 3 lò gốm nối tiếp và chồng lên nhau, thuộc kiểu lò ống/lò Tàu.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Kênh Ruột Ngựa và kênh Lò Gốm."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Lò gốm cổ Hưng Lợi\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Khảo cổ học) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Theo Gia Định thành thông chí, kênh Ruột Ngựa được đào vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1815",
+            "1772",
+            "1698",
+            "1757"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Lò gốm cổ Hưng Lợi được xếp hạng cấp Quốc gia theo Quyết định số 722/QĐ-BVHTT ngày 25/4/1998 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1772."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Lò gốm cổ Hưng Lợi\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Bản đồ phủ Gia Định cuối năm 1815 ghi lại địa danh nào liên quan trực tiếp đến nghề gốm?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Phú Định, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Xóm Dầu",
+            "Xóm Chiếu",
+            "Xóm Lò Gốm",
+            "Xóm Củi"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Phú Định, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Xóm Lò Gốm."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Lò gốm cổ Hưng Lợi\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Lò gốm cổ Hưng Lợi được xếp hạng di tích khảo cổ quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2001",
+            "1993",
+            "2000",
+            "1998"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1998."
         }
       ],
       "flashcards": [
@@ -15718,73 +15718,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Ăngten Parabol (đài viba) – Núi Lớn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Cụm Ăngten Parabol Núi Lớn do quân đội Mỹ dựng vào năm nào?",
           "options": [
-            "Đầu năm 1967: Mỹ tăng cường phương tiện chiến tranh và lắp đặt hai giàn ăng-ten Parabol – Viba ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1967",
+            "1963",
+            "1965",
+            "1969"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Ăngten Parabol (đài viba) – Núi Lớn ghi dấu sự kiện: Đầu năm 1967: Mỹ tăng cường phương tiện chiến tranh và lắp đặt hai giàn ăng-ten Parabol – Viba trên Núi Lớn. Năm 1968: hệ thống được nâng cấp bằng thiết bị MRC-85, công suất 10 kW. Năm 1970: hệ thống ăng-ten Parabol – Viba ngừng hoạt động do Mỹ chuyển sang sử dụng hệ thống thông tin REL-2600 nhỏ gọn hơn. Cuối năm 2006: bão lớn làm một giàn ăng-ten đổ sập hoàn toàn, giàn còn lại hư hỏng. Năm 2008: tỉnh Bà Rịa – Vũng Tàu giao đơn vị liên quan lập phương án trùng tu, tôn tạo và bảo vệ di tích.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1967."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Ăngten Parabol (đài viba) – Núi Lớn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Ban đầu cụm di tích có bao nhiêu giàn ăngten parabol?",
           "options": [
-            "Di tích chủ yếu gắn với quân đội Mỹ và lực lượng kỹ thuật – thông tin quân sự Mỹ hoạt...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Một",
+            "Hai",
+            "Ba",
+            "Bốn"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Di tích chủ yếu gắn với quân đội Mỹ và lực lượng kỹ thuật – thông tin quân sự Mỹ hoạt động tại Vũng Tàu, hơn là một cá nhân cụ thể. - Hiện vật: Hai giàn ăng-ten Parabol – Viba từng được lắp đặt trên Núi Lớn; hệ thống thiết bị thông tin Viba và các bộ phận kết cấu của giàn ăng-ten. Hai giàn được cấu tạo từ các thanh sắt mạ hợp kim, tạo thành giàn lớn cao gần 40 m, rộng hơn 36 m. Một giàn đã bị đổ hoàn toàn trong bão cuối năm 2006, giàn còn lại bị hư hỏng, xuống cấp.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Hai."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Ăngten Parabol (đài viba) – Núi Lớn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Mỗi giàn ăngten parabol ban đầu cao khoảng bao nhiêu?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "19,6 m",
+            "29,6 m",
+            "39,6 m",
+            "49,6 m"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Ăngten Parabol (đài viba) – Núi Lớn được xếp hạng cấp Quốc gia theo Quyết định số 937/QĐ/BT ngày 23/7/1993 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 39,6 m."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Ăngten Parabol (đài viba) – Núi Lớn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Cụm ăngten trên Núi Lớn được xây dựng chủ yếu để phục vụ lĩnh vực nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Khai thác nước ngầm",
+            "Quan sát thiên văn",
+            "Dẫn đường hàng hải dân sự",
+            "Thông tin liên lạc viba"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thông tin liên lạc viba."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Ăngten Parabol (đài viba) – Núi Lớn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Di tích Ăngten Parabol Núi Lớn được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1993",
+            "1991",
+            "2001",
+            "1989"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -16331,73 +16331,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Bót Dây Thép\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Bót Dây Thép tọa lạc trên tuyến đường nào?",
           "options": [
-            "Cuối năm 1945: quân Pháp tái chiếm và biến Nhà dây thép thành đồn lính, nơi giam giữ người dân ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Lã Xuân Oai",
+            "Lê Văn Việt",
+            "Võ Chí Công",
+            "Nguyễn Xiển"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Bót Dây Thép ghi dấu sự kiện: Cuối năm 1945: quân Pháp tái chiếm và biến Nhà dây thép thành đồn lính, nơi giam giữ người dân và cán bộ cách mạng. 1946–1947: Bót Dây Thép trở thành nơi giam cầm, tra tấn và sát hại nhiều người; lực lượng du kích Tăng Nhơn Phú phối hợp với bộ đội địa phương Thủ Đức tổ chức đấu tranh, tiến công địch. Năm 1947: Anh hùng LLVT Nguyễn Minh Quang trực tiếp treo cờ Tổ quốc trên trụ Bót Dây Thép. 18/01/1993: Bót Dây Thép được công nhận là di tích lịch sử cấp quốc gia.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Lê Văn Việt."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Bót Dây Thép\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Kiến trúc chính của Bót Dây Thép có đặc điểm nào?",
           "options": [
-            "Nguyễn Minh Quang (Nguyễn Văn Gấm, bí danh Minh Hà) – người hoạt động cách mạng tại T...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nhà dài một tầng mái tranh",
+            "Tháp tròn bằng đá",
+            "Một trệt, một lầu",
+            "Ba tầng hoàn toàn bằng gỗ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Nguyễn Minh Quang (Nguyễn Văn Gấm, bí danh Minh Hà) – người hoạt động cách mạng tại Tăng Nhơn Phú, năm 1947 trực tiếp treo cờ Tổ quốc trên trụ Bót Dây Thép; Bimoslet (Ách Râu) – sĩ quan Pháp được đưa về Bót Dây Thép chỉ huy lực lượng Lê dương từ tháng 4/1946; Pirolet (Pirolét) – chỉ huy lực lượng lính Pháp chiếm đóng Bót Dây Thép sau năm 1945. Ngoài ra còn có nhiều cán bộ, chiến sĩ cách mạng và nhân dân Tăng Nhơn Phú bị bắt, giam giữ tại đây. - Hiện vật: Căn nhà Bót Dây Thép, hầm giam và các dấu tích kiến trúc còn lại là những yếu tố vật chất quan trọng nhất của di tích. Tư liệu giới thiệu di tích còn đề cập các vật dụng gắn với việc tra tấn tù nhân như dây kẽm gai, mũ lính, dùi sắt, cây tầm vông."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Một trệt, một lầu."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Bót Dây Thép\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Bên trong Bót Dây Thép có công trình nào dùng để giam giữ người?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Một hầm thủy lôi",
+            "Một nhà giam nổi trên sông",
+            "Một dãy chuồng cọp ngoài trời",
+            "Một căn hầm chỉ có lỗ thông hơi phía trên"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Bót Dây Thép được xếp hạng cấp Quốc gia theo Quyết định số 57-VH/QĐ ngày 18/01/1993 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Một căn hầm chỉ có lỗ thông hơi phía trên."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Bót Dây Thép\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Sau khi tiếp quản Bót Dây Thép, lực lượng thực dân Pháp đã sử dụng nơi đây chủ yếu để làm gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Giam giữ, tra khảo người bị nghi liên quan đến cách mạng",
+            "Làm trạm nghiên cứu nông nghiệp",
+            "Mở trường đào tạo công chức",
+            "Làm kho lương thực dân sự"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Giam giữ, tra khảo người bị nghi liên quan đến cách mạng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Bót Dây Thép\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Bót Dây Thép được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2004",
+            "1993",
+            "1988",
+            "1998"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -16931,73 +16931,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ nằm tại địa chỉ nào?",
           "options": [
-            "Sau Hiệp định Genève 1954: căn nhà được Xứ ủy Nam Bộ sử dụng làm cơ sở Ban Tuyên huấn; 1954–195...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "122/351 Ngô Gia Tự",
+            "287/70 Nguyễn Đình Chiểu",
+            "51/10/14 Cao Thắng",
+            "341/10 Gia Phú"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ ghi dấu sự kiện: Sau Hiệp định Genève 1954: căn nhà được Xứ ủy Nam Bộ sử dụng làm cơ sở Ban Tuyên huấn; 1954–1957: thu tin từ Đài Phát thanh Hà Nội, biên tập và in ấn tài liệu phục vụ hoạt động cách mạng; 1957–1961: cơ sở tiếp tục được sử dụng làm nơi liên lạc, hội họp và chỉ đạo phong trào đấu tranh ở Mỹ Tho; 1964: mở rộng cơ sở cho Ban Trí vận Khu ủy hoạt động; Xuân Mậu Thân 1968: cất giấu vũ khí, tập kết lực lượng và chuẩn bị hoạt động đấu tranh tại khu vực Bàn Cờ; 1969: lưu trữ báo chí, tài liệu phục vụ việc cung cấp thông tin cho phái đoàn Việt Nam tại Hội nghị Paris; 30/4/1975: đoàn cán bộ tiếp quản thành phố của Thành ủy do Phạm Khải (Ba Ka) dẫn đầu xuất phát từ đây để đi tiếp quản Bưu điện và Tòa Đô chính Sài Gòn.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 51/10/14 Cao Thắng."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Cơ sở này được Xứ ủy Nam Bộ sử dụng sau sự kiện nào?",
           "options": [
-            "Đỗ Văn Ba (Đỗ Văn Hạng) – cán bộ Xứ ủy, phụ trách cơ sở và trực tiếp thu tin, biên tậ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chiến dịch Hồ Chí Minh năm 1975",
+            "Cách mạng Tháng Tám năm 1945",
+            "Hiệp định Paris năm 1973",
+            "Hiệp định Genève năm 1954"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Đỗ Văn Ba (Đỗ Văn Hạng) – cán bộ Xứ ủy, phụ trách cơ sở và trực tiếp thu tin, biên tập tài liệu; Trần Bạch Đằng, Phạm Dân, Tân Đức – các cán bộ lãnh đạo từng tham gia các cuộc họp tại cơ sở; Lê Thị Riêng – Anh hùng Lực lượng vũ trang nhân dân, Trưởng Ban Phụ vận Khu ủy, từng sống và làm việc tại cơ sở; Nguyễn Thị Ngoan, Nguyễn Thị Chơn, Trần Thị Lan, Ngô Bá Thành, Trần Thị Ngọc Sương và nhiều cán bộ cách mạng khác. - Hiện vật: Chiếc máy thu thanh/ra-đi-ô mà đồng chí Lê Thị Riêng sử dụng khi làm việc tại cơ sở là hiện vật tiêu biểu được giới thiệu trong tư liệu của TP.HCM. Ngoài ra còn có ngôi nhà lịch sử, không gian làm việc, các tư liệu báo chí và tài liệu cách mạng gắn với hoạt động tuyên huấn, phụ vận và trí vận.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Hiệp định Genève năm 1954."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tại cơ sở, cán bộ dùng máy thu thanh để nhận tin chủ yếu từ đâu?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Đài Phát thanh Hà Nội",
+            "Đài BBC",
+            "Đài Sài Gòn",
+            "Đài Manila"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ được xếp hạng cấp Quốc gia theo Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Đài Phát thanh Hà Nội."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Ai được giao phụ trách cơ sở và việc thu tin, biên tập tài liệu?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Trần Văn Lai",
+            "Đỗ Văn Ba",
+            "Trương Hoàng Thanh",
+            "Phan Công Hớn"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Đỗ Văn Ba."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Ban Tuyên huấn Xứ ủy Nam Bộ chuyển từ cơ sở này về Chiến khu Đ vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1955",
+            "1960",
+            "1957",
+            "1965"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1957."
         }
       ],
       "flashcards": [
@@ -17607,73 +17607,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Cơ sở giấu vũ khí của Biệt động Thành nằm tại địa chỉ nào hiện nay?",
           "options": [
-            "Giai đoạn 1966–1967\nÔng Trần Văn Lai bắt đầu sử dụng căn nhà tại khu vực đường Phan Đình Phùng,...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "51/10/14 Cao Thắng",
+            "183/4 đường 3 Tháng 2",
+            "341/10 Gia Phú",
+            "287/70 Nguyễn Đình Chiểu"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập ghi dấu sự kiện: Giai đoạn 1966–1967\nÔng Trần Văn Lai bắt đầu sử dụng căn nhà tại khu vực đường Phan Đình Phùng, nay là Nguyễn Đình Chiểu, làm cơ sở bí mật.\nCăn hầm được xây dựng để phục vụ việc cất giấu vũ khí và vật liệu quân sự chuẩn bị cho các hoạt động chiến đấu trong nội thành.\nCuối năm 1967 – đầu năm 1968\nMột khối lượng lớn vũ khí được tập kết tại căn hầm để chuẩn bị cho cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân.\nCơ sở 287/70 Nguyễn Đình Chiểu trở thành một trong những địa điểm hậu cần quan trọng phục vụ hoạt động của Biệt động Thành.\nRạng sáng ngày 31/01/1968\nĐây là sự kiện quan trọng nhất gắn với di tích.\nTrong cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân, Đội 5 Biệt động gồm 15 cán bộ, chiến sĩ, do Trương Hoàng Thanh chỉ huy, nhận vũ khí từ cơ sở 287/70 Nguyễn Đình Chiểu và tiến hành tấn công Dinh Độc Lập.\nTrận đánh diễn ra trong nội đô Sài Gòn và là một trong những trận đánh nổi tiếng của lực lượng Biệt động Thành trong Tết Mậu Thân 1968.\nĐội 5 chịu tổn thất nặng nề. Nhiều chiến sĩ hy sinh, bị thương hoặc bị bắt.\nSau trận đánh\nCơ sở bí mật tại 287/70 Nguyễn Đình Chiểu bị phát hiện. Ông Trần Văn Lai bị bắt, căn nhà và tài sản bị đối phương kiểm soát.\nNgày 20/12/1969\nĐội 5 Biệt động được tuyên dương Anh hùng Lực lượng vũ trang nhân dân và được tặng Huân chương Quân công hạng Ba vì thành tích chiến đấu.\nNgày 16/11/1988\nDi tích được Bộ Văn hóa – Thông tin xếp hạng Di tích lịch sử cấp quốc gia theo Quyết định số 1288-VH/QĐ.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 287/70 Nguyễn Đình Chiểu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Ai là cán bộ Biệt động Thành đã chọn mua căn nhà làm nơi cất giấu vũ khí từ năm 1966?",
           "options": [
-            "Trần Văn Lai – Năm Lai – Mai Hồng Quế. Đây là nhân vật quan trọng nhất gắn trực tiếp ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Trần Văn Lai",
+            "Tôn Đức Thắng",
+            "Nguyễn Văn Cừ",
+            "Đỗ Văn Ba"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Trần Văn Lai – Năm Lai – Mai Hồng Quế. Đây là nhân vật quan trọng nhất gắn trực tiếp với di tích. Ông Trần Văn Lai là cán bộ Biệt động Thành, được giao nhiệm vụ xây dựng và tổ chức các cơ sở bí mật trong nội thành Sài Gòn. Ông đã mua và sử dụng căn nhà tại 287/70 Nguyễn Đình Chiểu làm cơ sở bí mật, đồng thời tổ chức xây dựng căn hầm để cất giấu vũ khí phục vụ các hoạt động chiến đấu.\nNhờ sự tổ chức và che giấu khéo léo của ông cùng đồng đội, một khối lượng lớn vũ khí có thể được bảo quản ngay trong lòng đô thị mà không bị phát hiện trong thời gian dài.\nÔng Trần Văn Lai sau này được Nhà nước phong tặng danh hiệu Anh hùng Lực lượng vũ trang nhân dân.\nĐặng Thị Thiệp. Bà Đặng Thị Thiệp là vợ ông Trần Văn Lai và cũng tham gia hoạt động cách mạng, hỗ trợ duy trì cơ sở bí mật.\nTrong điều kiện chiến tranh và sự kiểm soát gắt gao của đối phương, việc duy trì một căn nhà bình thường bên ngoài trong khi bên dưới chứa vũ khí đòi hỏi sự kín đáo và tinh thần hy sinh rất lớn của cả gia đình.\nTrương Hoàng Thanh. Ông Trương Hoàng Thanh là người chỉ huy Đội 5 Biệt động trong trận đánh Dinh Độc Lập năm 1968.\nĐội 5 đã nhận vũ khí được cất giấu tại cơ sở 287/70 Nguyễn Đình Chiểu trước khi tiến hành nhiệm vụ.\nNguyễn Văn Trí. Ông Nguyễn Văn Trí là cán bộ có liên quan đến lực lượng Biệt động và quá trình tổ chức, chỉ đạo hoạt động của các cơ sở bí mật trong nội thành.\n15 cán bộ, chiến sĩ Đội 5 Biệt động. Đây là lực lượng trực tiếp sử dụng số vũ khí được lấy từ căn hầm để tấn công Dinh Độc Lập trong Tết Mậu Thân năm 1968.\nĐội 5 gồm 15 cán bộ, chiến sĩ. Sau trận đánh, lực lượng chịu tổn thất rất lớn: 8 chiến sĩ hy sinh, 4 người bị thương và 7 người bị bắt theo tư liệu của Trung tâm Bảo tồn và Phát huy giá trị di tích lịch sử – văn hóa TP.HCM. - Hiện vật: Căn hầm bí mật là hiện vật và thành phần quan trọng nhất của di tích. Đây là nơi được xây dựng dưới căn nhà để cất giấu vũ khí và vật liệu quân sự. Các hiện vật tiêu biểu liên quan đến di tích gồm: Súng AK, Súng B40, Súng Carbine, Súng ngắn, Lựu đạn, Đạn các loại, Thuốc nổ TNT, Thuốc nổ C4, Các dụng cụ, trang thiết bị phục vụ chiến đấu.\nNgoài ra còn có các hình ảnh, tài liệu, kỷ vật và tư liệu về lực lượng Biệt động Thành, giúp tái hiện quá trình xây dựng cơ sở, vận chuyển vũ khí và chuẩn bị cho trận đánh Dinh Độc Lập.\nMột số tư liệu ghi nhận căn hầm từng chứa khoảng hơn 2 tấn vũ khí và vật liệu quân sự.\nĐặc biệt, hệ thống hầm được thiết kế với những phương án bí mật nhằm bảo đảm an toàn cho vũ khí và người hoạt động. Đây chính là một trong những điểm có giá trị lớn nhất khi nghiên cứu về kỹ thuật xây dựng cơ sở bí mật của Biệt động Thành.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Trần Văn Lai."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Số vũ khí được cất giấu tại cơ sở này có khối lượng hơn bao nhiêu?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1 tấn",
+            "2 tấn",
+            "5 tấn",
+            "500 kg"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập được xếp hạng cấp Quốc gia theo Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 2 tấn."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Đơn vị nào nhận vũ khí tại đây rồi xuất phát tấn công Dinh Độc Lập rạng sáng Tết Mậu Thân 1968?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Tiểu đoàn 1 Trung đoàn 33",
+            "Thanh niên Tiền phong",
+            "Đội 5 Biệt động",
+            "Đặc công Rừng Sác"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Đội 5 Biệt động."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Cuộc xuất phát từ cơ sở để tấn công Dinh Độc Lập diễn ra vào rạng sáng ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "05/6/1968",
+            "30/4/1975",
+            "01/01/1968",
+            "31/01/1968"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 31/01/1968."
         }
       ],
       "flashcards": [
@@ -18244,73 +18244,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn còn được gọi bằng mật danh nào?",
           "options": [
-            "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn gắn với hoạt động tổ chức in ấn, sao chép và phát hành ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Hầm B",
+            "Hầm D",
+            "Hầm A",
+            "Hầm C"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn ghi dấu sự kiện: Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn gắn với hoạt động tổ chức in ấn, sao chép và phát hành các tài liệu phục vụ công tác tuyên truyền, cổ động và vận động quần chúng trong thời kỳ kháng chiến. Hoạt động in ấn phải được tiến hành trong điều kiện bí mật, đòi hỏi sự phối hợp giữa người phụ trách nội dung, người trực tiếp in ấn, người bảo quản tài liệu và mạng lưới vận chuyển, phát hành. Sự tồn tại của cơ sở cho thấy công tác tuyên truyền là một bộ phận quan trọng của hoạt động cách mạng, góp phần truyền đạt chủ trương, động viên tinh thần và duy trì sự liên kết giữa các cơ sở.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Hầm B."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hầm B được đưa vào sử dụng từ thời điểm nào?",
           "options": [
-            "Các thành viên Hội Ủng hộ Vệ quốc đoàn, cán bộ phụ trách in ấn, người biên tập tài li...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Tháng 1/1960",
+            "Tháng 7/1952",
+            "Tháng 5/1954",
+            "Tháng 7/1956"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các thành viên Hội Ủng hộ Vệ quốc đoàn, cán bộ phụ trách in ấn, người biên tập tài liệu, người vận chuyển và phân phát tài liệu, cùng những cơ sở quần chúng đã cung cấp địa điểm hoặc hỗ trợ hoạt động. Khi lập hồ sơ chính thức, cần ưu tiên những người được ghi trong hồ sơ di tích thay vì suy đoán tên cá nhân. - Hiện vật: Tài liệu tuyên truyền, báo chí, truyền đơn, giấy in, khuôn in, máy in, dụng cụ sao chép, vật dụng đóng gói và các tài liệu liên quan đến Hội Ủng hộ Vệ quốc đoàn. Những hiện vật này nếu còn nguyên trạng có giá trị lớn vì có thể giúp phục dựng quy trình in ấn và phổ biến tài liệu trong điều kiện chiến tranh.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Tháng 7/1952."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Cơ sở in ấn này nằm tại địa chỉ nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "5 Châu Văn Liêm",
+            "341/10 Gia Phú",
+            "122/351 Ngô Gia Tự",
+            "287/70 Nguyễn Đình Chiểu"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn được xếp hạng cấp Quốc gia theo Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 122/351 Ngô Gia Tự."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Hoạt động chính tại Hầm B là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Điều trị thương binh",
+            "Sửa chữa tàu chiến",
+            "Cất giấu lương thực",
+            "In ấn, sao lưu tài liệu và truyền đơn cách mạng"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: In ấn, sao lưu tài liệu và truyền đơn cách mạng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1988",
+            "1976",
+            "1998",
+            "2004"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1988."
         }
       ],
       "flashcards": [
@@ -18771,9 +18771,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Di tích 86 Phan Chu Trinh",
+      "title": "Hồ sơ điều tra: Nhà số 86- Phan Chu Trinh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích 86 Phan Chu Trinh",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà số 86- Phan Chu Trinh",
       "investigationQuestion": "Nhà số 86 Phan Chu Trinh đã trở thành cơ sở cách mạng giữa lòng đô thị như thế nào, và câu chuyện của di tích cho em hiểu gì về vai trò của những người dân bình thường trong lịch sử?",
       "suggestedAnswer": "Nhà số 86 Phan Chu Trinh là ngôi nhà của người dân giữa phố nhưng được dùng để che giấu cán bộ, cất giữ tài liệu, làm nơi liên lạc và họp kín. Cuộc sống sinh hoạt thường ngày của gia đình chính là “lớp ngụy trang” tốt nhất. Câu chuyện cho thấy lịch sử không chỉ do các nhân vật nổi tiếng làm nên mà còn nhờ những người dân bình thường, âm thầm và dũng cảm, sẵn sàng đối mặt nguy hiểm vì lý tưởng.",
       "referencesList": [
@@ -18807,73 +18807,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Di tích 86 Phan Chu Trinh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Nhà số 86 Phan Chu Trinh hiện mang số nhà nào trên đường Phan Chu Trinh?",
           "options": [
-            "Di tích 86 Phan Chu Trinh gắn với các hoạt động cách mạng diễn ra tại khu vực đô thị Vũng Tàu, ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Số 1",
+            "Số 5",
+            "Số 18",
+            "Số 86"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Di tích 86 Phan Chu Trinh ghi dấu sự kiện: Di tích 86 Phan Chu Trinh gắn với các hoạt động cách mạng diễn ra tại khu vực đô thị Vũng Tàu, trong đó ngôi nhà được sử dụng như một cơ sở dân sự có liên quan đến hoạt động cách mạng. Các hoạt động tại đây phản ánh phương thức xây dựng cơ sở bí mật trong lòng đô thị, dựa vào sự hỗ trợ của người dân và các gia đình cơ sở. Những hoạt động liên lạc, che giấu, hỗ trợ cán bộ và duy trì quan hệ giữa các cơ sở là những yếu tố làm nên giá trị lịch sử của địa điểm. Trong quá trình bảo tồn, những ký ức và tư liệu liên quan đến các hoạt động này có ý nghĩa quan trọng trong việc phục dựng lịch sử cách mạng tại Vũng Tàu.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Số 5."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Di tích 86 Phan Chu Trinh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Chủ nhân người Pháp gắn với ngôi nhà này là ai?",
           "options": [
-            "Các cán bộ cách mạng, cơ sở quần chúng, gia đình địa phương và người dân Vũng Tàu từn...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Paul Doumer",
+            "Ernest Hébrard",
+            "Pierre Chappus",
+            "Alfred Foulhoux"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các cán bộ cách mạng, cơ sở quần chúng, gia đình địa phương và người dân Vũng Tàu từng liên quan đến hoạt động tại Nhà số 86 Phan Chu Trinh. Danh tính cụ thể cần được xác định từ hồ sơ khoa học và tài liệu lưu trữ. - Hiện vật: Ngôi nhà số 86 Phan Chu Trinh và các cấu kiện gốc như nền, tường, cửa, mái, cầu thang, cột hoặc các chi tiết kiến trúc còn được bảo tồn. Hình ảnh cũ, bản đồ, hồ sơ kiến trúc và tài liệu về những người từng sử dụng ngôi nhà cũng là nguồn tư liệu quan trọng.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Pierre Chappus."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Di tích 86 Phan Chu Trinh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Trong thời kỳ cách mạng, ngôi nhà từng được sử dụng làm cơ sở của cơ quan nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Ban Tuyên huấn Xứ ủy Nam Bộ",
+            "Ủy ban Việt Minh Sài Gòn",
+            "Trung ương Cục miền Nam",
+            "Văn phòng Tỉnh ủy Bà Rịa – Long Khánh"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Di tích 86 Phan Chu Trinh được xếp hạng cấp Quốc gia theo Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Văn phòng Tỉnh ủy Bà Rịa – Long Khánh."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Di tích 86 Phan Chu Trinh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Ngôi nhà mang phong cách kiến trúc chủ yếu nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Kiến trúc Pháp đầu thế kỷ XX",
+            "Kiến trúc Khmer Angkor",
+            "Kiến trúc nhà dài Tây Nguyên",
+            "Kiến trúc cung đình Huế"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Kiến trúc Pháp đầu thế kỷ XX."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Di tích 86 Phan Chu Trinh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Nhà số 86 Phan Chu Trinh được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1991",
+            "1992",
+            "1994",
+            "1989"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1992."
         }
       ],
       "flashcards": [
@@ -19426,73 +19426,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Dinh Quận Hóc Môn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Dinh Quận Hóc Môn gắn với hai sự kiện đấu tranh nổi bật nào?",
           "options": [
-            "Dinh Quận Hóc Môn gắn với quá trình hoạt động của bộ máy hành chính tại Hóc Môn qua các thời kỳ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Phong trào Đông Du và Duy Tân",
+            "Chiến dịch Bình Giã và Xuân Lộc",
+            "Khởi nghĩa 18 Thôn Vườn Trầu và Nam Kỳ khởi nghĩa",
+            "Khởi nghĩa Yên Bái và Xô viết Nghệ Tĩnh"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Dinh Quận Hóc Môn ghi dấu sự kiện: Dinh Quận Hóc Môn gắn với quá trình hoạt động của bộ máy hành chính tại Hóc Môn qua các thời kỳ lịch sử. Công trình là nơi diễn ra các hoạt động quản lý hành chính, giải quyết công việc địa phương và phản ánh những biến đổi về tổ chức chính quyền trong từng giai đoạn. Trong quá trình lịch sử, khu vực Hóc Môn cũng trải qua nhiều biến động về chính trị và xã hội, vì vậy Dinh Quận Hóc Môn có thể được xem là một địa điểm giúp kết nối lịch sử hành chính với lịch sử địa phương. Theo danh mục trong file, Dinh Quận Hóc Môn được xác định là di tích lịch sử, số 1 đường Lý Nam Đế, xã Hóc Môn, được xếp hạng theo Quyết định số 2015-QĐ/BT ngày 16/11/1993.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Khởi nghĩa 18 Thôn Vườn Trầu và Nam Kỳ khởi nghĩa."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Dinh Quận Hóc Môn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Ai lãnh đạo cuộc khởi nghĩa 18 Thôn Vườn Trầu năm 1885 đánh vào Dinh Quận?",
           "options": [
-            "Các cán bộ, viên chức hành chính và những nhân vật có hoạt động gắn với Hóc Môn qua t...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nguyễn Trung Trực",
+            "Thiên Hộ Dương",
+            "Trương Định",
+            "Phan Công Hớn"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các cán bộ, viên chức hành chính và những nhân vật có hoạt động gắn với Hóc Môn qua từng giai đoạn. Để bảo đảm độ chính xác, tên nhân vật cần được đối chiếu hồ sơ di tích. - Hiện vật: Dinh Quận Hóc Môn, nền móng, cấu kiện kiến trúc, cửa, mái, các tài liệu hành chính, bản đồ và hình ảnh lịch sử. Nếu còn vật dụng hành chính hoặc hồ sơ gốc, cần lập danh mục riêng và xác định nguồn gốc.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Phan Công Hớn."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Dinh Quận Hóc Môn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Nam Kỳ khởi nghĩa bùng nổ vào ngày nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "23/11/1940",
+            "19/12/1946",
+            "19/8/1945",
+            "23/9/1945"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Dinh Quận Hóc Môn được xếp hạng cấp Quốc gia theo Số 2015-QĐ/BT ngày 16/11/1993 của Bộ trưởng Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 23/11/1940."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Dinh Quận Hóc Môn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Dinh Quận Hóc Môn hiện tọa lạc tại địa chỉ nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Số 18 Lê Lợi",
+            "Số 1 Lý Nam Đế",
+            "Số 5 Châu Văn Liêm",
+            "Số 9 Phan Thúc Duyện"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Số 1 Lý Nam Đế."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Dinh Quận Hóc Môn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Dinh Quận Hóc Môn được công nhận di tích lịch sử văn hóa cấp quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2002",
+            "1988",
+            "1993",
+            "1990"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -20072,73 +20072,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Địa đạo Long Phước\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Địa đạo Long Phước cách trung tâm thành phố Bà Rịa trước đây khoảng bao nhiêu kilômét về phía đông bắc?",
           "options": [
-            "Địa đạo Long Phước gắn với quá trình nhân dân địa phương xây dựng, mở rộng và sử dụng hệ thống ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "12 km",
+            "3 km",
+            "5 km",
+            "7 km"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Địa đạo Long Phước ghi dấu sự kiện: Địa đạo Long Phước gắn với quá trình nhân dân địa phương xây dựng, mở rộng và sử dụng hệ thống địa đạo trong các thời kỳ kháng chiến. Địa đạo được sử dụng làm nơi trú ẩn, hội họp, bảo vệ cán bộ, cất giấu tài liệu, tổ chức liên lạc và phục vụ chiến đấu. Trong điều kiện chiến tranh ác liệt, hệ thống địa đạo phải thường xuyên được củng cố, sửa chữa và mở rộng để thích ứng với tình hình. Sự kiện xây dựng và sử dụng địa đạo thể hiện rõ sự tham gia của nhân dân vào hoạt động chiến tranh nhân dân, từ đào hầm, vận chuyển vật liệu, cung cấp lương thực đến bảo vệ bí mật của căn cứ. File xác định Địa đạo Long Phước là di tích lịch sử, tại phường Tam Long, được xếp hạng theo Quyết định số 34/VH-QĐ ngày 09/01/1990 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 7 km."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Địa đạo Long Phước\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Địa đạo Long Phước là chứng tích của quân dân địa phương trong những cuộc kháng chiến nào?",
           "options": [
-            "Các cán bộ, chiến sĩ, du kích Long Phước và nhân dân địa phương, đặc biệt những người...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chống Pháp và chống Mỹ",
+            "Chống Tống và chống Nguyên",
+            "Chống Nhật và chiến tranh biên giới phía Bắc",
+            "Chống Xiêm và chống Thanh"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các cán bộ, chiến sĩ, du kích Long Phước và nhân dân địa phương, đặc biệt những người trực tiếp tham gia đào địa đạo, bảo vệ cán bộ, vận chuyển lương thực, đưa tin và chiến đấu. - Hiện vật: Hệ thống đường hầm, cửa hầm, hầm chiến đấu, hầm trú ẩn, lối thông, công sự và dấu tích sinh hoạt dưới lòng đất. Những vật dụng như đèn, dụng cụ đào, đồ dùng sinh hoạt, tài liệu hoặc trang bị quân sự nếu có nguồn gốc xác thực sẽ có giá trị đặc biệt.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chống Pháp và chống Mỹ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Địa đạo Long Phước\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Trận chiến đấu kéo dài 44 ngày đêm tại Long Phước diễn ra vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1954",
+            "1963",
+            "1960",
+            "1968"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Địa đạo Long Phước được xếp hạng cấp Quốc gia theo Số 34/VH-QĐ ngày 09/01/1990 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1963."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Địa đạo Long Phước\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Tuyến địa đạo được trùng tu, khai thác hiện nay gồm một phần địa đạo Ấp Tây và tuyến nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Tam Long, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Ấp Đông",
+            "Ấp Nam",
+            "Ấp Bắc",
+            "Ấp Trung"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Tam Long, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Ấp Bắc."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Địa đạo Long Phước\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Địa đạo Long Phước được xếp hạng di tích lịch sử cách mạng cấp quốc gia vào ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "03/8/1991",
+            "04/8/1992",
+            "19/01/2001",
+            "09/01/1990"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 09/01/1990."
         }
       ],
       "flashcards": [
@@ -20761,73 +20761,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Trận chiến được di tích ghi dấu diễn ra vào ngày nào?",
           "options": [
-            "Ngày 06/6/1969: diễn ra trận chiến tại Bình Ba, sự kiện được ghi trực tiếp trong tên của di tíc...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "06/6/1969",
+            "30/4/1975",
+            "18/8/1966",
+            "06/6/1968"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba ghi dấu sự kiện: Ngày 06/6/1969: diễn ra trận chiến tại Bình Ba, sự kiện được ghi trực tiếp trong tên của di tích và là mốc lịch sử trung tâm gắn với địa điểm. Trận chiến phản ánh tính chất ác liệt của chiến tranh trong giai đoạn chống Mỹ, khi lực lượng tham chiến phải đối mặt với những điều kiện chiến đấu khắc nghiệt. Sự kiện cũng gắn với những mất mát, thương vong và sự hy sinh của cán bộ, chiến sĩ. Sau chiến tranh, địa điểm trở thành nơi lưu giữ ký ức về trận đánh, có ý nghĩa tưởng niệm và giáo dục truyền thống. Việc nghiên cứu sự kiện cần kết hợp tài liệu quân sự, hồi ký nhân chứng, danh sách liệt sĩ và tư liệu địa phương để xác định chính xác diễn biến trận đánh.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 06/6/1969."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đơn vị nào gắn với trận đánh tại Bình Ba được tưởng niệm tại di tích?",
           "options": [
-            "Các cán bộ, chiến sĩ tham gia trận chiến Bình Ba ngày 06/6/1969, lực lượng vũ trang đ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Đoàn 10 Đặc công Rừng Sác",
+            "Tiểu đoàn 1, Trung đoàn 33",
+            "Tiểu đoàn 307",
+            "Đội 5 Biệt động Thành"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các cán bộ, chiến sĩ tham gia trận chiến Bình Ba ngày 06/6/1969, lực lượng vũ trang địa phương và nhân dân Bình Ba. Danh sách những người hy sinh cần sử dụng nguồn tưởng niệm hoặc hồ sơ chính thức. - Hiện vật: Bia tưởng niệm, bảng giới thiệu, bản đồ trận đánh, ảnh tư liệu, tài liệu và các dấu tích vật chất còn lại tại khu vực Bình Ba. Nếu có vũ khí, quân trang hoặc vật dụng chiến đấu được lưu giữ cần ghi rõ nguồn gốc và tình trạng.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Tiểu đoàn 1, Trung đoàn 33."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Có bao nhiêu cán bộ, chiến sĩ được ghi nhận đã hy sinh trong trận đánh ác liệt này?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "43",
+            "63",
+            "53",
+            "33"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba được xếp hạng cấp Quốc gia theo Số 4248/QĐ-BVHTTDL ngày 19/12/2023."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 53."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Trước khi được xếp hạng quốc gia, khu tưởng niệm trận đánh được xếp hạng di tích cấp tỉnh theo Quyết định 931/QĐ-UBND vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Xã Ngãi Giao, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "2018",
+            "2020",
+            "2010",
+            "2012"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Xã Ngãi Giao, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 2012."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Di tích Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2023",
+            "2022",
+            "2018",
+            "2020"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 2023."
         }
       ],
       "flashcards": [
@@ -21398,73 +21398,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Bình Đông\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Bình Đông tọa lạc trên địa hình nào?",
           "options": [
-            "Đình Bình Đông gắn với các hoạt động tín ngưỡng và sinh hoạt cộng đồng được duy trì qua nhiều t...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Một gò đất đỏ ở Cần Giờ",
+            "Một cù lao giữa rạch Bà Tàng",
+            "Một ngọn đồi ven sông Đồng Nai",
+            "Một triền núi sát biển"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Bình Đông ghi dấu sự kiện: Đình Bình Đông gắn với các hoạt động tín ngưỡng và sinh hoạt cộng đồng được duy trì qua nhiều thế hệ. Những sự kiện tiêu biểu tại đình bao gồm các kỳ lễ, lễ Kỳ Yên, nghi thức thờ Thành hoàng, tưởng niệm tiền hiền – hậu hiền và các hoạt động cộng đồng của cư dân địa phương. Đây là những dịp người dân tập trung tại đình để thực hiện nghi lễ, tưởng nhớ những người có công với cộng đồng và cầu mong cuộc sống bình an, thuận lợi. Bên cạnh ý nghĩa tôn giáo, các hoạt động này còn góp phần duy trì quan hệ cộng đồng, truyền lại phong tục, nghi lễ và ký ức địa phương từ thế hệ này sang thế hệ khác.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Một cù lao giữa rạch Bà Tàng."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Bình Đông\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đình Bình Đông được xây dựng từ khoảng thời gian nào?",
           "options": [
-            "Các vị Thành hoàng, tiền hiền, hậu hiền và người có công khai phá vùng đất Bình Đông;...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Những năm 1954",
+            "Những năm 1750",
+            "Những năm 1852",
+            "Những năm 1920"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các vị Thành hoàng, tiền hiền, hậu hiền và người có công khai phá vùng đất Bình Đông; những nhân vật này cần được xác định qua sắc phong, bài vị, gia phả và hồ sơ đình. - Hiện vật: Sắc phong, bài vị, hoành phi, câu đối, ngai thờ, đồ thờ, cấu kiện gỗ, mảng chạm khắc và các bộ phận kiến trúc truyền thống của Đình Bình Đông.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Những năm 1852."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Bình Đông\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Vua nào đã ban sắc phong cho Đình Bình Đông vào năm 1853?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Khải Định",
+            "Gia Long",
+            "Minh Mạng",
+            "Tự Đức"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Bình Đông được xếp hạng cấp Quốc gia theo Số 2890-VH/QĐ ngày 27/9/1997 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Tự Đức."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Bình Đông\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Từ năm 1925, Đình Bình Đông gắn với hoạt động của tổ chức nào do Tôn Đức Thắng thành lập?",
           "options": [
-            "Tọa lạc tại địa chỉ: Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Công hội bí mật Sài Gòn",
+            "Việt Nam Quốc dân đảng",
+            "Tân Việt Cách mạng Đảng",
+            "Hội Duy Tân"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Công hội bí mật Sài Gòn."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Bình Đông\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Bình Đông được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1993",
+            "1997",
+            "1994",
+            "2000"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1997."
         }
       ],
       "flashcards": [
@@ -22037,73 +22037,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Phong Phú\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Phong Phú được lập để thờ vị thần nào theo tín ngưỡng đình làng?",
           "options": [
-            "Đình Phong Phú gắn với quá trình hình thành và duy trì đời sống tín ngưỡng của cộng đồng cư dân...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Thiên Hậu Thánh Mẫu",
+            "Quan Thánh Đế Quân",
+            "Thần Thành Hoàng",
+            "Ông Bổn"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Phong Phú ghi dấu sự kiện: Đình Phong Phú gắn với quá trình hình thành và duy trì đời sống tín ngưỡng của cộng đồng cư dân địa phương. Các sự kiện tiêu biểu gồm lễ Kỳ Yên, các nghi thức thờ Thành hoàng, tưởng niệm tiền nhân và những hoạt động sinh hoạt cộng đồng diễn ra tại đình. Trong những dịp lễ, cộng đồng cùng tham gia chuẩn bị lễ vật, thực hiện nghi thức và tổ chức các hoạt động truyền thống. Đây là quá trình giúp các giá trị văn hóa phi vật thể được duy trì song song với việc bảo tồn kiến trúc đình. Những nghi lễ này cũng tạo điều kiện để thế hệ trẻ tiếp xúc với phong tục truyền thống và hiểu hơn về lịch sử cộng đồng nơi mình sinh sống.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Thần Thành Hoàng."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Phong Phú\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Nét đặc trưng trong hình thức thờ tự của Đình Phong Phú là gì?",
           "options": [
-            "Các vị Thành hoàng, tiền hiền, hậu hiền và những người có công khai phá, lập làng Pho...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chỉ thờ ngoài trời, không có chánh điện",
+            "Không có tượng hay bài vị",
+            "Chỉ thờ các vị thần biển",
+            "Thờ tượng tròn thay vì chủ yếu thờ bài vị"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các vị Thành hoàng, tiền hiền, hậu hiền và những người có công khai phá, lập làng Phong Phú; cần tiếp tục kiểm chứng tên và vai trò của từng nhân vật. - Hiện vật: Sắc phong, bài vị, hoành phi, câu đối, đồ thờ, cấu kiện gỗ, mảng chạm khắc và các chi tiết kiến trúc có giá trị nghệ thuật của Đình Phong Phú.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thờ tượng tròn thay vì chủ yếu thờ bài vị."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Phong Phú\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Trong kháng chiến chống Pháp, Đình Phong Phú từng là nơi thành lập và luyện tập của lực lượng nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Thanh niên Tiền phong làng Phong Phú",
+            "Đặc công Rừng Sác",
+            "Tiểu đoàn 1 Trung đoàn 33",
+            "Đội 5 Biệt động Thành"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Phong Phú được xếp hạng cấp Quốc gia theo Số 1766/QĐ-UBND ngày 27/4/2009 của Ủy ban nhân dân Thành phố."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thanh niên Tiền phong làng Phong Phú."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Phong Phú\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Lễ Kỳ Yên tại Đình Phong Phú thường diễn ra vào thời gian nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "15–17 tháng 7 âm lịch",
+            "14–16 tháng 11 âm lịch",
+            "1–3 tháng Giêng âm lịch",
+            "12–14 tháng 2 âm lịch"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 14–16 tháng 11 âm lịch."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Phong Phú\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Phong Phú được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "2004",
+            "1993",
+            "1988"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -22568,9 +22568,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Đồn ngã tư Giếng Nước",
+      "title": "Hồ sơ điều tra: Đồn nhà máy nước",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh..",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Đồn ngã tư Giếng Nước",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Đồn nhà máy nước",
       "investigationQuestion": "Đồn Ngã Tư Giếng Nước phản ánh vai trò của một vị trí quân sự trong lịch sử địa phương như thế nào, và di tích giúp em nhận thức gì về cái giá của chiến tranh đối với cộng đồng?",
       "suggestedAnswer": "Đồn Ngã Tư Giếng Nước từng là vị trí quân sự ở giao điểm giao thông, dùng để kiểm soát đường đi, dân cư và bảo vệ khu vực. Vị trí này thường trở thành mục tiêu tấn công nên gắn với nhiều trận đánh và thương vong. Di tích giúp em nhận thức cái giá của chiến tranh: người chết, nhà cửa bị phá, cuộc sống người dân bị đảo lộn – từ đó thêm trân trọng hòa bình và tôn trọng ký ức của cộng đồng nơi ấy.",
       "referencesList": [
@@ -22618,73 +22618,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đồn ngã tư Giếng Nước\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Vì sao Đồn Nhà máy nước có vị trí quân sự quan trọng trong thời kỳ kháng chiến chống Pháp?",
           "options": [
-            "Đồn ngã tư Giếng Nước gắn với quá trình xây dựng, sử dụng và hoạt động của một công trình quân ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Bảo vệ sân bay quân sự trên Núi Lớn",
+            "Kiểm soát tuyến vận chuyển vũ khí trên biển",
+            "Kiểm soát tuyến đường sắt nối Vũng Tàu với Sài Gòn",
+            "Bảo vệ hệ thống cung cấp nước ngọt quan trọng của Vũng Tàu"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đồn ngã tư Giếng Nước ghi dấu sự kiện: Đồn ngã tư Giếng Nước gắn với quá trình xây dựng, sử dụng và hoạt động của một công trình quân sự tại khu vực Vũng Tàu. Do nằm tại khu vực có ý nghĩa về giao thông và kiểm soát địa bàn, công trình từng giữ vai trò quan sát, kiểm soát và phục vụ hoạt động phòng thủ. Những hoạt động quân sự diễn ra tại đồn phản ánh sự thay đổi của hệ thống phòng thủ Vũng Tàu qua các thời kỳ. Di tích còn có giá trị trong việc nghiên cứu sự biến đổi của không gian quân sự khi đô thị Vũng Tàu ngày càng phát triển và mở rộng.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Bảo vệ hệ thống cung cấp nước ngọt quan trọng của Vũng Tàu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đồn ngã tư Giếng Nước\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đặc điểm nào của Đồn Nhà máy nước cho thấy rõ chức năng phòng thủ của công trình?",
           "options": [
-            "Các sĩ quan, binh lính từng đóng tại Đồn nhà máy nước cùng các cán bộ, chiến sĩ và nh...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Có các lỗ châu mai hướng về bốn phía",
+            "Có đường hầm nối trực tiếp ra biển",
+            "Có hệ thống hào nước bao quanh",
+            "Có tháp quan sát hình tròn trên mái"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các sĩ quan, binh lính từng đóng tại Đồn nhà máy nước cùng các cán bộ, chiến sĩ và nhân dân có hoạt động liên quan đến khu vực. - Hiện vật: Dấu tích nền móng, công sự, cấu kiện đồn, bản đồ, ảnh tư liệu và các vật dụng quân sự nếu còn tồn tại.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Có các lỗ châu mai hướng về bốn phía."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đồn ngã tư Giếng Nước\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Bức phù điêu kỷ niệm được xây dựng trước Đồn Nhà máy nước vào năm 1985 nhằm ghi nhớ sự kiện nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Ngày giải phóng Vũng Tàu năm 1975",
+            "Hai trận đánh tại đồn năm 1948",
+            "Cuộc Tổng tiến công Tết Mậu Thân năm 1968",
+            "Trận Bình Giã cuối năm 1964"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đồn ngã tư Giếng Nước được xếp hạng cấp Quốc gia theo Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Hai trận đánh tại đồn năm 1948."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đồn ngã tư Giếng Nước\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Đồn Nhà máy nước được xếp hạng di tích lịch sử cấp quốc gia vào thời điểm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "19/01/2001",
+            "25/3/1991",
+            "04/8/1992",
+            "03/8/1991"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 04/8/1992."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đồn ngã tư Giếng Nước\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Vì sao Đồn Nhà máy nước được di dời khoảng 13 m so với vị trí cũ vào năm 2007?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Để phục hồi hệ thống cấp nước cũ",
+            "Để xây dựng khu trưng bày mới",
+            "Để đưa di tích vào khuôn viên bảo tàng",
+            "Để mở rộng đường 30/4 và bảo đảm an toàn giao thông"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Để mở rộng đường 30/4 và bảo đảm an toàn giao thông."
         }
       ],
       "flashcards": [
@@ -23239,73 +23239,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Địa đạo Hắc Dịch\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Địa đạo Hắc Dịch trước đây thuộc địa bàn nào của Bà Rịa – Vũng Tàu?",
           "options": [
-            "Hắc Dịch gắn với quá trình xây dựng, sử dụng và bảo vệ căn cứ, địa đạo và các cơ sở cách mạng t...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Phú Mỹ",
+            "Đất Đỏ",
+            "Long Điền",
+            "Xuyên Mộc"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Địa đạo Hắc Dịch ghi dấu sự kiện: Hắc Dịch gắn với quá trình xây dựng, sử dụng và bảo vệ căn cứ, địa đạo và các cơ sở cách mạng trong thời kỳ kháng chiến. Nhân dân địa phương tham gia đào hầm, xây dựng công sự, cung cấp lương thực, vận chuyển vật tư và hỗ trợ cán bộ. Các hoạt động trú ẩn, hội họp, liên lạc, cất giấu tài liệu và chiến đấu diễn ra trong điều kiện luôn có nguy cơ bị phát hiện. Chính quá trình duy trì căn cứ trong thời gian dài đã tạo nên giá trị lịch sử đặc biệt của Hắc Dịch, đồng thời thể hiện sự gắn bó giữa lực lượng cách mạng với nhân dân địa phương.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Phú Mỹ."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Địa đạo Hắc Dịch\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Địa đạo Hắc Dịch gắn nổi bật với cuộc kháng chiến nào?",
           "options": [
-            "Cán bộ, chiến sĩ cách mạng, du kích và nhân dân Hắc Dịch, đặc biệt những người trực t...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Kháng chiến chống quân Thanh",
+            "Kháng chiến chống Mỹ",
+            "Kháng chiến chống Nguyên – Mông",
+            "Khởi nghĩa Cần Vương"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Cán bộ, chiến sĩ cách mạng, du kích và nhân dân Hắc Dịch, đặc biệt những người trực tiếp xây dựng, bảo vệ và sử dụng hệ thống địa đạo. - Hiện vật: Đường hầm, cửa hầm, công sự, hầm chiến đấu, nơi trú ẩn, dấu tích căn cứ và các tài liệu, vật dụng sinh hoạt hoặc quân sự được xác định có nguồn gốc từ thời kỳ hoạt động.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Kháng chiến chống Mỹ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Địa đạo Hắc Dịch\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Về quy mô, Địa đạo Hắc Dịch được giới thiệu là một trong những hệ thống địa đạo lớn của khu vực nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Đồng bằng sông Hồng",
+            "Tây Bắc",
+            "Miền Đông Nam Bộ",
+            "Bắc Trung Bộ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Địa đạo Hắc Dịch được xếp hạng cấp Quốc gia theo Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Miền Đông Nam Bộ."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Địa đạo Hắc Dịch\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Địa đạo Hắc Dịch được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Tân Thành, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "1990",
+            "1994",
+            "2010",
+            "2001"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Tân Thành, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 2001."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Địa đạo Hắc Dịch\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Quyết định xếp hạng Địa đạo Hắc Dịch được ban hành vào ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "19/01/2001",
+            "28/12/2001",
+            "03/3/2009",
+            "09/01/1990"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 19/01/2001."
         }
       ],
       "flashcards": [
@@ -23884,73 +23884,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận nằm tại địa chỉ nào?",
           "options": [
-            "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước gắn với hoạt động in ấn...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "51/10/14 Cao Thắng",
+            "341/10 Gia Phú",
+            "287/70 Nguyễn Đình Chiểu",
+            "122/351 Ngô Gia Tự"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước ghi dấu sự kiện: Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước gắn với hoạt động in ấn, sao chép, bảo quản và phát hành tài liệu tuyên truyền. Đây là loại hình hoạt động đòi hỏi mức độ bí mật rất cao vì tài liệu sau khi in phải được đưa ra ngoài mà không để lộ địa điểm. Những người tham gia phải tổ chức thành nhiều khâu từ chuẩn bị nội dung, in, phơi, đóng gói, cất giấu đến vận chuyển và phát hành. Hoạt động của hầm phản ánh vai trò của công tác tuyên huấn trong phong trào đấu tranh và sự tham gia của các cơ sở trong cộng đồng người Hoa. File xác định đây là di tích lịch sử tại số 341/10 đường Gia Phú, phường Bình Tiên, được xếp hạng theo Quyết định số 2009/1998/QĐ-BVHTT ngày 26/9/1998.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 341/10 Gia Phú."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tổ in bí mật chuyển về hoạt động tại căn nhà 341/10 Gia Phú vào năm nào?",
           "options": [
-            "Cán bộ Ban Tuyên huấn Hoa vận, các cơ sở cách mạng và những người trực tiếp tham gia ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1962",
+            "1968",
+            "1965",
+            "1961"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Cán bộ Ban Tuyên huấn Hoa vận, các cơ sở cách mạng và những người trực tiếp tham gia in ấn, cất giấu, vận chuyển và phân phát tài liệu. - Hiện vật: Hầm bí mật, máy in, khuôn chữ, giấy in, tài liệu tuyên truyền, dụng cụ sao chép, hộp đựng tài liệu và các vật dụng dùng để che giấu, vận chuyển tài liệu.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1965."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Dưới nền căn nhà, cán bộ đã đào bao nhiêu hầm bí mật để phục vụ hoạt động in ấn?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Bốn",
+            "Năm",
+            "Hai",
+            "Ba"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước được xếp hạng cấp Quốc gia theo Số 2009/1998/QĐ-BVHTT ngày 26/9/1998 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Ba."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Tờ báo nào được xuất bản tại cơ sở trong giai đoạn hoạt động cao trào 1965–1967?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Công Nhân",
+            "Tiền Phong",
+            "Dân Chúng",
+            "Thanh Niên"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Công Nhân."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận được công nhận di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2004",
+            "1998",
+            "1988",
+            "1993"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1998."
         }
       ],
       "flashcards": [
@@ -24516,73 +24516,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Mộ Phan Châu Trinh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Phan Châu Trinh sinh năm nào?",
           "options": [
-            "Năm 1926: Phan Châu Trinh qua đời, kết thúc cuộc đời hoạt động của một trong những nhà yêu nước...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1892",
+            "1862",
+            "1872",
+            "1882"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Mộ Phan Châu Trinh ghi dấu sự kiện: Năm 1926: Phan Châu Trinh qua đời, kết thúc cuộc đời hoạt động của một trong những nhà yêu nước và tư tưởng cải cách tiêu biểu đầu thế kỷ XX. Sau khi ông mất, mộ phần trở thành nơi tưởng niệm và được các thế hệ sau gìn giữ. Các hoạt động tưởng niệm, nghiên cứu và giới thiệu về Phan Châu Trinh tại di tích góp phần duy trì ký ức về phong trào yêu nước, tư tưởng canh tân, chủ trương nâng cao dân trí, dân khí và dân quyền. Di tích vì vậy không chỉ gắn với một sự kiện về cuộc đời nhân vật mà còn với quá trình xã hội tiếp nhận, tưởng niệm và phát huy giá trị tư tưởng của ông.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1872."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Mộ Phan Châu Trinh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Phan Châu Trinh còn được biết đến với hiệu nào?",
           "options": [
-            "Phan Châu Trinh là nhân vật trung tâm. Ông sinh năm 1872, mất năm 1926, là nhà yêu nư...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Bạch Vân",
+            "Sào Nam",
+            "Ức Trai",
+            "Tây Hồ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Phan Châu Trinh là nhân vật trung tâm. Ông sinh năm 1872, mất năm 1926, là nhà yêu nước, nhà tư tưởng cải cách tiêu biểu, chủ trương nâng cao dân trí, chấn dân khí và phát triển dân quyền. - Hiện vật: Mộ, bia mộ và khuôn viên mộ Phan Châu Trinh; ảnh chân dung, sách, báo, bản sao tác phẩm, tài liệu nghiên cứu và những tư liệu liên quan đến cuộc đời, tư tưởng của ông.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Tây Hồ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Mộ Phan Châu Trinh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Phan Châu Trinh qua đời vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1926",
+            "1925",
+            "1927",
+            "1930"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Mộ Phan Châu Trinh được xếp hạng cấp Quốc gia theo Số 3211-QĐ/BT ngày 12/12/1994 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1926."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Mộ Phan Châu Trinh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Khu mộ Phan Châu Trinh hiện nằm trên đường nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Phan Chu Trinh",
+            "Phan Thúc Duyện",
+            "Nguyễn Thái Học",
+            "Lê Hồng Phong"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Phan Thúc Duyện."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Mộ Phan Châu Trinh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Mộ Phan Châu Trinh được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1988",
+            "1990",
+            "1994",
+            "2000"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1994."
         }
       ],
       "flashcards": [
@@ -25129,73 +25129,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "“Nhà cao cẳng” tọa lạc tại địa chỉ nào?",
           "options": [
-            "Nhà Cao Cẳng gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng trong...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Số 5 đường Phan Chu Trinh",
+            "Số 1 đường Ba Cu",
+            "Số 14 đường 30/4",
+            "Số 18 đường Lê Lợi"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích “Nhà cao cẳng” số 18 Lê Lợi. ghi dấu sự kiện: Nhà Cao Cẳng gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng trong thời kỳ đấu tranh. Những hoạt động này được tổ chức trong một ngôi nhà dân dụng, giúp tạo vỏ bọc và giảm nguy cơ bị phát hiện. Các cán bộ có thể sử dụng địa điểm để gặp gỡ, trao đổi thông tin, nghỉ tạm hoặc nhận sự hỗ trợ của cơ sở quần chúng. Sự kiện quan trọng nhất đối với di tích vì vậy là quá trình biến một không gian sinh hoạt bình thường thành một địa điểm phục vụ hoạt động cách mạng bí mật, qua đó thể hiện sự đóng góp âm thầm của nhân dân.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Số 18 đường Lê Lợi."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trong kháng chiến chống Mỹ, “Nhà cao cẳng” là nơi diễn ra nhiều cuộc họp bí mật của cơ quan nào?",
           "options": [
-            "Cán bộ cách mạng và cơ sở quần chúng từng sử dụng Nhà Cao Cẳng để liên lạc, hội họp h...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Tỉnh ủy Bà Rịa – Long Khánh",
+            "Ủy ban Việt Minh Sài Gòn",
+            "Bộ Tổng tham mưu",
+            "Ban Tuyên huấn Xứ ủy Nam Bộ"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Cán bộ cách mạng và cơ sở quần chúng từng sử dụng Nhà Cao Cẳng để liên lạc, hội họp hoặc hỗ trợ hoạt động bí mật. - Hiện vật: Ngôi nhà Cao Cẳng, các cột đá, nền, tường, cửa, các bộ phận kiến trúc và hình ảnh, tài liệu liên quan đến hoạt động cách mạng.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tỉnh ủy Bà Rịa – Long Khánh."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Giá trị nổi bật của “Nhà cao cẳng” số 18 Lê Lợi thuộc loại hình nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Danh lam thắng cảnh",
+            "Di tích lịch sử cách mạng",
+            "Di tích kiến trúc cung đình",
+            "Di tích khảo cổ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. “Nhà cao cẳng” số 18 Lê Lợi. được xếp hạng cấp Quốc gia theo Số 1371/QĐ ngày 03/08/1991 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Di tích lịch sử cách mạng."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "“Nhà cao cẳng” gắn chủ yếu với giai đoạn lịch sử nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Khởi nghĩa Nam Kỳ năm 1940",
+            "Thời tiền sử",
+            "Kháng chiến chống Mỹ",
+            "Phong trào Cần Vương"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Kháng chiến chống Mỹ."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"“Nhà cao cẳng” số 18 Lê Lợi.\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "“Nhà cao cẳng” số 18 Lê Lợi được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1992",
+            "1993",
+            "1989",
+            "1991"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1991."
         }
       ],
       "flashcards": [
@@ -25745,73 +25745,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Tên thật của má Tám Nhung là gì?",
           "options": [
-            "Cách mạng tháng Tám năm 1945: Nhà Má Tám Nhung gắn với hoạt động của Ủy ban Mặt trận Việt Minh ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Hồ Thị Khuyên",
+            "Nguyễn Thị Minh Khai",
+            "Nguyễn Thị Đẹp",
+            "Lê Thị Riêng"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Ngôi nhà 42/11 (nhà má Tám Nhung) ghi dấu sự kiện: Cách mạng tháng Tám năm 1945: Nhà Má Tám Nhung gắn với hoạt động của Ủy ban Mặt trận Việt Minh và sau đó tiếp tục là cơ sở nuôi giấu cán bộ cách mạng. Trong hai cuộc kháng chiến, ngôi nhà trở thành địa điểm hỗ trợ cán bộ hoạt động trong nội ô Vũng Tàu. Gia đình Má Tám Nhung đã góp phần bảo vệ, che giấu và tạo điều kiện để cán bộ duy trì hoạt động trong điều kiện địch kiểm soát chặt chẽ. Đây là một chuỗi sự kiện kéo dài qua nhiều giai đoạn lịch sử chứ không chỉ là một sự kiện đơn lẻ. Giá trị của di tích đặc biệt ở chỗ thể hiện vai trò của gia đình và phụ nữ trong việc duy trì cơ sở cách mạng. Theo tư liệu Bảo tàng Bà Rịa – Vũng Tàu, địa điểm từng là nơi họp của Ủy ban Mặt trận Việt Minh và trong hai cuộc kháng chiến là cơ sở nuôi giấu cán bộ hoạt động trong nội ô.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Hồ Thị Khuyên."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trong những ngày Cách mạng tháng Tám năm 1945, ngôi nhà má Tám Nhung từng là nơi họp của tổ chức nào?",
           "options": [
-            "Má Tám Nhung, tức Hồ Thị Khuyên, là nhân vật trung tâm của di tích. Theo Bảo tàng Bà ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Công hội bí mật Sài Gòn",
+            "Ủy ban Mặt trận Việt Minh",
+            "Ban Liên hợp quân sự bốn bên",
+            "An Nam Cộng sản Đảng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Má Tám Nhung, tức Hồ Thị Khuyên, là nhân vật trung tâm của di tích. Theo Bảo tàng Bà Rịa–Vũng Tàu, ngôi nhà gắn với cuộc đời hoạt động cách mạng của bà và gia đình; bà cùng gia đình đã nuôi giấu cán bộ trong hai cuộc kháng chiến. - Hiện vật: Ngôi nhà 42/11 cũ, nay là số 1 Trần Xuân Độ, các cấu kiện kiến trúc, không gian sinh hoạt, hình ảnh và tư liệu về Má Tám Nhung. Bảo tàng Bà Rịa–Vũng Tàu còn ghi nhận khuôn viên di tích và bức phù điêu chân dung Má Tám được nhân dân Vũng Tàu xây dựng năm 1987.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Ủy ban Mặt trận Việt Minh."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Trong hai cuộc kháng chiến, nhà má Tám Nhung có vai trò nổi bật nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Làm cơ sở khảo cổ học",
+            "Làm xưởng sửa chữa tàu chiến",
+            "Nuôi giấu cán bộ hoạt động trong nội ô",
+            "Làm nơi đặt trận địa pháo ven biển"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Ngôi nhà 42/11 (nhà má Tám Nhung) được xếp hạng cấp Quốc gia theo Số 1987/VH-QĐ ngày 14/12/1989 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Nuôi giấu cán bộ hoạt động trong nội ô."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Địa chỉ hiện nay của di tích nhà má Tám Nhung là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Số 1 Ba Cu",
+            "Số 18 Lê Lợi",
+            "Số 5 Phan Chu Trinh",
+            "Số 1 Trần Xuân Độ"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Số 1 Trần Xuân Độ."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Ngôi nhà 42/11 (nhà má Tám Nhung)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Nhà má Tám Nhung được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1989",
+            "1987",
+            "1991",
+            "1993"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1989."
         }
       ],
       "flashcards": [
@@ -26288,73 +26288,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Địa chỉ hiện nay của di tích nhà ông Trương Quang Vinh là gì?",
           "options": [
-            "Nhà ông Trương Quang Vinh gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cá...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1 Trần Xuân Độ",
+            "36/29 Nguyễn An Ninh",
+            "18 Lê Lợi",
+            "5 Phan Chu Trinh"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nhà số 18/5 (nhà ông Trương Quang Vinh) ghi dấu sự kiện: Nhà ông Trương Quang Vinh gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng tại Vũng Tàu. Trong điều kiện hoạt động bí mật, những ngôi nhà của người dân có vai trò quan trọng trong việc tạo địa điểm an toàn cho cán bộ. Những hoạt động tại nhà ông Trương Quang Vinh phản ánh mạng lưới cơ sở cách mạng tồn tại ngay trong khu dân cư và sự tham gia trực tiếp của các gia đình địa phương. Việc bảo tồn địa điểm giúp ghi nhớ không chỉ những người trực tiếp chiến đấu mà cả những người dân đã âm thầm hỗ trợ phong trào.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 36/29 Nguyễn An Ninh."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Nhà ông Trương Quang Vinh được xếp hạng di tích cấp nào?",
           "options": [
-            "Ông Trương Quang Vinh là nhân vật được gắn trực tiếp với tên di tích; ngoài ông còn c...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Quốc gia đặc biệt",
+            "Cấp tỉnh",
+            "Quốc gia",
+            "Di sản thế giới"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Ông Trương Quang Vinh là nhân vật được gắn trực tiếp với tên di tích; ngoài ông còn có gia đình và những cán bộ cách mạng từng liên hệ, hoạt động hoặc được hỗ trợ tại địa điểm. - Hiện vật: Ngôi nhà số 18/5, các cấu kiện kiến trúc, không gian sinh hoạt, hình ảnh, tài liệu và những vật dụng có thể xác định nguồn gốc từ hoạt động của ông Trương Quang Vinh.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Quốc gia."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Quyết định xếp hạng nhà ông Trương Quang Vinh được ban hành vào ngày nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "04/8/1992",
+            "14/12/1989",
+            "23/7/1993",
+            "25/3/1991"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà số 18/5 (nhà ông Trương Quang Vinh) được xếp hạng cấp Quốc gia theo Số 457/QĐ ngày 25/03/1991."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 25/3/1991."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị chính của nhà ông Trương Quang Vinh thuộc loại hình di tích nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Lịch sử cách mạng",
+            "Danh lam thắng cảnh",
+            "Kiến trúc tôn giáo",
+            "Khảo cổ"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Lịch sử cách mạng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà số 18/5 (nhà ông Trương Quang Vinh)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Di tích nhà ông Trương Quang Vinh thuộc không gian lịch sử của đô thị nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Biên Hòa",
+            "Vũng Tàu",
+            "Tây Ninh",
+            "Thủ Dầu Một"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Vũng Tàu."
         }
       ],
       "flashcards": [
@@ -26854,9 +26854,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Nhà Tròn",
+      "title": "Hồ sơ điều tra: Nhà Tròn - Bà Rịa",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Phường Bà Rịa, Thành phố Hồ Chí Minh..",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà Tròn",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Nhà Tròn - Bà Rịa",
       "investigationQuestion": "Nhà Tròn đã chứng kiến những hoạt động lịch sử nào của địa phương, và việc bảo tồn không gian này giúp thế hệ trẻ kết nối với lịch sử Vũng Tàu như thế nào?",
       "suggestedAnswer": "Nhà Tròn là địa điểm gắn với nhiều hoạt động lịch sử của Vũng Tàu qua các thời kỳ (học sinh nên đối chiếu các mốc và sự kiện cụ thể trong hồ sơ di tích). Bảo tồn không gian này giúp thế hệ trẻ “chạm” vào lịch sử bằng công trình và không gian thật, hiểu rằng những con phố, ngôi nhà quen thuộc từng chứng kiến các biến động, từ đó thêm gắn bó với thành phố biển của mình.",
       "referencesList": [
@@ -26896,73 +26896,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà Tròn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Tên gọi “Nhà Tròn” thực chất chỉ loại công trình nào?",
           "options": [
-            "Nhà Tròn gắn với quá trình hình thành, phát triển và biến đổi của không gian đô thị Bà Rịa. Côn...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tháp chuông",
+            "Đài quan sát thiên văn",
+            "Tháp nước",
+            "Hải đăng"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nhà Tròn ghi dấu sự kiện: Nhà Tròn gắn với quá trình hình thành, phát triển và biến đổi của không gian đô thị Bà Rịa. Công trình đã chứng kiến nhiều giai đoạn lịch sử, những thay đổi về hành chính, xã hội và đời sống đô thị. Trong các thời kỳ có biến động chính trị, những công trình nằm ở vị trí trung tâm thường trở thành địa điểm tập trung đông người và chứng kiến các sự kiện quan trọng của địa phương. Vì vậy, các sự kiện gắn với Nhà Tròn không chỉ có ý nghĩa riêng đối với công trình mà còn phản ánh quá trình chuyển biến của xã hội và đô thị Bà Rịa.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Tháp nước."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà Tròn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Nhà Tròn được chính quyền thực dân Pháp xây dựng ban đầu nhằm mục đích gì?",
           "options": [
-            "Các cán bộ Việt Minh, nhân dân Bà Rịa và những người hoạt động chính trị, xã hội tại ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Bảo vệ cửa biển bằng pháo",
+            "Làm nhà ga đường sắt",
+            "Phát tín hiệu vô tuyến",
+            "Cung cấp nước sạch cho sinh hoạt"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các cán bộ Việt Minh, nhân dân Bà Rịa và những người hoạt động chính trị, xã hội tại khu vực Nhà Tròn. - Hiện vật: Nhà Tròn, các bộ phận kiến trúc, nền móng, cửa, tường, mái, hình ảnh cũ, bản đồ và các tư liệu về lịch sử hình thành đô thị Bà Rịa.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Cung cấp nước sạch cho sinh hoạt."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà Tròn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Nhà Tròn cao khoảng bao nhiêu mét?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "20 m",
+            "30 m",
+            "10 m",
+            "15 m"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà Tròn được xếp hạng cấp Quốc gia theo Số 112VH/QĐ ngày 05/06/1987 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 20 m."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà Tròn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Ngày 1/5/1975, tại Nhà Tròn diễn ra hoạt động nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Bà Rịa, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Lễ ký Hiệp định Paris",
+            "Mít-tinh chào mừng miền Nam hoàn toàn giải phóng",
+            "Hội nghị thành lập An Nam Cộng sản Đảng",
+            "Cuộc bãi công của công nhân Ba Son"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Bà Rịa, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Mít-tinh chào mừng miền Nam hoàn toàn giải phóng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà Tròn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Nhà Tròn – Bà Rịa được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1994",
+            "1989",
+            "1987",
+            "1991"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1987."
         }
       ],
       "flashcards": [
@@ -27489,73 +27489,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Địa điểm thành lập Kỳ bộ nằm tại căn phòng nào của số 88 Lê Lợi?",
           "options": [
-            "Cuối năm 1926: tổ chức Việt Nam Thanh niên Cách mạng Đồng chí Hội ở Nam Kỳ được hình thành; tiế...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Phòng 8",
+            "Phòng 1",
+            "Phòng 3",
+            "Phòng 5"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội ghi dấu sự kiện: Cuối năm 1926: tổ chức Việt Nam Thanh niên Cách mạng Đồng chí Hội ở Nam Kỳ được hình thành; tiếp đó tổ chức phát triển cơ sở, đào tạo cán bộ và truyền bá tư tưởng cách mạng. Năm 1928, tổ chức tiến hành đại hội và củng cố Kỳ bộ; tháng 3/1929, Kỳ bộ Nam Kỳ tiếp tục được kiện toàn với Phạm Văn Đồng làm Bí thư. Những hoạt động này có ý nghĩa quan trọng đối với quá trình phát triển phong trào cách mạng ở Nam Kỳ. Tổ chức còn tiến hành huấn luyện cán bộ, tuyên truyền tư tưởng cách mạng và xây dựng cơ sở trong quần chúng. Quá trình đó góp phần tạo tiền đề về tư tưởng và tổ chức cho sự xuất hiện của các tổ chức cộng sản và sự ra đời của Đảng Cộng sản Việt Nam. File xác định “Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội” là di tích lịch sử tại phòng 5, số 88 đường Lê Lợi, phường Bến Thành, theo Quyết định số 1288-VHQĐ ngày 16/11/1988.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Phòng 5."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Kỳ bộ Việt Nam Thanh niên Cách mạng đồng chí Hội ở Nam Kỳ được thành lập vào năm nào?",
           "options": [
-            "Nguyễn Ái Quốc là người sáng lập Việt Nam Thanh niên Cách mạng Đồng chí Hội. Phan Trọ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1928",
+            "1925",
+            "1927",
+            "1930"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Nguyễn Ái Quốc là người sáng lập Việt Nam Thanh niên Cách mạng Đồng chí Hội. Phan Trọng Bình và Nguyễn Văn Lợi được cử về Sài Gòn hoạt động năm 1926; Phan Trọng Bình giữ chức Bí thư Kỳ bộ lâm thời, sau đó tiếp tục giữ chức Bí thư khi Kỳ bộ chính thức được thành lập. Tháng 3/1929, Phạm Văn Đồng trở thành Bí thư Kỳ bộ mới. - Hiện vật: Hình ảnh, văn bản, sách báo, tài liệu huấn luyện, tài liệu về Hội Việt Nam Thanh niên Cách mạng Đồng chí Hội, tài liệu về Nguyễn Ái Quốc, Phan Trọng Bình, Phạm Văn Đồng và hoạt động của Kỳ bộ Nam Kỳ. Nguồn của Trung tâm Bảo tồn Di tích TP.HCM còn cho biết Hội từng xuất bản tạp chí “Bôn-xê-vích” và báo “Công Nông Binh”.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1928."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tổ chức Kỳ bộ này thuộc tổ chức cách mạng nào do Nguyễn Ái Quốc sáng lập?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Đông Dương Cộng sản Liên đoàn",
+            "Hội Việt Nam Cách mạng Thanh niên",
+            "Việt Nam Quốc dân đảng",
+            "Tân Việt Cách mạng Đảng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội được xếp hạng cấp Quốc gia theo Số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Hội Việt Nam Cách mạng Thanh niên."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Địa điểm số 88 Lê Lợi nằm ở khu vực trung tâm đô thị nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Bà Rịa",
+            "Thủ Dầu Một",
+            "Sài Gòn",
+            "Cần Giờ"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Sài Gòn."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Di tích Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội được xếp hạng quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1976",
+            "1994",
+            "2004",
+            "1988"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1988."
         }
       ],
       "flashcards": [
@@ -28099,73 +28099,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Khu căn cứ Núi Dinh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Khu căn cứ Núi Dinh nằm kề tuyến quốc lộ nào?",
           "options": [
-            "Núi Dinh gắn với quá trình xây dựng và sử dụng căn cứ cách mạng trong các thời kỳ kháng chiến. ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Quốc lộ 51",
+            "Quốc lộ 13",
+            "Quốc lộ 22",
+            "Quốc lộ 1A"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Khu căn cứ Núi Dinh ghi dấu sự kiện: Núi Dinh gắn với quá trình xây dựng và sử dụng căn cứ cách mạng trong các thời kỳ kháng chiến. Địa hình núi rừng được tận dụng để xây dựng nơi trú quân, hội họp, huấn luyện, cất giấu tài liệu và tổ chức chiến đấu. Các hoạt động tại căn cứ đòi hỏi sự phối hợp giữa lực lượng cách mạng với nhân dân địa phương trong việc cung cấp lương thực, vận chuyển vật tư, đưa tin và bảo vệ căn cứ. Những hoạt động này diễn ra trong thời gian dài và tạo nên một hệ thống căn cứ có ý nghĩa đối với lịch sử quân sự địa phương. Di tích vì vậy không chỉ gắn với các trận đánh mà còn gắn với cả quá trình tổ chức, duy trì và bảo vệ căn cứ.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Quốc lộ 51."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Khu căn cứ Núi Dinh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đỉnh cao nhất trong khu vực Núi Dinh là núi nào?",
           "options": [
-            "Các cán bộ lãnh đạo, cán bộ quân sự, chiến sĩ cách mạng, du kích và nhân dân hoạt độn...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Châu Thới",
+            "Ông Trịnh",
+            "Minh Đạm",
+            "Tao Phùng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các cán bộ lãnh đạo, cán bộ quân sự, chiến sĩ cách mạng, du kích và nhân dân hoạt động tại căn cứ Núi Dinh. - Hiện vật: Hang, hầm, công sự, đường mòn, nền nhà, dấu tích nơi ở và làm việc, các công trình phục vụ căn cứ cùng bản đồ, ảnh và tài liệu về hoạt động cách mạng.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Ông Trịnh."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Khu căn cứ Núi Dinh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đỉnh Ông Trịnh cao khoảng bao nhiêu mét?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "404 m",
+            "604 m",
+            "504 m",
+            "304 m"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Khu căn cứ Núi Dinh được xếp hạng cấp Quốc gia theo Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 504 m."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Khu căn cứ Núi Dinh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Khu căn cứ Núi Dinh từng che chở lực lượng cách mạng trong những cuộc kháng chiến nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Tân Hải, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Chống Xiêm và chống Thanh",
+            "Chống Minh và chống Pháp",
+            "Chống Tống và chống Nguyên",
+            "Chống Pháp và chống Mỹ"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Tân Hải, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Chống Pháp và chống Mỹ."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Khu căn cứ Núi Dinh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Khu căn cứ Núi Dinh được xếp hạng di tích quốc gia vào ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "16/12/1993",
+            "20/7/1994",
+            "25/3/1991",
+            "04/8/1992"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 16/12/1993."
         }
       ],
       "flashcards": [
@@ -28710,73 +28710,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Sở Chỉ huy tiền phương Phân khu 6 được đặt tại cơ sở kinh doanh nào?",
           "options": [
-            "Năm 1968 – Chiến dịch Mậu Thân: Sở Chỉ huy tiền phương Phân khu 6 gắn với hoạt động tổ chức, ch...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Xưởng in Dân Chúng",
+            "Tiệm phở Bình",
+            "Tiệm cơm Năm Đô",
+            "Nhà thuốc Minh Châu"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 ghi dấu sự kiện: Năm 1968 – Chiến dịch Mậu Thân: Sở Chỉ huy tiền phương Phân khu 6 gắn với hoạt động tổ chức, chỉ huy và điều hành lực lượng trong chiến dịch. Tại cơ quan chỉ huy tiền phương, các hoạt động quan trọng bao gồm tiếp nhận và xử lý thông tin, truyền đạt mệnh lệnh, tổ chức lực lượng, phối hợp các hướng hoạt động và theo dõi tình hình chiến trường. Sự kiện này có ý nghĩa khi nghiên cứu lịch sử quân sự từ góc độ tổ chức chỉ huy thay vì chỉ tập trung vào diễn biến các trận đánh. Di tích giúp làm rõ vai trò của cơ quan chỉ huy tiền phương trong một chiến dịch có quy mô lớn.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Tiệm phở Bình."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tiệm phở Bình trước đây nằm trên đường nào?",
           "options": [
-            "Các cán bộ chỉ huy Phân khu 6, cán bộ tham mưu, chiến sĩ và lực lượng vũ trang tham g...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Charner",
+            "Hamelin",
+            "Yên Đỗ",
+            "Catinat"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các cán bộ chỉ huy Phân khu 6, cán bộ tham mưu, chiến sĩ và lực lượng vũ trang tham gia chiến dịch Mậu Thân 1968. - Hiện vật: Bản đồ tác chiến, sơ đồ chiến dịch, tài liệu quân sự, hình ảnh, phương tiện liên lạc và các vật dụng còn lại của Sở Chỉ huy nếu xác định được nguồn gốc.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Yên Đỗ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đường Yên Đỗ nơi có di tích hiện mang tên gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Nam Kỳ Khởi Nghĩa",
+            "Lê Thị Hồng Gấm",
+            "Nguyễn Trung Trực",
+            "Lý Chính Thắng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968 được xếp hạng cấp Quốc gia theo Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Lý Chính Thắng."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Di tích gắn trực tiếp với cuộc Tổng tiến công và nổi dậy nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Xuân Mậu Thân 1968",
+            "Xuân Ất Mão 1975",
+            "Nam Kỳ 1940",
+            "Tháng Tám 1945"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Xuân Mậu Thân 1968."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Vai trò nổi bật của cơ sở này trong Mậu Thân 1968 là gì?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Nơi ký hiệp định đình chiến",
+            "Nơi đặt sở chỉ huy tiền phương và phát lệnh tác chiến",
+            "Nơi tiếp nhận tàu không số",
+            "Nơi tổ chức khai quật khảo cổ"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Nơi đặt sở chỉ huy tiền phương và phát lệnh tác chiến."
         }
       ],
       "flashcards": [
@@ -29363,73 +29363,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Tịnh xá Ngọc Phương\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Tịnh xá Ngọc Phương thuộc truyền thống Phật giáo nào?",
           "options": [
-            "Tịnh xá Ngọc Phương gắn với quá trình tu học, hoằng pháp và phát triển Ni giới Khất sĩ. Các sự ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Thiền phái Trúc Lâm thời Trần",
+            "Phật giáo Nam tông Khmer",
+            "Hệ phái Khất sĩ",
+            "Mật tông Tây Tạng"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Tịnh xá Ngọc Phương ghi dấu sự kiện: Tịnh xá Ngọc Phương gắn với quá trình tu học, hoằng pháp và phát triển Ni giới Khất sĩ. Các sự kiện tiêu biểu bao gồm những hoạt động truyền bá giáo lý, đào tạo người tu hành, tổ chức sinh hoạt tôn giáo và xây dựng đời sống cộng đồng Phật tử. Bên cạnh hoạt động tôn giáo, cơ sở còn gắn với các hoạt động xã hội, giáo dục đạo đức và từ thiện. Quá trình phát triển của tịnh xá phản ánh sự đóng góp của Ni giới vào đời sống Phật giáo và xã hội, đồng thời cho thấy vai trò của các cơ sở tôn giáo trong việc duy trì giá trị tinh thần và hỗ trợ cộng đồng.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Hệ phái Khất sĩ."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Tịnh xá Ngọc Phương\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tịnh xá Ngọc Phương hiện là trụ sở trung ương của tổ chức nào?",
           "options": [
-            "Các ni trưởng, ni sư, Phật tử và những người đóng góp cho quá trình phát triển Tịnh x...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Hội quán người Hải Nam",
+            "Ban trị sự đình làng",
+            "Hội quán người Phúc Kiến",
+            "Ni giới Hệ phái Khất sĩ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các ni trưởng, ni sư, Phật tử và những người đóng góp cho quá trình phát triển Tịnh xá Ngọc Phương và Ni giới Khất sĩ. - Hiện vật: Tượng Phật, pháp khí, kinh sách, chuông, mõ, đồ thờ, tượng thờ, kiến trúc tịnh xá, sách và tài liệu về Ni giới Khất sĩ.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Ni giới Hệ phái Khất sĩ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Tịnh xá Ngọc Phương\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Ngày 27/10/1974, chính quyền Sài Gòn đã làm gì đối với Tịnh xá Ngọc Phương?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Bao vây, phong tỏa tịnh xá",
+            "Chuyển tịnh xá thành bảo tàng",
+            "Tổ chức lễ khánh thành",
+            "Cho xây mới chánh điện"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Tịnh xá Ngọc Phương được xếp hạng cấp Quốc gia theo Số 2754/QĐ-BT ngày 15/10/1994 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Bao vây, phong tỏa tịnh xá."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Tịnh xá Ngọc Phương\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Tịnh xá Ngọc Phương chỉ được giải tỏa hoàn toàn vào thời điểm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "02/9/1945",
+            "30/4/1975",
+            "20/7/1954",
+            "27/01/1973"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 30/4/1975."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Tịnh xá Ngọc Phương\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Tịnh xá Ngọc Phương được xếp hạng di tích lịch sử quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2000",
+            "2004",
+            "1994",
+            "1988"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1994."
         }
       ],
       "flashcards": [
@@ -30042,73 +30042,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Tòa Đại sứ quán Mỹ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Tòa Đại sứ quán Mỹ tại Sài Gòn là một mục tiêu tiến công nổi bật trong sự kiện nào?",
           "options": [
-            "Tòa Đại sứ quán Mỹ gắn với các hoạt động ngoại giao, chính trị và quân sự của Hoa Kỳ tại Sài Gò...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Cách mạng Tháng Tám 1945",
+            "Chiến dịch Điện Biên Phủ 1954",
+            "Khởi nghĩa Nam Kỳ 1940",
+            "Tổng tiến công và nổi dậy Xuân Mậu Thân 1968"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Tòa Đại sứ quán Mỹ ghi dấu sự kiện: Tòa Đại sứ quán Mỹ gắn với các hoạt động ngoại giao, chính trị và quân sự của Hoa Kỳ tại Sài Gòn trong thời kỳ Chiến tranh Việt Nam. Đặc biệt trong giai đoạn cuối chiến tranh, tình hình tại Sài Gòn biến chuyển nhanh chóng, khiến cơ quan đại diện ngoại giao này trở thành một địa điểm có ý nghĩa lớn về mặt chính trị và ngoại giao. Những sự kiện xảy ra tại đây phản ánh sự thay đổi của quan hệ Việt Nam – Hoa Kỳ và những diễn biến dẫn đến sự kết thúc của cuộc chiến. Trong nghiên cứu lịch sử, địa điểm còn có giá trị khi đặt trong bối cảnh rộng hơn của lịch sử ngoại giao quốc tế và Chiến tranh Lạnh. File xác định Tòa đại sứ quán Mỹ là di tích lịch sử tại số 04 đường Lê Duẩn, phường Sài Gòn, theo Quyết định số 77A/VHQĐ ngày 25/6/1976.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Tổng tiến công và nổi dậy Xuân Mậu Thân 1968."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Tòa Đại sứ quán Mỹ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đơn vị biệt động nào gắn với trận đánh Tòa Đại sứ quán Mỹ trong Mậu Thân 1968?",
           "options": [
-            "Các đại sứ, quan chức ngoại giao, nhân viên Đại sứ quán Mỹ và các nhân vật Việt Nam c...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Đội 11 Biệt động Thành",
+            "Tiểu đoàn 1 Trung đoàn 33",
+            "Đội 5 Biệt động Thành",
+            "Đoàn 10 Đặc công Rừng Sác"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các đại sứ, quan chức ngoại giao, nhân viên Đại sứ quán Mỹ và các nhân vật Việt Nam có hoạt động ngoại giao hoặc chính trị liên quan. - Hiện vật: Công trình, cấu kiện kiến trúc, ảnh, văn bản ngoại giao, bản đồ, thư từ và tài liệu về hoạt động của Đại sứ quán Mỹ.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Đội 11 Biệt động Thành."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Tòa Đại sứ quán Mỹ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Địa chỉ của di tích Tòa Đại sứ quán Mỹ là số mấy đường Lê Duẩn?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Số 18",
+            "Số 4",
+            "Số 1",
+            "Số 7"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Tòa Đại sứ quán Mỹ được xếp hạng cấp Quốc gia theo Số 77A/VHQĐ ngày 25/6/1976."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Số 4."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Tòa Đại sứ quán Mỹ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Tòa Đại sứ quán Mỹ chấm dứt sứ mạng vào ngày nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "02/9/1945",
+            "27/01/1973",
+            "30/4/1975",
+            "31/01/1968"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 30/4/1975."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Tòa Đại sứ quán Mỹ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Di tích Tòa Đại sứ quán Mỹ được xếp hạng di tích lịch sử quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2017",
+            "1988",
+            "1994",
+            "1976"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1976."
         }
       ],
       "flashcards": [
@@ -30672,73 +30672,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Trại Đa-vít\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Trại Davis nằm trong khu căn cứ quân sự nào?",
           "options": [
-            "Sau Hiệp định Paris năm 1973: Trại Đa-vít trở thành địa điểm hoạt động của phái đoàn quân sự Vi...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tân Sơn Nhất",
+            "Long Bình",
+            "Biên Hòa",
+            "Đồng Dù"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Trại Đa-vít ghi dấu sự kiện: Sau Hiệp định Paris năm 1973: Trại Đa-vít trở thành địa điểm hoạt động của phái đoàn quân sự Việt Nam trong giai đoạn cuối chiến tranh. Tại đây diễn ra các hoạt động liên lạc, trao đổi, tiếp xúc và xử lý những vấn đề liên quan đến quân sự và việc thực hiện các nội dung của Hiệp định Paris. Hoạt động tại Trại Đa-vít thể hiện sự kết hợp giữa đấu tranh quân sự, chính trị và ngoại giao. Đây là một giai đoạn đặc biệt trong lịch sử khi các phái đoàn quân sự phải hoạt động trong môi trường vừa hợp tác, vừa đấu tranh, đồng thời theo dõi những diễn biến quân sự và chính trị trên thực địa. Di tích vì vậy có giá trị lớn trong nghiên cứu lịch sử ngoại giao – quân sự Việt Nam giai đoạn 1973–1975.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tân Sơn Nhất."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Trại Đa-vít\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hoạt động tại Trại Davis gắn trực tiếp với việc thi hành hiệp định nào?",
           "options": [
-            "Các thành viên phái đoàn quân sự Việt Nam tại Trại Đa-vít, cán bộ quân sự, cán bộ ngo...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Hiệp định Genève năm 1954",
+            "Hiệp định Paris năm 1973",
+            "Hiệp định Sơ bộ năm 1946",
+            "Hiệp định Élysée năm 1949"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các thành viên phái đoàn quân sự Việt Nam tại Trại Đa-vít, cán bộ quân sự, cán bộ ngoại giao và đại diện các bên tham gia quá trình thực hiện Hiệp định Paris. - Hiện vật: Phòng làm việc, tài liệu quân sự, bản đồ, văn bản, ảnh, vật dụng sinh hoạt và các hiện vật liên quan đến hoạt động của phái đoàn tại Trại Đa-vít.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Hiệp định Paris năm 1973."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Trại Đa-vít\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Hai đoàn đại biểu quân sự cách mạng bắt đầu hoạt động tại Trại Davis từ ngày nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "27/01/1973",
+            "30/4/1975",
+            "28/01/1973",
+            "23/01/1973"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Trại Đa-vít được xếp hạng cấp Quốc gia theo Số 827/QĐ-BVHTTDL ngày 15/3/2017 của Bộ Văn hóa, Thể thao và Du lịch."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 28/01/1973."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Trại Đa-vít\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Các đoàn đại biểu cách mạng hoạt động tại Trại Davis trong bao nhiêu ngày?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Bảy Hiền, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "365 ngày",
+            "545 ngày",
+            "700 ngày",
+            "823 ngày"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Bảy Hiền, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 823 ngày."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Trại Đa-vít\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Trại Davis được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2017",
+            "2010",
+            "2020",
+            "2004"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 2017."
         }
       ],
       "flashcards": [
@@ -31223,73 +31223,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Trận địa pháo cổ Cầu Đá\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Trận địa pháo cổ Cầu Đá thuộc khu vực nào của Vũng Tàu?",
           "options": [
-            "Trận địa pháo Cầu Đá gắn với quá trình xây dựng, bố trí và vận hành hệ thống phòng thủ ven biển...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Bãi Sau – đường Thùy Vân",
+            "Cầu Đá – đường Hạ Long",
+            "Long Sơn – đường Hoàng Sa",
+            "Bãi Dâu – đường Trần Phú"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Trận địa pháo cổ Cầu Đá ghi dấu sự kiện: Trận địa pháo Cầu Đá gắn với quá trình xây dựng, bố trí và vận hành hệ thống phòng thủ ven biển tại Vũng Tàu. Việc lựa chọn vị trí Cầu Đá có liên quan đến yêu cầu quan sát và kiểm soát khu vực biển, đồng thời tạo điều kiện bố trí hỏa lực phòng thủ. Trong thời gian công trình hoạt động, các lực lượng quân sự tiến hành bảo vệ trận địa, bảo quản vũ khí, tổ chức trực chiến và duy trì khả năng phản ứng trước các tình huống quân sự. Các dấu tích còn lại ngày nay giúp nghiên cứu cách tổ chức trận địa và sự phát triển của hệ thống phòng thủ ven biển Vũng Tàu.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Cầu Đá – đường Hạ Long."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Trận địa pháo cổ Cầu Đá\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trận địa pháo cổ Cầu Đá là một bộ phận của hệ thống phòng thủ do lực lượng nào xây dựng?",
           "options": [
-            "Các sĩ quan, binh lính và lực lượng quân sự từng xây dựng, quản lý và vận hành trận đ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Quân đội Mỹ",
+            "Quân đội Nhật sau 1945",
+            "Thực dân Pháp",
+            "Nhà Nguyễn"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các sĩ quan, binh lính và lực lượng quân sự từng xây dựng, quản lý và vận hành trận địa pháo Cầu Đá. - Hiện vật: Khẩu pháo, bệ pháo, công sự, hầm, đường hào, nền trận địa và các dấu tích quân sự còn lại tại Cầu Đá.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Thực dân Pháp."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Trận địa pháo cổ Cầu Đá\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Theo tư liệu về di tích, Trận địa pháo cổ Cầu Đá có bao nhiêu khẩu pháo lớn?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "3",
+            "6",
+            "2",
+            "4"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Trận địa pháo cổ Cầu Đá được xếp hạng cấp Quốc gia theo Số 921QĐ/BT ngày 20/07/1994 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 4."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Trận địa pháo cổ Cầu Đá\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Mục tiêu chiến lược của hệ thống pháo ven biển Vũng Tàu là kiểm soát tuyến nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Đường hàng hải từ biển vào Sài Gòn",
+            "Tuyến biên giới Việt – Campuchia",
+            "Đường sắt Sài Gòn – Mỹ Tho",
+            "Đường bộ lên Tây Nguyên"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Đường hàng hải từ biển vào Sài Gòn."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Trận địa pháo cổ Cầu Đá\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Trận địa pháo cổ Cầu Đá được xếp hạng di tích quốc gia vào ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "04/8/1992",
+            "20/7/1994",
+            "18/01/1993",
+            "23/7/1993"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 20/7/1994."
         }
       ],
       "flashcards": [
@@ -31794,73 +31794,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Trận địa pháo cổ Tao Phùng nằm trên ngọn núi nào?",
           "options": [
-            "Trận địa pháo Núi Nhỏ gắn với quá trình xây dựng và sử dụng một công trình quân sự trên địa hìn...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Núi Châu Thới",
+            "Núi Lớn",
+            "Núi Nhỏ",
+            "Núi Dinh"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ) ghi dấu sự kiện: Trận địa pháo Núi Nhỏ gắn với quá trình xây dựng và sử dụng một công trình quân sự trên địa hình cao của Vũng Tàu. Vị trí cao giúp tăng khả năng quan sát và kiểm soát khu vực biển, đồng thời tạo điều kiện bố trí các khẩu pháo và công sự bảo vệ. Trong thời gian hoạt động, trận địa phục vụ nhiệm vụ phòng thủ, quan sát và sẵn sàng chiến đấu. Ngày nay, các dấu tích công trình nếu được bảo tồn giúp tái hiện một phần mạng lưới phòng thủ quân sự của Vũng Tàu và mối quan hệ giữa địa hình tự nhiên với chiến lược quân sự.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Núi Nhỏ."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trận địa Tao Phùng thuộc hệ thống phòng thủ ven biển do lực lượng nào xây dựng?",
           "options": [
-            "Các sĩ quan, binh lính và lực lượng quân sự từng xây dựng và vận hành trận địa pháo N...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Quân đội Xiêm",
+            "Quân đội Mỹ",
+            "Nhà Tây Sơn",
+            "Thực dân Pháp"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các sĩ quan, binh lính và lực lượng quân sự từng xây dựng và vận hành trận địa pháo Núi Nhỏ. - Hiện vật: Khẩu pháo, bệ pháo, công sự, hầm quân sự, đường hào và các dấu tích trận địa trên Núi Nhỏ – Tao Phùng.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thực dân Pháp."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Trận địa Tao Phùng cùng Cầu Đá và Núi Lớn tạo thành hệ thống nhằm bảo vệ khu vực nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Vũng Tàu và tuyến biển vào Sài Gòn",
+            "Cửa khẩu Mộc Bài",
+            "Đồng bằng sông Cửu Long",
+            "Cao nguyên Lâm Viên"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ) được xếp hạng cấp Quốc gia theo Số 57VH/QĐ ngày 18/01/1993 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Vũng Tàu và tuyến biển vào Sài Gòn."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Loại hình của Trận địa pháo cổ Tao Phùng trong hồ sơ xếp hạng là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Di tích khảo cổ",
+            "Di tích lịch sử",
+            "Danh lam thắng cảnh",
+            "Di tích kiến trúc tôn giáo"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Di tích lịch sử."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Trận địa pháo cổ trên núi Tao Phùng được xếp hạng di tích quốc gia vào ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "23/7/1993",
+            "20/7/1994",
+            "18/01/1993",
+            "14/12/1989"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 18/01/1993."
         }
       ],
       "flashcards": [
@@ -32363,9 +32363,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
+      "title": "Hồ sơ điều tra: Trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh..",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
       "investigationQuestion": "Trận địa pháo cổ và hầm thủy lôi Núi Lớn cho thấy con người đã sử dụng địa hình và kỹ thuật để bảo vệ vùng biển như thế nào, đồng thời đặt ra yêu cầu gì về bảo tồn di sản quân sự?",
       "suggestedAnswer": "Trận địa pháo cổ (bắn tàu) kết hợp với hầm thủy lôi (cài mìn dưới nước) ở Núi Lớn tận dụng địa hình sườn núi và kỹ thuật quân sự để bảo vệ vùng biển, cửa vịnh. Di sản quân sự đặt ra yêu cầu bảo tồn đặc thù: bảo đảm an toàn (hầm, công trình cũ), giữ nguyên hiện trạng, ghi chép và trưng bày tài liệu, không làm hư hại, và giải thích rõ để người xem hiểu bối cảnh lịch sử.",
       "referencesList": [
@@ -32397,73 +32397,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Trận địa pháo cổ và Hầm thủy lôi nằm trên ngọn núi nào?",
           "options": [
-            "Trận địa pháo Sao Mai (Núi Lớn) gắn với quá trình xây dựng và vận hành hệ thống công trình phòn...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Núi Nhỏ",
+            "Núi Dinh",
+            "Núi Minh Đạm",
+            "Núi Lớn"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn ghi dấu sự kiện: Trận địa pháo Sao Mai (Núi Lớn) gắn với quá trình xây dựng và vận hành hệ thống công trình phòng thủ trên Núi Lớn. Trận địa pháo được bố trí tại vị trí có lợi thế về độ cao và tầm quan sát, kết hợp với các công sự và hầm phòng thủ nhằm tăng khả năng kiểm soát khu vực. Quá trình sử dụng trận địa phản ánh sự phát triển của hệ thống phòng thủ ven biển Vũng Tàu và cách con người biến địa hình núi thành một phần của hệ thống quân sự. File hiện xác định di tích “Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn”, loại hình lịch sử, tại phường Vũng Tàu, theo Quyết định số 983/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Núi Lớn."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hai lực lượng nước ngoài nào được ghi nhận gắn với việc xây dựng các công trình quân sự tại Núi Lớn?",
           "options": [
-            "Các sĩ quan, binh lính và lực lượng phụ trách trận địa pháo, công sự và hệ thống hầm ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Pháp và Nhật",
+            "Pháp và Bồ Đào Nha",
+            "Nhật và Hà Lan",
+            "Mỹ và Anh"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các sĩ quan, binh lính và lực lượng phụ trách trận địa pháo, công sự và hệ thống hầm thủy lôi Núi Lớn. - Hiện vật: Khẩu pháo, bệ pháo, công sự, hầm phòng thủ, dấu tích hầm thủy lôi và các cấu kiện của hệ thống phòng thủ Núi Lớn.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Pháp và Nhật."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Hầm thủy lôi tại Núi Lớn gắn với nhiệm vụ phòng thủ ở môi trường nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Đường hàng không",
+            "Đường biển",
+            "Đường núi",
+            "Đường sắt"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn được xếp hạng cấp Quốc gia theo Số 983/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Đường biển."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Trận địa pháo cổ và Hầm thủy lôi Núi Lớn được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "1994",
+            "2001",
+            "1992",
+            "1989"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1992."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Giá trị nổi bật của cụm di tích Núi Lớn là minh chứng cho hệ thống nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Giao thương gốm cổ",
+            "Tín ngưỡng đình làng",
+            "Thủy lợi nông nghiệp Nam Bộ",
+            "Phòng thủ quân sự ven biển Vũng Tàu"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Phòng thủ quân sự ven biển Vũng Tàu."
         }
       ],
       "flashcards": [
@@ -33016,73 +33016,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Trụ sở Báo Dân Chúng\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Báo Dân Chúng ra đời vào năm nào?",
           "options": [
-            "Trụ sở Báo Dân Chúng gắn với hoạt động xuất bản, biên tập và phát hành báo chí. Các sự kiện tại...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1938",
+            "1945",
+            "1929",
+            "1936"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Trụ sở Báo Dân Chúng ghi dấu sự kiện: Trụ sở Báo Dân Chúng gắn với hoạt động xuất bản, biên tập và phát hành báo chí. Các sự kiện tại đây bao gồm quá trình tổ chức tòa soạn, biên tập nội dung, chuẩn bị ấn phẩm, in ấn và đưa báo đến công chúng. Hoạt động báo chí có ý nghĩa quan trọng trong việc truyền tải thông tin, phản ánh đời sống xã hội và hình thành dư luận. Địa điểm vì vậy không chỉ gắn với lịch sử một tờ báo mà còn phản ánh lịch sử truyền thông và đời sống chính trị – xã hội của Sài Gòn. File xác định Trụ sở Báo Dân Chúng là di tích lịch sử tại số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, được xếp hạng theo Quyết định số 1288-VHQĐ ngày 16/11/1988.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1938."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Trụ sở Báo Dân Chúng\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trụ sở Báo Dân Chúng khi đó nằm tại số 43 đường nào?",
           "options": [
-            "Các nhà báo, biên tập viên, phóng viên, cộng tác viên và nhân viên kỹ thuật của Báo D...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Pellerin",
+            "Hamelin",
+            "Catinat",
+            "Bonard"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các nhà báo, biên tập viên, phóng viên, cộng tác viên và nhân viên kỹ thuật của Báo Dân Chúng. - Hiện vật: Trụ sở, các cấu kiện kiến trúc, số báo cũ, tài liệu biên tập, ảnh nhà báo, máy in và thiết bị nghề báo nếu còn được bảo tồn.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Hamelin."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Trụ sở Báo Dân Chúng\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đường Hamelin xưa nay là đường nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Pasteur",
+            "Lý Tự Trọng",
+            "Lê Thị Hồng Gấm",
+            "Nguyễn Trung Trực"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Trụ sở Báo Dân Chúng được xếp hạng cấp Quốc gia theo Số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Lê Thị Hồng Gấm."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Trụ sở Báo Dân Chúng\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Báo Dân Chúng là diễn đàn tuyên truyền hệ tư tưởng nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Tư tưởng phục hồi chế độ phong kiến",
+            "Chủ nghĩa quân chủ lập hiến",
+            "Chủ nghĩa thực dân",
+            "Chủ nghĩa Mác – Lênin và đường lối cách mạng của Đảng"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Chủ nghĩa Mác – Lênin và đường lối cách mạng của Đảng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Trụ sở Báo Dân Chúng\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Trụ sở Báo Dân Chúng được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1988",
+            "1976",
+            "1994",
+            "2012"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1988."
         }
       ],
       "flashcards": [
@@ -33611,73 +33611,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Phái đoàn liên lạc tại Sài Gòn hoạt động trong khoảng thời gian nào?",
           "options": [
-            "Giai đoạn 1955–1958: Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam c...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1945–1946",
+            "1955–1958",
+            "1968–1972",
+            "1973–1975"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958) ghi dấu sự kiện: Giai đoạn 1955–1958: Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam cạnh Phân ban Quốc tế gắn với hoạt động liên lạc, trao đổi và thực hiện nhiệm vụ trong bối cảnh sau Hiệp định Genève. Phái đoàn hoạt động trong một môi trường có sự hiện diện của cơ chế quốc tế giám sát và kiểm soát việc thi hành đình chiến. Các hoạt động liên lạc, tiếp xúc, trao đổi thông tin và xử lý những vấn đề phát sinh có ý nghĩa quan trọng đối với việc thực hiện nhiệm vụ của phái đoàn. Đây là một sự kiện có giá trị lớn đối với nghiên cứu lịch sử ngoại giao – quân sự Việt Nam giai đoạn sau năm 1954. File ghi rõ di tích có tên đầy đủ là “Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)”, loại hình lịch sử, tại số 87A đường Trần Kế Xương, phường Cầu Kiệu, theo Quyết định số 1288-VH/QĐ ngày 16/11/1988.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1955–1958."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hoạt động của Phái đoàn gắn với việc giám sát thực hiện hiệp định nào?",
           "options": [
-            "Các thành viên Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam và n...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Hiệp định Paris năm 1973",
+            "Hiệp định Sơ bộ năm 1946",
+            "Hiệp định Genève năm 1954",
+            "Hiệp định Élysée năm 1949"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các thành viên Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam và những người trực tiếp tham gia hoạt động liên lạc với Phân ban Quốc tế. - Hiện vật: Nhà, phòng làm việc, tài liệu liên lạc, văn bản, bản đồ, ảnh, hồi ký và các tư liệu của Phái đoàn. Hồi ký về Phái đoàn Liên lạc Quân đội nhân dân Việt Nam giai đoạn 1955–1958 là một nguồn tư liệu có thể bổ sung cho hồ sơ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Hiệp định Genève năm 1954."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Trụ sở Phái đoàn nằm tại địa chỉ nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "43 Lê Thị Hồng Gấm",
+            "4 Lê Duẩn",
+            "7 Lý Chính Thắng",
+            "87A Trần Kế Xương"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958) được xếp hạng cấp Quốc gia theo Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 87A Trần Kế Xương."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Phái đoàn trực thuộc cơ quan quân sự nào của Việt Nam?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam",
+            "Bộ chỉ huy quân đội Pháp",
+            "Ban Liên hợp quân sự bốn bên",
+            "Bộ Tư lệnh Hải quân Việt Nam Cộng hòa"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Trụ sở Phái đoàn liên lạc được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1994",
+            "1988",
+            "2004",
+            "1976"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1988."
         }
       ],
       "flashcards": [
@@ -34191,73 +34191,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Trụ sở Ủy ban Việt Minh tại Vũng Tàu hiện nằm ở địa chỉ nào?",
           "options": [
-            "Cách mạng tháng Tám năm 1945: Trụ sở Ủy ban Việt Minh tại Vũng Tàu gắn với quá trình tổ chức lự...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Số 1 Trần Xuân Độ",
+            "Số 6 Trần Phú",
+            "Số 1 Ba Cu",
+            "Số 18 Lê Lợi"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Trụ sở Ủy ban Việt Minh tại Vũng Tàu ghi dấu sự kiện: Cách mạng tháng Tám năm 1945: Trụ sở Ủy ban Việt Minh tại Vũng Tàu gắn với quá trình tổ chức lực lượng, tuyên truyền, vận động quần chúng và chuẩn bị giành chính quyền tại địa phương. Trong thời điểm phong trào cách mạng phát triển mạnh, Ủy ban Việt Minh có vai trò tập hợp lực lượng, kết nối các cơ sở và thúc đẩy quần chúng tham gia phong trào. Khi thời cơ tổng khởi nghĩa xuất hiện, các lực lượng cách mạng tại địa phương tiến hành những hoạt động nhằm giành chính quyền và thiết lập chính quyền cách mạng. Sự kiện này đặt di tích trong dòng lịch sử chung của Cách mạng tháng Tám năm 1945, đồng thời thể hiện vai trò của nhân dân Vũng Tàu trong quá trình chuyển biến chính trị của đất nước. File xác định Trụ sở Ủy ban Việt Minh tại Vũng Tàu là di tích lịch sử tại số 01 đường Ba Cu, phường Vũng Tàu, được xếp hạng theo Quyết định số 457/QĐ ngày 25/03/1991.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Số 1 Ba Cu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trụ sở này gắn đặc biệt với thắng lợi cách mạng nào ở Vũng Tàu?",
           "options": [
-            "Các thành viên Ủy ban Việt Minh tại Vũng Tàu, cán bộ Việt Minh và nhân dân địa phương...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chiến dịch Bình Giã 1964",
+            "Hiệp định Paris 1973",
+            "Tổng tiến công Mậu Thân 1968",
+            "Cách mạng tháng Tám năm 1945"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các thành viên Ủy ban Việt Minh tại Vũng Tàu, cán bộ Việt Minh và nhân dân địa phương tham gia chuẩn bị, vận động và giành chính quyền trong Cách mạng tháng Tám. - Hiện vật: Trụ sở, phòng làm việc, tài liệu Việt Minh, văn bản, truyền đơn, ảnh, khẩu hiệu và các tư liệu phản ánh hoạt động của Ủy ban Việt Minh tại Vũng Tàu.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Cách mạng tháng Tám năm 1945."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Lịch sử) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Công trình hiện được sử dụng với chức năng nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Nhà truyền thống cách mạng Vũng Tàu",
+            "Nhà ga đường sắt",
+            "Bảo tàng khảo cổ học",
+            "Trụ sở hội quán người Hoa"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Trụ sở Ủy ban Việt Minh tại Vũng Tàu được xếp hạng cấp Quốc gia theo Số 457/QĐ ngày 25/03/1991."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Nhà truyền thống cách mạng Vũng Tàu."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Loại hình giá trị chính của Trụ sở Ủy ban Việt Minh tại Vũng Tàu là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Di tích kiến trúc Phật giáo",
+            "Di tích lịch sử cách mạng",
+            "Di tích khảo cổ",
+            "Danh lam thắng cảnh"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Di tích lịch sử cách mạng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Trụ sở Ủy ban Việt Minh tại Vũng Tàu\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Trụ sở Ủy ban Việt Minh tại Vũng Tàu được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1994",
+            "1987",
+            "1991",
+            "1989"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1991."
         }
       ],
       "flashcards": [
@@ -34756,9 +34756,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Bạch Dinh",
+      "title": "Hồ sơ điều tra: Khu Bạch Dinh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh.",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Bạch Dinh",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Khu Bạch Dinh",
       "investigationQuestion": "Bạch Dinh cho thấy sự đan xen giữa lịch sử thuộc địa, câu chuyện vua Thành Thái và giá trị kiến trúc đã tạo nên giá trị di sản như thế nào, và học sinh nên tiếp cận di tích từ những góc nhìn nào?",
       "suggestedAnswer": "Bạch Dinh do người Pháp xây dựng cuối thế kỷ 19 làm nơi nghỉ dưỡng, mang nét kiến trúc Pháp (tường trắng, cửa vòm, hoa văn); từ năm 1907, vua Thành Thái bị Pháp giam lỏng tại đây trước khi bị đày sang đảo Réunion. Vì vậy Bạch Dinh vừa là chứng tích của thời kỳ thuộc địa, vừa gắn với câu chuyện yêu nước của một vị vua, vừa là công trình kiến trúc – nghệ thuật. Học sinh nên tiếp cận từ nhiều góc nhìn: lịch sử – chính trị, kiến trúc, con người và giá trị du lịch – văn hóa.",
       "referencesList": [
@@ -34790,73 +34790,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Bạch Dinh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Bạch Dinh có tên tiếng Pháp là gì?",
           "options": [
-            "1898–1902: xây dựng Bạch Dinh; tháng 9/1907–1916: vua Thành Thái bị quản thúc tại đây; năm 1916...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Palais Bleu",
+            "Villa Rouge",
+            "Maison Verte",
+            "Villa Blanche"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Bạch Dinh ghi dấu sự kiện: 1898–1902: xây dựng Bạch Dinh; tháng 9/1907–1916: vua Thành Thái bị quản thúc tại đây; năm 1916: vua Thành Thái và vua Duy Tân bị đưa đi đày ở đảo Réunion; năm 1934: Bạch Dinh được sử dụng làm nơi nghỉ dưỡng của vua Bảo Đại và Hoàng hậu Nam Phương; từ năm 1991: một phần công trình được sử dụng để trưng bày hiện vật; ngày 04/8/1992: Bạch Dinh được xếp hạng di tích cấp quốc gia.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Villa Blanche."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Bạch Dinh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Bạch Dinh được khởi công xây dựng vào năm nào?",
           "options": [
-            "Paul Doumer: Toàn quyền Đông Dương đã phê duyệt và cho xây dựng Bạch Dinh từ năm 1898...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1898",
+            "1885",
+            "1890",
+            "1907"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Paul Doumer: Toàn quyền Đông Dương đã phê duyệt và cho xây dựng Bạch Dinh từ năm 1898 để làm dinh thự nghỉ dưỡng. C\nPaul Beau: Người kế nhiệm Paul Doumer, được xem là vị Toàn quyền đầu tiên sử dụng Bạch Dinh.\nVua Thành Thái: Nhân vật lịch sử gắn bó sâu sắc nhất với Bạch Dinh. Do có tinh thần yêu nước và chống Pháp, ông bị chính quyền thực dân quản thúc tại đây từ ngày 12/9/1907 đến năm 1916. Vì kính trọng nhà vua, nhân dân Vũng Tàu gọi Bạch Dinh là Dinh Ông Thượng.\nVua Bảo Đại: Năm 1934, Bạch Dinh được chuyển giao để làm nơi nghỉ dưỡng của vua Bảo Đại và hoàng hậu Nam Phương. Vì vậy, công trình còn từng được gọi là Dinh Bảo Đại – Vũng Tàu.\nCác Toàn quyền Đông Dương thời Pháp thuộc: Sau thời gian quản thúc vua Thành Thái, Bạch Dinh tiếp tục được sử dụng làm nơi nghỉ dưỡng và hội họp của nhiều đời Toàn quyền Đông Dương. \nCác nguyên thủ và quan chức cao cấp của chính quyền Việt Nam Cộng hòa: Sau năm 1954, Bạch Dinh được sử dụng làm nơi nghỉ dưỡng và hội họp của các nguyên thủ, tướng lĩnh và quan chức cao cấp. - Hiện vật: Bộ trường kỷ Hoàng gia có niên đại năm 1921; cặp song bình “Bách điểu chầu phụng”; bộ tượng Tam Đa Phúc – Lộc – Thọ; cặp ngà voi châu Phi; súng thần công cổ; bộ sưu tập hàng nghìn hiện vật gốm sứ thời Khang Hy được trục vớt từ tàu cổ đắm tại vùng biển Hòn Cau – Côn Đảo.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1898."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Bạch Dinh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Bạch Dinh ban đầu được xây dựng làm nơi nghỉ mát cho Toàn quyền Đông Dương nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Jean Decoux",
+            "Paul Doumer",
+            "Albert Sarraut",
+            "Jules Brévié"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Bạch Dinh được xếp hạng cấp Quốc gia theo Quyết định số 983-VH/QĐ ngày 04/8/1992 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Paul Doumer."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Bạch Dinh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Vị vua nào từng bị giam lỏng tại Bạch Dinh từ năm 1907 đến 1916?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Hàm Nghi",
+            "Duy Tân",
+            "Thành Thái",
+            "Bảo Đại"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Thành Thái."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Bạch Dinh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Bạch Dinh được công nhận là di tích lịch sử văn hóa quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1989",
+            "1994",
+            "2001",
+            "1992"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1992."
         }
       ],
       "flashcards": [
@@ -35428,73 +35428,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Bảo tàng Lịch sử Thành phố Hồ Chí Minh được thành lập năm 1929 với tên ban đầu là gì?",
           "options": [
-            "24/11/1927: thành lập Bảo tàng Nam Kỳ; đầu năm 1929: khánh thành tòa nhà bảo tàng; 04/2/1929: m...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Musée Blanchard de la Brosse",
+            "Musée Paul Doumer",
+            "Musée de Cochinchine",
+            "Musée de Gia Định"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh ghi dấu sự kiện: 24/11/1927: thành lập Bảo tàng Nam Kỳ; đầu năm 1929: khánh thành tòa nhà bảo tàng; 04/2/1929: mở cửa phục vụ công chúng; năm 1956: đổi thành Viện Bảo tàng Quốc gia Việt Nam tại Sài Gòn; 23/8/1979: chính thức mang tên Bảo tàng Lịch sử Thành phố Hồ Chí Minh; 29/3/2012: tòa nhà được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Musée Blanchard de la Brosse."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Bảo tàng được xem là bảo tàng đầu tiên ở khu vực nào của Việt Nam?",
           "options": [
-            "Paul Blanchard de la Brosse: Thống đốc Nam Kỳ, người ký nghị định thành lập Bảo tàng ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Tây Nguyên",
+            "Phía Nam",
+            "Bắc Trung Bộ",
+            "Phía Bắc"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Paul Blanchard de la Brosse: Thống đốc Nam Kỳ, người ký nghị định thành lập Bảo tàng Nam Kỳ năm 1927; tên ông từng được dùng đặt cho bảo tàng. Auguste Delaval: kiến trúc sư thiết kế tòa nhà chính. Louis Finot: Giám đốc Trường Viễn Đông Bác Cổ Pháp, đề xuất đặt tên Bảo tàng Blanchard de la Brosse. Jean Bouchot: người phụ trách bảo tàng trong giai đoạn đầu, có đóng góp quan trọng trong việc tổ chức, nghiên cứu và trưng bày hiện vật. Pierre Pasquier: Toàn quyền Đông Dương chủ trì lễ khánh thành bảo tàng đầu năm 1929. - Hiện vật: Các tượng và tác phẩm nghệ thuật thuộc văn hóa Óc Eo, Champa, Khmer; tượng Phật; tượng thần Vishnu, Surya, nữ thần Devi, Durga; tượng Avalokitesvara; đồ đồng văn hóa Đông Sơn; đồ gốm cổ Việt Nam và các nước châu Á; hiện vật khảo cổ thời tiền sử và sơ sử Nam Bộ. Bảo tàng đang lưu giữ nhiều bảo vật quốc gia có giá trị đặc biệt.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Phía Nam."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tòa nhà trước của Bảo tàng được xây dựng vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1929",
+            "1970",
+            "1927",
+            "1885"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Bảo tàng Lịch sử Thành phố Hồ Chí Minh được xếp hạng cấp Quốc gia theo Quyết định số 1207/QĐ-BVHTTDL ngày 29/3/2012 của Bộ Văn hóa, Thể thao và Du lịch.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1927."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Ai là kiến trúc sư thiết kế tòa nhà trước của Bảo tàng?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Ngô Viết Thụ",
+            "Ernest Hébrard",
+            "Alfred Foulhoux",
+            "Auguste Delaval"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Auguste Delaval."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Bảo tàng Lịch sử Thành phố Hồ Chí Minh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Bảo tàng chính thức mang tên Bảo tàng Lịch sử Thành phố Hồ Chí Minh từ năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1979",
+            "1988",
+            "1956",
+            "1975"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1979."
         }
       ],
       "flashcards": [
@@ -36118,73 +36118,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Bảo tàng Thành phố Hồ Chí Minh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Tòa nhà Bảo tàng Thành phố Hồ Chí Minh được xây dựng trong khoảng thời gian nào?",
           "options": [
-            "1885–1890: xây dựng tòa nhà; sau Cách mạng tháng Tám năm 1945: được sử dụng làm trụ sở Ủy ban H...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1927–1929",
+            "1885–1890",
+            "1863–1880",
+            "1902–1908"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Bảo tàng Thành phố Hồ Chí Minh ghi dấu sự kiện: 1885–1890: xây dựng tòa nhà; sau Cách mạng tháng Tám năm 1945: được sử dụng làm trụ sở Ủy ban Hành chính lâm thời Nam Bộ; 9/1/1950: cuộc biểu tình của học sinh, sinh viên diễn ra trước dinh và Trần Văn Ơn hy sinh; năm 1962: trở thành dinh tổng thống sau khi Dinh Độc Lập bị ném bom; sau ngày 30/4/1975: sử dụng làm nơi sinh hoạt văn hóa và triển lãm; 12/8/1978: thành lập Bảo tàng Cách mạng TP.HCM; 13/12/1999: đổi tên thành Bảo tàng TP.HCM; 29/3/2012: được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1885–1890."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Bảo tàng Thành phố Hồ Chí Minh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Ai là kiến trúc sư thiết kế tòa nhà Bảo tàng Thành phố Hồ Chí Minh?",
           "options": [
-            "Alfred Foulhoux: kiến trúc sư người Pháp thiết kế công trình. Trần Văn Ơn: học sinh h...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Gustave Eiffel",
+            "Auguste Delaval",
+            "Alfred Foulhoux",
+            "Ngô Viết Thụ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Alfred Foulhoux: kiến trúc sư người Pháp thiết kế công trình. Trần Văn Ơn: học sinh hy sinh trong cuộc biểu tình ngày 9/1/1950 diễn ra trước khu vực dinh; sự kiện trở thành cơ sở xác định Ngày truyền thống học sinh, sinh viên Việt Nam. Ngô Đình Diệm: từng sử dụng Dinh Gia Long làm dinh tổng thống sau khi Dinh Độc Lập bị ném bom năm 1962; hệ thống hầm trú ẩn dưới dinh gắn với giai đoạn này. Ngoài ra, tòa nhà từng là nơi làm việc của các Thống đốc Nam Kỳ, Khâm sứ Nam Bộ, Thủ hiến Nam Việt và một số người đứng đầu chính quyền qua các thời kỳ. - Hiện vật: Khuôn in tín phiếu mệnh giá 5 đồng năm 1947 – bảo vật quốc gia; ấn “Lương Tài Hầu chi ấn” – bảo vật quốc gia; tờ lịch ngày 30/4/1975; hiện vật khảo cổ như rìu đá, đồ gốm, đồ trang sức và mộ chum; tiền Việt Nam qua các thời kỳ; vũ khí, tài liệu và kỷ vật kháng chiến; hiện vật liên quan đến thương cảng, thương mại, thủ công nghiệp và đời sống cư dân Sài Gòn. Bản thân đường hầm dưới Dinh Gia Long cũng là một bộ phận quan trọng của công trình.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Alfred Foulhoux."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Bảo tàng Thành phố Hồ Chí Minh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Mục đích dự kiến ban đầu khi xây tòa nhà là gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Làm trường đại học",
+            "Làm nhà ga xe lửa",
+            "Làm trụ sở ngân hàng",
+            "Làm Bảo tàng Thương mại trưng bày sản phẩm Nam Kỳ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Bảo tàng Thành phố Hồ Chí Minh được xếp hạng cấp Quốc gia theo Quyết định số 1206/QĐ-BVHTTDL ngày 29/3/2012 của Bộ Văn hóa, Thể thao và Du lịch.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Làm Bảo tàng Thương mại trưng bày sản phẩm Nam Kỳ."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Bảo tàng Thành phố Hồ Chí Minh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Trước năm 1975, tòa nhà thường được gọi bằng tên nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Dinh Gia Long",
+            "Dinh Norodom",
+            "Bạch Dinh",
+            "Dinh Thượng Thơ"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Dinh Gia Long."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Bảo tàng Thành phố Hồ Chí Minh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Bảo tàng Thành phố Hồ Chí Minh hiện tọa lạc tại số 65 đường nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Lê Duẩn",
+            "Lý Tự Trọng",
+            "Nam Kỳ Khởi Nghĩa",
+            "Nguyễn Trung Trực"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Lý Tự Trọng."
         }
       ],
       "flashcards": [
@@ -36765,73 +36765,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Giác Lâm\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Chùa Giác Lâm được xây dựng vào năm nào?",
           "options": [
-            "Năm 1744: Lý Thụy Long quyên tiền xây dựng chùa.\nGiai đoạn 1798–1804: Chùa được trùng tu lớn lầ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1698",
+            "1772",
+            "1744",
+            "1798"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Chùa Giác Lâm ghi dấu sự kiện: Năm 1744: Lý Thụy Long quyên tiền xây dựng chùa.\nGiai đoạn 1798–1804: Chùa được trùng tu lớn lần thứ nhất.\nGiai đoạn 1900–1909: Trùng tu lớn lần thứ hai.\nGiai đoạn 1939–1945: Trùng tu lần thứ ba; bổ sung nhiều họa tiết trang trí bằng gốm sứ.\nTrong hai cuộc kháng chiến chống Pháp và chống Mỹ: Chùa trở thành cơ sở cách mạng, nơi hội họp, che giấu và nuôi dưỡng cán bộ.\nNăm 1953: Đại đức Narada trao tặng cây bồ đề và viên ngọc Xá lợi Phật.\nNăm 1988: Chùa Giác Lâm được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia.\nGiai đoạn 1992–1994: Chùa được trùng tu lớn lần thứ tư.\nNăm 1997: Chùa được bổ sung 14 bao lam do nhóm thợ ở Cao Lãnh, Đồng Tháp thực hiện.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1744."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Giác Lâm\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Người có công xây dựng chùa ban đầu là ai?",
           "options": [
-            "Lý Thụy Long: Người Minh Hương, quyên tiền xây dựng chùa năm 1744.\nThiền sư Viên Quan...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Trịnh Hoài Đức",
+            "Nguyễn Hữu Cảnh",
+            "Lê Văn Duyệt",
+            "Lý Thụy Long"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Lý Thụy Long: Người Minh Hương, quyên tiền xây dựng chùa năm 1744.\nThiền sư Viên Quang: Thuộc đời thứ 36 của dòng Lâm Tế, là vị trụ trì đầu tiên và có công xây dựng chùa thành tổ đình của dòng Lâm Tế ở Nam Bộ.\nĐại đức Narada: Nhà sư Sri Lanka đã đến Việt Nam năm 1953 và tặng cây bồ đề cùng viên ngọc Xá lợi Phật cho Giáo hội Phật giáo cổ truyền đặt tại chùa Giác Lâm.\nCác vị tổ và tăng sĩ dòng Lâm Tế: Có đóng góp vào quá trình truyền bá, giảng dạy và phát triển Phật giáo tại chùa qua nhiều thế hệ.\nCác cán bộ cách mạng: Từng được chùa che giấu, nuôi dưỡng trong hai cuộc kháng chiến; tài liệu chưa nêu tên cụ thể. - Hiện vật: 113 pho tượng cổ bằng gỗ mít và 5 pho tượng bằng đồng.\nHai bộ tượng La Hán bằng gỗ thếp vàng: bộ nhỏ có niên đại thế kỷ XVIII và bộ lớn có niên đại thế kỷ XIX.\nBộ tượng Di Đà Tam Tôn, Tam Thế Phật, Thập Điện.\nBộ tượng năm vị gồm một vị Phật và bốn vị Bồ Tát: Quan Thế Âm, Đại Thế Chí, Văn Thù và Phổ Hiền, được tạo tác theo hình thức “thượng kỳ thú”.\n86 câu đối chữ Hán, các hoành phi, bao lam chạm khắc công phu.\nHệ thống trang trí bằng gốm sứ được đặt làm tại các lò gốm Bình Dương.\nCây bồ đề và viên ngọc Xá lợi Phật do Đại đức Narada trao tặng năm 1953.\nNhiều sách cổ, tạng bản và bản khắc kinh Phật.\nKhu vườn với 38 ngôi tháp thờ các vị tổ và tăng sĩ.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Lý Thụy Long."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Giác Lâm\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tên ban đầu của chùa Giác Lâm là gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Sơn Can",
+            "Phụng Sơn",
+            "Sắc Tứ",
+            "Giác Viên"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Giác Lâm được xếp hạng cấp Quốc gia theo quyết định số 1288-VH/QĐ ngày 16 tháng 11 năm 1988.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Sơn Can."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Giác Lâm\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Chùa Giác Lâm được xem là tổ đình của dòng thiền nào ở Nam Bộ?",
           "options": [
-            "Tọa lạc tại địa chỉ: 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Tào Động Nhật Bản",
+            "Lâm Tế",
+            "Thiên Thai",
+            "Trúc Lâm Yên Tử"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Lâm Tế."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Giác Lâm\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chùa Giác Lâm được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "2000",
+            "1988",
+            "1993"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1988."
         }
       ],
       "flashcards": [
@@ -37377,73 +37377,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Giác Viên\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Chùa Giác Viên còn có tên dân gian nào?",
           "options": [
-            "Năm 1798: hình thành cơ sở ban đầu trong quá trình vận chuyển gỗ trùng tu chùa Giác Lâm. Năm 18...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chùa Ông Bổn",
+            "Chùa Bà",
+            "Chùa Cây Mai",
+            "Chùa Hố Đất"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Chùa Giác Viên ghi dấu sự kiện: Năm 1798: hình thành cơ sở ban đầu trong quá trình vận chuyển gỗ trùng tu chùa Giác Lâm. Năm 1850: Hải Tịnh trùng tu Quan Âm viện, đổi tên thành chùa Giác Viên và mở trường đào tạo nghi lễ. Năm 1852: Minh Vi – Mật Hạnh được cử làm trụ trì. 1899–1902 và 1908–1910: các đợt trùng tu lớn. Ngày 07/01/1993: được xếp hạng di tích quốc gia. Năm 2016: khởi công dự án trùng tu, tôn tạo. Năm 2018: bàn giao công trình trùng tu giai đoạn I. Năm 2023: khởi công trùng tu giai đoạn II.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Chùa Hố Đất."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Giác Viên\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Nguồn gốc hình thành chùa Giác Viên gắn với đợt đại trùng tu chùa nào vào năm 1798?",
           "options": [
-            "Thiền sư Tổ Tông – Viên Quang: chủ trì trùng tu chùa Giác Lâm, từ đó hình thành cơ sở...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chùa Giác Lâm",
+            "Chùa Sắc Tứ Trường Thọ",
+            "Chùa Phụng Sơn",
+            "Chùa Hội Sơn"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Thiền sư Tổ Tông – Viên Quang: chủ trì trùng tu chùa Giác Lâm, từ đó hình thành cơ sở ban đầu của chùa Giác Viên. Thiền sư Tiên Giác – Hải Tịnh: trùng tu, đổi tên Quan Âm viện thành chùa Giác Viên năm 1850 và mở trường đào tạo nghi lễ Phật giáo. Thiền sư Minh Vi – Mật Hạnh: được giao trụ trì chùa năm 1852. Thiền sư Minh Khiêm – Hoằng Ân: kế thừa, phát triển chùa thành trung tâm nghi lễ Phật giáo. Hòa thượng Như Nhu và Hòa thượng Như Phòng: chủ trì những đợt trùng tu lớn đầu thế kỷ XX. - Hiện vật: Hệ thống hơn 150 tượng gỗ; khoảng 58 bao lam lớn nhỏ; bao lam Bách Điểu chạm khắc nhiều loài chim trong các tư thế sinh động; tấm pháp bị bằng gỗ gần như độc bản của Phật giáo Nam Bộ; giá võng được cho là do triều Nguyễn ban tặng Thiền sư Hải Tịnh; hệ thống hoành phi, câu đối chữ Hán, phù điêu Bát Tiên, Thập bát La Hán, tứ linh và các đồ thờ bằng gỗ sơn son thếp vàng.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chùa Giác Lâm."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Giác Viên\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Vật liệu gỗ phục vụ trùng tu năm 1798 được vận chuyển chủ yếu bằng phương thức nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Đường bộ bằng xe cơ giới",
+            "Đường thủy qua hệ thống rạch",
+            "Đường sắt",
+            "Đường hàng không"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Giác Viên được xếp hạng cấp Quốc gia theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Đường thủy qua hệ thống rạch."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Giác Viên\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Chùa Giác Viên trước đây nằm bên con rạch nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Rạch Cầu Bông",
+            "Rạch Bến Nghé",
+            "Rạch Hố Đất",
+            "Rạch Thị Nghè"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Rạch Hố Đất."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Giác Viên\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chùa Giác Viên được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "1988",
+            "1991",
+            "1993"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -37995,73 +37995,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Hội Khánh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Ai là người khai sơn chùa Hội Khánh vào năm 1741?",
           "options": [
-            "Năm 1741: Thiền sư Đại Ngạn – Từ Tấn khai sơn chùa. Năm 1861: chùa bị thiêu hủy trong chiến tra...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Thiền sư Đại Ngạn",
+            "Hòa thượng Chánh Đắc",
+            "Thiền sư Khánh Long",
+            "Hòa thượng Liễu Kiện"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Chùa Hội Khánh ghi dấu sự kiện: Năm 1741: Thiền sư Đại Ngạn – Từ Tấn khai sơn chùa. Năm 1861: chùa bị thiêu hủy trong chiến tranh. Năm 1868: Thiền sư Chánh Đắc xây dựng lại chùa tại vị trí hiện nay. Khoảng 1923–1926: Phó bảng Nguyễn Sinh Sắc hoạt động tại chùa, cùng các nhà sư và trí thức địa phương truyền bá tư tưởng yêu nước. Ngày 07/01/1993: chùa được xếp hạng di tích quốc gia. Các năm 1991, 1999, 2004 và 2006: tiến hành những đợt trùng tu, tôn tạo quan trọng. Năm 2010: khánh thành tượng Phật Thích Ca nhập Niết bàn quy mô lớn.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thiền sư Đại Ngạn."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Hội Khánh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Sự kiện nào xảy ra với chùa Hội Khánh vào năm 1861?",
           "options": [
-            "Thiền sư Đại Ngạn – Từ Tấn: khai sơn chùa năm 1741. Thiền sư Chánh Đắc: xây dựng lại ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Được vua ban sắc tứ",
+            "Bị quân Pháp thiêu hủy",
+            "Được xây tháp bảy tầng",
+            "Được xếp hạng quốc gia"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Thiền sư Đại Ngạn – Từ Tấn: khai sơn chùa năm 1741. Thiền sư Chánh Đắc: xây dựng lại chùa năm 1868 sau khi chùa bị thiêu hủy. Phó bảng Nguyễn Sinh Sắc: thân sinh Chủ tịch Hồ Chí Minh, từng hoạt động, truyền bá tư tưởng yêu nước tại chùa khoảng năm 1923–1926. Hòa thượng Từ Văn: cùng Nguyễn Sinh Sắc và các nhà yêu nước thành lập Hội Danh dự tại chùa. Hòa thượng Thích Huệ Thông: từng trụ trì, có đóng góp trong bảo tồn và phát huy giá trị Tổ đình Hội Khánh. - Hiện vật: Hơn 100 pho tượng gỗ mít sơn son thếp vàng; bộ tượng Thập bát La Hán và Thập điện Minh Vương; các phù điêu chạm khắc Bồ Tát và La Hán; hệ thống hoành phi, bao lam, câu đối Hán Nôm; giảng đường với hệ thống cột gỗ quý; chín bảo tháp thờ các đời trụ trì; nhiều mộc bản, kinh sách và đồ thờ cổ. Công trình nổi bật hiện nay là tượng Phật Thích Ca nhập Niết bàn dài khoảng 52 m, cao 12 m, đặt trên độ cao khoảng 24 m.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Bị quân Pháp thiêu hủy."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Hội Khánh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Nhân vật nào cùng các nhà sư chùa Hội Khánh tham gia Hội Danh dự trong giai đoạn 1923–1926?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Phan Châu Trinh",
+            "Huỳnh Thúc Kháng",
+            "Nguyễn Sinh Sắc",
+            "Nguyễn An Ninh"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Hội Khánh được xếp hạng cấp Quốc gia theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Nguyễn Sinh Sắc."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Hội Khánh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Bộ tượng nào là hiện vật nghệ thuật nổi bật được lưu giữ tại chùa Hội Khánh?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Mười hai tượng đá Chăm",
+            "Bộ tượng đồng Cửu Đỉnh",
+            "Tượng binh sĩ bằng đất nung",
+            "Thập Bát La Hán bằng gỗ mít sơn son thếp vàng"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thập Bát La Hán bằng gỗ mít sơn son thếp vàng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Hội Khánh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chùa Hội Khánh được xếp hạng di tích quốc gia vào ngày nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "07/01/1993",
+            "26/4/2014",
+            "28/3/2019",
+            "28/12/2001"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 07/01/1993."
         }
       ],
       "flashcards": [
@@ -38631,73 +38631,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Hội Sơn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Ai được ghi nhận là người khai lập chùa Hội Sơn?",
           "options": [
-            "Khoảng thế kỷ XVIII: Thiền sư Khánh Long khai lập chùa. Năm 1938: Ni sư Thích Nữ Như Thanh và T...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Hòa thượng Chánh Đắc",
+            "Thiền sư Khánh Long",
+            "Thiền sư Liễu Quán",
+            "Thiền sư Đại Ngạn"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Chùa Hội Sơn ghi dấu sự kiện: Khoảng thế kỷ XVIII: Thiền sư Khánh Long khai lập chùa. Năm 1938: Ni sư Thích Nữ Như Thanh và Thích Nữ Như Tiên tiến hành tôn tạo, sửa chữa chùa. 07/01/1993: Chùa được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia. 17/07/2012: chánh điện bằng gỗ bị cháy hoàn toàn, nhiều tượng Phật, bàn thờ, kinh sách và đồ thờ tự bị thiêu hủy. Cuối năm 2012: tiến hành khai quật khảo cổ tại khu vực chùa; kết quả cho thấy đây là một địa điểm cư trú và chế tác công cụ của cư dân tiền sử, có niên đại khoảng 3.500–3.000 năm. Từ năm 2015: triển khai dự án phục dựng di tích.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Thiền sư Khánh Long."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Hội Sơn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Chùa Hội Sơn tọa lạc trên dạng địa hình nào?",
           "options": [
-            "Thiền sư Khánh Long (Long Khánh) – người được tư liệu ghi nhận là người khai lập chùa...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Một hang đá sát biển",
+            "Một giồng cát ven biển",
+            "Một ngọn đồi cao khoảng 15 m",
+            "Một cù lao giữa sông"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Thiền sư Khánh Long (Long Khánh) – người được tư liệu ghi nhận là người khai lập chùa vào khoảng cuối thế kỷ XVIII. Ni sư Thích Nữ Như Thanh và Thích Nữ Như Tiên – những người đã tiến hành tôn tạo, sửa chữa chùa vào năm 1938. Đại đức Thích Thiện Hảo – trụ trì chùa trong giai đoạn hiện đại, đặc biệt được nhắc đến trong sự kiện cháy chánh điện năm 2012 và quá trình phục hồi di tích. Ngoài ra, vua Khải Định có liên quan đến một cổ vật từng được lưu giữ tại chùa là hoành phi do vua ban tặng. - Hiện vật: Các hiện vật và thành phần kiến trúc tiêu biểu gồm hoành phi, liễn đối, long vị, tượng Phật, án thờ bằng gỗ, bài vị, chuông đồng và các cổ vật Phật giáo. Đáng chú ý là hoành phi “Vạn đức hồng danh” do vua Khải Định ban tặng được các tư liệu ghi nhận. Tuy nhiên, cần lưu ý rằng vụ cháy năm 2012 đã thiêu hủy phần lớn hiện vật trong chánh điện, trong đó có hơn 30 tượng Phật cổ, 15 bàn thờ và hàng trăm bộ kinh kệ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Một ngọn đồi cao khoảng 15 m."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Hội Sơn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tên gọi nào của chùa gắn với vị thiền sư khai lập?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Chùa Cây Mai",
+            "Chùa Hố Đất",
+            "Chùa Gò",
+            "Chùa Khánh Long"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Hội Sơn được xếp hạng cấp Quốc gia theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin, xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Chùa Khánh Long."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Hội Sơn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Sự cố nghiêm trọng nào xảy ra tại chùa Hội Sơn vào tháng 7/2012?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Hỏa hoạn làm chùa cổ bị cháy",
+            "Sét đánh đổ bảo tháp",
+            "Sạt lở làm sập tam quan",
+            "Lũ lớn cuốn mất chánh điện"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Hỏa hoạn làm chùa cổ bị cháy."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Hội Sơn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chùa Hội Sơn được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2004",
+            "1993",
+            "1988",
+            "1998"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -39259,73 +39259,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Long Bàn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Tên gọi Long Bàn được giải thích từ đặc điểm tự nhiên nào quanh chùa?",
           "options": [
-            "Thế kỷ XVII: hình thành chùa trong quá trình người Việt khai phá vùng Mô Xoài. Năm 1845 (Thiệu ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Có dãy núi hình bàn cờ",
+            "Có hồ nước hình rồng",
+            "Có nhiều tảng đá phẳng như bàn thạch",
+            "Có hai cây long não cổ thụ"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Chùa Long Bàn ghi dấu sự kiện: Thế kỷ XVII: hình thành chùa trong quá trình người Việt khai phá vùng Mô Xoài. Năm 1845 (Thiệu Trị năm thứ 5): chùa được trùng tu, tôn tạo; dấu tích niên đại này còn được ghi trên xà ngang nhà giảng. Năm 1963: cổng chùa được xây dựng. 19/4/1991: được công nhận là di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định 680/QĐ. Năm 2025: địa điểm được chuyển sang đơn vị hành chính mới là xã Long Điền, TP.HCM.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Có nhiều tảng đá phẳng như bàn thạch."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Long Bàn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Người dân địa phương còn gọi chùa Long Bàn bằng tên nào?",
           "options": [
-            "Hai vị Hòa thượng Hải Chánh và Bảo Thanh được tư liệu ghi nhận là những vị trụ trì đầ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chùa Ông Bổn",
+            "Chùa Gò",
+            "Chùa Cây Mai",
+            "Chùa làng Long Điền"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Hai vị Hòa thượng Hải Chánh và Bảo Thanh được tư liệu ghi nhận là những vị trụ trì đầu tiên và được dân làng tôn làm tổ khai sơn. Hai vị là đệ tử của Hòa thượng Giác Ngộ, thuộc dòng Thiền Lâm Tế. - Hiện vật: Nổi bật có đại hồng chung bằng đồng cao khoảng 1,2 m, đường kính khoảng 0,8 m; hệ thống tượng Phật, tượng Ngọc Hoàng, Quan Thánh, 18 vị La Hán, Long Thần, Hộ Pháp bằng đồng và gỗ mít; 8 khuôn in kinh bằng gỗ; các hoành phi, câu đối, bao lam, khám thờ được chạm khắc tinh xảo.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Chùa làng Long Điền."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Long Bàn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Chùa Long Bàn nằm ở phần cuối của dãy núi nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Thùy Vân",
+            "Tao Phùng",
+            "Núi Dinh",
+            "Minh Đạm"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Long Bàn được xếp hạng cấp Quốc gia theo Quyết định số 680/QĐ ngày 19/4/1991 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thùy Vân."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Long Bàn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị nổi bật được nhắc đến ở chùa Long Bàn là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Hệ thống địa đạo nhiều tầng",
+            "Kiến trúc trang trí và hệ thống tượng, hiện vật cổ",
+            "Trận địa pháo ven biển",
+            "Di chỉ mộ chum tiền sử"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Kiến trúc trang trí và hệ thống tượng, hiện vật cổ."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Long Bàn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chùa Long Bàn được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1989",
+            "1995",
+            "1991",
+            "2001"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1991."
         }
       ],
       "flashcards": [
@@ -39882,73 +39882,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Phụng Sơn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Chùa Phụng Sơn còn được gọi bằng tên dân gian nào?",
           "options": [
-            "Đầu thế kỷ XIX - Thiền sư Liễu Thông tạo lập chùa; 1904–1915 - chùa được đại trùng tu dưới thời...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chùa Cây Mai",
+            "Chùa Hố Đất",
+            "Chùa Ông",
+            "Chùa Gò"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Chùa Phụng Sơn ghi dấu sự kiện: Đầu thế kỷ XIX - Thiền sư Liễu Thông tạo lập chùa; 1904–1915 - chùa được đại trùng tu dưới thời Thiền sư Huệ Minh; 1960 - chùa được đại trùng tu; 1963 - xây lại cổng tam quan; 1988 - chùa được xếp hạng di tích cấp quốc gia; 1988 và 1991 - khai quật khảo cổ, phát hiện các hiện vật liên quan văn hóa Óc Eo."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Chùa Gò."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Phụng Sơn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Chùa Phụng Sơn hiện tọa lạc trên đường nào?",
           "options": [
-            "Thiền sư Liễu Thông (pháp hiệu Chơn Giác) – người tạo lập Chùa Phụng Sơn vào đầu thế ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Ba Tháng Hai",
+            "Nguyễn Trãi",
+            "Phan Văn Trị",
+            "Lạc Long Quân"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Thiền sư Liễu Thông (pháp hiệu Chơn Giác) – người tạo lập Chùa Phụng Sơn vào đầu thế kỷ XIX. Thiền sư Huệ Minh gắn với đợt đại trùng tu chùa từ năm 1904 đến 1915. Hòa thượng Thích Phước Quang cho xây lại cổng tam quan năm 1963, do kiến trúc sư Nguyễn Bá Lăng thiết kế. - Hiện vật: Khoảng 40 pho tượng thờ, chủ yếu là tượng gỗ sơn son thếp vàng; tiêu biểu có bộ tượng Di Đà Tam Tôn, bộ tượng Ngũ Hiền thượng kỳ thú, tượng Phật bằng đá dát vàng, tượng Tiêu Diện bằng gốm. Chùa còn có tượng Phật Nhật Bản, tượng Phật Thái Lan. Các cuộc khai quật năm 1988 và 1991 phát hiện mặt người bằng đất nung, đồ gốm thuộc văn hóa Óc Eo; trước đó còn phát hiện một tượng Phật bằng đồng theo phong cách Thái Lan.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Ba Tháng Hai."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Phụng Sơn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Điểm nổi bật của chùa Phụng Sơn được giới thiệu là sự kết hợp hài hòa giữa kiến trúc với yếu tố nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Cảng sông cổ",
+            "Cảnh quan thiên nhiên",
+            "Thành lũy quân sự",
+            "Hệ thống hầm ngầm"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Phụng Sơn được xếp hạng cấp Quốc gia theo Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Cảnh quan thiên nhiên."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Phụng Sơn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Chùa Phụng Sơn được xây trên nền một ngôi chùa cũ của cộng đồng nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Người Hoa Hải Nam",
+            "Người Nhật",
+            "Người Khmer",
+            "Người Chăm"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Người Khmer."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Phụng Sơn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chùa Phụng Sơn được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "2002",
+            "1993",
+            "1988"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1988."
         }
       ],
       "flashcards": [
@@ -40437,9 +40437,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Chùa Phước Lâm (Phước Lâm Tự)",
+      "title": "Hồ sơ điều tra: Phước Lâm Tự",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh..",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Phước Lâm (Phước Lâm Tự)",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Phước Lâm Tự",
       "investigationQuestion": "Chùa Phước Lâm cho thấy sự kết hợp giữa kiến trúc Phật giáo, nghệ thuật và đời sống tín ngưỡng ở Vũng Tàu như thế nào, và giá trị nào cần được thế hệ trẻ tiếp nối?",
       "suggestedAnswer": "Chùa Phước Lâm cho thấy sự kết hợp giữa kiến trúc Phật giáo, tượng thờ, hoa văn trang trí và sinh hoạt tín ngưỡng của cư dân Vũng Tàu, nơi người dân tìm sự bình an. Những giá trị nên được thế hệ trẻ tiếp nối gồm lòng từ bi, biết ơn, sống hiền lành, tôn trọng tôn giáo, giữ gìn cảnh quan và di sản của địa phương.",
       "referencesList": [
@@ -40488,73 +40488,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Phước Lâm (Phước Lâm Tự)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Phước Lâm Tự trong danh sách di tích thuộc khu vực Bà Rịa – Vũng Tàu cũ là loại công trình nào?",
           "options": [
-            "Khoảng năm 1886 - chùa được dời từ chân núi Tương Kỳ (Núi Lớn) xuống vị trí hiện nay; 11/10/194...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chùa Phật giáo",
+            "Nhà thờ Công giáo",
+            "Đình làng",
+            "Hội quán người Hoa"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Chùa Phước Lâm (Phước Lâm Tự) ghi dấu sự kiện: Khoảng năm 1886 - chùa được dời từ chân núi Tương Kỳ (Núi Lớn) xuống vị trí hiện nay; 11/10/1944 - đợt sửa chữa sớm nhất được ghi nhận; 1956 - mở rộng thượng điện và đúc thêm nhiều tượng; 1965 - chùa được tu bổ; 1992 - được xếp hạng di tích cấp quốc gia; 1993 - tiếp tục trùng tu.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chùa Phật giáo."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Phước Lâm (Phước Lâm Tự)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tên gọi “Phước Lâm Tự” có chữ “Tự” dùng để chỉ loại cơ sở nào?",
           "options": [
-            "Hòa thượng Thích Thiện Pháp (Lê Văn Ninh), trụ trì chùa từ năm 1960; các vị trụ trì v...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Miếu thờ Thành hoàng",
+            "Chùa",
+            "Lăng",
+            "Đình"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Hòa thượng Thích Thiện Pháp (Lê Văn Ninh), trụ trì chùa từ năm 1960; các vị trụ trì và tăng ni gắn với quá trình xây dựng, trùng tu chùa. - Hiện vật: Tượng thần Vishnu bằng đá có 4 tay, được xác định có niên đại khoảng thế kỷ VII-VIII; Đại hồng chung bằng đồng đúc năm Ất Mùi 1895; các tượng Tam Thế, Thích Ca Mâu Ni tọa thiền, Thích Ca nhập Niết Bàn, Quan Âm Chuẩn Đề 12 tay và các tượng Phật khác.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Chùa."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Phước Lâm (Phước Lâm Tự)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Không gian thờ tự trung tâm của Phước Lâm Tự gắn chủ yếu với tôn giáo nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Cao Đài",
+            "Công giáo",
+            "Phật giáo",
+            "Hồi giáo"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Phước Lâm (Phước Lâm Tự) được xếp hạng cấp Quốc gia theo QĐ số: 983/QĐ, ngày \n04/08/1992 của Bộ Văn Hóa \nThông Tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Phật giáo."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Phước Lâm (Phước Lâm Tự)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị của Phước Lâm Tự cần được nhận diện chủ yếu qua nhóm yếu tố nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Địa đạo và giao thông hào",
+            "Hệ thống pháo và hầm thủy lôi",
+            "Mộ chum và đồ tùy táng",
+            "Lịch sử ngôi chùa, kiến trúc và hiện vật thờ tự"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Lịch sử ngôi chùa, kiến trúc và hiện vật thờ tự."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Phước Lâm (Phước Lâm Tự)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Khi phân loại trong bộ 103 di tích, Phước Lâm Tự gần nhất với nhóm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Chùa và cơ sở Phật giáo cổ",
+            "Căn cứ kháng chiến",
+            "Di chỉ khảo cổ",
+            "Công trình hành chính thuộc địa"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chùa và cơ sở Phật giáo cổ."
         }
       ],
       "flashcards": [
@@ -41110,73 +41110,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Phước Tường\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Chùa Phước Tường hiện nằm trên đường nào?",
           "options": [
-            "1741 - Thiền sư Linh Quang – Phật Chiếu khai sơn chùa; 1834 - Hòa thượng Từ Minh dời chùa đến v...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Nguyễn Xiển",
+            "Lã Xuân Oai",
+            "Chương Dương",
+            "Lê Văn Việt"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Chùa Phước Tường ghi dấu sự kiện: 1741 - Thiền sư Linh Quang – Phật Chiếu khai sơn chùa; 1834 - Hòa thượng Từ Minh dời chùa đến vị trí hiện nay và tái thiết quy mô; 1993 - chùa được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 43–VH/QĐ ngày 01/07/1993.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Lã Xuân Oai."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Phước Tường\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Chùa Phước Tường thuộc khu vực nào của Thành phố Hồ Chí Minh trước khi tổ chức lại đơn vị hành chính?",
           "options": [
-            "Thiền sư Linh Quang – Phật Chiếu, người khai sơn chùa năm 1741; Hòa thượng Từ Minh, t...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Quận 5",
+            "Quận Gò Vấp",
+            "Thành phố Thủ Đức",
+            "Huyện Cần Giờ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Thiền sư Linh Quang – Phật Chiếu, người khai sơn chùa năm 1741; Hòa thượng Từ Minh, trụ trì đời thứ tư, người dời chùa đến vị trí hiện nay và tái thiết vào năm 1834. - Hiện vật: 53 pho tượng Phật; 13 bức hoành phi, câu đối; nhiều bao lam, thần vọng và bài vị; hệ thống tượng Tam Thế Phật, Quan Thế Âm Bồ Tát và tượng Phật Thích Ca.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Thành phố Thủ Đức."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Phước Tường\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Loại hình giá trị nổi bật của chùa Phước Tường là gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Di tích chiến trường",
+            "Di chỉ mộ táng",
+            "Công trình phòng thủ ven biển",
+            "Kiến trúc nghệ thuật Phật giáo"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Phước Tường được xếp hạng cấp Quốc gia theo Số 43–VH/QĐ ngày \n01/07/1993 của Bộ Văn hóa – \nThông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Kiến trúc nghệ thuật Phật giáo."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Phước Tường\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Không gian chính điện của chùa Phước Tường phục vụ hoạt động nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Thờ Phật và sinh hoạt Phật giáo",
+            "Giam giữ tù nhân",
+            "Quan sát tàu biển",
+            "Hội họp quân sự"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thờ Phật và sinh hoạt Phật giáo."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Phước Tường\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chùa Phước Tường được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "1993",
+            "2004",
+            "1988"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -41737,73 +41737,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Sắc Tứ Trường Thọ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Chùa Sắc Tứ Trường Thọ thuộc dòng thiền nào?",
           "options": [
-            "Khoảng năm 1802 - vua Gia Long ban sắc “Sắc tứ Pháp Vũ”; năm 1822 - vua Minh Mạng ban tên Pháp ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tào Động Nhật Bản",
+            "Nam tông Khmer",
+            "Lâm Tế Liễu Quán",
+            "Trúc Lâm Yên Tử"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Chùa Sắc Tứ Trường Thọ ghi dấu sự kiện: Khoảng năm 1802 - vua Gia Long ban sắc “Sắc tứ Pháp Vũ”; năm 1822 - vua Minh Mạng ban tên Pháp Vũ; khoảng năm 1859 - chùa được chuyển đến khu vực Gò Vấp trong bối cảnh quân Pháp chiếm thành Gia Định; năm 1870 - vua Tự Đức ban tên “Trường Thọ”; năm 2000 - chùa được công nhận là di tích kiến trúc nghệ thuật cấp quốc gia; năm 2019 - Bộ Văn hóa, Thể thao và Du lịch thỏa thuận dự án tu bổ di tích; năm 2020 - tổ chức lễ đặt đá trùng tu.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Lâm Tế Liễu Quán."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Sắc Tứ Trường Thọ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tên cũ của chùa Sắc Tứ Trường Thọ là gì?",
           "options": [
-            "Nguyễn Ánh; vua Gia Long; vua Minh Mạng; vua Tự Đức; Hòa thượng Hải Phước (pháp hiệu ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Phước Tường",
+            "Giác Viên",
+            "Hội Sơn",
+            "Vĩnh Trường"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Nguyễn Ánh; vua Gia Long; vua Minh Mạng; vua Tự Đức; Hòa thượng Hải Phước (pháp hiệu Liễu Kiện), trụ trì chùa Pháp Vũ và được vua Tự Đức ban tên Trường Thọ. - Hiện vật: Hai biển sắc tứ gồm “Sắc tứ Pháp Vũ tự” thời Gia Long và “Sắc tứ Trường Thọ tự” thời Tự Đức; tượng Phật A Di Đà bằng gỗ mít; bộ tượng Di Đà Tam Tôn bằng gỗ; bộ tượng Thập Bát La Hán bằng đất nung phủ sơn; bộ tượng Thập Điện Diêm Vương bằng gỗ mít; đại hồng chung đúc năm 1808.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Vĩnh Trường."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Sắc Tứ Trường Thọ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Năm 1822, vua Minh Mạng ban cho chùa tên nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Pháp Vũ",
+            "Hội Khánh",
+            "Trường Thọ",
+            "Sơn Can"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Sắc Tứ Trường Thọ được xếp hạng cấp Quốc gia theo Quyết định số 06/2000/QĐ-BVHTT ngày 13/4/2000 của Bộ Văn hóa – Thông tin."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Pháp Vũ."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Sắc Tứ Trường Thọ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Vì sao chùa phải dời khỏi khu vực cũ khoảng năm 1859?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Triều đình yêu cầu chuyển chùa ra Huế",
+            "Quân Pháp đánh chiếm Gia Định và phá các công trình để lập phòng tuyến",
+            "Một trận động đất lớn",
+            "Sông đổi dòng làm sạt lở toàn bộ khuôn viên"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Quân Pháp đánh chiếm Gia Định và phá các công trình để lập phòng tuyến."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Sắc Tứ Trường Thọ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Chùa Sắc Tứ Trường Thọ được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2004",
+            "1993",
+            "2000",
+            "1998"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 2000."
         }
       ],
       "flashcards": [
@@ -42358,9 +42358,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Dinh Cô",
+      "title": "Hồ sơ điều tra: Thắng cảnh Dinh Cô",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Xã Long Hải, Thành phố Hồ Chí Minh.",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Dinh Cô",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Thắng cảnh Dinh Cô",
       "investigationQuestion": "Dinh Cô phản ánh sự hình thành và biến đổi của tín ngưỡng cư dân miền biển như thế nào, và di tích giúp học sinh hiểu gì về cách cộng đồng gửi gắm niềm tin vào biển cả?",
       "suggestedAnswer": "Dinh Cô (Long Hải) phản ánh tín ngưỡng dân gian của cư dân miền biển: ngư dân thờ Cô để cầu bình an, thuận lợi khi ra khơi; lễ hội hằng năm (thường vào giữa tháng hai âm lịch) thu hút đông đảo người dân. Biển vừa là nguồn sống vừa ẩn chứa nguy hiểm nên con người gửi gắm niềm tin để có chỗ dựa tinh thần. Học sinh hiểu rằng tín ngưỡng thể hiện lòng biết ơn, sự kính trọng thiên nhiên và tình đoàn kết cộng đồng.",
       "referencesList": [
@@ -42416,73 +42416,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Dinh Cô\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Theo truyền thuyết phổ biến, Dinh Cô thờ cô gái có tên gì?",
           "options": [
-            "Cuối thế kỷ XVIII - hình thành miếu thờ Cô theo truyền thuyết dân gian; 1930 - dân làng xây dựn...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Lê Thị Riêng",
+            "Nguyễn Thị Đẹp",
+            "Võ Thị Sáu",
+            "Lê Thị Hồng"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Dinh Cô ghi dấu sự kiện: Cuối thế kỷ XVIII - hình thành miếu thờ Cô theo truyền thuyết dân gian; 1930 - dân làng xây dựng lại miếu quy mô hơn tại triền núi Thùy Vân; 1987 - chánh điện bị hỏa hoạn và sau đó được nhân dân xây dựng lại; 1989 - xây thêm nhà Võ Ca; 1992–1993 - tiếp tục xây dựng, bổ sung các hạng mục; 1995 - Dinh Cô được xếp hạng di tích cấp quốc gia; 1999 - trùng tu, tôn tạo Dinh Cô; hằng năm mồng 10–12 tháng 2 âm lịch - diễn ra lễ hội Nghinh Cô.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Lê Thị Hồng."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Dinh Cô\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Người dân Long Hải tôn xưng Bà Cô bằng danh hiệu nào?",
           "options": [
-            "Lê Thị Hồng (tục danh Thị Cách), nhân vật được cư dân Long Hải tôn thờ với danh hiệu ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Long Hải Thần Nữ",
+            "Thiên Hậu Thánh Mẫu",
+            "Thủy Long Thần Nữ",
+            "Bà Chúa Xứ"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Lê Thị Hồng (tục danh Thị Cách), nhân vật được cư dân Long Hải tôn thờ với danh hiệu Long Hải Thần Nữ; theo truyền thuyết, bà quê ở Phan Rang hoặc Bình Thuận và mất khi còn trẻ tại vùng biển Long Hải. - Hiện vật: Tượng Bà Cô cao hơn 0,5 m tại chính điện; các long vị, bài vị và hương án phục vụ tín ngưỡng thờ Cô, Bà Thủy Long, Ông Nam Hải, Ngũ Hành Nương Nương và Tứ Pháp Nương Nương.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Long Hải Thần Nữ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Dinh Cô\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Danh lam thắng cảnh) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Mộ Cô nằm trên địa hình nào, cách điện thờ Dinh Cô khoảng 1 km?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Núi Tao Phùng",
+            "Đồi Cô Sơn",
+            "Núi Lớn",
+            "Đồi Hội Sơn"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Dinh Cô được xếp hạng cấp Quốc gia theo Quyết định số 65QĐ/BT ngày 16/01/1995 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Đồi Cô Sơn."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Dinh Cô\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Lối lên điện Cô có bao nhiêu bậc tam cấp?",
           "options": [
-            "Tọa lạc tại địa chỉ: Xã Long Hải, Thành phố Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "27",
+            "47",
+            "37",
+            "57"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Xã Long Hải, Thành phố Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 37."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Dinh Cô\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Dinh Cô được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1991",
+            "1993",
+            "2001",
+            "1995"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1995."
         }
       ],
       "flashcards": [
@@ -43019,9 +43019,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Chùa Ngọc Hoàng",
+      "title": "Hồ sơ điều tra: Điện Ngọc Hoàng",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 73 Mai Thị Lựu, \nphường Tân Định.",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Chùa Ngọc Hoàng",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Điện Ngọc Hoàng",
       "investigationQuestion": "Điện Ngọc Hoàng cho thấy sự giao thoa giữa Đạo giáo, Phật giáo và tín ngưỡng dân gian của cộng đồng người Hoa như thế nào, và điều đó nói gì về tính đa văn hóa của Thành phố Hồ Chí Minh?",
       "suggestedAnswer": "Điện Ngọc Hoàng (Chùa Phước Hải) do người Hoa xây dựng từ cuối thế kỷ 19, nơi thờ Ngọc Hoàng cùng nhiều vị thần khác. Không gian thờ tự pha trộn yếu tố Đạo giáo, Phật giáo và tín ngưỡng dân gian; nhiều người đến cầu an, cầu duyên, cầu sức khỏe. Điều này cho thấy Thành phố Hồ Chí Minh là nơi nhiều cộng đồng và nhiều tín ngưỡng cùng chung sống, tôn trọng lẫn nhau – đó là nét đa văn hóa của thành phố.",
       "referencesList": [
@@ -43061,73 +43061,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Chùa Ngọc Hoàng\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Điện Ngọc Hoàng còn thường được gọi bằng tên nào?",
           "options": [
-            "1892–1900 - Lưu Minh khởi công và công trình được hoàn thành; 1900 - hoàn thành xây dựng chùa; ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chùa Ngọc Hoàng",
+            "Chùa Cây Mai",
+            "Chùa Hố Đất",
+            "Chùa Gò"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Chùa Ngọc Hoàng ghi dấu sự kiện: 1892–1900 - Lưu Minh khởi công và công trình được hoàn thành; 1900 - hoàn thành xây dựng chùa; 1984 - chùa đổi tên thành Phước Hải Tự; 1994 - được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia; hằng năm ngày 9 tháng Giêng âm lịch - diễn ra lễ vía Ngọc Hoàng.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chùa Ngọc Hoàng."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Chùa Ngọc Hoàng\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Điện Ngọc Hoàng hiện nằm trên đường nào?",
           "options": [
-            "Lưu Minh (Lưu Đạo Nguyên) – người khởi lập công trình; Ngô Đạo Chương – người tiếp tụ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Hải Thượng Lãn Ông",
+            "Mai Thị Lựu",
+            "Phan Văn Trị",
+            "Nguyễn Trãi"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Lưu Minh (Lưu Đạo Nguyên) – người khởi lập công trình; Ngô Đạo Chương – người tiếp tục việc xây dựng sau khi Lưu Minh qua đời. - Hiện vật: Hiện vật tiêu biểu;Hơn 300 tượng thờ, chủ yếu bằng gỗ và giấy bồi; tượng Ngọc Hoàng Thượng Đế; tượng Kim Hoa Thánh Mẫu và 12 bà mụ; tượng Thập Điện Diêm Vương; các bao lam, liễn đối, hương án và tranh thờ bằng gỗ, gốm.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Mai Thị Lựu."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Chùa Ngọc Hoàng\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Nhân vật được thờ ở vị trí trung tâm, tạo nên tên gọi của di tích là ai?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Thành hoàng Bổn cảnh",
+            "Lê Văn Duyệt",
+            "Ngọc Hoàng Thượng Đế",
+            "Quan Thánh Đế Quân"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Chùa Ngọc Hoàng được xếp hạng cấp Quốc gia theo Số 2754/QĐ – BT ngày \n15/10/1994."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Ngọc Hoàng Thượng Đế."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Chùa Ngọc Hoàng\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Điện Ngọc Hoàng nổi bật về loại hình giá trị nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 73 Mai Thị Lựu, \nphường Tân Định, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Lịch sử quân sự ven biển",
+            "Địa đạo kháng chiến",
+            "Khảo cổ học tiền sử",
+            "Kiến trúc nghệ thuật và tín ngưỡng"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 73 Mai Thị Lựu, \nphường Tân Định, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Kiến trúc nghệ thuật và tín ngưỡng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Chùa Ngọc Hoàng\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Điện Ngọc Hoàng được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1994",
+            "2001",
+            "1988",
+            "1993"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1994."
         }
       ],
       "flashcards": [
@@ -43688,73 +43688,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Bình Hòa\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Bình Hòa hiện nằm trên đường nào?",
           "options": [
-            "Khoảng năm 1818 - thôn Bình Hòa được thành lập và đình được dựng; 1853 - vua Tự Đức ban sắc pho...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chương Dương",
+            "Chu Văn An",
+            "Mai Văn Ngọc",
+            "Nguyễn Văn Lượng"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Bình Hòa ghi dấu sự kiện: Khoảng năm 1818 - thôn Bình Hòa được thành lập và đình được dựng; 1853 - vua Tự Đức ban sắc phong Thành hoàng Bổn cảnh; 1877 - đình được trùng tu lần thứ nhất; 1924 - đình được trùng tu lần thứ hai; 1946 - đình được trùng tu lần thứ ba; 1993 - đình được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; 10–11 tháng 9 âm lịch hằng năm - diễn ra lễ Kỳ yên.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Chu Văn An."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Bình Hòa\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đình Bình Hòa là loại hình cơ sở tín ngưỡng truyền thống nào?",
           "options": [
-            "Vua Tự Đức – người ban sắc phong Thành hoàng Bổn cảnh cho đình năm 1853; Phó tổng Lê ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nhà thờ Công giáo",
+            "Hội quán người Hoa",
+            "Đình làng Nam Bộ",
+            "Chùa Phật giáo"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Vua Tự Đức – người ban sắc phong Thành hoàng Bổn cảnh cho đình năm 1853; Phó tổng Lê Văn Huệ và Hương cả Lê Văn Ý – những người gắn với các đợt trùng tu đình. - Hiện vật: Sắc phong vua Tự Đức năm 1853; 5 bàn thờ bằng gỗ chạm khắc; 2 bát nhang gốm Sài Gòn xưa; các hoành phi, liễn đối, bao lam, phù điêu và hương án.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Đình làng Nam Bộ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Bình Hòa\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đối tượng thờ chính thường gắn với chức năng của Đình Bình Hòa là ai?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Phật Thích Ca",
+            "Ngọc Hoàng Thượng Đế",
+            "Thiên Hậu Thánh Mẫu",
+            "Thành hoàng và các bậc tiền hiền"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Bình Hòa được xếp hạng cấp Quốc gia theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thành hoàng và các bậc tiền hiền."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Bình Hòa\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Ngoài thờ tự, đình làng như Bình Hòa có vai trò truyền thống nào đối với cư dân địa phương?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Không gian sinh hoạt cộng đồng và lễ hội",
+            "Trạm liên lạc vô tuyến",
+            "Nhà máy sản xuất gốm",
+            "Kho quân khí ven biển"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Không gian sinh hoạt cộng đồng và lễ hội."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Bình Hòa\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Bình Hòa được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1988",
+            "1993",
+            "1997",
+            "2002"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -44323,73 +44323,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Chí Hòa\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Chí Hòa hiện tọa lạc trên tuyến đường nào?",
           "options": [
-            "Thời kỳ đầu hình thành làng Hòa Hưng - đình được lập và mang tên đình Hòa Hưng; thế kỷ XVIII - ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Ba Tháng Hai",
+            "Lạc Long Quân",
+            "Cách Mạng Tháng Tám",
+            "Trần Hưng Đạo"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Chí Hòa ghi dấu sự kiện: Thời kỳ đầu hình thành làng Hòa Hưng - đình được lập và mang tên đình Hòa Hưng; thế kỷ XVIII - Võ Trường Toản từng mở lớp dạy học tại đình; 1915–1917 - phong trào Thiên Địa Hội hoạt động tại đình; 25/8/1945 - Thanh niên Tiền phong tập trung tại đình và tham gia chống Pháp; 28/6/1996 - đình được xếp hạng di tích cấp quốc gia theo Quyết định số 1460-QĐ/VH.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Cách Mạng Tháng Tám."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Chí Hòa\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đình Chí Hòa thuộc loại hình kiến trúc truyền thống nào?",
           "options": [
-            "Võ Trường Toản; các thành viên phong trào Thiên Địa Hội; lực lượng Thanh niên Tiền ph...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chùa Phật giáo",
+            "Hội quán",
+            "Lăng mộ",
+            "Đình làng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Võ Trường Toản; các thành viên phong trào Thiên Địa Hội; lực lượng Thanh niên Tiền phong tại khu vực Hòa Hưng năm 1945. - Hiện vật: Cổng đình với họa tiết rồng, phượng và câu đối sơn son thếp vàng; kiến trúc gỗ, hoành phi, liễn đối và các đồ thờ tự truyền thống. Nguồn được kiểm chứng trong lượt này chưa cung cấp danh mục đầy đủ từng hiện vật.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Đình làng."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Chí Hòa\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Không gian thờ chính của đình Chí Hòa gắn với tín ngưỡng nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Thờ Thành hoàng và tiền hiền",
+            "Thờ Quan Đế",
+            "Thờ Phật A Di Đà",
+            "Thờ Thiên Hậu"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Chí Hòa được xếp hạng cấp Quốc gia theo Quyết định số 1460-QĐ/VH ngày 28/6/1996 của Bộ Văn hóa, Thể thao và Du lịch."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thờ Thành hoàng và tiền hiền."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Chí Hòa\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị kiến trúc của đình Chí Hòa phản ánh rõ văn hóa cộng đồng nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Thương cảng Hội An",
+            "Làng xã Nam Bộ",
+            "Làng Chăm Ninh Thuận",
+            "Cung đình Huế"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Làng xã Nam Bộ."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Chí Hòa\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Chí Hòa được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "2004",
+            "1996",
+            "1993"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1996."
         }
       ],
       "flashcards": [
@@ -44960,73 +44960,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Dĩ An\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Khi mới hình thành, đình Dĩ An từng được gọi là gì?",
           "options": [
-            "Khoảng năm 1838 - người dân xây dựng lại Dĩ An cổ miếu thành đình; 1852 - vua Tự Đức ban sắc ph...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Văn miếu",
+            "Miếu Bà",
+            "Võ miếu",
+            "Cổ miếu"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Dĩ An ghi dấu sự kiện: Khoảng năm 1838 - người dân xây dựng lại Dĩ An cổ miếu thành đình; 1852 - vua Tự Đức ban sắc phong Thành Hoàng; 1910 - đình trải qua một đợt đại trùng tu; 2011 - đình được công nhận là di tích lịch sử - văn hóa cấp tỉnh; 28/03/2019 - đình được xếp hạng di tích cấp quốc gia; 02/02/2023 - Lễ hội Kỳ yên đình Dĩ An được đưa vào Danh mục di sản văn hóa phi vật thể quốc gia.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Cổ miếu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Dĩ An\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Năm nào ngôi miếu được tổ chức xây dựng lại và đổi tên thành đình?",
           "options": [
-            "Vua Tự Đức – người ban sắc phong Thành Hoàng cho đình năm 1852; cộng đồng cư dân khai...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1838",
+            "1880",
+            "1820",
+            "1852"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Vua Tự Đức – người ban sắc phong Thành Hoàng cho đình năm 1852; cộng đồng cư dân khai phá, lập làng Dĩ An – những người góp công xây dựng đình. - Hiện vật: Sắc phong Thành Hoàng của vua Tự Đức năm 1852; các bao lam, khán thờ, hoành phi, câu đối; các tác phẩm chạm khắc gỗ, cẩn gốm sứ và tranh sơn thủy.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1838."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Dĩ An\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Vua Tự Đức ban sắc phong cho Thành hoàng đình Dĩ An vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1872",
+            "1852",
+            "1842",
+            "1862"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Dĩ An được xếp hạng cấp Quốc gia theo Quyết định số 1185/QĐ-BVHTTDL ngày 28/03/2019 của Bộ Văn hóa, Thể thao và Du lịch."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1852."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Dĩ An\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Ngoài thờ tự, dưới thời Nguyễn đình Dĩ An còn có chức năng nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Trường dạy tiếng Pháp",
+            "Trạm kiểm soát đường biển",
+            "Nơi làm việc của hương chức, hội tề địa phương",
+            "Xưởng đóng tàu"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Nơi làm việc của hương chức, hội tề địa phương."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Dĩ An\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Dĩ An được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2014",
+            "2001",
+            "2010",
+            "2019"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 2019."
         }
       ],
       "flashcards": [
@@ -45603,73 +45603,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Minh Hương Gia Thạnh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Minh Hương Gia Thạnh hiện tọa lạc trên đường nào?",
           "options": [
-            "1789 - Minh Hương xã được thành lập và hình thành cơ sở ban đầu của đình; 1808 - vua Gia Long c...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Trần Hưng Đạo",
+            "Nguyễn Trãi",
+            "Lão Tử",
+            "Phan Văn Khỏe"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Đình Minh Hương Gia Thạnh ghi dấu sự kiện: 1789 - Minh Hương xã được thành lập và hình thành cơ sở ban đầu của đình; 1808 - vua Gia Long cho phép đặt tên Gia Thạnh Đường; 1839 - xây dựng đình và lập bia ghi danh những người Minh Hương làm quan dưới triều Nguyễn; 1867 - Hội Minh Hương Gia Thạnh được lập lại để duy trì việc thờ phượng; 1962 - đại tu bổ chánh điện và xây thêm lầu; 07/01/1993 - đình được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 43-VH/QĐ.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Trần Hưng Đạo."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Minh Hương Gia Thạnh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tên gọi “Minh Hương” của đình gắn với cộng đồng cư dân nào trong lịch sử Sài Gòn – Chợ Lớn?",
           "options": [
-            "Trần Thượng Xuyên; Nguyễn Hữu Cảnh; Trịnh Hoài Đức; Ngô Nhân Tịnh; Lê Quang Định....",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Người Chăm",
+            "Người Minh Hương",
+            "Người Khmer",
+            "Người Nhật"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Trần Thượng Xuyên; Nguyễn Hữu Cảnh; Trịnh Hoài Đức; Ngô Nhân Tịnh; Lê Quang Định. - Hiện vật: Đại hồng chung đúc năm 1823; đại hồng chung đúc năm 1849; đỉnh gang đúc năm 1842; bia lập năm 1839 ghi tên những người Minh Hương nổi tiếng làm quan dưới triều Nguyễn; các bao lam, khám thờ, hoành phi, câu đối.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Người Minh Hương."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Minh Hương Gia Thạnh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đình Minh Hương Gia Thạnh thuộc loại hình di tích nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Khảo cổ",
+            "Chiến trường",
+            "Kiến trúc nghệ thuật",
+            "Danh lam thắng cảnh tự nhiên"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Minh Hương Gia Thạnh được xếp hạng cấp Quốc gia theo Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Kiến trúc nghệ thuật."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Minh Hương Gia Thạnh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Không gian đình phản ánh sự giao thoa văn hóa nổi bật giữa truyền thống Việt Nam với cộng đồng nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Chăm",
+            "Khmer Nam Bộ",
+            "Ấn Độ",
+            "Hoa – Minh Hương"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Hoa – Minh Hương."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Minh Hương Gia Thạnh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Minh Hương Gia Thạnh được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1993",
+            "1998",
+            "2001",
+            "1988"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -46226,73 +46226,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Phú Long\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Phú Long nằm bên bờ con sông nào?",
           "options": [
-            "Khoảng năm 1842 - Đình Phú Long được xây dựng, gắn với quá trình hình thành cộng đồng cư dân tạ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Sông Bé",
+            "Sông Sài Gòn",
+            "Sông Vàm Cỏ Đông",
+            "Sông Đồng Nai"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Phú Long ghi dấu sự kiện: Khoảng năm 1842 - Đình Phú Long được xây dựng, gắn với quá trình hình thành cộng đồng cư dân tại Lái Thiêu; thời Nguyễn - đình được ban sắc thần, xác lập vị trí của Thành Hoàng trong đời sống tín ngưỡng địa phương; trong hai thời kỳ kháng chiến - đình gắn với hoạt động cách mạng; 28/12/2001 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 53/QĐ-BVHTT.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Sông Sài Gòn."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Phú Long\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đình Phú Long được xây dựng khoảng năm nào theo nguồn giới thiệu chính thức?",
           "options": [
-            "Thành Hoàng Bổn Cảnh và các bậc tiền hiền, hậu hiền của vùng Phú Long; cộng đồng cư d...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1942",
+            "1952",
+            "1842",
+            "1742"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Thành Hoàng Bổn Cảnh và các bậc tiền hiền, hậu hiền của vùng Phú Long; cộng đồng cư dân địa phương là lực lượng trực tiếp xây dựng, gìn giữ và duy trì các hoạt động tín ngưỡng tại đình. - Hiện vật: Sắc thần; hệ thống hoành phi, câu đối; bao lam; hương án; bàn thờ; các mảng chạm khắc gỗ và đồ thờ truyền thống. Những hiện vật và cấu kiện này có giá trị trong việc nghiên cứu nghệ thuật trang trí đình làng Nam Bộ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1842."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Phú Long\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đình Phú Long thờ vị thần nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Quan Thánh Đế Quân",
+            "Ngọc Hoàng Thượng Đế",
+            "Thiên Hậu Thánh Mẫu",
+            "Thành Hoàng Bổn Xứ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Phú Long được xếp hạng cấp Quốc gia theo Quyết định số 53/QĐ-BVHTT ngày 28/12/2001."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thành Hoàng Bổn Xứ."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Phú Long\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Kiến trúc đình Phú Long được bố cục theo kiểu chữ nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Chữ Tam",
+            "Chữ Công",
+            "Chữ Đinh",
+            "Chữ Nhất"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chữ Tam."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Phú Long\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Phú Long được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2019",
+            "2001",
+            "1993",
+            "2014"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 2001."
         }
       ],
       "flashcards": [
@@ -46848,73 +46848,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Phú Nhuận\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Phú Nhuận hiện tọa lạc tại số 18 đường nào?",
           "options": [
-            "Khoảng năm 1818 - đình Phú Nhuận được dựng ban đầu ở khu vực rạch Thị Nghè; 1852 - đình được xâ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Nguyễn Văn Trỗi",
+            "Phan Đăng Lưu",
+            "Mai Văn Ngọc",
+            "Huỳnh Văn Bánh"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Phú Nhuận ghi dấu sự kiện: Khoảng năm 1818 - đình Phú Nhuận được dựng ban đầu ở khu vực rạch Thị Nghè; 1852 - đình được xây dựng lại tại khu vực gò Kim Quy, vị trí hiện nay; 1893 - vua Tự Đức ban sắc phong Thành Hoàng; các thời kỳ sau - đình được sửa chữa, bảo tồn để duy trì hoạt động tín ngưỡng; 29/01/1997 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 3744-QĐ/VHTT.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Mai Văn Ngọc."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Phú Nhuận\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Vị trí đầu tiên của đình Phú Nhuận được ghi nhận ở đâu?",
           "options": [
-            "Lê Tự Tài – người có công hiến khu đất gò Kim Quy để xây dựng đình; vua Tự Đức – ngườ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Bên rạch Bà Tàng",
+            "Bên sông Sài Gòn tại Lái Thiêu",
+            "Trên đồi Cô Sơn",
+            "Bên bờ rạch Thị Nghè"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Lê Tự Tài – người có công hiến khu đất gò Kim Quy để xây dựng đình; vua Tự Đức – người ban sắc phong Thành Hoàng cho đình; các bậc tiền hiền, hậu hiền và cộng đồng cư dân Phú Nhuận qua nhiều thế hệ. - Hiện vật: Sắc phong Thành Hoàng của vua Tự Đức; hoành phi, câu đối; hương án; bàn thờ và các đồ thờ tự truyền thống. Các cấu kiện gỗ chạm khắc và trang trí trong đình góp phần thể hiện nghệ thuật kiến trúc đình làng tại khu vực Gia Định – Sài Gòn.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Bên bờ rạch Thị Nghè."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Phú Nhuận\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Ai đã hiến khu đất để dời đình Phú Nhuận về vị trí cao ráo hơn?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Xã trưởng Lê Tự Tài",
+            "Thiền sư Đại Ngạn",
+            "Tiền quân Nguyễn Văn Thành",
+            "Tổng đốc Trương Tấn Bửu"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Phú Nhuận được xếp hạng cấp Quốc gia theo Quyết định số 3744-QĐ/VHTT ngày 29/01/1997."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Xã trưởng Lê Tự Tài."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Phú Nhuận\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Khu đất nơi đình được dời đến có tên dân gian là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Gò Cây Mai",
+            "Gò Kim Qui",
+            "Gò Chùa",
+            "Gò Cá Vồ"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Gò Kim Qui."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Phú Nhuận\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Phú Nhuận được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1993",
+            "1994",
+            "1997",
+            "2002"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1997."
         }
       ],
       "flashcards": [
@@ -47475,73 +47475,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Tân An (Bến Thế)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Tân An được xây dựng vào năm nào?",
           "options": [
-            "1820 - Đình Tân An được xây dựng; 1853 - vua Tự Đức ban sắc phong, ghi nhận vị thần được thờ tạ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1780",
+            "1853",
+            "1880",
+            "1820"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Tân An (Bến Thế) ghi dấu sự kiện: 1820 - Đình Tân An được xây dựng; 1853 - vua Tự Đức ban sắc phong, ghi nhận vị thần được thờ tại đình; 2004 - được xếp hạng di tích cấp tỉnh; 26/04/2014 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 1261/QĐ-BVHTTDL; hằng năm - duy trì các nghi lễ và lễ hội Kỳ yên của cộng đồng.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1820."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Tân An (Bến Thế)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đình Tân An thờ vị khai quốc công thần triều Nguyễn nào?",
           "options": [
-            "Nguyễn Văn Thành (Tiền Quân Cơ, Quận công) – nhân vật lịch sử được thờ tại đình; vua ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nguyễn Văn Thành",
+            "Trương Tấn Bửu",
+            "Võ Di Nguy",
+            "Lê Văn Duyệt"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Nguyễn Văn Thành (Tiền Quân Cơ, Quận công) – nhân vật lịch sử được thờ tại đình; vua Tự Đức – người ban sắc phong cho đình; các bậc tiền hiền, hậu hiền có công khai phá, lập làng và xây dựng cộng đồng Tân An – Bến Thế. - Hiện vật: Sắc phong vua Tự Đức năm 1853; hoành phi, liễn đối; bao lam; tủ thờ; khánh thờ; tượng thờ và các đồ thờ bằng gỗ. Đặc biệt, hệ thống chạm khắc gỗ thể hiện các đề tài truyền thống như rồng, phụng, hoa lá và các biểu tượng mang ý nghĩa tín ngưỡng.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Nguyễn Văn Thành."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Tân An (Bến Thế)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Sắc phong hiện lưu giữ tại đình Tân An được vua nào ban năm 1853?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Minh Mạng",
+            "Tự Đức",
+            "Thành Thái",
+            "Gia Long"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Tân An (Bến Thế) được xếp hạng cấp Quốc gia theo Quyết định số 1261/QĐ-BVHTTDL ngày 26/04/2014."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Tự Đức."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Tân An (Bến Thế)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Hình ảnh đặc biệt ở cổng đình Tân An thường được nhắc đến là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Khu phố 1, phường Phú An, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Một tháp nước hình tròn",
+            "Một tượng Phật nằm trên mái",
+            "Cây đa cổ thụ với bộ rễ quấn lấy cổng đình",
+            "Hai khẩu thần công bằng đồng"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Khu phố 1, phường Phú An, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Cây đa cổ thụ với bộ rễ quấn lấy cổng đình."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Tân An (Bến Thế)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Tân An được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2004",
+            "2019",
+            "2001",
+            "2014"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 2014."
         }
       ],
       "flashcards": [
@@ -48104,73 +48104,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Thắng Tam\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Khu di tích Đình Thắng Tam gồm ba thành phần chính nào?",
           "options": [
-            "Thời vua Minh Mạng - Đình Thắng Tam được hình thành trong quá trình tổ chức, ổn định cộng đồng ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Đình Thần Thắng Tam, Lăng Ông Nam Hải và Miếu Bà Ngũ Hành",
+            "Đình Thắng Tam, Miếu Thiên Hậu và Hội quán Nghĩa An",
+            "Đình Thắng Tam, Bạch Dinh và Hải đăng",
+            "Đình Thắng Tam, Dinh Cô và Mộ Cô"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Đình Thắng Tam ghi dấu sự kiện: Thời vua Minh Mạng - Đình Thắng Tam được hình thành trong quá trình tổ chức, ổn định cộng đồng cư dân tại Vũng Tàu; 1835 - đình được trùng tu và lợp ngói; các giai đoạn sau - quần thể Đình, Lăng Cá Ông và Miếu Bà tiếp tục được tu bổ; 25/03/1991 - được xếp hạng di tích lịch sử cấp quốc gia theo Quyết định số 457/QĐ; hằng năm - diễn ra các nghi lễ, lễ hội truyền thống gắn với tín ngưỡng Thành Hoàng, Cá Ông và Miếu Bà.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Đình Thần Thắng Tam, Lăng Ông Nam Hải và Miếu Bà Ngũ Hành."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Thắng Tam\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đình Thần Thắng Tam được khởi dựng vào năm nào?",
           "options": [
-            "Ba cai đội Phước Thắng – những người có công khai phá, bảo vệ vùng đất và vùng biển V...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1965",
+            "1820",
+            "1835",
+            "1853"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Ba cai đội Phước Thắng – những người có công khai phá, bảo vệ vùng đất và vùng biển Vũng Tàu; Thành Hoàng Bổn Cảnh; Đại Càn Quốc Gia Nam Hải Thượng Đẳng Thần; Thiên Y A Na Diễm Ngọc Phi; Thủy Long Thần Nữ và các đối tượng được thờ trong quần thể di tích. - Hiện vật: Sắc phong và các đồ thờ trong Đình Thắng Tam; hệ thống hương án, hoành phi, câu đối và các cấu kiện kiến trúc trang trí. Trong Lăng Cá Ông thuộc quần thể còn lưu giữ bộ xương Cá Ông, là hiện vật đặc biệt gắn với tín ngưỡng thờ cá Ông của cư dân biển.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1820."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Thắng Tam\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tín ngưỡng tại Lăng Ông Nam Hải gắn với loài vật nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Cá kiếm",
+            "Rùa biển",
+            "Cá voi",
+            "Cá heo"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Thắng Tam được xếp hạng cấp Quốc gia theo Quyết định số 457/QĐ ngày 25/03/1991."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Cá voi."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Thắng Tam\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Lễ hội Nghinh Ông tại khu di tích thường diễn ra vào tháng nào theo âm lịch?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Tháng 11",
+            "Tháng 2",
+            "Tháng 5",
+            "Tháng 8"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Tháng 8."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Thắng Tam\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Khu di tích Đình Thắng Tam được công nhận di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1991",
+            "1989",
+            "1995",
+            "2001"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1991."
         }
       ],
       "flashcards": [
@@ -48722,73 +48722,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Thần Linh Đông\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Dòng chữ Hán trên đòn nóc cho phép xác định đình Linh Đông được dựng vào năm nào?",
           "options": [
-            "1823 - Đình Thần Linh Đông được xây dựng, thể hiện qua niên đại ghi trên cấu kiện kiến trúc của...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1783",
+            "1823",
+            "1853",
+            "1883"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Thần Linh Đông ghi dấu sự kiện: 1823 - Đình Thần Linh Đông được xây dựng, thể hiện qua niên đại ghi trên cấu kiện kiến trúc của đình; các thời kỳ sau - đình được tu bổ và duy trì hoạt động thờ tự; hằng năm - tổ chức lễ Kỳ Yên và lễ giỗ Tiền hiền Tạ Dương Minh; 11/04/2020 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định số 3245/QĐ-BVHTTDL.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1823."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Thần Linh Đông\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Đình Linh Đông hiện tọa lạc trên đường nào?",
           "options": [
-            "Tạ Dương Minh – nhân vật được xem là có công khai phá vùng đất Thủ Đức và được thờ ph...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nguyễn Văn Lượng",
+            "Lã Xuân Oai",
+            "Chương Dương",
+            "Nguyễn Xiển"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Tạ Dương Minh – nhân vật được xem là có công khai phá vùng đất Thủ Đức và được thờ phụng tại đình; các bậc tiền hiền, hậu hiền của làng Linh Đông; cộng đồng cư dân địa phương qua nhiều thế hệ. - Hiện vật: Sắc phong; hoành phi; liễn đối; hương án; bàn thờ; đồ thờ bằng gỗ và các cấu kiện kiến trúc gỗ chạm khắc. Đây là những tư liệu và hiện vật quan trọng phản ánh lịch sử tín ngưỡng, nghệ thuật trang trí và sinh hoạt cộng đồng của làng Linh Đông.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Chương Dương."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Thần Linh Đông\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Mặt tiền đình Linh Đông quay về hướng nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Tây – Bắc",
+            "Chính Bắc",
+            "Chính Tây",
+            "Đông – Nam"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Thần Linh Đông được xếp hạng cấp Quốc gia theo Số 3245/QĐ-BVHTTDL ngày 11/4/2020 của Bộ Văn hóa, Thể thao và Du lịch.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Đông – Nam."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Thần Linh Đông\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị xã hội nổi bật của đình Linh Đông được cơ quan văn hóa nhấn mạnh là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM, lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Thể hiện sự gắn kết cộng đồng làng xã và tưởng nhớ tiền hiền",
+            "Là trung tâm khai thác khoáng sản",
+            "Là nơi huấn luyện pháo binh",
+            "Phản ánh hoạt động thương mại đường biển"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM, nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thể hiện sự gắn kết cộng đồng làng xã và tưởng nhớ tiền hiền."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Thần Linh Đông\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Linh Đông được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2010",
+            "2020",
+            "2017",
+            "2002"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 2020."
         }
       ],
       "flashcards": [
@@ -49342,73 +49342,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Thông Tây Hội\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Tên “Thông Tây Hội” hình thành sau sự kiện nào năm 1944?",
           "options": [
-            "Đình Thông Tây Hội; khoảng 1679 - hình thành đình gắn với quá trình cư dân vào khai phá vùng Gi...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Đổi tên đường Nguyễn Văn Lượng",
+            "Thành lập quận Gò Vấp",
+            "Sáp nhập hai làng Hanh Thông Tây và An Hội",
+            "Sáp nhập hai chùa Giác Lâm và Giác Viên"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Thông Tây Hội ghi dấu sự kiện: Đình Thông Tây Hội; khoảng 1679 - hình thành đình gắn với quá trình cư dân vào khai phá vùng Gia Định; 1883 - đình được xây dựng theo kiến trúc quy mô lớn như hiện nay; 1944 - hai làng Hạnh Thông Tây và An Hội sáp nhập, đình mang tên Thông Tây Hội; 26/09/1998 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Sáp nhập hai làng Hanh Thông Tây và An Hội."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Thông Tây Hội\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trước năm 1944, đình Thông Tây Hội còn được gọi là gì?",
           "options": [
-            "Đình Thông Tây Hội; Đông Chinh Vương và Dực Thánh Vương – hai vị thần được thờ làm Th...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Đình Phú Long",
+            "Đình Tân An",
+            "Đình Minh Hương",
+            "Đình Hanh Thông Tây"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Đình Thông Tây Hội; Đông Chinh Vương và Dực Thánh Vương – hai vị thần được thờ làm Thành Hoàng; cộng đồng cư dân Hạnh Thông Tây và An Hội có vai trò hình thành, duy trì đình. - Hiện vật: Đình Thông Tây Hội; sắc phong Thành Hoàng; các hoành phi, câu đối; đồ thờ; cấu kiện gỗ và các mảng chạm khắc truyền thống; cổng tam quan với hình lưỡng long tranh châu bằng gốm.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Đình Hanh Thông Tây."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Thông Tây Hội\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đình Thông Tây Hội thường được nhắc đến với đặc điểm nổi bật nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Một trong những ngôi đình cổ nhất còn tồn tại ở vùng Gia Định",
+            "Đình có địa đạo ba tầng",
+            "Ngôi đình duy nhất xây trên đảo",
+            "Đình có trận địa pháo lớn nhất Nam Bộ"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Thông Tây Hội được xếp hạng cấp Quốc gia theo Số 2009/1998/QĐ-BVHTT ngày 26/9/1998 của Bộ Văn hóa – Thông tin.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Một trong những ngôi đình cổ nhất còn tồn tại ở vùng Gia Định."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Thông Tây Hội\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Đình Thông Tây Hội hiện nằm trên đường nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Chương Dương",
+            "Nguyễn Văn Lượng",
+            "Mai Văn Ngọc",
+            "Chu Văn An"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Nguyễn Văn Lượng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Thông Tây Hội\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Thông Tây Hội được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2002",
+            "1993",
+            "1998",
+            "1997"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1998."
         }
       ],
       "flashcards": [
@@ -49959,73 +49959,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Trường Thọ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Trong chính điện đình Trường Thọ, đối tượng được thờ ở gian giữa là ai?",
           "options": [
-            "Đình Trường Thọ; đầu thế kỷ XIX - hình thành đình và cộng đồng làng Trường Thọ; 1926 - vua Khải...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Ngọc Hoàng",
+            "Thiên Hậu Thánh Mẫu",
+            "Quan Thánh Đế Quân",
+            "Thành hoàng"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Đình Trường Thọ ghi dấu sự kiện: Đình Trường Thọ; đầu thế kỷ XIX - hình thành đình và cộng đồng làng Trường Thọ; 1926 - vua Khải Định ban sắc phong Thành Hoàng; 30/12/2002 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; các thế hệ sau tiếp tục tu bổ, bảo tồn đình.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thành hoàng."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Trường Thọ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hiện vật đặc biệt ở đình Trường Thọ chỉ được đánh mỗi năm một lần vào Đại lễ Cầu an là gì?",
           "options": [
-            "Đình Trường Thọ; Châu Văn Tiếp – nhân vật được truyền khẩu là vị tướng triều Nguyễn đ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Mõ gỗ cổ",
+            "Trống đồng",
+            "Chuông đá",
+            "Khánh đồng"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Đình Trường Thọ; Châu Văn Tiếp – nhân vật được truyền khẩu là vị tướng triều Nguyễn được thờ tại đình; vua Khải Định – người ban sắc phong năm 1926. - Hiện vật: Đình Trường Thọ; sắc phong vua Khải Định năm 1926; hệ thống tượng thờ, đồ thờ; hoành phi, câu đối và các cấu kiện kiến trúc gỗ có giá trị nghệ thuật.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Mõ gỗ cổ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Trường Thọ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đại lễ Cầu an tại đình Trường Thọ diễn ra vào tháng nào theo âm lịch?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Tháng 5",
+            "Tháng 2",
+            "Tháng 8",
+            "Tháng 11"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Trường Thọ được xếp hạng cấp Quốc gia theo Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Tháng 2."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Trường Thọ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Tượng cốt thần trong chính điện được đặt thờ vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Tổ 5, phường Thủ Đức, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "1989",
+            "1993",
+            "1999",
+            "2004"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Tổ 5, phường Thủ Đức, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1999."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Trường Thọ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Trường Thọ được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "2000",
+            "2004",
+            "2002"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 2002."
         }
       ],
       "flashcards": [
@@ -50576,73 +50576,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Đình Xuân Hiệp\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Đình Xuân Hiệp hiện tọa lạc trên tuyến đường nào?",
           "options": [
-            "Đình Xuân Hiệp; khoảng 1818–1885 - đình được hình thành với quy mô nhỏ, ban đầu bằng tre lá; 19...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Quốc lộ 1A",
+            "Quốc lộ 13",
+            "Đường Nguyễn Xiển",
+            "Xa lộ Hà Nội"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Đình Xuân Hiệp ghi dấu sự kiện: Đình Xuân Hiệp; khoảng 1818–1885 - đình được hình thành với quy mô nhỏ, ban đầu bằng tre lá; 1928 - đình được xây dựng khang trang theo kiểu 5 gian 2 chái; 1934 - vua Bảo Đại ban sắc phong Thành Hoàng; 15/12/2004 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; năm 2026 - dự án chuẩn bị tu bổ, tôn tạo di tích được triển khai.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Quốc lộ 1A."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Đình Xuân Hiệp\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Lễ hội quan trọng nhất được tổ chức tại Đình Xuân Hiệp là lễ nào?",
           "options": [
-            "Đình Xuân Hiệp; Thành Hoàng Bổn Cảnh của thôn Xuân Hiệp; vua Bảo Đại – người ban sắc ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Lễ vía Bà Thiên Hậu",
+            "Lễ Kỳ yên",
+            "Lễ Trùng cửu",
+            "Lễ Nghinh Ông"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Đình Xuân Hiệp; Thành Hoàng Bổn Cảnh của thôn Xuân Hiệp; vua Bảo Đại – người ban sắc phong năm 1934. - Hiện vật: Đình Xuân Hiệp; sắc phong vua Bảo Đại năm 1934; các tượng thờ, đồ thờ; hoành phi, câu đối; hệ thống cấu kiện gỗ và các chi tiết kiến trúc của đình.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Lễ Kỳ yên."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Đình Xuân Hiệp\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Ngoài Thành hoàng, khuôn viên Đình Xuân Hiệp còn có miếu thờ vị thần gắn với sông nước nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Ông Bổn",
+            "Ngọc Hoàng",
+            "Bà Thủy Long",
+            "Quan Thánh Đế Quân"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Đình Xuân Hiệp được xếp hạng cấp Quốc gia theo Số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Bà Thủy Long."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Đình Xuân Hiệp\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Lễ Hạ nêu tại Đình Xuân Hiệp diễn ra vào ngày nào theo âm lịch?",
           "options": [
-            "Tọa lạc tại địa chỉ: Phường Linh Xuân, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Mùng 10 tháng Mười",
+            "Rằm tháng Bảy",
+            "Rằm tháng Giêng",
+            "Mùng 7 tháng Giêng"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Phường Linh Xuân, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Mùng 7 tháng Giêng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Đình Xuân Hiệp\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Đình Xuân Hiệp được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2004",
+            "2010",
+            "1998",
+            "2001"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 2004."
         }
       ],
       "flashcards": [
@@ -51193,73 +51193,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Hội quán Hà Chương\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hội quán Hà Chương do cộng đồng người Hoa thuộc nhóm phương ngữ nào xây dựng?",
           "options": [
-            "Hà Chương Hội quán; trên 200 năm trước - cộng đồng người Hoa thuộc các huyện của phủ Chương Châ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Hải Nam",
+            "Phúc Kiến",
+            "Triều Châu",
+            "Quảng Đông"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Hội quán Hà Chương ghi dấu sự kiện: Hà Chương Hội quán; trên 200 năm trước - cộng đồng người Hoa thuộc các huyện của phủ Chương Châu hình thành hội quán; nhiều lần được trùng tu qua các thời kỳ; 28/12/2001 - được xếp hạng di tích cấp quốc gia; 14/04/2024 - khởi công dự án tu bổ, tôn tạo di tích.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Phúc Kiến."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Hội quán Hà Chương\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hội quán Hà Chương được xây dựng vào năm nào?",
           "options": [
-            "Hà Chương Hội quán; Thiên Hậu Thánh Mẫu; Quan Thánh Đế Quân; Thổ Địa; cộng đồng người...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1849",
+            "1789",
+            "1809",
+            "1829"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Hà Chương Hội quán; Thiên Hậu Thánh Mẫu; Quan Thánh Đế Quân; Thổ Địa; cộng đồng người Hoa gốc Phúc Kiến thuộc khu vực Chương Châu, Tuyền Châu. - Hiện vật: Hà Chương Hội quán; tượng Thiên Hậu; tượng Quan Thánh Đế Quân; các tượng thờ và đồ thờ; hệ thống chạm khắc gỗ, đá, gạch ngói; các mảng trang trí sành sứ trên mái.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1809."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Hội quán Hà Chương\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Chi tiết kiến trúc đặc sắc nào còn được bảo tồn tại Hội quán Hà Chương?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Tám khẩu pháo cổ",
+            "Hai tháp nước bằng thép",
+            "Hệ thống địa đạo ba tầng",
+            "Bốn cột đá nguyên khối chạm rồng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Hội quán Hà Chương được xếp hạng cấp Quốc gia theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Bốn cột đá nguyên khối chạm rồng."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Hội quán Hà Chương\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Các tượng Li Vẫn bằng mảnh gốm trên mái Hội quán Hà Chương mang ý nghĩa gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Trấn hỏa, cầu bình an cho công trình",
+            "Đánh dấu hướng ra biển",
+            "Tưởng niệm người khai hoang",
+            "Báo hiệu giờ sinh hoạt"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Trấn hỏa, cầu bình an cho công trình."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Hội quán Hà Chương\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hội quán Hà Chương được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1993",
+            "2001",
+            "1998",
+            "2004"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 2001."
         }
       ],
       "flashcards": [
@@ -51815,73 +51815,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hội quán Nghĩa An gắn chủ yếu với cộng đồng người Hoa nào?",
           "options": [
-            "Hội quán Nghĩa An; khoảng 1819–1820 - xây dựng kiên cố công trình; 1866, 1901, 1969, 1984 - nhi...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Phúc Kiến",
+            "Hải Nam",
+            "Triều Châu",
+            "Khách Gia"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) ghi dấu sự kiện: Hội quán Nghĩa An; khoảng 1819–1820 - xây dựng kiên cố công trình; 1866, 1901, 1969, 1984 - nhiều đợt trùng tu; 27/07/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; 2010–2014 - tiến hành dự án trùng tu lớn; 2026 - tiếp tục là trung tâm tổ chức lễ Nghinh Ông Quan Thánh Đế Quân và các hoạt động văn hóa Nguyên Tiêu.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Triều Châu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Vị thần được thờ chính tại Hội quán Nghĩa An là ai?",
           "options": [
-            "Hội quán Nghĩa An; Quan Thánh Đế Quân (Quan Công); Quan Bình; Châu Xương; Thiên Hậu T...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Thiên Hậu Thánh Mẫu",
+            "Ngọc Hoàng Thượng Đế",
+            "Ông Bổn",
+            "Quan Thánh Đế Quân"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Hội quán Nghĩa An; Quan Thánh Đế Quân (Quan Công); Quan Bình; Châu Xương; Thiên Hậu Thánh Mẫu; Phước Đức Chánh Thần; cộng đồng người Hoa gốc Triều Châu. - Hiện vật: Hội quán Nghĩa An; tượng Quan Công và các thần được thờ; hoành phi, câu đối; bao lam; hương án; đồ thờ bằng gỗ, đá, gốm; hệ thống phù điêu và trang trí mang phong cách Triều Châu.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Quan Thánh Đế Quân."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tên gọi “Nghĩa An” của hội quán gợi nhắc quê quán cũ của cộng đồng Triều Châu ở tỉnh nào của Trung Quốc?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Quảng Đông",
+            "Hải Nam",
+            "Vân Nam",
+            "Phúc Kiến"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông) được xếp hạng cấp Quốc gia theo Số 52/2001/QĐ-BVHTT ngày 28/12/2001 của Bộ Văn hóa – Thông tin.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Quảng Đông."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Lễ vía Quan Đế tại Hội quán Nghĩa An diễn ra vào ngày nào theo âm lịch?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "15 tháng 1",
+            "24 tháng 6",
+            "9 tháng 9",
+            "23 tháng 3"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 24 tháng 6."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hội quán Nghĩa An được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "2002",
+            "1993",
+            "1988"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -52432,73 +52432,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Hội quán Nghĩa Nhuận\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hội quán Nghĩa Nhuận hiện tọa lạc trên đường nào?",
           "options": [
-            "Hội quán Nghĩa Nhuận; đầu thế kỷ XIX - hình thành làng Tân Nhuận và đình làng; 1852 - vua Tự Đứ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Lão Tử",
+            "Hải Thượng Lãn Ông",
+            "Nguyễn Trãi",
+            "Phan Văn Khỏe"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Hội quán Nghĩa Nhuận ghi dấu sự kiện: Hội quán Nghĩa Nhuận; đầu thế kỷ XIX - hình thành làng Tân Nhuận và đình làng; 1852 - vua Tự Đức ban sắc phong Thành Hoàng; 1872 - đình trở thành Hội quán Nghĩa Nhuận; 1879, 1894, 1906, 1911 - các đợt trùng tu được ghi nhận; 07/01/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Phan Văn Khỏe."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Hội quán Nghĩa Nhuận\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Nghệ thuật trang trí nổi bật tại Hội quán Nghĩa Nhuận là loại hình nào?",
           "options": [
-            "Hội quán Nghĩa Nhuận; Thành Hoàng Bổn Cảnh; Quan Thánh Đế Quân; Thiên Hậu Thánh Mẫu; ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chạm khắc gỗ",
+            "Điêu khắc đá Chăm",
+            "Tranh sơn dầu châu Âu",
+            "Khảm trai cung đình Huế"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Hội quán Nghĩa Nhuận; Thành Hoàng Bổn Cảnh; Quan Thánh Đế Quân; Thiên Hậu Thánh Mẫu; cộng đồng Hội Nghĩa Nhuận và cư dân làng Tân Nhuận. - Hiện vật: Hội quán Nghĩa Nhuận; sắc phong Thành Hoàng vua Tự Đức năm 1852; tượng Quan Đế; tượng Thiên Hậu; hoành phi, câu đối và đồ thờ truyền thống.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chạm khắc gỗ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Hội quán Nghĩa Nhuận\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Mô-típ nào được ghi nhận trong nghệ thuật chạm gỗ tại Hội quán Nghĩa Nhuận?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Vũ nữ Apsara",
+            "Trái đào lộn hột và măng cụt",
+            "Hoa sen trên trống đồng",
+            "Chim Lạc và thuyền chiến"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Hội quán Nghĩa Nhuận được xếp hạng cấp Quốc gia theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Trái đào lộn hột và măng cụt."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Hội quán Nghĩa Nhuận\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Chi tiết đá đặc sắc ở phía trước Hội quán Nghĩa Nhuận là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Một cầu đá ba nhịp",
+            "Một bia đá Chăm",
+            "Hai cột đá chạm rồng",
+            "Hai tượng voi đá"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Hai cột đá chạm rồng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Hội quán Nghĩa Nhuận\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hội quán Nghĩa Nhuận được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2001",
+            "1988",
+            "1998",
+            "1993"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -53049,73 +53049,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Hội quán Ôn Lăng\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hội quán Ôn Lăng gắn với cộng đồng người Hoa đến từ địa phương nào của Phúc Kiến?",
           "options": [
-            "Hội quán Ôn Lăng; 1787 - Nguyễn Ánh cho phép các lưu dân người Hoa lập các bang hội; thế kỷ XVI...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tuyền Châu",
+            "Phúc Châu",
+            "Hạ Môn",
+            "Chương Châu"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Hội quán Ôn Lăng ghi dấu sự kiện: Hội quán Ôn Lăng; 1787 - Nguyễn Ánh cho phép các lưu dân người Hoa lập các bang hội; thế kỷ XVIII - hội quán được hình thành và trở thành nơi sinh hoạt của cộng đồng người Hoa gốc Tuyền Châu; 1869 - lập bia đá tại hội quán; 07/01/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; 2026 - tiếp tục là nơi diễn ra các hoạt động tín ngưỡng, đặc biệt dịp Nguyên Tiêu.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tuyền Châu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Hội quán Ôn Lăng\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hội quán Ôn Lăng hiện tọa lạc tại số 12 đường nào?",
           "options": [
-            "Hội quán Ôn Lăng; Thiên Hậu Thánh Mẫu; Quan Âm; các vị thần được cộng đồng người Hoa ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nguyễn Trãi",
+            "Lão Tử",
+            "Triệu Quang Phục",
+            "Phan Văn Khỏe"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Hội quán Ôn Lăng; Thiên Hậu Thánh Mẫu; Quan Âm; các vị thần được cộng đồng người Hoa gốc Tuyền Châu thờ phụng; Nguyễn Ánh liên quan đến việc cho phép các bang người Hoa tổ chức hội quán năm 1787. - Hiện vật: Hội quán Ôn Lăng; bia đá năm 1869; tượng và đồ thờ Thiên Hậu, Quan Âm cùng các vị thần; hoành phi, câu đối và các tác phẩm trang trí gốm sứ.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Lão Tử."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Hội quán Ôn Lăng\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tên gọi dân gian nào sau đây cũng dùng để chỉ Hội quán Ôn Lăng?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Chùa Bà",
+            "Chùa Ông Bổn",
+            "Chùa Quan Âm",
+            "Chùa Ngọc Hoàng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Hội quán Ôn Lăng được xếp hạng cấp Quốc gia theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Chùa Quan Âm."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Hội quán Ôn Lăng\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Hội quán Ôn Lăng đã trải qua một đợt trùng tu vào năm nào sau đây?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "2009",
+            "1988",
+            "1975",
+            "2017"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 2017."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Hội quán Ôn Lăng\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hội quán Ôn Lăng được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2002",
+            "1998",
+            "2004",
+            "1993"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 2002."
         }
       ],
       "flashcards": [
@@ -53666,73 +53666,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Hội quán Quỳnh Phủ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hội quán Quỳnh Phủ tại Thành phố Hồ Chí Minh còn được gọi bằng tên nào?",
           "options": [
-            "Quỳnh Phủ Hội quán; 1824 - hội quán được thành lập bởi cộng đồng người Hoa đến từ đảo Hải Nam; ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chùa Quan Âm",
+            "Chùa Hải Nam",
+            "Chùa Ngọc Hoàng",
+            "Chùa Ông Bổn"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Hội quán Quỳnh Phủ ghi dấu sự kiện: Quỳnh Phủ Hội quán; 1824 - hội quán được thành lập bởi cộng đồng người Hoa đến từ đảo Hải Nam; 1827 - đúc đại hồng chung; 31/08/1998 - được xếp hạng di tích cấp quốc gia; 2024 - tổ chức kỷ niệm 200 năm thành lập Quỳnh Phủ Hội quán; hằng năm - duy trì các hoạt động tín ngưỡng và văn hóa cộng đồng.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Chùa Hải Nam."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Hội quán Quỳnh Phủ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hội quán Quỳnh Phủ gắn với cộng đồng người Hoa nào?",
           "options": [
-            "Quỳnh Phủ Hội quán; cộng đồng người Hoa gốc Hải Nam; các vị thần được thờ tại hội quá...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Phúc Kiến",
+            "Khách Gia",
+            "Hải Nam",
+            "Triều Châu"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Quỳnh Phủ Hội quán; cộng đồng người Hoa gốc Hải Nam; các vị thần được thờ tại hội quán; vua Duy Tân – người ban sắc được lưu giữ tại hội quán. - Hiện vật: Quỳnh Phủ Hội quán; sắc vua Duy Tân; đại hồng chung đúc năm 1827; bộ tranh sơn mài Lục Vân Tiên gồm 6 bức; các hoành phi, câu đối và đồ thờ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Hải Nam."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Hội quán Quỳnh Phủ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Hội quán Quỳnh Phủ hiện tọa lạc trên đường nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Lão Tử",
+            "Hải Thượng Lãn Ông",
+            "Nguyễn Trãi",
+            "Trần Hưng Đạo"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Hội quán Quỳnh Phủ được xếp hạng cấp Quốc gia theo Số 1811/1998/QĐ-BVHTT ngày 31/8/1998 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Trần Hưng Đạo."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Hội quán Quỳnh Phủ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Chức năng truyền thống quan trọng của hội quán đối với người Hải Nam là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Nơi sinh hoạt tín ngưỡng và gắn kết đồng hương",
+            "Nhà tù thuộc địa",
+            "Trạm phòng thủ quân sự",
+            "Xưởng sản xuất gốm"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Nơi sinh hoạt tín ngưỡng và gắn kết đồng hương."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Hội quán Quỳnh Phủ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hội quán Quỳnh Phủ được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2012",
+            "2001",
+            "1998",
+            "2004"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 2001."
         }
       ],
       "flashcards": [
@@ -54288,73 +54288,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Hội quán Tuệ Thành (Chùa Bà)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hội quán Tuệ Thành thường được người dân gọi là gì?",
           "options": [
-            "Hội quán Tuệ Thành; khoảng 1760 - cộng đồng người Hoa gốc Tuệ Thành/Quảng Châu xây dựng miếu th...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chùa Ngọc Hoàng",
+            "Chùa Ông",
+            "Chùa Bà",
+            "Chùa Ông Bổn"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Hội quán Tuệ Thành (Chùa Bà) ghi dấu sự kiện: Hội quán Tuệ Thành; khoảng 1760 - cộng đồng người Hoa gốc Tuệ Thành/Quảng Châu xây dựng miếu thờ Thiên Hậu; nhiều lần trùng tu trong các thế kỷ XVIII–XX; 07/01/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; hằng năm - tổ chức các nghi lễ vía Thiên Hậu và hoạt động tín ngưỡng, trong đó có tục khai ấn dịp cuối năm.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Chùa Bà."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Hội quán Tuệ Thành (Chùa Bà)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Vị thần được thờ chính tại Hội quán Tuệ Thành là ai?",
           "options": [
-            "Hội quán Tuệ Thành; Thiên Hậu Thánh Mẫu; cộng đồng người Hoa gốc Quảng Châu/Quảng Đôn...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Tề Thiên Đại Thánh",
+            "Quan Thánh Đế Quân",
+            "Ngọc Hoàng",
+            "Thiên Hậu Thánh Mẫu"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Hội quán Tuệ Thành; Thiên Hậu Thánh Mẫu; cộng đồng người Hoa gốc Quảng Châu/Quảng Đông; các ban quản trị hội quán qua nhiều thế hệ. - Hiện vật: Hội quán Tuệ Thành; đại hồng chung; bộ lư Pháp lam đề niên hiệu Đạo Quang năm thứ 10 (1830); tượng Thiên Hậu; các phù điêu, tranh đắp nổi và đồ thờ; hai tượng lân đá.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thiên Hậu Thánh Mẫu."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Hội quán Tuệ Thành (Chùa Bà)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Hội quán Tuệ Thành gắn chủ yếu với cộng đồng người Hoa nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Quảng Đông",
+            "Hải Nam",
+            "Triều Châu",
+            "Phúc Kiến"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Hội quán Tuệ Thành (Chùa Bà) được xếp hạng cấp Quốc gia theo Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Quảng Đông."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Hội quán Tuệ Thành (Chùa Bà)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Hội quán Tuệ Thành hiện tọa lạc trên đường nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Trần Hưng Đạo",
+            "Nguyễn Trãi",
+            "Lão Tử",
+            "Phan Văn Khỏe"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Nguyễn Trãi."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Hội quán Tuệ Thành (Chùa Bà)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hội quán Tuệ Thành được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1988",
+            "1998",
+            "1993",
+            "2001"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -54985,73 +54985,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Lăng Lê Văn Duyệt\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Lăng Lê Văn Duyệt còn được người dân gọi bằng tên quen thuộc nào?",
           "options": [
-            "Lăng Lê Văn Duyệt; 1832 - Lê Văn Duyệt qua đời tại Gia Định và được an táng tại khu vực Bà Chiể...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Lăng Ông Nam Hải",
+            "Lăng Tả quân Gia Định",
+            "Lăng Đức Quốc Công",
+            "Lăng Ông Bà Chiểu"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Lăng Lê Văn Duyệt ghi dấu sự kiện: Lăng Lê Văn Duyệt; 1832 - Lê Văn Duyệt qua đời tại Gia Định và được an táng tại khu vực Bà Chiểu; các thế kỷ XIX–XX - khu lăng miếu được xây dựng, tu bổ và trở thành nơi tưởng niệm Tả quân; 16/11/1988 - được xếp hạng di tích cấp quốc gia; hằng năm - tổ chức lễ giỗ Tả quân Lê Văn Duyệt vào cuối tháng 7 âm lịch, duy trì nghi thức tế lễ truyền thống.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Lăng Ông Bà Chiểu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Lăng Lê Văn Duyệt\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Lê Văn Duyệt từng hai lần giữ chức vụ nào ở Gia Định?",
           "options": [
-            "Lăng Lê Văn Duyệt; Đức Thượng công Tả quân Lê Văn Duyệt; Chánh thất Tả quân phu nhân ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Tổng trấn Gia Định thành",
+            "Kinh lược sứ Bắc Kỳ",
+            "Thống đốc Nam Kỳ",
+            "Tổng đốc Hà Nội"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Lăng Lê Văn Duyệt; Đức Thượng công Tả quân Lê Văn Duyệt; Chánh thất Tả quân phu nhân Đỗ Thị Phẫn; các hậu duệ họ Lê và cộng đồng cư dân Gia Định – Sài Gòn. - Hiện vật: Lăng Lê Văn Duyệt; mộ song táng của Lê Văn Duyệt và Đỗ Thị Phẫn; bình phong; bia đá; hương án; đồ thờ; các cấu kiện kiến trúc và trang trí trong khu lăng miếu.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tổng trấn Gia Định thành."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Lăng Lê Văn Duyệt\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Khu lăng là nơi an táng Lê Văn Duyệt cùng ai?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Con trai Lê Văn Khôi",
+            "Phu nhân Đỗ Thị Phận",
+            "Phó tổng trấn Trương Tấn Bửu",
+            "Mẹ là bà Nguyễn Thị"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Lăng Lê Văn Duyệt được xếp hạng cấp Quốc gia theo Số 1288-VH/QĐ ngày 16/11/1998 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Phu nhân Đỗ Thị Phận."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Lăng Lê Văn Duyệt\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Lễ hội truyền thống quan trọng tại Lăng Lê Văn Duyệt gắn với ngày nào của ông?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Ngày nhậm chức",
+            "Ngày được phong tước",
+            "Ngày giỗ",
+            "Ngày sinh"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Ngày giỗ."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Lăng Lê Văn Duyệt\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Lăng Lê Văn Duyệt được xếp hạng di tích quốc gia vào giai đoạn nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "Cuối thập niên 1990",
+            "Sau năm 2010",
+            "Đầu thập niên 1970",
+            "Cuối thập niên 1980"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Cuối thập niên 1980."
         }
       ],
       "flashcards": [
@@ -55602,73 +55602,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Lăng Trương Tấn Bửu\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Trương Tấn Bửu là danh thần phục vụ chủ yếu dưới triều đại nào?",
           "options": [
-            "Lăng Trương Tấn Bửu; cuối thế kỷ XVIII – đầu thế kỷ XIX, Trương Tấn Bửu tham gia hoạt động quân...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Nhà Nguyễn",
+            "Nhà Tây Sơn",
+            "Nhà Trần",
+            "Nhà Lý"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Lăng Trương Tấn Bửu ghi dấu sự kiện: Lăng Trương Tấn Bửu; cuối thế kỷ XVIII – đầu thế kỷ XIX, Trương Tấn Bửu tham gia hoạt động quân sự dưới quyền Nguyễn Ánh; sau khi qua đời, ông được an táng và lập lăng tại vùng Phú Nhuận; 15/12/2004, lăng được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Nhà Nguyễn."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Lăng Trương Tấn Bửu\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Trương Tấn Bửu có công lớn trong quá trình khai phá và ổn định vùng nào?",
           "options": [
-            "Trương Tấn Bửu; vua Gia Long; các tướng lĩnh và quan lại triều Nguyễn hoạt động tại G...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Đồng bằng sông Hồng",
+            "Nam Bộ",
+            "Tây Bắc",
+            "Bắc Trung Bộ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Trương Tấn Bửu; vua Gia Long; các tướng lĩnh và quan lại triều Nguyễn hoạt động tại Gia Định. - Hiện vật: Lăng Trương Tấn Bửu; mộ và bia mộ Trương Tấn Bửu; các đồ thờ, hoành phi, câu đối và kiến trúc lăng mộ.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Nam Bộ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Lăng Trương Tấn Bửu\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Lăng Trương Tấn Bửu hiện nằm trên đường nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Mai Văn Ngọc",
+            "Vũ Tùng",
+            "Nguyễn Thị Huỳnh",
+            "Cô Giang"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Lăng Trương Tấn Bửu được xếp hạng cấp Quốc gia theo Số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Nguyễn Thị Huỳnh."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Lăng Trương Tấn Bửu\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị chính của Lăng Trương Tấn Bửu gắn với việc tưởng niệm điều gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Một thương nhân người Hoa",
+            "Một thủ lĩnh phong trào Đông Du",
+            "Một nhà khảo cổ học",
+            "Công lao của một danh thần có đóng góp cho vùng đất phương Nam"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Công lao của một danh thần có đóng góp cho vùng đất phương Nam."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Lăng Trương Tấn Bửu\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Lăng Trương Tấn Bửu được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2004",
+            "1993",
+            "1998",
+            "2012"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 2004."
         }
       ],
       "flashcards": [
@@ -56214,73 +56214,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Lăng Võ Di Nguy\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Võ Di Nguy là võ tướng dưới triều vua nào?",
           "options": [
-            "Lăng Võ Di Nguy; cuối thế kỷ XVIII, Võ Di Nguy tham gia lực lượng Nguyễn Ánh chống Tây Sơn; ông...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tự Đức",
+            "Gia Long",
+            "Thành Thái",
+            "Bảo Đại"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Lăng Võ Di Nguy ghi dấu sự kiện: Lăng Võ Di Nguy; cuối thế kỷ XVIII, Võ Di Nguy tham gia lực lượng Nguyễn Ánh chống Tây Sơn; ông giữ vai trò quan trọng trong các hoạt động quân sự và thủy quân; 07/01/1993, lăng được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Gia Long."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Lăng Võ Di Nguy\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Võ Di Nguy hy sinh trong trận chiến nào năm 1801?",
           "options": [
-            "Võ Di Nguy; Nguyễn Ánh (vua Gia Long); các tướng lĩnh thuộc lực lượng Nguyễn Ánh tron...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Trận Rạch Gầm – Xoài Mút",
+            "Trận Ngọc Hồi – Đống Đa",
+            "Trận Thị Nại",
+            "Trận Đà Nẵng"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Võ Di Nguy; Nguyễn Ánh (vua Gia Long); các tướng lĩnh thuộc lực lượng Nguyễn Ánh trong cuộc chiến với Tây Sơn. - Hiện vật: Lăng Võ Di Nguy; mộ Võ Di Nguy; bia mộ, bàn thờ và các đồ tế tự liên quan đến nhân vật.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Trận Thị Nại."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Lăng Võ Di Nguy\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Lăng Võ Di Nguy hiện nằm trên đường nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Vũ Tùng",
+            "Nguyễn Thị Huỳnh",
+            "Phan Thúc Duyện",
+            "Cô Giang"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Lăng Võ Di Nguy được xếp hạng cấp Quốc gia theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Cô Giang."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Lăng Võ Di Nguy\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Chức danh quân sự thường gắn với Võ Di Nguy là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Thủy quân Đô đốc",
+            "Đốc học Gia Định",
+            "Kinh lược sứ",
+            "Tổng trấn Gia Định"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thủy quân Đô đốc."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Lăng Võ Di Nguy\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Lăng Võ Di Nguy được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "1993",
+            "2004",
+            "1988"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -56883,73 +56883,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Linh Sơn Cổ Tự\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Năm 1919, dân làng Thắng Tam dời Linh Sơn Cổ Tự về khu vực gần công trình nào?",
           "options": [
-            "Linh Sơn Cổ Tự; hình thành và phát triển gắn với lịch sử Phật giáo tại Vũng Tàu; nhiều lần được...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Hải đăng Vũng Tàu",
+            "Nhà Lớn Long Sơn",
+            "Đình Thắng Tam",
+            "Bạch Dinh"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Linh Sơn Cổ Tự ghi dấu sự kiện: Linh Sơn Cổ Tự; hình thành và phát triển gắn với lịch sử Phật giáo tại Vũng Tàu; nhiều lần được tu bổ qua các thời kỳ; 03/08/1991, được xếp hạng di tích quốc gia theo Quyết định 1371/QĐ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Đình Thắng Tam."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Linh Sơn Cổ Tự\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Thế đất của Linh Sơn Cổ Tự được mô tả bằng cụm từ nào?",
           "options": [
-            "Các vị trụ trì và tăng ni Linh Sơn Cổ Tự; cộng đồng Phật tử và cư dân Vũng Tàu qua cá...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Long chầu hổ phục",
+            "Tiền thủy hậu sơn",
+            "Tọa sơn hướng hải",
+            "Án sơn tụ thủy"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các vị trụ trì và tăng ni Linh Sơn Cổ Tự; cộng đồng Phật tử và cư dân Vũng Tàu qua các thời kỳ. - Hiện vật: Linh Sơn Cổ Tự; tượng Phật, tượng Bồ Tát, chuông, đồ thờ, hoành phi, câu đối và các tác phẩm trang trí Phật giáo.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Án sơn tụ thủy."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Linh Sơn Cổ Tự\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Hiện vật đặc biệt được bảo lưu tại chính điện Linh Sơn Cổ Tự là gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Tượng Phật bằng đá cao khoảng 1,2 m",
+            "Bộ tượng Thập Bát La Hán bằng đá",
+            "Tượng Quan Âm bằng đồng cao 10 m",
+            "Chuông đồng nặng 5 tấn"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Linh Sơn Cổ Tự được xếp hạng cấp Quốc gia theo Số 1371/QĐ ngày 03/08/1991.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tượng Phật bằng đá cao khoảng 1,2 m."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Linh Sơn Cổ Tự\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Linh Sơn Cổ Tự được trùng tu thành diện mạo gần với hiện nay vào năm nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "1975",
+            "1959",
+            "1919",
+            "1945"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1959."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Linh Sơn Cổ Tự\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Linh Sơn Cổ Tự được công nhận di tích lịch sử – văn hóa quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2001",
+            "1989",
+            "1991",
+            "1993"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1991."
         }
       ],
       "flashcards": [
@@ -57504,73 +57504,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Miếu Nhị Phủ còn được gọi bằng tên nào?",
           "options": [
-            "Miếu Nhị Phủ; hình thành trong quá trình cộng đồng người Hoa xây dựng Chợ Lớn; trở thành trung ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chùa Quan Âm",
+            "Chùa Ông",
+            "Chùa Bà",
+            "Chùa Ông Bổn"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Miếu Nhị Phủ (Chùa Ông Bổn) ghi dấu sự kiện: Miếu Nhị Phủ; hình thành trong quá trình cộng đồng người Hoa xây dựng Chợ Lớn; trở thành trung tâm tín ngưỡng Ông Bổn của cộng đồng; nhiều lần được tu bổ; 07/01/1993, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Chùa Ông Bổn."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tên gọi “Nhị Phủ” phản ánh sự liên kết của người Hoa đến từ hai phủ nào ở Phúc Kiến?",
           "options": [
-            "Ông Bổn/Phước Đức Chánh Thần; các vị thần được cộng đồng người Hoa thờ phụng; cộng đồ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Tuyền Châu và Chương Châu",
+            "Quảng Châu và Triều Châu",
+            "Hải Khẩu và Tam Á",
+            "Phúc Châu và Nam Kinh"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Ông Bổn/Phước Đức Chánh Thần; các vị thần được cộng đồng người Hoa thờ phụng; cộng đồng người Hoa tại Chợ Lớn. - Hiện vật: Miếu Nhị Phủ; tượng Ông Bổn/Phước Đức Chánh Thần; tượng và đồ thờ; hoành phi, câu đối; hương án; các mảng chạm khắc, phù điêu và trang trí gốm sứ.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tuyền Châu và Chương Châu."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Miếu Nhị Phủ hiện tọa lạc trên đường nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Nguyễn Trãi",
+            "Hải Thượng Lãn Ông",
+            "Lão Tử",
+            "Trần Hưng Đạo"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Miếu Nhị Phủ (Chùa Ông Bổn) được xếp hạng cấp Quốc gia theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Hải Thượng Lãn Ông."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Vị thần được thờ chính tại Miếu Nhị Phủ là ai?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Quan Thánh Đế Quân",
+            "Thiên Hậu Thánh Mẫu",
+            "Ông Bổn",
+            "Ngọc Hoàng"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Ông Bổn."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Miếu Nhị Phủ (Chùa Ông Bổn)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Miếu Nhị Phủ được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1993",
+            "2001",
+            "2004",
+            "1998"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1998."
         }
       ],
       "flashcards": [
@@ -58121,73 +58121,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Miếu Thiên Hậu trong Quảng Triệu hội quán thờ vị thần nào?",
           "options": [
-            "Miếu Thiên Hậu (Quảng Triệu hội quán); hình thành từ quá trình định cư của người Hoa Quảng Đông...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Thiên Hậu Thánh Mẫu",
+            "Ông Bổn",
+            "Ngọc Hoàng",
+            "Quan Thánh Đế Quân"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Miếu Thiên Hậu (Quảng Triệu hội quán) ghi dấu sự kiện: Miếu Thiên Hậu (Quảng Triệu hội quán); hình thành từ quá trình định cư của người Hoa Quảng Đông tại Sài Gòn – Chợ Lớn; duy trì các nghi lễ vía Thiên Hậu và hoạt động cộng đồng; 25/04/1998, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Thiên Hậu Thánh Mẫu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tên gọi “Quảng Triệu” phản ánh cộng đồng người Hoa đến từ hai khu vực nào?",
           "options": [
-            "Thiên Hậu Thánh Mẫu; Quan Thánh Đế Quân và các vị thần được thờ tại hội quán; cộng đồ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Quảng Tây và Triệu Sơn",
+            "Quảng Châu và Triệu Khánh",
+            "Quảng Đông và Phúc Kiến",
+            "Quảng Châu và Triều Châu"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Thiên Hậu Thánh Mẫu; Quan Thánh Đế Quân và các vị thần được thờ tại hội quán; cộng đồng người Hoa gốc Quảng Đông. - Hiện vật: Miếu Thiên Hậu; tượng Thiên Hậu Thánh Mẫu; lư hương, chuông, đồ thờ; hoành phi, câu đối; các mảng chạm khắc và trang trí gốm sứ đặc trưng của hội quán người Hoa.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Quảng Châu và Triệu Khánh."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Miếu Thiên Hậu – Quảng Triệu hội quán trước đây nằm trên tuyến đường nào ven trung tâm Sài Gòn?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Lão Tử",
+            "Hải Thượng Lãn Ông",
+            "Bến Chương Dương",
+            "Nguyễn Trãi"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Miếu Thiên Hậu (Quảng Triệu hội quán) được xếp hạng cấp Quốc gia theo Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Bến Chương Dương."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Tín ngưỡng Thiên Hậu đặc biệt gắn với mong ước bảo hộ cho hoạt động nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Khai thác mỏ",
+            "Săn bắt trong rừng",
+            "Trồng lúa trên núi",
+            "Đi biển và hành trình đường thủy"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Đi biển và hành trình đường thủy."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Miếu Thiên Hậu (Quảng Triệu hội quán)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Miếu Thiên Hậu – Quảng Triệu hội quán được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1998",
+            "2012",
+            "1993",
+            "2001"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1998."
         }
       ],
       "flashcards": [
@@ -58738,73 +58738,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà cổ Trần Công Vàng\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Nhà cổ Trần Công Vàng nằm ở khu vực đô thị nào của Bình Dương cũ?",
           "options": [
-            "Nhà cổ Trần Công Vàng; 1889–1892, công trình được xây dựng; trải qua nhiều thế hệ gia đình họ T...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Tân Uyên",
+            "Thủ Dầu Một",
+            "Dĩ An",
+            "Thuận An"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nhà cổ Trần Công Vàng ghi dấu sự kiện: Nhà cổ Trần Công Vàng; 1889–1892, công trình được xây dựng; trải qua nhiều thế hệ gia đình họ Trần gìn giữ; 07/01/1993, được công nhận di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Thủ Dầu Một."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà cổ Trần Công Vàng\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Ngôi nhà cổ Trần Công Vàng tiêu biểu cho loại hình kiến trúc nào?",
           "options": [
-            "Trần Công Vàng; ông Trần Văn Long – người xây dựng ngôi nhà; các thế hệ gia đình họ T...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Nhà sàn người Thái",
+            "Biệt thự Pháp ven biển",
+            "Nhà ở truyền thống Nam Bộ",
+            "Nhà dài Tây Nguyên"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Trần Công Vàng; ông Trần Văn Long – người xây dựng ngôi nhà; các thế hệ gia đình họ Trần. - Hiện vật: Nhà cổ Trần Công Vàng; hệ thống nhà gỗ; bàn thờ, tủ thờ, bàn ghế, hoành phi, liễn đối, câu đối, tranh tứ bình và các mảng chạm khắc, cẩn xà cừ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Nhà ở truyền thống Nam Bộ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà cổ Trần Công Vàng\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Vật liệu chủ đạo tạo nên hệ khung của nhà cổ Trần Công Vàng là gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Gạch kính",
+            "Thép",
+            "Bê tông cốt thép",
+            "Gỗ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà cổ Trần Công Vàng được xếp hạng cấp Quốc gia theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Gỗ."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà cổ Trần Công Vàng\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị nổi bật của ngôi nhà thể hiện rõ qua yếu tố nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Nghệ thuật chạm khắc gỗ và bố cục nhà truyền thống",
+            "Hệ thống pháo phòng thủ",
+            "Hầm giam dưới lòng đất",
+            "Mộ chum khảo cổ"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Nghệ thuật chạm khắc gỗ và bố cục nhà truyền thống."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà cổ Trần Công Vàng\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Nhà cổ Trần Công Vàng được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1988",
+            "1993",
+            "2001",
+            "2009"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -59350,73 +59350,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà cổ Trần Văn Hổ\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Nhà cổ Trần Văn Hổ nằm tại khu vực nào của Bình Dương cũ?",
           "options": [
-            "Nhà cổ Trần Văn Hổ; 1890, cụ Trần Văn Lân xây dựng ngôi nhà cho gia đình; Trần Văn Hổ (Tự Đẩu) ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Bến Cát",
+            "Dầu Tiếng",
+            "Thủ Dầu Một",
+            "Phú Giáo"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nhà cổ Trần Văn Hổ ghi dấu sự kiện: Nhà cổ Trần Văn Hổ; 1890, cụ Trần Văn Lân xây dựng ngôi nhà cho gia đình; Trần Văn Hổ (Tự Đẩu) sinh sống và hoạt động tại đây; 29/04/1993, nhà được công nhận di tích quốc gia theo các nguồn giới thiệu về di tích.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Thủ Dầu Một."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà cổ Trần Văn Hổ\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Nhà cổ Trần Văn Hổ phản ánh rõ nét không gian sống của tầng lớp nào ở Nam Bộ xưa?",
           "options": [
-            "Trần Văn Hổ (Tự Đẩu); Trần Văn Lân – thân sinh Trần Văn Hổ và người xây dựng nhà; các...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Công nhân hầm mỏ",
+            "Ngư dân ven biển",
+            "Cư dân du mục",
+            "Gia đình khá giả ở đô thị – miệt vườn Nam Bộ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Trần Văn Hổ (Tự Đẩu); Trần Văn Lân – thân sinh Trần Văn Hổ và người xây dựng nhà; các thế hệ gia đình họ Trần. - Hiện vật: Nhà cổ Trần Văn Hổ; kết cấu nhà gỗ; bàn thờ gia tiên; hoành phi, câu đối, liễn đối; đồ gia dụng và các chi tiết chạm khắc gỗ mang phong cách Nam Bộ cuối thế kỷ XIX.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Gia đình khá giả ở đô thị – miệt vườn Nam Bộ."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà cổ Trần Văn Hổ\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Đặc điểm nghệ thuật đáng chú ý của nhà cổ Trần Văn Hổ là gì?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Trang trí và chạm khắc gỗ tinh xảo",
+            "Phù điêu đá Chăm",
+            "Khảm gốm Nhật Bản",
+            "Tranh kính Gothic châu Âu"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà cổ Trần Văn Hổ được xếp hạng cấp Quốc gia theo Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa và Thông tin.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Trang trí và chạm khắc gỗ tinh xảo."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà cổ Trần Văn Hổ\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Nhà cổ Trần Văn Hổ thuộc nhóm di tích nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Lịch sử quân sự",
+            "Kiến trúc nghệ thuật",
+            "Danh lam thắng cảnh",
+            "Khảo cổ"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Kiến trúc nghệ thuật."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà cổ Trần Văn Hổ\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Nhà cổ Trần Văn Hổ được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2001",
+            "2014",
+            "1993",
+            "1989"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1993."
         }
       ],
       "flashcards": [
@@ -59962,73 +59962,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà hát Thành phố Hồ Chí Minh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Nhà hát Thành phố Hồ Chí Minh được khánh thành vào năm nào?",
           "options": [
-            "Nhà hát Thành phố; cuối thế kỷ XIX, Nhà hát được xây dựng trong thời kỳ Pháp thuộc; trở thành m...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1909",
+            "1929",
+            "1898",
+            "1900"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nhà hát Thành phố Hồ Chí Minh ghi dấu sự kiện: Nhà hát Thành phố; cuối thế kỷ XIX, Nhà hát được xây dựng trong thời kỳ Pháp thuộc; trở thành một công trình văn hóa quan trọng của Sài Gòn; 29/03/2012, được xếp hạng di tích quốc gia theo Quyết định 1209/QĐ-BVHTTDL.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1900."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà hát Thành phố Hồ Chí Minh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Kiến trúc Nhà hát Thành phố mang ảnh hưởng chủ yếu của phong cách nào?",
           "options": [
-            "Các kiến trúc sư, nghệ nhân Pháp và Việt Nam tham gia xây dựng, trang trí Nhà hát; cá...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Kiến trúc Pháp cuối thế kỷ XIX",
+            "Kiến trúc Khmer",
+            "Kiến trúc đình làng Nam Bộ",
+            "Kiến trúc Chăm"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các kiến trúc sư, nghệ nhân Pháp và Việt Nam tham gia xây dựng, trang trí Nhà hát; các nghệ sĩ, đoàn nghệ thuật từng hoạt động tại Nhà hát Thành phố. - Hiện vật: Nhà hát Thành phố; mặt tiền, phù điêu, tượng trang trí, hệ thống cầu thang, nội thất khán phòng, sân khấu và các chi tiết kiến trúc mang phong cách Pháp.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Kiến trúc Pháp cuối thế kỷ XIX."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà hát Thành phố Hồ Chí Minh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Sau năm 1956, tòa nhà Nhà hát từng được sử dụng làm trụ sở của cơ quan nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Bộ chỉ huy quân đội Pháp",
+            "Quốc hội của chính quyền Việt Nam Cộng hòa",
+            "Hội đồng thành phố Sài Gòn",
+            "Tòa án Nam Kỳ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà hát Thành phố Hồ Chí Minh được xếp hạng cấp Quốc gia theo Số 1209/QĐ-BVHTTDL ngày 29/03/2012 của Bộ Văn hóa, Thể thao và Du lịch.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Quốc hội của chính quyền Việt Nam Cộng hòa."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà hát Thành phố Hồ Chí Minh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Sau năm 1975, công trình trở lại chức năng chính nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Trụ sở hành chính",
+            "Nhà ga trung tâm",
+            "Biểu diễn nghệ thuật",
+            "Bảo tàng lịch sử"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Biểu diễn nghệ thuật."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà hát Thành phố Hồ Chí Minh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Nhà hát Thành phố Hồ Chí Minh được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2020",
+            "1998",
+            "2004",
+            "2012"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 2012."
         }
       ],
       "flashcards": [
@@ -60579,73 +60579,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà Lớn Long Sơn\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Người sáng lập Nhà Lớn Long Sơn, thường được gọi là Ông Trần, có tên thật là gì?",
           "options": [
-            "Nhà Lớn Long Sơn; đầu thế kỷ XX, ông Trần xây dựng và phát triển khu Nhà Lớn; nơi đây trở thành...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Lê Văn Mưu",
+            "Trần Văn Hổ",
+            "Trương Tấn Bửu",
+            "Lê Văn Duyệt"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Nhà Lớn Long Sơn ghi dấu sự kiện: Nhà Lớn Long Sơn; đầu thế kỷ XX, ông Trần xây dựng và phát triển khu Nhà Lớn; nơi đây trở thành trung tâm sinh hoạt của cộng đồng Long Sơn; 03/08/1991, được xếp hạng di tích lịch sử – văn hóa cấp quốc gia theo Quyết định 1371/QĐ.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Lê Văn Mưu."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà Lớn Long Sơn\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Quần thể Nhà Lớn Long Sơn được xây dựng chủ yếu trong khoảng thời gian nào?",
           "options": [
-            "Ông Trần – người khai sáng cộng đồng Long Sơn; các thế hệ cư dân và tín đồ theo đạo Ô...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1850–1860",
+            "1910–1929",
+            "1939–1945",
+            "1960–1975"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Ông Trần – người khai sáng cộng đồng Long Sơn; các thế hệ cư dân và tín đồ theo đạo Ông Trần. - Hiện vật: Nhà Lớn Long Sơn; hệ thống nhà gỗ, bàn thờ, hoành phi, câu đối, đồ thờ, vật dụng sinh hoạt và các cấu kiện gỗ cổ trong quần thể.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1910–1929."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà Lớn Long Sơn\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Ngày giỗ Ông Trần tại Nhà Lớn diễn ra vào ngày nào theo âm lịch?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "23 tháng 3",
+            "24 tháng 6",
+            "20 tháng 2",
+            "9 tháng 9"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà Lớn Long Sơn được xếp hạng cấp Quốc gia theo Số 1371/QĐ ngày 03/08/1991.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 20 tháng 2."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà Lớn Long Sơn\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Lễ hội lớn khác tại Nhà Lớn diễn ra vào ngày 9 tháng 9 âm lịch có tên là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Thôn 5, phường Long Sơn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Lễ Kỳ yên",
+            "Lễ Nghinh Ông",
+            "Lễ Thượng nguyên",
+            "Tết Trùng cửu"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Thôn 5, phường Long Sơn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Tết Trùng cửu."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà Lớn Long Sơn\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Nhà Lớn Long Sơn được công nhận di tích lịch sử – văn hóa quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1991",
+            "1993",
+            "2001",
+            "1989"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1991."
         }
       ],
       "flashcards": [
@@ -61192,73 +61192,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Hội quán Lệ Châu còn được biết đến với chức năng nào?",
           "options": [
-            "Nhà thờ tổ thợ bạc; hình thành gắn với cộng đồng thợ bạc, thợ kim hoàn Chợ Lớn; duy trì tục thờ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Chùa Phật giáo",
+            "Nhà thờ tổ nghề kim hoàn – thợ bạc",
+            "Lăng danh thần",
+            "Miếu thờ thần biển"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) ghi dấu sự kiện: Nhà thờ tổ thợ bạc; hình thành gắn với cộng đồng thợ bạc, thợ kim hoàn Chợ Lớn; duy trì tục thờ Tổ nghề và sinh hoạt hội quán; 25/04/1998, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Nhà thờ tổ nghề kim hoàn – thợ bạc."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Hội quán Lệ Châu hiện tọa lạc trên đường nào?",
           "options": [
-            "Các nghệ nhân kim hoàn và những người lập Hội quán Lệ Châu; các thế hệ thợ bạc, thợ k...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Lão Tử",
+            "Hải Thượng Lãn Ông",
+            "Trần Hưng Đạo",
+            "Nguyễn Trãi"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các nghệ nhân kim hoàn và những người lập Hội quán Lệ Châu; các thế hệ thợ bạc, thợ kim hoàn Chợ Lớn. - Hiện vật: Nhà thờ tổ thợ bạc; tượng/ban thờ Tổ nghề; hoành phi, câu đối, đồ thờ và các dụng cụ, tư liệu liên quan đến nghề kim hoàn truyền thống.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Trần Hưng Đạo."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Cộng đồng nghề nghiệp nào gắn bó trực tiếp với Hội quán Lệ Châu?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Thợ gốm",
+            "Thợ dệt",
+            "Thợ đóng tàu",
+            "Thợ kim hoàn, thợ bạc"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Nhà thờ tổ thợ bạc (Hội quán Lệ Châu) được xếp hạng cấp Quốc gia theo Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Thợ kim hoàn, thợ bạc."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị văn hóa đặc trưng của Hội quán Lệ Châu là gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Gìn giữ tín ngưỡng tổ nghề và truyền thống nghề kim hoàn",
+            "Bảo vệ tuyến hàng hải",
+            "Ghi dấu chiến trường Mậu Thân",
+            "Lưu giữ mộ chum tiền sử"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Gìn giữ tín ngưỡng tổ nghề và truyền thống nghề kim hoàn."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Hội quán Lệ Châu được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2004",
+            "1998",
+            "1993",
+            "2001"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 1998."
         }
       ],
       "flashcards": [
@@ -61806,73 +61806,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Niết Bàn Tịnh Xá\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Niết Bàn Tịnh Xá được xây dựng trong khoảng thời gian nào?",
           "options": [
-            "Niết Bàn Tịnh Xá; thế kỷ XX, tịnh xá được xây dựng và phát triển thành một địa điểm Phật giáo n...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "1989–1994",
+            "1954–1959",
+            "1969–1974",
+            "1975–1980"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Niết Bàn Tịnh Xá ghi dấu sự kiện: Niết Bàn Tịnh Xá; thế kỷ XX, tịnh xá được xây dựng và phát triển thành một địa điểm Phật giáo nổi tiếng của Vũng Tàu; 03/08/1991, được xếp hạng di tích quốc gia theo Quyết định 1371/QĐ.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1969–1974."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Niết Bàn Tịnh Xá\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Niết Bàn Tịnh Xá nằm gần bãi biển nào của Vũng Tàu?",
           "options": [
-            "Các vị hòa thượng, tăng ni gắn với quá trình xây dựng và phát triển Niết Bàn Tịnh Xá;...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Bãi Vọng Nguyệt",
+            "Bãi Sau",
+            "Bãi Dâu",
+            "Bãi Dứa"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các vị hòa thượng, tăng ni gắn với quá trình xây dựng và phát triển Niết Bàn Tịnh Xá; cộng đồng Phật tử Vũng Tàu. - Hiện vật: Niết Bàn Tịnh Xá; tượng Phật nhập Niết Bàn, tượng Phật và Bồ Tát, chuông, đồ thờ, phù điêu và các tác phẩm trang trí Phật giáo.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Bãi Dứa."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Niết Bàn Tịnh Xá\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Các phù điêu dọc lối lên Niết Bàn Tịnh Xá kể về nội dung nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Cuộc đời Đức Phật Thích Ca",
+            "Cuộc đời Lê Văn Duyệt",
+            "Lịch sử khai phá Long Sơn",
+            "Trận chiến Bình Giã"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Niết Bàn Tịnh Xá được xếp hạng cấp Quốc gia theo Số 1371/QĐ ngày 03/08/1991.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Cuộc đời Đức Phật Thích Ca."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Niết Bàn Tịnh Xá\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Một hiện vật kiến trúc – nghệ thuật đặc sắc tại Niết Bàn Tịnh Xá là chiếc lọng bát giác bằng chất liệu gì?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Đá granite",
+            "Đồng thau",
+            "Gỗ mít",
+            "Sắt đúc"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Đồng thau."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Niết Bàn Tịnh Xá\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Niết Bàn Tịnh Xá được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1991",
+            "1993",
+            "1989",
+            "2001"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 1989."
         }
       ],
       "flashcards": [
@@ -62461,73 +62461,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Núi Châu Thới\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Núi Châu Thới nằm trong vùng địa hình nào của Bình Dương cũ?",
           "options": [
-            "Núi Châu Thới; từ lâu là địa điểm tự nhiên và tín ngưỡng quan trọng của vùng Đông Nam Bộ; 21/04...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Dầu Tiếng",
+            "Bến Cát",
+            "Phú Giáo",
+            "Dĩ An"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Núi Châu Thới ghi dấu sự kiện: Núi Châu Thới; từ lâu là địa điểm tự nhiên và tín ngưỡng quan trọng của vùng Đông Nam Bộ; 21/04/1989, Núi Châu Thới được xếp hạng danh lam thắng cảnh cấp quốc gia theo Quyết định 451-VH/QĐ.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Dĩ An."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Núi Châu Thới\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Công trình tôn giáo nổi bật trên Núi Châu Thới là gì?",
           "options": [
-            "Các vị thiền sư, tăng ni gắn với Châu Thới Sơn và các cơ sở Phật giáo trên núi; cộng ...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chùa Châu Thới",
+            "Chùa Phước Tường",
+            "Chùa Giác Lâm",
+            "Chùa Hội Khánh"
           ],
           "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các vị thiền sư, tăng ni gắn với Châu Thới Sơn và các cơ sở Phật giáo trên núi; cộng đồng cư dân vùng Đông Nam Bộ. - Hiện vật: Núi Châu Thới; hệ thống tượng Phật, bia đá, chuông, đồ thờ và các hiện vật gắn với lịch sử các cơ sở tín ngưỡng trên núi.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Chùa Châu Thới."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Núi Châu Thới\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Danh lam thắng cảnh) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Núi Châu Thới nổi bật trong cảnh quan địa phương vì đặc điểm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Là miệng núi lửa đang hoạt động",
+            "Là khối núi cao nổi lên giữa vùng đồng bằng đô thị",
+            "Là dãy núi tuyết cao",
+            "Là đảo đá giữa biển"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Núi Châu Thới được xếp hạng cấp Quốc gia theo Số 451-VH/QĐ ngày 21/04/1989.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Là khối núi cao nổi lên giữa vùng đồng bằng đô thị."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Núi Châu Thới\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Giá trị của Núi Châu Thới kết hợp nổi bật giữa yếu tố nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Núi Châu Thới, phường Đông Hòa, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Địa đạo và chiến hào",
+            "Pháo đài và hầm thủy lôi",
+            "Cảnh quan thiên nhiên và không gian tín ngưỡng",
+            "Khảo cổ mộ chum và cảng cổ"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Núi Châu Thới, phường Đông Hòa, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Cảnh quan thiên nhiên và không gian tín ngưỡng."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Núi Châu Thới\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Núi Châu Thới được xếp hạng di tích danh thắng quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2001",
+            "2009",
+            "1993",
+            "1989"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1989."
         }
       ],
       "flashcards": [
@@ -63083,73 +63083,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Thích Ca Phật Đài\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Thích Ca Phật Đài nằm trên sườn ngọn núi nào?",
           "options": [
-            "Thích Ca Phật Đài; thế kỷ XX, quần thể Phật giáo được xây dựng trên sườn núi Lớn; trở thành một...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Núi Lớn",
+            "Núi Châu Thới",
+            "Núi Nhỏ",
+            "Núi Dinh"
           ],
           "correctIndex": 0,
-          "explanation": "Di tích Thích Ca Phật Đài ghi dấu sự kiện: Thích Ca Phật Đài; thế kỷ XX, quần thể Phật giáo được xây dựng trên sườn núi Lớn; trở thành một trung tâm hành hương Phật giáo quan trọng của Vũng Tàu; 14/12/1989, được xếp hạng danh lam thắng cảnh cấp quốc gia theo Quyết định 1987/VH.QĐ.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Núi Lớn."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Thích Ca Phật Đài\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Quần thể Thích Ca Phật Đài tái hiện chủ yếu nội dung nào?",
           "options": [
-            "Các vị hòa thượng và tăng ni tham gia xây dựng Thích Ca Phật Đài; cộng đồng Phật tử V...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Chiến dịch Hồ Chí Minh",
+            "Các sự kiện chính trong cuộc đời Đức Phật Thích Ca",
+            "Cuộc đời Tôn Đức Thắng",
+            "Lịch sử khẩn hoang Nam Bộ"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các vị hòa thượng và tăng ni tham gia xây dựng Thích Ca Phật Đài; cộng đồng Phật tử Vũng Tàu. - Hiện vật: Thích Ca Phật Đài; tượng Phật Thích Ca nhập Niết Bàn, tượng Phật khổng lồ, các phù điêu mô tả cuộc đời Đức Phật, chuông và đồ thờ.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Các sự kiện chính trong cuộc đời Đức Phật Thích Ca."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Thích Ca Phật Đài\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tượng trung tâm nổi bật của quần thể là hình ảnh nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Di Lặc ngồi cười",
+            "Phật nhập Niết bàn nằm",
+            "Đức Phật Thích Ca ngồi thiền",
+            "Quan Âm nghìn mắt nghìn tay"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Thích Ca Phật Đài được xếp hạng cấp Quốc gia theo Số 1987/VH.QĐ ngày 14/12/1989.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Đức Phật Thích Ca ngồi thiền."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Thích Ca Phật Đài\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Không gian Thích Ca Phật Đài kết hợp kiến trúc Phật giáo với yếu tố tự nhiên nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Cù lao giữa sông",
+            "Hang động đá vôi",
+            "Rừng ngập mặn",
+            "Địa hình sườn núi và cảnh quan hướng biển"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Địa hình sườn núi và cảnh quan hướng biển."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Thích Ca Phật Đài\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Thích Ca Phật Đài được xếp hạng di tích quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "1989",
+            "1991",
+            "1993",
+            "2001"
           ],
           "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1989."
         }
       ],
       "flashcards": [
@@ -63696,73 +63696,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Tòa nhà Tòa án nhân dân Thành phố Hồ Chí Minh được xây dựng vào cuối thế kỷ nào?",
           "options": [
-            "Tòa án nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng trong thời kỳ thuộc địa và trở ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Thế kỷ XVIII",
+            "Thế kỷ XIX",
+            "Thế kỷ XX",
+            "Thế kỷ XXI"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Tòa án nhân dân Thành phố Hồ Chí Minh ghi dấu sự kiện: Tòa án nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng trong thời kỳ thuộc địa và trở thành một trong những công trình công sở tiêu biểu của khu trung tâm Sài Gòn; 29/03/2012, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định 1208/QĐ-BVHTTDL.."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Thế kỷ XIX."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tòa nhà mang dấu ấn chủ yếu của phong cách kiến trúc nào?",
           "options": [
-            "Các thẩm phán, cán bộ tư pháp và cơ quan tư pháp qua các thời kỳ; các kiến trúc sư và...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "Kiến trúc đình làng Nam Bộ",
+            "Kiến trúc Chăm",
+            "Kiến trúc Pháp thời thuộc địa",
+            "Kiến trúc Khmer Angkor"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các thẩm phán, cán bộ tư pháp và cơ quan tư pháp qua các thời kỳ; các kiến trúc sư và nghệ nhân xây dựng công trình. - Hiện vật: Tòa án nhân dân Thành phố Hồ Chí Minh; các chi tiết kiến trúc nguyên gốc, phù điêu, cửa, cầu thang, sàn, hệ thống trang trí nội thất và các bộ phận kiến trúc công sở thời thuộc địa.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Kiến trúc Pháp thời thuộc địa."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tòa án nhân dân Thành phố Hồ Chí Minh tọa lạc trên đường nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "Lê Duẩn",
+            "Nguyễn Huệ",
+            "Lý Tự Trọng",
+            "Nam Kỳ Khởi Nghĩa"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Tòa án nhân dân Thành phố Hồ Chí Minh được xếp hạng cấp Quốc gia theo Số 1208/QĐ-BVHTTDL ngày 29/03/2012 của Bộ Văn hóa, Thể thao và Du lịch.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: Nam Kỳ Khởi Nghĩa."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Chức năng của công trình được duy trì đến hiện nay thuộc lĩnh vực nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Tư pháp – xét xử",
+            "Bảo tàng",
+            "Tín ngưỡng",
+            "Biểu diễn nghệ thuật"
           ],
           "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: Tư pháp – xét xử."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Tòa án nhân dân Thành phố Hồ Chí Minh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Tòa án nhân dân Thành phố Hồ Chí Minh được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2010",
+            "2012",
+            "2020",
+            "2004"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: 2012."
         }
       ],
       "flashcards": [
@@ -64274,9 +64274,9 @@ export const allMonumentsList = [
       }
     ],
     "investigation": {
-      "title": "Hồ sơ điều tra: Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
+      "title": "Hồ sơ điều tra: Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh",
       "subtitle": "Khảo sát chứng cứ lịch sử, giải mã tư liệu và trả lời câu hỏi điều tra tại Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM..",
-      "investigationTopic": "Nghiên cứu & Giải mã Di tích Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
+      "investigationTopic": "Nghiên cứu & Giải mã Di tích Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh",
       "investigationQuestion": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh cho thấy kiến trúc đô thị gắn với lịch sử quản trị thành phố như thế nào, và từ đó học sinh hiểu gì về trách nhiệm công dân đối với cộng đồng?",
       "suggestedAnswer": "Công trình (từng là Tòa đô chính Sài Gòn thời Pháp, xây dựng đầu thế kỷ 20) mang phong cách kiến trúc Pháp nổi bật và luôn gắn với chức năng quản lý, điều hành thành phố qua các thời kỳ, nay là trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh. Từ đó học sinh hiểu công dân có trách nhiệm với cộng đồng: tuân thủ pháp luật, tham gia hoạt động xã hội, góp ý xây dựng, và giữ gìn công trình, không gian công cộng của thành phố.",
       "referencesList": [
@@ -64316,73 +64316,73 @@ export const allMonumentsList = [
       "quiz": [
         {
           "id": 1,
-          "type": "multiple_choice",
-          "category": "Sự kiện tiêu biểu",
-          "question": "Sự kiện lịch sử nổi bật nhất gắn liền với di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" là gì?",
+          "category": "⚔️ Mốc Son & Sự Kiện",
+          "question": "Ai là kiến trúc sư thiết kế tòa nhà Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh?",
           "options": [
-            "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng thờ...",
-            "Một cuộc triển lãm thương mại quốc tế tạm thời vào thế kỷ 21",
-            "Công trình xây dựng phục vụ du lịch sinh thái thuần túy",
-            "Địa điểm tổ chức hội chợ nông sản thường niên"
+            "Auguste Delaval",
+            "Ngô Viết Thụ",
+            "Paul Gardès",
+            "Alfred Foulhoux"
           ],
-          "correctIndex": 0,
-          "explanation": "Di tích Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh ghi dấu sự kiện: Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng thời Pháp thuộc, trở thành trung tâm hành chính của thành phố qua nhiều giai đoạn lịch sử; 11/04/2020, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia theo Quyết định 3244/QĐ-BVHTTDL.."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: Paul Gardès."
         },
         {
           "id": 2,
-          "type": "multiple_choice",
-          "category": "Nhân vật & Hiện vật",
-          "question": "Nhân vật lịch sử hoặc hiện vật tiêu biểu gắn liền với di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" là ai/cái gì?",
+          "category": "🏺 Hiện Vật & Chứng Tích",
+          "question": "Tòa nhà được khởi công xây dựng vào năm nào?",
           "options": [
-            "Các quan chức chính quyền Sài Gòn thời thuộc địa; các thế hệ lãnh đạo và cơ quan hành...",
-            "Các thương gia châu Âu vào thế kỷ 15",
-            "Các nhà thám hiểm Bắc Cực",
-            "Một vị tướng thời cổ đại La Mã"
+            "1900",
+            "1909",
+            "1885",
+            "1898"
           ],
-          "correctIndex": 0,
-          "explanation": "Nhân vật và hiện vật tiêu biểu: Các quan chức chính quyền Sài Gòn thời thuộc địa; các thế hệ lãnh đạo và cơ quan hành chính Thành phố Hồ Chí Minh sử dụng công trình. - Hiện vật: Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh; hệ thống phù điêu, tượng trang trí, cầu thang, cửa, nội thất và các cấu kiện kiến trúc nguyên gốc của công trình.."
+          "correctIndex": 3,
+          "correctLetter": "D",
+          "explanation": "Đáp án chính xác: 1898."
         },
         {
           "id": 3,
-          "type": "true_false",
-          "category": "Xếp hạng & Pháp lý",
-          "question": "Nhận định sau đây về di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" là ĐÚNG hay SAI: \"Di tích đã được xếp hạng là Quốc gia (Kiến trúc nghệ thuật) theo quy định của Nhà nước\"?",
+          "category": "🏛️ Kiến Trúc & Không Gian",
+          "question": "Tòa nhà được hoàn tất và khánh thành vào năm nào?",
           "options": [
-            "ĐÚNG - Di tích được công nhận xếp hạng cấp Quốc gia",
-            "SAI - Di tích này chưa từng được xếp hạng công nhận",
-            "SAI - Di tích này không thuộc hệ thống di sản Việt Nam",
-            "SAI - Di tích đã bị xóa bỏ hoàn toàn trong quy hoạch"
+            "1909",
+            "1929",
+            "1898",
+            "1900"
           ],
           "correctIndex": 0,
-          "explanation": "Nhận định trên là hoàn toàn chính xác. Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh được xếp hạng cấp Quốc gia theo Số 3244/QĐ-BVHTTDL ngày 11/04/2020 của Bộ Văn hóa, Thể thao và Du lịch.."
+          "correctLetter": "A",
+          "explanation": "Đáp án chính xác: 1909."
         },
         {
           "id": 4,
-          "type": "scenario_clue",
-          "category": "Khảo sát thực địa",
-          "question": "Khi đến khảo sát thực địa tại di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\", phát hiện nào sau đây phản ánh chính xác nhất về không gian và cảnh quan di tích?",
+          "category": "👤 Nhân Vật & Lịch Sử",
+          "question": "Trong thời Pháp thuộc, người dân thường gọi công trình bằng tên nào?",
           "options": [
-            "Tọa lạc tại địa chỉ: Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM., lưu giữ các dấu tích kiến trúc, hiện vật và không gian lịch sử nguyên bản",
-            "Công trình đã bị chuyển đổi hoàn toàn thành trung tâm thương mại cao ốc hiện đại",
-            "Di tích nằm ở vùng hải đảo xa xôi ngoài lãnh thổ Việt Nam",
-            "Chỉ là một mô hình thu nhỏ được dựng lại trong công viên giải trí"
+            "Bạch Dinh",
+            "Dinh Đốc lý hoặc Dinh Xã Tây",
+            "Dinh Norodom",
+            "Dinh Gia Long"
           ],
-          "correctIndex": 0,
-          "explanation": "Vị trí chính xác của di tích nằm tại Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM., nơi lưu giữ nguyên vẹn giá trị lịch sử và hiện vật tiêu biểu."
+          "correctIndex": 1,
+          "correctLetter": "B",
+          "explanation": "Đáp án chính xác: Dinh Đốc lý hoặc Dinh Xã Tây."
         },
         {
           "id": 5,
-          "type": "matching_challenge",
-          "category": "Ý nghĩa & Trách nhiệm",
-          "question": "Ý nghĩa giáo dục và trách nhiệm lớn nhất của thế hệ trẻ hôm nay đối với di tích \"Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh\" là gì?",
+          "category": "🧭 Giá Trị & Tự Hào Di Sản",
+          "question": "Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh được xếp hạng di tích kiến trúc nghệ thuật quốc gia vào năm nào?",
           "options": [
-            "Tìm hiểu lịch sử, bảo vệ cảnh quan hiện vật nguyên gốc và tích cực quảng bá giá trị di sản số của dân tộc",
-            "Tùy tiện khắc tên, vẽ bậy lên các bức tường và công trình di tích",
-            "Mang các hiện vật cổ quý giá tại di tích về nhà làm kỷ niệm riêng",
-            "Chia sẻ những thông tin lịch sử sai lệch, chưa được kiểm chứng lên mạng xã hội"
+            "2024",
+            "2012",
+            "2020",
+            "2017 ĐÁP ÁN Chinh Phục Huy Hiệu – 103 di tích"
           ],
-          "correctIndex": 0,
-          "explanation": "Thế hệ trẻ cần có ý thức tôn trọng, gìn giữ hiện vật, không xâm hại di tích và tích cực học tập, lan tỏa niềm tự hào dân tộc."
+          "correctIndex": 2,
+          "correctLetter": "C",
+          "explanation": "Đáp án chính xác: 2020."
         }
       ],
       "flashcards": [
