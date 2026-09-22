@@ -650,7 +650,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia đặc biệt",
       "type": "Lịch sử",
       "ranking": "Quốc gia đặc biệt",
-      "decision": "Số 2367/QĐ-TTg ngày \n23/12/2015",
+      "decision": "Số 2367/QĐ-TTg ngày 23/12/2015",
       "addressOld": "Phú Mỹ Hưng, Phạm Văn Cội, Nhuận Đức, Củ Chi",
       "address": "Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh.",
       "coordinates": [
@@ -1287,7 +1287,7 @@ export const allMonumentsList = [
     "slug": "di-tich-lich-su-duong-ho-chi-minh-tren-bien-ben-loc-an",
     "note": "3/8",
     "info": {
-      "name": "Di tích lịch sử đường Hồ Chí Minh trên biển (Bến Lộc An)",
+      "name": "Di tích lịch sử đường Hồ Chí Minh trên biển (Điểm Bến Lộc An)",
       "subtitle": "Lịch sử • Quốc gia đặc biệt",
       "badge": "Quốc gia đặc biệt",
       "type": "Lịch sử",
@@ -1913,7 +1913,7 @@ export const allMonumentsList = [
     "slug": "di-tich-lich-su-nha-tu-con-dao",
     "note": "4/8",
     "info": {
-      "name": "Di tích lịch sử nhà tù Côn Đảo",
+      "name": "Khu di tích LSCM nhà tù Côn Đảo",
       "subtitle": "Lịch sử • Quốc gia đặc biệt",
       "badge": "Quốc gia đặc biệt",
       "type": "Lịch sử",
@@ -3186,12 +3186,12 @@ export const allMonumentsList = [
     "slug": "can-cu-minh-dam",
     "note": "4/8",
     "info": {
-      "name": "Căn cứ Minh Đạm",
+      "name": "Khu căn cứ Minh Đạm",
       "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "QĐ số: 57VH/QĐ ngày \n18/01/1993 - Bộ Văn Hóa \nThông Tin",
+      "decision": "QĐ số: 57VH/QĐ ngày 18/01/1993 - Bộ Văn Hóa Thông Tin",
       "addressOld": "huyện Đất Đỏ, tỉnh Bà Rịa - Vũng Tàu",
       "address": "xã Phước Hải, Thành phố Hồ Chí Minh",
       "coordinates": [
@@ -4480,7 +4480,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Quyết định số 1631/QĐ-BVHTTDL ngày 11/5/2010 của Bộ Văn hóa, Thể thao và Du lịch",
+      "decision": "Quyết định số 1631/QĐ-BVHTTDL ngày 05/11/2010 của Bộ Văn hóa, Thể thao và Du lịch",
       "addressOld": "Ấp Đá Bàn, xã Đất Cuốc, huyện Bắc Tân Uyên, tỉnh Bình Dương.",
       "address": "Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -5122,7 +5122,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "QĐ số: 961QĐ/BT ngày \n20/07/1994 - Bộ Văn Hóa \nThông Tin",
+      "decision": "QĐ số: 961QĐ/BT ngày 20/07/1994 - Bộ Văn Hóa Thông Tin",
       "addressOld": "Thôn Tam Long, xã Kim Long, huyện Châu Đức, tỉnh Bà Rịa – Vũng Tàu.",
       "address": "Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -5821,7 +5821,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Số 1460 – QĐ/VH ngày \n28/6/1996 của Bộ Văn hóa \nThông tin",
+      "decision": "Số 1460 – QĐ/VH ngày 28/6/1996 của Bộ Văn hóa Thông tin",
       "addressOld": "Đường Phú Thọ Hòa, phường Phú Thọ Hòa, quận Tân Phú, Thành phố Hồ Chí Minh.",
       "address": "Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -7100,12 +7100,12 @@ export const allMonumentsList = [
     "slug": "dia-diem-luu-niem-chu-tich-ton-duc-thang-tai-khu-vuc-ba-son-gom-u-tau-nho-va-trien-ne",
     "note": "######",
     "info": {
-      "name": "Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhò và Triền nề",
+      "name": "Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhỏ và Triền nề",
       "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Quyết định xếp hạng số \n1269/QĐ-BVHTTDL ngày \n30/3/2016 của Bộ Văn hóa - Thông tin",
+      "decision": "Quyết định xếp hạng số 1269/QĐ-BVHTTDL ngày 30/3/2016 của Bộ Văn hóa - Thông tin",
       "addressOld": "Số 2 đường Tôn Đức Thắng, phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh.",
       "address": "Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -8377,7 +8377,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Số 1288 – \nVH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin",
+      "decision": "Số 1288 – VH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin",
       "addressOld": "Số 190 đường Bến Hàm Tử, Phường 1, Quận 5, Thành phố Hồ Chí Minh.",
       "address": "Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -9019,7 +9019,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Số 39/2002/QĐ-BVHTT \nngày 30/12/2002 của Bộ Văn hóa – Thông tin",
+      "decision": "Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin",
       "addressOld": "Số 1460 đường Phan Văn Hớn, Ấp 5, xã Xuân Thới Thượng, huyện Hóc Môn, Thành phố Hồ Chí Minh.",
       "address": "Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -9646,7 +9646,7 @@ export const allMonumentsList = [
     "slug": "nha-luu-niem-vo-thi-sau",
     "note": "######",
     "info": {
-      "name": "Nhà lưu niệm Võ Thị Sáu",
+      "name": "Nhà lưu niệm chị Võ Thị Sáu",
       "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
       "type": "Lịch sử",
@@ -12110,7 +12110,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Quyết định số 1630/QĐ-BVHTTDL ngày \n11/5/2010 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch",
+      "decision": "Quyết định số 1630/QĐ-BVHTTDL ngày 11/5/2010 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch",
       "addressOld": "Căm Xe, xã Minh Thạnh, huyện Dầu Tiếng, tỉnh Bình Dương.",
       "address": "Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -18507,7 +18507,7 @@ export const allMonumentsList = [
     "slug": "di-tich-86-phan-chu-trinh",
     "note": "13/08",
     "info": {
-      "name": "Di tích 86 Phan Chu Trinh",
+      "name": "Nhà số 86- Phan Chu Trinh",
       "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
       "type": "Lịch sử",
@@ -21666,7 +21666,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Số 1766/QĐ-UBND ngày 27/4/2009 của Ủy ban nhân dân Thành phố",
+      "decision": "57-VH/QĐ ngày 18/01/1993",
       "addressOld": "Đường Đình Phong Phú, khu phố 3, TP. Thủ Đức, Thành phố Hồ Chí Minh.",
       "address": "Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -22306,12 +22306,12 @@ export const allMonumentsList = [
     "slug": "don-nga-tu-gieng-nuoc",
     "note": "15/08",
     "info": {
-      "name": "Đồn ngã tư Giếng Nước",
+      "name": "Đồn nhà máy nước",
       "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao",
+      "decision": "983VH/QĐ ngày 04/08/1992",
       "addressOld": "Khu vực ngã tư Giếng Nước, thành phố Vũng Tàu, tỉnh Bà Rịa – Vũng Tàu",
       "address": "Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -22892,7 +22892,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Lịch sử",
       "ranking": "Quốc gia",
-      "decision": "Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin",
+      "decision": "04/2001/QĐ-BVHTT ngày 19/01/2001",
       "addressOld": "Phường Tân Thành, thị xã Phú Mỹ, tỉnh Bà Rịa – Vũng Tàu",
       "address": "Phường Tân Thành, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -26549,7 +26549,7 @@ export const allMonumentsList = [
     "slug": "nha-tron",
     "note": "19/08",
     "info": {
-      "name": "Nhà Tròn",
+      "name": "Nhà Tròn - Bà Rịa",
       "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
       "type": "Lịch sử",
@@ -32055,7 +32055,7 @@ export const allMonumentsList = [
     "slug": "di-tich-tran-dia-phao-co-va-ham-thuy-loi-nui-lon",
     "note": "22/08",
     "info": {
-      "name": "Di tích trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
+      "name": "Trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
       "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
       "type": "Lịch sử",
@@ -34456,7 +34456,7 @@ export const allMonumentsList = [
     "slug": "bach-dinh",
     "note": "3/8",
     "info": {
-      "name": "Bạch Dinh",
+      "name": "Khu Bạch Dinh",
       "subtitle": "Kiến trúc nghệ thuật • Quốc gia",
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
@@ -40147,12 +40147,12 @@ export const allMonumentsList = [
     "slug": "chua-phuoc-lam-phuoc-lam-tu",
     "note": "######",
     "info": {
-      "name": "Chùa Phước Lâm (Phước Lâm Tự)",
+      "name": "Phước Lâm Tự",
       "subtitle": "Kiến trúc nghệ thuật • Quốc gia",
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
       "ranking": "Quốc gia",
-      "decision": "QĐ số: 983/QĐ, ngày \n04/08/1992 của Bộ Văn Hóa \nThông Tin",
+      "decision": "QĐ số: 983/QĐ, ngày 04/08/1992 của Bộ Văn Hóa Thông Tin",
       "addressOld": "phường 6, thành phố Vũng Tàu, tỉnh Bà Rịa – Vũng Tàu",
       "address": "Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -40763,7 +40763,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
       "ranking": "Quốc gia",
-      "decision": "Số 43–VH/QĐ ngày \n01/07/1993 của Bộ Văn hóa – \nThông tin",
+      "decision": "Số 43–VH/QĐ ngày 01/07/1993 của Bộ Văn hóa – Thông tin",
       "addressOld": "phường Tăng Nhơn Phú A, thành phố Thủ Đức, Thành phố Hồ Chí Minh.",
       "address": "Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh.",
       "coordinates": [
@@ -42002,7 +42002,7 @@ export const allMonumentsList = [
     "slug": "dinh-co",
     "note": "######",
     "info": {
-      "name": "Dinh Cô",
+      "name": "Thắng cảnh Dinh Cô",
       "subtitle": "Danh lam thắng cảnh • Quốc gia",
       "badge": "Quốc gia",
       "type": "Danh lam thắng cảnh",
@@ -42689,12 +42689,12 @@ export const allMonumentsList = [
     "slug": "chua-ngoc-hoang",
     "note": "######",
     "info": {
-      "name": "Chùa Ngọc Hoàng",
+      "name": "Điện Ngọc Hoàng",
       "subtitle": "Kiến trúc nghệ thuật • Quốc gia",
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
       "ranking": "Quốc gia",
-      "decision": "Số 2754/QĐ – BT ngày \n15/10/1994",
+      "decision": "Số 2754/QĐ – BT ngày 15/10/1994",
       "addressOld": "phường Đa Kao, Quận 1",
       "address": "Số 73 Mai Thị Lựu, \nphường Tân Định",
       "coordinates": [
@@ -47740,7 +47740,7 @@ export const allMonumentsList = [
     "slug": "dinh-thang-tam",
     "note": "######",
     "info": {
-      "name": "Đình Thắng Tam (đình ThắngTam,Lăng Cá Ông, Miếu Bà)",
+      "name": "Đình Thắng Tam",
       "subtitle": "Lịch sử • Quốc gia",
       "badge": "Quốc gia",
       "type": "Lịch sử",
@@ -53319,7 +53319,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
       "ranking": "Quốc gia",
-      "decision": "Số 1811/1998/QĐ-BVHTT ngày 31/8/1998 của Bộ Văn hóa – Thông tin.",
+      "decision": "52/2001/QĐ-BVHTT ngày 28/12/2001",
       "addressOld": "Số 276 đường Trần Hưng Đạo, phường 11, quận 5, TP.HCM.",
       "address": "Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.",
       "coordinates": [
@@ -53936,7 +53936,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
       "ranking": "Quốc gia",
-      "decision": "Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin.",
+      "decision": "43-VH/QĐ ngày 07/01/1993",
       "addressOld": "Số 710 đường Nguyễn Trãi, phường 11, quận 5, TP.HCM.",
       "address": "Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM.",
       "coordinates": [
@@ -60850,7 +60850,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
       "ranking": "Quốc gia",
-      "decision": "Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin.",
+      "decision": "1811/1998/QĐ-BVHTT ngày 31/8/1998",
       "addressOld": "Số 586 đường Trần Hưng Đạo, phường 14, quận 5, TP.HCM.",
       "address": "Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM.",
       "coordinates": [
@@ -61462,7 +61462,7 @@ export const allMonumentsList = [
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
       "ranking": "Quốc gia",
-      "decision": "Số 1371/QĐ ngày 03/08/1991.",
+      "decision": "1987/Vh-QĐ ngày 14/12/1989",
       "addressOld": "Số 60/7 đường Hạ Long, phường 2, thành phố Vũng Tàu, tỉnh Bà Rịa – Vũng Tàu.",
       "address": "Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM.",
       "coordinates": [
@@ -63961,7 +63961,7 @@ export const allMonumentsList = [
     "slug": "tru-so-hoi-dong-nhan-dan-va-uy-ban-nhan-dan-thanh-pho-ho-chi-minh",
     "note": "######",
     "info": {
-      "name": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
+      "name": "Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh",
       "subtitle": "Kiến trúc nghệ thuật • Quốc gia",
       "badge": "Quốc gia",
       "type": "Kiến trúc nghệ thuật",
