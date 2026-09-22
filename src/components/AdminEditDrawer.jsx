@@ -1312,10 +1312,13 @@ export default function AdminEditDrawer({
     var eventType = data.eventType || 'GENERAL';
     var timestamp = data.localTime || new Date().toLocaleString('vi-VN');
     
-    // Tự động phân loại ghi vào các Sheet chuyên biệt
-    if (eventType === 'LOGIN') {
-      var sheet = getOrCreateSheet(ss, '1. Đăng Nhập Học Sinh', [
-        'Thời gian', 'Mã Hộ Chiếu', 'Họ và tên', 'Trường', 'Lớp', 'Điểm XP', 'Số di tích đã đi', 'Chi tiết'
+    // 1. Tự động cập nhật Bảng Tổng Hợp Học Sinh (Tab 1) để Điểm XP và Số di tích luôn đồng bộ mới nhất
+    updateStudentSummary(ss, data, timestamp);
+
+    // 2. Ghi nhận chi tiết vào từng Sheet chuyên biệt
+    if (eventType === 'INVESTIGATION_REPORT') {
+      var sheet = getOrCreateSheet(ss, '2. Báo Cáo Điều Tra & Tri Ân', [
+        'Thời gian', 'Mã Hộ Chiếu', 'Họ và tên', 'Trường', 'Lớp', 'STT Di Tích', 'Tên Di Tích', 'Câu hỏi điều tra', 'Câu trả lời của học sinh', 'Lời cam kết & tri ân', 'Điểm XP nhận được'
       ]);
       sheet.appendRow([
         timestamp,
@@ -1323,12 +1326,15 @@ export default function AdminEditDrawer({
         data.fullName || '',
         data.school || '',
         data.grade || '',
-        data.totalXP || 0,
-        data.visitedCount || 0,
-        data.actionDetail || ''
+        data.monumentStt || '',
+        data.monumentName || '',
+        data.question || '',
+        data.answer || '',
+        data.messageToFuture || '',
+        data.earnedXP || 300
       ]);
     } else if (eventType === 'JOURNEY_PROGRESS' || eventType === 'JOURNEY_COMPLETED') {
-      var sheet = getOrCreateSheet(ss, '2. Tiến Độ Hành Trình', [
+      var sheet = getOrCreateSheet(ss, '3. Tiến Độ Hành Trình', [
         'Thời gian', 'Mã Hộ Chiếu', 'Họ và tên', 'Trường', 'Lớp', 'STT Di Tích', 'Tên Di Tích', 'Tổng đã đi', 'Tiến độ (%)', 'Chi tiết'
       ]);
       sheet.appendRow([
@@ -1344,7 +1350,7 @@ export default function AdminEditDrawer({
         data.actionDetail || ''
       ]);
     } else if (eventType === 'CONTRIBUTION') {
-      var sheet = getOrCreateSheet(ss, '3. Đóng Góp & Ý Kiến', [
+      var sheet = getOrCreateSheet(ss, '4. Đóng Góp & Ý Kiến', [
         'Thời gian', 'Mã Hộ Chiếu', 'Tác giả', 'Trường', 'Lớp', 'Di tích', 'Loại đóng góp', 'Tiêu đề', 'Nội dung'
       ]);
       sheet.appendRow([
@@ -1359,7 +1365,7 @@ export default function AdminEditDrawer({
         data.content || ''
       ]);
     } else if (eventType === 'QUIZ') {
-      var sheet = getOrCreateSheet(ss, '4. Kết Quả Thử Thách', [
+      var sheet = getOrCreateSheet(ss, '5. Kết Quả Thử Thách', [
         'Thời gian', 'Mã Hộ Chiếu', 'Họ và tên', 'Trường', 'Lớp', 'STT', 'Di tích', 'Câu hỏi', 'Kết quả', 'Điểm'
       ]);
       sheet.appendRow([
@@ -1374,8 +1380,11 @@ export default function AdminEditDrawer({
         data.result || '',
         data.score || 0
       ]);
-    } else {
-      var sheet = getOrCreateSheet(ss, '5. Nhật Ký Hoạt Động', ['Thời gian', 'Loại sự kiện', 'Dữ liệu JSON']);
+    } else if (eventType === 'TEST_PING') {
+      var sheet = getOrCreateSheet(ss, '6. Nhật Ký Kết Nối', ['Thời gian', 'Người gửi', 'Đơn vị', 'Lớp / Chức vụ', 'Nội dung']);
+      sheet.appendRow([timestamp, data.fullName || 'Admin', data.school || '', data.grade || '', data.actionDetail || 'Kiểm tra kết nối']);
+    } else if (eventType !== 'LOGIN') {
+      var sheet = getOrCreateSheet(ss, '7. Nhật Ký Chung', ['Thời gian', 'Loại sự kiện', 'Dữ liệu JSON']);
       sheet.appendRow([timestamp, eventType, rawData]);
     }
 
@@ -1384,6 +1393,62 @@ export default function AdminEditDrawer({
   } catch (error) {
     return ContentService.createTextOutput(JSON.stringify({ status: 'error', message: error.toString() }))
       .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function updateStudentSummary(ss, data, timestamp) {
+  var sheet = getOrCreateSheet(ss, '1. Tổng Hợp Học Sinh', [
+    'Thời gian cập nhật', 'Mã Hộ Chiếu', 'Họ và tên', 'Trường', 'Lớp', 'Tổng Điểm XP', 'Số Di Tích Đã Đi', 'Hoạt động mới nhất'
+  ]);
+  
+  var passportCode = data.passportCode || '';
+  var fullName = data.fullName || data.author || '';
+  if (!passportCode && !fullName) return;
+  
+  var newXP = data.totalXP !== undefined ? Number(data.totalXP) : 0;
+  var newVisited = (data.totalVisited !== undefined ? Number(data.totalVisited) : (data.visitedCount !== undefined ? Number(data.visitedCount) : 0));
+  var actionDesc = data.actionDetail || data.eventType || 'Hoạt động trải nghiệm';
+
+  var lastRow = sheet.getLastRow();
+  var foundRow = -1;
+  
+  if (lastRow > 1) {
+    var codes = sheet.getRange(2, 2, lastRow - 1, 2).getValues();
+    for (var i = 0; i < codes.length; i++) {
+      var rowCode = String(codes[i][0]).trim();
+      var rowName = String(codes[i][1]).trim();
+      if ((passportCode && passportCode !== 'GUEST' && passportCode !== 'N/A' && rowCode === passportCode) || 
+          (rowName && rowName === fullName)) {
+        foundRow = i + 2;
+        break;
+      }
+    }
+  }
+
+  if (foundRow > 1) {
+    var currentXP = Number(sheet.getRange(foundRow, 6).getValue()) || 0;
+    var currentVisited = Number(sheet.getRange(foundRow, 7).getValue()) || 0;
+    
+    var finalXP = Math.max(currentXP, newXP);
+    var finalVisited = Math.max(currentVisited, newVisited);
+    
+    sheet.getRange(foundRow, 1).setValue(timestamp);
+    if (data.school) sheet.getRange(foundRow, 4).setValue(data.school);
+    if (data.grade) sheet.getRange(foundRow, 5).setValue(data.grade);
+    sheet.getRange(foundRow, 6).setValue(finalXP);
+    sheet.getRange(foundRow, 7).setValue(finalVisited);
+    sheet.getRange(foundRow, 8).setValue(actionDesc);
+  } else {
+    sheet.appendRow([
+      timestamp,
+      passportCode,
+      fullName,
+      data.school || '',
+      data.grade || '',
+      newXP,
+      newVisited,
+      actionDesc
+    ]);
   }
 }
 

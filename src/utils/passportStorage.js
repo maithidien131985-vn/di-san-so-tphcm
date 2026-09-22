@@ -113,9 +113,9 @@ export function createPassport({ fullName, school, grade, avatar = '🦁' }) {
 }
 
 /**
- * Đóng dấu khám phá di tích vào Hộ chiếu
+ * Đóng dấu khám phá di tích vào Hộ chiếu & lưu báo cáo điều tra
  */
-export function checkInMonument(stt, monumentName, earnedXP = 100, note = '') {
+export function checkInMonument(stt, monumentName, earnedXP = 100, note = '', reportData = null) {
   const active = getActivePassport();
   if (!active) return null;
 
@@ -123,18 +123,23 @@ export function checkInMonument(stt, monumentName, earnedXP = 100, note = '') {
   const code = active.code;
   const passport = all[code] || active;
 
-  const isAlreadyVisited = !!passport.visitedMonuments[stt];
+  const existingEntry = passport.visitedMonuments[stt];
+  const isAlreadyVisited = !!existingEntry;
   const now = new Date();
 
   passport.visitedMonuments[stt] = {
     stt,
     name: monumentName,
-    visitedAt: now.toISOString(),
-    earnedXP: isAlreadyVisited ? (passport.visitedMonuments[stt].earnedXP || 100) : earnedXP,
-    notes: note || passport.visitedMonuments[stt]?.notes || ''
+    visitedAt: existingEntry?.visitedAt || now.toISOString(),
+    earnedXP: isAlreadyVisited ? ((existingEntry.earnedXP || 100) + (reportData ? earnedXP : 0)) : earnedXP,
+    notes: note || existingEntry?.notes || '',
+    report: reportData || existingEntry?.report || null
   };
 
   if (!isAlreadyVisited) {
+    passport.totalXP = (passport.totalXP || 0) + earnedXP;
+  } else if (reportData && !existingEntry?.report) {
+    // Thưởng thêm XP khi nộp báo cáo điều tra lần đầu
     passport.totalXP = (passport.totalXP || 0) + earnedXP;
   }
 
@@ -173,15 +178,29 @@ export function checkInMonument(stt, monumentName, earnedXP = 100, note = '') {
 
   // Gửi telemetry tiến độ hành trình
   try {
-    if (!isAlreadyVisited) {
-      trackJourneyProgress(passport, stt, monumentName, visitedCount);
-      if (visitedCount >= 103) {
-        trackJourneyCompleted(passport, { totalVisited: visitedCount, totalXP: passport.totalXP });
-      }
+    trackJourneyProgress(passport, stt, monumentName, visitedCount);
+    if (visitedCount >= 103) {
+      trackJourneyCompleted(passport, { totalVisited: visitedCount, totalXP: passport.totalXP });
     }
   } catch (e) {}
 
   return passport;
+}
+
+/**
+ * Lấy báo cáo điều tra đã lưu của một di tích
+ */
+export function getSavedInvestigationReport(stt) {
+  const active = getActivePassport();
+  if (!active) {
+    try {
+      const allReports = JSON.parse(localStorage.getItem('di_san_so_guest_reports') || '{}');
+      return allReports[stt] || null;
+    } catch (e) {
+      return null;
+    }
+  }
+  return active.visitedMonuments?.[stt]?.report || null;
 }
 
 /**

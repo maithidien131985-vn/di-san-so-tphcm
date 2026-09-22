@@ -749,7 +749,9 @@ export default function App() {
         onClose={() => setStudentReportOpen(false)}
         investigation={safeInvestigation}
         monumentName={safeInfo.name || ''}
+        monumentStt={currentStt}
         activePassport={activePassport}
+        onPassportUpdate={setActivePassport}
         onCompleteInvestigation={handleCompleteInvestigation}
         onOpenActionModal={(info) => {
           setActionStudentInfo(info);

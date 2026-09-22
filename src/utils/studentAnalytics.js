@@ -207,6 +207,42 @@ export function trackQuizAttempt({ passport, monumentStt, monumentName, question
     result: isCorrect ? 'ĐÚNG' : 'CHƯA ĐÚNG',
     score: score !== undefined ? score : (isCorrect ? 10 : 0),
     totalQuestions: totalQuestions || 1,
-    actionDetail: `Trả lời câu hỏi trắc nghiệm di tích ${monumentName} (${isCorrect ? 'Chính xác' : 'Sai'})`
+    totalXP: passport?.totalXP || 0,
+    visitedCount: Object.keys(passport?.visitedMonuments || {}).length,
+    actionDetail: `Trả lời trắc nghiệm di tích ${monumentName} (${isCorrect ? 'Chính xác' : 'Sai'})`
+  });
+}
+
+/**
+ * 6. Thu thập Báo cáo Điều tra Di tích & Lời cam kết / Thông điệp tri ân của Học sinh
+ */
+export function trackInvestigationReport({
+  passport,
+  monumentStt,
+  monumentName,
+  question,
+  answer,
+  messageToFuture,
+  earnedXP = 300,
+  totalVisited,
+  totalXP
+}) {
+  const visitedCount = totalVisited !== undefined ? totalVisited : Object.keys(passport?.visitedMonuments || {}).length;
+  const currentXP = totalXP !== undefined ? totalXP : (passport?.totalXP || 0);
+
+  sendTelemetryEvent('INVESTIGATION_REPORT', {
+    passportCode: passport?.code || 'GUEST',
+    fullName: passport?.fullName || 'Học sinh',
+    school: passport?.school || 'TP.HCM',
+    grade: passport?.grade || 'THCS',
+    monumentStt,
+    monumentName,
+    question: question || '',
+    answer: answer || '',
+    messageToFuture: messageToFuture || '',
+    earnedXP,
+    totalVisited: visitedCount,
+    totalXP: currentXP,
+    actionDetail: `Nộp Báo cáo điều tra di tích: ${monumentName} (+${earnedXP} XP)`
   });
 }
