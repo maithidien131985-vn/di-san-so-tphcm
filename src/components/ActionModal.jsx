@@ -18,7 +18,7 @@ import {
 import confetti from 'canvas-confetti';
 import soundEffects from '../utils/soundEffects';
 import { checkInMonument, getActivePassport } from '../utils/passportStorage';
-import { sendTelemetryEvent, trackContribution } from '../utils/studentAnalytics';
+import { sendTelemetryEvent, trackContribution, trackInvestigationReport } from '../utils/studentAnalytics';
 
 export default function ActionModal({ 
   isOpen, 
@@ -34,29 +34,30 @@ export default function ActionModal({
 }) {
   const [pledgeName, setPledgeName] = useState('');
   const [pledgeMsg, setPledgeMsg] = useState('');
+  
+  // Khởi tạo danh sách cam kết từ LocalStorage
   const [pledges, setPledges] = useState(() => {
     try {
       const saved = localStorage.getItem('di_san_so_pledges');
       if (saved) return JSON.parse(saved);
     } catch (e) {}
     return [
-      { name: 'Nguyễn Văn An • THCS Xà Bang', text: `Em cam kết tìm hiểu sâu sắc lịch sử dân tộc và giới thiệu di tích ${monumentName} đến bạn bè quốc tế!`, time: 'Vừa xong' },
-      { name: 'Trần Thị Mai • 9A1', text: `Giữ gìn vệ sinh và tôn trọng không gian trang nghiêm khi đến tham quan khu di tích ${monumentName}.`, time: 'Hôm nay' },
-      { name: 'Lê Hoàng Nam • TP.HCM', text: 'Tích cực chia sẻ các tư liệu lịch sử đúng đắn trên mạng xã hội để lan tỏa tinh thần yêu nước.', time: 'Hôm nay' }
+      { name: 'Trương Mai Lan • 9a1 • THCS Xà Bang', text: `Em xin hứa sẽ noi gương các thế hệ cha anh, tích cực học tập, rèn luyện và góp phần bảo tồn, phát huy giá trị di sản ${monumentName}!`, time: 'Vừa xong' },
+      { name: 'Nguyễn Văn An • THCS Xà Bang', text: `Em cam kết tìm hiểu sâu sắc lịch sử dân tộc và giới thiệu di tích ${monumentName} đến bạn bè quốc tế!`, time: 'Hôm nay' },
+      { name: 'Trần Thị Mai • 9A1', text: `Giữ gìn vệ sinh và tôn trọng không gian trang nghiêm khi đến tham quan khu di tích ${monumentName}.`, time: 'Hôm nay' }
     ];
   });
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
-  // Auto-fill student info and message when opened
+  // Tự động điền thông tin học sinh & lời cam kết đã có khi mở Modal
   useEffect(() => {
     if (isOpen) {
       setHasSubmitted(false);
+      const passport = activePassport || getActivePassport();
       let name = '';
       let msg = '';
 
-      const passport = activePassport || getActivePassport();
-
-      // 1. Lấy thông tin họ tên, trường, lớp
+      // 1. Lấy thông tin học sinh
       if (initialStudentInfo?.studentName) {
         name = initialStudentInfo.studentName.trim();
         if (initialStudentInfo.className) name += ` • ${initialStudentInfo.className.trim()}`;
@@ -76,18 +77,18 @@ export default function ActionModal({
         } catch (e) {}
       }
 
-      // 2. Lấy nội dung thông điệp/cam kết từ Báo Cáo Điều Tra đã nhập
+      // 2. Lấy nội dung thông điệp/cam kết từ Báo Cáo Điều Tra hoặc Cam Kết đã lưu
       if (initialStudentInfo?.messageToFuture && initialStudentInfo.messageToFuture.trim()) {
         msg = initialStudentInfo.messageToFuture.trim();
       } else {
         try {
-          const savedReport = JSON.parse(localStorage.getItem(`di_san_so_report_${monumentStt}`) || '{}');
-          if (savedReport?.messageToFuture && savedReport.messageToFuture.trim()) {
-            msg = savedReport.messageToFuture.trim();
+          const savedPledge = JSON.parse(localStorage.getItem(`di_san_so_pledge_${monumentStt}`) || '{}');
+          if (savedPledge?.text && savedPledge.text.trim()) {
+            msg = savedPledge.text.trim();
           } else {
-            const savedPledge = JSON.parse(localStorage.getItem(`di_san_so_pledge_${monumentStt}`) || '{}');
-            if (savedPledge?.text && savedPledge.text.trim()) {
-              msg = savedPledge.text.trim();
+            const savedReport = JSON.parse(localStorage.getItem(`di_san_so_report_${monumentStt}`) || '{}');
+            if (savedReport?.messageToFuture && savedReport.messageToFuture.trim()) {
+              msg = savedReport.messageToFuture.trim();
             } else {
               const lastInfo = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
               if (lastInfo?.messageToFuture && lastInfo.messageToFuture.trim()) {
@@ -102,7 +103,7 @@ export default function ActionModal({
       if (msg) {
         setPledgeMsg(msg);
       } else {
-        setPledgeMsg(`Em xin hứa sẽ noi gương các thế hệ cha anh, tích cực học tập, rèn luyện và góp phần bảo tồn, phát huy giá trị di sản ${monumentName}!`);
+        setPledgeMsg(`Em xin hứa luôn trân trọng, gìn giữ và lan tỏa niềm tự hào di sản lịch sử dân tộc tại di tích ${monumentName}!`);
       }
     }
   }, [isOpen, initialStudentInfo, activePassport, monumentName, monumentStt]);
@@ -131,7 +132,7 @@ export default function ActionModal({
     };
     setPledges(prev => [newPledgeItem, ...prev]);
 
-    // 2. Lưu thực sự trên Web (LocalStorage)
+    // 2. Lưu thực sự trên Web (LocalStorage toàn diện)
     try {
       const rawPledges = localStorage.getItem('di_san_so_pledges');
       const savedList = rawPledges ? JSON.parse(rawPledges) : [];
@@ -139,25 +140,67 @@ export default function ActionModal({
       if (savedList.length > 50) savedList.pop();
       localStorage.setItem('di_san_so_pledges', JSON.stringify(savedList));
       localStorage.setItem(`di_san_so_pledge_${monumentStt}`, JSON.stringify(newPledgeItem));
+
+      // Đồng bộ vào last student info
+      const prevInfo = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+      localStorage.setItem('di_san_so_last_student_info', JSON.stringify({
+        ...prevInfo,
+        studentName: studentFull.split('•')[0]?.trim() || studentFull,
+        messageToFuture: pledgeText
+      }));
+
+      // Đồng bộ vào hồ sơ điều tra di tích này nếu có
+      const prevReport = JSON.parse(localStorage.getItem(`di_san_so_report_${monumentStt}`) || '{}');
+      localStorage.setItem(`di_san_so_report_${monumentStt}`, JSON.stringify({
+        ...prevReport,
+        messageToFuture: pledgeText
+      }));
+
       window.dispatchEvent(new Event('storage'));
+      window.dispatchEvent(new CustomEvent('di_san_so_pledge_updated', { detail: newPledgeItem }));
     } catch (err) {}
 
     // 3. Cập nhật Hộ Chiếu Di Sản & cộng thêm +100 XP
+    let updatedPassport = null;
     if (currentP) {
-      const updated = checkInMonument(monumentStt, monumentName, 100);
-      if (updated && onPassportUpdate) onPassportUpdate(updated);
+      updatedPassport = checkInMonument(monumentStt, monumentName, 100);
+      if (updatedPassport && onPassportUpdate) onPassportUpdate(updatedPassport);
     }
     if (onCompleteInvestigation) {
       onCompleteInvestigation(monumentStt);
     }
 
-    // 4. Gửi thực sự về Google Sheets qua Telemetry
+    // 4. Gửi thực sự về Google Sheets qua Telemetry (Đồng bộ cả Báo Cáo Điều Tra & Đóng Góp)
     try {
+      const schoolStr = currentP?.school || initialStudentInfo?.schoolName || (studentFull.includes('•') ? studentFull.split('•')[2]?.trim() : 'TP.HCM');
+      const gradeStr = currentP?.grade || initialStudentInfo?.className || (studentFull.includes('•') ? studentFull.split('•')[1]?.trim() : 'THCS');
+      const rawNameStr = studentFull.includes('•') ? studentFull.split('•')[0]?.trim() : studentFull;
+
+      // Ghi nhận vào Tab Báo Cáo Điều Tra & Tri Ân (Cột: Lời cam kết & tri ân)
+      trackInvestigationReport({
+        passport: updatedPassport || currentP || {
+          code: 'GUEST',
+          fullName: rawNameStr,
+          school: schoolStr,
+          grade: gradeStr,
+          totalXP: (currentP?.totalXP || 0) + 100
+        },
+        monumentStt,
+        monumentName,
+        question: `Cam kết hành động & gìn giữ di tích: ${monumentName}`,
+        answer: pledgeText,
+        messageToFuture: pledgeText,
+        earnedXP: 100,
+        totalVisited: updatedPassport ? Object.keys(updatedPassport.visitedMonuments || {}).length : 1,
+        totalXP: updatedPassport ? updatedPassport.totalXP : ((currentP?.totalXP || 0) + 100)
+      });
+
+      // Ghi nhận vào Tab Đóng Góp & Ý Kiến
       sendTelemetryEvent('PLEDGE_ACTION', {
         passportCode: currentP?.code || 'GUEST',
-        fullName: studentFull,
-        school: currentP?.school || initialStudentInfo?.schoolName || '',
-        grade: currentP?.grade || initialStudentInfo?.className || '',
+        fullName: rawNameStr,
+        school: schoolStr,
+        grade: gradeStr,
         monumentStt,
         monumentName,
         title: `Hành động bảo tồn di tích: ${monumentName}`,
@@ -165,11 +208,12 @@ export default function ActionModal({
         totalXP: (currentP?.totalXP || 0) + 100,
         actionDetail: `Học sinh gửi cam kết hành động bảo vệ di tích: ${monumentName}`
       });
+
       trackContribution({
         passportCode: currentP?.code || 'GUEST',
-        author: studentFull,
-        school: currentP?.school || initialStudentInfo?.schoolName || '',
-        grade: currentP?.grade || initialStudentInfo?.className || '',
+        author: rawNameStr,
+        school: schoolStr,
+        grade: gradeStr,
         monumentName,
         type: 'Cam kết hành động',
         title: `Hành động bảo tồn di tích ${monumentName}`,

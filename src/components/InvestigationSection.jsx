@@ -203,8 +203,12 @@ export default function InvestigationSection({
       } catch (e) {}
     };
     window.addEventListener('storage', handleStorageUpdate);
+    window.addEventListener('di_san_so_pledge_updated', handleStorageUpdate);
     handleStorageUpdate();
-    return () => window.removeEventListener('storage', handleStorageUpdate);
+    return () => {
+      window.removeEventListener('storage', handleStorageUpdate);
+      window.removeEventListener('di_san_so_pledge_updated', handleStorageUpdate);
+    };
   }, [monumentStt]);
 
   // ==========================================
