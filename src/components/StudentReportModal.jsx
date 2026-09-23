@@ -199,6 +199,20 @@ export default function StudentReportModal({
       onCompleteInvestigation(monumentStt);
     }
     confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } });
+
+    // Tự động chuyển tiếp sau 1.2s: Đóng modal điều tra và tự động cuộn tới Sổ tay cam kết hành động (+100 XP)
+    setTimeout(() => {
+      if (onOpenActionModal) {
+        onOpenActionModal({
+          studentName: studentName.trim(),
+          className: className.trim(),
+          schoolName: schoolName.trim(),
+          messageToFuture: messageToFuture.trim()
+        });
+      } else if (onClose) {
+        onClose();
+      }
+    }, 1200);
   };
 
   return (

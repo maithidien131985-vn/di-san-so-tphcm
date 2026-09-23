@@ -729,6 +729,7 @@ export default function InvestigationSection({
               </button>
 
               <button
+                id="investigation-action-btn"
                 onClick={() => {
                   soundEffects.playUnlock();
                   if (onOpenActionModal) {
@@ -799,7 +800,7 @@ export default function InvestigationSection({
         {/* ========================================================================= */}
         {/* PHẦN HIỂN THỊ TRỰC TIẾP: THÔNG ĐIỆP HÀNH ĐỘNG TỪ CÁC BẠN HỌC SINH */}
         {/* ========================================================================= */}
-        <div className="mt-8 p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-[#FFFDF9] via-[#FAF5ED] to-[#F5ECE0] border-2 border-[#EADBC8] shadow-sm space-y-4">
+        <div id="investigation-action-pledge" className="mt-8 p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-[#FFFDF9] via-[#FAF5ED] to-[#F5ECE0] border-2 border-[#EADBC8] shadow-sm space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#EADBC8]">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-[#A6732E] text-amber-100 flex items-center justify-center shadow-md">

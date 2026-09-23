@@ -48,11 +48,36 @@ export default function ActionModal({
     ];
   });
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [countdown, setCountdown] = useState(4);
+
+  // Tự động đóng modal sau 4 giây chúc mừng và cuộn tới bảng tin cộng đồng
+  useEffect(() => {
+    let interval;
+    if (hasSubmitted) {
+      setCountdown(4);
+      interval = setInterval(() => {
+        setCountdown((prev) => {
+          if (prev <= 1) {
+            clearInterval(interval);
+            onClose();
+            setTimeout(() => {
+              const feedEl = document.getElementById('investigation-action-pledge');
+              if (feedEl) feedEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 300);
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+    return () => clearInterval(interval);
+  }, [hasSubmitted, onClose]);
 
   // Tự động điền thông tin học sinh & lời cam kết đã có khi mở Modal
   useEffect(() => {
     if (isOpen) {
       setHasSubmitted(false);
+      setCountdown(4);
       const passport = activePassport || getActivePassport();
       let name = '';
       let msg = '';
@@ -347,8 +372,26 @@ export default function ActionModal({
                 <p className="text-[#4A3E36] italic">"{pledgeMsg}"</p>
               </div>
 
+              {/* Trạng thái tự động chuyển tiếp */}
+              <div className="text-xs text-amber-900 bg-amber-100/90 border border-amber-300 px-4 py-2 rounded-xl flex items-center justify-center gap-2 font-bold">
+                <span>⏱️ Tự động hoàn thành & thoát trong <strong>{countdown}s</strong>...</span>
+                <button
+                  onClick={() => {
+                    soundEffects.playTap();
+                    onClose();
+                    setTimeout(() => {
+                      const feedEl = document.getElementById('investigation-action-pledge');
+                      if (feedEl) feedEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 300);
+                  }}
+                  className="underline text-[#7B1113] hover:text-red-700 cursor-pointer font-black ml-1"
+                >
+                  (Thoát ngay &rarr;)
+                </button>
+              </div>
+
               {/* Các nút hành động điều hướng */}
-              <div className="w-full max-w-lg flex flex-col sm:flex-row gap-3 pt-2">
+              <div className="w-full max-w-lg flex flex-col sm:flex-row gap-3 pt-1">
                 <button
                   onClick={() => {
                     soundEffects.playTap();

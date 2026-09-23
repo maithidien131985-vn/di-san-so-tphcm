@@ -766,7 +766,17 @@ export default function App() {
         onOpenActionModal={(info) => {
           setActionStudentInfo(info);
           setStudentReportOpen(false);
-          setActionModalOpen(true);
+          // Tự động cuộn trang mượt mà tới vị trí Sổ tay cam kết hành động
+          setTimeout(() => {
+            const el = document.getElementById('investigation-action-btn') || document.getElementById('investigation-action-pledge') || document.getElementById('investigation-section');
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            // Mở Sổ tay cam kết hành động sau khi cuộn tới vị trí
+            setTimeout(() => {
+              setActionModalOpen(true);
+            }, 500);
+          }, 100);
         }}
       />
 
