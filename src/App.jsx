@@ -34,7 +34,7 @@ import PersonalJourneyPage from './components/PersonalJourneyPage';
 import Footer from './components/Footer';
 import { allMonumentsList, getMonumentByIdOrStt } from './data/allMonumentsData';
 import { getActivePassport } from './utils/passportStorage';
-import { trackContribution } from './utils/studentAnalytics';
+import { trackContribution, flushOfflineQueue, syncActivePassportTelemetry } from './utils/studentAnalytics';
 
 const CONTRIBUTIONS_KEY = 'di_san_so_contributions_v4';
 
@@ -208,6 +208,15 @@ export default function App() {
         }
       }
       keysToClean.forEach(k => localStorage.removeItem(k));
+    } catch (e) {}
+
+    // Tự động giải phóng hàng đợi telemetry và đồng bộ trạng thái Hộ chiếu hiện tại lên Google Sheets
+    try {
+      flushOfflineQueue();
+      const activePassport = getActivePassport();
+      if (activePassport && activePassport.code) {
+        syncActivePassportTelemetry(activePassport);
+      }
     } catch (e) {}
   }, []);
 

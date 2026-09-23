@@ -6,8 +6,8 @@
 const WEBHOOK_STORAGE_KEY = 'di_san_so_google_sheet_webhook_v1';
 const QUEUE_STORAGE_KEY = 'di_san_so_telemetry_queue_v1';
 
-// URL mặc định (có thể được cấu hình hoặc thay đổi động qua giao diện quản trị)
-export const DEFAULT_WEBHOOK_URL = '';
+// URL mặc định kết nối trực tiếp đến Google Apps Script Web App của Dự án Di Sản Số
+export const DEFAULT_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbynf8ef1pLZ5FRpvJMtBXZGVqjPVHSUA0Ts-bTbGSmJPIm18z0m_HLQRS-XRNdk5hknIw/exec';
 
 /**
  * Lấy URL Google Sheets Webhook hiện tại
@@ -88,34 +88,70 @@ function saveToOfflineQueue(eventData) {
     const raw = localStorage.getItem(QUEUE_STORAGE_KEY);
     const queue = raw ? JSON.parse(raw) : [];
     queue.push(eventData);
-    // Giữ tối đa 100 sự kiện gần nhất
-    if (queue.length > 100) queue.shift();
+    // Giữ tối đa 200 sự kiện gần nhất
+    if (queue.length > 200) queue.shift();
     localStorage.setItem(QUEUE_STORAGE_KEY, JSON.stringify(queue));
   } catch (e) {
     // Bỏ qua lỗi bộ nhớ
   }
 }
 
-async function flushOfflineQueue(webhookUrl) {
+let isFlushing = false;
+export async function flushOfflineQueue(customWebhookUrl) {
+  if (isFlushing || typeof window === 'undefined') return;
+  const webhookUrl = customWebhookUrl || getGoogleSheetWebhookUrl();
+  if (!webhookUrl) return;
+
   try {
     const raw = localStorage.getItem(QUEUE_STORAGE_KEY);
     if (!raw) return;
     const queue = JSON.parse(raw);
     if (!Array.isArray(queue) || queue.length === 0) return;
 
-    // Lấy tối đa 5 sự kiện gửi dần
-    const item = queue.shift();
-    localStorage.setItem(QUEUE_STORAGE_KEY, JSON.stringify(queue));
+    isFlushing = true;
+    while (queue.length > 0) {
+      const item = queue.shift();
+      localStorage.setItem(QUEUE_STORAGE_KEY, JSON.stringify(queue));
 
-    await fetch(webhookUrl, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(item)
-    });
+      try {
+        await fetch(webhookUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(item)
+        });
+        // Nghỉ nhẹ 150ms để không nghẽn mạng
+        await new Promise(r => setTimeout(r, 150));
+      } catch (err) {
+        // Nếu lỗi mạng, đưa lại item vào queue rồi dừng
+        queue.unshift(item);
+        localStorage.setItem(QUEUE_STORAGE_KEY, JSON.stringify(queue));
+        break;
+      }
+    }
   } catch (e) {
-    // Không làm gián đoạn luồng chính
+    // Bỏ qua lỗi
+  } finally {
+    isFlushing = false;
   }
+}
+
+/**
+ * Tự động đồng bộ Hộ chiếu hiện có khi học sinh mở lại website
+ */
+export function syncActivePassportTelemetry(passport) {
+  if (!passport || !passport.code) return;
+  const visitedCount = Object.keys(passport.visitedMonuments || {}).length;
+  sendTelemetryEvent('LOGIN', {
+    passportCode: passport.code,
+    fullName: passport.fullName || 'Học sinh',
+    school: passport.school || 'TP.HCM',
+    grade: passport.grade || 'THCS',
+    avatar: passport.avatar || '🦁',
+    totalXP: passport.totalXP || 0,
+    visitedCount: visitedCount,
+    actionDetail: `Tự động đồng bộ dữ liệu: Đã tích lũy ${passport.totalXP || 0} XP, đi qua ${visitedCount}/103 di tích`
+  });
 }
 
 // ==============================================================================
