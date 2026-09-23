@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   X, 
   Leaf, 
@@ -49,6 +49,7 @@ export default function ActionModal({
   });
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [countdown, setCountdown] = useState(4);
+  const prevOpenRef = useRef(false);
 
   // Tự động đóng modal sau 4 giây chúc mừng và cuộn tới bảng tin cộng đồng
   useEffect(() => {
@@ -73,9 +74,9 @@ export default function ActionModal({
     return () => clearInterval(interval);
   }, [hasSubmitted, onClose]);
 
-  // Tự động điền thông tin học sinh & lời cam kết đã có khi mở Modal
+  // Tự động điền thông tin học sinh & lời cam kết CHỈ KHI MỞ MODAL LẦN ĐẦU (không reset khi state cha cập nhật)
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen && !prevOpenRef.current) {
       setHasSubmitted(false);
       setCountdown(4);
       const passport = activePassport || getActivePassport();
@@ -131,7 +132,8 @@ export default function ActionModal({
         setPledgeMsg(`Em xin hứa luôn trân trọng, gìn giữ và lan tỏa niềm tự hào di sản lịch sử dân tộc tại di tích ${monumentName}!`);
       }
     }
-  }, [isOpen, initialStudentInfo, activePassport, monumentName, monumentStt]);
+    prevOpenRef.current = isOpen;
+  }, [isOpen, initialStudentInfo, monumentName, monumentStt]);
 
   if (!isOpen) return null;
 
@@ -344,11 +346,11 @@ export default function ActionModal({
                 </div>
 
                 <h3 className="font-serif-title font-black text-xl sm:text-2xl text-[#7B1113] leading-tight">
-                  Xuất Sắc! Bạn Đã Khám Phá Xong Di Tích {monumentName}!
+                  🎉 Chúc Mừng Bạn Đã Hoàn Thành Di Tích Này!
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
-                  Em đã hoàn thành trọn vẹn thử thách điều tra lịch sử, nộp báo cáo và gửi thông điệp cam kết hành động bảo tồn di sản.
+                <p className="text-xs sm:text-sm font-bold text-[#8C5D1E] leading-relaxed">
+                  Em đã hoàn thành trọn vẹn thử thách điều tra lịch sử & gửi thông điệp cam kết bảo tồn di sản. Hãy cùng khám phá di tích tiếp theo nhé!
                 </p>
 
                 {/* Âm thanh nhắc nhở */}
