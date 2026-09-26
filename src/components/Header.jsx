@@ -88,32 +88,6 @@ export default function Header({
               {item.label}
             </button>
           ))}
-
-          {/* Nút Khảo sát trước */}
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdaWRyPsEJi4EiAl2IchLIfdbmLdpNKJw-HV9KiIQolcCBkBw/viewform?usp=sharing&ouid=113410705406929590560"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-bold transition-all hover:scale-103 shadow-2xs"
-            title="Khảo sát trước khi trải nghiệm website"
-          >
-            <ClipboardCheck className="w-3.5 h-3.5 text-emerald-700" />
-            <span>Khảo sát trước</span>
-            <ExternalLink className="w-3 h-3 opacity-60" />
-          </a>
-
-          {/* Nút Khảo sát sau trải nghiệm Web */}
-          <a
-            href="https://forms.gle/ZuZ4vvcvUKmXA38K6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300 text-xs font-bold transition-all hover:scale-103 shadow-2xs"
-            title="Khảo sát sau trải nghiệm Web"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-            <span>Khảo sát sau trải nghiệm Web</span>
-            <ExternalLink className="w-3 h-3 opacity-60" />
-          </a>
         </nav>
 
         {/* Action Controls */}
@@ -209,35 +183,6 @@ export default function Header({
               {item.label}
             </button>
           ))}
-
-          {/* Mobile Survey Buttons */}
-          <div className="pt-2 border-t border-gray-100 space-y-2">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdaWRyPsEJi4EiAl2IchLIfdbmLdpNKJw-HV9KiIQolcCBkBw/viewform?usp=sharing&ouid=113410705406929590560"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between w-full px-3.5 py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 text-xs font-bold shadow-xs"
-            >
-              <div className="flex items-center gap-2">
-                <ClipboardCheck className="w-4 h-4 text-emerald-700" />
-                <span>Khảo sát trước</span>
-              </div>
-              <ExternalLink className="w-3.5 h-3.5 text-emerald-600" />
-            </a>
-
-            <a
-              href="https://forms.gle/ZuZ4vvcvUKmXA38K6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between w-full px-3.5 py-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300 text-xs font-bold shadow-xs"
-            >
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-amber-600" />
-                <span>Khảo sát sau trải nghiệm Web</span>
-              </div>
-              <ExternalLink className="w-3.5 h-3.5 text-[#7E1819]" />
-            </a>
-          </div>
 
           <div className="pt-2 border-t border-gray-100 flex gap-2">
             <button
