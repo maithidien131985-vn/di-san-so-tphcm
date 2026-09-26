@@ -92,45 +92,40 @@ export default function Header({
 
         {/* Action Controls */}
         <div className="flex items-center gap-2 sm:gap-2.5">
-          {/* Nút THẺ KHÁM PHÁ DI SẢN */}
-          <button
-            onClick={onOpenPassport}
-            className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-black shadow-xs cursor-pointer transition-all hover:scale-103 ${
-              activePassport
-                ? 'bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-[#2C0709] border border-amber-300 ring-2 ring-amber-400/40'
-                : 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border border-amber-400/50 hover:from-[#731013] hover:to-[#911d1e]'
-            }`}
-            title={activePassport ? `Thẻ khám phá: ${activePassport.fullName} (${activePassport.code})` : "Mở Thẻ khám phá di sản / Lưu hành trình khám phá"}
-          >
-            {activePassport ? (
-              <>
-                <span className="text-sm leading-none">{activePassport.avatar || '🦁'}</span>
-                <span className="hidden sm:inline font-serif-title uppercase max-w-[110px] truncate">{activePassport.fullName}</span>
-                <span className="bg-black/30 text-amber-950 font-mono text-[10px] px-1.5 py-0.5 rounded font-black hidden md:inline">{activePassport.code}</span>
-              </>
-            ) : (
-              <>
-                <Compass className="w-3.5 h-3.5 text-amber-300 animate-spin-slow" />
-                <span className="hidden sm:inline">Thẻ khám phá di sản</span>
-                <span className="sm:hidden">Thẻ khám phá</span>
-              </>
-            )}
-          </button>
-
-          {/* Nút SƠ ĐỒ HÀNH TRÌNH (Đặt ngay phía sau Thẻ khám phá di sản) */}
+          {/* Nút SƠ ĐỒ HÀNH TRÌNH (Tích hợp thông tin học sinh / Thẻ khám phá di sản) */}
           <button
             onClick={() => {
               if (onNavigate) onNavigate('journey');
             }}
-            className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-3 sm:py-2 rounded-xl text-xs font-bold transition-all border cursor-pointer hover:scale-103 ${
-              viewMode === 'journey'
+            className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-black shadow-xs cursor-pointer transition-all hover:scale-103 ${
+              activePassport
+                ? viewMode === 'journey'
+                  ? 'bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-[#2C0709] border border-amber-300 ring-2 ring-amber-400/50'
+                  : 'bg-gradient-to-r from-amber-400/90 to-yellow-400/90 hover:from-amber-400 hover:to-yellow-400 text-[#2C0709] border border-amber-300'
+                : viewMode === 'journey'
                 ? 'bg-amber-100 text-[#7E1819] border-amber-400 font-black shadow-xs'
-                : 'bg-[#FAF4F0] hover:bg-amber-50 text-[#7E1819] border-rose-200/80 hover:border-amber-300'
+                : 'bg-[#FAF4F0] hover:bg-amber-50 text-[#7E1819] border-rose-200/80 hover:border-amber-300 font-bold'
             }`}
-            title="Sơ đồ hành trình khám phá cá nhân"
+            title={
+              activePassport
+                ? `Sơ đồ hành trình di sản: ${activePassport.fullName} (${activePassport.code})`
+                : "Sơ đồ hành trình khám phá di sản"
+            }
           >
-            <Compass className="w-3.5 h-3.5 text-[#7E1819]" />
-            <span className="hidden sm:inline">Sơ đồ hành trình</span>
+            {activePassport ? (
+              <>
+                <span className="text-sm leading-none">{activePassport.avatar || '🦁'}</span>
+                <span className="font-serif-title uppercase tracking-wide">Sơ đồ hành trình</span>
+                <span className="bg-black/20 text-[#2C0709] font-mono text-[10px] px-1.5 py-0.5 rounded font-black hidden md:inline">
+                  {activePassport.code}
+                </span>
+              </>
+            ) : (
+              <>
+                <Compass className="w-3.5 h-3.5 text-[#7E1819]" />
+                <span>Sơ đồ hành trình</span>
+              </>
+            )}
           </button>
 
           {/* Nút Đóng Góp */}
