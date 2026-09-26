@@ -35,6 +35,13 @@ import Footer from './components/Footer';
 import { allMonumentsList, getMonumentByIdOrStt } from './data/allMonumentsData';
 import { getActivePassport, checkInMonument } from './utils/passportStorage';
 import { trackContribution, flushOfflineQueue, syncActivePassportTelemetry } from './utils/studentAnalytics';
+import { 
+  parseCurrentUrl, 
+  updatePageMetadata, 
+  getMonumentSlug, 
+  getMonumentUrl, 
+  findMonumentBySlugOrParam 
+} from './utils/seoUtils';
 
 const CONTRIBUTIONS_KEY = 'di_san_so_contributions_v4';
 
@@ -88,41 +95,13 @@ const initialSampleContributions = [
 ];
 
 function getInitialStateFromUrl() {
-  if (typeof window !== 'undefined') {
-    const hash = window.location.hash;
-    if (hash === '#journey' || hash === '#profile' || hash === '#hanh-trinh') {
-      return { stt: 1, mode: 'journey' };
-    }
-    if (hash && hash.includes('monument')) {
-      const match = hash.match(/\d+/);
-      if (match) {
-        const parsed = parseInt(match[0]);
-        if (parsed >= 1 && parsed <= allMonumentsList.length) {
-          return { stt: parsed, mode: 'detail' };
-        }
-      }
-      return { stt: 1, mode: 'detail' };
-    }
-    const params = new URLSearchParams(window.location.search);
-    const viewParam = params.get('view');
-    if (viewParam === 'journey' || viewParam === 'profile') {
-      return { stt: 1, mode: 'journey' };
-    }
-    const sttParam = params.get('stt') || params.get('id');
-    if (sttParam) {
-      const parsed = parseInt(sttParam);
-      if (parsed >= 1 && parsed <= allMonumentsList.length) {
-        return { stt: parsed, mode: 'detail' };
-      }
-    }
-  }
-  return { stt: 1, mode: 'home' };
+  return parseCurrentUrl(allMonumentsList);
 }
 
 export default function App() {
   const initial = getInitialStateFromUrl();
   const [viewMode, setViewMode] = useState(initial.mode);
-  const [currentStt, setCurrentStt] = useState(initial.stt);
+  const [currentStt, setCurrentStt] = useState(initial.stt || 1);
 
   const baseMonument = useMemo(() => {
     return getMonumentByIdOrStt(currentStt);
@@ -220,27 +199,46 @@ export default function App() {
     } catch (e) {}
   }, []);
 
+  // 1. Lắng nghe sự thay đổi URL từ trình duyệt (nút Back/Forward hoặc nhập URL trực tiếp)
   useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash;
-      if (hash === '#home' || hash === '' || hash === '#') {
-        setViewMode('home');
-      } else if (hash === '#journey' || hash === '#profile' || hash === '#hanh-trinh') {
-        setViewMode('journey');
-      } else if (hash.includes('monument')) {
-        const match = hash.match(/\d+/);
-        if (match) {
-          const parsed = parseInt(match[0]);
-          if (parsed >= 1 && parsed <= allMonumentsList.length) {
-            setCurrentStt(parsed);
-            setViewMode('detail');
-          }
-        }
+    const handleUrlChange = () => {
+      const parsed = parseCurrentUrl(allMonumentsList);
+      setViewMode(parsed.mode);
+      if (parsed.stt) {
+        setCurrentStt(parsed.stt);
       }
     };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handleUrlChange);
+    window.addEventListener('hashchange', handleUrlChange);
+    return () => {
+      window.removeEventListener('popstate', handleUrlChange);
+      window.removeEventListener('hashchange', handleUrlChange);
+    };
   }, []);
+
+  // 2. Tự động cập nhật URL đẹp (/di-tich/dinh-doc-lap), document.title và thẻ SEO meta description
+  useEffect(() => {
+    const currentMon = data || baseMonument;
+    updatePageMetadata({ mode: viewMode, monument: currentMon });
+
+    if (typeof window !== 'undefined') {
+      if (viewMode === 'detail' && currentMon) {
+        const slug = getMonumentSlug(currentMon);
+        const targetPath = `/di-tich/${slug}`;
+        if (window.location.pathname !== targetPath) {
+          window.history.replaceState({ mode: 'detail', stt: currentMon.stt }, '', targetPath);
+        }
+      } else if (viewMode === 'journey') {
+        if (window.location.pathname !== '/so-do-hanh-trinh') {
+          window.history.replaceState({ mode: 'journey' }, '', '/so-do-hanh-trinh');
+        }
+      } else if (viewMode === 'home') {
+        if (window.location.pathname.startsWith('/di-tich') || window.location.pathname === '/so-do-hanh-trinh') {
+          window.history.replaceState({ mode: 'home' }, '', '/');
+        }
+      }
+    }
+  }, [viewMode, currentStt, data?.info?.name]);
 
   useEffect(() => {
     if (data) {
@@ -357,11 +355,15 @@ export default function App() {
   const handleNavigate = (target) => {
     if (target === 'home') {
       setViewMode('home');
-      window.location.hash = '#home';
+      if (typeof window !== 'undefined') {
+        window.history.pushState({ mode: 'home' }, '', '/');
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (target === 'journey' || target === 'profile') {
       setViewMode('journey');
-      window.location.hash = '#journey';
+      if (typeof window !== 'undefined') {
+        window.history.pushState({ mode: 'journey' }, '', '/so-do-hanh-trinh');
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (target === 'map') {
       setMyMapModalOpen(true);
@@ -379,18 +381,20 @@ export default function App() {
   };
 
   const handleSelectMonument = (monumentIdOrSttOrObj) => {
-    let targetStt = 1;
+    const matched = findMonumentBySlugOrParam(monumentIdOrSttOrObj, allMonumentsList);
+    let targetStt = matched?.stt || 1;
+
     if (typeof monumentIdOrSttOrObj === 'number' && !isNaN(monumentIdOrSttOrObj)) {
       targetStt = monumentIdOrSttOrObj;
     } else if (typeof monumentIdOrSttOrObj === 'string') {
       const match = monumentIdOrSttOrObj.match(/\d+/);
-      if (match) targetStt = parseInt(match[0]);
+      if (match) targetStt = parseInt(match[0], 10);
     } else if (monumentIdOrSttOrObj && typeof monumentIdOrSttOrObj === 'object') {
       if (typeof monumentIdOrSttOrObj.stt === 'number') {
         targetStt = monumentIdOrSttOrObj.stt;
       } else if (monumentIdOrSttOrObj.id) {
         const match = String(monumentIdOrSttOrObj.id).match(/\d+/);
-        if (match) targetStt = parseInt(match[0]);
+        if (match) targetStt = parseInt(match[0], 10);
       }
     }
     if (targetStt < 1 || targetStt > allMonumentsList.length) {
@@ -398,7 +402,12 @@ export default function App() {
     }
     setCurrentStt(targetStt);
     setViewMode('detail');
-    window.location.hash = `#monument-${targetStt}`;
+
+    const targetMon = allMonumentsList[targetStt - 1] || matched;
+    const slug = getMonumentSlug(targetMon);
+    if (typeof window !== 'undefined') {
+      window.history.pushState({ mode: 'detail', stt: targetStt }, '', `/di-tich/${slug}`);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
