@@ -276,7 +276,7 @@ export default function HeritageAIChatbot({
         {
           id: `welcome_${mon.stt}_${Date.now()}`,
           sender: 'ai',
-          text: `Kính chào bạn! Bạn đang tìm hiểu di tích **${name}** (#STT ${mon.stt}) 🏛️✨\n\nTôi sẵn sàng giải đáp chuẩn xác về **lịch sử, nhân vật, sự kiện, hiện vật, xếp hạng và vị trí** của di tích này. Kính mời bạn đặt câu hỏi!`,
+          text: `Xin chào! Bạn đang tìm hiểu di tích **${name}** (#STT ${mon.stt}).\n\nTôi có thể giải đáp chi tiết về **lịch sử, nhân vật, sự kiện, hiện vật, xếp hạng và vị trí** của di tích này. Bạn hãy đặt câu hỏi nhé!`,
           timestamp: new Date(),
           suggestions: suggestions
         }
@@ -286,7 +286,7 @@ export default function HeritageAIChatbot({
       {
         id: `welcome_home_${Date.now()}`,
         sender: 'ai',
-        text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi được huấn luyện chuyên sâu với bộ tri thức chuẩn mực gồm **3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa cấp Quốc gia và Quốc gia Đặc biệt** của Thành phố Hồ Chí Minh.\n\n📌 **Phạm vi hỗ trợ tra cứu chuẩn xác:**\n- 📜 **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh lịch sử và quá trình hình thành.\n- 👤 **Nhân vật & Sự kiện:** Dấu ấn các anh hùng, danh nhân và chiến công hào hùng.\n- 🏺 **Hiện vật & Bảo vật:** Các di vật, vũ khí và giá trị khảo cổ quý báu.\n- ⭐ **Giá trị & Pháp lý:** Quyết định xếp hạng, loại hình và ý nghĩa bảo tồn.\n- 📍 **Địa lý & Tọa độ:** Vị trí, bản đồ chỉ đường và thước phim tư liệu.\n\n*Kính mời bạn nhập câu hỏi để bắt đầu tra cứu!*`,
+        text: `Xin chào quý thầy cô và các bạn học sinh! 👋\n\nTôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM**, đồng hành cùng bạn khám phá **103 di tích lịch sử - văn hóa** của Thành phố.\n\n💡 **Bạn có thể hỏi tôi về:**\n- **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh và quá trình hình thành.\n- **Nhân vật & Sự kiện:** Các mốc son, anh hùng và chiến công lịch sử.\n- **Hiện vật & Địa điểm:** Vị trí, bản đồ chỉ đường và bảo vật lưu giữ.\n\n*Hãy nhập câu hỏi hoặc chọn các gợi ý bên dưới để bắt đầu nhé!*`,
         timestamp: new Date(),
         suggestions: [
           'TP.HCM có bao nhiêu di tích đã xếp hạng?',
@@ -490,7 +490,7 @@ export default function HeritageAIChatbot({
     // 1. GREETINGS & INTRO
     if (/^(chao|hello|hi|xin chao|ban la ai|gioi thieu ban|tro ly la ai|ban lam duoc gi)$/i.test(cleanQ)) {
       return {
-        text: `Kính chào quý thầy cô và các bạn học sinh! Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM** 🏛️✨\n\nTôi hỗ trợ bạn tra cứu toàn diện với **bộ tri thức chuẩn 3.605 câu hỏi - đáp chính thống** về **103 Di tích Lịch sử - Văn hóa TP.HCM & Vùng phụ cận**:\n\n- 🔍 **Tra cứu nhanh:** Theo tên di tích, số STT (#1 - #103) hoặc địa bàn Quận/Huyện.\n- 📜 **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh lịch sử và quá trình hình thành.\n- 👤 **Nhân vật & Hiện vật:** Bác Hồ, Võ Thị Sáu, Trần Phú, Tôn Đức Thắng, xe tăng 390/843, hầm vũ khí...\n- ⚔️ **Sự kiện & Chiến công:** Các trận đánh, khởi nghĩa, chiến dịch giải phóng...\n- 🎧 **Đa phương tiện & Vị trí:** Thuyết minh audio kịch bản tự sáng, video tư liệu và bản đồ GPS.\n\n*Kính mời bạn nhập câu hỏi để bắt đầu tra cứu!*`,
+        text: `Xin chào! 👋 Tôi là **Trợ Lý Trí Tuệ Nhân Tạo Di Sản TP.HCM**.\n\nTôi đồng hành cùng bạn khám phá và tra cứu thông tin chuẩn xác về **103 Di tích Lịch sử - Văn hóa** của Thành phố:\n\n- **Tra cứu nhanh:** Theo tên di tích, số STT (#1 đến #103) hoặc địa bàn Quận/Huyện.\n- **Lịch sử & Niên đại:** Nguồn gốc, bối cảnh và quá trình hình thành.\n- **Nhân vật & Sự kiện:** Các mốc son, anh hùng và chiến công lịch sử.\n- **Hiện vật & Địa điểm:** Vị trí, bản đồ chỉ đường và hiện vật lưu giữ.`,
         relatedMonuments: [allMonumentsList[0], allMonumentsList[1], allMonumentsList[3]]
       };
     }
@@ -1019,21 +1019,21 @@ export default function HeritageAIChatbot({
   };
 
   // Helper to parse and format inline markdown (**bold**, *italic*) safely
-  const formatInlineText = (text) => {
+  const formatInlineText = (text, isUser = false) => {
     if (!text) return null;
     try {
       const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
       return parts.map((part, i) => {
         if (part.startsWith('**') && part.endsWith('**') && part.length >= 4) {
           return (
-            <strong key={i} className="font-bold text-[#8B1417]">
+            <strong key={i} className={isUser ? "font-bold text-white" : "font-semibold text-stone-900"}>
               {part.slice(2, -2)}
             </strong>
           );
         }
         if (part.startsWith('*') && part.endsWith('*') && part.length >= 2) {
           return (
-            <em key={i} className="italic text-stone-700">
+            <em key={i} className={isUser ? "italic text-white/90" : "italic text-stone-600"}>
               {part.slice(1, -1)}
             </em>
           );
@@ -1238,37 +1238,37 @@ export default function HeritageAIChatbot({
           />
 
           <div 
-            className={`fixed z-50 transition-all duration-300 flex flex-col bg-[#FFFDFB] border-2 border-rose-200 shadow-2xl shadow-red-950/30 overflow-hidden ${
+            className={`fixed z-50 transition-all duration-300 flex flex-col bg-[#FAF8F5] border border-stone-200/90 shadow-2xl shadow-stone-900/20 overflow-hidden ${
               isExpanded
                 ? 'inset-2 sm:inset-6 md:inset-10 rounded-3xl'
-                : 'inset-x-0 bottom-0 sm:bottom-20 sm:right-6 sm:inset-x-auto w-full sm:w-[420px] md:w-[460px] h-[90vh] sm:h-[620px] rounded-t-3xl sm:rounded-3xl'
+                : 'inset-x-0 bottom-0 sm:bottom-20 sm:right-6 sm:inset-x-auto w-full sm:w-[480px] md:w-[520px] h-[88vh] sm:h-[650px] rounded-t-3xl sm:rounded-3xl'
             }`}
           >
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#8B1417] via-[#9B1C1E] to-[#B31D21] text-white p-3.5 sm:p-4 flex items-center justify-between shadow-md">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-white/15 border border-amber-300/40 flex items-center justify-center text-amber-200 shadow-inner">
-                <Bot className="w-5 h-5 sm:w-6 sm:h-6" />
+          <div className="bg-gradient-to-r from-[#7B1113] via-[#8B1417] to-[#9C1619] text-white px-4 py-3.5 flex items-center justify-between shadow-sm">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-white/15 border border-white/20 flex items-center justify-center text-amber-200 shadow-inner shrink-0">
+                <Bot className="w-5 h-5" />
               </div>
-              <div>
-                <div className="flex items-center gap-1.5 flex-wrap">
-                  <h3 className="font-serif-title font-black text-xs sm:text-sm uppercase tracking-wide text-white">
-                    TRỢ LÝ DI SẢN AI
+              <div className="min-w-0">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <h3 className="font-serif-title font-bold text-sm text-white tracking-wide">
+                    Trợ Lý Di Sản AI
                   </h3>
-                                    {isDeepSeekEnabled && hasDeepSeekApiKey() ? (
+                  {isDeepSeekEnabled && hasDeepSeekApiKey() ? (
                     <button
                       onClick={() => setShowSettings(true)}
-                      className="px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 text-[#200507] text-[9px] font-black uppercase flex items-center gap-1 shadow-xs hover:scale-105 transition-transform cursor-pointer"
-                      title="Đang chạy mô hình DeepSeek-V3 LLM"
+                      className="px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 text-[#200507] text-[9.5px] font-bold uppercase flex items-center gap-1 shadow-2xs hover:opacity-90 transition-opacity cursor-pointer"
+                      title="Đang dùng DeepSeek-V3 LLM"
                     >
                       <Zap className="w-2.5 h-2.5 fill-current" />
-                      <span>DeepSeek V3</span>
+                      <span>DeepSeek-V3</span>
                     </button>
                   ) : isGeminiEnabled && getGeminiApiKey() ? (
                     <button
                       onClick={() => setShowSettings(true)}
-                      className="px-2 py-0.2 rounded-full bg-amber-400 text-[#8B1417] text-[9px] font-black uppercase flex items-center gap-1 shadow-xs hover:scale-105 transition-transform cursor-pointer"
-                      title="Đang chạy Google Gemini AI trực tiếp"
+                      className="px-2 py-0.5 rounded-full bg-amber-400 text-[#8B1417] text-[9.5px] font-bold uppercase flex items-center gap-1 shadow-2xs hover:opacity-90 transition-opacity cursor-pointer"
+                      title="Đang dùng Google Gemini Live"
                     >
                       <Sparkles className="w-2.5 h-2.5 fill-current" />
                       <span>Gemini Live</span>
@@ -1276,40 +1276,46 @@ export default function HeritageAIChatbot({
                   ) : (
                     <button
                       onClick={() => setShowSettings(true)}
-                      className="px-1.5 py-0.2 rounded-full bg-white/20 text-amber-200 text-[9px] font-bold uppercase hover:bg-white/30 transition-colors cursor-pointer"
-                      title="Nhấn để kết nối DeepSeek hoặc Gemini API"
+                      className="px-2 py-0.5 rounded-full bg-white/20 text-white/90 text-[9.5px] font-semibold hover:bg-white/30 transition-colors cursor-pointer"
+                      title="Nhấn để cấu hình AI API"
                     >
-                      Bản Địa (103 DT)
+                      Tri thức 103 DT
                     </button>
                   )}
                 </div>
-                <p className="text-[10px] text-rose-100/90 flex items-center gap-1">
-                  <span className={`w-1.5 h-1.5 rounded-full ${isDeepSeekEnabled && hasDeepSeekApiKey() ? 'bg-amber-300 animate-ping' : isGeminiEnabled && getGeminiApiKey() ? 'bg-amber-300 animate-pulse' : 'bg-emerald-400 animate-pulse'}`} />
-                  <span>{isDeepSeekEnabled && hasDeepSeekApiKey() ? 'DeepSeek-V3 LLM Siêu Trí Tuệ Sẵn Sàng' : isGeminiEnabled && getGeminiApiKey() ? 'Google Gemini 1.5 Flash Sẵn Sàng' : 'Tri thức số hóa 103 di tích'}</span>
+                <p className="text-[11px] text-rose-100/90 flex items-center gap-1.5 mt-0.5">
+                  <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isDeepSeekEnabled && hasDeepSeekApiKey() ? 'bg-amber-300 animate-pulse' : isGeminiEnabled && getGeminiApiKey() ? 'bg-amber-300 animate-pulse' : 'bg-emerald-400 animate-pulse'}`} />
+                  <span className="truncate">
+                    {isDeepSeekEnabled && hasDeepSeekApiKey() 
+                      ? 'DeepSeek LLM trực tuyến' 
+                      : isGeminiEnabled && getGeminiApiKey() 
+                      ? 'Gemini Live trực tuyến' 
+                      : 'Sẵn sàng giải đáp 103 di tích'}
+                  </span>
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-1 text-white/80">
+            <div className="flex items-center gap-0.5 text-white/80">
               <button
                 onClick={() => setShowSettings(!showSettings)}
-                className={`p-1.5 rounded-lg transition-colors cursor-pointer ${showSettings ? 'bg-white/25 text-amber-200' : 'hover:bg-white/15 hover:text-white'}`}
-                title="Cài đặt DeepSeek AI API"
+                className={`p-2 rounded-xl transition-colors cursor-pointer ${showSettings ? 'bg-white/25 text-amber-200' : 'hover:bg-white/15 hover:text-white'}`}
+                title="Cài đặt AI API"
               >
                 <Settings className="w-4 h-4" />
               </button>
 
               <button
                 onClick={handleReset}
-                className="p-1.5 rounded-lg hover:bg-white/15 hover:text-white transition-colors cursor-pointer"
-                title="Làm mới cuộc trò chuyện"
+                className="p-2 rounded-xl hover:bg-white/15 hover:text-white transition-colors cursor-pointer"
+                title="Bắt đầu đoạn chat mới"
               >
                 <RefreshCw className="w-4 h-4" />
               </button>
 
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="hidden sm:block p-1.5 rounded-lg hover:bg-white/15 hover:text-white transition-colors cursor-pointer"
+                className="hidden sm:block p-2 rounded-xl hover:bg-white/15 hover:text-white transition-colors cursor-pointer"
                 title={isExpanded ? "Thu nhỏ" : "Phóng to"}
               >
                 {isExpanded ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
@@ -1317,7 +1323,7 @@ export default function HeritageAIChatbot({
 
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-1.5 rounded-lg hover:bg-white/15 hover:text-white transition-colors cursor-pointer"
+                className="p-2 rounded-xl hover:bg-white/15 hover:text-white transition-colors cursor-pointer"
                 title="Đóng chat"
               >
                 <X className="w-4 h-4" />
@@ -1327,14 +1333,14 @@ export default function HeritageAIChatbot({
 
           {/* DeepSeek API Settings Collapsible Drawer (Admin Password Protected) */}
           {showSettings && (
-            <div className="bg-[#FFFDFB] border-b-2 border-rose-200 p-3.5 sm:p-4 text-xs space-y-3 shadow-inner animate-in slide-in-from-top-2 duration-200">
+            <div className="bg-white border-b border-stone-200 p-4 text-xs space-y-3 shadow-inner animate-in slide-in-from-top-2 duration-200">
               {!isAdminUnlocked && !isAdminLoggedIn() ? (
                 /* Admin Authentication Prompt */
                 <form onSubmit={handleAdminUnlock} className="space-y-3 py-1">
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5 font-bold text-[#8B1417]">
-                      <Lock className="w-4 h-4 text-[#8B1417]" />
-                      <span className="font-serif-title uppercase text-xs sm:text-[13px] tracking-wide">
+                    <div className="flex items-center gap-1.5 font-bold text-[#7B1113]">
+                      <Lock className="w-4 h-4 text-[#7B1113]" />
+                      <span className="font-serif-title uppercase text-xs tracking-wide">
                         XÁC THỰC QUẢN TRỊ VIÊN
                       </span>
                     </div>
@@ -1366,7 +1372,7 @@ export default function HeritageAIChatbot({
                           if (adminAuthError) setAdminAuthError('');
                         }}
                         placeholder="Nhập mật khẩu quản trị (mặc định: admin)..."
-                        className="w-full py-2 pl-3.5 pr-10 text-xs font-mono bg-[#FAF4F0] border border-rose-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417]"
+                        className="w-full py-2 pl-3.5 pr-10 text-xs font-mono bg-stone-50 border border-stone-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#7B1113]"
                       />
                       <button
                         type="button"
@@ -1393,13 +1399,13 @@ export default function HeritageAIChatbot({
                         setAdminAuthError('');
                         setAdminPwdInput('');
                       }}
-                      className="px-3 py-1.5 rounded-lg border border-rose-200 text-stone-600 hover:bg-rose-50 font-bold text-[11px] cursor-pointer"
+                      className="px-3 py-1.5 rounded-lg border border-stone-200 text-stone-600 hover:bg-stone-50 font-medium text-[11px] cursor-pointer"
                     >
                       Hủy bỏ
                     </button>
                     <button
                       type="submit"
-                      className="px-3.5 py-1.5 rounded-lg bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold text-[11px] transition-colors cursor-pointer shadow-xs flex items-center gap-1.5"
+                      className="px-3.5 py-1.5 rounded-lg bg-[#7B1113] hover:bg-[#8B1417] text-white font-medium text-[11px] transition-colors cursor-pointer shadow-xs flex items-center gap-1.5"
                     >
                       <ShieldCheck className="w-3.5 h-3.5" />
                       <span>Mở khóa cấu hình</span>
@@ -1410,15 +1416,15 @@ export default function HeritageAIChatbot({
                 /* Unlocked DeepSeek API Settings Form */
                 <>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5 font-bold text-[#8B1417]">
+                    <div className="flex items-center gap-1.5 font-bold text-[#7B1113]">
                       <Sparkles className="w-4 h-4 text-amber-500 fill-amber-500" />
-                      <span className="font-serif-title uppercase text-xs sm:text-[13px] tracking-wide">CẤU HÌNH DEEPSEEK API</span>
+                      <span className="font-serif-title uppercase text-xs tracking-wide">CẤU HÌNH DEEPSEEK API</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <button
                         type="button"
                         onClick={() => setIsAdminUnlocked(false)}
-                        className="text-[10px] text-stone-500 hover:text-[#8B1417] hover:underline font-bold cursor-pointer"
+                        className="text-[10px] text-stone-500 hover:text-[#7B1113] hover:underline font-semibold cursor-pointer"
                         title="Khóa lại phần cấu hình"
                       >
                         Khóa lại
@@ -1449,13 +1455,13 @@ export default function HeritageAIChatbot({
                         autoComplete="off"
                         spellCheck="false"
                         placeholder="Dán mã DeepSeek API Key (sk-...)"
-                        className="w-full py-2.5 pl-3.5 pr-14 text-xs font-mono bg-[#FAF4F0] border border-rose-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] shadow-inner select-none"
+                        className="w-full py-2.5 pl-3.5 pr-14 text-xs font-mono bg-stone-50 border border-stone-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#7B1113] select-none"
                       />
                       {apiKeyInput && (
                         <button
                           type="button"
                           onClick={handleClearApiKey}
-                          className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-[#8B1417] text-[11px] font-bold cursor-pointer"
+                          className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-[#7B1113] text-[11px] font-semibold cursor-pointer"
                         >
                           Xóa
                         </button>
@@ -1467,7 +1473,7 @@ export default function HeritageAIChatbot({
                         href="https://platform.deepseek.com/api_keys"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[10px] sm:text-[11px] font-bold text-[#8B1417] hover:underline flex items-center gap-1"
+                        className="text-[10px] sm:text-[11px] font-semibold text-[#7B1113] hover:underline flex items-center gap-1"
                       >
                         <span>Lấy API Key DeepSeek (platform.deepseek.com)</span>
                         <ExternalLink className="w-3 h-3" />
@@ -1478,7 +1484,7 @@ export default function HeritageAIChatbot({
                           type="button"
                           onClick={handleTestConnection}
                           disabled={isTestingKey || !apiKeyInput}
-                          className="px-2.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-[#8B1417] border border-rose-200 font-bold text-[11px] transition-colors cursor-pointer disabled:opacity-50 flex items-center gap-1"
+                          className="px-2.5 py-1.5 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-200 font-medium text-[11px] transition-colors cursor-pointer disabled:opacity-50 flex items-center gap-1"
                         >
                           {isTestingKey ? (
                             <>
@@ -1492,7 +1498,7 @@ export default function HeritageAIChatbot({
 
                         <button
                           type="submit"
-                          className="px-3.5 py-1.5 rounded-lg bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold text-[11px] transition-colors cursor-pointer shadow-xs"
+                          className="px-3.5 py-1.5 rounded-lg bg-[#7B1113] hover:bg-[#8B1417] text-white font-medium text-[11px] transition-colors cursor-pointer shadow-xs"
                         >
                           Lưu cấu hình
                         </button>
@@ -1501,7 +1507,7 @@ export default function HeritageAIChatbot({
                   </form>
 
                   {statusMessage && (
-                    <div className={"p-2.5 rounded-xl border text-[11px] font-bold flex items-center gap-2 animate-in fade-in " + (
+                    <div className={"p-2.5 rounded-xl border text-[11px] font-medium flex items-center gap-2 animate-in fade-in " + (
                       statusMessage.type === 'success' 
                         ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
                         : statusMessage.type === 'error'
@@ -1525,31 +1531,63 @@ export default function HeritageAIChatbot({
 
           {/* Context Banner (If looking at specific monument) */}
           {viewMode === 'detail' && currentMonument && !showSettings && (
-            <div className="bg-[#FAF4F0] px-3.5 py-2 border-b border-rose-100 flex items-center justify-between text-xs text-[#8B1417]">
-              <div className="flex items-center gap-1.5 font-bold truncate">
-                <Landmark className="w-3.5 h-3.5 shrink-0" />
+            <div className="bg-amber-50/70 px-4 py-2 border-b border-amber-200/60 flex items-center justify-between text-xs text-stone-700">
+              <div className="flex items-center gap-2 font-semibold truncate">
+                <Landmark className="w-3.5 h-3.5 text-[#7B1113] shrink-0" />
                 <span className="truncate">Đang xem: #{currentMonument.stt} {currentMonument.info.name}</span>
               </div>
-              <span className="text-[10px] text-stone-500 shrink-0">Hỏi đáp trực tiếp</span>
+              <span className="text-[10.5px] text-stone-500 shrink-0">Hỏi đáp trực tiếp</span>
             </div>
           )}
 
           {/* Message List */}
-          <div className="flex-1 overflow-y-auto p-3.5 sm:p-4 space-y-4 bg-[#FAF7F5]/50">
+          <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 bg-[#FAF8F5]">
             {messages.map((msg, index) => (
               <div
                 key={msg.id || index}
                 className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'}`}
               >
                 <div
-                  className={`max-w-[90%] sm:max-w-[85%] rounded-2xl p-3 sm:p-3.5 text-xs sm:text-sm leading-relaxed shadow-xs ${
+                  className={`max-w-[92%] sm:max-w-[88%] rounded-2xl p-4 text-[13px] sm:text-[13.5px] leading-[1.75] shadow-xs ${
                     msg.sender === 'user'
-                      ? 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white rounded-tr-xs'
-                      : 'bg-white border border-rose-200 text-[#2A1214] rounded-tl-xs space-y-2'
+                      ? 'bg-gradient-to-r from-[#7B1113] to-[#96171a] text-white rounded-tr-xs px-4 py-3'
+                      : 'bg-white border border-stone-200/90 text-stone-800 rounded-tl-xs space-y-2.5'
                   }`}
                 >
+                  {/* AI Message Model Header */}
+                  {msg.sender === 'ai' && (
+                    <div className="flex items-center justify-between pb-2 mb-1 border-b border-stone-100 text-[10.5px]">
+                      <div className="flex items-center gap-1.5 text-stone-500 font-medium">
+                        {msg.isDeepSeek ? (
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-800 font-semibold">
+                            <Zap className="w-2.5 h-2.5 fill-current text-amber-600" />
+                            <span>DeepSeek-V3 LLM</span>
+                          </span>
+                        ) : msg.isGemini ? (
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-800 font-semibold">
+                            <Sparkles className="w-2.5 h-2.5 fill-current text-amber-600" />
+                            <span>Gemini Live</span>
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 text-stone-600 font-medium">
+                            <Bot className="w-3.5 h-3.5 text-[#7B1113]" />
+                            <span>Trợ Lý Di Sản TP.HCM</span>
+                          </span>
+                        )}
+                      </div>
+                      <button
+                        onClick={() => handleCopy(msg.text, index)}
+                        className="text-stone-400 hover:text-stone-700 p-1 rounded-md hover:bg-stone-50 cursor-pointer flex items-center gap-1 transition-colors"
+                        title="Sao chép câu trả lời"
+                      >
+                        {copiedIndex === index ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                        <span className="text-[10px]">{copiedIndex === index ? 'Đã chép' : 'Chép'}</span>
+                      </button>
+                    </div>
+                  )}
+
                   {/* Rich Formatted Message content */}
-                  <div className="space-y-1">
+                  <div className="space-y-2">
                     {msg.text.split('\n').map((line, lIdx) => {
                       const trimmedLine = line.trim();
                       if (!trimmedLine) {
@@ -1557,23 +1595,23 @@ export default function HeritageAIChatbot({
                       }
                       if (trimmedLine.startsWith('### ')) {
                         return (
-                          <h4 key={lIdx} className="font-serif-title font-black text-xs sm:text-sm text-[#8B1417] pt-1 pb-0.5 border-b border-rose-100">
+                          <h4 key={lIdx} className="font-serif-title font-bold text-[14px] sm:text-[15px] text-[#7B1113] pt-1 pb-0.5">
                             {trimmedLine.replace('### ', '')}
                           </h4>
                         );
                       }
                       if (trimmedLine.startsWith('> ')) {
                         return (
-                          <blockquote key={lIdx} className="border-l-3 border-amber-500 bg-amber-50/80 px-2.5 py-1 my-1 italic text-stone-800 rounded-r-md text-[11px] sm:text-xs">
-                            {formatInlineText(trimmedLine.replace('> ', ''))}
+                          <blockquote key={lIdx} className="border-l-3 border-amber-500 bg-amber-50/70 px-3 py-1.5 my-1.5 italic text-stone-700 rounded-r-lg text-xs leading-relaxed">
+                            {formatInlineText(trimmedLine.replace('> ', ''), msg.sender === 'user')}
                           </blockquote>
                         );
                       }
                       if (trimmedLine.startsWith('- ')) {
                         return (
-                          <div key={lIdx} className="flex items-start gap-1.5 py-0.5 pl-1 text-[11.5px] sm:text-xs">
-                            <span className="text-[#8B1417] font-bold shrink-0">•</span>
-                            <span className="leading-snug">{formatInlineText(trimmedLine.slice(2))}</span>
+                          <div key={lIdx} className="flex items-start gap-2 py-0.5 pl-0.5 text-xs sm:text-[13px] text-stone-800">
+                            <span className="text-amber-600 font-bold shrink-0 mt-0.5">•</span>
+                            <span className="leading-[1.7] flex-1">{formatInlineText(trimmedLine.slice(2), msg.sender === 'user')}</span>
                           </div>
                         );
                       }
@@ -1581,16 +1619,16 @@ export default function HeritageAIChatbot({
                         const numMatch = trimmedLine.match(/^([0-9]+)\.\s(.*)$/);
                         if (numMatch) {
                           return (
-                            <div key={lIdx} className="flex items-start gap-1.5 py-0.5 pl-1 text-[11.5px] sm:text-xs">
-                              <span className="font-black text-[#8B1417] shrink-0">{numMatch[1]}.</span>
-                              <span className="leading-snug">{formatInlineText(numMatch[2])}</span>
+                            <div key={lIdx} className="flex items-start gap-2 py-0.5 pl-0.5 text-xs sm:text-[13px] text-stone-800">
+                              <span className="font-bold text-[#7B1113] shrink-0">{numMatch[1]}.</span>
+                              <span className="leading-[1.7] flex-1">{formatInlineText(numMatch[2], msg.sender === 'user')}</span>
                             </div>
                           );
                         }
                       }
                       return (
-                        <p key={lIdx} className="leading-relaxed text-[11.5px] sm:text-xs">
-                          {formatInlineText(trimmedLine)}
+                        <p key={lIdx} className="leading-[1.75] text-xs sm:text-[13px]">
+                          {formatInlineText(trimmedLine, msg.sender === 'user')}
                         </p>
                       );
                     })}
@@ -1598,9 +1636,9 @@ export default function HeritageAIChatbot({
 
                   {/* Interactive Monument Cards in AI Response */}
                   {msg.relatedMonuments && msg.relatedMonuments.length > 0 && (
-                    <div className="pt-2 mt-2 border-t border-rose-100 space-y-1.5">
-                      <div className="text-[10px] font-black uppercase tracking-wider text-[#8B1417]">
-                        Di tích liên quan ({msg.relatedMonuments.length}):
+                    <div className="pt-3 mt-3 border-t border-stone-100 space-y-2">
+                      <div className="text-[10.5px] font-bold uppercase tracking-wider text-stone-500">
+                        Di tích liên quan:
                       </div>
                       <div className="grid grid-cols-1 gap-1.5">
                         {msg.relatedMonuments.map(rm => (
@@ -1610,83 +1648,38 @@ export default function HeritageAIChatbot({
                               if (onSelectMonument) onSelectMonument(rm.stt);
                               if (window.innerWidth < 640) setIsOpen(false);
                             }}
-                            className="p-2 rounded-xl bg-[#FAF4F0] hover:bg-rose-100/70 border border-rose-200/80 flex items-center justify-between cursor-pointer transition-colors group"
+                            className="p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 border border-stone-200/80 hover:border-amber-300/80 flex items-center justify-between cursor-pointer transition-all group"
                           >
-                            <div className="flex items-center gap-2 min-w-0">
-                              <div className="w-8 h-8 rounded-lg overflow-hidden bg-rose-100 shrink-0 border border-rose-200">
+                            <div className="flex items-center gap-2.5 min-w-0">
+                              <div className="w-8 h-8 rounded-lg overflow-hidden bg-stone-200 shrink-0 border border-stone-200">
                                 <img src={rm.info.heroImage} alt={rm.info.name} className="w-full h-full object-cover" />
                               </div>
                               <div className="min-w-0">
-                                <div className="text-[11px] font-bold text-[#8B1417] truncate group-hover:underline">
+                                <div className="text-xs font-semibold text-stone-800 truncate group-hover:text-[#7B1113]">
                                   #{rm.stt} {rm.info.name}
                                 </div>
-                                <div className="text-[9px] text-stone-500 truncate">{rm.info.address}</div>
+                                <div className="text-[10px] text-stone-500 truncate">{rm.info.address}</div>
                               </div>
                             </div>
-                            <div className="flex items-center gap-0.5 text-[10px] font-bold text-[#8B1417] shrink-0 pl-1">
+                            <div className="flex items-center gap-0.5 text-[11px] font-semibold text-[#7B1113] shrink-0 pl-2">
                               <span>Xem</span>
-                              <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                              <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                             </div>
                           </div>
                         ))}
                       </div>
                     </div>
                   )}
-
-                  {/* AI Message Action Buttons: Copy */}
-                  {msg.sender === 'ai' && (
-                  <div className="flex items-center gap-1.5 mb-1 text-[10px]">
-                    {msg.isDeepSeek ? (
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500 text-[#200507] font-black uppercase tracking-wider shadow-2xs">
-                        <Zap className="w-2.5 h-2.5 fill-current" />
-                        <span>DeepSeek V3 LLM</span>
-                      </span>
-                    ) : msg.isGemini ? (
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 text-[#8B1417] font-black uppercase tracking-wider">
-                        <Sparkles className="w-2.5 h-2.5 fill-current text-amber-600" />
-                        <span>Gemini Live</span>
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-rose-100 text-[#8B1417] font-bold">
-                        <Bot className="w-2.5 h-2.5" />
-                        <span>AI Bản Địa 3.605 Q&A</span>
-                      </span>
-                    )}
-                  </div>
-                )}
-                {false && msg.sender === 'ai' && (
-                    <div className="flex items-center justify-between pt-1.5 text-[11px] text-stone-400 border-t border-rose-50/60 mt-1">
-                      {msg.isGemini ? (
-                        <span className="text-[9.5px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200/80 flex items-center gap-1">
-                          <Sparkles className="w-2.5 h-2.5 text-amber-600 fill-current" />
-                          <span>Google Gemini 1.5 Flash</span>
-                        </span>
-                      ) : (
-                        <span className="text-[9.5px] font-bold text-[#8B1417] bg-rose-50 px-2 py-0.5 rounded-full border border-rose-100 flex items-center gap-1">
-                          <Landmark className="w-2.5 h-2.5" />
-                          <span>Trí tuệ Di Sản Số hóa</span>
-                        </span>
-                      )}
-                      <button
-                        onClick={() => handleCopy(msg.text, index)}
-                        className="hover:text-[#8B1417] cursor-pointer flex items-center gap-1 transition-colors"
-                        title="Sao chép câu trả lời"
-                      >
-                        {copiedIndex === index ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                        <span className="text-[10px]">{copiedIndex === index ? 'Đã sao chép' : 'Sao chép'}</span>
-                      </button>
-                    </div>
-                  )}
                 </div>
 
                 {/* Suggestions chips attached to message */}
                 {msg.suggestions && msg.suggestions.length > 0 && (
-                  <div className="mt-2.5 flex flex-wrap gap-1.5 max-w-[95%]">
+                  <div className="mt-3 flex flex-wrap gap-1.5 max-w-[95%]">
                     {msg.suggestions.map((sug, sIdx) => (
                       <button
                         key={sIdx}
                         onClick={() => handleSendMessage(sug)}
-                        className="px-2.5 py-1 rounded-full bg-white hover:bg-[#FAF4F0] border border-rose-200 text-[#8B1417] text-[11px] font-medium transition-all hover:scale-102 cursor-pointer shadow-2xs text-left"
+                        className="px-3 py-1.5 rounded-full bg-white hover:bg-stone-50 border border-stone-200 text-stone-700 hover:text-[#7B1113] text-[11.5px] font-medium transition-all hover:border-[#7B1113]/40 cursor-pointer shadow-2xs text-left"
                       >
                         💡 {sug}
                       </button>
@@ -1698,27 +1691,25 @@ export default function HeritageAIChatbot({
 
             {/* Thinking Indicator */}
             {isThinking && (
-              <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-white border border-rose-200 w-fit text-xs text-[#8B1417] shadow-sm animate-pulse">
+              <div className="flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-white border border-stone-200 w-fit text-xs text-stone-700 shadow-sm animate-pulse">
                 {isDeepSeekEnabled && hasDeepSeekApiKey() ? (
-                  <div className="w-5 h-5 rounded-lg bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center text-[#200507] shadow-2xs">
-                    <Zap className="w-3.5 h-3.5 fill-current animate-bounce" />
-                  </div>
+                  <Zap className="w-4 h-4 text-amber-500 animate-bounce" />
                 ) : isGeminiEnabled && getGeminiApiKey() ? (
                   <Sparkles className="w-4 h-4 animate-spin text-amber-600" />
                 ) : (
-                  <Bot className="w-4 h-4 animate-spin text-[#8B1417]" />
+                  <Bot className="w-4 h-4 animate-spin text-[#7B1113]" />
                 )}
-                <span className="font-bold text-[#8B1417]">
+                <span className="font-medium text-stone-700">
                   {isDeepSeekEnabled && hasDeepSeekApiKey()
-                    ? 'DeepSeek-V3 LLM đang suy nghĩ...'
+                    ? 'DeepSeek-V3 đang suy nghĩ...'
                     : isGeminiEnabled && getGeminiApiKey()
-                    ? 'Google Gemini 1.5 Flash đang suy nghĩ...'
-                    : 'Đang tra cứu cơ sở dữ liệu 103 di tích...'}
+                    ? 'Gemini đang phân tích...'
+                    : 'Đang tra cứu dữ liệu 103 di tích...'}
                 </span>
-                <span className="flex gap-1 items-center">
-                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-bounce [animation-delay:-0.3s]" />
-                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-bounce [animation-delay:-0.15s]" />
-                  <span className="w-1.5 h-1.5 bg-[#8B1417] rounded-full animate-bounce" />
+                <span className="flex gap-1 items-center ml-1">
+                  <span className="w-1.5 h-1.5 bg-[#7B1113] rounded-full animate-bounce [animation-delay:-0.3s]" />
+                  <span className="w-1.5 h-1.5 bg-[#7B1113] rounded-full animate-bounce [animation-delay:-0.15s]" />
+                  <span className="w-1.5 h-1.5 bg-[#7B1113] rounded-full animate-bounce" />
                 </span>
               </div>
             )}
@@ -1727,13 +1718,13 @@ export default function HeritageAIChatbot({
           </div>
 
           {/* Quick Context Prompt Chips */}
-          <div className="px-3 py-2 bg-white border-t border-rose-100 overflow-x-auto whitespace-nowrap flex items-center gap-1.5 no-scrollbar">
-            <span className="text-[10px] font-bold text-stone-400 shrink-0">Gợi ý:</span>
+          <div className="px-3.5 py-2 bg-white/90 backdrop-blur-xs border-t border-stone-100 overflow-x-auto whitespace-nowrap flex items-center gap-1.5 no-scrollbar">
+            <span className="text-[10px] font-semibold text-stone-400 shrink-0">Gợi ý:</span>
             {contextualSuggestions.map((chip, cIdx) => (
               <button
                 key={cIdx}
                 onClick={() => handleSendMessage(chip)}
-                className="px-2.5 py-1 rounded-full bg-[#FAF4F0] hover:bg-rose-100 text-[#8B1417] text-[10px] font-bold border border-rose-200/60 shrink-0 transition-colors cursor-pointer"
+                className="px-2.5 py-1 rounded-full bg-stone-100 hover:bg-stone-200/80 text-stone-700 hover:text-stone-900 text-[10.5px] font-medium shrink-0 transition-colors cursor-pointer"
               >
                 {chip}
               </button>
@@ -1746,7 +1737,7 @@ export default function HeritageAIChatbot({
               e.preventDefault();
               handleSendMessage();
             }}
-            className="p-2.5 sm:p-3 bg-[#FFFDFB] border-t border-rose-200 flex items-center gap-2"
+            className="p-3 sm:p-3.5 bg-white border-t border-stone-200/80 flex items-center gap-2"
           >
             <input
               ref={inputRef}
@@ -1754,15 +1745,15 @@ export default function HeritageAIChatbot({
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
               placeholder="Nhập câu hỏi về di tích, lịch sử, nhân vật..."
-              className="flex-1 py-2.5 px-3.5 text-xs sm:text-sm text-[#2A1214] placeholder-stone-400 bg-[#FAF4F0] rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] transition-all font-medium border border-rose-200"
+              className="flex-1 py-2.5 px-4 text-xs sm:text-sm text-stone-800 placeholder-stone-400 bg-stone-100/80 hover:bg-stone-100 focus:bg-white rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#7B1113]/30 focus:border-[#7B1113] border border-stone-200/80 transition-all font-normal"
             />
             <button
               type="submit"
               disabled={!inputMessage.trim()}
-              className={`p-2.5 sm:px-4 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
+              className={`p-2.5 sm:px-4 sm:py-2.5 rounded-2xl font-semibold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
                 inputMessage.trim()
-                  ? 'bg-gradient-to-r from-[#8B1417] to-[#B31D21] text-white shadow-md hover:scale-103'
-                  : 'bg-stone-200 text-stone-400 cursor-not-allowed'
+                  ? 'bg-[#7B1113] hover:bg-[#8B1417] text-white shadow-sm hover:shadow active:scale-95'
+                  : 'bg-stone-100 text-stone-400 cursor-not-allowed border border-stone-200/60'
               }`}
             >
               <Send className="w-4 h-4" />
