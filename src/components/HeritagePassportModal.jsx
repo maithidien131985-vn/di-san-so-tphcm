@@ -25,7 +25,8 @@ import confetti from 'canvas-confetti';
 import { 
   createPassport, 
   loginPassport, 
-  logoutPassport 
+  logoutPassport,
+  normalizePassportCode 
 } from '../utils/passportStorage';
 import { allMonumentsList } from '../data/allMonumentsData';
 import soundEffects from '../utils/soundEffects';
@@ -92,9 +93,10 @@ export default function HeritagePassportModal({
       return;
     }
 
-    const passport = loginPassport(inputCode.trim());
+    const passport = loginPassport(inputCode);
     if (passport) {
-      confetti({ particleCount: 50, spread: 70, origin: { y: 0.6 } });
+      soundEffects.playVictoryFanfare();
+      confetti({ particleCount: 60, spread: 75, origin: { y: 0.6 } });
       onPassportChange(passport);
       setActiveTab('passport');
       setInputCode('');
@@ -576,15 +578,23 @@ export default function HeritagePassportModal({
               </div>
 
               <form onSubmit={handleLogin} className="space-y-4">
-                <div className="space-y-1.5">
+                <div className="space-y-2">
                   <label className="text-xs font-bold text-stone-700 block">Mã số thẻ của bạn:</label>
                   <input
                     type="text"
                     value={inputCode}
-                    onChange={(e) => setInputCode(e.target.value.toUpperCase())}
-                    placeholder="VD: HC-2026-XXXX"
+                    onChange={(e) => {
+                      setInputCode(e.target.value);
+                      if (loginError) setLoginError('');
+                    }}
+                    placeholder="VD: HC-2026-1036 hoặc gõ 1036"
                     className="w-full p-3.5 rounded-2xl bg-[#FAF4F0] border-2 border-rose-300 text-center font-mono font-black text-base sm:text-lg tracking-widest text-[#8B1417] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#8B1417] uppercase shadow-inner"
                   />
+                  {inputCode.trim() && normalizePassportCode(inputCode) !== inputCode.trim().toUpperCase() && (
+                    <div className="text-[11px] text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-lg text-center font-bold">
+                      💡 Tự động nhận diện: <strong>{normalizePassportCode(inputCode)}</strong>
+                    </div>
+                  )}
                   {loginError && (
                     <p className="text-xs font-bold text-red-600 pt-1 text-center">{loginError}</p>
                   )}

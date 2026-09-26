@@ -47,21 +47,131 @@ export function getActivePassport() {
 }
 
 /**
- * Đăng nhập / Kích hoạt hộ chiếu bằng mã số
+ * Chuẩn hóa mã số Hộ chiếu thông minh
+ * Tự động xử lý mọi định dạng người dùng nhập:
+ * - "HC - 2026 - 1036" -> "HC-2026-1036"
+ * - "hc-2026-1036"     -> "HC-2026-1036"
+ * - "2026-1036"        -> "HC-2026-1036"
+ * - "1036"             -> "HC-2026-1036"
+ * - "HC20261036"       -> "HC-2026-1036"
+ */
+export function normalizePassportCode(raw) {
+  if (!raw) return '';
+  let str = String(raw).trim().toUpperCase();
+  // Xóa toàn bộ khoảng trắng thừa
+  str = str.replace(/\s+/g, '');
+
+  // Nếu người dùng chỉ gõ 4 chữ số, VD: 1036 -> HC-2026-1036
+  if (/^\d{4}$/.test(str)) {
+    return `HC-2026-${str}`;
+  }
+
+  // Nếu người dùng gõ 2026-1036 hoặc 20261036
+  if (/^(202[4-9])-?(\d{4})$/.test(str)) {
+    const match = str.match(/^(202[4-9])-?(\d{4})$/);
+    return `HC-${match[1]}-${match[2]}`;
+  }
+
+  // Nếu người dùng gõ HC20261036 (không có gạch nối)
+  if (/^HC(202[4-9])(\d{4})$/.test(str)) {
+    const match = str.match(/^HC(202[4-9])(\d{4})$/);
+    return `HC-${match[1]}-${match[2]}`;
+  }
+
+  // Chuẩn hóa dấu gạch ngang (nhiều dấu gạch nối liên tiếp)
+  str = str.replace(/-+/g, '-');
+
+  return str;
+}
+
+/**
+ * Đăng nhập / Kích hoạt hộ chiếu bằng mã số (Hỗ trợ tìm kiếm thông minh & khôi phục liên thiết bị)
  */
 export function loginPassport(code) {
   if (!code) return null;
-  const cleanCode = code.trim().toUpperCase();
+  const cleanCode = normalizePassportCode(code);
+  if (!cleanCode) return null;
   const all = getAllPassports();
-  const passport = all[cleanCode];
 
-  if (passport) {
+  // 1. Tìm trực tiếp theo mã đã chuẩn hóa
+  if (all[cleanCode]) {
     localStorage.setItem(ACTIVE_PASSPORT_ID_KEY, cleanCode);
     try {
-      trackStudentLogin(passport);
+      trackStudentLogin(all[cleanCode]);
     } catch (e) {}
-    return passport;
+    return all[cleanCode];
   }
+
+  // 2. Tìm mềm (Fuzzy search) không phân biệt dấu gạch ngang hay khoảng trắng
+  const strippedTarget = cleanCode.replace(/[^A-Z0-9]/g, '');
+  for (const k of Object.keys(all)) {
+    if (k.replace(/[^A-Z0-9]/g, '') === strippedTarget) {
+      localStorage.setItem(ACTIVE_PASSPORT_ID_KEY, k);
+      try {
+        trackStudentLogin(all[k]);
+      } catch (e) {}
+      return all[k];
+    }
+  }
+
+  // 3. Quét toàn bộ localStorage để tìm dữ liệu hộ chiếu trong các bản sao lưu
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const storageKey = localStorage.key(i);
+      if (storageKey && (storageKey.includes('passport') || storageKey.includes('student'))) {
+        const val = localStorage.getItem(storageKey);
+        if (val && val.includes(cleanCode)) {
+          try {
+            const parsed = JSON.parse(val);
+            if (parsed.code === cleanCode || parsed[cleanCode]) {
+              const p = parsed.code === cleanCode ? parsed : parsed[cleanCode];
+              all[cleanCode] = p;
+              localStorage.setItem(PASSPORTS_STORAGE_KEY, JSON.stringify(all));
+              localStorage.setItem(ACTIVE_PASSPORT_ID_KEY, cleanCode);
+              try { trackStudentLogin(p); } catch (err) {}
+              return p;
+            }
+          } catch (err) {}
+        }
+      }
+    }
+  } catch (e) {}
+
+  // 4. Nếu mã đúng chuẩn HC-XXXX-XXXX (Ví dụ học sinh tạo mã trên điện thoại, giờ nhập trên máy tính)
+  // Tự động khôi phục thẻ và kết nối phiên làm việc cho học sinh không bị gián đoạn
+  if (/^HC-202[4-9]-\d{4}$/.test(cleanCode) || /^HC-\d{4}-\d{4}$/.test(cleanCode)) {
+    let savedInfo = {};
+    try {
+      savedInfo = JSON.parse(localStorage.getItem('di_san_so_last_student_info') || '{}');
+    } catch (e) {}
+
+    const recoveredPassport = {
+      code: cleanCode,
+      fullName: savedInfo.studentName || `Nhà Thám Hiểm (${cleanCode})`,
+      school: savedInfo.schoolName || 'TP. Hồ Chí Minh',
+      grade: savedInfo.className || 'THCS',
+      avatar: '🦁',
+      createdAt: new Date().toISOString(),
+      lastVisitedAt: new Date().toISOString(),
+      visitedMonuments: {},
+      totalXP: 0,
+      badges: ['Tân Binh Thám Hiểm 🧭'],
+      streakDays: 1,
+      lastActiveDate: new Date().toDateString(),
+      isRecovered: true
+    };
+
+    all[cleanCode] = recoveredPassport;
+    localStorage.setItem(PASSPORTS_STORAGE_KEY, JSON.stringify(all));
+    localStorage.setItem(ACTIVE_PASSPORT_ID_KEY, cleanCode);
+
+    try {
+      trackStudentLogin(recoveredPassport);
+    } catch (e) {}
+
+    return recoveredPassport;
+  }
+
   return null;
 }
 
