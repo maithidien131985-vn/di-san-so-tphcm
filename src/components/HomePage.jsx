@@ -43,6 +43,7 @@ import {
   FileText
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
+import HomePageInteractiveMap from './HomePageInteractiveMap';
 
 export default function HomePage({ 
   allMonuments = [], 
@@ -330,70 +331,13 @@ export default function HomePage({
               </div>
             </div>
 
-            {/* Right Column: Embedded Interactive Google MyMap (Bản đồ số 103 Di tích) */}
+            {/* Right Column: Interactive 103-Point Leaflet Map */}
             <div className="lg:col-span-7 flex justify-center items-center relative w-full overflow-visible py-2 sm:py-4">
-              <div className="w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-amber-400/60 shadow-2xl bg-[#200507]/80 backdrop-blur-md">
-                <div className="bg-[#4A0A0C] px-3.5 sm:px-4 py-2.5 sm:py-3 border-b border-amber-300/30 flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-200">
-                    <MapPin className="w-4 h-4 text-amber-300 animate-bounce" />
-                    <span>Bản đồ số 103 Di tích TP.HCM</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={onOpenMyMap}
-                      className="text-[10px] sm:text-xs px-3 py-1 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#200507] font-black uppercase tracking-wide cursor-pointer transition-all shadow-sm flex items-center gap-1"
-                    >
-                      <MapPin className="w-3.5 h-3.5" />
-                      <span>Toàn màn hình</span>
-                    </button>
-                    <a
-                      href="https://www.google.com/maps/d/edit?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&usp=sharing"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hidden sm:flex text-[10px] sm:text-xs px-2.5 py-1 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold border border-white/20 transition-all items-center gap-1"
-                    >
-                      <span>Google Maps</span>
-                      <ExternalLink className="w-3 h-3 text-amber-300" />
-                    </a>
-                  </div>
-                </div>
-
-                <div className="h-[360px] sm:h-[420px] lg:h-[460px] w-full relative z-0 bg-[#FDF7F5]">
-                  <iframe
-                    src="https://www.google.com/maps/d/embed?mid=1UM24OubPpISXPfooW7VY8Vo4xMZ6dIg&ehbc=2E312F"
-                    width="100%"
-                    height="100%"
-                    className="w-full h-full border-0"
-                    title="Bản đồ Di tích TP. Hồ Chí Minh"
-                    allowFullScreen
-                    loading="lazy"
-                  />
-                </div>
-
-                {/* Quick Region Jump Pills */}
-                <div className="bg-[#380608]/90 px-3 sm:px-4 py-2 border-t border-amber-300/20 flex flex-wrap items-center gap-1.5">
-                  <span className="text-[10px] sm:text-[11px] font-bold text-amber-200/80 flex items-center gap-1 shrink-0 mr-1">
-                    <Compass className="w-3 h-3 text-amber-400" />
-                    <span>Khu vực:</span>
-                  </span>
-                  {[
-                    { name: 'Quận 1 & TT', stt: 1 },
-                    { name: 'Củ Chi', stt: 2 },
-                    { name: 'Cần Giờ', stt: 7 },
-                    { name: 'Chợ Lớn', stt: 10 },
-                    { name: 'Côn Đảo', stt: 4 },
-                    { name: 'Lộc An', stt: 3 }
-                  ].map((tag, tIdx) => (
-                    <button
-                      key={tIdx}
-                      onClick={() => onSelectMonument(tag.stt)}
-                      className="px-2 py-0.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#200507] text-amber-100 text-[10px] sm:text-[11px] font-medium border border-amber-300/30 transition-all cursor-pointer"
-                    >
-                      📍 {tag.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              <HomePageInteractiveMap 
+                currentMonumentStt={1}
+                onSelectMonument={onSelectMonument}
+                onOpenMyMap={onOpenMyMap}
+              />
             </div>
 
           </div>
