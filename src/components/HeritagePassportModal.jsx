@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   X, 
   Home,
@@ -19,14 +19,20 @@ import {
   Calendar, 
   Search,
   ExternalLink,
-  CheckCircle2
+  CheckCircle2,
+  Edit3,
+  UserCheck,
+  RefreshCw,
+  AlertCircle
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { 
   createPassport, 
   loginPassport, 
   logoutPassport,
-  normalizePassportCode 
+  normalizePassportCode,
+  updatePassportProfile,
+  fetchStudentFromCloud 
 } from '../utils/passportStorage';
 import { allMonumentsList } from '../data/allMonumentsData';
 import soundEffects from '../utils/soundEffects';
@@ -42,6 +48,8 @@ export default function HeritagePassportModal({
   const [activeTab, setActiveTab] = useState(activePassport ? 'passport' : 'register');
   const [inputCode, setInputCode] = useState('');
   const [loginError, setLoginError] = useState('');
+  const [isSyncingCloud, setIsSyncingCloud] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
   
   // Registration Form State (Auto-sync with saved student info if available)
   const [fullName, setFullName] = useState(() => {
@@ -68,15 +76,27 @@ export default function HeritagePassportModal({
       return '';
     }
   });
-  const [selectedAvatar, setSelectedAvatar] = useState('🛡️');
+  const [selectedAvatar, setSelectedAvatar] = useState('🦁');
   const [copiedCode, setCopiedCode] = useState(false);
   const [stampSearch, setStampSearch] = useState('');
 
-  React.useEffect(() => {
+  // Edit Profile Form State
+  const [editFullName, setEditFullName] = useState('');
+  const [editSchool, setEditSchool] = useState('');
+  const [editGrade, setEditGrade] = useState('');
+  const [editAvatar, setEditAvatar] = useState('🦁');
+
+  useEffect(() => {
     if (isOpen) {
       setActiveTab(activePassport ? 'passport' : 'register');
       setLoginError('');
       setInputCode('');
+      if (activePassport) {
+        setEditFullName(activePassport.fullName && !activePassport.fullName.startsWith('Nhà Thám Hiểm') ? activePassport.fullName : '');
+        setEditSchool(activePassport.school || '');
+        setEditGrade(activePassport.grade || '');
+        setEditAvatar(activePassport.avatar || '🦁');
+      }
     }
   }, [isOpen, activePassport]);
 
@@ -84,24 +104,84 @@ export default function HeritagePassportModal({
 
   const avatars = ['🦁', '🦅', '🐯', '🌟', '🚀', '🔭', '🏛️', '🛡️', '👑', '🎓'];
 
-  // Handle Login via Code
-  const handleLogin = (e) => {
-    e.preventDefault();
+  // Handle Login via Code with Cloud Auto-Sync
+  const handleLogin = async (e) => {
+    if (e) e.preventDefault();
     setLoginError('');
     if (!inputCode.trim()) {
       setLoginError('Vui lòng nhập mã số thẻ khám phá của bạn');
       return;
     }
 
-    const passport = loginPassport(inputCode);
+    setIsSyncingCloud(true);
+    let passport = loginPassport(inputCode);
+
+    // Thử đồng bộ từ Google Sheets Webhook đám mây nếu có dữ liệu
+    try {
+      const cloudPassport = await fetchStudentFromCloud(inputCode);
+      if (cloudPassport) {
+        passport = cloudPassport;
+      }
+    } catch (err) {
+      console.warn('Lỗi cloud login:', err);
+    } finally {
+      setIsSyncingCloud(false);
+    }
+
     if (passport) {
       soundEffects.playVictoryFanfare();
       confetti({ particleCount: 60, spread: 75, origin: { y: 0.6 } });
       onPassportChange(passport);
       setActiveTab('passport');
       setInputCode('');
+
+      // Nếu thẻ đang mang tên mặc định "Nhà Thám Hiểm (HC-...)", mở ngay dialog cập nhật tên
+      if (passport.fullName.startsWith('Nhà Thám Hiểm') || passport.isRecovered) {
+        setEditFullName('');
+        setEditSchool(passport.school || '');
+        setEditGrade(passport.grade || '');
+        setEditAvatar(passport.avatar || '🦁');
+        setShowEditModal(true);
+      }
     } else {
       setLoginError('Không tìm thấy Thẻ khám phá với mã số này. Vui lòng kiểm tra lại hoặc nhận thẻ mới!');
+    }
+  };
+
+  // Handle Save Profile Updates
+  const handleSaveProfile = (e) => {
+    if (e) e.preventDefault();
+    if (!activePassport) return;
+    const finalName = editFullName.trim() || activePassport.fullName;
+    const updated = updatePassportProfile(activePassport.code, {
+      fullName: finalName,
+      school: editSchool.trim(),
+      grade: editGrade.trim(),
+      avatar: editAvatar
+    });
+    if (updated) {
+      onPassportChange(updated);
+      setShowEditModal(false);
+      soundEffects.playVictoryFanfare();
+      confetti({ particleCount: 50, spread: 60, origin: { y: 0.6 } });
+    }
+  };
+
+  // Handle Manual Cloud Sync
+  const handleManualSync = async () => {
+    if (!activePassport) return;
+    setIsSyncingCloud(true);
+    try {
+      const cloudP = await fetchStudentFromCloud(activePassport.code);
+      if (cloudP) {
+        onPassportChange(cloudP);
+        soundEffects.playVictoryFanfare();
+        confetti({ particleCount: 40, spread: 50, origin: { y: 0.6 } });
+      }
+    } catch (e) {
+      console.warn('Manual sync failed:', e);
+    } finally {
+      setIsSyncingCloud(false);
     }
   };
 
@@ -288,7 +368,29 @@ export default function HeritagePassportModal({
                   <Compass className="w-64 h-64" />
                 </div>
 
-                <div className="relative z-10 space-y-5">
+                <div className="relative z-10 space-y-4">
+                  {/* Notice if name needs update */}
+                  {(activePassport.fullName?.startsWith('Nhà Thám Hiểm') || activePassport.isRecovered) && (
+                    <div className="p-3 bg-amber-500/25 border border-amber-300/50 rounded-2xl flex items-center justify-between gap-2 text-xs text-amber-200 animate-in fade-in">
+                      <div className="flex items-center gap-2 min-w-0">
+                        <AlertCircle className="w-4 h-4 text-amber-300 shrink-0" />
+                        <span className="truncate">Thẻ chưa có Tên &amp; Lớp chính thức.</span>
+                      </div>
+                      <button
+                        onClick={() => {
+                          setEditFullName(activePassport.fullName?.startsWith('Nhà Thám Hiểm') ? '' : activePassport.fullName);
+                          setEditSchool(activePassport.school || '');
+                          setEditGrade(activePassport.grade || '');
+                          setEditAvatar(activePassport.avatar || '🦁');
+                          setShowEditModal(true);
+                        }}
+                        className="px-3 py-1 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#8B1417] font-black text-[11px] shrink-0 transition-colors shadow-xs cursor-pointer"
+                      >
+                        Cập nhật tên ngay
+                      </button>
+                    </div>
+                  )}
+
                   {/* Passport Header Title */}
                   <div className="flex items-center justify-between border-b border-amber-300/30 pb-3">
                     <div>
@@ -318,11 +420,27 @@ export default function HeritagePassportModal({
                     {/* Information */}
                     <div className="md:col-span-9 space-y-2 text-xs sm:text-sm">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        <div>
-                          <span className="text-[11px] text-amber-200/80 block">Họ và tên học sinh:</span>
-                          <span className="font-serif-title font-black text-base sm:text-lg text-white">
-                            {activePassport.fullName}
-                          </span>
+                        <div className="flex items-start justify-between gap-1">
+                          <div>
+                            <span className="text-[11px] text-amber-200/80 block">Họ và tên học sinh:</span>
+                            <span className="font-serif-title font-black text-base sm:text-lg text-white">
+                              {activePassport.fullName}
+                            </span>
+                          </div>
+                          <button
+                            onClick={() => {
+                              setEditFullName(activePassport.fullName?.startsWith('Nhà Thám Hiểm') ? '' : activePassport.fullName);
+                              setEditSchool(activePassport.school || '');
+                              setEditGrade(activePassport.grade || '');
+                              setEditAvatar(activePassport.avatar || '🦁');
+                              setShowEditModal(true);
+                            }}
+                            className="px-2 py-1 rounded-lg bg-amber-400/20 hover:bg-amber-400/40 text-amber-200 border border-amber-300/40 text-[10.5px] font-bold flex items-center gap-1 transition-colors cursor-pointer shrink-0 mt-0.5"
+                            title="Sửa tên, trường, lớp học"
+                          >
+                            <Edit3 className="w-3 h-3" />
+                            <span>Đổi Tên/Lớp</span>
+                          </button>
                         </div>
                         <div>
                           <span className="text-[11px] text-amber-200/80 block">Trường / Lớp:</span>
@@ -375,16 +493,135 @@ export default function HeritagePassportModal({
                       </strong>
                     </div>
 
-                    <button
-                      onClick={() => handleCopyCode(activePassport.code)}
-                      className="px-3.5 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-[#8B1417] text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 shadow-md"
-                    >
-                      {copiedCode ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-                      <span>{copiedCode ? 'Đã chép mã!' : 'Sao chép mã số'}</span>
-                    </button>
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={handleManualSync}
+                        disabled={isSyncingCloud}
+                        className="px-3 py-1.5 rounded-xl bg-black/40 hover:bg-black/60 text-amber-200 border border-amber-400/40 text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5"
+                        title="Đồng bộ lại dữ liệu từ Google Sheets"
+                      >
+                        <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCloud ? 'animate-spin text-amber-400' : ''}`} />
+                        <span>{isSyncingCloud ? 'Đang đồng bộ...' : 'Đồng bộ lại'}</span>
+                      </button>
+
+                      <button
+                        onClick={() => handleCopyCode(activePassport.code)}
+                        className="px-3.5 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-[#8B1417] text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 shadow-md"
+                      >
+                        {copiedCode ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+                        <span>{copiedCode ? 'Đã chép mã!' : 'Sao chép mã số'}</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              {/* Edit Profile Modal Popover */}
+              {showEditModal && (
+                <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200">
+                  <div className="bg-[#FFFDFB] rounded-3xl p-5 sm:p-6 max-w-md w-full border-2 border-amber-400 shadow-2xl space-y-4">
+                    <div className="flex items-center justify-between border-b border-rose-100 pb-3">
+                      <div className="flex items-center gap-2 text-[#8B1417]">
+                        <Edit3 className="w-5 h-5 text-[#8B1417]" />
+                        <h4 className="font-serif-title font-bold text-base sm:text-lg">
+                          Cập Nhật Thông Tin Học Sinh
+                        </h4>
+                      </div>
+                      <button
+                        onClick={() => setShowEditModal(false)}
+                        className="p-1 rounded-lg hover:bg-stone-100 text-stone-400 hover:text-stone-600 cursor-pointer"
+                      >
+                        <X className="w-4 h-4" />
+                      </button>
+                    </div>
+
+                    <form onSubmit={handleSaveProfile} className="space-y-3.5 text-xs">
+                      <div>
+                        <label className="font-bold text-stone-700 block mb-1">Mã số thẻ cố định:</label>
+                        <input
+                          type="text"
+                          disabled
+                          value={activePassport.code}
+                          className="w-full p-2.5 rounded-xl bg-stone-100 font-mono font-bold text-stone-600 border border-stone-200"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="font-bold text-stone-700 block mb-1">Họ và tên học sinh (*):</label>
+                        <input
+                          type="text"
+                          required
+                          autoFocus
+                          value={editFullName}
+                          onChange={(e) => setEditFullName(e.target.value)}
+                          placeholder="Nhập họ và tên học sinh (VD: Nguyễn Minh Anh)"
+                          className="w-full p-2.5 rounded-xl bg-amber-50/50 border border-amber-300 focus:bg-white focus:ring-2 focus:ring-[#8B1417] text-stone-900 font-bold"
+                        />
+                      </div>
+
+                      <div className="grid grid-cols-2 gap-2">
+                        <div>
+                          <label className="font-bold text-stone-700 block mb-1">Trường học:</label>
+                          <input
+                            type="text"
+                            value={editSchool}
+                            onChange={(e) => setEditSchool(e.target.value)}
+                            placeholder="VD: THCS Nguyễn Du"
+                            className="w-full p-2.5 rounded-xl bg-stone-50 border border-stone-200 focus:bg-white focus:ring-2 focus:ring-[#8B1417] text-stone-800"
+                          />
+                        </div>
+                        <div>
+                          <label className="font-bold text-stone-700 block mb-1">Lớp / Khối:</label>
+                          <input
+                            type="text"
+                            value={editGrade}
+                            onChange={(e) => setEditGrade(e.target.value)}
+                            placeholder="VD: Lớp 8A1"
+                            className="w-full p-2.5 rounded-xl bg-stone-50 border border-stone-200 focus:bg-white focus:ring-2 focus:ring-[#8B1417] text-stone-800"
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <label className="font-bold text-stone-700 block mb-1">Chọn linh vật thám hiểm:</label>
+                        <div className="flex items-center gap-1.5 overflow-x-auto p-1">
+                          {avatars.map((av, idx) => (
+                            <button
+                              key={idx}
+                              type="button"
+                              onClick={() => setEditAvatar(av)}
+                              className={`w-9 h-9 rounded-xl text-lg flex items-center justify-center transition-all cursor-pointer ${
+                                editAvatar === av
+                                  ? 'bg-[#8B1417] text-white ring-2 ring-amber-400 scale-105 shadow-xs'
+                                  : 'bg-stone-100 hover:bg-stone-200'
+                              }`}
+                            >
+                              {av}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-end gap-2 pt-2 border-t border-stone-100">
+                        <button
+                          type="button"
+                          onClick={() => setShowEditModal(false)}
+                          className="px-4 py-2 rounded-xl border border-stone-200 text-stone-600 hover:bg-stone-50 font-medium cursor-pointer"
+                        >
+                          Hủy bỏ
+                        </button>
+                        <button
+                          type="submit"
+                          className="px-5 py-2 rounded-xl bg-[#8B1417] hover:bg-[#A81B1F] text-white font-bold shadow-md flex items-center gap-1.5 cursor-pointer"
+                        >
+                          <CheckCircle2 className="w-4 h-4" />
+                          <span>Lưu &amp; Cập Nhật Thẻ</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              )}
 
               {/* Quick Actions & Badges Unlocked */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

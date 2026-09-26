@@ -1466,6 +1466,70 @@ function getOrCreateSheet(ss, sheetName, headers) {
     }
   }
   return sheet;
+}
+
+function doGet(e) {
+  try {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var action = (e && e.parameter && e.parameter.action) || 'getStudent';
+    var code = (e && e.parameter && e.parameter.code) || '';
+    
+    if (action === 'getStudent' && code) {
+      code = code.trim().toUpperCase().replace(/\s+/g, '');
+      var summarySheet = ss.getSheetByName('1. Tổng Hợp Học Sinh');
+      var student = null;
+      
+      if (summarySheet && summarySheet.getLastRow() > 1) {
+        var data = summarySheet.getRange(2, 1, summarySheet.getLastRow() - 1, 8).getValues();
+        for (var i = 0; i < data.length; i++) {
+          var rowCode = String(data[i][1]).trim().toUpperCase().replace(/\s+/g, '');
+          if (rowCode === code) {
+            student = {
+              code: data[i][1],
+              fullName: data[i][2],
+              school: data[i][3],
+              grade: data[i][4],
+              totalXP: Number(data[i][5]) || 0,
+              visitedCount: Number(data[i][6]) || 0,
+              lastAction: data[i][7]
+            };
+            break;
+          }
+        }
+      }
+      
+      var visitedMonuments = {};
+      var progressSheet = ss.getSheetByName('3. Tiến Độ Hành Trình');
+      if (progressSheet && progressSheet.getLastRow() > 1) {
+        var pData = progressSheet.getRange(2, 1, progressSheet.getLastRow() - 1, 7).getValues();
+        for (var j = 0; j < pData.length; j++) {
+          var pCode = String(pData[j][1]).trim().toUpperCase().replace(/\s+/g, '');
+          if (pCode === code) {
+            var stt = pData[j][5];
+            var name = pData[j][6];
+            if (stt) {
+              visitedMonuments[stt] = { stt: stt, name: name, visitedAt: pData[j][0] };
+            }
+          }
+        }
+      }
+
+      if (student) {
+        student.visitedMonuments = visitedMonuments;
+        return ContentService.createTextOutput(JSON.stringify({ status: 'success', found: true, student: student }))
+          .setMimeType(ContentService.MimeType.JSON);
+      } else {
+        return ContentService.createTextOutput(JSON.stringify({ status: 'success', found: false, message: 'Student code not found' }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+    }
+    
+    return ContentService.createTextOutput(JSON.stringify({ status: 'ready', message: 'Heritage Digital Web App API is running' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    return ContentService.createTextOutput(JSON.stringify({ status: 'error', message: err.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
 }`;
                       navigator.clipboard.writeText(scriptCode);
                       setCopiedCode(true);

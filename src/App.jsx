@@ -33,7 +33,7 @@ import MobileBottomNav from './components/MobileBottomNav';
 import PersonalJourneyPage from './components/PersonalJourneyPage';
 import Footer from './components/Footer';
 import { allMonumentsList, getMonumentByIdOrStt } from './data/allMonumentsData';
-import { getActivePassport } from './utils/passportStorage';
+import { getActivePassport, checkInMonument } from './utils/passportStorage';
 import { trackContribution, flushOfflineQueue, syncActivePassportTelemetry } from './utils/studentAnalytics';
 
 const CONTRIBUTIONS_KEY = 'di_san_so_contributions_v4';
@@ -315,6 +315,20 @@ export default function App() {
     completedInvestigations[currentStt] || 
     activePassport?.visitedMonuments?.[currentStt]
   );
+
+  // Tự động đóng dấu mộc khám phá khi học sinh vào xem chi tiết di tích (+50 XP)
+  useEffect(() => {
+    if (viewMode === 'detail' && currentStt && activePassport) {
+      const isAlready = Boolean(activePassport.visitedMonuments?.[currentStt]);
+      if (!isAlready) {
+        const monName = data?.info?.name || `Di tích #${currentStt}`;
+        const updated = checkInMonument(currentStt, monName, 50, 'Đã tham quan và tìm hiểu');
+        if (updated) {
+          setActivePassport(updated);
+        }
+      }
+    }
+  }, [viewMode, currentStt, activePassport?.code, data?.info?.name]);
 
   const [isEditMode, setIsEditMode] = useState(false);
 

@@ -3,7 +3,7 @@
 // Hỗ trợ 2 chế độ: Khách tự do & Học sinh lưu hành trình qua Mã Số Hộ Chiếu
 // ==============================================================================
 
-import { trackStudentLogin, trackJourneyProgress, trackJourneyCompleted } from './studentAnalytics';
+import { trackStudentLogin, trackJourneyProgress, trackJourneyCompleted, getGoogleSheetWebhookUrl } from './studentAnalytics';
 
 const PASSPORTS_STORAGE_KEY = 'di_san_so_passports_v2';
 const ACTIVE_PASSPORT_ID_KEY = 'di_san_so_active_passport_id_v2';
@@ -173,6 +173,101 @@ export function loginPassport(code) {
   }
 
   return null;
+}
+
+/**
+ * Đồng bộ dữ liệu học sinh từ Google Sheets Webhook qua Mã Hộ Chiếu (Đồng bộ đa thiết bị)
+ */
+export async function fetchStudentFromCloud(code) {
+  if (!code) return null;
+  const cleanCode = normalizePassportCode(code);
+  if (!cleanCode) return null;
+
+  try {
+    const webhookUrl = getGoogleSheetWebhookUrl();
+    if (!webhookUrl) return null;
+
+    const res = await fetch(`${webhookUrl}?action=getStudent&code=${encodeURIComponent(cleanCode)}`, {
+      method: 'GET'
+    });
+    if (!res.ok) return null;
+    const json = await res.json();
+    
+    if (json && json.status === 'success' && json.found && json.student) {
+      const st = json.student;
+      const all = getAllPassports();
+      const existing = all[cleanCode] || {};
+
+      const mergedPassport = {
+        ...existing,
+        code: cleanCode,
+        fullName: (st.fullName && !st.fullName.startsWith('Nhà Thám Hiểm')) ? st.fullName : (existing.fullName || st.fullName || `Nhà Thám Hiểm (${cleanCode})`),
+        school: st.school || existing.school || 'TP. Hồ Chí Minh',
+        grade: st.grade || existing.grade || 'THCS',
+        avatar: existing.avatar || '🦁',
+        totalXP: Math.max(Number(st.totalXP) || 0, existing.totalXP || 0),
+        visitedMonuments: { ...(existing.visitedMonuments || {}), ...(st.visitedMonuments || {}) },
+        badges: existing.badges || ['Tân Binh Thám Hiểm 🧭'],
+        streakDays: existing.streakDays || 1,
+        lastActiveDate: new Date().toDateString(),
+        isRecovered: false
+      };
+
+      // Cập nhật huy hiệu tương ứng số di tích đã khám phá
+      const count = Object.keys(mergedPassport.visitedMonuments).length;
+      const b = [...mergedPassport.badges];
+      if (count >= 1 && !b.includes('Dấu Chân Đầu Tiên 👣')) b.push('Dấu Chân Đầu Tiên 👣');
+      if (count >= 5 && !b.includes('Nhà Thám Hiểm Tập Sự 🎒')) b.push('Nhà Thám Hiểm Tập Sự 🎒');
+      if (count >= 15 && !b.includes('Chuyên Gia Di Tích Sài Gòn 🏛️')) b.push('Chuyên Gia Di Tích Sài Gòn 🏛️');
+      if (count >= 50 && !b.includes('Đại Sứ Di Sản Học Đường 🎖️')) b.push('Đại Sứ Di Sản Học Đường 🎖️');
+      if (count >= 103 && !b.includes('Huyền Thoại 103 Di Tích 👑')) b.push('Huyền Thoại 103 Di Tích 👑');
+      mergedPassport.badges = b;
+
+      all[cleanCode] = mergedPassport;
+      localStorage.setItem(PASSPORTS_STORAGE_KEY, JSON.stringify(all));
+      localStorage.setItem(ACTIVE_PASSPORT_ID_KEY, cleanCode);
+      return mergedPassport;
+    }
+  } catch (err) {
+    console.warn('Lỗi đồng bộ từ Cloud Webhook:', err);
+  }
+  return null;
+}
+
+/**
+ * Cập nhật thông tin Họ tên, Trường, Lớp, Avatar cho Thẻ Khám Phá hiện tại
+ */
+export function updatePassportProfile(code, { fullName, school, grade, avatar }) {
+  if (!code) return null;
+  const cleanCode = normalizePassportCode(code);
+  const all = getAllPassports();
+  const existing = all[cleanCode] || getActivePassport() || {};
+
+  const updated = {
+    ...existing,
+    code: cleanCode,
+    fullName: fullName ? fullName.trim() : (existing.fullName || `Nhà Thám Hiểm (${cleanCode})`),
+    school: school ? school.trim() : (existing.school || 'TP. Hồ Chí Minh'),
+    grade: grade ? grade.trim() : (existing.grade || 'THCS'),
+    avatar: avatar || existing.avatar || '🦁',
+    isRecovered: false,
+    lastVisitedAt: new Date().toISOString()
+  };
+
+  all[cleanCode] = updated;
+  localStorage.setItem(PASSPORTS_STORAGE_KEY, JSON.stringify(all));
+  localStorage.setItem(ACTIVE_PASSPORT_ID_KEY, cleanCode);
+
+  try {
+    localStorage.setItem('di_san_so_last_student_info', JSON.stringify({
+      studentName: updated.fullName,
+      schoolName: updated.school,
+      className: updated.grade
+    }));
+    trackStudentLogin(updated);
+  } catch (e) {}
+
+  return updated;
 }
 
 /**
