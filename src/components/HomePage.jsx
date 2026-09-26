@@ -274,7 +274,7 @@ export default function HomePage({
             <div className="lg:col-span-5 space-y-4 sm:space-y-6 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#BA8438]/20 border border-[#BA8438]/40 text-amber-200 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-sm shadow-inner">
                 <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
-                <span>Số hóa 103 Di tích Lịch sử - Văn hóa cấp quốc gia và cấp quốc gia đặc biệt TP. Hồ Chí Minh</span>
+                <span>Số hóa 103 di tích quốc gia và di tích quốc gia đặc biệt trên địa bàn TP. Hồ Chí Minh</span>
               </div>
 
               <div className="flex items-center justify-between sm:justify-start lg:justify-start gap-3 sm:gap-4">
