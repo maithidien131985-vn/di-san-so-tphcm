@@ -234,22 +234,8 @@ export const queryDeepSeekAI = async ({
   // 1. RAG Context: Lấy tối đa 8 di tích liên quan nhất
   const relevantMonuments = retrieveRelevantMonuments(query, currentMonument, allMonumentsList, 8);
 
-  // Kiểm tra 100 tình huống hỏi xoáy/troll
+  // Tham chiếu 100 tình huống nếu có để bổ sung vào ngữ cảnh cho AI
   const situationMatch = match100Situation(query, 0.70);
-  if (situationMatch && situationMatch.score >= 0.88) {
-    const item = situationMatch.item;
-    let text = item.response;
-    if (item.follow_up && !text.includes(item.follow_up)) {
-      text += `\n\n💡 *${item.follow_up}*`;
-    }
-    return {
-      text,
-      relatedMonuments: relevantMonuments.slice(0, 2),
-      is100Situation: true,
-      situationId: item.id,
-      source: 'deepseek_curated'
-    };
-  }
 
   let groundingContext = 'DƯỚI ĐÂY LÀ TOÀN BỘ TRI THỨC CHÍNH THỐNG VỀ 103 DI TÍCH TP.HCM & DỮ LIỆU SỐ HÓA CỦA DỰ ÁN:\n\n';
 
