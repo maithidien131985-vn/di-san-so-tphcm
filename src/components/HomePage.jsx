@@ -40,10 +40,12 @@ import {
   Home,
   Grid,
   ClipboardCheck,
-  FileText
+  FileText,
+  ChevronDown
 } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 import HomePageInteractiveMap from './HomePageInteractiveMap';
+import { hcmcDistrictsData, allHcmcWardsList } from '../data/hcmcAdministrativeData';
 
 export default function HomePage({ 
   allMonuments = [], 
@@ -61,24 +63,33 @@ export default function HomePage({
   const [studentIdeaLikes, setStudentIdeaLikes] = useState({ 1: 128, 2: 94, 3: 73 });
   const [likedIdeas, setLikedIdeas] = useState({});
 
-  // 2-Dimension Survey State
-  const [surveyLocation, setSurveyLocation] = useState('q1_q3_q4');
+  // Location & Topic Recommendation State
+  const [selectedWard, setSelectedWard] = useState('Phường Bến Thành, Quận 1');
+  const [selectedDistrict, setSelectedDistrict] = useState('Quận 1');
+  const [wardSearchTerm, setWardSearchTerm] = useState('');
+  const [locationDropdownOpen, setLocationDropdownOpen] = useState(false);
+  const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
   const [surveyTopic, setSurveyTopic] = useState('military');
 
-  // Survey Location Options
-  const locationOptions = [
-    { id: 'q1_q3_q4', name: 'Quận 1, Quận 3, Quận 4', icon: '🏙️', tag: 'Khu Trung Tâm Lịch Sử' },
-    { id: 'q5_q6_q10_q11', name: 'Quận 5, Quận 6, Quận 10, Quận 11', icon: '🏮', tag: 'Khu Chợ Lớn Cổ Kính' },
-    { id: 'cu_chi_hoc_mon', name: 'Củ Chi, Hóc Môn, Quận 12', icon: '🌾', tag: 'Vành Đai Đất Thép' },
-    { id: 'thu_duc', name: 'TP. Thủ Đức (Q.9, Q.2, Thủ Đức)', icon: '🌉', tag: 'Vùng Đất Đông Sài Gòn' },
-    { id: 'can_gio_nha_be', name: 'Cần Giờ, Nhà Bè, Quận 7', icon: '🌿', tag: 'Sông Nước Sinh Thái' },
-    { id: 'binh_thanh_pn_gv', name: 'Bình Thạnh, Phú Nhuận, Gò Vấp, Tân Bình', icon: '🏘️', tag: 'Khu Nội Thành Mở Rộng' },
-    { id: 'ba_ria_vung_tau', name: 'Bà Rịa - Vũng Tàu', icon: '🌊', tag: 'Bến Lộc An, Côn Đảo, Bạch Dinh' },
-    { id: 'binh_duong', name: 'Bình Dương', icon: '⛰️', tag: 'Phú Lợi, Hội Khánh, Tam Giác Sắt' }
-  ];
+  // Filtered 168+ Wards grouped by District based on search term
+  const filteredDistricts = useMemo(() => {
+    if (!wardSearchTerm.trim()) return hcmcDistrictsData;
+    const q = wardSearchTerm.toLowerCase().trim();
+    return hcmcDistrictsData
+      .map(d => ({
+        ...d,
+        wards: d.wards.filter(w => 
+          w.toLowerCase().includes(q) || 
+          d.name.toLowerCase().includes(q) ||
+          d.zone.toLowerCase().includes(q)
+        )
+      }))
+      .filter(d => d.wards.length > 0);
+  }, [wardSearchTerm]);
 
-  // Survey Topic Options
+  // Topic Options
   const topicOptions = [
+    { id: 'all', name: 'Tất cả các chủ đề di tích', icon: '⭐', desc: 'Toàn bộ di tích lịch sử & văn hóa' },
     { id: 'military', name: 'Chiến tích Kháng chiến & Địa đạo ngầm', icon: '⚔️', desc: 'Dinh Độc Lập, Củ Chi, Rừng Sác, Côn Đảo, Hầm bí mật' },
     { id: 'architecture', name: 'Kiến trúc Pháp cổ & Bảo tàng nghệ thuật', icon: '🏛️', desc: 'Bảo tàng Lịch sử, Bạch Dinh, Tòa Án, Nhà Hát TP' },
     { id: 'spiritual', name: 'Cổ tự Phật giáo & Chạm khắc Hán Nôm', icon: '🛕', desc: 'Chùa Giác Lâm, Chùa Giác Viên, Chùa Hội Khánh' },
@@ -87,7 +98,7 @@ export default function HomePage({
     { id: 'mangrove_nature', name: 'Căn cứ Rừng ngập mặn & Thiên nhiên', icon: '🌿', desc: 'Chiến khu Rừng Sác, Bến Lộc An, Chiến khu Đ' }
   ];
 
-  // Dynamic Survey Recommendation Engine
+  // Dynamic Recommendation Engine matching 168 Wards & Topics
   const recommendedMonuments = useMemo(() => {
     if (!allMonuments || allMonuments.length === 0) return [];
 
@@ -98,27 +109,22 @@ export default function HomePage({
       const type = (m.info.type || '').toLowerCase();
       const overview = (m.info.overview || '').toLowerCase();
 
-      // 1. Location Matching Score
-      if (surveyLocation === 'q1_q3_q4') {
-        if (addr.includes('quận 1') || addr.includes('quận 3') || addr.includes('quận 4') || m.stt === 1) score += 40;
-      } else if (surveyLocation === 'q5_q6_q10_q11') {
-        if (addr.includes('quận 5') || addr.includes('quận 6') || addr.includes('quận 10') || addr.includes('quận 11') || name.includes('hội quán') || name.includes('chùa')) score += 40;
-      } else if (surveyLocation === 'cu_chi_hoc_mon') {
-        if (addr.includes('củ chi') || addr.includes('hóc môn') || addr.includes('quận 12') || m.stt === 2 || m.stt === 15) score += 45;
-      } else if (surveyLocation === 'thu_duc') {
-        if (addr.includes('thủ đức') || addr.includes('quận 9') || addr.includes('quận 2') || m.stt === 32 || m.stt === 62) score += 40;
-      } else if (surveyLocation === 'can_gio_nha_be') {
-        if (addr.includes('cần giờ') || addr.includes('nhà bè') || addr.includes('quận 7') || m.stt === 7) score += 45;
-      } else if (surveyLocation === 'binh_thanh_pn_gv') {
-        if (addr.includes('bình thạnh') || addr.includes('phú nhuận') || addr.includes('gò vấp') || addr.includes('tân bình') || m.stt === 79 || m.stt === 88) score += 40;
-      } else if (surveyLocation === 'ba_ria_vung_tau') {
-        if (addr.includes('bà rịa') || addr.includes('vũng tàu') || addr.includes('côn đảo') || addr.includes('xuyên mộc') || m.stt === 3 || m.stt === 4 || m.stt === 5 || m.stt === 6 || m.stt === 56) score += 45;
-      } else if (surveyLocation === 'binh_duong') {
-        if (addr.includes('bình dương') || addr.includes('thủ dầu một') || addr.includes('bến cát') || m.stt === 8 || m.stt === 60 || m.stt === 61) score += 45;
+      // 1. Precise Ward Matching
+      const rawWardName = selectedWard ? selectedWard.split(',')[0].trim().toLowerCase().replace(/^(phường|xã|thị trấn)\s+/i, '') : '';
+      if (rawWardName && addr.includes(rawWardName)) {
+        score += 65;
       }
 
-      // 2. Topic Matching Score
-      if (surveyTopic === 'military') {
+      // 2. District Matching
+      const cleanDistrict = selectedDistrict ? selectedDistrict.toLowerCase().replace(/^(quận|huyện|thành phố|tp\.)\s+/i, '') : '';
+      if (cleanDistrict && addr.includes(cleanDistrict)) {
+        score += 45;
+      }
+
+      // 3. Topic Matching
+      if (surveyTopic === 'all') {
+        score += 30;
+      } else if (surveyTopic === 'military') {
         if (type.includes('lịch sử') || overview.includes('kháng chiến') || overview.includes('địa đạo') || overview.includes('chiến dịch') || m.stt === 1 || m.stt === 2 || m.stt === 7 || m.stt === 4) score += 40;
       } else if (surveyTopic === 'architecture') {
         if (type.includes('kiến trúc') || name.includes('bảo tàng') || name.includes('dinh') || name.includes('bạch dinh') || m.stt === 56 || m.stt === 57 || m.stt === 58) score += 40;
@@ -137,7 +143,7 @@ export default function HomePage({
 
     scored.sort((a, b) => b.score - a.score);
     return scored.slice(0, 4).map(s => s.monument);
-  }, [allMonuments, surveyLocation, surveyTopic]);
+  }, [allMonuments, selectedWard, selectedDistrict, surveyTopic]);
 
   // Smart Search Scoring & Best Match Linking
   const handlePerformSearch = (explicitTerm) => {
@@ -410,13 +416,13 @@ export default function HomePage({
         </div>
       </section>
 
-      {/* 2. COHESIVE SMART EXPLORER & RECOMMENDATION HUB */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-8">
+      {/* 2. COHESIVE SMART EXPLORER & RECOMMENDATION HUB (1/3 Controls Left & 2/3 Cards Right) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 pb-8">
         <ScrollReveal>
           <div className="bg-gradient-to-b from-white via-[#FFFDF9] to-[#FAF5EF] rounded-3xl p-5 sm:p-7 md:p-8 border-2 border-amber-400/50 shadow-xl shadow-amber-950/5 space-y-6">
             
             {/* Header */}
-            <div className="text-center max-w-2xl mx-auto space-y-2">
+            <div className="text-center max-w-2xl mx-auto space-y-1.5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/80 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
                 <Compass className="w-3.5 h-3.5 text-[#7E1819]" />
                 <span>Gợi Ý Tuyến Khám Phá Thông Minh</span>
@@ -425,140 +431,236 @@ export default function HomePage({
                 Khám Phá Di Tích Theo Cách Của Bạn
               </h2>
               <p className="text-xs sm:text-sm text-stone-600 font-medium">
-                Chọn nhanh địa bàn và chủ đề bạn yêu thích để nhận ngay gợi ý các di tích phù hợp nhất.
+                Chọn nơi bạn ở và chủ đề đam mê để nhận ngay gợi ý di tích phù hợp nhất.
               </p>
             </div>
 
-            {/* Interactive Filter Control Console */}
-            <div className="bg-white/80 backdrop-blur-xs rounded-2xl p-4 sm:p-5 border border-amber-300/60 shadow-xs space-y-4">
+            {/* Main 2-Column Split: Left 1/3 (Controls) & Right 2/3 (Recommended Cards) */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
               
-              {/* Row 1: Chọn Khu Vực */}
-              <div className="space-y-2">
-                <div className="flex items-center gap-1.5 text-xs font-bold text-[#7E1819]">
-                  <MapPin className="w-4 h-4 text-amber-600" />
-                  <span>1. Chọn khu vực địa lý:</span>
-                </div>
-                <div className="flex items-center gap-1.5 overflow-x-auto pb-1.5 pt-0.5 no-scrollbar flex-wrap">
-                  {locationOptions.map(loc => {
-                    const isSelected = surveyLocation === loc.id;
-                    return (
-                      <button
-                        key={loc.id}
-                        type="button"
-                        onClick={() => setSurveyLocation(loc.id)}
-                        className={`px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap shadow-2xs ${
-                          isSelected
-                            ? 'bg-gradient-to-r from-[#7E1819] to-[#9c2022] text-white shadow-md ring-2 ring-amber-400 font-black scale-102'
-                            : 'bg-[#FAF6F0] hover:bg-amber-50 text-stone-700 hover:text-[#7E1819] border border-amber-200/70'
-                        }`}
-                      >
-                        <span className="text-sm">{loc.icon}</span>
-                        <span>{loc.name}</span>
-                        {isSelected && <span className="text-amber-300 ml-0.5 font-black">✓</span>}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
+              {/* LEFT COLUMN (1/3 Width: lg:col-span-4) - BỘ LỌC ĐỊA BÀN & CHỦ ĐỀ */}
+              <div className="lg:col-span-4 bg-[#FAF6F0] rounded-2xl p-4 sm:p-5 border border-amber-300/70 shadow-xs space-y-4">
+                
+                {/* 1. BẠN Ở ĐÂU? (XỔ RA 168 XÃ/PHƯỜNG TP.HCM) */}
+                <div className="space-y-1.5 relative">
+                  <label className="text-xs font-black text-[#7E1819] flex items-center justify-between">
+                    <span className="flex items-center gap-1.5">
+                      <MapPin className="w-4 h-4 text-amber-600" />
+                      <span>Bạn ở đâu?</span>
+                    </span>
+                    <span className="text-[10px] bg-amber-200/70 text-[#7E1819] px-1.5 py-0.5 rounded font-bold">
+                      168 Xã / Phường
+                    </span>
+                  </label>
 
-              {/* Row 2: Chọn Chủ Đề */}
-              <div className="space-y-2 pt-2 border-t border-amber-200/50">
-                <div className="flex items-center gap-1.5 text-xs font-bold text-[#7E1819]">
-                  <Sparkles className="w-4 h-4 text-amber-600" />
-                  <span>2. Chọn chủ đề bạn quan tâm:</span>
-                </div>
-                <div className="flex items-center gap-1.5 overflow-x-auto pb-1.5 pt-0.5 no-scrollbar flex-wrap">
-                  {topicOptions.map(top => {
-                    const isSelected = surveyTopic === top.id;
-                    return (
-                      <button
-                        key={top.id}
-                        type="button"
-                        onClick={() => setSurveyTopic(top.id)}
-                        className={`px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap shadow-2xs ${
-                          isSelected
-                            ? 'bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-[#200507] shadow-md ring-2 ring-amber-300 font-black scale-102'
-                            : 'bg-[#FAF6F0] hover:bg-amber-50 text-stone-700 hover:text-[#7E1819] border border-amber-200/70'
-                        }`}
-                      >
-                        <span className="text-sm">{top.icon}</span>
-                        <span>{top.name}</span>
-                        {isSelected && <span className="text-[#200507] ml-0.5 font-black">✓</span>}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+                  {/* Dropdown Toggle Button */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setLocationDropdownOpen(!locationDropdownOpen);
+                      setTopicDropdownOpen(false);
+                    }}
+                    className="w-full px-3 py-2.5 rounded-xl bg-white border border-amber-300 hover:border-amber-500 text-left flex items-center justify-between shadow-2xs transition-all cursor-pointer text-xs font-bold text-[#2A1214] hover:bg-amber-50/40"
+                  >
+                    <span className="truncate max-w-[210px] text-[#7E1819]">
+                      📍 {selectedWard || 'Chọn Xã, Phường, Quận / Huyện'}
+                    </span>
+                    <ChevronDown className={`w-4 h-4 text-amber-600 transition-transform shrink-0 ${locationDropdownOpen ? 'rotate-180' : ''}`} />
+                  </button>
 
-            {/* Live Filter Summary & Results Header */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2">
-              <div className="flex items-center gap-2 flex-wrap text-xs">
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-amber-100 text-[#7E1819] font-black text-xs">
-                  <Flame className="w-3.5 h-3.5 text-[#7E1819] fill-[#7E1819]" />
-                  <span>Di Tích Đề Xuất Phù Hợp:</span>
-                </span>
-                <span className="text-stone-600 font-medium hidden md:inline">
-                  {locationOptions.find(l => l.id === surveyLocation)?.name} • {topicOptions.find(t => t.id === surveyTopic)?.name}
-                </span>
-              </div>
-
-              <button
-                onClick={onOpenExplorer}
-                className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto"
-              >
-                <span>Xem tất cả 103 di tích</span>
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
-
-            {/* Recommendation Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {recommendedMonuments.map((m, idx) => (
-                <div
-                  key={m.stt}
-                  onClick={() => onSelectMonument(m.stt)}
-                  className="bg-white rounded-3xl p-3.5 sm:p-4 border-2 border-amber-200/80 hover:border-[#7E1819] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
-                >
-                  <div className="space-y-3">
-                    <div className="h-40 sm:h-36 rounded-2xl overflow-hidden bg-rose-100 relative shadow-inner">
-                      <img
-                        src={m.info.heroImage}
-                        alt={m.info.name}
-                        className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-500"
-                      />
-                      <div className="absolute top-2.5 left-2.5 flex items-center gap-1">
-                        <span className="px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-100 text-[10px] font-black uppercase shadow">
-                          #{m.stt} {m.info.ranking || 'Quốc gia'}
-                        </span>
+                  {/* Searchable Dropdown Menu with 168+ Wards */}
+                  {locationDropdownOpen && (
+                    <div className="absolute top-full left-0 right-0 z-50 mt-1 bg-white rounded-2xl border-2 border-amber-400 shadow-2xl p-2.5 space-y-2 max-h-72 flex flex-col animate-fadeIn">
+                      {/* Search box inside dropdown */}
+                      <div className="relative">
+                        <Search className="w-3.5 h-3.5 text-stone-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                        <input
+                          type="text"
+                          placeholder="Gõ tìm tên phường, xã, quận..."
+                          value={wardSearchTerm}
+                          onChange={(e) => setWardSearchTerm(e.target.value)}
+                          className="w-full pl-8 pr-3 py-1.5 text-xs bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:border-amber-500"
+                          autoFocus
+                        />
                       </div>
-                      <div className="absolute bottom-2 right-2">
-                        <span className="px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-400 text-[#200507] text-[9px] font-black uppercase shadow-md">
-                          ★ Khớp {98 - idx * 3}%
-                        </span>
+
+                      {/* Ward List */}
+                      <div className="overflow-y-auto flex-1 space-y-2 pr-1 text-xs max-h-52">
+                        {filteredDistricts.length === 0 ? (
+                          <div className="text-center py-4 text-xs text-stone-400">
+                            Không tìm thấy xã/phường phù hợp
+                          </div>
+                        ) : (
+                          filteredDistricts.map(district => (
+                            <div key={district.id} className="space-y-0.5">
+                              <div className="text-[10px] font-black uppercase text-amber-900 bg-amber-100/70 px-2 py-0.5 rounded flex items-center justify-between">
+                                <span>{district.name}</span>
+                                <span className="text-[9px] font-normal text-stone-500">{district.zone}</span>
+                              </div>
+                              <div className="grid grid-cols-1 gap-0.5 pt-0.5">
+                                {district.wards.map(ward => {
+                                  const fullName = `${ward}, ${district.name}`;
+                                  const isWardSelected = selectedWard === fullName;
+                                  return (
+                                    <button
+                                      key={ward}
+                                      type="button"
+                                      onClick={() => {
+                                        setSelectedWard(fullName);
+                                        setSelectedDistrict(district.name);
+                                        setLocationDropdownOpen(false);
+                                      }}
+                                      className={`text-left px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer flex items-center justify-between ${
+                                        isWardSelected ? 'bg-[#7E1819] text-white font-bold' : 'hover:bg-amber-100/60 text-stone-700'
+                                      }`}
+                                    >
+                                      <span>{ward}</span>
+                                      {isWardSelected && <Check className="w-3.5 h-3.5 text-amber-300" />}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          ))
+                        )}
                       </div>
                     </div>
-
-                    <div className="space-y-1.5">
-                      <h4 className="font-serif-title font-black text-sm text-[#2A1214] group-hover:text-[#7E1819] transition-colors line-clamp-1">
-                        {m.info.name}
-                      </h4>
-                      <p className="text-[11px] text-stone-600 flex items-center gap-1 line-clamp-1">
-                        <MapPin className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
-                        <span>{m.info.address}</span>
-                      </p>
-                      <p className="text-[11px] text-stone-600 line-clamp-2 leading-relaxed">
-                        {m.info.overview}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="pt-3 mt-3 border-t border-amber-100 flex items-center justify-between text-xs font-black text-[#7E1819] group-hover:underline">
-                    <span>Khám phá ngay</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
+                  )}
                 </div>
-              ))}
+
+                {/* 2. BẠN QUAN TÂM CHỦ ĐỀ GÌ? */}
+                <div className="space-y-1.5 relative pt-2 border-t border-amber-200/60">
+                  <label className="text-xs font-black text-[#7E1819] flex items-center gap-1.5">
+                    <Sparkles className="w-4 h-4 text-amber-600" />
+                    <span>Bạn quan tâm chủ đề gì?</span>
+                  </label>
+
+                  {/* Dropdown Toggle Button */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setTopicDropdownOpen(!topicDropdownOpen);
+                      setLocationDropdownOpen(false);
+                    }}
+                    className="w-full px-3 py-2.5 rounded-xl bg-white border border-amber-300 hover:border-amber-500 text-left flex items-center justify-between shadow-2xs transition-all cursor-pointer text-xs font-bold text-[#2A1214] hover:bg-amber-50/40"
+                  >
+                    <span className="truncate max-w-[210px] text-[#7E1819]">
+                      {topicOptions.find(t => t.id === surveyTopic)?.icon} {topicOptions.find(t => t.id === surveyTopic)?.name}
+                    </span>
+                    <ChevronDown className={`w-4 h-4 text-amber-600 transition-transform shrink-0 ${topicDropdownOpen ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  {/* Topic Dropdown Menu */}
+                  {topicDropdownOpen && (
+                    <div className="absolute top-full left-0 right-0 z-50 mt-1 bg-white rounded-2xl border-2 border-amber-400 shadow-2xl p-1.5 space-y-1 max-h-60 overflow-y-auto animate-fadeIn">
+                      {topicOptions.map(top => {
+                        const isTopSelected = surveyTopic === top.id;
+                        return (
+                          <button
+                            key={top.id}
+                            type="button"
+                            onClick={() => {
+                              setSurveyTopic(top.id);
+                              setTopicDropdownOpen(false);
+                            }}
+                            className={`w-full text-left px-3 py-2 rounded-xl text-xs font-medium transition-colors cursor-pointer flex items-center gap-2 ${
+                              isTopSelected ? 'bg-gradient-to-r from-amber-500 to-amber-400 text-[#200507] font-black shadow-xs' : 'hover:bg-amber-50 text-stone-700'
+                            }`}
+                          >
+                            <span className="text-sm shrink-0">{top.icon}</span>
+                            <div className="flex-1 min-w-0">
+                              <div className="font-bold truncate">{top.name}</div>
+                            </div>
+                            {isTopSelected && <Check className="w-3.5 h-3.5 text-[#200507] shrink-0" />}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+
+                {/* Smart Assistant Tip */}
+                <div className="p-3 rounded-xl bg-amber-100/60 border border-amber-200/80 text-stone-600 text-[11px] leading-relaxed">
+                  💡 <strong>Gợi ý:</strong> Hệ thống tự động xếp hạng các di tích gần địa bàn <span className="font-bold text-[#7E1819]">{selectedWard || 'TP.HCM'}</span> theo đúng chủ đề bạn quan tâm.
+                </div>
+              </div>
+
+              {/* RIGHT COLUMN (2/3 Width: lg:col-span-8) - DI TÍCH ĐỀ XUẤT CỦA BẠN */}
+              <div className="lg:col-span-8 space-y-3.5">
+                
+                {/* Header bar of recommendations */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-amber-50/70 p-2.5 sm:px-3.5 sm:py-2 rounded-xl border border-amber-200/80">
+                  <div className="flex items-center gap-1.5 flex-wrap text-xs">
+                    <Flame className="w-4 h-4 text-[#7E1819] fill-[#7E1819]" />
+                    <span className="font-serif-title font-black uppercase text-[#7E1819]">
+                      Di Tích Đề Xuất Dành Cho Bạn
+                    </span>
+                    <span className="text-stone-500 hidden sm:inline">•</span>
+                    <span className="text-stone-600 font-medium text-[11px] truncate max-w-[240px]">
+                      {selectedDistrict}
+                    </span>
+                  </div>
+
+                  <button
+                    onClick={onOpenExplorer}
+                    className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto"
+                  >
+                    <span>Xem tất cả 103 di tích</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
+                {/* 4 Responsive Cards in 2x2 Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
+                  {recommendedMonuments.map((m, idx) => (
+                    <div
+                      key={m.stt}
+                      onClick={() => onSelectMonument(m.stt)}
+                      className="bg-white rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 border-2 border-amber-200/80 hover:border-[#7E1819] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
+                    >
+                      <div className="space-y-2.5">
+                        <div className="h-36 sm:h-32 rounded-xl overflow-hidden bg-rose-100 relative shadow-inner">
+                          <img
+                            src={m.info.heroImage}
+                            alt={m.info.name}
+                            className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-500"
+                          />
+                          <div className="absolute top-2 left-2 flex items-center gap-1">
+                            <span className="px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-100 text-[10px] font-black uppercase shadow">
+                              #{m.stt} {m.info.ranking || 'Quốc gia'}
+                            </span>
+                          </div>
+                          <div className="absolute bottom-2 right-2">
+                            <span className="px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-400 text-[#200507] text-[9px] font-black uppercase shadow-md">
+                              ★ Khớp {98 - idx * 3}%
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="space-y-1">
+                          <h4 className="font-serif-title font-black text-xs sm:text-sm text-[#2A1214] group-hover:text-[#7E1819] transition-colors line-clamp-1">
+                            {m.info.name}
+                          </h4>
+                          <p className="text-[11px] text-stone-600 flex items-center gap-1 line-clamp-1">
+                            <MapPin className="w-3 h-3 text-[#7E1819] shrink-0" />
+                            <span>{m.info.address}</span>
+                          </p>
+                          <p className="text-[11px] text-stone-600 line-clamp-2 leading-relaxed">
+                            {m.info.overview}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="pt-2.5 mt-2 border-t border-amber-100 flex items-center justify-between text-xs font-black text-[#7E1819] group-hover:underline">
+                        <span>Khám phá ngay</span>
+                        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+              </div>
+
             </div>
 
           </div>
