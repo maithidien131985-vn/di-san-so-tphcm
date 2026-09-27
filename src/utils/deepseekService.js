@@ -134,6 +134,54 @@ export const retrieveRelevantMonuments = (query, currentMonument = null, allMonu
 };
 
 /**
+ * Helper thực hiện request tới DeepSeek API (Thử proxy nội bộ trước, sau đó fallback trực tiếp)
+ */
+const postDeepSeekRequest = async (endpointPayload, apiKey) => {
+  const endpoints = ['/api/deepseek/chat/completions', 'https://api.deepseek.com/chat/completions'];
+  let lastError = null;
+
+  for (const endpoint of endpoints) {
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify(endpointPayload)
+      });
+
+      if (response.ok) {
+        return await response.json();
+      }
+
+      // If 404 on proxy, continue to direct endpoint
+      if (response.status === 404 && endpoint.startsWith('/api')) {
+        continue;
+      }
+
+      const errData = await response.json().catch(() => ({}));
+      const errMsg = errData.error?.message || `Lỗi DeepSeek API (HTTP ${response.status})`;
+      if (response.status === 401) {
+        throw new Error('Mã API DeepSeek không hợp lệ hoặc đã hết hạn (401 Unauthorized).');
+      }
+      if (response.status === 402) {
+        throw new Error('Tài khoản DeepSeek chưa nạp đủ số dư (402 Insufficient Balance).');
+      }
+      throw new Error(errMsg);
+    } catch (err) {
+      lastError = err;
+      // If network error on proxy, try next endpoint
+      if (endpoint.startsWith('/api')) {
+        continue;
+      }
+    }
+  }
+
+  throw lastError || new Error('Không thể kết nối tới DeepSeek API.');
+};
+
+/**
  * Kiểm tra kết nối DeepSeek API Key (Ping test)
  */
 export const testDeepSeekConnection = async (apiKeyToTest) => {
@@ -142,45 +190,21 @@ export const testDeepSeekConnection = async (apiKeyToTest) => {
     throw new Error('Chưa nhập mã API DeepSeek.');
   }
 
-  try {
-    const response = await fetch('https://api.deepseek.com/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${key}`
-      },
-      body: JSON.stringify({
-        model: 'deepseek-chat',
-        messages: [
-          { role: 'system', content: 'You are a test assistant.' },
-          { role: 'user', content: 'ping' }
-        ],
-        max_tokens: 5,
-        temperature: 0.1
-      })
-    });
+  const data = await postDeepSeekRequest({
+    model: 'deepseek-chat',
+    messages: [
+      { role: 'system', content: 'You are a test assistant.' },
+      { role: 'user', content: 'ping' }
+    ],
+    max_tokens: 5,
+    temperature: 0.1
+  }, key);
 
-    if (!response.ok) {
-      const errData = await response.json().catch(() => ({}));
-      const errMsg = errData.error?.message || `Lỗi kết nối HTTP ${response.status}: ${response.statusText}`;
-      if (response.status === 401) {
-        throw new Error('Mã API DeepSeek không hợp lệ hoặc đã hết hạn (Unauthorized).');
-      }
-      if (response.status === 402) {
-        throw new Error('Tài khoản DeepSeek chưa nạp đủ số dư (Insufficient Balance).');
-      }
-      throw new Error(errMsg);
-    }
-
-    const data = await response.json();
-    return {
-      success: true,
-      model: data.model || 'deepseek-chat',
-      message: 'Kết nối DeepSeek-V3 API thành công!'
-    };
-  } catch (err) {
-    throw err;
-  }
+  return {
+    success: true,
+    model: data.model || 'deepseek-chat',
+    message: 'Kết nối DeepSeek-V3 API thành công!'
+  };
 };
 
 /**
@@ -329,28 +353,14 @@ NGUYÊN TẮC TRẢ LỜI:
   });
 
   try {
-    const response = await fetch('https://api.deepseek.com/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
-      },
-      body: JSON.stringify({
-        model: 'deepseek-chat',
-        messages,
-        temperature: 0.3,
-        max_tokens: 1500,
-        stream: false
-      })
-    });
+    const data = await postDeepSeekRequest({
+      model: 'deepseek-chat',
+      messages,
+      temperature: 0.3,
+      max_tokens: 1500,
+      stream: false
+    }, apiKey);
 
-    if (!response.ok) {
-      const errData = await response.json().catch(() => ({}));
-      const errMsg = errData.error?.message || `Lỗi DeepSeek API (HTTP ${response.status})`;
-      throw new Error(errMsg);
-    }
-
-    const data = await response.json();
     const rawResponseText = data.choices?.[0]?.message?.content || '';
 
     if (!rawResponseText) {

@@ -1,8 +1,9 @@
 import React from 'react';
 import { X, Play, Film, Sparkles, ExternalLink } from 'lucide-react';
 
-export default function VideoModal({ isOpen, onClose, videoInfo }) {
+export default function VideoModal({ isOpen, onClose, videoInfo, video }) {
   if (!isOpen) return null;
+  const currentVideo = videoInfo || video || {};
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
@@ -15,10 +16,10 @@ export default function VideoModal({ isOpen, onClose, videoInfo }) {
             </div>
             <div>
               <h3 className="font-serif-title font-bold text-base sm:text-lg text-amber-200">
-                {videoInfo.title || 'Phim tư liệu: Dinh Độc Lập'}
+                {currentVideo?.title || 'Phim tư liệu di tích'}
               </h3>
               <p className="text-xs text-neutral-400">
-                Tư liệu hình ảnh ngày 30/4/1975 & Khảo cứu lịch sử
+                {currentVideo?.subtitle || 'Tư liệu lịch sử & Phim phóng sự khảo cứu'}
               </p>
             </div>
           </div>
@@ -32,25 +33,25 @@ export default function VideoModal({ isOpen, onClose, videoInfo }) {
 
         {/* Video Embed */}
         <div className="aspect-video w-full bg-black">
-          {videoInfo?.videoType === 'local' || videoInfo?.localUrl || videoInfo?.mp4Url || (videoInfo?.src && videoInfo.src.endsWith('.mp4')) ? (
+          {currentVideo?.videoType === 'local' || currentVideo?.localUrl || currentVideo?.mp4Url || (currentVideo?.src && currentVideo.src.endsWith('.mp4')) ? (
             <video
               className="w-full h-full object-contain bg-black"
               controls
               autoPlay
               playsInline
-              src={videoInfo?.localUrl || videoInfo?.mp4Url || videoInfo?.src}
-              title={videoInfo?.title || "Video tư liệu di tích"}
+              src={currentVideo?.localUrl || currentVideo?.mp4Url || currentVideo?.src}
+              title={currentVideo?.title || "Video tư liệu di tích"}
             >
               Trình duyệt không hỗ trợ xem video trực tiếp.
             </video>
           ) : (
             <iframe
               src={
-                videoInfo?.videoType === 'drive' || videoInfo?.driveFileId || (videoInfo?.youtubeUrl && videoInfo.youtubeUrl.includes('drive.google.com'))
-                  ? (videoInfo?.driveFileId ? `https://drive.google.com/file/d/${videoInfo.driveFileId}/preview` : videoInfo?.youtubeUrl?.replace(/\/view.*$/, '/preview'))
-                  : (videoInfo?.embedUrl || `https://www.youtube.com/embed/${videoInfo.youtubeId || 'cplxidwCHyE'}?autoplay=1&rel=0`)
+                currentVideo?.videoType === 'drive' || currentVideo?.driveFileId || (currentVideo?.youtubeUrl && currentVideo.youtubeUrl.includes('drive.google.com'))
+                  ? (currentVideo?.driveFileId ? `https://drive.google.com/file/d/${currentVideo.driveFileId}/preview` : currentVideo?.youtubeUrl?.replace(/\/view.*$/, '/preview'))
+                  : (currentVideo?.embedUrl || `https://www.youtube.com/embed/${currentVideo?.youtubeId || 'cplxidwCHyE'}?autoplay=1&rel=0`)
               }
-              title={videoInfo?.title || "Video tư liệu di tích"}
+              title={currentVideo?.title || "Video tư liệu di tích"}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               className="w-full h-full border-0"
@@ -61,22 +62,22 @@ export default function VideoModal({ isOpen, onClose, videoInfo }) {
         {/* Video Footer info */}
         <div className="p-4 bg-neutral-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-neutral-300">
           <span className="text-amber-200 font-medium">
-            {videoInfo?.copyright || (videoInfo?.channel ? `Bản quyền: ${videoInfo.channel}` : 'Bản quyền Kênh Tư liệu')}
+            {currentVideo?.copyright || (currentVideo?.channel ? `Bản quyền: ${currentVideo.channel}` : 'Bản quyền Kênh Tư liệu')}
           </span>
           <a
             href={
-              videoInfo?.videoType === 'local' || videoInfo?.localUrl || videoInfo?.mp4Url || (videoInfo?.src && videoInfo.src.endsWith('.mp4'))
-                ? (videoInfo?.localUrl || videoInfo?.mp4Url || videoInfo?.src)
-                : (videoInfo?.youtubeUrl || (videoInfo?.driveFileId ? `https://drive.google.com/file/d/${videoInfo.driveFileId}/view` : `https://www.youtube.com/watch?v=${videoInfo?.youtubeId || 'cplxidwCHyE'}`))
+              currentVideo?.videoType === 'local' || currentVideo?.localUrl || currentVideo?.mp4Url || (currentVideo?.src && currentVideo.src.endsWith('.mp4'))
+                ? (currentVideo?.localUrl || currentVideo?.mp4Url || currentVideo?.src)
+                : (currentVideo?.youtubeUrl || (currentVideo?.driveFileId ? `https://drive.google.com/file/d/${currentVideo.driveFileId}/view` : `https://www.youtube.com/watch?v=${currentVideo?.youtubeId || 'cplxidwCHyE'}`))
             }
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-400 hover:underline flex items-center gap-1 font-semibold shrink-0"
           >
             <span>
-              {videoInfo?.videoType === 'local' || videoInfo?.localUrl || videoInfo?.mp4Url || (videoInfo?.src && videoInfo.src.endsWith('.mp4'))
+              {currentVideo?.videoType === 'local' || currentVideo?.localUrl || currentVideo?.mp4Url || (currentVideo?.src && currentVideo.src.endsWith('.mp4'))
                 ? 'Mở video gốc MP4'
-                : (videoInfo?.videoType === 'drive' || videoInfo?.driveFileId || (videoInfo?.youtubeUrl && videoInfo.youtubeUrl.includes('drive.google.com')) ? 'Mở trên Google Drive' : 'Mở liên kết YouTube')}
+                : (currentVideo?.videoType === 'drive' || currentVideo?.driveFileId || (currentVideo?.youtubeUrl && currentVideo.youtubeUrl.includes('drive.google.com')) ? 'Mở trên Google Drive' : 'Mở liên kết YouTube')}
             </span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
