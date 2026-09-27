@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
 import HeroBanner from './components/HeroBanner';
-import QuickActionCards from './components/QuickActionCards';
 import MonumentLocationChallengeSection from './components/MonumentLocationChallengeSection';
 import MediaAudioVideoRow from './components/MediaAudioVideoRow';
 import HistorySection from './components/HistorySection';
@@ -627,9 +626,13 @@ export default function App() {
             onOpenExplorer={handleOpenExplorer}
           />
 
-          {/* Main Detail Content Area - Full Width */}
-          <main className="w-full flex-1 space-y-6 pb-6">
-            {/* 1. Hero Banner with Integrated Breadcrumb & Bottom Gallery Thumbnails */}
+          {/* Main Detail Content Area - Clean 3-Tier Pedagogy Flow */}
+          <main className="w-full flex-1 space-y-8 pb-8">
+            {/* ========================================================================= */}
+            {/* TẦNG 1: TỔNG QUAN & TRẢI NGHIỆM ĐA PHƯƠNG TIỆN (Hero Banner + Audio & Video) */}
+            {/* ========================================================================= */}
+            
+            {/* 1.1 Hero Banner with Natural Cover & Docked Gallery Strip */}
             <HeroBanner
               info={safeInfo}
               gallery={safeGallery}
@@ -641,27 +644,7 @@ export default function App() {
               onNavigateHome={() => handleNavigate('home')}
             />
 
-            {/* 2. Quick Action Cards (3 cards: KHÁM PHÁ - GIẢI MÃ - HÀNH ĐỘNG) */}
-            <QuickActionCards
-              onOpenAudio={() => setAudioModalOpen(true)}
-              onOpenInvestigation={() => {
-                const el = document.getElementById('investigation-section');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
-              onOpenAction={() => setActionModalOpen(true)}
-              onOpenContribute={() => setContributeModalOpen(true)}
-            />
-
-            {/* 3. BẢN ĐỒ ĐỊNH VỊ GPS VÀ HỒ SƠ THÔNG TIN NHANH / EM CÓ BIẾT */}
-            <MonumentLocationChallengeSection
-              info={safeInfo}
-              map={safeMap}
-              onOpenMyMap={() => setMyMapModalOpen(true)}
-              isEditMode={isEditMode}
-              onUpdateInfo={handleUpdateInfo}
-            />
-
-            {/* 5. VIDEO VÀ ÂM THANH CHUNG 1 DÒNG + THỬ THÁCH "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
+            {/* 1.2 Phim Tư Liệu Lịch Sử & Thuyết Minh Audio Đồng Bộ */}
             <MediaAudioVideoRow
               video={safeVideo}
               info={safeInfo}
@@ -673,7 +656,11 @@ export default function App() {
               onOpenAudioModal={() => setAudioModalOpen(true)}
             />
 
-            {/* 6. Giá trị lịch sử, Dấu mốc & Thử thách dòng thời gian + Kho báu ảnh câu chuyện */}
+            {/* ========================================================================= */}
+            {/* TẦNG 2: CÂU CHUYỆN LỊCH SỬ, DẤU MỐC & KHÔNG GIAN ĐỊA LÝ DI TÍCH           */}
+            {/* ========================================================================= */}
+
+            {/* 2.1 Tổng Quan Di Tích, Dòng Thời Gian Mốc Son & Kho Báu Ảnh */}
             <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 pt-2">
               <ScrollReveal>
                 <HistorySection
@@ -693,13 +680,26 @@ export default function App() {
               </ScrollReveal>
             </div>
 
-            {/* 6. TRƯỚC PHẦN CÂU HỎI ĐIỀU TRA: 3 Ô Nhân vật liên quan, Hiện vật tiêu biểu, Sự kiện tiêu biểu */}
+            {/* 2.2 3 Điểm Nhấn Cốt Lõi: Nhân Vật Lịch Sử - Hiện Vật Tiêu Biểu - Sự Kiện Nổi Bật */}
             <ThreeKeyHighlightsSection
               keyHighlights={safeHighlights}
               monumentName={safeInfo.name || ''}
             />
 
-            {/* 7. HÀNH TRRJNH ĐIỀU TRA & GIẢI MÃ DI SẢN (3 phần trên 1 hàng: Truy Tìm Manh Mối, Hồ Sơ Điều Tra, Tài Liệu Căn Cứ) */}
+            {/* 2.3 Bản Đồ Định Vị GPS Thực Địa & Hồ Sơ Trích Yếu Di Tích */}
+            <MonumentLocationChallengeSection
+              info={safeInfo}
+              map={safeMap}
+              onOpenMyMap={() => setMyMapModalOpen(true)}
+              isEditMode={isEditMode}
+              onUpdateInfo={handleUpdateInfo}
+            />
+
+            {/* ========================================================================= */}
+            {/* TẦNG 3: TRẠM ĐIỀU TRA, GIẢI MÃ DI SẢN & HÀNH ĐỘNG HỌC SINH                  */}
+            {/* ========================================================================= */}
+
+            {/* 3.1 Hành Trình Điều Tra Di Sản (Manh Mối, 5 Câu Trắc Nghiệm Nhận Huy Hiệu & Sổ Tay Cam Kết) */}
             <div id="investigation-section" className="pt-2">
               <InvestigationSection
                 investigation={safeInvestigation}
@@ -715,7 +715,7 @@ export default function App() {
               />
             </div>
 
-            {/* 9. Next Monument Section: Gợi ý các di tích gần đó và cùng loại hình */}
+            {/* 3.2 Tuyến Di Tích Tiếp Theo & Tiếp Tục Thu Thập Dấu Mộc Hộ Chiếu */}
             <ScrollReveal>
               <NextMonumentSection
                 currentStt={currentStt}
