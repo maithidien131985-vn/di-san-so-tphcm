@@ -13,6 +13,10 @@
     --text-muted: #6B5E55;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: #FAF7F2;
     color: #2C241E;
