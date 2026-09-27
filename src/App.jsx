@@ -281,8 +281,10 @@ export default function App() {
   const [contributeModalOpen, setContributeModalOpen] = useState(false);
   const [explorerModalOpen, setExplorerModalOpen] = useState(false);
   const [explorerCategoryFilter, setExplorerCategoryFilter] = useState('all');
-  const handleOpenExplorer = (category = 'all') => {
+  const [explorerSearchTerm, setExplorerSearchTerm] = useState('');
+  const handleOpenExplorer = (category = 'all', search = '') => {
     setExplorerCategoryFilter(category || 'all');
+    setExplorerSearchTerm(search || '');
     setExplorerModalOpen(true);
   };
   const [passportModalOpen, setPassportModalOpen] = useState(true);
@@ -736,6 +738,7 @@ export default function App() {
         currentMonumentStt={currentStt}
         onSelectMonument={handleSelectMonument}
         initialCategory={explorerCategoryFilter}
+        initialSearch={explorerSearchTerm}
       />
 
       {/* Reader Contribution Modal */}

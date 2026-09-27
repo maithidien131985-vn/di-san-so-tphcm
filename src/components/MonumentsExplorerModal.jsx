@@ -14,9 +14,10 @@ export default function MonumentsExplorerModal({
   onClose,
   currentMonumentStt,
   onSelectMonument,
-  initialCategory = 'all'
+  initialCategory = 'all',
+  initialSearch = ''
 }) {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState(initialSearch || '');
   const [selectedRank, setSelectedRank] = useState('all');
   const [selectedType, setSelectedType] = useState(initialCategory || 'all');
   const [page, setPage] = useState(1);
@@ -29,9 +30,10 @@ export default function MonumentsExplorerModal({
       } else {
         setSelectedType('all');
       }
+      setSearchTerm(initialSearch || '');
       setPage(1);
     }
-  }, [isOpen, initialCategory]);
+  }, [isOpen, initialCategory, initialSearch]);
 
   const filteredMonuments = useMemo(() => {
     return allMonumentsList.filter(m => {

@@ -1,504 +1,614 @@
-// Dữ liệu 168+ Phường, Xã, Thị trấn và 22 Quận, Huyện, TP của TP. Hồ Chí Minh
+/**
+ * Dữ liệu chính thức 168 phường, xã và đặc khu của TP. Hồ Chí Minh sau sắp xếp
+ * Theo Nghị quyết số 1685/NQ-UBTVQH15 của Ủy ban Thường vụ Quốc hội năm 2025
+ * Nguồn: Cổng Thông tin Chính phủ (tphcm.chinhphu.vn)
+ * Tổng cộng: 168 đơn vị hành chính cấp xã (gồm 113 phường, 54 xã và 1 đặc khu)
+ */
+
 export const hcmcDistrictsData = [
   {
-    id: 'q1',
-    name: 'Quận 1',
-    zone: 'Trung tâm',
-    wards: [
-      'Phường Bến Nghé',
-      'Phường Bến Thành',
-      'Phường Cô Giang',
-      'Phường Cầu Kho',
-      'Phường Cầu Ông Lãnh',
-      'Phường Đa Kao',
-      'Phường Nguyễn Cư Trinh',
-      'Phường Nguyễn Thái Bình',
-      'Phường Phạm Ngũ Lão',
-      'Phường Tân Định'
+    "id": "quan_1",
+    "name": "Quận 1",
+    "zone": "Khu vực Trung tâm TP.HCM",
+    "wards": [
+      "Phường Sài Gòn",
+      "Phường Tân Định",
+      "Phường Bến Thành",
+      "Phường Cầu Ông Lãnh"
     ]
   },
   {
-    id: 'q3',
-    name: 'Quận 3',
-    zone: 'Trung tâm',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 4',
-      'Phường 5',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14',
-      'Phường Võ Thị Sáu'
+    "id": "quan_3",
+    "name": "Quận 3",
+    "zone": "Khu vực Trung tâm TP.HCM",
+    "wards": [
+      "Phường Bàn Cờ",
+      "Phường Xuân Hòa",
+      "Phường Nhiêu Lộc"
     ]
   },
   {
-    id: 'q4',
-    name: 'Quận 4',
-    zone: 'Trung tâm',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 4',
-      'Phường 6',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 13',
-      'Phường 14',
-      'Phường 15',
-      'Phường 16',
-      'Phường 18'
+    "id": "quan_4",
+    "name": "Quận 4",
+    "zone": "Khu vực Đô thị Trung tâm",
+    "wards": [
+      "Phường Xóm Chiếu",
+      "Phường Khánh Hội",
+      "Phường Vĩnh Hội"
     ]
   },
   {
-    id: 'q5',
-    name: 'Quận 5',
-    zone: 'Chợ Lớn',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 4',
-      'Phường 5',
-      'Phường 6',
-      'Phường 7',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14'
+    "id": "quan_5",
+    "name": "Quận 5",
+    "zone": "Khu vực Chợ Lớn - Đô thị Trung tâm",
+    "wards": [
+      "Phường Chợ Quán",
+      "Phường An Đông",
+      "Phường Chợ Lớn"
     ]
   },
   {
-    id: 'q6',
-    name: 'Quận 6',
-    zone: 'Chợ Lớn',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 4',
-      'Phường 5',
-      'Phường 6',
-      'Phường 7',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14'
+    "id": "quan_6",
+    "name": "Quận 6",
+    "zone": "Khu vực Chợ Lớn - Đô thị Trung tâm",
+    "wards": [
+      "Phường Bình Tây",
+      "Phường Bình Tiên",
+      "Phường Bình Phú",
+      "Phường Phú Lâm"
     ]
   },
   {
-    id: 'q10',
-    name: 'Quận 10',
-    zone: 'Chợ Lớn',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 4',
-      'Phường 5',
-      'Phường 6',
-      'Phường 7',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14',
-      'Phường 15'
+    "id": "quan_7",
+    "name": "Quận 7",
+    "zone": "Khu vực Đô thị Phía Nam",
+    "wards": [
+      "Phường Tân Thuận",
+      "Phường Phú Thuận",
+      "Phường Tân Mỹ",
+      "Phường Tân Hưng"
     ]
   },
   {
-    id: 'q11',
-    name: 'Quận 11',
-    zone: 'Chợ Lớn',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 4',
-      'Phường 5',
-      'Phường 6',
-      'Phường 7',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14',
-      'Phường 15',
-      'Phường 16'
+    "id": "quan_8",
+    "name": "Quận 8",
+    "zone": "Khu vực Đô thị Kênh Đôi - Phía Nam",
+    "wards": [
+      "Phường Chánh Hưng",
+      "Phường Phú Định",
+      "Phường Bình Đông"
     ]
   },
   {
-    id: 'cu_chi',
-    name: 'Huyện Củ Chi',
-    zone: 'Đất Thép',
-    wards: [
-      'Thị trấn Củ Chi',
-      'Xã An Nhơn Tây',
-      'Xã An Phú',
-      'Xã Bình Mỹ',
-      'Xã Hòa Phú',
-      'Xã Nhuận Đức',
-      'Xã Phạm Văn Cội',
-      'Xã Phú Hòa Đông',
-      'Xã Phú Mỹ Hưng',
-      'Xã Phước Hiệp',
-      'Xã Phước Thạnh',
-      'Xã Phước Vĩnh An',
-      'Xã Tân An Hội',
-      'Xã Tân Phú Trung',
-      'Xã Tân Thạnh Đông',
-      'Xã Tân Thạnh Tây',
-      'Xã Tân Thông Hội',
-      'Xã Thái Mỹ',
-      'Xã Trung An',
-      'Xã Trung Lập Hạ',
-      'Xã Trung Lập Thượng'
+    "id": "quan_10",
+    "name": "Quận 10",
+    "zone": "Khu vực Đô thị Trung tâm",
+    "wards": [
+      "Phường Diên Hồng",
+      "Phường Vườn Lài",
+      "Phường Hòa Hưng"
     ]
   },
   {
-    id: 'hoc_mon',
-    name: 'Huyện Hóc Môn',
-    zone: 'Đất Thép',
-    wards: [
-      'Thị trấn Hóc Môn',
-      'Xã Bà Điểm',
-      'Xã Đông Thạnh',
-      'Xã Nhị Bình',
-      'Xã Tân Hiệp',
-      'Xã Tân Thới Nhì',
-      'Xã Tân Xuân',
-      'Xã Thới Tam Thôn',
-      'Xã Trung Chánh',
-      'Xã Xuân Thới Đông',
-      'Xã Xuân Thới Sơn',
-      'Xã Xuân Thới Thượng'
+    "id": "quan_11",
+    "name": "Quận 11",
+    "zone": "Khu vực Đô thị Trung tâm - Đầm Sen",
+    "wards": [
+      "Phường Minh Phụng",
+      "Phường Bình Thới",
+      "Phường Hòa Bình",
+      "Phường Phú Thọ"
     ]
   },
   {
-    id: 'q12',
-    name: 'Quận 12',
-    zone: 'Đất Thép',
-    wards: [
-      'Phường An Phú Đông',
-      'Phường Đông Hưng Thuận',
-      'Phường Hiệp Thành',
-      'Phường Tân Chánh Hiệp',
-      'Phường Tân Hưng Thuận',
-      'Phường Tân Thới Hiệp',
-      'Phường Tân Thới Nhất',
-      'Phường Thạnh Lộc',
-      'Phường Thạnh Xuân',
-      'Phường Thới An',
-      'Phường Trung Mỹ Tây'
+    "id": "quan_12",
+    "name": "Quận 12",
+    "zone": "Khu vực Đô thị Phía Bắc - Tây Bắc",
+    "wards": [
+      "Phường Đông Hưng Thuận",
+      "Phường Trung Mỹ Tây",
+      "Phường Tân Thới Hiệp",
+      "Phường Thới An",
+      "Phường An Phú Đông"
     ]
   },
   {
-    id: 'thu_duc',
-    name: 'TP. Thủ Đức',
-    zone: 'Đông Sài Gòn',
-    wards: [
-      'Phường An Khánh',
-      'Phường An Lợi Đông',
-      'Phường An Phú',
-      'Phường Bình Chiểu',
-      'Phường Bình Thọ',
-      'Phường Bình Trưng Đông',
-      'Phường Bình Trưng Tây',
-      'Phường Cát Lái',
-      'Phường Hiệp Bình Chánh',
-      'Phường Hiệp Bình Phước',
-      'Phường Hiệp Phú',
-      'Phường Linh Chiểu',
-      'Phường Linh Đông',
-      'Phường Linh Tây',
-      'Phường Linh Trung',
-      'Phường Linh Xuân',
-      'Phường Long Bình',
-      'Phường Long Phước',
-      'Phường Long Thạnh Mỹ',
-      'Phường Long Trường',
-      'Phường Phú Hữu',
-      'Phường Phước Bình',
-      'Phường Phước Long A',
-      'Phường Phước Long B',
-      'Phường Tam Bình',
-      'Phường Tam Phú',
-      'Phường Tăng Nhơn Phú A',
-      'Phường Tăng Nhơn Phú B',
-      'Phường Tân Phú',
-      'Phường Thảo Điền',
-      'Phường Thạnh Mỹ Lợi',
-      'Phường Thủ Thiêm',
-      'Phường Trường Thạnh',
-      'Phường Trường Thọ'
+    "id": "quan_binh_tan",
+    "name": "Quận Bình Tân",
+    "zone": "Khu vực Đô thị Phía Tây",
+    "wards": [
+      "Phường An Lạc",
+      "Phường Bình Tân",
+      "Phường Tân Tạo",
+      "Phường Bình Trị Đông",
+      "Phường Bình Hưng Hòa"
     ]
   },
   {
-    id: 'can_gio',
-    name: 'Huyện Cần Giờ',
-    zone: 'Sông Nước',
-    wards: [
-      'Thị trấn Cần Thạnh',
-      'Xã An Thới Đông',
-      'Xã Bình Khánh',
-      'Xã Long Hòa',
-      'Xã Lý Nhơn',
-      'Xã Tam Thôn Hiệp',
-      'Xã Thạnh An'
+    "id": "quan_binh_thanh",
+    "name": "Quận Bình Thạnh",
+    "zone": "Khu vực Đô thị Cửa ngõ Đông Bắc",
+    "wards": [
+      "Phường Gia Định",
+      "Phường Bình Thạnh",
+      "Phường Bình Lợi Trung",
+      "Phường Thạnh Mỹ Tây",
+      "Phường Bình Quới"
     ]
   },
   {
-    id: 'nha_be',
-    name: 'Huyện Nhà Bè',
-    zone: 'Sông Nước',
-    wards: [
-      'Thị trấn Nhà Bè',
-      'Xã Hiệp Phước',
-      'Xã Long Thới',
-      'Xã Nhơn Đức',
-      'Xã Phú Xuân',
-      'Xã Phước Kiển',
-      'Xã Phước Lộc'
+    "id": "quan_go_vap",
+    "name": "Quận Gò Vấp",
+    "zone": "Khu vực Đô thị Phía Bắc",
+    "wards": [
+      "Phường Hạnh Thông",
+      "Phường An Nhơn",
+      "Phường Gò Vấp",
+      "Phường An Hội Đông",
+      "Phường Thông Tây Hội",
+      "Phường An Hội Tây"
     ]
   },
   {
-    id: 'q7',
-    name: 'Quận 7',
-    zone: 'Sông Nước',
-    wards: [
-      'Phường Bình Thuận',
-      'Phường Phú Mỹ',
-      'Phường Phú Thuận',
-      'Phường Tân Hưng',
-      'Phường Tân Kiểng',
-      'Phường Tân Phong',
-      'Phường Tân Phú',
-      'Phường Tân Quy',
-      'Phường Tân Thuận Đông',
-      'Phường Tân Thuận Tây'
+    "id": "quan_phu_nhuan",
+    "name": "Quận Phú Nhuận",
+    "zone": "Khu vực Đô thị Trung tâm",
+    "wards": [
+      "Phường Đức Nhuận",
+      "Phường Cầu Kiệu",
+      "Phường Phú Nhuận"
     ]
   },
   {
-    id: 'binh_thanh',
-    name: 'Quận Bình Thạnh',
-    zone: 'Nội thành',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 5',
-      'Phường 6',
-      'Phường 7',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14',
-      'Phường 15',
-      'Phường 17',
-      'Phường 19',
-      'Phường 21',
-      'Phường 22',
-      'Phường 24',
-      'Phường 25',
-      'Phường 26',
-      'Phường 27',
-      'Phường 28'
+    "id": "quan_tan_binh",
+    "name": "Quận Tân Bình",
+    "zone": "Khu vực Sân bay Tân Sơn Nhất",
+    "wards": [
+      "Phường Tân Sơn Hòa",
+      "Phường Tân Sơn Nhất",
+      "Phường Tân Hòa",
+      "Phường Bảy Hiền",
+      "Phường Tân Bình",
+      "Phường Tân Sơn"
     ]
   },
   {
-    id: 'phu_nhuan',
-    name: 'Quận Phú Nhuận',
-    zone: 'Nội thành',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 4',
-      'Phường 5',
-      'Phường 7',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 13',
-      'Phường 15',
-      'Phường 17'
+    "id": "quan_tan_phu",
+    "name": "Quận Tân Phú",
+    "zone": "Khu vực Đô thị Phía Tây",
+    "wards": [
+      "Phường Tây Thạnh",
+      "Phường Tân Sơn Nhì",
+      "Phường Phú Thọ Hòa",
+      "Phường Tân Phú",
+      "Phường Phú Thạnh"
     ]
   },
   {
-    id: 'go_vap',
-    name: 'Quận Gò Vấp',
-    zone: 'Nội thành',
-    wards: [
-      'Phường 1',
-      'Phường 3',
-      'Phường 4',
-      'Phường 5',
-      'Phường 6',
-      'Phường 7',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14',
-      'Phường 15',
-      'Phường 16',
-      'Phường 17'
+    "id": "tp_thu_duc",
+    "name": "Thành phố Thủ Đức",
+    "zone": "Khu đô thị Sáng tạo Phía Đông",
+    "wards": [
+      "Phường Hiệp Bình",
+      "Phường Thủ Đức",
+      "Phường Tam Bình",
+      "Phường Linh Xuân",
+      "Phường Tăng Nhơn Phú",
+      "Phường Long Bình",
+      "Phường Long Phước",
+      "Phường Long Trường",
+      "Phường Cát Lái",
+      "Phường Bình Trưng",
+      "Phường Phước Long",
+      "Phường An Khánh"
     ]
   },
   {
-    id: 'tan_binh',
-    name: 'Quận Tân Bình',
-    zone: 'Nội thành',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 4',
-      'Phường 5',
-      'Phường 6',
-      'Phường 7',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14',
-      'Phường 15'
+    "id": "huyen_binh_chanh",
+    "name": "Huyện Bình Chánh",
+    "zone": "Khu vực Cửa ngõ Phía Tây Nam",
+    "wards": [
+      "Xã Vĩnh Lộc",
+      "Xã Tân Vĩnh Lộc",
+      "Xã Bình Lợi",
+      "Xã Tân Nhựt",
+      "Xã Bình Chánh",
+      "Xã Hưng Long",
+      "Xã Bình Hưng"
     ]
   },
   {
-    id: 'tan_phu',
-    name: 'Quận Tân Phú',
-    zone: 'Nội thành',
-    wards: [
-      'Phường Hiệp Tân',
-      'Phường Hòa Thạnh',
-      'Phường Phú Thạnh',
-      'Phường Phú Thọ Hòa',
-      'Phường Phú Trung',
-      'Phường Sơn Kỳ',
-      'Phường Tân Quý',
-      'Phường Tân Sơn Nhì',
-      'Phường Tân Thành',
-      'Phường Tân Thới Hòa',
-      'Phường Tây Thạnh'
+    "id": "huyen_can_gio",
+    "name": "Huyện Cần Giờ",
+    "zone": "Khu Dự trữ Sinh quyển Rừng ngập mặn",
+    "wards": [
+      "Xã Bình Khánh",
+      "Xã An Thới Đông",
+      "Xã Cần Giờ",
+      "Xã Thạnh An"
     ]
   },
   {
-    id: 'binh_tan',
-    name: 'Quận Bình Tân',
-    zone: 'Nội thành',
-    wards: [
-      'Phường An Lạc',
-      'Phường An Lạc A',
-      'Phường Bình Hưng Hòa',
-      'Phường Bình Hưng Hòa A',
-      'Phường Bình Hưng Hòa B',
-      'Phường Bình Trị Đông',
-      'Phường Bình Trị Đông A',
-      'Phường Bình Trị Đông B',
-      'Phường Tân Tạo',
-      'Phường Tân Tạo A'
+    "id": "huyen_cu_chi",
+    "name": "Huyện Củ Chi",
+    "zone": "Vùng Đất thép Thành đồng Tây Bắc",
+    "wards": [
+      "Xã Củ Chi",
+      "Xã Tân An Hội",
+      "Xã Thái Mỹ",
+      "An Nhơn Tây",
+      "Xã Nhuận Đức",
+      "Xã Phú Hòa Đông",
+      "Xã Bình Mỹ"
     ]
   },
   {
-    id: 'binh_chanh',
-    name: 'Huyện Bình Chánh',
-    zone: 'Ngoại thành',
-    wards: [
-      'Thị trấn Tân Túc',
-      'Xã An Phú Tây',
-      'Xã Bình Chánh',
-      'Xã Bình Hưng',
-      'Xã Bình Lợi',
-      'Xã Đa Phước',
-      'Xã Hưng Long',
-      'Xã Lê Minh Xuân',
-      'Xã Phạm Văn Hai',
-      'Xã Phong Phú',
-      'Xã Quy Đức',
-      'Xã Tân Kiên',
-      'Xã Tân Nhựt',
-      'Xã Tân Quý Tây',
-      'Xã Vĩnh Lộc A',
-      'Xã Vĩnh Lộc B'
+    "id": "huyen_hoc_mon",
+    "name": "Huyện Hóc Môn",
+    "zone": "Vùng 18 Thôn Vườn Trầu Tây Bắc",
+    "wards": [
+      "Xã Đông Thạnh",
+      "Xã Hóc Môn",
+      "Xã Xuân Thới Sơn",
+      "Xã Bà Điểm"
     ]
   },
   {
-    id: 'q8',
-    name: 'Quận 8',
-    zone: 'Nội thành',
-    wards: [
-      'Phường 1',
-      'Phường 2',
-      'Phường 3',
-      'Phường 4',
-      'Phường 5',
-      'Phường 6',
-      'Phường 7',
-      'Phường 8',
-      'Phường 9',
-      'Phường 10',
-      'Phường 11',
-      'Phường 12',
-      'Phường 13',
-      'Phường 14',
-      'Phường 15',
-      'Phường 16'
+    "id": "huyen_nha_be",
+    "name": "Huyện Nhà Bè",
+    "zone": "Khu vực Đô thị Cảng & Sông nước Phía Nam",
+    "wards": [
+      "Xã Nhà Bè",
+      "Xã Hiệp Phước"
     ]
   },
   {
-    id: 'ba_ria_vung_tau',
-    name: 'Bà Rịa - Vũng Tàu / Côn Đảo',
-    zone: 'Liên kết',
-    wards: [
-      'Đặc khu Côn Đảo',
-      'Huyện Xuyên Mộc (Bến Lộc An)',
-      'Thành phố Vũng Tàu (Bạch Dinh)',
-      'Huyện Đất Đỏ (Minh Đạm)',
-      'Huyện Châu Đức (Bình Giã)'
+    "id": "tp_di_an",
+    "name": "Thành phố Dĩ An",
+    "zone": "Vùng Đô thị Đổi mới Công nghiệp Phía Đông",
+    "wards": [
+      "Phường Đông Hòa",
+      "Phường Dĩ An",
+      "Phường Tân Đông Hiệp"
     ]
   },
   {
-    id: 'binh_duong',
-    name: 'Bình Dương (Liên kết)',
-    zone: 'Liên kết',
-    wards: [
-      'TP. Thủ Dầu Một (Chùa Hội Khánh)',
-      'TP. Thuận An (Chiến khu Thuận An Hòa)',
-      'TP. Bến Cát (Tam Giác Sắt)',
-      'Huyện Bắc Tân Uyên (Chiến khu Đ)'
+    "id": "tp_thuan_an",
+    "name": "Thành phố Thuận An",
+    "zone": "Vùng Đô thị Công nghiệp & Sinh thái Lái Thiêu",
+    "wards": [
+      "Phường An Phú",
+      "Phường Bình Hòa",
+      "Phường Lái Thiêu",
+      "Phường Thuận An",
+      "Phường Thuận Giao"
+    ]
+  },
+  {
+    "id": "tp_thu_dau_mot",
+    "name": "Thành phố Thủ Dầu Một",
+    "zone": "Trung tâm Lịch sử & Đô thị Bình Dương",
+    "wards": [
+      "Phường Thủ Dầu Một",
+      "Phường Phú Lợi",
+      "Phường Chánh Hiệp",
+      "Phường Bình Dương"
+    ]
+  },
+  {
+    "id": "tp_ben_cat",
+    "name": "Thành phố Bến Cát",
+    "zone": "Vùng Đô thị Công nghiệp & Tam Giác Sắt",
+    "wards": [
+      "Phường Hòa Lợi",
+      "Phường Phú An",
+      "Phường Tây Nam",
+      "Phường Long Nguyên",
+      "Phường Bến Cát",
+      "Phường Chánh Phú Hòa",
+      "Phường Thới Hòa"
+    ]
+  },
+  {
+    "id": "tp_tan_uyen",
+    "name": "Thành phố Tân Uyên",
+    "zone": "Vùng Đô thị Công nghiệp Ven Sông Đồng Nai",
+    "wards": [
+      "Phường Vĩnh Tân",
+      "Phường Bình Cơ",
+      "Phường Tân Uyên",
+      "Phường Tân Hiệp",
+      "Phường Tân Khánh"
+    ]
+  },
+  {
+    "id": "tp_vung_tau",
+    "name": "Thành phố Vũng Tàu",
+    "zone": "Đô thị Du lịch Biển & Di sản Kháng chiến",
+    "wards": [
+      "Phường Vũng Tàu",
+      "Phường Tam Thắng",
+      "Phường Rạch Dừa",
+      "Phường Phước Thắng",
+      "Xã Long Sơn"
+    ]
+  },
+  {
+    "id": "tp_ba_ria",
+    "name": "Thành phố Bà Rịa",
+    "zone": "Trung tâm Lịch sử & Hành chính Bà Rịa",
+    "wards": [
+      "Phường Long Hương",
+      "Phường Bà Rịa",
+      "Phường Tam Long"
+    ]
+  },
+  {
+    "id": "tx_phu_my",
+    "name": "Thị xã Phú Mỹ",
+    "zone": "Khu Đô thị Cảng biển Cái Mép - Thị Vải",
+    "wards": [
+      "Phường Tân Hải",
+      "Phường Tân Phước",
+      "Phường Phú Mỹ",
+      "Phường Tân Thành",
+      "Xã Châu Pha"
+    ]
+  },
+  {
+    "id": "huyen_bac_tan_uyen",
+    "name": "Huyện Bắc Tân Uyên",
+    "zone": "Vùng Chiến khu Đ & Nông nghiệp Công nghệ cao",
+    "wards": [
+      "Xã Thường Tân",
+      "Xã Bắc Tân Uyên"
+    ]
+  },
+  {
+    "id": "huyen_phu_giao",
+    "name": "Huyện Phú Giáo",
+    "zone": "Vùng Chiến khu Lịch sử & Nông trường",
+    "wards": [
+      "Xã Phú Giáo",
+      "Xã Phước Hòa",
+      "Xã Phước Thành",
+      "Xã An Long"
+    ]
+  },
+  {
+    "id": "huyen_bau_bang",
+    "name": "Huyện Bàu Bàng",
+    "zone": "Vùng Chiến thắng Bàu Bàng Lịch sử",
+    "wards": [
+      "Xã Trừ Văn Thố",
+      "Xã Bàu Bàng"
+    ]
+  },
+  {
+    "id": "huyen_dau_tieng",
+    "name": "Huyện Dầu Tiếng",
+    "zone": "Vùng Hồ Dầu Tiếng & Căn cứ Kháng chiến",
+    "wards": [
+      "Xã Long Hòa",
+      "Xã Thanh An",
+      "Xã Dầu Tiếng",
+      "Xã Minh Thạnh"
+    ]
+  },
+  {
+    "id": "huyen_long_dat",
+    "name": "Huyện Long Đất",
+    "zone": "Vùng Di tích Kháng chiến Long Điền - Đất Đỏ",
+    "wards": [
+      "Xã Long Hải",
+      "Xã Long Điền",
+      "Xã Phước Hải",
+      "Xã Đất Đỏ"
+    ]
+  },
+  {
+    "id": "huyen_chau_duc",
+    "name": "Huyện Châu Đức",
+    "zone": "Vùng Chiến thắng Bình Giã Lịch sử",
+    "wards": [
+      "Xã Nghĩa Thành",
+      "Xã Ngãi Giao",
+      "Xã Kim Long",
+      "Xã Châu Đức",
+      "Xã Bình Giã",
+      "Xã Xuân Sơn"
+    ]
+  },
+  {
+    "id": "huyen_xuyen_moc",
+    "name": "Huyện Xuyên Mộc",
+    "zone": "Vùng Di tích Tàu Không Số Bến Lộc An & Hồ Tràm",
+    "wards": [
+      "Xã Hồ Tràm",
+      "Xã Xuyên Mộc",
+      "Xã Hòa Hội",
+      "Xã Bàu Lâm",
+      "Xã Hòa Hiệp",
+      "Xã Bình Châu"
+    ]
+  },
+  {
+    "id": "dac_khu_con_dao",
+    "name": "Đặc khu Côn Đảo",
+    "zone": "Đặc khu Di tích Lịch sử Quốc gia Đặc biệt Côn Đảo",
+    "wards": [
+      "Đặc khu Côn Đảo"
     ]
   }
 ];
 
-// Flat list of all 168+ Wards with their District information
-export const allHcmcWardsList = hcmcDistrictsData.flatMap(district => 
-  district.wards.map(ward => ({
-    id: `${district.id}-${ward.toLowerCase().replace(/\s+/g, '-')}`,
-    wardName: ward,
-    districtName: district.name,
-    districtId: district.id,
-    zone: district.zone,
-    fullName: `${ward}, ${district.name}`
-  }))
-);
+export const allHcmcWardsList = [
+  "Phường Sài Gòn, Quận 1",
+  "Phường Tân Định, Quận 1",
+  "Phường Bến Thành, Quận 1",
+  "Phường Cầu Ông Lãnh, Quận 1",
+  "Phường Bàn Cờ, Quận 3",
+  "Phường Xuân Hòa, Quận 3",
+  "Phường Nhiêu Lộc, Quận 3",
+  "Phường Xóm Chiếu, Quận 4",
+  "Phường Khánh Hội, Quận 4",
+  "Phường Vĩnh Hội, Quận 4",
+  "Phường Chợ Quán, Quận 5",
+  "Phường An Đông, Quận 5",
+  "Phường Chợ Lớn, Quận 5",
+  "Phường Bình Tây, Quận 6",
+  "Phường Bình Tiên, Quận 6",
+  "Phường Bình Phú, Quận 6",
+  "Phường Phú Lâm, Quận 6",
+  "Phường Tân Thuận, Quận 7",
+  "Phường Phú Thuận, Quận 7",
+  "Phường Tân Mỹ, Quận 7",
+  "Phường Tân Hưng, Quận 7",
+  "Phường Chánh Hưng, Quận 8",
+  "Phường Phú Định, Quận 8",
+  "Phường Bình Đông, Quận 8",
+  "Phường Diên Hồng, Quận 10",
+  "Phường Vườn Lài, Quận 10",
+  "Phường Hòa Hưng, Quận 10",
+  "Phường Minh Phụng, Quận 11",
+  "Phường Bình Thới, Quận 11",
+  "Phường Hòa Bình, Quận 11",
+  "Phường Phú Thọ, Quận 11",
+  "Phường Đông Hưng Thuận, Quận 12",
+  "Phường Trung Mỹ Tây, Quận 12",
+  "Phường Tân Thới Hiệp, Quận 12",
+  "Phường Thới An, Quận 12",
+  "Phường An Phú Đông, Quận 12",
+  "Phường An Lạc, Quận Bình Tân",
+  "Phường Bình Tân, Quận Bình Tân",
+  "Phường Tân Tạo, Quận Bình Tân",
+  "Phường Bình Trị Đông, Quận Bình Tân",
+  "Phường Bình Hưng Hòa, Quận Bình Tân",
+  "Phường Gia Định, Quận Bình Thạnh",
+  "Phường Bình Thạnh, Quận Bình Thạnh",
+  "Phường Bình Lợi Trung, Quận Bình Thạnh",
+  "Phường Thạnh Mỹ Tây, Quận Bình Thạnh",
+  "Phường Bình Quới, Quận Bình Thạnh",
+  "Phường Hạnh Thông, Quận Gò Vấp",
+  "Phường An Nhơn, Quận Gò Vấp",
+  "Phường Gò Vấp, Quận Gò Vấp",
+  "Phường An Hội Đông, Quận Gò Vấp",
+  "Phường Thông Tây Hội, Quận Gò Vấp",
+  "Phường An Hội Tây, Quận Gò Vấp",
+  "Phường Đức Nhuận, Quận Phú Nhuận",
+  "Phường Cầu Kiệu, Quận Phú Nhuận",
+  "Phường Phú Nhuận, Quận Phú Nhuận",
+  "Phường Tân Sơn Hòa, Quận Tân Bình",
+  "Phường Tân Sơn Nhất, Quận Tân Bình",
+  "Phường Tân Hòa, Quận Tân Bình",
+  "Phường Bảy Hiền, Quận Tân Bình",
+  "Phường Tân Bình, Quận Tân Bình",
+  "Phường Tân Sơn, Quận Tân Bình",
+  "Phường Tây Thạnh, Quận Tân Phú",
+  "Phường Tân Sơn Nhì, Quận Tân Phú",
+  "Phường Phú Thọ Hòa, Quận Tân Phú",
+  "Phường Tân Phú, Quận Tân Phú",
+  "Phường Phú Thạnh, Quận Tân Phú",
+  "Phường Hiệp Bình, Thành phố Thủ Đức",
+  "Phường Thủ Đức, Thành phố Thủ Đức",
+  "Phường Tam Bình, Thành phố Thủ Đức",
+  "Phường Linh Xuân, Thành phố Thủ Đức",
+  "Phường Tăng Nhơn Phú, Thành phố Thủ Đức",
+  "Phường Long Bình, Thành phố Thủ Đức",
+  "Phường Long Phước, Thành phố Thủ Đức",
+  "Phường Long Trường, Thành phố Thủ Đức",
+  "Phường Cát Lái, Thành phố Thủ Đức",
+  "Phường Bình Trưng, Thành phố Thủ Đức",
+  "Phường Phước Long, Thành phố Thủ Đức",
+  "Phường An Khánh, Thành phố Thủ Đức",
+  "Xã Vĩnh Lộc, Huyện Bình Chánh",
+  "Xã Tân Vĩnh Lộc, Huyện Bình Chánh",
+  "Xã Bình Lợi, Huyện Bình Chánh",
+  "Xã Tân Nhựt, Huyện Bình Chánh",
+  "Xã Bình Chánh, Huyện Bình Chánh",
+  "Xã Hưng Long, Huyện Bình Chánh",
+  "Xã Bình Hưng, Huyện Bình Chánh",
+  "Xã Bình Khánh, Huyện Cần Giờ",
+  "Xã An Thới Đông, Huyện Cần Giờ",
+  "Xã Cần Giờ, Huyện Cần Giờ",
+  "Xã Thạnh An, Huyện Cần Giờ",
+  "Xã Củ Chi, Huyện Củ Chi",
+  "Xã Tân An Hội, Huyện Củ Chi",
+  "Xã Thái Mỹ, Huyện Củ Chi",
+  "An Nhơn Tây, Huyện Củ Chi",
+  "Xã Nhuận Đức, Huyện Củ Chi",
+  "Xã Phú Hòa Đông, Huyện Củ Chi",
+  "Xã Bình Mỹ, Huyện Củ Chi",
+  "Xã Đông Thạnh, Huyện Hóc Môn",
+  "Xã Hóc Môn, Huyện Hóc Môn",
+  "Xã Xuân Thới Sơn, Huyện Hóc Môn",
+  "Xã Bà Điểm, Huyện Hóc Môn",
+  "Xã Nhà Bè, Huyện Nhà Bè",
+  "Xã Hiệp Phước, Huyện Nhà Bè",
+  "Phường Đông Hòa, Thành phố Dĩ An",
+  "Phường Dĩ An, Thành phố Dĩ An",
+  "Phường Tân Đông Hiệp, Thành phố Dĩ An",
+  "Phường An Phú, Thành phố Thuận An",
+  "Phường Bình Hòa, Thành phố Thuận An",
+  "Phường Lái Thiêu, Thành phố Thuận An",
+  "Phường Thuận An, Thành phố Thuận An",
+  "Phường Thuận Giao, Thành phố Thuận An",
+  "Phường Thủ Dầu Một, Thành phố Thủ Dầu Một",
+  "Phường Phú Lợi, Thành phố Thủ Dầu Một",
+  "Phường Chánh Hiệp, Thành phố Thủ Dầu Một",
+  "Phường Bình Dương, Thành phố Thủ Dầu Một",
+  "Phường Hòa Lợi, Thành phố Bến Cát",
+  "Phường Phú An, Thành phố Bến Cát",
+  "Phường Tây Nam, Thành phố Bến Cát",
+  "Phường Long Nguyên, Thành phố Bến Cát",
+  "Phường Bến Cát, Thành phố Bến Cát",
+  "Phường Chánh Phú Hòa, Thành phố Bến Cát",
+  "Phường Thới Hòa, Thành phố Bến Cát",
+  "Phường Vĩnh Tân, Thành phố Tân Uyên",
+  "Phường Bình Cơ, Thành phố Tân Uyên",
+  "Phường Tân Uyên, Thành phố Tân Uyên",
+  "Phường Tân Hiệp, Thành phố Tân Uyên",
+  "Phường Tân Khánh, Thành phố Tân Uyên",
+  "Phường Vũng Tàu, Thành phố Vũng Tàu",
+  "Phường Tam Thắng, Thành phố Vũng Tàu",
+  "Phường Rạch Dừa, Thành phố Vũng Tàu",
+  "Phường Phước Thắng, Thành phố Vũng Tàu",
+  "Xã Long Sơn, Thành phố Vũng Tàu",
+  "Phường Long Hương, Thành phố Bà Rịa",
+  "Phường Bà Rịa, Thành phố Bà Rịa",
+  "Phường Tam Long, Thành phố Bà Rịa",
+  "Phường Tân Hải, Thị xã Phú Mỹ",
+  "Phường Tân Phước, Thị xã Phú Mỹ",
+  "Phường Phú Mỹ, Thị xã Phú Mỹ",
+  "Phường Tân Thành, Thị xã Phú Mỹ",
+  "Xã Châu Pha, Thị xã Phú Mỹ",
+  "Xã Thường Tân, Huyện Bắc Tân Uyên",
+  "Xã Bắc Tân Uyên, Huyện Bắc Tân Uyên",
+  "Xã Phú Giáo, Huyện Phú Giáo",
+  "Xã Phước Hòa, Huyện Phú Giáo",
+  "Xã Phước Thành, Huyện Phú Giáo",
+  "Xã An Long, Huyện Phú Giáo",
+  "Xã Trừ Văn Thố, Huyện Bàu Bàng",
+  "Xã Bàu Bàng, Huyện Bàu Bàng",
+  "Xã Long Hòa, Huyện Dầu Tiếng",
+  "Xã Thanh An, Huyện Dầu Tiếng",
+  "Xã Dầu Tiếng, Huyện Dầu Tiếng",
+  "Xã Minh Thạnh, Huyện Dầu Tiếng",
+  "Xã Long Hải, Huyện Long Đất",
+  "Xã Long Điền, Huyện Long Đất",
+  "Xã Phước Hải, Huyện Long Đất",
+  "Xã Đất Đỏ, Huyện Long Đất",
+  "Xã Nghĩa Thành, Huyện Châu Đức",
+  "Xã Ngãi Giao, Huyện Châu Đức",
+  "Xã Kim Long, Huyện Châu Đức",
+  "Xã Châu Đức, Huyện Châu Đức",
+  "Xã Bình Giã, Huyện Châu Đức",
+  "Xã Xuân Sơn, Huyện Châu Đức",
+  "Xã Hồ Tràm, Huyện Xuyên Mộc",
+  "Xã Xuyên Mộc, Huyện Xuyên Mộc",
+  "Xã Hòa Hội, Huyện Xuyên Mộc",
+  "Xã Bàu Lâm, Huyện Xuyên Mộc",
+  "Xã Hòa Hiệp, Huyện Xuyên Mộc",
+  "Xã Bình Châu, Huyện Xuyên Mộc",
+  "Đặc khu Côn Đảo, Đặc khu Côn Đảo"
+];

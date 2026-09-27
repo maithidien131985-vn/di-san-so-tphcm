@@ -145,6 +145,72 @@ export default function HomePage({
     return scored.slice(0, 4).map(s => s.monument);
   }, [allMonuments, selectedWard, selectedDistrict, surveyTopic]);
 
+  // Helper to normalize Vietnamese text
+  const normalizeVn = (s) => {
+    if (!s) return '';
+    return s.toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/đ/g, 'd');
+  };
+
+  // Smart Search Results with Multi-criteria Relevance Scoring
+  const searchScoredList = useMemo(() => {
+    const raw = searchTerm.trim();
+    if (!raw || !allMonuments || allMonuments.length === 0) return [];
+    
+    const qNorm = normalizeVn(raw);
+    const qWords = qNorm.split(/\s+/).filter(w => w.length > 0);
+
+    const scored = allMonuments.map(m => {
+      let score = 0;
+      const name = m.info?.name || '';
+      const nameNorm = normalizeVn(name);
+      const addrNorm = normalizeVn(m.info?.address || '');
+      const typeNorm = normalizeVn(m.info?.type || '');
+      const overviewNorm = normalizeVn(m.info?.overview || '');
+      const sttStr = String(m.stt);
+
+      // Exact STT match
+      if (qNorm === sttStr || qNorm === `#${sttStr}`) {
+        return { monument: m, score: 300 };
+      }
+
+      // Tier 1: Exact Name Match
+      if (nameNorm === qNorm) {
+        score += 250;
+      } else if (nameNorm.includes(qNorm)) {
+        score += 120;
+        if (nameNorm.startsWith(qNorm)) score += 40;
+      }
+
+      let matchedNameWords = 0;
+      qWords.forEach(w => {
+        if (nameNorm.includes(w)) {
+          score += 25;
+          matchedNameWords++;
+        }
+        if (addrNorm.includes(w)) score += 12;
+        if (typeNorm.includes(w)) score += 8;
+        if (overviewNorm.includes(w)) score += 4;
+      });
+
+      // Bonus if all query words appear in the monument's name
+      if (qWords.length > 1 && matchedNameWords === qWords.length) {
+        score += 60;
+      }
+
+      return { monument: m, score };
+    }).filter(item => item.score > 0);
+
+    scored.sort((a, b) => b.score - a.score);
+    return scored;
+  }, [searchTerm, allMonuments]);
+
+  const searchResults = useMemo(() => {
+    return searchScoredList.slice(0, 8).map(s => s.monument);
+  }, [searchScoredList]);
+
   // Smart Search Scoring & Best Match Linking
   const handlePerformSearch = (explicitTerm) => {
     const rawQuery = (explicitTerm !== undefined ? explicitTerm : searchTerm).trim();
@@ -153,94 +219,24 @@ export default function HomePage({
       return;
     }
 
-    const query = rawQuery.toLowerCase();
-    const normQuery = query.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
-
-    // Keyword mapping for high-intent queries
-    const keywordMap = [
-      { keywords: ['dinh', 'doc lap', 'thong nhat', 'xe tang', '390', '843', 'bui quang than', 'ngo viet thu', '30/4', '30-4', 'quan 1'], stt: 1 },
-      { keywords: ['cu chi', 'dia dao', 'dat thep', 'hoang cam', 'ben duoc', 'crimp', 'cedar falls'], stt: 2 },
-      { keywords: ['loc an', 'tau khong so', 'ho chi minh tren bien', 'xuyen moc', 'ba ria'], stt: 3 },
-      { keywords: ['con dao', 'chuong cop', 'chuong bo', 'vo thi sau', 'le hong phong', 'nha tu con dao'], stt: 4 },
-      { keywords: ['binh gia', 'duc thanh', 'chien dich binh gia'], stt: 5 },
-      { keywords: ['minh dam', 'chau long', 'chau vien', 'hang da'], stt: 6 },
-      { keywords: ['rung sac', 'can gio', 'doan 10', 'dac cong rung sac', 'nha be', 'long tau'], stt: 7 },
-      { keywords: ['chien khu d', 'chien khu'], stt: 8 },
-      { keywords: ['nha rong', 'ben nha rong', 'ho chi minh', 'ra di tim duong'], stt: 11 },
-      { keywords: ['bach dinh', 'vung tau', 'paul doumer'], stt: 56 },
-      { keywords: ['bao tang lich su', 'so thu'], stt: 57 },
-      { keywords: ['bao tang thanh pho', 'dinh gia long'], stt: 58 },
-      { keywords: ['giac lam', 'chua giac lam', 'co tu'], stt: 70 },
-      { keywords: ['phu loi', 'nha tu phu loi', 'binh duong'], stt: 60 },
-      { keywords: ['gom', 'hung loi', 'lo gom', 'khao co'], nameQuery: 'Hưng Lợi' }
-    ];
-
-    for (const km of keywordMap) {
-      for (const kw of km.keywords) {
-        if (normQuery.includes(kw)) {
-          let match = null;
-          if (km.stt) {
-            match = allMonuments.find(m => m.stt === km.stt);
-          } else if (km.nameQuery) {
-            match = allMonuments.find(m => m.info.name.includes(km.nameQuery));
-          }
-          if (match) {
-            onSelectMonument(match.stt);
-            setSearchTerm('');
-            return;
-          }
-        }
-      }
+    if (searchScoredList.length === 0) {
+      onOpenExplorer('all', rawQuery);
+      return;
     }
 
-    // Ranking across all 103 monuments
-    let bestMonument = null;
-    let maxScore = 0;
+    const topMatch = searchScoredList[0];
+    const secondMatch = searchScoredList.length > 1 ? searchScoredList[1] : null;
 
-    allMonuments.forEach(m => {
-      let score = 0;
-      const nameNorm = m.info.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
-      const addressNorm = m.info.address.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
-      const typeNorm = m.info.type.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
-      const overviewNorm = m.info.overview.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
-
-      if (nameNorm === normQuery) score += 120;
-      else if (nameNorm.startsWith(normQuery)) score += 60;
-      else if (nameNorm.includes(normQuery)) score += 35;
-
-      const queryWords = normQuery.split(/\s+/).filter(w => w.length > 1);
-      queryWords.forEach(w => {
-        if (nameNorm.includes(w)) score += 20;
-        if (addressNorm.includes(w)) score += 10;
-        if (typeNorm.includes(w)) score += 8;
-        if (overviewNorm.includes(w)) score += 4;
-      });
-
-      if (score > maxScore) {
-        maxScore = score;
-        bestMonument = m;
-      }
-    });
-
-    if (bestMonument && maxScore > 0) {
-      onSelectMonument(bestMonument.stt);
+    // If there is an exact or standout best match (e.g. single result or top score much higher)
+    if (!secondMatch || topMatch.score >= 200 || (topMatch.score - secondMatch.score >= 50)) {
+      onSelectMonument(topMatch.monument.stt);
       setSearchTerm('');
     } else {
-      onOpenExplorer();
+      // Broad category search with multiple close candidates (e.g. "địa đạo", "chùa", "đình")
+      // Open the explorer modal filtered to this search query so student can pick
+      onOpenExplorer('all', rawQuery);
     }
   };
-
-  // Search Results Filtering for dropdown
-  const searchResults = useMemo(() => {
-    if (!searchTerm.trim()) return [];
-    const term = searchTerm.toLowerCase();
-    return allMonuments.filter(m => 
-      m.info.name.toLowerCase().includes(term) ||
-      m.info.address.toLowerCase().includes(term) ||
-      m.info.overview.toLowerCase().includes(term) ||
-      m.info.type.toLowerCase().includes(term)
-    ).slice(0, 8);
-  }, [searchTerm, allMonuments]);
 
   // Featured Monument: Lò gốm cổ Hưng Lợi
   const featuredMonument = useMemo(() => {
