@@ -410,37 +410,35 @@ export default function HomePage({
         </div>
       </section>
 
-      {/* 2. BẢNG KHẢO SÁT & GỢI Ý HÀNH TRÌNH (KHÁM PHÁ THEO CÁCH CỦA BẠN) */}
+      {/* 2. COHESIVE SMART EXPLORER & RECOMMENDATION HUB */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-8">
         <ScrollReveal>
-          <div className="bg-[#FFFDFB] rounded-3xl p-4 sm:p-6 md:p-10 border-2 border-rose-200 shadow-xl shadow-rose-950/5 space-y-6 sm:space-y-8">
+          <div className="bg-gradient-to-b from-white via-[#FFFDF9] to-[#FAF5EF] rounded-3xl p-5 sm:p-7 md:p-8 border-2 border-amber-400/50 shadow-xl shadow-amber-950/5 space-y-6">
+            
             {/* Header */}
-            <div className="text-center space-y-2 max-w-2xl mx-auto">
-              <WordByWordTitle
-                as="h2"
-                text="KHÁM PHÁ THEO CÁCH CỦA BẠN"
-                className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl uppercase tracking-wider text-[#2A1214] justify-center"
-                staggerDelay={0.05}
-              />
-              <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Hãy cho chúng tôi biết nơi bạn ở và chủ đề đam mê để nhận ngay gợi ý di tích phù hợp nhất!
+            <div className="text-center max-w-2xl mx-auto space-y-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/80 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
+                <Compass className="w-3.5 h-3.5 text-[#7E1819]" />
+                <span>Gợi Ý Tuyến Khám Phá Thông Minh</span>
+              </div>
+              <h2 className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl text-[#2A1214] tracking-tight">
+                Khám Phá Di Tích Theo Cách Của Bạn
+              </h2>
+              <p className="text-xs sm:text-sm text-stone-600 font-medium">
+                Chọn nhanh địa bàn và chủ đề bạn yêu thích để nhận ngay gợi ý các di tích phù hợp nhất.
               </p>
             </div>
 
-            {/* 3 Survey Steps Grid */}
-            <div className="space-y-6 sm:space-y-7">
-              {/* BƯỚC 1: NƠI Ở / KHU VỰC CỦA BẠN */}
-              <div className="space-y-2.5 sm:space-y-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-black text-xs shadow-xs">
-                    1
-                  </div>
-                  <h3 className="font-serif-title font-black text-xs sm:text-sm md:text-base text-[#2A1214]">
-                    Nơi ở / Khu vực địa lý của bạn:
-                  </h3>
+            {/* Interactive Filter Control Console */}
+            <div className="bg-white/80 backdrop-blur-xs rounded-2xl p-4 sm:p-5 border border-amber-300/60 shadow-xs space-y-4">
+              
+              {/* Row 1: Chọn Khu Vực */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-1.5 text-xs font-bold text-[#7E1819]">
+                  <MapPin className="w-4 h-4 text-amber-600" />
+                  <span>1. Chọn khu vực địa lý:</span>
                 </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-2.5">
+                <div className="flex items-center gap-1.5 overflow-x-auto pb-1.5 pt-0.5 no-scrollbar flex-wrap">
                   {locationOptions.map(loc => {
                     const isSelected = surveyLocation === loc.id;
                     return (
@@ -448,48 +446,28 @@ export default function HomePage({
                         key={loc.id}
                         type="button"
                         onClick={() => setSurveyLocation(loc.id)}
-                        className={`p-2.5 sm:p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-2.5 relative group shadow-2xs ${
+                        className={`px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap shadow-2xs ${
                           isSelected
-                            ? 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border-amber-400 ring-2 ring-[#8B1417]/25 shadow-md scale-[1.02]'
-                            : 'bg-white hover:bg-[#FAF4F0] border-rose-200 text-[#2A1214] hover:border-[#8B1417]/50 hover:shadow-xs'
+                            ? 'bg-gradient-to-r from-[#7E1819] to-[#9c2022] text-white shadow-md ring-2 ring-amber-400 font-black scale-102'
+                            : 'bg-[#FAF6F0] hover:bg-amber-50 text-stone-700 hover:text-[#7E1819] border border-amber-200/70'
                         }`}
                       >
-                        <div className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center text-base sm:text-lg shrink-0 shadow-2xs ${
-                          isSelected ? 'bg-white/20 border border-white/30' : 'bg-rose-50 border border-rose-200'
-                        }`}>
-                          {loc.icon}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className={`text-xs sm:text-[13px] font-black leading-snug truncate ${isSelected ? 'text-amber-200' : 'text-[#8B1417]'}`}>
-                            {loc.name}
-                          </div>
-                          <div className={`text-[10px] sm:text-[11px] font-semibold truncate leading-tight mt-0.5 ${isSelected ? 'text-white/95' : 'text-stone-600'}`}>
-                            {loc.tag}
-                          </div>
-                        </div>
-                        {isSelected && (
-                          <span className="w-4 h-4 rounded-full bg-amber-400 text-[#8B1417] font-black flex items-center justify-center text-[10px] shrink-0 shadow-xs">
-                            ✓
-                          </span>
-                        )}
+                        <span className="text-sm">{loc.icon}</span>
+                        <span>{loc.name}</span>
+                        {isSelected && <span className="text-amber-300 ml-0.5 font-black">✓</span>}
                       </button>
                     );
                   })}
                 </div>
               </div>
 
-              {/* BƯỚC 2: ĐAM MÊ & CHỦ ĐỀ BẠN YÊU THÍCH */}
-              <div className="space-y-2.5 sm:space-y-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1417] text-white flex items-center justify-center font-black text-xs shadow-xs">
-                    2
-                  </div>
-                  <h3 className="font-serif-title font-black text-xs sm:text-sm md:text-base text-[#2A1214]">
-                    Đam mê &amp; Chủ đề bạn quan tâm nhất:
-                  </h3>
+              {/* Row 2: Chọn Chủ Đề */}
+              <div className="space-y-2 pt-2 border-t border-amber-200/50">
+                <div className="flex items-center gap-1.5 text-xs font-bold text-[#7E1819]">
+                  <Sparkles className="w-4 h-4 text-amber-600" />
+                  <span>2. Chọn chủ đề bạn quan tâm:</span>
                 </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-2.5">
+                <div className="flex items-center gap-1.5 overflow-x-auto pb-1.5 pt-0.5 no-scrollbar flex-wrap">
                   {topicOptions.map(top => {
                     const isSelected = surveyTopic === top.id;
                     return (
@@ -497,30 +475,15 @@ export default function HomePage({
                         key={top.id}
                         type="button"
                         onClick={() => setSurveyTopic(top.id)}
-                        className={`p-3 sm:p-3.5 rounded-2xl border-2 text-left transition-all cursor-pointer flex items-center gap-3 relative shadow-2xs ${
+                        className={`px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap shadow-2xs ${
                           isSelected
-                            ? 'bg-gradient-to-r from-[#8B1417] to-[#A81B1F] text-white border-amber-400 ring-2 ring-[#8B1417]/25 shadow-md scale-[1.02]'
-                            : 'bg-white hover:bg-[#FAF4F0] border-rose-200 text-[#2A1214] hover:border-[#8B1417]/50 hover:shadow-xs'
+                            ? 'bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-[#200507] shadow-md ring-2 ring-amber-300 font-black scale-102'
+                            : 'bg-[#FAF6F0] hover:bg-amber-50 text-stone-700 hover:text-[#7E1819] border border-amber-200/70'
                         }`}
                       >
-                        <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-lg sm:text-xl shrink-0 shadow-2xs ${
-                          isSelected ? 'bg-white/20 border border-white/30' : 'bg-rose-50 border border-rose-200'
-                        }`}>
-                          {top.icon}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className={`text-xs sm:text-[13px] font-black leading-snug truncate ${isSelected ? 'text-amber-200' : 'text-[#8B1417]'}`}>
-                            {top.name}
-                          </div>
-                          <div className={`text-[10px] sm:text-[11px] font-semibold truncate leading-tight mt-0.5 ${isSelected ? 'text-white/95' : 'text-stone-600'}`}>
-                            {top.desc}
-                          </div>
-                        </div>
-                        {isSelected && (
-                          <span className="w-4 h-4 rounded-full bg-amber-400 text-[#8B1417] font-black flex items-center justify-center text-[10px] shrink-0 shadow-xs">
-                            ✓
-                          </span>
-                        )}
+                        <span className="text-sm">{top.icon}</span>
+                        <span>{top.name}</span>
+                        {isSelected && <span className="text-[#200507] ml-0.5 font-black">✓</span>}
                       </button>
                     );
                   })}
@@ -528,73 +491,76 @@ export default function HomePage({
               </div>
             </div>
 
-            {/* DYNAMIC RECOMMENDATION RESULTS CARDS */}
-            <div className="pt-4 border-t-2 border-rose-200 space-y-4">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <Flame className="w-5 h-5 text-[#8B1417] fill-[#8B1417]" />
-                  <span className="font-serif-title font-black text-xs sm:text-sm md:text-base uppercase tracking-wider text-[#8B1417]">
-                    CÁC DI TÍCH DÀNH CHO BẠN
-                  </span>
-                </div>
-                <button
-                  onClick={onOpenExplorer}
-                  className="text-xs font-bold text-[#8B1417] hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto"
-                >
-                  <span>Xem toàn bộ 103 di tích</span>
-                  <ChevronRight className="w-4 h-4" />
-                </button>
+            {/* Live Filter Summary & Results Header */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2">
+              <div className="flex items-center gap-2 flex-wrap text-xs">
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-amber-100 text-[#7E1819] font-black text-xs">
+                  <Flame className="w-3.5 h-3.5 text-[#7E1819] fill-[#7E1819]" />
+                  <span>Di Tích Đề Xuất Phù Hợp:</span>
+                </span>
+                <span className="text-stone-600 font-medium hidden md:inline">
+                  {locationOptions.find(l => l.id === surveyLocation)?.name} • {topicOptions.find(t => t.id === surveyTopic)?.name}
+                </span>
               </div>
 
-              {/* Responsive Cards: 1 col on Mobile, 2 cols on Tablet, 4 cols on Desktop */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {recommendedMonuments.map((m, idx) => (
-                  <div
-                    key={m.stt}
-                    onClick={() => onSelectMonument(m.stt)}
-                    className="bg-[#FAF4F0] rounded-3xl p-3.5 sm:p-4 border-2 border-rose-100 hover:border-[#8B1417] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
-                  >
-                    <div className="space-y-3">
-                      <div className="h-40 sm:h-36 rounded-2xl overflow-hidden bg-rose-100 relative shadow-inner">
-                        <img
-                          src={m.info.heroImage}
-                          alt={m.info.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <div className="absolute top-2.5 left-2.5">
-                          <span className="px-2 py-0.5 rounded-full bg-[#8B1417] text-amber-100 text-[10px] font-black uppercase shadow">
-                            {m.info.ranking || 'Quốc gia'}
-                          </span>
-                        </div>
-                        <div className="absolute bottom-2 right-2">
-                          <span className="px-2 py-0.5 rounded-full bg-[#8B1417] text-white text-[9px] font-black uppercase backdrop-blur-xs shadow">
-                            ★ Khớp {98 - idx * 3}%
-                          </span>
-                        </div>
-                      </div>
+              <button
+                onClick={onOpenExplorer}
+                className="text-xs font-bold text-[#7E1819] hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto"
+              >
+                <span>Xem tất cả 103 di tích</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
 
-                      <div className="space-y-1">
-                        <h4 className="font-serif-title font-black text-sm text-[#2A1214] group-hover:text-[#8B1417] transition-colors line-clamp-1">
-                          {m.info.name}
-                        </h4>
-                        <p className="text-[11px] text-stone-600 flex items-center gap-1 line-clamp-1">
-                          <MapPin className="w-3 h-3 text-[#8B1417] shrink-0" />
-                          <span>{m.info.address}</span>
-                        </p>
-                        <p className="text-[11px] text-stone-600 line-clamp-2 leading-relaxed pt-0.5">
-                          {m.info.overview}
-                        </p>
+            {/* Recommendation Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {recommendedMonuments.map((m, idx) => (
+                <div
+                  key={m.stt}
+                  onClick={() => onSelectMonument(m.stt)}
+                  className="bg-white rounded-3xl p-3.5 sm:p-4 border-2 border-amber-200/80 hover:border-[#7E1819] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:-translate-y-1"
+                >
+                  <div className="space-y-3">
+                    <div className="h-40 sm:h-36 rounded-2xl overflow-hidden bg-rose-100 relative shadow-inner">
+                      <img
+                        src={m.info.heroImage}
+                        alt={m.info.name}
+                        className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-500"
+                      />
+                      <div className="absolute top-2.5 left-2.5 flex items-center gap-1">
+                        <span className="px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-100 text-[10px] font-black uppercase shadow">
+                          #{m.stt} {m.info.ranking || 'Quốc gia'}
+                        </span>
+                      </div>
+                      <div className="absolute bottom-2 right-2">
+                        <span className="px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-400 text-[#200507] text-[9px] font-black uppercase shadow-md">
+                          ★ Khớp {98 - idx * 3}%
+                        </span>
                       </div>
                     </div>
 
-                    <div className="pt-3 mt-2 border-t border-rose-200/80 flex items-center justify-between text-xs font-bold text-[#8B1417] group-hover:underline">
-                      <span>Khám phá ngay</span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <div className="space-y-1.5">
+                      <h4 className="font-serif-title font-black text-sm text-[#2A1214] group-hover:text-[#7E1819] transition-colors line-clamp-1">
+                        {m.info.name}
+                      </h4>
+                      <p className="text-[11px] text-stone-600 flex items-center gap-1 line-clamp-1">
+                        <MapPin className="w-3.5 h-3.5 text-[#7E1819] shrink-0" />
+                        <span>{m.info.address}</span>
+                      </p>
+                      <p className="text-[11px] text-stone-600 line-clamp-2 leading-relaxed">
+                        {m.info.overview}
+                      </p>
                     </div>
                   </div>
-                ))}
-              </div>
+
+                  <div className="pt-3 mt-3 border-t border-amber-100 flex items-center justify-between text-xs font-black text-[#7E1819] group-hover:underline">
+                    <span>Khám phá ngay</span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              ))}
             </div>
+
           </div>
         </ScrollReveal>
       </section>
