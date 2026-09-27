@@ -30,7 +30,6 @@ export default function Header({
 
   const navLinks = [
     { id: 'home', label: 'Trang chủ', isHome: true },
-    { id: 'map', label: 'Bản đồ di tích', isMap: true },
     { id: 'monuments', label: 'Kho di tích', isExplorer: true }
   ];
 
@@ -73,25 +72,31 @@ export default function Header({
           </div>
         </div>
 
-        {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-5 xl:gap-6 text-[13px] font-bold text-[#333333]">
-          {navLinks.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleNavClick(item)}
-              className={`transition-colors py-1 cursor-pointer hover:text-[#7E1819] ${
-                item.isHome && viewMode === 'home'
-                  ? 'text-[#7E1819] font-black border-b-2 border-[#7E1819]'
-                  : 'text-[#333333]'
-              }`}
-            >
-              {item.label}
-            </button>
-          ))}
-        </nav>
+        {/* Right Navigation & Action Controls - Evenly Spaced */}
+        <div className="flex items-center gap-3 sm:gap-3.5 lg:gap-4">
+          
+          {/* Nút Trang chủ */}
+          <button
+            onClick={() => onNavigate && onNavigate('home')}
+            className={`transition-colors py-1 px-2 text-xs sm:text-[13px] font-bold cursor-pointer hover:text-[#7E1819] ${
+              viewMode === 'home'
+                ? 'text-[#7E1819] font-black border-b-2 border-[#7E1819]'
+                : 'text-[#333333]'
+            }`}
+          >
+            Trang chủ
+          </button>
 
-        {/* Action Controls */}
-        <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Nút Kho di tích - Sáng màu, nổi bật */}
+          <button
+            onClick={onOpenExplorer}
+            className="flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-[#200507] font-black text-xs shadow-xs border border-amber-300 ring-2 ring-amber-300/50 cursor-pointer transition-all hover:scale-104 active:scale-95"
+            title="Khám phá toàn bộ kho 103 Di tích TP.HCM"
+          >
+            <Grid className="w-3.5 h-3.5 text-[#200507]" />
+            <span>Kho di tích</span>
+          </button>
+
           {/* Nút SƠ ĐỒ HÀNH TRÌNH (Tích hợp thông tin học sinh / Thẻ khám phá di sản) */}
           <button
             onClick={() => {
@@ -131,7 +136,7 @@ export default function Header({
           {/* Nút Đóng Góp */}
           <button
             onClick={onOpenContribute}
-            className="flex items-center gap-1.5 px-3 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300/80 text-xs font-bold shadow-2xs cursor-pointer transition-all hover:scale-103"
+            className="flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] border border-amber-300/80 text-xs font-bold shadow-2xs cursor-pointer transition-all hover:scale-103"
             title="Đóng góp tư liệu di sản"
           >
             <Upload className="w-3.5 h-3.5 text-[#7E1819]" />
@@ -141,7 +146,7 @@ export default function Header({
           {/* Nút Quản trị - Màu trong suốt, không màu đỏ, ở góc tận cùng bên phải, ít được chú ý */}
           <button
             onClick={onOpenAdmin}
-            className="relative flex items-center gap-1 px-2 py-1.5 sm:px-2.5 sm:py-1.5 rounded-lg bg-transparent hover:bg-stone-100 text-stone-400 hover:text-stone-600 text-[11px] font-medium transition-colors cursor-pointer"
+            className="relative flex items-center gap-1 px-2 py-1.5 sm:px-2.5 sm:py-2 rounded-lg bg-transparent hover:bg-stone-100 text-stone-400 hover:text-stone-600 text-[11px] font-medium transition-colors cursor-pointer"
             title="Quản trị hệ thống"
           >
             <Settings className="w-3.5 h-3.5 text-stone-400 group-hover:text-stone-600" />
