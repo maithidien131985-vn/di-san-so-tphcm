@@ -32,6 +32,7 @@ import { getActivePassport } from '../utils/passportStorage';
 import WordByWordTitle from './WordByWordTitle';
 import { buildMonumentMediaQuiz } from '../utils/quizUtils';
 import { parseScriptIntoSentences, getActiveSentenceIndex } from '../utils/audioScriptSync';
+import { getMemoryGamePairsForMonument } from '../data/memoryGameData';
 
 export default function MediaAudioVideoRow({
   video = {},
@@ -136,23 +137,7 @@ export default function MediaAudioVideoRow({
   // GAME TRẠM 1: LẬT THẺ TRÍ NHỚ DI TÍCH (MEMORY MATCH)
   // ==========================================
   const initialCards = useMemo(() => {
-    const rawPairs = [
-      {
-        pairId: 1,
-        a: { icon: '🏛️', tag: 'Di tích', title: monumentName, sub: 'Biểu tượng lịch sử' },
-        b: { icon: '📍', tag: 'Địa danh', title: info?.address || 'TP. Hồ Chí Minh', sub: 'Tọa độ không gian' }
-      },
-      {
-        pairId: 2,
-        a: { icon: '📜', tag: 'Dấu ấn', title: info?.ranking || 'Di tích Quốc Gia', sub: 'Cấp độ xếp hạng' },
-        b: { icon: '🏺', tag: 'Đặc trưng', title: info?.type || 'Lịch sử - Văn hóa', sub: 'Loại hình di sản' }
-      },
-      {
-        pairId: 3,
-        a: { icon: '⏳', tag: 'Thời kỳ', title: info?.established || 'Dấu mốc lịch sử', sub: 'Thời gian hình thành' },
-        b: { icon: '🌟', tag: 'Sứ mệnh', title: 'Gìn giữ & Tự hào', sub: 'Trách nhiệm thế hệ trẻ' }
-      }
-    ];
+    const rawPairs = getMemoryGamePairsForMonument(currentStt, monumentName, info);
 
     const flat = [];
     rawPairs.forEach((p) => {
@@ -609,7 +594,7 @@ export default function MediaAudioVideoRow({
                   key={card.id || idx}
                   onClick={() => handleCardClick(idx)}
                   disabled={isMatched || flipped.length >= 2}
-                  className={`relative h-32 sm:h-36 rounded-2xl border-2 transition-all duration-300 transform perspective-1000 cursor-pointer shadow-xs ${
+                  className={`relative min-h-[160px] sm:min-h-[175px] rounded-2xl border-2 transition-all duration-300 transform perspective-1000 cursor-pointer shadow-xs ${
                     isMatched
                       ? 'bg-gradient-to-br from-emerald-50 to-emerald-100/70 border-emerald-400 text-emerald-950 scale-100 ring-2 ring-emerald-300/60 shadow-md'
                       : isFlipped
@@ -618,29 +603,36 @@ export default function MediaAudioVideoRow({
                   }`}
                 >
                   {isFlipped ? (
-                    <div className="p-3 h-full flex flex-col justify-between items-center text-center animate-fadeIn">
-                      <span className="text-3xl sm:text-4xl filter drop-shadow-sm mt-1">{card.icon}</span>
-                      <div className="w-full">
-                        <span className="text-[11px] uppercase font-black px-2 py-0.5 rounded bg-amber-200/80 text-[#7E1819] inline-block mb-1 border border-amber-300/60">
+                    <div className="p-2.5 sm:p-3 h-full flex flex-col justify-between items-center text-center animate-fadeIn">
+                      <div className="w-full flex items-center justify-between gap-1">
+                        <span className="text-2xl sm:text-3xl filter drop-shadow-sm">{card.icon}</span>
+                        <span className="text-[10px] sm:text-[11px] uppercase font-black px-2 py-0.5 rounded-full bg-amber-200/90 text-[#7E1819] border border-amber-300/80 shadow-2xs">
                           {card.tag}
                         </span>
-                        <p className="font-extrabold text-xs sm:text-sm leading-snug line-clamp-2 text-[#2C241E]">
+                      </div>
+                      <div className="w-full my-auto py-1">
+                        <p className="font-extrabold text-[11px] sm:text-xs leading-snug line-clamp-4 text-[#2C241E] text-center">
                           {card.title}
                         </p>
                       </div>
-                      {isMatched && (
-                        <CheckCircle2 className="w-5 h-5 text-emerald-600 animate-bounce" />
-                      )}
+                      <div className="w-full flex items-center justify-between pt-1 border-t border-amber-200/60 text-[9px] sm:text-[10px] text-stone-500 font-semibold">
+                        <span className="truncate">{card.sub || `Cặp #${card.pairId}`}</span>
+                        {isMatched && (
+                          <CheckCircle2 className="w-4 h-4 text-emerald-600 animate-bounce shrink-0" />
+                        )}
+                      </div>
                     </div>
                   ) : (
-                    <div className="h-full flex flex-col items-center justify-center gap-1.5 p-2 text-amber-200/90">
-                      <div className="w-10 h-10 rounded-xl bg-amber-400/20 border border-amber-300/30 flex items-center justify-center text-xl">
+                    <div className="h-full flex flex-col items-center justify-center gap-2 p-3 text-amber-200/90">
+                      <div className="w-11 h-11 rounded-2xl bg-amber-400/20 border border-amber-300/30 flex items-center justify-center text-xl shadow-inner">
                         🏛️
                       </div>
                       <span className="text-xs font-black uppercase tracking-wider text-amber-300">
                         Thẻ #{idx + 1}
                       </span>
-                      <span className="text-[10px] text-amber-100/80 font-bold">Chạm để lật</span>
+                      <span className="text-[10px] text-amber-100/80 font-bold bg-black/25 px-2.5 py-0.5 rounded-full">
+                        Chạm để lật
+                      </span>
                     </div>
                   )}
                 </button>
