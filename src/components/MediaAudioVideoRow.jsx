@@ -33,6 +33,7 @@ import WordByWordTitle from './WordByWordTitle';
 import { buildMonumentMediaQuiz } from '../utils/quizUtils';
 import { parseScriptIntoSentences, getActiveSentenceIndex } from '../utils/audioScriptSync';
 import { getMemoryGamePairsForMonument } from '../data/memoryGameData';
+import MiniMonumentCardMap from './MiniMonumentCardMap';
 
 export default function MediaAudioVideoRow({
   video = {},
@@ -603,26 +604,102 @@ export default function MediaAudioVideoRow({
                   }`}
                 >
                   {isFlipped ? (
-                    <div className="p-2.5 sm:p-3 h-full flex flex-col justify-between items-center text-center animate-fadeIn">
-                      <div className="w-full flex items-center justify-between gap-1">
-                        <span className="text-2xl sm:text-3xl filter drop-shadow-sm">{card.icon}</span>
-                        <span className="text-[10px] sm:text-[11px] uppercase font-black px-2 py-0.5 rounded-full bg-amber-200/90 text-[#7E1819] border border-amber-300/80 shadow-2xs">
-                          {card.tag}
-                        </span>
-                      </div>
-                      <div className="w-full my-auto py-1">
-                        <p className="font-extrabold text-[11px] sm:text-xs leading-snug line-clamp-4 text-[#2C241E] text-center">
-                          {card.title}
-                        </p>
-                      </div>
-                      <div className="w-full flex items-center justify-between pt-1 border-t border-amber-200/60 text-[9px] sm:text-[10px] text-stone-500 font-semibold">
-                        <span className="truncate">{card.sub || `Cặp #${card.pairId}`}</span>
+                    card.cardType === 'map' ? (
+                      /* 1. THẺ BẢN ĐỒ VỊ TRÍ CÓ GHIM (CẶP 1A) */
+                      <div className="relative w-full h-full rounded-2xl overflow-hidden animate-fadeIn flex flex-col justify-between p-1 bg-stone-900">
+                        <div className="w-full h-full min-h-[145px] rounded-xl overflow-hidden relative">
+                          <MiniMonumentCardMap
+                            lat={card.lat}
+                            lng={card.lng}
+                            monumentName={card.monumentName || monumentName}
+                            categoryIcon={card.categoryIcon}
+                          />
+                        </div>
                         {isMatched && (
-                          <CheckCircle2 className="w-4 h-4 text-emerald-600 animate-bounce shrink-0" />
+                          <div className="absolute top-2 right-2 z-20 bg-emerald-600 text-white rounded-full p-1 shadow-lg animate-bounce">
+                            <CheckCircle2 className="w-4 h-4" />
+                          </div>
                         )}
                       </div>
-                    </div>
+                    ) : card.cardType === 'image' && card.imageSrc ? (
+                      /* 2. THẺ HÌNH ẢNH / TƯ LIỆU / BIỂN TÍCH (CẶP 2A hoặc 3A) */
+                      <div className="relative w-full h-full rounded-2xl overflow-hidden animate-fadeIn flex flex-col justify-between bg-stone-900 shadow-inner">
+                        <img
+                          src={card.imageSrc}
+                          alt={card.imageCaption || card.title}
+                          className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-500"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                          }}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/40" />
+                        
+                        {/* Top Tag & Icon */}
+                        <div className="relative z-10 p-2 flex items-center justify-between w-full">
+                          <span className="px-2 py-0.5 rounded-full bg-amber-400 text-[#2C0709] text-[9.5px] sm:text-[10px] font-black uppercase shadow flex items-center gap-1 border border-amber-300">
+                            <span>{card.icon}</span>
+                            <span>{card.tag}</span>
+                          </span>
+                          {isMatched && (
+                            <CheckCircle2 className="w-4 h-4 text-emerald-400 animate-bounce drop-shadow" />
+                          )}
+                        </div>
+
+                        {/* Bottom Caption */}
+                        <div className="relative z-10 p-2 text-left bg-black/40 backdrop-blur-xs rounded-b-2xl">
+                          <p className="font-extrabold text-[10.5px] sm:text-[11.5px] leading-snug text-white line-clamp-3 drop-shadow-md">
+                            {card.imageCaption || card.title}
+                          </p>
+                        </div>
+                      </div>
+                    ) : card.cardType === 'badge' ? (
+                      /* 3. THẺ BIỂU TRƯNG / HUY HIỆU XẾP HẠNG THAY THẾ */
+                      <div className="p-2.5 sm:p-3 h-full flex flex-col justify-between items-center text-center animate-fadeIn bg-gradient-to-b from-amber-100/90 to-amber-50 rounded-2xl">
+                        <div className="w-full flex items-center justify-between">
+                          <span className="text-2xl sm:text-3xl filter drop-shadow-sm">{card.icon}</span>
+                          <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-200 shadow-2xs">
+                            {card.tag}
+                          </span>
+                        </div>
+                        <div className="w-full my-auto py-1 flex flex-col items-center gap-1.5">
+                          <div className="w-12 h-12 rounded-2xl bg-amber-400/20 border border-amber-400 flex items-center justify-center p-1.5 shadow-inner">
+                            <img src={card.categoryIcon || '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png'} alt="badge" className="w-full h-full object-contain drop-shadow" />
+                          </div>
+                          <p className="font-black text-xs text-[#7E1819] leading-snug">
+                            {card.badgeRanking || card.title}
+                          </p>
+                        </div>
+                        <div className="w-full flex items-center justify-between pt-1 border-t border-amber-300/60 text-[9px] text-stone-600 font-bold">
+                          <span>{card.sub || 'Biểu trưng di tích'}</span>
+                          {isMatched && (
+                            <CheckCircle2 className="w-4 h-4 text-emerald-600 animate-bounce shrink-0" />
+                          )}
+                        </div>
+                      </div>
+                    ) : (
+                      /* 4. THẺ KIẾN THỨC / VĂN BẢN (CẶP 1B, 2B, 3B) */
+                      <div className="p-2.5 sm:p-3 h-full flex flex-col justify-between items-center text-center animate-fadeIn">
+                        <div className="w-full flex items-center justify-between gap-1">
+                          <span className="text-2xl sm:text-3xl filter drop-shadow-sm">{card.icon}</span>
+                          <span className="text-[10px] sm:text-[11px] uppercase font-black px-2 py-0.5 rounded-full bg-amber-200/95 text-[#7E1819] border border-amber-300/80 shadow-2xs">
+                            {card.tag}
+                          </span>
+                        </div>
+                        <div className="w-full my-auto py-1">
+                          <p className="font-extrabold text-[11px] sm:text-xs leading-snug line-clamp-4 text-[#2C241E] text-center">
+                            {card.title}
+                          </p>
+                        </div>
+                        <div className="w-full flex items-center justify-between pt-1 border-t border-amber-200/60 text-[9px] sm:text-[10px] text-stone-500 font-semibold">
+                          <span className="truncate">{card.sub || `Cặp #${card.pairId}`}</span>
+                          {isMatched && (
+                            <CheckCircle2 className="w-4 h-4 text-emerald-600 animate-bounce shrink-0" />
+                          )}
+                        </div>
+                      </div>
+                    )
                   ) : (
+                    /* MẶT SAU THẺ KHI CHƯA LẬT */
                     <div className="h-full flex flex-col items-center justify-center gap-2 p-3 text-amber-200/90">
                       <div className="w-11 h-11 rounded-2xl bg-amber-400/20 border border-amber-300/30 flex items-center justify-center text-xl shadow-inner">
                         🏛️
