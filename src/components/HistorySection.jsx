@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Landmark, 
   Calendar, 
@@ -14,12 +14,20 @@ import {
   BookOpen, 
   Search,
   Eye,
-  Award
+  Award,
+  ArrowUp,
+  ArrowDown,
+  ArrowUpDown,
+  GripVertical,
+  Lock,
+  Unlock,
+  Check
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { soundEffects } from '../utils/soundEffects';
 import WordByWordTitle from './WordByWordTitle';
-import { buildMonumentTimelineQuiz } from '../utils/quizUtils';
+import { getActivePassport } from '../utils/passportStorage';
+import { trackQuizAttempt } from '../utils/studentAnalytics';
 
 export default function HistorySection({
   overview = '',
@@ -38,37 +46,160 @@ export default function HistorySection({
   const safeTimeline = Array.isArray(timeline) ? timeline : [];
   const safeGallery = Array.isArray(gallery) ? gallery : [];
 
-  const [timelineQuiz, setTimelineQuiz] = useState(() =>
-    buildMonumentTimelineQuiz(monumentData || { info, timeline: safeTimeline, keyHighlights, name: monumentName }, safeTimeline)
-  );
-  const [selectedTimelineOptIdx, setSelectedTimelineOptIdx] = useState(null);
-  const [timelineAnswered, setTimelineAnswered] = useState(false);
-  const [timelineCorrect, setTimelineCorrect] = useState(false);
+  // ==========================================
+  // ==========================================
+  // GAME TRẠM 2: KÉO - THẢ XẾP NIÊN ĐẠI DÒNG THỜI GIAN
+  // ==========================================
+  const baseMilestones = useMemo(() => {
+    if (safeTimeline.length > 0) {
+      return safeTimeline.map((item, idx) => ({
+        originalIndex: idx,
+        year: item.year || item.time || item.date || `Mốc ${idx + 1}`,
+        title: item.title || item.event || item.description || 'Dấu mốc quan trọng',
+        description: item.description || item.title || ''
+      }));
+    }
+    return [
+      { originalIndex: 0, year: 'Khởi dựng', title: 'Đặt nền móng xây dựng công trình', description: 'Giai đoạn tạo dựng ban đầu' },
+      { originalIndex: 1, year: 'Kháng chiến', title: 'Gắn liền với phong trào cách mạng', description: 'Căn cứ và dấu ấn lịch sử' },
+      { originalIndex: 2, year: 'Xếp hạng', title: 'Được công nhận Di tích Lịch sử', description: 'Vinh danh cấp Nhà nước' },
+      { originalIndex: 3, year: 'Hiện nay', title: 'Bảo tồn & Phát huy giá trị di sản', description: 'Giáo dục truyền thống cho thế hệ trẻ' }
+    ];
+  }, [safeTimeline]);
+
+  const currentStt = info?.stt || monumentData?.stt || 1;
+  const timelineStorageKey = `di_san_so_timeline_unlocked_${currentStt}`;
+
+  const [isTimelineUnlocked, setIsTimelineUnlocked] = useState(() => {
+    try {
+      return localStorage.getItem(timelineStorageKey) === 'true';
+    } catch (e) {
+      return false;
+    }
+  });
+
+  const [shuffledItems, setShuffledItems] = useState(() => {
+    return [...baseMilestones].sort(() => Math.random() - 0.5);
+  });
+  const [isTimelineChecked, setIsTimelineChecked] = useState(false);
+  const [isTimelineSuccess, setIsTimelineSuccess] = useState(() => {
+    try {
+      return localStorage.getItem(timelineStorageKey) === 'true';
+    } catch (e) {
+      return false;
+    }
+  });
+  const [draggedIndex, setDraggedIndex] = useState(null);
+  const [dragOverIndex, setDragOverIndex] = useState(null);
 
   useEffect(() => {
-    setSelectedTimelineOptIdx(null);
-    setTimelineAnswered(false);
-    setTimelineCorrect(false);
-    setTimelineQuiz(
-      buildMonumentTimelineQuiz(monumentData || { info, timeline: safeTimeline, keyHighlights, name: monumentName }, safeTimeline)
-    );
-  }, [monumentData, monumentName, info, keyHighlights, safeTimeline]);
+    try {
+      const unlocked = localStorage.getItem(timelineStorageKey) === 'true';
+      setIsTimelineUnlocked(unlocked);
+      setIsTimelineSuccess(unlocked);
+    } catch (e) {
+      setIsTimelineUnlocked(false);
+      setIsTimelineSuccess(false);
+    }
+  }, [currentStt, timelineStorageKey]);
 
-  // Bấm chọn đáp án: Biết đúng/sai luôn, có âm thanh nhỏ và hiển thị giải thích
-  const handleSelectTimelineOpt = (idx) => {
-    if (timelineAnswered) return;
-    setSelectedTimelineOptIdx(idx);
-    const isRight = idx === timelineQuiz.correctIndex;
-    setTimelineCorrect(isRight);
-    setTimelineAnswered(true);
+  useEffect(() => {
+    setShuffledItems([...baseMilestones].sort(() => Math.random() - 0.5));
+    setIsTimelineChecked(false);
+    setDraggedIndex(null);
+    setDragOverIndex(null);
+  }, [baseMilestones]);
 
-    if (isRight) {
-      soundEffects.playCorrect();
+  const handleDragStart = (e, index) => {
+    soundEffects.playTap();
+    setDraggedIndex(index);
+    e.dataTransfer.effectAllowed = 'move';
+    try {
+      e.dataTransfer.setData('text/plain', String(index));
+    } catch (err) {}
+  };
+
+  const handleDragOver = (e, index) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    if (dragOverIndex !== index) {
+      setDragOverIndex(index);
+    }
+  };
+
+  const handleDragLeave = (e, index) => {
+    if (dragOverIndex === index) {
+      setDragOverIndex(null);
+    }
+  };
+
+  const handleDrop = (e, targetIndex) => {
+    e.preventDefault();
+    if (draggedIndex === null || draggedIndex === undefined) return;
+    if (draggedIndex === targetIndex) {
+      setDraggedIndex(null);
+      setDragOverIndex(null);
+      return;
+    }
+
+    soundEffects.playTap();
+    const updated = [...shuffledItems];
+    const [movedItem] = updated.splice(draggedIndex, 1);
+    updated.splice(targetIndex, 0, movedItem);
+
+    setShuffledItems(updated);
+    setDraggedIndex(null);
+    setDragOverIndex(null);
+    setIsTimelineChecked(false);
+  };
+
+  const handleDragEnd = () => {
+    setDraggedIndex(null);
+    setDragOverIndex(null);
+  };
+
+  const handleMoveItem = (fromIdx, direction) => {
+    soundEffects.playTap();
+    const toIdx = fromIdx + direction;
+    if (toIdx < 0 || toIdx >= shuffledItems.length) return;
+
+    const updated = [...shuffledItems];
+    const temp = updated[fromIdx];
+    updated[fromIdx] = updated[toIdx];
+    updated[toIdx] = temp;
+    setShuffledItems(updated);
+    setIsTimelineChecked(false);
+  };
+
+  const handleCheckTimelineOrder = () => {
+    const isCorrect = shuffledItems.every((item, idx) => item.originalIndex === idx);
+    setIsTimelineChecked(true);
+    setIsTimelineSuccess(isCorrect);
+
+    if (isCorrect) {
+      setIsTimelineUnlocked(true);
+      try {
+        localStorage.setItem(timelineStorageKey, 'true');
+      } catch (e) {}
+
+      soundEffects.playVictoryFanfare();
       try {
         confetti({
-          particleCount: 50,
-          spread: 60,
-          origin: { y: 0.6 }
+          particleCount: 75,
+          spread: 70,
+          origin: { y: 0.65 }
+        });
+      } catch (e) {}
+
+      try {
+        const passport = getActivePassport();
+        trackQuizAttempt({
+          passport,
+          monumentStt: info?.stt || 1,
+          monumentName,
+          question: `Sắp Xếp Dòng Thời Gian: ${monumentName}`,
+          isCorrect: true,
+          score: 50
         });
       } catch (e) {}
     } else {
@@ -76,15 +207,16 @@ export default function HistorySection({
     }
   };
 
-  const handleResetTimeline = () => {
+  const handleResetTimelineGame = () => {
     soundEffects.playTap();
-    setSelectedTimelineOptIdx(null);
-    setTimelineAnswered(false);
-    setTimelineCorrect(false);
-    setTimelineQuiz(
-      buildMonumentTimelineQuiz(monumentData || { info, timeline: safeTimeline, keyHighlights, name: monumentName }, safeTimeline)
-    );
+    setShuffledItems([...baseMilestones].sort(() => Math.random() - 0.5));
+    setIsTimelineChecked(false);
+    setIsTimelineSuccess(false);
+    setDraggedIndex(null);
+    setDragOverIndex(null);
   };
+
+  const correctCount = shuffledItems.filter((item, idx) => item.originalIndex === idx).length;
 
   return (
     <div id="history-section" className="space-y-6">
@@ -117,146 +249,277 @@ export default function HistorySection({
             rows={5}
             value={overview || ''}
             onChange={(e) => onUpdateOverview && onUpdateOverview(e.target.value)}
-            className="w-full p-4 rounded-xl border-2 border-amber-400 bg-amber-50/30 text-[#2C241E] text-base sm:text-lg leading-relaxed outline-none focus:ring-2 focus:ring-amber-500 font-serif-title"
+            className="w-full p-4 rounded-xl border-2 border-amber-400 bg-amber-50/30 text-[#2C241E] text-base sm:text-lg md:text-xl leading-relaxed outline-none focus:ring-2 focus:ring-amber-500 font-serif-title font-medium"
           />
         ) : (
           <div className="p-5 sm:p-6 rounded-2xl bg-[#FAF7F2]/70 border border-[#EFE8DE]">
-            <p className="text-[#2C241E] text-base sm:text-lg md:text-xl leading-relaxed sm:leading-loose text-justify font-serif-title first-letter:text-4xl first-letter:font-black first-letter:text-[#7E1819] first-letter:float-left first-letter:mr-2.5 first-letter:leading-none">
+            <p className="text-[#2C241E] text-lg sm:text-xl md:text-2xl leading-relaxed sm:leading-loose text-justify font-serif-title font-medium first-letter:text-5xl first-letter:font-black first-letter:text-[#7E1819] first-letter:float-left first-letter:mr-3 first-letter:leading-none">
               {overview || 'Thông tin tổng quan về di tích lịch sử đang được cập nhật.'}
             </p>
           </div>
         )}
       </section>
 
-      {/* 2. DẤU MỐC LỊCH SỬ & THỬ THÁCH DÒNG THỜI GIAN (2 COLUMNS) */}
-      <section className="bg-white rounded-2xl p-6 sm:p-8 border border-[#EAE3D9] shadow-sm space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-[#F0EAE1]">
-          <div className="flex items-center gap-2.5 text-[#7E1819]">
-            <Clock className="w-6 h-6 text-[#7E1819]" />
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-black font-serif-title text-[#2C241E]">
-              Dấu Mốc Lịch Sử & Giải Mã Dòng Thời Gian
+      {/* ========================================================================= */}
+      {/* 2. HỘP TRÒ CHƠI TRẠM 2: KÉO - THẢ XẾP NIÊN ĐẠI LỊCH SỬ (TIMELINE ORDER GAME) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#FAF7F2] text-[#2C241E] rounded-3xl p-5 sm:p-8 border-2 border-[#EAE3D9] shadow-sm space-y-5 relative overflow-hidden">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-[#EAE3D9]">
+          <div className="space-y-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
+              <span className="text-sm">⏳</span>
+              <span className="font-bold tracking-wide text-[#7E1819]">
+                TRÒ CHƠI KÉO - THẢ XẾP DÒNG THỜI GIAN
+              </span>
+              <Sparkles className="w-4 h-4 text-amber-600" />
+            </div>
+            <h3 className="font-serif-title font-black text-xl sm:text-2xl md:text-3xl text-[#2C241E] flex items-center gap-2">
+              <span>Phục Hồi Trật Tự Niên Đại Các Sự Kiện</span>
             </h3>
+            <p className="text-sm sm:text-base font-semibold text-[#4A3E36] leading-relaxed">
+              ✋ Giữ và kéo thả các thẻ sự kiện (hoặc dùng nút ▲ ▼) để xếp lại đúng trật tự niên đại từ Quá khứ đến Hiện tại!
+            </p>
           </div>
-          <span className="text-xs text-[#777777] italic">
-            Chạm vào từng dấu mốc để xem chi tiết
-          </span>
+
+          <div className="flex items-center gap-2 self-start sm:self-auto">
+            {isTimelineUnlocked && (
+              <span className="px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-2xs">
+                <Unlock className="w-3.5 h-3.5 text-emerald-700" />
+                <span>Đã Mở Khóa Trục Thời Gian</span>
+              </span>
+            )}
+            <span className="px-3.5 py-1.5 rounded-full bg-amber-50 text-[#7E1819] border border-amber-200 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-2xs">
+              ⭐ +50 Điểm Thám Hiểm
+            </span>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-          {/* CỘT TRÁI (7 cols): TRỤC THỜI GIAN DẤU MỐC */}
-          <div className="lg:col-span-7 space-y-4">
-            <h4 className="text-sm font-bold text-[#7E1819] uppercase tracking-wider flex items-center gap-1.5">
-              <span>📅 Trục thời gian các mốc son</span>
-            </h4>
+        {/* Shuffled Timeline List (Interactive Drag & Drop Ordering) */}
+        <div className="space-y-3 pt-1 select-none">
+          {shuffledItems.map((item, idx) => {
+            const isCorrectPosition = isTimelineChecked && item.originalIndex === idx;
+            const isWrongPosition = isTimelineChecked && item.originalIndex !== idx;
+            const isDragging = draggedIndex === idx;
+            const isDragOver = dragOverIndex === idx && draggedIndex !== idx;
 
-            <div className="relative pl-6 sm:pl-8 space-y-4 before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-gradient-to-b before:from-[#7E1819] before:via-amber-500 before:to-[#7E1819]">
-              {safeTimeline.slice(0, 4).map((item, idx) => (
-                <div 
-                  key={item.id || idx}
-                  onClick={() => onOpenMilestoneDetail && onOpenMilestoneDetail(item)}
-                  className="relative p-3.5 sm:p-4 rounded-xl bg-[#FAF7F2] hover:bg-amber-50/80 border border-[#EAE3D9] hover:border-amber-400 transition-all cursor-pointer group shadow-2xs hover:scale-101"
-                >
-                  {/* Node Dot */}
-                  <div className="absolute -left-[27px] sm:-left-[35px] top-4 w-4 h-4 rounded-full bg-[#7E1819] border-2 border-white shadow-xs group-hover:scale-130 transition-transform" />
-
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="font-serif-title font-black text-sm sm:text-base text-[#7E1819]">
-                      Năm {item.year}
-                    </span>
-                    <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#7E1819] group-hover:translate-x-1 transition-transform" />
-                  </div>
-                  <h5 className="text-xs sm:text-sm font-bold text-[#2C241E] mt-1 group-hover:text-[#7E1819] transition-colors">
-                    {item.title}
-                  </h5>
-                  <p className="text-xs text-[#666666] mt-1 leading-relaxed line-clamp-2">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CỘT PHẢI (5 cols): HỘP CÂU HỎI "DÒNG THỜI GIAN" (MÀU ĐỎ ĐÔ) */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-[#3A080B] via-[#590D11] to-[#7E1819] text-white rounded-2xl p-5 sm:p-6 border-2 border-amber-400/60 shadow-lg space-y-4 relative overflow-hidden">
-            <div className="flex items-center justify-between pb-2 border-b border-amber-400/30">
-              <div className="flex items-center gap-2 text-amber-300 font-black">
-                <Sparkles className="w-5 h-5 text-amber-300" />
-                <h4 className="font-serif-title text-base sm:text-lg text-amber-200">
-                  Dòng Thời Gian
-                </h4>
-              </div>
-              <span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/50 uppercase tracking-wider">
-                +10 Điểm
-              </span>
-            </div>
-
-            <p className="font-serif-title font-bold text-xs sm:text-sm text-amber-100 leading-relaxed">
-              ⏳ {timelineQuiz.question}
-            </p>
-
-            <div className="space-y-2">
-              {timelineQuiz.options.map((opt, idx) => {
-                const isSelected = selectedTimelineOptIdx === idx;
-                let optStyle = "bg-white/10 hover:bg-white/20 border-white/15 text-rose-50 hover:scale-[1.01]";
-
-                if (timelineAnswered) {
-                  if (idx === timelineQuiz.correctIndex) {
-                    optStyle = "bg-emerald-600/90 border-emerald-400 text-white font-bold ring-2 ring-emerald-300";
-                  } else if (isSelected && !timelineCorrect) {
-                    optStyle = "bg-rose-700/80 border-rose-400 text-white line-through ring-1 ring-rose-300";
-                  } else {
-                    optStyle = "bg-black/30 border-white/10 text-stone-400 opacity-60";
-                  }
-                }
-
-                return (
-                  <button
-                    key={idx}
-                    onClick={() => handleSelectTimelineOpt(idx)}
-                    disabled={timelineAnswered}
-                    className={`w-full text-left p-3 rounded-xl border transition-all flex items-start justify-between gap-2 text-xs cursor-pointer ${optStyle}`}
+            return (
+              <div
+                key={item.year + '_' + item.originalIndex}
+                draggable={!isTimelineSuccess}
+                onDragStart={(e) => handleDragStart(e, idx)}
+                onDragOver={(e) => handleDragOver(e, idx)}
+                onDragLeave={(e) => handleDragLeave(e, idx)}
+                onDrop={(e) => handleDrop(e, idx)}
+                onDragEnd={handleDragEnd}
+                className={`group p-4 sm:p-5 rounded-2xl border-2 transition-all duration-200 flex items-center justify-between gap-3 shadow-2xs ${
+                  isDragging
+                    ? 'opacity-40 scale-98 border-dashed border-amber-500 bg-amber-50/50 shadow-inner'
+                    : isDragOver
+                    ? 'ring-4 ring-amber-400/80 border-amber-500 bg-amber-100/90 scale-102 shadow-lg -translate-y-1 z-10'
+                    : isTimelineSuccess
+                    ? 'bg-emerald-50/90 border-emerald-400 text-emerald-950 ring-2 ring-emerald-300/60'
+                    : isCorrectPosition
+                    ? 'bg-emerald-50/60 border-emerald-300 text-emerald-900'
+                    : isWrongPosition
+                    ? 'bg-rose-50/60 border-rose-300 text-rose-900'
+                    : 'bg-white border-[#EAE3D9] text-[#2C241E] hover:border-amber-400/90 hover:shadow-md hover:bg-amber-50/30 cursor-grab active:cursor-grabbing'
+                }`}
+              >
+                <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                  {/* Drag Handle Icon */}
+                  <div 
+                    className={`p-2 rounded-xl transition-colors shrink-0 flex items-center justify-center ${
+                      isTimelineSuccess
+                        ? 'text-emerald-500 bg-emerald-100/50'
+                        : 'text-stone-400 group-hover:text-amber-700 bg-stone-100 group-hover:bg-amber-100 cursor-grab active:cursor-grabbing'
+                    }`}
+                    title="Giữ và kéo thả để di chuyển vị trí"
                   >
-                    <div className="flex items-start gap-2">
-                      <span className="w-4 h-4 rounded-full bg-amber-400/20 text-amber-300 font-bold text-[10px] flex items-center justify-center shrink-0 mt-0.5">
-                        {String.fromCharCode(65 + idx)}
-                      </span>
-                      <span className="leading-snug">{opt}</span>
-                    </div>
-                    {timelineAnswered && idx === timelineQuiz.correctIndex && (
-                      <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-                    )}
-                    {timelineAnswered && isSelected && !timelineCorrect && (
-                      <XCircle className="w-4 h-4 text-rose-300 shrink-0" />
-                    )}
-                  </button>
-                );
-              })}
-            </div>
+                    <GripVertical className="w-5 h-5 sm:w-6 sm:h-6" />
+                  </div>
 
-            {timelineAnswered && (
-              <div className={`p-3 rounded-xl border animate-fadeIn text-xs leading-relaxed space-y-1 ${timelineCorrect ? 'bg-emerald-950/60 border-emerald-400/60 text-emerald-100' : 'bg-black/40 border-amber-400/40 text-rose-100'}`}>
-                <div className="font-bold flex items-center gap-1.5 text-amber-300">
-                  {timelineCorrect ? <Award className="w-4 h-4 text-amber-300" /> : <Clock className="w-4 h-4 text-amber-300" />}
-                  <span>{timelineCorrect ? "Chính xác! Bạn có trí nhớ sử học rất tốt." : "Dấu mốc chính xác là:"}</span>
+                  <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-100 text-[#7E1819] font-black text-sm sm:text-base flex items-center justify-center shrink-0 border border-amber-300">
+                    #{idx + 1}
+                  </span>
+                  <div className="min-w-0">
+                    <span className="inline-block px-3 py-0.5 rounded-full bg-amber-200/70 text-[#7E1819] font-black text-xs sm:text-sm mb-1.5">
+                      {item.year}
+                    </span>
+                    <p className="font-bold text-sm sm:text-base md:text-lg text-[#2C241E] leading-snug">
+                      {item.title}
+                    </p>
+                  </div>
                 </div>
-                <p><strong>Ý nghĩa lịch sử:</strong> {timelineQuiz.explanation}</p>
-              </div>
-            )}
 
-            {timelineAnswered && (
-              <div className="pt-1">
-                <button
-                  onClick={handleResetTimeline}
-                  className="w-full py-2.5 px-4 rounded-xl bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 font-bold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer border border-amber-400/50"
-                >
-                  <RotateCcw className="w-3.5 h-3.5" />
-                  <span>Làm Lại</span>
-                </button>
+                {/* Up / Down Controls (Accessible buttons for touch and keyboard) */}
+                <div className="flex items-center gap-1.5 shrink-0">
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleMoveItem(idx, -1);
+                    }}
+                    disabled={idx === 0 || isTimelineSuccess}
+                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] disabled:opacity-30 disabled:hover:bg-amber-50 border border-amber-200 flex items-center justify-center cursor-pointer transition-all hover:scale-105"
+                    title="Di chuyển lên trên"
+                  >
+                    <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleMoveItem(idx, 1);
+                    }}
+                    disabled={idx === shuffledItems.length - 1 || isTimelineSuccess}
+                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#7E1819] disabled:opacity-30 disabled:hover:bg-amber-50 border border-amber-200 flex items-center justify-center cursor-pointer transition-all hover:scale-105"
+                    title="Di chuyển xuống dưới"
+                  >
+                    <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </button>
+                </div>
               </div>
-            )}
+            );
+          })}
+        </div>
+
+        {/* Feedback message */}
+        {isTimelineChecked && (
+          <div className={`p-4 sm:p-5 rounded-2xl border-2 animate-fadeIn space-y-2 ${
+            isTimelineSuccess
+              ? 'bg-emerald-50 border-emerald-400 text-emerald-950'
+              : 'bg-amber-50 border-amber-300 text-[#2C241E]'
+          }`}>
+            <div className="flex items-center gap-2.5 font-bold text-base sm:text-lg text-[#7E1819]">
+              {isTimelineSuccess ? (
+                <>
+                  <Award className="w-6 h-6 text-emerald-700 shrink-0" />
+                  <span>Chính xác tuyệt đối! Bạn đã mở khóa thành công toàn bộ Dòng Thời Gian Lịch Sử.</span>
+                </>
+              ) : (
+                <>
+                  <Clock className="w-6 h-6 text-amber-700 shrink-0" />
+                  <span>Hiện có {correctCount}/{shuffledItems.length} mốc đang ở đúng vị trí. Hãy điều chỉnh thêm nhé!</span>
+                </>
+              )}
+            </div>
+            <p className="text-xs sm:text-sm leading-relaxed text-[#555555] font-medium">
+              {isTimelineSuccess
+                ? '🎉 Trục Dấu Mốc Lịch Sử toàn cảnh đã được mở khóa ngay bên dưới và lưu trữ vĩnh viễn trên thiết bị của bạn.'
+                : '💡 Gợi ý: Hãy phân tích tiến trình từ mốc năm xa xưa nhất đến mốc sự kiện gần hiện tại nhất.'}
+            </p>
           </div>
+        )}
+
+        {/* Action Buttons */}
+        <div className="flex items-center justify-between pt-1">
+          <button
+            onClick={handleResetTimelineGame}
+            className="py-3 px-5 sm:px-6 rounded-xl bg-amber-100 hover:bg-amber-200 text-[#7E1819] border border-amber-300 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-2xs hover:scale-102"
+          >
+            <RotateCcw className="w-4 h-4" />
+            <span>Xáo trộn & Làm lại</span>
+          </button>
+
+          {!isTimelineSuccess && (
+            <button
+              onClick={handleCheckTimelineOrder}
+              className="py-3 px-7 sm:px-9 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-black text-sm sm:text-base transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md hover:scale-103"
+            >
+              <Check className="w-5 h-5" />
+              <span>Kiểm Tra Niên Đại ⏳</span>
+            </button>
+          )}
         </div>
       </section>
+
+      {/* ========================================================================= */}
+      {/* 3. DẤU MỐC LỊCH SỬ - TRỤC THỜI GIAN NGANG (CHỈ HIỆN RA KHI HOÀN THÀNH GAME HOẶC ĐÃ MỞ KHÓA) */}
+      {/* ========================================================================= */}
+      {isTimelineUnlocked ? (
+        <section className="bg-white rounded-2xl p-6 sm:p-8 border-2 border-amber-300 shadow-md space-y-6 animate-scaleUp">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#F0EAE1]">
+            <div className="flex items-center gap-3 text-[#7E1819]">
+              <div className="w-11 h-11 rounded-2xl bg-amber-100 border border-amber-300 flex items-center justify-center text-[#7E1819] shadow-2xs shrink-0">
+                <Clock className="w-6 h-6 text-[#7E1819]" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-black font-serif-title text-[#2C241E]">
+                    Dấu Mốc Lịch Sử & Dòng Thời Gian
+                  </h3>
+                  <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 text-[10px] sm:text-xs font-black uppercase tracking-wider flex items-center gap-1">
+                    <Unlock className="w-3 h-3 text-emerald-700" />
+                    <span>Đã Mở Khóa</span>
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm font-medium text-[#666666]">
+                  Chạm vào từng dấu mốc để xem chi tiết tư liệu sự kiện
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* TRỤC THỜI GIAN NGANG (HORIZONTAL TIMELINE AXIS) */}
+          <div className="w-full py-4 overflow-x-auto no-scrollbar">
+            <div 
+              className="relative py-6 px-4"
+              style={{
+                minWidth: `${Math.max(650, safeTimeline.length * 170)}px`
+              }}
+            >
+              {/* Đường trục ngang màu vàng kim với mũi tên sang phải */}
+              <div className="absolute top-[36px] left-8 right-8 h-[2px] bg-[#C59B63] -translate-y-1/2 flex items-center justify-end z-0">
+                <div className="w-0 h-0 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-l-[10px] border-l-[#C59B63] translate-x-2" />
+              </div>
+
+              {/* Các nút mốc thời gian phân bổ đều trên trục ngang */}
+              <div 
+                className="relative z-10 grid gap-4 items-start"
+                style={{
+                  gridTemplateColumns: `repeat(${safeTimeline.length || 1}, minmax(140px, 1fr))`
+                }}
+              >
+                {safeTimeline.map((item, idx) => (
+                  <div 
+                    key={item.id || idx}
+                    onClick={() => onOpenMilestoneDetail && onOpenMilestoneDetail(item)}
+                    className="flex flex-col items-center text-center cursor-pointer group px-2 transition-all hover:-translate-y-1"
+                  >
+                    {/* Nút tròn đồng tâm đặt chính giữa trục */}
+                    <div className="w-7 h-7 rounded-full bg-white border-[3px] border-[#C59B63] flex items-center justify-center shadow-xs group-hover:scale-125 group-hover:border-[#7E1819] transition-all mb-3 z-10">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#C59B63] group-hover:bg-[#7E1819] transition-colors" />
+                    </div>
+
+                    {/* Dòng 1: Thời gian / Ngày tháng / Năm (Màu đỏ sẫm, in đậm) */}
+                    <span className="font-serif-title font-bold text-sm sm:text-base md:text-lg text-[#8B1417] tracking-tight group-hover:text-red-700 transition-colors">
+                      {item.year || item.time || `Mốc ${idx + 1}`}
+                    </span>
+
+                    {/* Dòng 2: Nội dung tóm tắt sự kiện */}
+                    <p className="text-xs sm:text-sm font-semibold text-[#2C241E] leading-relaxed mt-1 max-w-[220px] line-clamp-3 group-hover:text-[#7E1819] transition-colors">
+                      {item.title || item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : (
+        /* KHUNG THÔNG BÁO NIÊM PHONG KHI CHƯA MỞ KHÓA */
+        <section className="bg-gradient-to-br from-[#FFF9F3] to-[#FAF0E6] rounded-2xl p-6 sm:p-8 border-2 border-dashed border-amber-300 shadow-2xs space-y-3 text-center">
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-amber-100 text-amber-900 border border-amber-300 shadow-inner mb-1">
+            <Lock className="w-7 h-7 text-[#7E1819] animate-pulse" />
+          </div>
+          <h4 className="font-serif-title font-black text-lg sm:text-xl text-[#7E1819]">
+            🔒 Dòng Thời Gian Lịch Sử Đang Được Niêm Phong
+          </h4>
+          <p className="text-sm sm:text-base font-semibold text-stone-700 max-w-xl mx-auto leading-relaxed">
+            Hãy hoàn thành xuất sắc trò chơi <strong>"Kéo - Thả Xếp Dòng Thời Gian"</strong> ở trên để giải mã và mở khóa toàn bộ trục thời gian lịch sử của di tích này!
+          </p>
+        </section>
+      )}
 
       {/* 3. KHO BÁU ẢNH TƯ LIỆU: CHỈ 1 HÀNG (4 ẢNH) + SỐ ẢNH CÒN LẠI THỂ HIỆN KHÁM PHÁ THÊM */}
       <section className="bg-white rounded-2xl p-6 sm:p-8 border border-[#EAE3D9] shadow-sm space-y-5">

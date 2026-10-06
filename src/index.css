@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-serif: 'Merriweather', 'Times New Roman', Georgia, serif;
+  --font-merriweather: 'Merriweather', 'Times New Roman', Georgia, serif;
+  --font-content: 'Merriweather', 'Times New Roman', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-inter: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
 @layer base {
   :root {
@@ -9,8 +18,8 @@
     --bg-cream: #FAF7F2;
     --bg-card: #FFFFFF;
     --border-light: #EADBC8;
-    --text-dark: #2C241E;
-    --text-muted: #6B5E55;
+    --text-dark: #1E293B;
+    --text-muted: #475569;
   }
 
   html {
@@ -19,12 +28,61 @@
 
   body {
     background-color: #FAF7F2;
-    color: #2C241E;
+    color: #1E293B;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-size: 16.5px;
+    font-weight: 500;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+
+  /* 1. Tên website & Tiêu đề lớn -> Merriweather Đậm nét, Sang trọng */
+  h1, h2, h3, h4, .font-title, .hero-title, .section-title, .website-title, .site-logo-title {
+    font-family: 'Merriweather', 'Times New Roman', Georgia, serif !important;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: #0F172A;
+  }
+
+  /* 2. Tên di tích -> Merriweather Dày dặn, Đậm đà */
+  .monument-name, .monument-title, .heritage-title, .card-monument-title {
+    font-family: 'Merriweather', 'Times New Roman', Georgia, serif !important;
+    font-weight: 800;
+  }
+
+  /* 3. Nội dung bài viết, mô tả, tư liệu lịch sử -> Merriweather Đậm nét, Rõ ràng, Dễ đọc */
+  article p, .article-content, .history-text, .desc-text, .monument-desc, .story-text, .narrative-text, .investigation-desc, .font-content, .font-noto, .prose p, .content-body {
+    font-family: 'Merriweather', 'Times New Roman', Georgia, serif !important;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #1E293B;
+    letter-spacing: 0.005em;
+  }
+
+  /* 4. Nút, menu, chức năng, điều hướng, huy hiệu, nhãn -> Inter Hiện đại, Đậm nét rõ ràng */
+  button, nav, .btn, .btn-primary, .btn-secondary, .badge, .tab, .tag, input, select, textarea, .stats-label, .stats-value, .menu-item, .nav-link, .font-sans, .font-inter, .font-label, .font-tracked {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 600;
+  }
+
+  /* 5. CÂU HỎI & LỰA CHỌN TRẮC NGHIỆM / ĐIỀU TRA -> Nổi bật, font chữ to, đậm nét, tương phản cao */
+  .quiz-question, .question-text, .investigation-question-title {
+    font-size: 1.35rem !important;
+    font-weight: 800 !important;
+    line-height: 1.5 !important;
+    letter-spacing: -0.01em !important;
+  }
+  
+  .quiz-option, .option-label {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    line-height: 1.6 !important;
   }
 
   #root {
@@ -38,75 +96,31 @@
   }
 }
 
-/* Fraunces Variable Font (with SOFT axis cranked for italic flourishes) */
+/* ================= TYPOGRAPHY UTILITIES ================= */
+
 .font-serif-title,
-.font-fraunces,
+.font-merriweather,
 .font-display,
 .font-retro-title,
-.font-heading {
-  font-family: 'Fraunces', Georgia, serif;
-  font-variation-settings: "SOFT" 100, "WONK" 0, "opsz" 144;
-  font-optical-sizing: auto;
-  text-wrap: balance;
+.font-heading,
+.font-serif {
+  font-family: 'Merriweather', 'Times New Roman', Georgia, serif !important;
+  font-weight: 700;
   letter-spacing: -0.01em;
 }
 
-/* Italic flourishes on Fraunces */
-.font-serif-title em,
-.font-serif-title i,
-.font-fraunces em,
-.font-fraunces i,
-em.font-serif-title,
-i.font-serif-title,
-.font-serif-title .italic,
-.italic.font-serif-title {
-  font-style: italic;
-  font-variation-settings: "SOFT" 100, "opsz" 144;
-}
-
-.font-retro-3d {
-  font-family: 'Fraunces', Georgia, serif;
-  font-variation-settings: "SOFT" 100, "opsz" 144;
-  letter-spacing: 0.02em;
-  text-shadow: 
-    0 1px 0 #3a0709,
-    0 2px 0 #3a0709,
-    0 3px 0 #3a0709,
-    0 4px 0 #3a0709,
-    0 5px 0 #200507,
-    0 6px 1px rgba(0,0,0,0.4),
-    0 0 5px rgba(0,0,0,0.2),
-    0 1px 3px rgba(0,0,0,0.3),
-    0 3px 5px rgba(0,0,0,0.2),
-    0 5px 10px rgba(0,0,0,0.25),
-    0 10px 10px rgba(0,0,0,0.2),
-    0 20px 20px rgba(0,0,0,0.15);
-}
-
-/* Inter for Body & Historic Context */
+.font-content,
 .font-body-historic,
-.font-sans {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+.prose {
+  font-family: 'Merriweather', 'Times New Roman', Georgia, serif !important;
+  line-height: 1.8;
 }
 
-/* Tracked-out uppercase labels (as shown in image reference) */
+.font-inter,
+.font-sans,
 .font-label,
 .font-tracked {
-  font-family: 'Inter', system-ui, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-weight: 700;
-}
-
-/* Typography: Headings default to Fraunces */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fraunces', Georgia, serif;
-  font-variation-settings: "SOFT" 100, "opsz" 144;
-  text-wrap: balance;
-}
-
-p, blockquote, figcaption {
-  text-wrap: pretty;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
 /* Custom Scrollbar */

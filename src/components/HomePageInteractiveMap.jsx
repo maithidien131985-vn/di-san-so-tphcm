@@ -117,6 +117,8 @@ export default function HomePageInteractiveMap({
         iconUrl = '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png';
       } else if (monType.includes('Kiến trúc')) {
         iconUrl = '/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png';
+      } else if (monType.includes('Danh lam') || monType.includes('Thắng cảnh') || monType.includes('thắng cảnh')) {
+        iconUrl = '/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png';
       }
 
       const pinSize = 34;
@@ -218,6 +220,7 @@ export default function HomePageInteractiveMap({
             { id: 'Lịch sử', label: 'Lịch sử', icon: '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png' },
             { id: 'Kiến trúc', label: 'Kiến trúc', icon: '/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png' },
             { id: 'Khảo cổ', label: 'Khảo cổ', icon: '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png' },
+            { id: 'Danh lam', label: 'Thắng cảnh', icon: '/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png' },
           ].map((cat) => (
             <button
               key={cat.id}

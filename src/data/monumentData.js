@@ -17,30 +17,30 @@ export const initialMonumentData = {
     }
   },
   timeline: [
-    {
-      id: 1,
-      year: "1868",
-      title: "Khởi công xây dựng Dinh Norodom",
-      description: "Dinh Thống đốc Nam Kỳ (Dinh Norodom) được Thống đốc Lagrandière đặt viên đá đầu tiên ngày 23/02/1863, hoàn thành năm 1875."
-    },
-    {
-      id: 2,
-      year: "1962–1966",
-      title: "Xây dựng mới, trở thành Dinh Độc Lập",
-      description: "Sau vụ ném bom năm 1962, công trình được xây mới hoàn toàn theo đồ án thiết kế của Kiến trúc sư Ngô Viết Thụ và hoàn thành năm 1966."
-    },
-    {
-      id: 3,
-      year: "30/4/1975",
-      title: "Xe tăng tiến vào Dinh, kết thúc chiến tranh",
-      description: "Lúc 10h45 xe tăng húc đổ cổng Dinh; lúc 11h30 lá cờ giải phóng tung bay trên nóc Dinh Độc Lập, giải phóng hoàn toàn miền Nam, thống nhất đất nước."
-    },
-    {
-      id: 4,
-      year: "2009",
-      title: "Được xếp hạng là di tích quốc gia đặc biệt",
-      description: "Thủ tướng Chính phủ ký Quyết định số 1272/QĐ-TTg ngày 12/8/2009 xếp hạng Dinh Độc Lập là Di tích Lịch sử và Kiến trúc Nghệ thuật Quốc gia đặc biệt."
-    }
+      {
+          "id": 1,
+          "year": "1868–1871",
+          "title": "Khởi công và hoàn thành Dinh Norodom",
+          "description": "Khởi công và hoàn thành Dinh Norodom"
+      },
+      {
+          "id": 2,
+          "year": "1962–1966",
+          "title": "Khởi công và xây dựng Dinh Độc Lập mới",
+          "description": "Khởi công và xây dựng Dinh Độc Lập mới"
+      },
+      {
+          "id": 3,
+          "year": "30/4/1975",
+          "title": "Xe tăng tiến vào Dinh Độc Lập, giải phóng miền Nam",
+          "description": "Xe tăng tiến vào Dinh Độc Lập, giải phóng miền Nam"
+      },
+      {
+          "id": 4,
+          "year": "12/8/2009",
+          "title": "Xếp hạng Di tích Quốc gia đặc biệt",
+          "description": "Xếp hạng Di tích Quốc gia đặc biệt"
+      }
   ],
   gallery: [
     {

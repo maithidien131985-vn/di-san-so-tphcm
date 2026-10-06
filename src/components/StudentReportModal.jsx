@@ -340,25 +340,11 @@ export default function StudentReportModal({
                   </button>
                 </div>
                 <textarea
-                  rows={4}
+                  rows={5}
                   value={analysisText}
                   onChange={(e) => setAnalysisText(e.target.value)}
                   className="w-full p-3 rounded-xl border border-gray-300 text-xs sm:text-sm bg-white outline-none focus:border-[#7B1113] leading-relaxed"
                   placeholder="Trình bày quan điểm, phân tích và luận giải lịch sử của em..."
-                />
-              </div>
-
-              {/* Message to future */}
-              <div>
-                <label className="text-xs font-bold text-gray-700 block mb-1">
-                  📜 Lời cam kết và thông điệp tri ân (Gửi tương lai):
-                </label>
-                <input
-                  type="text"
-                  value={messageToFuture}
-                  onChange={(e) => setMessageToFuture(e.target.value)}
-                  placeholder="Nhập lời hứa và thông điệp của em gửi tới thế hệ tương lai..."
-                  className="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white outline-none focus:border-[#7B1113]"
                 />
               </div>
 
@@ -401,9 +387,6 @@ export default function StudentReportModal({
                   </div>
                   <div>
                     <span className="font-bold text-[#7B1113]">💡 Câu trả lời điều tra di tích:</span> {analysisText}
-                  </div>
-                  <div>
-                    <span className="font-bold text-[#7B1113]">📜 Lời cam kết & thông điệp tri ân:</span> {messageToFuture}
                   </div>
                 </div>
 

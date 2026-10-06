@@ -340,17 +340,17 @@ export default function InvestigationModal({
                               {q.category}
                             </span>
                           )}
-                          <h4 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E] inline">
+                          <h4 className="font-serif-title font-bold text-base sm:text-lg md:text-xl text-[#2C241E] leading-snug inline">
                             {q.question}
                           </h4>
                         </div>
                       </div>
 
                       {/* Options */}
-                      <div className="grid grid-cols-1 gap-2 pl-0 sm:pl-9">
+                      <div className="grid grid-cols-1 gap-2.5 pl-0 sm:pl-9">
                         {q.options.map((opt, optIdx) => {
                           const isSelected = selectedIdx === optIdx;
-                          let btnStyle = "border-gray-200 hover:border-[#7E1819] hover:bg-amber-50/50 text-[#4A3E36]";
+                          let btnStyle = "border-gray-200 hover:border-[#7E1819] hover:bg-amber-50/50 text-[#2C241E]";
                           if (isSubmitted) {
                             if (optIdx === q.correctIndex) {
                               btnStyle = "border-emerald-500 bg-emerald-50 text-emerald-900 font-bold";
@@ -368,11 +368,16 @@ export default function InvestigationModal({
                               key={optIdx}
                               disabled={isSubmitted}
                               onClick={() => handleSelectOption(q.id, optIdx)}
-                              className={`w-full text-left p-3 rounded-xl border text-xs sm:text-sm transition-all flex items-center justify-between cursor-pointer ${btnStyle}`}
+                              className={`w-full text-left p-3.5 sm:p-4 rounded-xl border text-sm sm:text-base font-semibold transition-all flex items-center justify-between cursor-pointer ${btnStyle}`}
                             >
-                              <span>{opt}</span>
+                              <div className="flex items-center gap-3">
+                                <span className="w-6 h-6 rounded-full bg-stone-100 text-stone-700 text-xs font-black flex items-center justify-center shrink-0 border border-stone-300">
+                                  {String.fromCharCode(65 + optIdx)}
+                                </span>
+                                <span>{opt}</span>
+                              </div>
                               {isSubmitted && optIdx === q.correctIndex && (
-                                <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                                <Check className="w-5 h-5 text-emerald-600 shrink-0" />
                               )}
                             </button>
                           );
@@ -381,8 +386,8 @@ export default function InvestigationModal({
 
                       {/* Explanation */}
                       {isSubmitted && (
-                        <div className="mt-3 ml-0 sm:ml-9 p-3 rounded-xl bg-amber-50/80 border border-amber-200 text-xs text-[#6B5E55] leading-relaxed">
-                          <strong>💡 Lời giải lịch sử:</strong> {q.explanation}
+                        <div className="mt-3 ml-0 sm:ml-9 p-3.5 rounded-xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-[#4A3E36] leading-relaxed font-medium">
+                          <strong className="text-[#7E1819]">💡 Lời giải lịch sử:</strong> {q.explanation}
                         </div>
                       )}
                     </div>

@@ -154,27 +154,12 @@ export default function App() {
   };
 
   const [data, setData] = useState(() => {
-    try {
-      const saved = localStorage.getItem(storageKey);
-      if (saved) return mergeWithBase(baseMonument, JSON.parse(saved));
-    } catch (e) {
-      console.warn('Failed to parse localStorage data:', e);
-    }
     return baseMonument || allMonumentsList[0];
   });
 
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem(storageKey);
-      if (saved) {
-        setData(mergeWithBase(baseMonument, JSON.parse(saved)));
-        return;
-      }
-    } catch (e) {
-      console.warn('Failed to parse localStorage data:', e);
-    }
     setData(baseMonument || allMonumentsList[0]);
-  }, [currentStt, storageKey, baseMonument]);
+  }, [currentStt, baseMonument]);
 
   useEffect(() => {
     // Tự động dọn dẹp các bản cache cũ của phiên bản trước để bảo đảm 100% hiển thị dữ liệu mới nhất
@@ -182,7 +167,7 @@ export default function App() {
       const keysToClean = [];
       for (let i = 0; i < localStorage.length; i++) {
         const k = localStorage.key(i);
-        if (k && (k.startsWith('di_san_so_v') || k.startsWith('di_san_so_monument_data_')) && !k.startsWith('di_san_so_v2026_sync_')) {
+        if (k && (k.startsWith('di_san_so_v') || k.startsWith('di_san_so_monument_data_'))) {
           keysToClean.push(k);
         }
       }
@@ -206,6 +191,7 @@ export default function App() {
       setViewMode(parsed.mode);
       if (parsed.stt) {
         setCurrentStt(parsed.stt);
+        setData(getMonumentByIdOrStt(parsed.stt) || allMonumentsList[0]);
       }
     };
     window.addEventListener('popstate', handleUrlChange);
@@ -218,7 +204,7 @@ export default function App() {
 
   // 2. Tự động cập nhật URL đẹp (/di-tich/dinh-doc-lap), document.title và thẻ SEO meta description
   useEffect(() => {
-    const currentMon = data || baseMonument;
+    const currentMon = (data && data.stt === currentStt) ? data : baseMonument;
     updatePageMetadata({ mode: viewMode, monument: currentMon });
 
     if (typeof window !== 'undefined') {
@@ -238,17 +224,7 @@ export default function App() {
         }
       }
     }
-  }, [viewMode, currentStt, data?.info?.name]);
-
-  useEffect(() => {
-    if (data) {
-      try {
-        localStorage.setItem(storageKey, JSON.stringify(data));
-      } catch (e) {
-        console.warn('Failed to save to localStorage:', e);
-      }
-    }
-  }, [data, storageKey]);
+  }, [viewMode, currentStt, data?.info?.name, baseMonument]);
 
   // Modals state
   const [audioModalOpen, setAudioModalOpen] = useState(false);
@@ -283,8 +259,10 @@ export default function App() {
   const [explorerCategoryFilter, setExplorerCategoryFilter] = useState('all');
   const [explorerSearchTerm, setExplorerSearchTerm] = useState('');
   const handleOpenExplorer = (category = 'all', search = '') => {
-    setExplorerCategoryFilter(category || 'all');
-    setExplorerSearchTerm(search || '');
+    const validCategory = (typeof category === 'string' && category.trim()) ? category.trim() : 'all';
+    const validSearch = (typeof search === 'string' && search.trim()) ? search.trim() : '';
+    setExplorerCategoryFilter(validCategory);
+    setExplorerSearchTerm(validSearch);
     setExplorerModalOpen(true);
   };
   const [passportModalOpen, setPassportModalOpen] = useState(true);
@@ -383,14 +361,10 @@ export default function App() {
   };
 
   const handleSelectMonument = (monumentIdOrSttOrObj) => {
-    const matched = findMonumentBySlugOrParam(monumentIdOrSttOrObj, allMonumentsList);
-    let targetStt = matched?.stt || 1;
+    let targetStt = 1;
 
     if (typeof monumentIdOrSttOrObj === 'number' && !isNaN(monumentIdOrSttOrObj)) {
       targetStt = monumentIdOrSttOrObj;
-    } else if (typeof monumentIdOrSttOrObj === 'string') {
-      const match = monumentIdOrSttOrObj.match(/\d+/);
-      if (match) targetStt = parseInt(match[0], 10);
     } else if (monumentIdOrSttOrObj && typeof monumentIdOrSttOrObj === 'object') {
       if (typeof monumentIdOrSttOrObj.stt === 'number') {
         targetStt = monumentIdOrSttOrObj.stt;
@@ -398,15 +372,27 @@ export default function App() {
         const match = String(monumentIdOrSttOrObj.id).match(/\d+/);
         if (match) targetStt = parseInt(match[0], 10);
       }
+    } else if (typeof monumentIdOrSttOrObj === 'string') {
+      const match = monumentIdOrSttOrObj.match(/\d+/);
+      if (match) {
+        targetStt = parseInt(match[0], 10);
+      } else {
+        const matched = findMonumentBySlugOrParam(monumentIdOrSttOrObj, allMonumentsList);
+        if (matched?.stt) targetStt = matched.stt;
+      }
     }
+
     if (targetStt < 1 || targetStt > allMonumentsList.length) {
       targetStt = 1;
     }
+
+    const newBase = getMonumentByIdOrStt(targetStt) || allMonumentsList[targetStt - 1] || allMonumentsList[0];
+    setData(newBase);
     setCurrentStt(targetStt);
     setViewMode('detail');
+    setExplorerModalOpen(false);
 
-    const targetMon = allMonumentsList[targetStt - 1] || matched;
-    const slug = getMonumentSlug(targetMon);
+    const slug = getMonumentSlug(newBase);
     if (typeof window !== 'undefined') {
       window.history.pushState({ mode: 'detail', stt: targetStt }, '', `/di-tich/${slug}`);
     }
@@ -558,7 +544,7 @@ export default function App() {
   }, [currentStt]);
 
   // Safe Monument Data Accessors (Ensures 100% crash protection and no blank screens)
-  const currentMonumentData = data || baseMonument || allMonumentsList[0];
+  const currentMonumentData = (data && data.stt === currentStt) ? data : (baseMonument || allMonumentsList[0]);
   const safeInfo = currentMonumentData?.info || allMonumentsList[0]?.info || {};
   const safeGallery = Array.isArray(currentMonumentData?.gallery) ? currentMonumentData.gallery : (allMonumentsList[0]?.gallery || []);
   const safeTimeline = Array.isArray(currentMonumentData?.timeline) ? currentMonumentData.timeline : (allMonumentsList[0]?.timeline || []);

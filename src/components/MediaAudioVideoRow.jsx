@@ -133,61 +133,108 @@ export default function MediaAudioVideoRow({
   const formatTime = sharedAudio.formatTime;
 
   // ==========================================
-  // DISCOVERY QUIZ ("BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?")
+  // GAME TRẠM 1: LẬT THẺ TRÍ NHỚ DI TÍCH (MEMORY MATCH)
   // ==========================================
-  const [currentQuiz, setCurrentQuiz] = useState(() =>
-    buildMonumentMediaQuiz(monumentData || { info, video, audioScript, stt: currentStt })
-  );
-  const [selectedQuizOpt, setSelectedQuizOpt] = useState(null);
-  const [quizAnswered, setQuizAnswered] = useState(false);
-  const [quizCorrect, setQuizCorrect] = useState(false);
+  const initialCards = useMemo(() => {
+    const rawPairs = [
+      {
+        pairId: 1,
+        a: { icon: '🏛️', tag: 'Di tích', title: monumentName, sub: 'Biểu tượng lịch sử' },
+        b: { icon: '📍', tag: 'Địa danh', title: info?.address || 'TP. Hồ Chí Minh', sub: 'Tọa độ không gian' }
+      },
+      {
+        pairId: 2,
+        a: { icon: '📜', tag: 'Dấu ấn', title: info?.ranking || 'Di tích Quốc Gia', sub: 'Cấp độ xếp hạng' },
+        b: { icon: '🏺', tag: 'Đặc trưng', title: info?.type || 'Lịch sử - Văn hóa', sub: 'Loại hình di sản' }
+      },
+      {
+        pairId: 3,
+        a: { icon: '⏳', tag: 'Thời kỳ', title: info?.established || 'Dấu mốc lịch sử', sub: 'Thời gian hình thành' },
+        b: { icon: '🌟', tag: 'Sứ mệnh', title: 'Gìn giữ & Tự hào', sub: 'Trách nhiệm thế hệ trẻ' }
+      }
+    ];
+
+    const flat = [];
+    rawPairs.forEach((p) => {
+      flat.push({ id: `p${p.pairId}_a`, pairId: p.pairId, ...p.a });
+      flat.push({ id: `p${p.pairId}_b`, pairId: p.pairId, ...p.b });
+    });
+
+    return flat.sort(() => Math.random() - 0.5);
+  }, [monumentName, info, currentStt]);
+
+  const [cards, setCards] = useState(initialCards);
+  const [flipped, setFlipped] = useState([]);
+  const [matched, setMatched] = useState([]);
+  const [moves, setMoves] = useState(0);
+  const [isCompleted, setIsCompleted] = useState(false);
 
   useEffect(() => {
-    setSelectedQuizOpt(null);
-    setQuizAnswered(false);
-    setQuizCorrect(false);
-    setCurrentQuiz(buildMonumentMediaQuiz(monumentData || { info, video, audioScript, stt: currentStt }));
-  }, [monumentData, monumentName, video, currentStt]);
+    setCards(initialCards);
+    setFlipped([]);
+    setMatched([]);
+    setMoves(0);
+    setIsCompleted(false);
+  }, [initialCards]);
 
-  const handleSelectQuiz = (idx) => {
-    if (quizAnswered) return;
-    setSelectedQuizOpt(idx);
-    const isRight = idx === currentQuiz.correctIndex;
-    setQuizCorrect(isRight);
-    setQuizAnswered(true);
+  const handleCardClick = (idx) => {
+    if (flipped.length >= 2 || flipped.includes(idx) || matched.includes(cards[idx].pairId)) return;
+    
+    soundEffects.playCardFlip();
+    const nextFlipped = [...flipped, idx];
+    setFlipped(nextFlipped);
 
-    if (isRight) {
-      soundEffects.playCorrect();
-      try {
-        confetti({
-          particleCount: 70,
-          spread: 75,
-          origin: { y: 0.7 }
-        });
-      } catch (e) {}
-    } else {
-      soundEffects.playWrong();
+    if (nextFlipped.length === 2) {
+      setMoves(m => m + 1);
+      const [firstIdx, secondIdx] = nextFlipped;
+      const firstCard = cards[firstIdx];
+      const secondCard = cards[secondIdx];
+
+      if (firstCard.pairId === secondCard.pairId) {
+        soundEffects.playSuccessChime();
+        const nextMatched = [...matched, firstCard.pairId];
+        setMatched(nextMatched);
+        setFlipped([]);
+
+        if (nextMatched.length === 3) {
+          setIsCompleted(true);
+          soundEffects.playVictoryFanfare();
+          try {
+            confetti({
+              particleCount: 80,
+              spread: 80,
+              origin: { y: 0.7 }
+            });
+          } catch (e) {}
+
+          try {
+            const passport = getActivePassport();
+            trackQuizAttempt({
+              passport,
+              monumentStt: currentStt,
+              monumentName,
+              question: `Lật Thẻ Trí Nhớ Di Tích: ${monumentName}`,
+              isCorrect: true,
+              score: 30
+            });
+          } catch (e) {}
+        }
+      } else {
+        soundEffects.playWrong();
+        setTimeout(() => {
+          setFlipped([]);
+        }, 850);
+      }
     }
-
-    try {
-      const passport = getActivePassport();
-      trackQuizAttempt({
-        passport,
-        monumentStt: currentStt,
-        monumentName,
-        question: currentQuiz.question,
-        isCorrect: isRight,
-        score: isRight ? 20 : 0
-      });
-    } catch (e) {}
   };
 
-  const handleResetQuiz = () => {
+  const handleResetMemoryGame = () => {
     soundEffects.playTap();
-    setSelectedQuizOpt(null);
-    setQuizAnswered(false);
-    setQuizCorrect(false);
-    setCurrentQuiz(buildMonumentMediaQuiz(monumentData || { info, video, audioScript, stt: currentStt }));
+    setCards([...initialCards].sort(() => Math.random() - 0.5));
+    setFlipped([]);
+    setMatched([]);
+    setMoves(0);
+    setIsCompleted(false);
   };
 
   // Progress percentage for visual audio bar
@@ -227,33 +274,32 @@ export default function MediaAudioVideoRow({
         {/* ========================================================================= */}
         {/* HÀNG 1: 2 CỘT STUDIO SONG SONG (VIDEO CINEMA & AUDIO STATION) */}
         {/* ========================================================================= */}
+        {/* ========================================================================= */}
+        {/* HÀNG 1: 2 CỘT STUDIO SONG SONG (VIDEO CINEMA & AUDIO STATION - GIAO DIỆN NHẠT THANH LỊCH) */}
+        {/* ========================================================================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch pt-2">
           
           {/* ------------------------------------------------------------------------- */}
           {/* CỘT 1: RẠP PHIM TƯ LIỆU GỐC (CINEMA THEATER MODE) - 6 COLS */}
           {/* ------------------------------------------------------------------------- */}
-          <div className="lg:col-span-6 bg-gradient-to-br from-[#1C0507] via-[#2A0B0E] to-[#180305] text-white rounded-3xl p-5 sm:p-6 border-2 border-amber-500/40 shadow-2xl flex flex-col justify-between space-y-4 relative overflow-hidden ring-1 ring-amber-400/20 group">
+          <div className="lg:col-span-6 bg-white rounded-3xl p-5 sm:p-6 border border-[#EAE3D9] shadow-sm flex flex-col justify-between space-y-4 relative overflow-hidden group">
             
-            {/* Ambient Background Glow Effect */}
-            <div className="absolute -top-24 -left-24 w-60 h-60 bg-red-600/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -right-24 w-60 h-60 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
-
             {/* Header Cinema */}
-            <div className="relative z-10 space-y-2 pb-3 border-b border-white/10">
+            <div className="space-y-2 pb-3 border-b border-[#F0EAE1]">
               <div className="flex items-center justify-between gap-2 flex-wrap">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/30 border border-red-500/50 text-amber-300 text-xs font-black uppercase tracking-wider shadow-inner">
-                  <Film className="w-3.5 h-3.5 text-amber-300" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
+                  <Film className="w-3.5 h-3.5 text-[#7E1819]" />
                   <span>RẠP PHIM TƯ LIỆU GỐC</span>
                 </div>
 
                 <div className="flex items-center gap-2 text-[11px]">
-                  <span className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/50 border border-red-500/40 text-rose-300 font-mono font-bold">
-                    <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
+                  <span className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-stone-100 border border-stone-300 text-stone-700 font-mono font-bold">
+                    <span className="w-2 h-2 rounded-full bg-red-600 animate-ping" />
                     <span>HD 1080P</span>
                   </span>
                   <button
                     onClick={onOpenVideoModal}
-                    className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-amber-300 border border-white/15 transition-colors cursor-pointer"
+                    className="p-1.5 rounded-lg bg-stone-100 hover:bg-stone-200 text-[#7E1819] border border-stone-200 transition-colors cursor-pointer"
                     title="Mở toàn màn hình rạp chiếu"
                   >
                     <Maximize2 className="w-3.5 h-3.5" />
@@ -261,13 +307,13 @@ export default function MediaAudioVideoRow({
                 </div>
               </div>
 
-              <h3 className="font-serif-title font-black text-base sm:text-lg text-amber-100 line-clamp-1">
+              <h3 className="font-serif-title font-black text-base sm:text-lg text-[#2C241E] line-clamp-1">
                 {video?.title || `Thước phim tư liệu lịch sử: ${monumentName}`}
               </h3>
             </div>
 
             {/* Video Iframe / Local Video Theater Bezel */}
-            <div className="relative z-10 aspect-video rounded-2xl overflow-hidden bg-black shadow-2xl border-2 border-amber-500/30 ring-4 ring-black/60">
+            <div className="relative aspect-video rounded-2xl overflow-hidden bg-black shadow-md border-2 border-stone-200">
               {video?.videoType === 'local' || video?.localUrl || video?.mp4Url || (video?.src && video.src.endsWith('.mp4')) ? (
                 <video
                   className="w-full h-full object-contain bg-black"
@@ -295,24 +341,24 @@ export default function MediaAudioVideoRow({
             </div>
 
             {/* Cinema Chapter Highlights & Actions */}
-            <div className="relative z-10 space-y-2.5 pt-1">
+            <div className="space-y-2.5 pt-1">
               <div className="flex items-center gap-1.5 flex-wrap text-[11px]">
-                <span className="px-2.5 py-1 rounded-lg bg-black/40 border border-amber-400/20 text-amber-200 font-medium flex items-center gap-1">
-                  <Clock className="w-3 h-3 text-amber-400" />
+                <span className="px-2.5 py-1 rounded-lg bg-amber-50 border border-amber-200 text-[#7E1819] font-medium flex items-center gap-1">
+                  <Clock className="w-3 h-3 text-[#7E1819]" />
                   <span>00:00 Toàn Cảnh</span>
                 </span>
-                <span className="px-2.5 py-1 rounded-lg bg-black/40 border border-amber-400/20 text-amber-200 font-medium flex items-center gap-1">
-                  <Sparkles className="w-3 h-3 text-amber-400" />
+                <span className="px-2.5 py-1 rounded-lg bg-amber-50 border border-amber-200 text-[#7E1819] font-medium flex items-center gap-1">
+                  <Sparkles className="w-3 h-3 text-[#7E1819]" />
                   <span>01:15 Hiện Vật & Dấu Ấn</span>
                 </span>
-                <span className="px-2.5 py-1 rounded-lg bg-black/40 border border-amber-400/20 text-amber-200 font-medium flex items-center gap-1">
-                  <Award className="w-3 h-3 text-amber-400" />
+                <span className="px-2.5 py-1 rounded-lg bg-amber-50 border border-amber-200 text-[#7E1819] font-medium flex items-center gap-1">
+                  <Award className="w-3 h-3 text-[#7E1819]" />
                   <span>02:30 Giá Trị Lịch Sử</span>
                 </span>
               </div>
 
-              <div className="flex items-center justify-between text-xs text-rose-200/80 pt-1 border-t border-white/10">
-                <span className="truncate max-w-[240px] text-amber-300/90 font-medium">
+              <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-[#F0EAE1]">
+                <span className="truncate max-w-[240px] text-stone-600 font-medium">
                   {video?.copyright || (video?.channel ? `Bản quyền: ${video.channel}` : 'Bản quyền: Kênh Tư Liệu Lịch Sử')}
                 </span>
 
@@ -324,7 +370,7 @@ export default function MediaAudioVideoRow({
                   }
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-bold text-amber-300 hover:text-amber-200 hover:underline flex items-center gap-1 shrink-0 transition-colors"
+                  className="font-bold text-[#7E1819] hover:underline flex items-center gap-1 shrink-0 transition-colors"
                 >
                   <span>
                     {video?.videoType === 'local' || video?.localUrl || video?.mp4Url || (video?.src && video.src.endsWith('.mp4'))
@@ -340,30 +386,26 @@ export default function MediaAudioVideoRow({
           {/* ------------------------------------------------------------------------- */}
           {/* CỘT 2: PHÒNG THU THUYẾT MINH DI SẢN (STUDIO SOUND STATION) - 6 COLS */}
           {/* ------------------------------------------------------------------------- */}
-          <div className="lg:col-span-6 bg-gradient-to-br from-[#24080B] via-[#350C10] to-[#1C0507] text-white rounded-3xl p-5 sm:p-6 border-2 border-amber-500/40 shadow-2xl flex flex-col justify-between space-y-4 relative overflow-hidden ring-1 ring-amber-400/20">
+          <div className="lg:col-span-6 bg-white rounded-3xl p-5 sm:p-6 border border-[#EAE3D9] shadow-sm flex flex-col justify-between space-y-4 relative overflow-hidden">
             
-            {/* Ambient Lighting */}
-            <div className="absolute -top-24 -right-24 w-60 h-60 bg-amber-500/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -left-24 w-60 h-60 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
-
             {/* Header Studio */}
-            <div className="relative z-10 space-y-2 pb-3 border-b border-white/10">
+            <div className="space-y-2 pb-3 border-b border-[#F0EAE1]">
               <div className="flex items-center justify-between gap-2 flex-wrap">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 text-xs font-black uppercase tracking-wider shadow-inner">
-                  <Mic className="w-3.5 h-3.5 text-amber-300" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
+                  <Mic className="w-3.5 h-3.5 text-[#7E1819]" />
                   <span>PHÒNG THU THUYẾT MINH DI SẢN</span>
                 </div>
 
                 {/* Speed Selector Tabs */}
-                <div className="flex items-center gap-1 bg-black/50 p-1 rounded-xl border border-amber-400/30">
+                <div className="flex items-center gap-1 bg-stone-100 p-1 rounded-xl border border-stone-200">
                   {[0.75, 1.0, 1.25, 1.5].map((rate) => (
                     <button
                       key={rate}
                       onClick={() => handleSetSpeed(rate)}
                       className={`px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
                         playbackRate === rate
-                          ? 'bg-amber-400 text-[#7E1819] shadow-xs'
-                          : 'text-amber-200/70 hover:text-white'
+                          ? 'bg-[#7E1819] text-white shadow-xs'
+                          : 'text-stone-600 hover:text-stone-900'
                       }`}
                     >
                       {rate}x
@@ -373,35 +415,35 @@ export default function MediaAudioVideoRow({
               </div>
 
               <div className="flex items-center justify-between">
-                <h3 className="font-serif-title font-black text-base sm:text-lg text-amber-100 line-clamp-1">
+                <h3 className="font-serif-title font-black text-base sm:text-lg text-[#2C241E] line-clamp-1">
                   Giọng đọc truyền cảm • Lịch sử {monumentName}
                 </h3>
-                <span className="text-[11px] font-mono text-amber-300/80 bg-black/40 px-2 py-0.5 rounded-md border border-white/10">
+                <span className="text-[11px] font-mono text-[#7E1819] bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200 font-bold">
                   MP3 Studio
                 </span>
               </div>
             </div>
 
             {/* Dynamic Animated Waveform Visualizer */}
-            <div className="relative z-10 p-4 rounded-2xl bg-black/50 border border-amber-400/30 shadow-inner space-y-3.5">
+            <div className="p-4 rounded-2xl bg-[#FAF7F2] border border-[#EAE3D9] shadow-2xs space-y-3.5">
               
               {/* Status Header inside Box */}
               <div className="flex items-center justify-between text-xs">
                 <div className="flex items-center gap-2">
-                  <span className={`w-2.5 h-2.5 rounded-full ${isPlaying ? 'bg-emerald-400 animate-ping' : 'bg-amber-400'}`} />
-                  <span className="font-bold text-amber-200 text-xs sm:text-sm tracking-wide">
+                  <span className={`w-2.5 h-2.5 rounded-full ${isPlaying ? 'bg-emerald-500 animate-ping' : 'bg-amber-500'}`} />
+                  <span className="font-bold text-[#2C241E] text-xs sm:text-sm tracking-wide">
                     {isPlaying ? '🔴 Đang phát thuyết minh trực tiếp...' : '⏸️ Sẵn sàng thưởng thức'}
                   </span>
                 </div>
-                <div className="flex items-center gap-1.5 font-mono font-bold text-amber-300 bg-white/10 px-2.5 py-0.5 rounded-lg border border-white/10">
+                <div className="flex items-center gap-1.5 font-mono font-bold text-[#7E1819] bg-white px-2.5 py-0.5 rounded-lg border border-[#EAE3D9]">
                   <span>{formatTime(currentTime)}</span>
-                  <span className="text-amber-200/50">/</span>
-                  <span className="text-amber-200/70">{formatTime(duration)}</span>
+                  <span className="text-stone-400">/</span>
+                  <span className="text-stone-600">{formatTime(duration)}</span>
                 </div>
               </div>
 
               {/* 32-Bar Live Sound Equalizer Waveform */}
-              <div className="h-12 flex items-end justify-between gap-1 px-1 py-1 rounded-xl bg-black/40 border border-white/5 overflow-hidden">
+              <div className="h-12 flex items-end justify-between gap-1 px-1 py-1 rounded-xl bg-white border border-[#EAE3D9] overflow-hidden">
                 {Array.from({ length: 32 }).map((_, i) => {
                   const baseHeight = ((Math.sin(i * 0.4) + 1.2) * 18) + 10;
                   const isCurrentSection = (i / 32) * 100 <= progressPercent;
@@ -415,8 +457,8 @@ export default function MediaAudioVideoRow({
                       }}
                       className={`flex-1 rounded-full ${
                         isCurrentSection 
-                          ? 'bg-gradient-to-t from-amber-500 to-amber-300 shadow-xs' 
-                          : 'bg-white/15'
+                          ? 'bg-gradient-to-t from-[#A6732E] to-[#C59B63] shadow-2xs' 
+                          : 'bg-stone-200'
                       }`}
                     />
                   );
@@ -432,7 +474,7 @@ export default function MediaAudioVideoRow({
                     max={duration}
                     value={currentTime}
                     onChange={handleSeek}
-                    className="w-full h-2.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-amber-400 focus:outline-none"
+                    className="w-full h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-[#7E1819] focus:outline-none"
                   />
                 </div>
               </div>
@@ -443,17 +485,17 @@ export default function MediaAudioVideoRow({
                 {/* Mute toggle button */}
                 <button
                   onClick={handleToggleMute}
-                  className="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-amber-300 border border-white/15 transition-all cursor-pointer"
+                  className="p-2.5 rounded-xl bg-white hover:bg-stone-100 text-[#7E1819] border border-stone-200 transition-all cursor-pointer shadow-2xs"
                   title={isMuted ? "Bật âm thanh" : "Tắt âm thanh"}
                 >
-                  {isMuted ? <VolumeX className="w-4 h-4 text-rose-400" /> : <Volume2 className="w-4 h-4" />}
+                  {isMuted ? <VolumeX className="w-4 h-4 text-rose-600" /> : <Volume2 className="w-4 h-4" />}
                 </button>
 
                 {/* Main Player Center Trio */}
                 <div className="flex items-center gap-3">
                   <button
                     onClick={handleRewind10}
-                    className="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-amber-300 border border-white/15 transition-transform hover:scale-110 cursor-pointer flex items-center gap-1 text-xs font-bold"
+                    className="p-2.5 rounded-xl bg-white hover:bg-stone-100 text-[#7E1819] border border-stone-200 transition-transform hover:scale-110 cursor-pointer flex items-center gap-1 text-xs font-bold shadow-2xs"
                     title="Lùi lại 10 giây"
                   >
                     <RotateCcw className="w-4 h-4" />
@@ -462,7 +504,7 @@ export default function MediaAudioVideoRow({
 
                   <button
                     onClick={handleTogglePlay}
-                    className={`w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 text-[#7E1819] flex items-center justify-center shadow-xl shadow-amber-500/30 hover:scale-110 active:scale-95 transition-all cursor-pointer border-2 border-amber-200 ${
+                    className={`w-14 h-14 rounded-2xl bg-gradient-to-br from-[#7E1819] to-[#9E1B1D] hover:from-[#9E1B1D] hover:to-[#7E1819] text-amber-200 flex items-center justify-center shadow-lg shadow-red-950/20 hover:scale-110 active:scale-95 transition-all cursor-pointer border-2 border-amber-300 ${
                       isPlaying ? 'ring-4 ring-amber-300/40' : 'animate-pulse'
                     }`}
                     title={isPlaying ? "Tạm dừng" : "Phát âm thanh thuyết minh"}
@@ -476,7 +518,7 @@ export default function MediaAudioVideoRow({
 
                   <button
                     onClick={handleForward10}
-                    className="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-amber-300 border border-white/15 transition-transform hover:scale-110 cursor-pointer flex items-center gap-1 text-xs font-bold"
+                    className="p-2.5 rounded-xl bg-white hover:bg-stone-100 text-[#7E1819] border border-stone-200 transition-transform hover:scale-110 cursor-pointer flex items-center gap-1 text-xs font-bold shadow-2xs"
                     title="Tua tới 10 giây"
                   >
                     <span className="text-[10px]">10s</span>
@@ -487,7 +529,7 @@ export default function MediaAudioVideoRow({
                 {/* Full Script Modal Button */}
                 <button
                   onClick={onOpenAudioModal}
-                  className="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-amber-300 border border-white/15 transition-all cursor-pointer flex items-center gap-1.5"
+                  className="p-2.5 rounded-xl bg-white hover:bg-stone-100 text-[#7E1819] border border-stone-200 transition-all cursor-pointer flex items-center gap-1.5 shadow-2xs"
                   title="Mở toàn văn kịch bản thuyết minh"
                 >
                   <FileText className="w-4 h-4" />
@@ -496,19 +538,19 @@ export default function MediaAudioVideoRow({
               </div>
             </div>
 
-            {/* Teleprompter Dynamic Glowing Excerpt */}
+            {/* Teleprompter Dynamic Excerpt */}
             <div 
               onClick={onOpenAudioModal}
-              className="relative z-10 p-3 rounded-xl bg-black/45 border border-amber-400/30 hover:border-amber-400/60 transition-all cursor-pointer group shadow-inner"
+              className="p-3 rounded-xl bg-white border border-[#EAE3D9] hover:border-amber-400 transition-all cursor-pointer group shadow-2xs"
               title="Bấm để mở toàn văn kịch bản thuyết minh tự sáng"
             >
-              <div className="flex items-center justify-between gap-2 mb-1.5 pb-1 border-b border-white/10 text-[10px]">
-                <div className="flex items-center gap-1.5 text-amber-300 font-bold">
-                  <Disc className={`w-3.5 h-3.5 text-amber-400 shrink-0 ${isPlaying ? 'animate-spin' : ''}`} />
+              <div className="flex items-center justify-between gap-2 mb-1.5 pb-1 border-b border-[#F0EAE1] text-[10px]">
+                <div className="flex items-center gap-1.5 text-[#7E1819] font-bold">
+                  <Disc className={`w-3.5 h-3.5 text-[#7E1819] shrink-0 ${isPlaying ? 'animate-spin' : ''}`} />
                   <span>{isPlaying ? 'LỜI THUYẾT MINH TRỰC TIẾP' : 'TRÍCH ĐOẠN THUYẾT MINH'}</span>
                 </div>
                 {isPlaying && (
-                  <span className="px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 font-black flex items-center gap-1 border border-amber-400/30 animate-pulse text-[9px] uppercase tracking-wider">
+                  <span className="px-2 py-0.5 rounded-full bg-amber-100 text-[#7E1819] font-black flex items-center gap-1 border border-amber-300 animate-pulse text-[9px] uppercase tracking-wider">
                     <Sparkles className="w-2.5 h-2.5 fill-current" />
                     <span>Tự sáng theo giọng đọc</span>
                   </span>
@@ -516,8 +558,8 @@ export default function MediaAudioVideoRow({
               </div>
               <p className={`text-xs leading-relaxed transition-all duration-300 ${
                 isPlaying 
-                  ? 'text-amber-200 font-bold bg-amber-500/20 px-2 py-1.5 rounded-lg border-l-4 border-amber-400 shadow-sm' 
-                  : 'text-amber-100/80 italic'
+                  ? 'text-[#7E1819] font-bold bg-amber-50 px-2 py-1.5 rounded-lg border-l-4 border-amber-500 shadow-2xs' 
+                  : 'text-stone-600 italic'
               }`}>
                 "{currentSentence?.text || narrationText.slice(0, 150)}..."
               </p>
@@ -526,110 +568,115 @@ export default function MediaAudioVideoRow({
         </div>
 
         {/* ========================================================================= */}
-        {/* HÀNG 2: THỬ THÁCH NHẬN THỨC NHANH "BẠN VỪA KHÁM PHÁ ĐƯỢC GÌ?" */}
+        {/* HÀNG 2: TRÒ CHƠI LẬT THẺ TRÍ NHỚ DI TÍCH (MEMORY FLIP CARD MATCH) */}
         {/* ========================================================================= */}
-        <div className="bg-gradient-to-br from-[#FFFDF9] via-[#FAF5ED] to-[#F5ECE0] rounded-3xl p-5 sm:p-7 border-2 border-amber-300/80 shadow-lg space-y-4 pt-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-amber-200/80">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#7E1819] to-[#9E1B1D] text-amber-200 flex items-center justify-center shadow-md border border-amber-300">
-                <Sparkles className="w-5 h-5 text-amber-300" />
+        <div className="bg-[#FAF7F2] text-[#2C241E] rounded-3xl p-5 sm:p-7 border border-[#EAE3D9] shadow-sm space-y-4 pt-5 relative overflow-hidden">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#EAE3D9]">
+            <div className="space-y-1.5">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
+                <span className="text-xs">🃏</span>
+                <span className="font-bold tracking-wide text-[#7E1819]">
+                  TRÒ CHƠI LẬT THẺ TRÍ NHỚ
+                </span>
+                <Sparkles className="w-3.5 h-3.5 text-amber-600" />
               </div>
-              <div>
-                <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#7E1819]">
-                  Thử Thách Nhanh: Bạn Vừa Khám Phá Được Gì?
-                </h3>
-                <p className="text-xs text-[#555555]">
-                  Kiểm tra khả năng quan sát thước phim & tiếp thu lời thuyết minh lịch sử
-                </p>
-              </div>
+              <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#2C241E] flex items-center gap-2">
+                <span>Ghép Cặp Dấu Ấn Di Tích & Không Gian Di Sản</span>
+              </h3>
+              <p className="text-xs text-[#666666]">
+                Lật mở từng cặp thẻ bài tương ứng để thử tài ghi nhớ các dữ liệu lịch sử vừa tiếp thu qua Video & Thuyết minh!
+              </p>
             </div>
 
-            <span className="self-start sm:self-auto px-3.5 py-1 rounded-full bg-amber-100 text-[#7E1819] border border-amber-300 font-black text-xs uppercase tracking-wider shadow-2xs">
-              ⭐ +20 Điểm Thám Hiểm
-            </span>
+            <div className="flex items-center gap-3 self-start sm:self-auto">
+              <span className="px-3 py-1 rounded-full bg-amber-50 text-[#7E1819] border border-amber-200 font-bold text-xs uppercase tracking-wider">
+                Đã ghép: {matched.length}/3 cặp
+              </span>
+              <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-300 font-bold text-xs uppercase tracking-wider">
+                ⭐ +30 XP
+              </span>
+            </div>
           </div>
 
-          {/* Question Text */}
-          <div className="p-4 rounded-2xl bg-white border border-amber-200 shadow-xs">
-            <p className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E] leading-relaxed">
-              🎯 {currentQuiz.question}
-            </p>
-          </div>
-
-          {/* Options Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {currentQuiz.options.map((opt, idx) => {
-              const isSelected = selectedQuizOpt === idx;
-              let btnStyle = "bg-white hover:bg-amber-50/70 border-gray-200 text-[#333333] hover:border-amber-400";
-
-              if (quizAnswered) {
-                if (idx === currentQuiz.correctIndex) {
-                  btnStyle = "bg-emerald-50 border-emerald-500 text-emerald-950 font-bold ring-2 ring-emerald-400 shadow-md";
-                } else if (isSelected && !quizCorrect) {
-                  btnStyle = "bg-rose-50 border-rose-500 text-rose-950 line-through ring-1 ring-rose-400";
-                } else {
-                  btnStyle = "bg-gray-50 border-gray-200 text-gray-400 opacity-60";
-                }
-              }
+          {/* Cards Grid (6 Cards = 3 Pairs) */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 pt-2">
+            {cards.map((card, idx) => {
+              const isFlipped = flipped.includes(idx) || matched.includes(card.pairId);
+              const isMatched = matched.includes(card.pairId);
 
               return (
                 <button
-                  key={idx}
-                  onClick={() => handleSelectQuiz(idx)}
-                  disabled={quizAnswered}
-                  className={`text-left p-4 rounded-2xl border transition-all flex items-start justify-between gap-3 text-xs sm:text-sm cursor-pointer shadow-2xs ${btnStyle}`}
+                  key={card.id || idx}
+                  onClick={() => handleCardClick(idx)}
+                  disabled={isMatched || flipped.length >= 2}
+                  className={`relative h-32 sm:h-36 rounded-2xl border-2 transition-all duration-300 transform perspective-1000 cursor-pointer shadow-xs ${
+                    isMatched
+                      ? 'bg-gradient-to-br from-emerald-50 to-emerald-100/70 border-emerald-400 text-emerald-950 scale-100 ring-2 ring-emerald-300/60 shadow-md'
+                      : isFlipped
+                      ? 'bg-gradient-to-br from-amber-50 to-white border-amber-400 text-[#2C241E] scale-102 ring-2 ring-amber-300/70 shadow-md'
+                      : 'bg-gradient-to-br from-[#7E1819] to-[#5C1112] border-amber-300/40 text-amber-200 hover:scale-103 hover:border-amber-400 shadow-md'
+                  }`}
                 >
-                  <div className="flex items-start gap-2.5">
-                    <span className="w-5 h-5 rounded-full bg-amber-100 text-[#7E1819] font-black text-xs flex items-center justify-center shrink-0 mt-0.5 border border-amber-300/60">
-                      {String.fromCharCode(65 + idx)}
-                    </span>
-                    <span className="leading-relaxed">{opt}</span>
-                  </div>
-                  {quizAnswered && idx === currentQuiz.correctIndex && (
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                  )}
-                  {quizAnswered && isSelected && !quizCorrect && (
-                    <XCircle className="w-5 h-5 text-rose-600 shrink-0 mt-0.5" />
+                  {isFlipped ? (
+                    <div className="p-3 h-full flex flex-col justify-between items-center text-center animate-fadeIn">
+                      <span className="text-3xl sm:text-4xl filter drop-shadow-sm mt-1">{card.icon}</span>
+                      <div className="w-full">
+                        <span className="text-[11px] uppercase font-black px-2 py-0.5 rounded bg-amber-200/80 text-[#7E1819] inline-block mb-1 border border-amber-300/60">
+                          {card.tag}
+                        </span>
+                        <p className="font-extrabold text-xs sm:text-sm leading-snug line-clamp-2 text-[#2C241E]">
+                          {card.title}
+                        </p>
+                      </div>
+                      {isMatched && (
+                        <CheckCircle2 className="w-5 h-5 text-emerald-600 animate-bounce" />
+                      )}
+                    </div>
+                  ) : (
+                    <div className="h-full flex flex-col items-center justify-center gap-1.5 p-2 text-amber-200/90">
+                      <div className="w-10 h-10 rounded-xl bg-amber-400/20 border border-amber-300/30 flex items-center justify-center text-xl">
+                        🏛️
+                      </div>
+                      <span className="text-xs font-black uppercase tracking-wider text-amber-300">
+                        Thẻ #{idx + 1}
+                      </span>
+                      <span className="text-[10px] text-amber-100/80 font-bold">Chạm để lật</span>
+                    </div>
                   )}
                 </button>
               );
             })}
           </div>
 
-          {/* Explanation Box */}
-          {quizAnswered && (
-            <div className={`p-4 rounded-2xl border animate-fadeIn space-y-1.5 ${quizCorrect ? 'bg-emerald-50 border-emerald-300 text-emerald-950' : 'bg-amber-50 border-amber-300 text-amber-950'}`}>
-              <div className="flex items-center gap-2 font-bold text-sm">
-                {quizCorrect ? (
-                  <>
-                    <Award className="w-4 h-4 text-emerald-600" />
-                    <span>Xuất sắc! Bạn đã tiếp thu trọn vẹn thông điệp lịch sử.</span>
-                  </>
-                ) : (
-                  <>
-                    <HelpCircle className="w-4 h-4 text-amber-700" />
-                    <span>Chưa hoàn toàn chính xác, hãy đọc thêm thông điệp bên dưới nhé!</span>
-                  </>
-                )}
+          {/* Victory Announcement Box */}
+          {isCompleted && (
+            <div className="p-4 rounded-2xl bg-emerald-50 border-2 border-emerald-400 text-emerald-950 animate-fadeIn space-y-2">
+              <div className="flex items-center gap-2.5 font-bold text-sm text-[#7E1819]">
+                <Award className="w-5 h-5 text-emerald-700" />
+                <span>Xuất sắc! Bạn đã mở khóa toàn bộ 3 cặp thẻ trí nhớ di tích.</span>
+                <span className="text-xs bg-emerald-200/80 text-emerald-900 px-2 py-0.5 rounded-full font-black">
+                  +30 XP Hoàn Thành
+                </span>
               </div>
-              <p className="text-xs leading-relaxed text-gray-800">
-                📖 <strong>Lời giải thích chi tiết:</strong> {currentQuiz.explanation}
+              <p className="text-xs leading-relaxed text-[#444444]">
+                👏 Bạn đã ghi nhớ xuất sắc các dấu mốc then chốt của <strong>{monumentName}</strong> ({info?.ranking || 'Di tích Lịch sử'}) tọa lạc tại <em>{info?.address || 'TP.HCM'}</em>. Hãy tiếp tục tiến bước đến Trạm Dòng Thời Gian nhé!
               </p>
             </div>
           )}
 
-          {/* Quiz Action Buttons */}
-          {quizAnswered && (
-            <div className="flex items-center justify-end gap-3 pt-1">
-              <button
-                onClick={handleResetQuiz}
-                className="py-2.5 px-6 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#7E1819] font-black text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md hover:scale-102"
-              >
-                <RotateCcw className="w-4 h-4" />
-                <span>Thử thách lại</span>
-              </button>
-            </div>
-          )}
+          {/* Reset / Replay Button */}
+          <div className="flex items-center justify-between pt-1">
+            <span className="text-xs text-stone-500 font-medium">
+              Số lượt lật bài: <strong>{moves}</strong>
+            </span>
+            <button
+              onClick={handleResetMemoryGame}
+              className="py-2 px-5 rounded-xl bg-amber-100 hover:bg-amber-200 text-[#7E1819] border border-amber-300 font-bold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs hover:scale-102"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Xáo bài & Chơi lại</span>
+            </button>
+          </div>
         </div>
       </ScrollReveal>
     </section>

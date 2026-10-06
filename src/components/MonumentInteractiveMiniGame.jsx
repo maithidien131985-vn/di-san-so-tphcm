@@ -495,7 +495,7 @@ export default function MonumentInteractiveMiniGame({
                     </span>
                   </div>
 
-                  <h3 className="font-serif-title font-bold text-base sm:text-lg md:text-xl text-white leading-relaxed pt-1">
+                  <h3 className="font-serif-title font-black text-lg sm:text-xl md:text-2xl text-white leading-relaxed pt-1 drop-shadow-sm">
                     {currentQ.question}
                   </h3>
                 </div>
@@ -511,11 +511,11 @@ export default function MonumentInteractiveMiniGame({
 
                     if (isAnswered) {
                       if (isCorrectOption) {
-                        btnStyle = 'bg-emerald-600/90 border-emerald-300 text-white ring-4 ring-emerald-400/50 shadow-xl shadow-emerald-950/60 scale-102';
-                        iconState = <CheckCircle2 className="w-5 h-5 text-white shrink-0 animate-bounce" />;
+                        btnStyle = 'bg-emerald-600/95 border-emerald-300 text-white ring-4 ring-emerald-400/50 shadow-xl shadow-emerald-950/60 scale-102';
+                        iconState = <CheckCircle2 className="w-6 h-6 text-white shrink-0 animate-bounce" />;
                       } else if (isSelected) {
-                        btnStyle = 'bg-rose-700/90 border-rose-400 text-white ring-2 ring-rose-400/50 shadow-lg shadow-red-950/50';
-                        iconState = <XCircle className="w-5 h-5 text-white shrink-0" />;
+                        btnStyle = 'bg-rose-700/95 border-rose-400 text-white ring-2 ring-rose-400/50 shadow-lg shadow-red-950/50';
+                        iconState = <XCircle className="w-6 h-6 text-white shrink-0" />;
                       } else {
                         btnStyle = 'bg-black/30 border-white/10 text-stone-400 opacity-50';
                       }
@@ -526,12 +526,12 @@ export default function MonumentInteractiveMiniGame({
                         key={optIdx}
                         disabled={isAnswered}
                         onClick={() => handleSelectOption(optIdx)}
-                        className={`p-4 sm:p-4.5 rounded-2xl border-2 text-left transition-all duration-300 flex items-start gap-3 cursor-pointer group shadow-md ${btnStyle}`}
+                        className={`p-4 sm:p-5 rounded-2xl border-2 text-left transition-all duration-300 flex items-start gap-3.5 cursor-pointer group shadow-md ${btnStyle}`}
                       >
-                        <span className="w-7 h-7 rounded-xl bg-white/20 group-hover:bg-amber-400 group-hover:text-[#2D0A0D] flex items-center justify-center font-black text-xs shrink-0 transition-colors shadow-inner">
+                        <span className="w-8 h-8 rounded-xl bg-white/20 group-hover:bg-amber-400 group-hover:text-[#2D0A0D] flex items-center justify-center font-black text-sm shrink-0 transition-colors shadow-inner">
                           {String.fromCharCode(65 + optIdx)}
                         </span>
-                        <span className="text-xs sm:text-sm font-medium leading-relaxed flex-1 pt-0.5">
+                        <span className="text-sm sm:text-base font-bold leading-relaxed flex-1 pt-0.5">
                           {opt}
                         </span>
                         {iconState}
@@ -544,8 +544,8 @@ export default function MonumentInteractiveMiniGame({
                 {isAnswered && (
                   <div className={`p-4 sm:p-5 rounded-2xl border-2 animate-fadeIn space-y-3 ${
                     selectedOption === currentQ.correctIndex
-                      ? 'bg-emerald-950/80 border-emerald-500/90 text-emerald-100'
-                      : 'bg-rose-950/80 border-rose-500/90 text-rose-100'
+                      ? 'bg-emerald-950/90 border-emerald-500/90 text-emerald-100'
+                      : 'bg-rose-950/90 border-rose-500/90 text-rose-100'
                   }`}>
                     <div className="flex items-center justify-between flex-wrap gap-2">
                       <div className="flex items-center gap-2">
@@ -576,7 +576,7 @@ export default function MonumentInteractiveMiniGame({
                     </div>
 
                     {currentQ.explanation && (
-                      <div className="text-xs sm:text-sm leading-relaxed pt-2.5 border-t border-white/15 text-justify text-white/95">
+                      <div className="text-sm sm:text-base leading-relaxed pt-2.5 border-t border-white/15 text-justify text-white/95">
                         <strong className="text-amber-200 font-black">📜 Bí mật lịch sử được giải mã: </strong>
                         {currentQ.explanation}
                       </div>

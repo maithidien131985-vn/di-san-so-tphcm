@@ -79,6 +79,29 @@ export function getMonumentUrl(monument) {
 // Find monument by slug, STT, or path param
 export function findMonumentBySlugOrParam(param, list = allMonumentsList) {
   if (!param) return null;
+  
+  // Handle monument object passed directly
+  if (typeof param === 'object') {
+    if (typeof param.stt === 'number') {
+      const found = list.find(m => m.stt === param.stt);
+      if (found) return found;
+    }
+    if (param.id) {
+      const match = String(param.id).match(/\d+/);
+      if (match) {
+        const found = list.find(m => m.stt === parseInt(match[0], 10));
+        if (found) return found;
+      }
+    }
+    if (param.slug) {
+      param = param.slug;
+    } else if (param.info?.name) {
+      param = param.info.name;
+    } else {
+      return null;
+    }
+  }
+
   const cleanParam = toSlug(String(param).trim());
 
   // 1. Check numeric STT

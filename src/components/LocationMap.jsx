@@ -46,6 +46,8 @@ export default function LocationMap({
         iconUrl = '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png';
       } else if (rankingOrName.includes('kiến trúc')) {
         iconUrl = '/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png';
+      } else if (rankingOrName.includes('danh lam') || rankingOrName.includes('thắng cảnh')) {
+        iconUrl = '/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png';
       }
 
       const customIcon = L.divIcon({

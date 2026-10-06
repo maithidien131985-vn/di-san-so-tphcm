@@ -124,13 +124,15 @@ export default function MyMapModal({
       const lng = mon.map?.lng || mon.info?.lng;
       if (!lat || !lng || isNaN(lat) || isNaN(lng)) return;
 
-      // Custom 3 Category Icons
+      // Custom Category Icons
       const monType = mon.info?.type || 'Lịch sử';
       let iconUrl = '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png';
       if (monType.includes('Khảo cổ')) {
         iconUrl = '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png';
       } else if (monType.includes('Kiến trúc')) {
         iconUrl = '/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png';
+      } else if (monType.includes('Danh lam') || monType.includes('Thắng cảnh') || monType.includes('thắng cảnh')) {
+        iconUrl = '/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png';
       }
 
       const pinSize = isCurrent ? 46 : 36;
@@ -288,7 +290,7 @@ export default function MyMapModal({
           )}
         </div>
 
-        {/* 3 Icon Legend Bar */}
+        {/* 4 Icon Legend Bar */}
         {viewMode === 'leaflet103' && (
           <div className="bg-[#FAF4F0] px-4 py-2 border-b border-rose-100 flex items-center justify-center gap-4 sm:gap-6 flex-wrap text-[11px] font-bold text-stone-700">
             <span className="text-[#8B1417] uppercase tracking-wider font-black text-[10px]">Phân loại Icon:</span>
@@ -303,6 +305,10 @@ export default function MyMapModal({
             <div className="flex items-center gap-1.5">
               <img src="/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png" alt="Khảo cổ" className="w-5 h-5 object-contain" />
               <span>Khảo cổ học</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <img src="/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png" alt="Thắng cảnh" className="w-5 h-5 object-contain" />
+              <span>Danh lam thắng cảnh</span>
             </div>
           </div>
         )}

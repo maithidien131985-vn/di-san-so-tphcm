@@ -194,21 +194,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại 135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Tp. Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1868–1871",
+        "title": "Khởi công và hoàn thành Dinh Norodom",
+        "description": "Khởi công và hoàn thành Dinh Norodom"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Sự kiện tiêu biểu nhất gắn với Dinh Độc Lập diễn ra vào trưa ngày 30/4/1975. Khoảng 10 giờ 45 phút, xe tăng của Quân Giải phóng tiến vào trung tâm Sài Gòn, húc đổ cổng Dinh Độc Lập. Các chiến sĩ nhanh..."
+        "year": "1962–1966",
+        "title": "Khởi công và xây dựng Dinh Độc Lập mới",
+        "description": "Khởi công và xây dựng Dinh Độc Lập mới"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia đặc biệt",
-        "description": "Quyết định số 1272/QĐ-TTg ngày 12/8/2009."
+        "year": "30/4/1975",
+        "title": "Xe tăng tiến vào Dinh Độc Lập, giải phóng miền Nam",
+        "description": "Xe tăng tiến vào Dinh Độc Lập, giải phóng miền Nam"
+      },
+      {
+        "id": 4,
+        "year": "12/8/2009",
+        "title": "Xếp hạng Di tích Quốc gia đặc biệt",
+        "description": "Xếp hạng Di tích Quốc gia đặc biệt"
       }
     ],
     "gallery": [
@@ -831,21 +837,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Bến Dược: ấp Phú Hiệp, xã An Nhơn Tây, TP. Hồ Chí Minh. Bến Đình: ấp Bến Đình, xã Nhuận Đức, TP. Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1946–1948",
+        "title": "Bắt đầu đào những đường hầm phục vụ kháng chiến chống Pháp",
+        "description": "Bắt đầu đào những đường hầm phục vụ kháng chiến chống Pháp"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Địa đạo bắt đầu hình thành trong kháng chiến chống Pháp, khoảng năm 1947–1948; được mở rộng mạnh từ năm 1961. Nơi đây đã chống lại nhiều cuộc càn quét lớn, tiêu biểu là Chiến dịch Crimp năm 1966, Chiế..."
+        "year": "1961–1965",
+        "title": "Phát triển hệ thống địa đạo thành mạng lưới liên hoàn",
+        "description": "Phát triển hệ thống địa đạo thành mạng lưới liên hoàn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia đặc biệt",
-        "description": "Số 2367/QĐ-TTg ngày \n23/12/2015"
+        "year": "1966–1968",
+        "title": "Địa đạo được mở rộng mạnh, phục vụ chiến đấu và bảo vệ lực lượng",
+        "description": "Địa đạo được mở rộng mạnh, phục vụ chiến đấu và bảo vệ lực lượng"
+      },
+      {
+        "id": 4,
+        "year": "1968",
+        "title": "Hệ thống địa đạo đạt khoảng 250 km, gắn với cuộc Tổng tiến công và nổi dậy Tết Mậu Thân",
+        "description": "Hệ thống địa đạo đạt khoảng 250 km, gắn với cuộc Tổng tiến công và nổi dậy Tết Mậu Thân"
+      },
+      {
+        "id": 5,
+        "year": "1975",
+        "title": "Địa đạo hoàn thành vai trò lịch sử, trở thành biểu tượng của “Đất thép thành đồng”",
+        "description": "Địa đạo hoàn thành vai trò lịch sử, trở thành biểu tượng của “Đất thép thành đồng”"
+      },
+      {
+        "id": 6,
+        "year": "2015",
+        "title": "Địa đạo Củ Chi được xếp hạng Di tích quốc gia đặc biệt",
+        "description": "Địa đạo Củ Chi được xếp hạng Di tích quốc gia đặc biệt"
       }
     ],
     "gallery": [
@@ -1471,21 +1495,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Xã Hồ Tràm, Thành phố Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1961",
+        "title": "Bắt đầu chuẩn bị xây dựng Bến Lộc An, đón nhận nguồn chi viện từ miền Bắc",
+        "description": "Bắt đầu chuẩn bị xây dựng Bến Lộc An, đón nhận nguồn chi viện từ miền Bắc"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Ngày 23/10/1961: Thành lập Đoàn 759, lực lượng vận tải quân sự trên biển, mở đầu quá trình xây dựng Đường Hồ Chí Minh trên biển.\nĐầu năm 1961: Trung ương Cục miền Nam tổ chức khảo sát vùng biển Hàm Tâ..."
+        "year": "03/10/1963",
+        "title": "Chuyến tàu không số đầu tiên cập Bến Lộc An, mở tuyến vận chuyển vũ khí bằng đường biển",
+        "description": "Chuyến tàu không số đầu tiên cập Bến Lộc An, mở tuyến vận chuyển vũ khí bằng đường biển"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia đặc biệt",
-        "description": "Quyết định số 1473/QĐ-TTgNgày 26/11/2024, Thủ tướng Chính phủ"
+        "year": "1964",
+        "title": "Bến tiếp tục đón tàu vận chuyển vũ khí, chi viện cho chiến trường miền Đông Nam Bộ",
+        "description": "Bến tiếp tục đón tàu vận chuyển vũ khí, chi viện cho chiến trường miền Đông Nam Bộ"
+      },
+      {
+        "id": 4,
+        "year": "01/02/1965",
+        "title": "Chuyến tàu không số tiếp tục cập bến, góp phần bảo đảm nguồn vũ khí cho chiến trường",
+        "description": "Chuyến tàu không số tiếp tục cập bến, góp phần bảo đảm nguồn vũ khí cho chiến trường"
+      },
+      {
+        "id": 5,
+        "year": "1963–1965",
+        "title": "Bến Lộc An tiếp nhận nhiều chuyến tàu không số, trở thành mắt xích quan trọng của Đường Hồ Chí Minh trên biển",
+        "description": "Bến Lộc An tiếp nhận nhiều chuyến tàu không số, trở thành mắt xích quan trọng của Đường Hồ Chí Minh trên biển"
+      },
+      {
+        "id": 6,
+        "year": "2024",
+        "title": "Điểm Bến Lộc An được xếp hạng trong Di tích quốc gia đặc biệt Đường Hồ Chí Minh trên biển",
+        "description": "Điểm Bến Lộc An được xếp hạng trong Di tích quốc gia đặc biệt Đường Hồ Chí Minh trên biển"
       }
     ],
     "gallery": [
@@ -2105,21 +2147,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Đặc khu Côn Đảo, Thành phố Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1862",
+        "title": "Thực dân Pháp thiết lập nhà tù tại Côn Đảo, bắt đầu hơn một thế kỷ giam cầm tù nhân",
+        "description": "Thực dân Pháp thiết lập nhà tù tại Côn Đảo, bắt đầu hơn một thế kỷ giam cầm tù nhân"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Ngày 28/11/1861: Quân Pháp chiếm Côn Đảo.\nNgày 1/2/1862: Thống đốc Nam Kỳ Bonard ký quyết định thành lập Nhà tù Côn Đảo.\nTháng 3/1862: 50 tù nhân đầu tiên bị đưa ra giam giữ tại Côn Đảo.\nNăm 1908: Nhi..."
+        "year": "1862–1954",
+        "title": "Nhà tù giam giữ nhiều nhà yêu nước, chiến sĩ cách mạng trong thời kỳ chống Pháp",
+        "description": "Nhà tù giam giữ nhiều nhà yêu nước, chiến sĩ cách mạng trong thời kỳ chống Pháp"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia đặc biệt",
-        "description": "Quyết định số 548/QĐ-TTg ngày 10/5/2012 của Thủ tướng Chính phủ."
+        "year": "1955–1975",
+        "title": "Hệ thống nhà tù tiếp tục được mở rộng, giam giữ và đàn áp nhiều chiến sĩ cách mạng",
+        "description": "Hệ thống nhà tù tiếp tục được mở rộng, giam giữ và đàn áp nhiều chiến sĩ cách mạng"
+      },
+      {
+        "id": 4,
+        "year": "01/05/1975",
+        "title": "Côn Đảo được giải phóng, chấm dứt 113 năm tồn tại của hệ thống nhà tù",
+        "description": "Côn Đảo được giải phóng, chấm dứt 113 năm tồn tại của hệ thống nhà tù"
+      },
+      {
+        "id": 5,
+        "year": "1979",
+        "title": "Khu di tích Côn Đảo được công nhận là di tích lịch sử đặc biệt quan trọng",
+        "description": "Khu di tích Côn Đảo được công nhận là di tích lịch sử đặc biệt quan trọng"
+      },
+      {
+        "id": 6,
+        "year": "2012",
+        "title": "Khu di tích Nhà tù Côn Đảo được xếp hạng Di tích quốc gia đặc biệt",
+        "description": "Khu di tích Nhà tù Côn Đảo được xếp hạng Di tích quốc gia đặc biệt"
       }
     ],
     "gallery": [
@@ -2747,21 +2807,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Xã Ngãi Giao, Thành phố Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1/1964",
+        "title": "Bộ Chỉ huy Miền quyết định mở Chiến dịch Bình Giã, tiến công khu vực Bình Giã – Đức Thạnh – Đường số 2",
+        "description": "Bộ Chỉ huy Miền quyết định mở Chiến dịch Bình Giã, tiến công khu vực Bình Giã – Đức Thạnh – Đường số 2"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Ngày 11/10/1964: Quân ủy Trung ương và Bộ Tổng Tư lệnh chỉ thị mở đợt hoạt động quân sự trên chiến trường miền Nam.\nCuối tháng 10/1964: Đảng ủy và Bộ Tư lệnh Miền xây dựng kế hoạch chiến dịch, chọn Bì..."
+        "year": "02/12/1964",
+        "title": "Quân giải phóng tiến công ấp chiến lược Bình Giã, mở màn Chiến dịch Bình Giã",
+        "description": "Quân giải phóng tiến công ấp chiến lược Bình Giã, mở màn Chiến dịch Bình Giã"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 2754-QĐ/BT ngày 15/10/1994. của Bộ Văn hóa – Thông tin"
+        "year": "27–28/12/1964",
+        "title": "Quân ta tiếp tục tiến công và làm chủ khu vực Bình Giã, đánh bại lực lượng địch đến ứng cứu",
+        "description": "Quân ta tiếp tục tiến công và làm chủ khu vực Bình Giã, đánh bại lực lượng địch đến ứng cứu"
+      },
+      {
+        "id": 4,
+        "year": "03/01/1965",
+        "title": "Chiến dịch Bình Giã kết thúc thắng lợi, đánh dấu bước trưởng thành của bộ đội chủ lực miền Nam",
+        "description": "Chiến dịch Bình Giã kết thúc thắng lợi, đánh dấu bước trưởng thành của bộ đội chủ lực miền Nam"
+      },
+      {
+        "id": 5,
+        "year": "1994",
+        "title": "Các địa điểm ghi dấu Chiến thắng Bình Giã được xếp hạng, Di tích lịch sử cấp quốc gi",
+        "description": "Các địa điểm ghi dấu Chiến thắng Bình Giã được xếp hạng, Di tích lịch sử cấp quốc gi"
       }
     ],
     "gallery": [
@@ -3372,21 +3444,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại xã Phước Hải, Thành phố Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1948",
+        "title": "Căn cứ kháng chiến Long Mỹ được xây dựng và củng cố, từng bước hình thành căn cứ Minh Đạm",
+        "description": "Căn cứ kháng chiến Long Mỹ được xây dựng và củng cố, từng bước hình thành căn cứ Minh Đạm"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Cuối năm 1948: tên gọi Minh Đạm được xác lập để tưởng nhớ hai đồng chí Bùi Công Minh và Mạc Thanh Đạm. Năm 1962: Trung ương Cục đặt đài trinh sát kỹ thuật tại căn cứ. Năm 1966: liên quân Mỹ, quân đội ..."
+        "year": "17/11/1948",
+        "title": "Bùi Công Minh và Mạc Thanh Đạm hy sinh, tên hai ông được ghép thành tên “Minh Đạm”",
+        "description": "Bùi Công Minh và Mạc Thanh Đạm hy sinh, tên hai ông được ghép thành tên “Minh Đạm”"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "QĐ số: 57VH/QĐ ngày \n18/01/1993 - Bộ Văn Hóa \nThông Tin"
+        "year": "1949–1954",
+        "title": "Minh Đạm trở thành căn cứ cách mạng quan trọng, phục vụ cuộc kháng chiến chống thực dân Pháp",
+        "description": "Minh Đạm trở thành căn cứ cách mạng quan trọng, phục vụ cuộc kháng chiến chống thực dân Pháp"
+      },
+      {
+        "id": 4,
+        "year": "1954–1975",
+        "title": "Căn cứ tiếp tục được sử dụng trong kháng chiến chống Mỹ, che chở lực lượng và các cơ quan cách mạng",
+        "description": "Căn cứ tiếp tục được sử dụng trong kháng chiến chống Mỹ, che chở lực lượng và các cơ quan cách mạng"
+      },
+      {
+        "id": 5,
+        "year": "1993",
+        "title": "Khu căn cứ Minh Đạm được xếp hạng, Di tích lịch sử cấp quốc gia",
+        "description": "Khu căn cứ Minh Đạm được xếp hạng, Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -4014,21 +4098,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại xã Cần Giờ, Thành phố Hồ Chí Minh mới, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1963",
+        "title": "Thành lập trạm tiếp nhận hàng quân sự tại Rừng Sác, hình thành cơ sở phục vụ lực lượng cách mạng",
+        "description": "Thành lập trạm tiếp nhận hàng quân sự tại Rừng Sác, hình thành cơ sở phục vụ lực lượng cách mạng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "15/4/1966: thành lập Đặc khu Quân sự Rừng Sác, mật danh T10. Sau đó lực lượng phát triển thành Đoàn 10 Đặc công Rừng Sác. 5/12/1972: Đoàn 10 đánh phá kho bom Thành Tuy Hạ, phá hủy một khối lượng lớn b..."
+        "year": "15/04/1966",
+        "title": "Đặc khu quân sự Rừng Sác được thành lập, làm nhiệm vụ chiến đấu trên tuyến sông chiến lược",
+        "description": "Đặc khu quân sự Rừng Sác được thành lập, làm nhiệm vụ chiến đấu trên tuyến sông chiến lược"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ trưởng Bộ Văn hóa – Thông tin"
+        "year": "1966–1975",
+        "title": "Đặc công Rừng Sác bám trụ vùng rừng ngập mặn, liên tục tổ chức nhiều trận đánh quan trọng",
+        "description": "Đặc công Rừng Sác bám trụ vùng rừng ngập mặn, liên tục tổ chức nhiều trận đánh quan trọng"
+      },
+      {
+        "id": 4,
+        "year": "1966–1975",
+        "title": "Lực lượng Rừng Sác hoạt động trên sông Lòng Tàu và vùng cửa ngõ Sài Gòn, góp phần kiểm soát tuyến vận tải chiến lược của đối phương",
+        "description": "Lực lượng Rừng Sác hoạt động trên sông Lòng Tàu và vùng cửa ngõ Sài Gòn, góp phần kiểm soát tuyến vận tải chiến lược của đối phương"
+      },
+      {
+        "id": 5,
+        "year": "30/04/1975",
+        "title": "Lực lượng Rừng Sác hoàn thành nhiệm vụ trong kháng chiến, góp phần vào thắng lợi giải phóng miền Nam, thống nhất đất nước",
+        "description": "Lực lượng Rừng Sác hoàn thành nhiệm vụ trong kháng chiến, góp phần vào thắng lợi giải phóng miền Nam, thống nhất đất nước"
       }
     ],
     "gallery": [
@@ -4661,21 +4757,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Ấp Đá Bàn, xã Bắc Tân Uyên, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "02/1946",
+        "title": "Chiến khu Đ được hình thành tại vùng Tân Uyên, trở thành căn cứ cách mạng ở miền Đông Nam Bộ",
+        "description": "Chiến khu Đ được hình thành tại vùng Tân Uyên, trở thành căn cứ cách mạng ở miền Đông Nam Bộ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Cuối tháng 2/1946: Chiến khu Đ được hình thành. 19/3/1948: trận đánh tháp canh cầu Bà Kiên ở Tân Uyên, một dấu mốc quan trọng trong sự phát triển của nghệ thuật đánh đặc công. 9/1961: lực lượng cách m..."
+        "year": "1947–1948",
+        "title": "Từ Chiến khu Đ diễn ra nhiều trận đánh quan trọng, củng cố thế trận kháng chiến chống thực dân Pháp",
+        "description": "Từ Chiến khu Đ diễn ra nhiều trận đánh quan trọng, củng cố thế trận kháng chiến chống thực dân Pháp"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1631/QĐ-BVHTTDL ngày 11/5/2010 của Bộ Văn hóa, Thể thao và Du lịch"
+        "year": "1954–1975",
+        "title": "Chiến khu tiếp tục được mở rộng và phát triển, trở thành căn cứ quan trọng trong kháng chiến chống Mỹ",
+        "description": "Chiến khu tiếp tục được mở rộng và phát triển, trở thành căn cứ quan trọng trong kháng chiến chống Mỹ"
+      },
+      {
+        "id": 4,
+        "year": "1961–1964",
+        "title": "Nhiều hoạt động quân sự lớn xuất phát từ Chiến khu Đ, góp phần tạo thế chủ động cho chiến trường miền Đông",
+        "description": "Nhiều hoạt động quân sự lớn xuất phát từ Chiến khu Đ, góp phần tạo thế chủ động cho chiến trường miền Đông"
+      },
+      {
+        "id": 5,
+        "year": "04/1975",
+        "title": "Chiến khu Đ là một trong những địa bàn xuất phát lực lượng, góp phần mở đường cho Chiến dịch Hồ Chí Minh",
+        "description": "Chiến khu Đ là một trong những địa bàn xuất phát lực lượng, góp phần mở đường cho Chiến dịch Hồ Chí Minh"
+      },
+      {
+        "id": 6,
+        "year": "2010",
+        "title": "Chiến khu Đ được xếp hạng, Di tích lịch sử cấp quốc gia",
+        "description": "Chiến khu Đ được xếp hạng, Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -5295,21 +5409,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Thôn Tam Long, xã Kim Long, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1962",
+        "title": "Nhân dân và lực lượng cách mạng bắt đầu xây dựng địa đạo, tạo nơi bám trụ ngay trong vùng đối phương kiểm soát",
+        "description": "Nhân dân và lực lượng cách mạng bắt đầu xây dựng địa đạo, tạo nơi bám trụ ngay trong vùng đối phương kiểm soát"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1962–1964: xây dựng hệ thống địa đạo Kim Long. Cuối năm 1964: địa đạo và lực lượng cách mạng tại khu vực Kim Long góp phần vào Chiến thắng Bình Giã. 1966–1967: địa đạo tiếp tục là nơi dựa để lực lượng..."
+        "year": "1962–1964",
+        "title": "Hệ thống địa đạo được hoàn thiện dài khoảng 2 km, gồm công sự, phòng họp, trạm y tế và kho hậu cần",
+        "description": "Hệ thống địa đạo được hoàn thiện dài khoảng 2 km, gồm công sự, phòng họp, trạm y tế và kho hậu cần"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "QĐ số: 961QĐ/BT ngày \n20/07/1994 - Bộ Văn Hóa \nThông Tin"
+        "year": "1964",
+        "title": "Địa đạo trở thành hậu cứ của lực lượng cách mạng, góp phần quan trọng vào Chiến thắng Bình Giã",
+        "description": "Địa đạo trở thành hậu cứ của lực lượng cách mạng, góp phần quan trọng vào Chiến thắng Bình Giã"
+      },
+      {
+        "id": 4,
+        "year": "1966–1967",
+        "title": "Bộ đội và du kích dựa vào địa đạo chống nhiều cuộc càn quét, duy trì và phát triển phong trào cách mạng tại Châu Đức",
+        "description": "Bộ đội và du kích dựa vào địa đạo chống nhiều cuộc càn quét, duy trì và phát triển phong trào cách mạng tại Châu Đức"
+      },
+      {
+        "id": 5,
+        "year": "1994",
+        "title": "Địa đạo Kim Long được xếp hạng, Di tích lịch sử cấp quốc gia",
+        "description": "Địa đạo Kim Long được xếp hạng, Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -6002,21 +6128,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 139 đường Phú Thọ Hòa, phường Phú Thọ Hòa, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Những năm 1930",
+        "title": "Hình thành các hầm bí mật đầu tiên, che giấu và bảo vệ cán bộ cách mạng",
+        "description": "Hình thành các hầm bí mật đầu tiên, che giấu và bảo vệ cán bộ cách mạng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1947: bắt đầu xây dựng địa đạo tại thôn Lộc Hòa. 29/3/1948: trận đánh kho bom Bảy Hiền. 12/1949: lực lượng cách mạng nhiều lần đánh vào sân bay Tân Sơn Nhất. 1952 và 1954: tấn công kho bom Phú Thọ..."
+        "year": "1947",
+        "title": "Địa đạo Phú Thọ Hòa được xây dựng, trở thành địa đạo đầu tiên ở phía Tây Sài Gòn",
+        "description": "Địa đạo Phú Thọ Hòa được xây dựng, trở thành địa đạo đầu tiên ở phía Tây Sài Gòn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1460 – QĐ/VH ngày \n28/6/1996 của Bộ Văn hóa \nThông tin"
+        "year": "1948–1949",
+        "title": "Từ địa đạo, lực lượng cách mạng tổ chức nhiều trận đánh, trong đó có kho bom Bảy Hiền và sân bay Tân Sơn Nhất",
+        "description": "Từ địa đạo, lực lượng cách mạng tổ chức nhiều trận đánh, trong đó có kho bom Bảy Hiền và sân bay Tân Sơn Nhất"
+      },
+      {
+        "id": 4,
+        "year": "1952–1954",
+        "title": "Lực lượng cách mạng xuất phát từ địa đạo tiến công kho bom Phú Thọ Hòa, góp phần hỗ trợ chiến trường trong kháng chiến chống Pháp",
+        "description": "Lực lượng cách mạng xuất phát từ địa đạo tiến công kho bom Phú Thọ Hòa, góp phần hỗ trợ chiến trường trong kháng chiến chống Pháp"
+      },
+      {
+        "id": 5,
+        "year": "1954–1975",
+        "title": "Địa đạo tiếp tục được sử dụng làm nơi trú quân và bàn đạp, phục vụ hoạt động cách mạng trong kháng chiến chống Mỹ",
+        "description": "Địa đạo tiếp tục được sử dụng làm nơi trú quân và bàn đạp, phục vụ hoạt động cách mạng trong kháng chiến chống Mỹ"
+      },
+      {
+        "id": 6,
+        "year": "1996",
+        "title": "Địa đạo Phú Thọ Hòa được xếp hạng, Di tích lịch sử cấp quốc gia",
+        "description": "Địa đạo Phú Thọ Hòa được xếp hạng, Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -6644,21 +6788,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Tây Nam, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1948",
+        "title": "Những đoạn địa đạo đầu tiên được hình thành, phục vụ cuộc kháng chiến chống thực dân Pháp",
+        "description": "Những đoạn địa đạo đầu tiên được hình thành, phục vụ cuộc kháng chiến chống thực dân Pháp"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1948: hệ thống địa đạo đầu tiên được hình thành tại vùng Tây Nam Bến Cát. Từ năm 1961: quân dân ba xã An Điền, An Tây, Phú An đẩy mạnh đào và mở rộng hệ thống địa đạo. Chiến dịch Mậu Thân 1968: địa đạ..."
+        "year": "1954–1960",
+        "title": "Hệ thống địa đạo tiếp tục được củng cố, tạo cơ sở bám trụ cho lực lượng cách mạng",
+        "description": "Hệ thống địa đạo tiếp tục được củng cố, tạo cơ sở bám trụ cho lực lượng cách mạng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 460/QĐ/BT ngày 18/3/1996 của Bộ Văn hóa - Thông tin"
+        "year": "1960",
+        "title": "Du kích Củ Chi đến học tập kinh nghiệm, góp phần lan tỏa mô hình xây dựng địa đạo",
+        "description": "Du kích Củ Chi đến học tập kinh nghiệm, góp phần lan tỏa mô hình xây dựng địa đạo"
+      },
+      {
+        "id": 4,
+        "year": "1965–1967",
+        "title": "Địa đạo phát triển thành mạng lưới liên hoàn, biến vùng Tây Nam Bến Cát thành căn cứ vững chắc",
+        "description": "Địa đạo phát triển thành mạng lưới liên hoàn, biến vùng Tây Nam Bến Cát thành căn cứ vững chắc"
+      },
+      {
+        "id": 5,
+        "year": "01/1967",
+        "title": "Quân dân Tam Giác Sắt chống cuộc càn Cedar Falls, giữ vững căn cứ trước cuộc tiến công quy mô lớn",
+        "description": "Quân dân Tam Giác Sắt chống cuộc càn Cedar Falls, giữ vững căn cứ trước cuộc tiến công quy mô lớn"
+      },
+      {
+        "id": 6,
+        "year": "1996",
+        "title": "Địa đạo Tây Nam Bến Cát được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Địa đạo Tây Nam Bến Cát được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -7286,21 +7448,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 2 đường Tôn Đức Thắng, phường Sài Gòn, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1920–1921",
+        "title": "Tôn Đức Thắng hoạt động trong phong trào công nhân Sài Gòn, tham gia xây dựng Công hội bí mật",
+        "description": "Tôn Đức Thắng hoạt động trong phong trào công nhân Sài Gòn, tham gia xây dựng Công hội bí mật"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Tháng 8/1925 – Cuộc bãi công Ba Son: khoảng 1.000 công nhân Ba Son đấu tranh đòi tăng lương, giảm giờ làm; dưới sự lãnh đạo của Công hội do Tôn Đức Thắng đứng đầu, cuộc đình công đồng thời làm chậm vi..."
+        "year": "1920–1925",
+        "title": "Công hội phát triển tại Ba Son và nhiều cơ sở, tạo nền tảng cho phong trào công nhân có tổ chức",
+        "description": "Công hội phát triển tại Ba Son và nhiều cơ sở, tạo nền tảng cho phong trào công nhân có tổ chức"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định xếp hạng số \n1269/QĐ-BVHTTDL ngày \n30/3/2016 của Bộ Văn hóa - Thông tin"
+        "year": "04/08/1925",
+        "title": "Hơn 1.000 công nhân Ba Son tiến hành bãi công, đánh dấu bước phát triển mới của phong trào công nhân Việt Nam",
+        "description": "Hơn 1.000 công nhân Ba Son tiến hành bãi công, đánh dấu bước phát triển mới của phong trào công nhân Việt Nam"
+      },
+      {
+        "id": 4,
+        "year": "1925",
+        "title": "Cuộc đấu tranh Ba Son mang ý nghĩa chính trị rõ nét, thể hiện tinh thần đoàn kết quốc tế của công nhân Việt Nam",
+        "description": "Cuộc đấu tranh Ba Son mang ý nghĩa chính trị rõ nét, thể hiện tinh thần đoàn kết quốc tế của công nhân Việt Nam"
+      },
+      {
+        "id": 5,
+        "year": "1993",
+        "title": "Địa điểm lưu niệm tại Ba Son được công nhận Di tích lịch sử cấp quốc gia",
+        "description": "Địa điểm lưu niệm tại Ba Son được công nhận Di tích lịch sử cấp quốc gia"
+      },
+      {
+        "id": 6,
+        "year": "2016",
+        "title": "Di tích được điều chỉnh tên gọi và phạm vi bảo vệ, gồm Ụ tàu nhỏ và Triền nề Ba Son",
+        "description": "Di tích được điều chỉnh tên gọi và phạm vi bảo vệ, gồm Ụ tàu nhỏ và Triền nề Ba Son"
       }
     ],
     "gallery": [
@@ -7904,21 +8084,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 183/4 đường Ba Tháng Hai, phường Vườn Lài, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Thời kỳ kháng chiến chống Mỹ",
+        "title": "Hầm bí mật được xây dựng trong nội thành, phục vụ hoạt động của lực lượng cách mạng",
+        "description": "Hầm bí mật được xây dựng trong nội thành, phục vụ hoạt động của lực lượng cách mạng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1965: ông Đỗ Văn Căn được giao xây dựng hầm bí mật tại nhà để chứa vũ khí. Tháng 7/1965: hầm bắt đầu được sử dụng làm kho vũ khí bí mật; trong 4 tháng tiếp theo, nhiều vũ khí, thuốc nổ và đạn dược..."
+        "year": "1965–1975",
+        "title": "Căn hầm được sử dụng bí mật trong chiến tranh, góp phần bảo đảm hoạt động cách mạng tại Sài Gòn",
+        "description": "Căn hầm được sử dụng bí mật trong chiến tranh, góp phần bảo đảm hoạt động cách mạng tại Sài Gòn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288 – VH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "30/04/1975",
+        "title": "Miền Nam hoàn toàn giải phóng, căn hầm hoàn thành vai trò lịch sử",
+        "description": "Miền Nam hoàn toàn giải phóng, căn hầm hoàn thành vai trò lịch sử"
+      },
+      {
+        "id": 4,
+        "year": "16/11/1988",
+        "title": "Hầm bí mật tại số 183/4 đường Ba Tháng Hai được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Hầm bí mật tại số 183/4 đường Ba Tháng Hai được xếp hạng Di tích lịch sử cấp quốc gia"
+      },
+      {
+        "id": 5,
+        "year": "2019",
+        "title": "Di tích được thực hiện tu sửa cấp thiết, góp phần bảo tồn và phát huy giá trị lịch sử",
+        "description": "Di tích được thực hiện tu sửa cấp thiết, góp phần bảo tồn và phát huy giá trị lịch sử"
       }
     ],
     "gallery": [
@@ -8558,21 +8750,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 190 đường Võ Văn \nKiệt, phường Chợ Quán, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Khoảng 1874–1875",
+        "title": "Khu trại giam được hình thành trong Bệnh viện Chợ Quán, dần trở thành nơi giam giữ tù nhân chính trị",
+        "description": "Khu trại giam được hình thành trong Bệnh viện Chợ Quán, dần trở thành nơi giam giữ tù nhân chính trị"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1931: Trần Phú bị thực dân Pháp bắt và giam giữ; 26/8/1931: đồng chí được đưa vào khu trại giam tại Bệnh viện Chợ Quán do bị bệnh nặng; 6/9/1931: Trần Phú hy sinh tại đây, để lại lời nhắn “Hãy giữ..."
+        "year": "18/04/1931",
+        "title": "Đồng chí Trần Phú bị thực dân Pháp bắt, sau đó bị giam giữ và tra khảo tại nhiều nơi",
+        "description": "Đồng chí Trần Phú bị thực dân Pháp bắt, sau đó bị giam giữ và tra khảo tại nhiều nơi"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288 – \nVH/QĐ 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "26/08/1931",
+        "title": "Trần Phú được chuyển đến trại giam Bệnh viện Chợ Quán, trong tình trạng sức khỏe suy kiệt",
+        "description": "Trần Phú được chuyển đến trại giam Bệnh viện Chợ Quán, trong tình trạng sức khỏe suy kiệt"
+      },
+      {
+        "id": 4,
+        "year": "06/09/1931",
+        "title": "Đồng chí Trần Phú hy sinh tại đây, để lại lời nhắn “Hãy giữ vững chí khí chiến đấu”",
+        "description": "Đồng chí Trần Phú hy sinh tại đây, để lại lời nhắn “Hãy giữ vững chí khí chiến đấu”"
+      },
+      {
+        "id": 5,
+        "year": "1931–1975",
+        "title": "Khu trại tiếp tục giam giữ nhiều chiến sĩ cách mạng, ghi dấu tinh thần đấu tranh kiên cường, bất khuất",
+        "description": "Khu trại tiếp tục giam giữ nhiều chiến sĩ cách mạng, ghi dấu tinh thần đấu tranh kiên cường, bất khuất"
+      },
+      {
+        "id": 6,
+        "year": "16/11/1988",
+        "title": "Khu trại giam Bệnh viện Chợ Quán được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia",
+        "description": "Khu trại giam Bệnh viện Chợ Quán được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia"
       }
     ],
     "gallery": [
@@ -9200,21 +9410,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 1460 đường Phan Văn Hớn, Ấp 5, xã Bà Điểm, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "22–23/11/1940",
+        "title": "Khởi nghĩa Nam Kỳ bùng nổ tại Hóc Môn và nhiều địa phương, Ngã Ba Giồng gắn với phong trào đấu tranh của nhân dân Nam Bộ",
+        "description": "Khởi nghĩa Nam Kỳ bùng nổ tại Hóc Môn và nhiều địa phương, Ngã Ba Giồng gắn với phong trào đấu tranh của nhân dân Nam Bộ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đêm 22 rạng sáng 23/11/1940: Khởi nghĩa Nam Kỳ bùng nổ, nhân dân Hóc Môn – Bà Điểm tham gia đấu tranh. Sau Khởi nghĩa Nam Kỳ: thực dân Pháp lập các trường bắn tại Hóc Môn để đàn áp và xử tử cán bộ, ch..."
+        "year": "23/11–31/12/1940",
+        "title": "Sau khi khởi nghĩa bị đàn áp, Ngã Ba Giồng trở thành nơi hành quyết nhiều chiến sĩ cách mạng, ghi dấu sự hy sinh của những người tham gia Khởi nghĩa Nam Kỳ",
+        "description": "Sau khi khởi nghĩa bị đàn áp, Ngã Ba Giồng trở thành nơi hành quyết nhiều chiến sĩ cách mạng, ghi dấu sự hy sinh của những người tham gia Khởi nghĩa Nam Kỳ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 39/2002/QĐ-BVHTT \nngày 30/12/2002 của Bộ Văn hóa – Thông tin"
+        "year": "1941",
+        "title": "Nhiều lãnh đạo và chiến sĩ cách mạng bị hành quyết tại khu vực này, biến Ngã Ba Giồng thành địa danh tưởng niệm lịch sử",
+        "description": "Nhiều lãnh đạo và chiến sĩ cách mạng bị hành quyết tại khu vực này, biến Ngã Ba Giồng thành địa danh tưởng niệm lịch sử"
+      },
+      {
+        "id": 4,
+        "year": "30/12/2002",
+        "title": "Ngã Ba Giồng được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Ngã Ba Giồng được xếp hạng Di tích lịch sử cấp quốc gia"
+      },
+      {
+        "id": 5,
+        "year": "30/04/2005",
+        "title": "Khởi công xây dựng Khu tưởng niệm Liệt sĩ Ngã Ba Giồng, hình thành không gian tưởng niệm và giáo dục truyền thống",
+        "description": "Khởi công xây dựng Khu tưởng niệm Liệt sĩ Ngã Ba Giồng, hình thành không gian tưởng niệm và giáo dục truyền thống"
+      },
+      {
+        "id": 6,
+        "year": "23/11/2010",
+        "title": "Khu tưởng niệm cơ bản hoàn thành giai đoạn đầu, trở thành địa chỉ giáo dục lịch sử về Khởi nghĩa Nam Kỳ",
+        "description": "Khu tưởng niệm cơ bản hoàn thành giai đoạn đầu, trở thành địa chỉ giáo dục lịch sử về Khởi nghĩa Nam Kỳ"
       }
     ],
     "gallery": [
@@ -9827,21 +10055,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Khu phố Tường Thành, xã Đất Đỏ, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1933",
+        "title": "Võ Thị Sáu sinh tại vùng Đất Đỏ, lớn lên trong quê hương giàu truyền thống cách mạng",
+        "description": "Võ Thị Sáu sinh tại vùng Đất Đỏ, lớn lên trong quê hương giàu truyền thống cách mạng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1939: gia đình Võ Thị Sáu thuê và sinh sống tại căn nhà này; 1946–1947: Võ Thị Sáu bắt đầu tham gia hoạt động cách mạng tại quê hương Đất Đỏ; 23/01/1952: Võ Thị Sáu bị xử bắn tại Côn Đảo; 1980: căn nh..."
+        "year": "1947",
+        "title": "Chị tham gia Đội Công an xung phong Đất Đỏ, trực tiếp tham gia nhiều hoạt động kháng chiến",
+        "description": "Chị tham gia Đội Công an xung phong Đất Đỏ, trực tiếp tham gia nhiều hoạt động kháng chiến"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 199-VH/QĐ ngày 06/12/1989 của Bộ Văn hóa – Thông tin"
+        "year": "02/1950",
+        "title": "Chị Võ Thị Sáu bị thực dân Pháp bắt, vẫn giữ vững khí tiết của người chiến sĩ cách mạng",
+        "description": "Chị Võ Thị Sáu bị thực dân Pháp bắt, vẫn giữ vững khí tiết của người chiến sĩ cách mạng"
+      },
+      {
+        "id": 4,
+        "year": "23/01/1952",
+        "title": "Chị hy sinh tại Côn Đảo, trở thành biểu tượng của lòng yêu nước và tinh thần bất khuất",
+        "description": "Chị hy sinh tại Côn Đảo, trở thành biểu tượng của lòng yêu nước và tinh thần bất khuất"
+      },
+      {
+        "id": 5,
+        "year": "1980",
+        "title": "Ngôi nhà thời niên thiếu của chị được tu bổ, xây dựng thành Nhà lưu niệm Võ Thị Sáu",
+        "description": "Ngôi nhà thời niên thiếu của chị được tu bổ, xây dựng thành Nhà lưu niệm Võ Thị Sáu"
+      },
+      {
+        "id": 6,
+        "year": "1989",
+        "title": "Nhà lưu niệm được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Nhà lưu niệm được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -10452,21 +10698,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Đường Một Tháng Mười Hai, phường Phú Lợi, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1957",
+        "title": "Nhà tù Phú Lợi được xây dựng, giam giữ các chiến sĩ cách mạng và người yêu nước",
+        "description": "Nhà tù Phú Lợi được xây dựng, giam giữ các chiến sĩ cách mạng và người yêu nước"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1957: Nhà tù Phú Lợi được xây dựng. 1957–1958: số tù nhân tăng nhanh, đến cuối năm 1958 lên gần 6.000 người, trong đó khoảng 1.000 tù nhân nữ. 30/11–1/12/1958: xảy ra vụ đầu độc tù nhân Phú Lợi, được ..."
+        "year": "01/12/1958",
+        "title": "Xảy ra vụ đầu độc tù nhân tại Phú Lợi, gây làn sóng phẫn nộ và đấu tranh mạnh mẽ",
+        "description": "Xảy ra vụ đầu độc tù nhân tại Phú Lợi, gây làn sóng phẫn nộ và đấu tranh mạnh mẽ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 92/VH/QĐ ngày 10/7/1980 của Bộ Văn hóa – Thông tin"
+        "year": "1958–1964",
+        "title": "Tù nhân liên tục tổ chức đấu tranh trong nhà tù, giữ vững tinh thần đoàn kết và ý chí cách mạng",
+        "description": "Tù nhân liên tục tổ chức đấu tranh trong nhà tù, giữ vững tinh thần đoàn kết và ý chí cách mạng"
+      },
+      {
+        "id": 4,
+        "year": "1964",
+        "title": "Nhà tù Phú Lợi chấm dứt hoạt động, kết thúc 8 năm tồn tại của “địa ngục trần gian”",
+        "description": "Nhà tù Phú Lợi chấm dứt hoạt động, kết thúc 8 năm tồn tại của “địa ngục trần gian”"
+      },
+      {
+        "id": 5,
+        "year": "1980",
+        "title": "Nhà tù Phú Lợi được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Nhà tù Phú Lợi được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -11079,21 +11337,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 5 đường Châu Văn Liêm, phường Chợ Lớn, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "09/1910",
+        "title": "Nguyễn Tất Thành đến Sài Gòn và ở tại cơ sở Liên Thành, chuẩn bị cho hành trình tìm đường cứu nước",
+        "description": "Nguyễn Tất Thành đến Sài Gòn và ở tại cơ sở Liên Thành, chuẩn bị cho hành trình tìm đường cứu nước"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "19/9/1910: Nguyễn Tất Thành từ Trường Dục Thanh vào Sài Gòn. Tháng 9/1910 – 4/6/1911: Người ở tại cơ sở Liên Thành phân cuộc, nay là nhà số 5 Châu Văn Liêm. 4/6/1911: Người rời nhà số 5 với tên Văn Ba..."
+        "year": "1910–1911",
+        "title": "Người sinh sống, học tập và tìm hiểu đời sống tại Sài Gòn, củng cố quyết tâm tìm con đường giải phóng dân tộc",
+        "description": "Người sinh sống, học tập và tìm hiểu đời sống tại Sài Gòn, củng cố quyết tâm tìm con đường giải phóng dân tộc"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "04/06/1911",
+        "title": "Nguyễn Tất Thành rời ngôi nhà tại Chợ Lớn, chuẩn bị xuống tàu xuất dương",
+        "description": "Nguyễn Tất Thành rời ngôi nhà tại Chợ Lớn, chuẩn bị xuống tàu xuất dương"
+      },
+      {
+        "id": 4,
+        "year": "05/06/1911",
+        "title": "Nguyễn Tất Thành rời Bến Nhà Rồng, bắt đầu hành trình ra đi tìm đường cứu nước",
+        "description": "Nguyễn Tất Thành rời Bến Nhà Rồng, bắt đầu hành trình ra đi tìm đường cứu nước"
+      },
+      {
+        "id": 5,
+        "year": "1988",
+        "title": "Nhà số 5 Châu Văn Liêm được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Nhà số 5 Châu Văn Liêm được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -11703,21 +11973,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phòng 1, lầu 2, số 1 đường Nguyễn Trung Trực, phường Bến Thành, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "08–10/1929",
+        "title": "Nhiều cơ sở cộng sản được hình thành ở Nam Kỳ, tạo tiền đề thành lập An Nam Cộng sản Đảng",
+        "description": "Nhiều cơ sở cộng sản được hình thành ở Nam Kỳ, tạo tiền đề thành lập An Nam Cộng sản Đảng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1929: phong trào Hội Việt Nam Cách mạng Thanh niên có sự phân hóa, xuất hiện các tổ chức cộng sản. Cuối tháng 9 – đầu tháng 10/1929: thành lập chi bộ An Nam Cộng sản Đảng và tổ chức hội nghị tại S..."
+        "year": "11/1929",
+        "title": "Hội nghị được tổ chức tại Phong Cảnh Khách Lầu, Sài Gòn, gắn với quá trình thành lập An Nam Cộng sản Đảng",
+        "description": "Hội nghị được tổ chức tại Phong Cảnh Khách Lầu, Sài Gòn, gắn với quá trình thành lập An Nam Cộng sản Đảng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "15/11/1929",
+        "title": "Ban Chấp hành Trung ương lâm thời được thành lập, đánh dấu An Nam Cộng sản Đảng chính thức ra đời",
+        "description": "Ban Chấp hành Trung ương lâm thời được thành lập, đánh dấu An Nam Cộng sản Đảng chính thức ra đời"
+      },
+      {
+        "id": 4,
+        "year": "03/02/1930",
+        "title": "An Nam Cộng sản Đảng tham gia hợp nhất các tổ chức cộng sản, góp phần thành lập Đảng Cộng sản Việt Nam",
+        "description": "An Nam Cộng sản Đảng tham gia hợp nhất các tổ chức cộng sản, góp phần thành lập Đảng Cộng sản Việt Nam"
+      },
+      {
+        "id": 5,
+        "year": "1988",
+        "title": "Địa điểm lịch sử này được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Địa điểm lịch sử này được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -12291,21 +12573,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Ấp Tân Định, xã Long Hòa, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "25/03/1975",
+        "title": "Bộ Chỉ huy chiến dịch giải phóng Sài Gòn – Gia Định được thành lập, chuẩn bị cho trận quyết chiến chiến lược cuối cùng",
+        "description": "Bộ Chỉ huy chiến dịch giải phóng Sài Gòn – Gia Định được thành lập, chuẩn bị cho trận quyết chiến chiến lược cuối cùng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "25/3/1975: Bộ Chính trị quyết định thành lập Bộ Chỉ huy Chiến dịch giải phóng Sài Gòn – Gia Định tại căn cứ Tà Thiết. 14/4/1975: chiến dịch được chính thức mang tên Chiến dịch Hồ Chí Minh. 26/4/1975: ..."
+        "year": "14/04/1975",
+        "title": "Chiến dịch được chính thức mang tên Chiến dịch Hồ Chí Minh",
+        "description": "Chiến dịch được chính thức mang tên Chiến dịch Hồ Chí Minh"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1630/QĐ-BVHTTDL ngày \n11/5/2010 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch"
+        "year": "26/04/1975",
+        "title": "Sở Chỉ huy tiền phương chuyển về khu vực Căm Xe, trực tiếp chỉ huy các cánh quân tiến vào Sài Gòn",
+        "description": "Sở Chỉ huy tiền phương chuyển về khu vực Căm Xe, trực tiếp chỉ huy các cánh quân tiến vào Sài Gòn"
+      },
+      {
+        "id": 4,
+        "year": "26–30/04/1975",
+        "title": "Từ Sở Chỉ huy, chiến dịch được điều hành khẩn trương, phối hợp các lực lượng tiến công trên toàn mặt trận",
+        "description": "Từ Sở Chỉ huy, chiến dịch được điều hành khẩn trương, phối hợp các lực lượng tiến công trên toàn mặt trận"
+      },
+      {
+        "id": 5,
+        "year": "30/04/1975",
+        "title": "Chiến dịch Hồ Chí Minh toàn thắng, giải phóng miền Nam, thống nhất đất nước",
+        "description": "Chiến dịch Hồ Chí Minh toàn thắng, giải phóng miền Nam, thống nhất đất nước"
+      },
+      {
+        "id": 6,
+        "year": "2010",
+        "title": "Địa điểm Sở Chỉ huy tiền phương được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Địa điểm Sở Chỉ huy tiền phương được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -12936,21 +13236,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Tân Khánh, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Cuối thế kỷ XIX",
+        "title": "Di tích được các nhà nghiên cứu biết đến, trở thành một trong những di chỉ khảo cổ được phát hiện sớm ở Đông Nam Bộ",
+        "description": "Di tích được các nhà nghiên cứu biết đến, trở thành một trong những di chỉ khảo cổ được phát hiện sớm ở Đông Nam Bộ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1888: E. Cartailhac ghi nhận Cù Lao Rùa; 1889: E.T. Hamy công bố tư liệu về di tích tại Paris; 1976, 1998–2001: tiến hành nhiều đợt điều tra, thám sát khảo cổ; 2003: khai quật quy mô gần 400 m² với 5 ..."
+        "year": "1976–2001",
+        "title": "Nhiều đợt điều tra, thám sát được tiến hành, làm rõ giá trị khảo cổ của Cù Lao Rùa",
+        "description": "Nhiều đợt điều tra, thám sát được tiến hành, làm rõ giá trị khảo cổ của Cù Lao Rùa"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 836/QĐ-BVHTTDL ngày 03/3/2009 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch"
+        "year": "2003",
+        "title": "Tiến hành khai quật quy mô lớn, phát hiện 12 mộ cùng hàng nghìn hiện vật đá và gốm",
+        "description": "Tiến hành khai quật quy mô lớn, phát hiện 12 mộ cùng hàng nghìn hiện vật đá và gốm"
+      },
+      {
+        "id": 4,
+        "year": "2009",
+        "title": "Cù Lao Rùa được xếp hạng Di tích khảo cổ cấp quốc gia",
+        "description": "Cù Lao Rùa được xếp hạng Di tích khảo cổ cấp quốc gia"
       }
     ],
     "gallery": [
@@ -13610,21 +13916,21 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Tân Uyên, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "06/1976",
+        "title": "Di tích Dốc Chùa được phát hiện, qua những dấu tích tầng văn hóa và hiện vật cổ",
+        "description": "Di tích Dốc Chùa được phát hiện, qua những dấu tích tầng văn hóa và hiện vật cổ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Tháng 6/1976: Nguyễn Văn Long phát hiện dấu tích tầng văn hóa Dốc Chùa. 16/12/1976–8/1/1977: khai quật lần thứ nhất, thu được 803 hiện vật. 12/4–8/5/1977: khai quật lần thứ hai, phát hiện 20 ngôi mộ v..."
+        "year": "1976–1977",
+        "title": "Tiến hành đợt khai quật khảo cổ đầu tiên, phát hiện hàng trăm hiện vật có giá trị Những năm sau đó Các cuộc khai quật tiếp tục phát hiện nhiều khuôn đúc và đồ đồng, cho thấy trình độ luyện kim phát triển cao",
+        "description": "Tiến hành đợt khai quật khảo cổ đầu tiên, phát hiện hàng trăm hiện vật có giá trị Những năm sau đó Các cuộc khai quật tiếp tục phát hiện nhiều khuôn đúc và đồ đồng, cho thấy trình độ luyện kim phát triển cao"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 53/QĐ-BVHTT ngày 28/12/2001 của Bộ Văn hóa – Thông tin"
+        "year": "2001",
+        "title": "Dốc Chùa được xếp hạng Di tích khảo cổ cấp quốc gia",
+        "description": "Dốc Chùa được xếp hạng Di tích khảo cổ cấp quốc gia"
       }
     ],
     "gallery": [
@@ -14257,21 +14563,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Xã Cần Giờ, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "12/1993",
+        "title": "Các nhà khảo cổ tiến hành thám sát, phát hiện 38 mộ chum cùng nhiều đồ tùy táng",
+        "description": "Các nhà khảo cổ tiến hành thám sát, phát hiện 38 mộ chum cùng nhiều đồ tùy táng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1993: khảo sát và thám sát, phát hiện 38 mộ chum trong đợt đầu. Năm 1994–1995: tiến hành khai quật khảo cổ, phát hiện nhiều mộ chum, mộ đất, di cốt và hiện vật. Năm 2000: Giồng Cá Vồ được xếp hạng..."
+        "year": "1995",
+        "title": "Di tích được khai quật quy mô lớn, phát hiện nhiều mộ táng và hiện vật quý",
+        "description": "Di tích được khai quật quy mô lớn, phát hiện nhiều mộ táng và hiện vật quý"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 2000/QĐ-BVHTT ngày 13/4/2000 của Bộ Văn hóa – Thông tin"
+        "year": "1995–1999",
+        "title": "Các kết quả nghiên cứu làm rõ đời sống cư dân cổ, khẳng định giá trị đặc biệt của văn hóa Cần Giờ",
+        "description": "Các kết quả nghiên cứu làm rõ đời sống cư dân cổ, khẳng định giá trị đặc biệt của văn hóa Cần Giờ"
+      },
+      {
+        "id": 4,
+        "year": "2000",
+        "title": "Giồng Cá Vồ được xếp hạng Di tích khảo cổ cấp quốc gia",
+        "description": "Giồng Cá Vồ được xếp hạng Di tích khảo cổ cấp quốc gia"
       }
     ],
     "gallery": [
@@ -14909,21 +15221,21 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Phú Định, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Thế kỷ XVIII–XIX",
+        "title": "Hoạt động sản xuất gốm phát triển, tạo ra nhiều loại đồ gia dụng và gốm men Đầu những năm 1940 Các lò gốm trong khu vực dần ngừng hoạt động, khép lại một giai đoạn của nghề gốm Sài Gòn xưa",
+        "description": "Hoạt động sản xuất gốm phát triển, tạo ra nhiều loại đồ gia dụng và gốm men Đầu những năm 1940 Các lò gốm trong khu vực dần ngừng hoạt động, khép lại một giai đoạn của nghề gốm Sài Gòn xưa"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Khoảng giữa thế kỷ XVIII: hình thành khu lò gốm Hưng Lợi. Năm 1772: kênh Ruột Ngựa được đào, góp phần kết nối khu vực Lò Gốm với mạng lưới giao thông đường thủy Sài Gòn. Năm 1815: bản đồ của Trần Văn ..."
+        "year": "1997–1998",
+        "title": "Khu vực được khảo sát và khai quật, phát hiện nhiều dấu tích lò nung và sản phẩm gốm cổ",
+        "description": "Khu vực được khảo sát và khai quật, phát hiện nhiều dấu tích lò nung và sản phẩm gốm cổ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 722/QĐ-BVHTT ngày 25/4/1998 của Bộ Văn hóa – Thông tin"
+        "year": "25/04/1998",
+        "title": "Lò gốm cổ Hưng Lợi được xếp hạng Di tích khảo cổ cấp quốc gia",
+        "description": "Lò gốm cổ Hưng Lợi được xếp hạng Di tích khảo cổ cấp quốc gia"
       }
     ],
     "gallery": [
@@ -15558,21 +15870,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Thời kỳ chiến tranh",
+        "title": "Hệ thống thông tin vô tuyến được xây dựng trên Núi Lớn, phục vụ hoạt động thông tin liên lạc",
+        "description": "Hệ thống thông tin vô tuyến được xây dựng trên Núi Lớn, phục vụ hoạt động thông tin liên lạc"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đầu năm 1967: Mỹ tăng cường phương tiện chiến tranh và lắp đặt hai giàn ăng-ten Parabol – Viba trên Núi Lớn. Năm 1968: hệ thống được nâng cấp bằng thiết bị MRC-85, công suất 10 kW. Năm 1970: hệ thống ..."
+        "year": "Trước năm 1975",
+        "title": "Ăngten Parabol và Đài Viba được sử dụng, trở thành công trình thông tin quan trọng tại Vũng Tàu",
+        "description": "Ăngten Parabol và Đài Viba được sử dụng, trở thành công trình thông tin quan trọng tại Vũng Tàu"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 937/QĐ/BT ngày 23/7/1993 của Bộ Văn hóa – Thông tin"
+        "year": "30/04/1975",
+        "title": "Đất nước thống nhất, công trình bước sang giai đoạn sử dụng mới",
+        "description": "Đất nước thống nhất, công trình bước sang giai đoạn sử dụng mới"
+      },
+      {
+        "id": 4,
+        "year": "23/07/1993",
+        "title": "Ăngten Parabol – Đài Viba Núi Lớn được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Ăngten Parabol – Đài Viba Núi Lớn được xếp hạng Di tích lịch sử cấp quốc gia"
+      },
+      {
+        "id": 5,
+        "year": "2021–2025",
+        "title": "Di tích được đưa vào kế hoạch nghiên cứu bảo tồn, tu bổ, nhằm gìn giữ giá trị lịch sử của công trình",
+        "description": "Di tích được đưa vào kế hoạch nghiên cứu bảo tồn, tu bổ, nhằm gìn giữ giá trị lịch sử của công trình"
       }
     ],
     "gallery": [
@@ -16158,21 +16482,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Đường Lê Văn Việt, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Trước 1945",
+        "title": "Công trình được xây dựng làm trạm thông tin, mang tên Nhà Dây Thép",
+        "description": "Công trình được xây dựng làm trạm thông tin, mang tên Nhà Dây Thép"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Cuối năm 1945: quân Pháp tái chiếm và biến Nhà dây thép thành đồn lính, nơi giam giữ người dân và cán bộ cách mạng. 1946–1947: Bót Dây Thép trở thành nơi giam cầm, tra tấn và sát hại nhiều người; lực ..."
+        "year": "03/1945",
+        "title": "Quân Nhật chiếm Nhà Dây Thép, sau cuộc đảo chính Pháp tại Đông Dương Cuối 1945 Quân Pháp chiếm lại và biến nơi đây thành đồn lính, từ đó được gọi là Bót Dây Thép",
+        "description": "Quân Nhật chiếm Nhà Dây Thép, sau cuộc đảo chính Pháp tại Đông Dương Cuối 1945 Quân Pháp chiếm lại và biến nơi đây thành đồn lính, từ đó được gọi là Bót Dây Thép"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 57-VH/QĐ ngày 18/01/1993 của Bộ Văn hóa – Thông tin"
+        "year": "1946–1947",
+        "title": "Nhiều cán bộ, chiến sĩ và người dân bị bắt giam tại đây, Bót Dây Thép trở thành chứng tích của sự đàn áp",
+        "description": "Nhiều cán bộ, chiến sĩ và người dân bị bắt giam tại đây, Bót Dây Thép trở thành chứng tích của sự đàn áp"
+      },
+      {
+        "id": 4,
+        "year": "1993",
+        "title": "Bót Dây Thép được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Bót Dây Thép được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -16779,21 +17109,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 51/10/14 đường Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Sau 07/1954",
+        "title": "Xứ ủy Nam Bộ chọn căn nhà trên đường Cao Thắng, làm cơ sở hoạt động bí mật của Ban Tuyên huấn",
+        "description": "Xứ ủy Nam Bộ chọn căn nhà trên đường Cao Thắng, làm cơ sở hoạt động bí mật của Ban Tuyên huấn"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Sau Hiệp định Genève 1954: căn nhà được Xứ ủy Nam Bộ sử dụng làm cơ sở Ban Tuyên huấn; 1954–1957: thu tin từ Đài Phát thanh Hà Nội, biên tập và in ấn tài liệu phục vụ hoạt động cách mạng; 1957–1961: c..."
+        "year": "1954–1960",
+        "title": "Cơ sở tổ chức thu nhận tin tức từ miền Bắc, biên tập thành tài liệu phục vụ cách mạng",
+        "description": "Cơ sở tổ chức thu nhận tin tức từ miền Bắc, biên tập thành tài liệu phục vụ cách mạng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "1954–1960",
+        "title": "Tài liệu được bí mật in ấn và chuyển đến các cơ sở, truyền đạt chủ trương của Trung ương tại Nam Bộ",
+        "description": "Tài liệu được bí mật in ấn và chuyển đến các cơ sở, truyền đạt chủ trương của Trung ương tại Nam Bộ"
+      },
+      {
+        "id": 4,
+        "year": "Trong kháng chiến chống Mỹ",
+        "title": "Cơ sở tiếp tục phục vụ hoạt động cách mạng, góp phần duy trì mạng lưới tuyên truyền trong nội thành",
+        "description": "Cơ sở tiếp tục phục vụ hoạt động cách mạng, góp phần duy trì mạng lưới tuyên truyền trong nội thành"
+      },
+      {
+        "id": 5,
+        "year": "16/11/1988",
+        "title": "Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -17397,21 +17739,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 287/70 đường Nguyễn Đình Chiểu, phường Bàn Cờ, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1966",
+        "title": "Đồng chí Trần Văn Lai mua căn nhà tại Nguyễn Đình Chiểu, xây dựng cơ sở bí mật cho Biệt động Thành",
+        "description": "Đồng chí Trần Văn Lai mua căn nhà tại Nguyễn Đình Chiểu, xây dựng cơ sở bí mật cho Biệt động Thành"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Giai đoạn 1966–1967\nÔng Trần Văn Lai bắt đầu sử dụng căn nhà tại khu vực đường Phan Đình Phùng, nay là Nguyễn Đình Chiểu, làm cơ sở bí mật.\nCăn hầm được xây dựng để phục vụ việc cất giấu vũ khí và vật..."
+        "year": "1966–1967",
+        "title": "Một hầm bí mật được xây dựng dưới ngôi nhà, cất giấu hơn 2 tấn vũ khí",
+        "description": "Một hầm bí mật được xây dựng dưới ngôi nhà, cất giấu hơn 2 tấn vũ khí"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "31/01/1968",
+        "title": "Đội 5 Biệt động Thành đến nhận vũ khí, chuẩn bị tiến công Dinh Độc Lập",
+        "description": "Đội 5 Biệt động Thành đến nhận vũ khí, chuẩn bị tiến công Dinh Độc Lập"
+      },
+      {
+        "id": 4,
+        "year": "Rạng sáng 31/01/1968",
+        "title": "Các chiến sĩ xuất phát từ cơ sở, tham gia cuộc Tổng tiến công và nổi dậy Tết Mậu Thân",
+        "description": "Các chiến sĩ xuất phát từ cơ sở, tham gia cuộc Tổng tiến công và nổi dậy Tết Mậu Thân"
+      },
+      {
+        "id": 5,
+        "year": "16/11/1988",
+        "title": "Cơ sở được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Cơ sở được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -18063,21 +18417,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 122/351 đường Ngô Gia Tự, phường Vườn Lài, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1951",
+        "title": "Hội Ủng hộ Vệ quốc đoàn xây dựng hầm bí mật đầu tiên, phục vụ hoạt động cách mạng trong nội thành",
+        "description": "Hội Ủng hộ Vệ quốc đoàn xây dựng hầm bí mật đầu tiên, phục vụ hoạt động cách mạng trong nội thành"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn gắn với hoạt động tổ chức in ấn, sao chép và phát hành các tài liệu phục vụ công tác tuyên truyền, cổ động và vận động quần chúng trong thời kỳ kháng chiến. Hoạ..."
+        "year": "02/1952",
+        "title": "Cơ sở tại khu Vườn Lài được lựa chọn, xây dựng hầm bí mật ngay giữa khu dân cư",
+        "description": "Cơ sở tại khu Vườn Lài được lựa chọn, xây dựng hầm bí mật ngay giữa khu dân cư"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "1952–1954",
+        "title": "Hầm được sử dụng làm cơ sở in ấn bí mật, phục vụ tuyên truyền và hoạt động kháng chiến",
+        "description": "Hầm được sử dụng làm cơ sở in ấn bí mật, phục vụ tuyên truyền và hoạt động kháng chiến"
+      },
+      {
+        "id": 4,
+        "year": "1954",
+        "title": "Cơ sở tiếp tục thực hiện nhiệm vụ, gắn với hoạt động của Hội Ủng hộ Vệ quốc đoàn",
+        "description": "Cơ sở tiếp tục thực hiện nhiệm vụ, gắn với hoạt động của Hội Ủng hộ Vệ quốc đoàn"
+      },
+      {
+        "id": 5,
+        "year": "16/11/1988",
+        "title": "Cơ sở in ấn được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Cơ sở in ấn được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -18679,21 +19045,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 05 đường Phan Chu Trinh, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Đầu thế kỷ XX",
+        "title": "Ngôi nhà được xây dựng dưới chân Núi Nhỏ, thuộc sở hữu của ông Pierre Chappus",
+        "description": "Ngôi nhà được xây dựng dưới chân Núi Nhỏ, thuộc sở hữu của ông Pierre Chappus"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Di tích 86 Phan Chu Trinh gắn với các hoạt động cách mạng diễn ra tại khu vực đô thị Vũng Tàu, trong đó ngôi nhà được sử dụng như một cơ sở dân sự có liên quan đến hoạt động cách mạng. Các hoạt động t..."
+        "year": "Trong kháng chiến chống Pháp",
+        "title": "Ngôi nhà được dùng để nuôi giấu cán bộ, hỗ trợ tiền của và lương thực cho Việt Minh",
+        "description": "Ngôi nhà được dùng để nuôi giấu cán bộ, hỗ trợ tiền của và lương thực cho Việt Minh"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao"
+        "year": "1957",
+        "title": "Văn phòng Tỉnh ủy Bà Rịa – Long Khánh đặt tại đây, biến ngôi nhà thành cơ sở hoạt động cách mạng bí mật",
+        "description": "Văn phòng Tỉnh ủy Bà Rịa – Long Khánh đặt tại đây, biến ngôi nhà thành cơ sở hoạt động cách mạng bí mật"
+      },
+      {
+        "id": 4,
+        "year": "1957–1960",
+        "title": "Nhiều cán bộ cách mạng được che chở tại ngôi nhà, góp phần duy trì phong trào cách mạng tại Vũng Tàu",
+        "description": "Nhiều cán bộ cách mạng được che chở tại ngôi nhà, góp phần duy trì phong trào cách mạng tại Vũng Tàu"
+      },
+      {
+        "id": 5,
+        "year": "04/08/1992",
+        "title": "Nhà số 86 Phan Chu Trinh được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Nhà số 86 Phan Chu Trinh được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -19247,21 +19625,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 1 đường Lý Nam Đế, xã Hóc Môn, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "08/02/1885",
+        "title": "Nhân dân Hóc Môn nổi dậy tấn công Dinh Quận, mở đầu truyền thống đấu tranh chống thực dân tại địa phương",
+        "description": "Nhân dân Hóc Môn nổi dậy tấn công Dinh Quận, mở đầu truyền thống đấu tranh chống thực dân tại địa phương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Dinh Quận Hóc Môn gắn với quá trình hoạt động của bộ máy hành chính tại Hóc Môn qua các thời kỳ lịch sử. Công trình là nơi diễn ra các hoạt động quản lý hành chính, giải quyết công việc địa phương và ..."
+        "year": "04/06/1930",
+        "title": "Hàng trăm người dân tập trung trước Dinh Quận, biểu tình chống sưu thuế và đòi quyền lợi cho nông dân",
+        "description": "Hàng trăm người dân tập trung trước Dinh Quận, biểu tình chống sưu thuế và đòi quyền lợi cho nông dân"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 2015-QĐ/BT ngày 16/11/1993 của Bộ trưởng Văn hóa – Thông tin"
+        "year": "22–23/11/1940",
+        "title": "Lực lượng Khởi nghĩa Nam Kỳ tiến công Dinh Quận, ghi dấu tinh thần đấu tranh kiên cường của “18 thôn Vườn Trầu”",
+        "description": "Lực lượng Khởi nghĩa Nam Kỳ tiến công Dinh Quận, ghi dấu tinh thần đấu tranh kiên cường của “18 thôn Vườn Trầu”"
+      },
+      {
+        "id": 4,
+        "year": "16/11/1993",
+        "title": "Dinh Quận Hóc Môn được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Dinh Quận Hóc Môn được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -19885,21 +20269,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Tam Long, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1948",
+        "title": "Nhân dân Long Phước bắt đầu đào hầm bí mật, bảo toàn lực lượng và xây dựng cơ sở kháng chiến",
+        "description": "Nhân dân Long Phước bắt đầu đào hầm bí mật, bảo toàn lực lượng và xây dựng cơ sở kháng chiến"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Địa đạo Long Phước gắn với quá trình nhân dân địa phương xây dựng, mở rộng và sử dụng hệ thống địa đạo trong các thời kỳ kháng chiến. Địa đạo được sử dụng làm nơi trú ẩn, hội họp, bảo vệ cán bộ, cất g..."
+        "year": "1949",
+        "title": "Các cụm địa đạo tại 5 ấp được nối liền, hình thành hệ thống phòng thủ và chiến đấu liên hoàn",
+        "description": "Các cụm địa đạo tại 5 ấp được nối liền, hình thành hệ thống phòng thủ và chiến đấu liên hoàn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 34/VH-QĐ ngày 09/01/1990 của Bộ Văn hóa – Thông tin"
+        "year": "10/1949",
+        "title": "Quân dân Long Phước dựa vào địa đạo chống càn, giữ vững xóm ấp và cơ sở cách mạng",
+        "description": "Quân dân Long Phước dựa vào địa đạo chống càn, giữ vững xóm ấp và cơ sở cách mạng"
+      },
+      {
+        "id": 4,
+        "year": "03–04/1963",
+        "title": "Địa đạo được mở rộng và củng cố mạnh, gắn với 44 ngày đêm chiến đấu chống càn",
+        "description": "Địa đạo được mở rộng và củng cố mạnh, gắn với 44 ngày đêm chiến đấu chống càn"
+      },
+      {
+        "id": 5,
+        "year": "1948–1975",
+        "title": "Địa đạo trở thành căn cứ bám trụ lâu dài, phục vụ kháng chiến trong suốt 27 năm",
+        "description": "Địa đạo trở thành căn cứ bám trụ lâu dài, phục vụ kháng chiến trong suốt 27 năm"
+      },
+      {
+        "id": 6,
+        "year": "1990",
+        "title": "Địa đạo Long Phước được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Địa đạo Long Phước được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -20539,21 +20941,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Xã Ngãi Giao, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "05/06/1969",
+        "title": "Lực lượng cách mạng tiến công khu vực Bình Ba, mở đầu trận chiến ác liệt tại địa phương",
+        "description": "Lực lượng cách mạng tiến công khu vực Bình Ba, mở đầu trận chiến ác liệt tại địa phương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Ngày 06/6/1969: diễn ra trận chiến tại Bình Ba, sự kiện được ghi trực tiếp trong tên của di tích và là mốc lịch sử trung tâm gắn với địa điểm. Trận chiến phản ánh tính chất ác liệt của chiến tranh tro..."
+        "year": "06/06/1969",
+        "title": "Quân đối phương đưa xe tăng và lực lượng đến phản kích, trận chiến Bình Ba diễn ra quyết liệt",
+        "description": "Quân đối phương đưa xe tăng và lực lượng đến phản kích, trận chiến Bình Ba diễn ra quyết liệt"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 4248/QĐ-BVHTTDL ngày 19/12/2023"
+        "year": "27/07/2003",
+        "title": "Khu tưởng niệm được khánh thành, tưởng nhớ các chiến sĩ đã hy sinh",
+        "description": "Khu tưởng niệm được khánh thành, tưởng nhớ các chiến sĩ đã hy sinh"
+      },
+      {
+        "id": 4,
+        "year": "2012",
+        "title": "Địa điểm trận chiến được công nhận Di tích lịch sử cấp tỉnh",
+        "description": "Địa điểm trận chiến được công nhận Di tích lịch sử cấp tỉnh"
+      },
+      {
+        "id": 5,
+        "year": "2023",
+        "title": "Di tích được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Di tích được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -21217,21 +21631,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Cù lao Bà Tàng, phường Bình Đông, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1920",
+        "title": "Công hội bí mật Sài Gòn được hình thành, tạo cơ sở cho phong trào công nhân có tổ chức",
+        "description": "Công hội bí mật Sài Gòn được hình thành, tạo cơ sở cho phong trào công nhân có tổ chức"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đình Bình Đông gắn với các hoạt động tín ngưỡng và sinh hoạt cộng đồng được duy trì qua nhiều thế hệ. Những sự kiện tiêu biểu tại đình bao gồm các kỳ lễ, lễ Kỳ Yên, nghi thức thờ Thành hoàng, tưởng ni..."
+        "year": "1925–1928",
+        "title": "Tôn Đức Thắng nhiều lần đến Đình Bình Đông, tổ chức và chủ trì các cuộc họp quan trọng của Công hội",
+        "description": "Tôn Đức Thắng nhiều lần đến Đình Bình Đông, tổ chức và chủ trì các cuộc họp quan trọng của Công hội"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 2890-VH/QĐ ngày 27/9/1997 của Bộ Văn hóa – Thông tin"
+        "year": "1926–1927",
+        "title": "Đình trở thành nơi cất giấu tài liệu và mật thư cách mạng, góp phần bảo vệ hoạt động của phong trào công nhân",
+        "description": "Đình trở thành nơi cất giấu tài liệu và mật thư cách mạng, góp phần bảo vệ hoạt động của phong trào công nhân"
+      },
+      {
+        "id": 4,
+        "year": "1945–1975",
+        "title": "Đình tiếp tục gắn với hoạt động cách mạng, hỗ trợ lực lượng kháng chiến qua hai thời kỳ",
+        "description": "Đình tiếp tục gắn với hoạt động cách mạng, hỗ trợ lực lượng kháng chiến qua hai thời kỳ"
+      },
+      {
+        "id": 5,
+        "year": "27/09/1997",
+        "title": "Đình Bình Đông được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Đình Bình Đông được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -21850,21 +22276,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Đường Đình Phong Phú, khu phố 3, phường Tăng Nhơn Phú, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Cuối thế kỷ XIX",
+        "title": "Đình Phong Phú được hình thành, trở thành trung tâm tín ngưỡng của cư dân địa phương",
+        "description": "Đình Phong Phú được hình thành, trở thành trung tâm tín ngưỡng của cư dân địa phương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đình Phong Phú gắn với quá trình hình thành và duy trì đời sống tín ngưỡng của cộng đồng cư dân địa phương. Các sự kiện tiêu biểu gồm lễ Kỳ Yên, các nghi thức thờ Thành hoàng, tưởng niệm tiền nhân và ..."
+        "year": "1945–1954",
+        "title": "Đình gắn với hoạt động kháng chiến chống Pháp, che chở và hỗ trợ lực lượng cách mạng",
+        "description": "Đình gắn với hoạt động kháng chiến chống Pháp, che chở và hỗ trợ lực lượng cách mạng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1766/QĐ-UBND ngày 27/4/2009 của Ủy ban nhân dân Thành phố"
+        "year": "1954–1975",
+        "title": "Đình là nơi cán bộ cách mạng dừng chân và hoạt động, cung cấp lương thực, thuốc men và vật dụng cần thiết",
+        "description": "Đình là nơi cán bộ cách mạng dừng chân và hoạt động, cung cấp lương thực, thuốc men và vật dụng cần thiết"
+      },
+      {
+        "id": 4,
+        "year": "Trong kháng chiến chống Mỹ",
+        "title": "Hầm bí mật trong khuôn viên đình được sử dụng, bảo vệ cán bộ trước sự truy lùng của đối phương",
+        "description": "Hầm bí mật trong khuôn viên đình được sử dụng, bảo vệ cán bộ trước sự truy lùng của đối phương"
+      },
+      {
+        "id": 5,
+        "year": "18/01/1993",
+        "title": "Đình Phong Phú được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Đình Phong Phú được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -22495,21 +22933,21 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 14 đường 51, phường Tam Thắng, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1948",
+        "title": "Quân dân Vũng Tàu tổ chức các trận đánh vào đồn, ghi dấu tinh thần chiến đấu kiên cường",
+        "description": "Quân dân Vũng Tàu tổ chức các trận đánh vào đồn, ghi dấu tinh thần chiến đấu kiên cường"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đồn ngã tư Giếng Nước gắn với quá trình xây dựng, sử dụng và hoạt động của một công trình quân sự tại khu vực Vũng Tàu. Do nằm tại khu vực có ý nghĩa về giao thông và kiểm soát địa bàn, công trình từn..."
+        "year": "1954",
+        "title": "Kháng chiến chống Pháp kết thúc, Đồn Nhà máy nước trở thành chứng tích của một thời kỳ đấu tranh",
+        "description": "Kháng chiến chống Pháp kết thúc, Đồn Nhà máy nước trở thành chứng tích của một thời kỳ đấu tranh"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 983VH/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin – Thể thao"
+        "year": "04/08/1992",
+        "title": "Đồn Nhà máy nước được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Đồn Nhà máy nước được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -23073,21 +23511,21 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Tân Thành, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Thời kỳ kháng chiến chống Mỹ",
+        "title": "Địa đạo Hắc Dịch được hình thành và phát triển, trở thành một địa đạo quy mô lớn ở miền Đông Nam Bộ",
+        "description": "Địa đạo Hắc Dịch được hình thành và phát triển, trở thành một địa đạo quy mô lớn ở miền Đông Nam Bộ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Hắc Dịch gắn với quá trình xây dựng, sử dụng và bảo vệ căn cứ, địa đạo và các cơ sở cách mạng trong thời kỳ kháng chiến. Nhân dân địa phương tham gia đào hầm, xây dựng công sự, cung cấp lương thực, vậ..."
+        "year": "Trong kháng chiến chống Mỹ",
+        "title": "Hệ thống được mở rộng đến khoảng 2.500 m, tạo nơi trú ẩn và hoạt động cho lực lượng cách mạng Giai đoạn chiến tranh Địa đạo là nơi tập kết vũ khí, đạn dược và quân nhu, phục vụ các chiến trường miền Đông Nam Bộ Giai đoạn chiến tranh Nguồn hàng từ tuyến vận tải đường biển được đưa về đây, hỗ trợ lực lượng chiến đấu trong khu vực",
+        "description": "Hệ thống được mở rộng đến khoảng 2.500 m, tạo nơi trú ẩn và hoạt động cho lực lượng cách mạng Giai đoạn chiến tranh Địa đạo là nơi tập kết vũ khí, đạn dược và quân nhu, phục vụ các chiến trường miền Đông Nam Bộ Giai đoạn chiến tranh Nguồn hàng từ tuyến vận tải đường biển được đưa về đây, hỗ trợ lực lượng chiến đấu trong khu vực"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin"
+        "year": "Sau 1975",
+        "title": "Nhiều đoạn địa đạo bị đất và cây cối vùi lấp, nhưng vẫn lưu giữ dấu tích lịch sử kháng chiến",
+        "description": "Nhiều đoạn địa đạo bị đất và cây cối vùi lấp, nhưng vẫn lưu giữ dấu tích lịch sử kháng chiến"
       }
     ],
     "gallery": [
@@ -23697,21 +24135,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 341/10 đường Gia Phú, phường Bình Tiên, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1961",
+        "title": "Tổ in bí mật của lực lượng Hoa vận được thành lập, in truyền đơn và tài liệu bằng chữ Hoa",
+        "description": "Tổ in bí mật của lực lượng Hoa vận được thành lập, in truyền đơn và tài liệu bằng chữ Hoa"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước gắn với hoạt động in ấn, sao chép, bảo quản và phát hành tài liệu tuyên truyền. Đây là loại hình hoạt động đòi hỏi mức độ bí mật..."
+        "year": "1962",
+        "title": "Tổ in phát hành Bản tin Giải Phóng, đẩy mạnh công tác tuyên truyền trong đồng bào người Hoa Cuối 1965 Tổ in chuyển về nhà số 341/10 Gia Phú, xây dựng ba hầm bí mật dưới nền nhà",
+        "description": "Tổ in phát hành Bản tin Giải Phóng, đẩy mạnh công tác tuyên truyền trong đồng bào người Hoa Cuối 1965 Tổ in chuyển về nhà số 341/10 Gia Phú, xây dựng ba hầm bí mật dưới nền nhà"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 2009/1998/QĐ-BVHTT ngày 26/9/1998 của Bộ Văn hóa – Thông tin"
+        "year": "1965–1967",
+        "title": "Cơ sở bước vào giai đoạn hoạt động mạnh, in nhiều tài liệu và tờ báo phục vụ cách mạng",
+        "description": "Cơ sở bước vào giai đoạn hoạt động mạnh, in nhiều tài liệu và tờ báo phục vụ cách mạng"
+      },
+      {
+        "id": 4,
+        "year": "1968–1974",
+        "title": "Cơ sở tiếp tục được sử dụng an toàn, duy trì hoạt động tuyên truyền bí mật",
+        "description": "Cơ sở tiếp tục được sử dụng an toàn, duy trì hoạt động tuyên truyền bí mật"
+      },
+      {
+        "id": 5,
+        "year": "26/09/1998",
+        "title": "Hầm bí mật được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Hầm bí mật được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -24339,21 +24789,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 9 đường Phan Thúc Duyện, phường Tân Sơn Nhất, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "24/03/1926",
+        "title": "Nhà yêu nước Phan Châu Trinh qua đời tại Sài Gòn, để lại ảnh hưởng lớn đối với phong trào yêu nước",
+        "description": "Nhà yêu nước Phan Châu Trinh qua đời tại Sài Gòn, để lại ảnh hưởng lớn đối với phong trào yêu nước"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1926: Phan Châu Trinh qua đời, kết thúc cuộc đời hoạt động của một trong những nhà yêu nước và tư tưởng cải cách tiêu biểu đầu thế kỷ XX. Sau khi ông mất, mộ phần trở thành nơi tưởng niệm và được ..."
+        "year": "04/04/1926",
+        "title": "Lễ tang được tổ chức trọng thể với hàng vạn người tham dự, trở thành một sự kiện yêu nước lớn trong cả nước",
+        "description": "Lễ tang được tổ chức trọng thể với hàng vạn người tham dự, trở thành một sự kiện yêu nước lớn trong cả nước"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 3211-QĐ/BT ngày 12/12/1994 của Bộ Văn hóa – Thông tin"
+        "year": "04/04/1926",
+        "title": "Linh cữu được đưa về an táng tại Tân Sơn Nhất, hình thành nơi tưởng niệm nhà chí sĩ yêu nước",
+        "description": "Linh cữu được đưa về an táng tại Tân Sơn Nhất, hình thành nơi tưởng niệm nhà chí sĩ yêu nước"
+      },
+      {
+        "id": 4,
+        "year": "Sau 1926",
+        "title": "Khu mộ trở thành nơi nhân dân đến tưởng niệm, ghi nhớ tư tưởng canh tân và tinh thần yêu nước của ông",
+        "description": "Khu mộ trở thành nơi nhân dân đến tưởng niệm, ghi nhớ tư tưởng canh tân và tinh thần yêu nước của ông"
+      },
+      {
+        "id": 5,
+        "year": "12/12/1994",
+        "title": "Mộ Phan Châu Trinh được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Mộ Phan Châu Trinh được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -24974,21 +25436,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 18 đường Lê Lợi, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Khoảng 1949",
+        "title": "Ngôi nhà được xây dựng làm nơi nghỉ mát, mang kiến trúc đặc biệt với hệ thống cột đá cao",
+        "description": "Ngôi nhà được xây dựng làm nơi nghỉ mát, mang kiến trúc đặc biệt với hệ thống cột đá cao"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Nhà Cao Cẳng gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng trong thời kỳ đấu tranh. Những hoạt động này được tổ chức trong một ngôi nhà dân dụng, giúp tạo vỏ bọc và giảm..."
+        "year": "1952",
+        "title": "Ông Ba Trà được giao trông coi ngôi nhà, từng bước biến nơi đây thành cơ sở cách mạng bí mật",
+        "description": "Ông Ba Trà được giao trông coi ngôi nhà, từng bước biến nơi đây thành cơ sở cách mạng bí mật"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1371/QĐ ngày 03/08/1991 của Bộ Văn hóa – Thông tin"
+        "year": "1956–1959",
+        "title": "Tỉnh ủy Bà Rịa – Long Khánh sử dụng ngôi nhà, làm nơi hội họp và hoạt động của cán bộ lãnh đạo",
+        "description": "Tỉnh ủy Bà Rịa – Long Khánh sử dụng ngôi nhà, làm nơi hội họp và hoạt động của cán bộ lãnh đạo"
+      },
+      {
+        "id": 4,
+        "year": "1956–1957",
+        "title": "Nhiều cuộc họp bí mật được tổ chức tại đây, triển khai chủ trương và phát triển phong trào cách mạng",
+        "description": "Nhiều cuộc họp bí mật được tổ chức tại đây, triển khai chủ trương và phát triển phong trào cách mạng"
+      },
+      {
+        "id": 5,
+        "year": "03–04/1959",
+        "title": "Tỉnh ủy tổ chức các cuộc họp quan trọng, triển khai Nghị quyết 15 và nhiệm vụ đấu tranh mới",
+        "description": "Tỉnh ủy tổ chức các cuộc họp quan trọng, triển khai Nghị quyết 15 và nhiệm vụ đấu tranh mới"
+      },
+      {
+        "id": 6,
+        "year": "03/08/1991",
+        "title": "“Nhà cao cẳng” được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "“Nhà cao cẳng” được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -25576,21 +26056,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 01 đường Trần Xuân Độ, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1941–1942",
+        "title": "Ngôi nhà của gia đình má Tám Nhung được xây dựng, sau trở thành cơ sở cách mạng bí mật",
+        "description": "Ngôi nhà của gia đình má Tám Nhung được xây dựng, sau trở thành cơ sở cách mạng bí mật"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Cách mạng tháng Tám năm 1945: Nhà Má Tám Nhung gắn với hoạt động của Ủy ban Mặt trận Việt Minh và sau đó tiếp tục là cơ sở nuôi giấu cán bộ cách mạng. Trong hai cuộc kháng chiến, ngôi nhà trở thành đị..."
+        "year": "25/08/1945",
+        "title": "Ủy ban Khởi nghĩa Vũng Tàu họp tại đây, chuẩn bị lực lượng giành chính quyền",
+        "description": "Ủy ban Khởi nghĩa Vũng Tàu họp tại đây, chuẩn bị lực lượng giành chính quyền"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1987/VH-QĐ ngày 14/12/1989 của Bộ Văn hóa – Thông tin"
+        "year": "1967",
+        "title": "Một hầm bí mật được xây dưới bể nước, dùng để che giấu và bảo vệ cán bộ cách mạng",
+        "description": "Một hầm bí mật được xây dưới bể nước, dùng để che giấu và bảo vệ cán bộ cách mạng"
+      },
+      {
+        "id": 4,
+        "year": "1967–1975",
+        "title": "Má Tám Nhung nhiều lần nuôi giấu cán bộ, duy trì cơ sở cách mạng ngay trong lòng đối phương",
+        "description": "Má Tám Nhung nhiều lần nuôi giấu cán bộ, duy trì cơ sở cách mạng ngay trong lòng đối phương"
+      },
+      {
+        "id": 5,
+        "year": "1987",
+        "title": "Tượng tưởng niệm má Tám Nhung được dựng tại khuôn viên, ghi nhận những đóng góp của gia đình với cách mạng",
+        "description": "Tượng tưởng niệm má Tám Nhung được dựng tại khuôn viên, ghi nhận những đóng góp của gia đình với cách mạng"
+      },
+      {
+        "id": 6,
+        "year": "14/12/1989",
+        "title": "Ngôi nhà được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Ngôi nhà được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -26183,21 +26681,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 36/29 đường Nguyễn An Ninh, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Thời kỳ kháng chiến chống Mỹ",
+        "title": "Gia đình ông Trương Quang Vinh tham gia hoạt động cách mạng, biến ngôi nhà thành cơ sở bí mật",
+        "description": "Gia đình ông Trương Quang Vinh tham gia hoạt động cách mạng, biến ngôi nhà thành cơ sở bí mật"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Nhà ông Trương Quang Vinh gắn với các hoạt động liên lạc, hội họp, che giấu và hỗ trợ cán bộ cách mạng tại Vũng Tàu. Trong điều kiện hoạt động bí mật, những ngôi nhà của người dân có vai trò quan trọn..."
+        "year": "Những năm 1960",
+        "title": "Ngôi nhà được sử dụng để liên lạc và hội họp, phục vụ cán bộ hoạt động tại Vũng Tàu",
+        "description": "Ngôi nhà được sử dụng để liên lạc và hội họp, phục vụ cán bộ hoạt động tại Vũng Tàu"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 457/QĐ ngày 25/03/1991"
+        "year": "Trong kháng chiến chống Mỹ",
+        "title": "Cơ sở góp phần che giấu cán bộ và tài liệu, duy trì phong trào cách mạng trong nội thành",
+        "description": "Cơ sở góp phần che giấu cán bộ và tài liệu, duy trì phong trào cách mạng trong nội thành"
+      },
+      {
+        "id": 4,
+        "year": "30/04/1975",
+        "title": "Vũng Tàu được giải phóng, ngôi nhà hoàn thành vai trò của một cơ sở cách mạng",
+        "description": "Vũng Tàu được giải phóng, ngôi nhà hoàn thành vai trò của một cơ sở cách mạng"
+      },
+      {
+        "id": 5,
+        "year": "1991",
+        "title": "Nhà ông Trương Quang Vinh được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Nhà ông Trương Quang Vinh được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -26727,21 +27237,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Bà Rịa, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Đầu thế kỷ XX",
+        "title": "Nhà Tròn được xây dựng làm tháp chứa nước, trở thành công trình nổi bật tại trung tâm Bà Rịa",
+        "description": "Nhà Tròn được xây dựng làm tháp chứa nước, trở thành công trình nổi bật tại trung tâm Bà Rịa"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Nhà Tròn gắn với quá trình hình thành, phát triển và biến đổi của không gian đô thị Bà Rịa. Công trình đã chứng kiến nhiều giai đoạn lịch sử, những thay đổi về hành chính, xã hội và đời sống đô thị. T..."
+        "year": "25/08/1945",
+        "title": "Hơn một vạn người tập trung tại Nhà Tròn, tham gia giành chính quyền trong Cách mạng Tháng Tám",
+        "description": "Hơn một vạn người tập trung tại Nhà Tròn, tham gia giành chính quyền trong Cách mạng Tháng Tám"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 112VH/QĐ ngày 05/06/1987 của Bộ Văn hóa – Thông tin"
+        "year": "25/08/1945",
+        "title": "Chính quyền cách mạng lâm thời ra mắt nhân dân, đánh dấu thắng lợi của cách mạng tại Bà Rịa",
+        "description": "Chính quyền cách mạng lâm thời ra mắt nhân dân, đánh dấu thắng lợi của cách mạng tại Bà Rịa"
+      },
+      {
+        "id": 4,
+        "year": "01/05/1975",
+        "title": "Nhân dân tập trung tại Nhà Tròn mừng ngày giải phóng, đón chào đất nước thống nhất",
+        "description": "Nhân dân tập trung tại Nhà Tròn mừng ngày giải phóng, đón chào đất nước thống nhất"
+      },
+      {
+        "id": 5,
+        "year": "05/06/1987",
+        "title": "Nhà Tròn Bà Rịa được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Nhà Tròn Bà Rịa được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -27347,21 +27869,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phòng 5, số 88 đường Lê Lợi, phường Bến Thành, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1925",
+        "title": "Hội Việt Nam Cách mạng Thanh niên được thành lập, truyền bá tư tưởng cách mạng vào Việt Nam",
+        "description": "Hội Việt Nam Cách mạng Thanh niên được thành lập, truyền bá tư tưởng cách mạng vào Việt Nam"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Cuối năm 1926: tổ chức Việt Nam Thanh niên Cách mạng Đồng chí Hội ở Nam Kỳ được hình thành; tiếp đó tổ chức phát triển cơ sở, đào tạo cán bộ và truyền bá tư tưởng cách mạng. Năm 1928, tổ chức tiến hàn..."
+        "year": "1926–1927",
+        "title": "Các tổ chức Thanh niên phát triển tại Nam Kỳ, tạo cơ sở hình thành tổ chức lãnh đạo cấp kỳ",
+        "description": "Các tổ chức Thanh niên phát triển tại Nam Kỳ, tạo cơ sở hình thành tổ chức lãnh đạo cấp kỳ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "1927",
+        "title": "Kỳ bộ Nam Kỳ được thành lập tại Sài Gòn, đẩy mạnh phong trào cách mạng ở Nam Bộ",
+        "description": "Kỳ bộ Nam Kỳ được thành lập tại Sài Gòn, đẩy mạnh phong trào cách mạng ở Nam Bộ"
+      },
+      {
+        "id": 4,
+        "year": "1927–1929",
+        "title": "Kỳ bộ xây dựng nhiều cơ sở và tổ chức quần chúng, góp phần truyền bá chủ nghĩa Mác – Lênin",
+        "description": "Kỳ bộ xây dựng nhiều cơ sở và tổ chức quần chúng, góp phần truyền bá chủ nghĩa Mác – Lênin"
+      },
+      {
+        "id": 5,
+        "year": "1929–1930",
+        "title": "Các hội viên tiên tiến chuyển sang hoạt động cộng sản, góp phần chuẩn bị cho sự ra đời của Đảng Cộng sản Việt Nam",
+        "description": "Các hội viên tiên tiến chuyển sang hoạt động cộng sản, góp phần chuẩn bị cho sự ra đời của Đảng Cộng sản Việt Nam"
       }
     ],
     "gallery": [
@@ -27937,21 +28471,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Tân Hải, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1960–1969",
+        "title": "Căn cứ là nơi hoạt động của nhiều cơ quan cách mạng, trong đó có Thị ủy Bà Rịa và Huyện ủy Châu Đức",
+        "description": "Căn cứ là nơi hoạt động của nhiều cơ quan cách mạng, trong đó có Thị ủy Bà Rịa và Huyện ủy Châu Đức"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Núi Dinh gắn với quá trình xây dựng và sử dụng căn cứ cách mạng trong các thời kỳ kháng chiến. Địa hình núi rừng được tận dụng để xây dựng nơi trú quân, hội họp, huấn luyện, cất giấu tài liệu và tổ ch..."
+        "year": "Những năm 1960",
+        "title": "Tỉnh ủy, Tỉnh đội và nhiều đơn vị từng hoạt động tại đây, biến Núi Dinh thành căn cứ quan trọng của khu vực",
+        "description": "Tỉnh ủy, Tỉnh đội và nhiều đơn vị từng hoạt động tại đây, biến Núi Dinh thành căn cứ quan trọng của khu vực"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 2015VH/QĐ ngày 16/12/1993 của Bộ Văn hóa – Thông tin"
+        "year": "1960–1975",
+        "title": "Quân và dân kiên trì bám trụ, chống nhiều cuộc càn quét và bảo vệ căn cứ",
+        "description": "Quân và dân kiên trì bám trụ, chống nhiều cuộc càn quét và bảo vệ căn cứ"
+      },
+      {
+        "id": 4,
+        "year": "16/12/1993",
+        "title": "Khu căn cứ Núi Dinh được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Khu căn cứ Núi Dinh được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -28546,21 +29086,21 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 7 đường Lý Chính Thắng, phường Xuân Hòa, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1967",
+        "title": "Tiệm Phở Bình trở thành nơi liên lạc và hội họp, chuẩn bị cho cuộc Tổng tiến công Mậu Thân",
+        "description": "Tiệm Phở Bình trở thành nơi liên lạc và hội họp, chuẩn bị cho cuộc Tổng tiến công Mậu Thân"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1968 – Chiến dịch Mậu Thân: Sở Chỉ huy tiền phương Phân khu 6 gắn với hoạt động tổ chức, chỉ huy và điều hành lực lượng trong chiến dịch. Tại cơ quan chỉ huy tiền phương, các hoạt động quan trọng ..."
+        "year": "30/01/1968",
+        "title": "Cán bộ, chiến sĩ tập trung tại Sở Chỉ huy, hoàn tất công tác chuẩn bị cho giờ tiến công Đêm 30/01/1968 Mệnh lệnh chiến đấu được truyền đạt tại đây, các đơn vị Biệt động Thành xuất phát tiến công Đầu 02/1968 Cơ sở bị phát hiện và bao vây, nhiều cán bộ, chiến sĩ và thành viên gia đình bị bắt",
+        "description": "Cán bộ, chiến sĩ tập trung tại Sở Chỉ huy, hoàn tất công tác chuẩn bị cho giờ tiến công Đêm 30/01/1968 Mệnh lệnh chiến đấu được truyền đạt tại đây, các đơn vị Biệt động Thành xuất phát tiến công Đầu 02/1968 Cơ sở bị phát hiện và bao vây, nhiều cán bộ, chiến sĩ và thành viên gia đình bị bắt"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "Sau 1975",
+        "title": "Tiệm Phở Bình được bảo tồn, trở thành Di tích lịch sử cấp quốc gia",
+        "description": "Tiệm Phở Bình được bảo tồn, trở thành Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -29161,21 +29701,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 498/1 đường Lê Quang Định, phường Hạnh Thông, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1957",
+        "title": "Tịnh xá Ngọc Phương được hình thành, trở thành trung tâm sinh hoạt của Ni giới Khất sĩ",
+        "description": "Tịnh xá Ngọc Phương được hình thành, trở thành trung tâm sinh hoạt của Ni giới Khất sĩ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Tịnh xá Ngọc Phương gắn với quá trình tu học, hoằng pháp và phát triển Ni giới Khất sĩ. Các sự kiện tiêu biểu bao gồm những hoạt động truyền bá giáo lý, đào tạo người tu hành, tổ chức sinh hoạt tôn gi..."
+        "year": "1963",
+        "title": "Ni giới tại Tịnh xá tham gia các phong trào đấu tranh, đòi tự do tín ngưỡng và phản đối đàn áp Phật giáo",
+        "description": "Ni giới tại Tịnh xá tham gia các phong trào đấu tranh, đòi tự do tín ngưỡng và phản đối đàn áp Phật giáo"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 2754/QĐ-BT ngày 15/10/1994 của Bộ Văn hóa – Thông tin"
+        "year": "1963–1974",
+        "title": "Tịnh xá tiếp tục gắn với nhiều hoạt động xã hội, thể hiện tinh thần yêu nước và đấu tranh vì hòa bình",
+        "description": "Tịnh xá tiếp tục gắn với nhiều hoạt động xã hội, thể hiện tinh thần yêu nước và đấu tranh vì hòa bình"
+      },
+      {
+        "id": 4,
+        "year": "27/10/1974",
+        "title": "Tịnh xá bị bao vây và phong tỏa, nhưng các hoạt động đấu tranh vẫn tiếp diễn",
+        "description": "Tịnh xá bị bao vây và phong tỏa, nhưng các hoạt động đấu tranh vẫn tiếp diễn"
+      },
+      {
+        "id": 5,
+        "year": "30/04/1975",
+        "title": "Tịnh xá được giải tỏa, chấm dứt thời gian bị phong tỏa",
+        "description": "Tịnh xá được giải tỏa, chấm dứt thời gian bị phong tỏa"
+      },
+      {
+        "id": 6,
+        "year": "15/10/1994",
+        "title": "Tịnh xá Ngọc Phương được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Tịnh xá Ngọc Phương được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -29810,21 +30368,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 04 đường Lê Duẩn, phường Sài Gòn, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1965–1967",
+        "title": "Tòa Đại sứ quán Mỹ mới được xây dựng tại Sài Gòn, trở thành một mục tiêu quan trọng trong chiến tranh Đêm 30–31/01/1968 Đội biệt động nhận nhiệm vụ tiến công Tòa Đại sứ, mở đầu một trong những trận đánh nổi bật của Mậu Thân",
+        "description": "Tòa Đại sứ quán Mỹ mới được xây dựng tại Sài Gòn, trở thành một mục tiêu quan trọng trong chiến tranh Đêm 30–31/01/1968 Đội biệt động nhận nhiệm vụ tiến công Tòa Đại sứ, mở đầu một trong những trận đánh nổi bật của Mậu Thân"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Tòa Đại sứ quán Mỹ gắn với các hoạt động ngoại giao, chính trị và quân sự của Hoa Kỳ tại Sài Gòn trong thời kỳ Chiến tranh Việt Nam. Đặc biệt trong giai đoạn cuối chiến tranh, tình hình tại Sài Gòn bi..."
+        "year": "31/01/1968",
+        "title": "Trận đánh diễn ra trong khuôn viên Đại sứ quán, tạo tiếng vang lớn về chính trị và truyền thông",
+        "description": "Trận đánh diễn ra trong khuôn viên Đại sứ quán, tạo tiếng vang lớn về chính trị và truyền thông"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 77A/VHQĐ ngày 25/6/1976"
+        "year": "1968",
+        "title": "Sự kiện gây tác động mạnh đến dư luận Hoa Kỳ, trở thành biểu tượng nổi bật của Tổng tiến công Mậu Thân",
+        "description": "Sự kiện gây tác động mạnh đến dư luận Hoa Kỳ, trở thành biểu tượng nổi bật của Tổng tiến công Mậu Thân"
+      },
+      {
+        "id": 4,
+        "year": "30/04/1975",
+        "title": "Hoạt động của Đại sứ quán Hoa Kỳ tại Sài Gòn chấm dứt, gắn với thời điểm chiến tranh Việt Nam kết thúc",
+        "description": "Hoạt động của Đại sứ quán Hoa Kỳ tại Sài Gòn chấm dứt, gắn với thời điểm chiến tranh Việt Nam kết thúc"
       }
     ],
     "gallery": [
@@ -30488,21 +31052,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Bảy Hiền, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Trước 1973",
+        "title": "Trại là một cơ sở quân sự trong sân bay Tân Sơn Nhất, sau được chọn làm nơi làm việc của các phái đoàn quân sự",
+        "description": "Trại là một cơ sở quân sự trong sân bay Tân Sơn Nhất, sau được chọn làm nơi làm việc của các phái đoàn quân sự"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Sau Hiệp định Paris năm 1973: Trại Đa-vít trở thành địa điểm hoạt động của phái đoàn quân sự Việt Nam trong giai đoạn cuối chiến tranh. Tại đây diễn ra các hoạt động liên lạc, trao đổi, tiếp xúc và xử..."
+        "year": "27/01/1973",
+        "title": "Hiệp định Paris được ký kết, quy định việc thành lập Ban Liên hợp quân sự",
+        "description": "Hiệp định Paris được ký kết, quy định việc thành lập Ban Liên hợp quân sự"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 827/QĐ-BVHTTDL ngày 15/3/2017 của Bộ Văn hóa, Thể thao và Du lịch"
+        "year": "28–29/01/1973",
+        "title": "Các phái đoàn Việt Nam Dân chủ Cộng hòa và Chính phủ Cách mạng lâm thời đến Trại Đa-vít, bắt đầu nhiệm vụ giám sát thi hành Hiệp định",
+        "description": "Các phái đoàn Việt Nam Dân chủ Cộng hòa và Chính phủ Cách mạng lâm thời đến Trại Đa-vít, bắt đầu nhiệm vụ giám sát thi hành Hiệp định"
+      },
+      {
+        "id": 4,
+        "year": "1973–1975",
+        "title": "Các phái đoàn làm việc liên tục tại đây, đấu tranh thực hiện các điều khoản của Hiệp định Paris",
+        "description": "Các phái đoàn làm việc liên tục tại đây, đấu tranh thực hiện các điều khoản của Hiệp định Paris"
+      },
+      {
+        "id": 5,
+        "year": "28/04/1975",
+        "title": "Khu vực Trại Đa-vít chịu ảnh hưởng trực tiếp của chiến sự, nhưng các đoàn công tác vẫn duy trì hoạt động",
+        "description": "Khu vực Trại Đa-vít chịu ảnh hưởng trực tiếp của chiến sự, nhưng các đoàn công tác vẫn duy trì hoạt động"
+      },
+      {
+        "id": 6,
+        "year": "30/04/1975",
+        "title": "Các thành viên tại Trại Đa-vít đón ngày giải phóng, kết thúc hơn hai năm thực hiện nhiệm vụ tại Tân Sơn Nhất",
+        "description": "Các thành viên tại Trại Đa-vít đón ngày giải phóng, kết thúc hơn hai năm thực hiện nhiệm vụ tại Tân Sơn Nhất"
       }
     ],
     "gallery": [
@@ -31107,21 +31689,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Khu vực Cầu Đá – Hạ Long, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Cuối thế kỷ XIX",
+        "title": "Thực dân Pháp xây dựng trận địa pháo Cầu Đá, thuộc hệ thống phòng thủ ven biển Vũng Tàu",
+        "description": "Thực dân Pháp xây dựng trận địa pháo Cầu Đá, thuộc hệ thống phòng thủ ven biển Vũng Tàu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Trận địa pháo Cầu Đá gắn với quá trình xây dựng, bố trí và vận hành hệ thống phòng thủ ven biển tại Vũng Tàu. Việc lựa chọn vị trí Cầu Đá có liên quan đến yêu cầu quan sát và kiểm soát khu vực biển, đ..."
+        "year": "Cuối thế kỷ XIX – đầu thế kỷ XX",
+        "title": "Bốn khẩu pháo lớn được bố trí hướng ra biển, bảo vệ cửa ngõ đường biển vào khu vực Đông Nam Bộ",
+        "description": "Bốn khẩu pháo lớn được bố trí hướng ra biển, bảo vệ cửa ngõ đường biển vào khu vực Đông Nam Bộ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 921QĐ/BT ngày 20/07/1994 của Bộ Văn hóa – Thông tin"
+        "year": "1944",
+        "title": "Quân Nhật sử dụng khu vực phòng thủ ven biển, tăng cường kiểm soát cửa biển Vũng Tàu",
+        "description": "Quân Nhật sử dụng khu vực phòng thủ ven biển, tăng cường kiểm soát cửa biển Vũng Tàu"
+      },
+      {
+        "id": 4,
+        "year": "1945–1954",
+        "title": "Lực lượng kháng chiến khai thác vật liệu quân sự còn lại, phục vụ cuộc đấu tranh chống thực dân Pháp",
+        "description": "Lực lượng kháng chiến khai thác vật liệu quân sự còn lại, phục vụ cuộc đấu tranh chống thực dân Pháp"
+      },
+      {
+        "id": 5,
+        "year": "20/07/1994",
+        "title": "Trận địa pháo cổ Cầu Đá được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Trận địa pháo cổ Cầu Đá được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -31654,21 +32248,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Núi Nhỏ, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1895",
+        "title": "Thực dân Pháp bắt đầu xây dựng hệ thống phòng thủ ven biển, trong đó có trận địa pháo trên Núi Nhỏ",
+        "description": "Thực dân Pháp bắt đầu xây dựng hệ thống phòng thủ ven biển, trong đó có trận địa pháo trên Núi Nhỏ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Trận địa pháo Núi Nhỏ gắn với quá trình xây dựng và sử dụng một công trình quân sự trên địa hình cao của Vũng Tàu. Vị trí cao giúp tăng khả năng quan sát và kiểm soát khu vực biển, đồng thời tạo điều ..."
+        "year": "1895–1905",
+        "title": "Trận địa được xây dựng và hoàn thiện, trở thành một bộ phận của tuyến phòng thủ Vũng Tàu",
+        "description": "Trận địa được xây dựng và hoàn thiện, trở thành một bộ phận của tuyến phòng thủ Vũng Tàu"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 57VH/QĐ ngày 18/01/1993 của Bộ Văn hóa – Thông tin"
+        "year": "1905",
+        "title": "Hệ thống trận địa pháo tại Vũng Tàu cơ bản hoàn thành, bảo vệ cửa ngõ đường biển vào Sài Gòn",
+        "description": "Hệ thống trận địa pháo tại Vũng Tàu cơ bản hoàn thành, bảo vệ cửa ngõ đường biển vào Sài Gòn"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Công trình tiếp tục được sử dụng qua nhiều giai đoạn lịch sử, để lại dấu tích kiến trúc quân sự ven biển",
+        "description": "Công trình tiếp tục được sử dụng qua nhiều giai đoạn lịch sử, để lại dấu tích kiến trúc quân sự ven biển"
+      },
+      {
+        "id": 5,
+        "year": "18/01/1993",
+        "title": "Trận địa pháo cổ Núi Tao Phùng được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Trận địa pháo cổ Núi Tao Phùng được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -32225,21 +32831,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Núi Lớn, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1895",
+        "title": "Thực dân Pháp bắt đầu xây dựng trận địa trên Núi Lớn, thuộc hệ thống phòng thủ ven biển Vũng Tàu",
+        "description": "Thực dân Pháp bắt đầu xây dựng trận địa trên Núi Lớn, thuộc hệ thống phòng thủ ven biển Vũng Tàu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Trận địa pháo Sao Mai (Núi Lớn) gắn với quá trình xây dựng và vận hành hệ thống công trình phòng thủ trên Núi Lớn. Trận địa pháo được bố trí tại vị trí có lợi thế về độ cao và tầm quan sát, kết hợp vớ..."
+        "year": "1895–1905",
+        "title": "Công trình được xây dựng và hoàn thiện, kết hợp trận địa pháo với hệ thống công sự quân sự",
+        "description": "Công trình được xây dựng và hoàn thiện, kết hợp trận địa pháo với hệ thống công sự quân sự"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 983/QĐ ngày 04/08/1992 của Bộ Văn hóa – Thông tin"
+        "year": "1905",
+        "title": "Trận địa chính thức trở thành một phần của phòng tuyến Vũng Tàu, kiểm soát tuyến đường biển hướng vào Sài Gòn",
+        "description": "Trận địa chính thức trở thành một phần của phòng tuyến Vũng Tàu, kiểm soát tuyến đường biển hướng vào Sài Gòn"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Công trình trải qua nhiều biến động lịch sử, vẫn lưu giữ nhiều dấu tích quân sự đặc biệt",
+        "description": "Công trình trải qua nhiều biến động lịch sử, vẫn lưu giữ nhiều dấu tích quân sự đặc biệt"
+      },
+      {
+        "id": 5,
+        "year": "04/08/1992",
+        "title": "Trận địa Pháo cổ và Hầm thủy lôi Núi Lớn được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Trận địa Pháo cổ và Hầm thủy lôi Núi Lớn được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -32844,21 +33462,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 43 đường Lê Thị Hồng Gấm, phường Bến Thành, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "22/07/1938",
+        "title": "Báo Dân Chúng ra số đầu tiên tại Sài Gòn, trở thành diễn đàn đấu tranh công khai của Đảng",
+        "description": "Báo Dân Chúng ra số đầu tiên tại Sài Gòn, trở thành diễn đàn đấu tranh công khai của Đảng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Trụ sở Báo Dân Chúng gắn với hoạt động xuất bản, biên tập và phát hành báo chí. Các sự kiện tại đây bao gồm quá trình tổ chức tòa soạn, biên tập nội dung, chuẩn bị ấn phẩm, in ấn và đưa báo đến công c..."
+        "year": "1938–1939",
+        "title": "Báo tuyên truyền chủ trương cách mạng và quyền dân chủ, tạo ảnh hưởng rộng lớn trong quần chúng",
+        "description": "Báo tuyên truyền chủ trương cách mạng và quyền dân chủ, tạo ảnh hưởng rộng lớn trong quần chúng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288-VHQĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "1939",
+        "title": "Số lượng phát hành của báo tăng mạnh, khẳng định vai trò của báo chí cách mạng công khai",
+        "description": "Số lượng phát hành của báo tăng mạnh, khẳng định vai trò của báo chí cách mạng công khai"
+      },
+      {
+        "id": 4,
+        "year": "30/08/1939",
+        "title": "Báo Dân Chúng ngừng hoạt động công khai, trước sự đàn áp ngày càng gay gắt của chính quyền thuộc địa",
+        "description": "Báo Dân Chúng ngừng hoạt động công khai, trước sự đàn áp ngày càng gay gắt của chính quyền thuộc địa"
+      },
+      {
+        "id": 5,
+        "year": "16/11/1988",
+        "title": "Trụ sở Báo Dân Chúng được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Trụ sở Báo Dân Chúng được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -33463,21 +34093,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 87A đường Trần Kế Xương, phường Cầu Kiệu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "07/1954",
+        "title": "Hiệp định Genève về Đông Dương được ký kết, đặt ra nhiệm vụ giám sát việc thi hành đình chiến",
+        "description": "Hiệp định Genève về Đông Dương được ký kết, đặt ra nhiệm vụ giám sát việc thi hành đình chiến"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Giai đoạn 1955–1958: Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội nhân dân Việt Nam cạnh Phân ban Quốc tế gắn với hoạt động liên lạc, trao đổi và thực hiện nhiệm vụ trong bối cảnh sau Hiệp đ..."
+        "year": "17/05/1955",
+        "title": "Phái đoàn bắt đầu hoạt động công khai tại Sài Gòn, thực hiện nhiệm vụ liên lạc và đấu tranh thi hành Hiệp định",
+        "description": "Phái đoàn bắt đầu hoạt động công khai tại Sài Gòn, thực hiện nhiệm vụ liên lạc và đấu tranh thi hành Hiệp định"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "1955–1958",
+        "title": "Trụ sở trở thành một địa điểm hoạt động cách mạng công khai, hỗ trợ phong trào đấu tranh chính trị của nhân dân miền Nam",
+        "description": "Trụ sở trở thành một địa điểm hoạt động cách mạng công khai, hỗ trợ phong trào đấu tranh chính trị của nhân dân miền Nam"
+      },
+      {
+        "id": 4,
+        "year": "17/05/1958",
+        "title": "Phái đoàn kết thúc thời gian hoạt động tại Sài Gòn, khép lại ba năm thực hiện nhiệm vụ đặc biệt",
+        "description": "Phái đoàn kết thúc thời gian hoạt động tại Sài Gòn, khép lại ba năm thực hiện nhiệm vụ đặc biệt"
+      },
+      {
+        "id": 5,
+        "year": "16/11/1988",
+        "title": "Trụ sở Phái đoàn được xếp hạng Di tích lịch sử cấp quốc gia",
+        "description": "Trụ sở Phái đoàn được xếp hạng Di tích lịch sử cấp quốc gia"
       }
     ],
     "gallery": [
@@ -34054,21 +34696,21 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 01 đường Ba Cu, phường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "08/1945",
+        "title": "Phong trào cách mạng tại Vũng Tàu phát triển mạnh, chuẩn bị giành chính quyền trong Cách mạng Tháng Tám Tháng 8/1945 Các cuộc họp quan trọng được tổ chức tại đây, thống nhất chủ trương và kế hoạch khởi nghĩa",
+        "description": "Phong trào cách mạng tại Vũng Tàu phát triển mạnh, chuẩn bị giành chính quyền trong Cách mạng Tháng Tám Tháng 8/1945 Các cuộc họp quan trọng được tổ chức tại đây, thống nhất chủ trương và kế hoạch khởi nghĩa"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Cách mạng tháng Tám năm 1945: Trụ sở Ủy ban Việt Minh tại Vũng Tàu gắn với quá trình tổ chức lực lượng, tuyên truyền, vận động quần chúng và chuẩn bị giành chính quyền tại địa phương. Trong thời điểm ..."
+        "year": "28/08/1945",
+        "title": "Chính quyền cách mạng tại Vũng Tàu được củng cố, Ủy ban Việt Minh trở thành lực lượng lãnh đạo địa phương",
+        "description": "Chính quyền cách mạng tại Vũng Tàu được củng cố, Ủy ban Việt Minh trở thành lực lượng lãnh đạo địa phương"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 457/QĐ ngày 25/03/1991"
+        "year": "1945–1946",
+        "title": "Trụ sở tiếp tục phục vụ hoạt động cách mạng, góp phần bảo vệ chính quyền mới thành lập Sau này Công trình được bảo tồn như một chứng tích, ghi dấu thắng lợi Cách mạng Tháng Tám tại Vũng Tàu",
+        "description": "Trụ sở tiếp tục phục vụ hoạt động cách mạng, góp phần bảo vệ chính quyền mới thành lập Sau này Công trình được bảo tồn như một chứng tích, ghi dấu thắng lợi Cách mạng Tháng Tám tại Vũng Tàu"
       }
     ],
     "gallery": [
@@ -34629,21 +35271,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 06 đường Trần Phú, phường Vũng Tàu, Thành phố Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1898",
+        "title": "Bạch Dinh bắt đầu được xây dựng trên sườn Núi Lớn, theo phong cách kiến trúc châu Âu",
+        "description": "Bạch Dinh bắt đầu được xây dựng trên sườn Núi Lớn, theo phong cách kiến trúc châu Âu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1898–1902: xây dựng Bạch Dinh; tháng 9/1907–1916: vua Thành Thái bị quản thúc tại đây; năm 1916: vua Thành Thái và vua Duy Tân bị đưa đi đày ở đảo Réunion; năm 1934: Bạch Dinh được sử dụng làm nơi ngh..."
+        "year": "1902",
+        "title": "Công trình hoàn thành, trở thành dinh thự nghỉ dưỡng tại Vũng Tàu",
+        "description": "Công trình hoàn thành, trở thành dinh thự nghỉ dưỡng tại Vũng Tàu"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 983-VH/QĐ ngày 04/8/1992 của Bộ Văn hóa – Thông tin."
+        "year": "1907–1916",
+        "title": "Vua Thành Thái bị chính quyền thực dân giam lỏng tại đây, gắn Bạch Dinh với một giai đoạn đặc biệt của lịch sử",
+        "description": "Vua Thành Thái bị chính quyền thực dân giam lỏng tại đây, gắn Bạch Dinh với một giai đoạn đặc biệt của lịch sử"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Bạch Dinh được sử dụng làm nơi nghỉ và tiếp khách, gắn với nhiều nhân vật và sự kiện lịch sử",
+        "description": "Bạch Dinh được sử dụng làm nơi nghỉ và tiếp khách, gắn với nhiều nhân vật và sự kiện lịch sử"
+      },
+      {
+        "id": 5,
+        "year": "04/08/1992",
+        "title": "Bạch Dinh được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia Hiện nay Bạch Dinh trở thành điểm tham quan và trưng bày, lưu giữ nhiều hiện vật có giá trị lịch sử",
+        "description": "Bạch Dinh được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia Hiện nay Bạch Dinh trở thành điểm tham quan và trưng bày, lưu giữ nhiều hiện vật có giá trị lịch sử"
       }
     ],
     "gallery": [
@@ -35229,21 +35883,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1927",
+        "title": "Tòa nhà bảo tàng được khởi công xây dựng, mang phong cách kiến trúc Đông Dương",
+        "description": "Tòa nhà bảo tàng được khởi công xây dựng, mang phong cách kiến trúc Đông Dương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "24/11/1927: thành lập Bảo tàng Nam Kỳ; đầu năm 1929: khánh thành tòa nhà bảo tàng; 04/2/1929: mở cửa phục vụ công chúng; năm 1956: đổi thành Viện Bảo tàng Quốc gia Việt Nam tại Sài Gòn; 23/8/1979: chí..."
+        "year": "1929",
+        "title": "Bảo tàng Blanchard de la Brosse chính thức hoạt động, trở thành bảo tàng đầu tiên ở Nam Bộ",
+        "description": "Bảo tàng Blanchard de la Brosse chính thức hoạt động, trở thành bảo tàng đầu tiên ở Nam Bộ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1207/QĐ-BVHTTDL ngày 29/3/2012 của Bộ Văn hóa, Thể thao và Du lịch."
+        "year": "1956",
+        "title": "Bảo tàng đổi tên thành Viện Bảo tàng Quốc gia Việt Nam, trưng bày nhiều hiện vật lịch sử và mỹ thuật cổ",
+        "description": "Bảo tàng đổi tên thành Viện Bảo tàng Quốc gia Việt Nam, trưng bày nhiều hiện vật lịch sử và mỹ thuật cổ"
+      },
+      {
+        "id": 4,
+        "year": "23/08/1979",
+        "title": "Bảo tàng chính thức mang tên Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+        "description": "Bảo tàng chính thức mang tên Bảo tàng Lịch sử Thành phố Hồ Chí Minh"
+      },
+      {
+        "id": 5,
+        "year": "2012",
+        "title": "Tòa nhà Bảo tàng được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Tòa nhà Bảo tàng được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -35874,21 +36540,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 65 Lý Tự Trọng, phường Sài Gòn, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1885",
+        "title": "Công trình được khởi công xây dựng, theo thiết kế của kiến trúc sư Alfred Foulhoux",
+        "description": "Công trình được khởi công xây dựng, theo thiết kế của kiến trúc sư Alfred Foulhoux"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1885–1890: xây dựng tòa nhà; sau Cách mạng tháng Tám năm 1945: được sử dụng làm trụ sở Ủy ban Hành chính lâm thời Nam Bộ; 9/1/1950: cuộc biểu tình của học sinh, sinh viên diễn ra trước dinh và Trần Vă..."
+        "year": "1890",
+        "title": "Tòa nhà hoàn thành, sau đó trở thành Dinh Thống đốc Nam Kỳ",
+        "description": "Tòa nhà hoàn thành, sau đó trở thành Dinh Thống đốc Nam Kỳ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1206/QĐ-BVHTTDL ngày 29/3/2012 của Bộ Văn hóa, Thể thao và Du lịch."
+        "year": "1945–1975",
+        "title": "Công trình trải qua nhiều lần thay đổi công năng, gắn với nhiều biến động chính trị của Sài Gòn",
+        "description": "Công trình trải qua nhiều lần thay đổi công năng, gắn với nhiều biến động chính trị của Sài Gòn"
+      },
+      {
+        "id": 4,
+        "year": "1962",
+        "title": "Một hệ thống hầm được xây dựng dưới dinh, phục vụ hoạt động của chính quyền đương thời",
+        "description": "Một hệ thống hầm được xây dựng dưới dinh, phục vụ hoạt động của chính quyền đương thời"
+      },
+      {
+        "id": 5,
+        "year": "1978",
+        "title": "Tòa nhà được sử dụng làm Bảo tàng Cách mạng Thành phố, bắt đầu chức năng bảo tồn và trưng bày lịch sử",
+        "description": "Tòa nhà được sử dụng làm Bảo tàng Cách mạng Thành phố, bắt đầu chức năng bảo tồn và trưng bày lịch sử"
+      },
+      {
+        "id": 6,
+        "year": "1999",
+        "title": "Bảo tàng mang tên Bảo tàng Thành phố Hồ Chí Minh, giới thiệu lịch sử và văn hóa của Thành phố",
+        "description": "Bảo tàng mang tên Bảo tàng Thành phố Hồ Chí Minh, giới thiệu lịch sử và văn hóa của Thành phố"
       }
     ],
     "gallery": [
@@ -36580,21 +37264,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại 565 Lạc Long Quân, Bảy Hiền, Hồ Chí Minh, Việt Nam, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1744",
+        "title": "Chùa được cư sĩ Lý Thụy Long xây dựng, ban đầu mang tên Sơn Can",
+        "description": "Chùa được cư sĩ Lý Thụy Long xây dựng, ban đầu mang tên Sơn Can"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1744: Lý Thụy Long quyên tiền xây dựng chùa.\nGiai đoạn 1798–1804: Chùa được trùng tu lớn lần thứ nhất.\nGiai đoạn 1900–1909: Trùng tu lớn lần thứ hai.\nGiai đoạn 1939–1945: Trùng tu lần thứ ba; bổ s..."
+        "year": "1774",
+        "title": "Thiền sư Viên Quang về trụ trì, chùa được đổi tên thành Giác Lâm",
+        "description": "Thiền sư Viên Quang về trụ trì, chùa được đổi tên thành Giác Lâm"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "quyết định số 1288-VH/QĐ ngày 16 tháng 11 năm 1988."
+        "year": "1789–1804",
+        "title": "Chùa được trùng tu quy mô lớn, từng bước hoàn thiện kiến trúc và không gian thờ tự",
+        "description": "Chùa được trùng tu quy mô lớn, từng bước hoàn thiện kiến trúc và không gian thờ tự"
+      },
+      {
+        "id": 4,
+        "year": "1873",
+        "title": "Chùa trở thành nơi in ấn, sao chép kinh sách, góp phần phát triển Phật giáo tại Nam Bộ",
+        "description": "Chùa trở thành nơi in ấn, sao chép kinh sách, góp phần phát triển Phật giáo tại Nam Bộ"
+      },
+      {
+        "id": 5,
+        "year": "1906–1909",
+        "title": "Chùa tiếp tục được đại trùng tu, hình thành diện mạo kiến trúc cơ bản còn lưu giữ đến nay",
+        "description": "Chùa tiếp tục được đại trùng tu, hình thành diện mạo kiến trúc cơ bản còn lưu giữ đến nay"
+      },
+      {
+        "id": 6,
+        "year": "16/11/1988",
+        "title": "Chùa Giác Lâm được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia",
+        "description": "Chùa Giác Lâm được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia"
       }
     ],
     "gallery": [
@@ -37211,21 +37913,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 161/35/20 đường Lạc Long Quân, phường Bình Thới, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1798",
+        "title": "Khu vực chùa bắt đầu hình thành từ nơi tập kết gỗ, phục vụ cuộc trùng tu chùa Giác Lâm",
+        "description": "Khu vực chùa bắt đầu hình thành từ nơi tập kết gỗ, phục vụ cuộc trùng tu chùa Giác Lâm"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1798: hình thành cơ sở ban đầu trong quá trình vận chuyển gỗ trùng tu chùa Giác Lâm. Năm 1850: Hải Tịnh trùng tu Quan Âm viện, đổi tên thành chùa Giác Viên và mở trường đào tạo nghi lễ. Năm 1852: ..."
+        "year": "1850",
+        "title": "Nơi đây chính thức được đổi thành chùa Giác Viên, phát triển thành một cơ sở Phật giáo quan trọng",
+        "description": "Nơi đây chính thức được đổi thành chùa Giác Viên, phát triển thành một cơ sở Phật giáo quan trọng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+        "year": "Cuối thế kỷ XIX",
+        "title": "Chùa trở thành nơi sinh hoạt và truyền bá Phật pháp, đồng thời lưu giữ nghệ thuật chạm khắc truyền thống",
+        "description": "Chùa trở thành nơi sinh hoạt và truyền bá Phật pháp, đồng thời lưu giữ nghệ thuật chạm khắc truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "1899–1902",
+        "title": "Chùa được đại trùng tu và mở rộng, tạo nên diện mạo kiến trúc đặc sắc",
+        "description": "Chùa được đại trùng tu và mở rộng, tạo nên diện mạo kiến trúc đặc sắc"
+      },
+      {
+        "id": 5,
+        "year": "Thế kỷ XX",
+        "title": "Chùa tiếp tục bảo tồn nhiều tượng thờ và hiện vật cổ, thể hiện nghệ thuật kiến trúc Nam Bộ truyền thống",
+        "description": "Chùa tiếp tục bảo tồn nhiều tượng thờ và hiện vật cổ, thể hiện nghệ thuật kiến trúc Nam Bộ truyền thống"
+      },
+      {
+        "id": 6,
+        "year": "07/01/1993",
+        "title": "Chùa Giác Viên được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia",
+        "description": "Chùa Giác Viên được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia"
       }
     ],
     "gallery": [
@@ -37816,21 +38536,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 35 đường Chùa Hội Khánh, phường Thủ Dầu Một, Thành phố Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1741",
+        "title": "Chùa Hội Khánh được khởi dựng, trở thành một trong những ngôi chùa cổ tiêu biểu của vùng Thủ Dầu Một",
+        "description": "Chùa Hội Khánh được khởi dựng, trở thành một trong những ngôi chùa cổ tiêu biểu của vùng Thủ Dầu Một"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Năm 1741: Thiền sư Đại Ngạn – Từ Tấn khai sơn chùa. Năm 1861: chùa bị thiêu hủy trong chiến tranh. Năm 1868: Thiền sư Chánh Đắc xây dựng lại chùa tại vị trí hiện nay. Khoảng 1923–1926: Phó bảng Nguyễn..."
+        "year": "1861",
+        "title": "Chùa bị quân Pháp thiêu hủy, nhiều công trình ban đầu bị phá hủy",
+        "description": "Chùa bị quân Pháp thiêu hủy, nhiều công trình ban đầu bị phá hủy"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+        "year": "1868",
+        "title": "Chùa được xây dựng lại tại vị trí hiện nay, tiếp tục duy trì hoạt động Phật giáo và văn hóa",
+        "description": "Chùa được xây dựng lại tại vị trí hiện nay, tiếp tục duy trì hoạt động Phật giáo và văn hóa"
+      },
+      {
+        "id": 4,
+        "year": "1923–1926",
+        "title": "Cụ Nguyễn Sinh Sắc cùng các nhà nho, nhà sư yêu nước hoạt động tại chùa, thành lập Hội Danh dự nhằm truyền bá tinh thần yêu nước",
+        "description": "Cụ Nguyễn Sinh Sắc cùng các nhà nho, nhà sư yêu nước hoạt động tại chùa, thành lập Hội Danh dự nhằm truyền bá tinh thần yêu nước"
+      },
+      {
+        "id": 5,
+        "year": "1945–1954",
+        "title": "Chùa là cơ sở của Phật giáo cứu quốc Thủ Dầu Một, gắn bó với phong trào kháng chiến",
+        "description": "Chùa là cơ sở của Phật giáo cứu quốc Thủ Dầu Một, gắn bó với phong trào kháng chiến"
+      },
+      {
+        "id": 6,
+        "year": "1993",
+        "title": "Chùa Hội Khánh được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia",
+        "description": "Chùa Hội Khánh được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia"
       }
     ],
     "gallery": [
@@ -38449,21 +39187,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 1A1 đường Nguyễn Xiển, phường Long Bình, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Cuối thế kỷ XVIII",
+        "title": "Thiền sư Khánh Long khai lập chùa Hội Sơn, hình thành một ngôi cổ tự trên vùng gò cao ven sông Đồng Nai",
+        "description": "Thiền sư Khánh Long khai lập chùa Hội Sơn, hình thành một ngôi cổ tự trên vùng gò cao ven sông Đồng Nai"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Khoảng thế kỷ XVIII: Thiền sư Khánh Long khai lập chùa. Năm 1938: Ni sư Thích Nữ Như Thanh và Thích Nữ Như Tiên tiến hành tôn tạo, sửa chữa chùa. 07/01/1993: Chùa được xếp hạng Di tích kiến trúc nghệ ..."
+        "year": "Thế kỷ XIX–XX",
+        "title": "Chùa được gìn giữ và tu bổ qua nhiều thế hệ, lưu giữ nhiều tượng thờ và cổ vật có giá trị",
+        "description": "Chùa được gìn giữ và tu bổ qua nhiều thế hệ, lưu giữ nhiều tượng thờ và cổ vật có giá trị"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin, xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia."
+        "year": "1993",
+        "title": "Chùa Hội Sơn được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Chùa Hội Sơn được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
+      },
+      {
+        "id": 4,
+        "year": "17/07/2012",
+        "title": "Chánh điện chùa bị hỏa hoạn nghiêm trọng, nhiều tượng Phật và hiện vật cổ bị hư hại",
+        "description": "Chánh điện chùa bị hỏa hoạn nghiêm trọng, nhiều tượng Phật và hiện vật cổ bị hư hại"
+      },
+      {
+        "id": 5,
+        "year": "Sau 2012",
+        "title": "Chùa được phục dựng và tiếp tục bảo tồn, duy trì giá trị của một cổ tự lâu đời tại Thành phố Hồ Chí Minh",
+        "description": "Chùa được phục dựng và tiếp tục bảo tồn, duy trì giá trị của một cổ tự lâu đời tại Thành phố Hồ Chí Minh"
       }
     ],
     "gallery": [
@@ -39079,21 +39829,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Khu phố Long Phượng, xã Long Điền, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1845",
+        "title": "Chùa Long Bàn được xây dựng, do Hòa thượng Hải Chánh – Bảo Thanh trụ trì đầu tiên",
+        "description": "Chùa Long Bàn được xây dựng, do Hòa thượng Hải Chánh – Bảo Thanh trụ trì đầu tiên"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Thế kỷ XVII: hình thành chùa trong quá trình người Việt khai phá vùng Mô Xoài. Năm 1845 (Thiệu Trị năm thứ 5): chùa được trùng tu, tôn tạo; dấu tích niên đại này còn được ghi trên xà ngang nhà giảng. ..."
+        "year": "Thế kỷ XIX",
+        "title": "Chùa phát triển với kiến trúc theo kiểu chữ Tam, hình thành hệ thống chạm khắc mang đậm nghệ thuật truyền thống",
+        "description": "Chùa phát triển với kiến trúc theo kiểu chữ Tam, hình thành hệ thống chạm khắc mang đậm nghệ thuật truyền thống"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 680/QĐ ngày 19/4/1991 của Bộ Văn hóa – Thông tin"
+        "year": "1963",
+        "title": "Cổng chùa bằng đá xanh được xây dựng, tạo nên một dấu ấn kiến trúc đặc trưng của Long Bàn Cổ Tự",
+        "description": "Cổng chùa bằng đá xanh được xây dựng, tạo nên một dấu ấn kiến trúc đặc trưng của Long Bàn Cổ Tự"
+      },
+      {
+        "id": 4,
+        "year": "19/04/1991",
+        "title": "Chùa Long Bàn được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Chùa Long Bàn được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -39703,21 +40459,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 1408 đường Ba Tháng Hai, phường Minh Phụng, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Đầu thế kỷ XIX",
+        "title": "Thiền sư Liễu Thông khai lập chùa Phụng Sơn, hình thành ngôi chùa cổ thường được gọi là Chùa Gò",
+        "description": "Thiền sư Liễu Thông khai lập chùa Phụng Sơn, hình thành ngôi chùa cổ thường được gọi là Chùa Gò"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đầu thế kỷ XIX - Thiền sư Liễu Thông tạo lập chùa; 1904–1915 - chùa được đại trùng tu dưới thời Thiền sư Huệ Minh; 1960 - chùa được đại trùng tu; 1963 - xây lại cổng tam quan; 1988 - chùa được xếp hạn..."
+        "year": "1904–1915",
+        "title": "Chùa được đại trùng tu lần thứ nhất, nhiều pho tượng và công trình kiến trúc được tạo dựng",
+        "description": "Chùa được đại trùng tu lần thứ nhất, nhiều pho tượng và công trình kiến trúc được tạo dựng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288-VH/QĐ ngày 16/11/1988 của Bộ Văn hóa – Thông tin"
+        "year": "1960",
+        "title": "Chùa được đại trùng tu lần thứ hai, vẫn giữ cơ bản phong cách kiến trúc cổ",
+        "description": "Chùa được đại trùng tu lần thứ hai, vẫn giữ cơ bản phong cách kiến trúc cổ"
+      },
+      {
+        "id": 4,
+        "year": "16/11/1988",
+        "title": "Chùa Phụng Sơn được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Chùa Phụng Sơn được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
+      },
+      {
+        "id": 5,
+        "year": "1988–1991",
+        "title": "Các cuộc khai quật khảo cổ tại khuôn viên chùa phát hiện nhiều hiện vật, cho thấy dấu tích văn hóa Óc Eo tại khu vực",
+        "description": "Các cuộc khai quật khảo cổ tại khuôn viên chùa phát hiện nhiều hiện vật, cho thấy dấu tích văn hóa Óc Eo tại khu vực"
       }
     ],
     "gallery": [
@@ -40337,21 +41105,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 65 đường Nguyễn Bảo, \nphường Vũng Tàu, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Thế kỷ XIX",
+        "title": "Phước Lâm Tự được hình thành dưới chân Núi Lớn, trở thành một trong những ngôi chùa cổ của Vũng Tàu",
+        "description": "Phước Lâm Tự được hình thành dưới chân Núi Lớn, trở thành một trong những ngôi chùa cổ của Vũng Tàu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Khoảng năm 1886 - chùa được dời từ chân núi Tương Kỳ (Núi Lớn) xuống vị trí hiện nay; 11/10/1944 - đợt sửa chữa sớm nhất được ghi nhận; 1956 - mở rộng thượng điện và đúc thêm nhiều tượng; 1965 - chùa ..."
+        "year": "1895",
+        "title": "Đại hồng chung của chùa được đúc, trở thành một cổ vật quý còn lưu giữ đến nay",
+        "description": "Đại hồng chung của chùa được đúc, trở thành một cổ vật quý còn lưu giữ đến nay"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "QĐ số: 983/QĐ, ngày \n04/08/1992 của Bộ Văn Hóa \nThông Tin"
+        "year": "1944",
+        "title": "Do khu vực gần chùa được sử dụng làm trường bắn, chùa phải di dời, chuyển về vị trí hiện nay",
+        "description": "Do khu vực gần chùa được sử dụng làm trường bắn, chùa phải di dời, chuyển về vị trí hiện nay"
+      },
+      {
+        "id": 4,
+        "year": "1956–1965",
+        "title": "Chùa trải qua các đợt trùng tu lớn, từng bước hình thành diện mạo kiến trúc mới",
+        "description": "Chùa trải qua các đợt trùng tu lớn, từng bước hình thành diện mạo kiến trúc mới"
+      },
+      {
+        "id": 5,
+        "year": "04/08/1992",
+        "title": "Phước Lâm Tự được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Phước Lâm Tự được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
+      },
+      {
+        "id": 6,
+        "year": "1993",
+        "title": "Chùa tiếp tục được trùng tu, bảo tồn các cổ vật và giá trị kiến trúc – tôn giáo",
+        "description": "Chùa tiếp tục được trùng tu, bảo tồn các cổ vật và giá trị kiến trúc – tôn giáo"
       }
     ],
     "gallery": [
@@ -40936,21 +41722,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 13/32 đường Lã Xuân \nOai, phường Tăng Nhơn \nPhú, Thành phố Hồ Chí Minh., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1741",
+        "title": "Thiền sư Linh Quang – Phật Chiếu khai lập chùa, hình thành một trong những ngôi chùa cổ của vùng Thủ Đức",
+        "description": "Thiền sư Linh Quang – Phật Chiếu khai lập chùa, hình thành một trong những ngôi chùa cổ của vùng Thủ Đức"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1741 - Thiền sư Linh Quang – Phật Chiếu khai sơn chùa; 1834 - Hòa thượng Từ Minh dời chùa đến vị trí hiện nay và tái thiết quy mô; 1993 - chùa được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia t..."
+        "year": "Thế kỷ XIX",
+        "title": "Nhiều tượng Phật bằng gỗ quý được tạo tác, hình thành hệ thống tượng thờ có giá trị nghệ thuật",
+        "description": "Nhiều tượng Phật bằng gỗ quý được tạo tác, hình thành hệ thống tượng thờ có giá trị nghệ thuật"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 43–VH/QĐ ngày \n01/07/1993 của Bộ Văn hóa – \nThông tin"
+        "year": "Thế kỷ XIX–XX",
+        "title": "Chùa trải qua nhiều lần tu bổ, vẫn bảo lưu kiến trúc gỗ và mái ngói truyền thống",
+        "description": "Chùa trải qua nhiều lần tu bổ, vẫn bảo lưu kiến trúc gỗ và mái ngói truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "07/01/1993",
+        "title": "Chùa Phước Tường được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Chùa Phước Tường được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -41553,21 +42345,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 53/524 đường Phan Văn Trị, phường Hạnh Thông, TP. Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Trước 1822",
+        "title": "Chùa có tên Vĩnh Trường, là một cổ tự của vùng Gia Định xưa",
+        "description": "Chùa có tên Vĩnh Trường, là một cổ tự của vùng Gia Định xưa"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Khoảng năm 1802 - vua Gia Long ban sắc “Sắc tứ Pháp Vũ”; năm 1822 - vua Minh Mạng ban tên Pháp Vũ; khoảng năm 1859 - chùa được chuyển đến khu vực Gò Vấp trong bối cảnh quân Pháp chiếm thành Gia Định; ..."
+        "year": "1822",
+        "title": "Vua Minh Mạng ban tên Pháp Vũ, đánh dấu một giai đoạn quan trọng trong lịch sử ngôi chùa",
+        "description": "Vua Minh Mạng ban tên Pháp Vũ, đánh dấu một giai đoạn quan trọng trong lịch sử ngôi chùa"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 06/2000/QĐ-BVHTT ngày 13/4/2000 của Bộ Văn hóa – Thông tin"
+        "year": "Khoảng 1859",
+        "title": "Chùa được chuyển về khu vực Gò Vấp, sau khi quân Pháp đánh chiếm Gia Định",
+        "description": "Chùa được chuyển về khu vực Gò Vấp, sau khi quân Pháp đánh chiếm Gia Định"
+      },
+      {
+        "id": 4,
+        "year": "1870",
+        "title": "Vua Tự Đức ban tên Trường Thọ, từ đó hình thành tên gọi Sắc Tứ Trường Thọ",
+        "description": "Vua Tự Đức ban tên Trường Thọ, từ đó hình thành tên gọi Sắc Tứ Trường Thọ"
+      },
+      {
+        "id": 5,
+        "year": "13/04/2000",
+        "title": "Chùa Sắc Tứ Trường Thọ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Chùa Sắc Tứ Trường Thọ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -42196,21 +43000,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Xã Long Hải, Thành phố Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Cuối thế kỷ XVIII",
+        "title": "Theo truyền thuyết, người dân lập nơi thờ một cô gái tử nạn trên biển, hình thành tín ngưỡng thờ Long Hải Thần nữ",
+        "description": "Theo truyền thuyết, người dân lập nơi thờ một cô gái tử nạn trên biển, hình thành tín ngưỡng thờ Long Hải Thần nữ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Cuối thế kỷ XVIII - hình thành miếu thờ Cô theo truyền thuyết dân gian; 1930 - dân làng xây dựng lại miếu quy mô hơn tại triền núi Thùy Vân; 1987 - chánh điện bị hỏa hoạn và sau đó được nhân dân xây d..."
+        "year": "1930",
+        "title": "Ngư dân địa phương xây dựng Dinh Cô khang trang hơn, trở thành nơi sinh hoạt tín ngưỡng của cộng đồng cư dân biển",
+        "description": "Ngư dân địa phương xây dựng Dinh Cô khang trang hơn, trở thành nơi sinh hoạt tín ngưỡng của cộng đồng cư dân biển"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 65QĐ/BT ngày 16/01/1995 của Bộ Văn hóa – Thông tin"
+        "year": "1987",
+        "title": "Dinh Cô được xây dựng lại sau hỏa hoạn, hình thành diện mạo cơ bản như ngày nay",
+        "description": "Dinh Cô được xây dựng lại sau hỏa hoạn, hình thành diện mạo cơ bản như ngày nay"
+      },
+      {
+        "id": 4,
+        "year": "16/01/1995",
+        "title": "Dinh Cô được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia",
+        "description": "Dinh Cô được xếp hạng Di tích lịch sử – văn hóa cấp quốc gia"
+      },
+      {
+        "id": 5,
+        "year": "2023",
+        "title": "Lễ hội Dinh Cô được ghi danh Di sản văn hóa phi vật thể quốc gia",
+        "description": "Lễ hội Dinh Cô được ghi danh Di sản văn hóa phi vật thể quốc gia"
       }
     ],
     "gallery": [
@@ -42867,21 +43683,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 73 Mai Thị Lựu, \nphường Tân Định, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Đầu thế kỷ XX",
+        "title": "Điện Ngọc Hoàng được Lưu Minh xây dựng, mang đậm phong cách kiến trúc và tín ngưỡng của người Hoa",
+        "description": "Điện Ngọc Hoàng được Lưu Minh xây dựng, mang đậm phong cách kiến trúc và tín ngưỡng của người Hoa"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1892–1900 - Lưu Minh khởi công và công trình được hoàn thành; 1900 - hoàn thành xây dựng chùa; 1984 - chùa đổi tên thành Phước Hải Tự; 1994 - được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia; h..."
+        "year": "1943",
+        "title": "Điện trải qua một đợt trùng tu, góp phần bảo tồn kiến trúc và hệ thống tượng thờ",
+        "description": "Điện trải qua một đợt trùng tu, góp phần bảo tồn kiến trúc và hệ thống tượng thờ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 2754/QĐ – BT ngày \n15/10/1994"
+        "year": "1958",
+        "title": "Công trình tiếp tục được tu sửa, duy trì không gian tín ngưỡng truyền thống",
+        "description": "Công trình tiếp tục được tu sửa, duy trì không gian tín ngưỡng truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "1982–1984",
+        "title": "Điện được Giáo hội Phật giáo tiếp quản và mang tên Phước Hải Tự, nhưng tên Điện Ngọc Hoàng vẫn được sử dụng phổ biến",
+        "description": "Điện được Giáo hội Phật giáo tiếp quản và mang tên Phước Hải Tự, nhưng tên Điện Ngọc Hoàng vẫn được sử dụng phổ biến"
+      },
+      {
+        "id": 5,
+        "year": "15/10/1994",
+        "title": "Điện Ngọc Hoàng được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Điện Ngọc Hoàng được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
+      },
+      {
+        "id": 6,
+        "year": "24/05/2016",
+        "title": "Tổng thống Hoa Kỳ Barack Obama đến thăm, góp phần đưa hình ảnh di tích được biết đến rộng rãi",
+        "description": "Tổng thống Hoa Kỳ Barack Obama đến thăm, góp phần đưa hình ảnh di tích được biết đến rộng rãi"
       }
     ],
     "gallery": [
@@ -43504,21 +44338,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 15/77 đường Chu Văn An, phường Bình Thạnh, TP. Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Trước 1852",
+        "title": "Đình Bình Hòa đã được hình thành tại vùng Gia Định, trở thành nơi sinh hoạt tín ngưỡng của cư dân địa phương",
+        "description": "Đình Bình Hòa đã được hình thành tại vùng Gia Định, trở thành nơi sinh hoạt tín ngưỡng của cư dân địa phương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Khoảng năm 1818 - thôn Bình Hòa được thành lập và đình được dựng; 1853 - vua Tự Đức ban sắc phong Thành hoàng Bổn cảnh; 1877 - đình được trùng tu lần thứ nhất; 1924 - đình được trùng tu lần thứ hai; 1..."
+        "year": "1853",
+        "title": "Vua Tự Đức ban sắc phong Thành hoàng Bổn cảnh, khẳng định vị trí của đình trong đời sống cộng đồng",
+        "description": "Vua Tự Đức ban sắc phong Thành hoàng Bổn cảnh, khẳng định vị trí của đình trong đời sống cộng đồng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin"
+        "year": "1877",
+        "title": "Đình được trùng tu lần đầu, củng cố và mở rộng công trình thờ tự",
+        "description": "Đình được trùng tu lần đầu, củng cố và mở rộng công trình thờ tự"
+      },
+      {
+        "id": 4,
+        "year": "1924",
+        "title": "Đình tiếp tục được trùng tu, hoàn thiện thêm không gian kiến trúc truyền thống",
+        "description": "Đình tiếp tục được trùng tu, hoàn thiện thêm không gian kiến trúc truyền thống"
+      },
+      {
+        "id": 5,
+        "year": "1946",
+        "title": "Đình được sửa chữa và xây dựng thêm một số công trình, tiếp tục phục vụ sinh hoạt cộng đồng",
+        "description": "Đình được sửa chữa và xây dựng thêm một số công trình, tiếp tục phục vụ sinh hoạt cộng đồng"
+      },
+      {
+        "id": 6,
+        "year": "07/01/1993",
+        "title": "Đình Bình Hòa được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Bình Hòa được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -44134,21 +44986,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 475 đường Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Sau năm 1698",
+        "title": "Đình được hình thành tại làng Hòa Hưng, trở thành nơi thờ Thành hoàng và sinh hoạt cộng đồng",
+        "description": "Đình được hình thành tại làng Hòa Hưng, trở thành nơi thờ Thành hoàng và sinh hoạt cộng đồng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Thời kỳ đầu hình thành làng Hòa Hưng - đình được lập và mang tên đình Hòa Hưng; thế kỷ XVIII - Võ Trường Toản từng mở lớp dạy học tại đình; 1915–1917 - phong trào Thiên Địa Hội hoạt động tại đình; 25/..."
+        "year": "Thế kỷ XIX",
+        "title": "Đình được xây dựng ngày càng khang trang, mang đặc trưng kiến trúc đình làng Nam Bộ",
+        "description": "Đình được xây dựng ngày càng khang trang, mang đặc trưng kiến trúc đình làng Nam Bộ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1460-QĐ/VH ngày 28/6/1996 của Bộ Văn hóa, Thể thao và Du lịch"
+        "year": "Những năm 1930",
+        "title": "Làng Hòa Hưng đổi thành làng Chí Hòa, đình từ đó mang tên Đình Chí Hòa",
+        "description": "Làng Hòa Hưng đổi thành làng Chí Hòa, đình từ đó mang tên Đình Chí Hòa"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Đình trải qua nhiều lần tu sửa, vẫn bảo tồn nhiều yếu tố kiến trúc truyền thống",
+        "description": "Đình trải qua nhiều lần tu sửa, vẫn bảo tồn nhiều yếu tố kiến trúc truyền thống"
+      },
+      {
+        "id": 5,
+        "year": "28/06/1996",
+        "title": "Đình Chí Hòa được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Chí Hòa được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -44766,21 +45630,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Khu phố Nhị Đồng 1, phường Dĩ An, Thành phố Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Khoảng 1838",
+        "title": "Ngôi miếu cổ được xây dựng lại thành đình, hình thành trung tâm tín ngưỡng của cư dân Dĩ An",
+        "description": "Ngôi miếu cổ được xây dựng lại thành đình, hình thành trung tâm tín ngưỡng của cư dân Dĩ An"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Khoảng năm 1838 - người dân xây dựng lại Dĩ An cổ miếu thành đình; 1852 - vua Tự Đức ban sắc phong Thành Hoàng; 1910 - đình trải qua một đợt đại trùng tu; 2011 - đình được công nhận là di tích lịch sử..."
+        "year": "1852",
+        "title": "Vua Tự Đức ban sắc phong Thành hoàng, khẳng định vị trí của đình trong đời sống cộng đồng",
+        "description": "Vua Tự Đức ban sắc phong Thành hoàng, khẳng định vị trí của đình trong đời sống cộng đồng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1185/QĐ-BVHTTDL ngày 28/03/2019 của Bộ Văn hóa, Thể thao và Du lịch"
+        "year": "Cuối thế kỷ XIX",
+        "title": "Đình được xây dựng, mở rộng khang trang hơn, hình thành diện mạo đình làng truyền thống",
+        "description": "Đình được xây dựng, mở rộng khang trang hơn, hình thành diện mạo đình làng truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Đình trải qua nhiều lần trùng tu, bảo tồn hệ thống thờ tự và nhiều cây cổ thụ",
+        "description": "Đình trải qua nhiều lần trùng tu, bảo tồn hệ thống thờ tự và nhiều cây cổ thụ"
+      },
+      {
+        "id": 5,
+        "year": "28/03/2019",
+        "title": "Đình Dĩ An được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Dĩ An được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -45411,21 +46287,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 380 đường Trần Hưng Đạo, phường Chợ Lớn, TP. Hồ Chí Minh, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1789",
+        "title": "Làng Minh Hương Gia Thạnh được thành lập, ngôi đình được dựng làm nơi thờ tự và hội họp",
+        "description": "Làng Minh Hương Gia Thạnh được thành lập, ngôi đình được dựng làm nơi thờ tự và hội họp"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1789 - Minh Hương xã được thành lập và hình thành cơ sở ban đầu của đình; 1808 - vua Gia Long cho phép đặt tên Gia Thạnh Đường; 1839 - xây dựng đình và lập bia ghi danh những người Minh Hương làm quan..."
+        "year": "Thế kỷ XIX",
+        "title": "Đình trở thành trung tâm sinh hoạt của cộng đồng Minh Hương, gắn kết văn hóa Việt – Hoa tại vùng Chợ Lớn",
+        "description": "Đình trở thành trung tâm sinh hoạt của cộng đồng Minh Hương, gắn kết văn hóa Việt – Hoa tại vùng Chợ Lớn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin"
+        "year": "1912",
+        "title": "Đình được xây dựng, chỉnh trang quy mô lớn, hoàn thiện nhiều hạng mục kiến trúc và trang trí",
+        "description": "Đình được xây dựng, chỉnh trang quy mô lớn, hoàn thiện nhiều hạng mục kiến trúc và trang trí"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Nhiều hiện vật, hoành phi và liễn đối được gìn giữ, tạo nên giá trị nghệ thuật đặc sắc của di tích",
+        "description": "Nhiều hiện vật, hoành phi và liễn đối được gìn giữ, tạo nên giá trị nghệ thuật đặc sắc của di tích"
+      },
+      {
+        "id": 5,
+        "year": "07/01/1993",
+        "title": "Đình Minh Hương Gia Thạnh được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Minh Hương Gia Thạnh được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -46050,21 +46938,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Khu 5, ấp Hòa Long, phường Lái Thiêu, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Khoảng 1842",
+        "title": "Đình Phú Long được xây dựng bên sông Sài Gòn, hình thành trung tâm tín ngưỡng của cư dân Lái Thiêu",
+        "description": "Đình Phú Long được xây dựng bên sông Sài Gòn, hình thành trung tâm tín ngưỡng của cư dân Lái Thiêu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Khoảng năm 1842 - Đình Phú Long được xây dựng, gắn với quá trình hình thành cộng đồng cư dân tại Lái Thiêu; thời Nguyễn - đình được ban sắc thần, xác lập vị trí của Thành Hoàng trong đời sống tín ngưỡ..."
+        "year": "Thế kỷ XIX",
+        "title": "Kiến trúc đình từng bước được hoàn thiện, mang đậm phong cách đình làng Nam Bộ",
+        "description": "Kiến trúc đình từng bước được hoàn thiện, mang đậm phong cách đình làng Nam Bộ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 53/QĐ-BVHTT ngày 28/12/2001"
+        "year": "Thế kỷ XIX–XX",
+        "title": "Nhiều hoành phi, liễn đối và đồ thờ được tạo tác, thể hiện nghệ thuật chạm khắc tinh xảo",
+        "description": "Nhiều hoành phi, liễn đối và đồ thờ được tạo tác, thể hiện nghệ thuật chạm khắc tinh xảo"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Đình trải qua nhiều lần tu bổ, vẫn giữ được phần lớn kiến trúc truyền thống",
+        "description": "Đình trải qua nhiều lần tu bổ, vẫn giữ được phần lớn kiến trúc truyền thống"
+      },
+      {
+        "id": 5,
+        "year": "28/12/2001",
+        "title": "Đình Phú Long được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Phú Long được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -46669,21 +47569,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 18 đường Mai Văn Ngọc, phường Phú Nhuận, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Khoảng 1818",
+        "title": "Đình Phú Nhuận được dựng gần kênh Nhiêu Lộc, làm nơi thờ Thành hoàng của cư dân địa phương",
+        "description": "Đình Phú Nhuận được dựng gần kênh Nhiêu Lộc, làm nơi thờ Thành hoàng của cư dân địa phương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Khoảng năm 1818 - đình Phú Nhuận được dựng ban đầu ở khu vực rạch Thị Nghè; 1852 - đình được xây dựng lại tại khu vực gò Kim Quy, vị trí hiện nay; 1893 - vua Tự Đức ban sắc phong Thành Hoàng; các thời..."
+        "year": "1852",
+        "title": "Đình được xây dựng lại tại vị trí hiện nay, trên khu đất cao của làng Phú Nhuận",
+        "description": "Đình được xây dựng lại tại vị trí hiện nay, trên khu đất cao của làng Phú Nhuận"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 3744-QĐ/VHTT ngày 29/01/1997"
+        "year": "1853",
+        "title": "Vua Tự Đức ban sắc phong cho Thành hoàng, ghi nhận tín ngưỡng truyền thống của cộng đồng",
+        "description": "Vua Tự Đức ban sắc phong cho Thành hoàng, ghi nhận tín ngưỡng truyền thống của cộng đồng"
+      },
+      {
+        "id": 4,
+        "year": "1930",
+        "title": "Đình được trùng tu và xây thêm nhiều hạng mục, hoàn thiện không gian kiến trúc như hiện nay",
+        "description": "Đình được trùng tu và xây thêm nhiều hạng mục, hoàn thiện không gian kiến trúc như hiện nay"
+      },
+      {
+        "id": 5,
+        "year": "1966–1998",
+        "title": "Đình tiếp tục trải qua nhiều lần sửa chữa, vẫn bảo lưu nét kiến trúc đình Nam Bộ thế kỷ XIX",
+        "description": "Đình tiếp tục trải qua nhiều lần sửa chữa, vẫn bảo lưu nét kiến trúc đình Nam Bộ thế kỷ XIX"
       }
     ],
     "gallery": [
@@ -47291,21 +48203,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Khu phố 1, phường Phú An, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1820",
+        "title": "Đình Tân An được xây dựng, gắn với quá trình khai hoang lập làng ở vùng Bến Thế",
+        "description": "Đình Tân An được xây dựng, gắn với quá trình khai hoang lập làng ở vùng Bến Thế"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1820 - Đình Tân An được xây dựng; 1853 - vua Tự Đức ban sắc phong, ghi nhận vị thần được thờ tại đình; 2004 - được xếp hạng di tích cấp tỉnh; 26/04/2014 - được xếp hạng di tích kiến trúc nghệ thuật cấ..."
+        "year": "1853",
+        "title": "Vua Tự Đức ban sắc phong, đình trở thành trung tâm tín ngưỡng quan trọng của địa phương",
+        "description": "Vua Tự Đức ban sắc phong, đình trở thành trung tâm tín ngưỡng quan trọng của địa phương"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 1261/QĐ-BVHTTDL ngày 26/04/2014"
+        "year": "Thế kỷ XIX–XX",
+        "title": "Đình lưu giữ nhiều hoành phi, liễn đối và đồ thờ, thể hiện nghệ thuật chạm khắc truyền thống Nam Bộ",
+        "description": "Đình lưu giữ nhiều hoành phi, liễn đối và đồ thờ, thể hiện nghệ thuật chạm khắc truyền thống Nam Bộ"
+      },
+      {
+        "id": 4,
+        "year": "02/06/2004",
+        "title": "Đình được công nhận Di tích lịch sử – văn hóa cấp tỉnh",
+        "description": "Đình được công nhận Di tích lịch sử – văn hóa cấp tỉnh"
+      },
+      {
+        "id": 5,
+        "year": "26/04/2014",
+        "title": "Đình Tân An được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Tân An được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -47919,21 +48843,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 77 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1820",
+        "title": "Đình Thắng Tam bắt đầu được xây dựng, gắn với quá trình hình thành làng Thắng Tam",
+        "description": "Đình Thắng Tam bắt đầu được xây dựng, gắn với quá trình hình thành làng Thắng Tam"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Thời vua Minh Mạng - Đình Thắng Tam được hình thành trong quá trình tổ chức, ổn định cộng đồng cư dân tại Vũng Tàu; 1835 - đình được trùng tu và lợp ngói; các giai đoạn sau - quần thể Đình, Lăng Cá Ôn..."
+        "year": "1822",
+        "title": "Làng Thắng Tam chính thức được hình thành, sau quá trình khai phá và bảo vệ vùng biển Vũng Tàu",
+        "description": "Làng Thắng Tam chính thức được hình thành, sau quá trình khai phá và bảo vệ vùng biển Vũng Tàu"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Quyết định số 457/QĐ ngày 25/03/1991"
+        "year": "1835",
+        "title": "Người dân tu sửa và lợp ngói cho đình, từng bước xây dựng công trình kiên cố hơn",
+        "description": "Người dân tu sửa và lợp ngói cho đình, từng bước xây dựng công trình kiên cố hơn"
+      },
+      {
+        "id": 4,
+        "year": "1965",
+        "title": "Đình được trùng tu quy mô lớn, hình thành bố cục kiến trúc cơ bản còn giữ đến nay",
+        "description": "Đình được trùng tu quy mô lớn, hình thành bố cục kiến trúc cơ bản còn giữ đến nay"
+      },
+      {
+        "id": 5,
+        "year": "1991",
+        "title": "Đình Thắng Tam được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Thắng Tam được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -48548,21 +49484,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 28 đường Chương Dương, phường Linh Chiểu, TP.HCM, ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1823",
+        "title": "Đình Linh Đông được xây dựng, làm nơi thờ Thành hoàng Bổn cảnh của làng",
+        "description": "Đình Linh Đông được xây dựng, làm nơi thờ Thành hoàng Bổn cảnh của làng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "1823 - Đình Thần Linh Đông được xây dựng, thể hiện qua niên đại ghi trên cấu kiện kiến trúc của đình; các thời kỳ sau - đình được tu bổ và duy trì hoạt động thờ tự; hằng năm - tổ chức lễ Kỳ Yên và lễ ..."
+        "year": "1852",
+        "title": "Vua Tự Đức ban sắc phong cho thần Thành hoàng, sắc phong vẫn được đình lưu giữ đến nay",
+        "description": "Vua Tự Đức ban sắc phong cho thần Thành hoàng, sắc phong vẫn được đình lưu giữ đến nay"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 3245/QĐ-BVHTTDL ngày 11/4/2020 của Bộ Văn hóa, Thể thao và Du lịch."
+        "year": "Thế kỷ XIX–XX",
+        "title": "Đình được tu bổ và mở rộng qua nhiều giai đoạn, vẫn giữ hệ thống kết cấu gỗ truyền thống",
+        "description": "Đình được tu bổ và mở rộng qua nhiều giai đoạn, vẫn giữ hệ thống kết cấu gỗ truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Nhiều hiện vật thờ tự được gìn giữ, thể hiện nghệ thuật đình làng Nam Bộ đặc sắc",
+        "description": "Nhiều hiện vật thờ tự được gìn giữ, thể hiện nghệ thuật đình làng Nam Bộ đặc sắc"
+      },
+      {
+        "id": 5,
+        "year": "04/11/2020",
+        "title": "Đình Thần Linh Đông được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Thần Linh Đông được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -49168,21 +50116,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 107/1 đường Nguyễn Văn Lượng, phường Thông Tây Hội, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Khoảng 1698",
+        "title": "Đình được cư dân vùng Hạnh Thông dựng nên, trở thành một trong những ngôi đình cổ nhất Gia Định",
+        "description": "Đình được cư dân vùng Hạnh Thông dựng nên, trở thành một trong những ngôi đình cổ nhất Gia Định"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đình Thông Tây Hội; khoảng 1679 - hình thành đình gắn với quá trình cư dân vào khai phá vùng Gia Định; 1883 - đình được xây dựng theo kiến trúc quy mô lớn như hiện nay; 1944 - hai làng Hạnh Thông Tây ..."
+        "year": "1883",
+        "title": "Đình được xây dựng lại quy mô lớn, hình thành kiến trúc cơ bản còn bảo tồn đến nay",
+        "description": "Đình được xây dựng lại quy mô lớn, hình thành kiến trúc cơ bản còn bảo tồn đến nay"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 2009/1998/QĐ-BVHTT ngày 26/9/1998 của Bộ Văn hóa – Thông tin."
+        "year": "1896",
+        "title": "Đình trải qua một đợt trùng tu lớn, củng cố hệ thống kiến trúc truyền thống",
+        "description": "Đình trải qua một đợt trùng tu lớn, củng cố hệ thống kiến trúc truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "1927",
+        "title": "Đình tiếp tục được trùng tu, nhưng vẫn giữ gần nguyên vẹn cấu trúc cổ",
+        "description": "Đình tiếp tục được trùng tu, nhưng vẫn giữ gần nguyên vẹn cấu trúc cổ"
+      },
+      {
+        "id": 5,
+        "year": "1944",
+        "title": "Hai làng Hạnh Thông Tây và An Hội sáp nhập, đình chính thức mang tên Thông Tây Hội",
+        "description": "Hai làng Hạnh Thông Tây và An Hội sáp nhập, đình chính thức mang tên Thông Tây Hội"
+      },
+      {
+        "id": 6,
+        "year": "1998",
+        "title": "Đình Thông Tây Hội được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Thông Tây Hội được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -49785,21 +50751,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Tổ 5, phường Thủ Đức, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1926",
+        "title": "Vua Khải Định ban sắc phong Thành hoàng, sắc phong được lưu giữ tại đình",
+        "description": "Vua Khải Định ban sắc phong Thành hoàng, sắc phong được lưu giữ tại đình"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đình Trường Thọ; đầu thế kỷ XIX - hình thành đình và cộng đồng làng Trường Thọ; 1926 - vua Khải Định ban sắc phong Thành Hoàng; 30/12/2002 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; cá..."
+        "year": "1945",
+        "title": "Một số công trình phụ của đình bị thay đổi, nhưng phần kiến trúc chính vẫn được bảo tồn",
+        "description": "Một số công trình phụ của đình bị thay đổi, nhưng phần kiến trúc chính vẫn được bảo tồn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin."
+        "year": "1999",
+        "title": "Tượng Thành hoàng được đặt tại chính điện, bổ sung vào hệ thống thờ tự truyền thống",
+        "description": "Tượng Thành hoàng được đặt tại chính điện, bổ sung vào hệ thống thờ tự truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "30/12/2002",
+        "title": "Đình Trường Thọ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Trường Thọ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
+      },
+      {
+        "id": 5,
+        "year": "2004",
+        "title": "Chiếc mõ cổ của đình được ghi nhận nổi bật, góp phần khẳng định giá trị văn hóa đặc sắc của di tích",
+        "description": "Chiếc mõ cổ của đình được ghi nhận nổi bật, góp phần khẳng định giá trị văn hóa đặc sắc của di tích"
       }
     ],
     "gallery": [
@@ -50402,21 +51380,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Phường Linh Xuân, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Đầu thế kỷ XIX",
+        "title": "Đình Xuân Hiệp được hình thành, trở thành nơi sinh hoạt tín ngưỡng của cư dân địa phương",
+        "description": "Đình Xuân Hiệp được hình thành, trở thành nơi sinh hoạt tín ngưỡng của cư dân địa phương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Đình Xuân Hiệp; khoảng 1818–1885 - đình được hình thành với quy mô nhỏ, ban đầu bằng tre lá; 1928 - đình được xây dựng khang trang theo kiểu 5 gian 2 chái; 1934 - vua Bảo Đại ban sắc phong Thành Hoàng..."
+        "year": "Thế kỷ XIX",
+        "title": "Đình được xây dựng và hoàn thiện dần, mang đặc trưng kiến trúc đình làng Nam Bộ",
+        "description": "Đình được xây dựng và hoàn thiện dần, mang đặc trưng kiến trúc đình làng Nam Bộ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ Văn hóa – Thông tin."
+        "year": "Thế kỷ XX",
+        "title": "Đình trải qua nhiều lần tu sửa, vẫn bảo tồn hệ thống kết cấu và trang trí truyền thống",
+        "description": "Đình trải qua nhiều lần tu sửa, vẫn bảo tồn hệ thống kết cấu và trang trí truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "15/12/2004",
+        "title": "Đình Xuân Hiệp được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Đình Xuân Hiệp được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -51019,21 +52003,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 802 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM. Phường Chợ Lớn được hình thành từ ngày 01/07/2025 trên cơ sở sáp nhập các phường 11, 12, 13 và 14 của quận 5 cũ., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Đầu thế kỷ XIX",
+        "title": "Hội quán được cộng đồng người Hoa Chương Châu xây dựng, làm nơi sinh hoạt tín ngưỡng và hội họp đồng hương",
+        "description": "Hội quán được cộng đồng người Hoa Chương Châu xây dựng, làm nơi sinh hoạt tín ngưỡng và hội họp đồng hương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Hà Chương Hội quán; trên 200 năm trước - cộng đồng người Hoa thuộc các huyện của phủ Chương Châu hình thành hội quán; nhiều lần được trùng tu qua các thời kỳ; 28/12/2001 - được xếp hạng di tích cấp qu..."
+        "year": "1809",
+        "title": "Hội quán đã có đợt trùng tu, cho thấy công trình được hình thành từ trước thời điểm này",
+        "description": "Hội quán đã có đợt trùng tu, cho thấy công trình được hình thành từ trước thời điểm này"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+        "year": "1848",
+        "title": "Hội quán được trùng tu lớn, tên Hà Chương được ghi nhận trên bia đá",
+        "description": "Hội quán được trùng tu lớn, tên Hà Chương được ghi nhận trên bia đá"
+      },
+      {
+        "id": 4,
+        "year": "1871",
+        "title": "Hội quán tiếp tục được trùng tu, hoàn thiện thêm kiến trúc và không gian thờ tự",
+        "description": "Hội quán tiếp tục được trùng tu, hoàn thiện thêm kiến trúc và không gian thờ tự"
+      },
+      {
+        "id": 5,
+        "year": "28/12/2001",
+        "title": "Hội quán Hà Chương được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Hội quán Hà Chương được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
+      },
+      {
+        "id": 6,
+        "year": "2024",
+        "title": "Khởi công tu bổ, tôn tạo toàn diện, nhằm bảo tồn giá trị kiến trúc gần 300 năm",
+        "description": "Khởi công tu bổ, tôn tạo toàn diện, nhằm bảo tồn giá trị kiến trúc gần 300 năm"
       }
     ],
     "gallery": [
@@ -51636,21 +52638,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 678 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Cuối thế kỷ XVIII",
+        "title": "Cộng đồng người Hoa Triều Châu lập hội quán, làm nơi hội họp và thờ Quan Thánh Đế Quân",
+        "description": "Cộng đồng người Hoa Triều Châu lập hội quán, làm nơi hội họp và thờ Quan Thánh Đế Quân"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Hội quán Nghĩa An; khoảng 1819–1820 - xây dựng kiên cố công trình; 1866, 1901, 1969, 1984 - nhiều đợt trùng tu; 27/07/1993 - được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia; 2010–2014 - tiến h..."
+        "year": "1819–1820",
+        "title": "Hội quán được xây dựng kiên cố, hình thành diện mạo cơ bản của công trình",
+        "description": "Hội quán được xây dựng kiên cố, hình thành diện mạo cơ bản của công trình"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 52/2001/QĐ-BVHTT ngày 28/12/2001 của Bộ Văn hóa – Thông tin."
+        "year": "1866–1984",
+        "title": "Hội quán trải qua nhiều lần trùng tu, bảo tồn phong cách kiến trúc Triều Châu",
+        "description": "Hội quán trải qua nhiều lần trùng tu, bảo tồn phong cách kiến trúc Triều Châu"
+      },
+      {
+        "id": 4,
+        "year": "07/01/1993",
+        "title": "Hội quán Nghĩa An được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Hội quán Nghĩa An được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
+      },
+      {
+        "id": 5,
+        "year": "2009–2014",
+        "title": "Hội quán được trùng tu quy mô lớn, vẫn giữ các đặc trưng kiến trúc truyền thống",
+        "description": "Hội quán được trùng tu quy mô lớn, vẫn giữ các đặc trưng kiến trúc truyền thống"
       }
     ],
     "gallery": [
@@ -52258,21 +53272,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 27 đường Phan Văn Khỏe, phường Chợ Lớn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1853",
+        "title": "Thành hoàng của thôn Tân Nhuận được vua Tự Đức ban sắc, ghi dấu nguồn gốc đình làng của di tích",
+        "description": "Thành hoàng của thôn Tân Nhuận được vua Tự Đức ban sắc, ghi dấu nguồn gốc đình làng của di tích"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Hội quán Nghĩa Nhuận; đầu thế kỷ XIX - hình thành làng Tân Nhuận và đình làng; 1852 - vua Tự Đức ban sắc phong Thành Hoàng; 1872 - đình trở thành Hội quán Nghĩa Nhuận; 1879, 1894, 1906, 1911 - các đợt..."
+        "year": "1872",
+        "title": "Cơ sở được phát triển thành Hội quán Nghĩa Nhuận, gắn với cộng đồng Minh Hương tại Chợ Lớn",
+        "description": "Cơ sở được phát triển thành Hội quán Nghĩa Nhuận, gắn với cộng đồng Minh Hương tại Chợ Lớn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+        "year": "1879–1911",
+        "title": "Hội quán trải qua nhiều lần trùng tu, từng bước hoàn thiện kiến trúc và trang trí",
+        "description": "Hội quán trải qua nhiều lần trùng tu, từng bước hoàn thiện kiến trúc và trang trí"
+      },
+      {
+        "id": 4,
+        "year": "1940",
+        "title": "Hội quán được tái thiết quy mô lớn, xây thêm tiền điện và chính điện",
+        "description": "Hội quán được tái thiết quy mô lớn, xây thêm tiền điện và chính điện"
+      },
+      {
+        "id": 5,
+        "year": "07/01/1993",
+        "title": "Hội quán Nghĩa Nhuận được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Hội quán Nghĩa Nhuận được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -52875,21 +53901,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 12 đường Lão Tử, phường Chợ Lớn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1809",
+        "title": "Hồ phóng sinh được xây dựng trước hội quán, gắn với quan niệm “tụ khí, trấn mạch”",
+        "description": "Hồ phóng sinh được xây dựng trước hội quán, gắn với quan niệm “tụ khí, trấn mạch”"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Hội quán Ôn Lăng; 1787 - Nguyễn Ánh cho phép các lưu dân người Hoa lập các bang hội; thế kỷ XVIII - hội quán được hình thành và trở thành nơi sinh hoạt của cộng đồng người Hoa gốc Tuyền Châu; 1869 - l..."
+        "year": "1828–1897",
+        "title": "Hội quán trải qua nhiều lần trùng tu, hoàn thiện kiến trúc và hệ thống thờ tự",
+        "description": "Hội quán trải qua nhiều lần trùng tu, hoàn thiện kiến trúc và hệ thống thờ tự"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+        "year": "1993–1995",
+        "title": "Công trình tiếp tục được tu bổ, bảo tồn các đường nét kiến trúc truyền thống",
+        "description": "Công trình tiếp tục được tu bổ, bảo tồn các đường nét kiến trúc truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "30/12/2002",
+        "title": "Hội quán Ôn Lăng được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Hội quán Ôn Lăng được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -53492,21 +54524,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 276 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1824",
+        "title": "Cộng đồng người Hoa Hải Nam xây dựng hội quán, làm nơi hội họp và thờ Thiên Hậu Thánh Mẫu",
+        "description": "Cộng đồng người Hoa Hải Nam xây dựng hội quán, làm nơi hội họp và thờ Thiên Hậu Thánh Mẫu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Quỳnh Phủ Hội quán; 1824 - hội quán được thành lập bởi cộng đồng người Hoa đến từ đảo Hải Nam; 1827 - đúc đại hồng chung; 31/08/1998 - được xếp hạng di tích cấp quốc gia; 2024 - tổ chức kỷ niệm 200 nă..."
+        "year": "1851",
+        "title": "Các vị thần bảo hộ và 108 thương nhân Hải Nam được ban sắc phong, làm phong phú hệ thống tín ngưỡng của hội quán",
+        "description": "Các vị thần bảo hộ và 108 thương nhân Hải Nam được ban sắc phong, làm phong phú hệ thống tín ngưỡng của hội quán"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1811/1998/QĐ-BVHTT ngày 31/8/1998 của Bộ Văn hóa – Thông tin."
+        "year": "1893–1907",
+        "title": "Nhiều đồ thờ bằng đồng quý được tạo tác, thể hiện kỹ thuật mỹ thuật tinh xảo",
+        "description": "Nhiều đồ thờ bằng đồng quý được tạo tác, thể hiện kỹ thuật mỹ thuật tinh xảo"
+      },
+      {
+        "id": 4,
+        "year": "1963",
+        "title": "Bộ tranh sơn ta về truyện Lục Vân Tiên được thực hiện, thể hiện sự giao lưu văn hóa Việt – Hoa",
+        "description": "Bộ tranh sơn ta về truyện Lục Vân Tiên được thực hiện, thể hiện sự giao lưu văn hóa Việt – Hoa"
+      },
+      {
+        "id": 5,
+        "year": "28/12/2001",
+        "title": "Hội quán Quỳnh Phủ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Hội quán Quỳnh Phủ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
+      },
+      {
+        "id": 6,
+        "year": "2024",
+        "title": "Hội quán kỷ niệm 200 năm thành lập, đánh dấu hai thế kỷ tồn tại tại Chợ Lớn",
+        "description": "Hội quán kỷ niệm 200 năm thành lập, đánh dấu hai thế kỷ tồn tại tại Chợ Lớn"
       }
     ],
     "gallery": [
@@ -54109,21 +55159,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 710 đường Nguyễn Trãi, phường Chợ Lớn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Khoảng thế kỷ XVIII",
+        "title": "Cộng đồng người Hoa Quảng Đông hình thành miếu Thiên Hậu, làm nơi thờ tự và sinh hoạt cộng đồng",
+        "description": "Cộng đồng người Hoa Quảng Đông hình thành miếu Thiên Hậu, làm nơi thờ tự và sinh hoạt cộng đồng"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Hội quán Tuệ Thành; khoảng 1760 - cộng đồng người Hoa gốc Tuệ Thành/Quảng Châu xây dựng miếu thờ Thiên Hậu; nhiều lần trùng tu trong các thế kỷ XVIII–XX; 07/01/1993 - được xếp hạng di tích kiến trúc n..."
+        "year": "1800–1859",
+        "title": "Miếu trải qua nhiều đợt trùng tu, từng bước mở rộng và hoàn thiện kiến trúc",
+        "description": "Miếu trải qua nhiều đợt trùng tu, từng bước mở rộng và hoàn thiện kiến trúc"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 39/2002/QĐ-BVHTT ngày 30/12/2002 của Bộ Văn hóa – Thông tin."
+        "year": "1908",
+        "title": "Hệ thống tượng gốm trang trí trên mái được tạo tác, trở thành nét nghệ thuật đặc sắc của Chùa Bà",
+        "description": "Hệ thống tượng gốm trang trí trên mái được tạo tác, trở thành nét nghệ thuật đặc sắc của Chùa Bà"
+      },
+      {
+        "id": 4,
+        "year": "1916–1988",
+        "title": "Công trình tiếp tục được nhiều lần tu bổ, vẫn giữ phong cách kiến trúc người Hoa truyền thống",
+        "description": "Công trình tiếp tục được nhiều lần tu bổ, vẫn giữ phong cách kiến trúc người Hoa truyền thống"
+      },
+      {
+        "id": 5,
+        "year": "07/01/1993",
+        "title": "Hội quán Tuệ Thành được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Hội quán Tuệ Thành được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -54731,21 +55793,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 1 đường Vũ Tùng, phường Gia Định, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1832",
+        "title": "Tả quân Lê Văn Duyệt qua đời tại Gia Định, được an táng tại khu vực Bà Chiểu",
+        "description": "Tả quân Lê Văn Duyệt qua đời tại Gia Định, được an táng tại khu vực Bà Chiểu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Lăng Lê Văn Duyệt; 1832 - Lê Văn Duyệt qua đời tại Gia Định và được an táng tại khu vực Bà Chiểu; các thế kỷ XIX–XX - khu lăng miếu được xây dựng, tu bổ và trở thành nơi tưởng niệm Tả quân; 16/11/1988..."
+        "year": "1835",
+        "title": "Phần mộ bị san phẳng sau vụ án Lê Văn Khôi, khu mộ trải qua giai đoạn lịch sử nhiều biến động",
+        "description": "Phần mộ bị san phẳng sau vụ án Lê Văn Khôi, khu mộ trải qua giai đoạn lịch sử nhiều biến động"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1288-VH/QĐ ngày 16/11/1998 của Bộ Văn hóa – Thông tin."
+        "year": "1848",
+        "title": "Triều đình phục hồi danh dự cho Lê Văn Duyệt, mộ được xây đắp và thờ phụng trở lại",
+        "description": "Triều đình phục hồi danh dự cho Lê Văn Duyệt, mộ được xây đắp và thờ phụng trở lại"
+      },
+      {
+        "id": 4,
+        "year": "1894",
+        "title": "Bia ghi công đức Lê Văn Duyệt được dựng, bổ sung giá trị lịch sử cho khu lăng",
+        "description": "Bia ghi công đức Lê Văn Duyệt được dựng, bổ sung giá trị lịch sử cho khu lăng"
+      },
+      {
+        "id": 5,
+        "year": "1915–1970",
+        "title": "Nhiều hạng mục lăng miếu được xây dựng và hoàn thiện, hình thành quần thể kiến trúc như ngày nay",
+        "description": "Nhiều hạng mục lăng miếu được xây dựng và hoàn thiện, hình thành quần thể kiến trúc như ngày nay"
+      },
+      {
+        "id": 6,
+        "year": "16/11/1988",
+        "title": "Lăng Lê Văn Duyệt được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Lăng Lê Văn Duyệt được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -55428,21 +56508,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 41 đường Nguyễn Thị Huỳnh, phường Phú Nhuận, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1752",
+        "title": "Trương Tấn Bửu sinh tại vùng Bến Tre, sau trở thành một võ tướng quan trọng đầu triều Nguyễn",
+        "description": "Trương Tấn Bửu sinh tại vùng Bến Tre, sau trở thành một võ tướng quan trọng đầu triều Nguyễn"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Lăng Trương Tấn Bửu; cuối thế kỷ XVIII – đầu thế kỷ XIX, Trương Tấn Bửu tham gia hoạt động quân sự dưới quyền Nguyễn Ánh; sau khi qua đời, ông được an táng và lập lăng tại vùng Phú Nhuận; 15/12/2004, ..."
+        "year": "Đầu thế kỷ XIX",
+        "title": "Ông tham gia nhiều hoạt động quân sự và quản lý đất Gia Định, có nhiều đóng góp đối với vùng Nam Bộ",
+        "description": "Ông tham gia nhiều hoạt động quân sự và quản lý đất Gia Định, có nhiều đóng góp đối với vùng Nam Bộ"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 101/2004/QĐ-BVHTT ngày 15/12/2004 của Bộ Văn hóa – Thông tin."
+        "year": "1827",
+        "title": "Trương Tấn Bửu qua đời, được an táng tại khu vực Gia Định",
+        "description": "Trương Tấn Bửu qua đời, được an táng tại khu vực Gia Định"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XIX–XX",
+        "title": "Khu lăng được gìn giữ và tu bổ, mang đặc trưng kiến trúc lăng mộ quan lại đầu triều Nguyễn",
+        "description": "Khu lăng được gìn giữ và tu bổ, mang đặc trưng kiến trúc lăng mộ quan lại đầu triều Nguyễn"
+      },
+      {
+        "id": 5,
+        "year": "15/12/2004",
+        "title": "Lăng Trương Tấn Bửu được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Lăng Trương Tấn Bửu được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -56045,21 +57137,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 19 đường Cô Giang, phường Cầu Kiệu, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1745",
+        "title": "Võ Di Nguy sinh tại Phú Vang, sau trở thành một danh tướng dưới thời Nguyễn",
+        "description": "Võ Di Nguy sinh tại Phú Vang, sau trở thành một danh tướng dưới thời Nguyễn"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Lăng Võ Di Nguy; cuối thế kỷ XVIII, Võ Di Nguy tham gia lực lượng Nguyễn Ánh chống Tây Sơn; ông giữ vai trò quan trọng trong các hoạt động quân sự và thủy quân; 07/01/1993, lăng được xếp hạng di tích ..."
+        "year": "1801",
+        "title": "Ông hy sinh trong trận Thị Nại, thi hài được đưa về Gia Định an táng",
+        "description": "Ông hy sinh trong trận Thị Nại, thi hài được đưa về Gia Định an táng"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+        "year": "1801",
+        "title": "Lăng Võ Di Nguy được xây dựng, theo kiểu kiến trúc dành cho bậc đại công thần",
+        "description": "Lăng Võ Di Nguy được xây dựng, theo kiểu kiến trúc dành cho bậc đại công thần"
+      },
+      {
+        "id": 4,
+        "year": "1831",
+        "title": "Ông được vua Minh Mạng truy phong Bình Giang Quận Công, được thờ phụng trang trọng tại khu lăng",
+        "description": "Ông được vua Minh Mạng truy phong Bình Giang Quận Công, được thờ phụng trang trọng tại khu lăng"
+      },
+      {
+        "id": 5,
+        "year": "1972",
+        "title": "Khu đền thờ được xây dựng lại, mang dáng dấp kiến trúc nhà tứ trụ Nam Bộ",
+        "description": "Khu đền thờ được xây dựng lại, mang dáng dấp kiến trúc nhà tứ trụ Nam Bộ"
+      },
+      {
+        "id": 6,
+        "year": "07/01/1993",
+        "title": "Lăng Võ Di Nguy được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Lăng Võ Di Nguy được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -56658,21 +57768,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 104 đường Hoàng Hoa Thám, phường Vũng Tàu, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Trước năm 1919",
+        "title": "Chùa được dựng trên triền Núi Nhỏ, trở thành một trong những ngôi chùa lâu đời nhất Vũng Tàu",
+        "description": "Chùa được dựng trên triền Núi Nhỏ, trở thành một trong những ngôi chùa lâu đời nhất Vũng Tàu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Linh Sơn Cổ Tự; hình thành và phát triển gắn với lịch sử Phật giáo tại Vũng Tàu; nhiều lần được tu bổ qua các thời kỳ; 03/08/1991, được xếp hạng di tích quốc gia theo Quyết định 1371/QĐ."
+        "year": "1919",
+        "title": "Khu đất cũ được sử dụng cho công trình của chính quyền Pháp, chùa được di chuyển xuống khu vực phía dưới núi",
+        "description": "Khu đất cũ được sử dụng cho công trình của chính quyền Pháp, chùa được di chuyển xuống khu vực phía dưới núi"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1371/QĐ ngày 03/08/1991."
+        "year": "1948",
+        "title": "Chùa được giao cho các vị cao tăng quản lý, tiếp tục phát triển hoạt động Phật giáo",
+        "description": "Chùa được giao cho các vị cao tăng quản lý, tiếp tục phát triển hoạt động Phật giáo"
+      },
+      {
+        "id": 4,
+        "year": "1959",
+        "title": "Chùa được dời sang vị trí hiện nay, xây dựng khang trang và ổn định hơn",
+        "description": "Chùa được dời sang vị trí hiện nay, xây dựng khang trang và ổn định hơn"
+      },
+      {
+        "id": 5,
+        "year": "03/08/1991",
+        "title": "Linh Sơn Cổ Tự được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Linh Sơn Cổ Tự được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -57330,21 +58452,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 264 đường Hải Thượng Lãn Ông, phường Chợ Lớn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Thế kỷ XVIII",
+        "title": "Cộng đồng người Hoa Phúc Kiến xây dựng miếu, làm nơi thờ Ông Bổn và hội họp đồng hương",
+        "description": "Cộng đồng người Hoa Phúc Kiến xây dựng miếu, làm nơi thờ Ông Bổn và hội họp đồng hương"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Miếu Nhị Phủ; hình thành trong quá trình cộng đồng người Hoa xây dựng Chợ Lớn; trở thành trung tâm tín ngưỡng Ông Bổn của cộng đồng; nhiều lần được tu bổ; 07/01/1993, được xếp hạng di tích kiến trúc n..."
+        "year": "Thế kỷ XIX",
+        "title": "Miếu được mở rộng và hoàn thiện, trở thành cơ sở tín ngưỡng quan trọng tại Chợ Lớn",
+        "description": "Miếu được mở rộng và hoàn thiện, trở thành cơ sở tín ngưỡng quan trọng tại Chợ Lớn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+        "year": "Thế kỷ XIX–XX",
+        "title": "Công trình trải qua nhiều lần trùng tu, vẫn giữ phong cách kiến trúc Phúc Kiến truyền thống",
+        "description": "Công trình trải qua nhiều lần trùng tu, vẫn giữ phong cách kiến trúc Phúc Kiến truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Nhiều phù điêu, tượng thờ và đồ trang trí được bảo tồn, tạo nên giá trị nghệ thuật đặc sắc của di tích",
+        "description": "Nhiều phù điêu, tượng thờ và đồ trang trí được bảo tồn, tạo nên giá trị nghệ thuật đặc sắc của di tích"
+      },
+      {
+        "id": 5,
+        "year": "25/04/1998",
+        "title": "Miếu Nhị Phủ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Miếu Nhị Phủ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -57947,21 +59081,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 122 đường Võ Văn Kiệt, phường Bến Thành, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1887",
+        "title": "Miếu Thiên Hậu được khởi dựng, phục vụ đời sống tín ngưỡng của cộng đồng người Hoa Quảng Đông",
+        "description": "Miếu Thiên Hậu được khởi dựng, phục vụ đời sống tín ngưỡng của cộng đồng người Hoa Quảng Đông"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Miếu Thiên Hậu (Quảng Triệu hội quán); hình thành từ quá trình định cư của người Hoa Quảng Đông tại Sài Gòn – Chợ Lớn; duy trì các nghi lễ vía Thiên Hậu và hoạt động cộng đồng; 25/04/1998, được xếp hạ..."
+        "year": "Cuối thế kỷ XIX",
+        "title": "Quảng Triệu Hội quán hình thành cùng khu vực miếu, trở thành nơi hội họp và tương trợ đồng hương",
+        "description": "Quảng Triệu Hội quán hình thành cùng khu vực miếu, trở thành nơi hội họp và tương trợ đồng hương"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin."
+        "year": "1920",
+        "title": "Miếu bị hỏa hoạn, nhiều hạng mục kiến trúc bị hư hại",
+        "description": "Miếu bị hỏa hoạn, nhiều hạng mục kiến trúc bị hư hại"
+      },
+      {
+        "id": 4,
+        "year": "1922",
+        "title": "Miếu được xây dựng lại, hình thành diện mạo kiến trúc cơ bản còn lưu giữ đến nay",
+        "description": "Miếu được xây dựng lại, hình thành diện mạo kiến trúc cơ bản còn lưu giữ đến nay"
+      },
+      {
+        "id": 5,
+        "year": "Cuối thế kỷ XX",
+        "title": "Công trình được bảo tồn như một di sản của cộng đồng Hoa, ghi dấu văn hóa tín ngưỡng lâu đời tại Sài Gòn – Chợ Lớn",
+        "description": "Công trình được bảo tồn như một di sản của cộng đồng Hoa, ghi dấu văn hóa tín ngưỡng lâu đời tại Sài Gòn – Chợ Lớn"
       }
     ],
     "gallery": [
@@ -58564,21 +59710,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 21 đường Ngô Tùng Châu, phường Thủ Dầu Một, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Cuối thế kỷ XIX",
+        "title": "Ngôi nhà được xây dựng tại Thủ Dầu Một, theo kiểu nhà truyền thống Nam Bộ",
+        "description": "Ngôi nhà được xây dựng tại Thủ Dầu Một, theo kiểu nhà truyền thống Nam Bộ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Nhà cổ Trần Công Vàng; 1889–1892, công trình được xây dựng; trải qua nhiều thế hệ gia đình họ Trần gìn giữ; 07/01/1993, được công nhận di tích kiến trúc nghệ thuật cấp quốc gia."
+        "year": "Cuối thế kỷ XIX – đầu XX",
+        "title": "Nội thất được chạm khắc công phu bằng nhiều loại gỗ quý, tạo nên giá trị kiến trúc và mỹ thuật đặc sắc",
+        "description": "Nội thất được chạm khắc công phu bằng nhiều loại gỗ quý, tạo nên giá trị kiến trúc và mỹ thuật đặc sắc"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa – Thông tin."
+        "year": "Thế kỷ XX",
+        "title": "Ngôi nhà được các thế hệ trong gia đình gìn giữ, bảo tồn tương đối nguyên vẹn kết cấu truyền thống",
+        "description": "Ngôi nhà được các thế hệ trong gia đình gìn giữ, bảo tồn tương đối nguyên vẹn kết cấu truyền thống"
+      },
+      {
+        "id": 4,
+        "year": "07/01/1993",
+        "title": "Nhà cổ Trần Công Vàng được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia Hiện nay Ngôi nhà trở thành điểm tham quan di sản, giới thiệu nghệ thuật nhà cổ vùng Thủ Dầu Một",
+        "description": "Nhà cổ Trần Công Vàng được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia Hiện nay Ngôi nhà trở thành điểm tham quan di sản, giới thiệu nghệ thuật nhà cổ vùng Thủ Dầu Một"
       }
     ],
     "gallery": [
@@ -59184,21 +60336,27 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 18 đường Bạch Đằng, phường Thủ Dầu Một, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1890",
+        "title": "Nhà cổ Trần Văn Hổ được xây dựng, theo kiểu kiến trúc nhà truyền thống Nam Bộ",
+        "description": "Nhà cổ Trần Văn Hổ được xây dựng, theo kiểu kiến trúc nhà truyền thống Nam Bộ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Nhà cổ Trần Văn Hổ; 1890, cụ Trần Văn Lân xây dựng ngôi nhà cho gia đình; Trần Văn Hổ (Tự Đẩu) sinh sống và hoạt động tại đây; 29/04/1993, nhà được công nhận di tích quốc gia theo các nguồn giới thiệu..."
+        "year": "Cuối thế kỷ XIX",
+        "title": "Công trình sử dụng nhiều loại gỗ quý, với hệ thống chạm khắc tinh xảo và trang nghiêm",
+        "description": "Công trình sử dụng nhiều loại gỗ quý, với hệ thống chạm khắc tinh xảo và trang nghiêm"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 43-VH/QĐ ngày 07/01/1993 của Bộ Văn hóa và Thông tin."
+        "year": "Thế kỷ XX",
+        "title": "Ngôi nhà được gìn giữ qua nhiều thế hệ, bảo tồn phần lớn kết cấu và nội thất cổ",
+        "description": "Ngôi nhà được gìn giữ qua nhiều thế hệ, bảo tồn phần lớn kết cấu và nội thất cổ"
+      },
+      {
+        "id": 4,
+        "year": "07/01/1993",
+        "title": "Nhà cổ Trần Văn Hổ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia Hiện nay Công trình được bảo tồn và mở cửa tham quan, trở thành di sản tiêu biểu của vùng Thủ Dầu Một",
+        "description": "Nhà cổ Trần Văn Hổ được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia Hiện nay Công trình được bảo tồn và mở cửa tham quan, trở thành di sản tiêu biểu của vùng Thủ Dầu Một"
       }
     ],
     "gallery": [
@@ -59793,21 +60951,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 7 đường Công trường Lam Sơn, phường Sài Gòn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1898",
+        "title": "Nhà hát được khởi công xây dựng, theo phong cách kiến trúc châu Âu",
+        "description": "Nhà hát được khởi công xây dựng, theo phong cách kiến trúc châu Âu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Nhà hát Thành phố; cuối thế kỷ XIX, Nhà hát được xây dựng trong thời kỳ Pháp thuộc; trở thành một công trình văn hóa quan trọng của Sài Gòn; 29/03/2012, được xếp hạng di tích quốc gia theo Quyết định ..."
+        "year": "1900",
+        "title": "Công trình hoàn thành và đưa vào sử dụng, trở thành trung tâm biểu diễn nghệ thuật của Sài Gòn",
+        "description": "Công trình hoàn thành và đưa vào sử dụng, trở thành trung tâm biểu diễn nghệ thuật của Sài Gòn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1209/QĐ-BVHTTDL ngày 29/03/2012 của Bộ Văn hóa, Thể thao và Du lịch."
+        "year": "1944",
+        "title": "Nhà hát bị hư hại do chiến tranh, sau đó được sửa chữa và thay đổi công năng",
+        "description": "Nhà hát bị hư hại do chiến tranh, sau đó được sửa chữa và thay đổi công năng"
+      },
+      {
+        "id": 4,
+        "year": "1955",
+        "title": "Nhà hát được dùng làm trụ sở Quốc hội, sau trở thành trụ sở Hạ nghị viện của chính quyền Sài Gòn",
+        "description": "Nhà hát được dùng làm trụ sở Quốc hội, sau trở thành trụ sở Hạ nghị viện của chính quyền Sài Gòn"
+      },
+      {
+        "id": 5,
+        "year": "1975",
+        "title": "Công trình trở lại chức năng nhà hát, tiếp tục phục vụ các hoạt động văn hóa – nghệ thuật",
+        "description": "Công trình trở lại chức năng nhà hát, tiếp tục phục vụ các hoạt động văn hóa – nghệ thuật"
+      },
+      {
+        "id": 6,
+        "year": "29/03/2012",
+        "title": "Nhà hát Thành phố được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Nhà hát Thành phố được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -60409,21 +61585,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Thôn 5, phường Long Sơn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1900",
+        "title": "Ông Trần cùng gia đình đến Long Sơn khai hoang lập nghiệp, hình thành cộng đồng cư dân mới trên đảo",
+        "description": "Ông Trần cùng gia đình đến Long Sơn khai hoang lập nghiệp, hình thành cộng đồng cư dân mới trên đảo"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Nhà Lớn Long Sơn; đầu thế kỷ XX, ông Trần xây dựng và phát triển khu Nhà Lớn; nơi đây trở thành trung tâm sinh hoạt của cộng đồng Long Sơn; 03/08/1991, được xếp hạng di tích lịch sử – văn hóa cấp quốc..."
+        "year": "1910",
+        "title": "Nhà Thánh được xây dựng, mở đầu quá trình hình thành quần thể Nhà Lớn",
+        "description": "Nhà Thánh được xây dựng, mở đầu quá trình hình thành quần thể Nhà Lớn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1371/QĐ ngày 03/08/1991."
+        "year": "1927–1928",
+        "title": "Lầu Cấm, nhà khách và Lầu Dài được xây dựng, mở rộng khu thờ tự và sinh hoạt cộng đồng",
+        "description": "Lầu Cấm, nhà khách và Lầu Dài được xây dựng, mở rộng khu thờ tự và sinh hoạt cộng đồng"
+      },
+      {
+        "id": 4,
+        "year": "1929",
+        "title": "Chợ và nhiều công trình phục vụ dân cư được hoàn thành, cơ bản hình thành quần thể Nhà Lớn Long Sơn",
+        "description": "Chợ và nhiều công trình phục vụ dân cư được hoàn thành, cơ bản hình thành quần thể Nhà Lớn Long Sơn"
+      },
+      {
+        "id": 5,
+        "year": "1910–1929",
+        "title": "Toàn bộ quần thể liên tục được xây dựng và hoàn thiện, kết hợp tín ngưỡng, sinh hoạt và đời sống cộng đồng",
+        "description": "Toàn bộ quần thể liên tục được xây dựng và hoàn thiện, kết hợp tín ngưỡng, sinh hoạt và đời sống cộng đồng"
+      },
+      {
+        "id": 6,
+        "year": "1991",
+        "title": "Nhà Lớn Long Sơn được công nhận Di tích lịch sử – văn hóa cấp quốc gia",
+        "description": "Nhà Lớn Long Sơn được công nhận Di tích lịch sử – văn hóa cấp quốc gia"
       }
     ],
     "gallery": [
@@ -61023,21 +62217,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 586 đường Trần Hưng Đạo, phường Chợ Lớn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1892",
+        "title": "Các chủ lò và thợ bạc quyên góp xây dựng hội quán, lập nơi thờ tổ nghề kim hoàn",
+        "description": "Các chủ lò và thợ bạc quyên góp xây dựng hội quán, lập nơi thờ tổ nghề kim hoàn"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Nhà thờ tổ thợ bạc; hình thành gắn với cộng đồng thợ bạc, thợ kim hoàn Chợ Lớn; duy trì tục thờ Tổ nghề và sinh hoạt hội quán; 25/04/1998, được xếp hạng di tích kiến trúc nghệ thuật cấp quốc gia."
+        "year": "1896",
+        "title": "Công trình hoàn thành, trở thành trung tâm sinh hoạt của giới thợ bạc Sài Gòn – Chợ Lớn",
+        "description": "Công trình hoàn thành, trở thành trung tâm sinh hoạt của giới thợ bạc Sài Gòn – Chợ Lớn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 722/QĐ-BVHTT ngày 25/04/1998 của Bộ Văn hóa – Thông tin."
+        "year": "Cuối thế kỷ XIX–XX",
+        "title": "Hội quán trở thành nơi tổ chức lễ giỗ tổ nghề, gắn kết các thế hệ thợ kim hoàn Nam Bộ",
+        "description": "Hội quán trở thành nơi tổ chức lễ giỗ tổ nghề, gắn kết các thế hệ thợ kim hoàn Nam Bộ"
+      },
+      {
+        "id": 4,
+        "year": "Thế kỷ XX",
+        "title": "Nhiều hiện vật và đồ thờ được bảo tồn, thể hiện truyền thống lâu đời của nghề kim hoàn",
+        "description": "Nhiều hiện vật và đồ thờ được bảo tồn, thể hiện truyền thống lâu đời của nghề kim hoàn"
+      },
+      {
+        "id": 5,
+        "year": "31/08/1998",
+        "title": "Hội quán Lệ Châu được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Hội quán Lệ Châu được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -61636,21 +62842,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 60/7 đường Hạ Long, phường Vũng Tàu, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1969",
+        "title": "Niết Bàn Tịnh Xá được khởi công trên Núi Nhỏ, hướng ra vùng biển Bãi Dứa",
+        "description": "Niết Bàn Tịnh Xá được khởi công trên Núi Nhỏ, hướng ra vùng biển Bãi Dứa"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Niết Bàn Tịnh Xá; thế kỷ XX, tịnh xá được xây dựng và phát triển thành một địa điểm Phật giáo nổi tiếng của Vũng Tàu; 03/08/1991, được xếp hạng di tích quốc gia theo Quyết định 1371/QĐ."
+        "year": "1969–1974",
+        "title": "Quần thể chùa từng bước được xây dựng, hình thành nhiều công trình Phật giáo quy mô lớn",
+        "description": "Quần thể chùa từng bước được xây dựng, hình thành nhiều công trình Phật giáo quy mô lớn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1371/QĐ ngày 03/08/1991."
+        "year": "1974",
+        "title": "Niết Bàn Tịnh Xá hoàn thành, trở thành một công trình Phật giáo tiêu biểu của Vũng Tàu",
+        "description": "Niết Bàn Tịnh Xá hoàn thành, trở thành một công trình Phật giáo tiêu biểu của Vũng Tàu"
+      },
+      {
+        "id": 4,
+        "year": "Sau 1975",
+        "title": "Chùa tiếp tục được bảo tồn và hoàn thiện, thu hút đông đảo Phật tử và du khách",
+        "description": "Chùa tiếp tục được bảo tồn và hoàn thiện, thu hút đông đảo Phật tử và du khách"
+      },
+      {
+        "id": 5,
+        "year": "03/08/1991",
+        "title": "Niết Bàn Tịnh Xá được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Niết Bàn Tịnh Xá được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -62250,21 +63468,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Núi Châu Thới, phường Đông Hòa, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "Thế kỷ XVII",
+        "title": "Chùa Châu Thới được hình thành trên đỉnh núi, trở thành một trong những cổ tự lâu đời của Đông Nam Bộ",
+        "description": "Chùa Châu Thới được hình thành trên đỉnh núi, trở thành một trong những cổ tự lâu đời của Đông Nam Bộ"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Núi Châu Thới; từ lâu là địa điểm tự nhiên và tín ngưỡng quan trọng của vùng Đông Nam Bộ; 21/04/1989, Núi Châu Thới được xếp hạng danh lam thắng cảnh cấp quốc gia theo Quyết định 451-VH/QĐ."
+        "year": "Thế kỷ XIX",
+        "title": "Núi Châu Thới được ghi chép trong các thư tịch về Gia Định, nổi bật với cảnh quan và giá trị Phật giáo",
+        "description": "Núi Châu Thới được ghi chép trong các thư tịch về Gia Định, nổi bật với cảnh quan và giá trị Phật giáo"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 451-VH/QĐ ngày 21/04/1989."
+        "year": "1945–1975",
+        "title": "Khu vực núi từng che chở cán bộ, chiến sĩ cách mạng, gắn với hai cuộc kháng chiến của dân tộc",
+        "description": "Khu vực núi từng che chở cán bộ, chiến sĩ cách mạng, gắn với hai cuộc kháng chiến của dân tộc"
+      },
+      {
+        "id": 4,
+        "year": "1971",
+        "title": "Đường bậc cấp lên núi được xây dựng, tạo điều kiện thuận lợi cho việc hành hương",
+        "description": "Đường bậc cấp lên núi được xây dựng, tạo điều kiện thuận lợi cho việc hành hương"
+      },
+      {
+        "id": 5,
+        "year": "21/04/1989",
+        "title": "Núi Châu Thới được xếp hạng Danh lam thắng cảnh cấp quốc gia",
+        "description": "Núi Châu Thới được xếp hạng Danh lam thắng cảnh cấp quốc gia"
+      },
+      {
+        "id": 6,
+        "year": "1992",
+        "title": "Chùa tiếp tục được đại trùng tu, hoàn thiện quần thể kiến trúc trên đỉnh núi",
+        "description": "Chùa tiếp tục được đại trùng tu, hoàn thiện quần thể kiến trúc trên đỉnh núi"
       }
     ],
     "gallery": [
@@ -62905,21 +64141,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 610 đường Trần Phú, phường Vũng Tàu, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1961",
+        "title": "Thích Ca Phật Đài được khởi công xây dựng, hình thành quần thể Phật giáo trên sườn Núi Lớn",
+        "description": "Thích Ca Phật Đài được khởi công xây dựng, hình thành quần thể Phật giáo trên sườn Núi Lớn"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Thích Ca Phật Đài; thế kỷ XX, quần thể Phật giáo được xây dựng trên sườn núi Lớn; trở thành một trung tâm hành hương Phật giáo quan trọng của Vũng Tàu; 14/12/1989, được xếp hạng danh lam thắng cảnh cấ..."
+        "year": "1962",
+        "title": "Nhiều hạng mục tượng và bảo tháp được xây dựng, tái hiện những sự kiện trong cuộc đời Đức Phật",
+        "description": "Nhiều hạng mục tượng và bảo tháp được xây dựng, tái hiện những sự kiện trong cuộc đời Đức Phật"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1987/VH.QĐ ngày 14/12/1989."
+        "year": "1963",
+        "title": "Công trình được khánh thành, trở thành trung tâm hành hương nổi tiếng tại Vũng Tàu",
+        "description": "Công trình được khánh thành, trở thành trung tâm hành hương nổi tiếng tại Vũng Tàu"
+      },
+      {
+        "id": 4,
+        "year": "Sau 1975",
+        "title": "Quần thể tiếp tục được bảo tồn và chỉnh trang, phục vụ hoạt động tín ngưỡng và tham quan",
+        "description": "Quần thể tiếp tục được bảo tồn và chỉnh trang, phục vụ hoạt động tín ngưỡng và tham quan"
+      },
+      {
+        "id": 5,
+        "year": "14/12/1989",
+        "title": "Thích Ca Phật Đài được xếp hạng Di tích lịch sử – văn hóa và danh thắng cấp quốc gia",
+        "description": "Thích Ca Phật Đài được xếp hạng Di tích lịch sử – văn hóa và danh thắng cấp quốc gia"
       }
     ],
     "gallery": [
@@ -63527,21 +64775,33 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 131 đường Nam Kỳ Khởi Nghĩa, phường Bến Thành, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1881",
+        "title": "Pháp đình Sài Gòn được khởi công xây dựng, theo thiết kế của kiến trúc sư Jules Bourard",
+        "description": "Pháp đình Sài Gòn được khởi công xây dựng, theo thiết kế của kiến trúc sư Jules Bourard"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Tòa án nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng trong thời kỳ thuộc địa và trở thành một trong những công trình công sở tiêu biểu của khu trung tâm Sài Gòn; 29/03/2012, được xếp hạng d..."
+        "year": "1881–1886",
+        "title": "Công trình được xây dựng và hoàn thiện, mang phong cách kiến trúc phương Tây cuối thế kỷ XIX",
+        "description": "Công trình được xây dựng và hoàn thiện, mang phong cách kiến trúc phương Tây cuối thế kỷ XIX"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 1208/QĐ-BVHTTDL ngày 29/03/2012 của Bộ Văn hóa, Thể thao và Du lịch."
+        "year": "1961",
+        "title": "Một dãy nhà phía sau được xây thêm, nhưng vẫn hài hòa với kiến trúc ban đầu",
+        "description": "Một dãy nhà phía sau được xây thêm, nhưng vẫn hài hòa với kiến trúc ban đầu"
+      },
+      {
+        "id": 4,
+        "year": "Sau 1975",
+        "title": "Công trình được sử dụng làm trụ sở Tòa án nhân dân Thành phố, tiếp tục chức năng tư pháp",
+        "description": "Công trình được sử dụng làm trụ sở Tòa án nhân dân Thành phố, tiếp tục chức năng tư pháp"
+      },
+      {
+        "id": 5,
+        "year": "2012",
+        "title": "Tòa án nhân dân Thành phố được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Tòa án nhân dân Thành phố được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [
@@ -64139,21 +65399,39 @@ export const allMonumentsList = [
     "timeline": [
       {
         "id": 1,
-        "year": "Khởi nguồn",
-        "title": "Quá trình hình thành & Xây dựng",
-        "description": "Hình thành và xây dựng tại Số 86 đường Lê Thánh Tôn, phường Sài Gòn, TP.HCM., ghi nhận nhiều sự kiện lịch sử quan trọng."
+        "year": "1898",
+        "title": "Tòa Thị chính Sài Gòn được khởi công, theo thiết kế mang phong cách kiến trúc châu Âu",
+        "description": "Tòa Thị chính Sài Gòn được khởi công, theo thiết kế mang phong cách kiến trúc châu Âu"
       },
       {
         "id": 2,
-        "year": "Kháng chiến",
-        "title": "Dấu ấn thời kỳ đấu tranh giải phóng",
-        "description": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh; công trình được xây dựng thời Pháp thuộc, trở thành trung tâm hành chính của thành phố qua nhiều giai đoạn lịch sử; 11/04/2020, được ..."
+        "year": "1909",
+        "title": "Công trình hoàn thành và khánh thành, trở thành trụ sở quản lý hành chính của Sài Gòn",
+        "description": "Công trình hoàn thành và khánh thành, trở thành trụ sở quản lý hành chính của Sài Gòn"
       },
       {
         "id": 3,
-        "year": "Xếp hạng",
-        "title": "Được xếp hạng Quốc gia",
-        "description": "Số 3244/QĐ-BVHTTDL ngày 11/04/2020 của Bộ Văn hóa, Thể thao và Du lịch."
+        "year": "25/08/1945",
+        "title": "Ủy ban Hành chánh lâm thời Nam Bộ ra mắt tại đây, ghi dấu thắng lợi của Cách mạng Tháng Tám ở Sài Gòn",
+        "description": "Ủy ban Hành chánh lâm thời Nam Bộ ra mắt tại đây, ghi dấu thắng lợi của Cách mạng Tháng Tám ở Sài Gòn"
+      },
+      {
+        "id": 4,
+        "year": "1959",
+        "title": "Công trình được đổi tên thành Tòa Đô Chánh, tiếp tục giữ chức năng hành chính đô thị",
+        "description": "Công trình được đổi tên thành Tòa Đô Chánh, tiếp tục giữ chức năng hành chính đô thị"
+      },
+      {
+        "id": 5,
+        "year": "1975–1976",
+        "title": "Tòa nhà được chính quyền cách mạng tiếp quản, trở thành trụ sở của chính quyền Thành phố Hồ Chí Minh",
+        "description": "Tòa nhà được chính quyền cách mạng tiếp quản, trở thành trụ sở của chính quyền Thành phố Hồ Chí Minh"
+      },
+      {
+        "id": 6,
+        "year": "2020",
+        "title": "Công trình được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia",
+        "description": "Công trình được xếp hạng Di tích kiến trúc nghệ thuật cấp quốc gia"
       }
     ],
     "gallery": [

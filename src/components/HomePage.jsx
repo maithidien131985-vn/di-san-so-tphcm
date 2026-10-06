@@ -826,42 +826,77 @@ export default function HomePage({
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-12 text-center">
         <ScrollReveal>
           <div className="space-y-3 sm:space-y-4">
-            <div className="flex items-center justify-center gap-6 sm:gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-5 max-w-2xl mx-auto items-stretch justify-center">
               <button
                 type="button"
                 onClick={() => onOpenExplorer && onOpenExplorer('Lịch sử')}
-                className="w-14 h-14 sm:w-16 sm:h-16 p-2 rounded-2xl bg-white border-2 border-rose-200 hover:border-[#8B1417] shadow-md hover:shadow-xl flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer group"
+                className="p-3 rounded-2xl bg-white border-2 border-rose-100 hover:border-[#8B1417] shadow-sm hover:shadow-lg flex flex-col items-center justify-center gap-2 hover:scale-105 transition-all duration-300 cursor-pointer group"
                 title="Khám phá Di tích Lịch sử"
               >
-                <img
-                  src="/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png"
-                  alt="Di tích Lịch sử"
-                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
-                />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 rounded-xl bg-amber-50/60 group-hover:bg-rose-50 flex items-center justify-center transition-colors">
+                  <img
+                    src="/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png"
+                    alt="Di tích Lịch sử"
+                    className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform"
+                  />
+                </div>
+                <span className="text-xs sm:text-sm font-bold text-stone-700 group-hover:text-[#8B1417] transition-colors leading-tight">
+                  Di tích Lịch sử
+                </span>
               </button>
+
               <button
                 type="button"
                 onClick={() => onOpenExplorer && onOpenExplorer('Kiến trúc')}
-                className="w-14 h-14 sm:w-16 sm:h-16 p-2 rounded-2xl bg-white border-2 border-rose-200 hover:border-[#8B1417] shadow-md hover:shadow-xl flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer group"
+                className="p-3 rounded-2xl bg-white border-2 border-rose-100 hover:border-[#8B1417] shadow-sm hover:shadow-lg flex flex-col items-center justify-center gap-2 hover:scale-105 transition-all duration-300 cursor-pointer group"
                 title="Khám phá Di tích Kiến trúc nghệ thuật"
               >
-                <img
-                  src="/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png"
-                  alt="Kiến trúc nghệ thuật"
-                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
-                />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 rounded-xl bg-amber-50/60 group-hover:bg-rose-50 flex items-center justify-center transition-colors">
+                  <img
+                    src="/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png"
+                    alt="Kiến trúc nghệ thuật"
+                    className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform"
+                  />
+                </div>
+                <span className="text-xs sm:text-sm font-bold text-stone-700 group-hover:text-[#8B1417] transition-colors leading-tight">
+                  Kiến trúc nghệ thuật
+                </span>
               </button>
+
               <button
                 type="button"
                 onClick={() => onOpenExplorer && onOpenExplorer('Khảo cổ')}
-                className="w-14 h-14 sm:w-16 sm:h-16 p-2 rounded-2xl bg-white border-2 border-rose-200 hover:border-[#8B1417] shadow-md hover:shadow-xl flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer group"
+                className="p-3 rounded-2xl bg-white border-2 border-rose-100 hover:border-[#8B1417] shadow-sm hover:shadow-lg flex flex-col items-center justify-center gap-2 hover:scale-105 transition-all duration-300 cursor-pointer group"
                 title="Khám phá Di tích Khảo cổ học"
               >
-                <img
-                  src="/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png"
-                  alt="Khảo cổ học"
-                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
-                />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 rounded-xl bg-amber-50/60 group-hover:bg-rose-50 flex items-center justify-center transition-colors">
+                  <img
+                    src="/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png"
+                    alt="Khảo cổ học"
+                    className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform"
+                  />
+                </div>
+                <span className="text-xs sm:text-sm font-bold text-stone-700 group-hover:text-[#8B1417] transition-colors leading-tight">
+                  Khảo cổ học
+                </span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => onOpenExplorer && onOpenExplorer('thắng cảnh')}
+                className="p-3 rounded-2xl bg-white border-2 border-rose-100 hover:border-[#8B1417] shadow-sm hover:shadow-lg flex flex-col items-center justify-center gap-2 hover:scale-105 transition-all duration-300 cursor-pointer group"
+                title="Khám phá Di tích Danh lam thắng cảnh"
+              >
+                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 rounded-xl bg-amber-50/60 group-hover:bg-rose-50 flex items-center justify-center transition-colors">
+                  <img
+                    src="/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png"
+                    alt="Danh lam thắng cảnh"
+                    className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform"
+                  />
+                </div>
+                <span className="text-xs sm:text-sm font-bold text-stone-700 group-hover:text-[#8B1417] transition-colors leading-tight">
+                  Danh lam thắng cảnh
+                </span>
               </button>
             </div>
 

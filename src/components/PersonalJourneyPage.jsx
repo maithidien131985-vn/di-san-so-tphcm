@@ -171,6 +171,8 @@ export default function PersonalJourneyPage({
       return '/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png';
     } else if (type.includes('Kiến trúc')) {
       return '/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png';
+    } else if (type.includes('Danh lam') || type.includes('Thắng cảnh') || type.includes('thắng cảnh')) {
+      return '/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png';
     }
     return '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png';
   };

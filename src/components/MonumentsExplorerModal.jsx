@@ -17,35 +17,46 @@ export default function MonumentsExplorerModal({
   initialCategory = 'all',
   initialSearch = ''
 }) {
-  const [searchTerm, setSearchTerm] = useState(initialSearch || '');
+  const safeInitialSearch = (typeof initialSearch === 'string' && initialSearch.trim()) ? initialSearch.trim() : '';
+  const safeInitialCategory = (typeof initialCategory === 'string' && initialCategory.trim()) ? initialCategory.trim() : 'all';
+
+  const [searchTerm, setSearchTerm] = useState(safeInitialSearch);
   const [selectedRank, setSelectedRank] = useState('all');
-  const [selectedType, setSelectedType] = useState(initialCategory || 'all');
+  const [selectedType, setSelectedType] = useState(safeInitialCategory);
   const [page, setPage] = useState(1);
   const itemsPerPage = 12;
 
   useEffect(() => {
     if (isOpen) {
-      if (initialCategory && initialCategory !== 'all') {
-        setSelectedType(initialCategory);
-      } else {
-        setSelectedType('all');
-      }
-      setSearchTerm(initialSearch || '');
+      const validCategory = (typeof initialCategory === 'string' && initialCategory.trim()) ? initialCategory.trim() : 'all';
+      const validSearch = (typeof initialSearch === 'string' && initialSearch.trim()) ? initialSearch.trim() : '';
+      setSelectedType(validCategory);
+      setSelectedRank('all');
+      setSearchTerm(validSearch);
       setPage(1);
     }
   }, [isOpen, initialCategory, initialSearch]);
 
   const filteredMonuments = useMemo(() => {
+    if (!Array.isArray(allMonumentsList)) return [];
+
     return allMonumentsList.filter(m => {
-      const q = searchTerm.toLowerCase().trim();
+      if (!m || !m.info) return false;
+
+      const q = (typeof searchTerm === 'string' ? searchTerm : '').toLowerCase().trim();
       const matchSearch = !q || 
-        m.info.name.toLowerCase().includes(q) ||
+        (m.info.name && m.info.name.toLowerCase().includes(q)) ||
         (m.info.address && m.info.address.toLowerCase().includes(q)) ||
         (m.info.overview && m.info.overview.toLowerCase().includes(q)) ||
-        m.stt.toString() === q;
+        (m.stt && m.stt.toString() === q);
 
-      const matchRank = selectedRank === 'all' || (m.info.ranking && m.info.ranking.includes(selectedRank));
-      const matchType = selectedType === 'all' || (m.info.type && m.info.type.includes(selectedType));
+      const rank = (typeof selectedRank === 'string' ? selectedRank : 'all').toLowerCase();
+      const monRanking = (m.info.ranking || '').toLowerCase();
+      const matchRank = rank === 'all' || monRanking.includes(rank);
+
+      const type = (typeof selectedType === 'string' ? selectedType : 'all').toLowerCase();
+      const monType = (m.info.type || '').toLowerCase();
+      const matchType = type === 'all' || monType.includes(type);
 
       return matchSearch && matchRank && matchType;
     });
@@ -61,9 +72,11 @@ export default function MonumentsExplorerModal({
 
   const handleChoose = (monument) => {
     if (onSelectMonument) {
-      onSelectMonument(monument);
+      onSelectMonument(monument?.stt || monument);
     }
-    onClose();
+    if (onClose) {
+      onClose();
+    }
   };
 
   return (

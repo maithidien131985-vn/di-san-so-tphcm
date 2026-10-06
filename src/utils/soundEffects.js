@@ -136,37 +136,162 @@ class SoundEffectsEngine {
     } catch (e) {}
   }
 
-  // Phát âm thanh giọng đọc tiếng Việt rõ ràng
-  speakVoice(text = 'Bạn đã khám phá xong di tích này, hãy khám phá di tích tiếp theo') {
-    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+  // Âm thanh lật thẻ bài xoẹt vui tai (Card Flip)
+  playCardFlip() {
+    if (!this.enabled) return;
     try {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'vi-VN';
-      utterance.rate = 0.95;
-      utterance.pitch = 1.05;
-      
-      const voices = window.speechSynthesis.getVoices();
-      const viVoice = voices.find(v => v.lang.includes('vi') || v.lang.includes('VI'));
-      if (viVoice) utterance.voice = viVoice;
-      
-      window.speechSynthesis.speak(utterance);
-    } catch (e) {
-      console.warn('Speech synthesis error:', e);
-    }
+      this.init();
+      if (!this.ctx) return;
+      const now = this.ctx.currentTime;
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(400, now);
+      osc.frequency.exponentialRampToValueAtTime(800, now + 0.04);
+      osc.frequency.exponentialRampToValueAtTime(300, now + 0.08);
+      gain.gain.setValueAtTime(0.001, now);
+      gain.gain.exponentialRampToValueAtTime(0.08, now + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.09);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.1);
+    } catch (e) {}
   }
 
-  // Âm thanh vinh danh hoàn thành di tích kết hợp kèn chiến thắng + giọng đọc
+  // Âm thanh ghép mảnh khớp giòn giã (Tile Snap)
+  playTileSnap() {
+    if (!this.enabled) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      const now = this.ctx.currentTime;
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(600, now);
+      osc.frequency.exponentialRampToValueAtTime(1200, now + 0.05);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.13);
+    } catch (e) {}
+  }
+
+  // Âm thanh dập dấu mộc đỏ "Cộp" đanh thép, vang vọng (Stamp Sound)
+  playStamp() {
+    if (!this.enabled) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      const now = this.ctx.currentTime;
+      // Trống đập thấp (Thud)
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(150, now);
+      osc.frequency.exponentialRampToValueAtTime(45, now + 0.15);
+      gain.gain.setValueAtTime(0.3, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.26);
+
+      // Tiếng đanh vang của gỗ (Click attack)
+      const osc2 = this.ctx.createOscillator();
+      const gain2 = this.ctx.createGain();
+      osc2.type = 'square';
+      osc2.frequency.setValueAtTime(500, now);
+      osc2.frequency.exponentialRampToValueAtTime(120, now + 0.04);
+      gain2.gain.setValueAtTime(0.15, now);
+      gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+      osc2.connect(gain2);
+      gain2.connect(this.ctx.destination);
+      osc2.start(now);
+      osc2.stop(now + 0.06);
+    } catch (e) {}
+  }
+
+  // Âm thanh mở rương / bẻ khóa mật mã (Lock Open Chime)
+  playLockOpen() {
+    if (!this.enabled) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      const now = this.ctx.currentTime;
+      const freqs = [440, 554.37, 659.25, 880]; // A4, C#5, E5, A5
+      freqs.forEach((f, idx) => {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(f, now + idx * 0.06);
+        gain.gain.setValueAtTime(0.001, now + idx * 0.06);
+        gain.gain.exponentialRampToValueAtTime(0.12, now + idx * 0.06 + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.06 + 0.35);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(now + idx * 0.06);
+        osc.stop(now + idx * 0.06 + 0.38);
+      });
+    } catch (e) {}
+  }
+
+  // Âm thanh chuông ngân thành công lấp lánh (Success Chime)
+  playSuccessChime() {
+    if (!this.enabled) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      const now = this.ctx.currentTime;
+      const notes = [587.33, 739.99, 880.00, 1174.66]; // D5, F#5, A5, D6
+      notes.forEach((freq, i) => {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, now + i * 0.07);
+        gain.gain.setValueAtTime(0.001, now + i * 0.07);
+        gain.gain.exponentialRampToValueAtTime(0.1, now + i * 0.07 + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.07 + 0.4);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(now + i * 0.07);
+        osc.stop(now + i * 0.07 + 0.42);
+      });
+    } catch (e) {}
+  }
+
+  // Âm thanh tích tắc đếm ngược (Countdown Tick)
+  playCountdownTick() {
+    if (!this.enabled) return;
+    try {
+      this.init();
+      if (!this.ctx) return;
+      const now = this.ctx.currentTime;
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(900, now);
+      gain.gain.setValueAtTime(0.05, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.03);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.04);
+    } catch (e) {}
+  }
+
+  // Âm thanh vinh danh hoàn thành di tích (Nhạc kèn chiến thắng + Chuông ngân vàng)
   playMonumentCompletion(monumentName = '') {
     this.playVictoryFanfare();
     setTimeout(() => {
-      const msg = monumentName 
-        ? `Chúc mừng bạn đã hoàn thành khám phá di tích ${monumentName}! Hãy cùng khám phá di tích tiếp theo nhé!`
-        : 'Bạn đã khám phá xong di tích này, hãy khám phá di tích tiếp theo!';
-      this.speakVoice(msg);
+      this.playSuccessChime();
     }, 450);
   }
 }
 
 export const soundEffects = new SoundEffectsEngine();
 export default soundEffects;
+

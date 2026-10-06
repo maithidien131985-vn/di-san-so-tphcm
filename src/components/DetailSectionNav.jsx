@@ -15,7 +15,7 @@ const SECTIONS = [
   { id: 'media-section', label: 'Phim & Audio', icon: Film },
   { id: 'history-section', label: 'Lịch sử', icon: History },
   { id: 'highlights-section', label: '3 Điểm nhấn', icon: Lightbulb },
-  { id: 'investigation-section', label: 'Giải mã & Đố', icon: HelpCircle },
+  { id: 'investigation-section', label: '🎮 Tham gia trò chơi', icon: HelpCircle },
   { id: 'next-monuments-section', label: 'Tiếp theo', icon: Compass }
 ];
 
