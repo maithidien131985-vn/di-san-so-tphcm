@@ -219,14 +219,14 @@ export default function HistorySection({
   const correctCount = shuffledItems.filter((item, idx) => item.originalIndex === idx).length;
 
   return (
-    <div id="history-section" className="space-y-10 sm:space-y-14">
+    <div id="history-section" className="bg-[#FAF4EE] rounded-3xl p-6 sm:p-8 border-2 border-[#E8DCCB] shadow-sm space-y-7">
       {/* ========================================================================= */}
-      {/* 1. GIÁ TRỊ LỊCH SỬ CARD (NỀN HỒNG ĐẤT / HUYẾT DỤ NHẠT) */}
+      {/* 1. GIÁ TRỊ LỊCH SỬ CARD */}
       {/* ========================================================================= */}
-      <section className="bg-[#FCF4F4] rounded-3xl p-6 sm:p-8 border border-rose-200/90 shadow-sm space-y-5">
-        <div className="flex items-center justify-between gap-3 pb-3.5 border-b border-rose-200/70">
+      <section className="bg-white rounded-2xl p-6 sm:p-7 border border-[#EAE3D9] shadow-2xs space-y-4">
+        <div className="flex items-center justify-between gap-3 pb-3.5 border-b border-[#F0EAE1]">
           <div className="flex items-center gap-3 text-[#7E1819]">
-            <div className="w-12 h-12 rounded-2xl bg-rose-100 border border-rose-300 flex items-center justify-center text-[#7E1819] shadow-2xs shrink-0">
+            <div className="w-12 h-12 rounded-2xl bg-red-50 border border-red-200 flex items-center justify-center text-[#7E1819] shadow-2xs shrink-0">
               <Landmark className="w-6 h-6" />
             </div>
             <div>
@@ -241,7 +241,7 @@ export default function HistorySection({
               </p>
             </div>
           </div>
-          <span className="hidden sm:inline-flex text-xs font-bold px-3.5 py-1.5 rounded-full bg-rose-100 text-rose-900 border border-rose-300">
+          <span className="hidden sm:inline-flex text-xs font-bold px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
             Tư liệu lịch sử xác thực
           </span>
         </div>
@@ -251,10 +251,10 @@ export default function HistorySection({
             rows={5}
             value={overview || ''}
             onChange={(e) => onUpdateOverview && onUpdateOverview(e.target.value)}
-            className="w-full p-4 rounded-xl border-2 border-rose-400 bg-white text-[#2C241E] text-base sm:text-lg md:text-xl leading-relaxed outline-none focus:ring-2 focus:ring-rose-500 font-serif-title font-medium"
+            className="w-full p-4 rounded-xl border-2 border-amber-400 bg-amber-50/30 text-[#2C241E] text-base sm:text-lg md:text-xl leading-relaxed outline-none focus:ring-2 focus:ring-amber-500 font-serif-title font-medium"
           />
         ) : (
-          <div className="p-6 sm:p-7 rounded-2xl bg-white/95 border border-rose-100 shadow-2xs">
+          <div className="p-5 sm:p-6 rounded-2xl bg-[#FAF7F2]/70 border border-[#EFE8DE]">
             <p className="text-[#2C241E] text-lg sm:text-xl md:text-2xl leading-relaxed sm:leading-loose text-justify font-serif-title font-medium first-letter:text-5xl first-letter:font-black first-letter:text-[#7E1819] first-letter:float-left first-letter:mr-3 first-letter:leading-none">
               {overview || 'Thông tin tổng quan về di tích lịch sử đang được cập nhật.'}
             </p>
@@ -263,12 +263,12 @@ export default function HistorySection({
       </section>
 
       {/* ========================================================================= */}
-      {/* 2. HỘP TRÒ CHƠI TRẠM 2: KÉO - THẢ XẾP NIÊN ĐẠI LỊCH SỬ (NỀN XANH NGỌC NHẠT) */}
+      {/* 2. HỘP TRÒ CHƠI TRẠM 2: KÉO - THẢ XẾP NIÊN ĐẠI LỊCH SỬ (TIMELINE ORDER GAME) */}
       {/* ========================================================================= */}
-      <section className="bg-[#F0F8F8] text-[#2C241E] rounded-3xl p-6 sm:p-8 border-2 border-teal-200/90 shadow-sm space-y-5 relative overflow-hidden">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-teal-200/70">
+      <section className="bg-white text-[#2C241E] rounded-2xl p-6 sm:p-7 border border-[#EAE3D9] shadow-2xs space-y-5 relative overflow-hidden">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-[#EAE3D9]">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-100 border border-teal-300 text-teal-900 text-xs font-black uppercase tracking-wider shadow-2xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
               <span className="text-sm">⏳</span>
               <span className="font-bold tracking-wide text-[#7E1819]">
                 TRÒ CHƠI KÉO - THẢ XẾP DÒNG THỜI GIAN
@@ -436,11 +436,11 @@ export default function HistorySection({
       </section>
 
       {/* ========================================================================= */}
-      {/* 3. DẤU MỐC LỊCH SỬ - TRỤC THỜI GIAN NGANG (NỀN VÀNG GIẤY ĐIỆP CỔ) */}
+      {/* 3. DẤU MỐC LỊCH SỬ - TRỤC THỜI GIAN NGANG */}
       {/* ========================================================================= */}
       {isTimelineUnlocked ? (
-        <section className="bg-[#FCF7ED] rounded-3xl p-6 sm:p-8 border-2 border-amber-300 shadow-sm space-y-6 animate-scaleUp">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-amber-200">
+        <section className="bg-white rounded-2xl p-6 sm:p-7 border border-[#EAE3D9] shadow-2xs space-y-6 animate-scaleUp">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-[#F0EAE1]">
             <div className="flex items-center gap-3 text-[#7E1819]">
               <div className="w-11 h-11 rounded-2xl bg-amber-100 border border-amber-300 flex items-center justify-center text-[#7E1819] shadow-2xs shrink-0">
                 <Clock className="w-6 h-6 text-[#7E1819]" />
@@ -510,7 +510,7 @@ export default function HistorySection({
         </section>
       ) : (
         /* KHUNG THÔNG BÁO NIÊM PHONG KHI CHƯA MỞ KHÓA */
-        <section className="bg-gradient-to-br from-[#FFF9F3] to-[#FAF0E6] rounded-3xl p-6 sm:p-8 border-2 border-dashed border-amber-300 shadow-2xs space-y-3 text-center">
+        <section className="bg-amber-50/80 rounded-2xl p-6 sm:p-7 border-2 border-dashed border-amber-300 shadow-2xs space-y-3 text-center">
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-amber-100 text-amber-900 border border-amber-300 shadow-inner mb-1">
             <Lock className="w-7 h-7 text-[#7E1819] animate-pulse" />
           </div>
@@ -524,10 +524,10 @@ export default function HistorySection({
       )}
 
       {/* ========================================================================= */}
-      {/* 4. KHO BÁU ẢNH TƯ LIỆU: CÂU CHUYỆN DI TÍCH (NỀN XÁM TRO / GỐM SỨ NHẠT) */}
+      {/* 4. KHO BÁU ẢNH TƯ LIỆU: CÂU CHUYỆN DI TÍCH */}
       {/* ========================================================================= */}
-      <section className="bg-[#F6F7F9] rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-5">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-slate-200">
+      <section className="bg-white rounded-2xl p-6 sm:p-7 border border-[#EAE3D9] shadow-2xs space-y-5">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-[#F0EAE1]">
           <div className="space-y-1">
             <div className="flex items-center gap-2.5 text-[#7E1819]">
               <ImageIcon className="w-5 h-5 text-[#7E1819]" />

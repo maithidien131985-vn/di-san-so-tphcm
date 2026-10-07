@@ -230,11 +230,14 @@ export default function MediaAudioVideoRow({
     <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-2">
       <ScrollReveal>
         {/* ========================================================================= */}
-        {/* PHẦN LỚN 1: PHÒNG THU & RẠP CHIẾU ĐA PHƯƠNG TIỆN (NỀN BE GỖ NHẠT) */}
+        {/* PHẦN LỚN THỐNG NHẤT 1 (THEO HÌNH 1): KHÔNG GIAN ĐA PHƯƠNG TIỆN & TRÒ CHƠI LẬT THẺ */}
+        {/* MÀU NỀN CHUNG: VÀNG BE HỔ PHÁCH NHẠT */}
         {/* ========================================================================= */}
-        <div className="bg-[#F8F3EB] rounded-3xl p-6 sm:p-8 border border-[#E6DCC8] shadow-sm space-y-6">
-          {/* SECTION HEADER: SANG TRỌNG, ĐẲNG CẤP BẢO TÀNG */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-[#E6DCC8]">
+        <div className="bg-[#FBF6EE] rounded-3xl p-6 sm:p-8 border-2 border-[#EBDDC5] shadow-sm space-y-8">
+          {/* 1. KHỐI ĐA PHƯƠNG TIỆN: THƯỚC PHIM & THUYẾT MINH */}
+          <div className="space-y-6">
+            {/* SECTION HEADER: SANG TRỌNG, ĐẲNG CẤP BẢO TÀNG */}
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-[#E6DCC8]">
             <div className="space-y-1.5">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-amber-100 to-rose-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
                 <Headphones className="w-4 h-4 text-[#7E1819]" />
@@ -552,10 +555,10 @@ export default function MediaAudioVideoRow({
       </div>
 
         {/* ========================================================================= */}
-        {/* PHẦN LỚN 2: TRÒ CHƠI LẬT THẺ TRÍ NHỚ DI TÍCH (NỀN VÀNG HOÀNG KIM NHẠT) */}
+        {/* 2. KHỐI TRÒ CHƠI LẬT THẺ TRÍ NHỚ DI TÍCH (CÙNG NẰM TRONG KHỐI THỐNG NHẤT HÌNH 1) */}
         {/* ========================================================================= */}
-        <div className="bg-[#FFF9EC] text-[#2C241E] rounded-3xl p-6 sm:p-8 border-2 border-amber-300/90 shadow-sm space-y-5 mt-10 sm:mt-14 relative overflow-hidden">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-amber-200/90">
+        <div className="border-t-2 border-[#E6DCC8] pt-8 space-y-5 relative">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-[#E6DCC8]">
             <div className="space-y-1.5">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
                 <span className="text-xs">🃏</span>
@@ -765,7 +768,8 @@ export default function MediaAudioVideoRow({
             </button>
           </div>
         </div>
-      </ScrollReveal>
-    </section>
-  );
+      </div>
+    </ScrollReveal>
+  </section>
+);
 }
