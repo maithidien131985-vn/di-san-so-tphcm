@@ -227,43 +227,40 @@ export default function MediaAudioVideoRow({
   const progressPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
 
   return (
-    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-6 space-y-6">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-2">
       <ScrollReveal>
         {/* ========================================================================= */}
-        {/* SECTION HEADER: SANG TRỌNG, ĐẲNG CẤP BẢO TÀNG */}
+        {/* PHẦN LỚN 1: PHÒNG THU & RẠP CHIẾU ĐA PHƯƠNG TIỆN (NỀN BE GỖ NHẠT) */}
         {/* ========================================================================= */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-[#EAE3D9]">
-          <div className="space-y-1.5">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-amber-100 to-rose-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
-              <Headphones className="w-4 h-4 text-[#7E1819]" />
-              <span>KHÔNG GIAN ĐA PHƯƠNG TIỆN • THÍNH & THỊ</span>
+        <div className="bg-[#F8F3EB] rounded-3xl p-6 sm:p-8 border border-[#E6DCC8] shadow-sm space-y-6">
+          {/* SECTION HEADER: SANG TRỌNG, ĐẲNG CẤP BẢO TÀNG */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-[#E6DCC8]">
+            <div className="space-y-1.5">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-amber-100 to-rose-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
+                <Headphones className="w-4 h-4 text-[#7E1819]" />
+                <span>KHÔNG GIAN ĐA PHƯƠNG TIỆN • THÍNH & THỊ</span>
+              </div>
+              <WordByWordTitle
+                as="h2"
+                text="Thước Phim Tư Liệu & Giọng Đọc Thuyết Minh Di Sản"
+                className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#2A1214]"
+                staggerDelay={0.04}
+              />
+              <p className="text-xs sm:text-sm text-stone-600 max-w-3xl leading-relaxed">
+                Trải nghiệm tư liệu điện ảnh chân thực kết hợp phòng thu âm thanh thuyết minh lịch sử chuẩn mực và thử thách nhận thức nhanh.
+              </p>
             </div>
-            <WordByWordTitle
-              as="h2"
-              text="Thước Phim Tư Liệu & Giọng Đọc Thuyết Minh Di Sản"
-              className="font-serif-title font-black text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#2A1214]"
-              staggerDelay={0.04}
-            />
-            <p className="text-xs sm:text-sm text-stone-600 max-w-3xl leading-relaxed">
-              Trải nghiệm tư liệu điện ảnh chân thực kết hợp phòng thu âm thanh thuyết minh lịch sử chuẩn mực và thử thách nhận thức nhanh.
-            </p>
+
+            <div className="flex items-center gap-2 shrink-0">
+              <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-white text-[#7E1819] border border-amber-300/80 shadow-2xs flex items-center gap-2">
+                <Radio className="w-4 h-4 text-red-600 animate-pulse" />
+                <span>HD 1080p & Stereo Voice</span>
+              </span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2 shrink-0">
-            <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-white text-[#7E1819] border border-amber-300/80 shadow-2xs flex items-center gap-2">
-              <Radio className="w-4 h-4 text-red-600 animate-pulse" />
-              <span>HD 1080p & Stereo Voice</span>
-            </span>
-          </div>
-        </div>
-
-        {/* ========================================================================= */}
-        {/* HÀNG 1: 2 CỘT STUDIO SONG SONG (VIDEO CINEMA & AUDIO STATION) */}
-        {/* ========================================================================= */}
-        {/* ========================================================================= */}
-        {/* HÀNG 1: 2 CỘT STUDIO SONG SONG (VIDEO CINEMA & AUDIO STATION - GIAO DIỆN NHẠT THANH LỊCH) */}
-        {/* ========================================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch pt-2">
+          {/* HÀNG 1: 2 CỘT STUDIO SONG SONG (VIDEO CINEMA & AUDIO STATION) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch pt-2">
           
           {/* ------------------------------------------------------------------------- */}
           {/* CỘT 1: RẠP PHIM TƯ LIỆU GỐC (CINEMA THEATER MODE) - 6 COLS */}
@@ -552,24 +549,25 @@ export default function MediaAudioVideoRow({
             </div>
           </div>
         </div>
+      </div>
 
         {/* ========================================================================= */}
-        {/* HÀNG 2: TRÒ CHƠI LẬT THẺ TRÍ NHỚ DI TÍCH (MEMORY FLIP CARD MATCH) */}
+        {/* PHẦN LỚN 2: TRÒ CHƠI LẬT THẺ TRÍ NHỚ DI TÍCH (NỀN VÀNG HOÀNG KIM NHẠT) */}
         {/* ========================================================================= */}
-        <div className="bg-[#FAF7F2] text-[#2C241E] rounded-3xl p-5 sm:p-7 border border-[#EAE3D9] shadow-sm space-y-4 pt-5 relative overflow-hidden">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#EAE3D9]">
+        <div className="bg-[#FFF9EC] text-[#2C241E] rounded-3xl p-6 sm:p-8 border-2 border-amber-300/90 shadow-sm space-y-5 mt-10 sm:mt-14 relative overflow-hidden">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-amber-200/90">
             <div className="space-y-1.5">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider shadow-2xs">
                 <span className="text-xs">🃏</span>
                 <span className="font-bold tracking-wide text-[#7E1819]">
                   TRÒ CHƠI LẬT THẺ TRÍ NHỚ
                 </span>
                 <Sparkles className="w-3.5 h-3.5 text-amber-600" />
               </div>
-              <h3 className="font-serif-title font-black text-lg sm:text-xl text-[#2C241E] flex items-center gap-2">
+              <h3 className="font-serif-title font-black text-xl sm:text-2xl text-[#2C241E] flex items-center gap-2">
                 <span>Ghép Cặp Dấu Ấn Di Tích & Không Gian Di Sản</span>
               </h3>
-              <p className="text-xs text-[#666666]">
+              <p className="text-xs sm:text-sm text-[#555555]">
                 Lật mở từng cặp thẻ bài tương ứng để thử tài ghi nhớ các dữ liệu lịch sử vừa tiếp thu qua Video & Thuyết minh!
               </p>
             </div>

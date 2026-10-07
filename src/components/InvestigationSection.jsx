@@ -497,10 +497,11 @@ export default function InvestigationSection({
   };
 
   return (
-    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-6 space-y-8">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-2">
       <ScrollReveal>
-        {/* TIÊU ĐỀ SECTION */}
-        <div className="mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-3 border-b border-[#EAE3D9]">
+        <div className="bg-[#F3F6FB] rounded-3xl p-6 sm:p-8 border border-indigo-200/80 shadow-sm space-y-8">
+          {/* TIÊU ĐỀ SECTION */}
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-4 border-b border-indigo-200/70">
           <div className="space-y-1.5">
             <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
               <Award className="w-4 h-4 text-[#7E1819]" />
@@ -885,8 +886,9 @@ export default function InvestigationSection({
             ))}
           </div>
         </div>
-      </ScrollReveal>
-    </section>
-  );
+      </div>
+    </ScrollReveal>
+  </section>
+);
 }
 

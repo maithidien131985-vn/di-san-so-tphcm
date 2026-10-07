@@ -25,10 +25,11 @@ export default function MonumentLocationChallengeSection({
   const name = info?.name || 'Di tích lịch sử';
 
   return (
-    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-4 sm:py-6">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-2">
       <ScrollReveal>
-        {/* Section Header */}
-        <div className="mb-5 flex flex-col md:flex-row md:items-end justify-between gap-4 pb-3 border-b border-[#EAE3D9]">
+        <div className="bg-[#FBF7F0] rounded-3xl p-6 sm:p-8 border border-[#EBDDC8] shadow-sm space-y-6">
+          {/* Section Header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-[#EBDDC8]">
           <div className="space-y-1.5">
             <div className="flex items-center gap-2.5 text-[#7E1819]">
               <Compass className="w-7 h-7 text-[#7E1819]" />
@@ -113,7 +114,8 @@ export default function MonumentLocationChallengeSection({
             />
           </div>
         </div>
-      </ScrollReveal>
-    </section>
-  );
+      </div>
+    </ScrollReveal>
+  </section>
+);
 }

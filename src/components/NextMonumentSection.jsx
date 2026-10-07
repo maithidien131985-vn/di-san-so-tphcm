@@ -130,19 +130,21 @@ export default function NextMonumentSection({
       )}
 
       {/* ========================================================================= */}
-      {/* COMPACT & MINIMALIST NEXT MONUMENT SUGGESTIONS CONTAINER */}
+      {/* GỢI Ý HÀNH TRÌNH DI TÍCH TIẾP THEO (NỀN NGỌC BÍCH / XANH RÊU NHẠT) */}
       {/* ========================================================================= */}
-      <div className="bg-white/80 backdrop-blur-xs rounded-2xl p-4 sm:p-5 border border-rose-200/80 shadow-xs space-y-4">
-        {/* Compact Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-rose-100">
-          <div className="flex items-center gap-2 text-[#7E1819]">
-            <Compass className="w-4 h-4 text-[#7E1819]" />
-            <h3 className="font-serif-title font-bold text-sm sm:text-base text-[#2C241E]">
-              Gợi Ý Hành Trình Tiếp Theo
-            </h3>
-            <span className="text-[11px] text-stone-500 font-normal hidden sm:inline">
-              (Di tích phụ cận & cùng thể loại)
-            </span>
+      <div className="bg-[#F2F8F4] rounded-3xl p-6 sm:p-8 border border-emerald-200/80 shadow-sm space-y-5">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-emerald-200/70">
+          <div className="flex items-center gap-2.5 text-[#7E1819]">
+            <div className="w-9 h-9 rounded-xl bg-emerald-100 border border-emerald-300 flex items-center justify-center text-emerald-800 shadow-2xs">
+              <Compass className="w-5 h-5 text-emerald-800" />
+            </div>
+            <div>
+              <h3 className="font-serif-title font-black text-base sm:text-lg text-[#2C241E]">
+                Gợi Ý Hành Trình Tiếp Theo
+              </h3>
+              <p className="text-xs text-stone-600">Di tích phụ cận & cùng thể loại</p>
+            </div>
           </div>
 
           {/* Compact Tab Switcher */}

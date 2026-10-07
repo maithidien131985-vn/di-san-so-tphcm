@@ -103,12 +103,12 @@ export default function ThreeKeyHighlightsSection({ keyHighlights, monumentName 
   };
 
   return (
-    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-6">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 py-2">
       <ScrollReveal>
-        <div className="space-y-6">
+        <div className="bg-[#FFF6F0] rounded-3xl p-6 sm:p-8 border border-orange-200/90 shadow-sm space-y-6">
 
           {/* ====== SECTION HEADER ====== */}
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-3 border-b border-[#EAE3D9]">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-orange-200/70">
             <div className="space-y-2">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-[#7E1819] text-xs font-black uppercase tracking-wider">
                 <Zap className="w-3.5 h-3.5" />

@@ -613,8 +613,8 @@ export default function App() {
             onOpenExplorer={handleOpenExplorer}
           />
 
-          {/* Main Detail Content Area - Full Width */}
-          <main className="w-full flex-1 space-y-6 pb-6">
+          {/* Main Detail Content Area - Full Width with generous spacing between sections */}
+          <main className="w-full flex-1 space-y-12 md:space-y-16 pb-16">
             {/* 1. Hero Banner with Integrated Breadcrumb & Bottom Gallery Thumbnails */}
             <HeroBanner
               info={safeInfo}
