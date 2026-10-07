@@ -653,24 +653,44 @@ export default function MediaAudioVideoRow({
                         </div>
                       </div>
                     ) : card.cardType === 'badge' ? (
-                      /* 3. THẺ BIỂU TRƯNG / HUY HIỆU XẾP HẠNG THAY THẾ */
-                      <div className="p-2.5 sm:p-3 h-full flex flex-col justify-between items-center text-center animate-fadeIn bg-gradient-to-b from-amber-100/90 to-amber-50 rounded-2xl">
-                        <div className="w-full flex items-center justify-between">
-                          <span className="text-2xl sm:text-3xl filter drop-shadow-sm">{card.icon}</span>
-                          <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-200 shadow-2xs">
-                            {card.tag}
+                      /* 3. THẺ HUY HIỆU / BIỂU TƯỢNG XẾP HẠNG & NĂM CÔNG NHẬN */
+                      <div className="p-2.5 sm:p-3 h-full flex flex-col justify-between items-center text-center animate-fadeIn bg-gradient-to-b from-amber-100/95 via-amber-50 to-amber-100/80 rounded-2xl border border-amber-300/80 shadow-inner">
+                        {/* Top Header */}
+                        <div className="w-full flex items-center justify-between gap-1">
+                          <span className="text-xl sm:text-2xl filter drop-shadow-sm">{card.icon || '🏛️'}</span>
+                          <span className="text-[9.5px] sm:text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-[#7E1819] text-amber-200 shadow-2xs">
+                            {card.tag || 'CẤP XẾP HẠNG'}
                           </span>
                         </div>
+
+                        {/* Center: Category Icon + Prominent Year */}
                         <div className="w-full my-auto py-1 flex flex-col items-center gap-1.5">
-                          <div className="w-12 h-12 rounded-2xl bg-amber-400/20 border border-amber-400 flex items-center justify-center p-1.5 shadow-inner">
-                            <img src={card.categoryIcon || '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png'} alt="badge" className="w-full h-full object-contain drop-shadow" />
+                          <div className="relative">
+                            <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-amber-400/25 border-2 border-amber-400 flex items-center justify-center p-1.5 shadow-sm">
+                              <img 
+                                src={card.categoryIcon || '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png'} 
+                                alt="icon di tích" 
+                                className="w-full h-full object-contain drop-shadow" 
+                              />
+                            </div>
+                            <span className="absolute -bottom-1 -right-1 text-xs">⭐</span>
                           </div>
-                          <p className="font-black text-xs text-[#7E1819] leading-snug">
+
+                          {/* PROMINENT YEAR BADGE */}
+                          {card.year && card.year !== 'Di sản' && card.year !== 'TP.HCM' && (
+                            <div className="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-white font-black text-[11px] sm:text-xs shadow-xs border border-amber-400 tracking-wide">
+                              NĂM {card.year}
+                            </div>
+                          )}
+
+                          <p className="font-extrabold text-[11px] sm:text-xs text-[#7E1819] leading-snug line-clamp-2 px-1">
                             {card.badgeRanking || card.title}
                           </p>
                         </div>
-                        <div className="w-full flex items-center justify-between pt-1 border-t border-amber-300/60 text-[9px] text-stone-600 font-bold">
-                          <span>{card.sub || 'Biểu trưng di tích'}</span>
+
+                        {/* Bottom Footer */}
+                        <div className="w-full flex items-center justify-between pt-1 border-t border-amber-300/70 text-[9px] sm:text-[9.5px] text-stone-600 font-bold">
+                          <span className="truncate">{card.sub || 'Huy hiệu & Năm'}</span>
                           {isMatched && (
                             <CheckCircle2 className="w-4 h-4 text-emerald-600 animate-bounce shrink-0" />
                           )}

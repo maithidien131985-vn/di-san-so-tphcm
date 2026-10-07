@@ -1,8 +1,11 @@
 // DU LIEU 3 CAP THE TRO CHOI LAT THE TRI NHO DONG BO 103 DI TICH
+// CAP 1: BAN DO GHIM VI TRI (MAP) & DIA CHI THUC TE
+// CAP 2: ANH BANG CONG NHAN / BIA DI TICH (HOAC HUY HIEU XEP HANG + NAM + ICON) & THONG TIN XEP HANG
+// CAP 3: ANH TU LIEU / TUONG DAI / HIEN VAT / CHAN DUNG & DAU AN LICH SU
 export const memoryGameData = {
   "1": {
     "stt": 1,
-    "name": "Dinh Độc Lập",
+    "name": "Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước",
     "pairs": [
       {
         "pairId": 1,
@@ -14,7 +17,7 @@ export const memoryGameData = {
           "lng": 106.6953370089775,
           "monumentName": "Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Dinh Độc Lập",
+          "title": "Bản đồ/ghim vị trí Dinh Độc Lập – Nơi ghi dấu thắng lợi hoàn toàn cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam, thống nhất đất nước",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -28,15 +31,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20nh%C3%ACn%20qua%20c%E1%BB%95ng%20ch%C3%ADnh.jpg",
-          "imageCaption": "Dinh Độc Lập nhìn qua cổng chính",
-          "badgeRanking": "Quốc gia đặc biệt",
+          "cardType": "badge",
+          "year": "2009",
+          "ranking": "Quốc gia đặc biệt",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia đặc biệt",
+          "badgeRanking": "Di tích Quốc gia đặc biệt",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Dinh Độc Lập",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2009",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -50,11 +55,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20gi%E1%BB%AFa%20kh%C3%B4ng%20gian%20xanh%20c%E1%BB%A7a%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
-          "imageCaption": "Dinh Độc Lập giữa không gian xanh của Thành phố Hồ Chí Minh",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp%20nh%C3%ACn%20qua%20c%E1%BB%95ng%20ch%C3%ADnh.jpg",
+          "imageCaption": "Dinh Độc Lập nhìn qua cổng chính",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh xe tăng 390 tại cổng Dinh Độc Lập",
+          "title": "Dinh Độc Lập nhìn qua cổng chính",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -69,7 +74,7 @@ export const memoryGameData = {
   },
   "2": {
     "stt": 2,
-    "name": "Địa đạo Củ Chi",
+    "name": "Di tích lịch sử Địa đạo Củ Chi",
     "pairs": [
       {
         "pairId": 1,
@@ -81,7 +86,7 @@ export const memoryGameData = {
           "lng": 106.46212044155315,
           "monumentName": "Di tích lịch sử Địa đạo Củ Chi",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Địa đạo Củ Chi",
+          "title": "Bản đồ/ghim vị trí Di tích lịch sử Địa đạo Củ Chi",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -95,15 +100,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/C%E1%BB%95ng%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
-          "imageCaption": "Cổng Khu di tích lịch sử Địa đạo Củ Chi",
-          "badgeRanking": "Quốc gia đặc biệt",
+          "cardType": "badge",
+          "year": "2015",
+          "ranking": "Quốc gia đặc biệt",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia đặc biệt",
+          "badgeRanking": "Di tích Quốc gia đặc biệt",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa đạo Củ Chi",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2015",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -117,11 +124,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/C%E1%BB%95ng%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
-          "imageCaption": "Cổng Khu di tích lịch sử Địa đạo Củ Chi",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20C%E1%BB%A7%20Chi/C%E1%BB%ADa%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20t%E1%BA%A1i%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20C%E1%BB%A7%20Chi.jpg",
+          "imageCaption": "Cửa hầm bí mật tại Địa đạo Củ Chi",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh cửa hầm ngụy trang Địa đạo Củ Chi",
+          "title": "Cửa hầm bí mật tại Địa đạo Củ Chi",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -136,7 +143,7 @@ export const memoryGameData = {
   },
   "3": {
     "stt": 3,
-    "name": "Đường Hồ Chí Minh trên biển và Bến Lộc An",
+    "name": "Di tích lịch sử đường Hồ Chí Minh trên biển (Điểm Bến Lộc An)",
     "pairs": [
       {
         "pairId": 1,
@@ -148,7 +155,7 @@ export const memoryGameData = {
           "lng": 106.65656177017404,
           "monumentName": "Di tích lịch sử đường Hồ Chí Minh trên biển (Điểm Bến Lộc An)",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Đường Hồ Chí Minh trên biển và Bến Lộc An",
+          "title": "Bản đồ/ghim vị trí Di tích lịch sử đường Hồ Chí Minh trên biển (Điểm Bến Lộc An)",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -163,14 +170,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/B%E1%BA%A3n%20%C4%91%E1%BB%93%20S%C6%A1%20%C4%91%E1%BB%93%20c%C3%A1c%20tuy%E1%BA%BFn%20v%E1%BA%ADn%20t%E1%BA%A3i%20%C4%90%C6%B0%E1%BB%9Dng%20H%E1%BB%93%20Ch%C3%AD%20Minh%20tr%C3%AAn%20bi%E1%BB%83n.jpg",
-          "imageCaption": "Bản đồ Sơ đồ các tuyến vận tải Đường Hồ Chí Minh trên biển",
-          "badgeRanking": "Quốc gia đặc biệt",
+          "imageSrc": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/L%E1%BB%85%20trao%20B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia%20%C4%90%E1%BA%B7c%20bi%E1%BB%87t.jpg",
+          "imageCaption": "Lễ trao Bằng xếp hạng Di tích Quốc gia Đặc biệt",
+          "year": "2024",
+          "ranking": "Quốc gia đặc biệt",
+          "rankingLabel": "Cấp Quốc gia đặc biệt",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đường Hồ Chí Minh trên biển và Bến Lộc An",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Lễ trao Bằng xếp hạng Di tích Quốc gia Đặc biệt",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -186,9 +195,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C6%B0%E1%BB%9Dng%20HCM%20tr%C3%AAn%20bi%E1%BB%83n-%20B%E1%BA%BFn%20L%E1%BB%99c%20An/C%E1%BA%ADn%20c%E1%BA%A3nh%20T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20B%E1%BA%BFn%20L%E1%BB%99c%20An.jpg",
           "imageCaption": "Cận cảnh Tượng đài Bến Lộc An",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tàu không số cập Bến Lộc An",
+          "title": "Cận cảnh Tượng đài Bến Lộc An",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -203,7 +212,7 @@ export const memoryGameData = {
   },
   "4": {
     "stt": 4,
-    "name": "Nhà tù Côn Đảo",
+    "name": "Khu di tích LSCM nhà tù Côn Đảo",
     "pairs": [
       {
         "pairId": 1,
@@ -215,7 +224,7 @@ export const memoryGameData = {
           "lng": 106.61422492122314,
           "monumentName": "Khu di tích LSCM nhà tù Côn Đảo",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Nhà tù Côn Đảo",
+          "title": "Bản đồ/ghim vị trí Khu di tích LSCM nhà tù Côn Đảo",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -229,15 +238,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/C%E1%BB%95ng%20v%C3%A0o.jpg",
-          "imageCaption": "Cổng vào",
-          "badgeRanking": "Quốc gia đặc biệt",
+          "cardType": "badge",
+          "year": "2012",
+          "ranking": "Quốc gia đặc biệt",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia đặc biệt",
+          "badgeRanking": "Di tích Quốc gia đặc biệt",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà tù Côn Đảo",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2012",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -253,9 +264,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20%C4%91en%20tr%E1%BA%AFng%20ch%E1%BB%A5p%20to%C3%A0n%20c%E1%BA%A3nh%20Nh%C3%A0%20t%C3%B9%20C%C3%B4n%20%C4%90%E1%BA%A3o%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
           "imageCaption": "Ảnh tư liệu đen trắng chụp toàn cảnh Nhà tù Côn Đảo từ trên cao",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh Trại Phú Hải/Nhà tù Côn Đảo",
+          "title": "Ảnh tư liệu đen trắng chụp toàn cảnh Nhà tù Côn Đảo từ trên cao",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -270,7 +281,7 @@ export const memoryGameData = {
   },
   "5": {
     "stt": 5,
-    "name": "Bình Giã",
+    "name": "Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
     "pairs": [
       {
         "pairId": 1,
@@ -282,7 +293,7 @@ export const memoryGameData = {
           "lng": 107.24834876091408,
           "monumentName": "Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Bình Giã",
+          "title": "Bản đồ/ghim vị trí Di tích chiến thắng Bình Giã (Chi khu quân sự Đức Thạnh, ngã ba Bình Giã, ngã ba Sông Cầu, ngã ba Quảng Giáo)",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -296,15 +307,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/To%C3%A0n%20c%E1%BA%A3nh%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
-          "imageCaption": "Toàn cảnh Di tích lịch sử Chiến thắng Bình Giã nhìn từ trên cao",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1994",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Bình Giã",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1994",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -320,9 +333,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/B%C3%ACnh%20Gi%C3%A3/C%E1%BA%ADn%20c%E1%BA%A3nh%20ph%C3%B9%20%C4%91i%C3%AAu%20t%E1%BA%A1i%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20B%C3%ACnh%20Gi%C3%A3.jpg",
           "imageCaption": "Cận cảnh phù điêu tại Di tích lịch sử Chiến thắng Bình Giã",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh/tượng đài Chiến thắng Bình Giã",
+          "title": "Cận cảnh phù điêu tại Di tích lịch sử Chiến thắng Bình Giã",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -337,7 +350,7 @@ export const memoryGameData = {
   },
   "6": {
     "stt": 6,
-    "name": "Minh Đạm",
+    "name": "Khu căn cứ Minh Đạm",
     "pairs": [
       {
         "pairId": 1,
@@ -349,7 +362,7 @@ export const memoryGameData = {
           "lng": 107.26077350902882,
           "monumentName": "Khu căn cứ Minh Đạm",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Minh Đạm",
+          "title": "Bản đồ/ghim vị trí Khu căn cứ Minh Đạm",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -364,14 +377,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/Bia%20T%E1%BB%95%20qu%E1%BB%91c%20ghi%20c%C3%B4ng%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
-          "imageCaption": "Bia Tổ quốc ghi công tại Khu di tích lịch sử Minh Đạm",
-          "badgeRanking": "Quốc gia",
+          "imageSrc": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/C%E1%BA%ADn%20c%E1%BA%A3nh%20nh%C3%A0%20bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
+          "imageCaption": "Cận cảnh nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Minh Đạm",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Cận cảnh nhà bia tưởng niệm tại Khu di tích lịch sử Minh Đạm",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -387,9 +402,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20Minh%20%C4%90%E1%BA%A1m/Bia%20T%E1%BB%95%20qu%E1%BB%91c%20ghi%20c%C3%B4ng%20t%E1%BA%A1i%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Minh%20%C4%90%E1%BA%A1m.jpg",
           "imageCaption": "Bia Tổ quốc ghi công tại Khu di tích lịch sử Minh Đạm",
-          "icon": "👤",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Bùi Công Minh và Mạc Thanh Đạm",
+          "title": "Bia Tổ quốc ghi công tại Khu di tích lịch sử Minh Đạm",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -430,15 +445,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/Bia%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
-          "imageCaption": "Bia giới thiệu Di tích lịch sử quốc gia Căn cứ Rừng Sác",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "2004",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Căn cứ Rừng Sác",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2004",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -452,11 +469,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/Bia%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c.jpg",
-          "imageCaption": "Bia giới thiệu Di tích lịch sử quốc gia Căn cứ Rừng Sác",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/C%C4%83n%20c%E1%BB%A9%20R%E1%BB%ABng%20S%C3%A1c/T%C6%B0%E1%BB%A3ng%20%C4%91%C3%A0i%20chi%E1%BA%BFn%20s%C4%A9%20%C4%90%E1%BA%B7c%20c%C3%B4ng%20R%E1%BB%ABng%20S%C3%A1c%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch.jpg",
+          "imageCaption": "Tượng đài chiến sĩ Đặc công Rừng Sác tại khu di tích",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh chiến sĩ Đặc công Rừng Sác",
+          "title": "Tượng đài chiến sĩ Đặc công Rừng Sác tại khu di tích",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -500,12 +517,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
           "imageCaption": "Bia tưởng niệm tại khu di tích Chiến khu Đ",
-          "badgeRanking": "Quốc gia",
+          "year": "2010",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chiến khu Đ",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia tưởng niệm tại khu di tích Chiến khu Đ",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -519,11 +538,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
-          "imageCaption": "Bia tưởng niệm tại khu di tích Chiến khu Đ",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Chi%E1%BA%BFn%20Khu%20%C4%90/C%C3%A1c%20c%C3%B4ng%20tr%C3%ACnh%20ph%E1%BB%A5c%20d%E1%BB%B1ng%20t%E1%BA%A1i%20khu%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20khu%20%C4%90.jpg",
+          "imageCaption": "Các công trình phục dựng tại khu di tích Chiến khu Đ",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh bia/khu tưởng niệm Chiến khu Đ",
+          "title": "Các công trình phục dựng tại khu di tích Chiến khu Đ",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -564,15 +583,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Kim%20Long/Bi%E1%BB%83n%20ch%E1%BB%89%20d%E1%BA%ABn%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Kim%20Long.jpg",
-          "imageCaption": "Biển chỉ dẫn Di tích Địa đạo Kim Long",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1994",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa đạo Kim Long",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1994",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -586,11 +607,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Kim%20Long/1%20c%E1%BB%ADa%20h%E1%BA%A7m%20%C4%91%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20%C4%91ang%20%C4%91%C6%B0%E1%BB%A3c%20x%C3%A2y%20d%E1%BB%B1ng.jpg",
-          "imageCaption": "1 cửa hầm địa đạo đang được xây dựng",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Kim%20Long/Bi%E1%BB%83n%20ch%E1%BB%89%20d%E1%BA%ABn%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Kim%20Long.jpg",
+          "imageCaption": "Biển chỉ dẫn Di tích Địa đạo Kim Long",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh miệng Địa đạo Kim Long",
+          "title": "Biển chỉ dẫn Di tích Địa đạo Kim Long",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -631,15 +652,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
-          "imageCaption": "Cổng vào Di tích Địa đạo Phú Thọ Hòa",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1996",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa đạo Phú Thọ Hòa",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1996",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -653,11 +676,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
-          "imageCaption": "Cổng vào Di tích Địa đạo Phú Thọ Hòa",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a/Mi%E1%BB%87ng%20h%E1%BA%A7m%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Ph%C3%BA%20Th%E1%BB%8D%20H%C3%B2a.jpg",
+          "imageCaption": "Miệng hầm Địa đạo Phú Thọ Hòa",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh miệng Địa đạo Phú Thọ Hòa",
+          "title": "Miệng hầm Địa đạo Phú Thọ Hòa",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -672,7 +695,7 @@ export const memoryGameData = {
   },
   "11": {
     "stt": 11,
-    "name": "Địa đạo Tây Nam Bến Cát – “Tam Giác Sắt”",
+    "name": "Địa Đạo Tây Nam ( Tam Giác Sắt)",
     "pairs": [
       {
         "pairId": 1,
@@ -684,7 +707,7 @@ export const memoryGameData = {
           "lng": 106.54076260179036,
           "monumentName": "Địa Đạo Tây Nam ( Tam Giác Sắt)",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Địa đạo Tây Nam Bến Cát – “Tam Giác Sắt”",
+          "title": "Bản đồ/ghim vị trí Địa Đạo Tây Nam ( Tam Giác Sắt)",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -698,15 +721,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/C%C3%B4ng%20tr%C3%ACnh%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20trong%20Khu%20di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
-          "imageCaption": "Công trình tưởng niệm trong Khu di tích Địa đạo Tam Giác Sắt",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1996",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa đạo Tây Nam Bến Cát – “Tam Giác Sắt”",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1996",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -722,9 +747,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%90%E1%BA%A1o%20T%C3%A2y%20Nam%20B%E1%BA%BFn%20C%C3%A1t/C%C3%B4ng%20tr%C3%ACnh%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20trong%20Khu%20di%20t%C3%ADch%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Tam%20Gi%C3%A1c%20S%E1%BA%AFt.jpg",
           "imageCaption": "Công trình tưởng niệm trong Khu di tích Địa đạo Tam Giác Sắt",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh mô hình/sơ đồ địa đạo Tam Giác Sắt",
+          "title": "Công trình tưởng niệm trong Khu di tích Địa đạo Tam Giác Sắt",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -739,7 +764,7 @@ export const memoryGameData = {
   },
   "12": {
     "stt": 12,
-    "name": "Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son",
+    "name": "Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhỏ và Triền nề",
     "pairs": [
       {
         "pairId": 1,
@@ -751,7 +776,7 @@ export const memoryGameData = {
           "lng": 106.7062557598295,
           "monumentName": "Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhỏ và Triền nề",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son",
+          "title": "Bản đồ/ghim vị trí Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son, gồm Ụ tàu nhỏ và Triền nề",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -766,14 +791,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "badge",
-          "imageSrc": null,
-          "imageCaption": null,
-          "badgeRanking": "Quốc gia",
+          "year": "2016",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa điểm lưu niệm Chủ tịch Tôn Đức Thắng tại khu vực Ba Son",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2016",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -787,11 +814,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20l%C6%B0u%20ni%E1%BB%87m%20ch%E1%BB%A7%20t%E1%BB%8Bch%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng%20t%E1%BA%A1i%20khu%20v%E1%BB%B1c%20Ba%20Son/B%C3%A1c%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng.jpg",
-          "imageCaption": "Bác Tôn Đức Thắng",
-          "icon": "👤",
+          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20l%C6%B0u%20ni%E1%BB%87m%20ch%E1%BB%A7%20t%E1%BB%8Bch%20T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng%20t%E1%BA%A1i%20khu%20v%E1%BB%B1c%20Ba%20Son/T%C3%B4n%20%C4%90%E1%BB%A9c%20Th%E1%BA%AFng%20th%C4%83m%20n%C6%B0%E1%BB%9Bc%20C%E1%BB%99ng%20h%C3%B2a%20D%C3%A2n%20ch%E1%BB%A7%20%C4%90%E1%BB%A9c%20n%C4%83m%201956.jpg",
+          "imageCaption": "Tôn Đức Thắng thăm nước Cộng hòa Dân chủ Đức năm 1956",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Chủ tịch Tôn Đức Thắng",
+          "title": "Tôn Đức Thắng thăm nước Cộng hòa Dân chủ Đức năm 1956",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -832,15 +859,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/Bi%E1%BB%83n%20hi%E1%BB%87u%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Biển hiệu Di tích Lịch sử Quốc gia",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Hầm bí mật chứa vũ khí thời kháng chiến chống Mỹ",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -854,11 +883,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/C%E1%BA%ADn%20c%E1%BA%A3nh%20mi%E1%BB%87ng%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20t%E1%BB%AB%20tr%C3%AAn%20nh%C3%ACn%20xu%E1%BB%91ng.jpg",
-          "imageCaption": "Cận cảnh miệng hầm bí mật từ trên nhìn xuống",
-          "icon": "👤",
+          "imageSrc": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20ch%E1%BB%A9a%20v%C5%A9%20kh%C3%AD%20th%E1%BB%9Di%20kh%C3%A1ng%20chi%E1%BA%BFn%20ch%E1%BB%91ng%20M%E1%BB%B9/Gian%20tr%C6%B0ng%20b%C3%A0y%20hi%E1%BB%87n%20v%E1%BA%ADt%20%26%20t%C6%B0%20li%E1%BB%87u%20l%E1%BB%8Bch%20s%E1%BB%AD.jpg",
+          "imageCaption": "Gian trưng bày hiện vật & tư liệu lịch sử",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Đỗ Văn Căn (Ba Mủ/Ba Mũ)",
+          "title": "Gian trưng bày hiện vật & tư liệu lịch sử",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -899,15 +928,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/Bia%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia%20Khu%20tr%E1%BA%A1i%20giam.jpg",
-          "imageCaption": "Bia đá công nhận Di tích Lịch sử Quốc gia Khu trại giam",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Khu trại giam Bệnh viện Chợ Quán – nơi đồng chí Trần Phú hy sinh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -923,9 +954,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Khu%20tr%E1%BA%A1i%20giam%20B%E1%BB%87nh%20vi%E1%BB%87n%20Ch%E1%BB%A3%20Qu%C3%A1n%20-%20n%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Tr%E1%BA%A7n%20Ph%C3%BA%20hi%20sinh/T%C6%B0%E1%BB%A3ng%20b%C3%A1n%20th%C3%A2n%20T%E1%BB%95ng%20B%C3%AD%20th%C6%B0%20Tr%E1%BA%A7n%20Ph%C3%BA%20v%C3%A0%20kho%E1%BA%A3ng%20s%C3%A2n%20ch%C3%ADnh.jpg",
           "imageCaption": "Tượng bán thân Tổng Bí thư Trần Phú và khoảng sân chính",
-          "icon": "👤",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung đồng chí Trần Phú",
+          "title": "Tượng bán thân Tổng Bí thư Trần Phú và khoảng sân chính",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -940,7 +971,7 @@ export const memoryGameData = {
   },
   "15": {
     "stt": 15,
-    "name": "Di tích lịch sử quốc gia Ngã Ba Giồng",
+    "name": "Ngã Ba Giồng",
     "pairs": [
       {
         "pairId": 1,
@@ -952,7 +983,7 @@ export const memoryGameData = {
           "lng": 106.56114184448106,
           "monumentName": "Ngã Ba Giồng",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Di tích lịch sử quốc gia Ngã Ba Giồng",
+          "title": "Bản đồ/ghim vị trí Ngã Ba Giồng",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -966,15 +997,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/Bi%E1%BB%83n%20t%C3%AAn%20di%20t%C3%ADch%20v%C3%A0%20h%E1%BB%93%20n%C6%B0%E1%BB%9Bc%20c%E1%BA%A3nh%20quan.jpg",
-          "imageCaption": "Biển tên di tích và hồ nước cảnh quan",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "2002",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Di tích lịch sử quốc gia Ngã Ba Giồng",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2002",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -988,11 +1021,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/B%E1%BA%A3ng%20v%C4%83n%20bia%20l%E1%BB%8Bch%20s%E1%BB%AD%20tr%C6%B0%E1%BB%9Bc%20%C4%90%E1%BB%81n%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m.jpg",
-          "imageCaption": "Bảng văn bia lịch sử trước Đền tưởng niệm",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Ng%C3%A3%20Ba%20Gi%E1%BB%93ng/C%E1%BB%95ng%20ch%C3%ADnh%20Khu%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Ng%C3%A3%20Ba%20Gi%E1%BB%93ng.jpg",
+          "imageCaption": "Cổng chính Khu tưởng niệm Ngã Ba Giồng",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh Khu tưởng niệm Ngã Ba Giồng",
+          "title": "Cổng chính Khu tưởng niệm Ngã Ba Giồng",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1007,7 +1040,7 @@ export const memoryGameData = {
   },
   "16": {
     "stt": 16,
-    "name": "Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu",
+    "name": "Nhà lưu niệm chị Võ Thị Sáu",
     "pairs": [
       {
         "pairId": 1,
@@ -1019,7 +1052,7 @@ export const memoryGameData = {
           "lng": 107.26906343191851,
           "monumentName": "Nhà lưu niệm chị Võ Thị Sáu",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu",
+          "title": "Bản đồ/ghim vị trí Nhà lưu niệm chị Võ Thị Sáu",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1033,15 +1066,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/Bia%20%C4%91%C3%A1%20kh%E1%BA%AFc%20l%E1%BB%9Di%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
-          "imageCaption": "Bia đá khắc lời Chủ tịch Hồ Chí Minh",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1989",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà lưu niệm Anh hùng liệt sĩ Võ Thị Sáu",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1989",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1055,11 +1090,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/B%E1%BA%A3ng%20t%C3%AAn%20di%20t%C3%ADch%20Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u.jpg",
-          "imageCaption": "Bảng tên di tích Nhà lưu niệm Võ Thị Sáu",
-          "icon": "👤",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20l%C6%B0u%20ni%E1%BB%87m%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u/Gian%20th%E1%BB%9D%20N%E1%BB%AF%20anh%20h%C3%B9ng%20li%E1%BB%87t%20s%C4%A9%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u.jpg",
+          "imageCaption": "Gian thờ Nữ anh hùng liệt sĩ Võ Thị Sáu",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Anh hùng liệt sĩ Võ Thị Sáu",
+          "title": "Gian thờ Nữ anh hùng liệt sĩ Võ Thị Sáu",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1074,7 +1109,7 @@ export const memoryGameData = {
   },
   "17": {
     "stt": 17,
-    "name": "Nhà tù Phú Lợi",
+    "name": "Nhà tù Phú Lợi (căng Phú Lợi)",
     "pairs": [
       {
         "pairId": 1,
@@ -1086,7 +1121,7 @@ export const memoryGameData = {
           "lng": 106.68172397856634,
           "monumentName": "Nhà tù Phú Lợi (căng Phú Lợi)",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Nhà tù Phú Lợi",
+          "title": "Bản đồ/ghim vị trí Nhà tù Phú Lợi (căng Phú Lợi)",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1100,15 +1135,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/C%E1%BB%95ng%20ch%C3%ADnh%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i.jpg",
-          "imageCaption": "Cổng chính Di tích lịch sử Nhà tù Phú Lợi",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1980",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà tù Phú Lợi",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1980",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1122,11 +1159,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/C%E1%BB%95ng%20ch%C3%ADnh%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i.jpg",
-          "imageCaption": "Cổng chính Di tích lịch sử Nhà tù Phú Lợi",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i/Khu%20tr%C6%B0ng%20b%C3%A0y%20t%C6%B0%20li%E1%BB%87u%20Ph%C3%A1t%20huy%20gi%C3%A1%20tr%E1%BB%8B%20di%20t%C3%ADch%20Nh%C3%A0%20t%C3%B9%20Ph%C3%BA%20L%E1%BB%A3i.jpg",
+          "imageCaption": "Khu trưng bày tư liệu Phát huy giá trị di tích Nhà tù Phú Lợi",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh khu nhà giam Phú Lợi",
+          "title": "Khu trưng bày tư liệu Phát huy giá trị di tích Nhà tù Phú Lợi",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1167,15 +1204,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Bi%E1%BB%83n%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Biển công nhận Di tích lịch sử quốc gia",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nơi đồng chí Nguyễn Tất Thành ở trước khi ra đi tìm đường cứu nước",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1191,9 +1230,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/N%C6%A1i%20%C4%91%E1%BB%93ng%20ch%C3%AD%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20%E1%BB%9F%20tr%C6%B0%E1%BB%9Bc%20khi%20ra%20%C4%91i%20t%C3%ACm%20%C4%91%C6%B0%E1%BB%9Dng%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/M%E1%BA%A3ng%20t%C6%B0%E1%BB%9Dng%20ch%E1%BB%A7%20%C4%91%E1%BB%81%20T%E1%BB%AB%20%E1%BA%A3nh%20h%C6%B0%E1%BB%9Fng%20gia%20%C4%91%C3%ACnh%2C%20x%C3%A3%20h%E1%BB%99i%20%C4%91%E1%BA%BFn%20nh%E1%BB%AFng%20ho%E1%BA%A1t%20%C4%91%E1%BB%8Dng%20y%C3%AAu%20n%C6%B0%E1%BB%9Bc%20c%E1%BB%A7a%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%20-%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
           "imageCaption": "Mảng tường chủ đề Từ ảnh hưởng gia đình, xã hội đến những hoạt đọng yêu nước của Nguyễn Tất Thành - Chủ tịch Hồ Chí Minh",
-          "icon": "👤",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Nguyễn Tất Thành",
+          "title": "Mảng tường chủ đề Từ ảnh hưởng gia đình, xã hội đến những hoạt đọng yêu nước của Nguyễn Tất Thành - Chủ tịch Hồ Chí Minh",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1234,15 +1273,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20n%C4%83m%201929/M%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20s%E1%BB%91%2068%20L%C3%AA%20L%E1%BB%A3i%20%E2%80%93%20N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20(%E1%BA%A3nh%20t%C6%B0%20li%E1%BB%87u%20%C4%91en%20tr%E1%BA%AFng).jpg",
-          "imageCaption": "Mặt tiền căn nhà số 68 Lê Lợi – Nơi thành lập An Nam Cộng sản Đảng (ảnh tư liệu đen trắng)",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nơi thành lập An Nam Cộng sản Đảng năm 1929",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1258,9 +1299,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20n%C4%83m%201929/M%E1%BA%B7t%20ti%E1%BB%81n%20c%C4%83n%20nh%C3%A0%20s%E1%BB%91%2068%20L%C3%AA%20L%E1%BB%A3i%20%E2%80%93%20N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20An%20Nam%20C%E1%BB%99ng%20s%E1%BA%A3n%20%C4%90%E1%BA%A3ng%20(%E1%BA%A3nh%20t%C6%B0%20li%E1%BB%87u%20%C4%91en%20tr%E1%BA%AFng).jpg",
           "imageCaption": "Mặt tiền căn nhà số 68 Lê Lợi – Nơi thành lập An Nam Cộng sản Đảng (ảnh tư liệu đen trắng)",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh ngôi nhà số 1 Nguyễn Trung Trực",
+          "title": "Mặt tiền căn nhà số 68 Lê Lợi – Nơi thành lập An Nam Cộng sản Đảng (ảnh tư liệu đen trắng)",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1275,7 +1316,7 @@ export const memoryGameData = {
   },
   "20": {
     "stt": 20,
-    "name": "Địa điểm Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh",
+    "name": "Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh",
     "pairs": [
       {
         "pairId": 1,
@@ -1287,7 +1328,7 @@ export const memoryGameData = {
           "lng": 106.50301280115599,
           "monumentName": "Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Địa điểm Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh",
+          "title": "Bản đồ/ghim vị trí Địa điểm Sở chỉ huy tiền phương chiến dịch Hồ Chí Minh",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1301,15 +1342,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/Bia%20%C4%91%C3%A1%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20S%E1%BB%9F%20ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
-          "imageCaption": "Bia đá Địa điểm Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "2010",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa điểm Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2010",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1325,9 +1368,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/S%E1%BB%9F%20ch%E1%BB%89%20huy%20%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh/Bia%20%C4%91%C3%A1%20%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20S%E1%BB%9F%20ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Chi%E1%BA%BFn%20d%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
           "imageCaption": "Bia đá Địa điểm Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh Sở chỉ huy tiền phương Căm Xe",
+          "title": "Bia đá Địa điểm Sở chỉ huy tiền phương Chiến dịch Hồ Chí Minh",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1342,7 +1385,7 @@ export const memoryGameData = {
   },
   "21": {
     "stt": 21,
-    "name": "Di tích khảo cổ Cù Lao Rùa",
+    "name": "Cù Lao Rùa",
     "pairs": [
       {
         "pairId": 1,
@@ -1353,8 +1396,8 @@ export const memoryGameData = {
           "lat": 10.981609182199021,
           "lng": 106.78390677676012,
           "monumentName": "Cù Lao Rùa",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png",
-          "title": "Bản đồ/ghim vị trí Di tích khảo cổ Cù Lao Rùa",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "title": "Bản đồ/ghim vị trí Cù Lao Rùa",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1371,12 +1414,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/C%C3%B9%20lao%20r%C3%B9a/Bia%20Di%20t%C3%ADch%20c%E1%BA%A5p%20qu%E1%BB%91c%20gia%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
           "imageCaption": "Bia Di tích cấp quốc gia Di tích khảo cổ Cù Lao Rùa",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Di tích khảo cổ Cù Lao Rùa",
-          "sub": "Biển tích xếp hạng"
+          "year": "2009",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia Di tích cấp quốc gia Di tích khảo cổ Cù Lao Rùa",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -1390,11 +1435,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/C%C3%B9%20lao%20r%C3%B9a/Bi%E1%BB%83u%20t%C6%B0%E1%BB%A3ng%20r%C3%B9a%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
-          "imageCaption": "Biểu tượng rùa tại Di tích khảo cổ Cù Lao Rùa",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/C%C3%B9%20lao%20r%C3%B9a/C%C3%A1c%20hi%E1%BB%87n%20v%E1%BA%ADt%20g%E1%BB%91m%20kh%E1%BA%A3o%20c%E1%BB%95%20t%E1%BA%A1i%20C%C3%B9%20Lao%20R%C3%B9a.jpg",
+          "imageCaption": "Các hiện vật gốm khảo cổ tại Cù Lao Rùa",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “2003”",
+          "title": "Các hiện vật gốm khảo cổ tại Cù Lao Rùa",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1409,7 +1454,7 @@ export const memoryGameData = {
   },
   "22": {
     "stt": 22,
-    "name": "Di tích khảo cổ Dốc Chùa",
+    "name": "Dốc Chùa",
     "pairs": [
       {
         "pairId": 1,
@@ -1420,8 +1465,8 @@ export const memoryGameData = {
           "lat": 11.067343480738144,
           "lng": 106.82521994256845,
           "monumentName": "Dốc Chùa",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png",
-          "title": "Bản đồ/ghim vị trí Di tích khảo cổ Dốc Chùa",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "title": "Bản đồ/ghim vị trí Dốc Chùa",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1435,15 +1480,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/C%C3%A1c%20hi%E1%BB%87n%20v%E1%BA%ADt%20b%E1%BA%B1ng%20%C4%91%E1%BB%93ng%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
-          "imageCaption": "Các hiện vật bằng đồng tại Di tích khảo cổ Dốc Chùa",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png",
+          "cardType": "badge",
+          "year": "2001",
+          "ranking": "Quốc gia",
+          "rankingType": "Khảo cổ học",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Di tích khảo cổ Dốc Chùa",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2001",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1457,11 +1504,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/Chu%E1%BB%97i%20h%E1%BA%A1t%20trang%20s%E1%BB%A9c%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
-          "imageCaption": "Chuỗi hạt trang sức tại Di tích khảo cổ Dốc Chùa",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a/C%C3%A1c%20hi%E1%BB%87n%20v%E1%BA%ADt%20b%E1%BA%B1ng%20%C4%91%E1%BB%93ng%20t%E1%BA%A1i%20Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95%20D%E1%BB%91c%20Ch%C3%B9a.jpg",
+          "imageCaption": "Các hiện vật bằng đồng tại Di tích khảo cổ Dốc Chùa",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “Tháng 2/1979”",
+          "title": "Các hiện vật bằng đồng tại Di tích khảo cổ Dốc Chùa",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1476,7 +1523,7 @@ export const memoryGameData = {
   },
   "23": {
     "stt": 23,
-    "name": "Di tích khảo cổ Giồng Cá Vồ",
+    "name": "Giồng Cá Vồ",
     "pairs": [
       {
         "pairId": 1,
@@ -1487,8 +1534,8 @@ export const memoryGameData = {
           "lat": 10.41214603381856,
           "lng": 106.92439756540267,
           "monumentName": "Giồng Cá Vồ",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png",
-          "title": "Bản đồ/ghim vị trí Di tích khảo cổ Giồng Cá Vồ",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "title": "Bản đồ/ghim vị trí Giồng Cá Vồ",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1502,15 +1549,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/B%E1%BB%99%20s%C6%B0u%20t%E1%BA%ADp%20khuy%C3%AAn%20tai%20hai%20%C4%91%E1%BA%A7u%20th%C3%BA%20b%E1%BA%B1ng%20%C4%91%C3%A1%20ng%E1%BB%8Dc.jpg",
-          "imageCaption": "Bộ sưu tập khuyên tai hai đầu thú bằng đá ngọc",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png",
+          "cardType": "badge",
+          "year": "2000",
+          "ranking": "Quốc gia",
+          "rankingType": "Khảo cổ học",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Di tích khảo cổ Giồng Cá Vồ",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2000",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1526,9 +1575,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Gi%E1%BB%93ng%20C%C3%A1%20V%E1%BB%93/B%E1%BB%99%20ba%20hi%E1%BB%87n%20v%E1%BA%ADt%20g%E1%BB%91m%20trang%20tr%C3%AD%20hoa%20v%C4%83n%20k%E1%BB%B7%20h%C3%A0.jpg",
           "imageCaption": "Bộ ba hiện vật gốm trang trí hoa văn kỷ hà",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “Năm 1994”",
+          "title": "Bộ ba hiện vật gốm trang trí hoa văn kỷ hà",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1554,7 +1603,7 @@ export const memoryGameData = {
           "lat": 10.725161836697179,
           "lng": 106.62619057624681,
           "monumentName": "Lò gốm cổ Hưng Lợi",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Lò gốm cổ Hưng Lợi",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -1570,14 +1619,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "badge",
-          "imageSrc": null,
-          "imageCaption": null,
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20kh%E1%BA%A3o%20c%E1%BB%95.png",
+          "year": "1998",
+          "ranking": "Quốc gia",
+          "rankingType": "Khảo cổ học",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Lò gốm cổ Hưng Lợi",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1998",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1591,11 +1642,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/B%C3%A3i%20g%E1%BB%91m%20h%C5%A9%2C%20lu%20s%C3%A0nh%20ph%C6%A1i%20ngo%C3%A0i%20s%C3%A2n%20l%C3%B2%20g%E1%BB%91m%20x%C6%B0%E1%BB%9Fng%20c%C5%A9.jpg",
-          "imageCaption": "Bãi gốm hũ, lu sành phơi ngoài sân lò gốm xưởng cũ",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/L%C3%B2%20g%E1%BB%91m%20c%E1%BB%95%20H%C6%B0ng%20L%E1%BB%A3i/Hi%E1%BB%87n%20v%E1%BA%ADt%20g%E1%BB%91m%20di%20t%C3%ADch%20l%C3%B2%20g%E1%BB%91m%20H%C6%B0ng%20L%E1%BB%A3i.jpg",
+          "imageCaption": "Hiện vật gốm di tích lò gốm Hưng Lợi",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Lò gốm cổ Hưng Lợi",
+          "title": "Hiện vật gốm di tích lò gốm Hưng Lợi",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1636,15 +1687,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/To%C3%A0n%20c%E1%BA%A3nh%20c%C3%A1c%20c%E1%BB%A5m%20%C4%83ng-ten%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
-          "imageCaption": "Toàn cảnh các cụm ăng-ten nhìn từ trên cao",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Ăngten Parabol (đài viba) – Núi Lớn",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1660,9 +1713,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Anten%20Parabol-%20Viba%20N%C3%BAi%20L%E1%BB%9Bn/Chi%20ti%E1%BA%BFt%20k%E1%BA%BFt%20c%E1%BA%A5u%20tr%E1%BB%A5%20c%E1%BB%A7a%20h%E1%BB%87%20th%E1%BB%91ng%20%C4%83ng-ten.jpg",
           "imageCaption": "Chi tiết kết cấu trụ của hệ thống ăng-ten",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 1967”",
+          "title": "Chi tiết kết cấu trụ của hệ thống ăng-ten",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1677,7 +1730,7 @@ export const memoryGameData = {
   },
   "26": {
     "stt": 26,
-    "name": "Bót Dây Thép – dấu tích tội ác chiến tranh ở Thủ Đức",
+    "name": "Bót Dây Thép",
     "pairs": [
       {
         "pairId": 1,
@@ -1689,7 +1742,7 @@ export const memoryGameData = {
           "lng": 106.79344348946373,
           "monumentName": "Bót Dây Thép",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Bót Dây Thép – dấu tích tội ác chiến tranh ở Thủ Đức",
+          "title": "Bản đồ/ghim vị trí Bót Dây Thép",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1703,15 +1756,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%E2%80%93%20v%C4%83n%20h%C3%B3a%20c%E1%BA%A5p%20qu%E1%BB%91c%20gia%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
-          "imageCaption": "Cổng vào Di tích lịch sử – văn hóa cấp quốc gia Bót Dây Thép",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Bót Dây Thép – dấu tích tội ác chiến tranh ở Thủ Đức",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1725,11 +1780,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/Ch%C3%B2i%20g%C3%A1c%20trong%20khu%C3%B4n%20vi%C3%AAn%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
-          "imageCaption": "Chòi gác trong khuôn viên Di tích Bót Dây Thép",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/B%C3%B3t%20D%C3%A2y%20Th%C3%A9p/Hi%E1%BB%87n%20v%E1%BA%ADt%20%C4%91%C6%B0%E1%BB%A3c%20l%C6%B0u%20gi%E1%BB%AF%20v%C3%A0%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20Di%20t%C3%ADch%20B%C3%B3t%20D%C3%A2y%20Th%C3%A9p.jpg",
+          "imageCaption": "Hiện vật được lưu giữ và trưng bày tại Di tích Bót Dây Thép",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “Năm 1947”",
+          "title": "Hiện vật được lưu giữ và trưng bày tại Di tích Bót Dây Thép",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1770,15 +1825,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20X%E1%BB%A9%20%E1%BB%A7y%20Nam%20B%E1%BB%99/Bi%E1%BB%83n%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch%20v%C3%A0%20l%E1%BB%8Bch%20m%E1%BB%9F%20c%E1%BB%ADa.jpg",
-          "imageCaption": "Biển công nhận di tích và lịch mở cửa",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Cơ sở Ban Tuyên huấn Xứ ủy Nam Bộ",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1794,9 +1851,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20X%E1%BB%A9%20%E1%BB%A7y%20Nam%20B%E1%BB%99/B%E1%BA%A3ng%20t%E1%BB%95ng%20h%E1%BB%A3p%20h%C3%ACnh%20%E1%BA%A3nh%20di%20t%C3%ADch.png",
           "imageCaption": "Bảng tổng hợp hình ảnh di tích",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “30/4/1975”",
+          "title": "Bảng tổng hợp hình ảnh di tích",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1811,7 +1868,7 @@ export const memoryGameData = {
   },
   "28": {
     "stt": 28,
-    "name": "Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập năm 1968",
+    "name": "Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập",
     "pairs": [
       {
         "pairId": 1,
@@ -1823,7 +1880,7 @@ export const memoryGameData = {
           "lng": 106.68593062724516,
           "monumentName": "Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập năm 1968",
+          "title": "Bản đồ/ghim vị trí Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1840,12 +1897,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20-%20v%C4%83n%20h%C3%B3a.jpg",
           "imageCaption": "Bằng công nhận di tích lịch sử - văn hóa",
-          "badgeRanking": "Quốc gia",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Cơ sở giấu vũ khí của Biệt động Thành đánh Dinh Độc Lập năm 1968",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận di tích lịch sử - văn hóa",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -1859,11 +1918,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/B%C3%AAn%20trong%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
-          "imageCaption": "Bên trong hầm bí mật nhìn từ trên cao",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20gi%E1%BA%A5u%20v%C5%A9%20kh%C3%AD%20c%E1%BB%A7a%20Bi%E1%BB%87t%20%C4%91%E1%BB%99ng%20Th%C3%A0nh%20%C4%91%C3%A1nh%20Dinh%20%C4%90%E1%BB%99c%20L%E1%BA%ADp/T%E1%BB%A7%20tr%C6%B0ng%20b%C3%A0y%20ch%C3%A2n%20dung%20chi%E1%BA%BFn%20s%C4%A9.jpg",
+          "imageCaption": "Tủ trưng bày chân dung chiến sĩ",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “31/01/1968”",
+          "title": "Tủ trưng bày chân dung chiến sĩ",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1878,7 +1937,7 @@ export const memoryGameData = {
   },
   "29": {
     "stt": 29,
-    "name": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn – Hầm B",
+    "name": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
     "pairs": [
       {
         "pairId": 1,
@@ -1890,7 +1949,7 @@ export const memoryGameData = {
           "lng": 106.67278044315532,
           "monumentName": "Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn – Hầm B",
+          "title": "Bản đồ/ghim vị trí Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1904,15 +1963,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
-          "imageCaption": "Cổng vào Di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn – Hầm B",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -1926,11 +1987,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/C%E1%BB%95ng%20v%C3%A0o%20Di%20t%C3%ADch%20C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
-          "imageCaption": "Cổng vào Di tích Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20c%E1%BB%A7a%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n/L%E1%BB%91i%20v%C3%A0o%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20c%E1%BB%A7a%20C%C6%A1%20s%E1%BB%9F%20in%20%E1%BA%A5n%20H%E1%BB%99i%20%E1%BB%A6ng%20h%E1%BB%99%20V%E1%BB%87%20qu%E1%BB%91c%20%C4%91o%C3%A0n.jpg",
+          "imageCaption": "Lối vào hầm bí mật của Cơ sở in ấn Hội Ủng hộ Vệ quốc đoàn",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Cơ sở in ấn của Hội Ủng hộ Vệ quốc đoàn – Hầm B",
+          "title": "Lối vào hầm bí mật của Cơ sở in ấn Hội Ủng hộ Vệ quốc đoàn",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -1945,7 +2006,7 @@ export const memoryGameData = {
   },
   "30": {
     "stt": 30,
-    "name": "Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
+    "name": "Nhà số 86- Phan Chu Trinh",
     "pairs": [
       {
         "pairId": 1,
@@ -1957,7 +2018,7 @@ export const memoryGameData = {
           "lng": 107.07929444545312,
           "monumentName": "Nhà số 86- Phan Chu Trinh",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
+          "title": "Bản đồ/ghim vị trí Nhà số 86- Phan Chu Trinh",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -1974,12 +2035,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20c%C3%A1ch%20m%E1%BA%A1ng%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
           "imageCaption": "Bia Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
-          "badgeRanking": "Quốc gia",
+          "year": "1992",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -1993,11 +2056,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20c%C3%A1ch%20m%E1%BA%A1ng%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh.jpg",
-          "imageCaption": "Bia Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/Di%20t%C3%ADch%2086%20Phan%20Chu%20Trinh/To%C3%A0n%20c%E1%BA%A3nh%20Nh%C3%A0%20s%E1%BB%91%2086%20Phan%20Chu%20Trinh%20nh%C3%ACn%20t%E1%BB%AB%20ph%C3%ADa%20b%C3%AAn%20h%C3%B4ng.jpg",
+          "imageCaption": "Toàn cảnh Nhà số 86 Phan Chu Trinh nhìn từ phía bên hông",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Di tích lịch sử cách mạng Nhà số 86 Phan Chu Trinh",
+          "title": "Toàn cảnh Nhà số 86 Phan Chu Trinh nhìn từ phía bên hông",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2012,7 +2075,7 @@ export const memoryGameData = {
   },
   "31": {
     "stt": 31,
-    "name": "Di tích địa điểm Dinh Quận Hóc Môn",
+    "name": "Dinh Quận Hóc Môn",
     "pairs": [
       {
         "pairId": 1,
@@ -2024,7 +2087,7 @@ export const memoryGameData = {
           "lng": 106.59508153607723,
           "monumentName": "Dinh Quận Hóc Môn",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Di tích địa điểm Dinh Quận Hóc Môn",
+          "title": "Bản đồ/ghim vị trí Dinh Quận Hóc Môn",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -2041,12 +2104,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Nam%20K%E1%BB%B3%20kh%E1%BB%9Fi%20ngh%C4%A9a%2023111940%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
           "imageCaption": "Bia tưởng niệm Nam Kỳ khởi nghĩa 23111940 tại Dinh Quận Hóc Môn",
-          "badgeRanking": "Quốc gia",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Di tích địa điểm Dinh Quận Hóc Môn",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia tưởng niệm Nam Kỳ khởi nghĩa 23111940 tại Dinh Quận Hóc Môn",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2060,11 +2125,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Nam%20K%E1%BB%B3%20kh%E1%BB%9Fi%20ngh%C4%A9a%2023111940%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
-          "imageCaption": "Bia tưởng niệm Nam Kỳ khởi nghĩa 23111940 tại Dinh Quận Hóc Môn",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n/D%C3%A2ng%20h%C6%B0%C6%A1ng%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20t%E1%BA%A1i%20Dinh%20Qu%E1%BA%ADn%20H%C3%B3c%20M%C3%B4n.jpg",
+          "imageCaption": "Dâng hương tưởng niệm tại Dinh Quận Hóc Môn",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Di tích địa điểm Dinh Quận Hóc Môn",
+          "title": "Dâng hương tưởng niệm tại Dinh Quận Hóc Môn",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2105,15 +2170,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Long%20Ph%C6%B0%E1%BB%9Bc/C%E1%BB%95ng%20v%C3%A0o%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Long%20Ph%C6%B0%E1%BB%9Bc.jpg",
-          "imageCaption": "Cổng vào Địa đạo Long Phước",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1990",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa đạo Long Phước",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1990",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -2129,9 +2196,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Long%20Ph%C6%B0%E1%BB%9Bc/C%E1%BB%95ng%20v%C3%A0o%20%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20Long%20Ph%C6%B0%E1%BB%9Bc.jpg",
           "imageCaption": "Cổng vào Địa đạo Long Phước",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Địa đạo Long Phước",
+          "title": "Cổng vào Địa đạo Long Phước",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2175,12 +2242,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/03_trao_bang_xep_hang_di_tich.jpeg",
           "imageCaption": "Trao Bằng công nhận xếp hạng Di tích quốc gia cho đại diện UBND huyện Châu Đức",
-          "badgeRanking": "Quốc gia",
+          "year": "2023",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa điểm trận chiến ngày 06/6/1969 tại Bình Ba",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Trao Bằng công nhận xếp hạng Di tích quốc gia cho đại diện UBND huyện Châu Đức",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2194,11 +2263,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/01_di_tich_lich_su_binh_ba.jpeg",
-          "imageCaption": "Di tích lịch sử địa điểm trận chiến ngày 6.6.1969 tại Bình Ba",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91i%E1%BB%83m%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20ng%C3%A0y%206%20th%C3%A1ng%206%20n%C4%83m%201969%20t%E1%BA%A1i%20B%C3%ACnh%20Ba/09_xe_boc_thep_tien_vao_binh_ba.png",
+          "imageCaption": "Xe bọc thép chở quân và một xe tăng tiến vào khu vực ngoại ô Bình Ba",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “06/6/1969”",
+          "title": "Xe bọc thép chở quân và một xe tăng tiến vào khu vực ngoại ô Bình Ba",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2242,12 +2311,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
           "imageCaption": "Bia Di tích lịch sử quốc gia Đình Bình Đông",
-          "badgeRanking": "Quốc gia",
+          "year": "1997",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Bình Đông",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia Di tích lịch sử quốc gia Đình Bình Đông",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2261,11 +2332,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng.jpg",
-          "imageCaption": "Bia Di tích lịch sử quốc gia Đình Bình Đông",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90%C3%ACnh%20B%C3%ACnh%20%C4%90%C3%B4ng%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+          "imageCaption": "Toàn cảnh Đình Bình Đông nhìn từ trên cao",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Đình Bình Đông",
+          "title": "Toàn cảnh Đình Bình Đông nhìn từ trên cao",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2309,12 +2380,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
           "imageCaption": "Bia Di tích lịch sử quốc gia Đình Phong Phú",
-          "badgeRanking": "Quốc gia",
+          "year": "2009",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Phong Phú",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia Di tích lịch sử quốc gia Đình Phong Phú",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2328,11 +2401,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/Bia%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
-          "imageCaption": "Bia Di tích lịch sử quốc gia Đình Phong Phú",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Phong%20Ph%C3%BA/Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20%C4%90%C3%ACnh%20Phong%20Ph%C3%BA.jpg",
+          "imageCaption": "Chánh điện Đình Phong Phú",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Đình Phong Phú",
+          "title": "Chánh điện Đình Phong Phú",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2347,7 +2420,7 @@ export const memoryGameData = {
   },
   "36": {
     "stt": 36,
-    "name": "Đồn Ngã Tư Giếng Nước",
+    "name": "Đồn nhà máy nước",
     "pairs": [
       {
         "pairId": 1,
@@ -2359,7 +2432,7 @@ export const memoryGameData = {
           "lng": 107.0845814321904,
           "monumentName": "Đồn nhà máy nước",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Đồn Ngã Tư Giếng Nước",
+          "title": "Bản đồ/ghim vị trí Đồn nhà máy nước",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -2376,12 +2449,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%93n%20ng%C3%A3%204%20Gi%E1%BA%BFng%20N%C6%B0%E1%BB%9Bc/Bia%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20di%E1%BB%87t%20%C4%91%E1%BB%93n%20gi%E1%BA%B7c%20t%E1%BA%A1i%20Khu%20Nh%C3%A0%20m%C3%A1y%20n%C6%B0%E1%BB%9Bc.jpg",
           "imageCaption": "Bia di tích Chiến thắng diệt đồn giặc tại Khu Nhà máy nước",
-          "badgeRanking": "Quốc gia",
+          "year": "1992",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đồn Ngã Tư Giếng Nước",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia di tích Chiến thắng diệt đồn giặc tại Khu Nhà máy nước",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2395,11 +2470,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%93n%20ng%C3%A3%204%20Gi%E1%BA%BFng%20N%C6%B0%E1%BB%9Bc/Bia%20di%20t%C3%ADch%20Chi%E1%BA%BFn%20th%E1%BA%AFng%20di%E1%BB%87t%20%C4%91%E1%BB%93n%20gi%E1%BA%B7c%20t%E1%BA%A1i%20Khu%20Nh%C3%A0%20m%C3%A1y%20n%C6%B0%E1%BB%9Bc.jpg",
-          "imageCaption": "Bia di tích Chiến thắng diệt đồn giặc tại Khu Nhà máy nước",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%93n%20ng%C3%A3%204%20Gi%E1%BA%BFng%20N%C6%B0%E1%BB%9Bc/Ph%C3%B9%20%C4%91%E1%BA%AFp%20n%E1%BB%95i%20%26%20Bia%20di%20t%C3%ADch%20Nh%C3%A0%20m%C3%A1y%20n%C6%B0%E1%BB%9Bc.jpg",
+          "imageCaption": "Phù đắp nổi & Bia di tích Nhà máy nước",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Đồn Ngã Tư Giếng Nước",
+          "title": "Phù đắp nổi & Bia di tích Nhà máy nước",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2441,14 +2516,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "badge",
-          "imageSrc": null,
-          "imageCaption": null,
-          "badgeRanking": "Quốc gia",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Địa đạo Hắc Dịch",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -2462,11 +2539,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20H%E1%BA%AFc%20D%E1%BB%8Bch/C%C3%A1n%20b%C3%B4k%20nghe%20nh%C3%A2n%20ch%E1%BB%A9ng%20k%E1%BB%83%20chuy%E1%BB%87n%20b%C3%AAn%20c%E1%BB%ADa%20h%E1%BA%A7m%20%C4%91%E1%BB%8Ba%20%C4%91%E1%BA%A1o.png",
-          "imageCaption": "Cán bôk nghe nhân chứng kể chuyện bên cửa hầm địa đạo",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20H%E1%BA%AFc%20D%E1%BB%8Bch/%C4%90%E1%BB%8Ba%20%C4%91%E1%BA%A1o%20H%E1%BA%AFc%20D%E1%BB%8Bch%20%C4%91%C6%B0%E1%BB%A3c%20%E1%BA%A9n%20d%C6%B0%E1%BB%9Bi%20nh%E1%BB%AFng%20t%C3%A1n%20c%C3%A2y%20r%E1%BB%ABng%20r%E1%BA%ADm%20r%E1%BA%A1p%20(2).png",
+          "imageCaption": "Địa đạo Hắc Dịch được ẩn dưới những tán cây rừng rậm rạp (2)",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Địa đạo Hắc Dịch",
+          "title": "Địa đạo Hắc Dịch được ẩn dưới những tán cây rừng rậm rạp (2)",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2481,7 +2558,7 @@ export const memoryGameData = {
   },
   "38": {
     "stt": 38,
-    "name": "Hầm bí mật in tài liệu của Ban Tuyên huấn Hoa vận",
+    "name": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước",
     "pairs": [
       {
         "pairId": 1,
@@ -2493,7 +2570,7 @@ export const memoryGameData = {
           "lng": 106.64910630231155,
           "monumentName": "Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Hầm bí mật in tài liệu của Ban Tuyên huấn Hoa vận",
+          "title": "Bản đồ/ghim vị trí Hầm bí mật in tài liệu Ban Tuyên huấn Hoa vận thời kỳ chống Mỹ cứu nước",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -2507,15 +2584,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Bi%E1%BB%83n%20hi%E1%BB%87u%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Biển hiệu Di tích Lịch sử Quốc gia",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1998",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Hầm bí mật in tài liệu của Ban Tuyên huấn Hoa vận",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1998",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -2529,11 +2608,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/C%E1%BA%ADn%20c%E1%BA%A3nh%20n%E1%BA%AFp%20h%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20m%E1%BB%9F%20tr%C3%AAn%20s%C3%A0n.jpg",
-          "imageCaption": "Cận cảnh nắp hầm bí mật mở trên sàn",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20in%20t%C3%A0i%20li%E1%BB%87u%20Ban%20Tuy%C3%AAn%20hu%E1%BA%A5n%20Hoa%20v%E1%BA%ADn%20th%E1%BB%9Di%20k%E1%BB%B3%20ch%E1%BB%91ng%20M%E1%BB%B9%20c%E1%BB%A9u%20n%C6%B0%E1%BB%9Bc/Tranh%20ch%C3%A2n%20dung%20c%C3%A1n%20b%E1%BB%99%20Ban%20Hoa%20v%E1%BA%ADn.jpg",
+          "imageCaption": "Tranh chân dung cán bộ Ban Hoa vận",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Hầm bí mật in tài liệu của Ban Tuyên huấn Hoa vận",
+          "title": "Tranh chân dung cán bộ Ban Hoa vận",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2574,15 +2653,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/B%E1%BA%A3ng%20c%E1%BB%95ng%20di%20t%C3%ADch%20M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh.jpg",
-          "imageCaption": "Bảng cổng di tích Mộ Phan Châu Trinh",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1994",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Mộ Phan Châu Trinh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1994",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -2598,9 +2679,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh/B%E1%BA%A3ng%20c%E1%BB%95ng%20di%20t%C3%ADch%20M%E1%BB%99%20Phan%20Ch%C3%A2u%20Trinh.jpg",
           "imageCaption": "Bảng cổng di tích Mộ Phan Châu Trinh",
-          "icon": "👤",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Phan Châu Trinh",
+          "title": "Bảng cổng di tích Mộ Phan Châu Trinh",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2615,7 +2696,7 @@ export const memoryGameData = {
   },
   "40": {
     "stt": 40,
-    "name": "Di tích lịch sử cách mạng “Nhà Cao Cẳng” số 18 Lê Lợi",
+    "name": "“Nhà cao cẳng” số 18 Lê Lợi.",
     "pairs": [
       {
         "pairId": 1,
@@ -2627,7 +2708,7 @@ export const memoryGameData = {
           "lng": 107.07445125486903,
           "monumentName": "“Nhà cao cẳng” số 18 Lê Lợi.",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Di tích lịch sử cách mạng “Nhà Cao Cẳng” số 18 Lê Lợi",
+          "title": "Bản đồ/ghim vị trí “Nhà cao cẳng” số 18 Lê Lợi.",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -2644,12 +2725,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/Bia%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%2018%20L%C3%AA%20L%E1%BB%A3i.jpg",
           "imageCaption": "Bia di tích lịch sử 18 Lê Lợi",
-          "badgeRanking": "Quốc gia",
+          "year": "1991",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Di tích lịch sử cách mạng “Nhà Cao Cẳng” số 18 Lê Lợi",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia di tích lịch sử 18 Lê Lợi",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2663,11 +2746,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/Bia%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%2018%20L%C3%AA%20L%E1%BB%A3i.jpg",
-          "imageCaption": "Bia di tích lịch sử 18 Lê Lợi",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20Cao%20C%E1%BA%B3ng/C%E1%BB%95ng%20v%C3%A0%20h%C3%A0ng%20r%C3%A0o%20Di%20t%C3%ADch%2018%20L%C3%AA%20L%E1%BB%A3i.jpg",
+          "imageCaption": "Cổng và hàng rào Di tích 18 Lê Lợi",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Di tích lịch sử cách mạng “Nhà Cao Cẳng” số 18 Lê Lợi",
+          "title": "Cổng và hàng rào Di tích 18 Lê Lợi",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2682,7 +2765,7 @@ export const memoryGameData = {
   },
   "41": {
     "stt": 41,
-    "name": "Nhà Má Tám Nhung – một cơ sở cách mạng giữa lòng Vũng Tàu",
+    "name": "Ngôi nhà 42/11 (nhà má Tám Nhung)",
     "pairs": [
       {
         "pairId": 1,
@@ -2694,7 +2777,7 @@ export const memoryGameData = {
           "lng": 107.07444299419018,
           "monumentName": "Ngôi nhà 42/11 (nhà má Tám Nhung)",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Nhà Má Tám Nhung – một cơ sở cách mạng giữa lòng Vũng Tàu",
+          "title": "Bản đồ/ghim vị trí Ngôi nhà 42/11 (nhà má Tám Nhung)",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -2711,12 +2794,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
           "imageCaption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
-          "badgeRanking": "Quốc gia",
+          "year": "1989",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà Má Tám Nhung – một cơ sở cách mạng giữa lòng Vũng Tàu",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2730,11 +2815,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/Chi%20ti%E1%BA%BFt%20kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20n%E1%BB%99i%20th%E1%BA%A5t%20nh%C3%A0%20g%E1%BB%97.jpg",
-          "imageCaption": "Chi tiết không gian trưng bày nội thất nhà gỗ",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20M%C3%A1%20T%C3%A1m%20Nhung/H%E1%BA%A7m%20b%C3%AD%20m%E1%BA%ADt%20%E1%BA%A9n%20gi%E1%BA%A5u%20c%C3%A1n%20b%E1%BB%99%20d%C6%B0%E1%BB%9Bi%20s%C3%A0n%2C%20v%C3%A1ch%20g%E1%BB%97.jpg",
+          "imageCaption": "Hầm bí mật ẩn giấu cán bộ dưới sàn, vách gỗ",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 1945”",
+          "title": "Hầm bí mật ẩn giấu cán bộ dưới sàn, vách gỗ",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2749,7 +2834,7 @@ export const memoryGameData = {
   },
   "42": {
     "stt": 42,
-    "name": "Nhà số 18/5 (Nhà ông Trương Quang Vinh)",
+    "name": "Nhà số 18/5 (nhà ông Trương Quang Vinh)",
     "pairs": [
       {
         "pairId": 1,
@@ -2761,7 +2846,7 @@ export const memoryGameData = {
           "lng": 107.0776155903031,
           "monumentName": "Nhà số 18/5 (nhà ông Trương Quang Vinh)",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Nhà số 18/5 (Nhà ông Trương Quang Vinh)",
+          "title": "Bản đồ/ghim vị trí Nhà số 18/5 (nhà ông Trương Quang Vinh)",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -2775,15 +2860,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20%C3%94ng%20Tr%C6%B0%C6%A1ng%20Quang%20Vinh/C%E1%BB%95ng%20g%E1%BA%A1ch%20c%E1%BB%95%20m%C3%A1i%20ng%C3%B3i%20%C4%91%E1%BB%8F.jpg",
-          "imageCaption": "Cổng gạch cổ mái ngói đỏ",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1991",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà số 18/5 (Nhà ông Trương Quang Vinh)",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1991",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -2797,11 +2884,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20%C3%94ng%20Tr%C6%B0%C6%A1ng%20Quang%20Vinh/C%E1%BB%ADa%20g%E1%BB%97%20ch%E1%BA%A1m%20kh%E1%BA%AFc%20r%E1%BB%93ng%20v%C3%A0%20hoa%20v%C4%83n%20c%E1%BB%95.jpg",
-          "imageCaption": "Cửa gỗ chạm khắc rồng và hoa văn cổ",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20%C3%94ng%20Tr%C6%B0%C6%A1ng%20Quang%20Vinh/C%E1%BB%95ng%20g%E1%BA%A1ch%20c%E1%BB%95%20m%C3%A1i%20ng%C3%B3i%20%C4%91%E1%BB%8F.jpg",
+          "imageCaption": "Cổng gạch cổ mái ngói đỏ",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Nhà số 18/5 (Nhà ông Trương Quang Vinh)",
+          "title": "Cổng gạch cổ mái ngói đỏ",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2816,7 +2903,7 @@ export const memoryGameData = {
   },
   "43": {
     "stt": 43,
-    "name": "Nhà Tròn",
+    "name": "Nhà Tròn - Bà Rịa",
     "pairs": [
       {
         "pairId": 1,
@@ -2828,7 +2915,7 @@ export const memoryGameData = {
           "lng": 107.16746821340014,
           "monumentName": "Nhà Tròn - Bà Rịa",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Nhà Tròn",
+          "title": "Bản đồ/ghim vị trí Nhà Tròn - Bà Rịa",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -2842,15 +2929,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/Kh%C3%A1ch%20tham%20quan%20t%C3%ACm%20hi%E1%BB%83u%20bi%E1%BB%83n%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
-          "imageCaption": "Khách tham quan tìm hiểu biển công nhận Di tích Lịch sử - Văn hóa",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1987",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà Tròn",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1987",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -2864,11 +2953,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/C%E1%BA%A3nh%20Nh%C3%A0%20tr%C3%B2n%20B%C3%A0%20R%E1%BB%8Ba%20v%E1%BB%81%20%C4%91%C3%AAm%20v%E1%BB%9Bi%20v%E1%BB%87t%20s%C3%A1ng%20giao%20th%C3%B4ng.jpg",
-          "imageCaption": "Cảnh Nhà tròn Bà Rịa về đêm với vệt sáng giao thông",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20Tr%C3%B2n/To%C3%A0n%20c%E1%BA%A3nh%20Nh%C3%A0%20tr%C3%B2n%20B%C3%A0%20R%E1%BB%8Ba%20ch%E1%BB%A5p%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+          "imageCaption": "Toàn cảnh Nhà tròn Bà Rịa chụp từ trên cao",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Nhà Tròn",
+          "title": "Toàn cảnh Nhà tròn Bà Rịa chụp từ trên cao",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2883,7 +2972,7 @@ export const memoryGameData = {
   },
   "44": {
     "stt": 44,
-    "name": "Nơi thành lập Kỳ bộ Việt Nam Thanh niên Cách mạng Đồng chí Hội",
+    "name": "Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội",
     "pairs": [
       {
         "pairId": 1,
@@ -2895,7 +2984,7 @@ export const memoryGameData = {
           "lng": 106.69933094006532,
           "monumentName": "Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Nơi thành lập Kỳ bộ Việt Nam Thanh niên Cách mạng Đồng chí Hội",
+          "title": "Bản đồ/ghim vị trí Nơi thành lập Kỳ bộ Việt Nam Thanh niên đồng chí Hội",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -2912,12 +3001,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20K%E1%BB%B3%20b%E1%BB%99%20Vi%E1%BB%87t%20Nam%20Thanh%20ni%C3%AAn%20C%C3%A1ch%20m%E1%BA%A1ng%20%C4%90%E1%BB%93ng%20ch%C3%AD%20H%E1%BB%99i/Bi%E1%BB%83n%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20qu%E1%BB%91c%20gia%20t%E1%BA%A1i%20c%C4%83n%20ph%C3%B2ng.jpg",
           "imageCaption": "Biển di tích lịch sử quốc gia tại căn phòng",
-          "badgeRanking": "Quốc gia",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nơi thành lập Kỳ bộ Việt Nam Thanh niên Cách mạng Đồng chí Hội",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Biển di tích lịch sử quốc gia tại căn phòng",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2933,9 +3024,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/N%C6%A1i%20th%C3%A0nh%20l%E1%BA%ADp%20K%E1%BB%B3%20b%E1%BB%99%20Vi%E1%BB%87t%20Nam%20Thanh%20ni%C3%AAn%20C%C3%A1ch%20m%E1%BA%A1ng%20%C4%90%E1%BB%93ng%20ch%C3%AD%20H%E1%BB%99i/B%C3%ACa%20t%E1%BA%ADp%20%C4%90%C6%B0%E1%BB%9Dng%20K%C3%A1ch%20m%E1%BB%87nh%2C%20l%C3%A0%20t%E1%BA%ADp%20h%E1%BB%A3p%20c%C3%A1c%20b%C3%A0i%20gi%E1%BA%A3ng%20c%E1%BB%A7a%20Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%20t%E1%BA%A1i%20c%C3%A1c%20l%E1%BB%9Bp%20b%E1%BB%93i%20d%C6%B0%E1%BB%A1ng%20ch%C3%ADnh%20tr%E1%BB%8B%20do%20H%E1%BB%99i%20Vi%E1%BB%87t%20Nam%20C%C3%A1ch%20m%E1%BA%A1ng%20Thanh%20ni%C3%AAn%20t%E1%BB%95%20ch%E1%BB%A9c..jpg",
           "imageCaption": "Bìa tập Đường Kách mệnh, là tập hợp các bài giảng của Nguyễn Ái Quốc tại các lớp bồi dưỡng chính trị do Hội Việt Nam Cách mạng Thanh niên tổ chức.",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 1926”",
+          "title": "Bìa tập Đường Kách mệnh, là tập hợp các bài giảng của Nguyễn Ái Quốc tại các lớp bồi dưỡng chính trị do Hội Việt Nam Cách mạng Thanh niên tổ chức.",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -2979,12 +3070,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/N%C3%BAi%20Dinh/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Khu%20c%C4%83n%20c%E1%BB%A9%20Ch%C3%B9a%20Di%E1%BB%87u%20Linh.jpg",
           "imageCaption": "Bia tưởng niệm Khu căn cứ Chùa Diệu Linh",
-          "badgeRanking": "Quốc gia",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Khu căn cứ Núi Dinh",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia tưởng niệm Khu căn cứ Chùa Diệu Linh",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -2998,11 +3091,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/N%C3%BAi%20Dinh/Bia%20t%C6%B0%E1%BB%9Fng%20ni%E1%BB%87m%20Khu%20c%C4%83n%20c%E1%BB%A9%20Ch%C3%B9a%20Di%E1%BB%87u%20Linh.jpg",
-          "imageCaption": "Bia tưởng niệm Khu căn cứ Chùa Diệu Linh",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/N%C3%BAi%20Dinh/Bi%E1%BB%83n%20ch%E1%BB%89%20d%E1%BA%ABn%20Di%20t%C3%ADch%20Khu%20c%C4%83n%20c%E1%BB%A9%20N%C3%BAi%20Dinh.jpg",
+          "imageCaption": "Biển chỉ dẫn Di tích Khu căn cứ Núi Dinh",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Khu căn cứ Núi Dinh",
+          "title": "Biển chỉ dẫn Di tích Khu căn cứ Núi Dinh",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3017,7 +3110,7 @@ export const memoryGameData = {
   },
   "46": {
     "stt": 46,
-    "name": "Sở chỉ huy tiền phương Phân khu 6 trong Chiến dịch Mậu Thân 1968",
+    "name": "Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968",
     "pairs": [
       {
         "pairId": 1,
@@ -3029,7 +3122,7 @@ export const memoryGameData = {
           "lng": 106.68710986507587,
           "monumentName": "Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Sở chỉ huy tiền phương Phân khu 6 trong Chiến dịch Mậu Thân 1968",
+          "title": "Bản đồ/ghim vị trí Sở Chỉ huy tiền phương Phân khu 6 trong chiến dịch Mậu Thân 1968",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -3046,12 +3139,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/Bi%E1%BB%83n%20hi%E1%BB%87u%20Ph%E1%BB%9F%20B%C3%ACnh%20v%C3%A0%20b%E1%BA%A3ng%20di%20t%C3%ADch.jpg",
           "imageCaption": "Biển hiệu Phở Bình và bảng di tích",
-          "badgeRanking": "Quốc gia",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Sở chỉ huy tiền phương Phân khu 6 trong Chiến dịch Mậu Thân 1968",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Biển hiệu Phở Bình và bảng di tích",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -3067,9 +3162,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/S%E1%BB%9F%20Ch%E1%BB%89%20huy%20ti%E1%BB%81n%20ph%C6%B0%C6%A1ng%20Ph%C3%A2n%20khu%206%20trong%20chi%E1%BA%BFn%20d%E1%BB%8Bch%20M%E1%BA%ADu%20Th%C3%A2n%201968/B%E1%BA%A3ng%20ch%C3%A2n%20dung%20B%E1%BB%99%20ph%E1%BA%ADn%20Tr%E1%BB%B1c%20ti%E1%BA%BFp%20Chi%E1%BA%BFn%20%C4%91%E1%BA%A5u.jpg",
           "imageCaption": "Bảng chân dung Bộ phận Trực tiếp Chiến đấu",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “Năm 1968”",
+          "title": "Bảng chân dung Bộ phận Trực tiếp Chiến đấu",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3113,12 +3208,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20V%C4%83n%20h%C3%B3a%20T%E1%BB%8Bnh%20X%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng.jpg",
           "imageCaption": "Bằng công nhận Di tích Lịch sử Văn hóa Tịnh Xá Ngọc Phương",
-          "badgeRanking": "Quốc gia",
+          "year": "1994",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Tịnh xá Ngọc Phương",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích Lịch sử Văn hóa Tịnh Xá Ngọc Phương",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -3134,9 +3231,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/T%E1%BB%8Bnh%20x%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng/B%C3%A3i%20s%C3%A2n%20v%C3%A0%20khu%C3%B4n%20vi%C3%AAn%20T%E1%BB%8Bnh%20X%C3%A1%20Ng%E1%BB%8Dc%20Ph%C6%B0%C6%A1ng.jpg",
           "imageCaption": "Bãi sân và khuôn viên Tịnh Xá Ngọc Phương",
-          "icon": "🌟",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Tịnh xá Ngọc Phương",
+          "title": "Bãi sân và khuôn viên Tịnh Xá Ngọc Phương",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3177,15 +3274,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/C%E1%BB%95ng%20ki%E1%BB%83m%20tra%20an%20ninh%20T%E1%BB%95ng%20L%C3%A3nh%20s%E1%BB%B1%20qu%C3%A1n%20M%E1%BB%B9.jpg",
-          "imageCaption": "Cổng kiểm tra an ninh Tổng Lãnh sự quán Mỹ",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1976",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Tòa Đại sứ quán Mỹ",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1976",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3199,11 +3298,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/C%E1%BB%95ng%20ki%E1%BB%83m%20tra%20an%20ninh%20T%E1%BB%95ng%20L%C3%A3nh%20s%E1%BB%B1%20qu%C3%A1n%20M%E1%BB%B9.jpg",
-          "imageCaption": "Cổng kiểm tra an ninh Tổng Lãnh sự quán Mỹ",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/T%C3%B2a%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9/To%C3%A0n%20c%E1%BA%A3nh%20%C4%90%E1%BA%A1i%20s%E1%BB%A9%20qu%C3%A1n%20M%E1%BB%B9%20t%E1%BA%A1i%20S%C3%A0i%20G%C3%B2n%20(T%C6%B0%20li%E1%BB%87u%20l%E1%BB%8Bch%20s%E1%BB%AD).jpg",
+          "imageCaption": "Toàn cảnh Đại sứ quán Mỹ tại Sài Gòn (Tư liệu lịch sử)",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Tòa Đại sứ quán Mỹ",
+          "title": "Toàn cảnh Đại sứ quán Mỹ tại Sài Gòn (Tư liệu lịch sử)",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3244,15 +3343,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/C%E1%BB%95ng%20tr%E1%BB%A5%20s%E1%BB%9F%20Ban%20Li%C3%AAn%20h%E1%BB%A3p%20Qu%C3%A2n%20s%E1%BB%B1%20hai%20b%C3%AAn%20Trung%20%C6%B0%C6%A1ng%20t%E1%BA%A1i%20Tr%E1%BA%A1i%20Davis.jpg",
-          "imageCaption": "Cổng trụ sở Ban Liên hợp Quân sự hai bên Trung ương tại Trại Davis",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "2017",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Trại Đa-vít",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2017",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3266,11 +3367,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/10.jpg",
-          "imageCaption": "10",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Tr%E1%BA%A1i%20Davis/Ch%C3%A2n%20dung%20%C4%90%E1%BA%A1i%20t%C3%A1%20V%C5%A9%20Nam%20B%C3%ACnh%20c%C3%B9ng%20l%E1%BB%B1c%20l%C6%B0%E1%BB%A3ng%20b%E1%BA%A3o%20v%E1%BB%87%20an%20ninh%20t%E1%BA%A1i%20Tr%E1%BA%A1i%20Davis%20(1973).jpg",
+          "imageCaption": "Chân dung Đại tá Vũ Nam Bình cùng lực lượng bảo vệ an ninh tại Trại Davis (1973)",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 1973”",
+          "title": "Chân dung Đại tá Vũ Nam Bình cùng lực lượng bảo vệ an ninh tại Trại Davis (1973)",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3311,15 +3412,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20ph%C3%B2ng%20th%E1%BB%A7%20b%E1%BB%9D%20bi%E1%BB%83n%20l%E1%BB%9Bn%20nh%E1%BA%A5t%20%C4%90%C3%B4ng%20D%C6%B0%C6%A1ng%20th%E1%BB%9Di%20b%E1%BA%A5y%20gi%E1%BB%9D%20tr%C3%AAn%20c%C3%A1c%20ng%E1%BB%8Dn%20n%C3%BAi%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u.jpg",
-          "imageCaption": "trận địa pháo phòng thủ bờ biển lớn nhất Đông Dương thời bấy giờ trên các ngọn núi tại Vũng Tàu",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1994",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Trận địa pháo cổ Cầu Đá",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1994",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3333,11 +3436,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/C%E1%BB%A5m%20ph%C3%A1o%20th%E1%BB%A9%20hai%20%C4%91%C6%B0%E1%BB%A3c%20%C4%91%E1%BA%B7t%20t%E1%BA%A1i%20ng%E1%BB%8Dn%20h%E1%BA%A3i%20%C4%91%C4%83ng%20c%C3%A1ch%20c%E1%BB%A5m%20ph%C3%A1o%20th%E1%BB%A9%20nh%E1%BA%A5t%20300%20m%20v%E1%BB%81%20h%C6%B0%E1%BB%9Bng%20B%E1%BA%AFc..png",
-          "imageCaption": "Cụm pháo thứ hai được đặt tại ngọn hải đăng cách cụm pháo thứ nhất 300 m về hướng Bắc.",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20C%E1%BA%A7u%20%C4%90%C3%A1/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20n%E1%BA%B1m%20gi%E1%BB%AFa%20khu%20v%E1%BB%B1c%20c%C3%A2y%20c%E1%BB%91i%20r%E1%BA%ADm%20r%E1%BA%A1p.jpg",
+          "imageCaption": "Trận địa pháo cổ nằm giữa khu vực cây cối rậm rạp",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Trận địa pháo cổ Cầu Đá",
+          "title": "Trận địa pháo cổ nằm giữa khu vực cây cối rậm rạp",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3352,7 +3455,7 @@ export const memoryGameData = {
   },
   "51": {
     "stt": 51,
-    "name": "Trận địa pháo cổ trên Núi Tao Phùng (Núi Nhỏ)",
+    "name": "Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)",
     "pairs": [
       {
         "pairId": 1,
@@ -3364,7 +3467,7 @@ export const memoryGameData = {
           "lng": 107.08243963200462,
           "monumentName": "Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Trận địa pháo cổ trên Núi Tao Phùng (Núi Nhỏ)",
+          "title": "Bản đồ/ghim vị trí Trận địa pháo cổ trên núi Tao Phùng (Núi Nhỏ)",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -3378,15 +3481,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20Nh%E1%BB%8F.jpg",
-          "imageCaption": "Bia công nhận Di tích Trận địa pháo cổ Núi Nhỏ",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Trận địa pháo cổ trên Núi Tao Phùng (Núi Nhỏ)",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3402,9 +3507,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20N%C3%BAi%20Nh%E1%BB%8F/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20Nh%E1%BB%8F.jpg",
           "imageCaption": "Bia công nhận Di tích Trận địa pháo cổ Núi Nhỏ",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Trận địa pháo cổ trên Núi Tao Phùng (Núi Nhỏ)",
+          "title": "Bia công nhận Di tích Trận địa pháo cổ Núi Nhỏ",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3419,7 +3524,7 @@ export const memoryGameData = {
   },
   "52": {
     "stt": 52,
-    "name": "Trận địa pháo cổ và Hầm thủy lôi Núi Lớn",
+    "name": "Trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
     "pairs": [
       {
         "pairId": 1,
@@ -3431,7 +3536,7 @@ export const memoryGameData = {
           "lng": 107.05852023440399,
           "monumentName": "Trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Trận địa pháo cổ và Hầm thủy lôi Núi Lớn",
+          "title": "Bản đồ/ghim vị trí Trận địa Pháo cổ và Hầm thủy lôi Núi Lớn",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -3445,15 +3550,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Maic%E1%BB%95%20v%C3%A0%20h%E1%BA%A7m%20th%E1%BB%A7y%20l%C3%B4i%20n%C3%BAi%20l%E1%BB%9Bn/Bi%E1%BB%83n%20t%C3%AAn%20di%20t%C3%ADch%20v%C3%A0%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
-          "imageCaption": "Biển tên di tích và khẩu pháo cổ Núi Lớn",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1992",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Trận địa pháo cổ và Hầm thủy lôi Núi Lớn",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1992",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3469,9 +3576,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Tr%E1%BA%ADn%20%C4%91%E1%BB%8Ba%20ph%C3%A1o%20Sao%20Maic%E1%BB%95%20v%C3%A0%20h%E1%BA%A7m%20th%E1%BB%A7y%20l%C3%B4i%20n%C3%BAi%20l%E1%BB%9Bn/Bi%E1%BB%83n%20t%C3%AAn%20di%20t%C3%ADch%20v%C3%A0%20kh%E1%BA%A9u%20ph%C3%A1o%20c%E1%BB%95%20N%C3%BAi%20L%E1%BB%9Bn.jpg",
           "imageCaption": "Biển tên di tích và khẩu pháo cổ Núi Lớn",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Trận địa pháo cổ và Hầm thủy lôi Núi Lớn",
+          "title": "Biển tên di tích và khẩu pháo cổ Núi Lớn",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3513,14 +3620,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "badge",
-          "imageSrc": null,
-          "imageCaption": null,
-          "badgeRanking": "Quốc gia",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Trụ sở Báo Dân Chúng",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3534,11 +3643,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/B%C3%A1o%20Lao%20%C4%90%E1%BB%99ng%20k%E1%BB%B7%20ni%E1%BB%87m%20C%C3%A1ch%20m%E1%BA%A1ng%20Ph%C3%A1p%201789.jpg",
-          "imageCaption": "Báo Lao Động kỷ niệm Cách mạng Pháp 1789",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20B%C3%A1o%20D%C3%A2n%20Ch%C3%BAng/B%E1%BA%A3ng%20ghi%20th%C3%B4ng%20tin%20di%20t%C3%ADch%20Tr%E1%BB%A5%20s%E1%BB%9F%20b%C3%A1o%20D%C3%A2n%20Ch%C3%BAng.jpg",
+          "imageCaption": "Bảng ghi thông tin di tích Trụ sở báo Dân Chúng",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Trụ sở Báo Dân Chúng",
+          "title": "Bảng ghi thông tin di tích Trụ sở báo Dân Chúng",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3553,7 +3662,7 @@ export const memoryGameData = {
   },
   "54": {
     "stt": 54,
-    "name": "Trụ sở Phái đoàn liên lạc Bộ Tổng Tư lệnh QĐND Việt Nam cạnh Phân ban Quốc tế giám sát đình chiến Sài Gòn (1955–1958)",
+    "name": "Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)",
     "pairs": [
       {
         "pairId": 1,
@@ -3565,7 +3674,7 @@ export const memoryGameData = {
           "lng": 106.68733333079545,
           "monumentName": "Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "title": "Bản đồ/ghim vị trí Trụ sở Phái đoàn liên lạc Bộ Tổng Tư lệnh QĐND Việt Nam cạnh Phân ban Quốc tế giám sát đình chiến Sài Gòn (1955–1958)",
+          "title": "Bản đồ/ghim vị trí Trụ sở Phái đoàn liên lạc của Bộ Tổng tư lệnh Quân đội Nhân dân Việt Nam cạnh Phân ban Quốc tế giám sát và kiểm soát đình chiến tại Sài Gòn (1955-1958)",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -3582,12 +3691,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
           "imageCaption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
-          "badgeRanking": "Quốc gia",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Trụ sở Phái đoàn liên lạc Bộ Tổng Tư lệnh QĐND Việt Nam cạnh Phân ban Quốc tế giám sát đình chiến Sài Gòn (1955–1958)",
-          "sub": "Biển tích xếp hạng"
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -3601,11 +3712,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/B%E1%BA%A3ng%20danh%20s%C3%A1ch%20c%C3%A1n%20b%E1%BB%99%2C%20chi%E1%BA%BFn%20s%C4%A9%20%26%20%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u.jpg",
-          "imageCaption": "Bảng danh sách cán bộ, chiến sĩ & Ảnh tư liệu",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20Ph%C3%A1i%20%C4%91o%C3%A0n%20li%C3%AAn%20l%E1%BA%A1c%20c%E1%BB%A7a%20B%E1%BB%99%20T%E1%BB%95ng%20t%C6%B0%20l%E1%BB%87nh%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20nh%C3%A2n%20d%C3%A2n%20Vi%E1%BB%87t%20Nam/%C4%90o%C3%A0n%20c%C3%A1n%20b%E1%BB%99%20Qu%C3%A2n%20%C4%91%E1%BB%99i%20tham%20quan%20hi%E1%BB%87n%20v%E1%BA%ADt.jpg",
+          "imageCaption": "Đoàn cán bộ Quân đội tham quan hiện vật",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1955–1958”",
+          "title": "Đoàn cán bộ Quân đội tham quan hiện vật",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3646,15 +3757,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/G%C3%B3c%20nh%C3%ACn%20t%E1%BB%AB%20ban%20c%C3%B4ng%20l%E1%BA%A7u%20h%C6%B0%E1%BB%9Bng%20ra%20khu%20v%E1%BB%B1c%20B%C3%A3i%20Tr%C6%B0%E1%BB%9Bc%20v%C3%A0%20bi%E1%BB%83n%20V%C5%A9ng%20T%C3%A0u..jpg",
-          "imageCaption": "Góc nhìn từ ban công lầu hướng ra khu vực Bãi Trước và biển Vũng Tàu.",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1991",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Trụ sở Ủy ban Việt Minh tại Vũng Tàu",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1991",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3668,11 +3781,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/Khu%20v%E1%BB%B1c%20h%C3%A0nh%20lang%20v%C3%B2m%20cong%20v%C3%A0%20b%E1%BA%A3n%20%C4%91%E1%BB%93%20quy%20ho%E1%BA%A1ch%20%C4%91%C6%B0%E1%BB%A3c%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20di%20t%C3%ADch..jpg",
-          "imageCaption": "Khu vực hành lang vòm cong và bản đồ quy hoạch được trưng bày tại di tích.",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20%E1%BB%A6y%20ban%20Vi%E1%BB%87t%20Minh%20t%E1%BA%A1i%20V%C5%A9ng%20T%C3%A0u/Kh%C3%B4ng%20gian%20c%E1%BB%ADa%20ra%20v%C3%A0o%20v%C3%A0%20c%C3%A1c%20ph%C3%B2ng%20tr%C6%B0ng%20b%C3%A0y%20t%C6%B0%20li%E1%BB%87u%20b%C3%AAn%20trong%20di%20t%C3%ADch..jpg",
+          "imageCaption": "Không gian cửa ra vào và các phòng trưng bày tư liệu bên trong di tích.",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 1945”",
+          "title": "Không gian cửa ra vào và các phòng trưng bày tư liệu bên trong di tích.",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3687,7 +3800,7 @@ export const memoryGameData = {
   },
   "56": {
     "stt": 56,
-    "name": "Bạch Dinh – Villa Blanche",
+    "name": "Khu Bạch Dinh",
     "pairs": [
       {
         "pairId": 1,
@@ -3698,8 +3811,8 @@ export const memoryGameData = {
           "lat": 10.35087105854076,
           "lng": 107.06866876117707,
           "monumentName": "Khu Bạch Dinh",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "title": "Bản đồ/ghim vị trí Bạch Dinh – Villa Blanche",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "title": "Bản đồ/ghim vị trí Khu Bạch Dinh",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -3713,15 +3826,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/M%E1%BA%B7t%20ti%E1%BB%81n%20B%E1%BA%A1ch%20Dinh%20nh%C3%ACn%20t%E1%BB%AB%20g%C3%B3c%20nghi%C3%AAng.jpg",
-          "imageCaption": "Mặt tiền Bạch Dinh nhìn từ góc nghiêng",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1992",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Bạch Dinh – Villa Blanche",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1992",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3735,11 +3850,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/Kh%C3%B4ng%20gian%20ph%C3%B2ng%20l%C3%A0m%20vi%E1%BB%87c%20b%C3%AAn%20trong%20B%E1%BA%A1ch%20Dinh.jpg",
-          "imageCaption": "Không gian phòng làm việc bên trong Bạch Dinh",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/B%E1%BA%A1ch%20Dinh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20ch%C3%A2n%20dung%20vua%20Th%C3%A0nh%20Th%C3%A1i%20t%E1%BA%A1i%20B%E1%BA%A1ch%20Dinh.jpg",
+          "imageCaption": "Không gian trưng bày chân dung vua Thành Thái tại Bạch Dinh",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1898–1902”",
+          "title": "Không gian trưng bày chân dung vua Thành Thái tại Bạch Dinh",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3765,7 +3880,7 @@ export const memoryGameData = {
           "lat": 10.7880998220292,
           "lng": 106.70473082107647,
           "monumentName": "Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -3780,15 +3895,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Hi%E1%BB%87n%20v%E1%BA%ADt%20kh%E1%BA%A3o%20c%E1%BB%95%20b%E1%BA%B1ng%20%C4%91%C3%A1%20tr%C6%B0ng%20b%C3%A0y%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Hiện vật khảo cổ bằng đá trưng bày tại Bảo tàng Lịch sử Quốc gia",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2012",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2012",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3804,9 +3921,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%C3%B4%20h%C3%ACnh%20t%C3%A1i%20hi%E1%BB%87n%20tr%E1%BA%ADn%20chi%E1%BA%BFn%20tr%C3%AAn%20s%C3%B4ng%20B%E1%BA%A1ch%20%C4%90%E1%BA%B1ng%20n%C4%83m%20938%20t%E1%BA%A1i%20B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
           "imageCaption": "Mô hình tái hiện trận chiến trên sông Bạch Đằng năm 938 tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “24/11/1927”",
+          "title": "Mô hình tái hiện trận chiến trên sông Bạch Đằng năm 938 tại Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3832,7 +3949,7 @@ export const memoryGameData = {
           "lat": 10.776016764087215,
           "lng": 106.69955393549671,
           "monumentName": "Bảo tàng Thành phố Hồ Chí Minh",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Bảo tàng Thành phố Hồ Chí Minh",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -3850,12 +3967,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20c%E1%BB%A7a%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
           "imageCaption": "Bằng xếp hạng Di tích quốc gia của Bảo tàng Thành phố Hồ Chí Minh",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Bảo tàng Thành phố Hồ Chí Minh",
-          "sub": "Biển tích xếp hạng"
+          "year": "2012",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng xếp hạng Di tích quốc gia của Bảo tàng Thành phố Hồ Chí Minh",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -3869,11 +3988,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%A7u%20thang%20ch%C3%ADnh%20b%C3%AAn%20trong%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%20nh%C3%ACn%20t%E1%BB%AB%20ch%C3%ADnh%20di%E1%BB%87n.jpg",
-          "imageCaption": "Cầu thang chính bên trong Bảo tàng Thành phố Hồ Chí Minh nhìn từ chính diện",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%B4ng%20gian%20tr%C6%B0ng%20b%C3%A0y%20hi%E1%BB%87n%20v%E1%BA%ADt%20b%C3%AAn%20trong%20B%E1%BA%A3o%20t%C3%A0ng%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh.jpg",
+          "imageCaption": "Không gian trưng bày hiện vật bên trong Bảo tàng Thành phố Hồ Chí Minh",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “30/4/1975”",
+          "title": "Không gian trưng bày hiện vật bên trong Bảo tàng Thành phố Hồ Chí Minh",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3899,7 +4018,7 @@ export const memoryGameData = {
           "lat": 10.778819897568113,
           "lng": 106.64918370829508,
           "monumentName": "Chùa Giác Lâm",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Chùa Giác Lâm",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -3914,15 +4033,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/C%E1%BB%95ng%20tam%20quan%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m.jpg",
-          "imageCaption": "Cổng tam quan Chùa Giác Lâm",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chùa Giác Lâm",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -3938,9 +4059,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m/B%E1%BA%A3ng%20ghi%20nh%E1%BA%ADn%20Ch%C3%B9a%20Gi%C3%A1c%20L%C3%A2m%20l%C3%A0%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%E2%80%93%20v%C4%83n%20h%C3%B3a.jpg",
           "imageCaption": "Bảng ghi nhận Chùa Giác Lâm là di tích lịch sử – văn hóa",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “Năm 1744”",
+          "title": "Bảng ghi nhận Chùa Giác Lâm là di tích lịch sử – văn hóa",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -3966,7 +4087,7 @@ export const memoryGameData = {
           "lat": 10.76314796160562,
           "lng": 106.63918448311219,
           "monumentName": "Chùa Giác Viên",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Chùa Giác Viên",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -3981,15 +4102,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/C%E1%BB%95ng%20v%C3%A0o%20T%E1%BB%95%20%C4%91%C3%ACnh%20Gi%C3%A1c%20Vi%C3%AAn.jpg",
-          "imageCaption": "Cổng vào Tổ đình Giác Viên",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chùa Giác Viên",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4005,9 +4128,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn/B%C3%A0n%20th%E1%BB%9D%20T%E1%BB%95%20v%C3%A0%20c%C3%A1c%20b%C3%A0i%20v%E1%BB%8B%20ch%C3%B9a%20Gi%C3%A1c%20Vi%C3%AAn.jpg",
           "imageCaption": "Bàn thờ Tổ và các bài vị chùa Giác Viên",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “Năm 1798”",
+          "title": "Bàn thờ Tổ và các bài vị chùa Giác Viên",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4033,7 +4156,7 @@ export const memoryGameData = {
           "lat": 10.980312946035541,
           "lng": 106.65886278772359,
           "monumentName": "Chùa Hội Khánh",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Chùa Hội Khánh",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4048,15 +4171,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/Bia%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
-          "imageCaption": "Bia đá công nhận Di tích Lịch sử - Văn hóa",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chùa Hội Khánh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4070,11 +4195,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/B%C3%A0n%20th%E1%BB%9D%20T%E1%BB%95%20v%C3%A0%20ch%C6%B0%20Ph%E1%BA%ADt%20trong%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
-          "imageCaption": "Bàn thờ Tổ và chư Phật trong Chánh điện",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20Kh%C3%A1nh/Bia%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+          "imageCaption": "Bia đá công nhận Di tích Lịch sử - Văn hóa",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “Năm 1868”",
+          "title": "Bia đá công nhận Di tích Lịch sử - Văn hóa",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4100,7 +4225,7 @@ export const memoryGameData = {
           "lat": 10.871140824793784,
           "lng": 106.84095365214384,
           "monumentName": "Chùa Hội Sơn",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Chùa Hội Sơn",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4115,15 +4240,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/Bi%E1%BB%83n%20t%C3%AAn%20Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n.jpg",
-          "imageCaption": "Biển tên Chùa Hội Sơn",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chùa Hội Sơn",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4137,11 +4264,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/C%E1%BB%A5m%20t%C6%B0%E1%BB%A3ng%20T%C3%A2y%20Ph%C6%B0%C6%A1ng%20Tam%20Th%C3%A1nh%20v%C3%A0%20ch%C6%B0%20Ph%E1%BA%ADt.jpg",
-          "imageCaption": "Cụm tượng Tây Phương Tam Thánh và chư Phật",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n/Bi%E1%BB%83n%20t%C3%AAn%20Ch%C3%B9a%20H%E1%BB%99i%20S%C6%A1n.jpg",
+          "imageCaption": "Biển tên Chùa Hội Sơn",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 2015”",
+          "title": "Biển tên Chùa Hội Sơn",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4167,7 +4294,7 @@ export const memoryGameData = {
           "lat": 10.485861508976331,
           "lng": 107.21752235304554,
           "monumentName": "Chùa Long Bàn",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Chùa Long Bàn",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4182,15 +4309,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Long%20B%C3%A0n.jpg",
-          "imageCaption": "Cổng Tam quan Chùa Long Bàn",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1991",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chùa Long Bàn",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1991",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4206,9 +4335,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Long%20B%C3%A0n/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20%C4%91i%E1%BB%87n%20ch%C3%ADnh%20%C4%91i%E1%BB%87n.jpg",
           "imageCaption": "Bàn thờ Phật điện chính điện",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “Năm 1963”",
+          "title": "Bàn thờ Phật điện chính điện",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4234,7 +4363,7 @@ export const memoryGameData = {
           "lat": 10.756620025748866,
           "lng": 106.64480484242095,
           "monumentName": "Chùa Phụng Sơn",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Chùa Phụng Sơn",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4249,15 +4378,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n.jpg",
-          "imageCaption": "Cổng Tam quan Chùa Phụng Sơn",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1988",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chùa Phụng Sơn",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1988",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4273,9 +4404,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Ph%E1%BB%A5ng%20S%C6%A1n/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20%C4%91i%E1%BB%87n%20trung%20t%C3%A2m.jpg",
           "imageCaption": "Bàn thờ Phật điện trung tâm",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1904–1915”",
+          "title": "Bàn thờ Phật điện trung tâm",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4301,7 +4432,7 @@ export const memoryGameData = {
           "lat": 10.371205473766906,
           "lng": 107.07952767596208,
           "monumentName": "Phước Lâm Tự",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Phước Lâm Tự",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4316,15 +4447,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20L%C3%A2m%20T%E1%BB%B1/C%E1%BB%95ng%20Tam%20quan%20Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20L%C3%A2m.jpg",
-          "imageCaption": "Cổng Tam quan Chùa Phước Lâm",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1992",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Phước Lâm Tự",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1992",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4340,9 +4473,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20L%C3%A2m%20T%E1%BB%B1/B%C3%A0n%20th%E1%BB%9D%20Ch%C3%A1nh%20%C4%91i%E1%BB%87n%20ch%C3%ADnh.jpg",
           "imageCaption": "Bàn thờ Chánh điện chính",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1993”",
+          "title": "Bàn thờ Chánh điện chính",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4368,7 +4501,7 @@ export const memoryGameData = {
           "lat": 10.842216656202178,
           "lng": 106.7887960814335,
           "monumentName": "Chùa Phước Tường",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Chùa Phước Tường",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4386,12 +4519,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
           "imageCaption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chùa Phước Tường",
-          "sub": "Biển tích xếp hạng"
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -4407,9 +4542,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20Ph%C6%B0%E1%BB%9Bc%20T%C6%B0%E1%BB%9Dng/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20%C4%91i%E1%BB%87n%20ch%C3%ADnh.jpg",
           "imageCaption": "Bàn thờ Phật điện chính",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1741”",
+          "title": "Bàn thờ Phật điện chính",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4435,7 +4570,7 @@ export const memoryGameData = {
           "lat": 10.828500565698352,
           "lng": 106.68408850683683,
           "monumentName": "Chùa Sắc Tứ Trường Thọ",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Chùa Sắc Tứ Trường Thọ",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4450,15 +4585,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/B%E1%BB%99%20t%C6%B0%E1%BB%A3ng%20Tam%20Th%E1%BA%BF%20Ph%E1%BA%ADt%20b%E1%BA%B1ng%20g%E1%BB%97.jpg",
-          "imageCaption": "Bộ tượng Tam Thế Phật bằng gỗ",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2000",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Chùa Sắc Tứ Trường Thọ",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2000",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4474,9 +4611,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ch%C3%B9a%20S%E1%BA%AFc%20T%E1%BB%A9%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/B%C3%A0n%20th%E1%BB%9D%20Ph%E1%BA%ADt%20trang%20tr%C3%AD%20c%C3%A0nh%20mai.jpg",
           "imageCaption": "Bàn thờ Phật trang trí cành mai",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 1802”",
+          "title": "Bàn thờ Phật trang trí cành mai",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4491,7 +4628,7 @@ export const memoryGameData = {
   },
   "68": {
     "stt": 68,
-    "name": "Dinh Cô",
+    "name": "Thắng cảnh Dinh Cô",
     "pairs": [
       {
         "pairId": 1,
@@ -4502,8 +4639,8 @@ export const memoryGameData = {
           "lat": 10.386575500382035,
           "lng": 107.2341463440673,
           "monumentName": "Thắng cảnh Dinh Cô",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png",
-          "title": "Bản đồ/ghim vị trí Dinh Cô",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "title": "Bản đồ/ghim vị trí Thắng cảnh Dinh Cô",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -4520,12 +4657,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Dinh%20C%C3%B4/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20-%20v%C4%83n%20h%C3%B3a%20Dinh%20C%C3%B4%20v%C3%A0%20Ch%E1%BB%A9ng%20nh%E1%BA%ADn%20L%E1%BB%85%20h%E1%BB%99i%20Dinh%20C%C3%B4%20l%C3%A0%20Di%20s%E1%BA%A3n%20v%C4%83n%20h%C3%B3a%20phi%20v%E1%BA%ADt%20th%E1%BB%83%20qu%E1%BB%91c%20gia.jpg",
           "imageCaption": "Bằng công nhận Di tích lịch sử - văn hóa Dinh Cô và Chứng nhận Lễ hội Dinh Cô là Di sản văn hóa phi vật thể quốc gia",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Dinh Cô",
-          "sub": "Biển tích xếp hạng"
+          "year": "1995",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích lịch sử - văn hóa Dinh Cô và Chứng nhận Lễ hội Dinh Cô là Di sản văn hóa phi vật thể quốc gia",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -4541,9 +4680,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Dinh%20C%C3%B4/Kh%C3%B4ng%20gian%20th%E1%BB%9D%20t%E1%BB%B1%20b%C3%AAn%20trong%20Dinh%20C%C3%B4.jpg",
           "imageCaption": "Không gian thờ tự bên trong Dinh Cô",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1930”",
+          "title": "Không gian thờ tự bên trong Dinh Cô",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4569,7 +4708,7 @@ export const memoryGameData = {
           "lat": 10.79174764740094,
           "lng": 106.69788126124845,
           "monumentName": "Điện Ngọc Hoàng",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Điện Ngọc Hoàng",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4587,12 +4726,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/Bia%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng.jpg",
           "imageCaption": "Bia Di tích kiến trúc nghệ thuật quốc gia Điện Ngọc Hoàng",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Điện Ngọc Hoàng",
-          "sub": "Biển tích xếp hạng"
+          "year": "1994",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia Di tích kiến trúc nghệ thuật quốc gia Điện Ngọc Hoàng",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -4608,9 +4749,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng/B%C3%A0n%20th%E1%BB%9D%20Th%E1%BB%95%20%C4%90%E1%BB%8Ba%20t%E1%BA%A1i%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc%20Ho%C3%A0ng.jpg",
           "imageCaption": "Bàn thờ Thổ Địa tại Điện Ngọc Hoàng",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1900”",
+          "title": "Bàn thờ Thổ Địa tại Điện Ngọc Hoàng",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4636,7 +4777,7 @@ export const memoryGameData = {
           "lat": 10.811700389346413,
           "lng": 106.69644906762382,
           "monumentName": "Đình Bình Hòa",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Bình Hòa",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4654,12 +4795,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/Bia%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
           "imageCaption": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Bình Hòa",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Bình Hòa",
-          "sub": "Biển tích xếp hạng"
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Bình Hòa",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -4675,9 +4818,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a/H%C3%ACnh%20t%C6%B0%E1%BB%A3ng%20l%C6%B0%E1%BB%A1ng%20long%20tranh%20ch%C3%A2u%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh%20B%C3%ACnh%20H%C3%B2a.jpg",
           "imageCaption": "Hình tượng lưỡng long tranh châu trên mái Đình Bình Hòa",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1853”",
+          "title": "Hình tượng lưỡng long tranh châu trên mái Đình Bình Hòa",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4703,7 +4846,7 @@ export const memoryGameData = {
           "lat": 10.781495968270306,
           "lng": 106.67305225228048,
           "monumentName": "Đình Chí Hòa",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Chí Hòa",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4718,15 +4861,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/C%E1%BB%95ng%20h%E1%BA%BBm%20d%E1%BA%ABn%20v%C3%A0o%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
-          "imageCaption": "Cổng hẻm dẫn vào Đình Chí Hòa",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1996",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Chí Hòa",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1996",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4742,9 +4887,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a/B%C3%A0n%20th%E1%BB%9D%20danh%20s%C6%B0%20V%C3%B5%20Tr%C6%B0%E1%BB%9Dng%20To%E1%BA%A3n%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Ch%C3%AD%20H%C3%B2a.jpg",
           "imageCaption": "Bàn thờ danh sư Võ Trường Toản tại Đình Chí Hòa",
-          "icon": "🌟",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Đình Chí Hòa",
+          "title": "Bàn thờ danh sư Võ Trường Toản tại Đình Chí Hòa",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4770,7 +4915,7 @@ export const memoryGameData = {
           "lat": 10.901594883611589,
           "lng": 106.75870979646022,
           "monumentName": "Đình Dĩ An",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Dĩ An",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4786,14 +4931,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
-          "imageCaption": "Bia công nhận Di tích quốc gia Đình Dĩ An",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Dĩ An",
-          "sub": "Biển tích xếp hạng"
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Bia%20ghi%20danh%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+          "imageCaption": "Bia ghi danh tại Đình Dĩ An",
+          "year": "2019",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia ghi danh tại Đình Dĩ An",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -4807,11 +4954,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Bia%20ghi%20danh%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
-          "imageCaption": "Bia ghi danh tại Đình Dĩ An",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20D%C4%A9%20An/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20D%C4%A9%20An.jpg",
+          "imageCaption": "Bia công nhận Di tích quốc gia Đình Dĩ An",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 1838”",
+          "title": "Bia công nhận Di tích quốc gia Đình Dĩ An",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4837,7 +4984,7 @@ export const memoryGameData = {
           "lat": 10.75217534282721,
           "lng": 106.66109305535474,
           "monumentName": "Đình Minh Hương Gia Thạnh",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Minh Hương Gia Thạnh",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4852,15 +4999,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/M%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Gia%20Th%E1%BA%A1nh%20(Ch%C3%B9a%20%C3%94n%20L%C4%83ng).jpg",
-          "imageCaption": "Mặt tiền Hội quán Gia Thạnh (Chùa Ôn Lăng)",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Minh Hương Gia Thạnh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4876,9 +5025,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Minh%20H%C6%B0%C6%A1ng%20Gia%20Th%E1%BA%A1nh/G%E1%BB%91m%20s%E1%BB%A9%20%C4%91%E1%BA%AFp%20n%E1%BB%95i%20h%C3%ACnh%20Chim%20Ph%C6%B0%E1%BB%A3ng%20tr%C3%AAn%20%C4%91%E1%BB%89nh%20m%C3%A1i%20%C4%91%E1%BB%81n.jpg",
           "imageCaption": "Gốm sứ đắp nổi hình Chim Phượng trên đỉnh mái đền",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1839”",
+          "title": "Gốm sứ đắp nổi hình Chim Phượng trên đỉnh mái đền",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4904,7 +5053,7 @@ export const memoryGameData = {
           "lat": 10.8954642703731,
           "lng": 106.69559303693825,
           "monumentName": "Đình Phú Long",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Phú Long",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4919,15 +5068,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/C%E1%BB%95ng%20v%C3%A0o%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
-          "imageCaption": "Cổng vào Đình Phú Long",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2001",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Phú Long",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2001",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -4943,9 +5094,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Long/Chi%20ti%E1%BA%BFt%20trang%20tr%C3%AD%20g%E1%BB%91m%20s%E1%BB%A9%20tr%C3%AAn%20m%C3%A1i%20%C4%90%C3%ACnh%20Ph%C3%BA%20Long.jpg",
           "imageCaption": "Chi tiết trang trí gốm sứ trên mái Đình Phú Long",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “năm 1842”",
+          "title": "Chi tiết trang trí gốm sứ trên mái Đình Phú Long",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -4971,7 +5122,7 @@ export const memoryGameData = {
           "lat": 10.795362511439716,
           "lng": 106.673864254131,
           "monumentName": "Đình Phú Nhuận",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Phú Nhuận",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -4987,14 +5138,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/Bia%20%C4%91%C3%A1%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
-          "imageCaption": "Bia đá Di tích Kiến trúc Nghệ thuật Quốc gia Đình Phú Nhuận",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Phú Nhuận",
-          "sub": "Biển tích xếp hạng"
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+          "imageCaption": "Bằng công nhận Di tích Lịch sử - Văn hóa Đình Phú Nhuận",
+          "year": "1997",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích Lịch sử - Văn hóa Đình Phú Nhuận",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5008,11 +5161,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/Bi%E1%BB%83n%20c%E1%BB%95ng%20v%C3%B2m%20%C4%91%C6%B0%E1%BB%9Dng%20v%C3%A0o%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
-          "imageCaption": "Biển cổng vòm đường vào Đình Phú Nhuận",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn/Bia%20%C4%91%C3%A1%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Ph%C3%BA%20Nhu%E1%BA%ADn.jpg",
+          "imageCaption": "Bia đá Di tích Kiến trúc Nghệ thuật Quốc gia Đình Phú Nhuận",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1852”",
+          "title": "Bia đá Di tích Kiến trúc Nghệ thuật Quốc gia Đình Phú Nhuận",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5038,7 +5191,7 @@ export const memoryGameData = {
           "lat": 11.01970405639836,
           "lng": 106.61830219646122,
           "monumentName": "Đình Tân An (Bến Thế)",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Tân An (Bến Thế)",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5053,15 +5206,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/Bia%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
-          "imageCaption": "Bia xếp hạng Di tích quốc gia Đình Tân An",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2014",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Tân An (Bến Thế)",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2014",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -5075,11 +5230,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/B%E1%BA%A3ng%20t%C3%B3m%20t%E1%BA%AFt%20Di%20t%C3%ADch%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
-          "imageCaption": "Bảng tóm tắt Di tích Đình Tân An",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20T%C3%A2n%20An%20(B%E1%BA%BFn%20Th%E1%BA%BF)/Bia%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20T%C3%A2n%20An.jpg",
+          "imageCaption": "Bia xếp hạng Di tích quốc gia Đình Tân An",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1820”",
+          "title": "Bia xếp hạng Di tích quốc gia Đình Tân An",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5120,15 +5275,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Bia%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20Di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20%E2%80%93%20v%C4%83n%20h%C3%B3a%20%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam.jpg",
-          "imageCaption": "Bia giới thiệu Di tích lịch sử – văn hóa Đình Thắng Tam",
-          "badgeRanking": "Quốc gia",
+          "cardType": "badge",
+          "year": "1991",
+          "ranking": "Quốc gia",
+          "rankingType": "Lịch sử",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
           "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Thắng Tam",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1991",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -5142,11 +5299,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/Ban%20th%E1%BB%9D%20trong%20%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Th%E1%BA%AFng%20Tam.jpg",
-          "imageCaption": "Ban thờ trong Đình Thần Thắng Tam",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam/To%C3%A0n%20c%E1%BA%A3nh%20Khu%20di%20t%C3%ADch%20%C4%90%C3%ACnh%20Th%E1%BA%AFng%20Tam%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
+          "imageCaption": "Toàn cảnh Khu di tích Đình Thắng Tam nhìn từ trên cao",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Đình Thắng Tam",
+          "title": "Toàn cảnh Khu di tích Đình Thắng Tam nhìn từ trên cao",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5172,7 +5329,7 @@ export const memoryGameData = {
           "lat": 10.853322555076566,
           "lng": 106.76024317192255,
           "monumentName": "Đình Thần Linh Đông",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Thần Linh Đông",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5190,12 +5347,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/B%C3%A0n%20th%E1%BB%9D%20Ti%E1%BB%81n%20hi%E1%BB%81n%20v%C3%A0%20B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20TP.HCM.jpg",
           "imageCaption": "Bàn thờ Tiền hiền và Bằng xếp hạng Di tích TP.HCM",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Thần Linh Đông",
-          "sub": "Biển tích xếp hạng"
+          "year": "2020",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bàn thờ Tiền hiền và Bằng xếp hạng Di tích TP.HCM",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5211,9 +5370,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0o%20%C4%90%C3%ACnh%20th%E1%BA%A7n%20Linh%20%C4%90%C3%B4ng.jpg",
           "imageCaption": "Cổng chính vào Đình thần Linh Đông",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1823”",
+          "title": "Cổng chính vào Đình thần Linh Đông",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5239,7 +5398,7 @@ export const memoryGameData = {
           "lat": 10.840000633777274,
           "lng": 106.66493947622094,
           "monumentName": "Đình Thông Tây Hội",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Thông Tây Hội",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5257,12 +5416,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/Bia%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
           "imageCaption": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Thông Tây Hội",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Thông Tây Hội",
-          "sub": "Biển tích xếp hạng"
+          "year": "1998",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Thông Tây Hội",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5278,9 +5439,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i/Ban%20th%E1%BB%9D%20T%E1%BA%A3%20Ban%20t%E1%BA%A1i%20%C4%90%C3%ACnh%20Th%C3%B4ng%20T%C3%A2y%20H%E1%BB%99i.jpg",
           "imageCaption": "Ban thờ Tả Ban tại Đình Thông Tây Hội",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1883”",
+          "title": "Ban thờ Tả Ban tại Đình Thông Tây Hội",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5306,7 +5467,7 @@ export const memoryGameData = {
           "lat": 10.83363325813424,
           "lng": 106.75664891425093,
           "monumentName": "Đình Trường Thọ",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Trường Thọ",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5322,14 +5483,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/Bia%20%C4%91%C3%A1%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt.jpg",
-          "imageCaption": "Bia đá Di tích Kiến trúc Nghệ thuật",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Trường Thọ",
-          "sub": "Biển tích xếp hạng"
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia.jpg",
+          "imageCaption": "Bằng xếp hạng Di tích Quốc gia",
+          "year": "2002",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng xếp hạng Di tích Quốc gia",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5343,11 +5506,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Bằng xếp hạng Di tích Quốc gia",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Tr%C6%B0%E1%BB%9Dng%20Th%E1%BB%8D/Bia%20%C4%91%C3%A1%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt.jpg",
+          "imageCaption": "Bia đá Di tích Kiến trúc Nghệ thuật",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1926”",
+          "title": "Bia đá Di tích Kiến trúc Nghệ thuật",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5373,7 +5536,7 @@ export const memoryGameData = {
           "lat": 10.877636787952133,
           "lng": 106.76533819216165,
           "monumentName": "Đình Xuân Hiệp",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Đình Xuân Hiệp",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5391,12 +5554,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/Bia%20Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc%20ngh%E1%BB%87%20thu%E1%BA%ADt%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
           "imageCaption": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Xuân Hiệp",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Đình Xuân Hiệp",
-          "sub": "Biển tích xếp hạng"
+          "year": "2004",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bia Di tích kiến trúc nghệ thuật quốc gia Đình Xuân Hiệp",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5412,9 +5577,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20qu%E1%BB%91c%20gia%20%C4%90%C3%ACnh%20Xu%C3%A2n%20Hi%E1%BB%87p.jpg",
           "imageCaption": "Bằng xếp hạng Di tích quốc gia Đình Xuân Hiệp",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1928”",
+          "title": "Bằng xếp hạng Di tích quốc gia Đình Xuân Hiệp",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5440,7 +5605,7 @@ export const memoryGameData = {
           "lat": 10.753116410259468,
           "lng": 106.65795025596664,
           "monumentName": "Hội quán Hà Chương",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Hội quán Hà Chương",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5456,14 +5621,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/Bi%E1%BB%83n%20kim%20lo%E1%BA%A1i%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Biển kim loại công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Hội quán Hà Chương",
-          "sub": "Biển tích xếp hạng"
+          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
+          "imageCaption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích Lịch sử - Văn hóa",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5477,11 +5644,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20-%20V%C4%83n%20h%C3%B3a.jpg",
-          "imageCaption": "Bằng công nhận Di tích Lịch sử - Văn hóa",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20H%C3%A0%20Ch%C6%B0%C6%A1ng/Bi%E1%BB%83n%20kim%20lo%E1%BA%A1i%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+          "imageCaption": "Biển kim loại công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “14/04/2024”",
+          "title": "Biển kim loại công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5507,7 +5674,7 @@ export const memoryGameData = {
           "lat": 10.753662453000011,
           "lng": 106.66210427805626,
           "monumentName": "Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5522,15 +5689,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/Gian%20hi%E1%BB%83n%20gian%20nghi%20m%C3%B4n%20v%C3%A0%20bi%E1%BB%83n%20th%E1%BB%9D%20ch%C6%B0%20v%E1%BB%8B%20th%E1%BA%A7n%20linh.jpg",
-          "imageCaption": "Gian hiển gian nghi môn và biển thờ chư vị thần linh",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2001",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Hội quán Nghĩa An (Miếu Quan Đế/Chùa Ông)",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2001",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -5544,11 +5713,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/C%E1%BA%ADn%20c%E1%BA%A3nh%20c%E1%BA%B7p%20t%C6%B0%E1%BB%A3ng%20k%E1%BB%B3%20l%C3%A2n%20%C4%91%C3%A1%20tr%C6%B0%E1%BB%9Bc%20l%E1%BB%91i%20v%C3%A0o.jpg",
-          "imageCaption": "Cận cảnh cặp tượng kỳ lân đá trước lối vào",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An/%E1%BA%A2nh%20t%C6%B0%20li%E1%BB%87u%20th%E1%BB%9Di%20Ph%C3%A1p%20thu%E1%BB%99c%20c%E1%BB%A7a%20H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20An.jpg",
+          "imageCaption": "Ảnh tư liệu thời Pháp thuộc của Hội quán Nghĩa An",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1819–1820”",
+          "title": "Ảnh tư liệu thời Pháp thuộc của Hội quán Nghĩa An",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5574,7 +5743,7 @@ export const memoryGameData = {
           "lat": 10.749193750473093,
           "lng": 106.65441869988231,
           "monumentName": "Hội quán Nghĩa Nhuận",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Hội quán Nghĩa Nhuận",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5590,14 +5759,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/C%E1%BB%95ng%20b%E1%BB%A9c%20b%C3%ACnh%20phong%20%C4%90%C3%ACnh%20Ngh%C4%A9a%20Nhu%E1%BA%ADn.jpg",
-          "imageCaption": "Cổng bức bình phong Đình Nghĩa Nhuận",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Hội quán Nghĩa Nhuận",
-          "sub": "Biển tích xếp hạng"
+          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/B%E1%BA%A3ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+          "imageCaption": "Bảng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bảng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5611,11 +5782,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/B%E1%BA%A3ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Bảng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Ngh%C4%A9a%20Nhu%E1%BA%ADn/Chi%20ti%E1%BA%BFt%20ng%C3%B3i%20l%E1%BB%A3p%20v%C3%A0%20t%C6%B0%E1%BB%A3ng%20g%E1%BB%91m%20trang%20tr%C3%AD%20g%C3%B3c%20m%C3%A1i.jpg",
+          "imageCaption": "Chi tiết ngói lợp và tượng gốm trang trí góc mái",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1852”",
+          "title": "Chi tiết ngói lợp và tượng gốm trang trí góc mái",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5641,7 +5812,7 @@ export const memoryGameData = {
           "lat": 10.754131971849885,
           "lng": 106.659624625907,
           "monumentName": "Hội quán Ôn Lăng",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Hội quán Ôn Lăng",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5657,14 +5828,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/To%C3%A0n%20c%E1%BA%A3nh%20c%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng.jpg",
-          "imageCaption": "Toàn cảnh cổng chính và mặt tiền Hội quán Ôn Lăng",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Hội quán Ôn Lăng",
-          "sub": "Biển tích xếp hạng"
+          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/G%C3%B3c%20m%C3%A1i%20H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng%20v%C3%A0%20b%E1%BA%A3ng%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch.jpg",
+          "imageCaption": "Góc mái Hội quán Ôn Lăng và bảng công nhận di tích",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Góc mái Hội quán Ôn Lăng và bảng công nhận di tích",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5678,11 +5851,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/C%E1%BA%ADn%20c%E1%BA%A3nh%20t%C6%B0%E1%BB%A3ng%20g%E1%BB%91m%20s%E1%BB%A9%20ch%C6%B0%20v%E1%BB%8B%20th%E1%BA%A7n%20ti%C3%AAn%20tr%C3%AAn%20b%E1%BB%9D%20m%C3%A1i.jpg",
-          "imageCaption": "Cận cảnh tượng gốm sứ chư vị thần tiên trên bờ mái",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng/To%C3%A0n%20c%E1%BA%A3nh%20c%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20%C3%94n%20L%C4%83ng.jpg",
+          "imageCaption": "Toàn cảnh cổng chính và mặt tiền Hội quán Ôn Lăng",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Hội quán Ôn Lăng",
+          "title": "Toàn cảnh cổng chính và mặt tiền Hội quán Ôn Lăng",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5708,7 +5881,7 @@ export const memoryGameData = {
           "lat": 10.752445654286207,
           "lng": 106.66323119645925,
           "monumentName": "Hội quán Quỳnh Phủ",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Hội quán Quỳnh Phủ",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5723,15 +5896,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Bia%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Bia đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1998",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Hội quán Quỳnh Phủ",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1998",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -5745,11 +5920,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Bia%20%C4%91%C3%A1%20c%E1%BB%95%20kh%E1%BA%AFc%20ch%E1%BB%AF%20H%C3%A1n%20l%C6%B0u%20danh%20c%C3%B4ng%20%C4%91%E1%BB%A9c.jpg",
-          "imageCaption": "Bia đá cổ khắc chữ Hán lưu danh công đức",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Qu%E1%BB%B3nh%20Ph%E1%BB%A7/Bia%20%C4%91%C3%A1%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+          "imageCaption": "Bia đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “2024”",
+          "title": "Bia đá công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5775,7 +5950,7 @@ export const memoryGameData = {
           "lat": 10.753253542057488,
           "lng": 106.66117684816919,
           "monumentName": "Hội quán Tuệ Thành (Chùa Bà)",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Hội quán Tuệ Thành (Chùa Bà)",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5790,15 +5965,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/B%E1%BB%99%20ng%C5%A9%20s%E1%BB%B1%20b%E1%BA%B1ng%20%C4%91%E1%BB%93ng%20c%E1%BB%95%20tr%C3%AAn%20b%C3%A0n%20th%E1%BB%9D.jpg",
-          "imageCaption": "Bộ ngũ sự bằng đồng cổ trên bàn thờ",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2002",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Hội quán Tuệ Thành (Chùa Bà)",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2002",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -5814,9 +5991,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/H%E1%BB%99i%20qu%C3%A1n%20Tu%E1%BB%87%20Th%C3%A0nh/D%C3%A3y%20nhang%20th%C3%A1p%20h%C3%ACnh%20n%C3%B3n%20treo%20d%C3%A0y%20%C4%91%E1%BA%B7c%20tr%C3%AAn%20tr%E1%BA%A7n.jpg",
           "imageCaption": "Dãy nhang tháp hình nón treo dày đặc trên trần",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Thẻ hình mốc “1760”",
+          "title": "Dãy nhang tháp hình nón treo dày đặc trên trần",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5842,7 +6019,7 @@ export const memoryGameData = {
           "lat": 10.802217454675066,
           "lng": 106.69708365535504,
           "monumentName": "Lăng Lê Văn Duyệt",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Lăng Lê Văn Duyệt",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5860,12 +6037,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20V%C4%83n%20h%C3%B3a%20c%E1%BA%A5p%20Qu%E1%BB%91c%20gia.jpg",
           "imageCaption": "Bằng công nhận Di tích Lịch sử Văn hóa cấp Quốc gia",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Lăng Lê Văn Duyệt",
-          "sub": "Biển tích xếp hạng"
+          "year": "1998",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích Lịch sử Văn hóa cấp Quốc gia",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5879,11 +6058,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20L%E1%BB%8Bch%20s%E1%BB%AD%20V%C4%83n%20h%C3%B3a%20c%E1%BA%A5p%20Qu%E1%BB%91c%20gia.jpg",
-          "imageCaption": "Bằng công nhận Di tích Lịch sử Văn hóa cấp Quốc gia",
-          "icon": "👤",
+          "imageSrc": "/assets/images/monuments/L%C4%83ng%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t/C%E1%BB%95ng%20tam%20quan%20Khu%20di%20t%C3%ADch%20L%C4%83ng%20T%E1%BA%A3%20qu%C3%A2n%20L%C3%AA%20V%C4%83n%20Duy%E1%BB%87t.jpg",
+          "imageCaption": "Cổng tam quan Khu di tích Lăng Tả quân Lê Văn Duyệt",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Tả quân Lê Văn Duyệt",
+          "title": "Cổng tam quan Khu di tích Lăng Tả quân Lê Văn Duyệt",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5909,7 +6088,7 @@ export const memoryGameData = {
           "lat": 10.796197458827,
           "lng": 106.67557949093708,
           "monumentName": "Lăng Trương Tấn Bửu",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Lăng Trương Tấn Bửu",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5925,14 +6104,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/Bia%20%C4%91%C3%A1%20v%C3%A0%20b%E1%BB%87%20th%E1%BB%9D%20tr%C6%B0%E1%BB%9Bc%20m%E1%BB%99%20c%E1%BB%95.jpg",
-          "imageCaption": "Bia đá và bệ thờ trước mộ cổ",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Lăng Trương Tấn Bửu",
-          "sub": "Biển tích xếp hạng"
+          "imageSrc": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/B%E1%BA%B1ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20Di%20t%C3%ADch%20Qu%E1%BB%91c%20gia%20trong%20gian%20th%E1%BB%9D.jpg",
+          "imageCaption": "Bằng xếp hạng Di tích Quốc gia trong gian thờ",
+          "year": "2004",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng xếp hạng Di tích Quốc gia trong gian thờ",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -5948,9 +6129,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0o%20Khu%20di%20t%C3%ADch%20L%C4%83ng%20Tr%C6%B0%C6%A1ng%20T%E1%BA%A5n%20B%E1%BB%ADu.jpg",
           "imageCaption": "Cổng chính vào Khu di tích Lăng Trương Tấn Bửu",
-          "icon": "👤",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Trương Tấn Bửu",
+          "title": "Cổng chính vào Khu di tích Lăng Trương Tấn Bửu",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -5976,7 +6157,7 @@ export const memoryGameData = {
           "lat": 10.795762006729788,
           "lng": 106.68295119645941,
           "monumentName": "Lăng Võ Di Nguy",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Lăng Võ Di Nguy",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -5991,15 +6172,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/To%C3%A0n%20c%E1%BA%A3nh%20khu%20l%C4%83ng%20m%E1%BB%99%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
-          "imageCaption": "Toàn cảnh khu lăng mộ nhìn từ trên cao",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Lăng Võ Di Nguy",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6015,9 +6198,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/L%C4%83ng%20V%C3%B5%20Di%20Nguy/B%C3%A0n%20th%E1%BB%9D%20ch%C3%ADnh%20b%C3%AAn%20trong%20b%C3%A1i%20%C4%91%C6%B0%E1%BB%9Dng%20%C4%91%E1%BB%81n%20th%E1%BB%9D.jpg",
           "imageCaption": "Bàn thờ chính bên trong bái đường đền thờ",
-          "icon": "👤",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Võ Di Nguy",
+          "title": "Bàn thờ chính bên trong bái đường đền thờ",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6043,7 +6226,7 @@ export const memoryGameData = {
           "lat": 10.339395637686106,
           "lng": 107.08382801424735,
           "monumentName": "Linh Sơn Cổ Tự",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Linh Sơn Cổ Tự",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6058,15 +6241,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/C%E1%BB%95ng%20l%E1%BB%91i%20l%C3%AAn%20%C4%91%E1%BB%81n%2C%20ch%C3%B9a%20tr%C3%AAn%20%C4%91%E1%BB%93i.jpg",
-          "imageCaption": "Cổng lối lên đền, chùa trên đồi",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1991",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Linh Sơn Cổ Tự",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1991",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6082,9 +6267,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1/C%E1%BB%95ng%20Tam%20quan%20Linh%20S%C6%A1n%20C%E1%BB%95%20T%E1%BB%B1%20V%C5%A9ng%20T%C3%A0u.jpg",
           "imageCaption": "Cổng Tam quan Linh Sơn Cổ Tự Vũng Tàu",
-          "icon": "🌟",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Linh Sơn Cổ Tự",
+          "title": "Cổng Tam quan Linh Sơn Cổ Tự Vũng Tàu",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6110,7 +6295,7 @@ export const memoryGameData = {
           "lat": 10.751397624528153,
           "lng": 106.6572630964593,
           "monumentName": "Miếu Nhị Phủ (Chùa Ông Bổn)",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Miếu Nhị Phủ (Chùa Ông Bổn)",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6125,15 +6310,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Nh%E1%BB%8B%20Ph%E1%BB%A7.jpg",
-          "imageCaption": "Toàn cảnh mặt tiền Hội quán Nhị Phủ",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Miếu Nhị Phủ (Chùa Ông Bổn)",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6147,11 +6334,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/B%C3%A0n%20th%E1%BB%9D%20H%E1%BB%95%20Ph%E1%BB%A7%20%20H%E1%BB%95%20T%C6%B0%E1%BB%9Bng%20Qu%C3%A2n.jpg",
-          "imageCaption": "Bàn thờ Hổ Phủ Hổ Tướng Quân",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Mi%E1%BA%BFu%20Nh%E1%BB%8B%20Ph%E1%BB%A7/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20H%E1%BB%99i%20qu%C3%A1n%20Nh%E1%BB%8B%20Ph%E1%BB%A7.jpg",
+          "imageCaption": "Toàn cảnh mặt tiền Hội quán Nhị Phủ",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Miếu Nhị Phủ (Chùa Ông Bổn)",
+          "title": "Toàn cảnh mặt tiền Hội quán Nhị Phủ",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6177,7 +6364,7 @@ export const memoryGameData = {
           "lat": 10.765062486177206,
           "lng": 106.69908366923417,
           "monumentName": "Miếu Thiên Hậu (Quảng Triệu hội quán)",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Miếu Thiên Hậu (Quảng Triệu hội quán)",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6195,12 +6382,14 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Mi%E1%BA%BFu%20Thi%C3%AAn%20H%E1%BA%ADu/B%E1%BA%A3ng%20di%20t%C3%ADch%20v%C3%A0%20c%E1%BB%95ng%20v%C3%A0o%20mi%E1%BA%BFu.jpg",
           "imageCaption": "Bảng di tích và cổng vào miếu",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Miếu Thiên Hậu (Quảng Triệu hội quán)",
-          "sub": "Biển tích xếp hạng"
+          "year": "1998",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bảng di tích và cổng vào miếu",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -6214,11 +6403,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Mi%E1%BA%BFu%20Thi%C3%AAn%20H%E1%BA%ADu/B%C3%A0n%20th%E1%BB%9D%20Thi%C3%AAn%20H%E1%BA%ADu%20Th%C3%A1nh%20M%E1%BA%ABu.jpg",
-          "imageCaption": "Bàn thờ Thiên Hậu Thánh Mẫu",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/Mi%E1%BA%BFu%20Thi%C3%AAn%20H%E1%BA%ADu/M%E1%BA%B7t%20ti%E1%BB%81n%20Mi%E1%BA%BFu%20Thi%C3%AAn%20H%E1%BA%ADu%20(Qu%E1%BA%A3ng%20Tri%E1%BB%87u).jpg",
+          "imageCaption": "Mặt tiền Miếu Thiên Hậu (Quảng Triệu)",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Miếu Thiên Hậu (Quảng Triệu hội quán)",
+          "title": "Mặt tiền Miếu Thiên Hậu (Quảng Triệu)",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6244,7 +6433,7 @@ export const memoryGameData = {
           "lat": 10.97868162166789,
           "lng": 106.6515762320429,
           "monumentName": "Nhà cổ Trần Công Vàng",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Nhà cổ Trần Công Vàng",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6259,15 +6448,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/To%C3%A0n%20c%E1%BA%A3nh%20m%C3%A1i%20nh%C3%A0%20c%E1%BB%95%20nh%C3%ACn%20t%E1%BB%AB%20tr%C3%AAn%20cao.jpg",
-          "imageCaption": "Toàn cảnh mái nhà cổ nhìn từ trên cao",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà cổ Trần Công Vàng",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6281,11 +6472,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/B%C3%A0n%20%C4%83n%20g%E1%BB%97%20v%C3%A0%20h%C3%A0ng%20c%E1%BB%99t%20gian%20nh%C3%A0%20ch%C3%ADnh.jpg",
-          "imageCaption": "Bàn ăn gỗ và hàng cột gian nhà chính",
-          "icon": "👤",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20C%C3%B4ng%20V%C3%A0ng/Gia%20ph%E1%BA%A3%20d%C3%B2ng%20h%E1%BB%8D%20Tr%E1%BA%A7n%20C%C3%B4ng%20v%C3%A0%20t%C6%B0%E1%BB%A3ng%20t%E1%BB%B3%20h%C6%B0u.jpg",
+          "imageCaption": "Gia phả dòng họ Trần Công và tượng tỳ hưu",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung/ảnh gia đình Trần Công Vàng",
+          "title": "Gia phả dòng họ Trần Công và tượng tỳ hưu",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6311,7 +6502,7 @@ export const memoryGameData = {
           "lat": 10.97799448073809,
           "lng": 106.65064343404006,
           "monumentName": "Nhà cổ Trần Văn Hổ",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Nhà cổ Trần Văn Hổ",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6326,15 +6517,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20-%20v%C4%83n%20h%C3%B3a.jpg",
-          "imageCaption": "Bia công nhận di tích lịch sử - văn hóa",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1993",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà cổ Trần Văn Hổ",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1993",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6348,11 +6541,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/Bia%20c%C3%B4ng%20nh%E1%BA%ADn%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20-%20v%C4%83n%20h%C3%B3a.jpg",
-          "imageCaption": "Bia công nhận di tích lịch sử - văn hóa",
-          "icon": "👤",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20c%E1%BB%95%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95/Ch%C3%A2n%20dung%20c%E1%BB%A5%20Tr%E1%BA%A7n%20V%C4%83n%20H%E1%BB%95%20(1881%20-%201957).jpg",
+          "imageCaption": "Chân dung cụ Trần Văn Hổ (1881 - 1957)",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung/ảnh gia đình Trần Văn Hổ",
+          "title": "Chân dung cụ Trần Văn Hổ (1881 - 1957)",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6378,7 +6571,7 @@ export const memoryGameData = {
           "lat": 10.77661542428395,
           "lng": 106.70316881425052,
           "monumentName": "Nhà hát Thành phố Hồ Chí Minh",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Nhà hát Thành phố Hồ Chí Minh",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6393,15 +6586,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/Kh%C3%A1n%20ph%C3%B2ng%20to%C3%A0n%20c%E1%BA%A3nh%20g%C3%B3c%20r%E1%BB%99ng.jpg",
-          "imageCaption": "Khán phòng toàn cảnh góc rộng",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2012",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà hát Thành phố Hồ Chí Minh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2012",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6415,11 +6610,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/G%C3%B3c%20nghi%C3%AAng%20Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20lung%20linh%20v%E1%BB%81%20%C4%91%C3%AAm.jpg",
-          "imageCaption": "Góc nghiêng Nhà hát Thành phố lung linh về đêm",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/M%E1%BA%B7t%20ti%E1%BB%81n%20ch%C3%ADnh%20di%E1%BB%87n%20Nh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91.jpg",
+          "imageCaption": "Mặt tiền chính diện Nhà hát Thành phố",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Nhà hát Thành phố Hồ Chí Minh",
+          "title": "Mặt tiền chính diện Nhà hát Thành phố",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6445,7 +6640,7 @@ export const memoryGameData = {
           "lat": 10.454542774719467,
           "lng": 107.09629591324035,
           "monumentName": "Nhà Lớn Long Sơn",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Nhà Lớn Long Sơn",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6460,15 +6655,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/C%E1%BB%95ng%20ch%C3%A0o%20di%20t%C3%ADch%20Khu%20di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD%20v%C4%83n%20h%C3%B3a%20Nh%C3%A0%20L%E1%BB%9Bn%20Long%20S%C6%A1n.jpg",
-          "imageCaption": "Cổng chào di tích Khu di tích lịch sử văn hóa Nhà Lớn Long Sơn",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1991",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà Lớn Long Sơn",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1991",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6484,9 +6681,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Nh%C3%A0%20l%E1%BB%9Bn%20Long%20S%C6%A1n/C%C3%A1c%20c%E1%BB%A5%20l%C3%A3o%20ni%C3%AAn%20%C4%91%E1%BA%A1o%20%C3%94ng%20Tr%E1%BA%A7n%20ng%E1%BB%93i%20u%E1%BB%91ng%20tr%C3%A0.jpg",
           "imageCaption": "Các cụ lão niên đạo Ông Trần ngồi uống trà",
-          "icon": "👤",
+          "icon": "🖼️",
           "tag": "Nhân vật",
-          "title": "Chân dung Ông Trần",
+          "title": "Các cụ lão niên đạo Ông Trần ngồi uống trà",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6512,7 +6709,7 @@ export const memoryGameData = {
           "lat": 10.752307300714847,
           "lng": 106.65514511225754,
           "monumentName": "Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6528,14 +6725,16 @@ export const memoryGameData = {
         "pairId": 2,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/B%E1%BA%A3ng%20t%C3%AAn%20di%20t%C3%ADch%20t%E1%BA%A1i%20c%E1%BB%95ng%20%C4%90%E1%BB%81n%20th%E1%BB%9D%20T%E1%BB%95%20ngh%E1%BB%81%20Th%E1%BB%A3%20b%E1%BA%A1c.jpg",
-          "imageCaption": "Bảng tên di tích tại cổng Đền thờ Tổ nghề Thợ bạc",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
-          "sub": "Biển tích xếp hạng"
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/B%E1%BA%B1ng%20c%C3%B4ng%20nh%E1%BA%ADn%20Di%20t%C3%ADch%20Ki%E1%BA%BFn%20tr%C3%BAc%20Ngh%E1%BB%87%20thu%E1%BA%ADt%20Qu%E1%BB%91c%20gia.jpg",
+          "imageCaption": "Bằng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+          "year": "1998",
+          "ranking": "Quốc gia",
+          "rankingLabel": "Cấp Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "icon": "📜",
+          "tag": "Bằng / Bia xếp hạng",
+          "title": "Bằng công nhận Di tích Kiến trúc Nghệ thuật Quốc gia",
+          "sub": "Chứng nhận xếp hạng"
         },
         "b": {
           "cardType": "text",
@@ -6549,11 +6748,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/B%C3%A0n%20th%E1%BB%9D%20%C4%90%E1%BB%87%20t%E1%BB%AD%20kh%E1%BA%A5n%20nguy%E1%BB%87n%20Tam%20v%E1%BB%8B%20T%E1%BB%95%20s%C6%B0.jpg",
-          "imageCaption": "Bàn thờ Đệ tử khấn nguyện Tam vị Tổ sư",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/Nh%C3%A0%20th%E1%BB%9D%20t%E1%BB%95%20th%E1%BB%A3%20b%E1%BA%A1c/B%E1%BA%A3ng%20t%C3%AAn%20di%20t%C3%ADch%20t%E1%BA%A1i%20c%E1%BB%95ng%20%C4%90%E1%BB%81n%20th%E1%BB%9D%20T%E1%BB%95%20ngh%E1%BB%81%20Th%E1%BB%A3%20b%E1%BA%A1c.jpg",
+          "imageCaption": "Bảng tên di tích tại cổng Đền thờ Tổ nghề Thợ bạc",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Nhà thờ tổ thợ bạc (Hội quán Lệ Châu)",
+          "title": "Bảng tên di tích tại cổng Đền thờ Tổ nghề Thợ bạc",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6579,7 +6778,7 @@ export const memoryGameData = {
           "lat": 10.330648018102252,
           "lng": 107.07685410888055,
           "monumentName": "Niết Bàn Tịnh Xá",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Niết Bàn Tịnh Xá",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6594,15 +6793,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/C%E1%BB%95ng%20ch%C3%ADnh%20Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1.jpg",
-          "imageCaption": "Cổng chính Niết Bàn Tịnh Xá",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "1991",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Niết Bàn Tịnh Xá",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1991",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6618,9 +6819,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1/B%E1%BA%A3ng%20ch%E1%BB%89%20d%E1%BA%ABn%20c%C5%A9%20Ni%E1%BA%BFt%20B%C3%A0n%20T%E1%BB%8Bnh%20X%C3%A1.jpg",
           "imageCaption": "Bảng chỉ dẫn cũ Niết Bàn Tịnh Xá",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Niết Bàn Tịnh Xá",
+          "title": "Bảng chỉ dẫn cũ Niết Bàn Tịnh Xá",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6646,7 +6847,7 @@ export const memoryGameData = {
           "lat": 10.914737613693179,
           "lng": 106.80529937294139,
           "monumentName": "Núi Châu Thới",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Núi Châu Thới",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6661,15 +6862,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/N%C3%BAi%20Ch%C3%A2u%20Th%E1%BB%9Bi/Bia%20%C4%91%C3%A1%20L%C6%B0u%20ni%E1%BB%87m%20C%C3%B4ng%20%C4%91%E1%BB%A9c%20tr%C3%AAn%20l%C6%B0ng%20r%C3%B9a%20%C4%91%C3%A1.jpg",
-          "imageCaption": "Bia đá Lưu niệm Công đức trên lưng rùa đá",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png",
+          "cardType": "badge",
+          "year": "1989",
+          "ranking": "Quốc gia",
+          "rankingType": "Danh lam thắng cảnh",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Núi Châu Thới",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1989",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6683,11 +6886,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/N%C3%BAi%20Ch%C3%A2u%20Th%E1%BB%9Bi/G%C3%B3c%20c%E1%BA%ADn%20c%E1%BA%A3nh%20t%C6%B0%E1%BB%A3ng%20%C4%91%E1%BA%A7u%20r%E1%BB%93ng%20v%C3%A0ng%20trong%20chi%E1%BB%81u%20ho%C3%A0ng%20h%C3%B4n.jpg",
-          "imageCaption": "Góc cận cảnh tượng đầu rồng vàng trong chiều hoàng hôn",
-          "icon": "🌟",
+          "imageSrc": "/assets/images/monuments/N%C3%BAi%20Ch%C3%A2u%20Th%E1%BB%9Bi/To%C3%A0n%20c%E1%BA%A3nh%20n%C3%BAi%20Ch%C3%A2u%20Th%E1%BB%9Bi%20nh%C3%ACn%20t%E1%BB%AB%20h%E1%BB%93%20%C4%91%C3%A1.jpg",
+          "imageCaption": "Toàn cảnh núi Châu Thới nhìn từ hồ đá",
+          "icon": "🖼️",
           "tag": "Ý nghĩa",
-          "title": "Ảnh toàn cảnh Núi Châu Thới",
+          "title": "Toàn cảnh núi Châu Thới nhìn từ hồ đá",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6713,7 +6916,7 @@ export const memoryGameData = {
           "lat": 10.374377082142972,
           "lng": 107.07057046638222,
           "monumentName": "Thích Ca Phật Đài",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Thích Ca Phật Đài",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6728,15 +6931,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/C%E1%BB%95ng%20Tam%20quan%20Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i.jpg",
-          "imageCaption": "Cổng Tam quan Thích Ca Phật Đài",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png",
+          "cardType": "badge",
+          "year": "1989",
+          "ranking": "Quốc gia",
+          "rankingType": "Danh lam thắng cảnh",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Thích Ca Phật Đài",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 1989",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6750,11 +6955,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/Ban%20th%E1%BB%9D%20Th%C3%ADch%20Ca%20M%C3%A2u%20Ni%20trong%20ch%C3%A1nh%20%C4%91i%E1%BB%87n.jpg",
-          "imageCaption": "Ban thờ Thích Ca Mâu Ni trong chánh điện",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i/B%E1%BA%A3o%20th%C3%A1p%20X%C3%A1%20l%E1%BB%A3i%20Th%C3%ADch%20Ca%20Ph%E1%BA%ADt%20%C4%90%C3%A0i.jpg",
+          "imageCaption": "Bảo tháp Xá lợi Thích Ca Phật Đài",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Thích Ca Phật Đài",
+          "title": "Bảo tháp Xá lợi Thích Ca Phật Đài",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6780,7 +6985,7 @@ export const memoryGameData = {
           "lat": 10.775681684736224,
           "lng": 106.69791498036552,
           "monumentName": "Tòa án nhân dân Thành phố Hồ Chí Minh",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "title": "Bản đồ/ghim vị trí Tòa án nhân dân Thành phố Hồ Chí Minh",
           "sub": "Bản đồ / Ghim vị trí"
         },
@@ -6795,15 +7000,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%A7u%20thang%20xo%E1%BA%AFn%20%E1%BB%91c%20b%E1%BA%B1ng%20g%E1%BB%97.jpg",
-          "imageCaption": "Cầu thang xoắn ốc bằng gỗ",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2012",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Tòa án nhân dân Thành phố Hồ Chí Minh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2012",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6819,9 +7026,9 @@ export const memoryGameData = {
           "cardType": "image",
           "imageSrc": "/assets/images/monuments/T%C3%B2a%20%C3%A1n%20nh%C3%A2n%20d%C3%A2n%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BB%95ng%20ch%C3%ADnh%20v%C3%A0%20to%C3%A0n%20c%E1%BA%A3nh%20T%C3%B2a%20%C3%A1n%20Nh%C3%A2n%20d%C3%A2n%20TP.HCM.jpg",
           "imageCaption": "Cổng chính và toàn cảnh Tòa án Nhân dân TP.HCM",
-          "icon": "🎖️",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Tòa án nhân dân Thành phố Hồ Chí Minh",
+          "title": "Cổng chính và toàn cảnh Tòa án Nhân dân TP.HCM",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6836,7 +7043,7 @@ export const memoryGameData = {
   },
   "103": {
     "stt": 103,
-    "name": "Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
+    "name": "Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh",
     "pairs": [
       {
         "pairId": 1,
@@ -6847,8 +7054,8 @@ export const memoryGameData = {
           "lat": 10.776543101648452,
           "lng": 106.70091960695338,
           "monumentName": "Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
-          "title": "Bản đồ/ghim vị trí Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
+          "title": "Bản đồ/ghim vị trí Trụ sở Ủy ban nhân dân Thành phố Hồ Chí Minh",
           "sub": "Bản đồ / Ghim vị trí"
         },
         "b": {
@@ -6862,15 +7069,17 @@ export const memoryGameData = {
       {
         "pairId": 2,
         "a": {
-          "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/To%C3%A0n%20c%E1%BA%A3nh%20m%E1%BA%B7t%20ti%E1%BB%81n%20Tr%E1%BB%A5%20s%E1%BB%9F%20H%C4%90ND%20-%20UBND%20TP.HCM%20ban%20ng%C3%A0y.jpg",
-          "imageCaption": "Toàn cảnh mặt tiền Trụ sở HĐND - UBND TP.HCM ban ngày",
-          "badgeRanking": "Quốc gia",
-          "categoryIcon": "/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png",
+          "cardType": "badge",
+          "year": "2020",
+          "ranking": "Quốc gia",
+          "rankingType": "Kiến trúc nghệ thuật",
+          "rankingLabel": "Cấp Quốc gia",
+          "badgeRanking": "Di tích Quốc gia",
+          "categoryIcon": "/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png",
           "icon": "🏛️",
-          "tag": "Biểu trưng",
-          "title": "Ảnh biển/biểu tượng xếp hạng tại Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
-          "sub": "Biển tích xếp hạng"
+          "tag": "Cấp xếp hạng",
+          "title": "Năm 2020",
+          "sub": "Huy hiệu & Năm công nhận"
         },
         "b": {
           "cardType": "text",
@@ -6884,11 +7093,11 @@ export const memoryGameData = {
         "pairId": 3,
         "a": {
           "cardType": "image",
-          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/C%E1%BA%A7u%20thang%20ch%C3%ADnh%20tr%E1%BA%A3i%20th%E1%BA%A3m%20%C4%91%E1%BB%8F%20v%C3%A0%20Qu%E1%BB%91c%20huy%20Vi%E1%BB%87t%20Nam.jpg",
-          "imageCaption": "Cầu thang chính trải thảm đỏ và Quốc huy Việt Nam",
-          "icon": "🎖️",
+          "imageSrc": "/assets/images/monuments/Tr%E1%BB%A5%20s%E1%BB%9F%20HDND%20v%C3%A0%20UBND%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh/T%C6%B0%E1%BB%A3ng%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%93%20Ch%C3%AD%20Minh%20tr%C6%B0%E1%BB%9Bc%20Tr%E1%BB%A5%20s%E1%BB%9F%20H%C4%90ND%20-%20UBND%20TP.HCM.jpg",
+          "imageCaption": "Tượng Chủ tịch Hồ Chí Minh trước Trụ sở HĐND - UBND TP.HCM",
+          "icon": "🖼️",
           "tag": "Sự kiện",
-          "title": "Ảnh tư liệu sự kiện tiêu biểu của Trụ sở Hội đồng nhân dân và Ủy ban nhân dân Thành phố Hồ Chí Minh",
+          "title": "Tượng Chủ tịch Hồ Chí Minh trước Trụ sở HĐND - UBND TP.HCM",
           "sub": "Tư liệu lịch sử"
         },
         "b": {
@@ -6901,12 +7110,87 @@ export const memoryGameData = {
       }
     ]
   }
-}
+};
 
-export function getMemoryGamePairsForMonument(stt, fallbackMonumentName = "", fallbackInfo = {}) {
-  const num = String(parseInt(stt, 10) || 1);
-  if (memoryGameData[num]) {
-    return memoryGameData[num].pairs;
+export function getMemoryGamePairsForMonument(stt, name, info) {
+  if (stt && memoryGameData[stt.toString()]) {
+    return memoryGameData[stt.toString()].pairs;
   }
-  return memoryGameData["1"] ? memoryGameData["1"].pairs : [];
+  
+  // Fallback if not found by STT
+  const fallbackEntry = Object.values(memoryGameData).find(m => m.name === name);
+  if (fallbackEntry) {
+    return fallbackEntry.pairs;
+  }
+  
+  // Default dynamic pair generator fallback
+  const lat = info?.lat || (info?.coordinates ? info.coordinates[0] : 10.777);
+  const lng = info?.lng || (info?.coordinates ? info.coordinates[1] : 106.695);
+  const catIcon = info?.categoryIcon || '/assets/icons/di%20t%C3%ADch%20l%E1%BB%8Bch%20s%E1%BB%AD.png';
+  const rk = info?.ranking || 'Quốc gia';
+  const year = 'Di sản';
+
+  return [
+    {
+      pairId: 1,
+      a: {
+        cardType: 'map',
+        icon: '📍',
+        tag: 'Vị trí',
+        lat: lat,
+        lng: lng,
+        monumentName: name,
+        categoryIcon: catIcon,
+        title: `Bản đồ vị trí ${name}`,
+        sub: 'Bản đồ / Ghim vị trí'
+      },
+      b: {
+        cardType: 'text',
+        icon: '🗺️',
+        tag: 'Địa chỉ',
+        title: info?.address || 'TP. Hồ Chí Minh',
+        sub: 'Không gian di tích'
+      }
+    },
+    {
+      pairId: 2,
+      a: {
+        cardType: 'badge',
+        year: year,
+        ranking: rk,
+        rankingLabel: `Cấp ${rk}`,
+        categoryIcon: catIcon,
+        icon: '🏛️',
+        tag: 'Cấp xếp hạng',
+        title: `Di tích ${rk}`,
+        sub: 'Huy hiệu & Năm công nhận'
+      },
+      b: {
+        cardType: 'text',
+        icon: '📜',
+        tag: 'Xếp hạng',
+        title: `Di tích ${rk}`,
+        sub: 'Cấp độ xếp hạng'
+      }
+    },
+    {
+      pairId: 3,
+      a: {
+        cardType: 'image',
+        imageSrc: '/assets/images/placeholder.jpg',
+        imageCaption: name,
+        icon: '🖼️',
+        tag: 'Ảnh tư liệu',
+        title: `Ảnh tư liệu ${name}`,
+        sub: 'Tư liệu lịch sử'
+      },
+      b: {
+        cardType: 'text',
+        icon: '💡',
+        tag: 'Dấu ấn',
+        title: info?.overview || 'Giá trị lịch sử văn hóa tiêu biểu',
+        sub: 'Kiến thức trọng tâm'
+      }
+    }
+  ];
 }
