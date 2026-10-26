@@ -150,18 +150,22 @@ export default function HomePageInteractiveMap({
       const marker = L.marker([lat, lng], { icon: customIcon });
       const heroImg = mon.info?.heroImage || mon.gallery?.[0]?.src || '';
 
+      const isScenic = (monType.toLowerCase().includes('thắng cảnh') || monType.toLowerCase().includes('danh lam') || mon.stt === 68 || mon.stt === 100 || mon.stt === 101);
+      const themeColor = isScenic ? '#4A6423' : '#7B1113';
+      const btnGradient = isScenic ? 'linear-gradient(135deg, #4A6423, #364C19)' : 'linear-gradient(135deg, #7B1113, #96171a)';
+
       const popupContent = `
         <div style="font-family: inherit; padding: 4px; max-width: 260px;">
           ${heroImg ? `<div style="width: 100%; height: 105px; border-radius: 8px; overflow: hidden; margin-bottom: 6px; background: #222;">
             <img src="${heroImg}" alt="${mon.info.name}" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>` : ''}
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
-            <span style="background: #7B1113; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 4px;">#${mon.stt}/103</span>
-            <span style="background: #FEF3C7; color: #92400E; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 4px;">${mon.info.ranking || 'Di tích Quốc gia'}</span>
+            <span style="background: ${themeColor}; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 4px;">#${mon.stt}/103</span>
+            <span style="background: ${isScenic ? '#F1F6EA' : '#FEF3C7'}; color: ${isScenic ? '#364C19' : '#92400E'}; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 4px;">${mon.info.ranking || 'Di tích Quốc gia'}</span>
           </div>
-          <div style="color: #7B1113; font-weight: 800; font-size: 12.5px; margin-bottom: 3px; line-height: 1.3;">${mon.info.name}</div>
+          <div style="color: ${themeColor}; font-weight: 800; font-size: 12.5px; margin-bottom: 3px; line-height: 1.3;">${mon.info.name}</div>
           <div style="font-size: 11px; color: #555; margin-bottom: 4px;">📍 ${mon.info.address}</div>
-          <button onclick="window.__handleSelectMonumentFromHomeMap(${mon.stt})" style="width: 100%; background: linear-gradient(135deg, #7B1113, #96171a); color: white; border: none; padding: 7px 10px; border-radius: 8px; font-size: 11px; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); margin-top: 6px;">
+          <button onclick="window.__handleSelectMonumentFromHomeMap(${mon.stt})" style="width: 100%; background: ${btnGradient}; color: white; border: none; padding: 7px 10px; border-radius: 8px; font-size: 11px; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); margin-top: 6px;">
             <span>Khám phá di tích này &rarr;</span>
           </button>
         </div>

@@ -884,17 +884,17 @@ export default function HomePage({
               <button
                 type="button"
                 onClick={() => onOpenExplorer && onOpenExplorer('thắng cảnh')}
-                className="p-3 rounded-2xl bg-white border-2 border-rose-100 hover:border-[#8B1417] shadow-sm hover:shadow-lg flex flex-col items-center justify-center gap-2 hover:scale-105 transition-all duration-300 cursor-pointer group"
+                className="p-3 rounded-2xl bg-white border-2 border-emerald-100/80 hover:border-[#4A6423] shadow-sm hover:shadow-lg flex flex-col items-center justify-center gap-2 hover:scale-105 transition-all duration-300 cursor-pointer group"
                 title="Khám phá Di tích Danh lam thắng cảnh"
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 rounded-xl bg-amber-50/60 group-hover:bg-rose-50 flex items-center justify-center transition-colors">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 rounded-xl bg-amber-50/60 group-hover:bg-[#F1F6EA] flex items-center justify-center transition-colors">
                   <img
                     src="/assets/icons/Di%20t%C3%ADch%20danh%20lam%20th%E1%BA%AFng%20c%E1%BA%A3nh.png"
                     alt="Danh lam thắng cảnh"
                     className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform"
                   />
                 </div>
-                <span className="text-xs sm:text-sm font-bold text-stone-700 group-hover:text-[#8B1417] transition-colors leading-tight">
+                <span className="text-xs sm:text-sm font-bold text-stone-700 group-hover:text-[#4A6423] transition-colors leading-tight">
                   Danh lam thắng cảnh
                 </span>
               </button>

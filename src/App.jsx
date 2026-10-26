@@ -556,9 +556,24 @@ export default function App() {
   const safeAudioScript = Array.isArray(rawAudioScript)
     ? rawAudioScript.map(s => (typeof s === 'string' ? s : (s?.text || s?.content || ''))).join(' ')
     : (typeof rawAudioScript === 'string' ? rawAudioScript : (typeof safeInfo?.overview === 'string' ? safeInfo.overview : ''));
+  const isScenic = useMemo(() => {
+    const type = (safeInfo?.type || '').toLowerCase();
+    const cat = (safeInfo?.category || '').toLowerCase();
+    const name = (safeInfo?.name || '').toLowerCase();
+    return (
+      type.includes('thắng cảnh') ||
+      type.includes('danh lam') ||
+      cat.includes('thắng cảnh') ||
+      cat.includes('danh lam') ||
+      name.includes('thắng cảnh') ||
+      currentStt === 68 ||
+      currentStt === 100 ||
+      currentStt === 101
+    );
+  }, [safeInfo, currentStt]);
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] text-[#2C241E] flex flex-col font-sans selection:bg-[#7E1819] selection:text-white pb-16 md:pb-0">
+    <div className={`min-h-screen bg-[#FDFBF7] text-[#2C241E] flex flex-col font-sans selection:bg-[#7E1819] selection:text-white pb-16 md:pb-0 ${isScenic && viewMode !== 'home' ? 'theme-scenic' : ''}`}>
       {/* Dynamic Scroll Progress Bar */}
       <ScrollProgressBar />
 
