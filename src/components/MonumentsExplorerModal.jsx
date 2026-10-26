@@ -206,6 +206,7 @@ export default function MonumentsExplorerModal({
                 const isSpecial = monument.info.ranking.toLowerCase().includes('đặc biệt');
                 const mType = (monument.info?.type || '').toLowerCase();
                 const isScenic = mType.includes('thắng cảnh') || mType.includes('danh lam') || monument.stt === 68 || monument.stt === 100 || monument.stt === 101;
+                const isArch = mType.includes('kiến trúc') || mType.includes('điêu khắc');
 
                 return (
                   <div
@@ -213,23 +214,25 @@ export default function MonumentsExplorerModal({
                     onClick={() => handleChoose(monument)}
                     className={`rounded-3xl p-4 sm:p-5 border transition-all duration-300 flex flex-col justify-between cursor-pointer group shadow-xs hover:shadow-md ${
                       isCurrent
-                        ? (isScenic ? 'bg-emerald-50/70 border-[#4A6423] ring-2 ring-[#4A6423]/30' : 'bg-amber-50/90 border-[#7B1113] ring-2 ring-[#7B1113]/30')
-                        : (isScenic ? 'bg-white border-[#CFDEC0] hover:border-[#4A6423]/60 hover:-translate-y-0.5' : 'bg-white border-[#EADBC8] hover:border-[#7B1113]/50 hover:-translate-y-0.5')
+                        ? (isScenic ? 'bg-emerald-50/70 border-[#4A6423] ring-2 ring-[#4A6423]/30' : isArch ? 'bg-purple-50/70 border-[#8064A2] ring-2 ring-[#8064A2]/30' : 'bg-amber-50/90 border-[#7B1113] ring-2 ring-[#7B1113]/30')
+                        : (isScenic ? 'bg-white border-[#CFDEC0] hover:border-[#4A6423]/60 hover:-translate-y-0.5' : isArch ? 'bg-white border-[#DACEE6] hover:border-[#8064A2]/60 hover:-translate-y-0.5' : 'bg-white border-[#EADBC8] hover:border-[#7B1113]/50 hover:-translate-y-0.5')
                     }`}
                   >
                     <div className="space-y-3">
                       {/* Top Badges */}
                       <div className="flex items-center justify-between gap-2">
                         <div className="flex items-center gap-1.5 flex-wrap">
-                          <span className={`w-7 h-7 rounded-xl ${isScenic ? 'bg-[#4A6423]' : 'bg-[#7B1113]'} text-white flex items-center justify-center font-black text-xs shadow-2xs`}>
+                          <span className={`w-7 h-7 rounded-xl ${isScenic ? 'bg-[#4A6423]' : isArch ? 'bg-[#8064A2]' : 'bg-[#7B1113]'} text-white flex items-center justify-center font-black text-xs shadow-2xs`}>
                             {monument.stt}
                           </span>
                           <span className={`text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full ${
                             isScenic
                               ? 'bg-[#F1F6EA] text-[#364C19] border border-[#CFDEC0]'
-                              : isSpecial
-                                ? 'bg-red-100 text-[#7B1113] border border-red-200'
-                                : 'bg-amber-100 text-amber-900 border border-amber-200'
+                              : isArch
+                                ? 'bg-[#F3EEF8] text-[#3E2F5B] border border-[#DACEE6]'
+                                : isSpecial
+                                  ? 'bg-red-100 text-[#7B1113] border border-red-200'
+                                  : 'bg-amber-100 text-amber-900 border border-amber-200'
                           }`}>
                             {monument.info.ranking}
                           </span>
@@ -254,7 +257,7 @@ export default function MonumentsExplorerModal({
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                         <div className="absolute bottom-2 left-3 right-3 text-white text-[11px] font-bold truncate flex items-center gap-1">
-                          <span className={`px-2 py-0.5 rounded text-[10px] ${isScenic ? 'bg-[#4A6423]/90 text-white font-semibold' : 'bg-black/50 text-white'}`}>
+                          <span className={`px-2 py-0.5 rounded text-[10px] ${isScenic ? 'bg-[#4A6423]/90 text-white font-semibold' : isArch ? 'bg-[#8064A2]/90 text-white font-semibold' : 'bg-black/50 text-white'}`}>
                             {monument.info.type}
                           </span>
                         </div>
@@ -262,11 +265,11 @@ export default function MonumentsExplorerModal({
 
                       {/* Title & Address */}
                       <div>
-                        <h4 className={`font-serif-title font-bold text-sm sm:text-base text-[#2C241E] ${isScenic ? 'group-hover:text-[#4A6423]' : 'group-hover:text-[#7B1113]'} transition-colors line-clamp-2 leading-snug`}>
+                        <h4 className={`font-serif-title font-bold text-sm sm:text-base text-[#2C241E] ${isScenic ? 'group-hover:text-[#4A6423]' : isArch ? 'group-hover:text-[#8064A2]' : 'group-hover:text-[#7B1113]'} transition-colors line-clamp-2 leading-snug`}>
                           {monument.info.name}
                         </h4>
                         <div className="flex items-start gap-1.5 text-[11px] text-[#6B5E55] mt-1.5">
-                          <MapPin className={`w-3.5 h-3.5 ${isScenic ? 'text-[#4A6423]' : 'text-[#7B1113]'} shrink-0 mt-0.5`} />
+                          <MapPin className={`w-3.5 h-3.5 ${isScenic ? 'text-[#4A6423]' : isArch ? 'text-[#8064A2]' : 'text-[#7B1113]'} shrink-0 mt-0.5`} />
                           <span className="line-clamp-1">{monument.info.address}</span>
                         </div>
                       </div>
@@ -278,7 +281,7 @@ export default function MonumentsExplorerModal({
                     </div>
 
                     {/* Button Action */}
-                    <div className={`mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold ${isScenic ? 'text-[#4A6423]' : 'text-[#7B1113]'} group-hover:translate-x-1 transition-transform`}>
+                    <div className={`mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold ${isScenic ? 'text-[#4A6423]' : isArch ? 'text-[#8064A2]' : 'text-[#7B1113]'} group-hover:translate-x-1 transition-transform`}>
                       <span>{isCurrent ? 'Tiếp tục xem trang này' : 'Khám phá trang di tích này'}</span>
                       <ArrowRight className="w-4 h-4" />
                     </div>

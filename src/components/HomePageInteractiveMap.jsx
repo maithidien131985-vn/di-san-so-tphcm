@@ -151,8 +151,11 @@ export default function HomePageInteractiveMap({
       const heroImg = mon.info?.heroImage || mon.gallery?.[0]?.src || '';
 
       const isScenic = (monType.toLowerCase().includes('thắng cảnh') || monType.toLowerCase().includes('danh lam') || mon.stt === 68 || mon.stt === 100 || mon.stt === 101);
-      const themeColor = isScenic ? '#4A6423' : '#7B1113';
-      const btnGradient = isScenic ? 'linear-gradient(135deg, #4A6423, #364C19)' : 'linear-gradient(135deg, #7B1113, #96171a)';
+      const isArch = (monType.toLowerCase().includes('kiến trúc') || monType.toLowerCase().includes('điêu khắc'));
+      const themeColor = isScenic ? '#4A6423' : isArch ? '#8064A2' : '#7B1113';
+      const btnGradient = isScenic ? 'linear-gradient(135deg, #4A6423, #364C19)' : isArch ? 'linear-gradient(135deg, #8064A2, #563E75)' : 'linear-gradient(135deg, #7B1113, #96171a)';
+      const badgeBg = isScenic ? '#F1F6EA' : isArch ? '#F3EEF8' : '#FEF3C7';
+      const badgeText = isScenic ? '#364C19' : isArch ? '#3E2F5B' : '#92400E';
 
       const popupContent = `
         <div style="font-family: inherit; padding: 4px; max-width: 260px;">
@@ -161,7 +164,7 @@ export default function HomePageInteractiveMap({
           </div>` : ''}
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
             <span style="background: ${themeColor}; color: white; font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 4px;">#${mon.stt}/103</span>
-            <span style="background: ${isScenic ? '#F1F6EA' : '#FEF3C7'}; color: ${isScenic ? '#364C19' : '#92400E'}; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 4px;">${mon.info.ranking || 'Di tích Quốc gia'}</span>
+            <span style="background: ${badgeBg}; color: ${badgeText}; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 4px;">${mon.info.ranking || 'Di tích Quốc gia'}</span>
           </div>
           <div style="color: ${themeColor}; font-weight: 800; font-size: 12.5px; margin-bottom: 3px; line-height: 1.3;">${mon.info.name}</div>
           <div style="font-size: 11px; color: #555; margin-bottom: 4px;">📍 ${mon.info.address}</div>

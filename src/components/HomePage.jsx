@@ -848,17 +848,17 @@ export default function HomePage({
               <button
                 type="button"
                 onClick={() => onOpenExplorer && onOpenExplorer('Kiến trúc')}
-                className="p-3 rounded-2xl bg-white border-2 border-rose-100 hover:border-[#8B1417] shadow-sm hover:shadow-lg flex flex-col items-center justify-center gap-2 hover:scale-105 transition-all duration-300 cursor-pointer group"
+                className="p-3 rounded-2xl bg-white border-2 border-purple-100/90 hover:border-[#8064A2] shadow-sm hover:shadow-lg flex flex-col items-center justify-center gap-2 hover:scale-105 transition-all duration-300 cursor-pointer group"
                 title="Khám phá Di tích Kiến trúc nghệ thuật"
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 rounded-xl bg-amber-50/60 group-hover:bg-rose-50 flex items-center justify-center transition-colors">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 rounded-xl bg-purple-50/60 group-hover:bg-[#F3EEF8] flex items-center justify-center transition-colors">
                   <img
                     src="/assets/icons/Di%20t%C3%ADch%20ki%E1%BA%BFn%20tr%C3%BAc.png"
                     alt="Kiến trúc nghệ thuật"
                     className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform"
                   />
                 </div>
-                <span className="text-xs sm:text-sm font-bold text-stone-700 group-hover:text-[#8B1417] transition-colors leading-tight">
+                <span className="text-xs sm:text-sm font-bold text-stone-700 group-hover:text-[#8064A2] transition-colors leading-tight">
                   Kiến trúc nghệ thuật
                 </span>
               </button>

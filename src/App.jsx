@@ -572,8 +572,29 @@ export default function App() {
     );
   }, [safeInfo, currentStt]);
 
+  const isArchitecture = useMemo(() => {
+    const type = (safeInfo?.type || '').toLowerCase();
+    const cat = (safeInfo?.category || '').toLowerCase();
+    const name = (safeInfo?.name || '').toLowerCase();
+    return (
+      type.includes('kiến trúc') ||
+      type.includes('điêu khắc') ||
+      cat.includes('kiến trúc') ||
+      cat.includes('điêu khắc') ||
+      name.includes('kiến trúc') ||
+      name.includes('điêu khắc')
+    );
+  }, [safeInfo]);
+
+  const activeThemeClass = useMemo(() => {
+    if (viewMode === 'home') return '';
+    if (isScenic) return 'theme-scenic';
+    if (isArchitecture) return 'theme-architecture';
+    return '';
+  }, [viewMode, isScenic, isArchitecture]);
+
   return (
-    <div className={`min-h-screen bg-[#FDFBF7] text-[#2C241E] flex flex-col font-sans selection:bg-[#7E1819] selection:text-white pb-16 md:pb-0 ${isScenic && viewMode !== 'home' ? 'theme-scenic' : ''}`}>
+    <div className={`min-h-screen bg-[#FDFBF7] text-[#2C241E] flex flex-col font-sans selection:bg-[#7E1819] selection:text-white pb-16 md:pb-0 ${activeThemeClass}`}>
       {/* Dynamic Scroll Progress Bar */}
       <ScrollProgressBar />
 

@@ -587,4 +587,242 @@
   color: #FFFFFF !important;
 }
 
+/* ========================================================================= */
+/* THEME: DI TÍCH KIẾN TRÚC - ĐIÊU KHẮC / NGHỆ THUẬT (MÀU TÍM TRẦM CỔ KÍNH)  */
+/* Mã màu chủ đạo: #8064A2, màu nhấn: #A78BC8, nền phụ: #F3EEF8, chữ: #3E2F5B */
+/* ========================================================================= */
+
+.theme-architecture {
+  --theme-arch-primary: #8064A2;
+  --theme-arch-accent: #A78BC8;
+  --theme-arch-dark: #563E75;
+  --theme-arch-hover: #674E88;
+  --theme-arch-text: #3E2F5B;
+  --theme-arch-light: #F3EEF8;
+  --theme-arch-border: #DACEE6;
+}
+
+/* 1. CHỮ & BIỂU TƯỢNG (TEXT & ICONS) */
+.theme-architecture .text-\[\#7E1819\],
+.theme-architecture .text-\[\#7B1113\],
+.theme-architecture .text-\[\#8B1417\],
+.theme-architecture .text-\[\#911d1e\],
+.theme-architecture .text-\[\#9c2022\],
+.theme-architecture .text-\[\#4A1012\],
+.theme-architecture .text-red-900,
+.theme-architecture .text-rose-900 {
+  color: #8064A2 !important;
+}
+
+.theme-architecture .hover\:text-\[\#7E1819\]:hover,
+.theme-architecture .hover\:text-\[\#8B1417\]:hover,
+.theme-architecture .hover\:text-\[\#7B1113\]:hover,
+.theme-architecture .hover\:text-\[\#911d1e\]:hover,
+.theme-architecture .hover\:text-\[\#9c2022\]:hover,
+.theme-architecture .group:hover .group-hover\:text-\[\#7E1819\],
+.theme-architecture .group:hover .group-hover\:text-\[\#7B1113\],
+.theme-architecture .group:hover .group-hover\:text-\[\#8B1417\],
+.theme-architecture .group:hover .group-hover\:text-\[\#9c2022\] {
+  color: #563E75 !important;
+}
+
+/* Dropcap chữ cái đầu trang trọng */
+.theme-architecture p.first-letter\:text-\[\#7E1819\]::first-letter,
+.theme-architecture .first-letter\:text-\[\#7E1819\]::first-letter {
+  color: #8064A2 !important;
+}
+
+.theme-architecture .fill-\[\#7E1819\],
+.theme-architecture .fill-\[\#8B1417\] {
+  fill: #8064A2 !important;
+}
+
+.theme-architecture .accent-\[\#7B1113\],
+.theme-architecture .accent-\[\#7E1819\] {
+  accent-color: #8064A2 !important;
+}
+
+/* 2. NỀN & KHỐI TIÊU ĐỀ (BACKGROUNDS & SECTION HEADERS) */
+.theme-architecture .bg-\[\#7E1819\],
+.theme-architecture .bg-\[\#7B1113\],
+.theme-architecture .bg-\[\#8B1417\],
+.theme-architecture .bg-\[\#7E1819\]\/90,
+.theme-architecture .bg-red-600 {
+  background-color: #8064A2 !important;
+}
+
+.theme-architecture .hover\:bg-\[\#7E1819\]:hover,
+.theme-architecture .hover\:bg-\[\#8B1417\]:hover,
+.theme-architecture .hover\:bg-\[\#6a1415\]:hover,
+.theme-architecture .hover\:bg-\[\#911d1e\]:hover,
+.theme-architecture .hover\:bg-\[\#96171a\]:hover,
+.theme-architecture .hover\:bg-red-700:hover,
+.theme-architecture .group:hover .group-hover\:bg-\[\#7E1819\] {
+  background-color: #563E75 !important;
+}
+
+/* Nền nhạt dạng tag, pill, badge (Nền phụ #F3EEF8) */
+.theme-architecture .bg-rose-50,
+.theme-architecture .bg-red-50,
+.theme-architecture .bg-\[\#FAF4F0\],
+.theme-architecture .bg-\[\#FFF8F8\],
+.theme-architecture .bg-\[\#FFF0F0\] {
+  background-color: #F3EEF8 !important;
+}
+
+.theme-architecture .bg-rose-100,
+.theme-architecture .bg-red-100 {
+  background-color: #E8DDF2 !important;
+}
+
+.theme-architecture .hover\:bg-rose-50:hover,
+.theme-architecture .hover\:bg-red-50:hover,
+.theme-architecture .hover\:bg-rose-100:hover,
+.theme-architecture .hover\:bg-red-100:hover,
+.theme-architecture .group:hover .group-hover\:bg-rose-50 {
+  background-color: #ECE0F5 !important;
+}
+
+/* 3. VIỀN & KHUNG (BORDERS) */
+.theme-architecture .border-\[\#7E1819\],
+.theme-architecture .border-\[\#7B1113\],
+.theme-architecture .border-\[\#8B1417\],
+.theme-architecture .border-\[\#8B1417\]\/30,
+.theme-architecture .border-red-500,
+.theme-architecture .border-red-600,
+.theme-architecture .focus\:border-\[\#7B1113\]:focus {
+  border-color: #8064A2 !important;
+}
+
+.theme-architecture .hover\:border-\[\#7E1819\]:hover,
+.theme-architecture .hover\:border-\[\#8B1417\]:hover,
+.theme-architecture .hover\:border-\[\#7E1819\]\/40:hover,
+.theme-architecture .hover\:border-\[\#8B1417\]\/40:hover,
+.theme-architecture .hover\:border-\[\#7B1113\]\/40:hover,
+.theme-architecture .hover\:border-\[\#7B1113\]\/50:hover,
+.theme-architecture .group:hover .group-hover\:border-\[\#7E1819\],
+.theme-architecture .group:hover .group-hover\:border-\[\#7B1113\]\/50 {
+  border-color: #563E75 !important;
+}
+
+.theme-architecture .border-rose-200,
+.theme-architecture .border-red-200,
+.theme-architecture .border-rose-100,
+.theme-architecture .border-red-100,
+.theme-architecture .border-rose-200\/60,
+.theme-architecture .border-rose-200\/80,
+.theme-architecture .border-rose-200\/90,
+.theme-architecture .border-red-200\/60,
+.theme-architecture .border-red-200\/80,
+.theme-architecture .border-red-200\/90 {
+  border-color: #DACEE6 !important;
+}
+
+.theme-architecture .border-rose-300,
+.theme-architecture .border-red-300,
+.theme-architecture .border-red-800\/40 {
+  border-color: #C7B5DC !important;
+}
+
+/* 4. HIỆU ỨNG VÒNG SÁNG & ĐỔ BÓNG (RINGS) */
+.theme-architecture .ring-\[\#7E1819\]\/20,
+.theme-architecture .ring-\[\#7E1819\]\/30,
+.theme-architecture .ring-\[\#7E1819\],
+.theme-architecture .ring-\[\#7B1113\]\/30,
+.theme-architecture .ring-\[\#8B1417\]\/20,
+.theme-architecture .ring-\[\#8B1417\]\/30,
+.theme-architecture .ring-\[\#8B1417\]\/40 {
+  --tw-ring-color: rgba(128, 100, 162, 0.3) !important;
+}
+
+.theme-architecture .focus\:ring-\[\#7E1819\]:focus,
+.theme-architecture .focus\:ring-\[\#7B1113\]:focus,
+.theme-architecture .focus\:ring-\[\#7B1113\]\/30:focus,
+.theme-architecture .focus\:ring-\[\#8B1417\]:focus {
+  --tw-ring-color: #8064A2 !important;
+}
+
+/* 5. MÀU GRADIENT CHUYỂN TIẾP */
+.theme-architecture .from-\[\#7E1819\],
+.theme-architecture .from-\[\#7B1113\],
+.theme-architecture .from-\[\#8B1417\] {
+  --tw-gradient-from: #8064A2 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(128, 100, 162, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.theme-architecture .to-\[\#7E1819\],
+.theme-architecture .to-\[\#7B1113\],
+.theme-architecture .to-\[\#8B1417\],
+.theme-architecture .to-\[\#500B0D\],
+.theme-architecture .to-\[\#45080A\],
+.theme-architecture .to-\[\#911d1e\],
+.theme-architecture .to-\[\#96171a\],
+.theme-architecture .to-\[\#9E1B1D\] {
+  --tw-gradient-to: #563E75 var(--tw-gradient-to-position) !important;
+}
+
+.theme-architecture .via-\[\#7E1819\],
+.theme-architecture .via-\[\#8B1417\],
+.theme-architecture .via-\[\#911d1e\],
+.theme-architecture .via-\[\#96171a\],
+.theme-architecture .via-\[\#9E1B1D\] {
+  --tw-gradient-to: #563E75 var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #6B518C var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+.theme-architecture .hover\:from-\[\#96171a\]:hover,
+.theme-architecture .hover\:from-\[\#9E1B1D\]:hover {
+  --tw-gradient-from: #6B518C var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(107, 81, 140, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.theme-architecture .hover\:to-\[\#7B1113\]:hover,
+.theme-architecture .hover\:to-\[\#7E1819\]:hover,
+.theme-architecture .hover\:to-\[\#8B1417\]:hover,
+.theme-architecture .hover\:to-\[\#96171a\]:hover {
+  --tw-gradient-to: #563E75 var(--tw-gradient-to-position) !important;
+}
+
+/* Khối game thám hiểm nền tối sang tông tím huyền bí cổ kính */
+.theme-architecture .from-\[\#220709\] {
+  --tw-gradient-from: #1D142B var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(29, 20, 43, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.theme-architecture .via-\[\#3B0A0E\] {
+  --tw-gradient-to: #3A2756 var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #2C1B42 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+.theme-architecture .to-\[\#4F0D12\] {
+  --tw-gradient-to: #3A2756 var(--tw-gradient-to-position) !important;
+}
+
+/* Màu con dấu xác nhận hoàn thành */
+.theme-architecture .border-red-500\/90 {
+  border-color: rgba(128, 100, 162, 0.9) !important;
+}
+.theme-architecture .bg-red-950\/60 {
+  background-color: rgba(29, 20, 43, 0.8) !important;
+}
+.theme-architecture .text-red-300 {
+  color: #E2D3F5 !important;
+}
+.theme-architecture .shadow-red-500\/40 {
+  --tw-shadow-color: rgba(128, 100, 162, 0.4) !important;
+}
+.theme-architecture .ring-red-400\/30 {
+  --tw-ring-color: rgba(167, 139, 200, 0.4) !important;
+}
+
+/* 6. BÔI ĐEN VĂN BẢN (SELECTION) */
+.theme-architecture ::selection {
+  background-color: #8064A2 !important;
+  color: #FFFFFF !important;
+}
+
+
 
