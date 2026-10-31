@@ -35771,12 +35771,12 @@ export const allMonumentsList = [
       }
     },
     "video": {
-      "title": "Phim tư liệu lịch sử: Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
-      "youtubeUrl": "https://www.youtube.com/%40baotanglichsuthanhphohochi1694?utm_source=chatgpt.com",
-      "youtubeId": "cplxidwCHyE",
-      "description": "Thước phim tư liệu chân thực về di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh tại Số 2 Nguyễn Bỉnh Khiêm, phường Sài Gòn, TP.HCM.",
-      "channel": "THVL Tổng Hợp",
-      "copyright": "Video thuộc bản quyền Kênh YouTube THVL Tổng Hợp"
+      "title": "BẢO TÀNG LỊCH SỬ THÀNH PHỐ HỒ CHÍ MINH | Di tích kiến trúc nghệ thuật cấp quốc gia",
+      "youtubeUrl": "https://www.youtube.com/watch?v=50-uXfCnNSU",
+      "youtubeId": "50-uXfCnNSU",
+      "description": "Thước phim tư liệu chân thực về di tích Bảo tàng Lịch sử Thành phố Hồ Chí Minh tại Số 2 Nguyễn Bỉnh Khiêm, phường Bến Nghé, Quận 1, TP.HCM.",
+      "channel": "Kiến Trúc WinKey C",
+      "copyright": "Video thuộc bản quyền Kênh YouTube Kiến Trúc WinKey C"
     },
     "keyHighlights": {
       "figures": {
