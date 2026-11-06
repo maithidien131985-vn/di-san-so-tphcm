@@ -9,10 +9,10 @@ import { monumentQaMap } from '../data/chatbotTrainingData';
 import { match100Situation } from '../data/chatbot100SituationsData';
 
 const STORAGE_KEY = 'heritage_deepseek_api_key';
-// Encoded project default key (sk-ba4b7a77731d44fd8fe7a7e2109237eb)
+// Encoded project default key (sk-21dd8bc67e90441bbfbd25be4b61ef33)
 const getFallbackKey = () => {
   try {
-    return atob('c2stYmE0YjdhNzc3MzFkNDRmZDhmZTdhN2UyMTA5MjM3ZWI=');
+    return atob('c2stMjFkZDhiYzY3ZTkwNDQxYmJmYmQyNWJlNGI2MWVmMzM=');
   } catch (e) {
     return '';
   }
